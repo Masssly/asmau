@@ -16,15 +16,21 @@
   Every game includes this file and calls AsmauNarration.say(...). The
   recording tool (tools/record-voice) reads each game's narration.json
   and writes into the same IndexedDB store this file reads from.
+
+  Only one line speaks at a time: say() and stop() both cut off whatever
+  was playing, and the promise say() returns resolves when its own line
+  has finished, so lines can be chained with .then().
 */
 window.AsmauNarration = (function () {
   var DB_NAME = "asmau-voice";
   var STORE = "clips";
   var dbPromise = null;
+  var token = 0;
+  var currentAudio = null;
 
   function openDb() {
     if (dbPromise) return dbPromise;
-    dbPromise = new Promise(function (resolve, reject) {
+    dbPromise = new Promise(function (resolve) {
       if (!("indexedDB" in window)) { resolve(null); return; }
       var req = indexedDB.open(DB_NAME, 1);
       req.onupgradeneeded = function () {
@@ -101,11 +107,26 @@ window.AsmauNarration = (function () {
     });
   }
 
-  function playBlob(blob) {
+  function stop() {
+    token += 1;
+    if (currentAudio) {
+      try { currentAudio.pause(); } catch (err) { /* already stopped */ }
+      currentAudio = null;
+    }
+    try {
+      if ("speechSynthesis" in window) window.speechSynthesis.cancel();
+    } catch (err) { /* no speech engine */ }
+  }
+
+  // A line that was superseded before it could start counts as handled
+  // (resolves true) so nothing further down the chain tries to speak it.
+  function playBlob(blob, my) {
     return new Promise(function (resolve) {
+      if (my !== token) { resolve(true); return; }
       try {
         var url = URL.createObjectURL(blob);
         var a = new Audio(url);
+        currentAudio = a;
         a.onended = function () { URL.revokeObjectURL(url); resolve(true); };
         a.onerror = function () { URL.revokeObjectURL(url); resolve(false); };
         a.play().catch(function () { resolve(false); });
@@ -113,20 +134,22 @@ window.AsmauNarration = (function () {
     });
   }
 
-  function tryPlayUrl(url) {
+  function tryPlayUrl(url, my) {
     return new Promise(function (resolve) {
+      if (my !== token) { resolve(true); return; }
       var a = new Audio();
       var done = false;
       var finish = function (ok) { if (done) return; done = true; resolve(ok); };
-      // The load timeout only guards against a missing/unloadable file — once
-      // canplaythrough fires we wait for the clip to actually finish, however
-      // long it runs, so callers can safely chain clips one after another.
+      // The load timeout only guards against a missing file — once the clip
+      // can play we wait for it to actually finish, however long it runs.
       var loadTimeout = setTimeout(function () { finish(false); }, 1500);
       a.oncanplaythrough = function () {
+        a.oncanplaythrough = null;
         clearTimeout(loadTimeout);
-        a.play().then(function () {
-          a.onended = function () { finish(true); };
-        }).catch(function () { finish(false); });
+        if (my !== token) { finish(true); return; }
+        currentAudio = a;
+        a.onended = function () { finish(true); };
+        a.play().catch(function () { finish(false); });
       };
       a.onerror = function () { clearTimeout(loadTimeout); finish(false); };
       a.src = url;
@@ -134,20 +157,24 @@ window.AsmauNarration = (function () {
     });
   }
 
-  function speakFallback(text, lang) {
-    try {
-      if (!("speechSynthesis" in window) || !text) return;
-      window.speechSynthesis.cancel();
-      var u = new SpeechSynthesisUtterance(text);
-      u.lang = lang === "ar" ? "ar" : "en-US";
-      u.rate = 0.85;
-      u.pitch = 1.1;
-      window.speechSynthesis.speak(u);
-    } catch (err) { /* no voice available on this device — games still work visually */ }
+  function speakFallback(text, lang, my) {
+    return new Promise(function (resolve) {
+      try {
+        if (my !== token || !("speechSynthesis" in window) || !text) { resolve(); return; }
+        var u = new SpeechSynthesisUtterance(text);
+        u.lang = lang === "ar" ? "ar" : "en-US";
+        u.rate = 0.85;
+        u.pitch = 1.1;
+        u.onend = function () { resolve(); };
+        u.onerror = function () { resolve(); };
+        window.speechSynthesis.speak(u);
+        setTimeout(resolve, 20000);
+      } catch (err) { resolve(); }
+    });
   }
 
   /**
-   * Speak one narration line.
+   * Speak one narration line, cutting off any line already playing.
    * @param {string} game      game slug, e.g. "tap-and-say"
    * @param {string} id        stable id from that game's narration.json
    * @param {string} text      fallback text for on-device speech synthesis
@@ -158,22 +185,26 @@ window.AsmauNarration = (function () {
     var lang = opts.lang || "en";
     var base = opts.audioBase || "assets/audio/";
 
+    stop();
+    var my = token;
+
     return getRecordedClip(game, id).then(function (blob) {
-      if (blob) return playBlob(blob);
-      return tryPlayUrl(base + id + ".webm").then(function (ok) {
+      if (blob) return playBlob(blob, my);
+      return tryPlayUrl(base + id + ".webm", my).then(function (ok) {
         if (ok) return true;
         if (lang === "ar") return false; // no synthesized Arabic tier — see file header
-        return tryPlayUrl(base + id + ".mp3");
+        return tryPlayUrl(base + id + ".mp3", my);
       });
     }).then(function (played) {
-      if (!played) speakFallback(text, lang);
+      if (!played) return speakFallback(text, lang, my);
     }).catch(function () {
-      speakFallback(text, lang);
+      return speakFallback(text, lang, my);
     });
   }
 
   return {
     say: say,
+    stop: stop,
     getRecordedClip: getRecordedClip,
     saveRecordedClip: saveRecordedClip,
     deleteRecordedClip: deleteRecordedClip,

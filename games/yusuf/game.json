@@ -1,10 +1,10 @@
 {
   "slug": "yusuf",
   "title": "Yusuf",
-  "icon": "🪣",
-  "minAge": 4,
-  "maxAge": 8,
-  "tagline": "Help lower the bucket and discover who is inside.",
-  "basedOn": "Surah Yusuf, 12:8-20",
-  "depictionNotes": "Prophet Yusuf is never drawn as a figure — he is represented only by a soft glow inside the bucket. Part 1 of his story; later chapters will be grounded in later ayat before they're built, not invented."
+  "icon": "🌟",
+  "minAge": 5,
+  "maxAge": 9,
+  "tagline": "His whole story in thirteen chapters, with something to do in every one.",
+  "basedOn": "Surah Yusuf, 12:4-101",
+  "depictionNotes": "No person is drawn. Yusuf appears as a warm glow, his brothers as a huddle of dots. The events in the governor's house (12:23-34) and the second prisoner's dream (12:41) are told in softened, child-level words; the game's 'For parents' note says exactly how."
 }

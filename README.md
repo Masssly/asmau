@@ -116,4 +116,4 @@ are public: it's your voice, or your child's, on a page anyone can open.
 |---|---|---|
 | Tap & Say | 1.5–4 | — |
 | Count the Crescents | 2–5 | — |
-| Yusuf | 4–8 | Surah Yusuf, 12:8–20 |
+| Yusuf | 5–9 | Surah Yusuf, 12:4–101 — the whole story in 13 chapters |

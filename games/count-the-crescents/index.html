@@ -67,11 +67,13 @@
     count += 1;
     number.textContent = String(count);
     render();
-    window.AsmauNarration.say(GAME, "count-" + count, NUMBER_WORDS[count], { lang: "en" });
+    var spoken = window.AsmauNarration.say(GAME, "count-" + count, NUMBER_WORDS[count], { lang: "en" });
     if (count === 5) {
       tapBtn.hidden = true;
       celebrate.hidden = false;
-      window.AsmauNarration.say(GAME, "mashallah", "Mashallah! Five!", { lang: "en" });
+      spoken.then(function () {
+        window.AsmauNarration.say(GAME, "mashallah", "Mashallah! Five!", { lang: "en" });
+      });
     }
   });
 

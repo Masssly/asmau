@@ -48,17 +48,18 @@
   </div>
 </div>
 
-<script src="../../shared/speech.js"></script>
+<script src="../../shared/narration.js"></script>
 <script>
 (function () {
   "use strict";
+  var GAME = "tap-and-say";
   var ITEMS = [
-    { e: "🌙", en: "Moon",         ar: "قَمَر" },
-    { e: "⭐", en: "Star",         ar: "نَجْمَة" },
-    { e: "🕌", en: "Mosque",       ar: "مَسْجِد" },
-    { e: "🕋", en: "Kaaba",        ar: "الْكَعْبَة" },
-    { e: "📿", en: "Prayer beads", ar: "مِسْبَحَة" },
-    { e: "🪔", en: "Lamp",         ar: "فَانُوس" }
+    { e: "🌙", en: "Moon",         enId: "moon-en",   ar: "قَمَر",       arId: "moon-ar" },
+    { e: "⭐", en: "Star",         enId: "star-en",   ar: "نَجْمَة",     arId: "star-ar" },
+    { e: "🕌", en: "Mosque",       enId: "mosque-en", ar: "مَسْجِد",     arId: "mosque-ar" },
+    { e: "🕋", en: "Kaaba",        enId: "kaaba-en",  ar: "الْكَعْبَة",   arId: "kaaba-ar" },
+    { e: "📿", en: "Prayer beads", enId: "beads-en",  ar: "مِسْبَحَة",    arId: "beads-ar" },
+    { e: "🪔", en: "Lamp",         enId: "lamp-en",   ar: "فَانُوس",     arId: "lamp-ar" }
   ];
 
   var tray = document.getElementById("tray");
@@ -77,7 +78,9 @@
         '<div class="en">' + item.en + "</div>" +
         '<div class="ar">' + item.ar + "</div>" +
         '<div class="hint">Say the Arabic word together</div>';
-      window.AsmauSpeech.speak(item.en);
+      window.AsmauNarration.say(GAME, item.enId, item.en, { lang: "en" }).then(function () {
+        return window.AsmauNarration.say(GAME, item.arId, item.ar, { lang: "ar" });
+      });
     });
     tray.appendChild(tile);
   });

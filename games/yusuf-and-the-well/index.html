@@ -75,11 +75,12 @@
   </p>
 </div>
 
-<script src="../../shared/speech.js"></script>
+<script src="../../shared/narration.js"></script>
 <script>
 (function () {
   "use strict";
 
+  var GAME = "yusuf-and-the-well";
   var stage = document.getElementById("stage");
   var nextBtn = document.getElementById("nextBtn");
   var dotsBox = document.getElementById("dots");
@@ -90,37 +91,44 @@
     {
       icon: "😔",
       caption: "Yusuf's brothers felt jealous of him, and they didn't want him around anymore.",
-      speak: "Yusuf's brothers felt jealous of him."
+      speakText: "Yusuf's brothers felt jealous of him.",
+      id: "scene-1"
     },
     {
       icon: "🏜️",
       caption: "So they took him far out into the desert, to a deep, hidden well.",
-      speak: "They took him to a deep well."
+      speakText: "They took him to a deep well.",
+      id: "scene-2"
     },
     {
       icon: "well",
       caption: "They lowered Yusuf down into the well. It was dark and lonely — but Allah was watching over him the whole time.",
-      speak: "They lowered Yusuf into the well. Allah was watching over him."
+      speakText: "They lowered Yusuf into the well. Allah was watching over him.",
+      id: "scene-3"
     },
     {
       icon: "🐪",
       caption: "Days later, a caravan of travellers stopped nearby, looking for water.",
-      speak: "A caravan of travellers stopped nearby."
+      speakText: "A caravan of travellers stopped nearby.",
+      id: "scene-4"
     },
     {
       icon: "pull",
       caption: "A kind traveller let his bucket down into the well. Help pull it back up!",
-      speak: "Pull the bucket up!"
+      speakText: "Pull the bucket up!",
+      id: "scene-5"
     },
     {
       icon: "✨",
       caption: "\"Good news!\" the traveller shouted. \"There's a boy down here!\" They were amazed to find Yusuf safe.",
-      speak: "Good news! Here is a boy!"
+      speakText: "Good news! Here is a boy!",
+      id: "scene-6"
     },
     {
       icon: "🤲",
       caption: "The travellers took Yusuf with them. His brothers thought they had the last word — but Allah had a plan all along.",
-      speak: "Allah had a plan all along."
+      speakText: "Allah had a plan all along.",
+      id: "scene-7"
     }
   ];
 
@@ -167,7 +175,7 @@
     }
 
     nextBtn.hidden = s.icon === "pull";
-    window.AsmauSpeech.speak(s.speak);
+    window.AsmauNarration.say(GAME, s.id, s.speakText, { lang: "en" });
     renderDots();
   }
 
@@ -182,7 +190,7 @@
       document.getElementById("pullBtn").disabled = true;
       document.getElementById("pullBtn").textContent = "Found him! 🎉";
       nextBtn.hidden = false;
-      window.AsmauSpeech.speak("You found him!");
+      window.AsmauNarration.say(GAME, "scene-5-found", "You found him!", { lang: "en" });
     }
   }
 

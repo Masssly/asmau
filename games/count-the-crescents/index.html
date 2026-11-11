@@ -39,10 +39,12 @@
   </div>
 </div>
 
-<script src="../../shared/speech.js"></script>
+<script src="../../shared/narration.js"></script>
 <script>
 (function () {
   "use strict";
+  var GAME = "count-the-crescents";
+  var NUMBER_WORDS = ["", "One", "Two", "Three", "Four", "Five"];
   var count = 0;
   var row = document.getElementById("row");
   var number = document.getElementById("number");
@@ -65,11 +67,11 @@
     count += 1;
     number.textContent = String(count);
     render();
-    window.AsmauSpeech.speak(String(count));
+    window.AsmauNarration.say(GAME, "count-" + count, NUMBER_WORDS[count], { lang: "en" });
     if (count === 5) {
       tapBtn.hidden = true;
       celebrate.hidden = false;
-      window.AsmauSpeech.speak("Mashallah! Five!");
+      window.AsmauNarration.say(GAME, "mashallah", "Mashallah! Five!", { lang: "en" });
     }
   });
 

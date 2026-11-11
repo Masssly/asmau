@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Record Your Voice — Asmau</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Mada:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../shared/style.css">
+<style>
+  body { background: #0c1530; min-height: 100%; }
+  .top { display: flex; align-items: center; gap: 10px; margin-bottom: 14px; }
+  .top h1 { font-family: var(--font-display); font-size: 20px; margin: 0; }
+
+  .intro { margin-bottom: 18px; }
+  .intro p { margin: 0 0 10px; color: var(--muted); font-size: 14px; line-height: 1.55; }
+  .intro p:last-child { margin-bottom: 0; }
+  .intro strong { color: var(--cream); }
+
+  select {
+    font-family: var(--font-body); font-size: 16px; padding: 10px 14px; border-radius: 12px;
+    border: 1px solid var(--card-line); background: var(--card); color: var(--cream); width: 100%;
+    margin-bottom: 18px;
+  }
+
+  .mic-state { font-size: 13px; color: var(--muted); margin-bottom: 14px; }
+  .mic-state.ok { color: var(--teal); }
+  .mic-state.err { color: #e98a8a; }
+
+  .row {
+    display: flex; flex-direction: column; gap: 10px; margin-bottom: 14px;
+  }
+  .row .meta { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; }
+  .row .text { font-size: 16px; }
+  .row .text[dir="rtl"] { font-size: 20px; }
+  .row .id { font-size: 11px; color: var(--muted); font-family: monospace; }
+  .row .status { font-size: 12px; color: var(--muted); }
+  .row .status.has-clip { color: var(--teal); }
+  .row .controls { display: flex; flex-wrap: wrap; gap: 8px; }
+
+  .mini-btn {
+    font-family: var(--font-display); font-weight: 700; font-size: 13px; border: none; border-radius: 999px;
+    padding: 8px 14px; cursor: pointer; background: var(--card-line); color: var(--cream);
+  }
+  .mini-btn:disabled { opacity: .4; cursor: default; }
+  .mini-btn.record { background: #c9544f; color: #fff; }
+  .mini-btn.record.recording { background: #e98a8a; color: #3a0d0d; }
+  .mini-btn.download { background: var(--gold); color: #26190a; }
+  .mini-btn.delete { background: transparent; border: 1px solid var(--card-line); }
+
+  .empty { color: var(--muted); text-align: center; padding: 24px 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <a class="btn-back" href="../../index.html">← Asmau</a>
+    <h1>Record Your Voice</h1>
+  </div>
+
+  <div class="card intro">
+    <p>
+      Every game narrates its lines with the device's built-in voice, or a
+      plain open-source placeholder, by default. <strong>Your own recorded
+      voice always takes priority</strong> on whichever device you record it
+      on — no code changes needed.
+    </p>
+    <p>
+      Recordings you make here are saved <strong>only in this browser, on
+      this device</strong> — nothing is uploaded anywhere automatically.
+      Press <strong>Download</strong> on a clip and add the file to the
+      game's <code>assets/audio/</code> folder in the repo (see the game's
+      <code>narration.json</code> for the exact filename) if you want that
+      recording to play for everyone who opens the game, not just here.
+      Think before committing: once pushed, it's part of a public page.
+    </p>
+  </div>
+
+  <select id="gameSelect"></select>
+  <p class="mic-state" id="micState">Microphone not requested yet — press Record on any line below to allow it.</p>
+
+  <div id="rows"></div>
+</div>
+
+<script src="../../shared/narration.js"></script>
+<script>
+(function () {
+  "use strict";
+
+  var gameSelect = document.getElementById("gameSelect");
+  var rowsBox = document.getElementById("rows");
+  var micState = document.getElementById("micState");
+
+  var micStreamPromise = null;
+  var activeRecorder = null;
+
+  function getMicStream() {
+    if (!micStreamPromise) {
+      micStreamPromise = navigator.mediaDevices.getUserMedia({ audio: true }).then(function (stream) {
+        micState.textContent = "Microphone ready.";
+        micState.className = "mic-state ok";
+        return stream;
+      }).catch(function (err) {
+        micState.textContent = "Couldn't access the microphone (" + err.name + "). Check your browser's site permissions.";
+        micState.className = "mic-state err";
+        micStreamPromise = null;
+        throw err;
+      });
+    }
+    return micStreamPromise;
+  }
+
+  function pickMimeType() {
+    var candidates = ["audio/webm;codecs=opus", "audio/webm", "audio/ogg;codecs=opus", "audio/mp4"];
+    for (var i = 0; i < candidates.length; i++) {
+      if (window.MediaRecorder && MediaRecorder.isTypeSupported(candidates[i])) return candidates[i];
+    }
+    return "";
+  }
+
+  function loadGames() {
+    return fetch("../../manifest.json").then(function (r) { return r.json(); }).then(function (m) { return m.games || []; });
+  }
+
+  function loadNarration(slug) {
+    return fetch("../../games/" + slug + "/narration.json").then(function (r) {
+      if (!r.ok) throw new Error("no narration.json");
+      return r.json();
+    }).catch(function () { return []; });
+  }
+
+  function renderRow(slug, item) {
+    var row = document.createElement("div");
+    row.className = "card row";
+
+    var meta = document.createElement("div");
+    meta.className = "meta";
+    var text = document.createElement("span");
+    text.className = "text";
+    text.textContent = item.text;
+    if (item.lang === "ar") text.setAttribute("dir", "rtl");
+    var id = document.createElement("span");
+    id.className = "id";
+    id.textContent = item.id + (item.lang === "ar" ? " · will NOT get a synthesized placeholder" : "");
+    meta.appendChild(text);
+    meta.appendChild(id);
+
+    var status = document.createElement("div");
+    status.className = "status";
+
+    var controls = document.createElement("div");
+    controls.className = "controls";
+
+    var playBtn = document.createElement("button");
+    playBtn.className = "mini-btn";
+    playBtn.textContent = "▶ Play current";
+
+    var recordBtn = document.createElement("button");
+    recordBtn.className = "mini-btn record";
+    recordBtn.textContent = "● Record";
+
+    var downloadBtn = document.createElement("button");
+    downloadBtn.className = "mini-btn download";
+    downloadBtn.textContent = "⬇ Download";
+    downloadBtn.disabled = true;
+
+    var deleteBtn = document.createElement("button");
+    deleteBtn.className = "mini-btn delete";
+    deleteBtn.textContent = "✕ Remove my recording";
+    deleteBtn.disabled = true;
+
+    function refreshStatus() {
+      window.AsmauNarration.getRecordedClip(slug, item.id).then(function (blob) {
+        if (blob) {
+          status.textContent = "Recorded on this device";
+          status.className = "status has-clip";
+          downloadBtn.disabled = false;
+          deleteBtn.disabled = false;
+        } else {
+          status.textContent = "Using the shared default (placeholder or device voice)";
+          status.className = "status";
+          downloadBtn.disabled = true;
+          deleteBtn.disabled = true;
+        }
+      });
+    }
+
+    playBtn.addEventListener("click", function () {
+      window.AsmauNarration.say(slug, item.id, item.text, { lang: item.lang, audioBase: "../../games/" + slug + "/assets/audio/" });
+    });
+
+    recordBtn.addEventListener("click", function () {
+      if (recordBtn.classList.contains("recording")) {
+        if (activeRecorder && activeRecorder.state !== "inactive") activeRecorder.stop();
+        return;
+      }
+      getMicStream().then(function (stream) {
+        var mimeType = pickMimeType();
+        var recorder = new MediaRecorder(stream, mimeType ? { mimeType: mimeType } : undefined);
+        var chunks = [];
+        recorder.ondataavailable = function (e) { if (e.data.size > 0) chunks.push(e.data); };
+        recorder.onstop = function () {
+          recordBtn.classList.remove("recording");
+          recordBtn.textContent = "● Record";
+          activeRecorder = null;
+          var blob = new Blob(chunks, { type: mimeType || "audio/webm" });
+          window.AsmauNarration.saveRecordedClip(slug, item.id, blob).then(refreshStatus);
+        };
+        activeRecorder = recorder;
+        chunks = [];
+        recorder.start();
+        recordBtn.classList.add("recording");
+        recordBtn.textContent = "■ Stop";
+      }).catch(function () { /* mic error already shown in micState */ });
+    });
+
+    downloadBtn.addEventListener("click", function () {
+      window.AsmauNarration.getRecordedClip(slug, item.id).then(function (blob) {
+        if (!blob) return;
+        var ext = (blob.type.indexOf("ogg") >= 0) ? "ogg" : (blob.type.indexOf("mp4") >= 0 ? "m4a" : "webm");
+        var url = URL.createObjectURL(blob);
+        var a = document.createElement("a");
+        a.href = url;
+        a.download = item.id + "." + ext;
+        document.body.appendChild(a);
+        a.click();
+        a.remove();
+        setTimeout(function () { URL.revokeObjectURL(url); }, 2000);
+      });
+    });
+
+    deleteBtn.addEventListener("click", function () {
+      window.AsmauNarration.deleteRecordedClip(slug, item.id).then(refreshStatus);
+    });
+
+    controls.appendChild(playBtn);
+    controls.appendChild(recordBtn);
+    controls.appendChild(downloadBtn);
+    controls.appendChild(deleteBtn);
+
+    row.appendChild(meta);
+    row.appendChild(status);
+    row.appendChild(controls);
+
+    refreshStatus();
+    return row;
+  }
+
+  function renderGame(slug) {
+    rowsBox.innerHTML = "";
+    loadNarration(slug).then(function (items) {
+      if (!items.length) {
+        rowsBox.innerHTML = '<p class="empty">This game has no narration.json yet.</p>';
+        return;
+      }
+      items.forEach(function (item) {
+        rowsBox.appendChild(renderRow(slug, item));
+      });
+    });
+  }
+
+  loadGames().then(function (slugs) {
+    if (!slugs.length) {
+      gameSelect.innerHTML = '<option>No games found</option>';
+      rowsBox.innerHTML = '<p class="empty">No games in manifest.json.</p>';
+      return;
+    }
+    slugs.forEach(function (slug) {
+      var opt = document.createElement("option");
+      opt.value = slug;
+      opt.textContent = slug;
+      gameSelect.appendChild(opt);
+    });
+    gameSelect.addEventListener("change", function () { renderGame(gameSelect.value); });
+    renderGame(slugs[0]);
+  });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+[
+  { "id": "moon-en",   "text": "Moon",         "lang": "en" },
+  { "id": "moon-ar",   "text": "قَمَر",         "lang": "ar" },
+  { "id": "star-en",   "text": "Star",         "lang": "en" },
+  { "id": "star-ar",   "text": "نَجْمَة",       "lang": "ar" },
+  { "id": "mosque-en", "text": "Mosque",       "lang": "en" },
+  { "id": "mosque-ar", "text": "مَسْجِد",       "lang": "ar" },
+  { "id": "kaaba-en",  "text": "Kaaba",        "lang": "en" },
+  { "id": "kaaba-ar",  "text": "الْكَعْبَة",     "lang": "ar" },
+  { "id": "beads-en",  "text": "Prayer beads", "lang": "en" },
+  { "id": "beads-ar",  "text": "مِسْبَحَة",      "lang": "ar" },
+  { "id": "lamp-en",   "text": "Lamp",         "lang": "en" },
+  { "id": "lamp-ar",   "text": "فَانُوس",       "lang": "ar" }
+]

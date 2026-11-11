@@ -32,7 +32,7 @@ asmau/
 ```
 
 **The rule that matters**: a game only touches its own folder. Editing
-`games/yusuf-and-the-well/` never risks breaking `games/tap-and-say/`, and
+`games/yusuf/` never risks breaking `games/tap-and-say/`, and
 neither ever needs changes to `index.html` at the root — that page just
 reads `manifest.json` and each game's `game.json`.
 
@@ -116,4 +116,4 @@ are public: it's your voice, or your child's, on a page anyone can open.
 |---|---|---|
 | Tap & Say | 1.5–4 | — |
 | Count the Crescents | 2–5 | — |
-| Yusuf and the Well | 4–8 | Surah Yusuf, 12:8–20 |
+| Yusuf | 4–8 | Surah Yusuf, 12:8–20 |

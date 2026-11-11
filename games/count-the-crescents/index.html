@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Count the Crescents — Asmau</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Mada:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../shared/style.css">
+<style>
+  body { background: radial-gradient(circle at 50% -10%, #1c2d5e, #0c1530 60%); min-height: 100%; text-align: center; }
+  .top { display: flex; align-items: center; gap: 10px; margin-bottom: 6px; }
+  .top h1 { font-family: var(--font-display); font-size: 20px; margin: 0; flex: 1; text-align: center; padding-right: 64px; }
+  .row { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-top: 18px; min-height: 90px; align-items: center; }
+  .slot { font-size: 46px; opacity: .18; transition: opacity .2s; }
+  .slot.lit { opacity: 1; animation: pop .4s ease; }
+  @keyframes pop { 0% { transform: scale(.4); } 60% { transform: scale(1.2); } 100% { transform: scale(1); } }
+  .number { font-family: var(--font-display); font-size: 72px; color: var(--teal); margin: 14px 0 4px; font-variant-numeric: tabular-nums; }
+  .celebrate { margin-top: 20px; }
+  .celebrate .burst { font-size: 54px; display: inline-block; animation: burst 1s ease; }
+  @keyframes burst { 0% { transform: scale(.3) rotate(0deg); opacity: 0; } 50% { transform: scale(1.3) rotate(10deg); opacity: 1; } 100% { transform: scale(1) rotate(0deg); } }
+  .celebrate p { font-family: var(--font-display); color: var(--gold); font-size: 22px; margin: 6px 0 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <a class="btn-back" href="../../index.html">← Asmau</a>
+    <h1>Count the Crescents</h1>
+  </div>
+
+  <div class="row" id="row"></div>
+  <div class="number" id="number">0</div>
+  <button class="btn btn-teal" id="tapBtn">Tap a moon 🌙</button>
+  <div class="celebrate" id="celebrate" hidden>
+    <span class="burst" aria-hidden="true">✨</span>
+    <p>Mashallah! You counted to five!</p>
+  </div>
+</div>
+
+<script src="../../shared/speech.js"></script>
+<script>
+(function () {
+  "use strict";
+  var count = 0;
+  var row = document.getElementById("row");
+  var number = document.getElementById("number");
+  var tapBtn = document.getElementById("tapBtn");
+  var celebrate = document.getElementById("celebrate");
+
+  function render() {
+    row.innerHTML = "";
+    for (var i = 1; i <= 5; i++) {
+      var span = document.createElement("span");
+      span.className = "slot" + (i <= count ? " lit" : "");
+      span.textContent = "🌙";
+      span.setAttribute("aria-hidden", "true");
+      row.appendChild(span);
+    }
+  }
+
+  tapBtn.addEventListener("click", function () {
+    if (count >= 5) return;
+    count += 1;
+    number.textContent = String(count);
+    render();
+    window.AsmauSpeech.speak(String(count));
+    if (count === 5) {
+      tapBtn.hidden = true;
+      celebrate.hidden = false;
+      window.AsmauSpeech.speak("Mashallah! Five!");
+    }
+  });
+
+  render();
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Yusuf and the Well — Asmau</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Mada:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../shared/style.css">
+<style>
+  :root { --sand-1: #f6ddac; --sand-2: #e3b370; --well: #7a4a2b; --well-deep: #4a2c18; }
+  body {
+    background: linear-gradient(180deg, #bfe3f0 0%, #e9d7ab 42%, var(--sand-1) 100%);
+    min-height: 100%; color: var(--ink);
+  }
+  .top { display: flex; align-items: center; gap: 10px; margin-bottom: 6px; }
+  .top h1 { font-family: var(--font-display); font-size: 19px; margin: 0; flex: 1; text-align: center; padding-right: 64px; color: var(--well-deep); }
+  .btn-back { border-color: rgba(0,0,0,.15); color: var(--well-deep); }
+
+  .stage {
+    background: var(--sand-2); border-radius: var(--radius); padding: 26px 18px;
+    min-height: 320px; display: flex; flex-direction: column; align-items: center;
+    justify-content: center; text-align: center; gap: 14px; position: relative; overflow: hidden;
+  }
+  .scene-icon { font-size: 64px; }
+  .caption { font-family: var(--font-body); font-size: 17px; color: var(--well-deep); max-width: 420px; line-height: 1.4; }
+
+  /* well + rope + bucket for the pull scene */
+  .well-box { display: flex; flex-direction: column; align-items: center; gap: 0; }
+  .well-ring { font-size: 70px; }
+  .rope-track { width: 10px; height: 90px; background: repeating-linear-gradient(0deg, #caa15a 0 6px, #a47c3f 6px 10px); border-radius: 6px; margin: -6px 0 0; }
+  .bucket { font-size: 40px; transition: transform .15s ease; }
+  .glow {
+    width: 28px; height: 28px; border-radius: 50%; margin-top: -10px;
+    background: radial-gradient(circle, #fff6cf 0%, #f0b84b 60%, transparent 100%);
+    opacity: 0; transition: opacity .3s ease; animation: pulse 1.8s ease-in-out infinite;
+  }
+  .glow.show { opacity: 1; }
+  @keyframes pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.15); } }
+
+  .progress { width: 220px; height: 16px; background: #00000022; border-radius: 999px; overflow: hidden; margin-top: 6px; }
+  .progress > div { height: 100%; width: 0%; background: var(--teal); transition: width .2s ease; }
+
+  .nav { display: flex; justify-content: space-between; align-items: center; margin-top: 18px; }
+  .dots { display: flex; gap: 6px; }
+  .dots span { width: 8px; height: 8px; border-radius: 50%; background: #00000022; }
+  .dots span.on { background: var(--well-deep); }
+
+  .source {
+    margin-top: 22px; font-size: 12px; color: #5a4328; text-align: center; line-height: 1.5;
+  }
+  .source a { color: var(--well-deep); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <a class="btn-back" href="../../index.html">← Asmau</a>
+    <h1>Yusuf and the Well</h1>
+  </div>
+
+  <div class="stage" id="stage"></div>
+
+  <div class="nav">
+    <div class="dots" id="dots"></div>
+    <button class="btn btn-gold" id="nextBtn">Next →</button>
+  </div>
+
+  <p class="source">
+    Part 1, retold for children from
+    <a href="https://quran.com/12:8-20" target="_blank" rel="noopener">Surah Yusuf, verses 8–20</a>
+    (translation reference: Abdel Haleem). Yusuf is never drawn — only a soft glow stands in for him.
+    Later chapters of his story will be added once grounded in their own verses.
+  </p>
+</div>
+
+<script src="../../shared/speech.js"></script>
+<script>
+(function () {
+  "use strict";
+
+  var stage = document.getElementById("stage");
+  var nextBtn = document.getElementById("nextBtn");
+  var dotsBox = document.getElementById("dots");
+  var pullCount = 0;
+  var PULL_TARGET = 6;
+
+  var scenes = [
+    {
+      icon: "😔",
+      caption: "Yusuf's brothers felt jealous of him, and they didn't want him around anymore.",
+      speak: "Yusuf's brothers felt jealous of him."
+    },
+    {
+      icon: "🏜️",
+      caption: "So they took him far out into the desert, to a deep, hidden well.",
+      speak: "They took him to a deep well."
+    },
+    {
+      icon: "well",
+      caption: "They lowered Yusuf down into the well. It was dark and lonely — but Allah was watching over him the whole time.",
+      speak: "They lowered Yusuf into the well. Allah was watching over him."
+    },
+    {
+      icon: "🐪",
+      caption: "Days later, a caravan of travellers stopped nearby, looking for water.",
+      speak: "A caravan of travellers stopped nearby."
+    },
+    {
+      icon: "pull",
+      caption: "A kind traveller let his bucket down into the well. Help pull it back up!",
+      speak: "Pull the bucket up!"
+    },
+    {
+      icon: "✨",
+      caption: "\"Good news!\" the traveller shouted. \"There's a boy down here!\" They were amazed to find Yusuf safe.",
+      speak: "Good news! Here is a boy!"
+    },
+    {
+      icon: "🤲",
+      caption: "The travellers took Yusuf with them. His brothers thought they had the last word — but Allah had a plan all along.",
+      speak: "Allah had a plan all along."
+    }
+  ];
+
+  var index = 0;
+
+  function renderDots() {
+    dotsBox.innerHTML = "";
+    scenes.forEach(function (_, i) {
+      var d = document.createElement("span");
+      if (i === index) d.className = "on";
+      dotsBox.appendChild(d);
+    });
+  }
+
+  function renderScene() {
+    var s = scenes[index];
+    pullCount = 0;
+
+    if (s.icon === "well") {
+      stage.innerHTML =
+        '<div class="well-box">' +
+          '<div class="well-ring">🕳️</div>' +
+          '<div class="rope-track"></div>' +
+          '<div class="bucket">🪣</div>' +
+        '</div>' +
+        '<p class="caption">' + s.caption + "</p>";
+    } else if (s.icon === "pull") {
+      stage.innerHTML =
+        '<div class="well-box">' +
+          '<div class="well-ring">🕳️</div>' +
+          '<div class="rope-track" id="rope"></div>' +
+          '<div class="bucket" id="bucket" style="transform: translateY(0px);">🪣</div>' +
+          '<div class="glow" id="glow"></div>' +
+        '</div>' +
+        '<p class="caption">' + s.caption + "</p>" +
+        '<div class="progress"><div id="progressFill"></div></div>' +
+        '<button class="btn btn-teal" id="pullBtn" style="margin-top:4px;">Pull! 🪢</button>';
+      document.getElementById("pullBtn").addEventListener("click", onPull);
+      nextBtn.hidden = true;
+    } else {
+      stage.innerHTML =
+        '<div class="scene-icon" aria-hidden="true">' + s.icon + "</div>" +
+        '<p class="caption">' + s.caption + "</p>";
+    }
+
+    nextBtn.hidden = s.icon === "pull";
+    window.AsmauSpeech.speak(s.speak);
+    renderDots();
+  }
+
+  function onPull() {
+    pullCount += 1;
+    var pct = Math.min(100, Math.round((pullCount / PULL_TARGET) * 100));
+    document.getElementById("progressFill").style.width = pct + "%";
+    var bucket = document.getElementById("bucket");
+    bucket.style.transform = "translateY(-" + Math.min(70, pullCount * 12) + "px)";
+    if (pullCount >= PULL_TARGET) {
+      document.getElementById("glow").classList.add("show");
+      document.getElementById("pullBtn").disabled = true;
+      document.getElementById("pullBtn").textContent = "Found him! 🎉";
+      nextBtn.hidden = false;
+      window.AsmauSpeech.speak("You found him!");
+    }
+  }
+
+  nextBtn.addEventListener("click", function () {
+    if (index < scenes.length - 1) {
+      index += 1;
+      renderScene();
+    } else {
+      index = 0;
+      renderScene();
+    }
+  });
+
+  renderScene();
+})();
+</script>
+</body>
+</html>

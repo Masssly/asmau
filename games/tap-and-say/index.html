@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tap &amp; Say — Asmau</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Mada:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../shared/style.css">
+<style>
+  body { background: radial-gradient(circle at 50% -10%, #1c2d5e, #0c1530 60%); min-height: 100%; }
+  .top { display: flex; align-items: center; gap: 10px; margin-bottom: 6px; }
+  .top h1 { font-family: var(--font-display); font-size: 20px; margin: 0; flex: 1; text-align: center; padding-right: 64px; }
+  .tray { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; margin-top: 16px; }
+  @media (min-width: 560px) { .tray { grid-template-columns: repeat(3, 1fr); } }
+  .tile {
+    background: var(--card); border: 1px solid var(--card-line); border-radius: var(--radius);
+    padding: 18px 8px 14px; display: flex; flex-direction: column; align-items: center; gap: 6px;
+    cursor: pointer; min-height: 120px; justify-content: center;
+  }
+  .tile .e { font-size: 44px; }
+  .tile:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
+  .tile.bounce .e { animation: bounce .55s ease; }
+  @keyframes bounce { 0% { transform: scale(1); } 35% { transform: scale(1.35) rotate(-6deg); } 70% { transform: scale(.95) rotate(4deg); } 100% { transform: scale(1); } }
+  .say-panel {
+    margin-top: 18px; text-align: center; min-height: 92px; display: flex; flex-direction: column;
+    align-items: center; justify-content: center; gap: 4px;
+  }
+  .say-panel .en { font-family: var(--font-display); font-size: 24px; color: var(--gold); }
+  .say-panel .ar { font-size: 26px; direction: rtl; color: var(--cream); }
+  .say-panel .hint { color: var(--muted); font-size: 13px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <a class="btn-back" href="../../index.html">← Asmau</a>
+    <h1>Tap &amp; Say</h1>
+  </div>
+
+  <div class="tray" id="tray"></div>
+
+  <div class="card say-panel" id="panel">
+    <div class="en">Tap something!</div>
+    <div class="ar">🌙 ⭐ 🕌</div>
+    <div class="hint">Say the Arabic word together</div>
+  </div>
+</div>
+
+<script src="../../shared/speech.js"></script>
+<script>
+(function () {
+  "use strict";
+  var ITEMS = [
+    { e: "🌙", en: "Moon",         ar: "قَمَر" },
+    { e: "⭐", en: "Star",         ar: "نَجْمَة" },
+    { e: "🕌", en: "Mosque",       ar: "مَسْجِد" },
+    { e: "🕋", en: "Kaaba",        ar: "الْكَعْبَة" },
+    { e: "📿", en: "Prayer beads", ar: "مِسْبَحَة" },
+    { e: "🪔", en: "Lamp",         ar: "فَانُوس" }
+  ];
+
+  var tray = document.getElementById("tray");
+  var panel = document.getElementById("panel");
+
+  ITEMS.forEach(function (item) {
+    var tile = document.createElement("button");
+    tile.className = "tile";
+    tile.setAttribute("aria-label", item.en + ", " + item.ar);
+    tile.innerHTML = '<span class="e" aria-hidden="true">' + item.e + "</span>";
+    tile.addEventListener("click", function () {
+      tile.classList.remove("bounce");
+      void tile.offsetWidth;
+      tile.classList.add("bounce");
+      panel.innerHTML =
+        '<div class="en">' + item.en + "</div>" +
+        '<div class="ar">' + item.ar + "</div>" +
+        '<div class="hint">Say the Arabic word together</div>';
+      window.AsmauSpeech.speak(item.en);
+    });
+    tray.appendChild(tile);
+  });
+})();
+</script>
+</body>
+</html>

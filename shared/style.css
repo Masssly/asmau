@@ -1,0 +1,90 @@
+/*
+  Asmau house style — shared tokens and components.
+  Games may override any of these variables inside their own <style>
+  to set a different mood (e.g. daytime desert instead of night sky)
+  while keeping the same component shapes and spacing.
+*/
+:root {
+  --ink: #1b1530;
+  --cream: #fdf6e8;
+  --card: #15244a;
+  --card-line: #2d3f74;
+  --gold: #f0b84b;
+  --gold-deep: #c98f2b;
+  --teal: #5fb3a0;
+  --teal-deep: #3c8a79;
+  --muted: #b9c3e6;
+  --radius: 22px;
+  --font-display: 'Baloo 2', ui-rounded, system-ui, sans-serif;
+  --font-body: 'Mada', 'Nunito', system-ui, sans-serif;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; min-height: 100%; }
+body {
+  font-family: var(--font-body);
+  color: var(--cream);
+  -webkit-text-size-adjust: 100%;
+}
+
+.wrap {
+  max-width: 720px;
+  margin-inline: auto;
+  padding: 20px 16px 48px;
+}
+
+.btn {
+  font-family: var(--font-display);
+  font-weight: 700;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 14px 30px;
+}
+.btn:focus-visible { outline: 3px solid var(--cream); outline-offset: 3px; }
+.btn-gold { background: var(--gold); color: #26190a; box-shadow: 0 7px 0 var(--gold-deep); }
+.btn-gold:active { transform: translateY(5px); box-shadow: 0 2px 0 var(--gold-deep); }
+.btn-teal { background: var(--teal); color: #072420; box-shadow: 0 7px 0 var(--teal-deep); }
+.btn-teal:active { transform: translateY(5px); box-shadow: 0 2px 0 var(--teal-deep); }
+
+.btn-back {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 15px;
+  background: transparent;
+  color: var(--cream);
+  border: 1px solid var(--card-line);
+  border-radius: 999px;
+  padding: 8px 16px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--card-line);
+  border-radius: var(--radius);
+  padding: 20px;
+}
+
+.age-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-display);
+  font-size: 13px;
+  font-weight: 700;
+  color: #1b1530;
+  background: var(--gold);
+  border-radius: 999px;
+  padding: 4px 12px;
+  white-space: nowrap;
+}
+
+[hidden] { display: none !important; }
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; }
+}

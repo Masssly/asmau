@@ -1,0 +1,10 @@
+{
+  "slug": "tap-and-say",
+  "title": "Tap & Say",
+  "icon": "🕌",
+  "minAge": 1.5,
+  "maxAge": 4,
+  "tagline": "Tap an object, hear its name, see the Arabic word.",
+  "basedOn": null,
+  "depictionNotes": "No human or animal figures — only everyday objects (moon, star, mosque, Kaaba, prayer beads, lamp)."
+}

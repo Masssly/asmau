@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Asmau — Islamic games for curious kids</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Mada:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shared/style.css">
+<style>
+  body { background: radial-gradient(circle at 50% -10%, #1c2d5e, #0c1530 60%); min-height: 100%; }
+  .stars { position: fixed; inset: 0; pointer-events: none; z-index: 0; overflow: hidden; }
+  .stars span { position: absolute; color: var(--gold); opacity: .5; font-size: 14px; animation: twinkle 3.2s ease-in-out infinite; }
+  @keyframes twinkle { 0%,100% { opacity: .18; transform: scale(.85); } 50% { opacity: .7; transform: scale(1.05); } }
+  .wrap { position: relative; z-index: 1; }
+
+  .hero { text-align: center; padding: 10px 0 22px; }
+  .hero .moon { font-size: 54px; }
+  .hero h1 { font-family: var(--font-display); font-size: clamp(28px, 7vw, 38px); margin: 6px 0 2px; }
+  .hero p { color: var(--muted); margin: 0; font-size: 15px; }
+
+  .grid { display: grid; grid-template-columns: 1fr; gap: 16px; }
+  @media (min-width: 560px) { .grid { grid-template-columns: 1fr 1fr; } }
+
+  .tile {
+    display: flex; flex-direction: column; gap: 10px; text-decoration: none; color: var(--cream);
+    padding: 24px 18px; text-align: center; align-items: center;
+  }
+  .tile:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
+  .tile .icon { font-size: 50px; }
+  .tile h2 { font-family: var(--font-display); font-size: 19px; margin: 0; }
+  .tile p.tagline { color: var(--muted); font-size: 13px; margin: 0; }
+
+  .empty { text-align: center; color: var(--muted); padding: 30px 0; }
+
+  footer { margin-top: 30px; color: var(--muted); font-size: 12px; text-align: center; line-height: 1.6; }
+</style>
+</head>
+<body>
+<div class="stars" aria-hidden="true" id="stars"></div>
+<div class="wrap">
+  <div class="hero">
+    <div class="moon" aria-hidden="true">🌙</div>
+    <h1>Asmau</h1>
+    <p>Islamic games for curious kids</p>
+  </div>
+
+  <div class="grid" id="grid">
+    <p class="empty">Loading games…</p>
+  </div>
+
+  <footer>
+    Each game shows its own age range. Open an existing game's folder and <code>game.json</code>
+    to see the convention for adding a new one — the landing page here never needs to change.
+  </footer>
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  function buildStars() {
+    var box = document.getElementById("stars");
+    var glyphs = ["★", "✦", "✧"];
+    for (var i = 0; i < 18; i++) {
+      var s = document.createElement("span");
+      s.textContent = glyphs[i % glyphs.length];
+      s.style.left = (Math.random() * 100) + "%";
+      s.style.top = (Math.random() * 70) + "%";
+      s.style.animationDelay = (Math.random() * 3) + "s";
+      box.appendChild(s);
+    }
+  }
+
+  function ageLabel(g) {
+    if (g.minAge != null && g.maxAge != null) return "Ages " + g.minAge + "–" + g.maxAge;
+    if (g.minAge != null) return "Ages " + g.minAge + "+";
+    return "All ages";
+  }
+
+  function renderGames(games) {
+    var grid = document.getElementById("grid");
+    grid.innerHTML = "";
+    if (!games.length) {
+      grid.innerHTML = '<p class="empty">No games yet — check back soon.</p>';
+      return;
+    }
+    games.forEach(function (g) {
+      var a = document.createElement("a");
+      a.className = "card tile";
+      a.href = "games/" + g.slug + "/index.html";
+      a.innerHTML =
+        '<div class="icon" aria-hidden="true">' + (g.icon || "🎲") + "</div>" +
+        "<h2>" + g.title + "</h2>" +
+        '<p class="tagline">' + g.tagline + "</p>" +
+        '<span class="age-badge">' + ageLabel(g) + "</span>";
+      grid.appendChild(a);
+    });
+  }
+
+  function loadGames() {
+    fetch("manifest.json")
+      .then(function (r) { return r.json(); })
+      .then(function (manifest) {
+        var slugs = manifest.games || [];
+        return Promise.all(
+          slugs.map(function (slug) {
+            return fetch("games/" + slug + "/game.json")
+              .then(function (r) { return r.json(); })
+              .catch(function () { return null; });
+          })
+        );
+      })
+      .then(function (games) {
+        renderGames(games.filter(Boolean));
+      })
+      .catch(function () {
+        document.getElementById("grid").innerHTML =
+          '<p class="empty">Couldn\'t load the games list. If you\'re running this from a local file:// path, serve it over http instead (fetch of manifest.json needs a real origin).</p>';
+      });
+  }
+
+  buildStars();
+  loadGames();
+})();
+</script>
+</body>
+</html>

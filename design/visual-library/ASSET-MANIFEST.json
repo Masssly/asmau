@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0.0",
   "library": "Asmau African Muslim Visual Library",
-  "status": "first-pair-drafts",
+  "status": "first-pair-owner-approved",
   "style": "stylised-realism",
   "culturalReferenceFamilies": [
     "Hausa",
@@ -23,7 +23,7 @@
       "id": "char-child-001",
       "name": "Child character base",
       "type": "character",
-      "status": "ai-generated-draft-awaiting-review",
+      "status": "owner-approved-look",
       "deliverables": [
         "front-view",
         "side-view",
@@ -40,13 +40,15 @@
       "provenance": "PROVENANCE.md",
       "culturalReview": "pending",
       "licenceReview": "pending",
-      "usageRestriction": "AI-generated; owner accepts AI art as final (2026-11-12). Do not ship until the generator's commercial-use terms are recorded in PROVENANCE.md. Not for use as a prophet."
+      "usageRestriction": "AI-generated; owner accepts AI art as final (2026-11-12). Do not ship until the generator's commercial-use terms are recorded in PROVENANCE.md. Not for use as a prophet.",
+      "approvedReference": "characters/char-child-001/reference/turnaround-v2b-ai-draft.jpg",
+      "approval": "Owner visual approval 2026-11-12 (\"Perfect now\"). Cultural review and licence/terms check still pending."
     },
     {
       "id": "char-adult-001",
       "name": "Adult community character base",
       "type": "character",
-      "status": "ai-generated-draft-awaiting-review",
+      "status": "owner-approved-look",
       "deliverables": [
         "front-view",
         "side-view",
@@ -62,7 +64,9 @@
       "provenance": "PROVENANCE.md",
       "culturalReview": "pending",
       "licenceReview": "pending",
-      "usageRestriction": "AI-generated; owner accepts AI art as final (2026-11-12). Do not ship until the generator's commercial-use terms are recorded in PROVENANCE.md. Not for use as a prophet."
+      "usageRestriction": "AI-generated; owner accepts AI art as final (2026-11-12). Do not ship until the generator's commercial-use terms are recorded in PROVENANCE.md. Not for use as a prophet.",
+      "approvedReference": "characters/char-adult-001/reference/turnaround-v2-ai-draft.jpg",
+      "approval": "Owner visual approval 2026-11-12 (\"Perfect now\"). Cultural review and licence/terms check still pending."
     },
     {
       "id": "char-scholar-001",

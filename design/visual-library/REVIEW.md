@@ -3,6 +3,9 @@
 Reviewer: Claude, working on branch `design/african-muslim-visual-library`.
 Scope: this folder only. No game or application code was touched.
 
+> **2026-11-12: the owner approved the look of adult v2 and child v2b.** This is visual approval only. Cultural
+> review by a named person and the generator-terms check are still open, so nothing is marked fully approved.
+
 ## 1. Verdict on the foundation package
 
 The written direction (stylised realism, Hausa-Fulani as a main reference, restrained palette, no script on

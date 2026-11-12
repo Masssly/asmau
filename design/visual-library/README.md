@@ -1,6 +1,6 @@
 # Asmau African Muslim Visual Library
 
-**Status:** Visual direction approved; first pair (one adult, one child) at AI-generated reference-draft stage, awaiting owner review. See `REVIEW.md`.  
+**Status:** Visual direction approved; first pair (one adult, one child) look approved by the owner; cultural review and terms check pending. See `REVIEW.md`.  
 **Purpose:** A self-contained, reusable art-direction package for Asmau games.  
 **Current branch:** `design/african-muslim-visual-library`
 

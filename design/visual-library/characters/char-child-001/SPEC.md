@@ -1,6 +1,6 @@
 # char-child-001: child girl
 
-Status: `ai-generated-draft`, awaiting owner review. Outfit is an **unverified design proposal**.
+Status: **owner-approved look** (2026-11-12, `reference/turnaround-v2b-ai-draft.jpg`); cultural review and generator-terms check pending. Outfit is an **unverified design proposal**.
 Not for use as any prophet or companion of a prophet.
 
 - Age: about 8. Head about 1/5.5 of height. Round cheeks, bright eyes, warm gentle smile.

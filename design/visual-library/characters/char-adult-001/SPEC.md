@@ -1,6 +1,6 @@
 # char-adult-001: adult community man
 
-Status: `ai-generated-draft`, awaiting owner review. Not for use as any prophet or companion of a prophet.
+Status: **owner-approved look** (2026-11-12, `reference/turnaround-v2-ai-draft.jpg`); cultural review and generator-terms check pending. Not for use as any prophet or companion of a prophet.
 
 - Age and build: 40s, average height, relaxed, dignified, kind. Head about 1/7.5 of height (stylised-real).
 - Culture: Hausa-Fulani inspiration, Sokoto-era, see `../../research/HAUSA-FULANI-WARDROBE.md`.

@@ -15,7 +15,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(os.path.dirname(HERE))
 GAME = os.path.join(ROOT, "games", "yusuf")
 sys.path.insert(0, HERE)
-from shots import STYLE, PORTRAIT, END, WHO, SHOTS  # noqa: E402
+from shots import STYLE, PORTRAIT, BACKDROP, END, WHO, SHOTS  # noqa: E402
 
 SIZE = {"p-": 256, "bg-": 1024, "": 1024}   # longest side in pixels
 QUALITY = {"p-": 80, "bg-": 68, "": 72}
@@ -23,7 +23,7 @@ QUALITY = {"p-": 80, "bg-": 68, "": 72}
 
 def prompt(key):
     scene = SHOTS[key][1]
-    lead = STYLE
+    lead = BACKDROP if key.startswith("bg-") else STYLE
     if scene.startswith("PORTRAIT:"):
         lead, scene = PORTRAIT, scene[len("PORTRAIT:"):]
         scene = scene[0].upper() + scene[1:]

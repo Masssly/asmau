@@ -13,6 +13,8 @@ STYLE = ("Polished stylised 3D animated family-film still, warm cinematic lighti
          "main figures in the middle. Everyone is Black African with deep dark brown skin and modest long clothing. ")
 PORTRAIT = ("Head-and-shoulders portrait, front view, friendly, polished stylised 3D animated family-film look, soft studio "
             "lighting, plain warm cream background, deep dark brown skin. ")
+BACKDROP = ("Polished stylised 3D animated family-film background painting, warm cinematic lighting, rich detail, square, "
+            "filling the whole frame edge to edge with no border. A place, with no main characters and nobody in the foreground. ")
 END = " No text, no writing, no letters, no logos, no watermark."
 
 WHO = {
@@ -35,7 +37,7 @@ WHO = {
 SHOTS = {
     # ---- chapter 1
     "c1-a": ("Yusuf asleep; through the window, eleven stars, the sun and the moon.",
-             "Night. Inside a simple mud-brick room {YB} sleeps peacefully on a woven mat under a blanket. Through a wide window a deep-blue sky glows with eleven bright stars, a golden sun and a crescent moon together. A clay oil lamp glows; outside, goats rest by a tent."),
+             "Night. Alone in a simple mud-brick room, {YB} sleeps peacefully on a woven mat under a blanket; nobody else is in the room. Through a wide window a deep-blue sky glows with eleven bright stars, a golden sun and a crescent moon together. A clay oil lamp glows; outside, goats rest by a tent."),
     "c1-b": ("Yusuf tells his father Yaqub about the dream.",
              "Dusk in {HOME}. {YB} talks excitedly to {YQ}, who sits on a mat and gently raises one hand in caution. Behind them women carry water jars, goats stand in a pen, a cooking fire smokes, children play."),
     # ---- chapter 2
@@ -53,7 +55,7 @@ SHOTS = {
              "Night in {HOME}. {YQ} sits alone on a mat outside the tent with hands raised in prayer, face calm and patient, looking up at a starry sky with a crescent moon. A lamp glows; the camp sleeps behind him, goats resting."),
     # ---- chapter 3
     "c3-a": ("A caravan rests by the well; a man lowers his bucket.",
-             "Bright day in dry grassland. A trade caravan of camels and donkeys loaded with goods rests beside an old round stone well; travellers unload, drink and tend animals. {TR} lowers a wooden bucket on a rope into the well."),
+             "Bright day in dry grassland. A trade caravan of camels and donkeys loaded with goods rests beside an old round stone well; travellers unload, drink and tend animals. {TR} lowers a wooden bucket on a rope into the well. No wagons or carts."),
     "c3-b": ("The man lifts his arms in joy: a boy has come up with the bucket.",
              "Bright day beside an old round stone well. {TR} lifts his arms in joyful surprise. {YB} sits on the edge of the well beside a wooden bucket on a rope, safe and smiling shyly. Caravan travellers gather round amazed; loaded camels and donkeys rest behind."),
     # ---- chapter 4
@@ -71,7 +73,7 @@ SHOTS = {
     "c5-b2": ("A wise man of the house says: look at the shirt.",
               "In a hall with painted columns {HE} raises one finger, giving advice to {MA}, who listens. {YY} waits patiently beside them, facing us. Servants watch from a doorway."),
     "c5-b3": ("They look: the shirt is torn at the back.",
-              "In a hall with painted columns {YY} has turned so that we see the long tear down the back of his teal tunic. {MA} and {HE} look at the tear and nod with understanding. Servants watch, relieved."),
+              "In a hall with painted columns {YY} has turned so that we see the back of his teal tunic ripped open in a long split, showing a cream under-shirt beneath. {MA} and {HE} look at the tear and nod with understanding. Servants watch, relieved."),
     "c5-b4": ("Yusuf prays on a balcony above the city.",
               "Dusk. {YY} stands alone on a balcony with hands raised in prayer, eyes closed, calm. Below him lies {EGY}: people in the streets, market stalls closing, boats on the river, lamps being lit."),
     "c5-c": ("Yusuf sits calmly in a prison cell.",
@@ -87,7 +89,7 @@ SHOTS = {
              "A stone prison. One young man in a grey-brown tunic walks out through the open cell door into bright daylight, waving goodbye happily. {YY} remains seated inside, patient, watching him go. A guard holds the door."),
     # ---- chapter 7
     "c7-a": ("The king dreams of seven fat cows and seven thin ones.",
-             "Night. {KG} sleeps in a grand bed in a palace room. Above him a glowing dream cloud shows seven fat brown cows and seven thin bony cows beside a river, with seven green ears of grain and seven dry withered ears."),
+             "Night. {KG} sleeps in a grand bed in a palace room. Above him a glowing dream cloud shows seven fat brown cows and seven thin bony cows beside a river, with seven green ears of wheat and seven dry withered ears of wheat."),
     "c7-b": ("Nobody can explain the dream; a servant remembers Yusuf.",
              "In {HALL}, {KG} sits on the throne looking worried while puzzled advisors in robes shrug and whisper. A servant in a grey-brown tunic steps forward with one hand raised, having just remembered something. Courtiers watch."),
     "c7-c": ("Rain falls on green fields.",
@@ -116,7 +118,7 @@ SHOTS = {
     "c10-b": ("The king's golden cup is placed in a sack.",
               "Night in a grain yard lit by lamps. A servant slips a shining golden cup into a grain sack loaded on a donkey. {YM} stands nearby watching calmly. Other loaded donkeys, sleeping travellers."),
     "c10-c": ("The cup is found in the youngest brother's sack.",
-              "A grain yard in daylight. A guard lifts a shining golden cup out of an open grain sack beside {BN}, who looks surprised. {BR} gasp with hands on heads. {YM} stands calm."),
+              "A grain yard in daylight. A guard lifts a shining golden cup out of an open grain sack beside {BN}, who has deep dark brown skin and short black hair and looks surprised. {BR} gasp with hands on heads. {YM} stands calm."),
     # ---- chapter 11
     "c11-a": ("Yaqub weeps; his eyes have turned white.",
               "A grey overcast day, muted colours, in {HOME}. {YQ} sits alone outside the tent weeping quietly, his eyes pale and clouded. The compound is quiet; a few goats, a woman grinding grain far off."),
@@ -146,23 +148,23 @@ SHOTS = {
               "Night. {YM} stands alone on a rooftop with hands raised in prayer, calm and grateful. Below, the lamps of a mud-brick city and a wide river; above, a crescent moon and stars."),
     # ---- backdrops for activities (no main figures; small, far-off life only)
     "bg-night": ("A deep blue night sky over the sleeping camp.",
-                 "Deep blue night sky, soft and mostly empty, a few faint stars. Along the bottom edge only, the dark outline of tents, acacia trees and resting goats. No people."),
+                 "A deep blue night sky, soft and mostly empty, with a few faint stars. Along the bottom edge only, the dark outline of tents, acacia trees and resting goats."),
     "bg-well": ("Inside the old stone well.",
-                "Inside a deep old stone well seen from the side: curved wet stone-block walls, darkness below, a round opening of bright sky at the very top. No people."),
+                "Inside a deep old stone well: curved wet stone-block walls, darkness below, a round opening of bright sky at the very top."),
     "bg-desert": ("A sandy path across the desert.",
-                  "Wide desert landscape: golden dunes, a sandy path running across the lower middle from left to right, distant acacia trees and rocky hills, far-off camels and birds, blue sky."),
+                  "A wide empty desert landscape: golden dunes, a sandy path running across the lower middle from left to right, distant acacia trees and rocky hills, a tiny far-off camel caravan, birds, blue sky."),
     "bg-market": ("A market table in Egypt.",
-                  "A busy market in {EGY}, slightly out of focus: traders, shoppers, stalls of grain, cloth and pots, donkeys. In front, in focus, an empty wooden table top."),
+                  "A busy market in {EGY}, slightly out of focus and further back: traders, shoppers, stalls of grain, cloth and pots, donkeys. In front, in focus, an empty wooden table top."),
     "bg-prison": ("The stone prison cell.",
-                  "{CELL}, empty of people: straw mats, a clay water jar, rough stone walls, moonlight through the bars."),
+                  "{CELL}: straw mats, a clay water jar, rough stone walls, moonlight through the bars."),
     "bg-palace": ("The king's throne hall.",
-                  "{HALL}, wide view: an empty throne at the far end, a patterned floor, courtiers and servants walking far in the background."),
+                  "{HALL}, wide view, empty in the middle: an empty throne at the far end and a patterned floor. Only a few tiny courtiers far away beside the columns."),
     "bg-field": ("Fields of grain by the river.",
-                 "Golden-green fields of ripening grain beside a wide river under a blue sky. Far off, farmers harvest with baskets, oxen pull a cart, date palms and round mud-brick granaries."),
+                 "Golden-green fields of ripening wheat beside a wide river under a blue sky. Only tiny far-off farmers with baskets and oxen pulling a cart; date palms and round mud-brick granaries in the distance."),
     "bg-egypt": ("The grain yard in Egypt.",
-                 "A grain yard in {EGY}: heaps of golden grain, scales and baskets, loaded donkeys waiting, workers measuring grain in the background. Open sandy ground in front."),
+                 "A grain yard in {EGY}: heaps of golden grain, scales, baskets and sacks, a few donkeys. Only small far-off workers in the background. Open sandy ground in front."),
     "bg-wall": ("The city wall and its gates.",
-                "The long sun-baked mud-brick wall of {EGY} seen straight on, with travellers, traders and donkeys passing along the road in front of it. Date palms, blue sky."),
+                "The long sun-baked mud-brick wall of {EGY} seen straight on across the whole picture, with small far-off travellers and donkeys on the road. Date palms, blue sky."),
     # ---- round portraits for activities
     "p-yusuf": ("Yusuf as a boy.", "PORTRAIT:{YB}, gentle smile."),
     "p-yusufMan": ("Yusuf as a man.", "PORTRAIT:{YM}, warm smile."),

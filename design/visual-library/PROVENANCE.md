@@ -24,7 +24,11 @@ Follows the record fields required by `LICENSING.md`. One entry per image kept i
   countries, so Asmau may not be able to exclude others from copying it. Repo and licence notes must say
   "AI-generated" for every such asset.
 - Until item (1) is recorded, keep these images out of the shipped site; reference and review use only.
-- Terms check result: _not yet recorded_.
+- Terms check result (2026-11-12, read at ai.google.dev/gemini-api/terms, section "Use of Generated Content"): Google
+  says it will not claim ownership over generated content, and that it may generate the same or similar content
+  for others. Not checked: Composio's own terms (the connector the images came through). Copyright in
+  AI output remains uncertain by country. On this basis the owner's decision to use AI art stands, and the
+  Yusuf game on `main` now ships AI-generated pictures made the same way (see the root README, "Pictures").
 - Status for all entries: `ai-generated-draft`, cultural review `pending`, licence review `pending`.
 
 ## Entries

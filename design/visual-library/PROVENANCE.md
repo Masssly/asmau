@@ -89,3 +89,34 @@ The connector takes text only (no reference image), so a sheet cannot be edited;
 - v2a: plain, small diamond grid, profile faces left. v2b: richer cuff and hem trim, profile faces right as
   specified, current candidate. Both: no script or pseudo-script seen. Faults: v2b scarf is a smooth hood
   with no visible pinning; wrapper has a more saturated violet-blue than the style palette's indigo.
+
+## Expression sheets (2026-11-12)
+
+The connector cannot take the approved turnaround as a reference image, so these sheets were generated from
+text descriptions of the approved characters. **They show similar people, not provably the same faces as the
+approved turnarounds.** Owner must compare faces side by side before approving.
+
+Two takes were generated for each character; one of each was kept, the other discarded (not stored).
+
+### char-child-001 / expressions-v1-ai-draft.jpg
+- Prompt: "Character expression sheet: six head-and-shoulders portraits of the same West African Muslim girl
+  about 8 years old, in a 3 by 2 grid, front view, identical face in every panel. Expressions: calm neutral,
+  joyful grin, amazed with open mouth, curious with one eyebrow raised, sad with trembling lip, giggling with
+  squinted eyes. Polished stylised 3D animated family-film look, soft studio lighting, plain warm cream
+  background. Deep dark brown skin, large bright eyes, round cheeks. Cream cotton head scarf worn neatly over
+  the head and shoulders, hair fully covered, teal blouse collar visible. No text, no labels, no writing, no
+  calligraphy, no logos, no watermark."
+- Result: six panels. Neutral, smile, amazed, curious, sad, giggle (hands over mouth). Faults: "curious" and
+  "neutral" are nearly identical; faces look rounder and heavier than the turnaround; teal collar only just
+  visible. No script seen. Discarded take had eight panels and an older-looking face.
+
+### char-adult-001 / expressions-v1-ai-draft.jpg
+- Prompt: "Character expression sheet: six head-and-shoulders portraits of the same West African Muslim man in
+  his 40s, in a 3 by 2 grid, front view, identical face in every panel. Expressions: dignified neutral, gentle
+  smile, astonished, pondering, worried, joyful laughter. ... Deep dark brown skin, neatly trimmed short black
+  beard, kind eyes. White brimmed cap with tonal geometric stitching, white collar and rose-coloured V-neck
+  facing of an indigo-and-white striped robe. No text, no labels, no writing, no calligraphy, no logos, no
+  watermark." (shared style/background wording as the turnaround prompt)
+- Result: eight panels, not six: neutral, smile, astonished, concerned, pondering, two worried, laughter. Cap
+  stitching is a zigzag, geometric. Rose facing is wider than on the approved robe. No script seen.
+  Discarded take showed no white under-collar, which does not match the approved design.

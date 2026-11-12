@@ -27,3 +27,8 @@ Character model sheet, three full-body views of the same West African Muslim man
 
 Modeller needs: the approved sheet, a T-pose or A-pose reference, the strip-weave and embroidery detail as flat
 swatches, a polygon budget for mobile (target under 30k triangles, proposal not a measurement), GLB export.
+
+## Expression sheet
+
+`reference/expressions-v1-ai-draft.jpg`: AI-generated draft, awaiting owner review. Generated from text, so the
+face is similar to but not provably the same as the approved turnaround; compare before approving.

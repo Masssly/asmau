@@ -33,6 +33,7 @@
       ],
       "specPath": "characters/char-child-001/SPEC.md",
       "referenceImages": [
+        "characters/char-child-001/reference/expressions-v1-ai-draft.jpg",
         "characters/char-child-001/reference/turnaround-v1-ai-draft.jpg",
         "characters/char-child-001/reference/turnaround-v2a-ai-draft-plain.jpg",
         "characters/char-child-001/reference/turnaround-v2b-ai-draft.jpg"
@@ -42,7 +43,9 @@
       "licenceReview": "pending",
       "usageRestriction": "AI-generated; owner accepts AI art as final (2026-11-12). Do not ship until the generator's commercial-use terms are recorded in PROVENANCE.md. Not for use as a prophet.",
       "approvedReference": "characters/char-child-001/reference/turnaround-v2b-ai-draft.jpg",
-      "approval": "Owner visual approval 2026-11-12 (\"Perfect now\"). Cultural review and licence/terms check still pending."
+      "approval": "Owner visual approval 2026-11-12 (\"Perfect now\"). Cultural review and licence/terms check still pending.",
+      "expressionSheet": "characters/char-child-001/reference/expressions-v1-ai-draft.jpg",
+      "expressionSheetStatus": "ai-generated-draft-awaiting-owner-review"
     },
     {
       "id": "char-adult-001",
@@ -58,6 +61,7 @@
       ],
       "specPath": "characters/char-adult-001/SPEC.md",
       "referenceImages": [
+        "characters/char-adult-001/reference/expressions-v1-ai-draft.jpg",
         "characters/char-adult-001/reference/turnaround-v1-ai-draft.jpg",
         "characters/char-adult-001/reference/turnaround-v2-ai-draft.jpg"
       ],
@@ -66,7 +70,9 @@
       "licenceReview": "pending",
       "usageRestriction": "AI-generated; owner accepts AI art as final (2026-11-12). Do not ship until the generator's commercial-use terms are recorded in PROVENANCE.md. Not for use as a prophet.",
       "approvedReference": "characters/char-adult-001/reference/turnaround-v2-ai-draft.jpg",
-      "approval": "Owner visual approval 2026-11-12 (\"Perfect now\"). Cultural review and licence/terms check still pending."
+      "approval": "Owner visual approval 2026-11-12 (\"Perfect now\"). Cultural review and licence/terms check still pending.",
+      "expressionSheet": "characters/char-adult-001/reference/expressions-v1-ai-draft.jpg",
+      "expressionSheetStatus": "ai-generated-draft-awaiting-owner-review"
     },
     {
       "id": "char-scholar-001",

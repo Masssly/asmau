@@ -21,3 +21,8 @@ Character model sheet, three full-body views of the same West African Muslim gir
 - [ ] Face is appealing to a 3-8 year old; proportions read as a child, not a small adult.
 - [ ] Outfit labelled as proposal until a source confirms it.
 - [ ] Cultural reviewer named and sign-off recorded in `PROVENANCE.md`.
+
+## Expression sheet
+
+`reference/expressions-v1-ai-draft.jpg`: AI-generated draft, awaiting owner review. Generated from text, so the
+face is similar to but not provably the same as the approved turnaround; compare before approving.

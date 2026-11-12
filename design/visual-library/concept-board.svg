@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+<defs>
+ <linearGradient id="bg" x2="0" y2="1"><stop stop-color="#f8edda"/><stop offset="1" stop-color="#e8cba5"/></linearGradient>
+ <linearGradient id="sun" x2="0" y2="1"><stop stop-color="#efc27b"/><stop offset="1" stop-color="#b85d36"/></linearGradient>
+ <linearGradient id="indigo" x2="0" y2="1"><stop stop-color="#49688b"/><stop offset="1" stop-color="#243f67"/></linearGradient>
+ <style>
+ .h{font:700 27px Georgia,serif;fill:#38271f}.s{font:16px Arial,sans-serif;fill:#49372c}.tag{font:700 15px Arial,sans-serif;fill:#f8edda}.small{font:14px Arial,sans-serif;fill:#49372c}
+ </style>
+</defs>
+<rect width="1600" height="1000" fill="url(#bg)"/>
+<rect x="0" y="0" width="1600" height="132" fill="#263d35"/>
+<path d="M70 98 Q105 20 140 98 M85 78 L140 78 M105 55 L105 108" fill="none" stroke="#d7ad58" stroke-width="5"/>
+<text x="175" y="64" font-family="Georgia" font-size="48" font-weight="bold" fill="#e9c477">ASMAU</text>
+<text x="178" y="94" font-family="Arial" font-size="18" fill="#f6e9d3">ISLAMIC LEARNING ADVENTURE GAMES</text>
+<text x="1540" y="57" text-anchor="end" font-family="Georgia" font-size="24" fill="#f6e9d3">VISUAL LIBRARY / 01</text>
+<text x="1540" y="88" text-anchor="end" font-family="Arial" font-size="15" fill="#e9c477">Rooted in Faith · Inspired by Africa</text>
+
+<!-- panel helper backgrounds -->
+<rect x="40" y="160" width="740" height="360" rx="22" fill="#fff9ee"/>
+<rect x="800" y="160" width="760" height="360" rx="22" fill="#fff9ee"/>
+<rect x="40" y="545" width="740" height="400" rx="22" fill="#fff9ee"/>
+<rect x="800" y="545" width="760" height="400" rx="22" fill="#fff9ee"/>
+
+<text class="h" x="70" y="205">01 / PEOPLE</text>
+<text class="s" x="70" y="233">Black African characters · dignity · warmth · individuality</text>
+<!-- character cards -->
+<g transform="translate(125 260)">
+ <ellipse cx="70" cy="210" rx="55" ry="10" fill="#d8c5a7"/>
+ <path d="M40 80 Q70 45 100 80 L118 200 L22 200Z" fill="#f0dfc0"/>
+ <path d="M40 88 L70 120 L100 88 L110 195 L30 195Z" fill="#e5c58d"/>
+ <circle cx="70" cy="55" r="33" fill="#75452f"/>
+ <path d="M38 53 Q40 13 72 18 Q102 18 103 53 Q80 37 38 53" fill="#39251e"/>
+ <path d="M39 35 Q70 2 102 35 L99 47 Q70 33 41 47Z" fill="#f2e4c8" stroke="#b88c4d" stroke-width="3"/>
+ <circle cx="58" cy="57" r="3" fill="#241914"/><circle cx="82" cy="57" r="3" fill="#241914"/>
+ <path d="M60 72 Q70 80 81 71" fill="none" stroke="#3b2119" stroke-width="3" stroke-linecap="round"/>
+ <path d="M43 116 L25 154 M98 116 L115 154" stroke="#75452f" stroke-width="14" stroke-linecap="round"/>
+ <path d="M50 199 L47 219 M90 199 L94 219" stroke="#75452f" stroke-width="12" stroke-linecap="round"/>
+ <path d="M42 105 Q70 120 98 105" fill="none" stroke="#b88c4d" stroke-width="4"/>
+ <text x="70" y="245" text-anchor="middle" class="small">Child explorer</text>
+</g>
+<g transform="translate(330 260)">
+ <ellipse cx="70" cy="210" rx="55" ry="10" fill="#d8c5a7"/>
+ <path d="M28 90 Q70 60 112 90 L125 202 L15 202Z" fill="#315b45"/>
+ <path d="M38 95 L70 126 L102 95 L112 195 L28 195Z" fill="#3f6a50"/>
+ <circle cx="70" cy="58" r="34" fill="#593321"/>
+ <path d="M35 52 Q38 10 70 18 Q104 12 106 52 Q70 37 35 52" fill="#211b19"/>
+ <path d="M34 35 Q70 -2 106 35 L101 48 Q70 32 39 48Z" fill="#e6d2ad" stroke="#b88c4d" stroke-width="3"/>
+ <circle cx="58" cy="60" r="3" fill="#211914"/><circle cx="82" cy="60" r="3" fill="#211914"/>
+ <path d="M58 75 Q70 82 82 75" fill="none" stroke="#2e1b16" stroke-width="3" stroke-linecap="round"/>
+ <path d="M30 117 L12 160 M110 117 L128 160" stroke="#593321" stroke-width="15" stroke-linecap="round"/>
+ <path d="M49 200 L46 220 M91 200 L94 220" stroke="#593321" stroke-width="12" stroke-linecap="round"/>
+ <path d="M39 115 L101 115 M44 127 L96 127" stroke="#d6ad64" stroke-width="3"/>
+ <text x="70" y="245" text-anchor="middle" class="small">Community elder</text>
+</g>
+<g transform="translate(540 260)">
+ <ellipse cx="70" cy="210" rx="55" ry="10" fill="#d8c5a7"/>
+ <path d="M25 94 Q70 65 115 94 L127 202 L13 202Z" fill="#713d5d"/>
+ <path d="M30 95 Q70 125 110 95" fill="none" stroke="#d6ad64" stroke-width="5"/>
+ <circle cx="70" cy="58" r="32" fill="#70412e"/>
+ <path d="M37 55 Q38 16 70 20 Q102 16 103 55" fill="#211a18"/>
+ <path d="M35 46 Q70 -4 105 46 Q101 80 88 91 L52 91 Q37 76 35 46Z" fill="#315b45"/>
+ <path d="M46 47 Q70 27 94 47" fill="none" stroke="#d6ad64" stroke-width="4"/>
+ <circle cx="58" cy="61" r="3" fill="#211914"/><circle cx="82" cy="61" r="3" fill="#211914"/>
+ <path d="M59 76 Q70 82 81 76" fill="none" stroke="#2e1b16" stroke-width="3" stroke-linecap="round"/>
+ <text x="70" y="245" text-anchor="middle" class="small">Scholar / teacher</text>
+</g>
+
+<text class="h" x="830" y="205">02 / MATERIAL CULTURE</text>
+<text class="s" x="830" y="233">Textiles · earthen architecture · craft · scholarship</text>
+<!-- architectural silhouettes -->
+<rect x="850" y="350" width="280" height="120" fill="#b86a43"/>
+<rect x="890" y="305" width="200" height="165" fill="#c77a4b"/>
+<path d="M880 305 L990 255 L1100 305Z" fill="#9d5537"/>
+<rect x="960" y="380" width="60" height="90" fill="#5b392b"/>
+<path d="M960 380 Q990 340 1020 380" fill="#5b392b"/>
+<rect x="1170" y="330" width="300" height="140" fill="#d29a61"/>
+<path d="M1170 330 L1320 275 L1470 330Z" fill="#a65a3b"/>
+<rect x="1285" y="390" width="70" height="80" fill="#60402e"/>
+<path d="M1285 390 Q1320 350 1355 390" fill="#60402e"/>
+<g fill="#f2d5a2"><rect x="910" y="340" width="20" height="38"/><rect x="1060" y="340" width="20" height="38"/><rect x="1205" y="360" width="24" height="40"/><rect x="1400" y="360" width="24" height="40"/></g>
+<path d="M1490 470 Q1500 390 1510 470" stroke="#315b45" stroke-width="9" fill="none"/>
+<circle cx="1500" cy="365" r="50" fill="#6f7541"/>
+<text x="990" y="495" text-anchor="middle" class="small">Earthen compound study</text>
+<text x="1320" y="495" text-anchor="middle" class="small">Courtyard / learning space</text>
+
+<text class="h" x="70" y="590">03 / ENVIRONMENTS</text>
+<text class="s" x="70" y="618">A lived-in Sahelian world, with regional research for every setting</text>
+<rect x="70" y="650" width="310" height="245" rx="14" fill="url(#sun)"/>
+<path d="M70 810 Q160 730 245 810 T380 810 V895 H70Z" fill="#c67b4c"/>
+<path d="M130 800 L130 715 L190 680 L250 715 L250 800Z" fill="#9e5438"/>
+<rect x="174" y="750" width="35" height="50" fill="#563729"/>
+<circle cx="315" cy="720" r="30" fill="#6f7541"/><path d="M315 720 L315 840" stroke="#6b4b2b" stroke-width="10"/>
+<text x="225" y="875" text-anchor="middle" class="tag">SETTLEMENT</text>
+<rect x="405" y="650" width="310" height="245" rx="14" fill="url(#indigo)"/>
+<path d="M405 820 Q500 740 580 815 T715 820 V895 H405Z" fill="#d8a46a"/>
+<circle cx="555" cy="700" r="40" fill="#f4d99a"/>
+<path d="M405 840 Q500 800 590 840 T715 840" fill="none" stroke="#e9c477" stroke-width="5"/>
+<text x="560" y="875" text-anchor="middle" class="tag">DESERT / OASIS</text>
+
+<text class="h" x="830" y="590">04 / SHARED DESIGN TOKENS</text>
+<text class="s" x="830" y="618">A warm, earthy palette with indigo and green accents</text>
+<g transform="translate(850 665)">
+ <rect width="105" height="80" rx="12" fill="#DDA45B"/><text x="52" y="105" text-anchor="middle" class="small">Sahel sand</text>
+ <rect x="125" width="105" height="80" rx="12" fill="#A95735"/><text x="177" y="105" text-anchor="middle" class="small">Clay</text>
+ <rect x="250" width="105" height="80" rx="12" fill="#243F67"/><text x="302" y="105" text-anchor="middle" class="small">Indigo</text>
+ <rect x="375" width="105" height="80" rx="12" fill="#315B45"/><text x="427" y="105" text-anchor="middle" class="small">Forest</text>
+ <rect x="500" width="105" height="80" rx="12" fill="#F2E4C8" stroke="#c8b79b"/><text x="552" y="105" text-anchor="middle" class="small">Ivory</text>
+</g>
+<text x="1180" y="845" text-anchor="middle" font-family="Georgia" font-size="24" fill="#38271f">Rooted in Faith</text>
+<text x="1180" y="878" text-anchor="middle" font-family="Georgia" font-size="24" fill="#38271f">Inspired by Africa</text>
+<text x="1180" y="911" text-anchor="middle" font-family="Georgia" font-size="24" fill="#38271f">Designed for Every Child</text>
+</svg>

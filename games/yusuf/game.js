@@ -21,6 +21,7 @@
   var cleanup = null;  // teardown for the running activity
   var skipTimer = null;
   var currentLine = null;
+  var pnoteFor = null;
   var save = loadSave();
 
   var SCENE_MOOD = { night: "wonder", dusk: "sad", desert: "desert", well: "tense", egypt: "regal", palace: "regal", prison: "sad", field: "joy", grey: "sad", dawn: "joy" };
@@ -40,9 +41,9 @@
   function loadSave() {
     try {
       var s = JSON.parse(localStorage.getItem(SAVE_KEY) || "{}");
-      return { done: s.done || {}, at: s.at || 0, sound: s.sound !== false, music: s.music !== false };
+      return { done: s.done || {}, at: s.at || 0, step: s.step || 0, sound: s.sound !== false, music: s.music !== false };
     } catch (err) {
-      return { done: {}, at: 0, sound: true, music: true };
+      return { done: {}, at: 0, step: 0, sound: true, music: true };
     }
   }
   function persist() {
@@ -81,8 +82,8 @@
     currentLine = id;
     captionText.textContent = lines[id] || "";
   }
-  function moodFor(chId, stepIdx, st) {
-    return moods[chId + ":" + stepIdx] || SCENE_MOOD[st.scene] || "wonder";
+  function moodFor(st) {
+    return moods[st.say || st.line] || SCENE_MOOD[st.scene] || "wonder";
   }
 
   /* ---------- small DOM helpers ---------- */
@@ -452,10 +453,11 @@
     var left = mk("div", "match-col");
     var right = mk("div", "match-col");
 
-    function card(id, icon, side, pair) {
+    function card(id, icon, label, side, pair) {
       var b = mk("button", "mcard " + side);
+      b.setAttribute("aria-label", lines[id]);
       b.appendChild(mk("span", "mcard-ico", icon));
-      b.appendChild(mk("span", "", lines[id]));
+      b.appendChild(mk("span", "mcard-label", label || lines[id]));
       b.addEventListener("click", function () {
         if (b.classList.contains("matched")) return;
         if (side === "a") {
@@ -484,8 +486,8 @@
       b.pair = pair;
       return b;
     }
-    opts.pairs.forEach(function (p, i) { left.appendChild(card(p.a, p.aIcon, "a", i)); });
-    opts.pairs.slice().reverse().forEach(function (p, i) { right.appendChild(card(p.b, p.bIcon, "b", opts.pairs.length - 1 - i)); });
+    opts.pairs.forEach(function (p, i) { left.appendChild(card(p.a, p.aIcon, p.aLabel, "a", i)); });
+    opts.pairs.slice().reverse().forEach(function (p, i) { right.appendChild(card(p.b, p.bIcon, p.bLabel, "b", opts.pairs.length - 1 - i)); });
     grid.appendChild(left);
     grid.appendChild(right);
     stage.appendChild(grid);
@@ -526,7 +528,49 @@
     return function () {};
   };
 
-  // Grain sprouts around the field; tap it before it wilts.
+  // Put the events in the order they happened: tap them one after another.
+  ACT.order = function (opts, done) {
+    stage.classList.add("flow");
+    var cards = opts.cards, nextIdx = 0, shuffled = cards.slice();
+    do {
+      for (var i = shuffled.length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1)), t = shuffled[i];
+        shuffled[i] = shuffled[j];
+        shuffled[j] = t;
+      }
+    } while (shuffled.every(function (c, k) { return c === cards[k]; }));
+    var grid = mk("div", "order");
+    shuffled.forEach(function (c) {
+      var b = mk("button", "ocard");
+      b.setAttribute("aria-label", lines[c.line]);
+      b.appendChild(mk("span", "ocard-ico", c.icon));
+      b.appendChild(mk("span", "ocard-label", c.label));
+      var badge = mk("span", "ocard-n");
+      b.appendChild(badge);
+      b.addEventListener("click", function () {
+        if (b.classList.contains("placed")) return;
+        if (c === cards[nextIdx]) {
+          b.classList.add("placed");
+          nextIdx += 1;
+          badge.textContent = String(nextIdx);
+          fx("coin", nextIdx * 2);
+          setCaption(c.line);
+          say(c.line);
+          if (nextIdx === cards.length) done();
+        } else {
+          shake(b);
+          buzz();
+          setCaption(opts.wrong);
+          say(opts.wrong);
+        }
+      });
+      grid.appendChild(b);
+    });
+    stage.appendChild(grid);
+    return function () {};
+  };
+
+  // Grain sprouts around the field and waits until it is tapped. Nothing is timed.
   ACT["catch"] = function (opts, done) {
     var target = opts.target || 7, n = 0, finished = false;
     stage.appendChild(sprite(["P:yusufMan", 90, 80, 72, "bob", { expr: "happy" }]));
@@ -541,15 +585,9 @@
       var w = mk("button", "wheat", "🌾");
       w.setAttribute("aria-label", "grain");
       place(w, 10 + Math.random() * 56, 58 + Math.random() * 30);
-      var gone = setTimeout(function () {
-        w.classList.add("wilt");
-        fx("wilt");
-        setTimeout(function () { w.remove(); }, 400);
-      }, 2800);
       w.addEventListener("click", function () {
         if (w.disabled || finished) return;
         w.disabled = true;
-        clearTimeout(gone);
         n += 1;
         fx("coin", n);
         music.tension(0.15 + 0.75 * n / target);
@@ -597,38 +635,54 @@
     return function () {};
   };
 
-  // Search the bags. As in the story, the cup turns up in the last one.
+  // Search the bags one brother at a time. The verse has Yusuf search the other
+  // bags first and his brother's last, so the cup is in the last bag on purpose
+  // and the bags open in order.
   ACT.search = function (opts, done) {
-    var total = opts.bags || 5, opened = 0;
-    stage.appendChild(sprite(["P:yusufMan", 20, 30, 88, "bob", { expr: "calm" }]));
-    stage.appendChild(sprite(["G:brothers", 76, 32, 140, "bob", { expr: "worried" }]));
-    var row = mk("div", "sack-row");
-    for (var i = 0; i < total; i++) {
-      (function () {
-        var b = mk("button", "bag");
-        b.setAttribute("aria-label", "bag");
-        b.innerHTML = SVG.SACK;
-        b.addEventListener("click", function () {
-          if (b.disabled) return;
-          b.disabled = true;
-          opened += 1;
-          if (opened === total) {
-            b.classList.add("found");
-            fx("clink");
-            music.tension(0);
-            var cup = mk("span", "bag-cup");
-            cup.innerHTML = SVG.CUP;
-            b.appendChild(cup);
-            done();
-          } else {
-            b.classList.add("empty");
-            fx("tick", opened);
-            music.tension(0.9 * opened / total);
-          }
-        });
-        row.appendChild(b);
-      })();
+    var owners = opts.owners, total = owners.length, opened = 0, bags = [];
+    stage.appendChild(sprite(["P:yusufMan", 20, 28, 84, "bob", { expr: "calm" }]));
+    var row = mk("div", "bag-row");
+
+    function refresh() {
+      bags.forEach(function (b, i) {
+        b.classList.toggle("locked", i > opened);
+        b.classList.toggle("next", i === opened && opened < total);
+      });
     }
+    owners.forEach(function (name, i) {
+      var cell = mk("div", "bag-cell");
+      var face = mk("span", "bag-face");
+      face.innerHTML = People.svg(name, { expr: i === total - 1 ? "worried" : "neutral" });
+      var b = mk("button", "bag locked");
+      b.setAttribute("aria-label", "bag " + (i + 1) + " of " + total);
+      b.innerHTML = SVG.SACK;
+      b.addEventListener("click", function () {
+        if (b.disabled) return;
+        if (i !== opened) { shake(cell); buzz(); return; }
+        b.disabled = true;
+        opened += 1;
+        refresh();
+        if (opened === total) {
+          b.classList.add("found");
+          fx("clink");
+          music.tension(0);
+          var cup = mk("span", "bag-cup");
+          cup.innerHTML = SVG.CUP;
+          b.appendChild(cup);
+          done();
+        } else {
+          b.classList.add("empty");
+          fx("tick", opened);
+          music.tension(0.9 * opened / total);
+          say(opts.nope);
+        }
+      });
+      cell.appendChild(face);
+      cell.appendChild(b);
+      row.appendChild(cell);
+      bags.push(b);
+    });
+    refresh();
     stage.appendChild(row);
     return function () {};
   };
@@ -677,9 +731,22 @@
     stage.style.touchAction = st.say ? "pan-y" : "none";
     stage.innerHTML = "";
 
+    if (pnoteFor !== ch.id) {
+      pnoteFor = ch.id;
+      var body = $("pnoteBody");
+      body.innerHTML = "";
+      (ch.parent || []).forEach(function (para) { body.appendChild(mk("p", "", para)); });
+      var more = mk("a", "pnote-link", "Read these verses on Quran.com");
+      more.href = "https://quran.com/" + ch.source;
+      more.target = "_blank";
+      more.rel = "noopener";
+      body.appendChild(more);
+      $("pnote").open = false;
+    }
+
     var lineId = st.say || st.line;
     setCaption(lineId);
-    music.mood(moodFor(ch.id, si, st));
+    music.mood(moodFor(st));
     if (si === 0) fx("swish");
 
     setNext("Next", false);
@@ -708,6 +775,7 @@
 
     say(lineId);
     save.at = ci;
+    save.step = si;
     persist();
   }
 
@@ -722,6 +790,7 @@
       if (ci >= story.length) {
         ci = 0;
         save.at = 0;
+        save.step = 0;
         persist();
         showEnd();
         return;
@@ -744,15 +813,17 @@
     renderStep();
   }
 
-  function startChapter(i) {
-    ci = i;
-    si = 0;
+  function startChapter(i, stepIdx) {
+    ci = Math.max(0, Math.min(i, story.length - 1));
+    si = Math.max(0, Math.min(stepIdx || 0, story[ci].steps.length - 1));
     show("play");
     renderStep();
   }
 
+  function hasProgress() { return (save.at > 0 || save.step > 0) && save.at < story.length; }
+
   function showTitle() {
-    var resume = save.at > 0 && save.at < story.length;
+    var resume = hasProgress();
     $("startBtn").textContent = resume ? "Continue — Chapter " + (save.at + 1) : "Start the story";
     $("restartBtn").hidden = !resume;
     music.mood("wonder");
@@ -803,7 +874,7 @@
   function wire() {
     ["click", "touchend", "keydown"].forEach(function (ev) { document.addEventListener(ev, music.unlock, true); });
 
-    $("startBtn").addEventListener("click", function () { startChapter(save.at > 0 && save.at < story.length ? save.at : 0); });
+    $("startBtn").addEventListener("click", function () { if (hasProgress()) startChapter(save.at, save.step); else startChapter(0); });
     $("restartBtn").addEventListener("click", function () { startChapter(0); });
     $("mapBtn").addEventListener("click", showChapters);
     $("soundBtn").addEventListener("click", function () {

@@ -4,9 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Yusuf — Asmau</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Mada:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="manifest" href="../../app.webmanifest">
+<meta name="theme-color" content="#0c1530">
+<link rel="apple-touch-icon" href="../../icons/icon-180.png">
+<link rel="stylesheet" href="../../fonts/fonts.css">
 <link rel="stylesheet" href="../../shared/style.css">
 <link rel="stylesheet" href="style.css">
 </head>
@@ -35,18 +36,21 @@
       <ul>
         <li>This is a retelling in simple words of
           <a href="https://quran.com/12" target="_blank" rel="noopener">Surah Yusuf</a> (Qur’an 12:4–101), not a translation.
-          Every chapter was checked against M. A. S. Abdel Haleem’s English translation, and each chapter
-          links to its own verses so you can read them together.</li>
-        <li>Two parts are told more gently than the verses tell them. What happened in the governor’s house
-          (12:23–34) is told only as: someone wanted Yusuf to do wrong, he refused, and lies were told about him.
-          The second prisoner’s dream (12:41) is told only as sad news.</li>
+          Every chapter was checked against M. A. S. Abdel Haleem’s English translation. Under each scene,
+          “For parents: this chapter” says what the verses say beyond the child’s version, names whose
+          commentary an explanation comes from, and links to the verses.</li>
+        <li>Some parts are told more gently than the verses tell them: what the woman of the house tried to do
+          (12:23–25), the gathering of the women of the city (12:30–32), and how the second prisoner’s dream ends
+          (12:41). Verses 12:52–53 are left out because scholars differ on who is speaking. Each chapter note says
+          exactly what was left out.</li>
         <li>People are drawn in this game, all with dark skin, including Prophet Yusuf and Prophet Yaqub (peace be upon them).
           Muslims differ on whether prophets should be shown, and this game shows them. Prophet Muhammad ﷺ does not appear.</li>
         <li>Everything reacts to a touch. Swipe a scene, or use the big buttons, to turn the page.</li>
         <li>The music and sound effects are made by the browser as you play, so there are no recordings.
           🎵 turns the music off on its own, and 🔊 turns off the voice and the effects.
           Families differ on music in children’s media, so both choices are remembered on this device.</li>
-        <li>The voice is a plain computer voice, standing in until a real one is recorded.
+        <li>English is read by a plain computer voice, standing in until a real one is recorded.
+          Arabic is never read by a computer voice: it plays only once a parent has recorded it.
           <a href="../../tools/record-voice/index.html">Record your own voice</a> and the game uses it straight away on this device.</li>
       </ul>
     </details>
@@ -64,6 +68,10 @@
       <span id="captionText"></span>
       <span class="ear" aria-hidden="true">🔊</span>
     </button>
+    <details class="pnote" id="pnote">
+      <summary>For parents: this chapter</summary>
+      <div id="pnoteBody"></div>
+    </details>
     <div class="nav">
       <button class="btn-bk" id="prevBtn" aria-label="Back"><span class="ico" aria-hidden="true">◀</span><span class="lbl">Back</span></button>
       <button class="btn-go" id="nextBtn" aria-label="Next"><span class="lbl">Next</span><span class="ico" aria-hidden="true">▶</span></button>
@@ -92,5 +100,6 @@
 <script src="people.js"></script>
 <script src="story.js"></script>
 <script src="game.js"></script>
+<script src="../../shared/pwa.js"></script>
 </body>
 </html>

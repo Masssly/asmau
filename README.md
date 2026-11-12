@@ -5,9 +5,10 @@ browser games. Named after Nana Asma'u bint Usman dan Fodio, a scholar, poet
 and educator in the Sokoto Caliphate (present-day northern Nigeria) known for
 building a network of women teachers.
 
-No build step, no framework, no backend. It's plain HTML/CSS/JS served
-directly by GitHub Pages — open any file and you're looking at exactly what
-ships.
+No build step for the games, no framework, no backend. It's plain HTML/CSS/JS
+served directly by GitHub Pages — open any file and you're looking at exactly
+what ships. (One small script keeps the offline file list current; see
+"Checking your work".)
 
 ## Structure
 
@@ -15,21 +16,28 @@ ships.
 asmau/
 ├── index.html              landing page — lists every game, reads its age badge
 ├── manifest.json           the list of game folder slugs, in display order
+├── app.webmanifest         lets the site be installed on a phone or tablet
+├── sw.js                   service worker: the whole site works offline (generated list)
+├── fonts/                  Baloo 2 and Mada, self-hosted (SIL OFL 1.1)
+├── icons/                  app icons
 ├── shared/
 │   ├── style.css           tokens + components (buttons, cards, age badge)
 │   ├── narration.js        narration lookup — see "Narration" below
-│   └── music.js            background music and sound effects — see "Music and sound effects"
+│   ├── music.js            background music and sound effects — see "Music and sound effects"
+│   └── pwa.js              registers the service worker
 ├── scripts/
-│   └── generate-placeholder-audio.sh   regenerates the flite placeholder clips
+│   ├── generate-placeholder-audio.sh   regenerates the flite placeholder clips
+│   ├── build-offline.js                regenerates sw.js's file list and version
+│   └── validate.js                     checks the whole site; run by CI
 ├── tools/
 │   └── record-voice/       lets a parent record real narration, in the browser
 └── games/
     └── <slug>/
         ├── index.html      the game itself — fully self-contained
-        ├── game.json        title, icon, age range, tagline, source, depiction notes
-        ├── narration.json   every spoken line in the game: {id, text, lang}
+        ├── game.json       title, icon, age range, tagline, source, depiction notes
+        ├── narration.json  every spoken line in the game: {id, text, lang}
         └── assets/
-            └── audio/       <id>.mp3 (flite placeholder) and/or <id>.webm (real voice)
+            └── audio/      <id>.mp3 (flite placeholder) and/or <id>.webm (real voice)
 ```
 
 **The rule that matters**: a game only touches its own folder. Editing
@@ -49,13 +57,15 @@ reads `manifest.json` and each game's `game.json`.
      "minAge": 3,
      "maxAge": 6,
      "tagline": "One short line for the landing page card.",
-     "basedOn": "Surah X, verses Y-Z, or null if not scripture-based",
+     "basedOn": "Surah X, 1:2-3, or null if not scripture-based",
      "depictionNotes": "State plainly what is and isn't drawn, and why."
    }
    ```
-3. Build `index.html` for the game. Link `../../shared/style.css` and
-   `../../shared/speech.js` if useful — not required.
+3. Build `index.html` for the game. Link `../../fonts/fonts.css`,
+   `../../shared/style.css`, `../../shared/narration.js` (and `music.js` if
+   you want sound) as needed, and `../../shared/pwa.js` so it works offline.
 4. Add the slug to `manifest.json`.
+5. Run the checks (below).
 
 ## Narration
 
@@ -72,21 +82,24 @@ text, { lang })`, which tries, in order:
    generated offline with [flite](http://www.festvox.org/flite/) (BSD
    licensed, CMU Festival-Lite). Run
    `scripts/generate-placeholder-audio.sh games/<slug>` to (re)generate
-   these after editing a game's `narration.json`. **English only** —
-   `flite` and `espeak-ng` can technically attempt Arabic, but the output
-   isn't something a child should learn pronunciation from, so the script
-   skips every `lang: "ar"` entry on purpose.
-4. The device's own `speechSynthesis` voice, same placeholder caveat as
-   always, for whichever entries have no committed or recorded clip.
+   these after editing a game's `narration.json`. English only.
+4. The device's own `speechSynthesis` voice, **for English only**, same
+   placeholder caveat as always.
+
+**Arabic is never synthesized**, by flite or by the device. A guessed
+pronunciation presented to a child as a lesson is worse than silence, so an
+Arabic line plays only from a real human recording (tiers 1 or 2) and is
+otherwise silent, while its text still shows on screen.
 
 **Recording real narration**: open `tools/record-voice/index.html`, pick a
 game, and record each line from the microphone. Recordings save straight to
 that browser's IndexedDB and are immediately preferred over the placeholder
-— nothing to commit for personal use on your own devices. To make a
-recording the default for *everyone* who opens the game, download the clip
-and commit it to `games/<slug>/assets/audio/<id>.webm`. Recording real
-Arabic pronunciation this way is the main reason this tool exists — it's
-exactly the gap a synthesized voice can't responsibly fill.
+— nothing to commit for personal use on your own devices. The same page can
+save every recording on a device to one file and load it on another (record
+on a phone, play on a tablet). To make a recording the default for *everyone*
+who opens the game, download the clip and commit it to
+`games/<slug>/assets/audio/<id>.webm`. Recording real Arabic pronunciation
+this way is the main reason this tool exists.
 
 Before committing a recording, remember the repo (and the published site)
 are public: it's your voice, or your child's, on a page anyone can open.
@@ -116,19 +129,54 @@ including it:
 The levels were set by measurement, not by ear: offline renders in a headless
 browser check every mood and effect for clipping, silence and DC offset, and
 the music is set about 6 dB under the placeholder narration when nothing is
-speaking and about 15 dB under it while a line speaks (the output
-compressor adds make-up gain, so these are measured after it, not guessed). Listen on a real device and adjust
-`MUSIC_LEVEL` in `shared/music.js` if it needs changing.
+speaking and about 15 dB under it while a line speaks (the output compressor
+adds make-up gain, so these are measured after it, not guessed). Listen on a
+real device and adjust `MUSIC_LEVEL` in `shared/music.js` if it needs
+changing.
+
+## Offline
+
+After the first visit the whole site works with no connection, which matters
+on a tablet. `sw.js` caches every file in the repo on install. Fonts are
+self-hosted in `fonts/`, so there is no request to Google either.
+
+`sw.js` contains a generated block: a version and the list of files. Any
+change to any file changes the version, which makes browsers install the
+worker again and replace the old cache. **After changing anything, run
+`node scripts/build-offline.js`** before committing; the checks fail if you
+forget.
+
+## Checking your work
+
+```
+node scripts/build-offline.js   # refresh sw.js after any change
+node scripts/validate.js        # check everything
+```
+
+`validate.js` (also run by GitHub Actions on every push) checks that every
+game in `manifest.json` exists and has a valid `game.json` with an age range;
+that narration ids are unique, every English line has audio and no audio is
+orphaned; that every line, person, activity and music mood a story names
+exists and every narration line is used; that Qur'an references are
+well-formed; that pages only load local files that exist and nothing from
+Google; that this README only names files that exist; and that `sw.js` is up
+to date.
 
 ## Content conventions
 
 - **Age rating is mandatory.** Every game states a `minAge`/`maxAge` so a
   parent can tell at a glance who it's for.
 - **Quran- and Hadith-based content must be grounded, not recalled from
-  memory.** When writing a game's story content, verify the text against a
-  canonical source (quran.com references, or a cited tafsir) rather than
-  paraphrasing from general knowledge. Cite the verse range in `basedOn` and
-  link it from the game itself.
+  memory.** Verify the text against a canonical source (quran.com
+  references, or a cited tafsir) rather than paraphrasing from general
+  knowledge. Cite the verse range in `basedOn` and link it from the game.
+- **Where scholars differ, say so.** Don't narrate one reading as fact. The
+  Yusuf game leaves out 12:52–53 entirely because commentators differ on who
+  is speaking; its note for parents says so and names who holds which view.
+- **Notes for parents are paraphrase plus a link, not a reproduced
+  translation.** A published translation is someone's copyright; quran.com
+  already has the licensed text. Attribute any explanation to the
+  commentary it came from.
 - **Depiction of prophets is decided per game, not by a blanket rule** — this
   is a real point of disagreement across Muslim practice and isn't ours to
   flatten into one policy. What each game actually does must be stated in
@@ -141,6 +189,8 @@ compressor adds make-up gain, so these are measured after it, not guessed). List
   fine to ship "Part 1" of a story and add later chapters once those verses
   have actually been checked, rather than inventing the next scene to
   finish a game in one sitting.
+- **Nothing should depend on being fast.** No activity fails a child for being
+  slow; anything timed has an untimed way through.
 
 ## Current games
 

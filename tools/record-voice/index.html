@@ -4,9 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Record Your Voice — Asmau</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Mada:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="manifest" href="../../app.webmanifest">
+<meta name="theme-color" content="#0c1530">
+<link rel="apple-touch-icon" href="../../icons/icon-180.png">
+<link rel="stylesheet" href="../../fonts/fonts.css">
 <link rel="stylesheet" href="../../shared/style.css">
 <style>
   body { background: #0c1530; min-height: 100%; }
@@ -24,6 +25,10 @@
     margin-bottom: 18px;
   }
 
+  .transfer { margin-bottom: 18px; }
+  .transfer p { margin: 0 0 10px; color: var(--muted); font-size: 14px; line-height: 1.55; }
+  .transfer .controls { display: flex; flex-wrap: wrap; gap: 8px; }
+  .transfer label.mini-btn { display: inline-block; }
   .mic-state { font-size: 13px; color: var(--muted); margin-bottom: 14px; }
   .mic-state.ok { color: var(--teal); }
   .mic-state.err { color: #e98a8a; }
@@ -75,6 +80,19 @@
       recording to play for everyone who opens the game, not just here.
       Think before committing: once pushed, it's part of a public page.
     </p>
+  </div>
+
+  <div class="card transfer">
+    <p>
+      <strong>Move recordings between devices.</strong> Save everything recorded on this device to one file, then
+      load that file on another device (for example, record on your phone, load on the Fire tablet).
+    </p>
+    <div class="controls">
+      <button class="mini-btn download" id="exportBtn">⬇ Save all recordings to a file</button>
+      <label class="mini-btn" for="importFile" id="importLabel">⬆ Load recordings from a file</label>
+      <input type="file" id="importFile" accept="application/json,.json" hidden>
+    </div>
+    <p class="status" id="transferStatus"></p>
   </div>
 
   <select id="gameSelect"></select>
@@ -142,7 +160,7 @@
     if (item.lang === "ar") text.setAttribute("dir", "rtl");
     var id = document.createElement("span");
     id.className = "id";
-    id.textContent = item.id + (item.lang === "ar" ? " · will NOT get a synthesized placeholder" : "");
+    id.textContent = item.id + (item.lang === "ar" ? " · Arabic: plays only from a recording, never a computer voice" : "");
     meta.appendChild(text);
     meta.appendChild(id);
 
@@ -260,6 +278,33 @@
     });
   }
 
+  var transferStatus = document.getElementById("transferStatus");
+  document.getElementById("exportBtn").addEventListener("click", function () {
+    window.AsmauNarration.exportAll().then(function (bundle) {
+      if (!bundle.clips.length) { transferStatus.textContent = "Nothing recorded on this device yet."; return; }
+      var url = URL.createObjectURL(new Blob([JSON.stringify(bundle)], { type: "application/json" }));
+      var a = document.createElement("a");
+      a.href = url;
+      a.download = "asmau-voice-" + new Date().toISOString().slice(0, 10) + ".json";
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      setTimeout(function () { URL.revokeObjectURL(url); }, 2000);
+      transferStatus.textContent = "Saved " + bundle.clips.length + " recording" + (bundle.clips.length === 1 ? "" : "s") + ".";
+    });
+  });
+  document.getElementById("importFile").addEventListener("change", function (e) {
+    var file = e.target.files && e.target.files[0];
+    if (!file) return;
+    file.text().then(function (text) { return window.AsmauNarration.importAll(JSON.parse(text)); })
+      .then(function (n) {
+        transferStatus.textContent = "Loaded " + n + " recording" + (n === 1 ? "" : "s") + " onto this device.";
+        renderGame(gameSelect.value);
+      })
+      .catch(function (err) { transferStatus.textContent = "Couldn't load that file: " + err.message; });
+    e.target.value = "";
+  });
+
   loadGames().then(function (slugs) {
     if (!slugs.length) {
       gameSelect.innerHTML = '<option>No games found</option>';
@@ -277,5 +322,6 @@
   });
 })();
 </script>
+<script src="../../shared/pwa.js"></script>
 </body>
 </html>

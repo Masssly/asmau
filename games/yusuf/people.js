@@ -37,7 +37,10 @@ window.YusufPeople = (function () {
     master:     { age: "man", skin: 1, head: "turban", cloth: "#3a6ea5", band: "#f0b84b", robe: "#e9dcc0", trim: "#f0b84b" },
     king:       { age: "man", skin: 3, hair: true, head: "crown", beard: "short", robe: "#7a2f7a", trim: "#f0b84b" },
     prisoner1:  { age: "man", skin: 4, hair: true, robe: "#7a7468", trim: "#a39a8a" },
-    prisoner2:  { age: "man", skin: 0, hair: true, beard: "short", robe: "#6f6a60", trim: "#a39a8a" }
+    prisoner2:  { age: "man", skin: 0, hair: true, beard: "short", robe: "#6f6a60", trim: "#a39a8a" },
+    helper:     { age: "man", skin: 2, head: "turban", cloth: "#3f7d5a", band: "#c9b27a", beard: "short", robe: "#efe6cf", trim: "#c9a15a" },
+    woman1:     { age: "woman", skin: 1, head: "scarf", cloth: "#8a4a7a", lashes: true, robe: "#b86a8a", trim: "#f0c987" },
+    woman2:     { age: "woman", skin: 3, head: "scarf", cloth: "#3a7a8a", lashes: true, robe: "#e6d9b8", trim: "#c9a15a" }
   };
 
   function f(n) { return Math.round(n * 10) / 10; }
@@ -108,6 +111,10 @@ window.YusufPeople = (function () {
     // shoulders, neck, collar
     o.push('<path d="' + (child ? "M14 112C14 92 28 82 50 82s36 10 36 30Z" : "M8 112C8 88 26 77 50 77s42 11 42 35Z") + '" fill="' + p.robe + '"/>');
     o.push('<path d="' + (child ? "M26 96 L74 112" : "M20 92 L78 112") + '" stroke="' + p.trim + '" stroke-width="5" opacity=".5" stroke-linecap="round"/>');
+    if (p.head === "scarf") {
+      o.push('<path d="M18 56 C10 4 90 4 82 56 C84 70 90 80 95 92 L5 92 C10 80 16 70 18 56 Z" fill="' + p.cloth + '"/>');
+      o.push('<path d="M24 70 C30 80 34 86 40 92 M76 70 C70 80 66 86 60 92" fill="none" stroke="#000" stroke-width="2" opacity=".15" stroke-linecap="round"/>');
+    }
     o.push('<rect x="43" y="' + (cy + r - 8) + '" width="14" height="22" rx="6" fill="' + sk.shade + '"/>');
     o.push('<path d="M41 ' + (by + 1) + " L50 " + (by + 17) + " L59 " + (by + 1) + ' Z" fill="' + sk.shade + '"/>');
     o.push('<path d="M40 ' + by + " L50 " + (by + 18) + " L60 " + by + '" fill="none" stroke="' + p.trim + '" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>');
@@ -155,6 +162,12 @@ window.YusufPeople = (function () {
     });
     o.push("</g>");
 
+    if (p.lashes && !sleeping) {
+      [-1, 1].forEach(function (sd) {
+        var x = cx + sd * ex + sd * erx, y = cy - 3;
+        o.push('<path d="M' + x + " " + y + " l" + (sd * 3.2) + " -2.6 M" + x + " " + (y + 2.5) + " l" + (sd * 3.6) + ' -0.6" fill="none" stroke="' + INK + '" stroke-width="1.6" stroke-linecap="round"/>');
+      });
+    }
     o.push(brows(cx, cy, expr, browCol, child ? 3.2 : 2.8));
     o.push(mouth(cx, cy + 14, expr));
 
@@ -172,7 +185,11 @@ window.YusufPeople = (function () {
     }
 
     // headwear
-    if (p.head === "turban") {
+    if (p.head === "scarf") {
+      o.push('<path d="M' + (cx - r - 2) + " " + (cy + 2) + " C" + (cx - r - 6) + " " + (cy - 36) + " " + (cx + r + 6) + " " + (cy - 36) + " " + (cx + r + 2) + " " + (cy + 2) +
+        " C" + (cx + r - 2) + " " + (cy - 18) + " " + (cx - r + 2) + " " + (cy - 18) + " " + (cx - r - 2) + " " + (cy + 2) + ' Z" fill="' + p.cloth + '"/>');
+      o.push('<path d="M26 30 C40 14 62 14 76 28" fill="none" stroke="#000" stroke-width="2" opacity=".18" stroke-linecap="round"/>');
+    } else if (p.head === "turban") {
       o.push('<path d="M22 40 C18 -2 82 -2 78 40 C67 24 33 24 22 40 Z" fill="' + p.cloth + '"/>');
       o.push('<path d="M26 30 C40 12 64 12 76 28 M24 35 C40 20 62 20 77 33" fill="none" stroke="' + p.band + '" stroke-width="2" opacity=".55" stroke-linecap="round"/>');
       o.push('<path d="M22 40 C33 24 67 24 78 40" fill="none" stroke="' + p.band + '" stroke-width="4" stroke-linecap="round"/>');

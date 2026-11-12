@@ -7,11 +7,14 @@
        recording a parent chose to share with everyone who opens the game.
     3. assets/audio/<id>.mp3 committed in the repo — a pre-rendered
        placeholder made with the open-source `flite` engine. Only ever
-       generated for English text (see scripts/generate-placeholder-audio.sh);
-       there is deliberately no synthesized Arabic tier, because a robotic
-       guess at Arabic pronunciation is worse than no audio at all.
-    4. The device's own speechSynthesis voice, same placeholder-quality
-       caveat as always.
+       generated for English text (see scripts/generate-placeholder-audio.sh).
+    4. The device's own speechSynthesis voice, for ENGLISH only, with the
+       same placeholder-quality caveat as always.
+
+  Arabic is never synthesized, by flite or by the device: a guessed
+  pronunciation presented to a child as a lesson is worse than silence. An
+  Arabic line plays only from tier 1 or 2 (a real human recording) and is
+  otherwise silent, while its text still shows on screen.
 
   Every game includes this file and calls AsmauNarration.say(...). The
   recording tool (tools/record-voice) reads each game's narration.json
@@ -107,6 +110,68 @@ window.AsmauNarration = (function () {
     });
   }
 
+  function blobToBase64(blob) {
+    return new Promise(function (resolve, reject) {
+      var r = new FileReader();
+      r.onload = function () { resolve(String(r.result).split(",")[1] || ""); };
+      r.onerror = function () { reject(r.error); };
+      r.readAsDataURL(blob);
+    });
+  }
+
+  function base64ToBlob(b64, type) {
+    var bin = atob(b64), n = bin.length, u = new Uint8Array(n);
+    for (var i = 0; i < n; i++) u[i] = bin.charCodeAt(i);
+    return new Blob([u], { type: type });
+  }
+
+  // Everything recorded on this device, as one object that can be saved to a file.
+  function exportAll() {
+    return openDb().then(function (db) {
+      if (!db) return [];
+      return new Promise(function (resolve) {
+        try {
+          var out = [];
+          var req = db.transaction(STORE, "readonly").objectStore(STORE).openCursor();
+          req.onsuccess = function () {
+            var c = req.result;
+            if (c) { out.push({ key: c.key, blob: c.value }); c.continue(); } else resolve(out);
+          };
+          req.onerror = function () { resolve([]); };
+        } catch (err) { resolve([]); }
+      });
+    }).then(function (rows) {
+      return Promise.all(rows.map(function (r) {
+        return blobToBase64(r.blob).then(function (b64) { return { key: r.key, type: r.blob.type || "audio/webm", data: b64 }; });
+      }));
+    }).then(function (clips) {
+      return { app: "asmau-voice", version: 1, exported: new Date().toISOString(), clips: clips };
+    });
+  }
+
+  // Load a file made by exportAll. Resolves with how many clips were restored.
+  function importAll(bundle) {
+    if (!bundle || bundle.app !== "asmau-voice" || !Array.isArray(bundle.clips)) {
+      return Promise.reject(new Error("This is not an Asmau voice file."));
+    }
+    return openDb().then(function (db) {
+      if (!db) throw new Error("This browser can't store recordings.");
+      return new Promise(function (resolve, reject) {
+        try {
+          var tx = db.transaction(STORE, "readwrite"), store = tx.objectStore(STORE), n = 0;
+          bundle.clips.forEach(function (c) {
+            if (c && typeof c.key === "string" && typeof c.data === "string") {
+              store.put(base64ToBlob(c.data, c.type || "audio/webm"), c.key);
+              n += 1;
+            }
+          });
+          tx.oncomplete = function () { resolve(n); };
+          tx.onerror = function () { reject(tx.error); };
+        } catch (err) { reject(err); }
+      });
+    });
+  }
+
   function stop() {
     token += 1;
     if (currentAudio) {
@@ -160,9 +225,10 @@ window.AsmauNarration = (function () {
   function speakFallback(text, lang, my) {
     return new Promise(function (resolve) {
       try {
+        if (lang === "ar") { resolve(); return; } // never synthesize Arabic — see the header
         if (my !== token || !("speechSynthesis" in window) || !text) { resolve(); return; }
         var u = new SpeechSynthesisUtterance(text);
-        u.lang = lang === "ar" ? "ar" : "en-US";
+        u.lang = "en-US";
         u.rate = 0.85;
         u.pitch = 1.1;
         u.onend = function () { resolve(); };
@@ -192,7 +258,7 @@ window.AsmauNarration = (function () {
       if (blob) return playBlob(blob, my);
       return tryPlayUrl(base + id + ".webm", my).then(function (ok) {
         if (ok) return true;
-        if (lang === "ar") return false; // no synthesized Arabic tier — see file header
+        if (lang === "ar") return true; // no recording and never a synthesized voice: stay silent
         return tryPlayUrl(base + id + ".mp3", my);
       });
     }).then(function (played) {
@@ -209,6 +275,8 @@ window.AsmauNarration = (function () {
     saveRecordedClip: saveRecordedClip,
     deleteRecordedClip: deleteRecordedClip,
     listRecordedIds: listRecordedIds,
+    exportAll: exportAll,
+    importAll: importAll,
     clipKey: clipKey
   };
 })();

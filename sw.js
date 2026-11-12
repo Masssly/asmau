@@ -9,7 +9,7 @@
 */
 
 // BEGIN GENERATED
-const VERSION = "b7299100062b";
+const VERSION = "cbc3a8a56285";
 const FILES = [
   "./",
   "app.webmanifest",
@@ -247,6 +247,7 @@ const FILES = [
   "shared/narration.js",
   "shared/pwa.js",
   "shared/style.css",
+  "shared/sync.js",
   "tools/record-voice/index.html",
   "tools/record-voice/"
 ];

@@ -55,6 +55,13 @@
   .mini-btn.delete { background: transparent; border: 1px solid var(--card-line); }
 
   .empty { color: var(--muted); text-align: center; padding: 24px 0; }
+
+  .sync summary { cursor: pointer; font-family: var(--font-display); font-weight: 700; }
+  .sync p { margin: 10px 0; font-size: 14px; line-height: 1.5; }
+  .sync .warn { color: #ffd8a8; }
+  .sync .code-in { flex: 1; min-width: 190px; padding: 8px 12px; border-radius: 10px; border: 1px solid var(--card-line); background: rgba(255,255,255,.08); color: var(--cream); font-family: monospace; font-size: 16px; text-transform: uppercase; }
+  .sync .code-show { font-family: monospace; font-size: 22px; letter-spacing: 1px; background: rgba(0,0,0,.3); border-radius: 10px; padding: 12px; text-align: center; user-select: all; }
+  .sync .check { display: flex; gap: 8px; align-items: center; font-size: 14px; margin: 10px 0; }
 </style>
 </head>
 <body>
@@ -96,10 +103,47 @@
     <p class="status" id="transferStatus"></p>
     <p class="status">
       You do not have to do any of this: recordings work on the device they were made on, with nothing to set up.
-      Signing in once to keep them on all your devices automatically is planned, and is not available yet.
       <a href="../../privacy.html">Privacy note</a>
     </p>
   </div>
+
+  <details class="card sync" id="syncBox">
+    <summary>Optional: keep my recordings on all my devices</summary>
+    <div id="syncOff">
+      <p>Record once and hear it on every device, with no file to move. This is <strong>optional</strong>. If you
+        skip it, nothing changes and nothing leaves this device.</p>
+      <p>You get a <strong>family code</strong> instead of an account. Your recordings are locked with it on this
+        device before they are sent, so nobody else, including whoever runs Asmau, can listen to them.</p>
+      <p class="warn"><strong>Keep your code safe.</strong> If you lose it, the recordings kept online are gone
+        for good and cannot be recovered. You will still have the ones on your devices.</p>
+      <div class="controls">
+        <button class="mini-btn download" id="syncNew">Create my family code</button>
+      </div>
+      <p>Already have a code?</p>
+      <div class="controls">
+        <input id="syncCodeIn" class="code-in" placeholder="XXXX-XXXX-XXXX-XXXX" autocomplete="off" autocapitalize="characters" spellcheck="false">
+        <button class="mini-btn" id="syncUse">Use this code</button>
+      </div>
+    </div>
+    <div id="syncNewBox" hidden>
+      <p>Your family code:</p>
+      <p class="code-show" id="syncCodeShow"></p>
+      <div class="controls"><button class="mini-btn" id="syncCopy">Copy</button></div>
+      <p class="warn">Write it down or save it in your password manager <strong>now</strong>. It is shown here
+        once. You will need it to add your other devices.</p>
+      <label class="check"><input type="checkbox" id="syncSaved"> I have saved my code somewhere safe</label>
+      <div class="controls"><button class="mini-btn download" id="syncGo" disabled>Turn on sync</button></div>
+    </div>
+    <div id="syncOn" hidden>
+      <p>Sync is on for this device. Code: <strong id="syncCodeMask"></strong></p>
+      <div class="controls">
+        <button class="mini-btn download" id="syncNow">Sync now</button>
+        <button class="mini-btn" id="syncOffBtn">Turn off on this device</button>
+        <button class="mini-btn delete" id="syncWipe">Delete my online copy</button>
+      </div>
+    </div>
+    <p class="status" id="syncStatus"></p>
+  </details>
 
   <select id="gameSelect"></select>
   <p class="mic-state" id="micState">Microphone not requested yet — press Record on any line below to allow it.</p>
@@ -108,6 +152,7 @@
 </div>
 
 <script src="../../shared/narration.js"></script>
+<script src="../../shared/sync.js"></script>
 <script>
 (function () {
   "use strict";
@@ -235,7 +280,10 @@
           recordBtn.textContent = "● Record";
           activeRecorder = null;
           var blob = new Blob(chunks, { type: mimeType || "audio/webm" });
-          window.AsmauNarration.saveRecordedClip(slug, item.id, blob).then(refreshStatus);
+          window.AsmauNarration.saveRecordedClip(slug, item.id, blob).then(refreshStatus).then(function () {
+            // if the parent turned sync on, send this recording too; recording itself never waits for it
+            return window.AsmauSync.pushOne(slug + ":" + item.id, blob).then(function (sent) { if (sent) syncSay("Recording saved and synced."); });
+          }).catch(function () { syncSay("Saved on this device. Could not reach sync just now; use Sync now later."); });
         };
         activeRecorder = recorder;
         chunks = [];
@@ -291,6 +339,43 @@
   }
 
   var transferStatus = document.getElementById("transferStatus");
+
+  /* ---------- optional sync ---------- */
+  var S = window.AsmauSync, $ = function (id) { return document.getElementById(id); };
+  var pendingCode = null;
+  function syncSay(msg) { $("syncStatus").textContent = msg; }
+  function syncView() {
+    var c = S.code();
+    $("syncOff").hidden = !!c || !!pendingCode;
+    $("syncNewBox").hidden = !pendingCode;
+    $("syncOn").hidden = !c;
+    if (c) $("syncCodeMask").textContent = "••••-••••-••••-" + c.slice(-4);
+    if (c) $("syncBox").open = true;
+  }
+  function runSync() {
+    syncSay("Syncing…");
+    return S.sync().then(function (n) {
+      syncSay("Done. Sent " + n.up + ", received " + n.down + ".");
+      if (n.down) location.reload();
+    }).catch(function (e) { syncSay("Could not sync: " + e.message); });
+  }
+  $("syncNew").addEventListener("click", function () { pendingCode = S.newCode(); $("syncCodeShow").textContent = pendingCode; syncView(); });
+  $("syncCopy").addEventListener("click", function () {
+    try { navigator.clipboard.writeText(pendingCode).then(function () { syncSay("Copied."); }); } catch (e) { syncSay("Select the code and copy it."); }
+  });
+  $("syncSaved").addEventListener("change", function () { $("syncGo").disabled = !this.checked; });
+  $("syncGo").addEventListener("click", function () { S.connect(pendingCode); pendingCode = null; syncView(); runSync(); });
+  $("syncUse").addEventListener("click", function () {
+    try { S.connect($("syncCodeIn").value); $("syncCodeIn").value = ""; syncView(); runSync(); } catch (e) { syncSay(e.message); }
+  });
+  $("syncNow").addEventListener("click", runSync);
+  $("syncOffBtn").addEventListener("click", function () { S.disconnect(); syncSay("Sync is off on this device. Your online copy is still there until you delete it."); syncView(); });
+  $("syncWipe").addEventListener("click", function () {
+    if (!confirm("Delete every recording kept online for this family code? Recordings on your devices stay.")) return;
+    S.removeAll().then(function (r) { syncSay("Deleted " + r.deleted + " online recording" + (r.deleted === 1 ? "" : "s") + "."); }).catch(function (e) { syncSay("Could not delete: " + e.message); });
+  });
+  syncView();
+  if (S.code()) runSync();
 
   // Send the recordings through the device's own share sheet (AirDrop, a
   // message to yourself, email), where the browser can share a file.

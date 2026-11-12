@@ -9,7 +9,7 @@
 */
 
 // BEGIN GENERATED
-const VERSION = "3d7c5826169f";
+const VERSION = "f87e2b23a54a";
 const FILES = [
   "./",
   "app.webmanifest",
@@ -37,6 +37,7 @@ const FILES = [
   "games/tap-and-say/index.html",
   "games/tap-and-say/",
   "games/tap-and-say/narration.json",
+  "games/yusuf/art.js",
   "games/yusuf/assets/audio/c1-a.mp3",
   "games/yusuf/assets/audio/c1-b.mp3",
   "games/yusuf/assets/audio/c1-do.mp3",
@@ -44,6 +45,8 @@ const FILES = [
   "games/yusuf/assets/audio/c10-b.mp3",
   "games/yusuf/assets/audio/c10-c.mp3",
   "games/yusuf/assets/audio/c10-do.mp3",
+  "games/yusuf/assets/audio/c10-g.mp3",
+  "games/yusuf/assets/audio/c10-gdo.mp3",
   "games/yusuf/assets/audio/c10-nope.mp3",
   "games/yusuf/assets/audio/c11-a.mp3",
   "games/yusuf/assets/audio/c11-b.mp3",
@@ -68,6 +71,9 @@ const FILES = [
   "games/yusuf/assets/audio/c2-c.mp3",
   "games/yusuf/assets/audio/c2-d.mp3",
   "games/yusuf/assets/audio/c2-do.mp3",
+  "games/yusuf/assets/audio/c2-s.mp3",
+  "games/yusuf/assets/audio/c2-swrong.mp3",
+  "games/yusuf/assets/audio/c2-w.mp3",
   "games/yusuf/assets/audio/c2-wrong.mp3",
   "games/yusuf/assets/audio/c3-a.mp3",
   "games/yusuf/assets/audio/c3-b.mp3",
@@ -75,6 +81,8 @@ const FILES = [
   "games/yusuf/assets/audio/c4-a.mp3",
   "games/yusuf/assets/audio/c4-b.mp3",
   "games/yusuf/assets/audio/c4-c.mp3",
+  "games/yusuf/assets/audio/c4-count.mp3",
+  "games/yusuf/assets/audio/c4-counted.mp3",
   "games/yusuf/assets/audio/c4-do.mp3",
   "games/yusuf/assets/audio/c5-a.mp3",
   "games/yusuf/assets/audio/c5-b1.mp3",

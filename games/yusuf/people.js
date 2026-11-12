@@ -205,7 +205,18 @@ window.YusufPeople = (function () {
     return '<svg class="fig" viewBox="0 0 100 112" aria-hidden="true"' + style + ">" + o.join("") + "</svg>";
   }
 
+  // A person with a portrait in art.js is shown as that round picture; anyone
+  // else is drawn. A portrait has one face, so expr is ignored for it.
+  function portrait(name, opts) {
+    var tf = [];
+    if (opts && opts.flip) tf.push("scaleX(-1)");
+    if (opts && opts.rot) tf.push("rotate(" + opts.rot + "deg)");
+    var style = tf.length ? ' style="transform:' + tf.join(" ") + ';transform-origin:50% 100%"' : "";
+    return '<img class="fig ava" src="assets/img/p-' + name + '.webp" alt="" draggable="false"' + style + ">";
+  }
+
   function svg(name, opts) {
+    if ((window.YUSUF_ART || {})["p-" + name]) return portrait(name, opts);
     var p = {}, k, base = PRESETS[name] || PRESETS.yusuf;
     for (k in base) p[k] = base[k];
     for (k in (opts || {})) p[k] = opts[k];

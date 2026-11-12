@@ -15,6 +15,12 @@
   expr (their expression), blind, flip and rot (lean forward, to bow).
   Everyone is drawn with dark skin.
 
+  A narrated step shows a picture instead of its sprites when art.js lists one
+  under the step's line id; `over` lists sprites to keep on top of the picture.
+  An activity can name a picture with opts.img, or a backdrop with opts.bg.
+  `src` on a step puts a small label on the scene saying where a detail comes
+  from, when it is from a commentary and not from the verse itself.
+
   Each chapter has `parent`: notes for the adult, shown under the scene. They
   say what the verses say beyond the child's version, name who a commentary
   is attributed to, and link to the verses. They paraphrase, they do not
@@ -37,12 +43,24 @@ window.YUSUF_STORY = [
     id: "c2", icon: "🐺", title: "The Jealous Brothers", source: "12:8-18",
     parent: [
       "Verses 12:8–18. The verses say one brother proposed killing Yusuf or banishing him, and another said not to kill him but to throw him into the well where a caravan might pick him up (12:9–10). The game says only that some wanted to get rid of him and one said not to hurt him.",
-      "Yaqub's answer, that patience is best and that he seeks Allah's help against what they describe (12:18), is kept."
+      "Yaqub's answer, that patience is best and that he seeks Allah's help against what they describe (12:18), is kept.",
+      "In the well: the verse says Allah revealed to Yusuf that he would one day tell his brothers of this while they did not realise (12:15). Ibn Kathir's tafsir (abridged English) explains this as comfort sent in his distress, and reports from Ibn Abbas that the brothers would not recognise him when he reminded them. The same tafsir relates that Yusuf stood on a stone in the water of the well; the picture shows that. The stone is from the commentary, not from the verse.",
+      "The shirt: the verse says they brought his shirt with false blood on it (12:18). Ibn Kathir's tafsir (abridged English) says, citing Mujahid, As-Suddi and others, that the blood was a sheep's, and that the brothers forgot to tear the shirt, which is why Yaqub did not believe them. The untorn shirt, which the game turns into a question, is from this commentary, not from the verse."
     ],
     steps: [
       { say: "c2-a", scene: "desert", art: [["G:brothers", 36, 72, 200, "bob", { expr: "angry" }], ["P:yusuf", 82, 74, 80, "bob", { expr: "happy" }], ["💢", 30, 40, 34, "float"]] },
       { say: "c2-b", scene: "desert", art: [["P:yusuf", 54, 50, 44, null, { expr: "scared" }], ["WELL", 54, 58, 150], ["G:brothers", 22, 80, 130, "bob", { expr: "neutral" }]] },
+      { say: "c2-w", scene: "night", src: "The stone: Ibn Kathir's tafsir", art: [["🌙", 50, 9, 30], ["P:yusuf", 50, 62, 96, "bob", { expr: "calm" }], ["✨", 30, 34, 34, "float"], ["✨", 70, 40, 28, "float"]] },
       { say: "c2-c", scene: "dusk", art: [["⛺", 74, 50, 110], ["P:yaqub", 74, 72, 92, "bob", { expr: "worried" }], ["G:brothers", 32, 78, 190, "bob", { expr: "cry" }], ["👕", 50, 40, 44, "float"], ["🐺", 14, 24, 40], ["💭", 28, 38, 34, "float"]] },
+      {
+        play: "choice", line: "c2-s", scene: "dusk", src: "The untorn shirt: Ibn Kathir's tafsir",
+        opts: {
+          img: "c2-s",
+          art: [["👕", 50, 30, 104, "float"], ["🔍", 70, 16, 36, "float"]],
+          options: [{ label: "Yes, it is torn", icon: "✂️", ok: false }, { label: "No, not one tear", icon: "👕", ok: true }],
+          wrong: "c2-swrong"
+        }
+      },
       {
         play: "choice", line: "c2-do", scene: "dusk",
         opts: {
@@ -68,9 +86,12 @@ window.YUSUF_STORY = [
   {
     id: "c4", icon: "🐪", title: "Far From Home", source: "12:20-22",
     parent: [
-      "Verses 12:20–22. Yusuf is sold for a few pieces of silver. The Egyptian who bought him tells his wife to look after him well (12:21), and when Yusuf reaches maturity Allah gives him judgement and knowledge (12:22)."
+      "Verses 12:20–22. Yusuf is sold for a few pieces of silver. The Egyptian who bought him tells his wife to look after him well (12:21), and when Yusuf reaches maturity Allah gives him judgement and knowledge (12:22).",
+      "The twenty coins: the verse says only 'a few dirhams' (12:20). Ibn Kathir's tafsir (abridged English) gives the number as twenty dirhams, according to Abdullah bin Mas'ud, and says the same was reported from Ibn Abbas, Nawf al-Bikali, As-Suddi, Qatadah and Atiyah al-Awfi. The number in the counting game is from this commentary, not from the verse.",
+      "Who sold him: the same tafsir reports from Ibn Abbas, Mujahid and Ad-Dahhak that 'they sold him' refers to Yusuf's brothers, who sold him to the caravan. The game's wording does not say who sold him. The line that they did not know how precious he was follows Ad-Dahhak's comment, in the same tafsir, that they had no knowledge of his prophethood and rank with Allah."
     ],
     steps: [
+      { play: "count", line: "c4-count", scene: "desert", src: "Twenty coins: Ibn Kathir's tafsir", opts: { total: 20, after: "c4-counted", bg: "bg-market" } },
       { say: "c4-a", scene: "desert", art: [["🐪", 40, 74, 76, "walk"], ["P:yusuf", 40, 56, 42, "walk", { expr: "worried" }], ["☀️", 84, 18, 50]] },
       { play: "journey", line: "c4-do", scene: "desert", opts: { icon: "🐪", flip: true, rider: true, from: "🌴", to: "🏛️", steps: 6 } },
       { say: "c4-b", scene: "egypt", art: [["🏛️", 76, 44, 110], ["P:master", 70, 72, 96, "bob", { expr: "calm" }], ["P:yusuf", 40, 76, 80, "bob", { expr: "sad" }], ["COINS", 18, 76, 1]] },
@@ -112,7 +133,7 @@ window.YUSUF_STORY = [
     ],
     steps: [
       { say: "c6-a", scene: "prison", art: [["P:yusufYouth", 50, 70, 90, "bob", { expr: "calm" }], ["P:prisoner1", 18, 74, 78, "bob", { expr: "worried" }], ["P:prisoner2", 82, 74, 78, "bob", { expr: "worried", flip: true }], ["🍇", 18, 42, 40, "float"], ["🍞", 80, 44, 36, "float"], ["🐦", 90, 26, 30, "float"]] },
-      { say: "c6-b", scene: "prison", art: [["T:الله", 50, 28, 60], ["P:yusufYouth", 50, 68, 100, "bob", { expr: "calm" }], ["P:prisoner1", 16, 78, 66, "bob", { expr: "calm" }], ["P:prisoner2", 84, 78, 66, "bob", { expr: "calm", flip: true }]] },
+      { say: "c6-b", scene: "prison", over: [["T:الله", 50, 16, 54]], art: [["T:الله", 50, 28, 60], ["P:yusufYouth", 50, 68, 100, "bob", { expr: "calm" }], ["P:prisoner1", 16, 78, 66, "bob", { expr: "calm" }], ["P:prisoner2", 84, 78, 66, "bob", { expr: "calm", flip: true }]] },
       {
         play: "match", line: "c6-do", scene: "prison",
         opts: {
@@ -179,9 +200,12 @@ window.YUSUF_STORY = [
   {
     id: "c10", icon: "🏆", title: "The King's Cup", source: "12:63-79",
     parent: [
+      "The gates: Yaqub told his sons not to enter by one gate but by different gates, adding that he could not protect them from anything Allah had decreed and that he put his trust in Allah (12:67). The verse does not give his reason. Ibn Kathir's tafsir (abridged English) reports from Ibn Abbas, Muhammad bin Ka'b, Mujahid, Ad-Dahhak, Qatadah, As-Suddi and others that he feared the evil eye for them. The game shows the gates and leaves the reason for you to explain.",
       "Verses 12:63–79. Yaqub let Benjamin go only after his sons swore to bring him back (12:63–66). Yusuf told Benjamin privately that he was his brother (12:69), and the king's cup was put in Benjamin's pack (12:70). The verse says Yusuf searched the other bags first and then his brother's, where he found the cup (12:76), so the game keeps that order: the cup is in the last bag on purpose. The same verse says this was a plan Allah devised for Yusuf."
     ],
     steps: [
+      { say: "c10-g", scene: "dusk", art: [["⛺", 26, 50, 100], ["P:yaqub", 26, 72, 96, "bob", { expr: "calm" }], ["G:brothers", 68, 78, 170, "bob", { expr: "neutral", flip: true }], ["🚪", 60, 30, 34, "float"], ["🚪", 76, 24, 34, "float"], ["🚪", 90, 32, 34, "float"]] },
+      { play: "gates", line: "c10-gdo", scene: "egypt", opts: { owners: ["b1", "b3", "b2", "b4", "benjamin"], bg: "bg-wall" } },
       { say: "c10-a", scene: "egypt", art: [["P:yusufMan", 38, 66, 100, "bob", { expr: "happy" }], ["P:benjamin", 68, 74, 84, "bob", { expr: "happy" }], ["💛", 54, 28, 40, "float"]] },
       { say: "c10-b", scene: "egypt", art: [["SACK", 50, 72, 120], ["CUP", 50, 26, 60, "float"], ["P:yusufMan", 18, 66, 90, "bob", { expr: "calm" }], ["P:benjamin", 84, 74, 70, "bob", { expr: "neutral", flip: true }]] },
       { play: "search", line: "c10-do", scene: "egypt", opts: { owners: ["b1", "b3", "b2", "b4", "benjamin"], nope: "c10-nope" } },
@@ -212,7 +236,8 @@ window.YUSUF_STORY = [
   {
     id: "c12", icon: "👕", title: "The Shirt", source: "12:93-98",
     parent: [
-      "Verses 12:93–98. Yusuf sent his shirt to be laid over his father's face (12:93). Yaqub said he could smell Yusuf (12:94), and when the shirt was laid on his face his sight returned (12:96). The brothers asked him to seek forgiveness for them, and he said he would (12:97–98)."
+      "Verses 12:93–98. Yusuf sent his shirt to be laid over his father's face (12:93). Yaqub said he could smell Yusuf (12:94), and when the shirt was laid on his face his sight returned (12:96). The brothers asked him to seek forgiveness for them, and he said he would (12:97–98).",
+      "The wind: the verse says that when the caravan departed, Yaqub said he could sense the scent of Yusuf (12:94). Ibn Kathir's tafsir (abridged English) reports, through Abd al-Razzaq, that Ibn Abbas said a wind began to blow and carried the scent of the shirt to Yaqub from a distance of eight days' travel. The wind in the game's telling is from this report, not from the verse."
     ],
     steps: [
       { say: "c12-a", scene: "egypt", art: [["👕", 34, 42, 90, "float"], ["P:yusufMan", 72, 66, 104, "bob", { expr: "calm" }]] },
@@ -255,15 +280,15 @@ window.YUSUF_STORY = [
 */
 window.YUSUF_MOODS = {
   "c1-b": "wonder",
-  "c2-a": "tense", "c2-b": "tense", "c2-c": "tense", "c2-do": "tense",
+  "c2-a": "tense", "c2-b": "tense", "c2-w": "wonder", "c2-c": "tense", "c2-s": "tense", "c2-do": "tense",
   "c3-b": "joy",
-  "c4-b": "sad",
+  "c4-count": "sad", "c4-b": "sad",
   "c5-a": "tense", "c5-b1": "tense", "c5-b2": "tense", "c5-do2": "tense", "c5-b3": "wonder", "c5-b4": "wonder", "c5-do": "tense", "c5-d": "wonder",
   "c6-b": "wonder", "c6-do": "wonder",
   "c7-a": "tense", "c7-b": "tense", "c7-do": "wonder",
   "c8-a1": "tense", "c8-a2": "tense", "c8-do-o": "wonder", "c8-c": "joy",
   "c9-b": "tense", "c9-do": "desert",
-  "c10-b": "tense", "c10-do": "tense", "c10-c": "joy",
+  "c10-g": "wonder", "c10-gdo": "regal", "c10-b": "tense", "c10-do": "tense", "c10-c": "joy",
   "c11-c": "tense", "c11-e": "sad", "c11-do": "tense", "c11-d": "joy",
   "c12-a": "joy",
   "c13-a": "joy", "c13-b": "joy", "c13-q": "wonder", "c13-b0": "joy", "c13-c": "wonder"

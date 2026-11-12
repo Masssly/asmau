@@ -4,9 +4,12 @@
   { "id": "c1-b",  "text": "Yusuf told his father, Yaqub. His father said: my son, do not tell your brothers about this dream. Allah will choose you, and teach you the meaning of dreams.", "lang": "en" },
 
   { "id": "c2-a",  "text": "Yusuf's brothers were jealous. They said: our father loves Yusuf more than us! So they made a bad plan. Some of them wanted to get rid of him. But one said: do not hurt him. Leave him in a deep well, where travellers may find him.", "lang": "en" },
-  { "id": "c2-b",  "text": "They took Yusuf far away and put him down into a deep, dark well. But Allah spoke to Yusuf's heart: one day, you will tell them about all this.", "lang": "en" },
+  { "id": "c2-b",  "text": "They took Yusuf far away and put him down into a deep, dark well.", "lang": "en" },
+  { "id": "c2-w", "text": "But down in the dark, Yusuf was not alone. Allah comforted his heart: one day, you will tell your brothers about all this, and they will not even know it is you.", "lang": "en" },
   { "id": "c2-c",  "text": "That night the brothers came home crying. They said: Father, a wolf ate Yusuf! And they showed him Yusuf's shirt, stained to make their story look true.", "lang": "en" },
-  { "id": "c2-do", "text": "What do you think? Was the brothers' story true?", "lang": "en" },
+  { "id": "c2-s", "text": "Look closely at the shirt, just as Yaqub did. A wolf has sharp teeth. Is the shirt torn?", "lang": "en" },
+  { "id": "c2-swrong", "text": "Look again. The shirt is stained, but there is not one tear in it.", "lang": "en" },
+  { "id": "c2-do", "text": "A wolf would have torn the shirt to pieces. So what do you think? Was the brothers' story true?", "lang": "en" },
   { "id": "c2-wrong", "text": "Not quite. The wolf did nothing at all! Try again.", "lang": "en" },
   { "id": "c2-d",  "text": "No, it was not true, and their father Yaqub knew it. He said: it is best to be patient. I ask Allah alone for help.", "lang": "en" },
 
@@ -14,9 +17,11 @@
   { "id": "c3-do", "text": "Help him pull! Drag the rope up, or tap fast, to bring the bucket up.", "lang": "en" },
   { "id": "c3-b",  "text": "Good news! shouted the man. Here is a boy! The travellers hid Yusuf away to sell him. But Allah knew everything they did.", "lang": "en" },
 
+  { "id": "c4-count", "text": "Yusuf was sold for a very small price: just a few silver coins. Tap the coins to count them.", "lang": "en" },
+  { "id": "c4-counted", "text": "Twenty small coins. They did not know how precious Yusuf was.", "lang": "en" },
   { "id": "c4-a",  "text": "So Yusuf was carried far from home, all the way to the land of Egypt.", "lang": "en" },
   { "id": "c4-do", "text": "Drag the camel along the path, or tap it, to help the caravan cross the desert.", "lang": "en" },
-  { "id": "c4-b",  "text": "There, they sold Yusuf for only a few silver coins. The man who bought him told his wife: look after him well.", "lang": "en" },
+  { "id": "c4-b",  "text": "In Egypt, a man bought Yusuf and took him to his home. He told his wife: look after him well.", "lang": "en" },
   { "id": "c4-c",  "text": "The years passed, and Yusuf grew into a young man in Egypt. When he was grown, Allah gave him wisdom and knowledge.", "lang": "en" },
 
   { "id": "c5-a",  "text": "One day, the woman of the house tried to make Yusuf do something wrong. Yusuf said: Allah forbid! My master has been good to me. And he ran for the door.", "lang": "en" },
@@ -63,6 +68,8 @@
   { "id": "c9-do", "text": "Yusuf gave them full measure. Tap each sack until it is full to the top.", "lang": "en" },
   { "id": "c9-c",  "text": "Yusuf said: next time, bring your other brother, the one at home with your father. And he had their payment put back in their bags.", "lang": "en" },
 
+  { "id": "c10-g", "text": "Before the brothers set off again, their father Yaqub said: my sons, do not all go in by one gate. Go in by different gates. I trust in Allah.", "lang": "en" },
+  { "id": "c10-gdo", "text": "Do as their father said. Tap a gate for each brother, a different gate each time.", "lang": "en" },
   { "id": "c10-a",  "text": "The brothers came again, and this time they brought their brother. Yusuf took him aside and said: I am your brother. Do not be sad.", "lang": "en" },
   { "id": "c10-b",  "text": "Then came a plan that Allah made for Yusuf, so that his brother could stay with him. The king's drinking cup was placed in his brother's bag.", "lang": "en" },
   { "id": "c10-do", "text": "The king's cup is missing! Search the bags one by one, starting with the oldest brother's.", "lang": "en" },
@@ -78,7 +85,7 @@
   { "id": "c11-d",  "text": "Yusuf forgave them! He said: you will hear no blame today. May Allah forgive you. He is the Most Merciful of all.", "lang": "en" },
 
   { "id": "c12-a",  "text": "Yusuf gave them his shirt. He said: lay it over my father's face, and he will see again. Then bring your whole family to me.", "lang": "en" },
-  { "id": "c12-b",  "text": "Far away, as the caravan set off, Yaqub said: I can smell Yusuf!", "lang": "en" },
+  { "id": "c12-b",  "text": "Far away, as the caravan set off, a wind began to blow. And Yaqub said: I can smell Yusuf!", "lang": "en" },
   { "id": "c12-do", "text": "Drag the shirt along the path, or tap it, to carry the good news home.", "lang": "en" },
   { "id": "c12-c",  "text": "The shirt was laid on Yaqub's face, and he could see again! The brothers said: Father, ask Allah to forgive us. And he said: I will ask my Lord to forgive you.", "lang": "en" },
 

@@ -134,6 +134,27 @@ adds make-up gain, so these are measured after it, not guessed). Listen on a
 real device and adjust `MUSIC_LEVEL` in `shared/music.js` if it needs
 changing.
 
+## Pictures (Yusuf)
+
+The Yusuf game can show a full picture for every narrated step and a backdrop
+for every activity. `games/yusuf/art.js` lists the pictures that exist; the
+files are `games/yusuf/assets/img/<key>.webp`, where the key is the step's
+line id (`c1-a`), `bg-<name>` for a backdrop, or `p-<name>` for a round
+portrait of a person. A step with no picture falls back to its drawn sprites,
+and so does a picture that fails to load, so the set can grow a few at a time.
+
+The shot list (one description per picture, people described by clothes and
+age, never by name) is `scripts/yusuf-art/shots.py`. To add pictures:
+
+```
+python3 scripts/yusuf-art/build.py prompts            # the prompt for every picture
+python3 scripts/yusuf-art/build.py import <folder>    # <folder>/<key>.png -> assets/img + art.js
+```
+
+Pictures are AI-generated. Say so wherever they are credited, and record the
+tool used. The clothes and buildings are an artistic interpretation in a West
+African style, not a reconstruction of ancient Egypt.
+
 ## Offline
 
 After the first visit the whole site works with no connection, which matters
@@ -185,6 +206,13 @@ to date.
   (silhouette/glow/implied only); other prophets are decided case by case.
   The Yusuf game draws people, all with dark skin, including Prophet Yusuf
   and Prophet Yaqub, by the owner's decision for that game.
+- **A detail from a commentary is labelled as one.** The Yusuf game takes a
+  few details from Ibn Kathir's tafsir (abridged English, fetched from
+  quran.com, not recalled): the stone Yusuf stood on in the well, the shirt
+  the brothers forgot to tear, the twenty coins, the wind that carried the
+  scent. Each such step carries a small label on the scene (`src` in
+  `story.js`), and the chapter's note for parents names the tafsir, who the
+  report is attributed to, and says plainly that it is not from the verse.
 - **Don't extend a scripture-based story past what's been grounded.** It's
   fine to ship "Part 1" of a story and add later chapters once those verses
   have actually been checked, rather than inventing the next scene to

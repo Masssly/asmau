@@ -336,3 +336,65 @@ button { touch-action: manipulation; -webkit-tap-highlight-color: transparent; }
 .pnote summary { cursor: pointer; font-family: var(--font-display); color: var(--cream); font-size: 14px; padding: 8px 0; }
 .pnote p { margin: 0 0 8px; }
 .pnote-link { color: var(--gold); }
+
+/* ---------- pictures ---------- */
+/* A narrated step with a picture: the picture fills the stage. Pictures are
+   square, so the stage becomes as tall as it is wide, up to most of the screen. */
+.stage.has-pic { height: auto; aspect-ratio: 1 / 1; max-height: 58vh; background: #14110f; }
+.stage.has-pic[data-mode="play"] { aspect-ratio: auto; height: clamp(290px, 46vh, 400px); }
+.pic {
+  position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 42%;
+  -webkit-user-drag: none; animation: pic-in .5s ease both, pic-drift 26s ease-in-out .5s infinite alternate;
+}
+.stage.has-pic[data-mode="play"] .pic { filter: brightness(.82); }
+@keyframes pic-in { from { opacity: 0; } to { opacity: 1; } }
+@keyframes pic-drift { from { transform: scale(1); } to { transform: scale(1.07) translateY(-1.2%); } }
+.stage.has-pic .sp, .stage.has-pic .choices, .stage.has-pic .count-chip, .stage.has-pic .src-chip { z-index: 2; }
+.stage.has-pic .txt { text-shadow: 0 2px 10px rgba(0,0,0,.85); }
+
+/* an activity's backdrop: a picture behind the pieces, dimmed a little so the pieces stand out */
+.stage.has-bg { background-size: cover; background-position: 50% 50%; }
+.stage.has-bg::before { content: ""; position: absolute; inset: 0; background: rgba(10,8,6,.22); pointer-events: none; z-index: 0; }
+.stage.has-bg > * { z-index: 1; }
+.stage.has-bg .shaft { background: linear-gradient(180deg, rgba(58,47,40,.72), rgba(18,14,11,.9)); }
+
+/* a person shown as a round portrait rather than drawn */
+.ava { border-radius: 50%; aspect-ratio: 1 / 1; object-fit: cover; border: 3px solid #f4ead0; box-shadow: 0 3px 8px rgba(0,0,0,.45); background: #3a2a1e; }
+
+/* where a detail comes from, when it is from the commentary rather than the verse */
+.src-chip {
+  position: absolute; right: 10px; top: 10px; max-width: 70%; background: rgba(8,12,30,.66); color: #f4ead0;
+  font-family: var(--font-body); font-size: 12px; line-height: 1.25; border-radius: 10px; padding: 4px 9px; pointer-events: none;
+}
+
+/* count the coins */
+.coin-tray {
+  position: absolute; left: 50%; top: 54%; transform: translate(-50%, -50%); display: grid; grid-template-columns: repeat(5, 1fr);
+  gap: 8px; padding: 12px; background: rgba(60,38,20,.78); border: 3px solid #8a6230; border-radius: 16px;
+}
+.coin {
+  width: 46px; height: 46px; border-radius: 50%; padding: 0; cursor: pointer; color: transparent;
+  background: radial-gradient(circle at 35% 30%, #fff, #c9ced6 55%, #8d949e); border: 3px solid #7b828c;
+  font-weight: 800; font-size: 17px; box-shadow: 0 3px 0 rgba(0,0,0,.35); transition: transform .15s ease;
+}
+.coin:active { transform: scale(.9); }
+.coin.counted { color: #23272e; cursor: default; box-shadow: 0 0 0 3px rgba(255,214,110,.9); animation: coin-pop .35s ease; }
+@keyframes coin-pop { 50% { transform: scale(1.22); } }
+@media (max-height: 560px) { .coin { width: 38px; height: 38px; font-size: 15px; } .coin-tray { gap: 6px; padding: 8px; } }
+
+/* a different gate for each brother */
+.gate-row { position: absolute; left: 0; right: 0; top: 14%; display: flex; justify-content: center; gap: 8px; padding: 0 8px; }
+.gate {
+  position: relative; width: 62px; height: 96px; padding: 0; cursor: pointer; border: 4px solid #8a6230; border-bottom-width: 6px;
+  border-radius: 31px 31px 6px 6px; background: linear-gradient(180deg, #2a1c12, #4a3220); display: flex; align-items: flex-end; justify-content: center;
+  box-shadow: 0 4px 0 rgba(0,0,0,.3); animation: gate-glow 1.6s ease-in-out infinite;
+}
+@keyframes gate-glow { 0%, 100% { box-shadow: 0 4px 0 rgba(0,0,0,.3), 0 0 0 0 rgba(255,214,110,0); } 50% { box-shadow: 0 4px 0 rgba(0,0,0,.3), 0 0 14px 4px rgba(255,214,110,.9); } }
+.gate.taken { animation: none; background: linear-gradient(180deg, #5a4526, #b98a45); cursor: default; }
+.gate .gate-face { width: 48px; margin: 0 0 6px; }
+.gate-queue { position: absolute; left: 0; right: 0; bottom: 6%; display: flex; justify-content: center; gap: 6px; min-height: 56px; }
+.gate-face { display: block; width: 50px; transition: transform .2s ease; }
+.gate-face .fig { display: block; width: 100%; height: auto; }
+.gate-face.next { transform: scale(1.25) translateY(-4px); filter: drop-shadow(0 0 8px rgba(255,214,110,.95)); }
+
+@media (prefers-reduced-motion: reduce) { .pic { animation: pic-in .3s ease both; } .gate { animation: none; } }

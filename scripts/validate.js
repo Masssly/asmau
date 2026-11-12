@@ -7,6 +7,7 @@
   - narration ids are unique, every English line has audio, no audio is orphaned
   - every line a story points at exists, and every narration line is used
   - every person, activity and music mood a story names exists
+  - every picture in art.js exists and is used, and no picture is unlisted
   - Qur'an references look like references
   - pages only load local files that exist, and nothing loads from Google
   - the README only names files that exist
@@ -122,14 +123,16 @@ for (const slug of slugs) {
     ch.steps.forEach((st, si) => {
       const where = here + " step " + (si + 1);
       if (!SCENES.has(st.scene)) fail(dir + ": " + where + " has unknown scene '" + st.scene + "'");
-      if (st.say) { need(st.say, where); artCheck(st.art, where); return; }
+      if (st.say) { need(st.say, where); artCheck(st.art, where); artCheck(st.over, where); return; }
       if (!st.play || !st.line) { fail(dir + ": " + where + " is neither narrated nor an activity"); return; }
       need(st.line, where);
       if (!activities.has(st.play)) fail(dir + ": " + where + " uses unknown activity '" + st.play + "'");
       const o = st.opts || {};
       if (o.wrong) need(o.wrong, where);
       if (o.nope) need(o.nope, where);
+      if (o.after) need(o.after, where);
       artCheck(o.art, where);
+      artCheck(st.over, where);
       for (const p of o.pairs || []) { need(p.a, where); need(p.b, where); }
       for (const i of o.items || []) need(i.line, where);
       for (const c of o.cards || []) need(c.line, where);
@@ -145,6 +148,27 @@ for (const slug of slugs) {
     if (!musicMoods.includes(mood)) fail(dir + "/story.js: '" + line + "' uses unknown music mood '" + mood + "'");
   }
   for (const id of ids) if (!used.has(id)) fail(narrationFile + ": line '" + id + "' is never used by the story");
+
+  /* ---------- pictures (art.js), if the game has them ---------- */
+  if (exists(dir + "/art.js")) {
+    let art = {};
+    try { art = load([dir + "/art.js"]).YUSUF_ART || {}; } catch (e) { fail(dir + "/art.js: failed to load (" + e.message + ")"); }
+    const imgDir = dir + "/assets/img";
+    const files = fs.existsSync(path.join(ROOT, imgDir)) ? fs.readdirSync(path.join(ROOT, imgDir)) : [];
+    const bgs = new Set();
+    story.forEach((ch) => ch.steps.forEach((st) => {
+      if (st.play) { bgs.add("bg-" + st.scene); if (st.opts && st.opts.bg) bgs.add(st.opts.bg); if (st.opts && st.opts.img) bgs.add(st.opts.img); }
+    }));
+    for (const [key, alt] of Object.entries(art)) {
+      if (!files.includes(key + ".webp")) fail(imgDir + "/" + key + ".webp: listed in art.js but missing");
+      if (typeof alt !== "string" || !alt.trim()) fail(dir + "/art.js: '" + key + "' needs a description (it is the picture's alt text)");
+      const known = ids.has(key) || bgs.has(key) || (key.startsWith("p-") && people.has(key.slice(2)));
+      if (!known) fail(dir + "/art.js: '" + key + "' is not a line id, a backdrop an activity uses, or a person");
+    }
+    for (const f of files) {
+      if (!art[f.replace(/\.webp$/, "")]) fail(imgDir + "/" + f + ": not listed in art.js (run scripts/yusuf-art/build.py)");
+    }
+  }
 }
 
 /* ---------- pages ---------- */

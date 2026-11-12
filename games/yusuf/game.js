@@ -7,6 +7,7 @@
   var moods = window.YUSUF_MOODS || {};
   var music = window.AsmauMusic;
   var People = window.YusufPeople;
+  var ART = window.YUSUF_ART || {};   // which pictures exist (art.js)
   var lines = {};
 
   var $ = function (id) { return document.getElementById(id); };
@@ -107,6 +108,22 @@
     el._fig = { name: name, o: o || {} };
     el.innerHTML = People.svg(name, o);
     return el;
+  }
+
+  // A full picture for a step. If the file cannot be loaded the step falls
+  // back to its drawn sprites, so a missing picture never leaves a blank scene.
+  function picture(id, fallback) {
+    var img = mk("img", "pic");
+    img.alt = ART[id] || "";
+    img.draggable = false;
+    img.addEventListener("error", function () {
+      if (!img.parentNode) return;
+      img.remove();
+      stage.classList.remove("has-pic");
+      if (fallback) fallback();
+    });
+    img.src = "assets/img/" + id + ".webp";
+    return img;
   }
 
   function sprite(spec) {
@@ -604,6 +621,74 @@
     return function () { finished = true; clearInterval(timer); };
   };
 
+  // Count the coins: tap each one. Nothing is timed.
+  ACT.count = function (opts, done) {
+    var total = opts.total || 20, n = 0;
+    var chip = mk("div", "count-chip", "0 / " + total);
+    stage.appendChild(chip);
+    var tray = mk("div", "coin-tray");
+    for (var i = 0; i < total; i++) {
+      (function () {
+        var b = mk("button", "coin");
+        b.setAttribute("aria-label", "silver coin");
+        b.addEventListener("click", function () {
+          if (b.disabled) return;
+          b.disabled = true;
+          n += 1;
+          b.textContent = String(n);
+          b.classList.add("counted");
+          fx("coin", n);
+          chip.textContent = n + " / " + total;
+          if (n === total) {
+            if (opts.after) { setCaption(opts.after); say(opts.after); }
+            done();
+          }
+        });
+        tray.appendChild(b);
+      })();
+    }
+    stage.appendChild(tray);
+    return function () {};
+  };
+
+  // A different gate for each brother: tap an empty gate and the next brother
+  // goes in by it. A gate that already has someone shakes its head.
+  ACT.gates = function (opts, done) {
+    var owners = opts.owners, total = owners.length, sent = 0;
+    var wall = mk("div", "gate-row");
+    var queue = mk("div", "gate-queue");
+    var waiting = owners.map(function (name) {
+      var f = mk("span", "gate-face");
+      f.innerHTML = People.svg(name, { expr: "neutral" });
+      queue.appendChild(f);
+      return f;
+    });
+    function mark() {
+      waiting.forEach(function (f, i) { f.classList.toggle("next", i === sent); });
+    }
+    owners.forEach(function (name, i) {
+      var g = mk("button", "gate");
+      g.setAttribute("aria-label", "gate " + (i + 1) + " of " + total);
+      g.addEventListener("click", function () {
+        if (sent >= total) return;
+        if (g.classList.contains("taken")) { shake(g); buzz(); return; }
+        g.classList.add("taken");
+        var f = waiting[sent];
+        f.classList.remove("next");
+        g.appendChild(f);
+        sent += 1;
+        fx("whoosh", sent);
+        mark();
+        if (sent === total) done();
+      });
+      wall.appendChild(g);
+    });
+    mark();
+    stage.appendChild(wall);
+    stage.appendChild(queue);
+    return function () {};
+  };
+
   // Full measure: tap every sack up to the top.
   ACT.fill = function (opts, done) {
     var total = opts.sacks || 5, taps = opts.taps || 3, full = 0;
@@ -726,6 +811,7 @@
     renderTrail();
 
     stage.className = "stage";
+    stage.style.backgroundImage = "";
     stage.dataset.scene = st.scene;
     stage.dataset.mode = st.say ? "story" : "play";
     stage.style.touchAction = st.say ? "pan-y" : "none";
@@ -751,12 +837,30 @@
 
     setNext("Next", false);
     nextBtn.classList.remove("ready");
+    // A narrated step shows its picture (named after its line) if there is one;
+    // an activity can name a picture in opts.img, or else gets a backdrop.
+    var opts = st.opts || {};
+    var picId = st.say || opts.img;
+    var hasPic = !!(picId && ART[picId]);
+    if (hasPic) {
+      stage.classList.add("has-pic");
+      stage.appendChild(picture(picId, st.say ? function () { if (token === stepToken) drawArt(stage, st.art); } : null));
+      if (!st.say) opts = merge(opts, { art: null });
+    } else if (!st.say) {
+      var bg = opts.bg || ("bg-" + st.scene);
+      if (ART[bg]) {
+        stage.style.backgroundImage = "url(assets/img/" + bg + ".webp)";
+        stage.classList.add("has-bg");
+      }
+    }
+    if (st.src) stage.appendChild(mk("div", "src-chip", st.src));
+
     if (st.say) {
-      drawArt(stage, st.art);
+      drawArt(stage, hasPic ? st.over : st.art);
       nextBtn.hidden = false;
     } else {
       nextBtn.hidden = true;
-      cleanup = ACT[st.play](st.opts || {}, function () {
+      cleanup = ACT[st.play](opts, function () {
         if (token !== stepToken) return;
         fanfare();
         burst();

@@ -1,77 +1,312 @@
 [
-  { "id": "c1-a",  "text": "One night, young Yusuf had a wonderful dream. He saw eleven stars, the sun and the moon, all bowing down to him.", "lang": "en" },
-  { "id": "c1-do", "text": "Tap every star, the sun and the moon, and watch them bow.", "lang": "en" },
-  { "id": "c1-b",  "text": "Yusuf told his father, Yaqub. His father said: my son, do not tell your brothers about this dream. Allah will choose you, and teach you the meaning of dreams.", "lang": "en" },
-
-  { "id": "c2-a",  "text": "Yusuf's brothers were jealous. They said: our father loves Yusuf more than us! So they made a bad plan.", "lang": "en" },
-  { "id": "c2-b",  "text": "They took Yusuf far away and put him down into a deep, dark well. But Allah spoke to Yusuf's heart: one day, you will tell them about all this.", "lang": "en" },
-  { "id": "c2-c",  "text": "That night the brothers came home crying. They said: Father, a wolf ate Yusuf! And they showed him Yusuf's shirt, stained to make their story look true.", "lang": "en" },
-  { "id": "c2-do", "text": "What do you think? Was the brothers' story true?", "lang": "en" },
-  { "id": "c2-wrong", "text": "Not quite. The wolf did nothing at all! Try again.", "lang": "en" },
-  { "id": "c2-d",  "text": "No, it was not true, and their father Yaqub knew it. He said: it is best to be patient. I ask Allah alone for help.", "lang": "en" },
-
-  { "id": "c3-a",  "text": "Some travellers came by. They sent a man to fetch water, and he let his bucket down into the well.", "lang": "en" },
-  { "id": "c3-do", "text": "Help him pull! Tap fast to bring the bucket up.", "lang": "en" },
-  { "id": "c3-b",  "text": "Good news! shouted the man. Here is a boy! The travellers hid Yusuf away to sell him. But Allah knew everything they did.", "lang": "en" },
-
-  { "id": "c4-a",  "text": "So Yusuf was carried far from home, all the way to the land of Egypt.", "lang": "en" },
-  { "id": "c4-do", "text": "Tap the camel to help the caravan cross the desert.", "lang": "en" },
-  { "id": "c4-b",  "text": "There, they sold Yusuf for only a few silver coins. The man who bought him told his wife: look after him well.", "lang": "en" },
-  { "id": "c4-c",  "text": "Yusuf grew up in Egypt. And when he was grown, Allah gave him wisdom and knowledge.", "lang": "en" },
-
-  { "id": "c5-a",  "text": "One day, someone in the house wanted Yusuf to do something wrong. Yusuf said: Allah forbid! And he ran from it.", "lang": "en" },
-  { "id": "c5-b",  "text": "Then lies were told about Yusuf. He prayed: My Lord, I would rather go to prison than do wrong. And Allah answered his prayer and kept him safe from wrong.", "lang": "en" },
-  { "id": "c5-c",  "text": "Everyone could see that Yusuf had done nothing wrong. But they put him in prison anyway.", "lang": "en" },
-  { "id": "c5-do", "text": "Be patient, like Yusuf. Press and hold the lamp until it shines. Don't let go!", "lang": "en" },
-  { "id": "c5-d",  "text": "Yusuf stayed patient in prison, and he never stopped trusting Allah.", "lang": "en" },
-
-  { "id": "c6-a",  "text": "Two young men were in prison with Yusuf. Each of them had a dream, and they asked Yusuf what the dreams meant.", "lang": "en" },
-  { "id": "c6-b",  "text": "First, Yusuf told them the most important thing: worship no one but Allah, the One.", "lang": "en" },
-  { "id": "c6-do", "text": "Now match each dream to its meaning. Tap a dream, then tap what it means.", "lang": "en" },
-  { "id": "c6-d1", "text": "I dreamed I was pressing grapes.", "lang": "en" },
-  { "id": "c6-d2", "text": "I dreamed birds ate the bread I carried on my head.", "lang": "en" },
-  { "id": "c6-m1", "text": "You will be saved, and you will serve your master.", "lang": "en" },
-  { "id": "c6-m2", "text": "Sad news. You will not be saved.", "lang": "en" },
-  { "id": "c6-c",  "text": "Yusuf said to the man who would go free: tell your master about me. But the man forgot. So Yusuf stayed in prison for more years.", "lang": "en" },
-
-  { "id": "c7-a",  "text": "Then the king had a strange dream. Seven fat cows were eaten by seven thin cows. And he saw seven green ears of grain, and seven dry ones.", "lang": "en" },
-  { "id": "c7-b",  "text": "Nobody could explain it. Then the man from the prison remembered Yusuf at last! He hurried to ask him.", "lang": "en" },
-  { "id": "c7-do", "text": "Tap each side of the dream to hear what Yusuf said it means.", "lang": "en" },
-  { "id": "c7-good", "text": "The fat cows and the green grain: seven good years are coming. Plant, and save what you harvest.", "lang": "en" },
-  { "id": "c7-hard", "text": "The thin cows and the dry grain: then seven hard years will come, and you will eat what you saved.", "lang": "en" },
-  { "id": "c7-c",  "text": "And after that, said Yusuf, will come a year with plenty of rain.", "lang": "en" },
-
-  { "id": "c8-a",  "text": "The king said: bring Yusuf to me! But first, Yusuf asked for the truth to be known. And the truth came out: Yusuf had done nothing wrong. He was an honest man.", "lang": "en" },
-  { "id": "c8-b",  "text": "The king trusted Yusuf completely. Yusuf said: put me in charge of the storehouses. I will look after them with care.", "lang": "en" },
-  { "id": "c8-do", "text": "The good years are here! Tap the grain as it grows, and save it in the storehouse.", "lang": "en" },
-  { "id": "c8-c",  "text": "The storehouse is full. The grain is saved, just as Yusuf said.", "lang": "en" },
-
-  { "id": "c9-a",  "text": "Later, Yusuf's brothers travelled to Egypt to get grain for their family.", "lang": "en" },
-  { "id": "c9-b",  "text": "Yusuf knew them at once. But they did not know it was him!", "lang": "en" },
-  { "id": "c9-do", "text": "Yusuf gave them full measure. Tap each sack until it is full to the top.", "lang": "en" },
-  { "id": "c9-c",  "text": "Yusuf said: next time, bring your other brother, the one at home with your father. And he had their payment put back in their bags.", "lang": "en" },
-
-  { "id": "c10-a",  "text": "The brothers came again, and this time they brought their brother. Yusuf took him aside and said: I am your brother. Do not be sad.", "lang": "en" },
-  { "id": "c10-b",  "text": "Then came a plan that Allah made for Yusuf, so that his brother could stay with him. The king's drinking cup was placed in his brother's bag.", "lang": "en" },
-  { "id": "c10-do", "text": "The king's cup is missing! Tap the bags to search them.", "lang": "en" },
-  { "id": "c10-c",  "text": "There it is, in his brother's bag! So his brother stayed in Egypt with Yusuf.", "lang": "en" },
-
-  { "id": "c11-a",  "text": "Back at home, their father Yaqub was full of sorrow. He missed Yusuf so much that his eyes turned white with grief.", "lang": "en" },
-  { "id": "c11-b",  "text": "But Yaqub did not lose hope. He said: my sons, go and look for Yusuf and his brother. Never lose hope in Allah's mercy.", "lang": "en" },
-  { "id": "c11-c",  "text": "So the brothers went back to Egypt. Then he asked them: do you know what you did to Yusuf? They cried: could it be that you are Yusuf? He said: I am Yusuf, and this is my brother. Allah has been good to us.", "lang": "en" },
-  { "id": "c11-do", "text": "The brothers said: we were wrong. What did Yusuf do?", "lang": "en" },
-  { "id": "c11-wrong", "text": "No. Yusuf did something much more beautiful. Try again.", "lang": "en" },
-  { "id": "c11-d",  "text": "Yusuf forgave them! He said: you will hear no blame today. May Allah forgive you. He is the Most Merciful of all.", "lang": "en" },
-
-  { "id": "c12-a",  "text": "Yusuf gave them his shirt. He said: lay it over my father's face, and he will see again. Then bring your whole family to me.", "lang": "en" },
-  { "id": "c12-b",  "text": "Far away, as the caravan set off, Yaqub said: I can smell Yusuf!", "lang": "en" },
-  { "id": "c12-do", "text": "Tap the shirt to carry the good news home.", "lang": "en" },
-  { "id": "c12-c",  "text": "The shirt was laid on Yaqub's face, and he could see again! The brothers said: Father, ask Allah to forgive us. And he said: I will ask my Lord to forgive you.", "lang": "en" },
-
-  { "id": "c13-a",  "text": "The whole family came to Egypt. Yusuf held his parents close and said: welcome to Egypt. You will all be safe here, if Allah wills.", "lang": "en" },
-  { "id": "c13-do", "text": "Tap the stars, the sun and the moon, just like in the dream.", "lang": "en" },
-  { "id": "c13-b",  "text": "They all bowed down before him. Yusuf said: Father, this is what my dream meant, long ago. My Lord has made it come true.", "lang": "en" },
-  { "id": "c13-c",  "text": "Then Yusuf prayed: My Lord, You are my protector in this world and the next. Let me die devoted to You, and join me with the righteous.", "lang": "en" },
-
-  { "id": "end-a",  "text": "The end. Yusuf was patient, he told the truth, and he forgave. What will you remember from his story?", "lang": "en" }
+  {
+    "id": "c1-a",
+    "text": "One night, young Yusuf had a wonderful dream. He saw eleven stars, the sun and the moon, all bowing down to him.",
+    "lang": "en"
+  },
+  {
+    "id": "c1-do",
+    "text": "Tap every star, the sun and the moon, and watch them bow.",
+    "lang": "en"
+  },
+  {
+    "id": "c1-b",
+    "text": "Yusuf told his father, Yaqub. His father said: my son, do not tell your brothers about this dream. Allah will choose you, and teach you the meaning of dreams.",
+    "lang": "en"
+  },
+  {
+    "id": "c2-a",
+    "text": "Yusuf's brothers were jealous. They said: our father loves Yusuf more than us! So they made a bad plan.",
+    "lang": "en"
+  },
+  {
+    "id": "c2-b",
+    "text": "They took Yusuf far away and put him down into a deep, dark well. But Allah spoke to Yusuf's heart: one day, you will tell them about all this.",
+    "lang": "en"
+  },
+  {
+    "id": "c2-c",
+    "text": "That night the brothers came home crying. They said: Father, a wolf ate Yusuf! And they showed him Yusuf's shirt, stained to make their story look true.",
+    "lang": "en"
+  },
+  {
+    "id": "c2-do",
+    "text": "What do you think? Was the brothers' story true?",
+    "lang": "en"
+  },
+  {
+    "id": "c2-wrong",
+    "text": "Not quite. The wolf did nothing at all! Try again.",
+    "lang": "en"
+  },
+  {
+    "id": "c2-d",
+    "text": "No, it was not true, and their father Yaqub knew it. He said: it is best to be patient. I ask Allah alone for help.",
+    "lang": "en"
+  },
+  {
+    "id": "c3-a",
+    "text": "Some travellers came by. They sent a man to fetch water, and he let his bucket down into the well.",
+    "lang": "en"
+  },
+  {
+    "id": "c3-do",
+    "text": "Help him pull! Drag the rope up, or tap fast, to bring the bucket up.",
+    "lang": "en"
+  },
+  {
+    "id": "c3-b",
+    "text": "Good news! shouted the man. Here is a boy! The travellers hid Yusuf away to sell him. But Allah knew everything they did.",
+    "lang": "en"
+  },
+  {
+    "id": "c4-a",
+    "text": "So Yusuf was carried far from home, all the way to the land of Egypt.",
+    "lang": "en"
+  },
+  {
+    "id": "c4-do",
+    "text": "Drag the camel along the path, or tap it, to help the caravan cross the desert.",
+    "lang": "en"
+  },
+  {
+    "id": "c4-b",
+    "text": "There, they sold Yusuf for only a few silver coins. The man who bought him told his wife: look after him well.",
+    "lang": "en"
+  },
+  {
+    "id": "c4-c",
+    "text": "Yusuf grew up in Egypt. And when he was grown, Allah gave him wisdom and knowledge.",
+    "lang": "en"
+  },
+  {
+    "id": "c5-a",
+    "text": "One day, someone in the house wanted Yusuf to do something wrong. Yusuf said: Allah forbid! And he ran from it.",
+    "lang": "en"
+  },
+  {
+    "id": "c5-b",
+    "text": "Then lies were told about Yusuf. He prayed: My Lord, I would rather go to prison than do wrong. And Allah answered his prayer and kept him safe from wrong.",
+    "lang": "en"
+  },
+  {
+    "id": "c5-c",
+    "text": "Everyone could see that Yusuf had done nothing wrong. But they put him in prison anyway.",
+    "lang": "en"
+  },
+  {
+    "id": "c5-do",
+    "text": "Be patient, like Yusuf. Press and hold the lamp until it shines. Don't let go!",
+    "lang": "en"
+  },
+  {
+    "id": "c5-d",
+    "text": "Yusuf stayed patient in prison, and he never stopped trusting Allah.",
+    "lang": "en"
+  },
+  {
+    "id": "c6-a",
+    "text": "Two young men were in prison with Yusuf. Each of them had a dream, and they asked Yusuf what the dreams meant.",
+    "lang": "en"
+  },
+  {
+    "id": "c6-b",
+    "text": "First, Yusuf told them the most important thing: worship no one but Allah, the One.",
+    "lang": "en"
+  },
+  {
+    "id": "c6-do",
+    "text": "Now match each dream to its meaning. Tap a dream, then tap what it means.",
+    "lang": "en"
+  },
+  {
+    "id": "c6-d1",
+    "text": "I dreamed I was pressing grapes.",
+    "lang": "en"
+  },
+  {
+    "id": "c6-d2",
+    "text": "I dreamed birds ate the bread I carried on my head.",
+    "lang": "en"
+  },
+  {
+    "id": "c6-m1",
+    "text": "You will be saved, and you will serve your master.",
+    "lang": "en"
+  },
+  {
+    "id": "c6-m2",
+    "text": "Sad news. You will not be saved.",
+    "lang": "en"
+  },
+  {
+    "id": "c6-c",
+    "text": "Yusuf said to the man who would go free: tell your master about me. But the man forgot. So Yusuf stayed in prison for more years.",
+    "lang": "en"
+  },
+  {
+    "id": "c7-a",
+    "text": "Then the king had a strange dream. Seven fat cows were eaten by seven thin cows. And he saw seven green ears of grain, and seven dry ones.",
+    "lang": "en"
+  },
+  {
+    "id": "c7-b",
+    "text": "Nobody could explain it. Then the man from the prison remembered Yusuf at last! He hurried to ask him.",
+    "lang": "en"
+  },
+  {
+    "id": "c7-do",
+    "text": "Tap each side of the dream to hear what Yusuf said it means.",
+    "lang": "en"
+  },
+  {
+    "id": "c7-good",
+    "text": "The fat cows and the green grain: seven good years are coming. Plant, and save what you harvest.",
+    "lang": "en"
+  },
+  {
+    "id": "c7-hard",
+    "text": "The thin cows and the dry grain: then seven hard years will come, and you will eat what you saved.",
+    "lang": "en"
+  },
+  {
+    "id": "c7-c",
+    "text": "And after that, said Yusuf, will come a year with plenty of rain.",
+    "lang": "en"
+  },
+  {
+    "id": "c8-a",
+    "text": "The king said: bring Yusuf to me! But first, Yusuf asked for the truth to be known. And the truth came out: Yusuf had done nothing wrong. He was an honest man.",
+    "lang": "en"
+  },
+  {
+    "id": "c8-b",
+    "text": "The king trusted Yusuf completely. Yusuf said: put me in charge of the storehouses. I will look after them with care.",
+    "lang": "en"
+  },
+  {
+    "id": "c8-do",
+    "text": "The good years are here! Tap the grain as it grows, and save it in the storehouse.",
+    "lang": "en"
+  },
+  {
+    "id": "c8-c",
+    "text": "The storehouse is full. The grain is saved, just as Yusuf said.",
+    "lang": "en"
+  },
+  {
+    "id": "c9-a",
+    "text": "Later, Yusuf's brothers travelled to Egypt to get grain for their family.",
+    "lang": "en"
+  },
+  {
+    "id": "c9-b",
+    "text": "Yusuf knew them at once. But they did not know it was him!",
+    "lang": "en"
+  },
+  {
+    "id": "c9-do",
+    "text": "Yusuf gave them full measure. Tap each sack until it is full to the top.",
+    "lang": "en"
+  },
+  {
+    "id": "c9-c",
+    "text": "Yusuf said: next time, bring your other brother, the one at home with your father. And he had their payment put back in their bags.",
+    "lang": "en"
+  },
+  {
+    "id": "c10-a",
+    "text": "The brothers came again, and this time they brought their brother. Yusuf took him aside and said: I am your brother. Do not be sad.",
+    "lang": "en"
+  },
+  {
+    "id": "c10-b",
+    "text": "Then came a plan that Allah made for Yusuf, so that his brother could stay with him. The king's drinking cup was placed in his brother's bag.",
+    "lang": "en"
+  },
+  {
+    "id": "c10-do",
+    "text": "The king's cup is missing! Tap the bags to search them.",
+    "lang": "en"
+  },
+  {
+    "id": "c10-c",
+    "text": "There it is, in his brother's bag! So his brother stayed in Egypt with Yusuf.",
+    "lang": "en"
+  },
+  {
+    "id": "c11-a",
+    "text": "Back at home, their father Yaqub was full of sorrow. He missed Yusuf so much that his eyes turned white with grief.",
+    "lang": "en"
+  },
+  {
+    "id": "c11-b",
+    "text": "But Yaqub did not lose hope. He said: my sons, go and look for Yusuf and his brother. Never lose hope in Allah's mercy.",
+    "lang": "en"
+  },
+  {
+    "id": "c11-c",
+    "text": "So the brothers went back to Egypt. Then he asked them: do you know what you did to Yusuf? They cried: could it be that you are Yusuf? He said: I am Yusuf, and this is my brother. Allah has been good to us.",
+    "lang": "en"
+  },
+  {
+    "id": "c11-do",
+    "text": "The brothers said: we were wrong. What did Yusuf do?",
+    "lang": "en"
+  },
+  {
+    "id": "c11-wrong",
+    "text": "No. Yusuf did something much more beautiful. Try again.",
+    "lang": "en"
+  },
+  {
+    "id": "c11-d",
+    "text": "Yusuf forgave them! He said: you will hear no blame today. May Allah forgive you. He is the Most Merciful of all.",
+    "lang": "en"
+  },
+  {
+    "id": "c12-a",
+    "text": "Yusuf gave them his shirt. He said: lay it over my father's face, and he will see again. Then bring your whole family to me.",
+    "lang": "en"
+  },
+  {
+    "id": "c12-b",
+    "text": "Far away, as the caravan set off, Yaqub said: I can smell Yusuf!",
+    "lang": "en"
+  },
+  {
+    "id": "c12-do",
+    "text": "Drag the shirt along the path, or tap it, to carry the good news home.",
+    "lang": "en"
+  },
+  {
+    "id": "c12-c",
+    "text": "The shirt was laid on Yaqub's face, and he could see again! The brothers said: Father, ask Allah to forgive us. And he said: I will ask my Lord to forgive you.",
+    "lang": "en"
+  },
+  {
+    "id": "c13-a",
+    "text": "The whole family came to Egypt. Yusuf held his parents close and said: welcome to Egypt. You will all be safe here, if Allah wills.",
+    "lang": "en"
+  },
+  {
+    "id": "c13-do",
+    "text": "Tap the stars, the sun and the moon, just like in the dream.",
+    "lang": "en"
+  },
+  {
+    "id": "c13-b",
+    "text": "They all bowed down before him. Yusuf said: Father, this is what my dream meant, long ago. My Lord has made it come true.",
+    "lang": "en"
+  },
+  {
+    "id": "c13-c",
+    "text": "Then Yusuf prayed: My Lord, You are my protector in this world and the next. Let me die devoted to You, and join me with the righteous.",
+    "lang": "en"
+  },
+  {
+    "id": "end-a",
+    "text": "The end. Yusuf was patient, he told the truth, and he forgave. What will you remember from his story?",
+    "lang": "en"
+  }
 ]

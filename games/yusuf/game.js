@@ -4,21 +4,29 @@
   var GAME = "yusuf";
   var SAVE_KEY = "asmau-yusuf";
   var story = window.YUSUF_STORY;
+  var moods = window.YUSUF_MOODS || {};
+  var music = window.AsmauMusic;
+  var People = window.YusufPeople;
   var lines = {};
 
   var $ = function (id) { return document.getElementById(id); };
   var stage = $("stage");
   var captionText = $("captionText");
   var nextBtn = $("nextBtn");
+  var prevBtn = $("prevBtn");
 
   var ci = 0;          // chapter index
   var si = 0;          // step index within the chapter
   var stepToken = 0;   // bumps on every step change, so stale timers can tell
   var cleanup = null;  // teardown for the running activity
+  var skipTimer = null;
   var currentLine = null;
   var save = loadSave();
 
-  /* ---------- drawn pieces (no newer-emoji dependencies) ---------- */
+  var SCENE_MOOD = { night: "wonder", dusk: "sad", desert: "desert", well: "tense", egypt: "regal", palace: "regal", prison: "sad", field: "joy", grey: "sad", dawn: "joy" };
+  var GROUPS = { brothers: ["b1", "b3", "b2", "b4"] };
+
+  /* ---------- drawn pieces ---------- */
   var SVG = {
     WELL: '<svg viewBox="0 0 120 120"><rect x="22" y="70" width="76" height="40" rx="6" fill="#9a8f84" stroke="#5e554d" stroke-width="3"/><path d="M22 84h76M22 97h76M45 70v14M72 70v14M33 84v13M60 84v13M86 84v13M45 97v13M72 97v13" stroke="#5e554d" stroke-width="2"/><ellipse cx="60" cy="70" rx="38" ry="9" fill="#2a2420" stroke="#5e554d" stroke-width="3"/><path d="M28 70V28M92 70V28" stroke="#7a4a2b" stroke-width="6" stroke-linecap="round"/><path d="M18 30 60 8l42 22Z" fill="#a8603a" stroke="#6b3a1e" stroke-width="3" stroke-linejoin="round"/><path d="M60 30v30" stroke="#c9a15a" stroke-width="3"/></svg>',
     BUCKET: '<svg viewBox="0 0 60 60"><path d="M10 22h40l-6 32H16Z" fill="#a8703a" stroke="#6b4423" stroke-width="3" stroke-linejoin="round"/><path d="M10 22Q30-4 50 22" fill="none" stroke="#6b4423" stroke-width="3"/><path d="M13 34h34" stroke="#6b4423" stroke-width="3"/></svg>',
@@ -27,54 +35,54 @@
     STORE: '<svg viewBox="0 0 80 90"><path d="M10 86V44c0-28 60-28 60 0v42Z" fill="#d9b06a" stroke="#8a6230" stroke-width="3"/><rect x="32" y="60" width="16" height="26" rx="8" fill="#6b4423"/><rect x="34" y="28" width="12" height="10" rx="2" fill="#6b4423"/></svg>',
     LAMP: '<svg viewBox="0 0 60 80"><path d="M22 10h16M30 4v6" stroke="#8a6230" stroke-width="4" stroke-linecap="round"/><path d="M16 22 22 10h16l6 12Z" fill="#b8862f" stroke="#7a5518" stroke-width="2"/><rect class="lamp-glass" x="16" y="22" width="28" height="38" rx="4" fill="#3a3550" stroke="#7a5518" stroke-width="3"/><path d="M14 60h32l-4 12H18Z" fill="#b8862f" stroke="#7a5518" stroke-width="2"/><path class="lamp-flame" d="M30 54c-8-8-2-14 0-22 2 8 8 14 0 22Z" fill="#ffd45e" opacity=".15"/></svg>'
   };
-  var BRO_COLOURS = ["#8d99b8", "#a58d7a", "#7f9a8a", "#9a86a8", "#b09a6a"];
 
   /* ---------- saved progress ---------- */
   function loadSave() {
     try {
       var s = JSON.parse(localStorage.getItem(SAVE_KEY) || "{}");
-      return { done: s.done || {}, at: s.at || 0, sound: s.sound !== false };
+      return { done: s.done || {}, at: s.at || 0, sound: s.sound !== false, music: s.music !== false };
     } catch (err) {
-      return { done: {}, at: 0, sound: true };
+      return { done: {}, at: 0, sound: true, music: true };
     }
   }
   function persist() {
     try { localStorage.setItem(SAVE_KEY, JSON.stringify(save)); } catch (err) { /* private mode — play on without saving */ }
   }
 
-  /* ---------- sound ---------- */
-  var actx = null;
-  function tone(freq, dur, when, type) {
+  /* ---------- sound, music and buzz ---------- */
+  var VIB = { tap: 8, boing: 10, wrong: 30, win: [20, 40, 20], heave: 12, coin: 8, tick: 12, clink: 25, pour: 6 };
+  function vib(pattern) {
     if (!save.sound) return;
-    try {
-      actx = actx || new (window.AudioContext || window.webkitAudioContext)();
-      if (actx.state === "suspended") actx.resume();
-      var t = actx.currentTime + (when || 0);
-      var osc = actx.createOscillator();
-      var gain = actx.createGain();
-      osc.type = type || "sine";
-      osc.frequency.value = freq;
-      gain.gain.setValueAtTime(0.0001, t);
-      gain.gain.exponentialRampToValueAtTime(0.16, t + 0.02);
-      gain.gain.exponentialRampToValueAtTime(0.0001, t + dur);
-      osc.connect(gain);
-      gain.connect(actx.destination);
-      osc.start(t);
-      osc.stop(t + dur + 0.02);
-    } catch (err) { /* no Web Audio — stay silent */ }
+    try { if (navigator.vibrate) navigator.vibrate(pattern); } catch (err) { /* not supported */ }
   }
-  var SCALE = [523, 587, 659, 784, 880, 1047, 1175, 1319];
-  function blip(i) { tone(SCALE[(i || 0) % SCALE.length], 0.18); }
-  function buzz() { tone(196, 0.22, 0, "triangle"); }
-  function fanfare() { [523, 659, 784, 1047].forEach(function (f, i) { tone(f, 0.26, i * 0.11, "triangle"); }); }
+  function fx(name, a, b) {
+    music.fx(name, a, b);
+    if (VIB[name]) vib(VIB[name]);
+  }
+  function blip(i) { fx("tap", i || 0); }
+  function buzz() { fx("wrong"); }
+  function fanfare() { fx("win"); }
 
+  var sayToken = 0;
+  function stopVoice() {
+    sayToken += 1;
+    window.AsmauNarration.stop();
+    music.duck(false);
+  }
   function say(id) {
-    if (!save.sound) { window.AsmauNarration.stop(); return Promise.resolve(); }
-    return window.AsmauNarration.say(GAME, id, lines[id] || "", { lang: "en" });
+    if (!save.sound) { stopVoice(); return Promise.resolve(); }
+    var mine = ++sayToken;
+    music.duck(true);
+    return window.AsmauNarration.say(GAME, id, lines[id] || "", { lang: "en" }).then(function () {
+      if (mine === sayToken) music.duck(false);
+    });
   }
   function setCaption(id) {
     currentLine = id;
     captionText.textContent = lines[id] || "";
+  }
+  function moodFor(chId, stepIdx, st) {
+    return moods[chId + ":" + stepIdx] || SCENE_MOOD[st.scene] || "wonder";
   }
 
   /* ---------- small DOM helpers ---------- */
@@ -86,38 +94,46 @@
   }
   function place(n, x, y) { n.style.left = x + "%"; n.style.top = y + "%"; }
   function shake(n) { n.classList.remove("shake"); void n.offsetWidth; n.classList.add("shake"); }
+  function merge(a, b) { var o = {}, k; for (k in a) o[k] = a[k]; for (k in b) o[k] = b[k]; return o; }
+
+  function setNext(label, skip) {
+    nextBtn.querySelector(".lbl").textContent = label;
+    nextBtn.classList.toggle("skip", !!skip);
+  }
+
+  function personEl(name, o) {
+    var el = mk("span", "touchy person");
+    el._fig = { name: name, o: o || {} };
+    el.innerHTML = People.svg(name, o);
+    return el;
+  }
 
   function sprite(spec) {
-    var kind = spec[0], x = spec[1], y = spec[2], size = spec[3], anim = spec[4];
+    var kind = spec[0], x = spec[1], y = spec[2], size = spec[3], anim = spec[4], o = spec[5] || {};
     if (kind === "BARS") return mk("div", "bars");
 
     var n = mk("div", "sp" + (anim ? " a-" + anim : ""));
     place(n, x, y);
-    var inner = mk("div", "sp-in");
+    var inner = mk("div", "sp-in touchy");
+    n.style.animationDelay = "0s";
+    inner.style.animationDelay = "-" + (Math.round(Math.random() * 30) / 10) + "s";
 
-    if (kind === "GLOW" || kind === "GLOWK") {
-      inner.className += " glow";
-      inner.style.width = inner.style.height = size + "px";
-      if (kind === "GLOWK") {
-        var crown = mk("span", "crown", "👑");
-        crown.style.fontSize = (size * 0.5) + "px";
-        inner.appendChild(crown);
-      }
-    } else if (kind === "BROS") {
-      var pack = mk("div", "bros-pack");
-      pack.style.transform = "scale(" + size + ")";
-      for (var i = 0; i < 10; i++) {
-        var d = mk("i");
-        d.style.background = BRO_COLOURS[i % BRO_COLOURS.length];
-        pack.appendChild(d);
-      }
-      inner.appendChild(pack);
-    } else if (kind.indexOf("DOT:") === 0) {
-      inner.className += " dot";
-      inner.style.background = kind.slice(4);
-      inner.style.width = inner.style.height = size + "px";
+    if (kind.indexOf("P:") === 0) {
+      inner.className += " person";
+      inner._fig = { name: kind.slice(2), o: o };
+      inner.innerHTML = People.svg(kind.slice(2), o);
+      inner.style.width = size + "px";
+    } else if (kind.indexOf("G:") === 0) {
+      inner.className = "sp-in group";
+      (GROUPS[kind.slice(2)] || []).forEach(function (nm, i) {
+        var p = personEl(nm, o);
+        p.style.width = (size * 0.33) + "px";
+        p.style.marginLeft = i ? (-size * 0.08) + "px" : "0";
+        p.style.marginBottom = (i % 2 ? 0 : 8) + "px";
+        inner.appendChild(p);
+      });
     } else if (kind.indexOf("T:") === 0) {
-      inner.className += " txt";
+      inner.className = "sp-in txt";
       inner.textContent = kind.slice(2);
       inner.style.fontSize = size + "px";
     } else if (kind === "COINS") {
@@ -166,13 +182,37 @@
     }
   }
 
+  /* ---------- touching the scene ---------- */
+  function pop(e, glyph) {
+    var r = stage.getBoundingClientRect();
+    var s = mk("span", "spark", glyph || "✨");
+    s.style.left = ((e.clientX - r.left) / r.width * 100) + "%";
+    s.style.top = ((e.clientY - r.top) / r.height * 100) + "%";
+    stage.appendChild(s);
+    setTimeout(function () { s.remove(); }, 1200);
+  }
+
+  function react(el, e) {
+    el.classList.remove("react");
+    void el.offsetWidth;
+    el.classList.add("react");
+    setTimeout(function () { el.classList.remove("react"); }, 650);
+    fx("boing", Math.floor(Math.random() * 6));
+    pop(e, el._fig ? "💛" : "✨");
+    if (el._fig && !el._flash) {
+      el._flash = true;
+      el.innerHTML = People.svg(el._fig.name, merge(el._fig.o, { expr: "happy" }));
+      setTimeout(function () { el.innerHTML = People.svg(el._fig.name, el._fig.o); el._flash = false; }, 1100);
+    }
+  }
+
   /* ---------- activities: each returns its own teardown ---------- */
   var ACT = {};
 
   // Tap the eleven stars, the sun and the moon.
   ACT.sky = function (opts, done) {
     var gather = opts.mode === "gather";
-    stage.appendChild(sprite([gather ? "GLOWK" : "GLOW", 50, 50, 60, "pulse"]));
+    stage.appendChild(sprite([gather ? "P:yusufMan" : "P:yusuf", 50, 52, 86, "bob", { expr: "happy" }]));
     var chip = mk("div", "count-chip", "0 / 13");
     stage.appendChild(chip);
     var n = 0;
@@ -226,48 +266,68 @@
     return function () {};
   };
 
-  // Haul the bucket up the well; it slips back a little if you stop.
+  // Haul the bucket up the well. Drag the rope upward, or tap; it slips back a little if you stop.
   ACT.pull = function (opts, done) {
-    var p = 0, finished = false;
+    var p = 0, finished = false, dragged = false, down = false, startY = 0;
     var shaft = mk("div", "shaft");
     var lift = mk("div", "lift");
-    lift.innerHTML = '<div class="rope"></div>' + SVG.BUCKET + '<div class="lift-glow"></div>';
-    var glow = lift.querySelector(".lift-glow");
+    lift.innerHTML = '<div class="rope"></div><div class="lift-face"></div>' + SVG.BUCKET;
+    var face = lift.querySelector(".lift-face");
+    function setFace(expr) { face.innerHTML = People.svg("yusuf", { expr: expr }); }
+    setFace("scared");
     shaft.appendChild(lift);
     stage.appendChild(shaft);
     stage.appendChild(mk("div", "shaft-rim"));
     var btn = mk("button", "btn btn-teal pull-btn", "Pull!");
     stage.appendChild(btn);
 
-    function paint() {
-      lift.style.bottom = (3 + p * 72) + "%";
-      glow.style.opacity = String(0.3 + 0.7 * p);
-    }
+    function paint() { lift.style.bottom = (3 + p * 72) + "%"; }
     function tug() {
       if (finished) return;
       p = Math.min(1, p + 0.09);
-      blip(Math.floor(p * 7));
+      fx("heave", p);
+      music.tension(p * 0.95);
       lift.classList.remove("tug"); void lift.offsetWidth; lift.classList.add("tug");
       paint();
+      if (p >= 0.5) setFace("worried");
       if (p >= 1) {
         finished = true;
         btn.disabled = true;
         btn.textContent = "You did it!";
+        setFace("happy");
+        music.tension(0);
         done();
       }
     }
     btn.addEventListener("click", tug);
-    shaft.addEventListener("click", tug);
+    shaft.addEventListener("click", function () {
+      if (dragged) { dragged = false; return; }
+      tug();
+    });
+    shaft.addEventListener("pointerdown", function (e) {
+      down = true; dragged = false; startY = e.clientY;
+      try { shaft.setPointerCapture(e.pointerId); } catch (err) { /* capture is optional */ }
+    });
+    shaft.addEventListener("pointermove", function (e) {
+      if (!down) return;
+      var dy = startY - e.clientY;
+      if (dy < 0) { startY = e.clientY; return; }
+      if (dy > 8) dragged = true;
+      var n = Math.floor(dy / 24);
+      if (n > 0) { for (var i = 0; i < n; i++) tug(); startY -= n * 24; }
+    });
+    ["pointerup", "pointercancel"].forEach(function (ev) { shaft.addEventListener(ev, function () { down = false; }); });
+
     var timer = setInterval(function () {
-      if (!finished && p > 0) { p = Math.max(0, p - 0.012); paint(); }
+      if (!finished && p > 0) { p = Math.max(0, p - 0.012); paint(); music.tension(p * 0.95); }
     }, 200);
     paint();
     return function () { clearInterval(timer); };
   };
 
-  // Tap the traveller along a path, one hop at a time.
+  // Walk the traveller along a path: drag them, or tap for one step at a time.
   ACT.journey = function (opts, done) {
-    var k = 0, steps = opts.steps || 6;
+    var k = 0, steps = opts.steps || 6, dragging = false, moved = false;
     if (opts.grey) {
       // Start grey at once; only the return of colour should be animated.
       stage.style.transition = "none";
@@ -280,23 +340,44 @@
     var to = mk("div", "marker", opts.to); place(to, 91, 62); stage.appendChild(to);
 
     var mover = mk("button", "mover fresh");
-    mover.setAttribute("aria-label", "Tap to move forward");
+    mover.setAttribute("aria-label", "Drag or tap to move forward");
     mover.appendChild(mk("span", opts.flip ? "flip" : "", opts.icon));
-    if (opts.rider) mover.appendChild(mk("span", "glow rider"));
+    if (opts.rider) {
+      var rider = mk("span", "rider");
+      rider.innerHTML = People.svg("yusuf", { expr: "happy" });
+      mover.appendChild(rider);
+    }
     function paint() { place(mover, 30 + (44 * k / steps), 70 - 10 * Math.sin(Math.PI * k / steps)); }
-    mover.addEventListener("click", function () {
-      if (k >= steps) return;
-      k += 1;
-      blip(k);
-      mover.classList.remove("fresh");
-      mover.classList.remove("hop"); void mover.offsetWidth; mover.classList.add("hop");
+    function advanceTo(target) {
+      while (k < target && k < steps) {
+        k += 1;
+        blip(k);
+        mover.classList.remove("fresh");
+        mover.classList.remove("hop"); void mover.offsetWidth; mover.classList.add("hop");
+      }
       paint();
-      if (k === steps) {
+      if (k >= steps && !mover.disabled) {
         mover.disabled = true;
         stage.classList.remove("grey");
         done();
       }
+    }
+    mover.addEventListener("click", function () {
+      if (moved) { moved = false; return; }
+      advanceTo(k + 1);
     });
+    mover.addEventListener("pointerdown", function (e) {
+      dragging = true; moved = false;
+      try { mover.setPointerCapture(e.pointerId); } catch (err) { /* capture is optional */ }
+    });
+    mover.addEventListener("pointermove", function (e) {
+      if (!dragging) return;
+      var r = stage.getBoundingClientRect();
+      var xp = (e.clientX - r.left) / r.width * 100;
+      var target = Math.round((xp - 30) / 44 * steps);
+      if (target > k) { moved = true; advanceTo(target); }
+    });
+    ["pointerup", "pointercancel"].forEach(function (ev) { mover.addEventListener(ev, function () { dragging = false; }); });
     stage.appendChild(mover);
     paint();
     return function () {};
@@ -330,10 +411,12 @@
       last = t;
       p = holding ? Math.min(1, p + dt / need) : Math.max(0, p - dt / 900);
       paint();
+      music.tension(p * 0.95);
       if (p >= 1) {
         finished = true;
         btn.classList.add("lit");
         hint.textContent = "It shines!";
+        music.tension(0);
         done();
         return;
       }
@@ -344,7 +427,8 @@
       if (finished || holding) return;
       holding = true;
       hint.textContent = "Keep holding…";
-      tone(330, 0.15);
+      fx("tick", 0);
+      vib(40);
     }
     function up() {
       if (holding && !finished) hint.textContent = "Almost! Hold a little longer.";
@@ -378,6 +462,7 @@
           if (sel) sel.classList.remove("sel");
           sel = b;
           b.classList.add("sel");
+          blip(1);
           say(id);
           return;
         }
@@ -388,9 +473,9 @@
           b.classList.add("matched");
           sel = null;
           matched += 1;
-          blip(matched * 2);
+          fx("coin", matched * 2);
           say(id);
-          if (matched === opts.pairs.length) done(true);
+          if (matched === opts.pairs.length) done();
         } else {
           shake(b);
           buzz();
@@ -427,12 +512,13 @@
       b.appendChild(meaning);
       b.addEventListener("click", function () {
         setCaption(it.line);
+        fx("sparkle");
         say(it.line);
         if (b.classList.contains("seen")) return;
         b.classList.add("seen");
         meaning.hidden = false;
         seen += 1;
-        if (seen === opts.items.length) done(true);
+        if (seen === opts.items.length) done();
       });
       grid.appendChild(b);
     });
@@ -443,6 +529,7 @@
   // Grain sprouts around the field; tap it before it wilts.
   ACT["catch"] = function (opts, done) {
     var target = opts.target || 7, n = 0, finished = false;
+    stage.appendChild(sprite(["P:yusufMan", 90, 80, 72, "bob", { expr: "happy" }]));
     var store = mk("div", "store-box");
     store.innerHTML = SVG.STORE;
     var count = mk("div", "store-count", "0 / " + target);
@@ -456,6 +543,7 @@
       place(w, 10 + Math.random() * 56, 58 + Math.random() * 30);
       var gone = setTimeout(function () {
         w.classList.add("wilt");
+        fx("wilt");
         setTimeout(function () { w.remove(); }, 400);
       }, 2800);
       w.addEventListener("click", function () {
@@ -463,12 +551,13 @@
         w.disabled = true;
         clearTimeout(gone);
         n += 1;
-        blip(n);
+        fx("coin", n);
+        music.tension(0.15 + 0.75 * n / target);
         count.textContent = n + " / " + target;
         place(w, 88, 20);
         w.classList.add("fly");
         setTimeout(function () { w.remove(); }, 480);
-        if (n >= target) { finished = true; done(); }
+        if (n >= target) { finished = true; music.tension(0); done(); }
       });
       stage.appendChild(w);
     }
@@ -480,6 +569,7 @@
   // Full measure: tap every sack up to the top.
   ACT.fill = function (opts, done) {
     var total = opts.sacks || 5, taps = opts.taps || 3, full = 0;
+    stage.appendChild(sprite(["P:yusufMan", 50, 30, 96, "bob", { expr: "happy" }]));
     var row = mk("div", "sack-row");
     for (var i = 0; i < total; i++) {
       (function () {
@@ -491,10 +581,11 @@
         b.addEventListener("click", function () {
           if (level >= taps) return;
           level += 1;
-          blip(level + full);
+          fx("pour", level);
           fillEl.style.height = (level / taps * 100) + "%";
           if (level === taps) {
             b.classList.add("full");
+            fx("coin", full + 1);
             full += 1;
             if (full === total) done();
           }
@@ -509,6 +600,8 @@
   // Search the bags. As in the story, the cup turns up in the last one.
   ACT.search = function (opts, done) {
     var total = opts.bags || 5, opened = 0;
+    stage.appendChild(sprite(["P:yusufMan", 20, 30, 88, "bob", { expr: "calm" }]));
+    stage.appendChild(sprite(["G:brothers", 76, 32, 140, "bob", { expr: "worried" }]));
     var row = mk("div", "sack-row");
     for (var i = 0; i < total; i++) {
       (function () {
@@ -521,13 +614,16 @@
           opened += 1;
           if (opened === total) {
             b.classList.add("found");
+            fx("clink");
+            music.tension(0);
             var cup = mk("span", "bag-cup");
             cup.innerHTML = SVG.CUP;
             b.appendChild(cup);
             done();
           } else {
             b.classList.add("empty");
-            blip(opened);
+            fx("tick", opened);
+            music.tension(0.9 * opened / total);
           }
         });
         row.appendChild(b);
@@ -540,12 +636,14 @@
   /* ---------- flow ---------- */
   function teardown() {
     stepToken += 1;
+    clearTimeout(skipTimer);
+    music.tension(0);
     if (cleanup) { cleanup(); cleanup = null; }
   }
 
   function show(view) {
     ["title", "play", "chapters", "end"].forEach(function (v) { $(v).hidden = v !== view; });
-    if (view !== "play") { teardown(); window.AsmauNarration.stop(); }
+    if (view !== "play") { teardown(); stopVoice(); }
     window.scrollTo(0, 0);
   }
 
@@ -575,23 +673,37 @@
 
     stage.className = "stage";
     stage.dataset.scene = st.scene;
+    stage.dataset.mode = st.say ? "story" : "play";
+    stage.style.touchAction = st.say ? "pan-y" : "none";
     stage.innerHTML = "";
 
     var lineId = st.say || st.line;
     setCaption(lineId);
+    music.mood(moodFor(ch.id, si, st));
+    if (si === 0) fx("swish");
 
+    setNext("Next", false);
+    nextBtn.classList.remove("ready");
     if (st.say) {
       drawArt(stage, st.art);
       nextBtn.hidden = false;
     } else {
       nextBtn.hidden = true;
-      cleanup = ACT[st.play](st.opts || {}, function (waitForTap) {
+      cleanup = ACT[st.play](st.opts || {}, function () {
         if (token !== stepToken) return;
         fanfare();
         burst();
-        if (waitForTap) { nextBtn.hidden = false; return; }
-        setTimeout(function () { if (token === stepToken) next(); }, 1300);
+        clearTimeout(skipTimer);
+        setNext("Next", false);
+        nextBtn.classList.add("ready");
+        nextBtn.hidden = false;
       });
+      skipTimer = setTimeout(function () {
+        if (token === stepToken && nextBtn.hidden) {
+          setNext("Skip", true);
+          nextBtn.hidden = false;
+        }
+      }, 9000);
     }
 
     say(lineId);
@@ -600,6 +712,7 @@
   }
 
   function next() {
+    fx("tap", 6);
     var ch = story[ci];
     si += 1;
     if (si >= ch.steps.length) {
@@ -618,6 +731,7 @@
   }
 
   function prev() {
+    fx("boing", 2);
     if (si > 0) {
       si -= 1;
     } else if (ci > 0) {
@@ -641,6 +755,7 @@
     var resume = save.at > 0 && save.at < story.length;
     $("startBtn").textContent = resume ? "Continue — Chapter " + (save.at + 1) : "Start the story";
     $("restartBtn").hidden = !resume;
+    music.mood("wonder");
     show("title");
   }
 
@@ -656,50 +771,92 @@
       b.addEventListener("click", function () { startChapter(i); });
       grid.appendChild(b);
     });
+    music.mood("wonder");
     show("chapters");
   }
 
   function showEnd() {
+    music.mood("joy");
     show("end");
     $("endText").textContent = lines["end-a"] || "";
     fanfare();
     say("end-a");
   }
 
-  function paintSound() {
-    var b = $("soundBtn");
-    b.textContent = save.sound ? "🔊" : "🔇";
-    b.setAttribute("aria-label", save.sound ? "Sound is on" : "Sound is off");
+  function paintToggles() {
+    var s = $("soundBtn");
+    s.textContent = save.sound ? "🔊" : "🔇";
+    s.setAttribute("aria-label", save.sound ? "Voice and effects are on" : "Voice and effects are off");
+    var m = $("musicBtn");
+    m.classList.toggle("off", !save.music);
+    m.setAttribute("aria-label", save.music ? "Music is on" : "Music is off");
+    m.setAttribute("aria-pressed", String(save.music));
   }
 
   function buildTitleSky() {
     var sky = $("titleSky");
-    drawArt(sky, [["RING", 50, 52, 1], ["GLOW", 50, 54, 64, "pulse"]]);
+    drawArt(sky, [["RING", 50, 52, 1]]);
+    sky.appendChild(sprite(["P:yusuf", 50, 54, 84, "bob", { expr: "happy" }]));
+    $("endFig").innerHTML = People.svg("yusufMan", { expr: "happy" });
   }
 
   function wire() {
+    ["click", "touchend", "keydown"].forEach(function (ev) { document.addEventListener(ev, music.unlock, true); });
+
     $("startBtn").addEventListener("click", function () { startChapter(save.at > 0 && save.at < story.length ? save.at : 0); });
     $("restartBtn").addEventListener("click", function () { startChapter(0); });
     $("mapBtn").addEventListener("click", showChapters);
     $("soundBtn").addEventListener("click", function () {
       save.sound = !save.sound;
       persist();
-      paintSound();
-      if (!save.sound) window.AsmauNarration.stop();
+      music.setSfx(save.sound);
+      paintToggles();
+      if (!save.sound) stopVoice();
+    });
+    $("musicBtn").addEventListener("click", function () {
+      save.music = !save.music;
+      persist();
+      music.setMusic(save.music);
+      paintToggles();
     });
     $("caption").addEventListener("click", function () { if (currentLine) say(currentLine); });
     nextBtn.addEventListener("click", next);
-    $("prevBtn").addEventListener("click", prev);
+    prevBtn.addEventListener("click", prev);
     $("againBtn").addEventListener("click", function () { startChapter(0); });
     $("endChaptersBtn").addEventListener("click", showChapters);
+
+    // touching the scene: sprites wiggle and giggle, empty sky sparkles
+    var swipe = null;
+    stage.addEventListener("pointerdown", function (e) {
+      swipe = { x: e.clientX, y: e.clientY, t: Date.now() };
+      var t = e.target.closest ? e.target.closest(".touchy") : null;
+      if (t && stage.contains(t)) react(t, e);
+    });
+    stage.addEventListener("click", function (e) {
+      if (stage.dataset.mode !== "story") return;
+      if (e.target.closest && (e.target.closest(".touchy") || e.target.closest("button"))) return;
+      pop(e);
+      fx("tap", Math.floor(Math.random() * 5));
+    });
+    // swipe the scene to turn the page
+    stage.addEventListener("pointerup", function (e) {
+      if (!swipe) return;
+      var dx = e.clientX - swipe.x, dy = e.clientY - swipe.y, dt = Date.now() - swipe.t;
+      swipe = null;
+      if (Math.abs(dx) < 60 || Math.abs(dy) > 70 || dt > 700) return;
+      if (stage.dataset.mode !== "story") return;
+      if (dx < 0) next(); else prev();
+    });
   }
 
   fetch("narration.json")
     .then(function (r) { return r.json(); })
     .then(function (list) {
       list.forEach(function (l) { lines[l.id] = l.text; });
+      music.setMusic(save.music);
+      music.setSfx(save.sound);
       buildTitleSky();
-      paintSound();
+      paintToggles();
       wire();
       showTitle();
     })

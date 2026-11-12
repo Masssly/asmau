@@ -121,13 +121,19 @@
     fill.setAttribute("aria-hidden", "true");
     fill.draggable = false;
     var img = mk("img", "pic");
-    img.alt = ART[id] || "";
     img.draggable = false;
+    img.style.opacity = "0";
+    stage.classList.add("pic-loading");
+    img.addEventListener("load", function () {
+      img.alt = ART[id] || "";
+      img.style.opacity = "";
+      stage.classList.remove("pic-loading");
+    });
     img.addEventListener("error", function () {
       if (!img.parentNode) return;
       img.remove();
       fill.remove();
-      stage.classList.remove("has-pic");
+      stage.classList.remove("has-pic", "pic-loading");
       if (fallback) fallback();
     });
     fill.src = src;
@@ -973,6 +979,43 @@
     });
   }
 
+  // Fetch the next step's picture (and backdrop) ahead of time so it is there when the page turns.
+  function warmNext() {
+    var steps = story[ci].steps, nxt = steps[si + 1] || (story[ci + 1] && story[ci + 1].steps[0]);
+    if (!nxt) return;
+    var o = nxt.opts || {}, id = nxt.say || o.img;
+    [id, !nxt.say && (o.bg || "bg-" + nxt.scene)].forEach(function (k) { if (k && ART[k]) new Image().src = "assets/img/" + k + ".webp"; });
+  }
+
+  // On the title screen, fetch every picture once, so the whole game plays
+  // instantly from then on (and offline). Playing can start at any time.
+  var prepared = false;
+  function prepareAll() {
+    var el = $("prep");
+    if (prepared || !el) return;
+    var keys = Object.keys(ART), done = 0, next = 0, running = 0;
+    if (!keys.length) return;
+    prepared = true;
+    el.hidden = false;
+    function paint() {
+      if (done >= keys.length) { el.textContent = "✓ Ready — the pictures are saved on this device"; el.classList.add("ok"); return; }
+      el.innerHTML = "Getting the pictures ready…<span class=\"prep-bar\"><i style=\"width:" + Math.round(done / keys.length * 100) + "%\"></i></span>";
+    }
+    function pump() {
+      while (running < 4 && next < keys.length) {
+        running += 1;
+        (function (k) {
+          var im = new Image();
+          function fin() { running -= 1; done += 1; paint(); pump(); }
+          im.onload = fin; im.onerror = fin;
+          im.src = "assets/img/" + k + ".webp";
+        })(keys[next++]);
+      }
+    }
+    paint();
+    pump();
+  }
+
   function renderStep() {
     teardown();
     var token = stepToken;
@@ -1053,6 +1096,7 @@
       }, 9000);
     }
 
+    warmNext();
     say(lineId);
     save.at = ci;
     save.step = si;
@@ -1108,6 +1152,7 @@
     $("restartBtn").hidden = !resume;
     music.mood("wonder");
     show("title");
+    prepareAll();
   }
 
   function showChapters() {

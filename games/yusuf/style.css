@@ -437,3 +437,12 @@ button { touch-action: manipulation; -webkit-tap-highlight-color: transparent; }
 @keyframes sort-in { from { opacity: 0; margin-top: -14px; } to { opacity: 1; margin-top: 0; } }
 .sort-ico { font-size: 46px; line-height: 1; }
 .sort-lab { font-family: var(--font-display); font-weight: 700; font-size: 19px; line-height: 1.2; }
+
+/* while a picture is on its way: a soft glow, never a black box */
+.stage.pic-loading { background: radial-gradient(ellipse at 50% 40%, #3a3260, #14102a 70%); }
+.stage.pic-loading::after { content: "🌙"; position: absolute; left: 50%; top: 50%; font-size: 54px; transform: translate(-50%, -50%); animation: sp-pulse 1.4s ease-in-out infinite; z-index: 1; }
+.pic { transition: opacity .35s ease; }
+.prep { margin: 14px auto 0; max-width: 320px; text-align: center; font-size: 13px; color: var(--muted); }
+.prep.ok { color: #8be0c8; }
+.prep-bar { display: block; height: 8px; margin-top: 6px; border-radius: 99px; background: rgba(255,255,255,.12); overflow: hidden; }
+.prep-bar i { display: block; height: 100%; background: var(--gold); border-radius: 99px; transition: width .25s ease; }

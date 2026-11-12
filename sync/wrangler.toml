@@ -1,0 +1,9 @@
+# Cloudflare Worker for the optional "keep my recordings on all my devices" feature.
+# Deploy:  cd sync && npx wrangler deploy
+name = "asmau-sync"
+main = "worker.js"
+compatibility_date = "2026-11-01"
+
+[[r2_buckets]]
+binding = "CLIPS"
+bucket_name = "asmau"

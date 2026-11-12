@@ -15,7 +15,7 @@ const path = require("path");
 const crypto = require("crypto");
 
 const ROOT = path.join(__dirname, "..");
-const SKIP_DIRS = new Set([".git", ".github", "scripts", "node_modules"]);
+const SKIP_DIRS = new Set([".git", ".github", "scripts", "sync", "node_modules"]);
 const SKIP_FILES = new Set(["sw.js", "README.md", ".nojekyll", "package.json", "package-lock.json"]);
 
 function walk(dir, out) {

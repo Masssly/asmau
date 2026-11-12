@@ -143,6 +143,15 @@
       </div>
     </div>
     <p class="status" id="syncUsage"></p>
+    <div class="support" id="syncSupport" hidden>
+      <p><strong>Need more space?</strong> Sync is free up to the limit above, and always will be. Asmau runs on
+        donations. If you would like more space, please donate any amount you like on Ko-fi, and put this
+        <strong>support reference</strong> in your message:</p>
+      <p class="code-show" id="syncRef"></p>
+      <p>We will raise your limit by hand when we see it, usually within a few days. The reference is safe to share:
+        it does not reveal your family code or your recordings. You never have to donate to use Asmau.</p>
+      <div class="controls"><a class="mini-btn download" href="https://ko-fi.com/dagbanli" target="_blank" rel="noopener">Donate on Ko-fi ♥</a></div>
+    </div>
     <p class="status" id="syncStatus"></p>
   </details>
 
@@ -285,6 +294,7 @@
             // if the parent turned sync on, send this recording too; recording itself never waits for it
             return window.AsmauSync.pushOne(slug + ":" + item.id, blob).then(function (sent) { if (sent) syncSay("Recording saved and synced. The older online copy was replaced."); });
             }).then(showUsage).catch(function (e) {
+            if (e && e.full) { window.__asmauFull = true; showUsage(); }
             syncSay(e && e.full ? e.message : "Saved on this device. Could not reach sync just now; use Sync now later.");
           });
         };
@@ -354,6 +364,9 @@
     if (!u || !S.code()) { el.textContent = ""; return; }
     var mb = function (b) { return (b / 1048576).toFixed(1); };
     el.textContent = "Online space used: " + mb(u.used) + " MB" + (u.limit ? " of " + mb(u.limit) + " MB" : "") + ".";
+    // offer the donation note once more than three quarters is used, or when an upload was refused
+    $("syncSupport").hidden = !(u.ref && ((u.limit && u.used > 0.75 * u.limit) || window.__asmauFull));
+    if (u.ref) $("syncRef").textContent = u.ref;
   }
   function syncView() {
     var c = S.code();
@@ -369,7 +382,7 @@
       syncSay("Done. Sent " + n.up + ", received " + n.down + (n.removed ? ", removed " + n.removed : "") + ".");
       showUsage();
       if (n.down) location.reload();
-    }).catch(function (e) { syncSay(e && e.full ? e.message : "Could not sync: " + e.message); });
+    }).catch(function (e) { if (e && e.full) window.__asmauFull = true; showUsage(); syncSay(e && e.full ? e.message : "Could not sync: " + e.message); });
   }
   $("syncNew").addEventListener("click", function () { pendingCode = S.newCode(); $("syncCodeShow").textContent = pendingCode; syncView(); });
   $("syncCopy").addEventListener("click", function () {

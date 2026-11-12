@@ -30,3 +30,18 @@ No secret is needed: access is by a secret family id the browser derives.
   refreshed at most once a day). `purgeInactive()` in `worker.js`.
 - Decide retention: delete a family's data after N months of no use.
 - The family code cannot be recovered if lost (said in the panel and the privacy note).
+
+## Raising one family's limit (after a donation)
+
+A parent who hits the limit sees a support reference (like `3F9A-12C0`) and a
+Ko-fi link. They put the reference in their Ko-fi message. To raise their limit:
+
+    curl -X PUT https://asmau-sync.mohammed-sadat-abdulai.workers.dev/admin/limit \
+      -H "Authorization: Bearer $ADMIN_TOKEN" -H "content-type: application/json" \
+      -d '{"ref":"3F9A12C0","mb":100}'
+
+`GET /admin/limit?ref=3F9A12C0` shows the space used and the limit. The token is
+the Worker secret `ADMIN_TOKEN` (set with `npx wrangler secret put ADMIN_TOKEN`);
+keep it out of the repository. The limit can only go up from the free 25 MB, to
+at most 5000 MB, and is deleted with the family when it is cleaned up after a
+year unused.

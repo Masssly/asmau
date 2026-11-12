@@ -103,8 +103,9 @@ window.AsmauSync = (function () {
   function listing(k) {
     return fetch(url(k)).then(ok).then(function (res) {
       var limit = parseInt(res.headers.get("x-asmau-limit") || "0", 10) || null;
+      var ref = res.headers.get("x-asmau-ref");
       return res.json().then(function (list) {
-        lastUsage = { used: list.reduce(function (n, o) { return n + o.size; }, 0), limit: limit };
+        lastUsage = { used: list.reduce(function (n, o) { return n + o.size; }, 0), limit: limit, ref: ref ? ref.slice(0, 4) + "-" + ref.slice(4) : null };
         return list;
       });
     });
@@ -117,6 +118,8 @@ window.AsmauSync = (function () {
   }
   function fullError(res) {
     return res.json().catch(function () { return {}; }).then(function (j) {
+      return derive().then(listing).catch(function () {}).then(function () { return j; });
+    }).then(function (j) {
       var e = new Error("Your online space is full" + (j.limit ? " (" + Math.round(j.limit / 1048576) + " MB)" : "") + ". Remove a recording you no longer need, then sync again.");
       e.full = true;
       throw e;

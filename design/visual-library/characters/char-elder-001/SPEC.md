@@ -1,6 +1,6 @@
 # char-elder-001: elder man (grandfather)
 
-Status: `ai-generated-draft`, two alternatives awaiting owner choice. Outfit is an **unverified design
+Status: **owner-approved look: v1b** (white cap, striped robe; chosen 2026-11-12). v1a is kept as a record only. Outfit is an **unverified design
 proposal**. Not any real person, and not for use as a prophet or companion of a prophet.
 
 - Age: 70s. Build: slim, slightly stooped-free, calm. Short white beard. Kind, wise, approachable.
@@ -16,8 +16,7 @@ proposal**. Not any real person, and not for use as a prophet or companion of a 
 | `reference/turnaround-v1a-turban-ai-draft.jpg` | white wrapped turban, full white beard, undyed cream wide-sleeved coat, indigo geometric border at neckline and cuffs | Most distinct silhouette and colour from the adult and the scholar. Face is dignified but a little stern. Coat is an open front, so it may read as Maghrebi. |
 | `reference/turnaround-v1b-cap-ai-draft.jpg` | white embroidered cap, white beard and moustache, cream-and-grey striped robe, indigo trim on two hip pockets | Warmer, smiling, closest to the adult's strip-woven robe so the family looks related. Hip pockets with trim are my invention and unverified; sleeves are shorter. |
 
-Recommendation: **v1a** for readable silhouette next to the adult, **v1b** if warmth and family resemblance
-matter more. This is a design call for the owner.
+Owner decision: **v1b**. (My recommendation had been v1a; the owner preferred the warmer, family-like look.)
 
 ## Prompts (under 1000 characters each)
 

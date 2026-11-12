@@ -134,7 +134,7 @@
       "id": "char-elder-001",
       "name": "Elder man (grandfather) base",
       "type": "character",
-      "status": "ai-generated-draft-awaiting-review",
+      "status": "owner-approved-look",
       "specPath": "characters/char-elder-001/SPEC.md",
       "referenceImages": [
         "characters/char-elder-001/reference/turnaround-v1a-turban-ai-draft.jpg",
@@ -143,7 +143,9 @@
       "provenance": "PROVENANCE.md",
       "culturalReview": "pending",
       "licenceReview": "pending",
-      "usageRestriction": "AI-generated; not any real person; not for use as a prophet. Do not ship until generator terms are recorded in PROVENANCE.md. Two alternatives; owner to choose."
+      "usageRestriction": "AI-generated; not any real person; not for use as a prophet. Do not ship until generator terms are recorded in PROVENANCE.md.",
+      "approvedReference": "characters/char-elder-001/reference/turnaround-v1b-cap-ai-draft.jpg",
+      "approval": "Owner chose alternative v1b (white cap, striped robe) on 2026-11-12. Cultural review and generator-terms check still pending."
     }
   ],
   "productionRequirements": {

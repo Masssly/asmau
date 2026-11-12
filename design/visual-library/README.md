@@ -1,6 +1,6 @@
 # Asmau African Muslim Visual Library
 
-**Status:** Visual direction approved; production asset development not yet started.  
+**Status:** Visual direction approved; first pair (one adult, one child) at AI-generated reference-draft stage, awaiting owner review. See `REVIEW.md`.  
 **Purpose:** A self-contained, reusable art-direction package for Asmau games.  
 **Current branch:** `design/african-muslim-visual-library`
 
@@ -26,7 +26,11 @@ For the Yusuf world, use an African-centred interpretation while researching anc
 - `ASSET-MANIFEST.json`: initial asset naming and production inventory.
 - `CLAUDE-HANDOFF.md`: instructions for Claude and contributors.
 - `LICENSING.md`: provenance and rights requirements.
-- `concept-board.svg`: lightweight vector art-direction overview.
+- `concept-board.svg`: lightweight vector art-direction overview (historical mood reference only).
+- `REVIEW.md`: review of the package, the first-pair drafts, and questions for the owner.
+- `PROVENANCE.md`: tool, prompt, date and rights position for every generated image.
+- `characters/char-adult-001/` and `characters/char-child-001/`: SPEC.md and reference drafts.
+- `research/`: `SOURCES.md` (with confidence levels), `HAUSA-FULANI-WARDROBE.md`, `DAGBAMBA-PROFILE.md`.
 
 ## Production status
 

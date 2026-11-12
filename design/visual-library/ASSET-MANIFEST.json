@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0.0",
   "library": "Asmau African Muslim Visual Library",
-  "status": "foundation",
+  "status": "first-pair-drafts",
   "style": "stylised-realism",
   "culturalReferenceFamilies": [
     "Hausa",
@@ -17,33 +17,50 @@
       "status": "approved-direction",
       "format": "SVG",
       "path": "concept-board.svg",
-      "usage": "Mood and art-direction reference only; not a production model sheet."
+      "usage": "Historical mood reference only; not production art and not a judge of appeal. See REVIEW.md."
     },
     {
       "id": "char-child-001",
       "name": "Child character base",
       "type": "character",
-      "status": "planned",
+      "status": "ai-generated-draft-awaiting-review",
       "deliverables": [
         "front-view",
         "side-view",
         "back-view",
         "expression-sheet",
         "material-swatches"
-      ]
+      ],
+      "specPath": "characters/char-child-001/SPEC.md",
+      "referenceImages": [
+        "characters/char-child-001/reference/turnaround-v1-ai-draft.jpg"
+      ],
+      "provenance": "PROVENANCE.md",
+      "culturalReview": "pending",
+      "licenceReview": "pending",
+      "usageRestriction": "Reference draft only; do not ship in a game. Not for use as a prophet."
     },
     {
       "id": "char-adult-001",
       "name": "Adult community character base",
       "type": "character",
-      "status": "planned",
+      "status": "ai-generated-draft-awaiting-review",
       "deliverables": [
         "front-view",
         "side-view",
         "back-view",
         "expression-sheet",
         "material-swatches"
-      ]
+      ],
+      "specPath": "characters/char-adult-001/SPEC.md",
+      "referenceImages": [
+        "characters/char-adult-001/reference/turnaround-v1-ai-draft.jpg",
+        "characters/char-adult-001/reference/turnaround-v2-ai-draft.jpg"
+      ],
+      "provenance": "PROVENANCE.md",
+      "culturalReview": "pending",
+      "licenceReview": "pending",
+      "usageRestriction": "Reference draft only; do not ship in a game. Not for use as a prophet."
     },
     {
       "id": "char-scholar-001",

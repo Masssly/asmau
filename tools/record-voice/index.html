@@ -144,7 +144,13 @@
   }
 
   function loadGames() {
-    return fetch("../../manifest.json").then(function (r) { return r.json(); }).then(function (m) { return m.games || []; });
+    // every game in every section that has lines to record
+    return fetch("../../manifest.json").then(function (r) { return r.json(); }).then(function (m) {
+      var slugs = (m.sections || []).reduce(function (all, s) { return all.concat(s.games || []); }, m.games || []);
+      return Promise.all(slugs.map(function (slug) {
+        return loadNarration(slug).then(function (lines) { return lines.length ? slug : null; });
+      })).then(function (list) { return list.filter(Boolean); });
+    });
   }
 
   function loadNarration(slug) {

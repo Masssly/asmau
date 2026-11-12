@@ -9,7 +9,7 @@
 */
 
 // BEGIN GENERATED
-const VERSION = "90620a7c0584";
+const VERSION = "9545f31e7bad";
 const FILES = [
   "./",
   "app.webmanifest",
@@ -256,7 +256,10 @@ const CACHE = "asmau-" + VERSION;
 
 self.addEventListener("install", function (event) {
   event.waitUntil(
-    caches.open(CACHE).then(function (cache) { return cache.addAll(FILES); }).then(function () { return self.skipWaiting(); })
+    caches.open(CACHE).then(function (cache) {
+      // fetch fresh copies, never the browser's own short-lived copy, or a new version could save old files
+      return cache.addAll(FILES.map(function (f) { return new Request(f, { cache: "reload" }); }));
+    }).then(function () { return self.skipWaiting(); })
   );
 });
 

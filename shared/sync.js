@@ -158,9 +158,32 @@ window.AsmauSync = (function () {
 
   // Both ways. Removals first, then what is waiting, then new things in either direction;
   // a recording made again on another device replaces the older one here.
+  // Recordings made before MP3 conversion existed (or in a format other devices cannot play) are
+  // converted here, once, and marked as waiting so the converted copy replaces the online one.
+  function convertLocal() {
+    var M = window.AsmauMp3, N = window.AsmauNarration;
+    if (!M) return Promise.resolve(0);
+    return N.exportAll().then(function (b) {
+      var todo = b.clips.filter(function (c) { return !/mpeg|mp3/i.test(c.type); }), done = 0;
+      return todo.reduce(function (p, c) {
+        return p.then(function () {
+          var bin = atob(c.data), u = new Uint8Array(bin.length);
+          for (var i = 0; i < bin.length; i++) u[i] = bin.charCodeAt(i);
+          return M.convert(new Blob([u], { type: c.type })).then(function (out) {
+            if (!/mpeg|mp3/i.test(out.type)) return;              // could not convert here: leave it
+            var k = c.key.indexOf(":");
+            return N.saveRecordedClip(c.key.slice(0, k), c.key.slice(k + 1), out).then(function () {
+              var st = state(); st.dirty[c.key] = 1; saveState(st); done += 1;
+            });
+          });
+        });
+      }, Promise.resolve()).then(function () { return done; });
+    });
+  }
+
   function sync() {
     var N = window.AsmauNarration, counts = { up: 0, down: 0, removed: 0 };
-    return Promise.all([derive(), N.exportAll()]).then(function (r) {
+    return convertLocal().catch(function () { return 0; }).then(function () { return Promise.all([derive(), N.exportAll()]); }).then(function (r) {
       var k = r[0], local = r[1].clips, have = {};
       local.forEach(function (c) { have[c.key] = c; });
       var st = state();

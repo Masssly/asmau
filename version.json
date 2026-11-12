@@ -1,11 +1,20 @@
 {
-  "version": "2026.11.3",
+  "version": "2026.11.4",
   "date": "2026-11-12",
-  "buildId": "92c264eae6a3",
+  "buildId": "a98f93b8fae8",
   "notes": [
-    "Pictures and sounds now download from a faster server, with the old source as a backup"
+    "Recording page: the sync option is now at the top, with plain steps",
+    "Your recordings are saved as MP3 so a voice recorded on a laptop plays on an iPhone too (older recordings are converted when you turn on sync)"
   ],
   "history": [
+    {
+      "version": "2026.11.4",
+      "date": "2026-11-12",
+      "notes": [
+        "Recording page: the sync option is now at the top, with plain steps",
+        "Your recordings are saved as MP3 so a voice recorded on a laptop plays on an iPhone too (older recordings are converted when you turn on sync)"
+      ]
+    },
     {
       "version": "2026.11.3",
       "date": "2026-11-12",

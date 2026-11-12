@@ -19,8 +19,8 @@
 */
 
 // BEGIN GENERATED
-const RELEASE = "2026.11.3";
-const BUILD = "92c264eae6a3";
+const RELEASE = "2026.11.4";
+const BUILD = "a98f93b8fae8";
 const SHELL = [
   "./",
   "app.webmanifest",
@@ -48,11 +48,15 @@ const SHELL = [
   "manifest.json",
   "privacy.html",
   "reset.html",
+  "shared/mp3.js",
   "shared/music.js",
   "shared/narration.js",
   "shared/pwa.js",
   "shared/style.css",
   "shared/sync.js",
+  "shared/vendor/LAME-LICENSE.txt",
+  "shared/vendor/README.txt",
+  "shared/vendor/lame.min.js",
   "tools/record-voice/index.html",
   "tools/record-voice/",
   "version.json"

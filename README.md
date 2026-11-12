@@ -103,6 +103,11 @@ pronunciation presented to a child as a lesson is worse than silence, so an
 Arabic line plays only from a real human recording (tiers 1 or 2) and is
 otherwise silent, while its text still shows on screen.
 
+Recordings are saved as MP3, converted in the browser by lamejs (LGPL-3.0, in
+`shared/vendor/`, loaded only by the recording tool), because browsers record in
+different formats (Firefox WebM/Ogg, Safari MP4) and not every device plays every
+one; MP3 plays on all of them. Turning on sync converts older recordings too.
+
 **Recording real narration**: open `tools/record-voice/index.html`, pick a
 game, and record each line from the microphone. Recordings save straight to
 that browser's IndexedDB and are immediately preferred over the placeholder

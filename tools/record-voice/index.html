@@ -56,7 +56,11 @@
 
   .empty { color: var(--muted); text-align: center; padding: 24px 0; }
 
-  .sync summary { cursor: pointer; font-family: var(--font-display); font-weight: 700; }
+  .sync { border-color: var(--gold); }
+  .sync summary { cursor: pointer; font-family: var(--font-display); font-weight: 700; font-size: 17px; }
+  .intro a, .transfer a { color: var(--gold); }
+  .more summary { cursor: pointer; font-size: 14px; color: var(--muted); }
+  .more p { font-size: 14px; }
   .sync p { margin: 10px 0; font-size: 14px; line-height: 1.5; }
   .sync .warn { color: #ffd8a8; }
   .sync .code-in { flex: 1; min-width: 190px; padding: 8px 12px; border-radius: 10px; border: 1px solid var(--card-line); background: rgba(255,255,255,.08); color: var(--cream); font-family: monospace; font-size: 16px; text-transform: uppercase; }
@@ -73,42 +77,20 @@
 
   <div class="card intro">
     <p>
-      Every game narrates its lines with the device's built-in voice, or a
-      plain open-source placeholder, by default. <strong>Your own recorded
-      voice always takes priority</strong> on whichever device you record it
-      on — no code changes needed.
+      Record your own voice for the stories. <strong>Your recording always takes priority</strong> over the computer
+      voice, on the device you recorded it on. Recordings stay on this device unless you choose to send them
+      somewhere (below). <a href="../../privacy.html">Privacy note</a>
     </p>
-    <p>
-      Recordings you make here are saved <strong>only in this browser, on
-      this device</strong> — nothing is uploaded anywhere automatically.
-      Press <strong>Download</strong> on a clip and add the file to the
-      game's <code>assets/audio/</code> folder in the repo (see the game's
-      <code>narration.json</code> for the exact filename) if you want that
-      recording to play for everyone who opens the game, not just here.
-      Think before committing: once pushed, it's part of a public page.
-    </p>
-  </div>
-
-  <div class="card transfer">
-    <p>
-      <strong>Move recordings between devices.</strong> Save everything recorded on this device to one file, then
-      load that file on another device (for example, record on your phone, load on the Fire tablet).
-    </p>
-    <div class="controls">
-      <button class="mini-btn download" id="shareBtn" hidden>📲 Send to my other device</button>
-      <button class="mini-btn download" id="exportBtn">⬇ Save all recordings to a file</button>
-      <label class="mini-btn" for="importFile" id="importLabel">⬆ Load recordings from a file</label>
-      <input type="file" id="importFile" accept="application/json,.json" hidden>
-    </div>
-    <p class="status" id="transferStatus"></p>
-    <p class="status">
-      You do not have to do any of this: recordings work on the device they were made on, with nothing to set up.
-      <a href="../../privacy.html">Privacy note</a> · <span data-asmau-version hidden></span> · <a href="../../reset.html">Page looks old? Refresh</a>
-    </p>
+    <details class="more">
+      <summary>Want a recording to play for everyone?</summary>
+      <p>Press Download on a clip and add the file to the game's <code>assets/audio/</code> folder in the repository
+        (see the game's <code>narration.json</code> for the exact filename). Think before committing: once pushed,
+        it is part of a public page.</p>
+    </details>
   </div>
 
   <details class="card sync" id="syncBox">
-    <summary>Optional: keep my recordings on all my devices</summary>
+    <summary>📲 Use my recordings on my phone and other devices</summary>
     <div id="syncOff">
       <p>Record once and hear it on every device, with no file to move. This is <strong>optional</strong>. If you
         skip it, nothing changes and nothing leaves this device.</p>
@@ -119,6 +101,9 @@
       <div class="controls">
         <button class="mini-btn download" id="syncNew">Create my family code</button>
       </div>
+      <p><strong>How:</strong> on the device that has your recordings, press <em>Create my family code</em> and
+        save the code. Then open this same page on your phone, type the code under <em>Already have a code?</em>,
+        and the recordings appear there.</p>
       <p>Already have a code?</p>
       <div class="controls">
         <input id="syncCodeIn" class="code-in" placeholder="XXXX-XXXX-XXXX-XXXX" autocomplete="off" autocapitalize="characters" spellcheck="false">
@@ -155,6 +140,26 @@
     <p class="status" id="syncStatus"></p>
   </details>
 
+  <div class="card transfer">
+    <p>
+      <strong>Or move them by hand.</strong> Save everything recorded on this device to one file, then
+      load that file on another device (for example, record on your laptop, load on the Fire tablet).
+    </p>
+    <div class="controls">
+      <button class="mini-btn download" id="shareBtn" hidden>📲 Send to my other device</button>
+      <button class="mini-btn download" id="exportBtn">⬇ Save all recordings to a file</button>
+      <label class="mini-btn" for="importFile" id="importLabel">⬆ Load recordings from a file</label>
+      <input type="file" id="importFile" accept="application/json,.json" hidden>
+    </div>
+    <p class="status" id="transferStatus"></p>
+    <p class="status">
+      You do not have to do any of this: recordings work on the device they were made on, with nothing to set up.
+      · <span data-asmau-version hidden></span> · <a href="../../reset.html">Page looks old? Refresh</a>
+    </p>
+  </div>
+
+
+
   <select id="gameSelect"></select>
   <p class="mic-state" id="micState">Microphone not requested yet — press Record on any line below to allow it.</p>
 
@@ -162,6 +167,7 @@
 </div>
 
 <script src="../../shared/narration.js"></script>
+<script src="../../shared/mp3.js"></script>
 <script src="../../shared/sync.js"></script>
 <script>
 (function () {
@@ -289,11 +295,14 @@
           recordBtn.classList.remove("recording");
           recordBtn.textContent = "● Record";
           activeRecorder = null;
-          var blob = new Blob(chunks, { type: mimeType || "audio/webm" });
-          window.AsmauNarration.saveRecordedClip(slug, item.id, blob).then(refreshStatus).then(function () {
-            // if the parent turned sync on, send this recording too; recording itself never waits for it
-            return window.AsmauSync.pushOne(slug + ":" + item.id, blob).then(function (sent) { if (sent) syncSay("Recording saved and synced. The older online copy was replaced."); });
-            }).then(showUsage).catch(function (e) {
+          var raw = new Blob(chunks, { type: mimeType || "audio/webm" });
+          // saved as an MP3 so it plays on any of the parent's devices (the original if this browser cannot convert it)
+          window.AsmauMp3.convert(raw).then(function (blob) {
+            return window.AsmauNarration.saveRecordedClip(slug, item.id, blob).then(refreshStatus).then(function () {
+              // if the parent turned sync on, send this recording too; recording itself never waits for it
+              return window.AsmauSync.pushOne(slug + ":" + item.id, blob).then(function (sent) { if (sent) syncSay("Recording saved and synced. The older online copy was replaced."); });
+            });
+          }).then(showUsage).catch(function (e) {
             if (e && e.full) { window.__asmauFull = true; showUsage(); }
             syncSay(e && e.full ? e.message : "Saved on this device. Could not reach sync just now; use Sync now later.");
           });

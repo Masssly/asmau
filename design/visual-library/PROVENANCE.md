@@ -65,20 +65,27 @@ Follows the record fields required by `LICENSING.md`. One entry per image kept i
 An experimental procedural (code-drawn) turnaround generator was built and then deleted from this branch
 before committing: the owner judged code-drawn art unacceptable ("not nice"), and so did I.
 
-## Owner feedback round 2 (2026-11-12)
+## Owner feedback round 2 (2026-11-12), and a misreading corrected
 
-The owner judged adult v2 "excellent" but noted its hands hang closed and close to the body, unlike the open,
-spread hands of the other sheets. The connector accepts text only (no reference image), so v2 could not be
-edited; the same prompt was re-run with an explicit open-hand A-pose. The person differs from v2 (new face,
-new pocket), so v2 and v3 are alternatives, not versions of one design.
+The owner said adult v2 "looks excellent" and that "the hands are not widespread like the rest". I first read
+that as a complaint and regenerated the adult with open, spread arms (two drafts, "v3a" and "v3b"). That was
+the opposite of what the owner meant: the owner **prefers v2's relaxed arms hanging close to the body** and
+wants the other sheets to match it. The v3 drafts were deleted from the repository (they remain in git
+history, commit eddf832). Prompts for them, for the record: v2 text with "A-pose: arms angled about 30 degrees
+away from the body, hands open ... fingers gently spread" (v3a) and "arms held out slightly from the sides,
+open relaxed hands with separated fingers" (v3b).
 
-### char-adult-001 / turnaround-v3a-ai-draft-rejected.jpg
-- Prompt: v2 text with "A-pose: arms angled about 30 degrees away from the body, hands open with fingers gently
-  spread, palms facing forward"; "hand-woven", "silk" omitted. Rejected: embroidery is an uneven green
-  blob, not the specified geometric pocket.
+Pose rule from now on: **arms hang naturally at the sides, close to the body, hands relaxed.** Note for the
+future 3D modeller: riggers usually prefer an A-pose for the bind pose; a modeller can pose from the relaxed
+sheet, and a separate A-pose reference can be made later if needed, only if the owner wants it.
 
-### char-adult-001 / turnaround-v3b-ai-draft.jpg
-- Prompt: v2 text with "Standing with arms held out slightly from the sides, open relaxed hands with separated
-  fingers, palms toward the body". Kept as the current candidate: open hands, true profile, roundel at back of
-  neck, no script. Faults: pocket is centred on the chest rather than on the wearer's left; fingers slightly
-  long; face differs from v2.
+The connector takes text only (no reference image), so a sheet cannot be edited; a re-run gives a new person.
+
+### char-child-001 / turnaround-v2a-ai-draft-plain.jpg and turnaround-v2b-ai-draft.jpg
+- Created: 2026-11-12. Same tool. Prompt (v2a): child v1 text with "arms hanging naturally at her sides close to
+  the body, hands relaxed with fingers softly curled", "scarf pinned neatly at the chin with a soft tail over
+  one shoulder". Prompt (v2b): "arms resting down at her sides touching the body, relaxed hands", "big bright
+  kind eyes", white geometric trim at the cuffs, plain scarf over head and shoulders.
+- v2a: plain, small diamond grid, profile faces left. v2b: richer cuff and hem trim, profile faces right as
+  specified, current candidate. Both: no script or pseudo-script seen. Faults: v2b scarf is a smooth hood
+  with no visible pinning; wrapper has a more saturated violet-blue than the style palette's indigo.

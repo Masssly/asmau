@@ -55,7 +55,10 @@ Not yet checked and **not** claimed: whether the child outfit is correct for a H
 unverified design proposal, see `research/HAUSA-FULANI-WARDROBE.md`), and whether any element resembles a
 specific copyrighted character or an existing artist's style. That check is part of review.
 
-## 4. Recommendation
+## 4. Recommendation (updated after owner feedback)
+
+- Owner prefers adult **v2** (relaxed arms close to the body). Child candidate **v2b** matches that pose. The
+  older recommendations below about v1 are superseded.
 
 - Adult: take **v1** as the silhouette target, **v2** as the profile/back-view target, and regenerate once with
   the prompt in `characters/char-adult-001/SPEC.md` (three-quarter fixed, pocket side fixed, roundel visible).

@@ -633,6 +633,170 @@
     return function () { finished = true; clearInterval(timer); };
   };
 
+  function shuffled(list) {
+    var a = list.slice(), i, j, t;
+    for (i = a.length - 1; i > 0; i--) { j = Math.floor(Math.random() * (i + 1)); t = a[i]; a[i] = a[j]; a[j] = t; }
+    return a;
+  }
+
+  // A picture cut into squares and mixed up: tap two pieces to swap them.
+  ACT.puzzle = function (opts, done) {
+    var n = opts.n || 3, total = n * n;
+    if (!ART[opts.pic]) { done(); return function () {}; }
+    var order;
+    do { order = shuffled(Array.apply(null, { length: total }).map(function (_, i) { return i; })); }
+    while (order.some(function (v, i) { return v === i; }));
+    var side = Math.max(200, Math.min(stage.clientWidth, stage.clientHeight) - 16);
+    var board = mk("div", "puzzle");
+    board.style.width = board.style.height = side + "px";
+    board.style.gridTemplateColumns = "repeat(" + n + ", 1fr)";
+    var picked = -1, solved = false, tiles = [];
+    function paint() {
+      tiles.forEach(function (t, i) {
+        var piece = order[i];
+        t.style.backgroundPosition = ((piece % n) / (n - 1) * 100) + "% " + (Math.floor(piece / n) / (n - 1) * 100) + "%";
+        t.classList.toggle("ok", piece === i);
+        t.classList.toggle("picked", i === picked);
+      });
+    }
+    for (var i = 0; i < total; i++) {
+      (function (i) {
+        var t = mk("button", "ptile");
+        t.setAttribute("aria-label", "piece " + (i + 1) + " of " + total);
+        t.style.backgroundImage = "url(assets/img/" + opts.pic + ".webp)";
+        t.style.backgroundSize = (n * 100) + "% " + (n * 100) + "%";
+        t.addEventListener("click", function () {
+          if (solved) return;
+          if (picked < 0) { picked = i; blip(1); paint(); return; }
+          if (picked !== i) { var a = order[picked]; order[picked] = order[i]; order[i] = a; fx("swish"); }
+          picked = -1;
+          paint();
+          if (order.every(function (v, k) { return v === k; })) { solved = true; board.classList.add("whole"); done(); }
+        });
+        tiles.push(t);
+        board.appendChild(t);
+      })(i);
+    }
+    paint();
+    stage.appendChild(board);
+    return function () {};
+  };
+
+  // Find the pairs. A wrong pair turns back over; nothing is timed.
+  ACT.memory = function (opts, done) {
+    var icons = opts.icons, deck = shuffled(icons.concat(icons)), open = [], found = 0, busy = false;
+    var grid = mk("div", "mem-grid");
+    deck.forEach(function (icon) {
+      var c = mk("button", "mem");
+      c.setAttribute("aria-label", "card");
+      c.appendChild(mk("span", "mem-face", icon));
+      c.addEventListener("click", function () {
+        if (busy || c.classList.contains("up")) return;
+        c.classList.add("up");
+        blip(open.length + 2);
+        open.push({ el: c, icon: icon });
+        if (open.length < 2) return;
+        if (open[0].icon === open[1].icon) {
+          open.forEach(function (o) { o.el.classList.add("found"); });
+          open = [];
+          found += 1;
+          fx("coin", found);
+          if (found === icons.length) done();
+        } else {
+          busy = true;
+          setTimeout(function () {
+            open.forEach(function (o) { o.el.classList.remove("up"); });
+            open = [];
+            busy = false;
+          }, 900);
+        }
+      });
+      grid.appendChild(c);
+    });
+    stage.appendChild(grid);
+    return function () {};
+  };
+
+  // Tap every one of the right things; the others shake their heads.
+  // opts.items: [{ icon, n, ok, cls }]; opts.mark is shown on each one found.
+  ACT.pick = function (opts, done) {
+    var all = [], need = 0, got = 0;
+    opts.items.forEach(function (it) {
+      for (var i = 0; i < it.n; i++) all.push(it);
+      if (it.ok) need += it.n;
+    });
+    var chip = mk("div", "count-chip", "0 / " + need);
+    stage.appendChild(chip);
+    var field = mk("div", "pick-field");
+    shuffled(all).forEach(function (it) {
+      var b = mk("button", "pick" + (it.cls ? " " + it.cls : ""));
+      b.setAttribute("aria-label", it.name || "item");
+      if (SVG[it.icon]) b.innerHTML = SVG[it.icon]; else b.textContent = it.icon;
+      b.addEventListener("click", function () {
+        if (b.disabled) return;
+        if (!it.ok) { shake(b); buzz(); return; }
+        b.disabled = true;
+        b.classList.add("got");
+        if (opts.mark) b.appendChild(mk("span", "pick-mark", opts.mark));
+        got += 1;
+        fx("coin", got);
+        chip.textContent = got + " / " + need;
+        if (got === need) done();
+      });
+      field.appendChild(b);
+    });
+    stage.appendChild(field);
+    return function () {};
+  };
+
+  // One thing at a time: which of the two does it belong to?
+  ACT.sort = function (opts, done) {
+    var things = opts.things, at = 0;
+    var chip = mk("div", "count-chip", "0 / " + things.length);
+    stage.appendChild(chip);
+    var card = mk("div", "sort-card");
+    var ico = mk("span", "sort-ico"), lab = mk("span", "sort-lab");
+    card.appendChild(ico);
+    card.appendChild(lab);
+    stage.appendChild(card);
+    var box = mk("div", "choices");
+    function show() {
+      ico.textContent = things[at].icon;
+      lab.textContent = things[at].label;
+      card.classList.remove("in"); void card.offsetWidth; card.classList.add("in");
+    }
+    opts.bins.forEach(function (bin, bi) {
+      var b = mk("button", "choice");
+      b.appendChild(mk("span", "choice-ico", bin.icon));
+      b.appendChild(mk("span", "", bin.label));
+      b.addEventListener("click", function () {
+        if (at >= things.length) return;
+        if (things[at].bin !== bi) {
+          shake(card);
+          buzz();
+          if (opts.wrong) { setCaption(opts.wrong); say(opts.wrong); }
+          return;
+        }
+        at += 1;
+        fx("coin", at);
+        chip.textContent = at + " / " + things.length;
+        if (at === things.length) {
+          card.classList.add("done");
+          ico.textContent = "✨";
+          lab.textContent = "";
+          Array.prototype.forEach.call(box.children, function (x) { x.disabled = true; });
+          done();
+        } else {
+          show();
+        }
+      });
+      box.appendChild(b);
+    });
+    stage.appendChild(box);
+    show();
+    return function () {};
+  };
+
   // Count the coins: tap each one. Nothing is timed.
   ACT.count = function (opts, done) {
     var total = opts.total || 20, n = 0;

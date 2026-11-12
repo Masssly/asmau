@@ -36,7 +36,9 @@ window.YUSUF_STORY = [
     steps: [
       { say: "c1-a", scene: "night", art: [["🌙", 80, 18, 50, "float"], ["⭐", 16, 22, 26, "twinkle"], ["⭐", 36, 12, 20, "twinkle"], ["⭐", 62, 14, 24, "twinkle"], ["P:yusuf", 50, 61, 100, "bob", { expr: "sleep" }], ["🛏️", 50, 79, 130], ["💤", 68, 40, 30, "float"]] },
       { play: "sky", line: "c1-do", scene: "night", opts: { mode: "bow" } },
-      { say: "c1-b", scene: "dusk", art: [["⛺", 50, 48, 120], ["P:yaqub", 70, 72, 100, "bob", { expr: "calm" }], ["P:yusuf", 30, 76, 84, "bob", { expr: "happy" }], ["💬", 50, 30, 36, "float"]] }
+      { say: "c1-b", scene: "dusk", art: [["⛺", 50, 48, 120], ["P:yaqub", 70, 72, 100, "bob", { expr: "calm" }], ["P:yusuf", 30, 76, 84, "bob", { expr: "happy" }], ["💬", 50, 30, 36, "float"]] },
+      { play: "choice", line: "c1-q", scene: "dusk", opts: { img: "c1-b", art: [["❓", 50, 28, 70, "float"]], options: [{ label: "Tell all his brothers", icon: "📣", ok: false }, { label: "Keep it from his brothers", icon: "🤫", ok: true }], wrong: "c1-qwrong" } },
+      { play: "puzzle", line: "pz-do", scene: "night", opts: { pic: "c1-a" } }
     ]
   },
   {
@@ -69,7 +71,9 @@ window.YUSUF_STORY = [
           wrong: "c2-wrong"
         }
       },
-      { say: "c2-d", scene: "dusk", art: [["⛺", 50, 48, 120], ["P:yaqub", 50, 70, 104, "bob", { expr: "calm" }], ["✨", 50, 22, 40, "float"], ["🌙", 82, 18, 40]] }
+      { say: "c2-d", scene: "dusk", art: [["⛺", 50, 48, 120], ["P:yaqub", 50, 70, 104, "bob", { expr: "calm" }], ["✨", 50, 22, 40, "float"], ["🌙", 82, 18, 40]] },
+      { play: "order", line: "c8-do-o", scene: "dusk", opts: { wrong: "c8-wrong-o", cards: [{ line: "c2-o1", icon: "😠", label: "The brothers are jealous" }, { line: "c2-o2", icon: "💧", label: "Yusuf is put in the well" }, { line: "c2-o3", icon: "👕", label: "They show the shirt" }, { line: "c2-o4", icon: "🤲", label: "Yaqub is patient" }] } },
+      { play: "memory", line: "mem-do", scene: "dusk", opts: { icons: ["🐑", "🐺", "👕", "🌙", "⭐", "💧"] } }
     ]
   },
   {
@@ -80,7 +84,9 @@ window.YUSUF_STORY = [
     steps: [
       { say: "c3-a", scene: "desert", art: [["WELL", 26, 58, 140], ["P:traveller", 70, 70, 100, "bob", { expr: "happy" }], ["🐪", 90, 76, 52], ["🌴", 92, 50, 60]] },
       { play: "pull", line: "c3-do", scene: "well" },
-      { say: "c3-b", scene: "desert", art: [["P:traveller", 28, 68, 100, "bob", { expr: "surprised" }], ["P:yusuf", 52, 74, 84, "bob", { expr: "happy" }], ["🐪", 76, 74, 60, "walk"], ["🐪", 92, 78, 50, "walk"], ["✨", 40, 36, 32, "float"]] }
+      { say: "c3-b", scene: "desert", art: [["P:traveller", 28, 68, 100, "bob", { expr: "surprised" }], ["P:yusuf", 52, 74, 84, "bob", { expr: "happy" }], ["🐪", 76, 74, 60, "walk"], ["🐪", 92, 78, 50, "walk"], ["✨", 40, 36, 32, "float"]] },
+      { play: "choice", line: "c3-q", scene: "desert", opts: { img: "c3-b", art: [["❓", 50, 28, 70, "float"]], options: [{ label: "Good news! Here is a boy!", icon: "🎉", ok: true }, { label: "Oh no, my bucket!", icon: "🪣", ok: false }], wrong: "c3-qwrong" } },
+      { play: "puzzle", line: "pz-do", scene: "desert", opts: { pic: "c3-b" } }
     ]
   },
   {
@@ -95,7 +101,9 @@ window.YUSUF_STORY = [
       { say: "c4-a", scene: "desert", art: [["🐪", 40, 74, 76, "walk"], ["P:yusuf", 40, 56, 42, "walk", { expr: "worried" }], ["☀️", 84, 18, 50]] },
       { play: "journey", line: "c4-do", scene: "desert", opts: { icon: "🐪", flip: true, rider: true, from: "🌴", to: "🏛️", steps: 6 } },
       { say: "c4-b", scene: "egypt", art: [["🏛️", 76, 44, 110], ["P:master", 70, 72, 96, "bob", { expr: "calm" }], ["P:yusuf", 40, 76, 80, "bob", { expr: "sad" }], ["COINS", 18, 76, 1]] },
-      { say: "c4-c", scene: "egypt", art: [["🏛️", 22, 50, 90], ["P:yusufYouth", 56, 66, 96, "bob", { expr: "happy" }], ["📜", 82, 52, 44, "float"], ["✨", 56, 26, 36, "float"]] }
+      { play: "choice", line: "c4-q", scene: "egypt", opts: { img: "c4-b", art: [["❓", 50, 28, 70, "float"]], options: [{ label: "Send him away", icon: "🚪", ok: false }, { label: "Look after him well", icon: "💛", ok: true }], wrong: "c4-qwrong" } },
+      { say: "c4-c", scene: "egypt", art: [["🏛️", 22, 50, 90], ["P:yusufYouth", 56, 66, 96, "bob", { expr: "happy" }], ["📜", 82, 52, 44, "float"], ["✨", 56, 26, 36, "float"]] },
+      { play: "memory", line: "mem-do", scene: "egypt", opts: { icons: ["🐪", "🌴", "🪙", "🏛️", "☀️", "📜"] } }
     ]
   },
   {
@@ -121,7 +129,9 @@ window.YUSUF_STORY = [
       { say: "c5-b4", scene: "palace", art: [["P:yusufYouth", 50, 64, 104, "bob", { expr: "calm" }], ["🤲", 50, 90, 44], ["✨", 50, 24, 40, "float"]] },
       { say: "c5-c", scene: "prison", art: [["P:yusufYouth", 50, 66, 100, "bob", { expr: "sad" }], ["BARS", 0, 0, 1], ["⛓️", 14, 22, 40]] },
       { play: "hold", line: "c5-do", scene: "prison" },
-      { say: "c5-d", scene: "prison", art: [["LAMP", 24, 56, 100, "lit"], ["P:yusufYouth", 66, 68, 100, "bob", { expr: "calm" }], ["✨", 66, 26, 34, "float"]] }
+      { say: "c5-d", scene: "prison", art: [["LAMP", 24, 56, 100, "lit"], ["P:yusufYouth", 66, 68, 100, "bob", { expr: "calm" }], ["✨", 66, 26, 34, "float"]] },
+      { play: "order", line: "c8-do-o", scene: "prison", opts: { wrong: "c8-wrong-o", cards: [{ line: "c5-o1", icon: "🚪", label: "Yusuf runs for the door" }, { line: "c5-o2", icon: "👕", label: "His shirt is torn" }, { line: "c5-o3", icon: "💡", label: "Look at the shirt!" }, { line: "c5-o4", icon: "🕯️", label: "Patient in prison" }] } },
+      { play: "puzzle", line: "pz-do", scene: "palace", opts: { pic: "c5-b4" } }
     ]
   },
   {
@@ -134,6 +144,7 @@ window.YUSUF_STORY = [
     steps: [
       { say: "c6-a", scene: "prison", art: [["P:yusufYouth", 50, 70, 90, "bob", { expr: "calm" }], ["P:prisoner1", 18, 74, 78, "bob", { expr: "worried" }], ["P:prisoner2", 82, 74, 78, "bob", { expr: "worried", flip: true }], ["🍇", 18, 42, 40, "float"], ["🍞", 80, 44, 36, "float"], ["🐦", 90, 26, 30, "float"]] },
       { say: "c6-b", scene: "prison", over: [["T:الله", 50, 16, 54]], art: [["T:الله", 50, 28, 60], ["P:yusufYouth", 50, 68, 100, "bob", { expr: "calm" }], ["P:prisoner1", 16, 78, 66, "bob", { expr: "calm" }], ["P:prisoner2", 84, 78, 66, "bob", { expr: "calm", flip: true }]] },
+      { play: "choice", line: "c6-q", scene: "prison", opts: { img: "c6-b", art: [["❓", 50, 28, 70, "float"]], options: [{ label: "Worship Allah alone", icon: "☝️", ok: true }, { label: "Dig a tunnel", icon: "⛏️", ok: false }], wrong: "c6-qwrong" } },
       {
         play: "match", line: "c6-do", scene: "prison",
         opts: {
@@ -143,7 +154,8 @@ window.YUSUF_STORY = [
           ]
         }
       },
-      { say: "c6-c", scene: "prison", art: [["P:yusufYouth", 34, 70, 96, "bob", { expr: "sad" }], ["⏳", 60, 46, 52, "float"], ["P:prisoner1", 86, 76, 68, "bob", { expr: "happy", flip: true }]] }
+      { say: "c6-c", scene: "prison", art: [["P:yusufYouth", 34, 70, 96, "bob", { expr: "sad" }], ["⏳", 60, 46, 52, "float"], ["P:prisoner1", 86, 76, 68, "bob", { expr: "happy", flip: true }]] },
+      { play: "memory", line: "mem-do", scene: "prison", opts: { icons: ["🍇", "🍞", "🐦", "🔓", "🕯️", "⏳"] } }
     ]
   },
   {
@@ -153,9 +165,11 @@ window.YUSUF_STORY = [
     ],
     steps: [
       { say: "c7-a", scene: "palace", art: [["P:king", 50, 22, 76, "bob", { expr: "sleep" }], ["🐄", 22, 56, 50], ["🐄", 38, 56, 50], ["🐄", 62, 56, 46, "thin"], ["🐄", 76, 56, 46, "thin"], ["🌾", 24, 84, 40], ["🌾", 38, 84, 40], ["🌾", 62, 84, 40, "dry"], ["🌾", 76, 84, 40, "dry"]] },
+      { play: "pick", line: "c7-pick", scene: "field", opts: { items: [{ icon: "🐄", n: 7, ok: true, name: "fat cow" }, { icon: "🐄", n: 7, ok: false, cls: "thin", name: "thin cow" }] } },
       { say: "c7-b", scene: "palace", art: [["P:king", 28, 62, 100, "bob", { expr: "worried" }], ["❓", 44, 26, 34, "float"], ["💡", 74, 32, 50, "float"], ["P:prisoner1", 74, 74, 84, "bob", { expr: "surprised", flip: true }]] },
       { play: "reveal", line: "c7-do", scene: "palace", opts: { items: [{ line: "c7-good", kind: "good", label: "7 good years" }, { line: "c7-hard", kind: "hard", label: "7 hard years" }] } },
-      { say: "c7-c", scene: "field", art: [["🌧️", 50, 22, 84, "float"], ["🌾", 22, 74, 48], ["🌾", 40, 80, 48], ["🌾", 60, 74, 48], ["🌾", 78, 80, 48]] }
+      { say: "c7-c", scene: "field", art: [["🌧️", 50, 22, 84, "float"], ["🌾", 22, 74, 48], ["🌾", 40, 80, 48], ["🌾", 60, 74, 48], ["🌾", 78, 80, 48]] },
+      { play: "sort", line: "c7-sort", scene: "field", opts: { wrong: "c7-swrong", bins: [{ label: "Good years", icon: "🌾" }, { label: "Hard years", icon: "🍂" }], things: [{ icon: "🌱", label: "Plant the fields", bin: 0 }, { icon: "🍞", label: "Eat what was saved", bin: 1 }, { icon: "🏺", label: "Save the grain", bin: 0 }, { icon: "🔑", label: "Open the storehouse", bin: 1 }, { icon: "🧺", label: "Bring in the harvest", bin: 0 }] } }
     ]
   },
   {
@@ -182,7 +196,8 @@ window.YUSUF_STORY = [
       },
       { say: "c8-b", scene: "egypt", art: [["STORE", 20, 58, 110], ["STORE", 42, 64, 90], ["🔑", 66, 26, 46, "float"], ["P:yusufMan", 78, 72, 100, "bob", { expr: "happy" }]] },
       { play: "catch", line: "c8-do", scene: "field", opts: { target: 7 } },
-      { say: "c8-c", scene: "egypt", art: [["STORE", 30, 56, 130], ["🌾", 56, 82, 48], ["🌾", 40, 86, 48], ["P:yusufMan", 76, 68, 100, "bob", { expr: "happy" }], ["✨", 30, 18, 40, "float"]] }
+      { say: "c8-c", scene: "egypt", art: [["STORE", 30, 56, 130], ["🌾", 56, 82, 48], ["🌾", 40, 86, 48], ["P:yusufMan", 76, 68, 100, "bob", { expr: "happy" }], ["✨", 30, 18, 40, "float"]] },
+      { play: "puzzle", line: "pz-do", scene: "egypt", opts: { pic: "c8-c" } }
     ]
   },
   {
@@ -193,8 +208,10 @@ window.YUSUF_STORY = [
     steps: [
       { say: "c9-a", scene: "desert", art: [["G:brothers", 34, 74, 180, "walk", { expr: "neutral" }], ["🐪", 62, 74, 56], ["🏛️", 88, 48, 80]] },
       { say: "c9-b", scene: "egypt", art: [["P:yusufMan", 76, 66, 104, "bob", { expr: "neutral" }], ["G:brothers", 32, 78, 190, "bob", { expr: "worried" }], ["❓", 26, 44, 36, "float"]] },
+      { play: "choice", line: "c9-q", scene: "egypt", opts: { img: "c9-b", art: [["❓", 50, 28, 70, "float"]], options: [{ label: "Yes, straight away", icon: "👀", ok: false }, { label: "No, they did not know him", icon: "🙈", ok: true }], wrong: "c9-qwrong" } },
       { play: "fill", line: "c9-do", scene: "egypt", opts: { sacks: 5, taps: 3 } },
-      { say: "c9-c", scene: "egypt", art: [["SACK", 24, 72, 90], ["SACK", 42, 76, 90], ["COINS", 32, 40, 1, "float"], ["P:yusufMan", 76, 66, 100, "bob", { expr: "happy" }]] }
+      { say: "c9-c", scene: "egypt", art: [["SACK", 24, 72, 90], ["SACK", 42, 76, 90], ["COINS", 32, 40, 1, "float"], ["P:yusufMan", 76, 66, 100, "bob", { expr: "happy" }]] },
+      { play: "pick", line: "c9-pick", scene: "egypt", opts: { mark: "🪙", items: [{ icon: "SACK", n: 5, ok: true, name: "sack" }] } }
     ]
   },
   {
@@ -208,8 +225,10 @@ window.YUSUF_STORY = [
       { play: "gates", line: "c10-gdo", scene: "egypt", opts: { owners: ["b1", "b3", "b2", "b4", "benjamin"], bg: "bg-wall" } },
       { say: "c10-a", scene: "egypt", art: [["P:yusufMan", 38, 66, 100, "bob", { expr: "happy" }], ["P:benjamin", 68, 74, 84, "bob", { expr: "happy" }], ["💛", 54, 28, 40, "float"]] },
       { say: "c10-b", scene: "egypt", art: [["SACK", 50, 72, 120], ["CUP", 50, 26, 60, "float"], ["P:yusufMan", 18, 66, 90, "bob", { expr: "calm" }], ["P:benjamin", 84, 74, 70, "bob", { expr: "neutral", flip: true }]] },
+      { play: "choice", line: "c10-q", scene: "egypt", opts: { img: "c10-b", art: [["❓", 50, 28, 70, "float"]], options: [{ label: "Allah made it for Yusuf", icon: "✨", ok: true }, { label: "The brothers made it", icon: "👥", ok: false }], wrong: "c10-qwrong" } },
       { play: "search", line: "c10-do", scene: "egypt", opts: { owners: ["b1", "b3", "b2", "b4", "benjamin"], nope: "c10-nope" } },
-      { say: "c10-c", scene: "egypt", art: [["CUP", 18, 46, 70], ["P:yusufMan", 50, 64, 100, "bob", { expr: "happy" }], ["P:benjamin", 78, 74, 84, "bob", { expr: "happy" }], ["✨", 50, 22, 36, "float"]] }
+      { say: "c10-c", scene: "egypt", art: [["CUP", 18, 46, 70], ["P:yusufMan", 50, 64, 100, "bob", { expr: "happy" }], ["P:benjamin", 78, 74, 84, "bob", { expr: "happy" }], ["✨", 50, 22, 36, "float"]] },
+      { play: "puzzle", line: "pz-do", scene: "egypt", opts: { pic: "c10-c" } }
     ]
   },
   {
@@ -230,7 +249,9 @@ window.YUSUF_STORY = [
           wrong: "c11-wrong"
         }
       },
-      { say: "c11-d", scene: "egypt", art: [["P:yusufMan", 68, 64, 100, "bob", { expr: "happy" }], ["G:brothers", 30, 78, 170, "bob", { expr: "happy" }], ["P:benjamin", 91, 80, 56, "bob", { expr: "happy", flip: true }], ["💛", 40, 32, 44, "float"], ["💛", 54, 18, 32, "float"]] }
+      { say: "c11-d", scene: "egypt", art: [["P:yusufMan", 68, 64, 100, "bob", { expr: "happy" }], ["G:brothers", 30, 78, 170, "bob", { expr: "happy" }], ["P:benjamin", 91, 80, 56, "bob", { expr: "happy", flip: true }], ["💛", 40, 32, 44, "float"], ["💛", 54, 18, 32, "float"]] },
+      { play: "order", line: "c8-do-o", scene: "egypt", opts: { wrong: "c8-wrong-o", cards: [{ line: "c11-o1", icon: "🕯️", label: "Never lose hope" }, { line: "c11-o2", icon: "💛", label: "I am Yusuf" }, { line: "c11-o3", icon: "😔", label: "We were wrong" }, { line: "c11-o4", icon: "🤝", label: "Yusuf forgives" }] } },
+      { play: "puzzle", line: "pz-do", scene: "egypt", opts: { pic: "c11-d" } }
     ]
   },
   {
@@ -243,7 +264,9 @@ window.YUSUF_STORY = [
       { say: "c12-a", scene: "egypt", art: [["👕", 34, 42, 90, "float"], ["P:yusufMan", 72, 66, 104, "bob", { expr: "calm" }]] },
       { say: "c12-b", scene: "grey", art: [["⛺", 38, 56, 110], ["P:yaqub", 38, 74, 96, "bob", { expr: "surprised" }], ["🌬️", 74, 34, 56, "float"], ["✨", 86, 24, 28, "float"]] },
       { play: "journey", line: "c12-do", scene: "desert", opts: { icon: "👕", from: "🏛️", to: "⛺", steps: 5, grey: true } },
-      { say: "c12-c", scene: "dawn", art: [["⛺", 42, 56, 110], ["P:yaqub", 42, 74, 100, "bob", { expr: "happy" }], ["👕", 42, 30, 46, "float"], ["☀️", 84, 18, 60, "float"], ["✨", 20, 26, 34, "float"], ["G:brothers", 76, 84, 120, "bob", { expr: "happy" }]] }
+      { say: "c12-c", scene: "dawn", art: [["⛺", 42, 56, 110], ["P:yaqub", 42, 74, 100, "bob", { expr: "happy" }], ["👕", 42, 30, 46, "float"], ["☀️", 84, 18, 60, "float"], ["✨", 20, 26, 34, "float"], ["G:brothers", 76, 84, 120, "bob", { expr: "happy" }]] },
+      { play: "choice", line: "c12-q", scene: "dawn", opts: { img: "c12-c", art: [["❓", 50, 28, 70, "float"]], options: [{ label: "He fell asleep", icon: "😴", ok: false }, { label: "He could see again", icon: "👁️", ok: true }], wrong: "c12-qwrong" } },
+      { play: "memory", line: "mem-do", scene: "dawn", opts: { icons: ["👕", "🐪", "🌬️", "👁️", "☀️", "💛"] } }
     ]
   },
   {
@@ -267,6 +290,8 @@ window.YUSUF_STORY = [
         }
       },
       { say: "c13-b0", scene: "night", art: [["RING", 50, 44, 1], ["P:yusufMan", 50, 46, 80, "bob", { expr: "happy" }]] },
+      { play: "sort", line: "c13-sort", scene: "night", opts: { wrong: "c13-swrong", bins: [{ label: "Like Yusuf", icon: "🌟" }, { label: "Not like Yusuf", icon: "🚫" }], things: [{ icon: "⏳", label: "Being patient", bin: 0 }, { icon: "🤥", label: "Making up a story", bin: 1 }, { icon: "🗣️", label: "Telling the truth", bin: 0 }, { icon: "😠", label: "Staying angry", bin: 1 }, { icon: "🤝", label: "Forgiving", bin: 0 }, { icon: "🤲", label: "Trusting Allah", bin: 0 }] } },
+      { play: "puzzle", line: "pz-do", scene: "night", opts: { pic: "c13-b0" } },
       { say: "c13-c", scene: "night", art: [["P:yusufMan", 50, 62, 104, "bob", { expr: "calm" }], ["🤲", 50, 88, 44], ["🌙", 80, 20, 50, "float"], ["✨", 28, 26, 34, "float"], ["✨", 64, 16, 26, "float"]] }
     ]
   }

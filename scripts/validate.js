@@ -103,6 +103,7 @@ for (const slug of slugs) {
 
   if (!Array.isArray(story) || !story.length) { fail(dir + "/story.js: no chapters"); continue; }
   const chapterIds = new Set();
+  const puzzles = [];
   story.forEach((ch, ci) => {
     const here = "chapter " + (ci + 1) + " (" + ch.id + ")";
     if (chapterIds.has(ch.id)) fail(dir + ": duplicate chapter id " + ch.id);
@@ -134,10 +135,14 @@ for (const slug of slugs) {
       artCheck(o.art, where);
       artCheck(st.over, where);
       for (const p of o.pairs || []) { need(p.a, where); need(p.b, where); }
-      for (const i of o.items || []) need(i.line, where);
+      for (const i of o.items || []) if (st.play !== "pick") need(i.line, where);
       for (const c of o.cards || []) need(c.line, where);
       for (const n of o.owners || []) if (!people.has(n)) fail(dir + ": " + where + " uses unknown person '" + n + "'");
       if (st.play === "choice" && !(o.options || []).some((x) => x.ok)) fail(dir + ": " + where + " has no correct answer");
+      if (st.play === "puzzle") puzzles.push([o.pic, where]);
+      if (st.play === "memory" && (o.icons || []).length < 2) fail(dir + ": " + where + " needs at least two pairs");
+      if (st.play === "pick" && !(o.items || []).some((x) => x.ok && x.n > 0)) fail(dir + ": " + where + " has nothing to find");
+      if (st.play === "sort" && (!(o.things || []).length || (o.bins || []).length !== 2 || o.things.some((x) => x.bin !== 0 && x.bin !== 1))) fail(dir + ": " + where + " needs two bins and things that each belong to one");
       if (st.play === "order" && (o.cards || []).length < 2) fail(dir + ": " + where + " needs at least two cards to order");
     });
   });
@@ -165,6 +170,7 @@ for (const slug of slugs) {
       const known = ids.has(key) || bgs.has(key) || (key.startsWith("p-") && people.has(key.slice(2)));
       if (!known) fail(dir + "/art.js: '" + key + "' is not a line id, a backdrop an activity uses, or a person");
     }
+    for (const [pic, where] of puzzles) if (!art[pic]) fail(dir + ": " + where + " is a puzzle of '" + pic + "', which is not a picture in art.js");
     for (const f of files) {
       if (!art[f.replace(/\.webp$/, "")]) fail(imgDir + "/" + f + ": not listed in art.js (run scripts/yusuf-art/build.py)");
     }

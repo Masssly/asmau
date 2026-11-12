@@ -228,6 +228,10 @@ to date.
   fine to ship "Part 1" of a story and add later chapters once those verses
   have actually been checked, rather than inventing the next scene to
   finish a game in one sitting.
+- **Several things to do per chapter.** The Yusuf game has 44 activities
+  across its 13 chapters (three or four each): questions, putting events in
+  order, picture puzzles, finding pairs, counting, sorting and more. Every
+  one is tied to something in that chapter, and every one can be skipped.
 - **Nothing should depend on being fast.** No activity fails a child for being
   slow; anything timed has an untimed way through.
 

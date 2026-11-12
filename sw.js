@@ -9,7 +9,7 @@
 */
 
 // BEGIN GENERATED
-const VERSION = "86287deb63e8";
+const VERSION = "66f7eb9682d3";
 const FILES = [
   "./",
   "app.webmanifest",
@@ -243,6 +243,7 @@ const FILES = [
   "index.html",
   "manifest.json",
   "privacy.html",
+  "reset.html",
   "shared/music.js",
   "shared/narration.js",
   "shared/pwa.js",
@@ -255,11 +256,30 @@ const FILES = [
 
 const CACHE = "asmau-" + VERSION;
 
+/*
+  Two rules, so nobody is ever stuck on an old copy:
+  - Pages, scripts, styles and data (the small things that change) are fetched
+    from the network first; the saved copy is only used when there is no
+    connection, or the network is slower than a few seconds.
+  - Pictures, audio and fonts (big, and they never change under the same name)
+    come from the saved copy first, so they appear instantly.
+  Installing never fails because one file would not download: whatever
+  downloaded is kept, the rest is saved the first time it is used.
+*/
+const FRESH = /\.(?:html|js|css|json|webmanifest)$|\/$/;
+
 self.addEventListener("install", function (event) {
   event.waitUntil(
     caches.open(CACHE).then(function (cache) {
-      // fetch fresh copies, never the browser's own short-lived copy, or a new version could save old files
-      return cache.addAll(FILES.map(function (f) { return new Request(f, { cache: "reload" }); }));
+      var queue = FILES.slice();
+      function worker() {
+        var f = queue.shift();
+        if (!f) return Promise.resolve();
+        return fetch(new Request(f, { cache: "reload" })).then(function (res) {
+          if (res && res.ok) return cache.put(f, res);
+        }).catch(function () { /* saved when first used instead */ }).then(worker);
+      }
+      return Promise.all([worker(), worker(), worker(), worker(), worker(), worker()]);
     }).then(function () { return self.skipWaiting(); })
   );
 });
@@ -274,22 +294,43 @@ self.addEventListener("activate", function (event) {
   );
 });
 
+function remember(req, res) {
+  if (res && res.ok) {
+    var copy = res.clone();
+    caches.open(CACHE).then(function (c) { c.put(req, copy); });
+  }
+  return res;
+}
+
 self.addEventListener("fetch", function (event) {
   var req = event.request;
   if (req.method !== "GET") return;
   var url = new URL(req.url);
   if (url.origin !== self.location.origin) return;
 
+  var fresh = req.mode === "navigate" || FRESH.test(url.pathname);
+  if (fresh) {
+    event.respondWith(
+      new Promise(function (resolve) {
+        var settled = false;
+        var timer = setTimeout(function () {
+          caches.match(req, { ignoreSearch: true }).then(function (hit) { if (hit && !settled) { settled = true; resolve(hit); } });
+        }, 4000);
+        fetch(req, { cache: "no-cache" }).then(function (res) {
+          clearTimeout(timer);
+          if (!settled) { settled = true; resolve(remember(req, res)); } else remember(req, res);
+        }).catch(function () {
+          clearTimeout(timer);
+          caches.match(req, { ignoreSearch: true }).then(function (hit) { if (!settled) { settled = true; resolve(hit || Response.error()); } });
+        });
+      })
+    );
+    return;
+  }
+
   event.respondWith(
     caches.match(req, { ignoreSearch: true }).then(function (hit) {
-      if (hit) return hit;
-      return fetch(req).then(function (res) {
-        if (res && res.ok) {
-          var copy = res.clone();
-          caches.open(CACHE).then(function (c) { c.put(req, copy); });
-        }
-        return res;
-      });
+      return hit || fetch(req).then(function (res) { return remember(req, res); });
     })
   );
 });

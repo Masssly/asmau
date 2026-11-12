@@ -103,6 +103,7 @@
 
   <footer>
     <span id="offlineNote" hidden>✓ Saved on this device — works without internet</span>
+    <br><span id="verNote" hidden></span>
     <span id="updateNote" hidden>A newer version is ready. <a href="index.html">Reload</a></span>
   </footer>
 </div>
@@ -273,6 +274,21 @@
     back.addEventListener("click", function (e) { if (e.target === back) shut(); });
     document.addEventListener("keydown", function (e) { if (e.key === "Escape" && !back.hidden) shut(); });
   }
+
+  // which version this device is running, and a way out if it ever looks old
+  function showVersion() {
+    if (!window.caches) return;
+    caches.keys().then(function (ks) {
+      var k = ks.filter(function (x) { return x.indexOf("asmau-") === 0; })[0];
+      if (!k) return;
+      var n = document.getElementById("verNote");
+      n.innerHTML = "Version " + k.slice(6, 12) + " · <a href=\"reset.html\">Refresh</a>";
+      n.hidden = false;
+    }).catch(function () {});
+  }
+  window.addEventListener("asmau-offline", showVersion);
+  window.addEventListener("asmau-update", showVersion);
+  showVersion();
 
   function showNotes() {
     var r = document.documentElement;

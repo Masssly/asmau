@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Refresh Asmau</title>
+<style>
+  body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: #0c1530; color: #fdf5e3; font: 17px/1.5 system-ui, sans-serif; text-align: center; padding: 20px; }
+  a.b { display: inline-block; margin-top: 14px; background: #f0b84b; color: #3a2300; padding: 12px 22px; border-radius: 999px; font-weight: 700; text-decoration: none; }
+  small { display: block; margin-top: 14px; color: #a9b4d6; }
+</style>
+</head>
+<body>
+<div>
+  <h1>Refreshing Asmau…</h1>
+  <p id="msg">Clearing the saved copy of the site on this device.</p>
+  <a class="b" id="go" href="index.html" hidden>Open Asmau</a>
+  <small>Your voice recordings and your place in the stories are not touched.</small>
+</div>
+<script>
+(function () {
+  var done = [];
+  var jobs = [];
+  if ("serviceWorker" in navigator) jobs.push(navigator.serviceWorker.getRegistrations().then(function (rs) { return Promise.all(rs.map(function (r) { return r.unregister(); })); }));
+  if (window.caches) jobs.push(caches.keys().then(function (ks) { return Promise.all(ks.filter(function (k) { return k.indexOf("asmau-") === 0; }).map(function (k) { return caches.delete(k); })); }));
+  Promise.all(jobs).catch(function () {}).then(function () {
+    document.getElementById("msg").textContent = "Done. The newest version will load now.";
+    document.querySelector("h1").textContent = "Refreshed ✓";
+    document.getElementById("go").hidden = false;
+    setTimeout(function () { location.replace("index.html?fresh=" + Date.now()); }, 1500);
+  });
+})();
+</script>
+</body>
+</html>

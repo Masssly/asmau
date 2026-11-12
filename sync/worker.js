@@ -12,6 +12,9 @@
     DELETE /v1/<family>/<name>   delete one blob
     DELETE /v1/<family>/         delete everything for the family
 
+  Also: a daily job deletes a family's recordings when nobody has used its code for
+  a year, and requests are rate-limited per code and per network address.
+
   <family> is a 64-character hex id the browser derives from the family code
   (a hash, so the code itself never leaves the device). Anyone who knows the
   id can read the (encrypted) blobs, so ids must stay secret like a password.
@@ -47,7 +50,62 @@ function cors(extra) {
 }
 const reply = (body, status, extra) => new Response(body, { status: status || 200, headers: cors(extra) });
 
+// Recordings of a family code nobody has used for a year are deleted.
+const RETENTION_DAYS = 365;
+const DAY = 86400000;
+
+// "Used" means any request with the code (syncing, recording, removing). A small
+// marker object records the last day of use; it lives outside the family's folder
+// so it never shows up as a recording or counts toward the space.
+async function touch(env, family) {
+  // Never lets a failure here (for example two requests writing the marker at the same moment)
+  // break the request itself.
+  try {
+    const key = "_active/" + family;
+    const head = await env.CLIPS.head(key);
+    if (!head || Date.now() - head.uploaded.getTime() > DAY) await env.CLIPS.put(key, "1");
+  } catch (err) { /* the next request will try again */ }
+}
+
+// Delete every family whose last use (marker, or newest recording) is older than `days`.
+// Returns how many families were removed. Exported for testing.
+export async function purgeInactive(env, now, days) {
+  const cutoff = now - (days || RETENTION_DAYS) * DAY;
+  const fam = {};
+  let cursor;
+  do {
+    const page = await env.CLIPS.list({ cursor });
+    page.objects.forEach((o) => {
+      const m = o.key.match(/^(?:_active\/)?([0-9a-f]{64})(?:\/|$)/);
+      if (!m) return;                                  // not ours; never touch it
+      const f = fam[m[1]] || (fam[m[1]] = { newest: 0, keys: [] });
+      f.newest = Math.max(f.newest, o.uploaded.getTime());
+      f.keys.push(o.key);
+    });
+    cursor = page.truncated ? page.cursor : undefined;
+  } while (cursor);
+  let removed = 0;
+  for (const id of Object.keys(fam)) {
+    if (fam[id].newest >= cutoff) continue;
+    for (let i = 0; i < fam[id].keys.length; i += 1000) await env.CLIPS.delete(fam[id].keys.slice(i, i + 1000));
+    removed += 1;
+  }
+  return removed;
+}
+
+// Too many requests: per family code and per network address, so one runaway
+// device or one scraper cannot run up the bill. The limits are set in wrangler.toml.
+async function tooMany(req, env, family) {
+  const ip = req.headers.get("cf-connecting-ip") || "unknown";
+  const [a, b] = await Promise.all([env.PER_FAMILY.limit({ key: family }), env.PER_IP.limit({ key: ip })]);
+  return !a.success || !b.success;
+}
+
 export default {
+  async scheduled(event, env, ctx) {
+    ctx.waitUntil(purgeInactive(env, Date.now(), RETENTION_DAYS));
+  },
+
   async fetch(req, env) {
     if (req.method === "OPTIONS") return reply(null, 204);
     const origin = req.headers.get("origin");
@@ -56,6 +114,8 @@ export default {
     const m = new URL(req.url).pathname.match(/^\/v1\/([0-9a-f]{64})\/(.*)$/);
     if (!m || !FAMILY.test(m[1])) return reply("not found", 404);
     const prefix = m[1] + "/", name = m[2];
+    if (await tooMany(req, env, m[1])) return reply("slow down", 429, { "retry-after": "60" });
+    await touch(env, m[1]);
 
     if (!name) {
       if (req.method === "GET") {

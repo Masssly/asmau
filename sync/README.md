@@ -22,6 +22,11 @@ No secret is needed: access is by a secret family id the browser derives.
 - `privacy.html` already describes it; keep it in step with any change here.
 - Per family: 25 MB total, 5 MB per file (`FREE_LIMIT`, `MAX` in `worker.js`). A
   paid size can later come from `limitFor()` (for example a KV entry per family).
-  Still to add: a rate limit on requests.
+  Requests: 120 a minute per code and 300 per network address (`wrangler.toml`).
+  Cloudflare's limiter is approximate and per location, so it stops a runaway
+  device but not a determined flood; add a Cloudflare WAF rule if that matters.
+- Retention: a daily job (03:17 UTC) deletes a family unused for 365 days.
+  "Used" = any request with the code (a marker object `_active/<family>`,
+  refreshed at most once a day). `purgeInactive()` in `worker.js`.
 - Decide retention: delete a family's data after N months of no use.
 - The family code cannot be recovered if lost (said in the panel and the privacy note).

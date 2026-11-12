@@ -56,16 +56,20 @@
       files under a name derived from your code. Cloudflare also sees technical details of a connection, such
       as the IP address, under its own privacy statement. Asmau does not receive or keep them.</li>
     <li><strong>What is stored.</strong> Only the locked recordings, their line names (for example
-      “yusuf:c1-a”) and file sizes and upload times. Nothing else.</li>
+      “yusuf:c1-a”) and file sizes and upload times, plus one small marker per code saying on which day it was
+      last used (to decide when to delete it). Nothing else. Requests are limited in number per code and per
+      network address, to stop abuse; the network address is used for that count and is not stored by Asmau.</li>
     <li><strong>How much.</strong> Each family code can keep up to 25 MB online, which is roughly an hour of
       narration. We may offer more space for a fee later; if we do, it will be optional and this note will say how
       payment works before it starts.</li>
     <li><strong>Redoing and removing.</strong> If you record a line again, the new recording replaces the old one
       online, and the old one is deleted at that moment, only once the new one has been stored. If you remove a
       recording, its online copy is removed too.</li>
-    <li><strong>How long.</strong> Until you delete it. There is a “Delete my online copy” button that removes
-      everything stored for your code. We do not yet delete old data automatically; if we add that, this note
-      will say so first.</li>
+    <li><strong>How long.</strong> Until you delete it, or until your code has gone unused for a year. “Used”
+      means any sync, recording or removal with that code. Each day an automatic job deletes the recordings of any
+      code unused for a full year. We cannot warn you first, because we have no way to contact you; opening the
+      sync panel on any device with your code counts as use. There is also a “Delete my online copy” button that
+      removes everything stored for your code at once.</li>
   </ul>
   <p><strong>Keep your family code safe.</strong> We cannot recover it, and we cannot reset it, because we never
     have it. If you lose it, the recordings kept online can no longer be read by anyone and are gone for good.

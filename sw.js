@@ -9,7 +9,7 @@
 */
 
 // BEGIN GENERATED
-const VERSION = "b86319f26b53";
+const VERSION = "18d70fc45b5f";
 const FILES = [
   "./",
   "app.webmanifest",

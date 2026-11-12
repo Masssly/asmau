@@ -5,7 +5,8 @@
   BEFORE sending it, so what is stored here is unreadable noise to us. The
   Worker only stores, lists and deletes opaque blobs under a family id.
 
-    PUT    /v1/<family>/<name>   store a blob         (body: bytes, max 5 MB)
+    PUT    /v1/<family>/<name>   store a blob, replacing any older one of that name
+                                 (max 5 MB each, 25 MB per family; 413 when full)
     GET    /v1/<family>/<name>   fetch a blob
     GET    /v1/<family>/         list names and sizes
     DELETE /v1/<family>/<name>   delete one blob
@@ -18,13 +19,29 @@
 const ORIGIN = "https://masssly.github.io";
 const FAMILY = /^[0-9a-f]{64}$/;
 const NAME = /^[A-Za-z0-9._:-]{1,120}$/;
-const MAX = 5 * 1024 * 1024;
+const MAX = 5 * 1024 * 1024;          // one recording
+const FREE_LIMIT = 25 * 1024 * 1024;  // all of one family's recordings: about 80 minutes of speech
+
+// Where a paid size would come from later (for example a KV entry per family).
+// Today everyone gets the free limit.
+async function limitFor(env, family) { return FREE_LIMIT; }
+
+async function usage(env, prefix, except) {
+  let used = 0, cursor;
+  do {
+    const page = await env.CLIPS.list({ prefix, cursor });
+    page.objects.forEach((o) => { if (o.key !== except) used += o.size; });
+    cursor = page.truncated ? page.cursor : undefined;
+  } while (cursor);
+  return used;
+}
 
 function cors(extra) {
   return Object.assign({
     "access-control-allow-origin": ORIGIN,
     "access-control-allow-methods": "GET,PUT,DELETE,OPTIONS",
     "access-control-allow-headers": "content-type",
+    "access-control-expose-headers": "x-asmau-limit",
     "vary": "origin"
   }, extra || {});
 }
@@ -42,6 +59,7 @@ export default {
 
     if (!name) {
       if (req.method === "GET") {
+        const limit = await limitFor(env, m[1]);
         const out = [];
         let cursor;
         do {
@@ -49,7 +67,7 @@ export default {
           page.objects.forEach((o) => out.push({ name: o.key.slice(prefix.length), size: o.size, uploaded: o.uploaded }));
           cursor = page.truncated ? page.cursor : undefined;
         } while (cursor);
-        return reply(JSON.stringify(out), 200, { "content-type": "application/json" });
+        return reply(JSON.stringify(out), 200, { "content-type": "application/json", "x-asmau-limit": String(limit) });
       }
       if (req.method === "DELETE") {
         let cursor, n = 0;
@@ -67,7 +85,11 @@ export default {
     if (req.method === "PUT") {
       const len = parseInt(req.headers.get("content-length") || "0", 10);
       if (!len || len > MAX) return reply("too large or empty", 413);
-      await env.CLIPS.put(prefix + name, req.body);
+      // replacing a recording only counts the difference, so redoing one never fills the space
+      const limit = await limitFor(env, m[1]);
+      const used = await usage(env, prefix, prefix + name);
+      if (used + len > limit) return reply(JSON.stringify({ error: "full", used, limit }), 413, { "content-type": "application/json", "x-asmau-limit": String(limit) });
+      await env.CLIPS.put(prefix + name, req.body);   // the old copy is replaced only once this one is stored
       return reply("ok", 201);
     }
     if (req.method === "GET") {

@@ -20,7 +20,8 @@ No secret is needed: access is by a secret family id the browser derives.
 ## Before switching it on for families
 
 - `privacy.html` already describes it; keep it in step with any change here.
-- Add a rate limit and a size cap per family (Cloudflare rules or Durable
-  Object); the Worker only caps a single file at 5 MB.
+- Per family: 25 MB total, 5 MB per file (`FREE_LIMIT`, `MAX` in `worker.js`). A
+  paid size can later come from `limitFor()` (for example a KV entry per family).
+  Still to add: a rate limit on requests.
 - Decide retention: delete a family's data after N months of no use.
 - The family code cannot be recovered if lost (said in the panel and the privacy note).

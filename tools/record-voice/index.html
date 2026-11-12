@@ -142,6 +142,7 @@
         <button class="mini-btn delete" id="syncWipe">Delete my online copy</button>
       </div>
     </div>
+    <p class="status" id="syncUsage"></p>
     <p class="status" id="syncStatus"></p>
   </details>
 
@@ -282,8 +283,10 @@
           var blob = new Blob(chunks, { type: mimeType || "audio/webm" });
           window.AsmauNarration.saveRecordedClip(slug, item.id, blob).then(refreshStatus).then(function () {
             // if the parent turned sync on, send this recording too; recording itself never waits for it
-            return window.AsmauSync.pushOne(slug + ":" + item.id, blob).then(function (sent) { if (sent) syncSay("Recording saved and synced."); });
-          }).catch(function () { syncSay("Saved on this device. Could not reach sync just now; use Sync now later."); });
+            return window.AsmauSync.pushOne(slug + ":" + item.id, blob).then(function (sent) { if (sent) syncSay("Recording saved and synced. The older online copy was replaced."); });
+            }).then(showUsage).catch(function (e) {
+            syncSay(e && e.full ? e.message : "Saved on this device. Could not reach sync just now; use Sync now later.");
+          });
         };
         activeRecorder = recorder;
         chunks = [];
@@ -309,7 +312,9 @@
     });
 
     deleteBtn.addEventListener("click", function () {
-      window.AsmauNarration.deleteRecordedClip(slug, item.id).then(refreshStatus);
+      window.AsmauNarration.deleteRecordedClip(slug, item.id).then(refreshStatus).then(function () {
+        return window.AsmauSync.dropOne(slug + ":" + item.id).then(function (gone) { if (gone) { syncSay("Removed here and online."); showUsage(); } });
+      }).catch(function () { syncSay("Removed on this device. The online copy will be removed at the next sync."); });
     });
 
     controls.appendChild(playBtn);
@@ -344,6 +349,12 @@
   var S = window.AsmauSync, $ = function (id) { return document.getElementById(id); };
   var pendingCode = null;
   function syncSay(msg) { $("syncStatus").textContent = msg; }
+  function showUsage() {
+    var u = S.usage(), el = $("syncUsage");
+    if (!u || !S.code()) { el.textContent = ""; return; }
+    var mb = function (b) { return (b / 1048576).toFixed(1); };
+    el.textContent = "Online space used: " + mb(u.used) + " MB" + (u.limit ? " of " + mb(u.limit) + " MB" : "") + ".";
+  }
   function syncView() {
     var c = S.code();
     $("syncOff").hidden = !!c || !!pendingCode;
@@ -355,9 +366,10 @@
   function runSync() {
     syncSay("Syncing…");
     return S.sync().then(function (n) {
-      syncSay("Done. Sent " + n.up + ", received " + n.down + ".");
+      syncSay("Done. Sent " + n.up + ", received " + n.down + (n.removed ? ", removed " + n.removed : "") + ".");
+      showUsage();
       if (n.down) location.reload();
-    }).catch(function (e) { syncSay("Could not sync: " + e.message); });
+    }).catch(function (e) { syncSay(e && e.full ? e.message : "Could not sync: " + e.message); });
   }
   $("syncNew").addEventListener("click", function () { pendingCode = S.newCode(); $("syncCodeShow").textContent = pendingCode; syncView(); });
   $("syncCopy").addEventListener("click", function () {

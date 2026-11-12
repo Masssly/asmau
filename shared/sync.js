@@ -18,7 +18,10 @@
   AsmauSync.disconnect()         forget the code on this device (server data stays)
   AsmauSync.code()               the remembered code, or null
   AsmauSync.sync()               upload what is only here, download what is only there
-  AsmauSync.pushOne(key, blob)   upload one recording (after recording it)
+  AsmauSync.pushOne(key, blob)   upload one recording (after recording it); it replaces the older
+                                 online copy only once the new one is stored
+  AsmauSync.dropOne(key)         remove one recording's online copy
+  AsmauSync.usage()              { used, limit } in bytes, from the last listing
   AsmauSync.removeAll()          delete everything stored on the server for this family
 */
 window.AsmauSync = (function () {
@@ -26,6 +29,7 @@ window.AsmauSync = (function () {
 
   var SERVER = "https://asmau-sync.mohammed-sadat-abdulai.workers.dev";
   var LS = "asmau-sync-code";
+  var LS_STATE = "asmau-sync-state";   // { dirty: {key:1}, gone: {key:1}, seen: {key: remote upload time} }
   var ALPHABET = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789"; // no 0/O/1/I
   var enc = new TextEncoder();
   var keyCache = null;
@@ -33,6 +37,11 @@ window.AsmauSync = (function () {
   function ls(op, v) {
     try { return op === "get" ? localStorage.getItem(LS) : (op === "set" ? localStorage.setItem(LS, v) : localStorage.removeItem(LS)); } catch (e) { return null; }
   }
+
+  function state() {
+    try { var s = JSON.parse(localStorage.getItem(LS_STATE) || "{}"); return { dirty: s.dirty || {}, gone: s.gone || {}, seen: s.seen || {} }; } catch (e) { return { dirty: {}, gone: {}, seen: {} }; }
+  }
+  function saveState(st) { try { localStorage.setItem(LS_STATE, JSON.stringify(st)); } catch (e) { /* private mode */ } }
 
   function normalise(code) { return String(code || "").toUpperCase().replace(/[^A-Z0-9]/g, ""); }
   function valid(code) { var c = normalise(code); return c.length === 16 && c.split("").every(function (ch) { return ALPHABET.indexOf(ch) >= 0; }); }
@@ -89,52 +98,109 @@ window.AsmauSync = (function () {
     });
   }
 
+  // The number of bytes kept online, and the limit, from the last listing.
+  var lastUsage = null;
+  function listing(k) {
+    return fetch(url(k)).then(ok).then(function (res) {
+      var limit = parseInt(res.headers.get("x-asmau-limit") || "0", 10) || null;
+      return res.json().then(function (list) {
+        lastUsage = { used: list.reduce(function (n, o) { return n + o.size; }, 0), limit: limit };
+        return list;
+      });
+    });
+  }
+  function noteSeen(list) {
+    var st = state();
+    list.forEach(function (o) { st.seen[o.name] = o.uploaded; });
+    Object.keys(st.seen).forEach(function (n) { if (!list.some(function (o) { return o.name === n; })) delete st.seen[n]; });
+    saveState(st);
+  }
+  function fullError(res) {
+    return res.json().catch(function () { return {}; }).then(function (j) {
+      var e = new Error("Your online space is full" + (j.limit ? " (" + Math.round(j.limit / 1048576) + " MB)" : "") + ". Remove a recording you no longer need, then sync again.");
+      e.full = true;
+      throw e;
+    });
+  }
+  function put(k, key, blob) {
+    return seal(k, blob).then(function (bytes) {
+      return fetch(url(k, key), { method: "PUT", body: bytes }).then(function (r) { return r.status === 413 ? fullError(r) : ok(r); });
+    });
+  }
+
+  // A recording was made (or made again) on this device. It is marked as waiting
+  // until the upload is confirmed; the older online copy is replaced only then.
   function pushOne(key, blob) {
     if (!ls("get")) return Promise.resolve(false);
+    var st = state(); st.dirty[key] = 1; delete st.gone[key]; saveState(st);
     return derive().then(function (k) {
-      return seal(k, blob).then(function (bytes) {
-        return fetch(url(k, key), { method: "PUT", body: bytes }).then(ok);
+      return put(k, key, blob).then(function () {
+        var st2 = state(); delete st2.dirty[key]; saveState(st2);
+        return listing(k).then(noteSeen);
       });
     }).then(function () { return true; });
   }
 
-  function b64(blob) {
-    return new Promise(function (res) { var r = new FileReader(); r.onload = function () { res(String(r.result).split(",")[1]); }; r.readAsDataURL(blob); });
+  // A recording was removed on this device: remove its online copy too.
+  function dropOne(key) {
+    if (!ls("get")) return Promise.resolve(false);
+    var st = state(); st.gone[key] = 1; delete st.dirty[key]; saveState(st);
+    return derive().then(function (k) {
+      return fetch(url(k, key), { method: "DELETE" }).then(ok).then(function () {
+        var st2 = state(); delete st2.gone[key]; delete st2.seen[key]; saveState(st2);
+        return true;
+      });
+    });
   }
 
-  // Both ways: what is only on this device goes up, what is only on the server comes down.
-  // A recording that exists on both sides is left alone.
+  // Both ways. Removals first, then what is waiting, then new things in either direction;
+  // a recording made again on another device replaces the older one here.
   function sync() {
-    var N = window.AsmauNarration, counts = { up: 0, down: 0 };
+    var N = window.AsmauNarration, counts = { up: 0, down: 0, removed: 0 };
     return Promise.all([derive(), N.exportAll()]).then(function (r) {
       var k = r[0], local = r[1].clips, have = {};
       local.forEach(function (c) { have[c.key] = c; });
-      return fetch(url(k), { method: "GET" }).then(ok).then(function (res) { return res.json(); }).then(function (remote) {
+      var st = state();
+      var removals = Object.keys(st.gone).map(function (key) {
+        return fetch(url(k, key), { method: "DELETE" }).then(ok).then(function () { delete st.gone[key]; delete st.seen[key]; counts.removed += 1; });
+      });
+      return Promise.all(removals).then(function () { saveState(st); return listing(k); }).then(function (remote) {
         var there = {};
-        remote.forEach(function (o) { there[o.name] = true; });
-        var ups = local.filter(function (c) { return !there[c.key]; });
-        var downs = remote.filter(function (o) { return !have[o.name]; });
-        var upJobs = ups.map(function (c) {
-          var bin = atob(c.data), u = new Uint8Array(bin.length);
-          for (var i = 0; i < bin.length; i++) u[i] = bin.charCodeAt(i);
-          return seal(k, new Blob([u], { type: c.type })).then(function (bytes) {
-            return fetch(url(k, c.key), { method: "PUT", body: bytes }).then(ok);
-          }).then(function () { counts.up += 1; });
+        remote.forEach(function (o) { there[o.name] = o; });
+        st = state();
+        var jobs = [];
+        local.forEach(function (c) {
+          var o = there[c.key];
+          if (o && !st.dirty[c.key]) return;                 // same on both sides, or the remote is handled below
+          jobs.push((function () {
+            var bin = atob(c.data), u = new Uint8Array(bin.length);
+            for (var i = 0; i < bin.length; i++) u[i] = bin.charCodeAt(i);
+            return put(k, c.key, new Blob([u], { type: c.type })).then(function () { counts.up += 1; var s2 = state(); delete s2.dirty[c.key]; saveState(s2); });
+          })());
         });
-        var downJobs = downs.map(function (o) {
-          return fetch(url(k, o.name)).then(ok).then(function (r2) { return r2.arrayBuffer(); }).then(function (bytes) { return open(k, bytes); }).then(function (blob) {
+        remote.forEach(function (o) {
+          if (st.gone[o.name]) return;
+          var mine = have[o.name];
+          var isNew = !mine, changed = mine && st.seen[o.name] && st.seen[o.name] !== o.uploaded && !st.dirty[o.name];
+          if (!isNew && !changed) return;
+          jobs.push(fetch(url(k, o.name)).then(ok).then(function (r2) { return r2.arrayBuffer(); }).then(function (bytes) { return open(k, bytes); }).then(function (blob) {
             var i = o.name.indexOf(":");
             if (i < 1) return;
             return N.saveRecordedClip(o.name.slice(0, i), o.name.slice(i + 1), blob).then(function () { counts.down += 1; });
-          });
+          }));
         });
-        return Promise.all(upJobs.concat(downJobs));
-      });
+        return Promise.all(jobs);
+      }).then(function () { return listing(k); }).then(noteSeen);
     }).then(function () { return counts; });
   }
 
   function removeAll() {
-    return derive().then(function (k) { return fetch(url(k), { method: "DELETE" }).then(ok).then(function (r) { return r.json(); }); });
+    return derive().then(function (k) {
+      return fetch(url(k), { method: "DELETE" }).then(ok).then(function (r) { return r.json(); }).then(function (j) {
+        saveState({ dirty: {}, gone: {}, seen: {} }); lastUsage = { used: 0, limit: lastUsage && lastUsage.limit };
+        return j;
+      });
+    });
   }
 
   return {
@@ -147,9 +213,11 @@ window.AsmauSync = (function () {
       keyCache = null;
       ls("set", normalise(code));
     },
-    disconnect: function () { keyCache = null; ls("del"); },
+    disconnect: function () { keyCache = null; ls("del"); saveState({ dirty: {}, gone: {}, seen: {} }); },
     sync: sync,
     pushOne: pushOne,
+    dropOne: dropOne,
+    usage: function () { return lastUsage; },
     removeAll: removeAll
   };
 })();

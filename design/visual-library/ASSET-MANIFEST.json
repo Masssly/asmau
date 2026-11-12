@@ -55,7 +55,9 @@
       "specPath": "characters/char-adult-001/SPEC.md",
       "referenceImages": [
         "characters/char-adult-001/reference/turnaround-v1-ai-draft.jpg",
-        "characters/char-adult-001/reference/turnaround-v2-ai-draft.jpg"
+        "characters/char-adult-001/reference/turnaround-v2-ai-draft.jpg",
+        "characters/char-adult-001/reference/turnaround-v3a-ai-draft-rejected.jpg",
+        "characters/char-adult-001/reference/turnaround-v3b-ai-draft.jpg"
       ],
       "provenance": "PROVENANCE.md",
       "culturalReview": "pending",

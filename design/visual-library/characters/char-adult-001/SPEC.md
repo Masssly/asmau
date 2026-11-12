@@ -5,6 +5,7 @@ Status: `ai-generated-draft`, awaiting owner review. Not for use as any prophet 
 - Age and build: 40s, average height, relaxed, dignified, kind. Head about 1/7.5 of height (stylised-real).
 - Culture: Hausa-Fulani inspiration, Sokoto-era, see `../../research/HAUSA-FULANI-WARDROBE.md`.
 - Skin: deep brown, warm highlights. Beard: short, neatly trimmed. No script on any surface.
+- Owner preference: v2 ("excellent"); current open-hand candidate: `reference/turnaround-v3b-ai-draft.jpg`.
 - Reference drafts: `reference/turnaround-v1-ai-draft.jpg` (silhouette, fabric target),
   `reference/turnaround-v2-ai-draft.jpg` (profile and back target).
 

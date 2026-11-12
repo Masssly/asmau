@@ -58,3 +58,21 @@ Follows the record fields required by `LICENSING.md`. One entry per image kept i
 
 An experimental procedural (code-drawn) turnaround generator was built and then deleted from this branch
 before committing: the owner judged code-drawn art unacceptable ("not nice"), and so did I.
+
+## Owner feedback round 2 (2026-11-12)
+
+The owner judged adult v2 "excellent" but noted its hands hang closed and close to the body, unlike the open,
+spread hands of the other sheets. The connector accepts text only (no reference image), so v2 could not be
+edited; the same prompt was re-run with an explicit open-hand A-pose. The person differs from v2 (new face,
+new pocket), so v2 and v3 are alternatives, not versions of one design.
+
+### char-adult-001 / turnaround-v3a-ai-draft-rejected.jpg
+- Prompt: v2 text with "A-pose: arms angled about 30 degrees away from the body, hands open with fingers gently
+  spread, palms facing forward"; "hand-woven", "silk" omitted. Rejected: embroidery is an uneven green
+  blob, not the specified geometric pocket.
+
+### char-adult-001 / turnaround-v3b-ai-draft.jpg
+- Prompt: v2 text with "Standing with arms held out slightly from the sides, open relaxed hands with separated
+  fingers, palms toward the body". Kept as the current candidate: open hands, true profile, roundel at back of
+  neck, no script. Faults: pocket is centred on the chest rather than on the wearer's left; fingers slightly
+  long; face differs from v2.

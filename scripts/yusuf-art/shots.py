@@ -118,7 +118,7 @@ SHOTS = {
     "c10-b": ("The king's golden cup is placed in a sack.",
               "Night in a grain yard lit by lamps. A servant slips a shining golden cup into a grain sack loaded on a donkey. {YM} stands nearby watching calmly. Other loaded donkeys, sleeping travellers."),
     "c10-c": ("The cup is found in the youngest brother's sack.",
-              "A grain yard in daylight. A guard lifts a shining golden cup out of an open grain sack beside {BN}, who has deep dark brown skin and short black hair and looks surprised. {BR} gasp with hands on heads. {YM} stands calm."),
+              "A grain yard in daylight. A guard with very dark brown skin lifts a shining golden cup out of an open grain sack beside {BN}, who has very dark brown skin and short black hair and looks surprised. {BR}, all dark-skinned, gasp with hands on their heads. {YM} stands calm."),
     # ---- chapter 11
     "c11-a": ("Yaqub weeps; his eyes have turned white.",
               "A grey overcast day, muted colours, in {HOME}. {YQ} sits alone outside the tent weeping quietly, his eyes pale and clouded. The compound is quiet; a few goats, a woman grinding grain far off."),

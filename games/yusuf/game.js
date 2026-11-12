@@ -112,18 +112,30 @@
 
   // A full picture for a step. If the file cannot be loaded the step falls
   // back to its drawn sprites, so a missing picture never leaves a blank scene.
+  // The whole picture is always shown; on a wide stage a blurred copy of it
+  // fills the space at the sides.
   function picture(id, fallback) {
+    var src = "assets/img/" + id + ".webp";
+    var fill = mk("img", "pic-fill");
+    fill.alt = "";
+    fill.setAttribute("aria-hidden", "true");
+    fill.draggable = false;
     var img = mk("img", "pic");
     img.alt = ART[id] || "";
     img.draggable = false;
     img.addEventListener("error", function () {
       if (!img.parentNode) return;
       img.remove();
+      fill.remove();
       stage.classList.remove("has-pic");
       if (fallback) fallback();
     });
-    img.src = "assets/img/" + id + ".webp";
-    return img;
+    fill.src = src;
+    img.src = src;
+    var both = document.createDocumentFragment();
+    both.appendChild(fill);
+    both.appendChild(img);
+    return both;
   }
 
   function sprite(spec) {

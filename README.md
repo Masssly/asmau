@@ -151,9 +151,20 @@ python3 scripts/yusuf-art/build.py prompts            # the prompt for every pic
 python3 scripts/yusuf-art/build.py import <folder>    # <folder>/<key>.png -> assets/img + art.js
 ```
 
-Pictures are AI-generated. Say so wherever they are credited, and record the
-tool used. The clothes and buildings are an artistic interpretation in a West
-African style, not a reconstruction of ancient Egypt.
+The 65 pictures in the game were generated on 2026-11-12 with Google's Gemini
+image model ("Nano Banana 2 Lite", through the Composio connector), from the
+prompts that `build.py prompts` prints; a few were redone after review, and
+`shots.py` holds the final wording. No reference images were supplied and
+nothing was copied from another artist, game or museum. Google's Gemini API
+terms (read 2026-11-12 at ai.google.dev/gemini-api/terms) say Google does not
+claim ownership of generated content and may generate similar content for
+others. Composio's own terms were not checked, and whether AI-generated
+pictures can be copyrighted at all differs by country, so treat the pictures
+as usable but not exclusively ours.
+
+Pictures are AI-generated: say so wherever they are credited. The clothes and
+buildings are an artistic interpretation in a West African style, not a
+reconstruction of ancient Egypt, and the game's note for parents says so.
 
 ## Offline
 
@@ -204,7 +215,7 @@ to date.
   its `depictionNotes`, not left implicit, and in the game's own parents'
   note. As a starting default: Prophet Muhammad ﷺ is never drawn as a figure
   (silhouette/glow/implied only); other prophets are decided case by case.
-  The Yusuf game draws people, all with dark skin, including Prophet Yusuf
+  The Yusuf game shows people, all with dark skin, including Prophet Yusuf
   and Prophet Yaqub, by the owner's decision for that game.
 - **A detail from a commentary is labelled as one.** The Yusuf game takes a
   few details from Ibn Kathir's tafsir (abridged English, fetched from

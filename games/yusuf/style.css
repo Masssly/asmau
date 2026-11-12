@@ -340,15 +340,15 @@ button { touch-action: manipulation; -webkit-tap-highlight-color: transparent; }
 /* ---------- pictures ---------- */
 /* A narrated step with a picture: the picture fills the stage. Pictures are
    square, so the stage becomes as tall as it is wide, up to most of the screen. */
-.stage.has-pic { height: auto; aspect-ratio: 1 / 1; max-height: 58vh; background: #14110f; }
+.stage.has-pic { width: 100%; height: auto; aspect-ratio: 1 / 1; max-height: 52vh; background: #14110f; }
 .stage.has-pic[data-mode="play"] { aspect-ratio: auto; height: clamp(290px, 46vh, 400px); }
-.pic {
-  position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 42%;
-  -webkit-user-drag: none; animation: pic-in .5s ease both, pic-drift 26s ease-in-out .5s infinite alternate;
-}
+.pic, .pic-fill { position: absolute; inset: 0; width: 100%; height: 100%; -webkit-user-drag: none; }
+.pic { object-fit: contain; animation: pic-in .5s ease both, pic-drift 26s ease-in-out .5s infinite alternate; }
+.pic-fill { object-fit: cover; filter: blur(16px) brightness(.55); transform: scale(1.15); }
+.stage.has-pic[data-mode="play"] .pic { object-fit: cover; }
 .stage.has-pic[data-mode="play"] .pic { filter: brightness(.82); }
 @keyframes pic-in { from { opacity: 0; } to { opacity: 1; } }
-@keyframes pic-drift { from { transform: scale(1); } to { transform: scale(1.07) translateY(-1.2%); } }
+@keyframes pic-drift { from { transform: scale(1); } to { transform: scale(1.05); } }
 .stage.has-pic .sp, .stage.has-pic .choices, .stage.has-pic .count-chip, .stage.has-pic .src-chip { z-index: 2; }
 .stage.has-pic .txt { text-shadow: 0 2px 10px rgba(0,0,0,.85); }
 
@@ -359,7 +359,7 @@ button { touch-action: manipulation; -webkit-tap-highlight-color: transparent; }
 .stage.has-bg .shaft { background: linear-gradient(180deg, rgba(58,47,40,.72), rgba(18,14,11,.9)); }
 
 /* a person shown as a round portrait rather than drawn */
-.ava { border-radius: 50%; aspect-ratio: 1 / 1; object-fit: cover; border: 3px solid #f4ead0; box-shadow: 0 3px 8px rgba(0,0,0,.45); background: #3a2a1e; }
+.ava { overflow: hidden; border-radius: 50%; aspect-ratio: 1 / 1; object-fit: cover; border: 3px solid #f4ead0; box-shadow: 0 3px 8px rgba(0,0,0,.45); background: #3a2a1e; }
 
 /* where a detail comes from, when it is from the commentary rather than the verse */
 .src-chip {

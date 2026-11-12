@@ -129,3 +129,10 @@ Two takes were generated for each character; one of each was kept, the other dis
   appealing and is not stored.
 - Inspected: no script or pseudo-script visible; trim is geometric. Status: ai-generated-draft, cultural
   review pending, licence review pending.
+
+## char-elder-001 (2026-11-12)
+
+Same tool and limits as above; prompts are in `characters/char-elder-001/SPEC.md`. Both takes were kept as
+alternatives: `turnaround-v1a-turban-ai-draft.jpg` and `turnaround-v1b-cap-ai-draft.jpg`. Inspected: no script
+or pseudo-script visible; trim and stitching geometric. Status: ai-generated-draft, cultural review pending,
+licence review pending. `char-elder-001` was not in the original manifest; this pass added it.

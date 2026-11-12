@@ -44,3 +44,13 @@ credit or note until verified.
 | Footwear | brown leather sandals | medium |
 
 No documented source was checked for scholars' dress. Do not label this "traditional" until verified.
+
+## Elder man, `char-elder-001` (proposal, two alternatives)
+
+| Item | Description | Confidence |
+|---|---|---|
+| Headwear A | white wrapped turban | medium (turbans for older and learned men are widely documented in the region; specifics unverified) |
+| Headwear B | white embroidered cap, tonal geometric stitching | medium |
+| Garment A | undyed cream wide-sleeved coat, narrow indigo border at neckline and cuffs, white tunic and trousers | low, proposal |
+| Garment B | cream-and-grey strip-woven robe, indigo-trimmed hip pockets | low, proposal (hip pockets unverified) |
+| Footwear | brown leather slippers | medium |

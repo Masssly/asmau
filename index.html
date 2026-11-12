@@ -16,62 +16,149 @@
   @keyframes twinkle { 0%,100% { opacity: .18; transform: scale(.85); } 50% { opacity: .7; transform: scale(1.05); } }
   .wrap { position: relative; z-index: 1; }
 
-  .hero { text-align: center; padding: 10px 0 22px; }
-  .hero .moon { font-size: 54px; }
-  .hero h1 { font-family: var(--font-display); font-size: clamp(28px, 7vw, 38px); margin: 6px 0 2px; }
-  .hero p { color: var(--muted); margin: 0; font-size: 15px; }
-
-  .grid { display: grid; grid-template-columns: 1fr; gap: 16px; }
-  @media (min-width: 560px) { .grid { grid-template-columns: 1fr 1fr; } }
-
-  .tile {
-    display: flex; flex-direction: column; gap: 10px; text-decoration: none; color: var(--cream);
-    padding: 24px 18px; text-align: center; align-items: center;
+  .hero { position: relative; text-align: center; padding: 6px 0 14px; }
+  .hero .moon { font-size: 46px; }
+  .hero h1 { font-family: var(--font-display); font-size: clamp(28px, 7vw, 38px); margin: 2px 0 0; }
+  .parents-btn {
+    position: absolute; right: 0; top: 4px; background: rgba(255,255,255,.08); color: var(--cream); border: 1px solid var(--card-line);
+    border-radius: 999px; padding: 8px 14px; font-family: var(--font-display); font-size: 14px; cursor: pointer;
   }
-  .tile:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
-  .tile .icon { font-size: 50px; }
-  .tile h2 { font-family: var(--font-display); font-size: 19px; margin: 0; }
-  .tile p.tagline { color: var(--muted); font-size: 13px; margin: 0; }
+  .parents-btn:focus-visible, .tile:focus-visible, .sheet-close:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
+
+  /* one section per kind of game; always open, so a child can see everything */
+  .section { margin-top: 22px; }
+  .section-head { display: flex; align-items: center; gap: 10px; margin: 0 0 12px; }
+  .section-head .ico { font-size: 26px; line-height: 1; }
+  .section-head h2 { font-family: var(--font-display); font-size: 21px; margin: 0; }
+  .section-head::after { content: ""; flex: 1; height: 2px; border-radius: 2px; background: linear-gradient(90deg, var(--card-line), transparent); }
+  .grid { display: grid; grid-template-columns: 1fr; gap: 16px; }
+  @media (min-width: 560px) { .grid.many { grid-template-columns: 1fr 1fr; } }
+
+  .tile { display: block; text-decoration: none; color: var(--cream); padding: 0; overflow: hidden; }
+  a.tile { transition: transform .15s ease; }
+  a.tile:active { transform: scale(.98); }
+  .cover { position: relative; aspect-ratio: 16 / 9; overflow: hidden; background: linear-gradient(160deg, #2c3a7a, #172052); }
+  .cover img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; animation: drift 16s ease-in-out infinite alternate; }
+  @keyframes drift { from { transform: scale(1.02); } to { transform: scale(1.12) translateY(-2%); } }
+  .cover .glow { position: absolute; left: 50%; top: 0; width: 46%; height: 70%; transform: translateX(-50%); pointer-events: none;
+    background: radial-gradient(ellipse at 50% 0%, rgba(255,220,130,.45), transparent 70%); animation: glow 4.5s ease-in-out infinite; }
+  @keyframes glow { 0%,100% { opacity: .35; } 50% { opacity: 1; } }
+  .cover .tw { position: absolute; color: #fff3c4; text-shadow: 0 0 8px rgba(255,220,130,.9); pointer-events: none; animation: sparkle 2.6s ease-in-out infinite; }
+  @keyframes sparkle { 0%,100% { opacity: 0; transform: scale(.3) rotate(0deg); } 50% { opacity: 1; transform: scale(1.15) rotate(40deg); } }
+  .cover .emo { position: absolute; inset: 0; display: grid; place-items: center; font-size: clamp(64px, 20vw, 96px); animation: bob 3.6s ease-in-out infinite; }
+  @keyframes bob { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
+  .play {
+    position: absolute; right: 14px; bottom: 14px; width: 64px; height: 64px; border-radius: 50%; display: grid; place-items: center;
+    background: linear-gradient(180deg, #ffd45e, #f0a52b); color: #3a2300; font-size: 28px; padding-left: 5px;
+    box-shadow: 0 6px 0 #b5690d, 0 0 0 0 rgba(255,214,110,.7); animation: beat 1.8s ease-in-out infinite;
+  }
+  @keyframes beat { 0%,100% { box-shadow: 0 6px 0 #b5690d, 0 0 0 0 rgba(255,214,110,.7); } 50% { box-shadow: 0 6px 0 #b5690d, 0 0 0 14px rgba(255,214,110,0); } }
+  .meta { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; padding: 12px 16px 14px; }
+  .meta h3 { font-family: var(--font-display); font-size: 21px; margin: 0; }
+  .meta p.tagline { flex-basis: 100%; color: var(--muted); font-size: 13.5px; margin: 0; }
+
+  /* not ready yet: shown, so it is clear more is coming, but it cannot be opened */
+  .tile.soon .cover { filter: grayscale(.55) brightness(.8); }
+  .tile.soon .cover .emo { animation: none; }
+  .soon-tag {
+    position: absolute; left: 12px; top: 12px; background: #0c1530; color: var(--gold); border: 2px solid var(--gold);
+    border-radius: 999px; padding: 4px 12px; font-family: var(--font-display); font-weight: 700; font-size: 14px;
+  }
 
   .empty { text-align: center; color: var(--muted); padding: 30px 0; }
+  footer { margin-top: 26px; color: var(--muted); font-size: 12px; text-align: center; line-height: 1.6; }
 
-  footer { margin-top: 30px; color: var(--muted); font-size: 12px; text-align: center; line-height: 1.6; }
+  /* for parents: a sheet over the page */
+  .sheet-back { position: fixed; inset: 0; z-index: 10; background: rgba(4,8,22,.72); display: grid; place-items: end center; }
+  .sheet-back[hidden] { display: none; }
+  .sheet {
+    width: min(560px, 100%); max-height: 88vh; overflow: auto; background: #101b3d; color: var(--cream); border: 1px solid var(--card-line);
+    border-radius: 22px 22px 0 0; padding: 18px 20px 26px; font-size: 14.5px; line-height: 1.55;
+  }
+  @media (min-width: 620px) { .sheet-back { place-items: center; } .sheet { border-radius: 22px; } }
+  .sheet-top { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+  .sheet h2 { font-family: var(--font-display); font-size: 22px; margin: 0; }
+  .sheet-close { background: rgba(255,255,255,.1); color: var(--cream); border: 0; border-radius: 50%; width: 40px; height: 40px; font-size: 20px; cursor: pointer; }
+  .sheet h3 { font-family: var(--font-display); font-size: 16px; margin: 16px 0 4px; color: var(--gold); }
+  .sheet p { margin: 0 0 8px; }
+  .sheet a { color: var(--gold); }
+  .sheet .big-link { display: inline-block; margin-top: 4px; background: var(--gold); color: #3a2300; border-radius: 999px; padding: 9px 16px; font-family: var(--font-display); font-weight: 700; text-decoration: none; }
+
+  @media (prefers-reduced-motion: reduce) { .cover img, .cover .glow, .cover .tw, .cover .emo, .play, .stars span { animation: none; } .cover .tw { opacity: .8; } }
 </style>
 </head>
 <body>
 <div class="stars" aria-hidden="true" id="stars"></div>
 <div class="wrap">
   <div class="hero">
+    <button class="parents-btn" id="parentsBtn" aria-haspopup="dialog">For parents</button>
     <div class="moon" aria-hidden="true">🌙</div>
     <h1>Asmau</h1>
-    <p>Islamic games for curious kids</p>
   </div>
 
-  <div class="grid" id="grid">
+  <main id="sections">
     <p class="empty">Loading games…</p>
-  </div>
+  </main>
 
   <footer>
-    Each game shows its own age range. Open an existing game's folder and <code>game.json</code>
-    to see the convention for adding a new one — the landing page here never needs to change.
-    <br><br>
-    <a href="tools/record-voice/index.html">Parents: record your own voice for narration →</a>
-    <br><br>
     <span id="offlineNote" hidden>✓ Saved on this device — works without internet</span>
     <span id="updateNote" hidden>A newer version is ready. <a href="index.html">Reload</a></span>
   </footer>
+</div>
+
+<div class="sheet-back" id="parents" hidden>
+  <div class="sheet" role="dialog" aria-modal="true" aria-labelledby="parentsTitle">
+    <div class="sheet-top">
+      <h2 id="parentsTitle">For parents</h2>
+      <button class="sheet-close" id="parentsClose" aria-label="Close">✕</button>
+    </div>
+
+    <h3>What this is</h3>
+    <p>Asmau is a small, free collection of Islamic games for children. Every game shows the ages it is for.
+      A game marked “Coming soon” is not finished yet.</p>
+
+    <h3>Where the stories come from</h3>
+    <p>Stories from the Qur’an are checked against the verses and a named commentary, not written from memory.
+      Inside each story, “For parents” says what was simplified for children, what was left out, and which
+      details come from a commentary and not from the verses.</p>
+
+    <h3>Your child’s privacy</h3>
+    <p>There are no accounts, no adverts and no tracking. The site loads nothing from other companies, and
+      nothing your child does is sent anywhere.</p>
+
+    <h3>The voice</h3>
+    <p>The stories are read by a plain computer voice until someone records them. You can record your own
+      voice, and the games will use it. Your recordings stay on your device unless you choose to move them.</p>
+    <a class="big-link" href="tools/record-voice/index.html">Record your voice →</a>
+
+    <h3>Without internet</h3>
+    <p>After the first visit, everything works with no connection. On a phone or tablet you can add Asmau to
+      the home screen from the browser’s menu.</p>
+
+    <h3>The pictures</h3>
+    <p>The pictures in the Yusuf story were made with an AI image generator. Everyone is shown with dark skin.
+      The story’s own note for parents says who is shown, and why.</p>
+
+    <p style="margin-top:16px"><a href="https://github.com/Masssly/asmau" target="_blank" rel="noopener">How Asmau is built (GitHub)</a></p>
+  </div>
 </div>
 
 <script>
 (function () {
   "use strict";
 
+  function el(tag, cls, text) {
+    var n = document.createElement(tag);
+    if (cls) n.className = cls;
+    if (text != null) n.textContent = text;
+    return n;
+  }
+
   function buildStars() {
     var box = document.getElementById("stars");
     var glyphs = ["★", "✦", "✧"];
     for (var i = 0; i < 18; i++) {
-      var s = document.createElement("span");
-      s.textContent = glyphs[i % glyphs.length];
+      var s = el("span", "", glyphs[i % glyphs.length]);
       s.style.left = (Math.random() * 100) + "%";
       s.style.top = (Math.random() * 70) + "%";
       s.style.animationDelay = (Math.random() * 3) + "s";
@@ -85,23 +172,64 @@
     return "All ages";
   }
 
-  function renderGames(games) {
-    var grid = document.getElementById("grid");
-    grid.innerHTML = "";
-    if (!games.length) {
-      grid.innerHTML = '<p class="empty">No games yet — check back soon.</p>';
-      return;
+  // A game's card: a big moving picture (or its emoji), a play button, then
+  // the words. A child who cannot read chooses by the picture.
+  function card(g) {
+    var soon = g.status === "coming-soon";
+    var a = el(soon ? "div" : "a", "card tile" + (soon ? " soon" : ""));
+    if (soon) a.setAttribute("aria-disabled", "true");
+    else { a.href = "games/" + g.slug + "/index.html"; a.setAttribute("aria-label", "Play " + g.title); }
+
+    var cover = el("div", "cover");
+    if (g.cover) {
+      var img = el("img");
+      img.src = "games/" + g.slug + "/" + g.cover;
+      img.alt = g.coverAlt || "";
+      cover.appendChild(img);
+      cover.appendChild(el("span", "glow"));
+      for (var i = 0; i < 9; i++) {
+        var t = el("span", "tw", i % 3 ? "✦" : "★");
+        t.setAttribute("aria-hidden", "true");
+        t.style.left = (6 + Math.random() * 88) + "%";
+        t.style.top = (4 + Math.random() * 38) + "%";
+        t.style.fontSize = (10 + Math.random() * 12) + "px";
+        t.style.animationDelay = (Math.random() * 2.6) + "s";
+        cover.appendChild(t);
+      }
+    } else {
+      var e = el("span", "emo", g.icon || "🎲");
+      e.setAttribute("aria-hidden", "true");
+      cover.appendChild(e);
     }
-    games.forEach(function (g) {
-      var a = document.createElement("a");
-      a.className = "card tile";
-      a.href = "games/" + g.slug + "/index.html";
-      a.innerHTML =
-        '<div class="icon" aria-hidden="true">' + (g.icon || "🎲") + "</div>" +
-        "<h2>" + g.title + "</h2>" +
-        '<p class="tagline">' + g.tagline + "</p>" +
-        '<span class="age-badge">' + ageLabel(g) + "</span>";
-      grid.appendChild(a);
+    if (soon) cover.appendChild(el("span", "soon-tag", "Coming soon"));
+    else { var p = el("span", "play", "▶"); p.setAttribute("aria-hidden", "true"); cover.appendChild(p); }
+    a.appendChild(cover);
+
+    var meta = el("div", "meta");
+    meta.appendChild(el("h3", "", g.title));
+    meta.appendChild(el("span", "age-badge", ageLabel(g)));
+    meta.appendChild(el("p", "tagline", g.tagline));
+    a.appendChild(meta);
+    return a;
+  }
+
+  function render(sections) {
+    var main = document.getElementById("sections");
+    main.innerHTML = "";
+    sections = sections.filter(function (s) { return s.games.length; });
+    if (!sections.length) { main.appendChild(el("p", "empty", "No games yet — check back soon.")); return; }
+    sections.forEach(function (s) {
+      var sec = el("section", "section");
+      var head = el("div", "section-head");
+      var ico = el("span", "ico", s.icon || "⭐");
+      ico.setAttribute("aria-hidden", "true");
+      head.appendChild(ico);
+      head.appendChild(el("h2", "", s.title));
+      sec.appendChild(head);
+      var grid = el("div", "grid" + (s.games.length > 1 ? " many" : ""));
+      s.games.forEach(function (g) { grid.appendChild(card(g)); });
+      sec.appendChild(grid);
+      main.appendChild(sec);
     });
   }
 
@@ -109,22 +237,29 @@
     fetch("manifest.json")
       .then(function (r) { return r.json(); })
       .then(function (manifest) {
-        var slugs = manifest.games || [];
-        return Promise.all(
-          slugs.map(function (slug) {
-            return fetch("games/" + slug + "/game.json")
-              .then(function (r) { return r.json(); })
-              .catch(function () { return null; });
-          })
-        );
+        var sections = manifest.sections || [{ title: "Games", games: manifest.games || [] }];
+        return Promise.all(sections.map(function (s) {
+          return Promise.all((s.games || []).map(function (slug) {
+            return fetch("games/" + slug + "/game.json").then(function (r) { return r.json(); }).catch(function () { return null; });
+          })).then(function (games) { return { title: s.title, icon: s.icon, games: games.filter(Boolean) }; });
+        }));
       })
-      .then(function (games) {
-        renderGames(games.filter(Boolean));
-      })
+      .then(render)
       .catch(function () {
-        document.getElementById("grid").innerHTML =
-          '<p class="empty">Couldn\'t load the games list. If you\'re running this from a local file:// path, serve it over http instead (fetch of manifest.json needs a real origin).</p>';
+        var main = document.getElementById("sections");
+        main.innerHTML = "";
+        main.appendChild(el("p", "empty", "Couldn't load the games list. If you're running this from a local file:// path, serve it over http instead (fetch of manifest.json needs a real origin)."));
       });
+  }
+
+  function wireParents() {
+    var back = document.getElementById("parents"), btn = document.getElementById("parentsBtn"), close = document.getElementById("parentsClose");
+    function open() { back.hidden = false; close.focus(); }
+    function shut() { back.hidden = true; btn.focus(); }
+    btn.addEventListener("click", open);
+    close.addEventListener("click", shut);
+    back.addEventListener("click", function (e) { if (e.target === back) shut(); });
+    document.addEventListener("keydown", function (e) { if (e.key === "Escape" && !back.hidden) shut(); });
   }
 
   function showNotes() {
@@ -137,6 +272,7 @@
   showNotes();
 
   buildStars();
+  wireParents();
   loadGames();
 })();
 </script>

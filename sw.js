@@ -9,7 +9,7 @@
 */
 
 // BEGIN GENERATED
-const VERSION = "21482d886850";
+const VERSION = "9a0af95e0b3f";
 const FILES = [
   "./",
   "app.webmanifest",
@@ -223,6 +223,7 @@ const FILES = [
   "games/yusuf/assets/img/p-benjamin.webp",
   "games/yusuf/assets/img/p-yusuf.webp",
   "games/yusuf/assets/img/p-yusufMan.webp",
+  "games/yusuf/cover.webp",
   "games/yusuf/game.js",
   "games/yusuf/game.json",
   "games/yusuf/index.html",

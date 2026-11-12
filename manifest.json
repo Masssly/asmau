@@ -1,7 +1,21 @@
 {
-  "games": [
-    "tap-and-say",
-    "count-the-crescents",
-    "yusuf"
+  "sections": [
+    {
+      "id": "prophets",
+      "title": "Stories of the Prophets",
+      "icon": "🌟",
+      "games": [
+        "yusuf"
+      ]
+    },
+    {
+      "id": "little-ones",
+      "title": "For little ones",
+      "icon": "🧸",
+      "games": [
+        "tap-and-say",
+        "count-the-crescents"
+      ]
+    }
   ]
 }

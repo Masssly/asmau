@@ -42,8 +42,15 @@ function load(files) {
 
 /* ---------- games ---------- */
 const manifest = json("manifest.json");
-const slugs = (manifest && manifest.games) || [];
-if (!Array.isArray(slugs) || !slugs.length) fail("manifest.json: no games listed");
+// manifest.json lists sections, each with a title and its games in display order
+const sections = (manifest && manifest.sections) || [];
+if (!Array.isArray(sections) || !sections.length) fail("manifest.json: needs 'sections', each with a title and a list of games");
+for (const s of sections) {
+  if (!s || typeof s.title !== "string" || !s.title.trim()) fail("manifest.json: every section needs a title");
+  if (!s || !Array.isArray(s.games)) fail("manifest.json: section '" + (s && s.title) + "' needs a list of games");
+}
+const slugs = sections.reduce((all, s) => all.concat((s && s.games) || []), []);
+if (!slugs.length) fail("manifest.json: no games listed");
 if (new Set(slugs).size !== slugs.length) fail("manifest.json: a game is listed twice");
 
 let musicMoods = [];
@@ -62,6 +69,11 @@ for (const slug of slugs) {
     }
     if (typeof g.minAge !== "number" || typeof g.maxAge !== "number") fail(dir + "/game.json: minAge and maxAge must be numbers (every game states its age range)");
     else if (g.minAge > g.maxAge) fail(dir + "/game.json: minAge is above maxAge");
+    if (g.status !== undefined && g.status !== "coming-soon") fail(dir + "/game.json: status, if present, must be 'coming-soon'");
+    if (g.cover !== undefined) {
+      if (!exists(dir + "/" + g.cover)) fail(dir + "/game.json: cover '" + g.cover + "' does not exist");
+      if (typeof g.coverAlt !== "string" || !g.coverAlt.trim()) fail(dir + "/game.json: a cover needs coverAlt, a description of the picture");
+    }
     if (g.basedOn !== null && g.basedOn !== undefined && !/^Surah .+, \d+:\d+(?:-\d+)?$/.test(g.basedOn)) {
       fail(dir + "/game.json: basedOn should be null or look like 'Surah Yusuf, 12:4-101'");
     }

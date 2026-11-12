@@ -15,7 +15,7 @@ what ships. (One small script keeps the offline file list current; see
 ```
 asmau/
 ├── index.html              landing page — lists every game, reads its age badge
-├── manifest.json           the list of game folder slugs, in display order
+├── manifest.json           the landing page's sections, each with its games in display order
 ├── app.webmanifest         lets the site be installed on a phone or tablet
 ├── sw.js                   service worker: the whole site works offline (generated list)
 ├── fonts/                  Baloo 2 and Mada, self-hosted (SIL OFL 1.1)
@@ -64,7 +64,15 @@ reads `manifest.json` and each game's `game.json`.
 3. Build `index.html` for the game. Link `../../fonts/fonts.css`,
    `../../shared/style.css`, `../../shared/narration.js` (and `music.js` if
    you want sound) as needed, and `../../shared/pwa.js` so it works offline.
-4. Add the slug to `manifest.json`.
+4. Add the slug to a section's `games` in `manifest.json`, or add a new
+   section `{ "id", "title", "icon", "games": [...] }`. Sections are always
+   shown open on the landing page, one under the other.
+
+Two optional fields in `game.json` change the game's card on the landing page:
+`"status": "coming-soon"` shows the card greyed with a "Coming soon" label and
+no link, for a game that is not ready to share; `"cover"` (with `"coverAlt"`)
+names a picture in the game's folder to show, moving gently, instead of the
+emoji icon, so a child who cannot read can choose by the picture.
 5. Run the checks (below).
 
 ## Narration

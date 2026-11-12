@@ -38,9 +38,9 @@ Follows the record fields required by `LICENSING.md`. One entry per image kept i
 - Known faults: see `REVIEW.md`.
 
 ### char-adult-001 / turnaround-v2-ai-draft.jpg
-- Created: 2026-11-12. Same tool. Prompt: as v1 but "true right side profile (body turned exactly 90 degrees,
-  nose pointing sideways)", "large embroidered chest pocket ... in green geometric triangles", wardrobe
-  phrase "babban riga" and "hand-woven" and "silk" removed to fit the length limit.
+- Created: 2026-11-12. Same tool. Prompt: same as v1 except: "true right side profile (body turned exactly 90
+  degrees, nose pointing sideways)"; the words "(babban riga)", "gentle smile" and "silk" were removed; the
+  pocket reads "large embroidered chest pocket on wearer's left in green geometric triangles".
 - Inspected: no script or pseudo-script visible. Known faults: see `REVIEW.md`.
 
 ### char-child-001 / turnaround-v1-ai-draft.jpg

@@ -8,6 +8,28 @@
 */
 (function () {
   "use strict";
+
+  // Any element with data-asmau-version shows the release number (2026.11.1);
+  // data-asmau-notes gets the latest notes as a list. Read fresh, never from an old copy.
+  var here = document.currentScript ? document.currentScript.src : location.href;
+  function showVersion() {
+    var url = new URL("../version.json", here).href;
+    fetch(url, { cache: "no-cache" }).then(function (r) { return r.json(); }).then(function (v) {
+      window.AsmauRelease = v;
+      Array.prototype.forEach.call(document.querySelectorAll("[data-asmau-version]"), function (el) { el.textContent = "Version " + v.version; el.hidden = false; });
+      Array.prototype.forEach.call(document.querySelectorAll("[data-asmau-notes]"), function (el) {
+        el.innerHTML = "";
+        (v.history || []).slice(0, 5).forEach(function (h) {
+          var li = document.createElement("li");
+          li.textContent = h.version + " (" + h.date + "): " + h.notes.join("; ");
+          el.appendChild(li);
+        });
+      });
+      window.dispatchEvent(new Event("asmau-version"));
+    }).catch(function () { /* offline with nothing saved yet */ });
+  }
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", showVersion); else showVersion();
+
   if (!("serviceWorker" in navigator)) return;
 
   var script = document.currentScript;

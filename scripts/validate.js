@@ -12,6 +12,7 @@
   - pages only load local files that exist, and nothing loads from Google
   - the README only names files that exist
   - sw.js lists exactly the files in the repo (scripts/build-offline.js)
+  - version.json is well formed (warns when there are changes since the last release)
 */
 "use strict";
 const fs = require("fs");
@@ -218,6 +219,20 @@ if (exists("README.md")) {
   for (const m of readme.matchAll(/\b((?:shared|scripts|fonts|icons)\/[A-Za-z0-9_.-]+\.(?:js|css|sh|json|woff2|png))\b/g)) {
     if (!exists(m[1])) fail("README.md: mentions '" + m[1] + "', which does not exist");
   }
+}
+
+/* ---------- versions ---------- */
+if (exists("version.json")) {
+  const ver = json("version.json");
+  if (ver) {
+    if (!/^\d{4}\.\d{2}\.\d+$/.test(ver.version || "")) fail("version.json: version must look like 2026.11.1");
+    if (!Array.isArray(ver.notes) || !ver.notes.length) fail("version.json: the current release needs notes");
+    if (!Array.isArray(ver.history) || !ver.history.length || ver.history[0].version !== ver.version) fail("version.json: history must start with the current version");
+    const now = offline.compute().build;
+    if (ver.buildId !== now) warn("version.json: the site has changed since release " + ver.version + ". Run: node scripts/release.js \"what changed\"");
+  }
+} else {
+  fail("version.json: missing");
 }
 
 /* ---------- offline ---------- */

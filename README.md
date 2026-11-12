@@ -17,7 +17,9 @@ asmau/
 ├── index.html              landing page — lists every game, reads its age badge
 ├── manifest.json           the landing page's sections, each with its games in display order
 ├── app.webmanifest         lets the site be installed on a phone or tablet
-├── sw.js                   service worker: the whole site works offline (generated list)
+├── sw.js                   service worker: the whole site works offline (generated lists)
+├── version.json            the release number, date and notes (see scripts/release.js)
+├── reset.html              clears a device's saved copy of the site
 ├── fonts/                  Baloo 2 and Mada, self-hosted (SIL OFL 1.1)
 ├── icons/                  app icons
 ├── shared/
@@ -27,7 +29,8 @@ asmau/
 │   └── pwa.js              registers the service worker
 ├── scripts/
 │   ├── generate-placeholder-audio.sh   regenerates the flite placeholder clips
-│   ├── build-offline.js                regenerates sw.js's file list and version
+│   ├── build-offline.js                regenerates sw.js's lists
+│   ├── release.js                      numbers a release and refreshes sw.js
 │   └── validate.js                     checks the whole site; run by CI
 ├── tools/
 │   └── record-voice/       lets a parent record real narration, in the browser
@@ -174,22 +177,47 @@ Pictures are AI-generated: say so wherever they are credited. The clothes and
 buildings are an artistic interpretation in a West African style, not a
 reconstruction of ancient Egypt, and the game's note for parents says so.
 
-## Offline
+## Offline and updates
 
 After the first visit the whole site works with no connection, which matters
-on a tablet. `sw.js` caches every file in the repo on install. Fonts are
-self-hosted in `fonts/`, so there is no request to Google either.
+on a tablet. `sw.js` keeps two kinds of saved files apart:
 
-`sw.js` contains a generated block: a version and the list of files. Any
-change to any file changes the version, which makes browsers install the
-worker again and replace the old cache. **After changing anything, run
-`node scripts/build-offline.js`** before committing; the checks fail if you
-forget.
+- **Pages, scripts, styles and data** are fetched from the network first and
+  only fall back to the saved copy offline (or after 4 seconds), so a new
+  release shows up on the next visit and nobody is stuck on an old copy.
+- **Pictures, sounds and fonts** live in one long-lived cache with a
+  fingerprint for each file. A release downloads only the files whose
+  fingerprint is new or changed (a release that touches one picture downloads
+  one picture) and drops the ones that were removed. They are served from the
+  saved copy first, so they appear instantly.
+
+If a device ever looks old, `reset.html` clears its saved copy and loads the
+newest one (recordings and progress are not touched). The landing page footer
+has a "Refresh" link to it.
+
+`sw.js` contains a generated block: `node scripts/build-offline.js` rewrites it.
+
+## Versions
+
+Releases are numbered `YEAR.MONTH.NUMBER`, like `2026.11.1`: the first release
+of a month is `.1`, the next `.2`, and a new month starts again at `.1`. The
+number, the date and plain-words notes for parents live in `version.json`, and
+show on the landing page, in the Yusuf title screen and in the "What's new"
+list in the parents panel.
+
+After a batch of changes, cut a release before committing:
+
+```
+node scripts/release.js "Yusuf: a new activity in chapter 5" "Fixed a stuck picture"
+```
+
+That bumps the number, records the notes and refreshes `sw.js`. `validate.js`
+warns when the site has changed since the last release.
 
 ## Checking your work
 
 ```
-node scripts/build-offline.js   # refresh sw.js after any change
+node scripts/release.js "notes"      # number the release and refresh sw.js
 node scripts/validate.js        # check everything
 ```
 

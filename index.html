@@ -83,6 +83,8 @@
   .sheet h3 { font-family: var(--font-display); font-size: 16px; margin: 16px 0 4px; color: var(--gold); }
   .sheet p { margin: 0 0 8px; }
   .sheet a { color: var(--gold); }
+  .sheet .news { margin: 0 0 8px; padding-left: 18px; font-size: 13.5px; }
+  .sheet .news li { margin-bottom: 4px; }
   .sheet .big-link { display: inline-block; margin-top: 4px; background: var(--gold); color: #3a2300; border-radius: 999px; padding: 9px 16px; font-family: var(--font-display); font-weight: 700; text-decoration: none; }
 
   @media (prefers-reduced-motion: reduce) { .cover img, .cover .glow, .cover .tw, .cover .emo, .play, .stars span { animation: none; } .cover .tw { opacity: .8; } }
@@ -103,7 +105,7 @@
 
   <footer>
     <span id="offlineNote" hidden>✓ Saved on this device — works without internet</span>
-    <br><span id="verNote" hidden></span>
+    <br><span id="verNote" hidden><span data-asmau-version></span> · <a href="reset.html">Refresh</a></span>
     <span id="updateNote" hidden>A newer version is ready. <a href="index.html">Reload</a></span>
   </footer>
 </div>
@@ -146,6 +148,9 @@
       families who want to help. If you would like to, you can
       <a href="https://ko-fi.com/dagbanli" target="_blank" rel="noopener">donate on Ko-fi</a>. Donating does not unlock any game;
       the only thing it can do is raise your limit if you keep recordings online.</p>
+
+    <h3>What’s new</h3>
+    <ul class="news" data-asmau-notes></ul>
 
     <h3>Privacy details</h3>
     <p>The full privacy note, including what happens to voice recordings, is on its own page.</p>
@@ -275,20 +280,8 @@
     document.addEventListener("keydown", function (e) { if (e.key === "Escape" && !back.hidden) shut(); });
   }
 
-  // which version this device is running, and a way out if it ever looks old
-  function showVersion() {
-    if (!window.caches) return;
-    caches.keys().then(function (ks) {
-      var k = ks.filter(function (x) { return x.indexOf("asmau-") === 0; })[0];
-      if (!k) return;
-      var n = document.getElementById("verNote");
-      n.innerHTML = "Version " + k.slice(6, 12) + " · <a href=\"reset.html\">Refresh</a>";
-      n.hidden = false;
-    }).catch(function () {});
-  }
-  window.addEventListener("asmau-offline", showVersion);
-  window.addEventListener("asmau-update", showVersion);
-  showVersion();
+  // the version shows once it has been read (pwa.js fills it in)
+  window.addEventListener("asmau-version", function () { document.getElementById("verNote").hidden = false; });
 
   function showNotes() {
     var r = document.documentElement;

@@ -446,3 +446,5 @@ button { touch-action: manipulation; -webkit-tap-highlight-color: transparent; }
 .prep.ok { color: #8be0c8; }
 .prep-bar { display: block; height: 8px; margin-top: 6px; border-radius: 99px; background: rgba(255,255,255,.12); overflow: hidden; }
 .prep-bar i { display: block; height: 100%; background: var(--gold); border-radius: 99px; transition: width .25s ease; }
+
+.ver { margin: 10px 0 0; font-size: 11px; color: var(--muted); opacity: .7; text-align: center; }

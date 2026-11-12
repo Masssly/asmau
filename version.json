@@ -1,0 +1,30 @@
+{
+  "version": "2026.11.1",
+  "date": "2026-11-12",
+  "buildId": "e37a4d0b3ea4",
+  "notes": [
+    "Pages and pictures now update by themselves; a new Refresh link fixes a stuck device",
+    "The Yusuf story has a picture in every scene and three or four activities in every chapter",
+    "Keep your voice recordings on all your devices with an optional family code",
+    "Musa and Adam are coming soon"
+  ],
+  "history": [
+    {
+      "version": "2026.11.1",
+      "date": "2026-11-12",
+      "notes": [
+        "Pages and pictures now update by themselves; a new Refresh link fixes a stuck device",
+        "The Yusuf story has a picture in every scene and three or four activities in every chapter",
+        "Keep your voice recordings on all your devices with an optional family code",
+        "Musa and Adam are coming soon"
+      ]
+    },
+    {
+      "version": "2026.11.0",
+      "date": "2026-11-12",
+      "notes": [
+        "First numbered version"
+      ]
+    }
+  ]
+}

@@ -45,3 +45,12 @@ the Worker secret `ADMIN_TOKEN` (set with `npx wrangler secret put ADMIN_TOKEN`)
 keep it out of the repository. The limit can only go up from the free 25 MB, to
 at most 5000 MB, and is deleted with the family when it is cleaned up after a
 year unused.
+
+## Pictures and sounds on R2
+
+`GET /media/<10 hex>/<repo path>` serves a picture or sound (public, cached for a
+year, any origin). `PUT /admin/media/<key>` uploads one (owner token; the key's
+first 10 hex digits must be the start of the file's SHA-1, so a wrong or partial
+upload is refused). Use `node scripts/publish-media.js` rather than calling it by
+hand. Objects live under `media/` in the same bucket as the recordings, and the
+yearly clean-up never touches them.

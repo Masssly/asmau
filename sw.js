@@ -19,7 +19,7 @@
 */
 
 // BEGIN GENERATED
-const RELEASE = "2026.11.2";
+const RELEASE = "2026.11.3";
 const BUILD = "92c264eae6a3";
 const SHELL = [
   "./",
@@ -266,6 +266,7 @@ const MEDIA = {
   "icons/icon-512.png": "ba45dd16b8",
   "icons/icon-maskable-512.png": "d0cbcbf3ba"
 };
+const MEDIA_BASE = "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/";
 // END GENERATED
 
 const SHELL_CACHE = "asmau-shell-" + BUILD;
@@ -308,9 +309,11 @@ function syncMedia() {
       var jobs = order.map(function (f) {
         return function () {
           if (have[f] === MEDIA[f]) { next[f] = MEDIA[f]; return Promise.resolve(); }
-          return fetch(new Request(f, { cache: "reload" })).then(function (res) {
-            if (res && res.ok) { next[f] = MEDIA[f]; return cache.put(f, res); }
-          });
+          function keep(res) { if (res && res.ok) { next[f] = MEDIA[f]; return cache.put(f, res); } }
+          var local = function () { return fetch(new Request(f, { cache: "reload" })).then(keep); };
+          // pictures and sounds come from R2 first (fast, cached at the edge); anything wrong falls back to GitHub Pages
+          if (!/\.(?:webp|mp3|webm|ogg|m4a)$/i.test(f)) return local();
+          return fetch(MEDIA_BASE + MEDIA[f] + "/" + f, { mode: "cors" }).then(function (res) { return res.ok ? keep(res) : local(); }).catch(local);
         };
       });
       return pool(jobs, 6).then(function () {

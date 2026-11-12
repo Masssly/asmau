@@ -12,6 +12,8 @@
     DELETE /v1/<family>/<name>   delete one blob
     DELETE /v1/<family>/         delete everything for the family
     GET/PUT /admin/limit         owner only (bearer token): see or raise one family's limit
+    GET     /media/<key>         the site's pictures (public, cached for a year)
+    PUT     /admin/media/<key>   owner only: upload one picture
 
   Also: a daily job deletes a family's recordings when nobody has used its code for
   a year, and requests are rate-limited per code and per network address.
@@ -144,12 +146,56 @@ async function tooMany(req, env, family) {
   return !a.success || !b.success;
 }
 
+// Pictures and sounds for the site, served from R2 with a year-long cache. The key is
+//   media/<10 hex digits: the start of the file's SHA-1>/<path in the repository>
+// so a changed picture gets a new address and old addresses never go stale.
+// Public on purpose (these are the game's own pictures); no rate limit, because
+// the cache answers almost every request.
+const TYPES = { webp: "image/webp", mp3: "audio/mpeg", webm: "audio/webm", ogg: "audio/ogg", m4a: "audio/mp4" };
+const MEDIA_KEY = /^[0-9a-f]{10}\/[A-Za-z0-9_.\/-]{1,200}\.(webp|mp3|webm|ogg|m4a)$/;
+
+async function sha1Prefix(bytes) {
+  const h = await crypto.subtle.digest("SHA-1", bytes);
+  return Array.prototype.map.call(new Uint8Array(h).slice(0, 5), (b) => ("0" + b.toString(16)).slice(-2)).join("");
+}
+
+async function media(req, env, ctx, key) {
+  const pub = { "access-control-allow-origin": "*", "access-control-allow-methods": "GET,HEAD", "vary": "accept-encoding" };
+  if (req.method === "OPTIONS") return new Response(null, { status: 204, headers: pub });
+  if (req.method !== "GET" && req.method !== "HEAD") return new Response("method not allowed", { status: 405, headers: pub });
+  if (!MEDIA_KEY.test(key) || key.includes("..")) return new Response("not found", { status: 404, headers: pub });
+  const cache = caches.default, cacheKey = new Request(new URL(req.url).origin + "/media/" + key);
+  const hit = await cache.match(cacheKey);
+  if (hit) return req.method === "HEAD" ? new Response(null, hit) : hit;
+  const obj = await env.CLIPS.get("media/" + key);
+  if (!obj) return new Response("not found", { status: 404, headers: pub });
+  const res = new Response(obj.body, { headers: Object.assign({ "content-type": TYPES[key.slice(key.lastIndexOf(".") + 1)] || "application/octet-stream", "cache-control": "public, max-age=31536000, immutable", "etag": obj.httpEtag }, pub) });
+  if (req.method === "GET") ctx.waitUntil(cache.put(cacheKey, res.clone()));
+  return req.method === "HEAD" ? new Response(null, res) : res;
+}
+
+// Owner only: PUT /admin/media/<key> with the picture's bytes. The address must match the bytes
+// (the first 10 hex digits of the SHA-1), so a wrong or half-sent upload is refused.
+async function adminMedia(req, env, key) {
+  const auth = req.headers.get("authorization") || "", want = env.ADMIN_TOKEN || "";
+  if (!want || auth !== "Bearer " + want) return new Response("forbidden", { status: 403 });
+  if (req.method !== "PUT" || !MEDIA_KEY.test(key) || key.includes("..")) return new Response("bad request", { status: 400 });
+  const bytes = await req.arrayBuffer();
+  if (!bytes.byteLength || bytes.byteLength > MAX) return new Response("too large or empty", { status: 413 });
+  if ((await sha1Prefix(bytes)) !== key.slice(0, 10)) return new Response("the bytes do not match the address", { status: 400 });
+  await env.CLIPS.put("media/" + key, bytes);
+  return new Response("ok", { status: 201 });
+}
+
 export default {
   async scheduled(event, env, ctx) {
     ctx.waitUntil(purgeInactive(env, Date.now(), RETENTION_DAYS));
   },
 
-  async fetch(req, env) {
+  async fetch(req, env, ctx) {
+    const mu = new URL(req.url);
+    if (mu.pathname.startsWith("/media/")) return media(req, env, ctx, mu.pathname.slice(7));
+    if (mu.pathname.startsWith("/admin/media/")) return adminMedia(req, env, mu.pathname.slice(13));
     if (req.method === "OPTIONS") return reply(null, 204);
     const origin = req.headers.get("origin");
     if (origin && origin !== ORIGIN) return reply("forbidden", 403);

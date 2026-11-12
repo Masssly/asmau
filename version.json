@@ -1,11 +1,18 @@
 {
-  "version": "2026.11.2",
+  "version": "2026.11.3",
   "date": "2026-11-12",
   "buildId": "92c264eae6a3",
   "notes": [
-    "The Yusuf title screen no longer stalls while pictures are saved; it shows real progress, and says so if it is slow"
+    "Pictures and sounds now download from a faster server, with the old source as a backup"
   ],
   "history": [
+    {
+      "version": "2026.11.3",
+      "date": "2026-11-12",
+      "notes": [
+        "Pictures and sounds now download from a faster server, with the old source as a backup"
+      ]
+    },
     {
       "version": "2026.11.2",
       "date": "2026-11-12",

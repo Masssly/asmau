@@ -32,6 +32,11 @@ function walk(dir, out) {
   return out;
 }
 
+// Pictures and sounds are also kept on R2 (see sync/worker.js, scripts/publish-media.js); the service worker
+// downloads them from there first and falls back to the copy in this repository.
+const MEDIA_BASE = "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/";
+const ON_R2 = /\.(?:webp|mp3|webm|ogg|m4a)$/i;
+
 const MEDIA = /\.(?:webp|png|jpe?g|mp3|webm|ogg|m4a|woff2?)$/i;   // big, never change under the same name
 
 function compute() {
@@ -67,6 +72,7 @@ function render(c) {
     "const BUILD = " + JSON.stringify(c.build) + ";\n" +
     "const SHELL = " + JSON.stringify(c.shell, null, 2) + ";\n" +
     "const MEDIA = " + JSON.stringify(c.media, null, 2) + ";\n" +
+    "const MEDIA_BASE = " + JSON.stringify(MEDIA_BASE) + ";\n" +
     "// END GENERATED";
 }
 
@@ -102,4 +108,4 @@ if (require.main === module) {
   }
 }
 
-module.exports = { compute, isCurrent };
+module.exports = { compute, isCurrent, MEDIA_BASE, ON_R2 };

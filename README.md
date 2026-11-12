@@ -31,6 +31,7 @@ asmau/
 │   ├── generate-placeholder-audio.sh   regenerates the flite placeholder clips
 │   ├── build-offline.js                regenerates sw.js's lists
 │   ├── release.js                      numbers a release and refreshes sw.js
+│   ├── publish-media.js                puts pictures and sounds on R2 (see "Offline and updates")
 │   └── validate.js                     checks the whole site; run by CI
 ├── tools/
 │   └── record-voice/       lets a parent record real narration, in the browser
@@ -190,6 +191,20 @@ on a tablet. `sw.js` keeps two kinds of saved files apart:
   fingerprint is new or changed (a release that touches one picture downloads
   one picture) and drops the ones that were removed. They are served from the
   saved copy first, so they appear instantly.
+
+Pictures and sounds (`.webp`, `.mp3`, `.webm`, `.ogg`, `.m4a`) are also kept on
+Cloudflare R2, and the service worker downloads them from there first (fast,
+cached at the edge for a year, addressed by a fingerprint so a changed file gets
+a new address). If R2 cannot be reached it falls back to the copy in this
+repository, so nothing breaks. After adding or changing pictures or sounds,
+before pushing:
+
+```
+ADMIN_TOKEN=... node scripts/publish-media.js
+```
+
+(Files already on R2 are skipped. The music and sound effects in the games are
+made by the browser as you play and are not files.)
 
 If a device ever looks old, `reset.html` clears its saved copy and loads the
 newest one (recordings and progress are not touched). The landing page footer

@@ -19,8 +19,8 @@
 */
 
 // BEGIN GENERATED
-const RELEASE = "2026.11.1";
-const BUILD = "e37a4d0b3ea4";
+const RELEASE = "2026.11.2";
+const BUILD = "92c264eae6a3";
 const SHELL = [
   "./",
   "app.webmanifest",
@@ -300,7 +300,12 @@ function syncMedia() {
   return caches.open(MEDIA_CACHE).then(function (cache) {
     return cache.match(INDEX_URL).then(function (r) { return r ? r.json() : {}; }).catch(function () { return {}; }).then(function (have) {
       var next = {};
-      var jobs = Object.keys(MEDIA).map(function (f) {
+      // pictures first (the game waits for those), then fonts, then sounds
+      var order = Object.keys(MEDIA).sort(function (x, y) {
+        var rank = function (f) { return /\.(?:webp|png|jpe?g)$/i.test(f) ? 0 : (/\.woff2?$/i.test(f) ? 1 : 2); };
+        return rank(x) - rank(y);
+      });
+      var jobs = order.map(function (f) {
         return function () {
           if (have[f] === MEDIA[f]) { next[f] = MEDIA[f]; return Promise.resolve(); }
           return fetch(new Request(f, { cache: "reload" })).then(function (res) {

@@ -987,33 +987,57 @@
     [id, !nxt.say && (o.bg || "bg-" + nxt.scene)].forEach(function (k) { if (k && ART[k]) new Image().src = "assets/img/" + k + ".webp"; });
   }
 
-  // On the title screen, fetch every picture once, so the whole game plays
-  // instantly from then on (and offline). Playing can start at any time.
+  // The title screen shows how far the pictures have got. The service worker is the one
+  // downloading them (once, in the background); this only watches the saved copy, so it
+  // never competes with that download. If nothing is saved for 20 seconds (no service
+  // worker, or it is stuck), the page fetches the pictures itself.
   var prepared = false;
   function prepareAll() {
     var el = $("prep");
     if (prepared || !el) return;
-    var keys = Object.keys(ART), done = 0, next = 0, running = 0;
-    if (!keys.length) return;
+    var keys = Object.keys(ART), total = keys.length;
+    if (!total) return;
     prepared = true;
     el.hidden = false;
+    var have = 0, fetched = 0, lastMove = Date.now(), selfFetching = false, stopped = false;
     function paint() {
-      if (done >= keys.length) { el.textContent = "✓ Ready — the pictures are saved on this device"; el.classList.add("ok"); return; }
-      el.innerHTML = "Getting the pictures ready…<span class=\"prep-bar\"><i style=\"width:" + Math.round(done / keys.length * 100) + "%\"></i></span>";
+      if (have >= total) { el.textContent = "✓ Ready — the pictures are saved on this device"; el.classList.add("ok"); stopped = true; return; }
+      var slow = Date.now() - lastMove > 15000;
+      el.innerHTML = (slow ? "Taking longer than usual. You can start now; pictures appear as you play." : "Getting the pictures ready…") + "<span class=\"prep-bar\"><i style=\"width:" + Math.round(have / total * 100) + "%\"></i></span>";
     }
-    function pump() {
-      while (running < 4 && next < keys.length) {
-        running += 1;
-        (function (k) {
-          var im = new Image();
-          function fin() { running -= 1; done += 1; paint(); pump(); }
-          im.onload = fin; im.onerror = fin;
-          im.src = "assets/img/" + k + ".webp";
-        })(keys[next++]);
-      }
+    function selfFetch() {
+      if (selfFetching) return;
+      selfFetching = true;
+      var next = 0, running = 0;
+      (function pump() {
+        while (running < 3 && next < total) {
+          running += 1;
+          (function (k) {
+            var im = new Image(), t = setTimeout(fin, 10000);
+            function fin() { clearTimeout(t); if (im) { im.onload = im.onerror = null; im = null; running -= 1; fetched += 1; if (fetched > have) { have = fetched; paint(); } pump(); } }
+            im.onload = im.onerror = fin;
+            im.src = "assets/img/" + k + ".webp";
+          })(keys[next++]);
+        }
+      })();
+    }
+    function count() {
+      if (stopped) return;
+      var done = window.caches ? caches.open("asmau-media").then(function (c) { return c.keys(); }).then(function (reqs) {
+        var seen = {};
+        reqs.forEach(function (r) { var m = r.url.match(/assets\/img\/([^/]+)\.webp/); if (m && ART[m[1]]) seen[m[1]] = 1; });
+        return Object.keys(seen).length;
+      }) : Promise.resolve(0);
+      done.catch(function () { return 0; }).then(function (n) {
+        if (n > have) { have = n; lastMove = Date.now(); paint(); }
+        if (have >= total) { paint(); return; }
+        if (Date.now() - lastMove > 15000) paint();
+        if (!selfFetching && (!navigator.serviceWorker || Date.now() - lastMove > 20000)) selfFetch();
+        setTimeout(count, 600);
+      });
     }
     paint();
-    pump();
+    count();
   }
 
   function renderStep() {

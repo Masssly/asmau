@@ -1,0 +1,113 @@
+{
+  "schemaVersion": "1.0.0",
+  "library": "Asmau African Muslim Visual Library",
+  "status": "foundation",
+  "style": "stylised-realism",
+  "culturalReferenceFamilies": [
+    "Hausa",
+    "Fulani",
+    "Sahelian West African Muslim cultures"
+  ],
+  "historicalCaution": "Sokoto-era references are later than the Quranic Yusuf narrative; tag deliberate anachronistic inspiration as artistic interpretation.",
+  "assets": [
+    {
+      "id": "concept-board-001",
+      "name": "Initial visual direction board",
+      "type": "concept-art",
+      "status": "approved-direction",
+      "format": "SVG",
+      "path": "concept-board.svg",
+      "usage": "Mood and art-direction reference only; not a production model sheet."
+    },
+    {
+      "id": "char-child-001",
+      "name": "Child character base",
+      "type": "character",
+      "status": "planned",
+      "deliverables": [
+        "front-view",
+        "side-view",
+        "back-view",
+        "expression-sheet",
+        "material-swatches"
+      ]
+    },
+    {
+      "id": "char-adult-001",
+      "name": "Adult community character base",
+      "type": "character",
+      "status": "planned",
+      "deliverables": [
+        "front-view",
+        "side-view",
+        "back-view",
+        "expression-sheet",
+        "material-swatches"
+      ]
+    },
+    {
+      "id": "char-scholar-001",
+      "name": "Scholar character base",
+      "type": "character",
+      "status": "planned",
+      "deliverables": [
+        "front-view",
+        "side-view",
+        "back-view",
+        "expression-sheet",
+        "wardrobe-notes"
+      ]
+    },
+    {
+      "id": "env-compound-001",
+      "name": "Sahel-inspired compound entrance",
+      "type": "environment",
+      "status": "planned",
+      "deliverables": [
+        "modular-kit",
+        "materials",
+        "scale-reference"
+      ]
+    },
+    {
+      "id": "env-courtyard-001",
+      "name": "Family courtyard",
+      "type": "environment",
+      "status": "planned",
+      "deliverables": [
+        "blockout",
+        "lighting-study",
+        "prop-set"
+      ]
+    },
+    {
+      "id": "prop-market-001",
+      "name": "Market prop collection",
+      "type": "prop-set",
+      "status": "planned",
+      "deliverables": [
+        "pottery",
+        "baskets",
+        "textiles",
+        "stall",
+        "trade-tools"
+      ]
+    }
+  ],
+  "productionRequirements": {
+    "sourceFiles": [
+      ".blend or equivalent editable source"
+    ],
+    "runtimeFormats": [
+      ".glb"
+    ],
+    "documentation": [
+      "credits",
+      "provenance",
+      "license",
+      "region-and-period-tags",
+      "technical-specifications"
+    ],
+    "targetUse": "Reusable Asmau games; optimise for mobile and tablet; test on actual target devices."
+  }
+}

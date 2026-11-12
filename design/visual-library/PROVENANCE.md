@@ -120,3 +120,12 @@ Two takes were generated for each character; one of each was kept, the other dis
 - Result: eight panels, not six: neutral, smile, astonished, concerned, pondering, two worried, laughter. Cap
   stitching is a zigzag, geometric. Rose facing is wider than on the approved robe. No script seen.
   Discarded take showed no white under-collar, which does not match the approved design.
+
+## char-scholar-001 (2026-11-12)
+
+### char-scholar-001 / turnaround-v1-ai-draft.jpg
+- Same tool and limits as above. Prompt: see `characters/char-scholar-001/SPEC.md`. Two takes were generated;
+  this one was kept. The discarded take (indigo coat, scarf, sterner and darker-shadowed face) was less
+  appealing and is not stored.
+- Inspected: no script or pseudo-script visible; trim is geometric. Status: ai-generated-draft, cultural
+  review pending, licence review pending.

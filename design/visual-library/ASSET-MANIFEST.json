@@ -76,16 +76,24 @@
     },
     {
       "id": "char-scholar-001",
-      "name": "Scholar character base",
+      "name": "Woman scholar and teacher base",
       "type": "character",
-      "status": "planned",
+      "status": "ai-generated-draft-awaiting-review",
       "deliverables": [
         "front-view",
         "side-view",
         "back-view",
         "expression-sheet",
         "wardrobe-notes"
-      ]
+      ],
+      "specPath": "characters/char-scholar-001/SPEC.md",
+      "referenceImages": [
+        "characters/char-scholar-001/reference/turnaround-v1-ai-draft.jpg"
+      ],
+      "provenance": "PROVENANCE.md",
+      "culturalReview": "pending",
+      "licenceReview": "pending",
+      "usageRestriction": "AI-generated; not any real person; not for use as a prophet. Do not ship until generator terms are recorded in PROVENANCE.md."
     },
     {
       "id": "env-compound-001",

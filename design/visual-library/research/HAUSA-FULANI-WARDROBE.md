@@ -33,3 +33,14 @@ credit or note until verified.
 - Colour restraint: indigo, undyed cream, one rose, one green accent; follow `STYLE-GUIDE.md` palette.
 - Skin: deep brown with warm highlights, never grey, never green.
 - Embroidery is geometric only (triangles, blades, roundels).
+
+## Woman scholar, `char-scholar-001` (proposal)
+
+| Item | Description | Confidence |
+|---|---|---|
+| Head covering | large cream cotton wrap over hair, draped at the shoulders | low, proposal |
+| Outer garment | long deep-green coat or robe, narrow geometric trim at neckline and cuffs | low, proposal |
+| Under-garment | cream long under-robe, visible at front and hem | low, proposal |
+| Footwear | brown leather sandals | medium |
+
+No documented source was checked for scholars' dress. Do not label this "traditional" until verified.

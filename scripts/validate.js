@@ -59,9 +59,9 @@ try { musicMoods = load(["shared/music.js"]).AsmauMusic.moodNames; } catch (e) {
 for (const slug of slugs) {
   const dir = "games/" + slug;
   if (!fs.existsSync(path.join(ROOT, dir))) { fail(dir + ": listed in manifest.json but the folder is missing"); continue; }
-  if (!exists(dir + "/index.html")) fail(dir + "/index.html: missing");
-
   const g = json(dir + "/game.json");
+  // a game that is only announced has a card on the landing page and nothing to open yet
+  if (!exists(dir + "/index.html") && !(g && g.status === "coming-soon")) fail(dir + "/index.html: missing");
   if (g) {
     if (g.slug !== slug) fail(dir + "/game.json: slug is '" + g.slug + "', expected '" + slug + "'");
     for (const k of ["title", "icon", "tagline", "depictionNotes"]) {
@@ -201,7 +201,7 @@ function pages() {
   }
   return out;
 }
-for (const page of pages()) {
+for (const page of pages().concat(exists("privacy.html") ? ["privacy.html"] : [])) {
   const html = read(page);
   if (/fonts\.(googleapis|gstatic)\.com/.test(html)) fail(page + ": loads fonts from Google (self-host them in fonts/ instead)");
   const base = path.dirname(page);

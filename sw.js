@@ -9,7 +9,7 @@
 */
 
 // BEGIN GENERATED
-const VERSION = "9a0af95e0b3f";
+const VERSION = "90620a7c0584";
 const FILES = [
   "./",
   "app.webmanifest",
@@ -17,6 +17,8 @@ const FILES = [
   "fonts/fonts.css",
   "fonts/mada-arabic.woff2",
   "fonts/mada-latin.woff2",
+  "games/adam/cover.webp",
+  "games/adam/game.json",
   "games/count-the-crescents/assets/audio/count-1.mp3",
   "games/count-the-crescents/assets/audio/count-2.mp3",
   "games/count-the-crescents/assets/audio/count-3.mp3",
@@ -27,6 +29,8 @@ const FILES = [
   "games/count-the-crescents/index.html",
   "games/count-the-crescents/",
   "games/count-the-crescents/narration.json",
+  "games/musa/cover.webp",
+  "games/musa/game.json",
   "games/tap-and-say/assets/audio/beads-en.mp3",
   "games/tap-and-say/assets/audio/kaaba-en.mp3",
   "games/tap-and-say/assets/audio/lamp-en.mp3",
@@ -238,6 +242,7 @@ const FILES = [
   "icons/icon-maskable-512.png",
   "index.html",
   "manifest.json",
+  "privacy.html",
   "shared/music.js",
   "shared/narration.js",
   "shared/pwa.js",

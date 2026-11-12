@@ -1,0 +1,13 @@
+{
+  "slug": "adam",
+  "title": "Adam",
+  "icon": "🌳",
+  "minAge": 5,
+  "maxAge": 9,
+  "tagline": "The first story of all, in the Garden.",
+  "basedOn": null,
+  "depictionNotes": "Not built yet. The cover picture is AI-generated and shows no person. The fruit on the tree is the picture's invention; the Qur'an does not name it. Whether and how people are shown will be decided, and stated here, when the game is made.",
+  "status": "coming-soon",
+  "cover": "cover.webp",
+  "coverAlt": "A bright garden with a great tree, a stream, birds and deer."
+}

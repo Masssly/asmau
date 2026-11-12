@@ -88,11 +88,17 @@
       load that file on another device (for example, record on your phone, load on the Fire tablet).
     </p>
     <div class="controls">
+      <button class="mini-btn download" id="shareBtn" hidden>📲 Send to my other device</button>
       <button class="mini-btn download" id="exportBtn">⬇ Save all recordings to a file</button>
       <label class="mini-btn" for="importFile" id="importLabel">⬆ Load recordings from a file</label>
       <input type="file" id="importFile" accept="application/json,.json" hidden>
     </div>
     <p class="status" id="transferStatus"></p>
+    <p class="status">
+      You do not have to do any of this: recordings work on the device they were made on, with nothing to set up.
+      Signing in once to keep them on all your devices automatically is planned, and is not available yet.
+      <a href="../../privacy.html">Privacy note</a>
+    </p>
   </div>
 
   <select id="gameSelect"></select>
@@ -279,6 +285,29 @@
   }
 
   var transferStatus = document.getElementById("transferStatus");
+
+  // Send the recordings through the device's own share sheet (AirDrop, a
+  // message to yourself, email), where the browser can share a file.
+  (function () {
+    var shareBtn = document.getElementById("shareBtn");
+    var probe;
+    try { probe = new File(["{}"], "asmau-voice.json", { type: "application/json" }); } catch (err) { return; }
+    if (!navigator.canShare || !navigator.canShare({ files: [probe] })) return;
+    shareBtn.hidden = false;
+    shareBtn.addEventListener("click", function () {
+      window.AsmauNarration.exportAll().then(function (bundle) {
+        if (!bundle.clips.length) { transferStatus.textContent = "Nothing recorded on this device yet."; return; }
+        var name = "asmau-voice-" + new Date().toISOString().slice(0, 10) + ".json";
+        var file = new File([JSON.stringify(bundle)], name, { type: "application/json" });
+        return navigator.share({ files: [file], title: "Asmau recordings" }).then(function () {
+          transferStatus.textContent = "Sent. On the other device, open this page and choose “Load recordings from a file”.";
+        });
+      }).catch(function (err) {
+        if (err && err.name === "AbortError") return;
+        transferStatus.textContent = "Couldn't share from this browser. Use “Save all recordings to a file” instead.";
+      });
+    });
+  })();
   document.getElementById("exportBtn").addEventListener("click", function () {
     window.AsmauNarration.exportAll().then(function (bundle) {
       if (!bundle.clips.length) { transferStatus.textContent = "Nothing recorded on this device yet."; return; }

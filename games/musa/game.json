@@ -1,0 +1,13 @@
+{
+  "slug": "musa",
+  "title": "Musa",
+  "icon": "🌊",
+  "minAge": 5,
+  "maxAge": 9,
+  "tagline": "The baby in the basket, and the long road that followed.",
+  "basedOn": null,
+  "depictionNotes": "Not built yet. The cover picture is AI-generated and shows no person. Whether and how people are shown will be decided, and stated here, when the game is made.",
+  "status": "coming-soon",
+  "cover": "cover.webp",
+  "coverAlt": "A basket floating on the river among the reeds, glowing softly."
+}

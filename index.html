@@ -58,7 +58,8 @@
   .meta p.tagline { flex-basis: 100%; color: var(--muted); font-size: 13.5px; margin: 0; }
 
   /* not ready yet: shown, so it is clear more is coming, but it cannot be opened */
-  .tile.soon .cover { filter: grayscale(.55) brightness(.8); }
+  .tile.soon .cover.plain { filter: grayscale(.55) brightness(.8); }
+  .grid.many > a.tile:first-child { grid-column: 1 / -1; }
   .tile.soon .cover .emo { animation: none; }
   .soon-tag {
     position: absolute; left: 12px; top: 12px; background: #0c1530; color: var(--gold); border: 2px solid var(--gold);
@@ -139,6 +140,10 @@
     <p>The pictures in the Yusuf story were made with an AI image generator. Everyone is shown with dark skin.
       The story’s own note for parents says who is shown, and why.</p>
 
+    <h3>Privacy details</h3>
+    <p>The full privacy note, including what happens to voice recordings, is on its own page.</p>
+    <p><a href="privacy.html">Read the privacy note</a></p>
+
     <p style="margin-top:16px"><a href="https://github.com/Masssly/asmau" target="_blank" rel="noopener">How Asmau is built (GitHub)</a></p>
   </div>
 </div>
@@ -197,6 +202,7 @@
         cover.appendChild(t);
       }
     } else {
+      cover.className += " plain";
       var e = el("span", "emo", g.icon || "🎲");
       e.setAttribute("aria-hidden", "true");
       cover.appendChild(e);

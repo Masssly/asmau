@@ -69,6 +69,6 @@ specific copyrighted character or an existing artist's style. That check is part
    Dagbamba profile is empty of verified detail, see `research/DAGBAMBA-PROFILE.md`.
 2. Adult man in his 40s and a girl of about 8: acceptable as the first pair? (They were my proposal.)
 3. Prophet-depiction policy: follow the per-game rule, or the library's blanket rule?
-4. Is AI-generated art acceptable as the *final* art, or only as reference for a human modeller? This changes
-   the licensing risk, see `PROVENANCE.md`.
+4. ~~Is AI-generated art acceptable as final art?~~ **Answered: yes** (owner, 2026-11-12). Remaining: record
+   the generator's terms of use and confirm commercial use, see `PROVENANCE.md`.
 5. Who can review for cultural accuracy? A named reviewer is needed before anything is marked "approved".

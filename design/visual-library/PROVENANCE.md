@@ -17,8 +17,14 @@ Follows the record fields required by `LICENSING.md`. One entry per image kept i
 - Copyright status of AI-generated images differs by country and is unsettled. Conclusion: it is **uncertain**
   whether Asmau owns any copyright in these drafts, and uncertain what the generator's terms allow for
   commercial use. These images must be treated as **reference drafts** until the owner confirms the terms.
-- Do not ship these images inside a game. Final shippable art should come from original modelling work
-  (human, or AI-assisted with a recorded process) where the rights are clear.
+- **Owner decision (2026-11-12): AI-generated art is acceptable as final art.** That settles the project's
+  *preference*, not the legal question. Two items stay open and are tracked here: (1) the owner or a
+  maintainer reads the generator's current terms of use for commercial use of outputs and records the
+  result below (I have not verified them), (2) ownership/copyright in AI output is uncertain in many
+  countries, so Asmau may not be able to exclude others from copying it. Repo and licence notes must say
+  "AI-generated" for every such asset.
+- Until item (1) is recorded, keep these images out of the shipped site; reference and review use only.
+- Terms check result: _not yet recorded_.
 - Status for all entries: `ai-generated-draft`, cultural review `pending`, licence review `pending`.
 
 ## Entries

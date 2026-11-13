@@ -27,7 +27,7 @@
 window.AsmauSync = (function () {
   "use strict";
 
-  var SERVER = "https://asmau-sync.mohammed-sadat-abdulai.workers.dev";
+  var SERVER = (window.ASMAU_CONFIG || {}).server;   // config.json is the one place this lives
   var LS = "asmau-sync-code";
   var LS_STATE = "asmau-sync-state";   // { dirty: {key:1}, gone: {key:1}, seen: {key: remote upload time} }
   var ALPHABET = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789"; // no 0/O/1/I
@@ -71,7 +71,12 @@ window.AsmauSync = (function () {
   }
 
   function url(k, name) { return SERVER + "/v1/" + k.id + "/" + (name || ""); }
-  function ok(r) { if (!r.ok) throw new Error("The sync server said " + r.status + "."); return r; }
+  function ok(r) {
+    if (r.ok) return r;
+    var why = r.status === 429 ? "Too many requests just now. Wait a minute and try again."
+      : (r.status === 503 ? "Sync is not taking new families right now. Please try again later." : "The sync server said " + r.status + ".");
+    throw new Error(why);
+  }
 
   function seal(k, blob) {
     return blob.arrayBuffer().then(function (data) {
@@ -131,6 +136,12 @@ window.AsmauSync = (function () {
     });
   }
 
+  // A removal leaves a tiny marker ("del.<name>") so the other devices learn of it and remove
+  // their copy too, instead of uploading it again. Recording the line again takes the marker away.
+  var TOMB = "del.";
+  function markRemoved(k, key) { return fetch(url(k, TOMB + key), { method: "PUT", body: new Uint8Array([49]) }).then(ok); }
+  function clearMarker(k, key) { return fetch(url(k, TOMB + key), { method: "DELETE" }).catch(function () { /* harmless */ }); }
+
   // A recording was made (or made again) on this device. It is marked as waiting
   // until the upload is confirmed; the older online copy is replaced only then.
   function pushOne(key, blob) {
@@ -139,7 +150,7 @@ window.AsmauSync = (function () {
     return derive().then(function (k) {
       return put(k, key, blob).then(function () {
         var st2 = state(); delete st2.dirty[key]; saveState(st2);
-        return listing(k).then(noteSeen);
+        return clearMarker(k, key).then(function () { return listing(k); }).then(noteSeen);
       });
     }).then(function () { return true; });
   }
@@ -149,7 +160,7 @@ window.AsmauSync = (function () {
     if (!ls("get")) return Promise.resolve(false);
     var st = state(); st.gone[key] = 1; delete st.dirty[key]; saveState(st);
     return derive().then(function (k) {
-      return fetch(url(k, key), { method: "DELETE" }).then(ok).then(function () {
+      return fetch(url(k, key), { method: "DELETE" }).then(ok).then(function () { return markRemoved(k, key); }).then(function () {
         var st2 = state(); delete st2.gone[key]; delete st2.seen[key]; saveState(st2);
         return true;
       });
@@ -188,20 +199,29 @@ window.AsmauSync = (function () {
       local.forEach(function (c) { have[c.key] = c; });
       var st = state();
       var removals = Object.keys(st.gone).map(function (key) {
-        return fetch(url(k, key), { method: "DELETE" }).then(ok).then(function () { delete st.gone[key]; delete st.seen[key]; counts.removed += 1; });
+        return fetch(url(k, key), { method: "DELETE" }).then(ok).then(function () { return markRemoved(k, key); }).then(function () { delete st.gone[key]; delete st.seen[key]; counts.removed += 1; });
       });
-      return Promise.all(removals).then(function () { saveState(st); return listing(k); }).then(function (remote) {
+      return Promise.all(removals).then(function () { saveState(st); return listing(k); }).then(function (all) {
+        var remote = all.filter(function (o) { return o.name.indexOf(TOMB) !== 0; });
+        var removedElsewhere = {};
+        all.forEach(function (o) { if (o.name.indexOf(TOMB) === 0) removedElsewhere[o.name.slice(TOMB.length)] = true; });
         var there = {};
         remote.forEach(function (o) { there[o.name] = o; });
         st = state();
         var jobs = [];
         local.forEach(function (c) {
           var o = there[c.key];
+          if (removedElsewhere[c.key] && !st.dirty[c.key]) {
+            // removed on another device: remove it here too (unless it was recorded again here since)
+            var i = c.key.indexOf(":");
+            jobs.push(N.deleteRecordedClip(c.key.slice(0, i), c.key.slice(i + 1)).then(function () { counts.removed += 1; }));
+            return;
+          }
           if (o && !st.dirty[c.key]) return;                 // same on both sides, or the remote is handled below
           jobs.push((function () {
             var bin = atob(c.data), u = new Uint8Array(bin.length);
             for (var i = 0; i < bin.length; i++) u[i] = bin.charCodeAt(i);
-            return put(k, c.key, new Blob([u], { type: c.type })).then(function () { counts.up += 1; var s2 = state(); delete s2.dirty[c.key]; saveState(s2); });
+            return put(k, c.key, new Blob([u], { type: c.type })).then(function () { counts.up += 1; var s2 = state(); delete s2.dirty[c.key]; saveState(s2); return clearMarker(k, c.key); });
           })());
         });
         remote.forEach(function (o) {
@@ -216,7 +236,7 @@ window.AsmauSync = (function () {
           }));
         });
         return Promise.all(jobs);
-      }).then(function () { return listing(k); }).then(noteSeen);
+      }).then(function () { return listing(k); }).then(function (all) { noteSeen(all.filter(function (o) { return o.name.indexOf(TOMB) !== 0; })); });
     }).then(function () { return counts; });
   }
 

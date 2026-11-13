@@ -14,3 +14,20 @@ jobs:
           node-version: 22
       - name: Check games, narration, references and offline list
         run: node scripts/validate.js
+
+  tests:
+    runs-on: ubuntu-latest
+    needs: validate
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Install the test tools
+        working-directory: tests
+        run: |
+          npm install
+          npx playwright install --with-deps chromium
+      - name: Play the game, check offline, narration, sync and updates
+        working-directory: tests
+        run: npm test

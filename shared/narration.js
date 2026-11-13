@@ -1,28 +1,23 @@
 /*
-  Asmau narration — one lookup, four fallback tiers, best source wins:
+  Asmau narration — one lookup, three sources, best one wins:
 
-    1. A clip recorded on THIS device via tools/record-voice, stored in
-       IndexedDB. Instant, personal, needs no commit.
-    2. assets/audio/<id>.webm committed in the repo — a real human
-       recording a parent chose to share with everyone who opens the game.
-    3. assets/audio/<id>.mp3 committed in the repo — a pre-rendered
-       placeholder made with the open-source `flite` engine. Only ever
-       generated for English text (see scripts/generate-placeholder-audio.sh).
-    4. The device's own speechSynthesis voice, for ENGLISH only, with the
-       same placeholder-quality caveat as always.
+    1. A clip recorded on THIS device via tools/record-voice (or received by
+       sync), stored in IndexedDB. Instant, personal, needs no commit.
+    2. assets/audio/<id>.mp3 committed in the repo. For English this is a
+       placeholder made with the open-source `flite` engine (see
+       scripts/generate-placeholder-audio.sh) until someone replaces the file
+       with a real recording of the same name. For Arabic a file only ever
+       exists if a person recorded it.
+    3. The device's own speechSynthesis voice, for ENGLISH only.
 
   Arabic is never synthesized, by flite or by the device: a guessed
   pronunciation presented to a child as a lesson is worse than silence. An
-  Arabic line plays only from tier 1 or 2 (a real human recording) and is
-  otherwise silent, while its text still shows on screen.
-
-  Every game includes this file and calls AsmauNarration.say(...). The
-  recording tool (tools/record-voice) reads each game's narration.json
-  and writes into the same IndexedDB store this file reads from.
+  Arabic line plays only from a real human recording and is otherwise
+  silent, while its text still shows on screen.
 
   Only one line speaks at a time: say() and stop() both cut off whatever
   was playing, and the promise say() returns resolves when its own line
-  has finished, so lines can be chained with .then().
+  has finished or been cut off, so lines can be chained with .then().
 */
 window.AsmauNarration = (function () {
   var DB_NAME = "asmau-voice";
@@ -61,7 +56,15 @@ window.AsmauNarration = (function () {
     });
   }
 
+  var askedToKeep = false;
+  function keepStorage() {
+    if (askedToKeep) return;
+    askedToKeep = true;
+    try { if (navigator.storage && navigator.storage.persist) navigator.storage.persist().catch(function () {}); } catch (err) { /* not supported */ }
+  }
+
   function saveRecordedClip(game, id, blob) {
+    keepStorage();
     return openDb().then(function (db) {
       if (!db) throw new Error("IndexedDB unavailable");
       return new Promise(function (resolve, reject) {
@@ -172,53 +175,75 @@ window.AsmauNarration = (function () {
     });
   }
 
+  /*
+    One audio element plays every line. It is "unlocked" by the first touch,
+    which is what lets an iPhone play later lines that start a moment after
+    the tap (after a lookup), and it means an interrupted line is always
+    cleaned up: there is never a second element still loading in the
+    background that could start speaking late.
+  */
+  var player = null, finishCurrent = null, unlocked = false;
+  var SILENCE = "data:audio/wav;base64,UklGRiQAAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQAAAAA=";
+  function getPlayer() {
+    if (!player) { player = new Audio(); player.preload = "auto"; }
+    return player;
+  }
+  function unlock() {
+    if (unlocked || finishCurrent) return;
+    unlocked = true;
+    try {
+      var p = getPlayer();
+      p.src = SILENCE;
+      var r = p.play();
+      if (r && r.catch) r.catch(function () { unlocked = false; });
+    } catch (err) { unlocked = false; }
+  }
+  ["pointerdown", "touchend", "click", "keydown"].forEach(function (ev) {
+    document.addEventListener(ev, unlock, { capture: true, passive: true });
+  });
+
   function stop() {
     token += 1;
-    if (currentAudio) {
-      try { currentAudio.pause(); } catch (err) { /* already stopped */ }
-      currentAudio = null;
+    if (finishCurrent) {
+      var f = finishCurrent;
+      try { player.pause(); } catch (err) { /* already stopped */ }
+      f(true);                       // a line that was cut off counts as handled
     }
     try {
       if ("speechSynthesis" in window) window.speechSynthesis.cancel();
     } catch (err) { /* no speech engine */ }
   }
+  document.addEventListener("visibilitychange", function () { if (document.hidden) stop(); });
 
-  // A line that was superseded before it could start counts as handled
-  // (resolves true) so nothing further down the chain tries to speak it.
-  function playBlob(blob, my) {
+  // Plays one source on the shared player. Resolves true when it finished (or was
+  // cut off), false if it could not be played, so the caller can try the next source.
+  function playSrc(src, my, isBlobUrl) {
     return new Promise(function (resolve) {
-      if (my !== token) { resolve(true); return; }
+      function release() { if (isBlobUrl) { try { URL.revokeObjectURL(src); } catch (err) { /* gone */ } } }
+      if (my !== token) { release(); resolve(true); return; }
+      var a = getPlayer(), done = false, started = false, timer = null;
+      function finish(ok) {
+        if (done) return;
+        done = true;
+        clearTimeout(timer);
+        a.onended = a.onerror = a.onplaying = null;
+        if (finishCurrent === finish) finishCurrent = null;
+        release();
+        resolve(ok);
+      }
+      finishCurrent = finish;
+      // only guards against a file that never arrives; once it is playing it runs to the end
+      timer = setTimeout(function () {
+        if (!started) { try { a.pause(); } catch (err) { /* not playing */ } finish(false); }
+      }, 6000);
+      a.onplaying = function () { started = true; clearTimeout(timer); };
+      a.onended = function () { finish(true); };
+      a.onerror = function () { finish(false); };
       try {
-        var url = URL.createObjectURL(blob);
-        var a = new Audio(url);
-        currentAudio = a;
-        a.onended = function () { URL.revokeObjectURL(url); resolve(true); };
-        a.onerror = function () { URL.revokeObjectURL(url); resolve(false); };
-        a.play().catch(function () { resolve(false); });
-      } catch (err) { resolve(false); }
-    });
-  }
-
-  function tryPlayUrl(url, my) {
-    return new Promise(function (resolve) {
-      if (my !== token) { resolve(true); return; }
-      var a = new Audio();
-      var done = false;
-      var finish = function (ok) { if (done) return; done = true; resolve(ok); };
-      // The load timeout only guards against a missing file — once the clip
-      // can play we wait for it to actually finish, however long it runs.
-      var loadTimeout = setTimeout(function () { finish(false); }, 1500);
-      a.oncanplaythrough = function () {
-        a.oncanplaythrough = null;
-        clearTimeout(loadTimeout);
-        if (my !== token) { finish(true); return; }
-        currentAudio = a;
-        a.onended = function () { finish(true); };
-        a.play().catch(function () { finish(false); });
-      };
-      a.onerror = function () { clearTimeout(loadTimeout); finish(false); };
-      a.src = url;
-      a.load();
+        a.src = src;
+        var p = a.play();
+        if (p && p.catch) p.catch(function () { finish(false); });
+      } catch (err) { finish(false); }
     });
   }
 
@@ -234,7 +259,7 @@ window.AsmauNarration = (function () {
         u.onend = function () { resolve(); };
         u.onerror = function () { resolve(); };
         window.speechSynthesis.speak(u);
-        setTimeout(resolve, 20000);
+        setTimeout(resolve, 8000);
       } catch (err) { resolve(); }
     });
   }
@@ -254,15 +279,13 @@ window.AsmauNarration = (function () {
     stop();
     var my = token;
 
+    var file = base + id + ".mp3";
     return getRecordedClip(game, id).then(function (blob) {
-      if (blob) return playBlob(blob, my);
-      return tryPlayUrl(base + id + ".webm", my).then(function (ok) {
-        if (ok) return true;
-        if (lang === "ar") return true; // no recording and never a synthesized voice: stay silent
-        return tryPlayUrl(base + id + ".mp3", my);
-      });
+      if (!blob) return playSrc(file, my, false);
+      // a recording this device cannot play (an old format) falls through to the committed file
+      return playSrc(URL.createObjectURL(blob), my, true).then(function (ok) { return ok || playSrc(file, my, false); });
     }).then(function (played) {
-      if (!played) return speakFallback(text, lang, my);
+      if (!played) return speakFallback(text, lang, my);   // (never for Arabic; see speakFallback)
     }).catch(function () {
       return speakFallback(text, lang, my);
     });

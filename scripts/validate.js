@@ -93,7 +93,7 @@ for (const slug of slugs) {
     ids.add(l.id);
     if (typeof l.text !== "string" || !l.text.trim()) fail(narrationFile + ": '" + l.id + "' has no text");
     if (l.lang !== "en" && l.lang !== "ar") fail(narrationFile + ": '" + l.id + "' lang must be 'en' or 'ar'");
-    if (l.lang === "en" && !audio.includes(l.id + ".mp3") && !audio.includes(l.id + ".webm")) {
+    if (l.lang === "en" && !audio.includes(l.id + ".mp3")) {
       fail(audioDir + "/" + l.id + ".mp3: missing (run scripts/generate-placeholder-audio.sh " + dir + ")");
     }
   }
@@ -104,13 +104,16 @@ for (const slug of slugs) {
 
   /* ---------- a story, if the game has one ---------- */
   if (!exists(dir + "/story.js")) continue;
-  const w = load([dir + "/people.js", dir + "/story.js"].filter(exists));
-  const story = w.YUSUF_STORY, moods = w.YUSUF_MOODS || {};
-  const people = new Set((w.YusufPeople && w.YusufPeople.names) || []);
-  const gameSrc = exists(dir + "/game.js") ? read(dir + "/game.js") : "";
+  const w = load([dir + "/game.js", "shared/people.js", dir + "/people.js", dir + "/story.js"].filter(exists));
+  const story = w.STORY, moods = w.STORY_MOODS || {};
+  const cfg = w.STORY_GAME || {};
+  if (cfg.slug !== slug) fail(dir + "/game.js: STORY_GAME.slug must be '" + slug + "'");
+  const people = new Set((w.STORY_PEOPLE && w.STORY_PEOPLE.names) || []);
+  for (const k of ["heroChild", "heroAdult"]) if (cfg[k] && !people.has(cfg[k])) fail(dir + "/game.js: " + k + " '" + cfg[k] + "' is not in people.js");
+  const gameSrc = read("shared/story-engine.js");
   const activities = new Set([...gameSrc.matchAll(/ACT(?:\.(\w+)|\["(\w+)"\])\s*=/g)].map((m) => m[1] || m[2]));
-  const groupDefs = (gameSrc.match(/GROUPS\s*=\s*\{([^}]*)\}/) || [, ""])[1];
-  const groups = new Set([...groupDefs.matchAll(/(\w+)\s*:/g)].map((m) => m[1]));
+  const groups = new Set(Object.keys(cfg.groups || {}));
+  for (const [g, members] of Object.entries(cfg.groups || {})) for (const n of members) if (!people.has(n)) fail(dir + "/game.js: group '" + g + "' names unknown person '" + n + "'");
   const used = new Set();
   const need = (id, where) => { used.add(id); if (!ids.has(id)) fail(dir + ": " + where + " uses line '" + id + "', which is not in narration.json"); };
 
@@ -152,6 +155,12 @@ for (const slug of slugs) {
       for (const c of o.cards || []) need(c.line, where);
       for (const n of o.owners || []) if (!people.has(n)) fail(dir + ": " + where + " uses unknown person '" + n + "'");
       if (st.play === "choice" && !(o.options || []).some((x) => x.ok)) fail(dir + ": " + where + " has no correct answer");
+      // a child who cannot read must be able to hear every answer: each one has a spoken line
+      if (st.play === "choice") (o.options || []).forEach((x, i) => need(st.line + "-opt" + (i + 1), where + " option " + (i + 1)));
+      if (st.play === "sort") {
+        (o.bins || []).forEach((x, i) => need(st.line + "-bin" + (i + 1), where + " bin " + (i + 1)));
+        (o.things || []).forEach((x, i) => need(st.line + "-it" + (i + 1), where + " item " + (i + 1)));
+      }
       if (st.play === "puzzle") puzzles.push([o.pic, where]);
       if (st.play === "memory" && (o.icons || []).length < 2) fail(dir + ": " + where + " needs at least two pairs");
       if (st.play === "pick" && !(o.items || []).some((x) => x.ok && x.n > 0)) fail(dir + ": " + where + " has nothing to find");
@@ -170,7 +179,7 @@ for (const slug of slugs) {
   /* ---------- pictures (art.js), if the game has them ---------- */
   if (exists(dir + "/art.js")) {
     let art = {};
-    try { art = load([dir + "/art.js"]).YUSUF_ART || {}; } catch (e) { fail(dir + "/art.js: failed to load (" + e.message + ")"); }
+    try { art = load([dir + "/art.js"]).STORY_ART || {}; } catch (e) { fail(dir + "/art.js: failed to load (" + e.message + ")"); }
     const imgDir = dir + "/assets/img";
     const files = fs.existsSync(path.join(ROOT, imgDir)) ? fs.readdirSync(path.join(ROOT, imgDir)) : [];
     const bgs = new Set();

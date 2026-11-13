@@ -167,6 +167,7 @@
 </div>
 
 <script src="../../shared/narration.js"></script>
+<script src="../../shared/config.js"></script>
 <script src="../../shared/mp3.js"></script>
 <script src="../../shared/sync.js"></script>
 <script>
@@ -318,7 +319,7 @@
     downloadBtn.addEventListener("click", function () {
       window.AsmauNarration.getRecordedClip(slug, item.id).then(function (blob) {
         if (!blob) return;
-        var ext = (blob.type.indexOf("ogg") >= 0) ? "ogg" : (blob.type.indexOf("mp4") >= 0 ? "m4a" : "webm");
+        var ext = /mpeg|mp3/i.test(blob.type) ? "mp3" : ((blob.type.indexOf("ogg") >= 0) ? "ogg" : (blob.type.indexOf("mp4") >= 0 ? "m4a" : "webm"));
         var url = URL.createObjectURL(blob);
         var a = document.createElement("a");
         a.href = url;

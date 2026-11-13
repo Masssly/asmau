@@ -18,7 +18,7 @@ const path = require("path");
 const crypto = require("crypto");
 
 const ROOT = path.join(__dirname, "..");
-const SKIP_DIRS = new Set([".git", ".github", "scripts", "sync", "node_modules"]);
+const SKIP_DIRS = new Set([".git", ".github", "scripts", "sync", "tests", "node_modules"]);
 const SKIP_FILES = new Set(["sw.js", "README.md", ".nojekyll", "package.json", "package-lock.json"]);
 
 function walk(dir, out) {
@@ -32,9 +32,14 @@ function walk(dir, out) {
   return out;
 }
 
-// Pictures and sounds are also kept on R2 (see sync/worker.js, scripts/publish-media.js); the service worker
-// downloads them from there first and falls back to the copy in this repository.
-const MEDIA_BASE = "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/";
+// The address of the sync/media Worker lives in config.json, once. From it this script writes
+// shared/config.js (read by the pages) and the media address used by sw.js.
+// Pictures and sounds are also kept on R2 (see sync/worker.js, scripts/publish-media.js); the service
+// worker downloads them from there first and falls back to the copy in this repository.
+const CONFIG = JSON.parse(fs.readFileSync(path.join(ROOT, "config.json"), "utf8"));
+const MEDIA_BASE = CONFIG.server.replace(/\/$/, "") + "/media/";
+fs.writeFileSync(path.join(ROOT, "shared", "config.js"),
+  "/* Generated from config.json by scripts/build-offline.js; do not edit. */\nwindow.ASMAU_CONFIG = " + JSON.stringify({ server: CONFIG.server.replace(/\/$/, "") }) + ";\n");
 const ON_R2 = /\.(?:webp|mp3|webm|ogg|m4a)$/i;
 
 const MEDIA = /\.(?:webp|png|jpe?g|mp3|webm|ogg|m4a|woff2?)$/i;   // big, never change under the same name

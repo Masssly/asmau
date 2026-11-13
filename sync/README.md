@@ -6,7 +6,7 @@ record once and hear it on every device. Parents who don't choose it are
 unaffected: recording on each device keeps working with no sign-in.
 
 Browser side: `shared/sync.js` and the panel in `tools/record-voice`.
-Deployed at `https://asmau-sync.mohammed-sadat-abdulai.workers.dev`.
+Deployed at the address in `../config.json` (the one place it is written down).
 
 ## Deploy (needs a Cloudflare API token, or `wrangler login`)
 
@@ -27,7 +27,10 @@ No secret is needed: access is by a secret family id the browser derives.
   device but not a determined flood; add a Cloudflare WAF rule if that matters.
 - Retention: a daily job (03:17 UTC) deletes a family unused for 365 days.
   "Used" = any request with the code (a marker object `_active/<family>`,
-  refreshed at most once a day). `purgeInactive()` in `worker.js`.
+  refreshed at most once a day). `purgeInactive()` in `worker.js` works through
+  the markers 500 at a time and remembers where it stopped.
+- Making a new family: 10 a minute per network address, and no more than 1000 families in
+  all (`MAX_FAMILIES`); beyond that the Worker answers 503 until you raise it.
 - Decide retention: delete a family's data after N months of no use.
 - The family code cannot be recovered if lost (said in the panel and the privacy note).
 

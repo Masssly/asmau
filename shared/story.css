@@ -344,7 +344,8 @@ button { touch-action: manipulation; -webkit-tap-highlight-color: transparent; }
 .stage.has-pic[data-mode="play"] { aspect-ratio: auto; height: clamp(290px, 46vh, 400px); }
 .pic, .pic-fill { position: absolute; inset: 0; width: 100%; height: 100%; -webkit-user-drag: none; }
 .pic { object-fit: contain; animation: pic-in .5s ease both, pic-drift 26s ease-in-out .5s infinite alternate; }
-.pic-fill { object-fit: cover; filter: blur(16px) brightness(.55); transform: scale(1.15); }
+.pic-fill { object-fit: cover; filter: blur(14px) brightness(.55); transform: scale(1.15); display: none; }
+.stage.wide .pic-fill { display: block; }
 .stage.has-pic[data-mode="play"] .pic { object-fit: cover; }
 .stage.has-pic[data-mode="play"] .pic { filter: brightness(.82); }
 @keyframes pic-in { from { opacity: 0; } to { opacity: 1; } }
@@ -439,8 +440,8 @@ button { touch-action: manipulation; -webkit-tap-highlight-color: transparent; }
 .sort-lab { font-family: var(--font-display); font-weight: 700; font-size: 19px; line-height: 1.2; }
 
 /* while a picture is on its way: a soft glow, never a black box */
-.stage.pic-loading { background: radial-gradient(ellipse at 50% 40%, #3a3260, #14102a 70%); }
-.stage.pic-loading::after { content: "🌙"; position: absolute; left: 50%; top: 50%; font-size: 54px; transform: translate(-50%, -50%); animation: sp-pulse 1.4s ease-in-out infinite; z-index: 1; }
+.stage.pic-loading::after { content: "🌙"; position: absolute; left: 50%; top: 50%; font-size: 54px; transform: translate(-50%, -50%); opacity: 0; animation: glow-in .4s .3s forwards, sp-pulse 1.4s ease-in-out infinite; z-index: 1; }
+@keyframes glow-in { to { opacity: 1; } }
 .pic { transition: opacity .35s ease; }
 .prep { margin: 14px auto 0; max-width: 320px; text-align: center; font-size: 13px; color: var(--muted); }
 .prep.ok { color: #8be0c8; }
@@ -448,3 +449,17 @@ button { touch-action: manipulation; -webkit-tap-highlight-color: transparent; }
 .prep-bar i { display: block; height: 100%; background: var(--gold); border-radius: 99px; transition: width .25s ease; }
 
 .ver { margin: 10px 0 0; font-size: 11px; color: var(--muted); opacity: .7; text-align: center; }
+
+/* a new scene eases in instead of cutting */
+.stage.enter { animation: stage-in .32s ease both; }
+@keyframes stage-in { from { opacity: .2; } to { opacity: 1; } }
+
+/* answers you can hear: a speaker on each one, and the one being read lights up */
+.choice-ear { margin-left: 8px; font-size: 16px; opacity: .55; }
+.choice.reading { box-shadow: 0 0 0 4px var(--gold), 0 0 16px rgba(255,214,110,.8); }
+
+/* peek at the finished picture while solving a puzzle */
+.peek-btn { position: absolute; right: 10px; top: 10px; z-index: 4; min-height: 44px; padding: 8px 16px; border: 0; border-radius: 999px; background: rgba(8,12,30,.72); color: #fff; font-size: 15px; cursor: pointer; touch-action: none; }
+.peek-full { position: absolute; inset: 0; z-index: 3; background-size: contain; background-position: center; background-repeat: no-repeat; background-color: rgba(8,12,30,.9); opacity: 0; pointer-events: none; transition: opacity .15s ease; }
+.peek-full.on { opacity: 1; }
+@media (prefers-reduced-motion: reduce) { .stage.enter { animation: none; } }

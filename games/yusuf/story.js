@@ -26,7 +26,7 @@
   is attributed to, and link to the verses. They paraphrase, they do not
   reproduce a translation.
 */
-window.YUSUF_STORY = [
+window.STORY = [
   {
     id: "c1", icon: "🌟", title: "The Dream", source: "12:4-6",
     parent: [
@@ -303,7 +303,7 @@ window.YUSUF_STORY = [
   position, so adding or moving a step never silently shifts the music.
   Moods: wonder, desert, tense, sad, regal, joy.
 */
-window.YUSUF_MOODS = {
+window.STORY_MOODS = {
   "c1-b": "wonder",
   "c2-a": "tense", "c2-b": "tense", "c2-w": "wonder", "c2-c": "tense", "c2-s": "tense", "c2-do": "tense",
   "c3-b": "joy",

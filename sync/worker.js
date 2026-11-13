@@ -112,34 +112,51 @@ async function touch(env, family) {
   } catch (err) { /* the next request will try again */ }
 }
 
-// Delete every family whose last use (marker, or newest recording) is older than `days`.
-// Returns how many families were removed. Exported for testing.
-export async function purgeInactive(env, now, days) {
+// Delete families whose last use is older than `days`. It works from the small "last used"
+// markers (one per family, refreshed whenever a family uses its code), a page at a time, and
+// remembers where it stopped, so a bucket with thousands of families is cleaned over several
+// daily runs instead of one run that could run out of time. Returns how many were removed.
+// Exported for testing.
+export async function purgeInactive(env, now, days, budget) {
   const cutoff = now - (days || RETENTION_DAYS) * DAY;
-  const fam = {};
+  const stateKey = "_state/purge-cursor";
   let cursor;
-  do {
-    const page = await env.CLIPS.list({ cursor });
-    page.objects.forEach((o) => {
-      const m = o.key.match(/^(?:_active\/|_limits\/)?([0-9a-f]{64})(?:\/|$)/);
-      if (!m) return;                                  // not ours; never touch it
-      const f = fam[m[1]] || (fam[m[1]] = { newest: 0, keys: [] });
-      if (!o.key.startsWith("_limits/")) f.newest = Math.max(f.newest, o.uploaded.getTime());
-      f.keys.push(o.key);
-    });
-    cursor = page.truncated ? page.cursor : undefined;
-  } while (cursor);
+  try { const c = await env.CLIPS.get(stateKey); cursor = c ? (await c.text()) || undefined : undefined; } catch (err) { cursor = undefined; }
+  const page = await env.CLIPS.list({ prefix: "_active/", cursor, limit: budget || 500 });
   let removed = 0;
-  for (const id of Object.keys(fam)) {
-    if (fam[id].newest >= cutoff) continue;
-    for (let i = 0; i < fam[id].keys.length; i += 1000) await env.CLIPS.delete(fam[id].keys.slice(i, i + 1000));
+  for (const m of page.objects) {
+    const id = m.key.slice("_active/".length);
+    if (!FAMILY.test(id) || m.uploaded.getTime() >= cutoff) continue;
+    let c2;
+    do {
+      const p = await env.CLIPS.list({ prefix: id + "/", cursor: c2, limit: 1000 });
+      if (p.objects.length) await env.CLIPS.delete(p.objects.map((o) => o.key));
+      c2 = p.truncated ? p.cursor : undefined;
+    } while (c2);
+    await env.CLIPS.delete(["_limits/" + id, m.key]);
     removed += 1;
   }
+  if (page.truncated) await env.CLIPS.put(stateKey, page.cursor);
+  else await env.CLIPS.delete(stateKey);
   return removed;
 }
 
 // Too many requests: per family code and per network address, so one runaway
 // device or one scraper cannot run up the bill. The limits are set in wrangler.toml.
+const MAX_FAMILIES = 1000;   // a ceiling on how many families can exist; raise it when it is reached
+
+// Making a brand-new family is the one thing a stranger can do for free, so it has its own
+// limits: a few per minute per network address, and a ceiling on how many exist in all.
+// Returns a Response to refuse with, or null to carry on.
+async function newFamilyGate(req, env) {
+  const ip = req.headers.get("cf-connecting-ip") || "unknown";
+  const r = await env.NEW_FAMILY.limit({ key: ip });
+  if (!r.success) return reply("slow down", 429, { "retry-after": "60" });
+  const page = await env.CLIPS.list({ prefix: "_active/", limit: MAX_FAMILIES });
+  if (page.truncated || page.objects.length >= MAX_FAMILIES) return reply(JSON.stringify({ error: "not taking new families" }), 503, { "content-type": "application/json" });
+  return null;
+}
+
 async function tooMany(req, env, family) {
   const ip = req.headers.get("cf-connecting-ip") || "unknown";
   const [a, b] = await Promise.all([env.PER_FAMILY.limit({ key: family }), env.PER_IP.limit({ key: ip })]);
@@ -206,6 +223,10 @@ export default {
     if (!m || !FAMILY.test(m[1])) return reply("not found", 404);
     const prefix = m[1] + "/", name = m[2];
     if (await tooMany(req, env, m[1])) return reply("slow down", 429, { "retry-after": "60" });
+    if (req.method === "PUT" && !(await env.CLIPS.head("_active/" + m[1]))) {
+      const refuse = await newFamilyGate(req, env);
+      if (refuse) return refuse;
+    }
     await touch(env, m[1]);
 
     if (!name) {

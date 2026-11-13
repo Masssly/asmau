@@ -1,12 +1,26 @@
 {
-  "version": "2026.11.4",
-  "date": "2026-11-12",
-  "buildId": "a98f93b8fae8",
+  "version": "2026.11.5",
+  "date": "2026-11-13",
+  "buildId": "b991d4a27f8b",
   "notes": [
-    "Recording page: the sync option is now at the top, with plain steps",
-    "Your recordings are saved as MP3 so a voice recorded on a laptop plays on an iPhone too (older recordings are converted when you turn on sync)"
+    "Every answer and sorting item in the Yusuf story can now be heard, so children who cannot read can play all the activities",
+    "Narration starts sooner and plays reliably on iPhones",
+    "Smoother play: Skip only shows after a quiet moment, the question comes back after a wrong answer, the lamp forgives a slipping finger, puzzles have a peek button",
+    "Your place in the story is remembered by name, so updates never lose it",
+    "A removed recording now disappears from all your devices"
   ],
   "history": [
+    {
+      "version": "2026.11.5",
+      "date": "2026-11-13",
+      "notes": [
+        "Every answer and sorting item in the Yusuf story can now be heard, so children who cannot read can play all the activities",
+        "Narration starts sooner and plays reliably on iPhones",
+        "Smoother play: Skip only shows after a quiet moment, the question comes back after a wrong answer, the lamp forgives a slipping finger, puzzles have a peek button",
+        "Your place in the story is remembered by name, so updates never lose it",
+        "A removed recording now disappears from all your devices"
+      ]
+    },
     {
       "version": "2026.11.4",
       "date": "2026-11-12",

@@ -11,7 +11,7 @@
   A step with no picture here falls back to the drawn sprites in story.js, so
   the game works with any number of pictures, including none.
 */
-window.YUSUF_ART = {
+window.STORY_ART = {
   "c1-a": "Yusuf asleep; through the window, eleven stars, the sun and the moon.",
   "c1-b": "Yusuf tells his father Yaqub about the dream.",
   "c2-a": "The brothers whisper together while Yusuf plays.",

@@ -15,6 +15,7 @@ what ships. (One small script keeps the offline file list current; see
 ```
 asmau/
 ├── index.html              landing page — lists every game, reads its age badge
+├── config.json             the sync/media Worker's address, written down once
 ├── manifest.json           the landing page's sections, each with its games in display order
 ├── app.webmanifest         lets the site be installed on a phone or tablet
 ├── sw.js                   service worker: the whole site works offline (generated lists)
@@ -25,6 +26,11 @@ asmau/
 ├── shared/
 │   ├── style.css           tokens + components (buttons, cards, age badge)
 │   ├── narration.js        narration lookup — see "Narration" below
+│   ├── story-engine.js     the story player shared by every story game (activities, saving, pages)
+│   ├── story.css           its styles
+│   ├── people.js           draws the people of a story; each game supplies its own cast
+│   ├── sync.js, mp3.js     optional recording sync and MP3 conversion (the recording tool)
+│   ├── config.js           generated from config.json: the sync/media Worker's address
 │   ├── music.js            background music and sound effects — see "Music and sound effects"
 │   └── pwa.js              registers the service worker
 ├── scripts/
@@ -41,7 +47,7 @@ asmau/
         ├── game.json       title, icon, age range, tagline, source, depiction notes
         ├── narration.json  every spoken line in the game: {id, text, lang}
         └── assets/
-            └── audio/      <id>.mp3 (flite placeholder) and/or <id>.webm (real voice)
+            └── audio/      <id>.mp3 (flite placeholder, or a real voice saved under the same name)
 ```
 
 **The rule that matters**: a game only touches its own folder. Editing
@@ -86,21 +92,25 @@ Every spoken line in a game is listed in that game's `narration.json` as
 `speechSynthesis` directly — they call `AsmauNarration.say(gameSlug, id,
 text, { lang })`, which tries, in order:
 
-1. **A clip recorded on this device**, via `tools/record-voice`, stored in
-   the browser's IndexedDB. Immediate, personal, no commit needed.
-2. **`assets/audio/<id>.webm`** committed in the repo — a real recording a
-   parent chose to share with everyone who opens the game.
-3. **`assets/audio/<id>.mp3`** committed in the repo — a placeholder
-   generated offline with [flite](http://www.festvox.org/flite/) (BSD
-   licensed, CMU Festival-Lite). Run
+1. **A clip recorded on this device** (or received by sync), via
+   `tools/record-voice`, stored in the browser's IndexedDB. Immediate,
+   personal, no commit needed.
+2. **`assets/audio/<id>.mp3`** committed in the repo. For English this is a
+   placeholder generated offline with [flite](http://www.festvox.org/flite/)
+   (BSD licensed, CMU Festival-Lite): run
    `scripts/generate-placeholder-audio.sh games/<slug>` to (re)generate
-   these after editing a game's `narration.json`. English only.
-4. The device's own `speechSynthesis` voice, **for English only**, same
+   these after editing a game's `narration.json`. A real recording saved
+   under the same name replaces the placeholder for everyone.
+3. The device's own `speechSynthesis` voice, **for English only**, same
    placeholder caveat as always.
+
+One shared audio element plays every line (so an iPhone, which only lets a
+page play sound after a touch, is unlocked by the first tap and stays
+unlocked), and a line that is cut off is always cleaned up.
 
 **Arabic is never synthesized**, by flite or by the device. A guessed
 pronunciation presented to a child as a lesson is worse than silence, so an
-Arabic line plays only from a real human recording (tiers 1 or 2) and is
+Arabic line plays only from a real human recording (tiers 1 or 2, never a placeholder) and is
 otherwise silent, while its text still shows on screen.
 
 Recordings are saved as MP3, converted in the browser by lamejs (LGPL-3.0, in
@@ -115,7 +125,7 @@ that browser's IndexedDB and are immediately preferred over the placeholder
 save every recording on a device to one file and load it on another (record
 on a phone, play on a tablet). To make a recording the default for *everyone*
 who opens the game, download the clip and commit it to
-`games/<slug>/assets/audio/<id>.webm`. Recording real Arabic pronunciation
+`games/<slug>/assets/audio/<id>.mp3`. Recording real Arabic pronunciation
 this way is the main reason this tool exists.
 
 Before committing a recording, remember the repo (and the published site)
@@ -233,6 +243,34 @@ node scripts/release.js "Yusuf: a new activity in chapter 5" "Fixed a stuck pict
 
 That bumps the number, records the notes and refreshes `sw.js`. `validate.js`
 warns when the site has changed since the last release.
+
+## Story games
+
+A story game (like Yusuf) is a folder of data plus the shared player in
+`shared/story-engine.js`. Its page loads, in this order: `game.js` (name, hero,
+groups), `art.js` (which pictures exist), `shared/people.js` then `people.js`
+(the cast), `story.js` (chapters and steps), then the engine. A second story
+game is a new folder with its own `game.js`, `art.js`, `people.js`, `story.js`
+and `narration.json`; the engine, its styles and the checks are shared. Progress
+is saved by a chapter's id and a step's line (not by position), so adding or
+moving steps later never sends a child to the wrong place.
+
+Every answer in a choice or sorting activity has its own spoken line
+(`<line>-opt1`, `-bin1`, `-it1`, in `narration.json`), so a child who cannot
+read hears each one; the checker requires them.
+
+## Tests
+
+`tests/` plays the game and exercises the offline copy, narration, sync (against
+a fake of the Worker), updates and the Worker's clean-up in a real browser:
+
+```
+cd tests && npm install && npx playwright install chromium && npm test
+```
+
+GitHub runs them on every push (`.github/workflows/validate.yml`). `node tests/run.js sync`
+runs just one group (`landing`, `narration`, `offline`, `sync`, `update`, `playthrough`, `worker`).
+Add `?skipms=300` to a game's address to make the "Skip" button appear after 0.3 s instead of 22 s.
 
 ## Checking your work
 

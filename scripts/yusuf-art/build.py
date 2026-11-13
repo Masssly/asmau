@@ -55,10 +55,10 @@ def do_import(folder):
         im.save(os.path.join(out, key + ".webp"), "WEBP", quality=QUALITY[k], method=6)
     have = sorted(f[:-5] for f in os.listdir(out) if f.endswith(".webp"))
     order = [k for k in SHOTS if k in have]
-    head = open(os.path.join(GAME, "art.js"), encoding="utf-8").read().split("window.YUSUF_ART")[0]
-    body = "window.YUSUF_ART = {\n" + ",\n".join("  %s: %s" % (json.dumps(k), json.dumps(SHOTS[k][0], ensure_ascii=False)) for k in order) + "\n};\n"
+    head = open(os.path.join(GAME, "art.js"), encoding="utf-8").read().split("window.STORY_ART")[0]
+    body = "window.STORY_ART = {\n" + ",\n".join("  %s: %s" % (json.dumps(k), json.dumps(SHOTS[k][0], ensure_ascii=False)) for k in order) + "\n};\n"
     if not order:
-        body = "window.YUSUF_ART = {};\n"
+        body = "window.STORY_ART = {};\n"
     open(os.path.join(GAME, "art.js"), "w", encoding="utf-8").write(head + body)
     total = sum(os.path.getsize(os.path.join(out, k + ".webp")) for k in order)
     print("%d of %d pictures in place, %.1f MB" % (len(order), len(SHOTS), total / 1e6))

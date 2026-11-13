@@ -1,15 +1,18 @@
 {
-  "version": "2026.11.5",
+  "version": "2026.11.6",
   "date": "2026-11-13",
-  "buildId": "b991d4a27f8b",
+  "buildId": "e18fc2d38c88",
   "notes": [
-    "Every answer and sorting item in the Yusuf story can now be heard, so children who cannot read can play all the activities",
-    "Narration starts sooner and plays reliably on iPhones",
-    "Smoother play: Skip only shows after a quiet moment, the question comes back after a wrong answer, the lamp forgives a slipping finger, puzzles have a peek button",
-    "Your place in the story is remembered by name, so updates never lose it",
-    "A removed recording now disappears from all your devices"
+    "The Yusuf story is now marked for ages 3 to 9: under 5, play it together with a grown-up"
   ],
   "history": [
+    {
+      "version": "2026.11.6",
+      "date": "2026-11-13",
+      "notes": [
+        "The Yusuf story is now marked for ages 3 to 9: under 5, play it together with a grown-up"
+      ]
+    },
     {
       "version": "2026.11.5",
       "date": "2026-11-13",

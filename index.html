@@ -55,6 +55,7 @@
   @keyframes beat { 0%,100% { box-shadow: 0 6px 0 #b5690d, 0 0 0 0 rgba(255,214,110,.7); } 50% { box-shadow: 0 6px 0 #b5690d, 0 0 0 14px rgba(255,214,110,0); } }
   .meta { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; padding: 12px 16px 14px; }
   .meta h3 { font-family: var(--font-display); font-size: 21px; margin: 0; }
+  .meta .age-note { color: var(--muted); font-size: 12.5px; }
   .meta p.tagline { flex-basis: 100%; color: var(--muted); font-size: 13.5px; margin: 0; }
 
   /* not ready yet: shown, so it is clear more is coming, but it cannot be opened */
@@ -226,6 +227,7 @@
     var meta = el("div", "meta");
     meta.appendChild(el("h3", "", g.title));
     meta.appendChild(el("span", "age-badge", ageLabel(g)));
+    if (g.ageNote) meta.appendChild(el("span", "age-note", g.ageNote));
     meta.appendChild(el("p", "tagline", g.tagline));
     a.appendChild(meta);
     return a;

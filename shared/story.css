@@ -463,3 +463,5 @@ button { touch-action: manipulation; -webkit-tap-highlight-color: transparent; }
 .peek-full { position: absolute; inset: 0; z-index: 3; background-size: contain; background-position: center; background-repeat: no-repeat; background-color: rgba(8,12,30,.9); opacity: 0; pointer-events: none; transition: opacity .15s ease; }
 .peek-full.on { opacity: 1; }
 @media (prefers-reduced-motion: reduce) { .stage.enter { animation: none; } }
+
+.age-note { margin: 6px 0 0; font-size: 13px; color: var(--muted); text-align: center; }

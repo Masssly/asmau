@@ -70,6 +70,7 @@ for (const slug of slugs) {
     }
     if (typeof g.minAge !== "number" || typeof g.maxAge !== "number") fail(dir + "/game.json: minAge and maxAge must be numbers (every game states its age range)");
     else if (g.minAge > g.maxAge) fail(dir + "/game.json: minAge is above maxAge");
+    if (g.ageNote !== undefined && (typeof g.ageNote !== "string" || !g.ageNote.trim())) fail(dir + "/game.json: ageNote, if present, must be a short sentence");
     if (g.status !== undefined && g.status !== "coming-soon") fail(dir + "/game.json: status, if present, must be 'coming-soon'");
     if (g.cover !== undefined) {
       if (!exists(dir + "/" + g.cover)) fail(dir + "/game.json: cover '" + g.cover + "' does not exist");

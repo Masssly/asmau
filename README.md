@@ -290,7 +290,8 @@ to date.
 
 ## Content conventions
 
-- **Age rating is mandatory.** Every game states a `minAge`/`maxAge` so a
+- **Age rating is mandatory.** `ageNote` in `game.json` adds a short honest caveat next to the
+  badge (Yusuf: "Under 5: with a grown-up"). Every game states a `minAge`/`maxAge` so a
   parent can tell at a glance who it's for.
 - **Quran- and Hadith-based content must be grounded, not recalled from
   memory.** Verify the text against a canonical source (quran.com
@@ -335,4 +336,4 @@ to date.
 |---|---|---|
 | Tap & Say | 1.5–4 | — |
 | Count the Crescents | 2–5 | — |
-| Yusuf | 5–9 | Surah Yusuf, 12:4–101 — the whole story in 13 chapters |
+| Yusuf | 3–9 (under 5 with a grown-up) | Surah Yusuf, 12:4–101 — the whole story in 13 chapters |

@@ -1,0 +1,518 @@
+{
+ "bg-river": {
+  "alt": "A wide calm river at golden hour with tall green reeds, lotus flowers and date palms along the banks.",
+  "scene": "A wide calm river at golden hour with tall green reeds, lotus flowers and date palms along the banks."
+ },
+ "bg-palace": {
+  "alt": "The inside of a grand ancient palace hall with painted columns, polished floor and hanging lamps.",
+  "scene": "The inside of a grand ancient palace hall with painted columns, polished floor and hanging lamps."
+ },
+ "bg-city": {
+  "alt": "A quiet street in an ancient river city of mud-brick houses with wooden doors and awnings.",
+  "scene": "A quiet street in an ancient river city of mud-brick houses with wooden doors and awnings."
+ },
+ "bg-desert": {
+  "alt": "A wide sandy desert with dunes, scattered rocks and a winding path under a blue sky.",
+  "scene": "A wide sandy desert with dunes, scattered rocks and a winding path under a blue sky."
+ },
+ "bg-well": {
+  "alt": "A stone-ringed desert well with a stone drinking trough under acacia trees.",
+  "scene": "A stone-ringed desert well with a stone drinking trough under acacia trees."
+ },
+ "bg-field": {
+  "alt": "A dry green pasture with acacia trees and a simple shepherd's house of stone and thatch.",
+  "scene": "A dry green pasture with acacia trees and a simple shepherd's house of stone and thatch."
+ },
+ "bg-night": {
+  "alt": "A rocky desert valley at night under a sky full of stars, with a dark mountain on one side.",
+  "scene": "A rocky desert valley at night under a sky full of stars, with a dark mountain on one side."
+ },
+ "bg-fire": {
+  "alt": "A rocky valley at night lit by a warm golden glow coming from one side, stars above.",
+  "scene": "A rocky valley at night lit by a warm golden glow coming from one side, stars above."
+ },
+ "bg-mountain": {
+  "alt": "A steep rocky mountain path high above the clouds at sunrise.",
+  "scene": "A steep rocky mountain path high above the clouds at sunrise."
+ },
+ "bg-sea": {
+  "alt": "A wide sandy seashore with rolling blue-green waves under a dawn sky.",
+  "scene": "A wide sandy seashore with rolling blue-green waves under a dawn sky."
+ },
+ "bg-camp": {
+  "alt": "A camp of woven tents among rocks in the desert, with cooking fires and water jars.",
+  "scene": "A camp of woven tents among rocks in the desert, with cooking fires and water jars."
+ },
+ "bg-egypt": {
+  "alt": "An ancient river city of mud-brick and sandstone buildings with date palms under a bright sun.",
+  "scene": "An ancient river city of mud-brick and sandstone buildings with date palms under a bright sun."
+ },
+ "bg-dawn": {
+  "alt": "A golden sunrise over a calm sea and a sandy shore.",
+  "scene": "A golden sunrise over a calm sea and a sandy shore."
+ },
+ "m1-a": {
+  "alt": "Bright day. Pharaoh stands high on a balcony of the palace, chin raised, arms folded, looking down over an ancient river city of mud-brick houses and date palms.",
+  "scene": "Bright day. a proud stern king with a short black beard, a tall blue-and-gold striped crown and a red-and-gold robe stands high on a balcony of a grand sandstone palace with painted columns, chin raised, arms folded, looking down over an ancient river city of mud-brick houses and date palms."
+ },
+ "m1-b": {
+  "alt": "A narrow street of small mud-brick homes at dusk. Worried mothers and fathers in simple clothes hold their little children close in the doorways, while two palace guards…",
+  "scene": "A narrow street of small mud-brick homes at dusk. Worried mothers and fathers in simple clothes hold their little children close in the doorways, while two palace guards with spears walk past in the distance."
+ },
+ "m1-c": {
+  "alt": "Sunrise over the same poor street: warm golden light breaks through clouds onto the rooftops, a family looks up with hope, doves fly over the houses.",
+  "scene": "Sunrise over the same poor street: warm golden light breaks through clouds onto the rooftops, a family looks up with hope, doves fly over the houses."
+ },
+ "m2-a": {
+  "alt": "Inside a small mud-brick home by the river, Musa's mother holds baby Musa close and looks anxiously toward the doorway; soft morning light, a clay pot and a woven mat.",
+  "scene": "Inside a small mud-brick home by a wide calm river with tall green reeds and date palms, a gentle young mother in a rust-orange headscarf and a cream dress holds a chubby smiling baby boy wrapped in white cloth close and looks anxiously toward the doorway; soft morning light, a clay pot and a woven mat."
+ },
+ "m2-b": {
+  "alt": "Musa's mother sits by a window nursing a bundle wrapped in white, her face calm and trusting, a soft warm glow of light falling on her from above; the river sparkles…",
+  "scene": "a gentle young mother in a rust-orange headscarf and a cream dress sits by a window nursing a bundle wrapped in white, her face calm and trusting, a soft warm glow of light falling on her from above; a wide calm river with tall green reeds and date palms sparkles outside."
+ },
+ "m2-c": {
+  "alt": "At the edge of the river at dawn, Musa's mother kneels in the reeds and gently lowers the little chest holding baby Musa onto the calm water.",
+  "scene": "At the edge of a wide calm river with tall green reeds and date palms at dawn, a gentle young mother in a rust-orange headscarf and a cream dress kneels in the reeds and gently lowers a small open wooden chest shaped like a cradle holding a chubby smiling baby boy wrapped in white cloth onto the calm water."
+ },
+ "m2-d": {
+  "alt": "the little chest with baby Musa sleeping inside floats down the middle of the river; golden light, lotus flowers, an ibis and dragonflies, nobody else in sight.",
+  "scene": "a small open wooden chest shaped like a cradle with a chubby smiling baby boy wrapped in white cloth sleeping inside floats down the middle of a wide calm river with tall green reeds and date palms; golden light, lotus flowers, an ibis and dragonflies, nobody else in sight."
+ },
+ "m3-a": {
+  "alt": "At stone steps where the palace meets the river, three servant women in plain linen dresses and headscarves point in surprise at a small closed wooden chest floating…",
+  "scene": "At stone steps where a grand sandstone palace with painted columns meets a wide calm river with tall green reeds and date palms, three servant women in plain linen dresses and headscarves point in surprise at a small closed wooden chest floating among the reeds."
+ },
+ "m3-b": {
+  "alt": "In a bright palace room with painted columns, two servant women set a small closed wooden chest down in front of Queen Asiya, who leans forward with curiosity.",
+  "scene": "In a bright palace room with painted columns, two servant women set a small closed wooden chest down in front of a kind queen in a teal silk headscarf with a thin gold circlet and a white-and-gold gown, who leans forward with curiosity."
+ },
+ "m3-c": {
+  "alt": "Queen Asiya lifts baby Musa out of an open wooden chest and holds him up with a delighted, loving smile; soft golden light through tall windows.",
+  "scene": "a kind queen in a teal silk headscarf with a thin gold circlet and a white-and-gold gown lifts a chubby smiling baby boy wrapped in white cloth out of an open wooden chest and holds him up with a delighted, loving smile; soft golden light through tall windows."
+ },
+ "m3-d": {
+  "alt": "In the throne hall, Queen Asiya holds baby Musa protectively and speaks earnestly to Pharaoh, who sits on his throne frowning with one hand raised.",
+  "scene": "In a grand throne hall with painted columns and hanging lamps, a kind queen in a teal silk headscarf with a thin gold circlet and a white-and-gold gown holds a chubby smiling baby boy wrapped in white cloth protectively and speaks earnestly to a proud stern king with a short black beard, a tall blue-and-gold striped crown and a red-and-gold robe, who sits on his throne frowning with one hand raised."
+ },
+ "m4-a": {
+  "alt": "Evening inside the small riverside home: Musa's mother sits beside an empty woven cradle, one hand on her heart, eyes closed in quiet prayer; a single oil lamp glows.",
+  "scene": "Evening inside the small riverside home: a gentle young mother in a rust-orange headscarf and a cream dress sits beside an empty woven cradle, one hand on her heart, eyes closed in quiet prayer; a single oil lamp glows."
+ },
+ "m4-b": {
+  "alt": "Musa's sister walks along the reedy bank of the river, peeking through tall reeds at a small wooden chest floating far off on the water; she pretends to carry a water…",
+  "scene": "a clever girl of ten in a yellow headscarf and a green dress walks along the reedy bank of a wide calm river with tall green reeds and date palms, peeking through tall reeds at a small wooden chest floating far off on the water; she pretends to carry a water jar."
+ },
+ "m4-c": {
+  "alt": "In a palace room, Queen Asiya rocks a crying baby Musa while a line of nurses in plain headscarves wait and shrug helplessly.",
+  "scene": "In a palace room, a kind queen in a teal silk headscarf with a thin gold circlet and a white-and-gold gown rocks a crying a chubby smiling baby boy wrapped in white cloth while a line of nurses in plain headscarves wait and shrug helplessly."
+ },
+ "m4-d": {
+  "alt": "Musa's sister steps bravely forward in a palace courtyard and speaks up to Queen Asiya, who holds baby Musa; palace servants turn to look at the girl.",
+  "scene": "a clever girl of ten in a yellow headscarf and a green dress steps bravely forward in a palace courtyard and speaks up to a kind queen in a teal silk headscarf with a thin gold circlet and a white-and-gold gown, who holds a chubby smiling baby boy wrapped in white cloth; palace servants turn to look at the girl."
+ },
+ "m4-e": {
+  "alt": "Musa's mother sits cradling baby Musa in her arms again, tears of joy on her smiling face, while Musa's sister hugs her shoulder; warm golden light, the riverside home.",
+  "scene": "a gentle young mother in a rust-orange headscarf and a cream dress sits cradling a chubby smiling baby boy wrapped in white cloth in her arms again, tears of joy on her smiling face, while a clever girl of ten in a yellow headscarf and a green dress hugs her shoulder; warm golden light, the riverside home."
+ },
+ "m5-a": {
+  "alt": "A happy toddler boy in a small white tunic with a blue sash runs laughing across the polished floor of the throne hall toward Queen Asiya, who kneels with open arms.",
+  "scene": "A happy toddler boy in a small white tunic with a blue sash runs laughing across the polished floor of a grand throne hall with painted columns and hanging lamps toward a kind queen in a teal silk headscarf with a thin gold circlet and a white-and-gold gown, who kneels with open arms."
+ },
+ "m5-b": {
+  "alt": "On a low table in a palace room sit two bowls, one holding brown dates and one holding a red glowing coal; a toddler boy in a white tunic with a blue sash reaches a hand…",
+  "scene": "On a low table in a palace room sit two bowls, one holding brown dates and one holding a red glowing coal; a toddler boy in a white tunic with a blue sash reaches a hand toward them while a kind queen in a teal silk headscarf with a thin gold circlet and a white-and-gold gown watches closely."
+ },
+ "m5-c": {
+  "alt": "young Musa stands on a palace terrace at golden hour looking thoughtfully over the river city, a scroll in his hand.",
+  "scene": "a strong kind young man with short black hair and no beard, in a white tunic with a blue sash stands on a palace terrace at golden hour looking thoughtfully over the river city, a scroll in his hand."
+ },
+ "m6-a": {
+  "alt": "A quiet sunlit city street of mud-brick walls. young Musa walks around a corner and sees two men in the distance grabbing each other's clothes and arguing, one in plain…",
+  "scene": "A quiet sunlit city street of mud-brick walls. a strong kind young man with short black hair and no beard, in a white tunic with a blue sash walks around a corner and sees two men in the distance grabbing each other's clothes and arguing, one in plain brown, one in a soldier's tunic."
+ },
+ "m6-b": {
+  "alt": "young Musa stands in a city street looking down in shock at his own closed hand, his face full of worry; a man in plain brown clothes backs away behind him.",
+  "scene": "a strong kind young man with short black hair and no beard, in a white tunic with a blue sash stands in a city street looking down in shock at his own closed hand, his face full of worry; a man in plain brown clothes backs away behind him."
+ },
+ "m6-c": {
+  "alt": "young Musa kneels alone in a quiet corner of a courtyard with his palms raised in prayer and his eyes closed, a soft warm light falling on him.",
+  "scene": "a strong kind young man with short black hair and no beard, in a white tunic with a blue sash kneels alone in a quiet corner of a courtyard with his palms raised in prayer and his eyes closed, a soft warm light falling on him."
+ },
+ "m6-d": {
+  "alt": "A man in a plain tunic runs up breathless to young Musa in a narrow city street and points urgently toward the city gate.",
+  "scene": "A man in a plain tunic runs up breathless to a strong kind young man with short black hair and no beard, in a white tunic with a blue sash in a narrow city street and points urgently toward the city gate."
+ },
+ "m6-e": {
+  "alt": "young Musa hurries out through a great mud-brick city gate into open desert at dusk, glancing back over his shoulder.",
+  "scene": "a strong kind young man with short black hair and no beard, in a white tunic with a blue sash hurries out through a great mud-brick city gate into open desert at dusk, glancing back over his shoulder."
+ },
+ "m7-a": {
+  "alt": "young Musa walks alone across a wide desert of dunes and rocks under a hot sun, small against the huge landscape, his tunic dusty.",
+  "scene": "a strong kind young man with short black hair and no beard, in a white tunic with a blue sash walks alone across a wide desert of dunes and rocks under a hot sun, small against the huge landscape, his tunic dusty."
+ },
+ "m7-b": {
+  "alt": "A desert well ringed with stones under acacia trees: a noisy crowd of shepherd men with many sheep at the well, and off to one side the two daughters wait patiently,…",
+  "scene": "A desert well ringed with stones under acacia trees: a noisy crowd of shepherd men with many sheep at the well, and off to one side two modest young women in long dresses and headscarves, one in purple and one in sky blue wait patiently, holding back a small flock."
+ },
+ "m7-c": {
+  "alt": "young Musa, dusty and tired, speaks kindly at a respectful distance with the two daughters beside their small flock of sheep; acacia trees and a stone well behind.",
+  "scene": "a strong kind young man with short black hair and no beard, in a white tunic with a blue sash, dusty and tired, speaks kindly at a respectful distance with two modest young women in long dresses and headscarves, one in purple and one in sky blue beside their small flock of sheep; acacia trees and a stone well behind."
+ },
+ "m7-d": {
+  "alt": "young Musa strains with all his strength to lift a huge round flat stone off the mouth of a desert well, sheep crowding around his legs.",
+  "scene": "a strong kind young man with short black hair and no beard, in a white tunic with a blue sash strains with all his strength to lift a huge round flat stone off the mouth of a desert well, sheep crowding around his legs."
+ },
+ "m7-e": {
+  "alt": "young Musa sits resting in the shade of an acacia tree beside the well, his palms raised in prayer, sheep drinking at a stone trough nearby.",
+  "scene": "a strong kind young man with short black hair and no beard, in a white tunic with a blue sash sits resting in the shade of an acacia tree beside the well, his palms raised in prayer, sheep drinking at a stone trough nearby."
+ },
+ "m8-a": {
+  "alt": "A modest young woman in a purple headscarf stands shyly at a distance, eyes lowered, speaking to young Musa who rises from the shade of an acacia tree by the well.",
+  "scene": "A modest young woman in a purple headscarf stands shyly at a distance, eyes lowered, speaking to a strong kind young man with short black hair and no beard, in a white tunic with a blue sash who rises from the shade of an acacia tree by the well."
+ },
+ "m8-b": {
+  "alt": "young Musa walks ahead on a stony desert path while, well behind him, a modest young woman in a purple headscarf tosses a small pebble to one side of the path.",
+  "scene": "a strong kind young man with short black hair and no beard, in a white tunic with a blue sash walks ahead on a stony desert path while, well behind him, a modest young woman in a purple headscarf tosses a small pebble to one side of the path."
+ },
+ "m8-c": {
+  "alt": "Inside a simple shepherd's home with woven rugs, the old father sits and listens warmly, one hand raised in reassurance, as young Musa sits before him telling his story…",
+  "scene": "Inside a simple shepherd's home with woven rugs, a very old man with a long white beard, a white turban and a brown cloak sits and listens warmly, one hand raised in reassurance, as a strong kind young man with short black hair and no beard, in a white tunic with a blue sash sits before him telling his story over a shared bowl of food."
+ },
+ "m8-e": {
+  "alt": "A joyful small wedding gathering outside a shepherd's home: the old father clasps the hand of young Musa, a bride in a purple headscarf stands smiling shyly beside her…",
+  "scene": "A joyful small wedding gathering outside a shepherd's home: a very old man with a long white beard, a white turban and a brown cloak clasps the hand of a strong kind young man with short black hair and no beard, in a white tunic with a blue sash, a bride in a purple headscarf stands smiling shyly beside her sister, sheep and acacia trees around."
+ },
+ "m9-a": {
+  "alt": "A cold starry night in rocky desert mountains: Musa stands beside a small tent and a few sheep with his wife in a purple headscarf, pointing at a tiny bright fire…",
+  "scene": "A cold starry night in rocky desert mountains: a strong kind man in his thirties with a short black beard, a cream turban and an indigo robe, holding a tall wooden staff stands beside a small tent and a few sheep with his wife in a purple headscarf, pointing at a tiny bright fire glowing far off on a dark mountainside."
+ },
+ "m9-c": {
+  "alt": "Night in a rocky valley: a green tree glows with brilliant golden fire-like light that does not burn its leaves; Musa stands before it shielding his eyes in awe, his…",
+  "scene": "Night in a rocky valley: a green tree glows with brilliant golden fire-like light that does not burn its leaves; a strong kind man in his thirties with a short black beard, a cream turban and an indigo robe, holding a tall wooden staff stands before it shielding his eyes in awe, his sandals still on his feet."
+ },
+ "m9-d": {
+  "alt": "Musa kneels barefoot on the ground with his head bowed and his staff laid beside him, before a tree shining with golden light in a dark rocky valley; his sandals rest on…",
+  "scene": "a strong kind man in his thirties with a short black beard, a cream turban and an indigo robe, holding a tall wooden staff kneels barefoot on the ground with his head bowed and his staff laid beside him, before a tree shining with golden light in a dark rocky valley; his sandals rest on a stone."
+ },
+ "m10-a": {
+  "alt": "Musa, barefoot in a rocky valley lit by golden light from one side, holds out his plain wooden staff in both hands and looks at it.",
+  "scene": "a strong kind man in his thirties with a short black beard, a cream turban and an indigo robe, holding a tall wooden staff, barefoot in a rocky valley lit by golden light from one side, holds out his plain wooden staff in both hands and looks at it."
+ },
+ "m10-b": {
+  "alt": "A large golden-brown snake rears up from the ground where a staff was thrown; Musa, barefoot and empty-handed, steps back in surprise; the valley glows with golden light…",
+  "scene": "A large golden-brown snake rears up from the ground where a staff was thrown; a strong kind man in his thirties with a short black beard, a cream turban and an indigo robe, holding a tall wooden staff, barefoot and empty-handed, steps back in surprise; the valley glows with golden light from one side."
+ },
+ "m10-c": {
+  "alt": "Musa looks in wonder at his own raised right hand, which shines with soft pure white light that lights up his face, in a dark rocky valley at night.",
+  "scene": "a strong kind man in his thirties with a short black beard, a cream turban and an indigo robe, holding a tall wooden staff looks in wonder at his own raised right hand, which shines with soft pure white light that lights up his face, in a dark rocky valley at night."
+ },
+ "m11-a": {
+  "alt": "Musa kneels barefoot in the glowing valley, one hand on his chest and a worried look on his face, speaking upward toward the golden light.",
+  "scene": "a strong kind man in his thirties with a short black beard, a cream turban and an indigo robe, holding a tall wooden staff kneels barefoot in the glowing valley, one hand on his chest and a worried look on his face, speaking upward toward the golden light."
+ },
+ "m11-b": {
+  "alt": "Musa kneels with both palms raised in prayer and eyes closed, calm now, golden light on his face, stars above the rocky valley.",
+  "scene": "a strong kind man in his thirties with a short black beard, a cream turban and an indigo robe, holding a tall wooden staff kneels with both palms raised in prayer and eyes closed, calm now, golden light on his face, stars above the rocky valley."
+ },
+ "m11-e": {
+  "alt": "Musa and Harun embrace warmly as brothers meeting on a desert road at sunrise, a river city far behind them.",
+  "scene": "a strong kind man in his thirties with a short black beard, a cream turban and an indigo robe, holding a tall wooden staff and a gentle man with a short black beard, a white turban and a green robe embrace warmly as brothers meeting on a desert road at sunrise, a river city far behind them."
+ },
+ "m12-a": {
+  "alt": "In the throne hall, Musa and Harun stand side by side, calm and upright, before Pharaoh seated high on a golden throne with guards and ministers around him.",
+  "scene": "In a grand throne hall with painted columns and hanging lamps, a strong kind man in his thirties with a short black beard, a cream turban and an indigo robe, holding a tall wooden staff and a gentle man with a short black beard, a white turban and a green robe stand side by side, calm and upright, before a proud stern king with a short black beard, a tall blue-and-gold striped crown and a red-and-gold robe seated high on a golden throne with guards and ministers around him."
+ },
+ "m12-b": {
+  "alt": "In the throne hall, Musa holds up his right hand which shines with soft white light; courtiers and ministers lean back shading their eyes, Pharaoh grips his throne.",
+  "scene": "In a grand throne hall with painted columns and hanging lamps, a strong kind man in his thirties with a short black beard, a cream turban and an indigo robe, holding a tall wooden staff holds up his right hand which shines with soft white light; courtiers and ministers lean back shading their eyes, a proud stern king with a short black beard, a tall blue-and-gold striped crown and a red-and-gold robe grips his throne."
+ },
+ "m12-c": {
+  "alt": "Pharaoh stands up from his throne and waves a hand dismissively, laughing, while his ministers in rich robes whisper and smirk behind him.",
+  "scene": "a proud stern king with a short black beard, a tall blue-and-gold striped crown and a red-and-gold robe stands up from his throne and waves a hand dismissively, laughing, while his ministers in rich robes whisper and smirk behind him."
+ },
+ "m12-e": {
+  "alt": "Musa stands calmly in the throne hall and points with his staff toward a tall bright window where the sun shines; Harun stands beside him.",
+  "scene": "a strong kind man in his thirties with a short black beard, a cream turban and an indigo robe, holding a tall wooden staff stands calmly in a grand throne hall with painted columns and hanging lamps and points with his staff toward a tall bright window where the sun shines; a gentle man with a short black beard, a white turban and a green robe stands beside him."
+ },
+ "m13-a": {
+  "alt": "A huge open festival ground under a high bright sun, packed with a cheering crowd: the magicians stand in a row holding coils of rope and wooden sticks, facing Musa and…",
+  "scene": "A huge open festival ground under a high bright sun, packed with a cheering crowd: a row of magicians in dark purple robes stand in a row holding coils of rope and wooden sticks, facing a strong kind man in his thirties with a short black beard, a cream turban and an indigo robe, holding a tall wooden staff and a gentle man with a short black beard, a white turban and a green robe; a proud stern king with a short black beard, a tall blue-and-gold striped crown and a red-and-gold robe watches from a shaded platform."
+ },
+ "m13-c": {
+  "alt": "On a sandy festival ground, dozens of ropes and sticks lie scattered and seem to twist and wriggle like snakes; the magicians raise their arms proudly, the crowd gasps.",
+  "scene": "On a sandy festival ground, dozens of ropes and sticks lie scattered and seem to twist and wriggle like snakes; a row of magicians in dark purple robes raise their arms proudly, the crowd gasps."
+ },
+ "m13-d": {
+  "alt": "Musa stands firm on the sandy festival ground gripping his staff, eyes closed for a moment, a soft light on his face; wriggling ropes lie before him and Harun stands at…",
+  "scene": "a strong kind man in his thirties with a short black beard, a cream turban and an indigo robe, holding a tall wooden staff stands firm on the sandy festival ground gripping his staff, eyes closed for a moment, a soft light on his face; wriggling ropes lie before him and a gentle man with a short black beard, a white turban and a green robe stands at his shoulder."
+ },
+ "m13-e": {
+  "alt": "One enormous golden-brown snake sweeps across the sandy festival ground swallowing ropes and sticks; the magicians stumble backward with wide eyes; Musa stands calm.",
+  "scene": "One enormous golden-brown snake sweeps across the sandy festival ground swallowing ropes and sticks; a row of magicians in dark purple robes stumble backward with wide eyes; a strong kind man in his thirties with a short black beard, a cream turban and an indigo robe, holding a tall wooden staff stands calm."
+ },
+ "m13-f": {
+  "alt": "the magicians kneel and bow down with their foreheads to the sandy ground in a row, ropes lying still around them; Musa and Harun stand behind; the crowd stares in…",
+  "scene": "a row of magicians in dark purple robes kneel and bow down with their foreheads to the sandy ground in a row, ropes lying still around them; a strong kind man in his thirties with a short black beard, a cream turban and an indigo robe, holding a tall wooden staff and a gentle man with a short black beard, a white turban and a green robe stand behind; the crowd stares in amazement."
+ },
+ "m14-a": {
+  "alt": "Pharaoh stands on his platform shouting with a clenched fist raised, his face angry, guards rushing forward below him.",
+  "scene": "a proud stern king with a short black beard, a tall blue-and-gold striped crown and a red-and-gold robe stands on his platform shouting with a clenched fist raised, his face angry, guards rushing forward below him."
+ },
+ "m14-b": {
+  "alt": "the magicians stand together shoulder to shoulder, calm and brave, looking up without fear; guards with spears surround them; warm light falls on their faces.",
+  "scene": "a row of magicians in dark purple robes stand together shoulder to shoulder, calm and brave, looking up without fear; guards with spears surround them; warm light falls on their faces."
+ },
+ "m14-c": {
+  "alt": "In the throne hall, a nobleman in a fine blue-and-white robe steps out from among the ministers and speaks boldly with an open hand toward Pharaoh, who glares from the…",
+  "scene": "In a grand throne hall with painted columns and hanging lamps, a nobleman in a fine blue-and-white robe steps out from among the ministers and speaks boldly with an open hand toward a proud stern king with a short black beard, a tall blue-and-gold striped crown and a red-and-gold robe, who glares from the throne."
+ },
+ "m14-d": {
+  "alt": "Queen Asiya kneels alone by a tall palace window at night with her palms raised in prayer, moonlight on her peaceful face.",
+  "scene": "a kind queen in a teal silk headscarf with a thin gold circlet and a white-and-gold gown kneels alone by a tall palace window at night with her palms raised in prayer, moonlight on her peaceful face."
+ },
+ "m14-e": {
+  "alt": "Pharaoh points up at the sky, giving orders to a tall minister in a black-and-gold robe, while workers behind them stack clay bricks into the base of a huge unfinished…",
+  "scene": "a proud stern king with a short black beard, a tall blue-and-gold striped crown and a red-and-gold robe points up at the sky, giving orders to a tall minister in a black-and-gold robe, while workers behind them stack clay bricks into the base of a huge unfinished tower."
+ },
+ "m15-a": {
+  "alt": "A dry cracked field under a harsh sun with withered brown crops and an empty irrigation channel; a farmer in a linen kilt and head-cloth looks at the sky, a river city…",
+  "scene": "A dry cracked field under a harsh sun with withered brown crops and an empty irrigation channel; a farmer in a linen kilt and head-cloth looks at the sky, a river city in the distance."
+ },
+ "m15-b": {
+  "alt": "Heavy dark storm clouds pour rain over a river city; fields are flooded, people run for shelter under palm-leaf roofs holding cloths over their heads.",
+  "scene": "Heavy dark storm clouds pour rain over a river city; fields are flooded, people run for shelter under palm-leaf roofs holding cloths over their heads."
+ },
+ "m15-c": {
+  "alt": "A huge swarm of locusts darkens the sky over green fields and mud-brick houses; people wave cloths at them; locusts cover a wooden door.",
+  "scene": "A huge swarm of locusts darkens the sky over green fields and mud-brick houses; people wave cloths at them; locusts cover a wooden door."
+ },
+ "m15-d": {
+  "alt": "A comical kitchen in a mud-brick house overrun with dozens of green frogs: frogs in the cooking pots, on the bed, on shelves and peeking out of a basket of clothes,…",
+  "scene": "A comical kitchen in a mud-brick house overrun with dozens of green frogs: frogs in the cooking pots, on the bed, on shelves and peeking out of a basket of clothes, while a cook throws up his hands."
+ },
+ "m15-e": {
+  "alt": "A wide river running deep red between its green banks under a pale sky; people stand on the shore with empty water jars, staring in dismay.",
+  "scene": "A wide river running deep red between its green banks under a pale sky; people stand on the shore with empty water jars, staring in dismay."
+ },
+ "m15-f": {
+  "alt": "Under a stormy sky, a group of noblemen in rich robes plead with clasped hands before Musa, who raises his palms in prayer.",
+  "scene": "Under a stormy sky, a group of noblemen in rich robes plead with clasped hands before a strong kind man in his thirties with a short black beard, a cream turban and an indigo robe, holding a tall wooden staff, who raises his palms in prayer."
+ },
+ "m15-g": {
+  "alt": "Under a clear blue sky, Pharaoh turns his back and walks away up palace steps with a wave of his hand, while Musa and Harun stand below watching him go.",
+  "scene": "Under a clear blue sky, a proud stern king with a short black beard, a tall blue-and-gold striped crown and a red-and-gold robe turns his back and walks away up palace steps with a wave of his hand, while a strong kind man in his thirties with a short black beard, a cream turban and an indigo robe, holding a tall wooden staff and a gentle man with a short black beard, a white turban and a green robe stand below watching him go."
+ },
+ "m16-a": {
+  "alt": "A moonlit night in a quarter of small mud-brick homes: Musa walks quietly from door to door with his staff, a finger to his lips, as families peek out with small oil…",
+  "scene": "A moonlit night in a quarter of small mud-brick homes: a strong kind man in his thirties with a short black beard, a cream turban and an indigo robe, holding a tall wooden staff walks quietly from door to door with his staff, a finger to his lips, as families peek out with small oil lamps."
+ },
+ "m16-b": {
+  "alt": "A long line of the people walks out of a sleeping river city under a starry sky, carrying bundles and children, some leading donkeys and goats; Musa leads at the front…",
+  "scene": "A long line of a crowd of families, men, women and children, in simple earth-coloured clothes walks out of a sleeping river city under a starry sky, carrying bundles and children, some leading donkeys and goats; a strong kind man in his thirties with a short black beard, a cream turban and an indigo robe, holding a tall wooden staff leads at the front with his staff."
+ },
+ "m16-c": {
+  "alt": "Sunrise over the desert: Pharaoh in a golden chariot leads the army in a long line raising a great cloud of dust.",
+  "scene": "Sunrise over the desert: a proud stern king with a short black beard, a tall blue-and-gold striped crown and a red-and-gold robe in a golden chariot leads soldiers with spears and round shields on horse-drawn chariots in a long line raising a great cloud of dust."
+ },
+ "m16-d": {
+  "alt": "On a wide seashore at sunrise, the people huddle at the water's edge looking back in fear at a dust cloud and distant chariots on the horizon; waves roll in front of…",
+  "scene": "On a wide seashore at sunrise, a crowd of families, men, women and children, in simple earth-coloured clothes huddle at the water's edge looking back in fear at a dust cloud and distant chariots on the horizon; waves roll in front of them."
+ },
+ "m16-e": {
+  "alt": "Musa stands tall and calm on the seashore facing the waves, staff in hand, robe blowing in the wind, while frightened the people gather behind him.",
+  "scene": "a strong kind man in his thirties with a short black beard, a cream turban and an indigo robe, holding a tall wooden staff stands tall and calm on the seashore facing the waves, staff in hand, robe blowing in the wind, while frightened a crowd of families, men, women and children, in simple earth-coloured clothes gather behind him."
+ },
+ "m17-a": {
+  "alt": "Musa raises his wooden staff high in both hands over the edge of the sea, waves at his feet, wind in his robe, dawn light behind him.",
+  "scene": "a strong kind man in his thirties with a short black beard, a cream turban and an indigo robe, holding a tall wooden staff raises his wooden staff high in both hands over the edge of the sea, waves at his feet, wind in his robe, dawn light behind him."
+ },
+ "m17-b": {
+  "alt": "The sea stands split into two towering walls of blue-green water with a wide dry sandy path between them; tiny figures of people begin to walk in; fish can be seen…",
+  "scene": "The sea stands split into two towering walls of blue-green water with a wide dry sandy path between them; tiny figures of people begin to walk in; fish can be seen inside the water walls; dawn sky."
+ },
+ "m17-c": {
+  "alt": "Families walk along a dry sandy path between two high walls of clear blue water; through arched openings in the water wall they wave to other families walking on a…",
+  "scene": "Families walk along a dry sandy path between two high walls of clear blue water; through arched openings in the water wall they wave to other families walking on a neighbouring path; fish swim in the walls."
+ },
+ "m17-d": {
+  "alt": "the people climb out onto the far shore, hugging each other with relief and joy, the split sea behind them; Musa and Harun help the last ones up.",
+  "scene": "a crowd of families, men, women and children, in simple earth-coloured clothes climb out onto the far shore, hugging each other with relief and joy, the split sea behind them; a strong kind man in his thirties with a short black beard, a cream turban and an indigo robe, holding a tall wooden staff and a gentle man with a short black beard, a white turban and a green robe help the last ones up."
+ },
+ "m17-e": {
+  "alt": "Seen from far away on the shore: the two great walls of water crash together in a huge burst of foam and spray; no people visible, only the wild sea under a bright sky.",
+  "scene": "Seen from far away on the shore: the two great walls of water crash together in a huge burst of foam and spray; no people visible, only the wild sea under a bright sky."
+ },
+ "m17-f": {
+  "alt": "A lonely golden crown with blue stripes lies washed up on wet sand at the edge of a calm sea, small waves lapping around it, morning light.",
+  "scene": "A lonely golden crown with blue stripes lies washed up on wet sand at the edge of a calm sea, small waves lapping around it, morning light."
+ },
+ "m17-g": {
+  "alt": "On a sunny seashore, the people celebrate with raised hands, children dancing and playing in the sand, the calm sea sparkling behind them.",
+  "scene": "On a sunny seashore, a crowd of families, men, women and children, in simple earth-coloured clothes celebrate with raised hands, children dancing and playing in the sand, the calm sea sparkling behind them."
+ },
+ "m18-a": {
+  "alt": "the people walk through a hot sandy desert while a wide soft white cloud floats low above them casting cool shade over the whole group; Musa walks in front.",
+  "scene": "a crowd of families, men, women and children, in simple earth-coloured clothes walk through a hot sandy desert while a wide soft white cloud floats low above them casting cool shade over the whole group; a strong kind man in his thirties with a short black beard, a cream turban and an indigo robe, holding a tall wooden staff walks in front."
+ },
+ "m18-b": {
+  "alt": "Early morning at the camp: happy children and parents gather small pale flakes from the ground into baskets while plump little brown quail birds land all around the…",
+  "scene": "Early morning at a camp of woven tents among rocks in the desert: happy children and parents gather small pale flakes from the ground into baskets while plump little brown quail birds land all around the tents."
+ },
+ "m18-c": {
+  "alt": "Musa stands before a big square grey rock in the dry desert with his staff raised to strike it, thirsty the people watching behind him with empty water skins.",
+  "scene": "a strong kind man in his thirties with a short black beard, a cream turban and an indigo robe, holding a tall wooden staff stands before a big square grey rock in the dry desert with his staff raised to strike it, thirsty a crowd of families, men, women and children, in simple earth-coloured clothes watching behind him with empty water skins."
+ },
+ "m18-d": {
+  "alt": "Twelve streams of clear water burst from a big square rock and run in channels across the sand; families kneel to drink and fill jars, children splash; Musa smiles.",
+  "scene": "Twelve streams of clear water burst from a big square rock and run in channels across the sand; families kneel to drink and fill jars, children splash; a strong kind man in his thirties with a short black beard, a cream turban and an indigo robe, holding a tall wooden staff smiles."
+ },
+ "m19-a": {
+  "alt": "At the edge of the camp, Musa rests a hand on the shoulder of Harun in farewell and points up toward a great rocky mountain rising behind the tents.",
+  "scene": "At the edge of a camp of woven tents among rocks in the desert, a strong kind man in his thirties with a short black beard, a cream turban and an indigo robe, holding a tall wooden staff rests a hand on the shoulder of a gentle man with a short black beard, a white turban and a green robe in farewell and points up toward a great rocky mountain rising behind the tents."
+ },
+ "m19-b": {
+  "alt": "Musa stands alone high on a rocky mountain ledge above the clouds, looking across a valley toward another great mountain peak, the sky glowing.",
+  "scene": "a strong kind man in his thirties with a short black beard, a cream turban and an indigo robe, holding a tall wooden staff stands alone high on a rocky mountain ledge above the clouds, looking across a valley toward another great mountain peak, the sky glowing."
+ },
+ "m19-c": {
+  "alt": "A great distant mountain peak crumbles and collapses into rolling clouds of dust and tumbling rocks under a blindingly bright sky; no people in the picture.",
+  "scene": "A great distant mountain peak crumbles and collapses into rolling clouds of dust and tumbling rocks under a blindingly bright sky; no people in the picture."
+ },
+ "m19-d": {
+  "alt": "Musa kneels on a rocky ledge with his forehead bowed low to the ground in humility, his staff beside him, soft light and settling dust in the air.",
+  "scene": "a strong kind man in his thirties with a short black beard, a cream turban and an indigo robe, holding a tall wooden staff kneels on a rocky ledge with his forehead bowed low to the ground in humility, his staff beside him, soft light and settling dust in the air."
+ },
+ "m19-e": {
+  "alt": "Musa holds two large stone tablets close to his chest with both arms, his staff tucked under one arm, standing on a mountain top at sunrise with a look of calm joy; the…",
+  "scene": "a strong kind man in his thirties with a short black beard, a cream turban and an indigo robe, holding a tall wooden staff holds two large stone tablets close to his chest with both arms, his staff tucked under one arm, standing on a mountain top at sunrise with a look of calm joy; the tablets' surfaces are plain and blank."
+ },
+ "m20-a": {
+  "alt": "Night at the camp: the Samiri stands by a blazing fire pit as people toss gold bracelets and necklaces into the flames; a small shiny golden calf statue stands on a rock…",
+  "scene": "Night at a camp of woven tents among rocks in the desert: a sly thin man in a grey robe and a dark red turban stands by a blazing fire pit as people toss gold bracelets and necklaces into the flames; a small shiny golden calf statue stands on a rock beside him."
+ },
+ "m20-b": {
+  "alt": "the Samiri points proudly at a shiny golden calf statue on a rock; a crowd gathers around it staring, some kneeling, in the light of torches among the tents.",
+  "scene": "a sly thin man in a grey robe and a dark red turban points proudly at a shiny golden calf statue on a rock; a crowd gathers around it staring, some kneeling, in the light of torches among the tents."
+ },
+ "m20-c": {
+  "alt": "A close view of a small shiny golden calf statue standing stiff and lifeless on a rock, torchlight glinting on it, its eyes blank.",
+  "scene": "A close view of a small shiny golden calf statue standing stiff and lifeless on a rock, torchlight glinting on it, its eyes blank."
+ },
+ "m20-d": {
+  "alt": "Harun stands between an angry crowd and a golden calf statue with both hands raised, pleading with them; some people turn their backs on him.",
+  "scene": "a gentle man with a short black beard, a white turban and a green robe stands between an angry crowd and a golden calf statue with both hands raised, pleading with them; some people turn their backs on him."
+ },
+ "m20-e": {
+  "alt": "Musa strides into the camp with a stern, grieved face, two stone tablets set down on the ground behind him; Harun holds out his open hands, explaining; the golden calf…",
+  "scene": "a strong kind man in his thirties with a short black beard, a cream turban and an indigo robe, holding a tall wooden staff strides into the camp with a stern, grieved face, two stone tablets set down on the ground behind him; a gentle man with a short black beard, a white turban and a green robe holds out his open hands, explaining; the golden calf statue stands in the background."
+ },
+ "m20-f": {
+  "alt": "Musa stands on a rocky shore and scatters handfuls of fine gold dust into the wind over the sea, the dust glittering as it blows away.",
+  "scene": "a strong kind man in his thirties with a short black beard, a cream turban and an indigo robe, holding a tall wooden staff stands on a rocky shore and scatters handfuls of fine gold dust into the wind over the sea, the dust glittering as it blows away."
+ },
+ "m20-g": {
+  "alt": "By morning light at the camp, the people sit humbly on the ground listening as Musa speaks to them with one finger raised, Harun beside him.",
+  "scene": "By morning light at a camp of woven tents among rocks in the desert, a crowd of families, men, women and children, in simple earth-coloured clothes sit humbly on the ground listening as a strong kind man in his thirties with a short black beard, a cream turban and an indigo robe, holding a tall wooden staff speaks to them with one finger raised, a gentle man with a short black beard, a white turban and a green robe beside him."
+ },
+ "m21-a": {
+  "alt": "At the camp by day, Musa speaks to a group of men who look at each other with raised eyebrows and doubtful smiles; a few cows graze in the background.",
+  "scene": "At a camp of woven tents among rocks in the desert by day, a strong kind man in his thirties with a short black beard, a cream turban and an indigo robe, holding a tall wooden staff speaks to a group of men who look at each other with raised eyebrows and doubtful smiles; a few cows graze in the background."
+ },
+ "m21-b": {
+  "alt": "A herd of very different cows in a dry pasture: a tiny young calf, a thin old grey cow, and several strong middle-sized cows; men stand scratching their heads.",
+  "scene": "A herd of very different cows in a dry pasture: a tiny young calf, a thin old grey cow, and several strong middle-sized cows; men stand scratching their heads."
+ },
+ "m21-c": {
+  "alt": "One beautiful golden-yellow cow with a glossy coat stands in sunlight in a pasture among brown, black and white cows.",
+  "scene": "One beautiful golden-yellow cow with a glossy coat stands in sunlight in a pasture among brown, black and white cows."
+ },
+ "m21-e": {
+  "alt": "A group of men lead one golden-yellow cow by a rope across a pasture toward the camp, looking relieved and tired.",
+  "scene": "A group of men lead one golden-yellow cow by a rope across a pasture toward the camp, looking relieved and tired."
+ },
+ "m22-a": {
+  "alt": "Musa stands on a rocky rise pointing with his staff toward a green fertile valley with a walled town in the distance; the people stand behind him in the dry desert.",
+  "scene": "a strong kind man in his thirties with a short black beard, a cream turban and an indigo robe, holding a tall wooden staff stands on a rocky rise pointing with his staff toward a green fertile valley with a walled town in the distance; a crowd of families, men, women and children, in simple earth-coloured clothes stand behind him in the dry desert."
+ },
+ "m22-b": {
+  "alt": "A group of men in earth-coloured clothes shake their heads and back away with their hands up, looking fearfully toward a distant walled town with a huge gate.",
+  "scene": "A group of men in earth-coloured clothes shake their heads and back away with their hands up, looking fearfully toward a distant walled town with a huge gate."
+ },
+ "m22-c": {
+  "alt": "Two brave men in simple robes step out in front of a nervous crowd, one pointing toward a huge distant town gate and one holding a hand to his heart.",
+  "scene": "Two brave men in simple robes step out in front of a nervous crowd, one pointing toward a huge distant town gate and one holding a hand to his heart."
+ },
+ "m22-d": {
+  "alt": "A crowd of men sit stubbornly on the ground beside their tents with arms folded, while Musa and Harun stand looking at them sadly.",
+  "scene": "A crowd of men sit stubbornly on the ground beside their tents with arms folded, while a strong kind man in his thirties with a short black beard, a cream turban and an indigo robe, holding a tall wooden staff and a gentle man with a short black beard, a white turban and a green robe stand looking at them sadly."
+ },
+ "m22-e": {
+  "alt": "Seen from high above: a long line of tiny people and animals winds in a great circle across an endless desert of dunes at dusk.",
+  "scene": "Seen from high above: a long line of tiny people and animals winds in a great circle across an endless desert of dunes at dusk."
+ },
+ "m23-a": {
+  "alt": "Musa stands on a low rock speaking to a seated crowd at the camp; one man in the crowd raises a hand to ask a question.",
+  "scene": "a strong kind man in his thirties with a short black beard, a cream turban and an indigo robe, holding a tall wooden staff stands on a low rock speaking to a seated crowd at a camp of woven tents among rocks in the desert; one man in the crowd raises a hand to ask a question."
+ },
+ "m23-b": {
+  "alt": "Musa and Yusha set out walking along a rocky coast path at morning; the boy carries a woven basket with a fish's tail sticking out of it.",
+  "scene": "a strong kind man in his thirties with a short black beard, a cream turban and an indigo robe, holding a tall wooden staff and a helpful boy of twelve in a short brown tunic and a small white cap set out walking along a rocky coast path at morning; the boy carries a woven basket with a fish's tail sticking out of it."
+ },
+ "m23-c": {
+  "alt": "By a big rock on the seashore, Musa and Yusha lie asleep in the shade while a silver fish leaps from a tipped woven basket into the sea, leaving a clear tunnel-like…",
+  "scene": "By a big rock on the seashore, a strong kind man in his thirties with a short black beard, a cream turban and an indigo robe, holding a tall wooden staff and a helpful boy of twelve in a short brown tunic and a small white cap lie asleep in the shade while a silver fish leaps from a tipped woven basket into the sea, leaving a clear tunnel-like trail in the water."
+ },
+ "m23-d": {
+  "alt": "On a dusty path, Yusha looks into an empty woven basket with a shocked face and one hand on his head, while Musa sits down tired on a stone.",
+  "scene": "On a dusty path, a helpful boy of twelve in a short brown tunic and a small white cap looks into an empty woven basket with a shocked face and one hand on his head, while a strong kind man in his thirties with a short black beard, a cream turban and an indigo robe, holding a tall wooden staff sits down tired on a stone."
+ },
+ "m23-e": {
+  "alt": "Musa points excitedly back along a sandy coast path marked with two lines of footprints; Yusha turns to follow, the sea beside them.",
+  "scene": "a strong kind man in his thirties with a short black beard, a cream turban and an indigo robe, holding a tall wooden staff points excitedly back along a sandy coast path marked with two lines of footprints; a helpful boy of twelve in a short brown tunic and a small white cap turns to follow, the sea beside them."
+ },
+ "m23-f": {
+  "alt": "By a big rock on the seashore sits al-Khidr, calm and smiling gently; Musa greets him respectfully with a hand on his chest, Yusha standing behind.",
+  "scene": "By a big rock on the seashore sits a wise old man with a white beard, in a green turban and a long green cloak, calm and smiling gently; a strong kind man in his thirties with a short black beard, a cream turban and an indigo robe, holding a tall wooden staff greets him respectfully with a hand on his chest, a helpful boy of twelve in a short brown tunic and a small white cap standing behind."
+ },
+ "m23-g": {
+  "alt": "Musa and al-Khidr walk side by side along a beach talking, the old man holding up one finger as he sets a condition; waves roll in.",
+  "scene": "a strong kind man in his thirties with a short black beard, a cream turban and an indigo robe, holding a tall wooden staff and a wise old man with a white beard, in a green turban and a long green cloak walk side by side along a beach talking, the old man holding up one finger as he sets a condition; waves roll in."
+ },
+ "m24-a": {
+  "alt": "On a small wooden sailing boat at sea, al-Khidr kneels and pries up a plank from the deck with a tool; Musa stares in alarm; two sailors work the sail at the far end,…",
+  "scene": "On a small wooden sailing boat at sea, a wise old man with a white beard, in a green turban and a long green cloak kneels and pries up a plank from the deck with a tool; a strong kind man in his thirties with a short black beard, a cream turban and an indigo robe, holding a tall wooden staff stares in alarm; two sailors work the sail at the far end, not noticing."
+ },
+ "m24-b": {
+  "alt": "On the deck of a small wooden boat, Musa holds out both hands in protest and al-Khidr calmly raises one finger to remind him of his promise.",
+  "scene": "On the deck of a small wooden boat, a strong kind man in his thirties with a short black beard, a cream turban and an indigo robe, holding a tall wooden staff holds out both hands in protest and a wise old man with a white beard, in a green turban and a long green cloak calmly raises one finger to remind him of his promise."
+ },
+ "m24-c": {
+  "alt": "A tiny sparrow perches on the wooden edge of a boat and dips its beak into the vast sparkling sea; al-Khidr points to it, smiling, as Musa watches.",
+  "scene": "A tiny sparrow perches on the wooden edge of a boat and dips its beak into the vast sparkling sea; a wise old man with a white beard, in a green turban and a long green cloak points to it, smiling, as a strong kind man in his thirties with a short black beard, a cream turban and an indigo robe, holding a tall wooden staff watches."
+ },
+ "m24-d": {
+  "alt": "Musa and al-Khidr walk away together down a seaside path toward a town; Musa looks troubled, one hand raised mid-question; the old man walks on calmly.",
+  "scene": "a strong kind man in his thirties with a short black beard, a cream turban and an indigo robe, holding a tall wooden staff and a wise old man with a white beard, in a green turban and a long green cloak walk away together down a seaside path toward a town; a strong kind man in his thirties with a short black beard, a cream turban and an indigo robe, holding a tall wooden staff looks troubled, one hand raised mid-question; the old man walks on calmly."
+ },
+ "m24-e": {
+  "alt": "In a small town street, al-Khidr pushes a leaning mud-brick wall upright with both hands and sets bricks back into it; Musa stands with his arms spread in puzzlement;…",
+  "scene": "In a small town street, a wise old man with a white beard, in a green turban and a long green cloak pushes a leaning mud-brick wall upright with both hands and sets bricks back into it; a strong kind man in his thirties with a short black beard, a cream turban and an indigo robe, holding a tall wooden staff stands with his arms spread in puzzlement; townspeople turn away in doorways."
+ },
+ "m24-f": {
+  "alt": "al-Khidr and Musa sit facing each other under a tree outside a town at sunset, the old man speaking gently with open hands, Musa listening closely.",
+  "scene": "a wise old man with a white beard, in a green turban and a long green cloak and a strong kind man in his thirties with a short black beard, a cream turban and an indigo robe, holding a tall wooden staff sit facing each other under a tree outside a town at sunset, the old man speaking gently with open hands, Musa listening closely."
+ },
+ "m24-g": {
+  "alt": "A small patched wooden fishing boat with poor fishermen aboard sails safely on, while a great royal ship with purple sails and armed men passes by, ignoring it.",
+  "scene": "A small patched wooden fishing boat with poor fishermen aboard sails safely on, while a great royal ship with purple sails and armed men passes by, ignoring it."
+ },
+ "m24-h": {
+  "alt": "Two young orphan brothers in simple tunics play beside a strong mended mud-brick wall; in a cutaway view beneath the wall, a clay jar of gold coins glows softly…",
+  "scene": "Two young orphan brothers in simple tunics play beside a strong mended mud-brick wall; in a cutaway view beneath the wall, a clay jar of gold coins glows softly underground."
+ },
+ "m24-i": {
+  "alt": "Musa stands alone on a seashore at sunset looking out thoughtfully over the calm water, staff in hand, a small bird flying over the waves.",
+  "scene": "a strong kind man in his thirties with a short black beard, a cream turban and an indigo robe, holding a tall wooden staff stands alone on a seashore at sunset looking out thoughtfully over the calm water, staff in hand, a small bird flying over the waves."
+ }
+}

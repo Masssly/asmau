@@ -1,11 +1,18 @@
 {
-  "version": "2026.11.12",
+  "version": "2026.11.13",
   "date": "2026-11-14",
-  "buildId": "366c47ed1583",
+  "buildId": "2ace0e6e42b6",
   "notes": [
-    "New story: Nana Asma'u, the scholar and teacher this site is named after, in 11 chapters. Its pictures are still to come"
+    "Nana Asma'u now has all her pictures: 35 scenes and a cover, drawn from the approved character designs"
   ],
   "history": [
+    {
+      "version": "2026.11.13",
+      "date": "2026-11-14",
+      "notes": [
+        "Nana Asma'u now has all her pictures: 35 scenes and a cover, drawn from the approved character designs"
+      ]
+    },
     {
       "version": "2026.11.12",
       "date": "2026-11-14",

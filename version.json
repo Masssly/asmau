@@ -1,11 +1,18 @@
 {
-  "version": "2026.11.13",
+  "version": "2026.11.14",
   "date": "2026-11-14",
-  "buildId": "2ace0e6e42b6",
+  "buildId": "af5d7e558017",
   "notes": [
-    "Nana Asma'u now has all her pictures: 35 scenes and a cover, drawn from the approved character designs"
+    "Musa now has all its pictures: 129 scenes drawn from approved reference pictures, and the six picture puzzles are back"
   ],
   "history": [
+    {
+      "version": "2026.11.14",
+      "date": "2026-11-14",
+      "notes": [
+        "Musa now has all its pictures: 129 scenes drawn from approved reference pictures, and the six picture puzzles are back"
+      ]
+    },
     {
       "version": "2026.11.13",
       "date": "2026-11-14",

@@ -13,7 +13,7 @@
  },
  "PH": {
   "name": "Pharaoh",
-  "look": "a proud stern king with a short black beard, a tall blue-and-gold striped crown and a red-and-gold robe"
+  "look": "a proud stern king with a short black beard, an ancient Nile-valley king's tall blue-and-gold striped headdress (not a European crown, no fur) and a red-and-gold robe"
  },
  "ASIYA": {
   "name": "Queen Asiya",
@@ -25,11 +25,7 @@
  },
  "SIS": {
   "name": "Musa's sister",
-  "look": "a clever girl of ten in a yellow headscarf and a green dress"
- },
- "BABY": {
-  "name": "baby Musa",
-  "look": "a chubby smiling baby boy wrapped in white cloth"
+  "look": "a clever girl of ten in a yellow headscarf draped over her head and shoulders that fully covers her hair, and a long-sleeved green dress"
  },
  "ELD": {
   "name": "the old father",

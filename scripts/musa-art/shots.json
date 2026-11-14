@@ -66,7 +66,7 @@
  },
  "m1-a": {
   "alt": "Bright day. Pharaoh stands high on a balcony of the palace, chin raised, arms folded, looking down over an ancient river city of mud-brick houses and date palms.",
-  "scene": "Bright day. a proud stern king with a short black beard, a tall blue-and-gold striped crown and a red-and-gold robe stands high on a balcony of a grand sandstone palace with painted columns, chin raised, arms folded, looking down over an ancient river city of mud-brick houses and date palms.",
+  "scene": "Bright day. a proud stern king with a short black beard, an ancient Nile-valley king's tall blue-and-gold striped headdress (not a European crown, no fur) and a red-and-gold robe stands high on a balcony of a grand sandstone palace with painted columns, chin raised, arms folded, looking down over an ancient river city of mud-brick houses and date palms.",
   "who": [
    "PH",
    "PAL"
@@ -143,7 +143,7 @@
  },
  "m3-d": {
   "alt": "In the throne hall, Queen Asiya holds baby Musa protectively and speaks earnestly to Pharaoh, who sits on his throne frowning with one hand raised.",
-  "scene": "In a grand throne hall with painted columns and hanging lamps, a kind queen in a teal silk headscarf with a thin gold circlet and a white-and-gold gown holds a chubby smiling baby boy wrapped in white cloth protectively and speaks earnestly to a proud stern king with a short black beard, a tall blue-and-gold striped crown and a red-and-gold robe, who sits on his throne frowning with one hand raised.",
+  "scene": "In a grand throne hall with painted columns and hanging lamps, a kind queen in a teal silk headscarf with a thin gold circlet and a white-and-gold gown holds a chubby smiling baby boy wrapped in white cloth protectively and speaks earnestly to a proud stern king with a short black beard, an ancient Nile-valley king's tall blue-and-gold striped headdress (not a European crown, no fur) and a red-and-gold robe, who sits on his throne frowning with one hand raised.",
   "who": [
    "HALL",
    "ASIYA",
@@ -160,7 +160,7 @@
  },
  "m4-b": {
   "alt": "Musa's sister walks along the reedy bank of the river, peeking through tall reeds at a small wooden chest floating far off on the water; she pretends to carry a water…",
-  "scene": "a clever girl of ten in a yellow headscarf and a green dress walks along the reedy bank of a wide calm river with tall green reeds and date palms, peeking through tall reeds at a small wooden chest floating far off on the water; she pretends to carry a water jar.",
+  "scene": "a clever girl of ten in a yellow headscarf draped over her head and shoulders that fully covers her hair, and a long-sleeved green dress walks along the reedy bank of a wide calm river with tall green reeds and date palms, peeking through tall reeds at a small wooden chest floating far off on the water; she pretends to carry a water jar.",
   "who": [
    "SIS",
    "NILE"
@@ -176,7 +176,7 @@
  },
  "m4-d": {
   "alt": "Musa's sister steps bravely forward in a palace courtyard and speaks up to Queen Asiya, who holds baby Musa; palace servants turn to look at the girl.",
-  "scene": "a clever girl of ten in a yellow headscarf and a green dress steps bravely forward in a palace courtyard and speaks up to a kind queen in a teal silk headscarf with a thin gold circlet and a white-and-gold gown, who holds a chubby smiling baby boy wrapped in white cloth; palace servants turn to look at the girl.",
+  "scene": "a clever girl of ten in a yellow headscarf draped over her head and shoulders that fully covers her hair, and a long-sleeved green dress steps bravely forward in a palace courtyard and speaks up to a kind queen in a teal silk headscarf with a thin gold circlet and a white-and-gold gown, who holds a chubby smiling baby boy wrapped in white cloth; palace servants turn to look at the girl.",
   "who": [
    "SIS",
    "ASIYA",
@@ -185,7 +185,7 @@
  },
  "m4-e": {
   "alt": "Musa's mother sits cradling baby Musa in her arms again, tears of joy on her smiling face, while Musa's sister hugs her shoulder; warm golden light, the riverside home.",
-  "scene": "a gentle young mother in a rust-orange headscarf and a cream dress sits cradling a chubby smiling baby boy wrapped in white cloth in her arms again, tears of joy on her smiling face, while a clever girl of ten in a yellow headscarf and a green dress hugs her shoulder; warm golden light, the riverside home.",
+  "scene": "a gentle young mother in a rust-orange headscarf and a cream dress sits cradling a chubby smiling baby boy wrapped in white cloth in her arms again, tears of joy on her smiling face, while a clever girl of ten in a yellow headscarf draped over her head and shoulders that fully covers her hair, and a long-sleeved green dress hugs her shoulder; warm golden light, the riverside home.",
   "who": [
    "MUM",
    "BABY",
@@ -381,7 +381,7 @@
  },
  "m12-a": {
   "alt": "In the throne hall, Musa and Harun stand side by side, calm and upright, before Pharaoh seated high on a golden throne with guards and ministers around him.",
-  "scene": "In a grand throne hall with painted columns and hanging lamps, a strong kind man in his thirties with a short black beard, a cream turban and an indigo robe, holding a tall wooden staff and a gentle man with a short black beard, a white turban and a green robe stand side by side, calm and upright, before a proud stern king with a short black beard, a tall blue-and-gold striped crown and a red-and-gold robe seated high on a golden throne with guards and ministers around him.",
+  "scene": "In a grand throne hall with painted columns and hanging lamps, a strong kind man in his thirties with a short black beard, a cream turban and an indigo robe, holding a tall wooden staff and a gentle man with a short black beard, a white turban and a green robe stand side by side, calm and upright, before a proud stern king with a short black beard, an ancient Nile-valley king's tall blue-and-gold striped headdress (not a European crown, no fur) and a red-and-gold robe seated high on a golden throne with guards and ministers around him.",
   "who": [
    "HALL",
    "MU",
@@ -391,7 +391,7 @@
  },
  "m12-b": {
   "alt": "In the throne hall, Musa holds up his right hand which shines with soft white light; courtiers and ministers lean back shading their eyes, Pharaoh grips his throne.",
-  "scene": "In a grand throne hall with painted columns and hanging lamps, a strong kind man in his thirties with a short black beard, a cream turban and an indigo robe, holding a tall wooden staff holds up his right hand which shines with soft white light; courtiers and ministers lean back shading their eyes, a proud stern king with a short black beard, a tall blue-and-gold striped crown and a red-and-gold robe grips his throne.",
+  "scene": "In a grand throne hall with painted columns and hanging lamps, a strong kind man in his thirties with a short black beard, a cream turban and an indigo robe, holding a tall wooden staff holds up his right hand which shines with soft white light; courtiers and ministers lean back shading their eyes, a proud stern king with a short black beard, an ancient Nile-valley king's tall blue-and-gold striped headdress (not a European crown, no fur) and a red-and-gold robe grips his throne.",
   "who": [
    "HALL",
    "MU",
@@ -400,7 +400,7 @@
  },
  "m12-c": {
   "alt": "Pharaoh stands up from his throne and waves a hand dismissively, laughing, while his ministers in rich robes whisper and smirk behind him.",
-  "scene": "a proud stern king with a short black beard, a tall blue-and-gold striped crown and a red-and-gold robe stands up from his throne and waves a hand dismissively, laughing, while his ministers in rich robes whisper and smirk behind him.",
+  "scene": "a proud stern king with a short black beard, an ancient Nile-valley king's tall blue-and-gold striped headdress (not a European crown, no fur) and a red-and-gold robe stands up from his throne and waves a hand dismissively, laughing, while his ministers in rich robes whisper and smirk behind him.",
   "who": [
    "PH"
   ]
@@ -416,7 +416,7 @@
  },
  "m13-a": {
   "alt": "A huge open festival ground under a high bright sun, packed with a cheering crowd: the magicians stand in a row holding coils of rope and wooden sticks, facing Musa and…",
-  "scene": "A huge open festival ground under a high bright sun, packed with a cheering crowd: a row of magicians in dark purple robes stand in a row holding coils of rope and wooden sticks, facing a strong kind man in his thirties with a short black beard, a cream turban and an indigo robe, holding a tall wooden staff and a gentle man with a short black beard, a white turban and a green robe; a proud stern king with a short black beard, a tall blue-and-gold striped crown and a red-and-gold robe watches from a shaded platform.",
+  "scene": "A huge open festival ground under a high bright sun, packed with a cheering crowd: a row of magicians in dark purple robes stand in a row holding coils of rope and wooden sticks, facing a strong kind man in his thirties with a short black beard, a cream turban and an indigo robe, holding a tall wooden staff and a gentle man with a short black beard, a white turban and a green robe; a proud stern king with a short black beard, an ancient Nile-valley king's tall blue-and-gold striped headdress (not a European crown, no fur) and a red-and-gold robe watches from a shaded platform.",
   "who": [
    "SORC",
    "MU",
@@ -458,7 +458,7 @@
  },
  "m14-a": {
   "alt": "Pharaoh stands on his platform shouting with a clenched fist raised, his face angry, guards rushing forward below him.",
-  "scene": "a proud stern king with a short black beard, a tall blue-and-gold striped crown and a red-and-gold robe stands on his platform shouting with a clenched fist raised, his face angry, guards rushing forward below him.",
+  "scene": "a proud stern king with a short black beard, an ancient Nile-valley king's tall blue-and-gold striped headdress (not a European crown, no fur) and a red-and-gold robe stands on his platform shouting with a clenched fist raised, his face angry, guards rushing forward below him.",
   "who": [
    "PH"
   ]
@@ -472,7 +472,7 @@
  },
  "m14-c": {
   "alt": "In the throne hall, a nobleman in a fine blue-and-white robe steps out from among the ministers and speaks boldly with an open hand toward Pharaoh, who glares from the…",
-  "scene": "In a grand throne hall with painted columns and hanging lamps, a nobleman in a fine blue-and-white robe steps out from among the ministers and speaks boldly with an open hand toward a proud stern king with a short black beard, a tall blue-and-gold striped crown and a red-and-gold robe, who glares from the throne.",
+  "scene": "In a grand throne hall with painted columns and hanging lamps, a nobleman in a fine blue-and-white robe steps out from among the ministers and speaks boldly with an open hand toward a proud stern king with a short black beard, an ancient Nile-valley king's tall blue-and-gold striped headdress (not a European crown, no fur) and a red-and-gold robe, who glares from the throne.",
   "who": [
    "HALL",
    "PH"
@@ -487,7 +487,7 @@
  },
  "m14-e": {
   "alt": "Pharaoh points up at the sky, giving orders to a tall minister in a black-and-gold robe, while workers behind them stack clay bricks into the base of a huge unfinished…",
-  "scene": "a proud stern king with a short black beard, a tall blue-and-gold striped crown and a red-and-gold robe points up at the sky, giving orders to a tall minister in a black-and-gold robe, while workers behind them stack clay bricks into the base of a huge unfinished tower.",
+  "scene": "a proud stern king with a short black beard, an ancient Nile-valley king's tall blue-and-gold striped headdress (not a European crown, no fur) and a red-and-gold robe points up at the sky, giving orders to a tall minister in a black-and-gold robe, while workers behind them stack clay bricks into the base of a huge unfinished tower.",
   "who": [
    "PH"
   ]
@@ -526,7 +526,7 @@
  },
  "m15-g": {
   "alt": "Under a clear blue sky, Pharaoh turns his back and walks away up palace steps with a wave of his hand, while Musa and Harun stand below watching him go.",
-  "scene": "Under a clear blue sky, a proud stern king with a short black beard, a tall blue-and-gold striped crown and a red-and-gold robe turns his back and walks away up palace steps with a wave of his hand, while a strong kind man in his thirties with a short black beard, a cream turban and an indigo robe, holding a tall wooden staff and a gentle man with a short black beard, a white turban and a green robe stand below watching him go.",
+  "scene": "Under a clear blue sky, a proud stern king with a short black beard, an ancient Nile-valley king's tall blue-and-gold striped headdress (not a European crown, no fur) and a red-and-gold robe turns his back and walks away up palace steps with a wave of his hand, while a strong kind man in his thirties with a short black beard, a cream turban and an indigo robe, holding a tall wooden staff and a gentle man with a short black beard, a white turban and a green robe stand below watching him go.",
   "who": [
    "PH",
    "MU",
@@ -550,7 +550,7 @@
  },
  "m16-c": {
   "alt": "Sunrise over the desert: Pharaoh in a golden chariot leads the army in a long line raising a great cloud of dust.",
-  "scene": "Sunrise over the desert: a proud stern king with a short black beard, a tall blue-and-gold striped crown and a red-and-gold robe in a golden chariot leads soldiers with spears and round shields on horse-drawn chariots in a long line raising a great cloud of dust.",
+  "scene": "Sunrise over the desert: a proud stern king with a short black beard, an ancient Nile-valley king's tall blue-and-gold striped headdress (not a European crown, no fur) and a red-and-gold robe in a golden chariot leads soldiers with spears and round shields on horse-drawn chariots in a long line raising a great cloud of dust.",
   "who": [
    "PH",
    "ARMY"

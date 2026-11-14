@@ -56,7 +56,7 @@ def mime(path):
     return "image/png" if path.endswith(".png") else "image/webp" if path.endswith(".webp") else "image/jpeg"
 
 
-def draw(prompt, refs=(), aspect="1:1", tries=4):
+def draw(prompt, refs=(), aspect="1:1", tries=6):
     """One picture: returns PNG/JPEG bytes. refs are paths of pictures to show the model first."""
     parts = [{"inlineData": {"mimeType": mime(r), "data": base64.b64encode(open(r, "rb").read()).decode()}} for r in refs]
     parts.append({"text": prompt})
@@ -79,13 +79,16 @@ def draw(prompt, refs=(), aspect="1:1", tries=4):
             last = "%d %s" % (e.code, e.read().decode(errors="replace")[:400])
             if e.code in (400, 401, 403, 404):
                 break                                   # will not get better by trying again
+            if e.code == 429:                           # too many at once: Google asks us to slow down
+                time.sleep(30 * (attempt + 1))
+                continue
         except Exception as e:                          # network trouble: wait and try again
             last = str(e)
         time.sleep(5 * (attempt + 1))
     raise RuntimeError(last)
 
 
-def run(jobs, workers=3):
+def run(jobs, workers=int(os.environ.get("WORKERS", "2"))):
     """jobs: [(name, out_path, prompt, refs)]. Draws what is not drawn yet; returns the failures."""
     todo = [j for j in jobs if not os.path.exists(j[1])]
     print("%d to draw, %d already drawn" % (len(todo), len(jobs) - len(todo)), flush=True)

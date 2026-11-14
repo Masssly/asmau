@@ -1,6 +1,7 @@
 /* The story of Nana Asma'u. Every fact is from scripts/asmau/RESEARCH.md; cite = where the chapter's facts come from. */
 "use strict";
-const { chapter, s, p, q, ord, mat, srt, chg, HAD, CW } = require("./lib");
+const { chapter, s, p, q, ord, mat, srt, chg, HAD, CW, portrait } = require("./lib");
+const GIRL = portrait("girl", "GIRL"), TEACHER = portrait("jaji", "JAJI");
 
 const C_CW = "Boyd and Mack, The Collected Works of Nana Asma'u (1997): the introduction and the outline chronology";
 
@@ -58,7 +59,7 @@ s("a", "desert", "When Asma'u was about eleven years old, it was no longer safe 
 srt("pack", "desert", "What should they carry on a long walk? Something useful, or something too heavy?", ["Take it", "🎒"], ["Too heavy", "🪨"], [
   ["💧", "A pot of water", 0], ["🛏️", "A big wooden bed", 1], ["📖", "Their books", 0], ["🌾", "A bag of grain", 0], ["🚪", "The front door", 1]
 ], "Think again. Could you carry that a long way?");
-p("journey", "walk", "desert", "Walk with Asma'u to the new place.", { from: "🏡", to: "⛺", icon: "🚶🏿‍♀️", steps: 8 });
+p("journey", "walk", "desert", "Walk with Asma'u to the new place.", { from: "🏡", to: "⛺", icon: GIRL, steps: 8 });
 s("b", "camp", "The walk was long and hard. But Asma'u looked, and listened, and remembered. Many years later she wrote poems about those journeys.",
   "Evening at a simple camp of grass shelters in the savanna. {GIRL} sits by a small fire, writing on a wooden board on her knees, while families rest around her.", { mood: "longing" });
 
@@ -134,7 +135,7 @@ s("b", "egypt", "The teachers were called jaji. Each one wore a tall, special ha
 p("count", "hats", "egypt", "Give every teacher her hat. Tap each one.", { total: 6, icon: "🧕🏿", got: "👒" }, { img: "b" });
 s("c", "desert", "The teachers walked back to their villages, and taught the women there, with poems that were easy to remember.",
   "Morning on a savanna path. Three women teachers, each dressed exactly like {JAJI}, walk toward a distant village of round thatched huts, carrying bundles of pages.", { mood: "trek" });
-p("trail", "villages", "desert", "Walk with the teacher from village to village. Tap each house.", { n: 6, icon: "🛖", walker: "🧕🏿" }, { img: "c" });
+p("trail", "villages", "desert", "Walk with the teacher from village to village. Tap each house.", { n: 6, icon: "🛖", walker: TEACHER }, { img: "c" });
 s("d", "field", "Then the women in the villages taught their own children, and their friends. Learning spread like light, from one lamp to the next.",
   "A village courtyard at dusk: {JAJI} sits with {WOMEN} and their children on mats, all clapping a rhythm and reciting together; small oil lamps glow.", { mood: "triumph" });
 p("catch", "lamps", "night", "Light the lamps, one from the next! Tap each lamp.", { target: 8, icon: "🪔", into: "✨" });

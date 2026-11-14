@@ -62,7 +62,7 @@ window.STORY = [
     steps: [
       {"say":"a4-a","scene":"desert","e":"🚶🏿 🚶🏿 🌅"},
       {"play":"sort","line":"a4-pack","scene":"desert","opts":{"bins":[{"label":"Take it","icon":"🎒"},{"label":"Too heavy","icon":"🪨"}],"things":[{"icon":"💧","label":"A pot of water","bin":0},{"icon":"🛏️","label":"A big wooden bed","bin":1},{"icon":"📖","label":"Their books","bin":0},{"icon":"🌾","label":"A bag of grain","bin":0},{"icon":"🚪","label":"The front door","bin":1}],"wrong":"a4-pack-no"}},
-      {"play":"journey","line":"a4-walk","scene":"desert","opts":{"from":"🏡","to":"⛺","icon":"🚶🏿‍♀️","steps":8}},
+      {"play":"journey","line":"a4-walk","scene":"desert","opts":{"from":"🏡","to":"⛺","icon":"img:icon-girl","steps":8}},
       {"say":"a4-b","scene":"camp","e":"👧🏿 🔥 ✒️"}
     ]
   },
@@ -134,7 +134,7 @@ window.STORY = [
       {"say":"a9-b","scene":"egypt","e":"👒 ✨"},
       {"play":"count","line":"a9-hats","scene":"egypt","opts":{"total":6,"icon":"🧕🏿","got":"👒","img":"a9-b"}},
       {"say":"a9-c","scene":"desert","e":"👒 🚶🏿 🛖"},
-      {"play":"trail","line":"a9-villages","scene":"desert","opts":{"n":6,"icon":"🛖","walker":"🧕🏿","img":"a9-c"}},
+      {"play":"trail","line":"a9-villages","scene":"desert","opts":{"n":6,"icon":"🛖","walker":"img:icon-jaji","img":"a9-c"}},
       {"say":"a9-d","scene":"field","e":"🪔 👩🏿 👧🏿"},
       {"play":"catch","line":"a9-lamps","scene":"night","opts":{"target":8,"icon":"🪔","into":"✨"}},
       {"play":"choice","line":"a9-q","scene":"field","opts":{"options":[{"label":"Taught women in the villages","icon":"🛖","ok":true},{"label":"Kept the lessons to themselves","icon":"🔒","ok":false}],"wrong":"a9-q-no","img":"a9-d"}}

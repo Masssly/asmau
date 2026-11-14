@@ -27,7 +27,7 @@ chapter("m19", "⛰️", "The Mountain and the Tablets", "7:142-145", [], [
 s("a", "camp", "Allah called Musa to the mountain for thirty nights, and then ten more. Musa said to his brother Harun: take my place with my people, and do what is right.",
   "At the edge of {CAMP}, {MU} rests a hand on the shoulder of {HA} in farewell and points up toward a great rocky mountain rising behind the tents.", { mood: "trek" });
 q("q1", "camp", "Thirty nights, and ten more. How many nights is that?", ["Forty", "🌙"], ["Thirteen", "⭐"], "Count again. Thirty and ten make forty.", { img: "a" });
-p("journey", "climb", "mountain", "Climb the mountain with Musa.", { from: "⛺", to: "⛰️", icon: "🚶", steps: 8 });
+p("journey", "climb", "mountain", "Climb the mountain with Musa.", { from: "⛺", to: "⛰️", icon: "img:icon-musa", steps: 8 });
 s("b", "mountain", "On the mountain, Allah spoke to Musa. Musa said: my Lord, let me see You. Allah said: you will not see Me. But look at that mountain. If it stays in its place, then you will see Me.",
   "{MU} stands alone high on a rocky mountain ledge above the clouds, looking across a valley toward another great mountain peak, the sky glowing.", { mood: "awe" });
 s("c", "mountain", "Then Allah showed His glory to the mountain, and the mountain crumbled into dust! Musa fell down in a faint.",
@@ -122,7 +122,7 @@ s("a", "camp", "One day, someone asked Musa: who knows the most, of all the peop
   "{MU} stands on a low rock speaking to a seated crowd at {CAMP}; one man in the crowd raises a hand to ask a question.", { src: HAD, mood: "pastoral" });
 s("b", "desert", "Musa said to his young helper, Yusha: I will not stop until I reach the place where the two seas meet, even if it takes me years! They took a fish with them in a basket.",
   "{MU} and {YU} set out walking along a rocky coast path at morning; the boy carries a woven basket with a fish's tail sticking out of it.", { mood: "trek" });
-p("journey", "go", "desert", "Travel with Musa and Yusha to where the two seas meet.", { from: "⛺", to: "🌊", icon: "🚶", steps: 8 });
+p("journey", "go", "desert", "Travel with Musa and Yusha to where the two seas meet.", { from: "⛺", to: "🌊", icon: "img:icon-musa", steps: 8 });
 s("c", "sea", "They stopped to rest by a rock. And there, the fish slipped out of the basket, into the sea, and swam away! It is told that the water stood over its path like a little tunnel.",
   "By a big rock on the seashore, {MU} and {YU} lie asleep in the shade while a silver fish leaps from a tipped woven basket into the sea, leaving a clear tunnel-like trail in the water.", { src: HAD, cue: "splash" });
 p("trail", "fish", "sea", "Follow the fish along its path through the water. Tap each splash.", { n: 7, icon: "💦", walker: "🐟" });
@@ -130,7 +130,7 @@ s("d", "desert", "They walked on and on. Musa said: bring us our lunch. This jou
   "On a dusty path, {YU} looks into an empty woven basket with a shocked face and one hand on his head, while {MU} sits down tired on a stone.", { mood: "trek" });
 s("e", "desert", "Musa said: that is the very place we were looking for! So they turned around, and followed their own footsteps all the way back.",
   "{MU} points excitedly back along a sandy coast path marked with two lines of footprints; {YU} turns to follow, the sea beside them.", { mood: "triumph" });
-p("trail", "back", "desert", "Follow the footsteps back to the rock. Tap each one.", { n: 7, icon: "👣", walker: "🚶" });
+p("trail", "back", "desert", "Follow the footsteps back to the rock. Tap each one.", { n: 7, icon: "👣", walker: "img:icon-musa" });
 s("f", "sea", "And there they found a servant of Allah, to whom Allah had given mercy and special knowledge. It is told that his name was al-Khidr.",
   "By a big rock on the seashore sits {KH}, calm and smiling gently; {MU} greets him respectfully with a hand on his chest, {YU} standing behind.", { src: HAD, mood: "awe" });
 s("g0", "sea", "Musa asked: may I follow you, so that you can teach me? He said: you will not be able to be patient with me.", "=f", { mood: "pastoral" });

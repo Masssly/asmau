@@ -597,3 +597,12 @@ button { touch-action: manipulation; -webkit-tap-highlight-color: transparent; }
 .voice-link { display: block; margin: 14px auto 4px; max-width: 420px; padding: 10px 14px; border-radius: 14px; text-decoration: none;
   border: 1px dashed rgba(240,184,75,.7); background: rgba(240,184,75,.10); color: var(--cream); font-size: 14px; text-align: center; }
 .voice-link strong { color: #ffe2a3; }
+
+/* a game's own picture used as an icon: a round portrait that walks, rides or waits */
+.ico-img { display: inline-block; }
+.ico-img > img { display: block; width: 1.5em; height: 1.5em; border-radius: 50%; object-fit: cover; border: 3px solid #fff8e6;
+  box-shadow: 0 3px 10px rgba(0,0,0,.4); background: #f4e9d0; }
+.mover .ico-img > img { width: 64px; height: 64px; }
+.trail-walker.ico-img > img { width: 58px; height: 58px; }
+.marker.ico-img > img { width: 52px; height: 52px; }
+.trail-walker.flip { transform: translate(-50%, -50%) scaleX(-1); }

@@ -122,6 +122,12 @@ function chg(suffix, scene, text, states, x) {
   states.forEach((st, i) => { if (i) line(id + "-s" + i, st[1]); });
 }
 
+// A small round portrait of a person, used as the walker or rider in an activity (icon "img:icon-<key>").
+function portrait(key, who) {
+  SHOTS["icon-" + key] = { alt: WHO[who][0], scene: fill("{" + who + "}", 1), who: [who], portrait: true };
+  return "img:icon-" + key;
+}
+
 // A backdrop for activities in a scene that have no picture of their own.
 function backdrop(scene, desc) { SHOTS["bg-" + scene] = { alt: desc, scene: desc, who: [] }; }
 
@@ -130,4 +136,4 @@ function backdrop(scene, desc) { SHOTS["bg-" + scene] = { alt: desc, scene: desc
 // (No reference for the baby: a standing toddler would teach the model the wrong baby.)
 const REFS = ["GIRL", "ASMA", "SHEHU", "GIDADO", "JAJI"];
 
-module.exports = { REFS, STORY, LINES, SHOTS, MOODS, WHO, HAD, CW, chapter, s, p, q, ord, mat, srt, chg, line, backdrop };
+module.exports = { REFS, STORY, LINES, SHOTS, MOODS, WHO, HAD, CW, chapter, s, p, q, ord, mat, srt, chg, line, backdrop, portrait };

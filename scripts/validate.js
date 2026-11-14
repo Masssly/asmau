@@ -193,13 +193,16 @@ for (const slug of slugs) {
     const imgDir = dir + "/assets/img";
     const files = fs.existsSync(path.join(ROOT, imgDir)) ? fs.readdirSync(path.join(ROOT, imgDir)) : [];
     const bgs = new Set();
+    // pictures used as icons ("img:<key>") anywhere in the story's activities
+    const imgIcons = new Set((JSON.stringify(story).match(/"img:[A-Za-z0-9_-]+"/g) || []).map((s) => s.slice(5, -1)));
+    for (const k of imgIcons) if (!art[k]) fail(dir + ": an activity uses the picture 'img:" + k + "', which is not in art.js");
     story.forEach((ch) => ch.steps.forEach((st) => {
       if (st.play) { bgs.add("bg-" + st.scene); if (st.opts && st.opts.bg) bgs.add(st.opts.bg); if (st.opts && st.opts.img) bgs.add(st.opts.img); }
     }));
     for (const [key, alt] of Object.entries(art)) {
       if (!files.includes(key + ".webp")) fail(imgDir + "/" + key + ".webp: listed in art.js but missing");
       if (typeof alt !== "string" || !alt.trim()) fail(dir + "/art.js: '" + key + "' needs a description (it is the picture's alt text)");
-      const known = ids.has(key) || bgs.has(key) || (key.startsWith("p-") && people.has(key.slice(2)));
+      const known = ids.has(key) || bgs.has(key) || (key.startsWith("p-") && people.has(key.slice(2))) || imgIcons.has(key);
       if (!known) fail(dir + "/art.js: '" + key + "' is not a line id, a backdrop an activity uses, or a person");
     }
     for (const [pic, where] of puzzles) if (!art[pic]) fail(dir + ": " + where + " is a puzzle of '" + pic + "', which is not a picture in art.js");

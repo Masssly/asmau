@@ -10,7 +10,7 @@ s("a", "night", "When his years of work were done, Musa set off on a journey wit
   "A cold starry night in rocky desert mountains: {MU} stands beside a small tent and a few sheep with his wife in a purple headscarf, pointing at a tiny bright fire glowing far off on a dark mountainside.");
 s("b", "night", "He said to his family: wait here. I can see a fire. Maybe I can bring you a burning stick to warm you, or find someone there to show us the way.", "=a");
 p("seek", "seek", "night", "It is so dark. Slide your finger around to look, and find the fire.", { icon: "🔥", r: 20 });
-p("journey", "climb", "night", "Walk with Musa up to the fire.", { from: "⛺", to: "🔥", icon: "🚶", steps: 7 });
+p("journey", "climb", "night", "Walk with Musa up to the fire.", { from: "⛺", to: "🔥", icon: "img:icon-musa", steps: 7 });
 s("c", "fire", "When he came close, a voice called out: Musa! I am your Lord. Take off your sandals. You are in the holy valley of Tuwa.",
   "Night in a rocky valley: a green tree glows with brilliant golden fire-like light that does not burn its leaves; {MU} stands before it shielding his eyes in awe, his sandals still on his feet.", { mood: "awe" });
 p("count", "sandals", "fire", "Help Musa take off his sandals. Tap each one.", { total: 2, icon: "👡", got: "✨" }, { img: "c" });
@@ -168,7 +168,7 @@ s("a", "night", "At last, Allah told Musa: leave by night, with My servants.",
 p("count", "wake", "night", "Quietly wake the families. Tap each house to light its lamp.", { total: 8, icon: "🏠", got: "🏮" });
 s("b", "night", "Quietly, quietly, in the dark, the families took what they could carry, and followed Musa out of Egypt.",
   "A long line of {FOLK} walks out of a sleeping river city under a starry sky, carrying bundles and children, some leading donkeys and goats; {MU} leads at the front with his staff.", { mood: "trek" });
-p("journey", "leave", "night", "Lead the people out of Egypt.", { from: "🏘️", to: "🌊", icon: "🚶", steps: 8 });
+p("journey", "leave", "night", "Lead the people out of Egypt.", { from: "🏘️", to: "🌊", icon: "img:icon-musa", steps: 8 });
 s("c", "dawn", "When Pharaoh found out, he was furious. He gathered a huge army and chased after them. At sunrise, he caught up.",
   "Sunrise over the desert: {PH} in a golden chariot leads {ARMY} in a long line raising a great cloud of dust.", { mood: "dread", cue: "thunder" });
 s("d", "sea", "In front of the people was the sea. Behind them was Pharaoh's army. The people cried: we are caught!",
@@ -192,7 +192,7 @@ s("c", "sea", "It is told that there were twelve paths, one for each of the twel
   "Families walk along a dry sandy path between two high walls of clear blue water; through arched openings in the water wall they wave to other families walking on a neighbouring path; fish swim in the walls.", { src: TAF, mood: "triumph" });
 p("wipe", "dry", "sea", "Help the wind dry the path. Rub away the water.", { cover: "water" }, { src: TAF, img: "b" });
 p("count", "paths", "sea", "Count the twelve paths. Tap each one.", { total: 12, icon: "🌊", got: "👣" }, { src: TAF });
-p("journey", "cross", "sea", "Walk the people across, between the walls of water.", { from: "🏖️", to: "🌅", icon: "🚶", steps: 8 }, { img: "b" });
+p("journey", "cross", "sea", "Walk the people across, between the walls of water.", { from: "🏖️", to: "🌅", icon: "img:icon-musa", steps: 8 }, { img: "b" });
 s("d", "sea", "Musa and all his people crossed safely to the other side.",
   "{FOLK} climb out onto the far shore, hugging each other with relief and joy, the split sea behind them; {MU} and {HA} help the last ones up.", { mood: "triumph" });
 s("e", "sea", "Pharaoh and his army rushed in after them. Then the sea came crashing back together, and the army was gone.",

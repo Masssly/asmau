@@ -68,7 +68,7 @@ window.STORY = [
     steps: [
       {"say":"m4-a","scene":"river","e":"🧕🏿 💭"},
       {"say":"m4-b","scene":"river","e":"🧕🏿 👣 CHEST"},
-      {"play":"trail","line":"m4-follow","scene":"river","opts":{"n":7,"icon":"👣","walker":"🧕🏿"}},
+      {"play":"trail","line":"m4-follow","scene":"river","opts":{"n":7,"icon":"👣","walker":"img:icon-sister"}},
       {"say":"m4-c","scene":"palace","cue":"cry","e":"👶🏿 😭 🍼"},
       {"play":"count","line":"m4-nurses","scene":"palace","opts":{"total":5,"icon":"🧕🏿","got":"🙅🏿","img":"m4-c"}},
       {"say":"m4-d","scene":"palace","e":"🧕🏿 💬 👸🏿"},
@@ -109,7 +109,7 @@ window.STORY = [
       {"play":"choice","line":"m6-q","scene":"city","opts":{"options":[{"label":"He pretended nothing happened","icon":"🙈","ok":false},{"label":"He asked Allah to forgive him","icon":"🤲🏿","ok":true}],"wrong":"m6-q-no","img":"m6-c"}},
       {"say":"m6-d","scene":"city","e":"🏃🏿 💬 🧑🏿"},
       {"say":"m6-e","scene":"desert","e":"🏃🏿 🏜️"},
-      {"play":"journey","line":"m6-flee","scene":"desert","opts":{"from":"🏙️","to":"🏜️","icon":"🚶🏿","steps":7}}
+      {"play":"journey","line":"m6-flee","scene":"desert","opts":{"from":"🏙️","to":"🏜️","icon":"img:icon-young","steps":7}}
     ]
   },
   {
@@ -121,7 +121,7 @@ window.STORY = [
     ],
     steps: [
       {"say":"m7-a","scene":"desert","e":"🚶🏿 🏜️"},
-      {"play":"trail","line":"m7-walk","scene":"desert","opts":{"n":8,"icon":"👣","walker":"🚶🏿"}},
+      {"play":"trail","line":"m7-walk","scene":"desert","opts":{"n":8,"icon":"👣","walker":"img:icon-young"}},
       {"say":"m7-b","scene":"well","e":"🐑 🧔🏿 🧕🏿"},
       {"say":"m7-c","scene":"well","e":"🧑🏿 💬 🧕🏿"},
       {"say":"m7-d","scene":"well","src":"From Ibn Kathir's commentary","e":"🧑🏿 ROCK"},
@@ -141,7 +141,7 @@ window.STORY = [
     steps: [
       {"say":"m8-a","scene":"well","e":"🧕🏿 💬 🧑🏿"},
       {"say":"m8-b","scene":"desert","src":"From Ibn Kathir's commentary","e":"🚶🏿 ROCK 🧕🏿"},
-      {"play":"trail","line":"m8-pebble","scene":"desert","opts":{"n":6,"icon":"ROCK","walker":"🚶🏿"},"src":"From Ibn Kathir's commentary"},
+      {"play":"trail","line":"m8-pebble","scene":"desert","opts":{"n":6,"icon":"ROCK","walker":"img:icon-young"},"src":"From Ibn Kathir's commentary"},
       {"say":"m8-c","scene":"field","e":"👴🏿 🧑🏿 🍲"},
       {"say":"m8-d","scene":"field","pic":"m8-c","e":"🧕🏿 💬 👴🏿"},
       {"play":"choice","line":"m8-q","scene":"field","opts":{"options":[{"label":"Loud and bossy","icon":"📢","ok":false},{"label":"Strong, and can be trusted","icon":"💪🏿","ok":true}],"wrong":"m8-q-no","img":"m8-c"}},
@@ -161,7 +161,7 @@ window.STORY = [
       {"say":"m9-a","scene":"night","e":"⛺ 🧔🏿 🔥"},
       {"say":"m9-b","scene":"night","pic":"m9-a","e":"🧔🏿 👉🏿 🔥"},
       {"play":"seek","line":"m9-seek","scene":"night","opts":{"icon":"🔥","r":20}},
-      {"play":"journey","line":"m9-climb","scene":"night","opts":{"from":"⛺","to":"🔥","icon":"🚶🏿","steps":7}},
+      {"play":"journey","line":"m9-climb","scene":"night","opts":{"from":"⛺","to":"🔥","icon":"img:icon-musa","steps":7}},
       {"say":"m9-c","scene":"fire","e":"🌳 🔥 🧔🏿"},
       {"play":"count","line":"m9-sandals","scene":"fire","opts":{"total":2,"icon":"👡","got":"✨","img":"m9-c"}},
       {"say":"m9-d","scene":"fire","e":"🧔🏿 ✨"},
@@ -294,7 +294,7 @@ window.STORY = [
       {"say":"m16-a","scene":"night","e":"🧔🏿 🌙"},
       {"play":"count","line":"m16-wake","scene":"night","opts":{"total":8,"icon":"🏠","got":"🏮"}},
       {"say":"m16-b","scene":"night","e":"🚶🏿 🚶🏿 🌙"},
-      {"play":"journey","line":"m16-leave","scene":"night","opts":{"from":"🏘️","to":"🌊","icon":"🚶🏿","steps":8}},
+      {"play":"journey","line":"m16-leave","scene":"night","opts":{"from":"🏘️","to":"🌊","icon":"img:icon-musa","steps":8}},
       {"say":"m16-c","scene":"dawn","cue":"thunder","e":"👑 🐎 🐎"},
       {"say":"m16-d","scene":"sea","e":"🌊 😨 🐎"},
       {"say":"m16-e","scene":"sea","e":"🧔🏿 STAFF 🌊"},
@@ -316,7 +316,7 @@ window.STORY = [
       {"say":"m17-c","scene":"sea","src":"From Ibn Kathir's commentary","e":"🌊 👣 🌊"},
       {"play":"wipe","line":"m17-dry","scene":"sea","opts":{"cover":"water","img":"m17-b"},"src":"From Ibn Kathir's commentary"},
       {"play":"count","line":"m17-paths","scene":"sea","opts":{"total":12,"icon":"🌊","got":"👣"},"src":"From Ibn Kathir's commentary"},
-      {"play":"journey","line":"m17-cross","scene":"sea","opts":{"from":"🏖️","to":"🌅","icon":"🚶🏿","steps":8,"img":"m17-b"}},
+      {"play":"journey","line":"m17-cross","scene":"sea","opts":{"from":"🏖️","to":"🌅","icon":"img:icon-musa","steps":8,"img":"m17-b"}},
       {"say":"m17-d","scene":"sea","e":"🚶🏿 🚶🏿 🙌🏿"},
       {"say":"m17-e","scene":"sea","cue":"roar","e":"🌊 🌊 🌊"},
       {"say":"m17-f0","scene":"sea","pic":"m17-e","e":"👑 🌊"},
@@ -353,7 +353,7 @@ window.STORY = [
     steps: [
       {"say":"m19-a","scene":"camp","e":"🧔🏿 🤝 🧔🏿"},
       {"play":"choice","line":"m19-q1","scene":"camp","opts":{"options":[{"label":"Forty","icon":"🌙","ok":true},{"label":"Thirteen","icon":"⭐","ok":false}],"wrong":"m19-q1-no","img":"m19-a"}},
-      {"play":"journey","line":"m19-climb","scene":"mountain","opts":{"from":"⛺","to":"⛰️","icon":"🚶🏿","steps":8}},
+      {"play":"journey","line":"m19-climb","scene":"mountain","opts":{"from":"⛺","to":"⛰️","icon":"img:icon-musa","steps":8}},
       {"say":"m19-b","scene":"mountain","e":"🧔🏿 ⛰️"},
       {"say":"m19-c","scene":"mountain","cue":"thunder","e":"⛰️ 💨"},
       {"play":"choice","line":"m19-q2","scene":"mountain","opts":{"options":[{"label":"It grew taller","icon":"⛰️","ok":false},{"label":"It crumbled into dust","icon":"💨","ok":true}],"wrong":"m19-q2-no","img":"m19-c"}},
@@ -427,12 +427,12 @@ window.STORY = [
     steps: [
       {"say":"m23-a","scene":"camp","src":"From a hadith in al-Bukhari","e":"🧔🏿 💬"},
       {"say":"m23-b","scene":"desert","e":"🧔🏿 👦🏿 🐟"},
-      {"play":"journey","line":"m23-go","scene":"desert","opts":{"from":"⛺","to":"🌊","icon":"🚶🏿","steps":8}},
+      {"play":"journey","line":"m23-go","scene":"desert","opts":{"from":"⛺","to":"🌊","icon":"img:icon-musa","steps":8}},
       {"say":"m23-c","scene":"sea","src":"From a hadith in al-Bukhari","cue":"splash","e":"🐟 💦 🌊"},
       {"play":"trail","line":"m23-fish","scene":"sea","opts":{"n":7,"icon":"💦","walker":"🐟"}},
       {"say":"m23-d","scene":"desert","e":"👦🏿 😮 🧺"},
       {"say":"m23-e","scene":"desert","e":"🧔🏿 👉🏿 👣"},
-      {"play":"trail","line":"m23-back","scene":"desert","opts":{"n":7,"icon":"👣","walker":"🚶🏿"}},
+      {"play":"trail","line":"m23-back","scene":"desert","opts":{"n":7,"icon":"👣","walker":"img:icon-musa"}},
       {"say":"m23-f","scene":"sea","src":"From a hadith in al-Bukhari","e":"👴🏿 ✨"},
       {"say":"m23-g0","scene":"sea","pic":"m23-f","e":"🧔🏿 💬 👴🏿"},
       {"say":"m23-g","scene":"sea","e":"🧔🏿 🤝 👴🏿"},

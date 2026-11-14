@@ -64,6 +64,30 @@
   "scene": "A golden sunrise over a calm sea and a plain sandy desert shore, with low brown hills behind.",
   "who": []
  },
+ "icon-young": {
+  "alt": "young Musa",
+  "scene": "a strong kind young man with short black hair and no beard, in a white tunic with a blue sash",
+  "who": [
+   "MY"
+  ],
+  "portrait": true
+ },
+ "icon-musa": {
+  "alt": "Musa",
+  "scene": "a strong kind man in his thirties with a short black beard, a cream turban and an indigo robe, holding a tall wooden staff",
+  "who": [
+   "MU"
+  ],
+  "portrait": true
+ },
+ "icon-sister": {
+  "alt": "Musa's sister",
+  "scene": "a clever girl of ten in a yellow headscarf draped over her head and shoulders that fully covers her hair, and a long-sleeved green dress",
+  "who": [
+   "SIS"
+  ],
+  "portrait": true
+ },
  "m1-a": {
   "alt": "Bright day. Pharaoh stands high on a balcony of the palace, chin raised, arms folded, looking down over an ancient river city of mud-brick houses and date palms.",
   "scene": "Bright day. a proud stern king with a short black beard, an ancient Nile-valley king's tall blue-and-gold striped headdress (not a European crown, no fur) and a red-and-gold robe stands high on a balcony of a grand sandstone palace with painted columns, chin raised, arms folded, looking down over an ancient river city of mud-brick houses and date palms.",

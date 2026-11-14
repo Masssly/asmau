@@ -23,8 +23,8 @@ STYLE = ("Polished stylised 3D animated family-film still, warm cinematic lighti
 BACKDROP = ("Polished stylised 3D animated family-film background painting, warm cinematic lighting, rich detail, square, "
             "filling the whole frame edge to edge with no border. A place, with no main characters and nobody in the foreground. ")
 END = " No text, no writing, no letters, no logos, no watermark."
-SIZE = {"bg-": 1024, "": 1024}
-QUALITY = {"bg-": 66, "": 70}
+SIZE = {"bg-": 1024, "icon-": 256, "": 1024}
+QUALITY = {"bg-": 66, "icon-": 80, "": 70}
 HEAD = """/*
   The pictures the Nana Asma'u game has. Written by scripts/asmau-art/build.py: do not
   edit by hand. Each key is a file in assets/img/<key>.webp and its value is the
@@ -35,11 +35,11 @@ HEAD = """/*
 
 
 def kind(key):
-    return "bg-" if key.startswith("bg-") else ""
+    return "bg-" if key.startswith("bg-") else ("icon-" if key.startswith("icon-") else "")
 
 
 def prompt(key):
-    text = (BACKDROP if kind(key) else STYLE) + SHOTS[key]["scene"] + END
+    text = (BACKDROP if kind(key) == "bg-" else STYLE) + SHOTS[key]["scene"] + END
     if len(text) > 1000:
         raise SystemExit("%s: prompt is %d characters; the generator allows 1000" % (key, len(text)))
     return text

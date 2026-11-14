@@ -1,6 +1,7 @@
 /* Chapters 1 to 8: the cruel king, the river, the palace, the mistake, Madyan. */
 "use strict";
-const { chapter, s, p, q, ord, mat, srt, chg, TAF } = require("./lib");
+const { chapter, s, p, q, ord, mat, srt, chg, TAF, portrait } = require("./lib");
+const YOUNG = portrait("young", "MY"), MUSA = portrait("musa", "MU"), SISTER = portrait("sister", "SIS");
 
 chapter("m1", "👑", "A Proud King", "28:3-6", [], [
   "Verses 28:3–6. Pharaoh raised himself high in the land and split its people into groups. He oppressed one group: the verse says he slaughtered their sons and let their women live. The game says only that their baby boys were to be taken away.",
@@ -61,7 +62,7 @@ s("a", "river", "At home, Musa's mother could think of nothing but her baby. Her
   "Evening inside the small riverside home: {MUM} sits beside an empty woven cradle, one hand on her heart, eyes closed in quiet prayer; a single oil lamp glows.", { mood: "longing" });
 s("b", "river", "She said to Musa's big sister: follow him. So his sister watched from far away, and nobody noticed her.",
   "{SIS} walks along the reedy bank of {NILE}, peeking through tall reeds at a small wooden chest floating far off on the water; she pretends to carry a water jar.");
-p("trail", "follow", "river", "Follow the chest quietly along the bank. Tap each footprint.", { n: 7, icon: "👣", walker: "🧕" });
+p("trail", "follow", "river", "Follow the chest quietly along the bank. Tap each footprint.", { n: 7, icon: "👣", walker: SISTER });
 s("c", "palace", "In the palace, baby Musa was hungry. He cried and cried. Nurse after nurse came to feed him, but he would not drink from any of them.",
   "In a palace room, {ASIYA} rocks a crying {BABY} while a line of nurses, all Black African women with deep dark brown skin, in plain headscarves wait and shrug helplessly.", { cue: "cry" });
 p("count", "nurses", "palace", "Try every nurse. Tap each one. Baby Musa says no, no, no!", { total: 5, icon: "🧕", got: "🙅" }, { img: "c" });
@@ -112,7 +113,7 @@ s("d", "city", "Soon the whole city knew what had happened. Then a man came runn
   "A man in a plain tunic runs up breathless to {MY} in a narrow city street and points urgently toward the city gate.", { mood: "dread" });
 s("e", "desert", "So Musa left the city, afraid, looking over his shoulder. He prayed: my Lord, save me from the people who do wrong.",
   "{MY} hurries out through a great mud-brick city gate into open desert at dusk, glancing back over his shoulder.", { mood: "dread" });
-p("journey", "flee", "desert", "Help Musa slip away from the city.", { from: "🏙️", to: "🏜️", icon: "🚶", steps: 7 });
+p("journey", "flee", "desert", "Help Musa slip away from the city.", { from: "🏙️", to: "🏜️", icon: YOUNG, steps: 7 });
 
 chapter("m7", "🐑", "The Well of Madyan", "28:22-24", ["28:26"], [
   "Verses 28:22–24. Musa turned towards Madyan hoping his Lord would guide him. At its water he found men watering flocks and two women holding theirs back; they could not water until the shepherds left, and their father was very old. He watered for them, withdrew to the shade and prayed: 'My Lord, I am in dire need of whatever good You send me.'",
@@ -121,7 +122,7 @@ chapter("m7", "🐑", "The Well of Madyan", "28:22-24", ["28:26"], [
 ]);
 s("a", "desert", "Musa set off towards a land called Madyan. It was a long, long way. He said: I hope my Lord will guide me to the right way.",
   "{MY} walks alone across a wide desert of dunes and rocks under a hot sun, small against the huge landscape, his tunic dusty.", { mood: "trek" });
-p("trail", "walk", "desert", "Walk with Musa across the desert. Tap each footprint.", { n: 8, icon: "👣", walker: "🚶" });
+p("trail", "walk", "desert", "Walk with Musa across the desert. Tap each footprint.", { n: 8, icon: "👣", walker: YOUNG });
 s("b", "well", "At last he came to the water of Madyan. A crowd of shepherds were watering their sheep. And standing back, away from the crowd, were two young women, holding their sheep back.",
   "A desert well ringed with stones under acacia trees: a noisy crowd of shepherd men with many sheep at the well, and off to one side {DAU} wait patiently, holding back a small flock.");
 s("c", "well", "Musa asked: what is the matter? They said: we cannot water our sheep until the shepherds have gone. And our father is a very old man.",
@@ -143,7 +144,7 @@ s("a", "well", "The two sisters went home and told their father what had happene
   "A modest young woman in a purple headscarf stands shyly at a distance, eyes lowered, speaking to {MY} who rises from the shade of an acacia tree by the well.");
 s("b", "desert", "On the way, Musa walked in front. It is told that he asked her to walk behind him, and to throw a little pebble to show him which way to turn.",
   "{MY} walks ahead on a stony desert path while, well behind him, a modest young woman in a purple headscarf tosses a small pebble to one side of the path.", { src: TAF, mood: "pastoral" });
-p("trail", "pebble", "desert", "Show Musa the way. Tap where each pebble lands.", { n: 6, icon: "ROCK", walker: "🚶" }, { src: TAF });
+p("trail", "pebble", "desert", "Show Musa the way. Tap where each pebble lands.", { n: 6, icon: "ROCK", walker: YOUNG }, { src: TAF });
 s("c", "field", "Musa told the old man his whole story. The old man said: do not be afraid. You are safe now.",
   "Inside a simple shepherd's home with woven rugs, {ELD} sits and listens warmly, one hand raised in reassurance, as {MY} sits before him telling his story over a shared bowl of food.");
 s("d", "field", "One daughter said: father, hire him! The best person to hire is one who is strong, and can be trusted.", "=c");

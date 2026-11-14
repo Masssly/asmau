@@ -185,10 +185,22 @@
 
   // An icon is an emoji, or the name of a drawn piece (STAFF, ROCK, CHEST ...): older tablets
   // have no emoji for those, so they are drawn.
+  // "img:<key>" is one of the game's own pictures (a round portrait of a person, say)
   function ico(n, icon) {
+    n.classList.remove("ico-svg", "ico-img");
     if (SVG[icon]) { n.innerHTML = SVG[icon]; n.classList.add("ico-svg"); }
-    else { n.textContent = icon; n.classList.remove("ico-svg"); }
+    else if (typeof icon === "string" && icon.indexOf("img:") === 0) {
+      n.innerHTML = '<img src="assets/img/' + icon.slice(4) + '.webp" alt="" draggable="false">';
+      n.classList.add("ico-img");
+    }
+    else { n.textContent = icon; }
     return n;
+  }
+  // Emoji of people and animals on the move face left on most phones, but every path in the
+  // game runs left to right: turned round, they walk forwards.
+  var FACES_LEFT = ["🚶", "🏃", "🐪", "🐫", "🐟", "🐑", "🐐", "🐄", "🐂", "🐎", "🦗"];
+  function facesLeft(icon) {
+    return typeof icon === "string" && FACES_LEFT.some(function (e) { return icon.indexOf(e) === 0; });
   }
   function mkIco(tag, cls, icon) { return ico(mk(tag, cls), icon); }
 
@@ -529,7 +541,7 @@
 
     var mover = mk("button", "mover fresh");
     mover.setAttribute("aria-label", "Drag or tap to move forward");
-    mover.appendChild(mkIco("span", opts.flip ? "flip" : "", opts.icon));
+    mover.appendChild(mkIco("span", (opts.flip || facesLeft(opts.icon)) ? "flip" : "", opts.icon));
     if (opts.rider) {
       var rider = mk("span", "rider");
       rider.innerHTML = People.svg(HERO, { expr: "happy" });
@@ -1212,6 +1224,7 @@
   ACT.trail = function (opts, done) {
     var n = opts.n || 7, at = 0, spots = [];
     var walker = mkIco("div", "trail-walker", opts.walker || "🚶");
+    if (facesLeft(opts.walker || "🚶")) walker.classList.add("flip");
     function pos(i) {
       var f = i / (n - 1);
       if (opts.round) { var a = f * Math.PI * 1.75 + Math.PI; return [50 + 34 * Math.cos(a), 54 + 30 * Math.sin(a)]; }

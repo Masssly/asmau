@@ -4,8 +4,11 @@
   A round shows a few things. The child taps them one by one; each tap lights,
   pops, picks or feeds one thing, says the next number and shows it as a big
   numeral. When all are counted the game says "Mashallah!" and moves on by
-  itself (or with the one big button). In "count to 10", every third round
-  asks "How many?" with two or three answers.
+  itself (or with the one big button). There are four levels: count to 5, 10,
+  15 or 20. From "count to 10" up, every third round asks "How many?" with two
+  or three answers (always of ten things or fewer, so they can be counted by eye).
+  With more than ten things on the screen they are drawn smaller, so the two
+  higher levels are for older fingers.
 
   Rules this file keeps:
   - one thing is counted once, however many fingers land and however fast
@@ -21,8 +24,18 @@
   var GAME = "count-the-crescents";
   var narr = window.AsmauNarration, music = window.AsmauMusic;
 
-  var WORDS = ["", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten"];
-  var AR_WORDS = ["", "وَاحِد", "اِثْنَان", "ثَلَاثَة", "أَرْبَعَة", "خَمْسَة", "سِتَّة", "سَبْعَة", "ثَمَانِيَة", "تِسْعَة", "عَشَرَة"];
+  var WORDS = ["", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten",
+    "Eleven", "Twelve", "Thirteen", "Fourteen", "Fifteen", "Sixteen", "Seventeen", "Eighteen", "Nineteen", "Twenty"];
+  var AR_WORDS = ["", "وَاحِد", "اِثْنَان", "ثَلَاثَة", "أَرْبَعَة", "خَمْسَة", "سِتَّة", "سَبْعَة", "ثَمَانِيَة", "تِسْعَة", "عَشَرَة",
+    "أَحَدَ عَشَرَ", "اِثْنَا عَشَرَ", "ثَلَاثَةَ عَشَرَ", "أَرْبَعَةَ عَشَرَ", "خَمْسَةَ عَشَرَ", "سِتَّةَ عَشَرَ", "سَبْعَةَ عَشَرَ", "ثَمَانِيَةَ عَشَرَ", "تِسْعَةَ عَشَرَ", "عِشْرُونَ"];
+  var TOP = 20;        // the most things a round can show
+  // how each level chooses how many: the first rounds in order, then anything in its range
+  var LEVELS = {
+    5:  { first: [2, 3, 3, 4, 5], any: function () { return pick([1, 2, 3, 3, 4, 4, 5, 5, 5]); } },
+    10: { first: [3, 5, 6, 8, 10, 7], any: function () { return rand(4, 10); } },
+    15: { first: [6, 9, 11, 13, 15, 12], any: function () { return rand(8, 15); } },
+    20: { first: [8, 12, 16, 20, 14, 18], any: function () { return rand(11, 20); } }
+  };
   var AR_DIGITS = ["٠", "١", "٢", "٣", "٤", "٥", "٦", "٧", "٨", "٩"];
   // every spoken line, by its id in narration.json
   var LINES = {
@@ -39,7 +52,7 @@
     "well-done": "Well done!",
     "counted-all": "You counted them all!"
   };
-  for (var w = 1; w <= 10; w++) { LINES["count-" + w] = WORDS[w]; LINES["ar-" + w] = AR_WORDS[w]; }
+  for (var w = 1; w <= TOP; w++) { LINES["count-" + w] = WORDS[w]; LINES["ar-" + w] = AR_WORDS[w]; }
   var PRAISE = ["mashallah", "well-done", "mashallah", "counted-all"];
 
   function $(id) { return document.getElementById(id); }
@@ -273,10 +286,11 @@
     return state.lastAct;
   }
   function nextTarget(quiz) {
-    var seq = quiz ? [3, 2, 4, 5] : state.level === 10 ? [3, 5, 6, 8, 10, 7] : [2, 3, 3, 4, 5];
+    var lvl = LEVELS[state.level] || LEVELS[5];
+    var seq = quiz ? [3, 2, 4, 5] : lvl.first;
     var at = quiz ? state.quizzes : state.counts, n = at < seq.length ? seq[at] : 0, tries = 0;
     while (!n || (at >= seq.length && n === state.lastTarget && tries++ < 8)) {
-      n = quiz ? rand(3, 10) : state.level === 10 ? rand(4, 10) : pick([1, 2, 3, 3, 4, 4, 5, 5, 5]);
+      n = quiz ? rand(3, 10) : lvl.any();
     }
     if (quiz) state.quizzes += 1; else state.counts += 1;
     state.lastTarget = n;
@@ -300,7 +314,7 @@
     state.token += 1;
     state.hintToken += 1;
     state.round += 1;
-    state.quiz = forced ? !!forced.quiz : state.level === 10 && state.round % 3 === 0;
+    state.quiz = forced ? !!forced.quiz : state.level >= 10 && state.round % 3 === 0;
     if (forced) {
       state.act = forced.act;
     } else if (state.quiz) {
@@ -356,6 +370,7 @@
     var d = "";
     for (var k = 0; k < state.target; k++) d += '<i class="dot"></i>';
     dots.innerHTML = d;
+    dots.classList.toggle("many", state.target > 10);
 
     layout();
     state.guardUntil = now() + 400;             // a hand already hammering the screen does not eat the new round
@@ -390,7 +405,8 @@
     var act = currentAct(), z = freeZone(W, H, wide);
     var cap = Math.max(132, Math.min(W, H) * 0.26) * (state.items.length <= 3 ? 1.25 : 1);   // a few things can be bigger
     state.zone = z;
-    if (act.ring && !state.quiz) ringLayout(z, cap); else gridLayout(z, cap, act);
+    // more than ten beads will not fit on one string: they go in rows like everything else
+    if (act.ring && !state.quiz && state.items.length <= 10) ringLayout(z, cap); else gridLayout(z, cap, act);
   }
   function gridLayout(z, cap, act) {
     var items = state.items, n = items.length, w = z.r - z.l, h = z.b - z.t, best = null, c;
@@ -398,7 +414,9 @@
       var rows = Math.ceil(n / c), s = Math.min(w / c, h / rows);
       if (!best || s > best.s + 0.5) best = { c: c, r: rows, s: s };
     }
-    var size = Math.max(72, Math.min(best.s * 0.8, cap));
+    // up to ten things are never smaller than 72px; more than ten may be, but never so big that two touch
+    var size = Math.max(n > 10 ? 44 : 72, Math.min(best.s * 0.8, cap));
+    if (n > 10) size = Math.min(size, best.s * 0.92);
     var cw = Math.min(w / best.c, size * 1.45), ch = Math.min(h / best.r, size * 1.45);
     var top = z.t + (h - ch * best.r) / 2, rowTops = [];
     for (var i = 0; i < n; i++) {
@@ -761,13 +779,13 @@
 
   /* ---------- for parents ---------- */
   var SWITCHES = { swVoice: "voice", swSfx: "sfx", swMusic: "music", swArabic: "arabic" };
+  var SEGS = { segLittle: 5, segBig: 10, seg15: 15, seg20: 20 };
   function applySettings() {
     music.setMusic(settings.music);
     music.setSfx(settings.sfx);
     body.classList.toggle("no-arabic", !settings.arabic);
     Object.keys(SWITCHES).forEach(function (id) { $(id).setAttribute("aria-checked", settings[SWITCHES[id]] ? "true" : "false"); });
-    $("segLittle").setAttribute("aria-pressed", state.level === 5 ? "true" : "false");
-    $("segBig").setAttribute("aria-pressed", state.level === 10 ? "true" : "false");
+    Object.keys(SEGS).forEach(function (id) { $(id).setAttribute("aria-pressed", state.level === SEGS[id] ? "true" : "false"); });
   }
   Object.keys(SWITCHES).forEach(function (id) {
     $(id).addEventListener("click", function () {
@@ -778,8 +796,7 @@
       if (key === "voice" && !settings.voice) { narr.stop(); music.duck(false); }
     });
   });
-  $("segLittle").addEventListener("click", function () { state.level = 5; applySettings(); });
-  $("segBig").addEventListener("click", function () { state.level = 10; applySettings(); });
+  Object.keys(SEGS).forEach(function (id) { $(id).addEventListener("click", function () { state.level = SEGS[id]; applySettings(); }); });
   function openParents() {
     narr.stop();
     music.duck(false);
@@ -812,6 +829,8 @@
   }
   $("startLittle").addEventListener("click", function () { startGame(5); });
   $("startBig").addEventListener("click", function () { startGame(10); });
+  $("start15").addEventListener("click", function () { startGame(15); });
+  $("start20").addEventListener("click", function () { startGame(20); });
 
   /* ---------- keeping the page still ---------- */
   function inSheet(e) { return !!closest(e.target, ".sheet"); }
@@ -855,8 +874,8 @@
     questions: Object.keys(QUIZ),
     // jump straight to one activity with n things (a question when quiz is true)
     show: function (act, n, quiz) {
-      if (!(quiz ? QUIZ : ACTS)[act] || !(n >= 1 && n <= 10)) return false;
-      if (state.screen !== "play") startGame(n > 5 ? 10 : 5);
+      if (!(quiz ? QUIZ : ACTS)[act] || !(n >= 1 && n <= (quiz ? 10 : TOP))) return false;
+      if (state.screen !== "play") startGame(n > 15 ? 20 : n > 10 ? 15 : n > 5 ? 10 : 5);
       startRound({ act: act, n: n, quiz: !!quiz });
       return true;
     },

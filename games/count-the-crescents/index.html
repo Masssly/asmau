@@ -41,7 +41,7 @@
   </header>
   <div class="tip" id="tip" role="status" hidden>Press and hold</div>
 
-  <!-- the first screen: two giant buttons, either one starts the game -->
+  <!-- the first screen: two giant buttons for the littlest, two smaller ones for bigger children; any one starts the game -->
   <div class="start" id="start">
     <div class="start-sky" id="startSky" aria-hidden="true"></div>
     <div class="start-hero" id="startHero" aria-hidden="true"></div>
@@ -58,8 +58,16 @@
         <span class="level-pips" data-pips="10"></span>
         <span class="level-cap">1 to 10</span>
       </button>
+      <button class="level level-more level-15" id="start15" type="button" aria-label="Play: count up to fifteen">
+        <span class="level-num">15</span>
+        <span class="level-cap">1 to 15</span>
+      </button>
+      <button class="level level-more level-20" id="start20" type="button" aria-label="Play: count up to twenty">
+        <span class="level-num">20</span>
+        <span class="level-cap">1 to 20</span>
+      </button>
     </div>
-    <span class="age-badge">Ages 1½–4</span>
+    <span class="age-badge">Ages 1½–5</span>
   </div>
 
   <!-- the game: a big number beside (or above) the picture the child taps -->
@@ -97,13 +105,17 @@
       <div class="seg" role="group" aria-label="How far to count">
         <button type="button" id="segLittle" aria-pressed="true">Count to 5</button>
         <button type="button" id="segBig" aria-pressed="false">Count to 10</button>
+        <button type="button" id="seg15" aria-pressed="false">To 15</button>
+        <button type="button" id="seg20" aria-pressed="false">To 20</button>
       </div>
 
       <ul>
-        <li><b>What it teaches.</b> Touching one thing for each number, the number words from one to ten, what the
-          numerals look like, and that the last number said is how many there are. “Count to 10” also asks
-          “How many?” with two or three answers to choose from; a wrong answer is never marked, the game just
-          counts along with your child.</li>
+        <li><b>What it teaches.</b> Touching one thing for each number, the number words from one to twenty, what the
+          numerals look like, and that the last number said is how many there are. From “Count to 10” up, the game
+          also asks “How many?” with two or three answers to choose from; a wrong answer is never marked, the game
+          just counts along with your child.</li>
+        <li><b>Four levels.</b> Count to 5 and to 10 are for the littlest: everything is big. To 15 and to 20
+          put more than ten things on the screen, so each is smaller; they suit a child of about three and up.</li>
         <li><b>Nothing can go wrong.</b> There is no score, no clock and nothing to lose. Every round ends with
           “Mashallah!” and the next one starts by itself.</li>
         <li><b>Arabic.</b> The Arabic numeral and number word are shown under the big number. They are never read

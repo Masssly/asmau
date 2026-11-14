@@ -34,9 +34,9 @@ def main():
     made = 0
     keep = set()
     for l in lines:
+        keep.add(l["id"] + ".mp3")                      # a recorded Arabic clip is kept, never made here
         if l.get("lang") != "en":
             continue
-        keep.add(l["id"] + ".mp3")
         sig = hashlib.sha1((name + "|" + l["text"]).encode()).hexdigest()[:12]
         mp3 = os.path.join(out, l["id"] + ".mp3")
         if memo.get(l["id"]) == sig and os.path.exists(mp3):

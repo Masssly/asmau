@@ -269,6 +269,23 @@ module.exports = async function () {
     T.check(quizzes === 2, tag + ": \"How many?\" came up twice in 7 rounds");
     T.check(bad === 0, tag + ": every thing to tap is at least 72px, on the screen and clear of the others");
     T.check(await still(page), tag + ": the page did not scroll or zoom");
+    // the top level: twenty things, each counted once, none touching another or off the picture
+    await page.evaluate(() => window.AsmauCounting.show("stars", 20, false));
+    await page.waitForTimeout(1600);
+    const crowd = await page.evaluate(() => {
+      const st = document.getElementById("stage").getBoundingClientRect();
+      const rs = [...document.querySelectorAll("#items .item")].map((e) => e.getBoundingClientRect());
+      let clash = 0, off = 0, min = 1e9;
+      rs.forEach((x, i) => { min = Math.min(min, x.width); if (x.left < st.left - 1 || x.right > st.right + 1 || x.top < st.top - 1 || x.bottom > st.bottom + 1) off++;
+        rs.forEach((y, j) => { if (j > i && x.left < y.right - 1 && y.left < x.right - 1 && x.top < y.bottom - 1 && y.top < x.bottom - 1) clash++; }); });
+      return { n: rs.length, min: Math.round(min), clash, off };
+    });
+    T.check(crowd.n === 20 && crowd.clash === 0 && crowd.off === 0 && crowd.min >= 44, tag + ": count to 20 shows twenty things, " + crowd.min + "px each, none touching and none off the picture");
+    for (const it of await uncounted(page)) { await tap(page, it); await page.waitForTimeout(220); }
+    await page.waitForFunction(() => window.AsmauCounting.state().done, null, { timeout: 8000 }).catch(() => {});   // the round ends once "Twenty" has been said
+    const top = await state(page);
+    T.check(top.count === 20 && top.done && await shown(page) === "20" && (await page.textContent("#arabic")).includes("عِشْرُونَ"), tag + ": twenty taps count to twenty, in numerals and in Arabic (count " + top.count + ", done " + top.done + ", shown " + await shown(page) + ")");
+    T.check(await page.evaluate(() => ["startLittle", "startBig", "start15", "start20"].every((id) => !!document.getElementById(id))), tag + ": four levels to start from: 5, 10, 15 and 20");
     T.check(said.some((l) => l.id === "how-many") && said.every((l) => langOf[l.id] === l.lang), tag + ": every line spoken is in narration.json with its language");
     T.check(errs.length === 0, tag + ": no page errors" + (errs[0] ? ": " + errs[0] : ""));
     T.check(asked.every((u) => u.startsWith(site.url) || /^(data|blob):/.test(u)), tag + ": none of " + asked.length + " requests left the site");

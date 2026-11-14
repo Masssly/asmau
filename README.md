@@ -284,9 +284,11 @@ What a story game can use from the player:
   three icons (`e`), so a game is playable before its pictures exist. A step can borrow
   another line's picture with `pic`.
 
-The stand-in English voice for Musa is made with the open-source Piper engine and a
-public-domain voice (`python3 scripts/generate-voice.py games/musa <voice.onnx>`); it
-only re-makes lines whose words changed.
+The stand-in English voice for Yusuf, Musa and Count with Me is made with the open-source
+Piper engine and a public-domain voice (`python3 scripts/generate-voice.py games/<slug>
+<voice.onnx>`); it only re-makes lines whose words changed, and never touches Arabic.
+(`scripts/generate-placeholder-audio.sh` is the older flite voice, kept for a machine
+that cannot run Piper.)
 
 Every answer in a choice or sorting activity has its own spoken line
 (`<line>-opt1`, `-bin1`, `-it1`, in `narration.json`), so a child who cannot
@@ -368,6 +370,6 @@ to date.
 | Game | Ages | Based on |
 |---|---|---|
 | Tap & Say | 1.5–4 | — |
-| Count with Me (folder `count-the-crescents`) | 1½–4 | — |
+| Count with Me (folder `count-the-crescents`) | 1½–5 | — (four levels: count to 5, 10, 15 or 20) |
 | Yusuf | 3–9 (under 5 with a grown-up) | Surah Yusuf, 12:4–101 — the whole story in 13 chapters |
 | Musa | 3–10 (under 5 with a grown-up) | Surah Al-Qasas 28:3–43 and Ta-Ha 20:9–98, with passages from surahs 2, 5, 7, 10, 18, 26, 40 and 66 — 25 chapters |

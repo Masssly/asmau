@@ -1,11 +1,20 @@
 {
-  "version": "2026.11.7",
+  "version": "2026.11.8",
   "date": "2026-11-14",
-  "buildId": "9cc195591fc6",
+  "buildId": "27d6db08b873",
   "notes": [
-    "New game for the littlest ones: Count with Me (ages 1½ to 4), made for touch screens"
+    "New story: Musa, in 25 chapters with about a hundred activities, its own music, background sounds and a clearer voice. Its pictures are still to come",
+    "Six new kinds of activity in the story player, and scenes now have gentle background sounds and movement"
   ],
   "history": [
+    {
+      "version": "2026.11.8",
+      "date": "2026-11-14",
+      "notes": [
+        "New story: Musa, in 25 chapters with about a hundred activities, its own music, background sounds and a clearer voice. Its pictures are still to come",
+        "Six new kinds of activity in the story player, and scenes now have gentle background sounds and movement"
+      ]
+    },
     {
       "version": "2026.11.7",
       "date": "2026-11-14",

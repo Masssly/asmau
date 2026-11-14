@@ -509,7 +509,7 @@ button { touch-action: manipulation; -webkit-tap-highlight-color: transparent; }
 .lamp-btn.lit .hold-ico { filter: drop-shadow(0 0 18px rgba(255,214,110,.95)); }
 
 /* ---------- change: tap a thing and it becomes another ---------- */
-.chg-btn { position: absolute; left: 50%; top: 52%; width: 170px; height: 170px; transform: translate(-50%, -50%); border: 0; border-radius: 50%; background: radial-gradient(circle, rgba(255,248,230,.34), rgba(255,248,230,.08) 70%); cursor: pointer; z-index: 2; animation: sp-pulse 1.6s ease-in-out infinite; }
+.chg-btn { position: absolute; left: 50%; top: 52%; width: 170px; height: 170px; transform: translate(-50%, -50%); border: 0; border-radius: 50%; background: radial-gradient(circle, rgba(255,248,230,.34), rgba(255,248,230,.08) 70%); cursor: pointer; z-index: 2; animation: glow-pulse 1.4s ease-in-out infinite; }
 .chg-btn:disabled { animation: none; opacity: 1; }
 .chg-face { display: grid; place-items: center; width: 100%; height: 100%; font-size: 100px; line-height: 1; }
 .chg-face.ico-svg > svg { height: 130px; }
@@ -524,13 +524,13 @@ button { touch-action: manipulation; -webkit-tap-highlight-color: transparent; }
 .part-wall::after { content: ""; position: absolute; inset: 0; background: repeating-linear-gradient(100deg, rgba(255,255,255,0) 0 22px, rgba(255,255,255,.16) 22px 26px, rgba(255,255,255,0) 26px 60px); animation: fx-slide 5s linear infinite; background-size: 220px 100%; }
 .part-wall.l { left: 0; box-shadow: inset -18px 0 24px rgba(255,255,255,.35); }
 .part-wall.r { right: 0; box-shadow: inset 18px 0 24px rgba(255,255,255,.35); }
-.part-btn { position: absolute; left: 50%; top: 50%; width: 120px; height: 120px; transform: translate(-50%, -50%); border: 4px solid rgba(255,255,255,.85); border-radius: 50%; background: rgba(12,21,48,.45); font-size: 70px; line-height: 1; cursor: pointer; z-index: 2; touch-action: none; animation: sp-pulse 1.4s ease-in-out infinite; }
+.part-btn { position: absolute; left: 50%; top: 50%; width: 120px; height: 120px; transform: translate(-50%, -50%); border: 4px solid rgba(255,255,255,.85); border-radius: 50%; background: rgba(12,21,48,.45); font-size: 70px; line-height: 1; cursor: pointer; z-index: 2; touch-action: none; animation: glow-pulse 1.4s ease-in-out infinite; }
 .part-btn.ico-svg > svg { height: 92px; }
 .part-btn.lit { animation: none; box-shadow: 0 0 30px 8px rgba(255,214,110,.9); }
 
 /* ---------- trail: tap the glowing spot ---------- */
 .trail-spot { position: absolute; transform: translate(-50%, -50%); width: 64px; height: 64px; border: 0; border-radius: 50%; background: rgba(255,248,230,.14); font-size: 30px; line-height: 1; cursor: pointer; opacity: .55; z-index: 2; }
-.trail-spot.next { opacity: 1; background: rgba(255,214,110,.5); box-shadow: 0 0 0 4px var(--gold); animation: sp-pulse 1s ease-in-out infinite; }
+.trail-spot.next { opacity: 1; background: rgba(255,214,110,.5); box-shadow: 0 0 0 4px var(--gold); animation: glow-pulse 1s ease-in-out infinite; }
 .trail-spot.done { opacity: .9; background: rgba(47,143,131,.5); }
 .trail-spot:disabled { color: inherit; }
 .trail-walker { position: absolute; transform: translate(-50%, -50%); font-size: 46px; line-height: 1; pointer-events: none; z-index: 3; transition: left .35s ease, top .35s ease; }
@@ -541,9 +541,9 @@ button { touch-action: manipulation; -webkit-tap-highlight-color: transparent; }
 .seek-dark { position: absolute; inset: 0; background: rgba(4,6,20,.96); pointer-events: none; z-index: 2; transition: opacity .8s ease; }
 .seek-dark.gone { opacity: 0; }
 .seek-target { position: absolute; transform: translate(-50%, -50%); width: 84px; height: 84px; border: 0; background: none; font-size: 54px; line-height: 1; cursor: pointer; z-index: 1; }
-.seek-target.near { animation: sp-pulse .7s ease-in-out infinite; }
+.seek-target.near { animation: fx-twinkle .5s ease-in-out infinite alternate; }
 .seek-target.glimmer { z-index: 3; opacity: .5; filter: drop-shadow(0 0 14px rgba(255,190,90,.9)); animation: fx-twinkle 1.4s ease-in-out infinite alternate; }
-.seek-target.found { z-index: 3; opacity: 1; filter: drop-shadow(0 0 24px rgba(255,190,90,.95)); animation: sp-pulse 1s ease-in-out infinite; }
+.seek-target.found { z-index: 3; opacity: 1; filter: drop-shadow(0 0 24px rgba(255,190,90,.95)); }
 
 /* ---------- wipe: rub it clear ---------- */
 .wipe-cv { position: absolute; inset: 0; width: 100%; height: 100%; z-index: 2; touch-action: none; cursor: grab; transition: opacity .7s ease; border-radius: inherit; }
@@ -555,9 +555,13 @@ button { touch-action: manipulation; -webkit-tap-highlight-color: transparent; }
 .build-wall { position: absolute; left: 50%; bottom: 84px; transform: translateX(-50%) scaleY(-1); width: min(78%, 300px); display: grid; gap: 4px; z-index: 2; cursor: pointer; }
 .build-slot { height: 40px; border: 2px dashed rgba(255,248,230,.45); border-radius: 8px; display: grid; place-items: center; font-size: 28px; line-height: 1; transform: scaleY(-1); }
 .build-slot.laid { border-color: transparent; animation: coin-pop .3s ease; }
-.build-slot.ico-svg > svg { height: 34px; }
+.build-slot.ico-svg > svg { height: 36px; width: 100%; }
 .build-btn { position: absolute; left: 50%; bottom: 14px; transform: translateX(-50%); min-height: 56px; font-size: 20px; padding: 12px 26px; z-index: 2; }
 
 /* a title scene that is the game's cover picture */
 .title-sky.has-cover { height: 230px; border-radius: 22px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,.35); }
 .title-cover { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; animation: pic-drift 20s ease-in-out infinite alternate; }
+
+/* a pulse that does not move or resize the thing (so it stays easy to hit) */
+@keyframes glow-pulse { 0%, 100% { box-shadow: 0 0 0 3px rgba(255,214,110,.95); } 50% { box-shadow: 0 0 0 12px rgba(255,214,110,.25); } }
+.wipe-beneath { position: absolute; inset: 0; z-index: 0; border-radius: inherit; }

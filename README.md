@@ -137,7 +137,11 @@ are public: it's your voice, or your child's, on a page anyone can open.
 so there are no audio files to license or download. A game opts in by
 including it:
 
-- `AsmauMusic.mood("wonder" | "desert" | "tense" | "sad" | "regal" | "joy")`
+- `AsmauMusic.mood("wonder" | "desert" | "tense" | "sad" | "regal" | "joy")`, and a second
+  family written for Musa so that each story has its own sound: `nile`, `court`, `dread`,
+  `trek`, `awe`, `triumph`, `longing`, `pastoral`
+- `AsmauMusic.amb("river" | "wind" | "night" | "fire" | "crowd" | "sea" | "rain" | "birds" | "camp" | "none")`:
+  the sound of the place, under the music. It follows the effects switch, not the music switch.
   crossfades to a new background mood and never restarts the one already
   playing.
 - `AsmauMusic.tension(0..1)` makes the current mood faster, brighter and
@@ -255,6 +259,35 @@ and `narration.json`; the engine, its styles and the checks are shared. Progress
 is saved by a chapter's id and a step's line (not by position), so adding or
 moving steps later never sends a child to the wrong place.
 
+**The Musa game** (25 chapters, about a hundred activities) is the second story game
+and is written a little differently, because it is long: its words, activities and
+picture descriptions are kept side by side in `scripts/musa/author/` (one file per
+group of chapters), and `node scripts/musa/author/build.js` writes `games/musa/story.js`,
+`games/musa/narration.json` and the picture list from them. Change the chapter files,
+not the generated ones. `scripts/musa/RESEARCH.md` holds the notes from the translation
+and the commentary that every line was checked against.
+
+What a story game can use from the player:
+
+- **Activities**: `choice`, `order`, `match`, `sort`, `memory`, `pick`, `count`, `puzzle`,
+  `journey`, `hold`, `pull`, `catch`, `fill`, `gates`, `search`, `sky`, and (first written
+  for Musa) `change` (tap a thing and it becomes another), `part` (hold, and the sea
+  opens), `trail` (tap the glowing spot to walk a path), `seek` (a finger of light in the
+  dark), `wipe` (rub the scene clear) and `build` (lay it brick by brick).
+- **Icons** can be an emoji or the name of a drawn piece (`STAFF`, `ROCK`, `ROPE`,
+  `CHEST`, `PLANK` ...), because older tablets lack the newer emoji.
+- **A scene's own life**: every scene has a default background sound (`amb`), a moving
+  overlay (`fx`: water, dust, embers, stars, rain, mist, rays) and music, set per scene and
+  overridable per step or, for a whole game, in its `game.js` (`sceneMood`, `sceneAmb`,
+  `sceneFx`). A step can also fire one effect as it opens (`cue`).
+- **A narrated step with no picture** is drawn from the scene's own decor plus two or
+  three icons (`e`), so a game is playable before its pictures exist. A step can borrow
+  another line's picture with `pic`.
+
+The stand-in English voice for Musa is made with the open-source Piper engine and a
+public-domain voice (`python3 scripts/generate-voice.py games/musa <voice.onnx>`); it
+only re-makes lines whose words changed.
+
 Every answer in a choice or sorting activity has its own spoken line
 (`<line>-opt1`, `-bin1`, `-it1`, in `narration.json`), so a child who cannot
 read hears each one; the checker requires them.
@@ -335,5 +368,6 @@ to date.
 | Game | Ages | Based on |
 |---|---|---|
 | Tap & Say | 1.5–4 | — |
-| Count the Crescents | 2–5 | — |
+| Count with Me (folder `count-the-crescents`) | 1½–4 | — |
 | Yusuf | 3–9 (under 5 with a grown-up) | Surah Yusuf, 12:4–101 — the whole story in 13 chapters |
+| Musa | 3–10 (under 5 with a grown-up) | Surah Al-Qasas 28:3–43 and Ta-Ha 20:9–98, with passages from surahs 2, 5, 7, 10, 18, 26, 40 and 66 — 25 chapters |

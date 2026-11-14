@@ -78,7 +78,7 @@
     ROCK: '<svg viewBox="0 0 80 64"><path d="M8 54C2 40 8 22 22 14c12-8 30-8 42 2 12 10 12 26 8 38Z" fill="#9c958c" stroke="#5f5850" stroke-width="3" stroke-linejoin="round"/><path d="M22 28c6-8 14-10 22-9M48 40c6 0 10-3 13-8" fill="none" stroke="#c9c2b8" stroke-width="3" stroke-linecap="round"/><path d="M26 46c4 2 8 2 12 0" fill="none" stroke="#5f5850" stroke-width="2.5" stroke-linecap="round"/></svg>',
     ROPE: '<svg viewBox="0 0 80 60"><path d="M6 44c10-22 18 14 28-8s16 14 26-10 12 4 14 8" fill="none" stroke="#8a6230" stroke-width="8" stroke-linecap="round"/><path d="M6 44c10-22 18 14 28-8s16 14 26-10 12 4 14 8" fill="none" stroke="#d9b06a" stroke-width="4" stroke-linecap="round" stroke-dasharray="5 5"/></svg>',
     CHEST: '<svg viewBox="0 0 90 64"><path d="M8 26h74l-8 30H16Z" fill="#b5793e" stroke="#6b4423" stroke-width="3" stroke-linejoin="round"/><path d="M8 26c8-16 66-16 74 0" fill="#f6ead0" stroke="#6b4423" stroke-width="3"/><path d="M20 26v30M36 26v30M54 26v30M70 26v30" stroke="#6b4423" stroke-width="2" opacity=".55"/><path d="M12 40h66" stroke="#6b4423" stroke-width="2.5"/></svg>',
-    PLANK: '<svg viewBox="0 0 80 40"><rect x="4" y="6" width="72" height="28" rx="5" fill="#b5793e" stroke="#6b4423" stroke-width="3"/><path d="M14 16h30M30 25h34" stroke="#8a5a2c" stroke-width="2.5" stroke-linecap="round"/><circle cx="12" cy="20" r="2.2" fill="#6b4423"/><circle cx="68" cy="20" r="2.2" fill="#6b4423"/></svg>',
+    PLANK: '<svg viewBox="0 0 80 40" preserveAspectRatio="none"><rect x="4" y="6" width="72" height="28" rx="5" fill="#b5793e" stroke="#6b4423" stroke-width="3"/><path d="M14 16h30M30 25h34" stroke="#8a5a2c" stroke-width="2.5" stroke-linecap="round"/><circle cx="12" cy="20" r="2.2" fill="#6b4423"/><circle cx="68" cy="20" r="2.2" fill="#6b4423"/></svg>',
     LAMP: '<svg viewBox="0 0 60 80"><path d="M22 10h16M30 4v6" stroke="#8a6230" stroke-width="4" stroke-linecap="round"/><path d="M16 22 22 10h16l6 12Z" fill="#b8862f" stroke="#7a5518" stroke-width="2"/><rect class="lamp-glass" x="16" y="22" width="28" height="38" rx="4" fill="#3a3550" stroke="#7a5518" stroke-width="3"/><path d="M14 60h32l-4 12H18Z" fill="#b8862f" stroke="#7a5518" stroke-width="2"/><path class="lamp-flame" d="M30 54c-8-8-2-14 0-22 2 8 8 14 0 22Z" fill="#ffd45e" opacity=".15"/></svg>'
   };
 
@@ -1127,7 +1127,9 @@
       burst();
       paint();
       var last = at === states.length - 1;
-      if (states[at].line) { setCaption(states[at].line); spoken(states[at].line, last ? 1200 : 9000).then(function () { busy = false; }); } else busy = false;
+      // the new state says its line; a short pause keeps a flurry of taps from skipping a state
+      if (states[at].line) { setCaption(states[at].line); say(states[at].line); }
+      setTimeout(function () { busy = false; }, 1200);
       if (last) { btn.disabled = true; setTimeout(function () { if (token === stepToken) done(); }, 700); }
     });
     paint();
@@ -1258,8 +1260,21 @@
   // Rub the scene clear: the storm, the water, the sand or the gold is wiped away by the finger.
   // opts.cover: storm | water | sand | gold; opts.under: an icon revealed in the middle.
   ACT.wipe = function (opts, done) {
-    var COVER = { storm: ["#3d4257", "#5b6078", "🌧️"], water: ["#1f6f9e", "#3d9cc4", "🌊"], sand: ["#c9a25c", "#e2c283", "⏳"], gold: ["#b98a1e", "#f0c64b", "🐄"] };
+    // cover: [top colour, bottom colour, icon scattered on it, what lies beneath when there is no picture, its icon]
+    var COVER = {
+      storm: ["#3d4257", "#5b6078", "🌧️", "linear-gradient(180deg, #6fc3f2 0%, #d6f0fb 62%, #cfe6a8 62.2%, #9fcf6f 100%)", "☀️"],
+      water: ["#1f6f9e", "#3d9cc4", "🌊", "linear-gradient(180deg, #f3d9a0 0%, #dcb672 100%)", "👣"],
+      sand: ["#c9a25c", "#e2c283", "⏳", "linear-gradient(180deg, #8a6230 0%, #5e3f1c 100%)", ""],
+      gold: ["#b98a1e", "#f0c64b", "🐄", "linear-gradient(180deg, #bfe6f2 0%, #2f9fc4 55%, #17688f 100%)", "💨"]
+    };
     var c = COVER[opts.cover] || COVER.storm, finished = false, down = false, moves = 0;
+    if (!stage.classList.contains("has-pic")) {
+      var beneath = mk("div", "wipe-beneath");
+      beneath.style.background = c[3];
+      stage.appendChild(beneath);
+      if (!opts.under && c[4]) stage.appendChild(mkIco("div", "wipe-under", c[4]));
+    }
+    var weather = stage.querySelector(".fxl");
     if (opts.under) stage.appendChild(mkIco("div", "wipe-under", opts.under));
     var cv = mk("canvas", "wipe-cv");
     stage.appendChild(cv);
@@ -1289,6 +1304,7 @@
       if (cleared >= COLS * ROWS * 0.6) {
         finished = true;
         cv.classList.add("gone");
+        if (weather) weather.remove();
         hint.textContent = "All clear!";
         done();
       }

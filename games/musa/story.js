@@ -90,6 +90,7 @@ window.STORY = [
       {"say":"m5-b","scene":"palace","src":"From Ibn Kathir's commentary","e":"🌴 ♨️ 👦🏿"},
       {"play":"sort","line":"m5-sort","scene":"palace","opts":{"bins":[{"label":"Safe to eat","icon":"😋"},{"label":"Too hot! Do not touch","icon":"🔥"}],"things":[{"icon":"🌴","label":"A sweet date","bin":0},{"icon":"♨️","label":"A glowing coal","bin":1},{"icon":"🍞","label":"Warm bread","bin":0},{"icon":"🕯️","label":"A candle flame","bin":1},{"icon":"🥛","label":"A cup of milk","bin":0}],"wrong":"m5-sort-no"}},
       {"say":"m5-c","scene":"palace","e":"🧑🏿 💡"},
+      {"play":"puzzle","line":"m5-puz","scene":"palace","opts":{"pic":"m5-c","n":2}},
       {"play":"choice","line":"m5-q","scene":"palace","opts":{"options":[{"label":"Wisdom and knowledge","icon":"💡","ok":true},{"label":"A golden crown","icon":"👑","ok":false}],"wrong":"m5-q-no","img":"m5-c"}}
     ]
   },
@@ -146,7 +147,8 @@ window.STORY = [
       {"play":"choice","line":"m8-q","scene":"field","opts":{"options":[{"label":"Loud and bossy","icon":"📢","ok":false},{"label":"Strong, and can be trusted","icon":"💪🏿","ok":true}],"wrong":"m8-q-no","img":"m8-c"}},
       {"say":"m8-e","scene":"field","e":"👴🏿 🤝 🧑🏿"},
       {"play":"count","line":"m8-years","scene":"field","opts":{"total":10,"icon":"☀️"},"src":"From a hadith in al-Bukhari"},
-      {"play":"catch","line":"m8-flock","scene":"field","opts":{"target":7,"icon":"🐑","into":"🏡"}}
+      {"play":"catch","line":"m8-flock","scene":"field","opts":{"target":7,"icon":"🐑","into":"🏡"}},
+      {"play":"puzzle","line":"m8-puz","scene":"field","opts":{"pic":"m8-e","n":3}}
     ]
   },
   {
@@ -218,7 +220,8 @@ window.STORY = [
       {"say":"m12-d","scene":"palace","pic":"m12-c","e":"👑 👉🏿"},
       {"say":"m12-e","scene":"palace","e":"🧔🏿 ☀️ 🎪"},
       {"play":"choice","line":"m12-q","scene":"palace","opts":{"options":[{"label":"The day of the festival, with everyone watching","icon":"🎪","ok":true},{"label":"A secret night, with nobody there","icon":"🌙","ok":false}],"wrong":"m12-q-no","img":"m12-e"}},
-      {"play":"catch","line":"m12-crowd","scene":"egypt","opts":{"target":8,"icon":"🧑🏿","into":"🎪"}}
+      {"play":"catch","line":"m12-crowd","scene":"egypt","opts":{"target":8,"icon":"🧑🏿","into":"🎪"}},
+      {"play":"puzzle","line":"m12-puz","scene":"palace","opts":{"pic":"m12-a","n":3}}
     ]
   },
   {
@@ -295,7 +298,8 @@ window.STORY = [
       {"say":"m16-c","scene":"dawn","cue":"thunder","e":"👑 🐎 🐎"},
       {"say":"m16-d","scene":"sea","e":"🌊 😨 🐎"},
       {"say":"m16-e","scene":"sea","e":"🧔🏿 STAFF 🌊"},
-      {"play":"choice","line":"m16-q","scene":"sea","opts":{"options":[{"label":"We are lost","icon":"😱","ok":false},{"label":"My Lord is with me","icon":"💛","ok":true}],"wrong":"m16-q-no","img":"m16-e"}}
+      {"play":"choice","line":"m16-q","scene":"sea","opts":{"options":[{"label":"We are lost","icon":"😱","ok":false},{"label":"My Lord is with me","icon":"💛","ok":true}],"wrong":"m16-q-no","img":"m16-e"}},
+      {"play":"puzzle","line":"m16-puz","scene":"sea","opts":{"pic":"m16-e","n":3}}
     ]
   },
   {
@@ -355,6 +359,7 @@ window.STORY = [
       {"play":"choice","line":"m19-q2","scene":"mountain","opts":{"options":[{"label":"It grew taller","icon":"⛰️","ok":false},{"label":"It crumbled into dust","icon":"💨","ok":true}],"wrong":"m19-q2-no","img":"m19-c"}},
       {"say":"m19-d","scene":"mountain","e":"🧔🏿 🙇🏿"},
       {"say":"m19-e","scene":"mountain","e":"🧔🏿 📜"},
+      {"play":"puzzle","line":"m19-puz","scene":"mountain","opts":{"pic":"m19-e","n":3}},
       {"play":"sort","line":"m19-sort","scene":"mountain","opts":{"bins":[{"label":"Thankful","icon":"💛"},{"label":"Not thankful","icon":"🙄"}],"things":[{"icon":"🤲🏿","label":"Saying: thank You, Allah","bin":0},{"icon":"😤","label":"Saying: I want more, more, more","bin":1},{"icon":"🍞","label":"Sharing your food","bin":0},{"icon":"🗑️","label":"Throwing good food away","bin":1}],"wrong":"m19-sort-no"}}
     ]
   },
@@ -471,7 +476,8 @@ window.STORY = [
       {"say":"m25-c","scene":"mountain","pic":"m19-e","e":"📜 ✨"},
       {"play":"order","line":"m25-ord","scene":"dawn","opts":{"cards":[{"icon":"🧺","label":"The baby on the river","line":"m25-ord-c1"},{"icon":"🐑","label":"The shepherd at the well","line":"m25-ord-c2"},{"icon":"🔥","label":"The fire on the mountain","line":"m25-ord-c3"},{"icon":"🌊","label":"The sea opens","line":"m25-ord-c4"},{"icon":"📜","label":"The Tablets","line":"m25-ord-c5"}],"wrong":"m25-ord-no"}},
       {"play":"match","line":"m25-match","scene":"dawn","opts":{"pairs":[{"a":"m25-match-a1","aIcon":"👸🏿","aLabel":"Asiya","b":"m25-match-b1","bIcon":"💛","bLabel":"the queen who loved baby Musa"},{"a":"m25-match-a2","aIcon":"🧕🏿","aLabel":"Musa's sister","b":"m25-match-b2","bIcon":"👣","bLabel":"followed the chest along the river"},{"a":"m25-match-a3","aIcon":"🤝","aLabel":"Harun","b":"m25-match-b3","bIcon":"🗣️","bLabel":"the brother who helped him speak"},{"a":"m25-match-a4","aIcon":"👑","aLabel":"Pharaoh","b":"m25-match-b4","bIcon":"🌊","bLabel":"the proud king, lost in the sea"}]}},
-      {"play":"memory","line":"m25-mem","scene":"dawn","opts":{"icons":["🧺","🐑","🔥","STAFF","🐸","🌊","💧","📜"]}}
+      {"play":"memory","line":"m25-mem","scene":"dawn","opts":{"icons":["🧺","🐑","🔥","STAFF","🐸","🌊","💧","📜"]}},
+      {"play":"puzzle","line":"m25-puz","scene":"sea","opts":{"pic":"m17-b","n":3}}
     ]
   }
 ];

@@ -9,7 +9,7 @@ chapter("a1", "👶🏿", "Two Babies in Degel", C_CW, [], [
   "Twins were customarily named Hassan and Hussain, after the Prophet's ﷺ grandsons, so she would have been Hussaina. Her father, the Shehu Usman dan Fodio, a scholar and teacher, chose instead to name her after Asma bint Abi Bakr. Same source; also Wikipedia."
 ]);
 s("a", "dusk", "Long ago, in a village called Degel, in West Africa, two babies were born on the same day. They were twins: a boy and a girl.",
-  "Evening in {DEGEL}. Inside a simple room, a happy family gathers around two newborn babies wrapped in white and cream cloths, lying side by side on a woven mat. A soft oil lamp glows.", { mood: "nile", amb: "night" });
+  "Evening in {DEGEL}. Inside a simple round room, two newborn babies with deep dark brown skin, wrapped in white and cream cloths, lie side by side on a woven mat. Kneeling beside them are only two smiling women in long dresses with large headscarves that fully cover their hair, ears and neck, one in plum and one in orange. A soft oil lamp glows.", { mood: "nile", amb: "night" });
 s("b", "dusk", "Their father was a kind and wise teacher, called the Shehu. He named the boy Hassan.",
   "{SHEHU} sits on a mat in a warm lamplit room holding a newborn baby boy in white cloth, smiling. Beside him sit only two women, both in long dresses with large headscarves that fully cover their hair, one in plum and one in orange, smiling at the baby.", { mood: "wonder" });
 s("c", "dusk", "Twins were usually called Hassan and Hussaina. But the Shehu gave his daughter a different name: Asma'u.",
@@ -133,7 +133,7 @@ s("b", "egypt", "The teachers were called jaji. Each one wore a tall, special ha
   "Close view of {JAJI} smiling proudly as {ASMA} ties the red cloth of her tall woven straw hat; other women clap.", { mood: "triumph" });
 p("count", "hats", "egypt", "Give every teacher her hat. Tap each one.", { total: 6, icon: "🧕🏿", got: "👒" }, { img: "b" });
 s("c", "desert", "The teachers walked back to their villages, and taught the women there, with poems that were easy to remember.",
-  "Morning on a savanna path. Three women teachers, each in a tall woven straw hat tied with red, walk toward a distant village of round thatched huts, carrying bundles of pages.", { mood: "trek" });
+  "Morning on a savanna path. Three women teachers, each dressed exactly like {JAJI}, walk toward a distant village of round thatched huts, carrying bundles of pages.", { mood: "trek" });
 p("trail", "villages", "desert", "Walk with the teacher from village to village. Tap each house.", { n: 6, icon: "🛖", walker: "🧕🏿" }, { img: "c" });
 s("d", "field", "Then the women in the villages taught their own children, and their friends. Learning spread like light, from one lamp to the next.",
   "A village courtyard at dusk: {JAJI} sits with {WOMEN} and their children on mats, all clapping a rhythm and reciting together; small oil lamps glow.", { mood: "triumph" });

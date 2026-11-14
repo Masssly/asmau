@@ -7,7 +7,7 @@
 */
 window.STORY_GAME = {
   slug: "nana-asmau",
-  titleArt: [["📜", 30, 46, 64, "float"], ["✒️", 70, 40, 56, "bob"], ["⭐", 18, 18, 26, "twinkle"], ["⭐", 82, 16, 22, "twinkle"], ["🌙", 50, 16, 40, "float"], ["👒", 50, 70, 70, "bob"]],
+  titleArt: [],          // the title shows the cover picture (see index.html)
   titleMood: "pastoral",
   endMood: "triumph",
   endIcon: "📜",

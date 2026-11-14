@@ -43,7 +43,7 @@ BACKDROP = ("Polished stylised 3D animated family-film background painting, warm
 REF = ("Character reference picture for an animated family film: the same person shown twice side by side, full body, "
        "front view and three-quarter view, standing relaxed with arms hanging naturally at the sides, plain warm cream "
        "background, soft studio lighting, polished stylised 3D animated family-film look. Deep dark brown skin, Black African. ")
-END = " No text, no writing, no letters, no logos, no watermark."
+END = " No text, no writing, no letters, no logos."   # ("no watermark" set off a false safety block: "requesting to remove watermarks")
 LOCK = ("The attached pictures show how these people look. Draw each of them with exactly the same face, hair, skin tone, "
         "clothes and 3D style as in their picture. Do not copy the pictures' backgrounds or poses. ")
 

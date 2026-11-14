@@ -35,8 +35,8 @@
   "who": []
  },
  "a1-a": {
-  "alt": "Evening in Degel. Inside a simple room, a happy family gathers around two newborn babies wrapped in white and cream cloths, lying side by side on a woven mat. A soft oil…",
-  "scene": "Evening in a small West African savanna village of round mud-brick houses with thatched roofs, baobab and acacia trees. Inside a simple room, a happy family gathers around two newborn babies wrapped in white and cream cloths, lying side by side on a woven mat. A soft oil lamp glows.",
+  "alt": "Evening in Degel. Inside a simple round room, two newborn babies with deep dark brown skin, wrapped in white and cream cloths, lie side by side on a woven mat. Kneeling…",
+  "scene": "Evening in a small West African savanna village of round mud-brick houses with thatched roofs, baobab and acacia trees. Inside a simple round room, two newborn babies with deep dark brown skin, wrapped in white and cream cloths, lie side by side on a woven mat. Kneeling beside them are only two smiling women in long dresses with large headscarves that fully cover their hair, ears and neck, one in plum and one in orange. A soft oil lamp glows.",
   "who": [
    "DEGEL"
   ]
@@ -201,9 +201,11 @@
   ]
  },
  "a9-c": {
-  "alt": "Morning on a savanna path. Three women teachers, each in a tall woven straw hat tied with red, walk toward a distant village of round thatched huts, carrying bundles of…",
-  "scene": "Morning on a savanna path. Three women teachers, each in a tall woven straw hat tied with red, walk toward a distant village of round thatched huts, carrying bundles of pages.",
-  "who": []
+  "alt": "Morning on a savanna path. Three women teachers, each dressed exactly like a jaji, a woman teacher, walk toward a distant village of round thatched huts, carrying…",
+  "scene": "Morning on a savanna path. Three women teachers, each dressed exactly like a strong, smiling woman with deep dark brown skin wearing a tall, narrow, high-crowned woven straw hat (not wide-brimmed) bound with a red cloth band, over a headscarf that fully covers her hair and neck, and a loose long-sleeved ochre dress with a high neckline, walk toward a distant village of round thatched huts, carrying bundles of pages.",
+  "who": [
+   "JAJI"
+  ]
  },
  "a9-d": {
   "alt": "A village courtyard at dusk: a jaji, a woman teacher sits with women of the villages and their children on mats, all clapping a rhythm and reciting together; small oil…",

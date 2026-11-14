@@ -18,6 +18,42 @@ lib.STORY.forEach((ch) => ch.steps.forEach((st) => {
   if (st.opts && st.opts.pic && !lib.SHOTS[st.opts.pic]) throw new Error(st.line + ": puzzle of '" + st.opts.pic + "', which has no picture");
 }));
 
+// A picture puzzle needs its picture: until that picture has been made, the puzzle is left out.
+lib.STORY.forEach((ch) => { ch.steps = ch.steps.filter((st) => {
+  if (st.play !== "puzzle" || fs.existsSync(path.join(GAME, "assets", "img", st.opts.pic + ".webp"))) return true;
+  const i = lib.LINES.findIndex((l) => l.id === st.line); if (i >= 0) lib.LINES.splice(i, 1);
+  return false;
+}); });
+
+// Icons for scenes with no picture, and dark skin on every emoji of a person or a hand:
+// everyone in Asmau is drawn dark-skinned, and that includes the small icons.
+const EM = require("./em");
+const TONE = "\u{1F3FF}";
+const BASES = "👶 🤱 👸 🧕 👦 🧑 🧔 👴 🧙 🙇 🚶 🏃 🤲 ✋ 🙌 👉 ☝ ✊ 🙅 👍 👂 👅 💪 🤴 👩 👨".split(" ");
+function dark(s) {
+  if (typeof s !== "string") return s;
+  let out = "";
+  for (const ch of Array.from(s)) {
+    out += ch;
+    if (BASES.includes(ch)) out += TONE;
+  }
+  return out.replace(/(\u{1F3FF})\uFE0F/gu, "$1");
+}
+const ICON_KEYS = new Set(["icon", "aIcon", "bIcon", "walker", "from", "to", "got", "into", "under", "e", "mark"]);
+function walk(o) {
+  if (Array.isArray(o)) return o.forEach(walk);
+  if (!o || typeof o !== "object") return;
+  for (const k of Object.keys(o)) {
+    if (ICON_KEYS.has(k)) o[k] = dark(o[k]);
+    else if (k === "icons") o[k] = o[k].map(dark);
+    else walk(o[k]);
+  }
+}
+lib.STORY.forEach((ch) => {
+  ch.steps.forEach((st) => { if (st.say) { if (!EM[st.say]) throw new Error("no icons for " + st.say + " in em.js"); st.e = EM[st.say]; } });
+  walk(ch.steps);
+});
+
 const head = "/*\n  The Musa story: chapters -> steps. WRITTEN BY scripts/musa/author/build.js from the\n  chapter files beside it. Change those, not this file.\n\n  A step is { say, scene, pic?, src?, amb?, fx?, cue? } (a narrated picture) or\n  { play, line, scene, opts } (something to do). See games/yusuf/story.js and\n  shared/story-engine.js for what each field means. `more` lists the other passages\n  a chapter draws on, beside its main `source`.\n*/\n";
 const body = "window.STORY = [\n" + lib.STORY.map((ch) =>
   "  {\n    id: " + JSON.stringify(ch.id) + ", icon: " + JSON.stringify(ch.icon) + ", title: " + JSON.stringify(ch.title) + ", source: " + JSON.stringify(ch.source) + ", more: " + JSON.stringify(ch.more) + ",\n    parent: [\n" +

@@ -3,12 +3,19 @@
   so there are no audio files to license or download.
 
   - mood(name)     background music; changes by crossfade, never restarts the
-                   same mood. Moods: wonder, desert, tense, sad, regal, joy.
+                   same mood. Moods: wonder, desert, tense, sad, regal, joy,
+                   and a second family first written for the Musa story
+                   (nile, court, dread, trek, awe, triumph, longing, pastoral)
+                   so that each story has its own sound.
+  - amb(name)      the sound of the place, under the music: river, wind, night,
+                   fire, crowd, sea, rain, birds, camp, or none. It belongs to
+                   the effects switch, not the music switch: it is not music.
   - tension(0..1)  makes whatever is playing more urgent: faster, brighter,
                    a heartbeat, hi-hats, and a rising drone. Activities set it
                    from their own progress and clear it when they finish.
   - fx(name, a, b) one-shot effects: tap, boing, wrong, win, heave, whoosh,
-                   swish, coin, wilt, tick, clink, sparkle, pour.
+                   swish, coin, wilt, tick, clink, sparkle, pour, splash, hiss,
+                   thunder, croak, gush, thud, roar, cry.
   - duck(on)       lowers the music while a line of narration is speaking.
   - setMusic / setSfx  two independent switches, because families differ on
                    music in children's media and narration must survive both.
@@ -30,7 +37,11 @@ window.AsmauMusic = (function () {
     pent:  [0, 2, 4, 7, 9],
     hijaz: [0, 1, 4, 5, 7, 8, 10],
     phryg: [0, 1, 3, 5, 7, 8, 10],
-    minor: [0, 2, 3, 5, 7, 8, 10]
+    minor: [0, 2, 3, 5, 7, 8, 10],
+    dorian: [0, 2, 3, 5, 7, 9, 10],
+    major: [0, 2, 4, 5, 7, 9, 11],
+    kurd:  [0, 1, 3, 5, 7, 8, 10],
+    open:  [0, 2, 5, 7, 10]
   };
 
   // 16 eighth-note steps = two bars. Each of the two chords lasts 8 steps.
@@ -91,6 +102,84 @@ window.AsmauMusic = (function () {
       vol: { pad: 0.05, arp: 0.055, bass: 0.12, drum: 0.55 }, arpDecay: 0.16
     }
   };
+
+  // The second family. Lower, slower and plucked: a lyre-like arp, a frame drum (d = dum,
+  // t = tek) and long drones, in 6/8-feeling patterns where the first family is in fours.
+  var M2 = {
+    nile: {       // a lullaby on the river
+      bpm: 60, root: 57, scale: SCALES.major, padOct: -1, bassOct: -2, arpOct: 0,
+      chords: [[0, 2, 4], [3, 5, 7]],
+      bass: [0, N, N, N, N, N, 4, N, 3, N, N, N, N, N, 4, N],
+      arp:  [4, N, 2, 4, N, 7, N, 4, 5, N, 3, 5, N, 7, N, 5],
+      drums: {},
+      wave: { pad: "sine", arp: "sine", bass: "sine" },
+      vol: { pad: 0.06, arp: 0.07, bass: 0.09, drum: 0 }, arpDecay: 0.7
+    },
+    court: {      // the palace: heavy and slow
+      bpm: 72, root: 48, scale: SCALES.hijaz, padOct: 0, bassOct: -1, arpOct: 1,
+      chords: [[0, 4, 7], [1, 4, 8]],
+      bass: [0, N, N, 0, N, N, 0, N, 1, N, N, 1, N, N, 0, N],
+      arp:  [N, N, 7, N, 8, 7, N, 4, N, N, 5, N, 4, 3, N, 1],
+      drums: { d: [0, 6, 8], t: [3, 11, 14] },
+      wave: { pad: "sawtooth", arp: "square", bass: "triangle" },
+      vol: { pad: 0.03, arp: 0.035, bass: 0.12, drum: 0.5 }, arpDecay: 0.3, padLp: 900, arpLp: 1800
+    },
+    dread: {      // soldiers, the chase, the plagues
+      bpm: 96, root: 45, scale: SCALES.kurd, padOct: 0, bassOct: -1, arpOct: 1,
+      chords: [[0, 4], [1, 5]],
+      bass: [0, N, 0, N, 0, 0, N, 0, 1, N, 1, N, 1, 1, N, 0],
+      arp:  [N, N, N, N, 7, N, N, 8, N, N, N, N, 7, N, 5, N],
+      drums: { d: [0, 4, 8, 12], k: [0, 8] },
+      wave: { pad: "sawtooth", arp: "sawtooth", bass: "sawtooth" },
+      vol: { pad: 0.03, arp: 0.03, bass: 0.07, drum: 0.65 }, arpDecay: 0.14, bassLp: 380, padLp: 600, arpLp: 1900
+    },
+    trek: {       // walking: desert and camp
+      bpm: 92, root: 50, scale: SCALES.dorian, padOct: -1, bassOct: -1, arpOct: 0,
+      chords: [[0, 2, 4], [-1, 1, 3]],
+      bass: [0, N, N, 0, N, N, 4, N, -1, N, N, -1, N, N, 3, N],
+      arp:  [4, N, 7, 4, N, 2, 4, N, 3, N, 6, 3, N, 1, 3, N],
+      drums: { d: [0, 6, 8, 14], t: [3, 4, 11, 12] },
+      wave: { pad: "triangle", arp: "triangle", bass: "triangle" },
+      vol: { pad: 0.04, arp: 0.05, bass: 0.11, drum: 0.45 }, arpDecay: 0.22, arpLp: 2400
+    },
+    awe: {        // the fire and the mountain: open fifths and a long drone
+      bpm: 50, root: 50, scale: SCALES.open, padOct: -1, bassOct: -2, arpOct: 1,
+      chords: [[0, 3, 5], [0, 2, 5]],
+      bass: [0, N, N, N, N, N, N, N, 0, N, N, N, N, N, N, N],
+      arp:  [N, N, 5, N, N, N, 8, N, N, N, 7, N, N, N, 5, N],
+      drums: {},
+      wave: { pad: "sine", arp: "sine", bass: "sine" },
+      vol: { pad: 0.09, arp: 0.045, bass: 0.12, drum: 0 }, arpDecay: 1.4
+    },
+    triumph: {    // the crossing, the reunions
+      bpm: 112, root: 57, scale: SCALES.major, padOct: -1, bassOct: -2, arpOct: 0,
+      chords: [[0, 2, 4], [3, 5, 7]],
+      bass: [0, N, N, 0, N, N, 4, N, 3, N, N, 3, N, N, 4, N],
+      arp:  [4, 7, 9, 7, 4, 7, 11, 7, 5, 7, 10, 7, 5, 7, 12, 9],
+      drums: { d: [0, 6, 8, 14], t: [2, 3, 5, 10, 11, 13], s: [4, 12] },
+      wave: { pad: "triangle", arp: "triangle", bass: "triangle" },
+      vol: { pad: 0.05, arp: 0.05, bass: 0.12, drum: 0.5 }, arpDecay: 0.18
+    },
+    longing: {    // a mother's empty heart, a traveller alone
+      bpm: 54, root: 52, scale: SCALES.minor, padOct: -1, bassOct: -2, arpOct: 0,
+      chords: [[0, 2, 4], [-2, 0, 3]],
+      bass: [0, N, N, N, N, N, N, N, -2, N, N, N, N, N, N, N],
+      arp:  [7, N, N, 6, N, 4, N, N, 5, N, N, 4, N, 2, N, N],
+      drums: {},
+      wave: { pad: "sine", arp: "sine", bass: "sine" },
+      vol: { pad: 0.07, arp: 0.065, bass: 0.1, drum: 0 }, arpDecay: 1.1
+    },
+    pastoral: {   // the well and the flock
+      bpm: 84, root: 55, scale: SCALES.pent, padOct: -1, bassOct: -2, arpOct: 0,
+      chords: [[0, 2, 3], [1, 3, 4]],
+      bass: [0, N, N, N, N, N, 3, N, 1, N, N, N, N, N, 3, N],
+      arp:  [5, N, 7, 8, N, 7, 5, N, 6, N, 8, 9, N, 8, 6, N],
+      drums: { t: [6, 14] },
+      wave: { pad: "sine", arp: "triangle", bass: "sine" },
+      vol: { pad: 0.05, arp: 0.055, bass: 0.1, drum: 0.3 }, arpDecay: 0.4
+    }
+  };
+  Object.keys(M2).forEach(function (k) { MOODS[k] = M2[k]; });
 
   function mtof(m) { return 440 * Math.pow(2, (m - 69) / 12); }
   function deg(m, d) {
@@ -353,8 +442,125 @@ window.AsmauMusic = (function () {
       pour: function (t, l) {
         k.hiss(out, t, 0.12, 0.16, "highpass", 2500, 2500, 0.8);
         k.tone(out, "sine", 380 + 130 * (l || 0), 380 + 130 * (l || 0), t, 0.1, 0.06);
+      },
+      splash: function (t) {
+        k.hiss(out, t, 0.4, 0.4, "bandpass", 1800, 500, 0.8);
+        k.tone(out, "sine", 300, 90, t, 0.25, 0.25);
+        for (var i = 0; i < 4; i++) k.tone(out, "sine", 900 + 300 * i, 1400 + 300 * i, t + 0.12 + i * 0.06, 0.07, 0.07);
+      },
+      hiss: function (t) {
+        for (var i = 0; i < 3; i++) k.hiss(out, t + i * 0.28, 0.4, 0.22, "highpass", 5200, 7400, 1.2);
+      },
+      thunder: function (t) {
+        for (var i = 0; i < 5; i++) k.hiss(out, t + i * 0.22, 0.45, 0.5 - i * 0.07, "lowpass", 220 - i * 25, 60, 0.7);
+        k.tone(out, "sine", 70, 32, t, 0.9, 0.4);
+      },
+      croak: function (t) {
+        for (var i = 0; i < 3; i++) {
+          k.tone(out, "square", 150, 110, t + i * 0.3, 0.12, 0.12, 700);
+          k.tone(out, "square", 190, 140, t + i * 0.3 + 0.13, 0.1, 0.1, 700);
+        }
+      },
+      gush: function (t) {
+        for (var i = 0; i < 4; i++) k.hiss(out, t + i * 0.3, 0.45, 0.3, "bandpass", 900 + 500 * i, 2600, 0.9);
+      },
+      thud: function (t, i) {
+        k.tone(out, "sine", 130 + 6 * (i || 0), 60, t, 0.14, 0.4);
+        k.hiss(out, t, 0.05, 0.14, "bandpass", 900, 600, 2);
+      },
+      roar: function (t) {
+        for (var i = 0; i < 6; i++) k.hiss(out, t + i * 0.25, 0.48, 0.5 - i * 0.05, "lowpass", 1400 - i * 150, 300, 0.7);
+        k.tone(out, "sine", 90, 40, t, 1.2, 0.35);
+      },
+      cry: function (t) {
+        for (var i = 0; i < 3; i++) {
+          var s = t + i * 0.42;
+          k.tone(out, "triangle", 520, 700, s, 0.16, 0.12, 2400);
+          k.tone(out, "triangle", 700, 480, s + 0.16, 0.2, 0.12, 2400);
+        }
       }
     };
+  }
+
+  // The sounds of a place: one or two beds of filtered noise that breathe slowly, and
+  // small events that come at random (a cricket, a crackle, a bird, a far-off voice).
+  //   beds:   [filter, hz, q, level, breathe-seconds, breathe-depth]
+  //   events: [chance per tick (about 8 a second), name]
+  var AMBS = {
+    river:  { beds: [["bandpass", 700, 0.6, 0.10, 5, 0.35], ["highpass", 3200, 0.5, 0.025, 3, 0.5]], events: [[0.05, "drip"], [0.006, "bird"]] },
+    wind:   { beds: [["bandpass", 420, 1.4, 0.11, 7, 0.75]], events: [] },
+    night:  { beds: [["lowpass", 260, 0.5, 0.05, 9, 0.3]], events: [[0.14, "cricket"], [0.004, "owl"]] },
+    fire:   { beds: [["lowpass", 520, 0.6, 0.09, 2.5, 0.4]], events: [[0.35, "crackle"]] },
+    crowd:  { beds: [["bandpass", 520, 0.9, 0.07, 3, 0.45], ["bandpass", 1300, 1.2, 0.03, 2, 0.6]], events: [[0.12, "voice"]] },
+    sea:    { beds: [["lowpass", 900, 0.5, 0.16, 6.5, 0.85], ["highpass", 2600, 0.5, 0.03, 6.5, 0.9]], events: [[0.004, "gull"]] },
+    rain:   { beds: [["highpass", 1800, 0.5, 0.10, 4, 0.2], ["lowpass", 300, 0.6, 0.07, 6, 0.5]], events: [[0.05, "drip"]] },
+    birds:  { beds: [["bandpass", 500, 0.8, 0.03, 8, 0.5]], events: [[0.05, "bird"]] },
+    camp:   { beds: [["lowpass", 480, 0.6, 0.05, 3, 0.4], ["bandpass", 600, 0.9, 0.035, 3, 0.5]], events: [[0.12, "crackle"], [0.05, "voice"], [0.006, "bleat"]] }
+  };
+
+  function makeAmb(ctx, out, now) {
+    var k = kit(ctx), noise = makeNoise(ctx), cur = null, curName = "none", bus = null, timer = null;
+    var EVENTS = {
+      drip: function (t) { var f = 900 + Math.random() * 1400; k.tone(bus, "sine", f, f * 1.5, t, 0.06, 0.035); },
+      bird: function (t) { var f = 2200 + Math.random() * 1600; for (var i = 0; i < 3; i++) k.tone(bus, "sine", f, f * (1.15 + 0.2 * Math.random()), t + i * 0.09, 0.07, 0.03); },
+      cricket: function (t) { for (var i = 0; i < 4; i++) k.tone(bus, "square", 4300, 4300, t + i * 0.045, 0.025, 0.012, 6000); },
+      owl: function (t) { k.tone(bus, "sine", 420, 380, t, 0.3, 0.04); k.tone(bus, "sine", 400, 350, t + 0.4, 0.45, 0.04); },
+      crackle: function (t) { k.hiss(bus, t, 0.02 + Math.random() * 0.03, 0.05 + Math.random() * 0.06, "bandpass", 1500 + Math.random() * 3000, 800, 3); },
+      // a far-off voice: a short murmur with a vowel shape, never a word
+      voice: function (t) {
+        var f = 130 + Math.random() * 170, n = 2 + Math.floor(Math.random() * 3);
+        for (var i = 0; i < n; i++) {
+          var s = t + i * (0.13 + Math.random() * 0.08), g = f * (0.9 + Math.random() * 0.3);
+          k.tone(bus, "sawtooth", g, g * (0.92 + Math.random() * 0.16), s, 0.11, 0.02, 600 + Math.random() * 500);
+        }
+      },
+      gull: function (t) { k.tone(bus, "triangle", 1500, 1000, t, 0.25, 0.03, 3000); k.tone(bus, "triangle", 1400, 900, t + 0.3, 0.3, 0.03, 3000); },
+      bleat: function (t) { for (var i = 0; i < 5; i++) k.tone(bus, "sawtooth", 420 + (i % 2) * 28, 400, t + i * 0.07, 0.07, 0.025, 1400); }
+    };
+    function stop() {
+      if (timer) { clearInterval(timer); timer = null; }
+      if (cur) {
+        var old = cur, t = now();
+        old.gain.gain.cancelScheduledValues(t);
+        old.gain.gain.setTargetAtTime(0, t, 0.3);
+        setTimeout(function () { old.nodes.forEach(function (n) { try { n.stop(); } catch (err) { /* not a source */ } try { n.disconnect(); } catch (err2) { /* gone */ } }); }, 1800);
+        cur = null;
+      }
+    }
+    function set(name) {
+      if (name === curName) return;
+      stop();
+      curName = name;
+      var def = AMBS[name];
+      if (!def) return;
+      var t = now(), g = ctx.createGain(), nodes = [g];
+      g.gain.value = 0;
+      g.gain.setTargetAtTime(1, t, 0.6);
+      g.connect(out);
+      bus = g;
+      def.beds.forEach(function (b) {
+        var src = ctx.createBufferSource();
+        src.buffer = noise; src.loop = true;
+        var f = ctx.createBiquadFilter();
+        f.type = b[0]; f.frequency.value = b[1]; f.Q.value = b[2];
+        var lvl = ctx.createGain();
+        lvl.gain.value = b[3];
+        // the slow breathing: a very low oscillator moves the level up and down
+        var lfo = ctx.createOscillator(), depth = ctx.createGain();
+        lfo.frequency.value = 1 / b[4];
+        depth.gain.value = b[3] * b[5];
+        lfo.connect(depth); depth.connect(lvl.gain);
+        src.connect(f); f.connect(lvl); lvl.connect(g);
+        src.start(t, Math.random() * 0.5); lfo.start(t);
+        nodes.push(src, lfo, f, lvl, depth);
+      });
+      cur = { gain: g, nodes: nodes };
+      if (def.events.length) timer = setInterval(function () {
+        if (ctx.state !== "running") return;
+        def.events.forEach(function (e) { if (Math.random() < e[0] && EVENTS[e[1]]) { try { EVENTS[e[1]](ctx.currentTime + 0.02); } catch (err) { /* never break the game */ } } });
+      }, 125);
+    }
+    return { set: set, name: function () { return curName; } };
   }
 
   // The one signal chain, used live and by the offline tests so they agree:
@@ -384,11 +590,16 @@ window.AsmauMusic = (function () {
     sfxBus.gain.value = 1.8;
     sfxBus.connect(master);
 
-    return { comp: comp, duckGain: duckGain, engine: makeEngine(c, musicVol, nowFn), sfx: makeSfx(c, sfxBus) };
+    // the sounds of the place sit under everything and dip a little when someone is speaking
+    var ambBus = c.createGain();
+    ambBus.gain.value = 0.9;
+    ambBus.connect(duckGain);
+
+    return { comp: comp, duckGain: duckGain, engine: makeEngine(c, musicVol, nowFn), sfx: makeSfx(c, sfxBus), amb: makeAmb(c, ambBus, nowFn) };
   }
 
   /* ---------- the live instance ---------- */
-  var ctx = null, engine = null, sfx = null, comp = null;
+  var ctx = null, engine = null, sfx = null, comp = null, ambience = null, wantAmb = "none";
   var duckGain = null, analyser = null, timer = null;
   var enabled = { music: true, sfx: true };
   var wantMood = "wonder", wantTension = 0, ducked = false;
@@ -420,6 +631,8 @@ window.AsmauMusic = (function () {
     duckGain = g.duckGain;
     engine = g.engine;
     sfx = g.sfx;
+    ambience = g.amb;
+    ambience.set(enabled.sfx ? wantAmb : "none");
     analyser = ctx.createAnalyser();
     analyser.fftSize = 1024;
     comp.connect(analyser);
@@ -453,7 +666,15 @@ window.AsmauMusic = (function () {
     if (ctx) engine.setMood(enabled.music ? wantMood : "none");
   }
 
-  function setSfx(on) { enabled.sfx = !!on; }
+  function setSfx(on) {
+    enabled.sfx = !!on;
+    if (ambience) ambience.set(enabled.sfx ? wantAmb : "none");
+  }
+
+  function amb(name) {
+    wantAmb = AMBS[name] ? name : "none";
+    if (ambience) ambience.set(enabled.sfx ? wantAmb : "none");
+  }
 
   function duck(on) {
     ducked = !!on;
@@ -526,10 +747,12 @@ window.AsmauMusic = (function () {
     duck: duck,
     fx: fx,
     moodNames: Object.keys(MOODS),
-    sfxNames: ["tap", "boing", "wrong", "win", "heave", "whoosh", "swish", "coin", "wilt", "tick", "clink", "sparkle", "pour"],
+    sfxNames: ["tap", "boing", "wrong", "win", "heave", "whoosh", "swish", "coin", "wilt", "tick", "clink", "sparkle", "pour", "splash", "hiss", "thunder", "croak", "gush", "thud", "roar", "cry"],
+    amb: amb,
+    ambNames: Object.keys(AMBS),
     MUSIC_LEVEL: MUSIC_LEVEL,
     state: function () {
-      return { mood: engine ? engine.mood() : null, tension: engine ? engine.tension() : 0, running: ctx ? ctx.state : "none", ducked: ducked, stats: stats };
+      return { mood: engine ? engine.mood() : null, tension: engine ? engine.tension() : 0, running: ctx ? ctx.state : "none", ducked: ducked, stats: stats, amb: ambience ? ambience.name() : wantAmb };
     },
     _render: render,
     _renderMix: renderMix,

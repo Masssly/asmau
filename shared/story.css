@@ -465,3 +465,99 @@ button { touch-action: manipulation; -webkit-tap-highlight-color: transparent; }
 @media (prefers-reduced-motion: reduce) { .stage.enter { animation: none; } }
 
 .age-note { margin: 6px 0 0; font-size: 13px; color: var(--muted); text-align: center; }
+
+/* ---------- more places (first used by the Musa story) ---------- */
+.stage[data-scene="river"]    { background: linear-gradient(180deg, #ffd9a0 0%, #ffeccd 34%, #8fc7a0 34.2%, #5fae9e 48%, #2f8fa8 48.2%, #1f6f93 100%); }
+.stage[data-scene="city"]     { background: linear-gradient(180deg, #f3c98b 0%, #f8e2b8 44%, #c79a5e 44.2%, #a87c46 100%); }
+.stage[data-scene="fire"]     { background: radial-gradient(ellipse at 50% 46%, #ffcf6b 0%, #c7741f 22%, #4a2413 52%, #170d18 100%); }
+.stage[data-scene="mountain"] { background: linear-gradient(180deg, #7fb6e6 0%, #d8ecf8 46%, #9a8f86 46.2%, #6f655d 100%); }
+.stage[data-scene="sea"]      { background: linear-gradient(180deg, #ffd7a8 0%, #bfe6f2 34%, #2f9fc4 34.2%, #17688f 78%, #e2c283 78.2%, #cfa860 100%); }
+.stage[data-scene="camp"]     { background: linear-gradient(180deg, #f7c88a 0%, #fbe6c0 46%, #dcb672 46.2%, #c39a55 100%); }
+.stage[data-scene="storm"]    { background: linear-gradient(180deg, #2b2f44 0%, #565d78 50%, #6c6558 50.2%, #4f4a40 100%); }
+.stage[data-scene="fire"] .fig, .stage[data-scene="storm"] .fig { filter: drop-shadow(0 0 10px rgba(255,214,110,.35)); }
+
+/* ---------- something always moving in the scene ---------- */
+.fxl { position: absolute; inset: 0; pointer-events: none; z-index: 3; overflow: hidden; border-radius: inherit; }
+.fx-water { background: repeating-linear-gradient(100deg, rgba(255,255,255,0) 0 22px, rgba(255,255,255,.10) 22px 26px, rgba(255,255,255,0) 26px 60px); background-size: 220px 100%; mix-blend-mode: screen; animation: fx-slide 7s linear infinite; -webkit-mask-image: linear-gradient(180deg, transparent 30%, #000 60%); mask-image: linear-gradient(180deg, transparent 30%, #000 60%); }
+@keyframes fx-slide { from { background-position: 0 0; } to { background-position: 220px 0; } }
+.fx-dust::before, .fx-dust::after, .fx-mist::before, .fx-mist::after { content: ""; position: absolute; top: 0; bottom: 0; width: 60%; background: radial-gradient(ellipse at 50% 70%, rgba(255,236,190,.20), rgba(255,236,190,0) 65%); animation: fx-drift 14s linear infinite; }
+.fx-dust::after, .fx-mist::after { animation-delay: -7s; top: 20%; }
+.fx-mist::before, .fx-mist::after { background: radial-gradient(ellipse at 50% 40%, rgba(255,255,255,.26), rgba(255,255,255,0) 65%); animation-duration: 22s; }
+@keyframes fx-drift { from { left: -60%; } to { left: 100%; } }
+.fx-embers, .fx-stars, .fx-rain { background-repeat: repeat; }
+.fx-embers { background-image: radial-gradient(circle, rgba(255,190,90,.95) 0 1.6px, transparent 2.4px), radial-gradient(circle, rgba(255,120,40,.8) 0 1.2px, transparent 2px); background-size: 90px 130px, 60px 100px; background-position: 0 0, 30px 50px; animation: fx-rise 6s linear infinite; mix-blend-mode: screen; }
+@keyframes fx-rise { from { background-position: 0 0, 30px 50px; } to { background-position: 20px -130px, 10px -150px; } }
+.fx-stars { background-image: radial-gradient(circle, rgba(255,255,255,.95) 0 1.2px, transparent 2px), radial-gradient(circle, rgba(255,240,190,.9) 0 1px, transparent 1.8px); background-size: 110px 90px, 70px 120px; background-position: 10px 14px, 40px 60px; animation: fx-twinkle 3.2s ease-in-out infinite alternate; -webkit-mask-image: linear-gradient(180deg, #000 0%, transparent 60%); mask-image: linear-gradient(180deg, #000 0%, transparent 60%); }
+@keyframes fx-twinkle { from { opacity: .35; } to { opacity: 1; } }
+.fx-rain { background-image: linear-gradient(105deg, transparent 46%, rgba(210,230,255,.55) 48%, transparent 50%); background-size: 26px 46px; animation: fx-fall .45s linear infinite; }
+@keyframes fx-fall { from { background-position: 0 0; } to { background-position: -12px 46px; } }
+.fx-rays { background: conic-gradient(from 160deg at 50% 0%, rgba(255,240,190,0) 0deg, rgba(255,240,190,.20) 10deg, rgba(255,240,190,0) 20deg, rgba(255,240,190,.16) 32deg, rgba(255,240,190,0) 44deg); animation: fx-twinkle 5s ease-in-out infinite alternate; mix-blend-mode: screen; }
+@media (prefers-reduced-motion: reduce) { .fxl, .fxl::before, .fxl::after { animation: none !important; } }
+
+/* ---------- drawn icons standing in for emoji ---------- */
+.ico-svg > svg { display: inline-block; height: 1.15em; width: auto; vertical-align: middle; }
+.marker.ico-svg > svg, .trail-walker.ico-svg > svg { height: 1em; }
+.pick.cow-yellow { filter: sepia(1) saturate(4.5) hue-rotate(2deg) brightness(1.12); }
+.coin.thing { width: 56px; height: 56px; border-radius: 14px; border-color: transparent; font-size: 32px; line-height: 1; background: rgba(255,248,230,.18); box-shadow: 0 3px 0 rgba(0,0,0,.25); color: #23272e; position: relative; }
+.coin.thing.ico-svg > svg { height: 36px; }
+.coin.thing.counted { background: rgba(255,214,110,.5); }
+.coin-n { position: absolute; right: -4px; top: -6px; min-width: 20px; height: 20px; padding: 0 4px; border-radius: 10px; background: var(--gold); color: #23272e; font: 700 12px/20px var(--font-display); text-align: center; }
+.store-ico { display: block; font-size: 54px; line-height: 1.1; }
+.lift-thing { display: block; font-size: 56px; line-height: 1; text-align: center; }
+.lift-thing.ico-svg > svg { height: 60px; }
+.hold-ico { display: block; font-size: 64px; line-height: 1; text-align: center; }
+.lamp-btn.lit .hold-ico { filter: drop-shadow(0 0 18px rgba(255,214,110,.95)); }
+
+/* ---------- change: tap a thing and it becomes another ---------- */
+.chg-btn { position: absolute; left: 50%; top: 52%; width: 170px; height: 170px; transform: translate(-50%, -50%); border: 0; border-radius: 50%; background: radial-gradient(circle, rgba(255,248,230,.34), rgba(255,248,230,.08) 70%); cursor: pointer; z-index: 2; animation: sp-pulse 1.6s ease-in-out infinite; }
+.chg-btn:disabled { animation: none; opacity: 1; }
+.chg-face { display: grid; place-items: center; width: 100%; height: 100%; font-size: 100px; line-height: 1; }
+.chg-face.ico-svg > svg { height: 130px; }
+.chg-btn.glow .chg-face { filter: brightness(2.2) saturate(.15) drop-shadow(0 0 22px #fff) drop-shadow(0 0 44px rgba(255,255,255,.9)); }
+.chg-btn.poof { animation: chg-poof .5s ease; }
+@keyframes chg-poof { 0% { transform: translate(-50%, -50%) scale(.3) rotate(-20deg); } 70% { transform: translate(-50%, -50%) scale(1.15); } 100% { transform: translate(-50%, -50%) scale(1); } }
+
+/* ---------- part: hold, and the sea opens ---------- */
+.part-sea { position: absolute; inset: 0; overflow: hidden; border-radius: inherit; z-index: 1; }
+.part-path { position: absolute; inset: 0; background: linear-gradient(180deg, #f3d9a0 0%, #dcb672 100%); opacity: 0; }
+.part-wall { position: absolute; top: 0; bottom: 0; width: 50%; background: linear-gradient(180deg, #7fd3e6 0%, #2f9fc4 30%, #17688f 100%); transition: transform .12s linear; }
+.part-wall::after { content: ""; position: absolute; inset: 0; background: repeating-linear-gradient(100deg, rgba(255,255,255,0) 0 22px, rgba(255,255,255,.16) 22px 26px, rgba(255,255,255,0) 26px 60px); animation: fx-slide 5s linear infinite; background-size: 220px 100%; }
+.part-wall.l { left: 0; box-shadow: inset -18px 0 24px rgba(255,255,255,.35); }
+.part-wall.r { right: 0; box-shadow: inset 18px 0 24px rgba(255,255,255,.35); }
+.part-btn { position: absolute; left: 50%; top: 50%; width: 120px; height: 120px; transform: translate(-50%, -50%); border: 4px solid rgba(255,255,255,.85); border-radius: 50%; background: rgba(12,21,48,.45); font-size: 70px; line-height: 1; cursor: pointer; z-index: 2; touch-action: none; animation: sp-pulse 1.4s ease-in-out infinite; }
+.part-btn.ico-svg > svg { height: 92px; }
+.part-btn.lit { animation: none; box-shadow: 0 0 30px 8px rgba(255,214,110,.9); }
+
+/* ---------- trail: tap the glowing spot ---------- */
+.trail-spot { position: absolute; transform: translate(-50%, -50%); width: 64px; height: 64px; border: 0; border-radius: 50%; background: rgba(255,248,230,.14); font-size: 30px; line-height: 1; cursor: pointer; opacity: .55; z-index: 2; }
+.trail-spot.next { opacity: 1; background: rgba(255,214,110,.5); box-shadow: 0 0 0 4px var(--gold); animation: sp-pulse 1s ease-in-out infinite; }
+.trail-spot.done { opacity: .9; background: rgba(47,143,131,.5); }
+.trail-spot:disabled { color: inherit; }
+.trail-walker { position: absolute; transform: translate(-50%, -50%); font-size: 46px; line-height: 1; pointer-events: none; z-index: 3; transition: left .35s ease, top .35s ease; }
+.trail-walker.ico-svg > svg { height: 46px; }
+.trail-walker.hop { animation: hop .4s ease; }
+
+/* ---------- seek: a finger of light in the dark ---------- */
+.seek-dark { position: absolute; inset: 0; background: rgba(4,6,20,.96); pointer-events: none; z-index: 2; transition: opacity .8s ease; }
+.seek-dark.gone { opacity: 0; }
+.seek-target { position: absolute; transform: translate(-50%, -50%); width: 84px; height: 84px; border: 0; background: none; font-size: 54px; line-height: 1; cursor: pointer; z-index: 1; }
+.seek-target.near { animation: sp-pulse .7s ease-in-out infinite; }
+.seek-target.glimmer { z-index: 3; opacity: .5; filter: drop-shadow(0 0 14px rgba(255,190,90,.9)); animation: fx-twinkle 1.4s ease-in-out infinite alternate; }
+.seek-target.found { z-index: 3; opacity: 1; filter: drop-shadow(0 0 24px rgba(255,190,90,.95)); animation: sp-pulse 1s ease-in-out infinite; }
+
+/* ---------- wipe: rub it clear ---------- */
+.wipe-cv { position: absolute; inset: 0; width: 100%; height: 100%; z-index: 2; touch-action: none; cursor: grab; transition: opacity .7s ease; border-radius: inherit; }
+.wipe-cv.gone { opacity: 0; pointer-events: none; }
+.wipe-under { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); font-size: 96px; line-height: 1; z-index: 1; filter: drop-shadow(0 0 18px rgba(255,214,110,.9)); }
+.stage .hold-hint { z-index: 3; text-shadow: 0 2px 8px rgba(0,0,0,.8); pointer-events: none; }
+
+/* ---------- build: brick by brick, from the ground up ---------- */
+.build-wall { position: absolute; left: 50%; bottom: 84px; transform: translateX(-50%) scaleY(-1); width: min(78%, 300px); display: grid; gap: 4px; z-index: 2; cursor: pointer; }
+.build-slot { height: 40px; border: 2px dashed rgba(255,248,230,.45); border-radius: 8px; display: grid; place-items: center; font-size: 28px; line-height: 1; transform: scaleY(-1); }
+.build-slot.laid { border-color: transparent; animation: coin-pop .3s ease; }
+.build-slot.ico-svg > svg { height: 34px; }
+.build-btn { position: absolute; left: 50%; bottom: 14px; transform: translateX(-50%); min-height: 56px; font-size: 20px; padding: 12px 26px; z-index: 2; }
+
+/* a title scene that is the game's cover picture */
+.title-sky.has-cover { height: 230px; border-radius: 22px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,.35); }
+.title-cover { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; animation: pic-drift 20s ease-in-out infinite alternate; }

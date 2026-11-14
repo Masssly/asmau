@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Musa — Asmau</title>
+<link rel="manifest" href="../../app.webmanifest">
+<meta name="theme-color" content="#0c1530">
+<link rel="apple-touch-icon" href="../../icons/icon-180.png">
+<link rel="stylesheet" href="../../fonts/fonts.css">
+<link rel="stylesheet" href="../../shared/style.css">
+<link rel="stylesheet" href="../../shared/story.css">
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <a class="btn-back" href="../../index.html">← Asmau</a>
+    <h1>Musa</h1>
+    <button class="icon-btn" id="musicBtn" aria-label="Music is on">🎵</button>
+    <button class="icon-btn" id="soundBtn" aria-label="Voice and effects are on">🔊</button>
+    <button class="icon-btn" id="mapBtn" aria-label="All chapters">☰</button>
+  </div>
+
+  <section id="title" class="title">
+    <div class="title-sky has-cover" id="titleSky" aria-hidden="true"><img class="title-cover" src="cover.webp" alt=""></div>
+    <h2>The Story of Musa</h2>
+    <p class="sub">Twenty-five chapters. About a hundred things to do. Play a little every day.</p>
+    <span class="age-badge">Ages 3–10</span>
+    <p class="age-note">Under 5: play it together with a grown-up</p>
+    <p class="ver" data-asmau-version hidden></p>
+    <div class="title-actions">
+      <button class="btn btn-gold" id="startBtn">Start the story</button>
+      <button class="btn-back" id="restartBtn" hidden>Start from the beginning</button>
+    </div>
+
+    <p class="prep" id="prep" hidden></p>
+
+    <details class="parents">
+      <summary>For parents</summary>
+      <ul>
+        <li>This is a retelling in simple words, not a translation. The story of Musa is spread over many surahs; this game
+          follows <a href="https://quran.com/28" target="_blank" rel="noopener">Surah Al-Qasas</a> (28:3–43) and
+          <a href="https://quran.com/20" target="_blank" rel="noopener">Surah Ta-Ha</a> (20:9–98), with passages from surahs
+          2, 5, 7, 10, 18, 26, 40 and 66. Every chapter was checked against M. A. S. Abdel Haleem’s English translation.
+          Under each scene, “For parents: this chapter” says what the verses say beyond the child’s version and links to them.</li>
+        <li>Details that are not in the verses are marked on their scene with a small label. They come from Ibn Kathir’s
+          tafsir (abridged English), or from hadith quoted in it, and each chapter note names who the report is from:
+          for example the queen’s name, the heavy rock at the well, the pebbles on the path, the twelve paths through the sea,
+          the frogs in the pots, the name al-Khidr and the bird on the boat. Where the early scholars differed, the note says so.</li>
+        <li>Some parts are told more gently than the verses tell them: Pharaoh’s order against the baby boys (28:4), the man
+          Musa struck (28:15), Pharaoh’s threats to the magicians (20:71), the drowning (26:66), and Musa’s anger at his brother
+          (7:150). One event is not told to children at all: the boy in 18:74, which the game calls “a story for when you are
+          older”. Each chapter note says exactly what was softened or left out.</li>
+        <li>People are shown, all with dark skin, including Prophet Musa and Prophet Harun (peace be upon them). Muslims differ
+          on whether prophets should be shown, and these games show them. Allah is never shown: His speech to Musa appears only
+          as a fire and a light. No angel is shown. Prophet Muhammad ﷺ is mentioned once (the fast of Ashura) and is not shown.</li>
+        <li>The story’s pictures are not made yet, so for now each scene is drawn with simple icons. When the pictures
+          arrive they will be AI-generated, like the Yusuf ones, in the same West African style.</li>
+        <li>It is long on purpose: about a hundred activities. Nobody is meant to finish it in one sitting. The game remembers
+          the place, and “☰” opens any chapter. A child of 3 or 4 will need a grown-up for the ordering, sorting and
+          matching games. Every activity can be skipped.</li>
+        <li>The music, the sounds of each place (the river, the wind, the fire, a far-off crowd) and the effects are made by
+          the browser as you play; there are no recordings of instruments or voices in them. 🎵 turns the music off on its own,
+          and 🔊 turns off the voice, the effects and the sounds of the place. Both choices are remembered on this device.</li>
+        <li>English is read by a computer voice, standing in until a real one is recorded.
+          Arabic is never read by a computer voice.
+          <a href="../../tools/record-voice/index.html">Record your own voice</a> and the game uses it straight away on this device.</li>
+      </ul>
+    </details>
+  </section>
+
+  <section id="play" hidden>
+    <div class="chapter-head">
+      <span class="num" id="chNum"></span>
+      <h2 id="chTitle"></h2>
+      <a class="src" id="chSource" target="_blank" rel="noopener"></a>
+    </div>
+    <div class="trail" id="trail"></div>
+    <div class="stage" id="stage"></div>
+    <button class="caption" id="caption" aria-live="polite">
+      <span id="captionText"></span>
+      <span class="ear" aria-hidden="true">🔊</span>
+    </button>
+    <details class="pnote" id="pnote">
+      <summary>For parents: this chapter</summary>
+      <div id="pnoteBody"></div>
+    </details>
+    <div class="nav">
+      <button class="btn-bk" id="prevBtn" aria-label="Back"><span class="ico" aria-hidden="true">◀</span><span class="lbl">Back</span></button>
+      <button class="btn-go" id="nextBtn" aria-label="Next"><span class="lbl">Next</span><span class="ico" aria-hidden="true">▶</span></button>
+    </div>
+  </section>
+
+  <section id="chapters" hidden>
+    <h2 class="view-title">All chapters</h2>
+    <div class="chapter-grid" id="chapterGrid"></div>
+  </section>
+
+  <section id="end" class="end" hidden>
+    <div class="big" id="endFig" aria-hidden="true"></div>
+    <h2>The End</h2>
+    <p id="endText"></p>
+    <div class="virtues"><span>Trust in Allah</span><span>Courage</span><span>Gentle words</span></div>
+    <div class="title-actions">
+      <button class="btn btn-gold" id="againBtn">Read it again</button>
+      <button class="btn-back" id="endChaptersBtn">Pick a chapter</button>
+    </div>
+  </section>
+</div>
+
+<script src="../../shared/narration.js"></script>
+<script src="../../shared/music.js"></script>
+<script src="game.js"></script>
+<script src="art.js"></script>
+<script src="story.js"></script>
+<script src="../../shared/story-engine.js"></script>
+<script src="../../shared/pwa.js"></script>
+</body>
+</html>

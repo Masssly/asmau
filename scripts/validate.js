@@ -30,7 +30,7 @@ const exists = (f) => fs.existsSync(path.join(ROOT, f));
 const json = (f) => { try { return JSON.parse(read(f)); } catch (e) { fail(f + ": not valid JSON (" + e.message + ")"); return null; } };
 
 const REF = /^\d+:\d+(?:-\d+)?$/;
-const SCENES = new Set(["night", "dusk", "desert", "well", "egypt", "palace", "prison", "field", "grey", "dawn"]);
+const SCENES = new Set(["night", "dusk", "desert", "well", "egypt", "palace", "prison", "field", "grey", "dawn", "river", "city", "fire", "mountain", "sea", "camp", "storm"]);
 
 // load a browser script in an empty sandbox and hand back its globals
 function load(files) {
@@ -54,8 +54,8 @@ const slugs = sections.reduce((all, s) => all.concat((s && s.games) || []), []);
 if (!slugs.length) fail("manifest.json: no games listed");
 if (new Set(slugs).size !== slugs.length) fail("manifest.json: a game is listed twice");
 
-let musicMoods = [];
-try { musicMoods = load(["shared/music.js"]).AsmauMusic.moodNames; } catch (e) { fail("shared/music.js: failed to load (" + e.message + ")"); }
+let musicMoods = [], ambNames = [], sfxNames = [];
+try { const m = load(["shared/music.js"]).AsmauMusic; musicMoods = m.moodNames; ambNames = m.ambNames; sfxNames = m.sfxNames; } catch (e) { fail("shared/music.js: failed to load (" + e.message + ")"); }
 
 for (const slug of slugs) {
   const dir = "games/" + slug;
@@ -76,8 +76,8 @@ for (const slug of slugs) {
       if (!exists(dir + "/" + g.cover)) fail(dir + "/game.json: cover '" + g.cover + "' does not exist");
       if (typeof g.coverAlt !== "string" || !g.coverAlt.trim()) fail(dir + "/game.json: a cover needs coverAlt, a description of the picture");
     }
-    if (g.basedOn !== null && g.basedOn !== undefined && !/^Surah .+, \d+:\d+(?:-\d+)?$/.test(g.basedOn)) {
-      fail(dir + "/game.json: basedOn should be null or look like 'Surah Yusuf, 12:4-101'");
+    if (g.basedOn !== null && g.basedOn !== undefined && !/^Surah .+, \d+:\d+(?:-\d+)?(?:, with .+)?$/.test(g.basedOn)) {
+      fail(dir + "/game.json: basedOn should be null or look like 'Surah Yusuf, 12:4-101' (then, if needed, ', with ...')");
     }
   }
 
@@ -126,6 +126,7 @@ for (const slug of slugs) {
     if (chapterIds.has(ch.id)) fail(dir + ": duplicate chapter id " + ch.id);
     chapterIds.add(ch.id);
     if (!REF.test(ch.source || "")) fail(dir + ": " + here + " has a bad Qur'an reference '" + ch.source + "'");
+    for (const r of ch.more || []) if (!REF.test(r)) fail(dir + ": " + here + " has a bad Qur'an reference '" + r + "' in 'more'");
     if (!Array.isArray(ch.parent) || !ch.parent.length || ch.parent.some((p) => typeof p !== "string" || !p.trim())) fail(dir + ": " + here + " needs notes for parents");
     if (!Array.isArray(ch.steps) || !ch.steps.length) { fail(dir + ": " + here + " has no steps"); return; }
 
@@ -141,7 +142,9 @@ for (const slug of slugs) {
     ch.steps.forEach((st, si) => {
       const where = here + " step " + (si + 1);
       if (!SCENES.has(st.scene)) fail(dir + ": " + where + " has unknown scene '" + st.scene + "'");
-      if (st.say) { need(st.say, where); artCheck(st.art, where); artCheck(st.over, where); return; }
+      if (st.amb && st.amb !== "none" && !ambNames.includes(st.amb)) fail(dir + ": " + where + " uses unknown background sound '" + st.amb + "'");
+      if (st.cue && !sfxNames.includes(st.cue)) fail(dir + ": " + where + " uses unknown sound effect '" + st.cue + "'");
+      if (st.say) { need(st.say, where); artCheck(st.art, where); artCheck(st.over, where); if (st.pic && !ids.has(st.pic)) fail(dir + ": " + where + " borrows the picture of '" + st.pic + "', which is not a line"); return; }
       if (!st.play || !st.line) { fail(dir + ": " + where + " is neither narrated nor an activity"); return; }
       need(st.line, where);
       if (!activities.has(st.play)) fail(dir + ": " + where + " uses unknown activity '" + st.play + "'");
@@ -154,6 +157,8 @@ for (const slug of slugs) {
       for (const p of o.pairs || []) { need(p.a, where); need(p.b, where); }
       for (const i of o.items || []) if (st.play !== "pick") need(i.line, where);
       for (const c of o.cards || []) need(c.line, where);
+      for (const s of o.states || []) if (s.line) need(s.line, where);
+      if (st.play === "change" && (o.states || []).length < 2) fail(dir + ": " + where + " needs at least two states to change between");
       for (const n of o.owners || []) if (!people.has(n)) fail(dir + ": " + where + " uses unknown person '" + n + "'");
       if (st.play === "choice" && !(o.options || []).some((x) => x.ok)) fail(dir + ": " + where + " has no correct answer");
       // a child who cannot read must be able to hear every answer: each one has a spoken line
@@ -195,7 +200,7 @@ for (const slug of slugs) {
     }
     for (const [pic, where] of puzzles) if (!art[pic]) fail(dir + ": " + where + " is a puzzle of '" + pic + "', which is not a picture in art.js");
     for (const f of files) {
-      if (!art[f.replace(/\.webp$/, "")]) fail(imgDir + "/" + f + ": not listed in art.js (run scripts/yusuf-art/build.py)");
+      if (!art[f.replace(/\.webp$/, "")]) fail(imgDir + "/" + f + ": not listed in art.js (run the game's picture script, scripts/<game>-art/build.py)");
     }
   }
 }

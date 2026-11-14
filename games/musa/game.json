@@ -2,12 +2,12 @@
   "slug": "musa",
   "title": "Musa",
   "icon": "🌊",
-  "minAge": 5,
-  "maxAge": 9,
-  "tagline": "The baby in the basket, and the long road that followed.",
-  "basedOn": null,
-  "depictionNotes": "Not built yet. The cover picture is AI-generated and shows no person. Whether and how people are shown will be decided, and stated here, when the game is made.",
-  "status": "coming-soon",
+  "minAge": 3,
+  "maxAge": 10,
+  "tagline": "From the baby on the river to the sea that opened: twenty-five chapters and a hundred things to do.",
+  "basedOn": "Surah Al-Qasas, 28:3-43, with Ta-Ha 20:9-98 and passages from surahs 2, 5, 7, 10, 18, 26, 40 and 66",
+  "depictionNotes": "People are shown, all with dark skin, including Prophet Musa and Prophet Harun (peace be upon them), by the owner's decision for these games. Allah is never shown, no angel is shown, and Prophet Muhammad ﷺ is mentioned once and not shown. Until the story's pictures are made, scenes are drawn with simple icons. Several parts are told more gently than the verses tell them (the order against the baby boys, the man Musa struck, Pharaoh's threats, the drowning, and the boy in 18:74, which is left for parents); each chapter's 'For parents' note says exactly how. Details that come from Ibn Kathir's tafsir (abridged English) or from hadith quoted in it, and not from the verses, are labelled on their scenes and sourced in the chapter notes.",
   "cover": "cover.webp",
-  "coverAlt": "A basket floating on the river among the reeds, glowing softly."
+  "coverAlt": "A basket floating on the river among the reeds, glowing softly.",
+  "ageNote": "Under 5: with a grown-up"
 }

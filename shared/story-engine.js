@@ -38,7 +38,33 @@
   var pnoteFor = null;
   var save = loadSave();
 
-  var SCENE_MOOD = { night: "wonder", dusk: "sad", desert: "desert", well: "tense", egypt: "regal", palace: "regal", prison: "sad", field: "joy", grey: "sad", dawn: "joy" };
+  // What a scene sounds and moves like unless a step says otherwise. A game can replace any
+  // of these in game.js (sceneMood, sceneAmb, sceneFx), which is how each story gets its own feel.
+  var SCENE_MOOD = merge({ night: "wonder", dusk: "sad", desert: "desert", well: "tense", egypt: "regal", palace: "regal", prison: "sad", field: "joy", grey: "sad", dawn: "joy" }, CFG.sceneMood);
+  // the sounds of the place, under the music: see amb() in music.js
+  var SCENE_AMB = merge({ night: "night", dusk: "night", desert: "wind", well: "wind", egypt: "crowd", field: "birds", grey: "wind", dawn: "birds",
+    river: "river", city: "crowd", fire: "fire", mountain: "wind", sea: "sea", camp: "camp", storm: "rain" }, CFG.sceneAmb);
+  // something always moving in the scene: see .fxl in story.css
+  var SCENE_FX = merge({ night: "stars", desert: "dust", river: "water", sea: "water", fire: "embers", storm: "rain", mountain: "mist", camp: "embers", dawn: "rays" }, CFG.sceneFx);
+  // what is drawn behind a narrated step that has no picture
+  var SCENE_DECOR = {
+    night: [["🌙", 82, 16, 44, "float"], ["⭐", 16, 20, 22, "twinkle"], ["⭐", 40, 10, 18, "twinkle"], ["⭐", 62, 22, 20, "twinkle"]],
+    dusk: [["⭐", 20, 14, 18, "twinkle"], ["🌴", 12, 62, 70], ["🌴", 90, 66, 60]],
+    desert: [["☀️", 84, 16, 46, "float"], ["🌵", 10, 70, 46], ["🐪", 88, 74, 44]],
+    well: [["☀️", 84, 14, 40, "float"], ["🌳", 12, 58, 80], ["🐑", 86, 80, 36], ["🐑", 72, 86, 30]],
+    egypt: [["☀️", 84, 14, 44, "float"], ["🌴", 8, 62, 64], ["🏛️", 90, 64, 64]],
+    palace: [["🏛️", 14, 34, 70], ["🏛️", 86, 34, 70]],
+    field: [["☀️", 84, 14, 40, "float"], ["🌳", 10, 58, 76], ["🐑", 88, 80, 34]],
+    grey: [["☁️", 22, 18, 50, "float"], ["☁️", 76, 14, 44, "float"]],
+    dawn: [["🌅", 50, 22, 70, "float"], ["🕊️", 22, 26, 30, "float"], ["🕊️", 78, 20, 26, "float"]],
+    river: [["🌴", 8, 44, 70], ["🌴", 92, 48, 60], ["🌾", 18, 84, 40], ["🌾", 84, 86, 40]],
+    city: [["🏠", 12, 60, 60], ["🏠", 88, 62, 56], ["🌴", 50, 30, 40]],
+    fire: [["⭐", 16, 14, 18, "twinkle"], ["⭐", 80, 12, 20, "twinkle"], ["⛰️", 12, 60, 70], ["⛰️", 90, 62, 64]],
+    mountain: [["⛰️", 16, 62, 90], ["⛰️", 84, 66, 80], ["☁️", 50, 16, 44, "float"]],
+    sea: [["🌊", 14, 82, 50, "bob"], ["🌊", 50, 88, 50, "bob"], ["🌊", 86, 82, 50, "bob"], ["☁️", 24, 14, 40, "float"]],
+    camp: [["⛺", 12, 66, 62], ["⛺", 88, 68, 56], ["☀️", 84, 14, 36, "float"]],
+    storm: [["🌧️", 24, 16, 54, "float"], ["⛈️", 74, 14, 58, "float"], ["🏠", 14, 76, 48], ["🏠", 86, 78, 44]]
+  };
   var GROUPS = CFG.groups || {};
 
   /* ---------- drawn pieces ---------- */
@@ -48,6 +74,11 @@
     SACK: '<svg viewBox="0 0 60 70"><path d="M14 22C4 40 6 62 30 64c24-2 26-24 16-42Z" fill="#c9a26a" stroke="#7a5a30" stroke-width="3"/><path d="M16 22c6-8 22-8 28 0" fill="#b08a50" stroke="#7a5a30" stroke-width="3"/><path d="M20 18 14 6M40 18l6-12M30 16V5" stroke="#7a5a30" stroke-width="3" stroke-linecap="round"/></svg>',
     CUP: '<svg viewBox="0 0 60 70"><path d="M12 8h36c0 22-8 32-18 32S12 30 12 8Z" fill="#f0b84b" stroke="#a87412" stroke-width="3" stroke-linejoin="round"/><path d="M30 40v16M18 60h24" stroke="#a87412" stroke-width="5" stroke-linecap="round"/><circle cx="30" cy="20" r="4" fill="#fff3c4"/></svg>',
     STORE: '<svg viewBox="0 0 80 90"><path d="M10 86V44c0-28 60-28 60 0v42Z" fill="#d9b06a" stroke="#8a6230" stroke-width="3"/><rect x="32" y="60" width="16" height="26" rx="8" fill="#6b4423"/><rect x="34" y="28" width="12" height="10" rx="2" fill="#6b4423"/></svg>',
+    STAFF: '<svg viewBox="0 0 40 100"><path d="M22 96 19 30C18 16 8 14 9 6c1-6 12-5 13 2" fill="none" stroke="#5e3a1c" stroke-width="7" stroke-linecap="round"/><path d="M22 96 19 30C18 16 8 14 9 6c1-6 12-5 13 2" fill="none" stroke="#a8743e" stroke-width="3.5" stroke-linecap="round"/><path d="M20 52h2M20 70h2" stroke="#5e3a1c" stroke-width="3" stroke-linecap="round"/></svg>',
+    ROCK: '<svg viewBox="0 0 80 64"><path d="M8 54C2 40 8 22 22 14c12-8 30-8 42 2 12 10 12 26 8 38Z" fill="#9c958c" stroke="#5f5850" stroke-width="3" stroke-linejoin="round"/><path d="M22 28c6-8 14-10 22-9M48 40c6 0 10-3 13-8" fill="none" stroke="#c9c2b8" stroke-width="3" stroke-linecap="round"/><path d="M26 46c4 2 8 2 12 0" fill="none" stroke="#5f5850" stroke-width="2.5" stroke-linecap="round"/></svg>',
+    ROPE: '<svg viewBox="0 0 80 60"><path d="M6 44c10-22 18 14 28-8s16 14 26-10 12 4 14 8" fill="none" stroke="#8a6230" stroke-width="8" stroke-linecap="round"/><path d="M6 44c10-22 18 14 28-8s16 14 26-10 12 4 14 8" fill="none" stroke="#d9b06a" stroke-width="4" stroke-linecap="round" stroke-dasharray="5 5"/></svg>',
+    CHEST: '<svg viewBox="0 0 90 64"><path d="M8 26h74l-8 30H16Z" fill="#b5793e" stroke="#6b4423" stroke-width="3" stroke-linejoin="round"/><path d="M8 26c8-16 66-16 74 0" fill="#f6ead0" stroke="#6b4423" stroke-width="3"/><path d="M20 26v30M36 26v30M54 26v30M70 26v30" stroke="#6b4423" stroke-width="2" opacity=".55"/><path d="M12 40h66" stroke="#6b4423" stroke-width="2.5"/></svg>',
+    PLANK: '<svg viewBox="0 0 80 40"><rect x="4" y="6" width="72" height="28" rx="5" fill="#b5793e" stroke="#6b4423" stroke-width="3"/><path d="M14 16h30M30 25h34" stroke="#8a5a2c" stroke-width="2.5" stroke-linecap="round"/><circle cx="12" cy="20" r="2.2" fill="#6b4423"/><circle cx="68" cy="20" r="2.2" fill="#6b4423"/></svg>',
     LAMP: '<svg viewBox="0 0 60 80"><path d="M22 10h16M30 4v6" stroke="#8a6230" stroke-width="4" stroke-linecap="round"/><path d="M16 22 22 10h16l6 12Z" fill="#b8862f" stroke="#7a5518" stroke-width="2"/><rect class="lamp-glass" x="16" y="22" width="28" height="38" rx="4" fill="#3a3550" stroke="#7a5518" stroke-width="3"/><path d="M14 60h32l-4 12H18Z" fill="#b8862f" stroke="#7a5518" stroke-width="2"/><path class="lamp-flame" d="M30 54c-8-8-2-14 0-22 2 8 8 14 0 22Z" fill="#ffd45e" opacity=".15"/></svg>'
   };
 
@@ -147,7 +178,16 @@
   }
   function place(n, x, y) { n.style.left = x + "%"; n.style.top = y + "%"; }
   function shake(n) { n.classList.remove("shake"); void n.offsetWidth; n.classList.add("shake"); }
-  function merge(a, b) { var o = {}, k; for (k in a) o[k] = a[k]; for (k in b) o[k] = b[k]; return o; }
+  function merge(a, b) { var o = {}, k; for (k in a) o[k] = a[k]; for (k in (b || {})) o[k] = b[k]; return o; }
+
+  // An icon is an emoji, or the name of a drawn piece (STAFF, ROCK, CHEST ...): older tablets
+  // have no emoji for those, so they are drawn.
+  function ico(n, icon) {
+    if (SVG[icon]) { n.innerHTML = SVG[icon]; n.classList.add("ico-svg"); }
+    else { n.textContent = icon; n.classList.remove("ico-svg"); }
+    return n;
+  }
+  function mkIco(tag, cls, icon) { return ico(mk(tag, cls), icon); }
 
   function setNext(label, skip) {
     nextBtn.querySelector(".lbl").textContent = label;
@@ -364,7 +404,7 @@
     opts.options.forEach(function (o, i) {
       var b = mk("button", "choice");
       var line = question + "-opt" + (i + 1);
-      b.appendChild(mk("span", "choice-ico", o.icon));
+      b.appendChild(mkIco("span", "choice-ico", o.icon));
       b.appendChild(mk("span", "", o.label));
       b.appendChild(mk("span", "choice-ear", "🔊"));
       b.addEventListener("click", function () {
@@ -394,14 +434,16 @@
     var p = 0, finished = false, dragged = false, down = false, startY = 0;
     var shaft = mk("div", "shaft");
     var lift = mk("div", "lift");
-    lift.innerHTML = '<div class="rope"></div><div class="lift-face"></div>' + SVG.BUCKET;
+    // by default the hero is hauled up in a bucket; opts.icon lifts some other thing instead
+    lift.innerHTML = '<div class="rope"></div><div class="lift-face"></div>' + (opts.icon ? '<span class="lift-thing"></span>' : SVG.BUCKET);
+    if (opts.icon) ico(lift.querySelector(".lift-thing"), opts.icon);
     var face = lift.querySelector(".lift-face");
-    function setFace(expr) { face.innerHTML = People.svg(HERO, { expr: expr }); }
+    function setFace(expr) { if (!opts.icon) face.innerHTML = People.svg(HERO, { expr: expr }); }
     setFace("scared");
     shaft.appendChild(lift);
     stage.appendChild(shaft);
     stage.appendChild(mk("div", "shaft-rim"));
-    var btn = mk("button", "btn btn-teal pull-btn", "Pull!");
+    var btn = mk("button", "btn btn-teal pull-btn", opts.label || "Pull!");
     stage.appendChild(btn);
 
     function paint() { lift.style.bottom = (3 + p * 72) + "%"; }
@@ -459,12 +501,12 @@
       stage.style.transition = "";
     }
     stage.appendChild(mk("div", "path"));
-    var from = mk("div", "marker", opts.from); place(from, 9, 62); stage.appendChild(from);
-    var to = mk("div", "marker", opts.to); place(to, 91, 62); stage.appendChild(to);
+    var from = mkIco("div", "marker", opts.from); place(from, 9, 62); stage.appendChild(from);
+    var to = mkIco("div", "marker", opts.to); place(to, 91, 62); stage.appendChild(to);
 
     var mover = mk("button", "mover fresh");
     mover.setAttribute("aria-label", "Drag or tap to move forward");
-    mover.appendChild(mk("span", opts.flip ? "flip" : "", opts.icon));
+    mover.appendChild(mkIco("span", opts.flip ? "flip" : "", opts.icon));
     if (opts.rider) {
       var rider = mk("span", "rider");
       rider.innerHTML = People.svg(HERO, { expr: "happy" });
@@ -514,9 +556,10 @@
     stage.appendChild(dark);
     var btn = mk("button", "lamp-btn");
     btn.setAttribute("aria-label", "Press and hold the lamp");
-    btn.innerHTML = '<svg class="ring" viewBox="0 0 120 120"><circle class="ring-bg" cx="60" cy="60" r="54"/><circle class="ring-fg" cx="60" cy="60" r="54"/></svg><span class="lamp-wrap">' + SVG.LAMP + "</span>";
+    btn.innerHTML = '<svg class="ring" viewBox="0 0 120 120"><circle class="ring-bg" cx="60" cy="60" r="54"/><circle class="ring-fg" cx="60" cy="60" r="54"/></svg><span class="lamp-wrap">' + (opts.icon ? '<span class="hold-ico lamp-flame"></span>' : SVG.LAMP) + "</span>";
+    if (opts.icon) ico(btn.querySelector(".hold-ico"), opts.icon);
     stage.appendChild(btn);
-    var hint = mk("div", "hold-hint", "Press and hold");
+    var hint = mk("div", "hold-hint", opts.hint || "Press and hold");
     stage.appendChild(hint);
 
     var fg = btn.querySelector(".ring-fg");
@@ -538,7 +581,7 @@
       if (p >= 1) {
         finished = true;
         btn.classList.add("lit");
-        hint.textContent = "It shines!";
+        hint.textContent = opts.done || "It shines!";
         music.tension(0);
         done();
         return;
@@ -579,7 +622,7 @@
     function card(id, icon, label, side, pair) {
       var b = mk("button", "mcard " + side);
       b.setAttribute("aria-label", lines[id]);
-      b.appendChild(mk("span", "mcard-ico", icon));
+      b.appendChild(mkIco("span", "mcard-ico", icon));
       b.appendChild(mk("span", "mcard-label", label || lines[id]));
       b.addEventListener("click", function () {
         if (b.classList.contains("matched")) return;
@@ -666,7 +709,7 @@
     shuffled.forEach(function (c) {
       var b = mk("button", "ocard");
       b.setAttribute("aria-label", lines[c.line]);
-      b.appendChild(mk("span", "ocard-ico", c.icon));
+      b.appendChild(mkIco("span", "ocard-ico", c.icon));
       b.appendChild(mk("span", "ocard-label", c.label));
       var badge = mk("span", "ocard-n");
       b.appendChild(badge);
@@ -695,17 +738,17 @@
   // Grain sprouts around the field and waits until it is tapped. Nothing is timed.
   ACT["catch"] = function (opts, done) {
     var target = opts.target || 7, n = 0, finished = false;
-    stage.appendChild(sprite(["P:" + HERO_GROWN, 90, 80, 72, "bob", { expr: "happy" }]));
+    if (!opts.icon) stage.appendChild(sprite(["P:" + HERO_GROWN, 90, 80, 72, "bob", { expr: "happy" }]));
     var store = mk("div", "store-box");
-    store.innerHTML = SVG.STORE;
+    if (opts.into) store.appendChild(mkIco("span", "store-ico", opts.into)); else store.innerHTML = SVG.STORE;
     var count = mk("div", "store-count", "0 / " + target);
     store.appendChild(count);
     stage.appendChild(store);
 
     function spawn() {
       if (finished || stage.querySelectorAll(".wheat").length >= 3) return;
-      var w = mk("button", "wheat", "🌾");
-      w.setAttribute("aria-label", "grain");
+      var w = mkIco("button", "wheat", opts.icon || "🌾");
+      w.setAttribute("aria-label", opts.icon ? "tap me" : "grain");
       place(w, 10 + Math.random() * 56, 58 + Math.random() * 30);
       w.addEventListener("click", function () {
         if (w.disabled || finished) return;
@@ -797,7 +840,8 @@
     deck.forEach(function (icon) {
       var c = mk("button", "mem");
       c.setAttribute("aria-label", "card");
-      c.appendChild(mk("span", "mem-face", icon));
+      c.appendChild(mkIco("span", "mem-face", icon));
+      c.dataset.icon = icon;
       c.addEventListener("click", function () {
         if (busy || c.classList.contains("up")) return;
         c.classList.add("up");
@@ -864,13 +908,13 @@
     var chip = mk("div", "count-chip", "0 / " + things.length);
     stage.appendChild(chip);
     var card = mk("div", "sort-card");
-    var ico = mk("span", "sort-ico"), lab = mk("span", "sort-lab");
-    card.appendChild(ico);
+    var icoEl = mk("span", "sort-ico"), lab = mk("span", "sort-lab");
+    card.appendChild(icoEl);
     card.appendChild(lab);
     stage.appendChild(card);
     var box = mk("div", "choices");
     function show(speak) {
-      ico.textContent = things[at].icon;
+      ico(icoEl, things[at].icon);
       lab.textContent = things[at].label;
       card.classList.remove("in"); void card.offsetWidth; card.classList.add("in");
       if (speak) say(thingLine(at));
@@ -878,7 +922,7 @@
     card.addEventListener("click", function () { if (!finished && at < things.length) say(thingLine(at)); });
     opts.bins.forEach(function (bin, bi) {
       var b = mk("button", "choice");
-      b.appendChild(mk("span", "choice-ico", bin.icon));
+      b.appendChild(mkIco("span", "choice-ico", bin.icon));
       b.appendChild(mk("span", "", bin.label));
       b.appendChild(mk("span", "choice-ear", "🔊"));
       b.addEventListener("click", function () {
@@ -894,7 +938,7 @@
         chip.textContent = at + " / " + things.length;
         if (at === things.length) {
           card.classList.add("done");
-          ico.textContent = "✨";
+          ico(icoEl, "✨");
           lab.textContent = "";
           Array.prototype.forEach.call(box.children, function (x) { x.disabled = true; });
           finished = true;
@@ -919,13 +963,16 @@
     var tray = mk("div", "coin-tray");
     for (var i = 0; i < total; i++) {
       (function () {
-        var b = mk("button", "coin");
-        b.setAttribute("aria-label", "silver coin");
+        var b = mk("button", "coin" + (opts.icon ? " thing" : ""));
+        if (opts.icon) ico(b, opts.icon);
+        b.setAttribute("aria-label", opts.icon ? "tap to count" : "silver coin");
         b.addEventListener("click", function () {
           if (b.disabled) return;
           b.disabled = true;
           n += 1;
-          b.textContent = String(n);
+          if (opts.got) { ico(b, opts.got); b.appendChild(mk("span", "coin-n", String(n))); }
+          else if (opts.icon) b.appendChild(mk("span", "coin-n", String(n)));
+          else b.textContent = String(n);
           b.classList.add("counted");
           fx("coin", n);
           chip.textContent = n + " / " + total;
@@ -1062,6 +1109,231 @@
     return function () {};
   };
 
+  // A thing that changes when it is tapped: a staff becomes a snake and a staff again.
+  // opts.states: [{ icon, line, glow }]; the first is how it starts, each tap moves to the next.
+  ACT.change = function (opts, done) {
+    var states = opts.states, at = 0, token = stepToken, busy = false;
+    var btn = mk("button", "chg-btn");
+    var face = mk("span", "chg-face");
+    btn.appendChild(face);
+    btn.setAttribute("aria-label", "Tap to change it");
+    function paint() { ico(face, states[at].icon); btn.classList.toggle("glow", !!states[at].glow); }
+    btn.addEventListener("click", function () {
+      if (busy || at >= states.length - 1) return;
+      busy = true;
+      at += 1;
+      btn.classList.remove("poof"); void btn.offsetWidth; btn.classList.add("poof");
+      fx(states[at].glow ? "sparkle" : "whoosh");
+      burst();
+      paint();
+      var last = at === states.length - 1;
+      if (states[at].line) { setCaption(states[at].line); spoken(states[at].line, last ? 1200 : 9000).then(function () { busy = false; }); } else busy = false;
+      if (last) { btn.disabled = true; setTimeout(function () { if (token === stepToken) done(); }, 700); }
+    });
+    paint();
+    stage.appendChild(btn);
+    return function () {};
+  };
+
+  // Strike the sea: press and hold, and two walls of water draw apart to leave a dry path.
+  ACT.part = function (opts, done) {
+    var p = 0, holding = false, finished = false, last = 0, raf = 0, need = opts.ms || 3600;
+    var sea = mk("div", "part-sea");
+    var left = mk("div", "part-wall l"), right = mk("div", "part-wall r"), path = mk("div", "part-path");
+    sea.appendChild(path); sea.appendChild(left); sea.appendChild(right);
+    stage.appendChild(sea);
+    var btn = mkIco("button", "part-btn", opts.icon || "STAFF");
+    btn.setAttribute("aria-label", "Press and hold");
+    stage.appendChild(btn);
+    var hint = mk("div", "hold-hint", "Press and hold");
+    stage.appendChild(hint);
+    function paint() {
+      left.style.transform = "translateX(" + (-p * 78) + "%)";
+      right.style.transform = "translateX(" + (p * 78) + "%)";
+      path.style.opacity = String(p);
+    }
+    function frame(t) {
+      var dt = last ? t - last : 0;
+      last = t;
+      p = holding ? Math.min(1, p + dt / need) : Math.max(0, p - dt / 3000);
+      paint();
+      music.tension(p * 0.9);
+      if (holding && Math.random() < 0.08) fx("pour", p * 3);
+      if (p >= 1) {
+        finished = true;
+        hint.textContent = "The sea has opened!";
+        btn.classList.add("lit");
+        music.tension(0);
+        fx("roar");
+        done();
+        return;
+      }
+      raf = requestAnimationFrame(frame);
+    }
+    function down(e) { if (e) e.preventDefault(); if (finished || holding) return; holding = true; hint.textContent = "Keep holding…"; fx("heave", 0.3); vib(40); }
+    function up() { if (holding && !finished) hint.textContent = "Hold a little longer."; holding = false; }
+    btn.addEventListener("pointerdown", function (e) { try { btn.setPointerCapture(e.pointerId); } catch (err) { /* optional */ } down(e); });
+    ["pointerup", "pointercancel", "lostpointercapture"].forEach(function (ev) { btn.addEventListener(ev, up); });
+    btn.addEventListener("keydown", function (e) { if (e.key === " " || e.key === "Enter") down(e); });
+    btn.addEventListener("keyup", function (e) { if (e.key === " " || e.key === "Enter") up(); });
+    btn.addEventListener("contextmenu", function (e) { e.preventDefault(); });
+    paint();
+    raf = requestAnimationFrame(frame);
+    return function () { cancelAnimationFrame(raf); };
+  };
+
+  // A winding trail: one spot glows at a time; tap it and the walker moves there.
+  // opts: n spots, icon for a spot, walker (who moves), round (the trail comes back on itself).
+  ACT.trail = function (opts, done) {
+    var n = opts.n || 7, at = 0, spots = [];
+    var walker = mkIco("div", "trail-walker", opts.walker || "🚶");
+    function pos(i) {
+      var f = i / (n - 1);
+      if (opts.round) { var a = f * Math.PI * 1.75 + Math.PI; return [50 + 34 * Math.cos(a), 54 + 30 * Math.sin(a)]; }
+      return [10 + 80 * f, 58 + 24 * Math.sin(f * Math.PI * 2.2) * (i % 2 ? 1 : 0.6)];
+    }
+    for (var i = 0; i < n; i++) {
+      (function (i) {
+        var b = mkIco("button", "trail-spot", opts.icon || "👣");
+        b.setAttribute("aria-label", "step " + (i + 1) + " of " + n);
+        var xy = pos(i);
+        place(b, xy[0], xy[1]);
+        b.addEventListener("click", function () {
+          if (i !== at) { if (i > at) { shake(b); } return; }
+          b.classList.remove("next");
+          b.classList.add("done");
+          b.disabled = true;
+          place(walker, xy[0], xy[1] - 12);
+          walker.classList.remove("hop"); void walker.offsetWidth; walker.classList.add("hop");
+          at += 1;
+          blip(at);
+          if (at < n) spots[at].classList.add("next"); else done();
+        });
+        spots.push(b);
+        stage.appendChild(b);
+      })(i);
+    }
+    var start = pos(0);
+    place(walker, Math.max(4, start[0] - 6), start[1] - 12);
+    stage.appendChild(walker);
+    spots[0].classList.add("next");
+    return function () {};
+  };
+
+  // Dark all around: the finger is a little light. Slide it about to find what is hidden, then tap it.
+  ACT.seek = function (opts, done) {
+    var found = false;
+    var tx = 16 + Math.random() * 68, ty = 20 + Math.random() * 50;
+    var target = mkIco("button", "seek-target", opts.icon || "🔥");
+    target.setAttribute("aria-label", "the hidden thing");
+    place(target, tx, ty);
+    stage.appendChild(target);
+    var dark = mk("div", "seek-dark");
+    stage.appendChild(dark);
+    function light(e) {
+      var r = stage.getBoundingClientRect();
+      var x = (e.clientX - r.left) / r.width * 100, y = (e.clientY - r.top) / r.height * 100;
+      dark.style.background = "radial-gradient(circle " + (opts.r || 18) + "vmin at " + x + "% " + y + "%, rgba(4,6,20,0) 0%, rgba(4,6,20,.25) 55%, rgba(4,6,20,.96) 100%)";
+      var near = Math.abs(x - tx) < 13 && Math.abs(y - ty) < 16;
+      target.classList.toggle("near", near);
+      return near;
+    }
+    function win() {
+      if (found) return;
+      found = true;
+      dark.classList.add("gone");
+      target.classList.add("found");
+      fx("sparkle");
+      done();
+    }
+    function touch(e) { if (found) return; if (light(e) && e.type === "pointerdown") win(); }
+    stage.addEventListener("pointerdown", touch);
+    stage.addEventListener("pointermove", touch);
+    target.addEventListener("click", win);
+    // a faint glimmer so that a small child is never truly lost
+    var hintTimer = setTimeout(function () { target.classList.add("glimmer"); }, 9000);
+    return function () { clearTimeout(hintTimer); stage.removeEventListener("pointerdown", touch); stage.removeEventListener("pointermove", touch); };
+  };
+
+  // Rub the scene clear: the storm, the water, the sand or the gold is wiped away by the finger.
+  // opts.cover: storm | water | sand | gold; opts.under: an icon revealed in the middle.
+  ACT.wipe = function (opts, done) {
+    var COVER = { storm: ["#3d4257", "#5b6078", "🌧️"], water: ["#1f6f9e", "#3d9cc4", "🌊"], sand: ["#c9a25c", "#e2c283", "⏳"], gold: ["#b98a1e", "#f0c64b", "🐄"] };
+    var c = COVER[opts.cover] || COVER.storm, finished = false, down = false, moves = 0;
+    if (opts.under) stage.appendChild(mkIco("div", "wipe-under", opts.under));
+    var cv = mk("canvas", "wipe-cv");
+    stage.appendChild(cv);
+    var hint = mk("div", "hold-hint", "Rub with your finger");
+    stage.appendChild(hint);
+    var g = cv.getContext("2d"), W = 0, H = 0, COLS = 8, ROWS = 6, cells = [], cleared = 0;
+    function fill() {
+      W = cv.width = Math.max(200, stage.clientWidth); H = cv.height = Math.max(200, stage.clientHeight);
+      var grad = g.createLinearGradient(0, 0, 0, H);
+      grad.addColorStop(0, c[0]); grad.addColorStop(1, c[1]);
+      g.globalCompositeOperation = "source-over";
+      g.fillStyle = grad; g.fillRect(0, 0, W, H);
+      g.font = Math.round(H / 7) + "px serif"; g.textAlign = "center"; g.textBaseline = "middle"; g.globalAlpha = 0.5;
+      for (var i = 0; i < 9; i++) g.fillText(c[2], W * (0.12 + 0.19 * (i % 5)) + (i > 4 ? W * 0.09 : 0), H * (i > 4 ? 0.68 : 0.3));
+      g.globalAlpha = 1;
+      cells = []; cleared = 0;
+      for (var k = 0; k < COLS * ROWS; k++) cells.push(false);
+    }
+    function rub(e) {
+      if (finished) return;
+      var r = cv.getBoundingClientRect(), x = (e.clientX - r.left) / r.width * W, y = (e.clientY - r.top) / r.height * H, rad = Math.max(W, H) / 9;
+      g.globalCompositeOperation = "destination-out";
+      g.beginPath(); g.arc(x, y, rad, 0, Math.PI * 2); g.fill();
+      var cx = Math.min(COLS - 1, Math.max(0, Math.floor(x / W * COLS))), cy = Math.min(ROWS - 1, Math.max(0, Math.floor(y / H * ROWS)));
+      if (!cells[cy * COLS + cx]) { cells[cy * COLS + cx] = true; cleared += 1; }
+      if ((moves++ % 6) === 0) fx("swish");
+      if (cleared >= COLS * ROWS * 0.6) {
+        finished = true;
+        cv.classList.add("gone");
+        hint.textContent = "All clear!";
+        done();
+      }
+    }
+    cv.addEventListener("pointerdown", function (e) { down = true; try { cv.setPointerCapture(e.pointerId); } catch (err) { /* optional */ } rub(e); });
+    cv.addEventListener("pointermove", function (e) { if (down) rub(e); });
+    ["pointerup", "pointercancel"].forEach(function (ev) { cv.addEventListener(ev, function () { down = false; }); });
+    fill();
+    return function () {};
+  };
+
+  // Build it piece by piece: every tap lays the next brick, from the bottom up.
+  // opts: n pieces, cols across, icon for a piece, after (a line said when it is finished).
+  ACT.build = function (opts, done) {
+    var n = opts.n || 9, cols = opts.cols || 3, laid = 0;
+    var chip = mk("div", "count-chip", "0 / " + n);
+    stage.appendChild(chip);
+    var wall = mk("div", "build-wall");
+    wall.style.gridTemplateColumns = "repeat(" + cols + ", 1fr)";
+    var slots = [];
+    for (var i = 0; i < n; i++) { var s = mk("div", "build-slot"); slots.push(s); wall.appendChild(s); }
+    stage.appendChild(wall);
+    var btn = mk("button", "btn btn-teal build-btn", "Tap to build");
+    function lay() {
+      if (laid >= n) return;
+      // rows fill from the bottom: the grid is drawn upside down in CSS
+      var s = slots[laid];
+      ico(s, opts.icon || "🧱");
+      s.classList.add("laid");
+      laid += 1;
+      fx("thud", laid);
+      chip.textContent = laid + " / " + n;
+      if (laid === n) {
+        btn.disabled = true;
+        btn.textContent = "Done!";
+        if (opts.after) { setCaption(opts.after); say(opts.after); }
+        done();
+      }
+    }
+    btn.addEventListener("click", lay);
+    wall.addEventListener("click", lay);
+    stage.appendChild(btn);
+    return function () {};
+  };
+
   /* ---------- flow ---------- */
   function teardown() {
     stepToken += 1;
@@ -1072,7 +1344,7 @@
 
   function show(view) {
     ["title", "play", "chapters", "end"].forEach(function (v) { $(v).hidden = v !== view; });
-    if (view !== "play") { teardown(); stopVoice(); }
+    if (view !== "play") { teardown(); stopVoice(); if (music.amb) music.amb("none"); }
     window.scrollTo(0, 0);
   }
 
@@ -1096,7 +1368,7 @@
   function warmNext() {
     var steps = story[ci].steps, nxt = steps[si + 1] || (story[ci + 1] && story[ci + 1].steps[0]);
     if (!nxt) return;
-    var o = nxt.opts || {}, id = nxt.say || o.img;
+    var o = nxt.opts || {}, id = nxt.pic || nxt.say || o.img;
     [id, !nxt.say && (o.bg || "bg-" + nxt.scene)].forEach(function (k) { if (k && ART[k]) new Image().src = "assets/img/" + k + ".webp"; });
   }
 
@@ -1195,11 +1467,14 @@
       var body = $("pnoteBody");
       body.innerHTML = "";
       (ch.parent || []).forEach(function (para) { body.appendChild(mk("p", "", para)); });
-      var more = mk("a", "pnote-link", "Read these verses on Quran.com");
-      more.href = "https://quran.com/" + ch.source;
-      more.target = "_blank";
-      more.rel = "noopener";
-      body.appendChild(more);
+      // the chapter's main passage, then any others it draws on
+      [ch.source].concat(ch.more || []).forEach(function (ref, i) {
+        var more = mk("a", "pnote-link", i ? "Also: Qur’an " + ref.replace("-", "–") : "Read these verses on Quran.com");
+        more.href = "https://quran.com/" + ref;
+        more.target = "_blank";
+        more.rel = "noopener";
+        body.appendChild(more);
+      });
       $("pnote").open = false;
     }
 
@@ -1213,11 +1488,11 @@
     // A narrated step shows its picture (named after its line) if there is one;
     // an activity can name a picture in opts.img, or else gets a backdrop.
     var opts = st.opts || {};
-    var picId = st.say || opts.img;
+    var picId = st.pic || st.say || opts.img;
     var hasPic = !!(picId && ART[picId]);
     if (hasPic) {
       stage.classList.add("has-pic");
-      stage.appendChild(picture(picId, st.say ? function () { if (token === stepToken) drawArt(stage, st.art); } : null));
+      stage.appendChild(picture(picId, st.say ? function () { if (token === stepToken) drawArt(stage, fallbackArt(ch, st)); } : null));
       if (!st.say) opts = merge(opts, { art: null });
     } else if (!st.say) {
       var bg = opts.bg || ("bg-" + st.scene);
@@ -1229,8 +1504,14 @@
     markWide();
     if (st.src) stage.appendChild(mk("div", "src-chip", st.src));
 
+    // the place is never still: something drifts, glints or falls in it, and it has its own sounds
+    var motion = st.fx || SCENE_FX[st.scene];
+    if (motion && motion !== "none") stage.appendChild(mk("div", "fxl fx-" + motion));
+    if (music.amb) music.amb(st.amb || SCENE_AMB[st.scene] || "none");
+    if (st.cue) setTimeout(function () { if (token === stepToken) fx(st.cue); }, 500);
+
     if (st.say) {
-      drawArt(stage, hasPic ? st.over : st.art);
+      drawArt(stage, hasPic ? st.over : fallbackArt(ch, st));
       nextBtn.hidden = false;
     } else {
       nextBtn.hidden = true;
@@ -1250,6 +1531,19 @@
     currentSpoken = say(lineId);
     rememberPlace();
     persist();
+  }
+
+  // What a narrated step shows when it has no picture: its own sprites if it has any,
+  // otherwise the look of the place with the step's (or the chapter's) icons in the middle.
+  function fallbackArt(ch, st) {
+    if (st.art) return st.art;
+    var icons = st.e ? st.e.split(" ") : [ch.icon];
+    var art = (SCENE_DECOR[st.scene] || []).slice();
+    icons.forEach(function (ic, i) {
+      var x = 50 + (i - (icons.length - 1) / 2) * (icons.length > 2 ? 24 : 30);
+      art.push([ic, x, 52 + (i % 2 ? 6 : 0), icons.length > 2 ? 74 : 92, i % 2 ? "bob" : "float"]);
+    });
+    return art;
   }
 
   function next() {
@@ -1301,7 +1595,8 @@
     var resume = hasProgress();
     $("startBtn").textContent = resume ? "Continue — Chapter " + (resumeAt().ci + 1) : "Start the story";
     $("restartBtn").hidden = !resume;
-    music.mood("wonder");
+    music.mood(CFG.titleMood || "wonder");
+    if (music.amb) music.amb("none");
     show("title");
     prepareAll();
   }
@@ -1323,7 +1618,8 @@
   }
 
   function showEnd() {
-    music.mood("joy");
+    music.mood(CFG.endMood || "joy");
+    if (music.amb) music.amb("none");
     show("end");
     $("endText").textContent = lines["end-a"] || "";
     fanfare();
@@ -1342,9 +1638,14 @@
 
   function buildTitleSky() {
     var sky = $("titleSky");
-    drawArt(sky, [["RING", 50, 52, 1]]);
-    sky.appendChild(sprite(["P:" + HERO, 50, 54, 84, "bob", { expr: "happy" }]));
-    $("endFig").innerHTML = People.svg(HERO_GROWN, { expr: "happy" });
+    // a game can give its own title scene (titleArt: a list of sprites) and end picture (endIcon)
+    if (CFG.titleArt) drawArt(sky, CFG.titleArt);
+    else {
+      drawArt(sky, [["RING", 50, 52, 1]]);
+      sky.appendChild(sprite(["P:" + HERO, 50, 54, 84, "bob", { expr: "happy" }]));
+    }
+    if (CFG.endIcon) ico($("endFig"), CFG.endIcon);
+    else $("endFig").innerHTML = People.svg(HERO_GROWN, { expr: "happy" });
   }
 
   function wire() {

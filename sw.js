@@ -19,14 +19,17 @@
 */
 
 // BEGIN GENERATED
-const RELEASE = "2026.11.6";
-const BUILD = "e18fc2d38c88";
+const RELEASE = "2026.11.7";
+const BUILD = "9cc195591fc6";
 const SHELL = [
   "./",
+  ".git",
   "app.webmanifest",
   "config.json",
   "fonts/fonts.css",
   "games/adam/game.json",
+  "games/count-the-crescents/game.css",
+  "games/count-the-crescents/game.js",
   "games/count-the-crescents/game.json",
   "games/count-the-crescents/index.html",
   "games/count-the-crescents/",
@@ -71,11 +74,27 @@ const MEDIA = {
   "fonts/mada-latin.woff2": "fd796dc139",
   "games/adam/cover.webp": "6629e7e344",
   "games/count-the-crescents/assets/audio/count-1.mp3": "0c658988b5",
+  "games/count-the-crescents/assets/audio/count-10.mp3": "e11036e46b",
   "games/count-the-crescents/assets/audio/count-2.mp3": "ab233f7b05",
   "games/count-the-crescents/assets/audio/count-3.mp3": "f571a79e3c",
   "games/count-the-crescents/assets/audio/count-4.mp3": "13fde7d5bc",
   "games/count-the-crescents/assets/audio/count-5.mp3": "5d861ad0ae",
-  "games/count-the-crescents/assets/audio/mashallah.mp3": "e2ec6d44c2",
+  "games/count-the-crescents/assets/audio/count-6.mp3": "c8531c7976",
+  "games/count-the-crescents/assets/audio/count-7.mp3": "9f7e86e5d7",
+  "games/count-the-crescents/assets/audio/count-8.mp3": "f50c7c2d02",
+  "games/count-the-crescents/assets/audio/count-9.mp3": "f2732698a9",
+  "games/count-the-crescents/assets/audio/counted-all.mp3": "de55d9274f",
+  "games/count-the-crescents/assets/audio/how-many.mp3": "02bed77fb9",
+  "games/count-the-crescents/assets/audio/lets-count.mp3": "4be85438ba",
+  "games/count-the-crescents/assets/audio/mashallah.mp3": "ab59b2dfec",
+  "games/count-the-crescents/assets/audio/prompt-beads.mp3": "545cf02c02",
+  "games/count-the-crescents/assets/audio/prompt-dates.mp3": "54ac48ddc9",
+  "games/count-the-crescents/assets/audio/prompt-lanterns.mp3": "c8e39f1c69",
+  "games/count-the-crescents/assets/audio/prompt-moons.mp3": "c4558a3f5f",
+  "games/count-the-crescents/assets/audio/prompt-rain.mp3": "4e30cc2b6c",
+  "games/count-the-crescents/assets/audio/prompt-sheep.mp3": "8cd31b48e6",
+  "games/count-the-crescents/assets/audio/prompt-stars.mp3": "7d73a0eed6",
+  "games/count-the-crescents/assets/audio/well-done.mp3": "43a17d3fca",
   "games/musa/cover.webp": "548a2e54d6",
   "games/tap-and-say/assets/audio/beads-en.mp3": "58c13a3981",
   "games/tap-and-say/assets/audio/kaaba-en.mp3": "d1a79c368a",

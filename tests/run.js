@@ -4,7 +4,7 @@ const { spawnSync } = require("child_process");
 const path = require("path");
 
 const only = process.argv[2];
-const browserTests = ["landing", "narration", "offline", "sync", "update", "playthrough"].filter((n) => !only || n === only);
+const browserTests = ["landing", "narration", "offline", "sync", "update", "playthrough", "counting"].filter((n) => !only || n === only);
 (async () => {
   let failed = 0;
   if (!only || only === "worker") {

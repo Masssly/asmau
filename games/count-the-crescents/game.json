@@ -1,11 +1,10 @@
 {
   "slug": "count-the-crescents",
-  "title": "Count the Crescents",
+  "title": "Count with Me",
   "icon": "🌙",
-  "minAge": 2,
-  "maxAge": 5,
-  "tagline": "Tap moons one by one and count up to five.",
+  "minAge": 1.5,
+  "maxAge": 4,
+  "tagline": "Tap moons, lanterns, raindrops and dates one by one and count out loud, up to five or ten.",
   "basedOn": null,
-  "depictionNotes": "No human or animal figures — crescent moons and stars only.",
-  "status": "coming-soon"
+  "depictionNotes": "No people are drawn. The pictures are crescent moons, stars, lanterns, prayer beads, raindrops, flowers, dates, apples, a far-off mosque skyline and one simple cartoon sheep, the only animal."
 }

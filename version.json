@@ -1,11 +1,18 @@
 {
-  "version": "2026.11.6",
-  "date": "2026-11-13",
-  "buildId": "e18fc2d38c88",
+  "version": "2026.11.7",
+  "date": "2026-11-14",
+  "buildId": "9cc195591fc6",
   "notes": [
-    "The Yusuf story is now marked for ages 3 to 9: under 5, play it together with a grown-up"
+    "New game for the littlest ones: Count with Me (ages 1½ to 4), made for touch screens"
   ],
   "history": [
+    {
+      "version": "2026.11.7",
+      "date": "2026-11-14",
+      "notes": [
+        "New game for the littlest ones: Count with Me (ages 1½ to 4), made for touch screens"
+      ]
+    },
     {
       "version": "2026.11.6",
       "date": "2026-11-13",

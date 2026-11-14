@@ -2,85 +2,130 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Count the Crescents — Asmau</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<title>Count with Me — Asmau</title>
 <link rel="manifest" href="../../app.webmanifest">
 <meta name="theme-color" content="#0c1530">
 <link rel="apple-touch-icon" href="../../icons/icon-180.png">
 <link rel="stylesheet" href="../../fonts/fonts.css">
 <link rel="stylesheet" href="../../shared/style.css">
-<style>
-  body { background: radial-gradient(circle at 50% -10%, #1c2d5e, #0c1530 60%); min-height: 100%; text-align: center; }
-  .top { display: flex; align-items: center; gap: 10px; margin-bottom: 6px; }
-  .top h1 { font-family: var(--font-display); font-size: 20px; margin: 0; flex: 1; text-align: center; padding-right: 64px; }
-  .row { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-top: 18px; min-height: 90px; align-items: center; }
-  .slot { font-size: 46px; opacity: .18; transition: opacity .2s; }
-  .slot.lit { opacity: 1; animation: pop .4s ease; }
-  @keyframes pop { 0% { transform: scale(.4); } 60% { transform: scale(1.2); } 100% { transform: scale(1); } }
-  .number { font-family: var(--font-display); font-size: 72px; color: var(--teal); margin: 14px 0 4px; font-variant-numeric: tabular-nums; }
-  .celebrate { margin-top: 20px; }
-  .celebrate .burst { font-size: 54px; display: inline-block; animation: burst 1s ease; }
-  @keyframes burst { 0% { transform: scale(.3) rotate(0deg); opacity: 0; } 50% { transform: scale(1.3) rotate(10deg); opacity: 1; } 100% { transform: scale(1) rotate(0deg); } }
-  .celebrate p { font-family: var(--font-display); color: var(--gold); font-size: 22px; margin: 6px 0 0; }
-</style>
+<link rel="stylesheet" href="game.css">
 </head>
 <body>
-<div class="wrap">
-  <div class="top">
-    <a class="btn-back" href="../../index.html">← Asmau</a>
-    <h1>Count the Crescents</h1>
+
+<!-- colours shared by every picture in the game (the pictures themselves are drawn in game.js) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <linearGradient id="cGold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff0a8"/><stop offset="1" stop-color="#f5b63c"/></linearGradient>
+    <radialGradient id="cFlame" cx=".5" cy=".55" r=".6"><stop offset="0" stop-color="#fffbe0"/><stop offset=".55" stop-color="#ffd24a"/><stop offset="1" stop-color="#ff9a3c"/></radialGradient>
+    <linearGradient id="cDrop" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d6f6ff"/><stop offset="1" stop-color="#3aa8ff"/></linearGradient>
+    <linearGradient id="cDate" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#c8742a"/><stop offset="1" stop-color="#6e3410"/></linearGradient>
+    <radialGradient id="cApple" cx=".38" cy=".32" r=".8"><stop offset="0" stop-color="#ff9a85"/><stop offset=".6" stop-color="#ee4540"/><stop offset="1" stop-color="#c92a2f"/></radialGradient>
+    <radialGradient id="cBeadOff" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#9fb7c9"/><stop offset="1" stop-color="#4f6f86"/></radialGradient>
+    <radialGradient id="cBead0" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#fff3b8"/><stop offset="1" stop-color="#f0a92a"/></radialGradient>
+    <radialGradient id="cBead1" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#ffd0dd"/><stop offset="1" stop-color="#f0527f"/></radialGradient>
+    <radialGradient id="cBead2" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#d9f4ff"/><stop offset="1" stop-color="#3a9df0"/></radialGradient>
+    <radialGradient id="cBead3" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#e9dcff"/><stop offset="1" stop-color="#8a5cf0"/></radialGradient>
+    <radialGradient id="cBead4" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#d8ffd9"/><stop offset="1" stop-color="#3fbf6a"/></radialGradient>
+  </defs>
+</svg>
+
+<div id="app">
+  <header class="bar">
+    <a class="hold" id="homeBtn" href="../../index.html" aria-label="Back to all games (press and hold)">
+      <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M3 11.5 12 4l9 7.5M6 10v9h4.5v-5h3v5H18v-9" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span>Asmau</span>
+    </a>
+    <div class="trophies" id="trophies" aria-hidden="true"></div>
+    <button class="hold" id="parentsBtn" type="button" aria-haspopup="dialog" aria-label="For parents (press and hold)"><span>For parents</span></button>
+  </header>
+  <div class="tip" id="tip" role="status" hidden>Press and hold</div>
+
+  <!-- the first screen: two giant buttons, either one starts the game -->
+  <div class="start" id="start">
+    <div class="start-sky" id="startSky" aria-hidden="true"></div>
+    <div class="start-hero" id="startHero" aria-hidden="true"></div>
+    <h1>Count with Me</h1>
+    <p class="sub">Tap, count and say Mashallah!</p>
+    <div class="levels">
+      <button class="level level-little" id="startLittle" type="button" aria-label="Play: count up to five">
+        <span class="level-num">5</span>
+        <span class="level-pips" data-pips="5"></span>
+        <span class="level-cap">1 to 5</span>
+      </button>
+      <button class="level level-big" id="startBig" type="button" aria-label="Play: count up to ten">
+        <span class="level-num">10</span>
+        <span class="level-pips" data-pips="10"></span>
+        <span class="level-cap">1 to 10</span>
+      </button>
+    </div>
+    <span class="age-badge">Ages 1½–4</span>
   </div>
 
-  <div class="row" id="row"></div>
-  <div class="number" id="number">0</div>
-  <button class="btn btn-teal" id="tapBtn">Tap a moon 🌙</button>
-  <div class="celebrate" id="celebrate" hidden>
-    <span class="burst" aria-hidden="true">✨</span>
-    <p>Mashallah! You counted to five!</p>
+  <!-- the game: a big number beside (or above) the picture the child taps -->
+  <div class="play" id="play" hidden>
+    <div class="panel" id="panel">
+      <div class="numeral" id="numeral" aria-live="polite"></div>
+      <div class="arabic" id="arabic" lang="ar" dir="rtl"></div>
+      <div class="dots" id="dots" aria-hidden="true"></div>
+    </div>
+    <div class="stage" id="stage">
+      <div class="deco" id="deco" aria-hidden="true"></div>
+      <div class="items" id="items"></div>
+      <div class="answers" id="answers" hidden></div>
+      <div class="fx-layer" id="fxLayer" aria-hidden="true"></div>
+      <div class="cheer" id="cheer" hidden>
+        <div class="cheer-word" id="cheerWord">Mashallah!</div>
+        <button class="next" id="nextBtn" type="button" aria-label="Next">
+          <svg viewBox="0 0 100 100" aria-hidden="true"><path d="M38 26 76 50 38 74Z" fill="#fff" stroke="#fff" stroke-width="8" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- for grown-ups: opened by pressing and holding the small button in the top corner -->
+  <div class="sheet-wrap" id="parents" hidden>
+    <div class="sheet" role="dialog" aria-modal="true" aria-labelledby="parentsTitle" tabindex="-1">
+      <h2 id="parentsTitle">For parents</h2>
+
+      <div class="switches">
+        <button class="switch" id="swVoice" type="button" role="switch" aria-checked="true"><span class="knob" aria-hidden="true"></span><span>Voice</span></button>
+        <button class="switch" id="swSfx" type="button" role="switch" aria-checked="true"><span class="knob" aria-hidden="true"></span><span>Sound effects</span></button>
+        <button class="switch" id="swMusic" type="button" role="switch" aria-checked="true"><span class="knob" aria-hidden="true"></span><span>Music</span></button>
+        <button class="switch" id="swArabic" type="button" role="switch" aria-checked="true"><span class="knob" aria-hidden="true"></span><span>Arabic numbers</span></button>
+      </div>
+      <div class="seg" role="group" aria-label="How far to count">
+        <button type="button" id="segLittle" aria-pressed="true">Count to 5</button>
+        <button type="button" id="segBig" aria-pressed="false">Count to 10</button>
+      </div>
+
+      <ul>
+        <li><b>What it teaches.</b> Touching one thing for each number, the number words from one to ten, what the
+          numerals look like, and that the last number said is how many there are. “Count to 10” also asks
+          “How many?” with two or three answers to choose from; a wrong answer is never marked, the game just
+          counts along with your child.</li>
+        <li><b>Nothing can go wrong.</b> There is no score, no clock and nothing to lose. Every round ends with
+          “Mashallah!” and the next one starts by itself.</li>
+        <li><b>Arabic.</b> The Arabic numeral and number word are shown under the big number. They are never read
+          out by a computer voice, because a guessed pronunciation is worse than silence. They are spoken only
+          if you record them yourself in
+          <a href="../../tools/record-voice/index.html">Record your voice</a>; the English words there can be
+          replaced with your own voice too (today they are a computer placeholder).</li>
+        <li><b>Sound.</b> The switches above turn the voice, the sound effects and the music off one by one.
+          Families differ on music, so it has its own switch and the game works fully without it.</li>
+        <li><b>Pictures.</b> No people are drawn. The pictures are moons, stars, lanterns, prayer beads,
+          raindrops, flowers, dates, apples and one simple cartoon sheep.</li>
+        <li><b>Leaving.</b> Press and hold “Asmau” in the top corner to go back to all the games. It needs a
+          long press so that little fingers do not leave by accident.</li>
+      </ul>
+      <button class="btn btn-gold" id="parentsClose" type="button">Close</button>
+    </div>
   </div>
 </div>
 
 <script src="../../shared/narration.js"></script>
-<script>
-(function () {
-  "use strict";
-  var GAME = "count-the-crescents";
-  var NUMBER_WORDS = ["", "One", "Two", "Three", "Four", "Five"];
-  var count = 0;
-  var row = document.getElementById("row");
-  var number = document.getElementById("number");
-  var tapBtn = document.getElementById("tapBtn");
-  var celebrate = document.getElementById("celebrate");
-
-  function render() {
-    row.innerHTML = "";
-    for (var i = 1; i <= 5; i++) {
-      var span = document.createElement("span");
-      span.className = "slot" + (i <= count ? " lit" : "");
-      span.textContent = "🌙";
-      span.setAttribute("aria-hidden", "true");
-      row.appendChild(span);
-    }
-  }
-
-  tapBtn.addEventListener("click", function () {
-    if (count >= 5) return;
-    count += 1;
-    number.textContent = String(count);
-    render();
-    var spoken = window.AsmauNarration.say(GAME, "count-" + count, NUMBER_WORDS[count], { lang: "en" });
-    if (count === 5) {
-      tapBtn.hidden = true;
-      celebrate.hidden = false;
-      spoken.then(function () {
-        window.AsmauNarration.say(GAME, "mashallah", "Mashallah! Five!", { lang: "en" });
-      });
-    }
-  });
-
-  render();
-})();
-</script>
+<script src="../../shared/music.js"></script>
+<script src="game.js"></script>
 <script src="../../shared/pwa.js"></script>
 </body>
 </html>

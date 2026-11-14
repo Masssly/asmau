@@ -11,7 +11,7 @@ chapter("a1", "👶🏿", "Two Babies in Degel", C_CW, [], [
 s("a", "dusk", "Long ago, in a village called Degel, in West Africa, two babies were born on the same day. They were twins: a boy and a girl.",
   "Evening in {DEGEL}. Inside a simple room, a happy family gathers around two newborn babies wrapped in white and cream cloths, lying side by side on a woven mat. A soft oil lamp glows.", { mood: "nile", amb: "night" });
 s("b", "dusk", "Their father was a kind and wise teacher, called the Shehu. He named the boy Hassan.",
-  "{SHEHU} sits on a mat in a warm lamplit room holding a newborn baby boy in white cloth, smiling, while family members look on.", { mood: "wonder" });
+  "{SHEHU} sits on a mat in a warm lamplit room holding a newborn baby boy in white cloth, smiling. Beside him sit only two women, both in long dresses with large headscarves that fully cover their hair, one in plum and one in orange, smiling at the baby.", { mood: "wonder" });
 s("c", "dusk", "Twins were usually called Hassan and Hussaina. But the Shehu gave his daughter a different name: Asma'u.",
   "{SHEHU} gently holds up a newborn baby girl wrapped in cream cloth, smiling with love, in a warm lamplit room; a second baby lies on the mat beside him.", { mood: "wonder" });
 q("q", "dusk", "What did the Shehu name his baby girl?", ["Asma'u", "👧🏿"], ["Hussaina", "🍼"], "Not Hussaina. He chose a special name for her: Asma'u.", { img: "c" });
@@ -24,7 +24,7 @@ chapter("a2", "🎀", "The Girl with Two Belts", "Sahih al-Bukhari 2979 and 3907
 s("a", "night", "Why Asma'u? She was named after a brave young woman who lived long before, in the time of the Prophet, peace be upon him: Asma, the daughter of Abu Bakr.",
   "Night in an old desert town of flat-roofed houses under a starry sky. A young woman in a long dark-blue dress and headscarf, seen only from behind, carries a bundle of food and a leather water-skin along a quiet lane.", { mood: "longing" });
 s("b", "night", "When the Prophet and her father set off on a long journey, Asma packed their food and water. But there was nothing to tie the bags with!",
-  "Close view of a young woman's hands, her face not shown, on a wooden table at night: a leather water-skin and a cloth bundle of dates and bread, and a long cloth belt lying beside them. An oil lamp glows.", { src: HAD });
+  "Seen from above, close up: one person's two hands, in dark-blue sleeves, reaching in from the bottom edge to a wooden table at night, beside a leather water-skin, a cloth bundle of dates and bread, and a long cloth belt. Only those two hands; no other hands, no head, no face. An oil lamp glows.", { src: HAD });
 chg("tear", "night", "What did she do? Tap the belt.", [["🎗️", ""], ["✂️", "She tore her belt in two!"]], { img: "b", src: HAD });
 s("c", "night", "She tore her own belt in two. One piece tied the water. The other piece tied the food. So people called her: the one with the two belts.",
   "Close view of a young woman's hands, her face not shown, tying a leather water-skin with one strip of cloth and a food bundle with another strip of the same cloth, lamplight.", { src: HAD, mood: "triumph" });

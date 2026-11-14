@@ -14,7 +14,8 @@ module.exports = async function () {
     const ctx = await browser.newContext({ viewport: vp, serviceWorkers: "block" }), p = await ctx.newPage(), errs = [];
     p.on("pageerror", (e) => errs.push(e.message));
     await p.goto(site.url + "index.html", { waitUntil: "networkidle" }); await p.waitForTimeout(500);
-    T.check(await p.locator(".section").count() === 2, tag + ": two sections, both open");
+    const nSections = JSON.parse(fs.readFileSync(path.join(repo, "manifest.json"), "utf8")).sections.length;
+    T.check(await p.locator(".section").count() === nSections, tag + ": all " + nSections + " sections, all open");
     // which games are ready is read from the games themselves, so this does not go stale when one is finished
     T.check(await p.locator("a.tile").count() === ready, tag + ": the " + ready + " finished games can be opened");
     T.check(await p.locator(".tile.soon").count() === soon && await p.locator(".tile.soon a").count() === 0, tag + ": the " + soon + " unfinished games say Coming soon and have no link");

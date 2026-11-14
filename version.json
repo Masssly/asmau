@@ -1,12 +1,18 @@
 {
-  "version": "2026.11.11",
+  "version": "2026.11.12",
   "date": "2026-11-14",
-  "buildId": "cbb3b09a47a1",
+  "buildId": "366c47ed1583",
   "notes": [
-    "For parents: a short home with one page per topic; recording your own voice, in any language, comes first, then privacy and support",
-    "A way to record your voice now shows on the front page and on each story's first page"
+    "New story: Nana Asma'u, the scholar and teacher this site is named after, in 11 chapters. Its pictures are still to come"
   ],
   "history": [
+    {
+      "version": "2026.11.12",
+      "date": "2026-11-14",
+      "notes": [
+        "New story: Nana Asma'u, the scholar and teacher this site is named after, in 11 chapters. Its pictures are still to come"
+      ]
+    },
     {
       "version": "2026.11.11",
       "date": "2026-11-14",

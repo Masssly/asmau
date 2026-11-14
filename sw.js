@@ -20,7 +20,7 @@
 
 // BEGIN GENERATED
 const RELEASE = "2026.11.14";
-const BUILD = "af5d7e558017";
+const BUILD = "26cde40aa37a";
 const SHELL = [
   "./",
   "app.webmanifest",
@@ -551,6 +551,9 @@ const MEDIA = {
   "games/musa/assets/img/bg-river.webp": "1230438016",
   "games/musa/assets/img/bg-sea.webp": "fbc4bd828e",
   "games/musa/assets/img/bg-well.webp": "4d90421427",
+  "games/musa/assets/img/icon-musa.webp": "8e60535c5b",
+  "games/musa/assets/img/icon-sister.webp": "401acbe373",
+  "games/musa/assets/img/icon-young.webp": "e33064c5fc",
   "games/musa/assets/img/m1-a.webp": "1cb6eb4306",
   "games/musa/assets/img/m1-b.webp": "20e510987a",
   "games/musa/assets/img/m1-c.webp": "c78a61efa3",
@@ -819,6 +822,8 @@ const MEDIA = {
   "games/nana-asmau/assets/img/bg-field.webp": "f317e32d2d",
   "games/nana-asmau/assets/img/bg-night.webp": "5670e0eae6",
   "games/nana-asmau/assets/img/bg-palace.webp": "5092baa57a",
+  "games/nana-asmau/assets/img/icon-girl.webp": "3a060ddbd8",
+  "games/nana-asmau/assets/img/icon-jaji.webp": "28e445aa24",
   "games/nana-asmau/cover.webp": "8976fb3e63",
   "games/tap-and-say/assets/audio/beads-en.mp3": "58c13a3981",
   "games/tap-and-say/assets/audio/kaaba-en.mp3": "d1a79c368a",

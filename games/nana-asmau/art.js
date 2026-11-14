@@ -12,6 +12,8 @@ window.STORY_ART = {
   "bg-egypt": "A busy walled West African town of flat-roofed mud-brick houses with a mud-built mosque tower and a market square, bright daylight.",
   "bg-palace": "A calm scholar's room in a mud-brick house: low wooden desk, shelves of handwritten books, an ink pot, a window onto palm trees.",
   "bg-dawn": "A golden sunrise over a West African town of mud-brick houses and palm trees.",
+  "icon-girl": "young Asma'u",
+  "icon-jaji": "a jaji, a woman teacher",
   "a1-a": "Evening in Degel. Inside a simple round room, two newborn babies with deep dark brown skin, wrapped in white and cream cloths, lie side by side on a woven mat. Kneeling…",
   "a1-b": "the Shehu, her father sits on a mat in a warm lamplit room holding a newborn baby boy in white cloth, smiling. Beside him sit only two women, both in long dresses with…",
   "a1-c": "the Shehu, her father gently holds up a newborn baby girl wrapped in cream cloth, smiling with love, in a warm lamplit room; a second baby lies on the mat beside him.",

@@ -4,3 +4,7 @@ scripts/musa-art/out/
 scripts/musa-art/refs/*.png
 scripts/yusuf-art/fix/
 __pycache__/
+scripts/asmau-art/out/
+scripts/asmau-art/refs/old/
+scripts/musa-art/refs/old/
+scripts/musa-art/out/old/

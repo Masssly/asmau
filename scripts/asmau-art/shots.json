@@ -1,0 +1,244 @@
+{
+ "bg-dusk": {
+  "alt": "A West African savanna village of round mud-brick houses with thatched roofs at dusk, a baobab tree, warm lamplight in doorways.",
+  "scene": "A West African savanna village of round mud-brick houses with thatched roofs at dusk, a baobab tree, warm lamplight in doorways.",
+  "who": []
+ },
+ "bg-night": {
+  "alt": "An old desert town of flat-roofed stone and mud houses at night under a starry sky, quiet lanes, a few lamps.",
+  "scene": "An old desert town of flat-roofed stone and mud houses at night under a starry sky, quiet lanes, a few lamps.",
+  "who": []
+ },
+ "bg-field": {
+  "alt": "A shady family compound in a West African village: mud-brick walls, a big neem tree, woven mats on clean swept ground, morning light.",
+  "scene": "A shady family compound in a West African village: mud-brick walls, a big neem tree, woven mats on clean swept ground, morning light.",
+  "who": []
+ },
+ "bg-desert": {
+  "alt": "A dusty savanna road through dry grassland with acacia and baobab trees under a wide sky.",
+  "scene": "A dusty savanna road through dry grassland with acacia and baobab trees under a wide sky.",
+  "who": []
+ },
+ "bg-egypt": {
+  "alt": "A busy walled West African town of flat-roofed mud-brick houses with a mud-built mosque tower and a market square, bright daylight.",
+  "scene": "A busy walled West African town of flat-roofed mud-brick houses with a mud-built mosque tower and a market square, bright daylight.",
+  "who": []
+ },
+ "bg-palace": {
+  "alt": "A calm scholar's room in a mud-brick house: low wooden desk, shelves of handwritten books, an ink pot, a window onto palm trees.",
+  "scene": "A calm scholar's room in a mud-brick house: low wooden desk, shelves of handwritten books, an ink pot, a window onto palm trees.",
+  "who": []
+ },
+ "bg-dawn": {
+  "alt": "A golden sunrise over a West African town of mud-brick houses and palm trees.",
+  "scene": "A golden sunrise over a West African town of mud-brick houses and palm trees.",
+  "who": []
+ },
+ "a1-a": {
+  "alt": "Evening in Degel. Inside a simple room, a happy family gathers around two newborn babies wrapped in white and cream cloths, lying side by side on a woven mat. A soft oil…",
+  "scene": "Evening in a small West African savanna village of round mud-brick houses with thatched roofs, baobab and acacia trees. Inside a simple room, a happy family gathers around two newborn babies wrapped in white and cream cloths, lying side by side on a woven mat. A soft oil lamp glows.",
+  "who": [
+   "DEGEL"
+  ]
+ },
+ "a1-b": {
+  "alt": "the Shehu, her father sits on a mat in a warm lamplit room holding a newborn baby boy in white cloth, smiling, while family members look on.",
+  "scene": "a gentle elderly scholar with deep dark brown skin and a white beard, a white embroidered cap and a cream wide-sleeved robe sits on a mat in a warm lamplit room holding a newborn baby boy in white cloth, smiling, while family members look on.",
+  "who": [
+   "SHEHU"
+  ]
+ },
+ "a1-c": {
+  "alt": "the Shehu, her father gently holds up a newborn baby girl wrapped in cream cloth, smiling with love, in a warm lamplit room; a second baby lies on the mat beside him.",
+  "scene": "a gentle elderly scholar with deep dark brown skin and a white beard, a white embroidered cap and a cream wide-sleeved robe gently holds up a newborn baby girl wrapped in cream cloth, smiling with love, in a warm lamplit room; a second baby lies on the mat beside him.",
+  "who": [
+   "SHEHU"
+  ]
+ },
+ "a2-a": {
+  "alt": "Night in an old desert town of flat-roofed houses under a starry sky. A young woman in a long dark-blue dress and headscarf, seen only from behind, carries a bundle of…",
+  "scene": "Night in an old desert town of flat-roofed houses under a starry sky. A young woman in a long dark-blue dress and headscarf, seen only from behind, carries a bundle of food and a leather water-skin along a quiet lane.",
+  "who": []
+ },
+ "a2-b": {
+  "alt": "Close view of a young woman's hands, her face not shown, on a wooden table at night: a leather water-skin and a cloth bundle of dates and bread, and a long cloth belt…",
+  "scene": "Close view of a young woman's hands, her face not shown, on a wooden table at night: a leather water-skin and a cloth bundle of dates and bread, and a long cloth belt lying beside them. An oil lamp glows.",
+  "who": []
+ },
+ "a2-c": {
+  "alt": "Close view of a young woman's hands, her face not shown, tying a leather water-skin with one strip of cloth and a food bundle with another strip of the same cloth,…",
+  "scene": "Close view of a young woman's hands, her face not shown, tying a leather water-skin with one strip of cloth and a food bundle with another strip of the same cloth, lamplight.",
+  "who": []
+ },
+ "a3-a": {
+  "alt": "Morning in a family compound in Degel. Aisha, who raised her kneels and hugs young Asma'u warmly; another woman in an orange headscarf smiles beside them. Chickens, a…",
+  "scene": "Morning in a family compound in a small West African savanna village of round mud-brick houses with thatched roofs, baobab and acacia trees. a kind woman with deep dark brown skin, a plum-coloured headscarf over her hair and shoulders and a long cream dress kneels and hugs a bright, kind girl of about eight with deep dark brown skin, a cream cotton headscarf over her head and shoulders, a long-sleeved teal blouse and an indigo wrapper with small white diamond patterns warmly; another woman in an orange headscarf smiles beside them. Chickens, a clay pot, a baobab tree.",
+  "who": [
+   "DEGEL",
+   "AISHA",
+   "GIRL"
+  ]
+ },
+ "a3-b": {
+  "alt": "In the shade of a tree in a family compound, young Asma'u and Hassan, her twin brother sit side by side on a mat, each holding a smooth wooden writing board with an ink…",
+  "scene": "In the shade of a tree in a family compound, a bright, kind girl of about eight with deep dark brown skin, a cream cotton headscarf over her head and shoulders, a long-sleeved teal blouse and an indigo wrapper with small white diamond patterns and a cheerful boy of about eight with deep dark brown skin and short hair, in a sand-coloured tunic and a small white cap sit side by side on a mat, each holding a smooth wooden writing board with an ink pot beside them, while a gentle elderly scholar with deep dark brown skin and a white beard, a white embroidered cap and a cream wide-sleeved robe teaches them with a warm smile. The boards show only simple strokes, no readable writing.",
+  "who": [
+   "GIRL",
+   "HASSAN",
+   "SHEHU"
+  ]
+ },
+ "a3-c": {
+  "alt": "young Asma'u sits alone on a mat under a tree at golden evening light, eyes closed, gently reciting with a hand on her heart, a wooden writing board resting in her lap.",
+  "scene": "a bright, kind girl of about eight with deep dark brown skin, a cream cotton headscarf over her head and shoulders, a long-sleeved teal blouse and an indigo wrapper with small white diamond patterns sits alone on a mat under a tree at golden evening light, eyes closed, gently reciting with a hand on her heart, a wooden writing board resting in her lap.",
+  "who": [
+   "GIRL"
+  ]
+ },
+ "a4-a": {
+  "alt": "Dawn on a dusty savanna road. A long line of the people walk away from Degel, carrying bundles on their heads and leading donkeys; young Asma'u walks holding the hand of…",
+  "scene": "Dawn on a dusty savanna road. A long line of families of Black African men, women and children with deep dark brown skin in simple long clothes walk away from a small West African savanna village of round mud-brick houses with thatched roofs, baobab and acacia trees, carrying bundles on their heads and leading donkeys; a bright, kind girl of about eight with deep dark brown skin, a cream cotton headscarf over her head and shoulders, a long-sleeved teal blouse and an indigo wrapper with small white diamond patterns walks holding the hand of a kind woman with deep dark brown skin, a plum-coloured headscarf over her hair and shoulders and a long cream dress.",
+  "who": [
+   "FOLK",
+   "DEGEL",
+   "GIRL",
+   "AISHA"
+  ]
+ },
+ "a4-b": {
+  "alt": "Evening at a simple camp of grass shelters in the savanna. young Asma'u sits by a small fire, writing on a wooden board on her knees, while families rest around her.",
+  "scene": "Evening at a simple camp of grass shelters in the savanna. a bright, kind girl of about eight with deep dark brown skin, a cream cotton headscarf over her head and shoulders, a long-sleeved teal blouse and an indigo wrapper with small white diamond patterns sits by a small fire, writing on a wooden board on her knees, while families rest around her.",
+  "who": [
+   "GIRL"
+  ]
+ },
+ "a5-a": {
+  "alt": "A grey, cloudy sky over a camp of grass shelters; the people sit close together, sad and tired, some with bandaged arms; a woman comforts a crying child.",
+  "scene": "A grey, cloudy sky over a camp of grass shelters; families of Black African men, women and children with deep dark brown skin in simple long clothes sit close together, sad and tired, some with bandaged arms; a woman comforts a crying child.",
+  "who": [
+   "FOLK"
+  ]
+ },
+ "a5-b": {
+  "alt": "A busy camp kitchen under a big tree: women of the villages stir large cooking pots over fires and hand out bowls of food to children and old people; young Asma'u…",
+  "scene": "A busy camp kitchen under a big tree: Black African village women with deep dark brown skin in long colourful wrappers, every one with her hair covered by a headscarf stir large cooking pots over fires and hand out bowls of food to children and old people; a bright, kind girl of about eight with deep dark brown skin, a cream cotton headscarf over her head and shoulders, a long-sleeved teal blouse and an indigo wrapper with small white diamond patterns carries a bowl carefully.",
+  "who": [
+   "WOMEN",
+   "GIRL"
+  ]
+ },
+ "a6-a": {
+  "alt": "Bright day in Sokoto. Nana Asma'u and Gidado stand together at the doorway of a large mud-brick family house, smiling warmly at neighbours who greet them.",
+  "scene": "Bright day in a busy walled West African town of flat-roofed mud-brick houses, a mosque with a mud tower, and a market. a wise, warm woman in her forties with deep dark brown skin, a large cream head wrap over her hair and shoulders, and a long deep-green coat with narrow geometric trim over a cream under-robe and a kind, dignified man with deep dark brown skin and a short black beard, a white cap and an indigo-and-white striped wide-sleeved robe stand together at the doorway of a large mud-brick family house, smiling warmly at neighbours who greet them.",
+  "who": [
+   "SOKOTO",
+   "ASMA",
+   "GIDADO"
+  ]
+ },
+ "a6-b": {
+  "alt": "A lively courtyard of a big mud-brick house in Sokoto: Nana Asma'u hands folded cloth to a mother with children, while others share a meal on mats and students read in…",
+  "scene": "A lively courtyard of a big mud-brick house in a busy walled West African town of flat-roofed mud-brick houses, a mosque with a mud tower, and a market: a wise, warm woman in her forties with deep dark brown skin, a large cream head wrap over her hair and shoulders, and a long deep-green coat with narrow geometric trim over a cream under-robe hands folded cloth to a mother with children, while others share a meal on mats and students read in the shade.",
+  "who": [
+   "SOKOTO",
+   "ASMA"
+  ]
+ },
+ "a7-a": {
+  "alt": "Evening in a quiet room in Sokoto. Nana Asma'u sits alone by a window with her hands raised in prayer, a calm sad face, an oil lamp beside her.",
+  "scene": "Evening in a quiet room in a busy walled West African town of flat-roofed mud-brick houses, a mosque with a mud tower, and a market. a wise, warm woman in her forties with deep dark brown skin, a large cream head wrap over her hair and shoulders, and a long deep-green coat with narrow geometric trim over a cream under-robe sits alone by a window with her hands raised in prayer, a calm sad face, an oil lamp beside her.",
+  "who": [
+   "SOKOTO",
+   "ASMA"
+  ]
+ },
+ "a7-b": {
+  "alt": "A room full of shelves and wooden chests in Sokoto. Nana Asma'u and Gidado gather loose handwritten pages and bundle them carefully with cloth ties; the pages show only…",
+  "scene": "A room full of shelves and wooden chests in a busy walled West African town of flat-roofed mud-brick houses, a mosque with a mud tower, and a market. a wise, warm woman in her forties with deep dark brown skin, a large cream head wrap over her hair and shoulders, and a long deep-green coat with narrow geometric trim over a cream under-robe and a kind, dignified man with deep dark brown skin and a short black beard, a white cap and an indigo-and-white striped wide-sleeved robe gather loose handwritten pages and bundle them carefully with cloth ties; the pages show only lines, no readable writing.",
+  "who": [
+   "SOKOTO",
+   "ASMA",
+   "GIDADO"
+  ]
+ },
+ "a7-c": {
+  "alt": "Several scribes, men and women, sit on mats copying pages with reed pens; Nana Asma'u walks among them checking the work. Only lines and strokes on the pages, no…",
+  "scene": "Several scribes, men and women, sit on mats copying pages with reed pens; a wise, warm woman in her forties with deep dark brown skin, a large cream head wrap over her hair and shoulders, and a long deep-green coat with narrow geometric trim over a cream under-robe walks among them checking the work. Only lines and strokes on the pages, no readable writing.",
+  "who": [
+   "ASMA"
+  ]
+ },
+ "a8-a": {
+  "alt": "A calm study room in Sokoto with a window onto palm trees. Nana Asma'u sits at a low desk writing with a reed pen; stacks of handwritten pages, books and an ink pot…",
+  "scene": "A calm study room in a busy walled West African town of flat-roofed mud-brick houses, a mosque with a mud tower, and a market with a window onto palm trees. a wise, warm woman in her forties with deep dark brown skin, a large cream head wrap over her hair and shoulders, and a long deep-green coat with narrow geometric trim over a cream under-robe sits at a low desk writing with a reed pen; stacks of handwritten pages, books and an ink pot around her. Only lines on the pages, no readable writing.",
+  "who": [
+   "SOKOTO",
+   "ASMA"
+  ]
+ },
+ "a8-b": {
+  "alt": "Nana Asma'u reads a poem aloud from a page to a circle of women of the villages sitting on mats in a courtyard; they listen and repeat after her, smiling.",
+  "scene": "a wise, warm woman in her forties with deep dark brown skin, a large cream head wrap over her hair and shoulders, and a long deep-green coat with narrow geometric trim over a cream under-robe reads a poem aloud from a page to a circle of Black African village women with deep dark brown skin in long colourful wrappers, every one with her hair covered by a headscarf sitting on mats in a courtyard; they listen and repeat after her, smiling.",
+  "who": [
+   "ASMA",
+   "WOMEN"
+  ]
+ },
+ "a9-a": {
+  "alt": "Nana Asma'u sits on a mat in a shaded courtyard in Sokoto, teaching a group of women teachers who listen closely, each wearing a tall woven straw hat tied with red cloth…",
+  "scene": "a wise, warm woman in her forties with deep dark brown skin, a large cream head wrap over her hair and shoulders, and a long deep-green coat with narrow geometric trim over a cream under-robe sits on a mat in a shaded courtyard in a busy walled West African town of flat-roofed mud-brick houses, a mosque with a mud tower, and a market, teaching a group of women teachers who listen closely, each wearing a tall woven straw hat tied with red cloth over her headscarf.",
+  "who": [
+   "ASMA",
+   "SOKOTO"
+  ]
+ },
+ "a9-b": {
+  "alt": "Close view of a jaji, a woman teacher smiling proudly as Nana Asma'u ties the red cloth of her tall woven straw hat; other women clap.",
+  "scene": "Close view of a strong, smiling woman with deep dark brown skin wearing a tall, narrow, high-crowned woven straw hat (not wide-brimmed) bound with a red cloth band, over a headscarf that fully covers her hair and neck, and a loose long-sleeved ochre dress with a high neckline smiling proudly as a wise, warm woman in her forties with deep dark brown skin, a large cream head wrap over her hair and shoulders, and a long deep-green coat with narrow geometric trim over a cream under-robe ties the red cloth of her tall woven straw hat; other women clap.",
+  "who": [
+   "JAJI",
+   "ASMA"
+  ]
+ },
+ "a9-c": {
+  "alt": "Morning on a savanna path. Three women teachers, each in a tall woven straw hat tied with red, walk toward a distant village of round thatched huts, carrying bundles of…",
+  "scene": "Morning on a savanna path. Three women teachers, each in a tall woven straw hat tied with red, walk toward a distant village of round thatched huts, carrying bundles of pages.",
+  "who": []
+ },
+ "a9-d": {
+  "alt": "A village courtyard at dusk: a jaji, a woman teacher sits with women of the villages and their children on mats, all clapping a rhythm and reciting together; small oil…",
+  "scene": "A village courtyard at dusk: a strong, smiling woman with deep dark brown skin wearing a tall, narrow, high-crowned woven straw hat (not wide-brimmed) bound with a red cloth band, over a headscarf that fully covers her hair and neck, and a loose long-sleeved ochre dress with a high neckline sits with Black African village women with deep dark brown skin in long colourful wrappers, every one with her hair covered by a headscarf and their children on mats, all clapping a rhythm and reciting together; small oil lamps glow.",
+  "who": [
+   "JAJI",
+   "WOMEN"
+  ]
+ },
+ "a10-a": {
+  "alt": "Nana Asma'u sits in a busy courtyard in Sokoto listening kindly to a worried young mother holding a baby, while other women and a man in a turban wait to speak with her.",
+  "scene": "a wise, warm woman in her forties with deep dark brown skin, a large cream head wrap over her hair and shoulders, and a long deep-green coat with narrow geometric trim over a cream under-robe sits in a busy courtyard in a busy walled West African town of flat-roofed mud-brick houses, a mosque with a mud tower, and a market listening kindly to a worried young mother holding a baby, while other women and a man in a turban wait to speak with her.",
+  "who": [
+   "ASMA",
+   "SOKOTO"
+  ]
+ },
+ "a10-b": {
+  "alt": "Nana Asma'u and another woman in a plum headscarf sit together on a mat under a tree, laughing and sharing a bowl of dates.",
+  "scene": "a wise, warm woman in her forties with deep dark brown skin, a large cream head wrap over her hair and shoulders, and a long deep-green coat with narrow geometric trim over a cream under-robe and another woman in a plum headscarf sit together on a mat under a tree, laughing and sharing a bowl of dates.",
+  "who": [
+   "ASMA"
+  ]
+ },
+ "a11-a": {
+  "alt": "Golden morning in Sokoto. Nana Asma'u, grown old sits on a mat surrounded by girls and women of all ages reading and reciting, smiling peacefully.",
+  "scene": "Golden morning in a busy walled West African town of flat-roofed mud-brick houses, a mosque with a mud tower, and a market. a gentle elderly woman of seventy with deep dark brown skin, a large cream head wrap over her hair and shoulders, and a long deep-green coat with narrow geometric trim sits on a mat surrounded by girls and women of all ages reading and reciting, smiling peacefully.",
+  "who": [
+   "SOKOTO",
+   "OLD"
+  ]
+ },
+ "a11-b": {
+  "alt": "A modern classroom in northern Nigeria: smiling girls with deep dark brown skin in headscarves and school uniforms raise their hands, books open on their desks; sunlight…",
+  "scene": "A modern classroom in northern Nigeria: smiling girls with deep dark brown skin in headscarves and school uniforms raise their hands, books open on their desks; sunlight through the windows.",
+  "who": []
+ }
+}

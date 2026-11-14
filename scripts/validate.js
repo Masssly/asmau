@@ -127,7 +127,9 @@ for (const slug of slugs) {
     const here = "chapter " + (ci + 1) + " (" + ch.id + ")";
     if (chapterIds.has(ch.id)) fail(dir + ": duplicate chapter id " + ch.id);
     chapterIds.add(ch.id);
-    if (!REF.test(ch.source || "")) fail(dir + ": " + here + " has a bad Qur'an reference '" + ch.source + "'");
+    // a chapter is either from the Qur'an (source: "12:4-6") or from history (cite: where its facts come from)
+    if (ch.source === undefined && typeof ch.cite === "string" && ch.cite.trim()) { /* a history chapter */ }
+    else if (!REF.test(ch.source || "")) fail(dir + ": " + here + " has a bad Qur'an reference '" + ch.source + "' (or give a 'cite' for a chapter from history)");
     for (const r of ch.more || []) if (!REF.test(r)) fail(dir + ": " + here + " has a bad Qur'an reference '" + r + "' in 'more'");
     if (!Array.isArray(ch.parent) || !ch.parent.length || ch.parent.some((p) => typeof p !== "string" || !p.trim())) fail(dir + ": " + here + " needs notes for parents");
     if (!Array.isArray(ch.steps) || !ch.steps.length) { fail(dir + ": " + here + " has no steps"); return; }

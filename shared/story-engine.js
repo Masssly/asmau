@@ -1490,9 +1490,15 @@
 
     $("chNum").textContent = "Chapter " + (ci + 1) + " of " + story.length;
     $("chTitle").textContent = ch.title;
+    // a chapter from the Qur'an links to its verses; a chapter from history names its source instead
     var src = $("chSource");
-    src.textContent = "Qur’an " + ch.source.replace("-", "–");
-    src.href = "https://quran.com/" + ch.source;
+    if (ch.source) {
+      src.textContent = "Qur’an " + ch.source.replace("-", "–");
+      src.href = "https://quran.com/" + ch.source;
+    } else {
+      src.textContent = ch.cite ? "Sources: for parents ↓" : "";
+      src.removeAttribute("href");
+    }
     renderTrail();
 
     stage.className = "stage";
@@ -1509,8 +1515,9 @@
       var body = $("pnoteBody");
       body.innerHTML = "";
       (ch.parent || []).forEach(function (para) { body.appendChild(mk("p", "", para)); });
+      if (ch.cite) body.appendChild(mk("p", "pnote-cite", "Source: " + ch.cite));
       // the chapter's main passage, then any others it draws on
-      [ch.source].concat(ch.more || []).forEach(function (ref, i) {
+      (ch.source ? [ch.source].concat(ch.more || []) : []).forEach(function (ref, i) {
         var more = mk("a", "pnote-link", i ? "Also: Qur’an " + ref.replace("-", "–") : "Read these verses on Quran.com");
         more.href = "https://quran.com/" + ref;
         more.target = "_blank";

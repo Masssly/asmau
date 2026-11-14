@@ -305,6 +305,11 @@ Piper engine and a public-domain voice (`python3 scripts/generate-voice.py games
 (`scripts/generate-placeholder-audio.sh` is the older flite voice, kept for a machine
 that cannot run Piper.)
 
+**A story from history** (Nana Asma'u) is written the same way, in `scripts/asmau/author/`. Its
+chapters have `cite` (where the facts come from) instead of a Qur'an `source`; the player then shows
+"Sources: for parents" and the source at the top of the chapter's note. Every fact must be in
+`scripts/asmau/RESEARCH.md` with its source, and anything the sources disagree on gets no date.
+
 **Before releasing a story, read it straight through.** `node scripts/story-readthrough.js
 <game>` prints it as a child hears it, chapter by chapter (`--story` for the narrated
 lines only). Read it start to end asking, at every line: would a child know how we got
@@ -399,3 +404,4 @@ to date.
 | Count with Me (folder `count-the-crescents`) | 1½–5 | — (four levels: count to 5, 10, 15 or 20) |
 | Yusuf | 3–9 (under 5 with a grown-up) | Surah Yusuf, 12:4–101 — the whole story in 13 chapters |
 | Musa | 3–10 (under 5 with a grown-up) | Surah Al-Qasas 28:3–43 and Ta-Ha 20:9–98, with passages from surahs 2, 5, 7, 10, 18, 26, 40 and 66 — 25 chapters |
+| Nana Asma'u (folder `nana-asmau`) | 4–10 (under 5 with a grown-up) | History, not the Qur'an: Boyd & Mack, *Collected Works of Nana Asma'u* (1997) and other named sources (`scripts/asmau/RESEARCH.md`) — 11 chapters |

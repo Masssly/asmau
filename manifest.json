@@ -11,6 +11,14 @@
       ]
     },
     {
+      "id": "great-muslims",
+      "title": "Great Muslims",
+      "icon": "📜",
+      "games": [
+        "nana-asmau"
+      ]
+    },
+    {
       "id": "little-ones",
       "title": "For little ones",
       "icon": "🧸",

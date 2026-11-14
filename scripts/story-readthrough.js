@@ -21,7 +21,7 @@ vm.runInContext(fs.readFileSync(path.join(dir, "story.js"), "utf8"), box);
 const lines = {};
 JSON.parse(fs.readFileSync(path.join(dir, "narration.json"), "utf8")).forEach((l) => { lines[l.id] = l.text; });
 box.window.STORY.forEach((ch, i) => {
-  console.log("\n" + (i + 1) + ". " + ch.title.toUpperCase() + "  (" + ch.source + ")");
+  console.log("\n" + (i + 1) + ". " + ch.title.toUpperCase() + "  (" + (ch.source || ch.cite) + ")");
   ch.steps.forEach((st) => {
     if (st.say) console.log("   " + lines[st.say] + (st.src ? "   [" + st.src + "]" : ""));
     else if (!storyOnly) console.log("   ▶ " + st.play + ": " + (lines[st.line] || st.line));

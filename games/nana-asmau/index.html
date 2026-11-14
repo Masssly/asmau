@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Nana Asma'u — Asmau</title>
+<link rel="manifest" href="../../app.webmanifest">
+<meta name="theme-color" content="#0c1530">
+<link rel="apple-touch-icon" href="../../icons/icon-180.png">
+<link rel="stylesheet" href="../../fonts/fonts.css">
+<link rel="stylesheet" href="../../shared/style.css">
+<link rel="stylesheet" href="../../shared/story.css">
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <a class="btn-back" href="../../index.html">← Asmau</a>
+    <h1>Nana Asma’u</h1>
+    <button class="icon-btn" id="musicBtn" aria-label="Music is on">🎵</button>
+    <button class="icon-btn" id="soundBtn" aria-label="Sounds and effects are on">🍃</button>
+    <button class="icon-btn" id="voiceBtn" aria-label="The voice is on">🗣️</button>
+    <button class="icon-btn" id="mapBtn" aria-label="All chapters">☰</button>
+  </div>
+
+  <section id="title" class="title">
+    <div class="title-sky" id="titleSky" aria-hidden="true"></div>
+    <h2>The Story of Nana Asma’u</h2>
+    <p class="sub">Eleven chapters about the woman this site is named after.</p>
+    <span class="age-badge">Ages 4–10</span>
+    <p class="age-note">Under 5: play it together with a grown-up</p>
+    <p class="ver" data-asmau-version hidden></p>
+    <div class="title-actions">
+      <button class="btn btn-gold" id="startBtn">Start the story</button>
+      <button class="btn-back" id="restartBtn" hidden>Start from the beginning</button>
+    </div>
+
+    <p class="prep" id="prep" hidden></p>
+
+    <a class="voice-link" href="../../index.html#parents-record">🎙️ <strong>Parents:</strong> tell her story in your own voice, in any language ›</a>
+
+    <details class="parents">
+      <summary>For parents</summary>
+      <div data-sound-levels></div>
+      <ul>
+        <li>Nana Asma’u bint Usman dan Fodio (about 1793 to 1864) was a scholar, poet and teacher in Sokoto, in what is now
+          northern Nigeria. She trained women teachers who took learning to the villages, and wrote more than sixty works in
+          Arabic, Fulfulde and Hausa. This site is named after her.</li>
+        <li>This is history, not the Qur’an. The facts come from Jean Boyd and Beverly Mack, <em>The Collected Works of Nana
+          Asma’u</em> (1997), which draws on the Sokoto historian Waziri Junaidu, and from other sources each chapter names.
+          Where the sources differ on a date, the chapter note says so, and the game gives no year.</li>
+        <li>Not told to children: the war years in detail (the Sokoto jihad, 1804 to 1808), and the captives who were part of
+          that history. Each chapter note says what was left out.</li>
+        <li>Shown in this story: Nana Asma’u, her father the Shehu Usman dan Fodio, her family and her women teachers. In
+          chapter 2, Asma bint Abi Bakr, a Companion of the Prophet ﷺ, is shown only from behind and by her hands.</li>
+        <li>For ages 4 to 10. Under 5, sit with your child: the journey and the hard years may need explaining.</li>
+      </ul>
+    </details>
+  </section>
+
+  <section id="play" hidden>
+    <div class="chapter-head">
+      <span class="num" id="chNum"></span>
+      <h2 id="chTitle"></h2>
+      <a class="src" id="chSource" target="_blank" rel="noopener"></a>
+    </div>
+    <div class="trail" id="trail"></div>
+    <div class="stage" id="stage"></div>
+    <button class="caption" id="caption" aria-live="polite">
+      <span id="captionText"></span>
+      <span class="ear" aria-hidden="true">🔊</span>
+    </button>
+    <details class="pnote" id="pnote">
+      <summary>For parents: this chapter</summary>
+      <div id="pnoteBody"></div>
+    </details>
+    <div class="nav">
+      <button class="btn-bk" id="prevBtn" aria-label="Back"><span class="ico" aria-hidden="true">◀</span><span class="lbl">Back</span></button>
+      <button class="btn-go" id="nextBtn" aria-label="Next"><span class="lbl">Next</span><span class="ico" aria-hidden="true">▶</span></button>
+    </div>
+  </section>
+
+  <section id="chapters" hidden>
+    <div class="view-head">
+      <h2 class="view-title">All chapters</h2>
+      <button class="btn-back" id="chaptersClose">✕ Close</button>
+    </div>
+    <div class="chapter-grid" id="chapterGrid"></div>
+  </section>
+
+  <section id="end" class="end" hidden>
+    <div class="big" id="endFig" aria-hidden="true"></div>
+    <h2>The End</h2>
+    <p id="endText"></p>
+    <div class="virtues"><span>Learning</span><span>Teaching</span><span>Caring</span></div>
+    <div class="title-actions">
+      <button class="btn btn-gold" id="againBtn">Read it again</button>
+      <button class="btn-back" id="endChaptersBtn">Pick a chapter</button>
+    </div>
+  </section>
+</div>
+
+<script src="../../shared/narration.js"></script>
+<script src="../../shared/music.js"></script>
+<script src="../../shared/sound-panel.js"></script>
+<script src="game.js"></script>
+<script src="art.js"></script>
+<script src="story.js"></script>
+<script src="../../shared/story-engine.js"></script>
+<script src="../../shared/pwa.js"></script>
+</body>
+</html>

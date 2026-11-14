@@ -7,6 +7,7 @@ so that a person looks the same from scene to scene.
 
   musa-refs [KEY ...]       draw the reference pictures (scripts/musa-art/refs.json)
                             into scripts/musa-art/refs/<KEY>.png, for a person to approve
+  asmau-refs / asmau-scenes  the same for the Nana Asma'u story (scripts/asmau-art)
   musa-scenes [KEY ...]     draw the Musa scenes (scripts/musa-art/shots.json) into
                             scripts/musa-art/out/<key>.png, each shown the approved
                             reference pictures of the people in it. Already drawn: skipped.
@@ -112,21 +113,31 @@ def run(jobs, workers=int(os.environ.get("WORKERS", "2"))):
     return failed
 
 
-# ---------- Musa ----------
+# ---------- story games written with an author folder: Musa, Nana Asma'u ----------
+# Each has scripts/<name>-art/ with shots.json, refs.json and refs/ (approved.json lists the approved references).
 ART = os.path.join(ROOT, "scripts", "musa-art")
+ALIAS = {"OLD": "ASMA"}          # Nana Asma'u grown old is drawn from her own reference
+
+
+def use(story):
+    global ART
+    ART = os.path.join(ROOT, "scripts", story + "-art")
 
 
 def musa_refs(keys):
     refs = json.load(open(os.path.join(ART, "refs.json"), encoding="utf-8"))
-    keys = keys or list(refs)
+    keys = keys or [k for k in refs if not approved_ref(k)]
     return run([(k, os.path.join(ART, "refs", k + ".png"), REF + refs[k]["look"] + "." + END, ()) for k in keys])
 
 
 def approved_ref(k):
+    k = ALIAS.get(k, k)
+    ok = os.path.join(ART, "refs", "approved.json")
+    if not os.path.exists(ok) or k not in json.load(open(ok)):
+        return None
     for ext in (".png", ".webp", ".jpg"):
         p = os.path.join(ART, "refs", k + ext)
-        if os.path.exists(p) and os.path.exists(os.path.join(ART, "refs", "approved.json")) and \
-                k in json.load(open(os.path.join(ART, "refs", "approved.json"))):
+        if os.path.exists(p):
             return p
     return None
 
@@ -214,7 +225,10 @@ if __name__ == "__main__":
         data = draw("A small golden crescent moon on a plain dark blue background." + END)
         print("ok: a picture of %d bytes came back" % len(data))
         sys.exit(0)
-    failed = {"musa-refs": musa_refs, "musa-scenes": musa_scenes, "yusuf-fix": yusuf_fix, "yusuf-brothers": brothers}[cmd](args)
+    if cmd.startswith("asmau-"):
+        use("asmau")
+    failed = {"musa-refs": musa_refs, "musa-scenes": musa_scenes, "asmau-refs": musa_refs, "asmau-scenes": musa_scenes,
+              "yusuf-fix": yusuf_fix, "yusuf-brothers": brothers}[cmd](args)
     if failed:
         print("%d failed: %s" % (len(failed), ", ".join(failed)))
         sys.exit(1)

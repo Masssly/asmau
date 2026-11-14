@@ -1,0 +1,54 @@
+{
+ "MU": {
+  "name": "Musa",
+  "look": "a strong kind man in his thirties with a short black beard, a cream turban and an indigo robe, holding a tall wooden staff"
+ },
+ "MY": {
+  "name": "young Musa",
+  "look": "a strong kind young man with short black hair and no beard, in a white tunic with a blue sash"
+ },
+ "HA": {
+  "name": "Harun",
+  "look": "a gentle man with a short black beard, a white turban and a green robe"
+ },
+ "PH": {
+  "name": "Pharaoh",
+  "look": "a proud stern king with a short black beard, a tall blue-and-gold striped crown and a red-and-gold robe"
+ },
+ "ASIYA": {
+  "name": "Queen Asiya",
+  "look": "a kind queen in a teal silk headscarf with a thin gold circlet and a white-and-gold gown"
+ },
+ "MUM": {
+  "name": "Musa's mother",
+  "look": "a gentle young mother in a rust-orange headscarf and a cream dress"
+ },
+ "SIS": {
+  "name": "Musa's sister",
+  "look": "a clever girl of ten in a yellow headscarf and a green dress"
+ },
+ "BABY": {
+  "name": "baby Musa",
+  "look": "a chubby smiling baby boy wrapped in white cloth"
+ },
+ "ELD": {
+  "name": "the old father",
+  "look": "a very old man with a long white beard, a white turban and a brown cloak"
+ },
+ "DAU": {
+  "name": "the two daughters",
+  "look": "two modest young women in long dresses and headscarves, one in purple and one in sky blue"
+ },
+ "KH": {
+  "name": "al-Khidr",
+  "look": "a wise old man with a white beard, in a green turban and a long green cloak"
+ },
+ "YU": {
+  "name": "Yusha",
+  "look": "a helpful boy of twelve in a short brown tunic and a small white cap"
+ },
+ "SAM": {
+  "name": "the Samiri",
+  "look": "a sly thin man in a grey robe and a dark red turban"
+ }
+}

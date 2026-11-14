@@ -225,6 +225,15 @@ ADMIN_TOKEN=... node scripts/publish-media.js
 (Files already on R2 are skipped. The music and sound effects in the games are
 made by the browser as you play and are not files.)
 
+**Nothing published is ever deleted.** Every version of every picture and sound
+stays in the bucket at `media/<first 10 hex of its SHA-1>/<path>`, and each run
+logs it in `history/index.json` in the bucket (`{ "<path>": [{ hash, from, release }] }`,
+oldest first; every rewrite of the log keeps the previous log beside it). To get an
+old picture back, read the log (owner only:
+`curl -H "authorization: Bearer $ADMIN_TOKEN" <server>/admin/history`) and download
+`<server>/media/<hash>/<path>`. `--backfill` also publishes and logs every older
+version still in git history. The yearly clean-up only touches family recordings.
+
 If a device ever looks old, `reset.html` clears its saved copy and loads the
 newest one (recordings and progress are not touched). The landing page footer
 has a "Refresh" link to it.

@@ -1,0 +1,5 @@
+
+# pictures being drawn, before a person has looked at them
+scripts/musa-art/out/
+scripts/musa-art/refs/*.png
+scripts/yusuf-art/fix/

@@ -56,7 +56,9 @@ function line(id, text) {
 function full(ref) { return /^(m\d+|bg)-/.test(ref) ? ref : C.id + "-" + ref; }
 function shot(id, desc) {
   const alt = fill(desc, 0).replace(/\s+/g, " ").trim();
-  SHOTS[id] = { alt: alt.length > 170 ? alt.slice(0, alt.slice(0, 170).lastIndexOf(" ")) + "…" : alt, scene: fill(desc, 1) };
+  // who: the people in it, in order, so the right reference pictures go with the prompt
+  const who = [...new Set([...desc.matchAll(/\{([A-Z]+)\}/g)].map((m) => m[1]))];
+  SHOTS[id] = { alt: alt.length > 170 ? alt.slice(0, alt.slice(0, 170).lastIndexOf(" ")) + "…" : alt, scene: fill(desc, 1), who };
 }
 function extras(st, x) {
   x = x || {};
@@ -129,6 +131,10 @@ function chg(suffix, scene, text, states, x) {
 }
 
 // A backdrop for activities in a scene that have no picture of their own.
-function backdrop(scene, desc) { SHOTS["bg-" + scene] = { alt: desc, scene: desc }; }
+function backdrop(scene, desc) { SHOTS["bg-" + scene] = { alt: desc, scene: desc, who: [] }; }
 
-module.exports = { STORY, LINES, SHOTS, MOODS, WHO, TAF, HAD, chapter, s, p, q, ord, mat, srt, chg, line, backdrop };
+// The people who get a reference picture: drawn once, approved by a person, then shown to the
+// picture tool with every scene they are in, so they look the same from scene to scene.
+const REFS = ["MU", "MY", "HA", "PH", "ASIYA", "MUM", "SIS", "BABY", "ELD", "DAU", "KH", "YU", "SAM"];
+
+module.exports = { REFS, STORY, LINES, SHOTS, MOODS, WHO, TAF, HAD, chapter, s, p, q, ord, mat, srt, chg, line, backdrop };

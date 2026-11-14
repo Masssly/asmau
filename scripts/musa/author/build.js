@@ -64,6 +64,10 @@ fs.writeFileSync(path.join(GAME, "story.js"), head + body + moods);
 fs.writeFileSync(path.join(GAME, "narration.json"), "[\n" + lib.LINES.map((l) => "  " + JSON.stringify(l)).join(",\n") + "\n]\n");
 fs.mkdirSync(path.join(ROOT, "scripts", "musa-art"), { recursive: true });
 fs.writeFileSync(path.join(ROOT, "scripts", "musa-art", "shots.json"), JSON.stringify(lib.SHOTS, null, 1) + "\n");
+// reference pictures: one per person, front and three-quarter view, in the game's 3D look
+const refs = {};
+lib.REFS.forEach((k) => { refs[k] = { name: lib.WHO[k][0], look: lib.WHO[k][1] }; });
+fs.writeFileSync(path.join(ROOT, "scripts", "musa-art", "refs.json"), JSON.stringify(refs, null, 1) + "\n");
 
 const plays = {}; let says = 0;
 lib.STORY.forEach((ch) => ch.steps.forEach((st) => { if (st.say) says++; else plays[st.play] = (plays[st.play] || 0) + 1; }));

@@ -14,6 +14,9 @@
     GET/PUT /admin/limit         owner only (bearer token): see or raise one family's limit
     GET     /media/<key>         the site's pictures (public, cached for a year)
     PUT     /admin/media/<key>   owner only: upload one picture
+    GET/PUT /admin/history       owner only: the log of every picture and sound ever published
+                                 (history/index.json). Published files are never deleted, so
+                                 every old version stays in the bucket at media/<hash>/<path>.
 
   Also: a daily job deletes a family's recordings when nobody has used its code for
   a year, and requests are rate-limited per code and per network address.
@@ -204,6 +207,25 @@ async function adminMedia(req, env, key) {
   return new Response("ok", { status: 201 });
 }
 
+// Owner only: the history log. GET returns it (or {} before the first publish); PUT replaces it.
+async function adminHistory(req, env) {
+  const auth = req.headers.get("authorization") || "", want = env.ADMIN_TOKEN || "";
+  if (!want || auth !== "Bearer " + want) return new Response("forbidden", { status: 403 });
+  if (req.method === "GET") {
+    const obj = await env.CLIPS.get("history/index.json");
+    return new Response(obj ? obj.body : "{}", { headers: { "content-type": "application/json", "cache-control": "no-store" } });
+  }
+  if (req.method !== "PUT") return new Response("method not allowed", { status: 405 });
+  const text = await req.text();
+  if (text.length > 4 * 1024 * 1024) return new Response("too large", { status: 413 });
+  try { JSON.parse(text); } catch (e) { return new Response("not JSON", { status: 400 }); }
+  // the previous log is kept too, so a bad write can never lose the history
+  const old = await env.CLIPS.get("history/index.json");
+  if (old) await env.CLIPS.put("history/index-" + new Date().toISOString().replace(/[:.]/g, "-") + ".json", await old.text());
+  await env.CLIPS.put("history/index.json", text);
+  return new Response("ok", { status: 201 });
+}
+
 export default {
   async scheduled(event, env, ctx) {
     ctx.waitUntil(purgeInactive(env, Date.now(), RETENTION_DAYS));
@@ -213,6 +235,7 @@ export default {
     const mu = new URL(req.url);
     if (mu.pathname.startsWith("/media/")) return media(req, env, ctx, mu.pathname.slice(7));
     if (mu.pathname.startsWith("/admin/media/")) return adminMedia(req, env, mu.pathname.slice(13));
+    if (mu.pathname === "/admin/history") return adminHistory(req, env);
     if (req.method === "OPTIONS") return reply(null, 204);
     const origin = req.headers.get("origin");
     if (origin && origin !== ORIGIN) return reply("forbidden", 403);

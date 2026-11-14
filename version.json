@@ -1,12 +1,24 @@
 {
-  "version": "2026.11.9",
+  "version": "2026.11.10",
   "date": "2026-11-14",
-  "buildId": "21e9bf8e6771",
+  "buildId": "5285c3bf36a6",
   "notes": [
-    "Count with Me now counts to 15 and 20 as well as 5 and 10",
-    "Yusuf and Count with Me now use the same clearer voice as Musa"
+    "Three sound switches (music, sounds of the place, voice) and volume sliders for parents; the background sounds are a quarter quieter",
+    "Yusuf: the brothers persuading their father, the women at the banquet, the brothers' own rule, the eldest's vow and other missing links in the story; his hair and the torn shirt now match in every picture",
+    "The stars, sun and moon now bow in chapter 1; the chapter list closes again with a second tap",
+    "Musa: the story reads more smoothly, with long pages split in two"
   ],
   "history": [
+    {
+      "version": "2026.11.10",
+      "date": "2026-11-14",
+      "notes": [
+        "Three sound switches (music, sounds of the place, voice) and volume sliders for parents; the background sounds are a quarter quieter",
+        "Yusuf: the brothers persuading their father, the women at the banquet, the brothers' own rule, the eldest's vow and other missing links in the story; his hair and the torn shirt now match in every picture",
+        "The stars, sun and moon now bow in chapter 1; the chapter list closes again with a second tap",
+        "Musa: the story reads more smoothly, with long pages split in two"
+      ]
+    },
     {
       "version": "2026.11.9",
       "date": "2026-11-14",

@@ -75,7 +75,7 @@ ord("ord", "camp", "What happened first? Tap them in order.", [
 
 chapter("m21", "🐮", "The Yellow Cow", "2:67-71", ["2:72-73"], [
   "Verses 2:67–71. Musa told his people that Allah commands them to sacrifice a cow. They asked if he was mocking them, then asked what sort (neither old nor young, but in between), what colour (bright yellow, pleasing to the eye), and exactly which (unblemished, not trained to plough the earth or water the fields). They slaughtered it, 'though they almost failed to do so'.",
-  "Left for parents: verses 2:72–73 give the reason. A person had been killed and the people were accusing one another; they were told to strike the body with part of the cow, and so Allah showed them how He gives life to the dead. The game tells only the cow and the questions."
+  "Left for parents: verses 2:72–73 give the reason. A person had been killed and the people were accusing one another; they were told to strike the body with part of the cow, and so Allah showed them how He gives life to the dead. The game tells the cow and the questions, and says only that Allah used it to bring out a truth some of them had been hiding, which is the wording of 2:72."
 ]);
 s("a", "camp", "One day Musa told his people: Allah commands you to sacrifice a cow. They said: are you joking with us?",
   "At {CAMP} by day, {MU} speaks to a group of men who look at each other with raised eyebrows and doubtful smiles; a few cows graze in the background.", { mood: "pastoral" });
@@ -85,7 +85,7 @@ s("c", "field", "But they asked again: what colour? Musa said: a bright yellow c
   "One beautiful golden-yellow cow with a glossy coat stands in sunlight in a pasture among brown, black and white cows.", { mood: "pastoral" });
 s("d", "field", "And they asked again: which one exactly? Musa said: a perfect cow, with no marks on it at all, one that has never pulled a plough or watered the fields.", "=c", { mood: "pastoral" });
 p("pick", "cow", "field", "Find the right cow: bright yellow, with no marks at all. Tap it.", { items: [{ icon: "🐄", n: 1, ok: true, cls: "cow-yellow", name: "the yellow cow" }, { icon: "🐄", n: 3, ok: false, name: "a spotted cow" }, { icon: "🐂", n: 2, ok: false, name: "a brown ox" }, { icon: "🐃", n: 2, ok: false, name: "a dark buffalo" }], mark: "✨" });
-s("e", "field", "At last they found it, and did as they were told. But they very nearly did not!",
+s("e", "field", "At last they found it, and did as they were told. But they very nearly did not! And Allah used it to bring out a truth that some of them had been hiding.",
   "A group of men lead one golden-yellow cow by a rope across a pasture toward the camp, looking relieved and tired.", { mood: "pastoral" });
 q("q", "field", "What should they have done at the start?", ["Done as they were told, straight away", "👍"], ["Asked more and more questions", "❓"], "No. All those questions only made it harder. They should have obeyed straight away.", { img: "e" });
 ord("ord", "field", "They asked three questions. Tap them in order.", [
@@ -133,7 +133,8 @@ s("e", "desert", "Musa said: that is the very place we were looking for! So they
 p("trail", "back", "desert", "Follow the footsteps back to the rock. Tap each one.", { n: 7, icon: "👣", walker: "🚶" });
 s("f", "sea", "And there they found a servant of Allah, to whom Allah had given mercy and special knowledge. It is told that his name was al-Khidr.",
   "By a big rock on the seashore sits {KH}, calm and smiling gently; {MU} greets him respectfully with a hand on his chest, {YU} standing behind.", { src: HAD, mood: "awe" });
-s("g", "sea", "Musa asked: may I follow you, so that you can teach me? He said: you will not be able to be patient with me. Musa said: if Allah wills, you will find me patient. He said: then do not ask me about anything, until I tell you about it myself.",
+s("g0", "sea", "Musa asked: may I follow you, so that you can teach me? He said: you will not be able to be patient with me.", "=f", { mood: "pastoral" });
+s("g", "sea", "Musa said: if Allah wills, you will find me patient. He said: then do not ask me about anything, until I tell you about it myself.",
   "{MU} and {KH} walk side by side along a beach talking, the old man holding up one finger as he sets a condition; waves roll in.", { mood: "pastoral" });
 q("q", "sea", "What did Musa promise al-Khidr?", ["To be patient, and not to ask", "🤐"], ["To ask lots of questions", "❓"], "No. Musa promised to be patient, and not to ask about anything.", { img: "g" });
 
@@ -165,8 +166,9 @@ mat("match", "city", "Match each strange thing to its secret.", [
   ["⛵", "A hole in the boat", "👑", "kept it safe from a greedy king"],
   ["🧱", "A mended wall", "💰", "kept a treasure safe for two orphans"]
 ]);
-s("i", "sea", "Musa learned that Allah knows what we do not know. Sometimes a thing looks bad, and there is good hidden inside it. Our Prophet, peace be upon him, said: we wish Musa had been patient, so that Allah would have told us more about the two of them.",
-  "{MU} stands alone on a seashore at sunset looking out thoughtfully over the calm water, staff in hand, a small bird flying over the waves.", { src: HAD, mood: "awe" });
+s("i", "sea", "Musa learned that Allah knows what we do not know. Sometimes a thing looks bad, and there is good hidden inside it.",
+  "{MU} stands alone on a seashore at sunset looking out thoughtfully over the calm water, staff in hand, a small bird flying over the waves.", { mood: "awe" });
+s("i2", "sea", "Our Prophet, peace be upon him, said: we wish Musa had been patient, so that Allah would have told us more about the two of them.", "=i", { src: HAD, mood: "awe" });
 q("q2", "sea", "What did Musa learn?", ["Allah knows what we do not know", "✨"], ["That he knew everything", "🤓"], "No. Musa learned that Allah knows what we do not know.", { img: "i" });
 
 chapter("m25", "📜", "Allah Was with Him", "28:43", ["20:46", "26:62"], [

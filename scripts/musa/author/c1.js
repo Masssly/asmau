@@ -108,7 +108,7 @@ s("c", "city", "Musa was so sorry. He said: this is the work of Shaytan. My Lord
   "{MY} kneels alone in a quiet corner of a courtyard with his palms raised in prayer and his eyes closed, a soft warm light falling on him.", { mood: "longing" });
 p("hold", "sorry", "city", "Say sorry from the heart, like Musa. Press and hold the hands until they shine.", { ms: 3000, icon: "🤲", hint: "Press and hold", done: "Allah is the Most Forgiving" }, { img: "c" });
 q("q", "city", "What did Musa do when he had done something wrong?", ["He asked Allah to forgive him", "🤲"], ["He pretended nothing happened", "🙈"], "No. Musa said sorry straight away, and asked Allah to forgive him.", { img: "c" });
-s("d", "city", "The next day, a man came running from the far side of the city. He said: Musa! The chiefs are coming to punish you. Leave now! I am giving you good advice.",
+s("d", "city", "Soon the whole city knew what had happened. Then a man came running from the far side of the city. He said: Musa! The chiefs are coming to punish you. Leave now! I am giving you good advice.",
   "A man in a plain tunic runs up breathless to {MY} in a narrow city street and points urgently toward the city gate.", { mood: "dread" });
 s("e", "desert", "So Musa left the city, afraid, looking over his shoulder. He prayed: my Lord, save me from the people who do wrong.",
   "{MY} hurries out through a great mud-brick city gate into open desert at dusk, glancing back over his shoulder.", { mood: "dread" });
@@ -130,7 +130,7 @@ s("d", "well", "It is told that a great heavy rock covered the well, a rock that
   "{MY} strains with all his strength to lift a huge round flat stone off the mouth of a desert well, sheep crowding around his legs.", { src: TAF });
 p("pull", "rock", "well", "Lift the heavy rock off the well. Pull, pull, pull!", { icon: "ROCK", label: "Lift!" }, { src: TAF });
 p("count", "sheep", "well", "Now give every sheep a drink. Tap each one.", { total: 8, icon: "🐑", got: "💧" });
-s("e", "well", "Then Musa went to rest in the shade. He was tired and hungry, and far from home. He prayed: my Lord, I am in need of whatever good You send me.",
+s("e", "well", "When every sheep had drunk, Musa went to rest in the shade. He was tired and hungry, and far from home. He prayed: my Lord, I am in need of whatever good You send me.",
   "{MY} sits resting in the shade of an acacia tree beside the well, his palms raised in prayer, sheep drinking at a stone trough nearby.", { mood: "longing" });
 q("q", "well", "Musa had nothing left. Who did he ask for help?", ["Allah", "🤲"], ["The shepherds", "🧔"], "No. Musa asked Allah: my Lord, I am in need of whatever good You send me.", { img: "e" });
 p("memory", "mem", "well", "Find the pairs from the well of Madyan.", { icons: ["🐑", "ROCK", "💧", "🌳", "🐐", "☀️"] });
@@ -139,7 +139,7 @@ chapter("m8", "🏡", "A New Home", "28:25-28", [], [
   "Verses 28:25–28. One of the two women came walking shyly with her father's invitation. Musa told his story and the old man said: do not be afraid, you are safe now. A daughter said: hire him, the best to hire is the strong and trustworthy. The father offered marriage to one of his daughters for eight years of work, ten if Musa chose, and Musa agreed. The verses do not name the father.",
   "From Ibn Kathir's tafsir (abridged English), not the verses: Musa asked her to walk behind him and throw a pebble to show the way (reported from Umar, Ibn Abbas and others, as her explanation of 'trustworthy'); and Musa completed the longer term, ten years, which the tafsir quotes from al-Bukhari on the authority of Ibn Abbas."
 ]);
-s("a", "well", "Soon, one of the two young women came back, walking shyly. She said: my father is asking for you. He wants to thank you for watering our sheep.",
+s("a", "well", "The two sisters went home and told their father what had happened. Soon one of them came back, walking shyly. She said: my father is asking for you. He wants to thank you for watering our sheep.",
   "A modest young woman in a purple headscarf stands shyly at a distance, eyes lowered, speaking to {MY} who rises from the shade of an acacia tree by the well.");
 s("b", "desert", "On the way, Musa walked in front. It is told that he asked her to walk behind him, and to throw a little pebble to show him which way to turn.",
   "{MY} walks ahead on a stony desert path while, well behind him, a modest young woman in a purple headscarf tosses a small pebble to one side of the path.", { src: TAF, mood: "pastoral" });

@@ -44,6 +44,7 @@ mat("match", "fire", "Match each thing to what happened. Tap one on the left, th
 p("memory", "mem", "fire", "Find the pairs from that wonderful night.", { icons: ["🔥", "🐍", "✋", "👡", "⛰️", "🌕"] });
 
 chapter("m11", "🤲", "Musa's Prayer", "20:25-36", ["28:33-35", "20:42-46"], [
+  "How Musa met Harun again is not described in the verses; 20:42 says 'go, you and your brother', so the game says only that Harun went with him.",
   "Verses 20:25–36. Musa asked: lift up my heart, ease my task, untie my tongue so they may understand my words, and give me a helper from my family, Harun my brother; strengthen me through him and let him share my task, so that we may glorify and remember You much. He was told: your request is granted.",
   "Verses 28:33–35: Musa says he killed one of their men and fears they may kill him, and that Harun is the better speaker. The game says only that he was afraid of what they might do to him. Verses 20:42–46: go, both of you; speak to him gently so that he may take heed or show respect; do not be afraid, I am with you both, hearing and seeing.",
   "Ibn Kathir's tafsir (abridged English) reports from Ibn Abbas that Harun was made a prophet at that same moment, and that A'ishah agreed with a man who said no brother was ever more useful to his brother than Musa was in this prayer."
@@ -60,7 +61,8 @@ ord("ord", "fire", "Say Musa's prayer with him. Tap the parts in order.", [
   ["🤝", "Give me my brother", "And give me my brother to help me."]
 ], "Not yet. Listen again: heart, task, tongue, brother.", { img: "b" });
 s("d", "fire", "Allah said: Musa, you have been given what you asked for.", "=b", { mood: "triumph" });
-s("e", "desert", "Allah told Musa and Harun: go to Pharaoh, both of you. Speak to him gently, so that he may think, and remember. Do not be afraid. I am with you both. I hear and I see everything.",
+s("e0", "desert", "So Musa set off back to Egypt, with his brother Harun at his side.", "=e", { mood: "trek" });
+s("e", "desert", "Allah told them: go to Pharaoh, both of you. Speak to him gently, so that he may think, and remember. Do not be afraid. I am with you both. I hear and I see everything.",
   "{MU} and {HA} embrace warmly as brothers meeting on a desert road at sunrise, a river city far behind them.", { mood: "triumph" });
 q("q", "desert", "How should Musa and Harun speak to Pharaoh?", ["Gently", "🕊️"], ["With shouting", "😡"], "No. Allah told them: speak to him gently.", { img: "e" });
 srt("sort", "desert", "Is it a gentle word, or a harsh word?", ["Gentle", "🕊️"], ["Harsh", "🌩️"], [
@@ -195,7 +197,8 @@ s("d", "sea", "Musa and all his people crossed safely to the other side.",
   "{FOLK} climb out onto the far shore, hugging each other with relief and joy, the split sea behind them; {MU} and {HA} help the last ones up.", { mood: "triumph" });
 s("e", "sea", "Pharaoh and his army rushed in after them. Then the sea came crashing back together, and the army was gone.",
   "Seen from far away on the shore: the two great walls of water crash together in a huge burst of foam and spray; no people visible, only the wild sea under a bright sky.", { mood: "dread", cue: "roar" });
-s("f", "sea", "As the water closed over him, Pharaoh cried: I believe in the God that the Children of Israel believe in! But it was too late. All his life he had been proud and cruel. Allah saved only his body, as a sign for the people who came after.",
+s("f0", "sea", "As the water closed over him, Pharaoh cried: I believe in the God that the Children of Israel believe in! But it was too late.", "=e", { mood: "dread" });
+s("f", "sea", "All his life he had been proud and cruel. Allah saved only his body, as a sign for the people who came after.",
   "A lonely golden crown with blue stripes lies washed up on wet sand at the edge of a calm sea, small waves lapping around it, morning light.", { mood: "longing" });
 s("g", "dawn", "The people were free! That day is called Ashura. Prophet Muhammad, peace be upon him, told the Muslims to fast on that day.",
   "On a sunny seashore, {FOLK} celebrate with raised hands, children dancing and playing in the sand, the calm sea sparkling behind them.", { src: HAD, mood: "triumph" });

@@ -187,6 +187,7 @@ window.STORY = [
   {
     id: "m11", icon: "🤲", title: "Musa's Prayer", source: "20:25-36", more: ["28:33-35","20:42-46"],
     parent: [
+      "How Musa met Harun again is not described in the verses; 20:42 says 'go, you and your brother', so the game says only that Harun went with him.",
       "Verses 20:25–36. Musa asked: lift up my heart, ease my task, untie my tongue so they may understand my words, and give me a helper from my family, Harun my brother; strengthen me through him and let him share my task, so that we may glorify and remember You much. He was told: your request is granted.",
       "Verses 28:33–35: Musa says he killed one of their men and fears they may kill him, and that Harun is the better speaker. The game says only that he was afraid of what they might do to him. Verses 20:42–46: go, both of you; speak to him gently so that he may take heed or show respect; do not be afraid, I am with you both, hearing and seeing.",
       "Ibn Kathir's tafsir (abridged English) reports from Ibn Abbas that Harun was made a prophet at that same moment, and that A'ishah agreed with a man who said no brother was ever more useful to his brother than Musa was in this prayer."
@@ -197,6 +198,7 @@ window.STORY = [
       {"say":"m11-c","scene":"fire","pic":"m11-b","e":"🧔🏿 🤝 🧔🏿"},
       {"play":"order","line":"m11-ord","scene":"fire","opts":{"cards":[{"icon":"💛","label":"Open up my heart","line":"m11-ord-c1"},{"icon":"🌤️","label":"Make my task easy","line":"m11-ord-c2"},{"icon":"👅🏿","label":"Untie my tongue","line":"m11-ord-c3"},{"icon":"🤝","label":"Give me my brother","line":"m11-ord-c4"}],"wrong":"m11-ord-no","img":"m11-b"}},
       {"say":"m11-d","scene":"fire","pic":"m11-b","e":"✨ 🤲🏿"},
+      {"say":"m11-e0","scene":"desert","pic":"m11-e","e":"🧔🏿 🧔🏿 🚶🏿"},
       {"say":"m11-e","scene":"desert","e":"🧔🏿 🧔🏿 🕊️"},
       {"play":"choice","line":"m11-q","scene":"desert","opts":{"options":[{"label":"With shouting","icon":"😡","ok":false},{"label":"Gently","icon":"🕊️","ok":true}],"wrong":"m11-q-no","img":"m11-e"}},
       {"play":"sort","line":"m11-sort","scene":"desert","opts":{"bins":[{"label":"Gentle","icon":"🕊️"},{"label":"Harsh","icon":"🌩️"}],"things":[{"icon":"🙂","label":"Please listen to me","bin":0},{"icon":"😠","label":"You are stupid!","bin":1},{"icon":"🤝","label":"Let us talk together","bin":0},{"icon":"👉🏿","label":"Go away!","bin":1},{"icon":"💛","label":"Peace be with you","bin":0}],"wrong":"m11-sort-no"}}
@@ -313,6 +315,7 @@ window.STORY = [
       {"play":"journey","line":"m17-cross","scene":"sea","opts":{"from":"🏖️","to":"🌅","icon":"🚶🏿","steps":8,"img":"m17-b"}},
       {"say":"m17-d","scene":"sea","e":"🚶🏿 🚶🏿 🙌🏿"},
       {"say":"m17-e","scene":"sea","cue":"roar","e":"🌊 🌊 🌊"},
+      {"say":"m17-f0","scene":"sea","pic":"m17-e","e":"👑 🌊"},
       {"say":"m17-f","scene":"sea","e":"👑 🌊"},
       {"say":"m17-g","scene":"dawn","src":"From a hadith in al-Bukhari","e":"🙌🏿 🌅"},
       {"play":"choice","line":"m17-q","scene":"dawn","opts":{"options":[{"label":"Allah","icon":"✨","ok":true},{"label":"A big boat","icon":"⛵","ok":false}],"wrong":"m17-q-no","img":"m17-g"}},
@@ -380,7 +383,7 @@ window.STORY = [
     id: "m21", icon: "🐮", title: "The Yellow Cow", source: "2:67-71", more: ["2:72-73"],
     parent: [
       "Verses 2:67–71. Musa told his people that Allah commands them to sacrifice a cow. They asked if he was mocking them, then asked what sort (neither old nor young, but in between), what colour (bright yellow, pleasing to the eye), and exactly which (unblemished, not trained to plough the earth or water the fields). They slaughtered it, 'though they almost failed to do so'.",
-      "Left for parents: verses 2:72–73 give the reason. A person had been killed and the people were accusing one another; they were told to strike the body with part of the cow, and so Allah showed them how He gives life to the dead. The game tells only the cow and the questions."
+      "Left for parents: verses 2:72–73 give the reason. A person had been killed and the people were accusing one another; they were told to strike the body with part of the cow, and so Allah showed them how He gives life to the dead. The game tells the cow and the questions, and says only that Allah used it to bring out a truth some of them had been hiding, which is the wording of 2:72."
     ],
     steps: [
       {"say":"m21-a","scene":"camp","e":"🧔🏿 💬 🐄"},
@@ -426,6 +429,7 @@ window.STORY = [
       {"say":"m23-e","scene":"desert","e":"🧔🏿 👉🏿 👣"},
       {"play":"trail","line":"m23-back","scene":"desert","opts":{"n":7,"icon":"👣","walker":"🚶🏿"}},
       {"say":"m23-f","scene":"sea","src":"From a hadith in al-Bukhari","e":"👴🏿 ✨"},
+      {"say":"m23-g0","scene":"sea","pic":"m23-f","e":"🧔🏿 💬 👴🏿"},
       {"say":"m23-g","scene":"sea","e":"🧔🏿 🤝 👴🏿"},
       {"play":"choice","line":"m23-q","scene":"sea","opts":{"options":[{"label":"To ask lots of questions","icon":"❓","ok":false},{"label":"To be patient, and not to ask","icon":"🤐","ok":true}],"wrong":"m23-q-no","img":"m23-g"}}
     ]
@@ -450,7 +454,8 @@ window.STORY = [
       {"say":"m24-h","scene":"city","e":"🧱 💰 👦🏿"},
       {"play":"wipe","line":"m24-treasure","scene":"city","opts":{"cover":"sand","under":"💰"}},
       {"play":"match","line":"m24-match","scene":"city","opts":{"pairs":[{"a":"m24-match-a1","aIcon":"⛵","aLabel":"A hole in the boat","b":"m24-match-b1","bIcon":"👑","bLabel":"kept it safe from a greedy king"},{"a":"m24-match-a2","aIcon":"🧱","aLabel":"A mended wall","b":"m24-match-b2","bIcon":"💰","bLabel":"kept a treasure safe for two orphans"}]}},
-      {"say":"m24-i","scene":"sea","src":"From a hadith in al-Bukhari","e":"🧔🏿 🌅"},
+      {"say":"m24-i","scene":"sea","e":"🧔🏿 🌅"},
+      {"say":"m24-i2","scene":"sea","pic":"m24-i","src":"From a hadith in al-Bukhari","e":"🌊 🐦"},
       {"play":"choice","line":"m24-q2","scene":"sea","opts":{"options":[{"label":"That he knew everything","icon":"🤓","ok":false},{"label":"Allah knows what we do not know","icon":"✨","ok":true}],"wrong":"m24-q2-no","img":"m24-i"}}
     ]
   },
@@ -472,4 +477,4 @@ window.STORY = [
 ];
 
 /* Music for single lines; everything else uses its scene's music (sceneMood in game.js). */
-window.STORY_MOODS = {"m1-b":"longing", "m1-c":"nile", "m2-a":"longing", "m2-d":"nile", "m3-c":"nile", "m4-a":"longing", "m4-e":"triumph", "m4-f":"triumph", "m5-a":"nile", "m6-b":"dread", "m6-c":"longing", "m6-d":"dread", "m6-e":"dread", "m7-a":"trek", "m7-e":"longing", "m8-b":"pastoral", "m8-e":"triumph", "m9-c":"awe", "m9-d":"awe", "m10-a":"awe", "m10-b":"awe", "m10-c":"awe", "m10-d":"dread", "m11-a":"longing", "m11-b":"awe", "m11-c":"awe", "m11-d":"triumph", "m11-e":"triumph", "m12-a":"court", "m12-b":"awe", "m12-c":"court", "m12-d":"court", "m12-e":"court", "m13-a":"court", "m13-b":"court", "m13-c":"dread", "m13-d":"longing", "m13-e":"awe", "m13-f":"triumph", "m14-a":"dread", "m14-b":"triumph", "m14-c":"court", "m14-d":"longing", "m14-e":"court", "m15-a":"dread", "m15-c":"dread", "m15-e":"dread", "m15-f":"longing", "m15-g":"court", "m16-a":"longing", "m16-b":"trek", "m16-c":"dread", "m16-d":"dread", "m16-e":"awe", "m17-a":"awe", "m17-b":"awe", "m17-c":"triumph", "m17-d":"triumph", "m17-e":"dread", "m17-f":"longing", "m17-g":"triumph", "m18-a":"trek", "m18-b":"triumph", "m18-c":"longing", "m18-d":"triumph", "m19-a":"trek", "m19-b":"awe", "m19-c":"awe", "m19-d":"awe", "m19-e":"triumph", "m20-a":"dread", "m20-b":"dread", "m20-c":"longing", "m20-d":"dread", "m20-e":"longing", "m20-f":"triumph", "m20-g":"awe", "m21-a":"pastoral", "m21-b":"pastoral", "m21-c":"pastoral", "m21-d":"pastoral", "m21-e":"pastoral", "m22-a":"trek", "m22-b":"dread", "m22-c":"triumph", "m22-d":"longing", "m22-e":"longing", "m23-a":"pastoral", "m23-b":"trek", "m23-d":"trek", "m23-e":"triumph", "m23-f":"awe", "m23-g":"pastoral", "m24-a":"dread", "m24-b":"pastoral", "m24-c":"awe", "m24-d":"longing", "m24-e":"pastoral", "m24-f":"awe", "m24-g":"triumph", "m24-h":"triumph", "m24-i":"awe", "m25-a":"nile", "m25-b":"awe", "m25-c":"triumph"};
+window.STORY_MOODS = {"m1-b":"longing", "m1-c":"nile", "m2-a":"longing", "m2-d":"nile", "m3-c":"nile", "m4-a":"longing", "m4-e":"triumph", "m4-f":"triumph", "m5-a":"nile", "m6-b":"dread", "m6-c":"longing", "m6-d":"dread", "m6-e":"dread", "m7-a":"trek", "m7-e":"longing", "m8-b":"pastoral", "m8-e":"triumph", "m9-c":"awe", "m9-d":"awe", "m10-a":"awe", "m10-b":"awe", "m10-c":"awe", "m10-d":"dread", "m11-a":"longing", "m11-b":"awe", "m11-c":"awe", "m11-d":"triumph", "m11-e0":"trek", "m11-e":"triumph", "m12-a":"court", "m12-b":"awe", "m12-c":"court", "m12-d":"court", "m12-e":"court", "m13-a":"court", "m13-b":"court", "m13-c":"dread", "m13-d":"longing", "m13-e":"awe", "m13-f":"triumph", "m14-a":"dread", "m14-b":"triumph", "m14-c":"court", "m14-d":"longing", "m14-e":"court", "m15-a":"dread", "m15-c":"dread", "m15-e":"dread", "m15-f":"longing", "m15-g":"court", "m16-a":"longing", "m16-b":"trek", "m16-c":"dread", "m16-d":"dread", "m16-e":"awe", "m17-a":"awe", "m17-b":"awe", "m17-c":"triumph", "m17-d":"triumph", "m17-e":"dread", "m17-f0":"dread", "m17-f":"longing", "m17-g":"triumph", "m18-a":"trek", "m18-b":"triumph", "m18-c":"longing", "m18-d":"triumph", "m19-a":"trek", "m19-b":"awe", "m19-c":"awe", "m19-d":"awe", "m19-e":"triumph", "m20-a":"dread", "m20-b":"dread", "m20-c":"longing", "m20-d":"dread", "m20-e":"longing", "m20-f":"triumph", "m20-g":"awe", "m21-a":"pastoral", "m21-b":"pastoral", "m21-c":"pastoral", "m21-d":"pastoral", "m21-e":"pastoral", "m22-a":"trek", "m22-b":"dread", "m22-c":"triumph", "m22-d":"longing", "m22-e":"longing", "m23-a":"pastoral", "m23-b":"trek", "m23-d":"trek", "m23-e":"triumph", "m23-f":"awe", "m23-g0":"pastoral", "m23-g":"pastoral", "m24-a":"dread", "m24-b":"pastoral", "m24-c":"awe", "m24-d":"longing", "m24-e":"pastoral", "m24-f":"awe", "m24-g":"triumph", "m24-h":"triumph", "m24-i":"awe", "m24-i2":"awe", "m25-a":"nile", "m25-b":"awe", "m25-c":"triumph"};

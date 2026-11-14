@@ -93,6 +93,8 @@ for (const slug of slugs) {
     if (ids.has(l.id)) fail(narrationFile + ": duplicate id '" + l.id + "'");
     ids.add(l.id);
     if (typeof l.text !== "string" || !l.text.trim()) fail(narrationFile + ": '" + l.id + "' has no text");
+    // one page, one idea: a long line is better as two pages, or a page and an activity
+    else if (l.text.length > 230) warn(narrationFile + ": '" + l.id + "' is " + l.text.length + " characters; split it into two pages (or a page and an activity)");
     if (l.lang !== "en" && l.lang !== "ar") fail(narrationFile + ": '" + l.id + "' lang must be 'en' or 'ar'");
     if (l.lang === "en" && !audio.includes(l.id + ".mp3")) {
       fail(audioDir + "/" + l.id + ".mp3: missing (run scripts/generate-placeholder-audio.sh " + dir + ")");

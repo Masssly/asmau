@@ -45,12 +45,15 @@ window.STORY = [
     id: "c2", icon: "🐺", title: "The Jealous Brothers", source: "12:8-18",
     parent: [
       "Verses 12:8–18. The verses say one brother proposed killing Yusuf or banishing him, and another said not to kill him but to throw him into the well where a caravan might pick him up (12:9–10). The game says only that some wanted to get rid of him and one said not to hurt him.",
+      "Yusuf's eleven brothers: the verses speak of eleven stars (12:4) and of 'Joseph and his brother' being dearer to their father (12:8); that the eleven stars are his eleven brothers is the explanation in Ibn Kathir's tafsir (see chapter 1). The little brother is called Benjamin in that tafsir; the verses do not name him, and neither does the game.",
       "Verses 12:11–14. Before taking him, the brothers asked their father why he did not trust them with Yusuf, and asked to take him out the next day so that he would enjoy himself and play; they promised to look after him. Yaqub said it grieved him to let him go and that he feared a wolf would eat him while they were not paying attention; they answered that if a wolf ate him when there were so many of them, they would be losers. Ibn Kathir's tafsir (abridged English) gives the same reason, 'so that we all enjoy ourselves and play', reported from Qatadah, Ad-Dahhak and As-Suddi. Some retellings add that the brothers said Yusuf stayed indoors too much and needed to grow strong; that is not in the verses or in that tafsir, so the game does not say it. Notice with your child that the brothers later used the very thing their father had said he feared: the wolf.",
       "Yaqub's answer, that patience is best and that he seeks Allah's help against what they describe (12:18), is kept.",
       "In the well: the verse says Allah revealed to Yusuf that he would one day tell his brothers of this while they did not realise (12:15). Ibn Kathir's tafsir (abridged English) explains this as comfort sent in his distress, and reports from Ibn Abbas that the brothers would not recognise him when he reminded them. The same tafsir relates that Yusuf stood on a stone in the water of the well; the picture shows that. The stone is from the commentary, not from the verse.",
       "The shirt: the verse says they brought his shirt with false blood on it (12:18). Ibn Kathir's tafsir (abridged English) says, citing Mujahid, As-Suddi and others, that the blood was a sheep's, and that the brothers forgot to tear the shirt, which is why Yaqub did not believe them. The untorn shirt, which the game turns into a question, is from this commentary, not from the verse."
     ],
     steps: [
+      { say: "c2-0", scene: "dusk", pic: "c1-b", art: [["P:yaqub", 60, 72, 96, "bob", { expr: "happy" }], ["P:yusuf", 38, 76, 70, "bob", { expr: "happy" }], ["P:benjamin", 24, 80, 56, "bob", { expr: "happy" }], ["💛", 48, 34, 40, "float"]] },
+      { say: "c2-a0", scene: "desert", pic: "c2-a", art: [["G:brothers", 40, 74, 200, "bob", { expr: "angry" }], ["💢", 30, 40, 34, "float"]] },
       { say: "c2-a", scene: "desert", art: [["G:brothers", 36, 72, 200, "bob", { expr: "angry" }], ["P:yusuf", 82, 74, 80, "bob", { expr: "happy" }], ["💢", 30, 40, 34, "float"]] },
       { say: "c2-p1", scene: "dusk", art: [["⛺", 74, 50, 110], ["P:yaqub", 72, 72, 92, "bob", { expr: "calm" }], ["P:yusuf", 86, 76, 60, "bob", { expr: "happy" }], ["G:brothers", 30, 78, 190, "bob", { expr: "happy" }], ["💬", 34, 38, 36, "float"]] },
       { say: "c2-p2", scene: "dusk", art: [["P:yaqub", 56, 70, 100, "bob", { expr: "worried" }], ["P:yusuf", 40, 74, 70, "bob", { expr: "calm" }], ["🐺", 16, 30, 40, "float"], ["🌲", 8, 52, 50]] },
@@ -191,6 +194,7 @@ window.STORY = [
     steps: [
       { say: "c8-a1", scene: "prison", art: [["P:yusufYouth", 50, 66, 100, "bob", { expr: "calm" }], ["BARS", 0, 0, 1], ["👑", 82, 22, 46, "float"], ["✉️", 18, 24, 40, "float"]] },
       { say: "c8-a2", scene: "palace", art: [["P:king", 28, 66, 100, "bob", { expr: "neutral" }], ["P:woman1", 64, 72, 92, "bob", { expr: "sad" }], ["P:woman2", 90, 78, 66, "bob", { expr: "neutral", flip: true }], ["❓", 28, 30, 34, "float"], ["💡", 64, 30, 40, "float"]] },
+      { say: "c8-a3", scene: "palace", pic: "c8-a2", art: [["🧕", 40, 70, 80], ["✨", 60, 30, 40, "float"]] },
       {
         play: "order", line: "c8-do-o", scene: "palace",
         opts: {
@@ -212,9 +216,11 @@ window.STORY = [
   {
     id: "c9", icon: "⚖️", title: "The Brothers Come", source: "12:58-62",
     parent: [
+      "The hard years: Yusuf foretold seven hard years after the seven good ones (12:47–48). The verses go straight from his appointment to his brothers' arrival (12:58); the game adds one line saying the hard years had come, so that a child knows why the brothers travelled.",
       "Verses 12:58–62. Yusuf recognised his brothers but they did not recognise him (12:58). He asked them to bring their other brother, and had their goods put back into their saddlebags (12:59–62)."
     ],
     steps: [
+      { say: "c9-0", scene: "grey", art: [["☀️", 82, 16, 50, "float"], ["🥀", 20, 70, 50], ["🥀", 40, 76, 44], ["⛺", 66, 56, 100], ["P:yaqub", 66, 76, 80, "bob", { expr: "sad" }]] },
       { say: "c9-a", scene: "desert", art: [["G:brothers", 34, 74, 180, "walk", { expr: "neutral" }], ["🐪", 62, 74, 56], ["🏛️", 88, 48, 80]] },
       { say: "c9-b", scene: "egypt", art: [["P:yusufMan", 76, 66, 104, "bob", { expr: "neutral" }], ["G:brothers", 32, 78, 190, "bob", { expr: "worried" }], ["❓", 26, 44, 36, "float"]] },
       { play: "choice", line: "c9-q", scene: "egypt", opts: { img: "c9-b", art: [["❓", 50, 28, 70, "float"]], options: [{ label: "Yes, straight away", icon: "👀", ok: false }, { label: "No, they did not know him", icon: "🙈", ok: true }], wrong: "c9-qwrong" } },
@@ -231,12 +237,16 @@ window.STORY = [
       "The brothers' own rule (12:74–76): asked what the penalty should be if one of them was lying, the brothers said the one in whose bag the cup was found would be held as the penalty, 'this is how we punish wrongdoers'. The verse says Yusuf could not have held his brother under the king's law. Ibn Kathir's tafsir (abridged English) says this was the law of Prophet Ibrahim, that a thief be handed to the one he stole from, and reports from Ad-Dahhak and others that it was not the law of the king of Egypt. The verse's word for the penalty is servitude; the game says 'must stay behind'."
     ],
     steps: [
+      { say: "c10-h0", scene: "dusk", pic: "c10-g", art: [["P:yaqub", 64, 72, 96, "bob", { expr: "worried" }], ["G:brothers", 30, 78, 170, "bob", { expr: "neutral" }]] },
+      { play: "change", line: "c10-hdo", scene: "dusk", opts: { img: "c10-h", states: [{ icon: "SACK", line: null }, { icon: "💰", line: "c10-hdo-s1", glow: true }] } },
+      { say: "c10-h", scene: "dusk", art: [["SACK", 30, 70, 90], ["COINS", 30, 44, 40, "float"], ["P:yaqub", 70, 72, 92, "bob", { expr: "worried" }], ["P:benjamin", 52, 78, 60, "bob", { expr: "neutral" }]] },
       { say: "c10-g", scene: "dusk", art: [["⛺", 26, 50, 100], ["P:yaqub", 26, 72, 96, "bob", { expr: "calm" }], ["G:brothers", 68, 78, 170, "bob", { expr: "neutral", flip: true }], ["🚪", 60, 30, 34, "float"], ["🚪", 76, 24, 34, "float"], ["🚪", 90, 32, 34, "float"]] },
       { play: "gates", line: "c10-gdo", scene: "egypt", opts: { owners: ["b1", "b3", "b2", "b4", "benjamin"], bg: "bg-wall" } },
       { say: "c10-a", scene: "egypt", art: [["P:yusufMan", 38, 66, 100, "bob", { expr: "happy" }], ["P:benjamin", 68, 74, 84, "bob", { expr: "happy" }], ["💛", 54, 28, 40, "float"]] },
       { say: "c10-b", scene: "egypt", art: [["SACK", 50, 72, 120], ["CUP", 50, 26, 60, "float"], ["P:yusufMan", 18, 66, 90, "bob", { expr: "calm" }], ["P:benjamin", 84, 74, 70, "bob", { expr: "neutral", flip: true }]] },
       { play: "choice", line: "c10-q", scene: "egypt", opts: { img: "c10-b", art: [["❓", 50, 28, 70, "float"]], options: [{ label: "Allah made it for Yusuf", icon: "✨", ok: true }, { label: "The brothers made it", icon: "👥", ok: false }], wrong: "c10-qwrong" } },
       { say: "c10-l1", scene: "egypt", art: [["📣", 20, 34, 56, "float"], ["G:brothers", 60, 76, 190, "bob", { expr: "surprised" }], ["SACK", 88, 82, 70]] },
+      { say: "c10-l2", scene: "egypt", pic: "c10-l1", art: [["G:brothers", 50, 76, 190, "bob", { expr: "worried" }], ["🗣️", 50, 30, 50, "float"]] },
       { play: "choice", line: "c10-lq", scene: "egypt", opts: { img: "c10-l1", options: [{ label: "The brothers' own rule", icon: "🗣️", ok: true }, { label: "The king of Egypt's rule", icon: "👑", ok: false }], wrong: "c10-lqwrong" } },
       { play: "search", line: "c10-do", scene: "egypt", opts: { owners: ["b1", "b3", "b2", "b4", "benjamin"], nope: "c10-nope" } },
       { say: "c10-c", scene: "egypt", art: [["CUP", 18, 46, 70], ["P:yusufMan", 50, 64, 100, "bob", { expr: "happy" }], ["P:benjamin", 78, 74, 84, "bob", { expr: "happy" }], ["✨", 50, 22, 36, "float"]] },
@@ -247,12 +257,15 @@ window.STORY = [
     id: "c11", icon: "💛", title: "“I Am Yusuf”", source: "12:80-92",
     parent: [
       "Verses 12:80–92. Yaqub's eyes went white with grief (12:84), yet he told his sons not to despair of Allah's mercy (12:87). When the brothers came again, Yusuf asked whether they understood what they had done, and revealed himself (12:89–90). The brothers admitted they had been in the wrong (12:91). Yusuf said there would be no reproach that day and asked Allah to forgive them (12:92).",
+      "Going home and coming back (12:81–88): the brothers told their father his son had stolen; he answered that patience is best and that Allah might bring them all back to him (12:83), then turned away grieving for Yusuf (12:84). On their third journey they told Yusuf that hardship had struck them and their family, that they had brought little money, and asked him to give full measure and be charitable (12:88).",
       "The eldest brother (12:78–80): the brothers asked Yusuf to take one of them instead, because their father was very old; he said it would be unjust to take anyone but the one with whom the cup was found. The eldest then reminded the others of their solemn promise to their father and of how they had failed over Yusuf, and said he would not leave the land until his father gave him leave or Allah decided for him. So nine went home. The verse does not name him, and the commentators differ on who he was, so the game does not name him either."
     ],
     steps: [
+      { say: "c11-v0", scene: "egypt", pic: "c10-c", art: [["G:brothers", 34, 78, 170, "bob", { expr: "sad" }], ["🙏", 70, 40, 44, "float"]] },
       { say: "c11-v", scene: "egypt", art: [["G:brothers", 34, 78, 170, "bob", { expr: "sad" }], ["P:b1", 76, 72, 96, "bob", { expr: "worried" }], ["🤝", 76, 34, 40, "float"]] },
       { say: "c11-a", scene: "grey", art: [["⛺", 52, 54, 110], ["P:yaqub", 50, 72, 104, "bob", { expr: "cry", blind: true }], ["☁️", 28, 20, 60, "float"], ["💧", 70, 34, 28, "float"]] },
       { say: "c11-b", scene: "dusk", art: [["⛺", 28, 52, 100], ["P:yaqub", 28, 72, 92, "bob", { expr: "sad" }], ["🕯️", 54, 48, 50, "float"], ["G:brothers", 70, 78, 150, "walk", { expr: "neutral", flip: true }]] },
+      { say: "c11-c0", scene: "egypt", pic: "c9-b", art: [["G:brothers", 34, 78, 190, "bob", { expr: "sad" }], ["P:yusufMan", 74, 64, 100, "bob", { expr: "calm" }]] },
       { say: "c11-c", scene: "egypt", art: [["P:yusufMan", 68, 64, 104, "bob", { expr: "happy" }], ["G:brothers", 32, 78, 190, "bob", { expr: "surprised" }], ["❗", 24, 46, 36, "float"], ["✨", 68, 16, 40, "float"]] },
       { say: "c11-e", scene: "egypt", art: [["P:yusufMan", 68, 64, 104, "bob", { expr: "calm" }], ["G:brothers", 32, 78, 190, "bob", { expr: "sad" }]] },
       {

@@ -3,3 +3,4 @@
 scripts/musa-art/out/
 scripts/musa-art/refs/*.png
 scripts/yusuf-art/fix/
+__pycache__/

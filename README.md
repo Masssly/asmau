@@ -305,6 +305,17 @@ Piper engine and a public-domain voice (`python3 scripts/generate-voice.py games
 (`scripts/generate-placeholder-audio.sh` is the older flite voice, kept for a machine
 that cannot run Piper.)
 
+**Before releasing a story, read it straight through.** `node scripts/story-readthrough.js
+<game>` prints it as a child hears it, chapter by chapter (`--story` for the narrated
+lines only). Read it start to end asking, at every line: would a child know how we got
+here from the line before? Each event needs its cause on an earlier page: Yusuf can't be
+in the well before anyone has asked to take him out, the brothers can't travel for grain
+before the hard years have come, and Musa can't stand before Pharaoh before he has set
+off for Egypt. Fill a gap from the verses, or else as plain linking words like "so he set
+off", and say so in the chapter's parents' note. Keep a page to one idea: the checker
+warns at 230 characters, and two short pages or a page and an activity are better than
+one long one.
+
 Every answer in a choice or sorting activity has its own spoken line
 (`<line>-opt1`, `-bin1`, `-it1`, in `narration.json`), so a child who cannot
 read hears each one; the checker requires them.

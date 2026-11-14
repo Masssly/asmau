@@ -89,9 +89,12 @@
   function loadSave() {
     try {
       var s = JSON.parse(localStorage.getItem(SAVE_KEY) || "{}");
-      return { done: s.done || {}, chapter: s.chapter || null, line: s.line || null, nth: s.nth || 0, at: s.at || 0, step: s.step || 0, sound: s.sound !== false, music: s.music !== false };
+      return { done: s.done || {}, chapter: s.chapter || null, line: s.line || null, nth: s.nth || 0, at: s.at || 0, step: s.step || 0, music: s.music !== false,
+        // the voice and the sounds have their own switches now; an older save had one for both
+        voice: s.voice !== undefined ? s.voice !== false : s.sound !== false,
+        sfx: s.sfx !== undefined ? s.sfx !== false : s.sound !== false };
     } catch (err) {
-      return { done: {}, chapter: null, line: null, nth: 0, at: 0, step: 0, sound: true, music: true };
+      return { done: {}, chapter: null, line: null, nth: 0, at: 0, step: 0, voice: true, sfx: true, music: true };
     }
   }
   function stepLine(st) { return st.say || st.line; }
@@ -128,7 +131,7 @@
   /* ---------- sound, music and buzz ---------- */
   var VIB = { tap: 8, boing: 10, wrong: 30, win: [20, 40, 20], heave: 12, coin: 8, tick: 12, clink: 25, pour: 6 };
   function vib(pattern) {
-    if (!save.sound) return;
+    if (!save.sfx) return;
     try { if (navigator.vibrate) navigator.vibrate(pattern); } catch (err) { /* not supported */ }
   }
   function fx(name, a, b) {
@@ -154,7 +157,7 @@
     music.duck(false);
   }
   function say(id) {
-    if (!save.sound) { stopVoice(); return Promise.resolve(); }
+    if (!save.voice) { stopVoice(); return Promise.resolve(); }
     var mine = ++sayToken;
     music.duck(true);
     return window.AsmauNarration.say(GAME, id, lines[id] || "", { lang: "en" }).then(function () {
@@ -339,8 +342,10 @@
   // Tap the eleven stars, the sun and the moon.
   ACT.sky = function (opts, done) {
     var gather = opts.mode === "gather";
-    stage.appendChild(sprite(["P:" + (gather ? HERO_GROWN : HERO), 50, 52, 86, "bob", { expr: "happy" }]));
+    var hero = sprite(["P:" + (gather ? HERO_GROWN : HERO), 50, 52, 86, "bob", { expr: "happy" }]);
+    stage.appendChild(hero);
     var chip = mk("div", "count-chip", "0 / 13");
+    var bodies = [];
     stage.appendChild(chip);
     var n = 0;
     skyKinds().forEach(function (k, i) {
@@ -348,6 +353,11 @@
       var b = mk("button", "body" + (k === "⭐" ? "" : " big"), k);
       b.setAttribute("aria-label", k === "⭐" ? "star" : (k === "☀️" ? "sun" : "moon"));
       place(b, 50 + 40 * Math.cos(ang), 50 + 38 * Math.sin(ang));
+      // the bow: each one leans in towards the boy in the middle, dips low, and stays bowed
+      b.style.setProperty("--dx", (-Math.cos(ang) * 34) + "px");
+      b.style.setProperty("--dy", (-Math.sin(ang) * 30) + "px");
+      b.style.setProperty("--tilt", ((ang + Math.PI / 2) * 180 / Math.PI) + "deg");
+      bodies.push(b);
       b.addEventListener("click", function () {
         if (b.disabled) return;
         b.disabled = true;
@@ -357,10 +367,23 @@
           place(b, 50 + 22 * Math.cos(ang), 50 + 25 * Math.sin(ang));
           b.classList.add("home");
         } else {
-          b.classList.add("bowed");
+          b.classList.add("bowing");
+          fx("whoosh", n);
+          setTimeout(function () { b.classList.remove("bowing"); b.classList.add("bowed"); }, 900);
         }
         chip.textContent = n + " / 13";
-        if (n === 13) done();
+        if (n === 13) {
+          // all thirteen bow together once more, one after another round the circle
+          setTimeout(function () {
+            bodies.forEach(function (x, j) {
+              x.style.animationDelay = (j * 0.07) + "s";
+              x.classList.add("bow-all");
+            });
+            hero.classList.add("honoured");
+            fx("sparkle");
+          }, gather ? 300 : 950);
+          setTimeout(done, gather ? 900 : 2100);
+        }
       });
       stage.appendChild(b);
     });
@@ -1358,7 +1381,10 @@
     if (cleanup) { cleanup(); cleanup = null; }
   }
 
+  var curView = "title", prevView = "title";
   function show(view) {
+    curView = view;
+    if ($("mapBtn")) $("mapBtn").setAttribute("aria-expanded", String(view === "chapters"));
     ["title", "play", "chapters", "end"].forEach(function (v) { $(v).hidden = v !== view; });
     if (view !== "play") { teardown(); stopVoice(); if (music.amb) music.amb("none"); }
     window.scrollTo(0, 0);
@@ -1617,7 +1643,19 @@
     prepareAll();
   }
 
+  // ☰ opens the list of chapters, and a second tap (or Close) folds it away again,
+  // back to exactly where the child was.
+  function toggleChapters() {
+    if (curView === "chapters") closeChapters(); else showChapters();
+  }
+  function closeChapters() {
+    if (prevView === "play") { show("play"); renderStep(); }
+    else if (prevView === "end") showEnd();
+    else showTitle();
+  }
+
   function showChapters() {
+    if (curView !== "chapters") prevView = curView;
     var grid = $("chapterGrid");
     grid.innerHTML = "";
     story.forEach(function (ch, i) {
@@ -1644,8 +1682,15 @@
 
   function paintToggles() {
     var s = $("soundBtn");
-    s.textContent = save.sound ? "🔊" : "🔇";
-    s.setAttribute("aria-label", save.sound ? "Voice and effects are on" : "Voice and effects are off");
+    s.classList.toggle("off", !save.sfx);
+    s.setAttribute("aria-label", save.sfx ? "Sounds and effects are on" : "Sounds and effects are off");
+    s.setAttribute("aria-pressed", String(save.sfx));
+    var v = $("voiceBtn");
+    if (v) {
+      v.classList.toggle("off", !save.voice);
+      v.setAttribute("aria-label", save.voice ? "The voice is on" : "The voice is off");
+      v.setAttribute("aria-pressed", String(save.voice));
+    }
     var m = $("musicBtn");
     m.classList.toggle("off", !save.music);
     m.setAttribute("aria-label", save.music ? "Music is on" : "Music is off");
@@ -1669,13 +1714,19 @@
 
     $("startBtn").addEventListener("click", function () { var r = resumeAt(); if (r) startChapter(r.ci, r.si); else startChapter(0); });
     $("restartBtn").addEventListener("click", function () { startChapter(0); });
-    $("mapBtn").addEventListener("click", showChapters);
+    $("mapBtn").addEventListener("click", toggleChapters);
+    if ($("chaptersClose")) $("chaptersClose").addEventListener("click", closeChapters);
     $("soundBtn").addEventListener("click", function () {
-      save.sound = !save.sound;
+      save.sfx = !save.sfx;
       persist();
-      music.setSfx(save.sound);
+      music.setSfx(save.sfx);
       paintToggles();
-      if (!save.sound) stopVoice();
+    });
+    if ($("voiceBtn")) $("voiceBtn").addEventListener("click", function () {
+      save.voice = !save.voice;
+      persist();
+      paintToggles();
+      if (!save.voice) stopVoice(); else if (currentLine) say(currentLine);
     });
     $("musicBtn").addEventListener("click", function () {
       save.music = !save.music;
@@ -1719,7 +1770,7 @@
     .then(function (list) {
       list.forEach(function (l) { lines[l.id] = l.text; });
       music.setMusic(save.music);
-      music.setSfx(save.sound);
+      music.setSfx(save.sfx);
       buildTitleSky();
       paintToggles();
       wire();

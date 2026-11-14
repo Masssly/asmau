@@ -17,7 +17,8 @@
     <a class="btn-back" href="../../index.html">← Asmau</a>
     <h1>Yusuf</h1>
     <button class="icon-btn" id="musicBtn" aria-label="Music is on">🎵</button>
-    <button class="icon-btn" id="soundBtn" aria-label="Voice and effects are on">🔊</button>
+    <button class="icon-btn" id="soundBtn" aria-label="Sounds and effects are on">🍃</button>
+    <button class="icon-btn" id="voiceBtn" aria-label="The voice is on">🗣️</button>
     <button class="icon-btn" id="mapBtn" aria-label="All chapters">☰</button>
   </div>
 
@@ -37,35 +38,21 @@
 
     <details class="parents">
       <summary>For parents</summary>
+      <div data-sound-levels></div>
       <ul>
-        <li>This is a retelling in simple words of
-          <a href="https://quran.com/12" target="_blank" rel="noopener">Surah Yusuf</a> (Qur’an 12:4–101), not a translation.
-          Every chapter was checked against M. A. S. Abdel Haleem’s English translation. Under each scene,
-          “For parents: this chapter” says what the verses say beyond the child’s version, names whose
-          commentary an explanation comes from, and links to the verses.</li>
-        <li>Some parts are told more gently than the verses tell them: what the woman of the house tried to do
-          (12:23–25), the gathering of the women of the city (12:30–32), and how the second prisoner’s dream ends
-          (12:41). Verses 12:52–53 are left out because scholars differ on who is speaking. Each chapter note says
-          exactly what was left out.</li>
-        <li>A few details come from Ibn Kathir’s tafsir (abridged English) and not from the verses: the stone Yusuf
-          stood on in the well, the shirt the brothers forgot to tear, the twenty coins, and the wind that carried
-          the scent of the shirt. Each is marked on its scene, and the chapter’s note names who the report is from.</li>
-        <li>People are shown in this game, all with dark skin, including Prophet Yusuf and Prophet Yaqub (peace be upon them).
-          Muslims differ on whether prophets should be shown, and this game shows them. Prophet Muhammad ﷺ does not appear.</li>
-        <li>The pictures were made with an AI image generator (Google Gemini). They are an artist’s-eye view in a West
-          African style: nobody knows what these people or places looked like, and the clothes and buildings are not a
-          reconstruction of ancient Egypt.</li>
-        <li>The story is told for ages 5 to 9. A child of 3 or 4 can enjoy it with a grown-up beside them: some
-          activities (putting events in order, the picture puzzles, sorting) need a helping hand, and some parts of the
-          story need explaining or skipping, such as the well, the prison, and the second prisoner's dream, where the
-          game says he "will be put to death". Every activity can be skipped.</li>
-        <li>Everything reacts to a touch. Swipe a scene, or use the big buttons, to turn the page.</li>
-        <li>The music and sound effects are made by the browser as you play, so there are no recordings.
-          🎵 turns the music off on its own, and 🔊 turns off the voice and the effects.
-          Families differ on music in children’s media, so both choices are remembered on this device.</li>
-        <li>English is read by a plain computer voice, standing in until a real one is recorded.
-          Arabic is never read by a computer voice: it plays only once a parent has recorded it.
-          <a href="../../tools/record-voice/index.html">Record your own voice</a> and the game uses it straight away on this device.</li>
+        <li>This story is <a href="https://quran.com/12" target="_blank" rel="noopener">Surah Yusuf</a> (Qur’an 12:4–101),
+          from the dream to the family reunited in Egypt. How the stories are made and checked is under “For parents” on
+          the first page of Asmau.</li>
+        <li>Told more gently than the verses tell them: what the woman of the house tried to do (12:23–25), the gathering of
+          the women of the city (12:30–32), and how the second prisoner’s dream ends (12:41), where the game says he “will be
+          put to death”. Verses 12:52–53 are left out because scholars differ on who is speaking.</li>
+        <li>From Ibn Kathir’s tafsir and not the verses: the stone Yusuf stood on in the well, the shirt the brothers forgot
+          to tear, the twenty coins, and the wind that carried the scent of the shirt.</li>
+        <li>Shown in this story: Prophet Yusuf and Prophet Yaqub (peace be upon them), Yusuf’s ten older brothers and his
+          younger brother.</li>
+        <li>For ages 5 to 9. A child of 3 or 4 can enjoy it with a grown-up beside them: putting events in order, the
+          picture puzzles and sorting need a helping hand, and the well, the prison and the second prisoner’s dream may need
+          explaining or skipping.</li>
       </ul>
     </details>
   </section>
@@ -93,7 +80,10 @@
   </section>
 
   <section id="chapters" hidden>
-    <h2 class="view-title">All chapters</h2>
+    <div class="view-head">
+      <h2 class="view-title">All chapters</h2>
+      <button class="btn-back" id="chaptersClose">✕ Close</button>
+    </div>
     <div class="chapter-grid" id="chapterGrid"></div>
   </section>
 
@@ -111,6 +101,7 @@
 
 <script src="../../shared/narration.js"></script>
 <script src="../../shared/music.js"></script>
+<script src="../../shared/sound-panel.js"></script>
 <script src="game.js"></script>
 <script src="art.js"></script>
 <script src="../../shared/people.js"></script>

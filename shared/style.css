@@ -88,3 +88,12 @@ body {
 @media (prefers-reduced-motion: reduce) {
   * { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; }
 }
+
+/* volume sliders for grown-ups (shared/sound-panel.js) */
+.sound-levels { margin: 6px 0 12px; padding: 10px 12px; border-radius: 14px; background: rgba(255,255,255,.06); }
+.sound-levels .sl-title { margin: 0 0 6px; font-weight: 700; }
+.sound-levels .sl-row { display: grid; grid-template-columns: 1fr 3.2em; gap: 2px 10px; align-items: center; margin: 8px 0; }
+.sound-levels .sl-name { grid-column: 1 / -1; font-size: 14px; }
+.sound-levels input[type="range"] { width: 100%; min-height: 32px; accent-color: #f0b84b; }
+.sound-levels .sl-val { text-align: right; font-variant-numeric: tabular-nums; font-size: 14px; opacity: .85; }
+.sound-levels .sl-note { margin: 6px 0 0; font-size: 13px; opacity: .8; }

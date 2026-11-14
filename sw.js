@@ -20,7 +20,7 @@
 
 // BEGIN GENERATED
 const RELEASE = "2026.11.9";
-const BUILD = "21e9bf8e6771";
+const BUILD = "bc355157c202";
 const SHELL = [
   "./",
   "app.webmanifest",
@@ -62,6 +62,7 @@ const SHELL = [
   "shared/narration.js",
   "shared/people.js",
   "shared/pwa.js",
+  "shared/sound-panel.js",
   "shared/story-engine.js",
   "shared/story.css",
   "shared/style.css",
@@ -540,6 +541,11 @@ const MEDIA = {
   "games/yusuf/assets/audio/c10-do.mp3": "d666cc481e",
   "games/yusuf/assets/audio/c10-g.mp3": "d98fd9f260",
   "games/yusuf/assets/audio/c10-gdo.mp3": "71f02f9d34",
+  "games/yusuf/assets/audio/c10-l1.mp3": "0499ee5e53",
+  "games/yusuf/assets/audio/c10-lq-opt1.mp3": "b397ab4a39",
+  "games/yusuf/assets/audio/c10-lq-opt2.mp3": "560804e1cf",
+  "games/yusuf/assets/audio/c10-lq.mp3": "9733dcf42a",
+  "games/yusuf/assets/audio/c10-lqwrong.mp3": "25922be3e1",
   "games/yusuf/assets/audio/c10-nope.mp3": "42f2af3cbb",
   "games/yusuf/assets/audio/c10-q-opt1.mp3": "b4378e1fe4",
   "games/yusuf/assets/audio/c10-q-opt2.mp3": "79e84ca590",
@@ -557,6 +563,7 @@ const MEDIA = {
   "games/yusuf/assets/audio/c11-o2.mp3": "70b1bb9f06",
   "games/yusuf/assets/audio/c11-o3.mp3": "ba2058b1a1",
   "games/yusuf/assets/audio/c11-o4.mp3": "2e00a2c8cd",
+  "games/yusuf/assets/audio/c11-v.mp3": "bea2349f90",
   "games/yusuf/assets/audio/c11-wrong.mp3": "f137bb3153",
   "games/yusuf/assets/audio/c12-a.mp3": "f5a41de414",
   "games/yusuf/assets/audio/c12-b.mp3": "9aaed77a5f",
@@ -596,6 +603,13 @@ const MEDIA = {
   "games/yusuf/assets/audio/c2-o2.mp3": "ea945ddbe7",
   "games/yusuf/assets/audio/c2-o3.mp3": "d9d8e4c848",
   "games/yusuf/assets/audio/c2-o4.mp3": "fd92881578",
+  "games/yusuf/assets/audio/c2-p1.mp3": "44fc1c28be",
+  "games/yusuf/assets/audio/c2-p2.mp3": "9447150bdc",
+  "games/yusuf/assets/audio/c2-p3.mp3": "616c137301",
+  "games/yusuf/assets/audio/c2-pq-opt1.mp3": "625bc4406a",
+  "games/yusuf/assets/audio/c2-pq-opt2.mp3": "3ff79d4430",
+  "games/yusuf/assets/audio/c2-pq.mp3": "f5d1eb2a5f",
+  "games/yusuf/assets/audio/c2-pqwrong.mp3": "5c1b693d26",
   "games/yusuf/assets/audio/c2-s-opt1.mp3": "9b2c439450",
   "games/yusuf/assets/audio/c2-s-opt2.mp3": "1d47b1d67f",
   "games/yusuf/assets/audio/c2-s.mp3": "0f9a3a8105",
@@ -634,6 +648,12 @@ const MEDIA = {
   "games/yusuf/assets/audio/c5-o2.mp3": "8b57b799d2",
   "games/yusuf/assets/audio/c5-o3.mp3": "58f451f7f4",
   "games/yusuf/assets/audio/c5-o4.mp3": "70048fb279",
+  "games/yusuf/assets/audio/c5-w1.mp3": "8540b145ea",
+  "games/yusuf/assets/audio/c5-w2.mp3": "b0070f1a3d",
+  "games/yusuf/assets/audio/c5-wq-opt1.mp3": "ab8f312b27",
+  "games/yusuf/assets/audio/c5-wq-opt2.mp3": "bf8d23a22d",
+  "games/yusuf/assets/audio/c5-wq.mp3": "ebd8218678",
+  "games/yusuf/assets/audio/c5-wqwrong.mp3": "26d36dd35f",
   "games/yusuf/assets/audio/c5-wrong2.mp3": "da47473ab7",
   "games/yusuf/assets/audio/c6-a.mp3": "86a6c4f038",
   "games/yusuf/assets/audio/c6-b.mp3": "1c42363e36",

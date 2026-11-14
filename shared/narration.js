@@ -183,6 +183,12 @@ window.AsmauNarration = (function () {
     background that could start speaking late.
   */
   var player = null, finishCurrent = null, unlocked = false;
+  // How loud the voice is: set by a parent (shared/sound-panel.js), stored by music.js for every game.
+  // (An iPhone ignores this for recordings and clips: there only the device's own volume works.)
+  function voiceLevel() {
+    try { var v = (JSON.parse(localStorage.getItem("asmau-sound") || "{}") || {}).voice; return typeof v === "number" ? Math.max(0, Math.min(1, v)) : 1; } catch (err) { return 1; }
+  }
+  function setVolume(v) { if (player) { try { player.volume = v; } catch (err) { /* read-only on iPhone */ } } }
   var SILENCE = "data:audio/wav;base64,UklGRiQAAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQAAAAA=";
   function getPlayer() {
     if (!player) { player = new Audio(); player.preload = "auto"; }
@@ -241,6 +247,7 @@ window.AsmauNarration = (function () {
       a.onerror = function () { finish(false); };
       try {
         a.src = src;
+        try { a.volume = voiceLevel(); } catch (err) { /* read-only on iPhone */ }
         var p = a.play();
         if (p && p.catch) p.catch(function () { finish(false); });
       } catch (err) { finish(false); }
@@ -256,6 +263,7 @@ window.AsmauNarration = (function () {
         u.lang = "en-US";
         u.rate = 0.85;
         u.pitch = 1.1;
+        u.volume = voiceLevel();
         u.onend = function () { resolve(); };
         u.onerror = function () { resolve(); };
         window.speechSynthesis.speak(u);
@@ -294,6 +302,7 @@ window.AsmauNarration = (function () {
   return {
     say: say,
     stop: stop,
+    setVolume: setVolume,
     getRecordedClip: getRecordedClip,
     saveRecordedClip: saveRecordedClip,
     deleteRecordedClip: deleteRecordedClip,

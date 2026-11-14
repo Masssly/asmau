@@ -45,12 +45,17 @@ window.STORY = [
     id: "c2", icon: "🐺", title: "The Jealous Brothers", source: "12:8-18",
     parent: [
       "Verses 12:8–18. The verses say one brother proposed killing Yusuf or banishing him, and another said not to kill him but to throw him into the well where a caravan might pick him up (12:9–10). The game says only that some wanted to get rid of him and one said not to hurt him.",
+      "Verses 12:11–14. Before taking him, the brothers asked their father why he did not trust them with Yusuf, and asked to take him out the next day so that he would enjoy himself and play; they promised to look after him. Yaqub said it grieved him to let him go and that he feared a wolf would eat him while they were not paying attention; they answered that if a wolf ate him when there were so many of them, they would be losers. Ibn Kathir's tafsir (abridged English) gives the same reason, 'so that we all enjoy ourselves and play', reported from Qatadah, Ad-Dahhak and As-Suddi. Some retellings add that the brothers said Yusuf stayed indoors too much and needed to grow strong; that is not in the verses or in that tafsir, so the game does not say it. Notice with your child that the brothers later used the very thing their father had said he feared: the wolf.",
       "Yaqub's answer, that patience is best and that he seeks Allah's help against what they describe (12:18), is kept.",
       "In the well: the verse says Allah revealed to Yusuf that he would one day tell his brothers of this while they did not realise (12:15). Ibn Kathir's tafsir (abridged English) explains this as comfort sent in his distress, and reports from Ibn Abbas that the brothers would not recognise him when he reminded them. The same tafsir relates that Yusuf stood on a stone in the water of the well; the picture shows that. The stone is from the commentary, not from the verse.",
       "The shirt: the verse says they brought his shirt with false blood on it (12:18). Ibn Kathir's tafsir (abridged English) says, citing Mujahid, As-Suddi and others, that the blood was a sheep's, and that the brothers forgot to tear the shirt, which is why Yaqub did not believe them. The untorn shirt, which the game turns into a question, is from this commentary, not from the verse."
     ],
     steps: [
       { say: "c2-a", scene: "desert", art: [["G:brothers", 36, 72, 200, "bob", { expr: "angry" }], ["P:yusuf", 82, 74, 80, "bob", { expr: "happy" }], ["💢", 30, 40, 34, "float"]] },
+      { say: "c2-p1", scene: "dusk", art: [["⛺", 74, 50, 110], ["P:yaqub", 72, 72, 92, "bob", { expr: "calm" }], ["P:yusuf", 86, 76, 60, "bob", { expr: "happy" }], ["G:brothers", 30, 78, 190, "bob", { expr: "happy" }], ["💬", 34, 38, 36, "float"]] },
+      { say: "c2-p2", scene: "dusk", art: [["P:yaqub", 56, 70, 100, "bob", { expr: "worried" }], ["P:yusuf", 40, 74, 70, "bob", { expr: "calm" }], ["🐺", 16, 30, 40, "float"], ["🌲", 8, 52, 50]] },
+      { play: "choice", line: "c2-pq", scene: "dusk", opts: { img: "c2-p2", options: [{ label: "A storm", icon: "⛈️", ok: false }, { label: "A wolf", icon: "🐺", ok: true }], wrong: "c2-pqwrong" } },
+      { say: "c2-p3", scene: "desert", art: [["G:brothers", 40, 74, 190, "walk", { expr: "happy" }], ["P:yusuf", 66, 76, 64, "walk", { expr: "happy" }], ["P:yaqub", 88, 72, 70, "bob", { expr: "worried" }]] },
       { say: "c2-b", scene: "desert", art: [["P:yusuf", 54, 50, 44, null, { expr: "scared" }], ["WELL", 54, 58, 150], ["G:brothers", 22, 80, 130, "bob", { expr: "neutral" }]] },
       { say: "c2-w", scene: "night", src: "The stone: Ibn Kathir's tafsir", art: [["🌙", 50, 9, 30], ["P:yusuf", 50, 62, 96, "bob", { expr: "calm" }], ["✨", 30, 34, 34, "float"], ["✨", 70, 40, 28, "float"]] },
       { say: "c2-c", scene: "dusk", art: [["⛺", 74, 50, 110], ["P:yaqub", 74, 72, 92, "bob", { expr: "worried" }], ["G:brothers", 32, 78, 190, "bob", { expr: "cry" }], ["👕", 50, 40, 44, "float"], ["🐺", 14, 24, 40], ["💭", 28, 38, 34, "float"]] },
@@ -111,7 +116,8 @@ window.STORY = [
     parent: [
       "Verses 12:23–35. The verses are more explicit than the game. The woman of the house bolted the doors and called him to her (12:23); Yusuf refused, they raced for the door, and she tore his shirt from behind (12:25). The game says only that she tried to make him do something wrong.",
       "The shirt test is in the verses: a member of her household suggested that a shirt torn at the front would mean she was telling the truth, and one torn at the back that Yusuf was (12:26–27). Her husband saw that it was torn at the back (12:28).",
-      "Left out entirely: the gossip of the women of the city and the banquet with knives (12:30–32). Kept: Yusuf's prayer that prison is better for him than what they ask (12:33–34), and the decision to imprison him even after the signs of his innocence had been seen (12:35)."
+      "The women of the city (12:30–31): they gossiped that the governor's wife was trying to seduce her servant; she invited them to a banquet, gave each a knife, and told Yusuf to come out; stunned by his beauty they cut their hands and said he could not be mortal but must be a noble angel. The game keeps the banquet, the knives and their words, and says only that the women were 'gossiping'. That they were cutting fruit (citron) is from Ibn Kathir's tafsir, reported from Ibn Abbas, Sa'id bin Jubayr, Mujahid, Al-Hasan, As-Suddi and others; the same tafsir quotes the authentic hadith that Yusuf 'was given half of all beauty'. Left out: her words in 12:32, that she had tried to seduce him and that he would be imprisoned if he did not obey her.",
+      "Kept: Yusuf's prayer that prison is better for him than what they ask (12:33–34), and the decision to imprison him even after the signs of his innocence had been seen (12:35)."
     ],
     steps: [
       { say: "c5-a", scene: "palace", art: [["🚫", 22, 50, 56], ["P:yusufYouth", 52, 68, 96, "walk", { expr: "worried" }], ["🚪", 86, 58, 84]] },
@@ -126,6 +132,9 @@ window.STORY = [
         }
       },
       { say: "c5-b3", scene: "palace", art: [["P:helper", 26, 68, 96, "bob", { expr: "happy" }], ["P:yusufYouth", 64, 70, 92, "bob", { expr: "happy" }], ["👕", 45, 48, 60], ["✨", 45, 24, 34, "float"]] },
+      { say: "c5-w1", scene: "palace", src: "The fruit: Ibn Kathir's tafsir", art: [["🍊", 30, 60, 50], ["🍎", 44, 64, 44], ["🔪", 58, 62, 40], ["🧕", 72, 66, 70], ["🧕", 86, 68, 60]] },
+      { say: "c5-w2", scene: "palace", art: [["P:yusufYouth", 50, 64, 100, "bob", { expr: "calm" }], ["✨", 50, 22, 44, "float"], ["😮", 18, 70, 46], ["😮", 82, 70, 46]] },
+      { play: "choice", line: "c5-wq", scene: "palace", opts: { img: "c5-w2", options: [{ label: "The fruit was too hard", icon: "🍊", ok: false }, { label: "They were amazed by Yusuf", icon: "✨", ok: true }], wrong: "c5-wqwrong" } },
       { say: "c5-b4", scene: "palace", art: [["P:yusufYouth", 50, 64, 104, "bob", { expr: "calm" }], ["🤲", 50, 90, 44], ["✨", 50, 24, 40, "float"]] },
       { say: "c5-c", scene: "prison", art: [["P:yusufYouth", 50, 66, 100, "bob", { expr: "sad" }], ["BARS", 0, 0, 1], ["⛓️", 14, 22, 40]] },
       { play: "hold", line: "c5-do", scene: "prison" },
@@ -218,7 +227,8 @@ window.STORY = [
     id: "c10", icon: "🏆", title: "The King's Cup", source: "12:63-79",
     parent: [
       "The gates: Yaqub told his sons not to enter by one gate but by different gates, adding that he could not protect them from anything Allah had decreed and that he put his trust in Allah (12:67). The verse does not give his reason. Ibn Kathir's tafsir (abridged English) reports from Ibn Abbas, Muhammad bin Ka'b, Mujahid, Ad-Dahhak, Qatadah, As-Suddi and others that he feared the evil eye for them. The game shows the gates and leaves the reason for you to explain.",
-      "Verses 12:63–79. Yaqub let Benjamin go only after his sons swore to bring him back (12:63–66). Yusuf told Benjamin privately that he was his brother (12:69), and the king's cup was put in Benjamin's pack (12:70). The verse says Yusuf searched the other bags first and then his brother's, where he found the cup (12:76), so the game keeps that order: the cup is in the last bag on purpose. The same verse says this was a plan Allah devised for Yusuf."
+      "Verses 12:63–79. Yaqub let Benjamin go only after his sons swore to bring him back (12:63–66). Yusuf told Benjamin privately that he was his brother (12:69), and the king's cup was put in Benjamin's pack (12:70). The verse says Yusuf searched the other bags first and then his brother's, where he found the cup (12:76), so the game keeps that order: the cup is in the last bag on purpose. The same verse says this was a plan Allah devised for Yusuf.",
+      "The brothers' own rule (12:74–76): asked what the penalty should be if one of them was lying, the brothers said the one in whose bag the cup was found would be held as the penalty, 'this is how we punish wrongdoers'. The verse says Yusuf could not have held his brother under the king's law. Ibn Kathir's tafsir (abridged English) says this was the law of Prophet Ibrahim, that a thief be handed to the one he stole from, and reports from Ad-Dahhak and others that it was not the law of the king of Egypt. The verse's word for the penalty is servitude; the game says 'must stay behind'."
     ],
     steps: [
       { say: "c10-g", scene: "dusk", art: [["⛺", 26, 50, 100], ["P:yaqub", 26, 72, 96, "bob", { expr: "calm" }], ["G:brothers", 68, 78, 170, "bob", { expr: "neutral", flip: true }], ["🚪", 60, 30, 34, "float"], ["🚪", 76, 24, 34, "float"], ["🚪", 90, 32, 34, "float"]] },
@@ -226,6 +236,8 @@ window.STORY = [
       { say: "c10-a", scene: "egypt", art: [["P:yusufMan", 38, 66, 100, "bob", { expr: "happy" }], ["P:benjamin", 68, 74, 84, "bob", { expr: "happy" }], ["💛", 54, 28, 40, "float"]] },
       { say: "c10-b", scene: "egypt", art: [["SACK", 50, 72, 120], ["CUP", 50, 26, 60, "float"], ["P:yusufMan", 18, 66, 90, "bob", { expr: "calm" }], ["P:benjamin", 84, 74, 70, "bob", { expr: "neutral", flip: true }]] },
       { play: "choice", line: "c10-q", scene: "egypt", opts: { img: "c10-b", art: [["❓", 50, 28, 70, "float"]], options: [{ label: "Allah made it for Yusuf", icon: "✨", ok: true }, { label: "The brothers made it", icon: "👥", ok: false }], wrong: "c10-qwrong" } },
+      { say: "c10-l1", scene: "egypt", art: [["📣", 20, 34, 56, "float"], ["G:brothers", 60, 76, 190, "bob", { expr: "surprised" }], ["SACK", 88, 82, 70]] },
+      { play: "choice", line: "c10-lq", scene: "egypt", opts: { img: "c10-l1", options: [{ label: "The brothers' own rule", icon: "🗣️", ok: true }, { label: "The king of Egypt's rule", icon: "👑", ok: false }], wrong: "c10-lqwrong" } },
       { play: "search", line: "c10-do", scene: "egypt", opts: { owners: ["b1", "b3", "b2", "b4", "benjamin"], nope: "c10-nope" } },
       { say: "c10-c", scene: "egypt", art: [["CUP", 18, 46, 70], ["P:yusufMan", 50, 64, 100, "bob", { expr: "happy" }], ["P:benjamin", 78, 74, 84, "bob", { expr: "happy" }], ["✨", 50, 22, 36, "float"]] },
       { play: "puzzle", line: "pz-do", scene: "egypt", opts: { pic: "c10-c" } }
@@ -234,9 +246,11 @@ window.STORY = [
   {
     id: "c11", icon: "💛", title: "“I Am Yusuf”", source: "12:80-92",
     parent: [
-      "Verses 12:80–92. Yaqub's eyes went white with grief (12:84), yet he told his sons not to despair of Allah's mercy (12:87). When the brothers came again, Yusuf asked whether they understood what they had done, and revealed himself (12:89–90). The brothers admitted they had been in the wrong (12:91). Yusuf said there would be no reproach that day and asked Allah to forgive them (12:92)."
+      "Verses 12:80–92. Yaqub's eyes went white with grief (12:84), yet he told his sons not to despair of Allah's mercy (12:87). When the brothers came again, Yusuf asked whether they understood what they had done, and revealed himself (12:89–90). The brothers admitted they had been in the wrong (12:91). Yusuf said there would be no reproach that day and asked Allah to forgive them (12:92).",
+      "The eldest brother (12:78–80): the brothers asked Yusuf to take one of them instead, because their father was very old; he said it would be unjust to take anyone but the one with whom the cup was found. The eldest then reminded the others of their solemn promise to their father and of how they had failed over Yusuf, and said he would not leave the land until his father gave him leave or Allah decided for him. So nine went home. The verse does not name him, and the commentators differ on who he was, so the game does not name him either."
     ],
     steps: [
+      { say: "c11-v", scene: "egypt", art: [["G:brothers", 34, 78, 170, "bob", { expr: "sad" }], ["P:b1", 76, 72, 96, "bob", { expr: "worried" }], ["🤝", 76, 34, 40, "float"]] },
       { say: "c11-a", scene: "grey", art: [["⛺", 52, 54, 110], ["P:yaqub", 50, 72, 104, "bob", { expr: "cry", blind: true }], ["☁️", 28, 20, 60, "float"], ["💧", 70, 34, 28, "float"]] },
       { say: "c11-b", scene: "dusk", art: [["⛺", 28, 52, 100], ["P:yaqub", 28, 72, 92, "bob", { expr: "sad" }], ["🕯️", 54, 48, 50, "float"], ["G:brothers", 70, 78, 150, "walk", { expr: "neutral", flip: true }]] },
       { say: "c11-c", scene: "egypt", art: [["P:yusufMan", 68, 64, 104, "bob", { expr: "happy" }], ["G:brothers", 32, 78, 190, "bob", { expr: "surprised" }], ["❗", 24, 46, 36, "float"], ["✨", 68, 16, 40, "float"]] },
@@ -306,6 +320,7 @@ window.STORY = [
 window.STORY_MOODS = {
   "c1-b": "wonder",
   "c2-a": "tense", "c2-b": "tense", "c2-w": "wonder", "c2-c": "tense", "c2-s": "tense", "c2-do": "tense",
+  "c2-p1": "tense", "c2-p2": "sad", "c2-pq": "sad", "c2-p3": "tense",
   "c3-b": "joy",
   "c4-count": "sad", "c4-b": "sad",
   "c5-a": "tense", "c5-b1": "tense", "c5-b2": "tense", "c5-do2": "tense", "c5-b3": "wonder", "c5-b4": "wonder", "c5-do": "tense", "c5-d": "wonder",

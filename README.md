@@ -142,6 +142,12 @@ including it:
   `trek`, `awe`, `triumph`, `longing`, `pastoral`
 - `AsmauMusic.amb("river" | "wind" | "night" | "fire" | "crowd" | "sea" | "rain" | "birds" | "camp" | "none")`:
   the sound of the place, under the music. It follows the effects switch, not the music switch.
+- Story games have three switches in the top bar: 🎵 music, 🍃 sounds (effects and the sound
+  of the place) and 🗣️ voice, each remembered per game. Separately, `shared/sound-panel.js`
+  draws three volume sliders wherever a page has `<div data-sound-levels></div>` (each story's
+  "For parents", and Count with Me's parents' sheet). The levels are stored once for the whole
+  device (`localStorage["asmau-sound"]`, read by `AsmauMusic.level()` and by narration.js). On an
+  iPhone the voice slider cannot change a recording's volume; the page says so.
   crossfades to a new background mood and never restarts the one already
   playing.
 - `AsmauMusic.tension(0..1)` makes the current mood faster, brighter and

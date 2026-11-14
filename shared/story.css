@@ -159,7 +159,23 @@ button { touch-action: manipulation; -webkit-tap-highlight-color: transparent; }
   transition: left .7s ease, top .7s ease, transform .5s ease, opacity .5s ease;
 }
 .body.big { font-size: 40px; }
-.body.bowed { transform: translate(-50%, -42%) rotate(40deg) scale(.85); opacity: .7; }
+/* the bow (chapter 1): lean in towards Yusuf, dip low, stay bowed; at the end, all bow together */
+.body.bowing { animation: sky-bow .9s cubic-bezier(.3, .7, .3, 1) both; }
+.body.bowed { transform: translate(-50%, -50%) translate(var(--dx), var(--dy)) rotate(var(--tilt)) scale(.82, .62); opacity: .85;
+  filter: drop-shadow(0 0 8px rgba(255, 220, 120, .7)); }
+.body.bowed.bow-all { animation: sky-bow-again 1s ease-in-out both; }
+@keyframes sky-bow {
+  0%   { transform: translate(-50%, -50%) scale(1); }
+  35%  { transform: translate(-50%, -50%) translate(calc(var(--dx) * .6), calc(var(--dy) * .6)) scale(1.3); filter: drop-shadow(0 0 16px rgba(255, 230, 140, 1)); }
+  70%  { transform: translate(-50%, -50%) translate(var(--dx), var(--dy)) rotate(var(--tilt)) scale(.9, .45); }
+  100% { transform: translate(-50%, -50%) translate(var(--dx), var(--dy)) rotate(var(--tilt)) scale(.82, .62); }
+}
+@keyframes sky-bow-again {
+  0%, 100% { transform: translate(-50%, -50%) translate(var(--dx), var(--dy)) rotate(var(--tilt)) scale(.82, .62); }
+  50%      { transform: translate(-50%, -50%) translate(calc(var(--dx) * 1.25), calc(var(--dy) * 1.25)) rotate(var(--tilt)) scale(.9, .35); filter: drop-shadow(0 0 18px rgba(255, 230, 140, 1)); }
+}
+.sp.honoured .sp-in { filter: drop-shadow(0 0 22px rgba(255, 220, 120, .95)); transition: filter .6s ease; }
+@media (prefers-reduced-motion: reduce) { .body.bowing, .body.bowed.bow-all { animation: none; } }
 .body.home { transform: translate(-50%, -50%) scale(.72); }
 .body:not(:disabled) { animation: sp-twinkle 1.8s ease-in-out infinite; }
 .body:focus-visible { outline: 2px solid #fff; border-radius: 50%; }
@@ -565,3 +581,14 @@ button { touch-action: manipulation; -webkit-tap-highlight-color: transparent; }
 /* a pulse that does not move or resize the thing (so it stays easy to hit) */
 @keyframes glow-pulse { 0%, 100% { box-shadow: 0 0 0 3px rgba(255,214,110,.95); } 50% { box-shadow: 0 0 0 12px rgba(255,214,110,.25); } }
 .wipe-beneath { position: absolute; inset: 0; z-index: 0; border-radius: inherit; }
+
+/* four round buttons in the top bar (music, sounds, voice, chapters): smaller on a narrow phone */
+@media (max-width: 430px) {
+  .top { gap: 5px; }
+  .top h1 { font-size: 18px; }
+  .icon-btn { width: 42px; height: 42px; font-size: 18px; }
+  .icon-btn.off::after { left: 7px; right: 7px; }
+}
+.view-head { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 12px; }
+.view-head .view-title { margin: 0; }
+.icon-btn[aria-expanded="true"] { background: var(--gold); color: #26190a; }

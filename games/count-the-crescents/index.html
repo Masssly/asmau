@@ -102,6 +102,7 @@
         <button class="switch" id="swMusic" type="button" role="switch" aria-checked="true"><span class="knob" aria-hidden="true"></span><span>Music</span></button>
         <button class="switch" id="swArabic" type="button" role="switch" aria-checked="true"><span class="knob" aria-hidden="true"></span><span>Arabic numbers</span></button>
       </div>
+      <div data-sound-levels></div>
       <div class="seg" role="group" aria-label="How far to count">
         <button type="button" id="segLittle" aria-pressed="true">Count to 5</button>
         <button type="button" id="segBig" aria-pressed="false">Count to 10</button>
@@ -118,13 +119,8 @@
           put more than ten things on the screen, so each is smaller; they suit a child of about three and up.</li>
         <li><b>Nothing can go wrong.</b> There is no score, no clock and nothing to lose. Every round ends with
           “Mashallah!” and the next one starts by itself.</li>
-        <li><b>Arabic.</b> The Arabic numeral and number word are shown under the big number. They are never read
-          out by a computer voice, because a guessed pronunciation is worse than silence. They are spoken only
-          if you record them yourself in
-          <a href="../../tools/record-voice/index.html">Record your voice</a>; the English words there can be
-          replaced with your own voice too (today they are a computer placeholder).</li>
-        <li><b>Sound.</b> The switches above turn the voice, the sound effects and the music off one by one.
-          Families differ on music, so it has its own switch and the game works fully without it.</li>
+        <li><b>Arabic.</b> The Arabic numeral and number word are shown under the big number. They are spoken only
+          once you record them in <a href="../../tools/record-voice/index.html">Record your voice</a>.</li>
         <li><b>Pictures.</b> No people are drawn. The pictures are moons, stars, lanterns, prayer beads,
           raindrops, flowers, dates, apples and one simple cartoon sheep.</li>
         <li><b>Leaving.</b> Press and hold “Asmau” in the top corner to go back to all the games. It needs a
@@ -137,6 +133,7 @@
 
 <script src="../../shared/narration.js"></script>
 <script src="../../shared/music.js"></script>
+<script src="../../shared/sound-panel.js"></script>
 <script src="game.js"></script>
 <script src="../../shared/pwa.js"></script>
 </body>

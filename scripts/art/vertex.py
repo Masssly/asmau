@@ -23,7 +23,7 @@ aiplatform.googleapis.com, header x-goog-api-key); elsewhere set GOOGLE_API_KEY.
 
 Everyone is drawn in the same polished 3D family-film look as the Yusuf pictures.
 """
-import base64, json, os, sys, time, urllib.error, urllib.request
+import base64, json, os, random, sys, time, urllib.error, urllib.request
 from concurrent.futures import ThreadPoolExecutor
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -56,7 +56,7 @@ def mime(path):
     return "image/png" if path.endswith(".png") else "image/webp" if path.endswith(".webp") else "image/jpeg"
 
 
-def draw(prompt, refs=(), aspect="1:1", tries=6):
+def draw(prompt, refs=(), aspect="1:1", tries=10):
     """One picture: returns PNG/JPEG bytes. refs are paths of pictures to show the model first."""
     parts = [{"inlineData": {"mimeType": mime(r), "data": base64.b64encode(open(r, "rb").read()).decode()}} for r in refs]
     parts.append({"text": prompt})
@@ -79,8 +79,8 @@ def draw(prompt, refs=(), aspect="1:1", tries=6):
             last = "%d %s" % (e.code, e.read().decode(errors="replace")[:400])
             if e.code in (400, 401, 403, 404):
                 break                                   # will not get better by trying again
-            if e.code == 429:                           # too many at once: Google asks us to slow down
-                time.sleep(30 * (attempt + 1))
+            if e.code == 429:                           # Google is busy: wait longer each time, up to 3 minutes
+                time.sleep(min(180, 30 * (attempt + 1)) + random.random() * 10)
                 continue
         except Exception as e:                          # network trouble: wait and try again
             last = str(e)
@@ -161,6 +161,35 @@ FIXES = {
 }
 
 
+# The brothers: ten older brothers, plus Benjamin where he is there, all with dark skin (the first
+# pictures had some light-skinned and a different number each time). After the youngest is held in
+# Egypt the eldest stays behind (12:80), so nine go home.
+BRO_REF = os.path.join(ROOT, "scripts", "yusuf-art", "refs", "brothers.png")
+BEN = " and their youngest brother, a teenage boy in an orange-brown tunic, standing with them"
+BRO = {
+    "c2-a": (10, "", "the boy playing with the lamb"), "c2-b": (10, "", ""), "c2-c": (10, "", "the father and the shirt"),
+    "c9-a": (10, "", ""), "c9-b": (10, "", "the man on the raised seat"),
+    "c10-g": (10, BEN, "the father"), "c10-c": (10, BEN, "the guard, the cup and the man in the blue robe"),
+    "c11-b": (9, "", "the father"), "c11-c": (10, BEN, "the man in the blue robe with open arms"),
+    "c11-e": (10, "", "the man in the blue robe"), "c11-d": (10, BEN, "the man in the blue robe at the centre of the embrace"),
+    "c12-a": (10, BEN, "the man in the blue robe and the camels"), "c12-c": (10, BEN, "the father holding the shirt"),
+    "c13-b": (10, BEN, "the elderly father, the elderly mother and the man in the blue robe by the throne"),
+}
+
+
+def brothers(keys):
+    keys = keys or list(BRO)
+    jobs = []
+    for k in keys:
+        n, ben, keep = BRO[k]
+        prompt = ("Edit the first picture. Keep the place, the light, the camera angle%s exactly as they are. Change only the group of "
+                  "brothers: there must be exactly %d grown brothers%s. The brothers look like the men in the second picture, with "
+                  "the same faces, robes and turbans, and every one of them has deep dark brown skin, none light-skinned. Count them: "
+                  "exactly %d grown brothers." % ((", and " + keep) if keep else "", n, ben, n)) + END
+        jobs.append((k, os.path.join(YOUT, "bro-" + k + ".png"), prompt, (os.path.join(YIMG, k + ".webp"), BRO_REF)))
+    return run(jobs)
+
+
 def yusuf_fix(keys):
     keys = keys or list(FIXES)
 
@@ -183,7 +212,7 @@ if __name__ == "__main__":
         data = draw("A small golden crescent moon on a plain dark blue background." + END)
         print("ok: a picture of %d bytes came back" % len(data))
         sys.exit(0)
-    failed = {"musa-refs": musa_refs, "musa-scenes": musa_scenes, "yusuf-fix": yusuf_fix}[cmd](args)
+    failed = {"musa-refs": musa_refs, "musa-scenes": musa_scenes, "yusuf-fix": yusuf_fix, "yusuf-brothers": brothers}[cmd](args)
     if failed:
         print("%d failed: %s" % (len(failed), ", ".join(failed)))
         sys.exit(1)

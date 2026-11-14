@@ -17,7 +17,8 @@
     <a class="btn-back" href="../../index.html">← Asmau</a>
     <h1>Musa</h1>
     <button class="icon-btn" id="musicBtn" aria-label="Music is on">🎵</button>
-    <button class="icon-btn" id="soundBtn" aria-label="Voice and effects are on">🔊</button>
+    <button class="icon-btn" id="soundBtn" aria-label="Sounds and effects are on">🍃</button>
+    <button class="icon-btn" id="voiceBtn" aria-label="The voice is on">🗣️</button>
     <button class="icon-btn" id="mapBtn" aria-label="All chapters">☰</button>
   </div>
 
@@ -37,34 +38,23 @@
 
     <details class="parents">
       <summary>For parents</summary>
+      <div data-sound-levels></div>
       <ul>
-        <li>This is a retelling in simple words, not a translation. The story of Musa is spread over many surahs; this game
-          follows <a href="https://quran.com/28" target="_blank" rel="noopener">Surah Al-Qasas</a> (28:3–43) and
+        <li>The story of Musa is spread over many surahs. This game follows
+          <a href="https://quran.com/28" target="_blank" rel="noopener">Surah Al-Qasas</a> (28:3–43) and
           <a href="https://quran.com/20" target="_blank" rel="noopener">Surah Ta-Ha</a> (20:9–98), with passages from surahs
-          2, 5, 7, 10, 18, 26, 40 and 66. Every chapter was checked against M. A. S. Abdel Haleem’s English translation.
-          Under each scene, “For parents: this chapter” says what the verses say beyond the child’s version and links to them.</li>
-        <li>Details that are not in the verses are marked on their scene with a small label. They come from Ibn Kathir’s
-          tafsir (abridged English), or from hadith quoted in it, and each chapter note names who the report is from:
-          for example the queen’s name, the heavy rock at the well, the pebbles on the path, the twelve paths through the sea,
-          the frogs in the pots, the name al-Khidr and the bird on the boat. Where the early scholars differed, the note says so.</li>
-        <li>Some parts are told more gently than the verses tell them: Pharaoh’s order against the baby boys (28:4), the man
-          Musa struck (28:15), Pharaoh’s threats to the magicians (20:71), the drowning (26:66), and Musa’s anger at his brother
-          (7:150). One event is not told to children at all: the boy in 18:74, which the game calls “a story for when you are
-          older”. Each chapter note says exactly what was softened or left out.</li>
-        <li>People are shown, all with dark skin, including Prophet Musa and Prophet Harun (peace be upon them). Muslims differ
-          on whether prophets should be shown, and these games show them. Allah is never shown: His speech to Musa appears only
-          as a fire and a light. No angel is shown. Prophet Muhammad ﷺ is mentioned once (the fast of Ashura) and is not shown.</li>
-        <li>The story’s pictures are not made yet, so for now each scene is drawn with simple icons. When the pictures
-          arrive they will be AI-generated, like the Yusuf ones, in the same West African style.</li>
-        <li>It is long on purpose: about a hundred activities. Nobody is meant to finish it in one sitting. The game remembers
-          the place, and “☰” opens any chapter. A child of 3 or 4 will need a grown-up for the ordering, sorting and
-          matching games. Every activity can be skipped.</li>
-        <li>The music, the sounds of each place (the river, the wind, the fire, a far-off crowd) and the effects are made by
-          the browser as you play; there are no recordings of instruments or voices in them. 🎵 turns the music off on its own,
-          and 🔊 turns off the voice, the effects and the sounds of the place. Both choices are remembered on this device.</li>
-        <li>English is read by a computer voice, standing in until a real one is recorded.
-          Arabic is never read by a computer voice.
-          <a href="../../tools/record-voice/index.html">Record your own voice</a> and the game uses it straight away on this device.</li>
+          2, 5, 7, 10, 18, 26, 40 and 66. It is a large part of what the Qur’an tells of Musa, not all of it.</li>
+        <li>Told more gently than the verses tell them: Pharaoh’s order against the baby boys (28:4), the man Musa struck
+          (28:15), Pharaoh’s threats to the magicians (20:71), the drowning (26:66) and Musa’s anger at his brother (7:150).
+          Not told to children at all: the boy in 18:74, which the game calls “a story for when you are older”.</li>
+        <li>From the commentary or hadith and not the verses, among others: the queen’s name, the hot coal, the heavy rock at
+          the well, the pebbles on the path, the twelve paths through the sea, the frogs in the pots, the name al-Khidr and the
+          bird on the boat. Where the early scholars differed, the chapter note says so.</li>
+        <li>Shown in this story: Prophet Musa and Prophet Harun (peace be upon them), al-Khidr, and the people around them.
+          Allah’s speech to Musa is shown only as a fire and a light. Prophet Muhammad ﷺ is mentioned once, at the fast of
+          Ashura.</li>
+        <li>It is long on purpose: about a hundred activities over 25 chapters. Nobody is meant to finish it in one sitting.
+          A child of 3 or 4 will need a grown-up for the ordering, sorting and matching games.</li>
       </ul>
     </details>
   </section>
@@ -92,7 +82,10 @@
   </section>
 
   <section id="chapters" hidden>
-    <h2 class="view-title">All chapters</h2>
+    <div class="view-head">
+      <h2 class="view-title">All chapters</h2>
+      <button class="btn-back" id="chaptersClose">✕ Close</button>
+    </div>
     <div class="chapter-grid" id="chapterGrid"></div>
   </section>
 
@@ -110,6 +103,7 @@
 
 <script src="../../shared/narration.js"></script>
 <script src="../../shared/music.js"></script>
+<script src="../../shared/sound-panel.js"></script>
 <script src="game.js"></script>
 <script src="art.js"></script>
 <script src="story.js"></script>

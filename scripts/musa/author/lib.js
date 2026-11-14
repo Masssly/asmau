@@ -29,7 +29,7 @@ const WHO = {
   PH:    ["Pharaoh", "a proud stern king with a short black beard, an ancient Nile-valley king's tall blue-and-gold striped headdress (not a European crown, no fur) and a red-and-gold robe"],
   MY:    ["young Musa", "a strong kind young man with short black hair and no beard, in a white tunic with a blue sash"],
   MU:    ["Musa", "a strong kind man in his thirties with a short black beard, a cream turban and an indigo robe, holding a tall wooden staff"],
-  HA:    ["Harun", "a gentle man with a short black beard, a white turban and a green robe"],
+  HA:    ["Harun", "a gentle man with a short black beard, a white turban and a long golden-ochre robe with brown trim"],
   ELD:   ["the old father", "a very old man with a long white beard, a white turban and a brown cloak"],
   DAU:   ["the two daughters", "two modest young women in long dresses and headscarves, one in purple and one in sky blue"],
   KH:    ["al-Khidr", "a wise old man with a white beard, in a green turban and a long green cloak"],

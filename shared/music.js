@@ -17,6 +17,10 @@
                    swish, coin, wilt, tick, clink, sparkle, pour, splash, hiss,
                    thunder, croak, gush, thud, roar, cry.
   - duck(on)       lowers the music while a line of narration is speaking.
+  - level(kind) / setLevel(kind, 0..1)  how loud the music, the sounds (effects
+                   and the sound of the place) and the voice are. Set by a
+                   parent with the sliders (shared/sound-panel.js), kept on this
+                   device for every game, and separate from the on/off switches.
   - setMusic / setSfx  two independent switches, because families differ on
                    music in children's media and narration must survive both.
 
@@ -29,6 +33,16 @@ window.AsmauMusic = (function () {
 
   var N = null;
   var MUSIC_LEVEL = 0.7;
+  var SFX_LEVEL = 1.8;
+  var AMB_LEVEL = 0.9 * 0.75;        // the sound of the place: a quarter quieter than at first, so it sits under the voice
+
+  // the three volumes a parent can set, kept on this device for all the games
+  var LV_KEY = "asmau-sound";
+  var LV = (function () {
+    var d = { music: 1, sounds: 1, voice: 1 };
+    try { var s = JSON.parse(localStorage.getItem(LV_KEY) || "{}") || {}; ["music", "sounds", "voice"].forEach(function (k) { if (typeof s[k] === "number") d[k] = Math.max(0, Math.min(1, s[k])); }); } catch (err) { /* private mode */ }
+    return d;
+  })();
   var DUCK_LEVEL = 0.35;
   var LOOKAHEAD = 0.3;
   var PUMP_MS = 50;
@@ -583,23 +597,23 @@ window.AsmauMusic = (function () {
     duckGain.gain.value = isDucked ? DUCK_LEVEL : 1;
     duckGain.connect(master);
     var musicVol = c.createGain();
-    musicVol.gain.value = MUSIC_LEVEL;
+    musicVol.gain.value = MUSIC_LEVEL * LV.music;
     musicVol.connect(duckGain);
 
     var sfxBus = c.createGain();
-    sfxBus.gain.value = 1.8;
+    sfxBus.gain.value = SFX_LEVEL * LV.sounds;
     sfxBus.connect(master);
 
     // the sounds of the place sit under everything and dip a little when someone is speaking
     var ambBus = c.createGain();
-    ambBus.gain.value = 0.9;
+    ambBus.gain.value = AMB_LEVEL * LV.sounds;
     ambBus.connect(duckGain);
 
-    return { comp: comp, duckGain: duckGain, engine: makeEngine(c, musicVol, nowFn), sfx: makeSfx(c, sfxBus), amb: makeAmb(c, ambBus, nowFn) };
+    return { comp: comp, duckGain: duckGain, musicVol: musicVol, sfxBus: sfxBus, ambBus: ambBus, engine: makeEngine(c, musicVol, nowFn), sfx: makeSfx(c, sfxBus), amb: makeAmb(c, ambBus, nowFn) };
   }
 
   /* ---------- the live instance ---------- */
-  var ctx = null, engine = null, sfx = null, comp = null, ambience = null, wantAmb = "none";
+  var ctx = null, engine = null, sfx = null, comp = null, ambience = null, wantAmb = "none", buses = null;
   var duckGain = null, analyser = null, timer = null;
   var enabled = { music: true, sfx: true };
   var wantMood = "wonder", wantTension = 0, ducked = false;
@@ -632,6 +646,7 @@ window.AsmauMusic = (function () {
     engine = g.engine;
     sfx = g.sfx;
     ambience = g.amb;
+    buses = g;
     ambience.set(enabled.sfx ? wantAmb : "none");
     analyser = ctx.createAnalyser();
     analyser.fftSize = 1024;
@@ -669,6 +684,19 @@ window.AsmauMusic = (function () {
   function setSfx(on) {
     enabled.sfx = !!on;
     if (ambience) ambience.set(enabled.sfx ? wantAmb : "none");
+  }
+
+  function getLevel(kind) { return LV[kind] == null ? 1 : LV[kind]; }
+  function setLevel(kind, v) {
+    if (!(kind in LV)) return;
+    LV[kind] = Math.max(0, Math.min(1, +v || 0));
+    try { localStorage.setItem(LV_KEY, JSON.stringify(LV)); } catch (err) { /* private mode: lasts until the page closes */ }
+    if (buses && ctx) {
+      var t = ctx.currentTime;
+      if (kind === "music") buses.musicVol.gain.setTargetAtTime(MUSIC_LEVEL * LV.music, t, 0.05);
+      if (kind === "sounds") { buses.sfxBus.gain.setTargetAtTime(SFX_LEVEL * LV.sounds, t, 0.05); buses.ambBus.gain.setTargetAtTime(AMB_LEVEL * LV.sounds, t, 0.05); }
+    }
+    if (kind === "voice" && window.AsmauNarration && window.AsmauNarration.setVolume) window.AsmauNarration.setVolume(LV.voice);
   }
 
   function amb(name) {
@@ -750,6 +778,8 @@ window.AsmauMusic = (function () {
     sfxNames: ["tap", "boing", "wrong", "win", "heave", "whoosh", "swish", "coin", "wilt", "tick", "clink", "sparkle", "pour", "splash", "hiss", "thunder", "croak", "gush", "thud", "roar", "cry"],
     amb: amb,
     ambNames: Object.keys(AMBS),
+    level: getLevel,
+    setLevel: setLevel,
     MUSIC_LEVEL: MUSIC_LEVEL,
     state: function () {
       return { mood: engine ? engine.mood() : null, tension: engine ? engine.tension() : 0, running: ctx ? ctx.state : "none", ducked: ducked, stats: stats, amb: ambience ? ambience.name() : wantAmb };

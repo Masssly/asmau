@@ -1,14 +1,20 @@
 {
-  "version": "2026.11.10",
+  "version": "2026.11.11",
   "date": "2026-11-14",
-  "buildId": "5285c3bf36a6",
+  "buildId": "cbb3b09a47a1",
   "notes": [
-    "Three sound switches (music, sounds of the place, voice) and volume sliders for parents; the background sounds are a quarter quieter",
-    "Yusuf: the brothers persuading their father, the women at the banquet, the brothers' own rule, the eldest's vow and other missing links in the story; his hair and the torn shirt now match in every picture",
-    "The stars, sun and moon now bow in chapter 1; the chapter list closes again with a second tap",
-    "Musa: the story reads more smoothly, with long pages split in two"
+    "For parents: a short home with one page per topic; recording your own voice, in any language, comes first, then privacy and support",
+    "A way to record your voice now shows on the front page and on each story's first page"
   ],
   "history": [
+    {
+      "version": "2026.11.11",
+      "date": "2026-11-14",
+      "notes": [
+        "For parents: a short home with one page per topic; recording your own voice, in any language, comes first, then privacy and support",
+        "A way to record your voice now shows on the front page and on each story's first page"
+      ]
+    },
     {
       "version": "2026.11.10",
       "date": "2026-11-14",

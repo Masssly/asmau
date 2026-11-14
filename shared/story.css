@@ -592,3 +592,8 @@ button { touch-action: manipulation; -webkit-tap-highlight-color: transparent; }
 .view-head { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 12px; }
 .view-head .view-title { margin: 0; }
 .icon-btn[aria-expanded="true"] { background: var(--gold); color: #26190a; }
+
+/* on a story's first page: the way to the recorder */
+.voice-link { display: block; margin: 14px auto 4px; max-width: 420px; padding: 10px 14px; border-radius: 14px; text-decoration: none;
+  border: 1px dashed rgba(240,184,75,.7); background: rgba(240,184,75,.10); color: var(--cream); font-size: 14px; text-align: center; }
+.voice-link strong { color: #ffe2a3; }

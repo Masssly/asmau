@@ -89,6 +89,56 @@
   .sheet .big-link { display: inline-block; margin-top: 4px; background: var(--gold); color: #3a2300; border-radius: 999px; padding: 9px 16px; font-family: var(--font-display); font-weight: 700; text-decoration: none; }
 
   @media (prefers-reduced-motion: reduce) { .cover img, .cover .glow, .cover .tw, .cover .emo, .play, .stars span { animation: none; } .cover .tw { opacity: .8; } }
+  /* the parents' panel: a home with the three things that matter most, then one page per topic */
+  .sheet-top h2 { flex: 1; }
+  .sheet-backbtn { background: rgba(255,255,255,.08); color: var(--cream); border: 1px solid var(--card-line); border-radius: 999px;
+    padding: 7px 12px; font-family: var(--font-display); font-size: 13.5px; cursor: pointer; white-space: nowrap; }
+  .sheet-backbtn:not([hidden]) + h2 { font-size: 0; }
+  .p-view { margin-top: 10px; }
+  .p-lead { color: var(--muted); margin: 0 0 12px !important; }
+  .p-card { display: flex; align-items: center; gap: 12px; width: 100%; text-align: left; cursor: pointer; color: var(--cream);
+    font: inherit; border-radius: 18px; padding: 14px; border: 1px solid var(--card-line); background: rgba(255,255,255,.05); }
+  .p-card:active { transform: scale(.985); }
+  .p-card .p-ico { font-size: 30px; line-height: 1; flex: none; }
+  .p-card .p-txt { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+  .p-card .p-txt strong { font-family: var(--font-display); font-size: 16px; }
+  .p-card .p-txt span { color: var(--muted); font-size: 13.5px; }
+  .p-card .p-go { margin-left: auto; font-size: 28px; color: var(--gold); }
+  .p-feature { background: linear-gradient(135deg, rgba(240,184,75,.32), rgba(240,184,75,.10)); border-color: rgba(240,184,75,.7); padding: 18px 16px; }
+  .p-feature .p-ico { font-size: 40px; }
+  .p-feature .p-txt strong { font-size: 18px; color: #ffe2a3; }
+  .p-feature .p-txt span { color: var(--cream); opacity: .9; }
+  .p-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 10px 0 14px; }
+  .p-pair .p-card { flex-direction: column; align-items: flex-start; gap: 8px; }
+  .p-privacy { background: linear-gradient(135deg, rgba(47,143,131,.35), rgba(47,143,131,.10)); border-color: rgba(95,211,192,.55); }
+  .p-support { background: linear-gradient(135deg, rgba(232,120,150,.30), rgba(232,120,150,.08)); border-color: rgba(240,154,180,.55); }
+  .p-list { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--card-line); }
+  .p-list li { border-bottom: 1px solid var(--card-line); }
+  .p-list button { display: flex; align-items: center; gap: 12px; width: 100%; padding: 12px 4px; background: none; border: 0; color: var(--cream);
+    font: inherit; text-align: left; cursor: pointer; }
+  .p-list button > span:first-child { font-size: 22px; width: 28px; text-align: center; flex: none; }
+  .p-list button > span:last-child { display: flex; flex-direction: column; }
+  .p-list strong { font-weight: 600; }
+  .p-list small { color: var(--muted); font-size: 12.5px; }
+  .p-list button::after { content: "›"; margin-left: auto; color: var(--muted); font-size: 22px; }
+  .p-card:focus-visible, .p-list button:focus-visible, .sheet-backbtn:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
+  .sheet h4 { font-family: var(--font-display); font-size: 15px; margin: 14px 0 4px; }
+  .p-steps { padding-left: 20px; margin: 0 0 8px; }
+  .p-steps li { margin-bottom: 6px; }
+  .p-checks { list-style: none; padding: 0; margin: 0 0 10px; }
+  .p-checks li { position: relative; padding-left: 28px; margin-bottom: 8px; }
+  .p-checks li::before { content: "✓"; position: absolute; left: 2px; top: 0; color: #5fd3c0; font-weight: 800; }
+  .p-small { font-size: 13px; color: var(--muted); }
+  .sheet ul:not(.p-list):not(.p-checks):not(.news) { padding-left: 18px; margin: 0 0 10px; }
+  .sheet ul:not(.p-list):not(.p-checks):not(.news) li { margin-bottom: 6px; }
+  .sheet .big-link { margin: 6px 0 10px; }
+
+  /* on the page itself: the recorder is easy to find without opening the panel */
+  .voice-strip { display: flex; align-items: center; gap: 10px; margin: 14px 0 0; padding: 10px 14px; border-radius: 16px; cursor: pointer; width: 100%;
+    border: 1px dashed rgba(240,184,75,.7); background: rgba(240,184,75,.10); color: var(--cream); font: inherit; text-align: left; }
+  .voice-strip strong { font-family: var(--font-display); color: #ffe2a3; }
+  .voice-strip span { font-size: 13px; color: var(--muted); }
+  .voice-strip::after { content: "›"; margin-left: auto; font-size: 24px; color: var(--gold); }
 </style>
 </head>
 <body>
@@ -99,6 +149,10 @@
     <div class="moon" aria-hidden="true">🌙</div>
     <h1>Asmau</h1>
   </div>
+  <button class="voice-strip" id="voiceStrip" type="button">
+    <span aria-hidden="true" style="font-size:26px">🎙️</span>
+    <span><strong>Parents: tell the stories in your own voice</strong><br>Record once, in any language, and your child hears you.</span>
+  </button>
 
   <main id="sections">
     <p class="empty">Loading games…</p>
@@ -114,70 +168,172 @@
 <div class="sheet-back" id="parents" hidden>
   <div class="sheet" role="dialog" aria-modal="true" aria-labelledby="parentsTitle">
     <div class="sheet-top">
+      <button class="sheet-backbtn" id="pBack" hidden>← All topics</button>
       <h2 id="parentsTitle">For parents</h2>
       <button class="sheet-close" id="parentsClose" aria-label="Close">✕</button>
     </div>
 
-    <h3>What this is</h3>
-    <p>Asmau is a small, free collection of Islamic games for children. Every game shows the ages it is for.
-      A game marked “Coming soon” is not finished yet.</p>
+    <!-- the home of the panel: the three things every parent should see, then one row per topic -->
+    <div class="p-view" data-view="home">
+      <p class="p-lead">Free Islamic stories and games for children. Tap a topic.</p>
 
-    <h3>Where the stories come from</h3>
-    <p>Each story from the Qur’an is a retelling in simple words, not a translation. Every chapter is checked
-      against M. A. S. Abdel Haleem’s English translation, and any detail that is not in the verses comes from a
-      named commentary, mostly Ibn Kathir’s tafsir (abridged English), or from a hadith quoted in it. Such a detail
-      carries a small label on its scene. Under every scene, “For parents: this chapter” says what the verses say
-      beyond the child’s version, what was told more gently or left out, whose report a detail comes from, and links
-      to the verses.</p>
+      <button class="p-card p-feature" data-go="record">
+        <span class="p-ico" aria-hidden="true">🎙️</span>
+        <span class="p-txt"><strong>Read the stories in your own voice</strong>
+          <span>The computer voice is only a stand-in. Record yourself, in English or in the language you speak at home.</span></span>
+        <span class="p-go" aria-hidden="true">›</span>
+      </button>
 
-    <h3>Who is shown</h3>
-    <p>People are shown with their faces, all with dark skin, prophets included (peace be upon them). Muslims differ on
-      whether prophets should be shown; these games show them. Allah is never shown, no angel is shown, and Prophet
-      Muhammad ﷺ never appears. Each story’s own note names who appears in it.</p>
+      <div class="p-pair">
+        <button class="p-card p-privacy" data-go="privacy">
+          <span class="p-ico" aria-hidden="true">🔒</span>
+          <span class="p-txt"><strong>Private by design</strong><span>No accounts, no adverts, no tracking.</span></span>
+        </button>
+        <button class="p-card p-support" data-go="support">
+          <span class="p-ico" aria-hidden="true">💛</span>
+          <span class="p-txt"><strong>Help keep it free</strong><span>Donate, share, or tell us a mistake.</span></span>
+        </button>
+      </div>
 
-    <h3>How to play a story</h3>
-    <p>Everything reacts to a touch. Swipe a scene, or use the big buttons, to turn the page. The game remembers where
-      your child got to; ☰ opens the list of chapters and closes it again. Nothing is timed, and if a child is stuck,
-      “Skip” appears after a quiet moment.</p>
+      <ul class="p-list">
+        <li><button data-go="stories"><span aria-hidden="true">📖</span><span><strong>Where the stories come from</strong><small>The verses, the commentary, and what was simplified</small></span></button></li>
+        <li><button data-go="shown"><span aria-hidden="true">👥</span><span><strong>Who is shown, and how</strong><small>Faces, prophets, and what is never shown</small></span></button></li>
+        <li><button data-go="together"><span aria-hidden="true">🤲</span><span><strong>Playing together</strong><small>Ages, how to play, how much at a time</small></span></button></li>
+        <li><button data-go="sound"><span aria-hidden="true">🔊</span><span><strong>Sound and volume</strong><small>Music, sounds and voice, each on its own</small></span></button></li>
+        <li><button data-go="offline"><span aria-hidden="true">📶</span><span><strong>Without internet</strong><small>Add Asmau to your home screen</small></span></button></li>
+        <li><button data-go="pictures"><span aria-hidden="true">🎨</span><span><strong>The pictures</strong><small>How they are made</small></span></button></li>
+        <li><button data-go="news"><span aria-hidden="true">✨</span><span><strong>What’s new</strong><small>The latest changes</small></span></button></li>
+        <li><button data-go="about"><span aria-hidden="true">ℹ️</span><span><strong>About Asmau</strong><small>Who makes it, and how to reach us</small></span></button></li>
+      </ul>
+    </div>
 
-    <h3>Sound</h3>
-    <p>Every story has three switches at the top: 🎵 music, 🍃 the sounds of the place and the effects, and 🗣️ the voice.
-      The music and sounds are made by the browser as you play; there are no recordings of instruments in them. Families
-      differ on music in children’s media, so it has its own switch. Under “For parents” on each story’s first page you can
-      also set how loud each of the three is; that is remembered on this device for every game.</p>
+    <div class="p-view" data-view="record" hidden>
+      <h3>Your voice is the best voice for your child</h3>
+      <p>The voice reading the stories today is a computer. It is there so that every game works from the first day, and
+        it is <strong>not meant to stay</strong>. Children listen differently when it is a parent or a grandparent telling
+        the story. Record the stories yourself, and the game plays your voice from then on.</p>
+      <h4>In your own language</h4>
+      <p>Read each line in whatever language your family speaks: Dagbanli, Hausa, Twi, Yoruba, Swahili, Arabic, German,
+        English or any other. The words on the screen stay in English; what your child hears can be yours. Arabic is only
+        ever heard from a person’s recording, never from a computer.</p>
+      <h4>How it works</h4>
+      <ol class="p-steps">
+        <li>Open <strong>Record your voice</strong> and choose a story.</li>
+        <li>Each line of the story is shown. Press Record, read it, press Stop. Listen back, and redo it if you like.</li>
+        <li>Open the story: your lines play straight away. Lines you have not recorded yet still use the computer voice,
+          so you can record a few each evening.</li>
+      </ol>
+      <h4>On your other devices, and for grandparents</h4>
+      <p>Recordings stay on the device you made them on. To hear them on a phone and a tablet too, make a
+        <strong>family code</strong> in the recorder. Anyone with the code, a grandparent far away for example, can record
+        on their own phone and the whole family hears it. Recordings are locked on the device before they travel; if you
+        lose the code, the copy kept online is gone.</p>
+      <a class="big-link" href="tools/record-voice/index.html">🎙️ Open the recorder →</a>
+    </div>
 
-    <h3>Your child’s privacy</h3>
-    <p>There are no accounts, no adverts and no tracking. The site loads nothing from other companies, and
-      nothing your child does is sent anywhere.</p>
+    <div class="p-view" data-view="privacy" hidden>
+      <h3>Private by design</h3>
+      <p>Most apps for children collect data, show adverts or ask for an account. Asmau does none of that, on purpose.</p>
+      <ul class="p-checks">
+        <li><strong>No account, no sign-in, no email.</strong> Open it and play.</li>
+        <li><strong>No adverts and nothing to buy</strong> inside the games.</li>
+        <li><strong>No tracking.</strong> No analytics, no advertising cookies, nothing loaded from advertising or social media companies.</li>
+        <li><strong>What your child does stays on the device:</strong> where they got to, the settings, and your recordings.</li>
+        <li><strong>Recordings leave the device only if you choose,</strong> with a family code, and they are locked on the device before they are sent, so nobody else, including whoever runs Asmau, can listen to them.</li>
+      </ul>
+      <p class="p-small">Like any website, the places that serve Asmau’s pages, pictures and sounds (GitHub and Cloudflare) see that
+        a device asked for a file. They are not told who your child is or what they do in the games.</p>
+      <a href="privacy.html">Read the full privacy note →</a>
+    </div>
 
-    <h3>The voice</h3>
-    <p>The stories are read by a computer voice until someone records them. Arabic is never read by a computer voice:
-      it is only ever played from a person’s recording. You can record your own voice, and the games will use it. Your recordings stay on your device unless you choose to move them. You can also choose to keep them on all your devices with a family code; recordings are locked on your device first, and if you lose the code they cannot be recovered.</p>
-    <a class="big-link" href="tools/record-voice/index.html">Record your voice →</a>
+    <div class="p-view" data-view="support" hidden>
+      <h3>Help keep Asmau free</h3>
+      <p>Asmau is free, with no adverts and nothing to unlock, and it will stay that way. You never have to pay or give
+        anything to use it.</p>
+      <h4>Donate</h4>
+      <p>Donations from families pay for the storage, the pictures, and the time it takes to make each new story carefully.
+        Any amount helps. Donating does not unlock any game; the only thing it changes is the space for your recordings, if
+        you keep them online and run out.</p>
+      <a class="big-link" href="https://ko-fi.com/dagbanli" target="_blank" rel="noopener">💛 Donate on Ko-fi →</a>
+      <h4>Other ways to help</h4>
+      <ul>
+        <li><strong>Share it</strong> with families and teachers who would like it.</li>
+        <li><strong>Tell us about a mistake</strong>, in a story or in a game. Every story is checked, but a second pair of
+          eyes matters, most of all from someone with knowledge of the Qur’an and tafsir.</li>
+      </ul>
+      <a href="https://github.com/Masssly/asmau/issues" target="_blank" rel="noopener">Report a mistake or suggest something →</a>
+    </div>
 
-    <h3>Without internet</h3>
-    <p>After the first visit, everything works with no connection. On a phone or tablet you can add Asmau to
-      the home screen from the browser’s menu.</p>
+    <div class="p-view" data-view="stories" hidden>
+      <h3>Where the stories come from</h3>
+      <p>Each story from the Qur’an is a retelling in simple words, not a translation. Every chapter is checked against
+        M. A. S. Abdel Haleem’s English translation. Any detail that is not in the verses comes from a named commentary,
+        mostly Ibn Kathir’s tafsir (abridged English), or from a hadith quoted in it, and it carries a small label on its scene.</p>
+      <p>Under every scene, <strong>“For parents: this chapter”</strong> tells you what the verses say beyond the child’s
+        version, what was told more gently or left out, whose report a detail comes from, and links to the verses, so you
+        can answer your child’s questions.</p>
+    </div>
 
-    <h3>The pictures</h3>
-    <p>The story pictures are made with an AI image generator (Google Gemini). They are an artist’s-eye view in a West
-      African style: nobody knows what these people or places looked like, and the clothes and buildings are not a
-      reconstruction of the past. When a picture is replaced, the old one is kept.</p>
+    <div class="p-view" data-view="shown" hidden>
+      <h3>Who is shown, and how</h3>
+      <p>People are shown with their faces, all with dark skin, prophets included (peace be upon them). Muslims differ on
+        whether prophets should be shown; these games show them. Allah is never shown, no angel is shown, and Prophet
+        Muhammad ﷺ never appears. Each story’s first page names who appears in it.</p>
+    </div>
 
-    <h3>Supporting Asmau</h3>
-    <p>Asmau is free, and you never have to pay or give anything to use it. It is kept going by donations from
-      families who want to help. If you would like to, you can
-      <a href="https://ko-fi.com/dagbanli" target="_blank" rel="noopener">donate on Ko-fi</a>. Donating does not unlock any game;
-      the only thing it can do is raise your limit if you keep recordings online.</p>
+    <div class="p-view" data-view="together" hidden>
+      <h3>Playing together</h3>
+      <ul>
+        <li><strong>Ages</strong> are on every game. Count with Me is for the littlest, from about 1½. The stories are for
+          about 3 to 10; under 5, sit with your child.</li>
+        <li><strong>A little at a time.</strong> The stories are long on purpose: a chapter or two a day is plenty, and the
+          game remembers where your child got to.</li>
+        <li><strong>Talk about it.</strong> Ask what someone felt, or what your child would have done. The note under each
+          scene gives you the details.</li>
+        <li><strong>How to play.</strong> Everything reacts to a touch. Swipe a scene, or use the big buttons, to turn the
+          page. ☰ opens the list of chapters and closes it again.</li>
+        <li><strong>Nothing to lose.</strong> Nothing is timed and nothing is marked wrong for long. If a child is stuck,
+          “Skip” appears after a quiet moment.</li>
+      </ul>
+    </div>
 
-    <h3>What’s new</h3>
-    <ul class="news" data-asmau-notes></ul>
+    <div class="p-view" data-view="sound" hidden>
+      <h3>Sound and volume</h3>
+      <p>Every story has three switches at the top: 🎵 music, 🍃 the sounds of the place and the effects, and 🗣️ the voice.
+        Families differ on music in children’s media, so it has its own switch, and every game works fully without it.
+        The music and sounds are made by the browser as you play; there are no recordings of instruments.</p>
+      <p>How loud each one is can be set here, and is remembered on this device for every game:</p>
+      <div data-sound-levels></div>
+    </div>
 
-    <h3>Privacy details</h3>
-    <p>The full privacy note, including what happens to voice recordings, is on its own page.</p>
-    <p><a href="privacy.html">Read the privacy note</a></p>
+    <div class="p-view" data-view="offline" hidden>
+      <h3>Without internet</h3>
+      <p>After the first visit, everything works with no connection. On a phone or tablet, add Asmau to the home screen
+        from the browser’s menu (“Add to Home Screen”, or “Install app”) and it opens like an app.</p>
+      <p>If a device ever looks out of date, <a href="reset.html">refresh it here</a>. Recordings and progress are not touched.</p>
+    </div>
 
-    <p style="margin-top:16px"><a href="https://github.com/Masssly/asmau" target="_blank" rel="noopener">How Asmau is built (GitHub)</a></p>
+    <div class="p-view" data-view="pictures" hidden>
+      <h3>The pictures</h3>
+      <p>The story pictures are made with an AI image generator (Google Gemini), from approved drawings of each person so
+        that they look the same from scene to scene. They are an artist’s-eye view in a West African style: nobody knows
+        what these people or places looked like, and the clothes and buildings are not a reconstruction of the past. When a
+        picture is replaced, the old one is kept.</p>
+    </div>
+
+    <div class="p-view" data-view="news" hidden>
+      <h3>What’s new</h3>
+      <ul class="news" data-asmau-notes></ul>
+    </div>
+
+    <div class="p-view" data-view="about" hidden>
+      <h3>About Asmau</h3>
+      <p>Asmau is a small, free collection of Islamic games for children, made by a parent. Every game shows the ages it is
+        for. A game marked “Coming soon” is not finished yet.</p>
+      <p><a href="https://github.com/Masssly/asmau/issues" target="_blank" rel="noopener">Questions, mistakes or ideas →</a></p>
+      <p><a href="privacy.html">Privacy note →</a></p>
+      <p><a href="https://github.com/Masssly/asmau" target="_blank" rel="noopener">How Asmau is built (GitHub) →</a></p>
+    </div>
   </div>
 </div>
 
@@ -294,9 +450,28 @@
 
   function wireParents() {
     var back = document.getElementById("parents"), btn = document.getElementById("parentsBtn"), close = document.getElementById("parentsClose");
-    function open() { back.hidden = false; close.focus(); }
-    function shut() { back.hidden = true; btn.focus(); }
-    btn.addEventListener("click", open);
+    var sheet = back.querySelector(".sheet"), backBtn = document.getElementById("pBack"), title = document.getElementById("parentsTitle");
+    var views = Array.prototype.slice.call(back.querySelectorAll(".p-view")), opener = btn;
+    // one topic at a time: the home lists them all, each opens on its own page with a way back
+    function go(name) {
+      if (!views.some(function (v) { return v.getAttribute("data-view") === name; })) name = "home";
+      views.forEach(function (v) { v.hidden = v.getAttribute("data-view") !== name; });
+      backBtn.hidden = name === "home";
+      sheet.scrollTop = 0;
+      (name === "home" ? (back.querySelector(".p-feature") || close) : backBtn).focus();
+    }
+    function open(topic, from) { opener = from || btn; back.hidden = false; go(topic || "home"); }
+    function shut() { back.hidden = true; opener.focus(); }
+    back.addEventListener("click", function (e) {
+      var t = e.target.closest ? e.target.closest("[data-go]") : null;
+      if (t) go(t.getAttribute("data-go"));
+    });
+    backBtn.addEventListener("click", function () { go("home"); });
+    btn.addEventListener("click", function () { open(); });
+    document.getElementById("voiceStrip").addEventListener("click", function () { open("record", this); });
+    // a link such as index.html#parents-record opens that topic straight away
+    var m = /^#parents(?:-(\w+))?$/.exec(location.hash);
+    if (m) open(m[1]);
     close.addEventListener("click", shut);
     back.addEventListener("click", function (e) { if (e.target === back) shut(); });
     document.addEventListener("keydown", function (e) { if (e.key === "Escape" && !back.hidden) shut(); });
@@ -319,6 +494,8 @@
   loadGames();
 })();
 </script>
+<script src="shared/music.js"></script>
+<script src="shared/sound-panel.js"></script>
 <script src="shared/pwa.js"></script>
 </body>
 </html>

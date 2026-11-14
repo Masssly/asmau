@@ -199,7 +199,7 @@ s("e", "sea", "Pharaoh and his army rushed in after them. Then the sea came cras
   "Seen from far away on the shore: the two great walls of water crash together in a huge burst of foam and spray; no people visible, only the wild sea under a bright sky.", { mood: "dread", cue: "roar" });
 s("f0", "sea", "As the water closed over him, Pharaoh cried: I believe in the God that the Children of Israel believe in! But it was too late.", "=e", { mood: "dread" });
 s("f", "sea", "All his life he had been proud and cruel. Allah saved only his body, as a sign for the people who came after.",
-  "A lonely golden crown with blue stripes lies washed up on wet sand at the edge of a calm sea, small waves lapping around it, morning light.", { mood: "longing" });
+  "An empty sandy shore at the edge of a calm sea in the morning: a single tall blue-and-gold striped Nile-valley king's headdress (not a European crown) lies alone on the wet sand, small waves lapping around it. Nobody at all in the picture.", { mood: "longing" });
 s("g", "dawn", "The people were free! That day is called Ashura. Prophet Muhammad, peace be upon him, told the Muslims to fast on that day.",
   "On a sunny seashore, {FOLK} celebrate with raised hands, children dancing and playing in the sand, the calm sea sparkling behind them.", { src: HAD, mood: "triumph" });
 q("q", "dawn", "Who saved Musa and his people?", ["Allah", "✨"], ["A big boat", "⛵"], "No, there was no boat. Allah opened the sea for them.", { img: "g" });

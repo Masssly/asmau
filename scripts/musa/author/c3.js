@@ -82,7 +82,7 @@ s("a", "camp", "One day Musa told his people: Allah commands you to sacrifice a 
 s("b", "field", "Instead of doing as they were told, they asked: what kind of cow? Musa said: not too old, and not too young, but in between. Now do as you are told!",
   "A herd of very different cows in a dry pasture: a tiny young calf, a thin old grey cow, and several strong middle-sized cows; men stand scratching their heads.", { mood: "pastoral" });
 s("c", "field", "But they asked again: what colour? Musa said: a bright yellow cow, lovely to look at.",
-  "One beautiful golden-yellow cow with a glossy coat stands in sunlight in a pasture among brown, black and white cows.", { mood: "pastoral" });
+  "One beautiful golden-yellow cow with a glossy coat stands in sunlight in a pasture among brown, black and white cows. Only cows, no people.", { mood: "pastoral" });
 s("d", "field", "And they asked again: which one exactly? Musa said: a perfect cow, with no marks on it at all, one that has never pulled a plough or watered the fields.", "=c", { mood: "pastoral" });
 p("pick", "cow", "field", "Find the right cow: bright yellow, with no marks at all. Tap it.", { items: [{ icon: "🐄", n: 1, ok: true, cls: "cow-yellow", name: "the yellow cow" }, { icon: "🐄", n: 3, ok: false, name: "a spotted cow" }, { icon: "🐂", n: 2, ok: false, name: "a brown ox" }, { icon: "🐃", n: 2, ok: false, name: "a dark buffalo" }], mark: "✨" });
 s("e", "field", "At last they found it, and did as they were told. But they very nearly did not! And Allah used it to bring out a truth that some of them had been hiding.",
@@ -101,9 +101,9 @@ chapter("m22", "🚪", "The Holy Land", "5:20-26", [], [
 s("a", "desert", "Musa said: my people, remember the gifts Allah has given you. Go into the holy land that Allah has promised to you, and do not turn back.",
   "{MU} stands on a rocky rise pointing with his staff toward a green fertile valley with a walled town in the distance; {FOLK} stand behind him in the dry desert.", { mood: "trek" });
 s("b", "desert", "But they said: Musa, there are strong, frightening people in that land. We will not go in until they have left!",
-  "A group of men in earth-coloured clothes shake their heads and back away with their hands up, looking fearfully toward a distant walled town with a huge gate.", { mood: "dread" });
+  "A group of men in earth-coloured clothes shake their heads and back away with their hands up, looking fearfully toward a distant ancient walled town of rough stone and mud-brick on a dry hill, with a huge wooden gate (not a European castle, no towers with flags, no domes).", { mood: "dread" });
 s("c", "desert", "Two men who trusted Allah said: go in through the gate! If you go in, you will win. Put your trust in Allah.",
-  "Two brave men in simple robes step out in front of a nervous crowd, one pointing toward a huge distant town gate and one holding a hand to his heart.", { mood: "triumph" });
+  "Two brave men in simple robes step out in front of a nervous crowd, one pointing toward the huge wooden gate of a distant ancient walled town of rough stone and mud-brick on a dry hill (not a palace, no domes), and one holding a hand to his heart.", { mood: "triumph" });
 q("q", "desert", "What did the two brave men say?", ["Trust Allah, and go in", "🚪"], ["Run away and hide", "🏃"], "No. The two men said: go in through the gate, and put your trust in Allah.", { img: "c" });
 s("d", "desert", "But the people said: you and your Lord go and fight. We are staying right here.",
   "A crowd of men sit stubbornly on the ground beside their tents with arms folded, while {MU} and {HA} stand looking at them sadly.", { mood: "longing" });

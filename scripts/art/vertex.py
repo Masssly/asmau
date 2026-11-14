@@ -35,7 +35,8 @@ PROJECT = os.environ.get("PROJECT", "")
 KEY = os.environ.get("GOOGLE_API_KEY", "set-by-the-proxy")
 
 STYLE = ("Polished stylised 3D animated family-film still, warm cinematic lighting, rich detail, square picture, "
-         "main figures in the middle. Everyone is Black African with deep dark brown skin and modest long clothing. ")
+         "main figures in the middle. Everyone is Black African with deep dark brown skin and modest long clothing, "
+         "and every woman and girl wears a headscarf that fully covers her hair. ")
 BACKDROP = ("Polished stylised 3D animated family-film background painting, warm cinematic lighting, rich detail, square, "
             "filling the whole frame edge to edge with no border. A real, believable place in ancient North-East Africa and the Sinai, "
             "grounded and natural: no fantasy, no glowing crystals, no floating rocks, no autumn colours, no stained glass, no European "

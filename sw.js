@@ -20,10 +20,9 @@
 
 // BEGIN GENERATED
 const RELEASE = "2026.11.9";
-const BUILD = "cf694c1f2efb";
+const BUILD = "21e9bf8e6771";
 const SHELL = [
   "./",
-  ".gitignore",
   "app.webmanifest",
   "config.json",
   "fonts/fonts.css",

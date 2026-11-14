@@ -25,7 +25,7 @@ function walk(dir, out) {
   for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
     if (entry.isDirectory()) {
       if (!SKIP_DIRS.has(entry.name)) walk(path.join(dir, entry.name), out);
-    } else if (!SKIP_FILES.has(entry.name)) {
+    } else if (!SKIP_FILES.has(entry.name) && !entry.name.startsWith(".")) {   // hidden files (.gitignore ...) are not part of the site
       out.push(path.relative(ROOT, path.join(dir, entry.name)).split(path.sep).join("/"));
     }
   }

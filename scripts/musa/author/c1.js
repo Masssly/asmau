@@ -63,7 +63,7 @@ s("b", "river", "She said to Musa's big sister: follow him. So his sister watche
   "{SIS} walks along the reedy bank of {NILE}, peeking through tall reeds at a small wooden chest floating far off on the water; she pretends to carry a water jar.");
 p("trail", "follow", "river", "Follow the chest quietly along the bank. Tap each footprint.", { n: 7, icon: "👣", walker: "🧕" });
 s("c", "palace", "In the palace, baby Musa was hungry. He cried and cried. Nurse after nurse came to feed him, but he would not drink from any of them.",
-  "In a palace room, {ASIYA} rocks a crying {BABY} while a line of nurses in plain headscarves wait and shrug helplessly.", { cue: "cry" });
+  "In a palace room, {ASIYA} rocks a crying {BABY} while a line of nurses, all Black African women with deep dark brown skin, in plain headscarves wait and shrug helplessly.", { cue: "cry" });
 p("count", "nurses", "palace", "Try every nurse. Tap each one. Baby Musa says no, no, no!", { total: 5, icon: "🧕", got: "🙅" }, { img: "c" });
 s("d", "palace", "Then his sister stepped forward and said: shall I show you a family who will feed him, and take good care of him?",
   "{SIS} steps bravely forward in a palace courtyard and speaks up to {ASIYA}, who holds {BABY}; palace servants turn to look at the girl.");

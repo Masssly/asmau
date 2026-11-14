@@ -5,8 +5,8 @@
   "who": []
  },
  "bg-palace": {
-  "alt": "The inside of a grand ancient palace hall with painted columns, polished floor and hanging lamps.",
-  "scene": "The inside of a grand ancient palace hall with painted columns, polished floor and hanging lamps.",
+  "alt": "The inside of a grand ancient Nile-valley palace hall with thick painted papyrus-shaped columns, stone walls with painted bands, a polished stone floor and hanging oil lamps.",
+  "scene": "The inside of a grand ancient Nile-valley palace hall with thick painted papyrus-shaped columns, stone walls with painted bands, a polished stone floor and hanging oil lamps.",
   "who": []
  },
  "bg-city": {
@@ -30,8 +30,8 @@
   "who": []
  },
  "bg-night": {
-  "alt": "A rocky desert valley at night under a sky full of stars, with a dark mountain on one side.",
-  "scene": "A rocky desert valley at night under a sky full of stars, with a dark mountain on one side.",
+  "alt": "A quiet rocky desert valley at night under a sky full of stars, plain dark rocks and sand, a dark mountain on one side.",
+  "scene": "A quiet rocky desert valley at night under a sky full of stars, plain dark rocks and sand, a dark mountain on one side.",
   "who": []
  },
  "bg-fire": {
@@ -40,8 +40,8 @@
   "who": []
  },
  "bg-mountain": {
-  "alt": "A steep rocky mountain path high above the clouds at sunrise.",
-  "scene": "A steep rocky mountain path high above the clouds at sunrise.",
+  "alt": "A steep bare rocky desert mountain path of brown and grey granite at sunrise, with a few dry shrubs and wide desert below.",
+  "scene": "A steep bare rocky desert mountain path of brown and grey granite at sunrise, with a few dry shrubs and wide desert below.",
   "who": []
  },
  "bg-sea": {
@@ -60,8 +60,8 @@
   "who": []
  },
  "bg-dawn": {
-  "alt": "A golden sunrise over a calm sea and a sandy shore.",
-  "scene": "A golden sunrise over a calm sea and a sandy shore.",
+  "alt": "A golden sunrise over a calm sea and a plain sandy desert shore, with low brown hills behind.",
+  "scene": "A golden sunrise over a calm sea and a plain sandy desert shore, with low brown hills behind.",
   "who": []
  },
  "m1-a": {
@@ -167,8 +167,8 @@
   ]
  },
  "m4-c": {
-  "alt": "In a palace room, Queen Asiya rocks a crying baby Musa while a line of nurses in plain headscarves wait and shrug helplessly.",
-  "scene": "In a palace room, a kind queen in a teal silk headscarf with a thin gold circlet and a white-and-gold gown rocks a crying a chubby smiling baby boy wrapped in white cloth while a line of nurses in plain headscarves wait and shrug helplessly.",
+  "alt": "In a palace room, Queen Asiya rocks a crying baby Musa while a line of nurses, all Black African women with deep dark brown skin, in plain headscarves wait and shrug…",
+  "scene": "In a palace room, a kind queen in a teal silk headscarf with a thin gold circlet and a white-and-gold gown rocks a crying a chubby smiling baby boy wrapped in white cloth while a line of nurses, all Black African women with deep dark brown skin, in plain headscarves wait and shrug helplessly.",
   "who": [
    "ASIYA",
    "BABY"

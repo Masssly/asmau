@@ -49,7 +49,7 @@ PLAN = {
     "c9-b":  (10, "The brothers stand in a row of five in front and a row of five behind."),
     "c9-c":  (10, "Behind, in the middle distance and clearly visible, the ten brothers stand in two groups of five by their donkeys."),
     "c10-h0": (10, "The brothers stand in a row of five in front and a row of five behind."),
-    "c10-h": (10, "The brothers kneel in a front row of five and a back row of five, all of them to the left of the father."),
+    "c10-h": (10, "The ten brothers stand in a single straight row from the left edge to the right edge, with a little space between each of them."),
     "c10-g": (10, "The brothers stand in a row of five in front and a row of five behind; the teenage boy stands beside the father."),
     "c10-l1": (10, "The brothers stand in a row of five in front and a row of five behind; their youngest brother, a teenage boy in an orange-brown tunic, stands with them."),
     "c10-l2": (10, "The brothers stand in a row of five in front and a row of five behind."),
@@ -62,7 +62,7 @@ PLAN = {
     "c11-e": (10, "The brothers stand in a row of five in front and a row of five behind."),
     "c11-d": (10, "Five brothers crowd in on his left and five on his right."),
     "c12-a": (10, "The brothers stand in a row of five in front and a row of five behind; their youngest brother, a teenage boy in an orange-brown tunic, stands with them."),
-    "c12-c": (10, "The brothers kneel in a front row of five and a back row of five, all of them to the left of the father; their youngest brother, a teenage boy in an orange-brown tunic, kneels beside the father."),
+    "c12-c": (10, "The ten brothers stand in a single straight row from the left edge to the right edge, with a little space between each of them."),
     "c13-b": (10, "The ten bearded brothers bow in a row of five in front and a row of five behind, and their youngest brother, a young man in an orange-brown tunic, bows with them: eleven brothers in all."),
 }
 NOTE = (" The attached pictures show how the people look: draw them with the same faces, clothes and skin tone; the first one shows "

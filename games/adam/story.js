@@ -141,7 +141,7 @@ window.STORY = [
     steps: [
       {"say":"d9-a","scene":"desert","e":"🧑🏿 ⛰️"},
       {"say":"d9-b","scene":"desert","src":"Told in Sunni and Shia narrations","e":"🧑🏿 💛 🧕🏿"},
-      {"play":"journey","line":"d9-find","scene":"desert","opts":{"from":"⛰️","to":"💛","icon":"🧑🏿","steps":7,"img":"d9-b"}},
+      {"play":"journey","line":"d9-find","scene":"desert","opts":{"from":"⛰️","to":"💛","icon":"img:icon-adam","steps":7,"img":"d9-b"}},
       {"say":"d9-c","scene":"field","src":"From narrations in Majlisi's Hayat al-Qulub","e":"🧑🏿 🌱 ✨"},
       {"play":"count","line":"d9-plant","scene":"field","opts":{"total":7,"icon":"🟫","got":"🌱","img":"d9-c"}},
       {"say":"d9-d","scene":"field","e":"🌾 🏠"},

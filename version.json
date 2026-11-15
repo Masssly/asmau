@@ -1,14 +1,18 @@
 {
-  "version": "2026.11.21",
+  "version": "2026.11.22",
   "date": "2026-11-15",
-  "buildId": "79c3278da568",
+  "buildId": "3f6c3d971fca",
   "notes": [
-    "New: the story of Adam, 11 chapters from Sunni and Shia sources (its pictures are being drawn; for now its pages show icons)",
-    "New: Tap & Say for little ones: five pages of words in English and Arabic, and a Find it game",
-    "Yusuf: his prayer in the well. Musa: al-Khidr, the green one, and the boy who was kind to his father. Notes from Shia sources in both",
-    "Tap & Say has a West African page: the Tabaski ram, the kettle for wudu, the pen, the Ramadan drum, the turban and sandals"
+    "Adam now has all its pictures: 45 scenes, drawn to match approved designs of Adam, Hawwa and their sons"
   ],
   "history": [
+    {
+      "version": "2026.11.22",
+      "date": "2026-11-15",
+      "notes": [
+        "Adam now has all its pictures: 45 scenes, drawn to match approved designs of Adam, Hawwa and their sons"
+      ]
+    },
     {
       "version": "2026.11.21",
       "date": "2026-11-15",

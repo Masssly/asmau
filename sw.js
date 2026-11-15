@@ -19,8 +19,8 @@
 */
 
 // BEGIN GENERATED
-const RELEASE = "2026.11.20";
-const BUILD = "fb150bfc8618";
+const RELEASE = "2026.11.21";
+const BUILD = "d35ed42e0893";
 const SHELL = [
   "./",
   "app.webmanifest",
@@ -783,6 +783,7 @@ const MEDIA = {
   "games/musa/assets/img/m21-b.webp": "fec3ab5946",
   "games/musa/assets/img/m21-c.webp": "8a1268d494",
   "games/musa/assets/img/m21-d.webp": "440acd1e36",
+  "games/musa/assets/img/m21-d1.webp": "c143a1f9a7",
   "games/musa/assets/img/m21-e.webp": "c8bbf015d1",
   "games/musa/assets/img/m22-a.webp": "1323229423",
   "games/musa/assets/img/m22-b.webp": "1b169a83c9",
@@ -795,6 +796,7 @@ const MEDIA = {
   "games/musa/assets/img/m23-d.webp": "411f15d4bc",
   "games/musa/assets/img/m23-e.webp": "ac0888f848",
   "games/musa/assets/img/m23-f.webp": "d87582f459",
+  "games/musa/assets/img/m23-f1.webp": "d80737487d",
   "games/musa/assets/img/m23-g.webp": "bdb42c930d",
   "games/musa/assets/img/m23-g0.webp": "482819c097",
   "games/musa/assets/img/m24-a.webp": "ba90b4ca9c",
@@ -1304,6 +1306,7 @@ const MEDIA = {
   "games/yusuf/assets/img/c2-a.webp": "90584a31b0",
   "games/yusuf/assets/img/c2-a0.webp": "8cc7a11dfa",
   "games/yusuf/assets/img/c2-b.webp": "1da7adceea",
+  "games/yusuf/assets/img/c2-b1.webp": "5dbe1c48af",
   "games/yusuf/assets/img/c2-c.webp": "69f99fc9f3",
   "games/yusuf/assets/img/c2-d.webp": "a8b70eb066",
   "games/yusuf/assets/img/c2-p1.webp": "f7f36f9c6f",

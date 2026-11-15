@@ -32,7 +32,9 @@ module.exports = async function () {
     await p.keyboard.press("Escape");
     T.check(!(await p.locator("#parents").isVisible()), tag + ": Escape closes it");
     await p.click("a.tile"); await p.waitForLoadState("networkidle");
-    T.check((await p.title()).startsWith("Yusuf"), tag + ": the Yusuf card opens the game");
+    // the first card is the first game listed (the first prophet), which opens its game
+    const first = JSON.parse(require("fs").readFileSync(require("path").join(__dirname, "..", "games", JSON.parse(require("fs").readFileSync(require("path").join(__dirname, "..", "manifest.json"))).sections[0].games[0], "game.json")));
+    T.check((await p.title()).startsWith(first.title), tag + ": the first card (" + first.title + ") opens its game");
     T.check(errs.length === 0, tag + ": no page errors" + (errs[0] ? ": " + errs[0] : ""));
     await ctx.close();
   }

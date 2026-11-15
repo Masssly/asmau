@@ -21,6 +21,7 @@ window.STORY_ART = {
   "c2-p2": "Yaqub holds Yusuf close: he is afraid a wolf may come.",
   "c2-p3": "Morning: Yusuf goes out with his brothers.",
   "c2-b": "The brothers stand around a stone well.",
+  "c2-b1": "In the dark well, Yusuf prays with his hands raised.",
   "c2-w": "Yusuf stands on a stone in the well, looking up at the light.",
   "c2-c": "The brothers show their father the stained shirt.",
   "c2-s": "The stained shirt, held up: it is not torn anywhere.",

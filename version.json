@@ -1,11 +1,22 @@
 {
-  "version": "2026.11.20",
+  "version": "2026.11.21",
   "date": "2026-11-15",
-  "buildId": "6109078ebd0b",
+  "buildId": "d35ed42e0893",
   "notes": [
-    "New: the story of Adam, 11 chapters, from Sunni and Shia sources (pictures are coming; for now each page shows icons)"
+    "New: the story of Adam, 11 chapters from Sunni and Shia sources (its pictures are being drawn; for now its pages show icons)",
+    "New: Tap & Say for little ones: five pages of words in English and Arabic, and a Find it game",
+    "Yusuf: his prayer in the well. Musa: al-Khidr, the green one, and the boy who was kind to his father. Notes from Shia sources in both"
   ],
   "history": [
+    {
+      "version": "2026.11.21",
+      "date": "2026-11-15",
+      "notes": [
+        "New: the story of Adam, 11 chapters from Sunni and Shia sources (its pictures are being drawn; for now its pages show icons)",
+        "New: Tap & Say for little ones: five pages of words in English and Arabic, and a Find it game",
+        "Yusuf: his prayer in the well. Musa: al-Khidr, the green one, and the boy who was kind to his father. Notes from Shia sources in both"
+      ]
+    },
     {
       "version": "2026.11.20",
       "date": "2026-11-15",

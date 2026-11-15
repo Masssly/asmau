@@ -11,3 +11,5 @@ scripts/musa-art/out/old/
 scripts/asmau-art/cover.png
 scripts/yusuf-art/new/
 scripts/yusuf-art/bro/
+scripts/adam-art/refs/*.png
+scripts/adam-art/out/

@@ -9,7 +9,7 @@
  },
  "HAB": {
   "name": "the kind brother",
-  "look": "a gentle young shepherd with deep dark brown skin, short black hair and a small beard, in a sand-coloured tunic"
+  "look": "a gentle young shepherd with deep dark brown skin, short black hair and a small beard, in a long sand-coloured tunic that reaches his ankles"
  },
  "QAB": {
   "name": "the angry brother",
@@ -17,6 +17,6 @@
  },
  "SHITH": {
   "name": "Shith",
-  "look": "a calm, kind boy of about ten with deep dark brown skin and short black hair, in a cream tunic"
+  "look": "a calm, kind boy of about ten with deep dark brown skin and short black hair, in a long cream tunic that reaches his ankles"
  }
 }

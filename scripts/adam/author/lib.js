@@ -27,9 +27,9 @@ const WHO = {
   HAWWA: ["Hawwa", "a kind, graceful young woman with deep dark brown skin, a soft sage-green headscarf over her head and shoulders that fully covers her hair, and a long simple cream garment"],
   ANG:   ["the angels", "tall gentle beings made of soft white-gold light with great feathered wings, their faces hidden in glowing light"],
   IBL:   ["Iblis", "a tall shadowy shape made of dim smokeless red-orange flame and dark smoke, like a hooded figure of fire, with no face to be seen"],
-  HAB:   ["the kind brother", "a gentle young shepherd with deep dark brown skin, short black hair and a small beard, in a sand-coloured tunic"],
+  HAB:   ["the kind brother", "a gentle young shepherd with deep dark brown skin, short black hair and a small beard, in a long sand-coloured tunic that reaches his ankles"],
   QAB:   ["the angry brother", "a young farmer with deep dark brown skin, short black hair and a small beard, in a dark rust-red tunic"],
-  SHITH: ["Shith", "a calm, kind boy of about ten with deep dark brown skin and short black hair, in a cream tunic"],
+  SHITH: ["Shith", "a calm, kind boy of about ten with deep dark brown skin and short black hair, in a long cream tunic that reaches his ankles"],
   GARDEN:["the Garden", "a vast peaceful garden of tall fruit trees, clear streams, flowers and soft golden light, real and natural"],
   EARTH: ["the earth", "a wide valley of dry earth and rocky hills under a big sky"]
 };

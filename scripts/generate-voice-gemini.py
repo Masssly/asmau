@@ -14,6 +14,7 @@ To find this voice again for anything else, use exactly:
   model  gemini-2.5-flash-tts   (Vertex AI, project asmau-assets, location global)
   voice  Aoede                  (speechConfig.voiceConfig.prebuiltVoiceConfig.voiceName)
   style  the STYLE text below, put before the words as: STYLE + " Text: " + words
+         (for a line of four words or fewer: STYLE + " " + SHORT + " Text: " + words)
   output 24 kHz 16-bit mono PCM, made into mp3 (mono, 22 050 Hz, 32 kbit/s) with ffmpeg
 """
 import base64, hashlib, json, os, random, subprocess, sys, tempfile, time, urllib.error, urllib.request
@@ -29,10 +30,40 @@ STYLE = ("Read this aloud as a kind West African woman from Ghana or Nigeria, wi
 STYLE_AR = ("Say this Arabic word or phrase clearly, with correct Arabic pronunciation, gently and warmly, as a kind "
             "West African woman would say it to a young child.")
 SIG = MODEL + "|" + VOICE + "|" + STYLE + "|" + STYLE_AR
+# A line of one to four words is easily "continued" by the voice (it once made up a whole story after "Four"),
+# so short lines also get this, and every clip far longer than its words allow is made again (see too_long).
+SHORT = "Say only these words, exactly once, and then stop."
+SHORT_WORDS = 4
+
+
+def short(text):
+    return len(text.split()) <= SHORT_WORDS
+
+
+def too_long(seconds, text, arabic):
+    """True when a clip is much longer than its words could take at a slow storytelling pace."""
+    return seconds > (0.3 * len(text) + 3.0 if arabic else 0.14 * len(text) + 3.0)
+
+
+def seconds(pcm):
+    return len(pcm) / 48000.0                          # 24 kHz, 16-bit, mono
 
 
 def speak(text, arabic):
-    body = json.dumps({"contents": [{"role": "user", "parts": [{"text": (STYLE_AR if arabic else STYLE) + " Text: " + text}]}],
+    """The voice for one line; tried again (up to four times) while the clip is too long, keeping the shortest."""
+    best = None
+    for _ in range(4):
+        pcm = speak_once(text, arabic)
+        if best is None or len(pcm) < len(best):
+            best = pcm
+        if not too_long(seconds(best), text, arabic):
+            return best
+    raise RuntimeError("still too long after 4 tries (%.1f s)" % seconds(best))
+
+
+def speak_once(text, arabic):
+    style = (STYLE_AR if arabic else STYLE) + (" " + SHORT if short(text) else "")
+    body = json.dumps({"contents": [{"role": "user", "parts": [{"text": style + " Text: " + text}]}],
                        "generationConfig": {"responseModalities": ["AUDIO"],
                                             "speechConfig": {"voiceConfig": {"prebuiltVoiceConfig": {"voiceName": VOICE}}}}}).encode()
     url = vertex.endpoint().replace(vertex.MODEL, MODEL)
@@ -73,9 +104,10 @@ def main():
     memo = json.load(open(memo_path)) if os.path.exists(memo_path) and not redo else {}
     todo = []
     for l in lines:
-        sig = hashlib.sha1((SIG + "|" + l["text"]).encode()).hexdigest()[:12]
+        sig = hashlib.sha1((SIG + ("|" + SHORT if short(l["text"]) else "") + "|" + l["text"]).encode()).hexdigest()[:12]
         mp3 = os.path.join(out, l["id"] + ".mp3")
-        if memo.get(l["id"]) != sig or not os.path.exists(mp3):
+        if memo.get(l["id"]) != sig or not os.path.exists(mp3) or \
+                too_long(os.path.getsize(mp3) * 8 / 32000.0 - 0.25, l["text"], l.get("lang") == "ar"):   # 32 kbit/s
             todo.append((l, sig, mp3))
     failed = []
 

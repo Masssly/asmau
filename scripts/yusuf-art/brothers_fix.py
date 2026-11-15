@@ -22,17 +22,18 @@ KEEP = ("Keep everything else exactly as it is: the place, the light, the camera
 
 
 def add(n):
+    words = {1: "one", 2: "two", 3: "three"}
     return ("Edit this picture. Add exactly %s more grown bearded %s with deep dark brown skin, a short beard and a "
             "robe and turban in %s, standing or kneeling with the group of brothers in the same pose as them, fully "
-            "visible and not hidden behind anyone. %s" % ("one" if n == 1 else "two", "brother" if n == 1 else "brothers",
-                                                        " and ".join(COLOURS[:n]), KEEP)) + vertex.END
+            "visible and not hidden behind anyone. %s" % (words[n], "brother" if n == 1 else "brothers",
+                                                        ", ".join(COLOURS[:n]), KEEP)) + vertex.END
 
 
 def remove(n):
-    return ("Edit this picture. Remove %s from the group of brothers: the %s at the outer edge of the group. Fill the "
-            "space with the background so nobody looks missing. %s" % ("exactly one bearded brother" if n == 1 else
-                                                                       "exactly two bearded brothers",
-                                                                       "one" if n == 1 else "two", KEEP)) + vertex.END
+    words = {1: "one", 2: "two", 3: "three"}
+    return ("Edit this picture. Remove exactly %s bearded %s from the group of brothers: the %s at the outer edge of "
+            "the group. Fill the space with the background so nobody looks missing. %s"
+            % (words[n], "brother" if n == 1 else "brothers", words[n], KEEP)) + vertex.END
 
 
 TUNIC = ("Edit this picture. Change only the colour of the young boy's tunic: make it teal (blue-green) with cream trim, "
@@ -41,13 +42,15 @@ TUNIC = ("Edit this picture. Change only the colour of the young boy's tunic: ma
 
 def mend(log):
     # the latest try of each key that is still missing, with its count
-    last = {}
+    last = {}                            # the try closest to the right number (the later one if equal)
     for k, r, n in re.findall(r"^(\S+) try (\d+): (\d+) brothers", open(log).read(), re.M):
-        last[k] = (int(r) - 1, int(n))
+        r, n, t = int(r) - 1, int(n), brothers.PLAN[k][0]
+        if k not in last or abs(n - t) <= abs(last[k][1] - t):
+            last[k] = (r, n)
     jobs, want = [], {}
     for k, (r, n) in last.items():
         target = brothers.PLAN[k][0]
-        if os.path.exists(os.path.join(OUT, k + ".png")) or not 1 <= abs(n - target) <= 2:
+        if os.path.exists(os.path.join(OUT, k + ".png")) or not 1 <= abs(n - target) <= 3:
             continue
         src = os.path.join(TRY, "%s-%d.png" % (k, r))
         text = add(target - n) if n < target else remove(n - target)
@@ -72,8 +75,27 @@ def tunic(keys):
         print(k, "tunic redone;", got, "brothers")
 
 
+EDITS = {
+    "c9-c": ("Edit this picture. Change only the two women in the front filling the sacks: give both of them deep dark brown "
+             "skin, Black African, with their hair fully covered by their headscarves. " + KEEP + vertex.END),
+    "c10-c": ("Edit this picture. Change only the man in front who lifts the golden cup out of the sack: he is a palace guard, "
+              "not one of the brothers, so dress him in a leather breastplate over a short white kilt, with a plain dark "
+              "head-cloth instead of a turban and a short spear at his side; deep dark brown skin. " + KEEP + vertex.END),
+}
+
+
+def edit(keys):
+    jobs = [(k, os.path.join(TRY, k + "-edit.png"), EDITS[k], (os.path.join(OUT, k + ".png"),)) for k in keys]
+    vertex.run(jobs)
+    for k in keys:
+        p = os.path.join(TRY, k + "-edit.png")
+        print(k, "edited;", count.count(p).get("brothers") if os.path.exists(p) else None, "brothers")
+
+
 if __name__ == "__main__":
-    if sys.argv[1] == "tunic":
+    if sys.argv[1] == "edit":
+        edit(sys.argv[2:])
+    elif sys.argv[1] == "tunic":
         tunic(sys.argv[2:])
     else:
         mend(sys.argv[1])

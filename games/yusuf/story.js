@@ -21,7 +21,7 @@
   `src` on a step puts a small label on the scene saying where a detail comes
   from, when it is from a commentary and not from the verse itself.
 
-  Each chapter has `parent`: notes for the adult, shown under the scene. They
+  Each chapter's notes for the adult (shown under the scene) are in games/yusuf/parents/<n>.md. They
   say what the verses say beyond the child's version, name who a commentary
   is attributed to, and link to the verses. They paraphrase, they do not
   reproduce a translation.
@@ -29,10 +29,6 @@
 window.STORY = [
   {
     id: "c1", icon: "🌟", title: "The Dream", source: "12:4-6",
-    parent: [
-      "Yusuf tells his father about his dream, and his father warns him not to tell his brothers.",
-      "Who the stars, sun and moon stand for is not spelled out in the verses. The commentary reports that scholars including Ibn Abbas, Ad-Dahhak, Qatadah, Sufyan al-Thawri and Abd al-Rahman bin Zayd bin Aslam explained the eleven stars as his eleven brothers, and the sun and moon as his father and mother. The game tells children this in the last chapter."
-    ],
     steps: [
       { say: "c1-a", scene: "night", art: [["🌙", 80, 18, 50, "float"], ["⭐", 16, 22, 26, "twinkle"], ["⭐", 36, 12, 20, "twinkle"], ["⭐", 62, 14, 24, "twinkle"], ["P:yusuf", 50, 61, 100, "bob", { expr: "sleep" }], ["🛏️", 50, 79, 130], ["💤", 68, 40, 30, "float"]] },
       { play: "sky", line: "c1-do", scene: "night", opts: { mode: "bow" } },
@@ -43,15 +39,6 @@ window.STORY = [
   },
   {
     id: "c2", icon: "🐺", title: "The Jealous Brothers", source: "12:8-18",
-    parent: [
-      "The verses say one brother proposed killing Yusuf or banishing him, and another said not to kill him but to throw him into the well where a caravan might pick him up (12:9–10). The game says only that some wanted to get rid of him and one said not to hurt him.",
-      "'Joseph and his brother' are dearer to their father (12:8): the little brother is called Benjamin in the commentary; the verses do not name him, and neither does the game.",
-      "Verses 12:11–14. Before taking him, the brothers asked their father why he did not trust them with Yusuf, and asked to take him out the next day so that he would enjoy himself and play; they promised to look after him. Yaqub said it grieved him to let him go and that he feared a wolf would eat him while they were not paying attention; they answered that if a wolf ate him when there were so many of them, they would be losers. The commentary gives the same reason, 'so that we all enjoy ourselves and play', reported from Qatadah, Ad-Dahhak and As-Suddi. Some retellings add that the brothers said Yusuf stayed indoors too much and needed to grow strong; that is not in the verses or in the commentary, so the game does not say it. Notice with your child that the brothers later used the very thing their father had said he feared: the wolf.",
-      "Yaqub's answer, that patience is best and that he seeks Allah's help against what they describe (12:18), is kept.",
-      "In the well: the verse says Allah revealed to Yusuf that he would one day tell his brothers of this while they did not realise (12:15). The commentary explains this as comfort sent in his distress, and reports from Ibn Abbas that the brothers would not recognise him when he reminded them. The commentary relates that Yusuf stood on a stone in the water of the well; the picture shows that. The stone is from the commentary, not from the verse.",
-      "The shirt: the verse says they brought his shirt with false blood on it (12:18). The commentary says, citing Mujahid, As-Suddi and others, that the blood was a sheep's, and that the brothers forgot to tear the shirt, which is why Yaqub did not believe them. The untorn shirt, which the game turns into a question, is from the commentary, not from the verse.",
-      "Shia narrations add two things in the well: Yusuf's prayer, from al-Qummi's commentary, which the game uses ('O Lord of Ibrahim, Ishaq and Ya'qub, have mercy on my helplessness, weakness and tender age'); and Jibril coming to him with the news that Allah would raise him in honour (Imam al-Baqir)."
-    ],
     steps: [
       { say: "c2-0", scene: "dusk", art: [["P:yaqub", 60, 72, 96, "bob", { expr: "happy" }], ["P:yusuf", 38, 76, 70, "bob", { expr: "happy" }], ["P:benjamin", 24, 80, 56, "bob", { expr: "happy" }], ["💛", 48, 34, 40, "float"]] },
       { say: "c2-a0", scene: "desert", art: [["G:brothers", 40, 74, 200, "bob", { expr: "angry" }], ["💢", 30, 40, 34, "float"]] },
@@ -88,9 +75,6 @@ window.STORY = [
   },
   {
     id: "c3", icon: "💧", title: "The Well", source: "12:19-20",
-    parent: [
-      "A caravan sends someone to draw water, he lets down his bucket and finds a boy (12:19). The verses then say they hid him like merchandise and sold him for a small price (12:20), which the next chapter picks up. The bucket in the game is the one in the verse."
-    ],
     steps: [
       { say: "c3-a", scene: "desert", art: [["WELL", 26, 58, 140], ["P:traveller", 70, 70, 100, "bob", { expr: "happy" }], ["🐪", 90, 76, 52], ["🌴", 92, 50, 60]] },
       { play: "pull", line: "c3-do", scene: "well" },
@@ -101,11 +85,6 @@ window.STORY = [
   },
   {
     id: "c4", icon: "🐪", title: "Far From Home", source: "12:20-22",
-    parent: [
-      "Yusuf is sold for a few pieces of silver. The Egyptian who bought him tells his wife to look after him well (12:21), and when Yusuf reaches maturity Allah gives him judgement and knowledge (12:22).",
-      "The twenty coins: the verse says only 'a few dirhams' (12:20). The commentary gives the number as twenty dirhams, according to Abdullah bin Mas'ud, and says the same was reported from Ibn Abbas, Nawf al-Bikali, As-Suddi, Qatadah and Atiyah al-Awfi. The number in the counting game is from the commentary, not from the verse.",
-      "Who sold him: the commentary reports from Ibn Abbas, Mujahid and Ad-Dahhak that 'they sold him' refers to Yusuf's brothers, who sold him to the caravan. The game's wording does not say who sold him. The line that they did not know how precious he was follows Ad-Dahhak's comment, in the commentary, that they had no knowledge of his prophethood and rank with Allah."
-    ],
     steps: [
       { play: "count", line: "c4-count", scene: "desert", src: "Twenty coins: Ibn Kathir's tafsir", opts: { total: 20, after: "c4-counted", bg: "bg-market" } },
       { say: "c4-a", scene: "desert", art: [["🐪", 40, 74, 76, "walk"], ["P:yusuf", 40, 56, 42, "walk", { expr: "worried" }], ["☀️", 84, 18, 50]] },
@@ -118,12 +97,6 @@ window.STORY = [
   },
   {
     id: "c5", icon: "🕯️", title: "Patience in Prison", source: "12:23-35",
-    parent: [
-      "The verses are more explicit than the game. The woman of the house bolted the doors and called him to her (12:23); Yusuf refused, they raced for the door, and she tore his shirt from behind (12:25). The game says only that she tried to make him do something wrong.",
-      "The shirt test is in the verses: a member of her household suggested that a shirt torn at the front would mean she was telling the truth, and one torn at the back that Yusuf was (12:26–27). Her husband saw that it was torn at the back (12:28).",
-      "The women of the city (12:30–31): they gossiped that the governor's wife was trying to seduce her servant; she invited them to a banquet, gave each a knife, and told Yusuf to come out; stunned by his beauty they cut their hands and said he could not be mortal but must be a noble angel. The game keeps the banquet, the knives and their words, and says only that the women were 'gossiping'. That they were cutting fruit (citron) is from the commentary, reported from Ibn Abbas, Sa'id bin Jubayr, Mujahid, Al-Hasan, As-Suddi and others; the commentary quotes the authentic hadith that Yusuf 'was given half of all beauty'. Left out: her words in 12:32, that she had tried to seduce him and that he would be imprisoned if he did not obey her.",
-      "Kept: Yusuf's prayer that prison is better for him than what they ask (12:33–34), and the decision to imprison him even after the signs of his innocence had been seen (12:35)."
-    ],
     steps: [
       { say: "c5-a", scene: "palace", art: [["🚫", 22, 50, 56], ["P:yusufYouth", 52, 68, 96, "walk", { expr: "worried" }], ["🚪", 86, 58, 84]] },
       { say: "c5-b1", scene: "palace", art: [["🚪", 88, 58, 80], ["P:yusufYouth", 62, 70, 92, "bob", { expr: "scared" }], ["👕", 28, 54, 76, "float"], ["💢", 22, 28, 30, "float"]] },
@@ -150,11 +123,6 @@ window.STORY = [
   },
   {
     id: "c6", icon: "🍇", title: "Two Dreams", source: "12:36-42",
-    parent: [
-      "Yusuf first calls the two prisoners to worship Allah alone (12:37–40), then interprets the dreams (12:41).",
-      "The verse says the second prisoner would be crucified and birds would eat from his head. The game says only that he would be put to death. The commentary notes that Yusuf spoke without naming either man, to lessen the second man's grief; the game follows that gentleness.",
-      "The freed prisoner forgot to mention Yusuf to his master, so Yusuf stayed in prison for some years (12:42)."
-    ],
     steps: [
       { say: "c6-a", scene: "prison", art: [["P:yusufYouth", 50, 70, 90, "bob", { expr: "calm" }], ["P:prisoner1", 18, 74, 78, "bob", { expr: "worried" }], ["P:prisoner2", 82, 74, 78, "bob", { expr: "worried", flip: true }], ["🍇", 18, 42, 40, "float"], ["🍞", 80, 44, 36, "float"], ["🐦", 90, 26, 30, "float"]] },
       { say: "c6-b", scene: "prison", over: [["T:الله", 50, 16, 54]], art: [["T:الله", 50, 28, 60], ["P:yusufYouth", 50, 68, 100, "bob", { expr: "calm" }], ["P:prisoner1", 16, 78, 66, "bob", { expr: "calm" }], ["P:prisoner2", 84, 78, 66, "bob", { expr: "calm", flip: true }]] },
@@ -174,9 +142,6 @@ window.STORY = [
   },
   {
     id: "c7", icon: "🐄", title: "The King's Dream", source: "12:43-49",
-    parent: [
-      "The king dreams of seven fat cows eaten by seven lean ones, and of seven green ears of grain and seven withered ones. Yusuf's interpretation: seven years of sowing as usual with the harvest stored, seven hard years that use up the store, and then a year of abundant rain (12:47–49). The freed prisoner finally remembered Yusuf and asked to go and find out the meaning (12:45)."
-    ],
     steps: [
       { say: "c7-a", scene: "palace", art: [["P:king", 50, 22, 76, "bob", { expr: "sleep" }], ["🐄", 22, 56, 50], ["🐄", 38, 56, 50], ["🐄", 62, 56, 46, "thin"], ["🐄", 76, 56, 46, "thin"], ["🌾", 24, 84, 40], ["🌾", 38, 84, 40], ["🌾", 62, 84, 40, "dry"], ["🌾", 76, 84, 40, "dry"]] },
       { play: "pick", line: "c7-pick", scene: "field", opts: { items: [{ icon: "🐄", n: 7, ok: true, name: "fat cow" }, { icon: "🐄", n: 7, ok: false, cls: "thin", name: "thin cow" }] } },
@@ -188,11 +153,6 @@ window.STORY = [
   },
   {
     id: "c8", icon: "🔑", title: "Truth and Trust", source: "12:50-57",
-    parent: [
-      "When the king's messenger came, Yusuf asked first that the king look into what had happened (12:50). The commentary says he refused to leave prison until the king and his people declared his innocence. The king questioned the women; they said they knew no evil of Yusuf, and the woman of the house said the truth had come out and that Yusuf was among the truthful (12:51).",
-      "Verses 12:52–53 are left out of the game because scholars differ on who is speaking. The commentary favours them as the woman's words, and says Ibn Jarir al-Tabari and Ibn Abi Hatim took them as Yusuf's. Some translations put them in Yusuf's mouth. Read them with your child, and with a scholar if you wish.",
-      "The king then trusted Yusuf (12:54), and Yusuf asked to be put in charge of the storehouses (12:55)."
-    ],
     steps: [
       { say: "c8-a1", scene: "prison", art: [["P:yusufYouth", 50, 66, 100, "bob", { expr: "calm" }], ["BARS", 0, 0, 1], ["👑", 82, 22, 46, "float"], ["✉️", 18, 24, 40, "float"]] },
       { say: "c8-a2", scene: "palace", art: [["P:king", 28, 66, 100, "bob", { expr: "neutral" }], ["P:woman1", 64, 72, 92, "bob", { expr: "sad" }], ["P:woman2", 90, 78, 66, "bob", { expr: "neutral", flip: true }], ["❓", 28, 30, 34, "float"], ["💡", 64, 30, 40, "float"]] },
@@ -217,10 +177,6 @@ window.STORY = [
   },
   {
     id: "c9", icon: "⚖️", title: "The Brothers Come", source: "12:58-62",
-    parent: [
-      "The hard years: Yusuf foretold seven hard years after the seven good ones (12:47–48). The verses go straight from his appointment to his brothers' arrival (12:58); the game adds one line saying the hard years had come, so that a child knows why the brothers travelled.",
-      "Yusuf recognised his brothers but they did not recognise him (12:58). He asked them to bring their other brother, and had their goods put back into their saddlebags (12:59–62)."
-    ],
     steps: [
       { say: "c9-0", scene: "grey", art: [["☀️", 82, 16, 50, "float"], ["🥀", 20, 70, 50], ["🥀", 40, 76, 44], ["⛺", 66, 56, 100], ["P:yaqub", 66, 76, 80, "bob", { expr: "sad" }]] },
       { say: "c9-a", scene: "desert", art: [["G:brothers", 34, 74, 180, "walk", { expr: "neutral" }], ["🐪", 62, 74, 56], ["🏛️", 88, 48, 80]] },
@@ -233,11 +189,6 @@ window.STORY = [
   },
   {
     id: "c10", icon: "🏆", title: "The King's Cup", source: "12:63-79",
-    parent: [
-      "The gates: Yaqub told his sons not to enter by one gate but by different gates, adding that he could not protect them from anything Allah had decreed and that he put his trust in Allah (12:67). The verse does not give his reason. The commentary reports from Ibn Abbas, Muhammad bin Ka'b, Mujahid, Ad-Dahhak, Qatadah, As-Suddi and others that he feared the evil eye for them. The game shows the gates and leaves the reason for you to explain.",
-      "Yaqub let Benjamin go only after his sons swore to bring him back (12:63–66). Yusuf told Benjamin privately that he was his brother (12:69), and the king's cup was put in Benjamin's pack (12:70). The verse says Yusuf searched the other bags first and then his brother's, where he found the cup (12:76), so the game keeps that order: the cup is in the last bag on purpose. The same verse says this was a plan Allah devised for Yusuf.",
-      "The brothers' own rule (12:74–76): asked what the penalty should be if one of them was lying, the brothers said the one in whose bag the cup was found would be held as the penalty, 'this is how we punish wrongdoers'. The verse says Yusuf could not have held his brother under the king's law. The commentary says this was the law of Prophet Ibrahim, that a thief be handed to the one he stole from, and reports from Ad-Dahhak and others that it was not the law of the king of Egypt. The verse's word for the penalty is servitude; the game says 'must stay behind'."
-    ],
     steps: [
       { say: "c10-h0", scene: "dusk", art: [["P:yaqub", 64, 72, 96, "bob", { expr: "worried" }], ["G:brothers", 30, 78, 170, "bob", { expr: "neutral" }]] },
       { play: "change", line: "c10-hdo", scene: "dusk", opts: { img: "c10-h", states: [{ icon: "SACK", line: null }, { icon: "💰", line: "c10-hdo-s1", glow: true }] } },
@@ -257,12 +208,6 @@ window.STORY = [
   },
   {
     id: "c11", icon: "💛", title: "“I Am Yusuf”", source: "12:80-92",
-    parent: [
-      "Yaqub's eyes went white with grief (12:84), yet he told his sons not to despair of Allah's mercy (12:87). When the brothers came again, Yusuf asked whether they understood what they had done, and revealed himself (12:89–90). The brothers admitted they had been in the wrong (12:91). Yusuf said there would be no reproach that day and asked Allah to forgive them (12:92).",
-      "Going home and coming back (12:81–88): the brothers told their father his son had stolen; he answered that patience is best and that Allah might bring them all back to him (12:83), then turned away grieving for Yusuf (12:84). On their third journey they told Yusuf that hardship had struck them and their family, that they had brought little money, and asked him to give full measure and be charitable (12:88).",
-      "The eldest brother (12:78–80): the brothers asked Yusuf to take one of them instead, because their father was very old; he said it would be unjust to take anyone but the one with whom the cup was found. The eldest then reminded the others of their solemn promise to their father and of how they had failed over Yusuf, and said he would not leave the land until his father gave him leave or Allah decided for him. So nine went home. The verse does not name him, and the commentators differ on who he was, so the game does not name him either.",
-      "A Shia narration (Imam Zayn al-Abidin) says the family's long trial followed a night when a fasting believer was turned away hungry from Ya'qub's door at iftar; the translator notes that the man's plea never reached Ya'qub himself. The Imam fed everyone who came to his door, for fear of such a trial. The game does not tell this."
-    ],
     steps: [
       { say: "c11-v0", scene: "egypt", art: [["G:brothers", 34, 78, 170, "bob", { expr: "sad" }], ["🙏", 70, 40, 44, "float"]] },
       { say: "c11-v", scene: "egypt", art: [["G:brothers", 34, 78, 170, "bob", { expr: "sad" }], ["P:b1", 76, 72, 96, "bob", { expr: "worried" }], ["🤝", 76, 34, 40, "float"]] },
@@ -286,10 +231,6 @@ window.STORY = [
   },
   {
     id: "c12", icon: "👕", title: "The Shirt", source: "12:93-98",
-    parent: [
-      "Yusuf sent his shirt to be laid over his father's face (12:93). Yaqub said he could smell Yusuf (12:94), and when the shirt was laid on his face his sight returned (12:96). The brothers asked him to seek forgiveness for them, and he said he would (12:97–98).",
-      "The wind: the verse says that when the caravan departed, Yaqub said he could sense the scent of Yusuf (12:94). The commentary reports, through Abd al-Razzaq, that Ibn Abbas said a wind began to blow and carried the scent of the shirt to Yaqub from a distance of eight days' travel. The wind in the game's telling is from this report, not from the verse."
-    ],
     steps: [
       { say: "c12-a", scene: "egypt", art: [["👕", 34, 42, 90, "float"], ["P:yusufMan", 72, 66, 104, "bob", { expr: "calm" }]] },
       { say: "c12-b", scene: "grey", art: [["⛺", 38, 56, 110], ["P:yaqub", 38, 74, 96, "bob", { expr: "surprised" }], ["🌬️", 74, 34, 56, "float"], ["✨", 86, 24, 28, "float"]] },
@@ -301,13 +242,6 @@ window.STORY = [
   },
   {
     id: "c13", icon: "🌙", title: "The Dream Comes True", source: "12:99-101",
-    parent: [
-      "Yusuf welcomed his parents to Egypt, they all bowed down before him, and he said this was the fulfilment of his dream (12:99–100). He ends with a prayer (12:101), which the game keeps.",
-      "The bowing: The commentary says that, according to Qatadah and other scholars, prostrating to people of authority as a greeting was allowed in the laws of earlier prophets and was later prohibited, and that in Islam prostration is for Allah alone. It is worth explaining this to a child, so the scene is not read as an example to follow.",
-      "Scholars differ on whether Yusuf's mother was still alive. As-Suddi and Abd al-Rahman bin Zayd bin Aslam said his parents were his father and his maternal aunt; Muhammad bin Ishaq and Ibn Jarir al-Tabari said both parents were alive (the commentary). The game says only 'his parents'.",
-      "The stars, sun and moon: see chapter 1 for the explanation attributed to Ibn Abbas and others, which the game gives children here.",
-      "Imam al-Sadiq (in Majlisi's Hayat al-Qulub) explains the bow as thanks to Allah."
-    ],
     steps: [
       { say: "c13-a", scene: "egypt", art: [["🐪", 12, 78, 50], ["🏛️", 40, 42, 90], ["P:yaqub", 58, 72, 96, "bob", { expr: "happy" }], ["P:yusufMan", 82, 68, 96, "bob", { expr: "happy", flip: true }], ["💛", 70, 30, 40, "float"]] },
       { play: "sky", line: "c13-do", scene: "night", opts: { mode: "gather" } },

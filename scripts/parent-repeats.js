@@ -34,7 +34,7 @@ function runShared(a, b, n) {
 }
 function check(dir) {
   const story = load(dir), items = [];
-  story.forEach((ch) => (ch.parent || []).forEach((p) => sentences(p).forEach((s) => items.push({ ch: ch.id, s, k: keyw(s) }))));
+  story.forEach((ch, i) => (require("./parent-notes").read(dir, i + 1) || []).forEach((p) => sentences(p).forEach((s) => items.push({ ch: ch.id, s, k: keyw(s) }))));
   const found = [];
   for (let i = 0; i < items.length; i++) for (let j = i + 1; j < items.length; j++) {
     const a = items[i], b = items[j];
@@ -45,7 +45,7 @@ function check(dir) {
   }
   return found;
 }
-const dirs = process.argv.slice(2).length ? process.argv.slice(2) : ["games/yusuf", "games/musa", "games/nana-asmau"];
+const dirs = process.argv.slice(2).length ? process.argv.slice(2) : ["games/adam", "games/yusuf", "games/musa", "games/nana-asmau"];
 let total = 0;
 for (const dir of dirs) {
   const f = check(dir); total += f.length;

@@ -157,7 +157,10 @@ for (const slug of slugs) {
     if (ch.source === undefined && typeof ch.cite === "string" && ch.cite.trim()) { /* a history chapter */ }
     else if (!REF.test(ch.source || "")) fail(dir + ": " + here + " has a bad Qur'an reference '" + ch.source + "' (or give a 'cite' for a chapter from history)");
     for (const r of ch.more || []) if (!REF.test(r)) fail(dir + ": " + here + " has a bad Qur'an reference '" + r + "' in 'more'");
-    if (!Array.isArray(ch.parent) || !ch.parent.length || ch.parent.some((p) => typeof p !== "string" || !p.trim())) fail(dir + ": " + here + " needs notes for parents");
+    // the parents' notes are a plain text file per chapter (games/<slug>/parents/<n>.md), editable on GitHub
+    if (ch.parent !== undefined) fail(dir + ": " + here + " still has its notes inside story.js; they belong in parents/" + (ci + 1) + ".md");
+    const notes = require("./parent-notes").read(dir, ci + 1);
+    if (!notes || !notes.length) fail(dir + "/parents/" + (ci + 1) + ".md: missing or empty (every chapter needs notes for parents)");
     if (!Array.isArray(ch.steps) || !ch.steps.length) { fail(dir + ": " + here + " has no steps"); return; }
 
     const artCheck = (art, where) => {

@@ -10,10 +10,6 @@
 window.STORY = [
   {
     id: "a1", icon: "👶🏿", title: "Two Babies in Degel", cite: "Boyd and Mack, The Collected Works of Nana Asma'u (1997): the introduction and the outline chronology",
-    parent: [
-      "Nana Asma'u was born in about 1793 in Degel, a village north-west of Sokoto in what is now northern Nigeria, a twin; her brother was Hassan. Her birth year is worked out from her age when she died, so it is 'about'. Source: Boyd and Mack, The Collected Works of Nana Asma'u (1997), drawing on the Sokoto historian Waziri Junaidu.",
-      "Twins were customarily named Hassan and Hussain, after the Prophet's ﷺ grandsons, so she would have been Hussaina. Her father, the Shehu Usman dan Fodio, a scholar and teacher, chose instead to name her after Asma bint Abi Bakr. Same source; also Wikipedia."
-    ],
     steps: [
       {"say":"a1-a","scene":"dusk","amb":"night","e":"👶🏿 👶🏿 🌙"},
       {"say":"a1-b","scene":"dusk","e":"🧔🏿 👶🏿"},
@@ -24,10 +20,6 @@ window.STORY = [
   },
   {
     id: "a2", icon: "🎀", title: "The Girl with Two Belts", cite: "Sahih al-Bukhari 2979 and 3907",
-    parent: [
-      "Asma bint Abi Bakr was a Companion of the Prophet ﷺ and the daughter of Abu Bakr. When the Prophet ﷺ and Abu Bakr left Makkah for Madinah, she prepared their food and water. Having nothing else to tie them with, she cut her waistband in two, tying the water-skin with one piece and the food with the other; so she was called 'the one with the two belts' (Dhat an-Nitaqayn). Sahih al-Bukhari 2979 and 3907.",
-      "Asma bint Abi Bakr is shown only from behind and by her hands. The Prophet ﷺ and Abu Bakr are mentioned, not shown."
-    ],
     steps: [
       {"say":"a2-a","scene":"night","e":"🌙 🏠"},
       {"say":"a2-b","scene":"night","src":"From a hadith in al-Bukhari","e":"💧 🍞 🎗️"},
@@ -39,10 +31,6 @@ window.STORY = [
   },
   {
     id: "a3", icon: "📖", title: "Learning at Home", cite: "Boyd and Mack, The Collected Works of Nana Asma'u (1997): the introduction and the outline chronology",
-    parent: [
-      "Her mother died when she was small (the source gives 1795 and marks the date as uncertain). She was brought up by her father's wives Aisha and Hauwa; Hauwa was the mother of her brother Muhammad Bello. Source: Boyd and Mack, Collected Works, outline chronology.",
-      "She learned the Qur'an by heart while young (Collected Works, introduction). Learning to write on a wooden board, washed clean and used again, is how children there learned and still learn; the sources do not describe her own lessons, so the game says 'like children there still do'."
-    ],
     steps: [
       {"say":"a3-a","scene":"field","e":"👩🏿 👧🏿 💛"},
       {"say":"a3-b","scene":"field","e":"👧🏿 👦🏿 📖"},
@@ -55,10 +43,6 @@ window.STORY = [
   },
   {
     id: "a4", icon: "🚶🏿", title: "The Journey", cite: "Boyd and Mack, The Collected Works of Nana Asma'u (1997): the introduction and the outline chronology",
-    parent: [
-      "On 21 February 1804 the Shehu and his community left Degel for Gudu: the hijra, or emigration, that began the jihad, years of war against the rulers of Gobir (1804 to 1808). Asma'u was about eleven. Source: Collected Works, outline chronology. She later wrote about these years in poems, among them 'The Journey'.",
-      "The game says only that the family had to leave their home and walk to a new place. It says only that 'it was no longer safe' for them; the conflict with the rulers of Gobir, the war and its losses are left for parents (next chapter's note)."
-    ],
     steps: [
       {"say":"a4-a","scene":"desert","e":"🚶🏿 🚶🏿 🌅"},
       {"play":"sort","line":"a4-pack","scene":"desert","opts":{"bins":[{"label":"Take it","icon":"🎒"},{"label":"Too heavy","icon":"🪨"}],"things":[{"icon":"💧","label":"A pot of water","bin":0},{"icon":"🛏️","label":"A big wooden bed","bin":1},{"icon":"📖","label":"Their books","bin":0},{"icon":"🌾","label":"A bag of grain","bin":0},{"icon":"🚪","label":"The front door","bin":1}],"wrong":"a4-pack-no"}},
@@ -68,11 +52,6 @@ window.STORY = [
   },
   {
     id: "a5", icon: "🤲🏿", title: "Hard Years", cite: "Boyd and Mack, The Collected Works of Nana Asma'u (1997): the introduction and the outline chronology",
-    parent: [
-      "The years after 1804 were years of war (the Sokoto jihad, 1804 to 1808), with battles and heavy losses on both sides; Muhammad Bello wrote that about two thousand of the Shehu's people were killed at Tsuntsuwa in 1804. Source: Collected Works, outline chronology and notes.",
-      "The game says only that 'there was fighting' and shows the women's work at home. According to the same source, women of the community organised food for the army, brought up orphans, gave out goods to the poor and taught. Captives and enslavement, part of this history, are not told to children.",
-      "Talk with older children about how war hurts families, and about the women who cared for others in it."
-    ],
     steps: [
       {"say":"a5-a","scene":"grey","e":"☁️ 😢"},
       {"say":"a5-b","scene":"camp","e":"🍲 🥣 🤲🏿"},
@@ -83,10 +62,6 @@ window.STORY = [
   },
   {
     id: "a6", icon: "🏘️", title: "A New Town", cite: "Boyd and Mack, The Collected Works of Nana Asma'u (1997): the introduction and the outline chronology",
-    parent: [
-      "In 1807 Asma'u married Usman Gidado, a close friend of her brother Muhammad Bello; Gidado later became vizier (chief minister). In 1809 she went to live in Sokoto, the new town built by Bello. Her first son, Abdulkadir, was born about 1810. Source: Collected Works, outline chronology.",
-      "She ran a household of several hundred people, seeing that they had food, clothing and shelter (Collected Works, introduction)."
-    ],
     steps: [
       {"say":"a6-a","scene":"egypt","amb":"crowd","e":"👩🏿 🧔🏿 🏘️"},
       {"play":"build","line":"a6-home","scene":"egypt","opts":{"n":12,"icon":"🧱","cols":4}},
@@ -96,10 +71,6 @@ window.STORY = [
   },
   {
     id: "a7", icon: "📜", title: "Saving the Books", cite: "Boyd and Mack, The Collected Works of Nana Asma'u (1997): the introduction and the outline chronology",
-    parent: [
-      "On 20 April 1817 the Shehu died; that November her twin Hassan died too. Asma'u and Gidado then collected all the Shehu's papers and had them copied. Source: Collected Works, outline chronology.",
-      "She wrote elegies, poems of mourning, for many of the people she lost (Collected Works)."
-    ],
     steps: [
       {"say":"a7-a","scene":"dusk","e":"👩🏿 🤲🏿 🕯️"},
       {"say":"a7-b","scene":"dusk","e":"📜 📜 🧺"},
@@ -110,10 +81,6 @@ window.STORY = [
   },
   {
     id: "a8", icon: "✒️", title: "Words in Four Languages", cite: "Boyd and Mack, The Collected Works of Nana Asma'u (1997): the introduction and the outline chronology",
-    parent: [
-      "Her first written work, The Way of the Pious, dates from 1820. She knew four languages, Arabic, Fulfulde, Hausa and Tamasheq, and wrote in the first three, using Arabic letters for all of them (ajami), so that people who did not read Arabic could learn. More than sixty of her works survive. Sources: Collected Works; Wikipedia.",
-      "In 1829 she wrote a poem that names every sura of the Qur'an, made to be easy to remember (Collected Works, chronology and introduction; Yaqeen Institute). The game's activity uses the first four suras in their order in the Qur'an."
-    ],
     steps: [
       {"say":"a8-a","scene":"palace","e":"👩🏿 ✒️ 📜"},
       {"say":"a8-b","scene":"palace","e":"👩🏿 📖 👩🏿"},
@@ -124,11 +91,6 @@ window.STORY = [
   },
   {
     id: "a9", icon: "👒", title: "The Teacher of Teachers", cite: "Boyd and Mack, The Collected Works of Nana Asma'u (1997): the introduction and the outline chronology; Wikipedia",
-    parent: [
-      "Asma'u trained women leaders called jaji, who came to her to learn and then taught women in their homes and villages, mostly through poems that were easy to remember. Their groups were called the 'Yan Taru, 'those who come together', the sisterhood. Each jaji wore a tall hat, the malfa, as a sign of her office. Sources: Collected Works; Wikipedia.",
-      "The sources differ on when this began: Wikipedia says from about 1830, another summary says 1840. The game gives no year. The same sources say the network also began as a way to bring women captured in the wars into the community; the game does not tell children this.",
-      "The 'Yan Taru still meet today."
-    ],
     steps: [
       {"say":"a9-a","scene":"egypt","e":"👩🏿 👒 👒"},
       {"say":"a9-b","scene":"egypt","e":"👒 ✨"},
@@ -142,10 +104,6 @@ window.STORY = [
   },
   {
     id: "a10", icon: "🏠", title: "Mother of the Town", cite: "Boyd and Mack, The Collected Works of Nana Asma'u (1997): the introduction and the outline chronology",
-    parent: [
-      "From about the 1830s Asma'u was known as 'Uwar Gari', mother of the town (Collected Works). She advised the rulers who followed her brother Bello, and wrote poems of guidance for them (Wikipedia; Collected Works).",
-      "She wrote elegies for those she lost, among them her brother Bello, her husband Gidado and her close friend Aisha (Collected Works)."
-    ],
     steps: [
       {"say":"a10-a","scene":"egypt","amb":"crowd","e":"👩🏿 🤝🏿 🏠"},
       {"play":"sort","line":"a10-good","scene":"egypt","opts":{"bins":[{"label":"Kind","icon":"💛"},{"label":"Not kind","icon":"💢"}],"things":[{"icon":"🤝🏿","label":"Helping a neighbour","bin":0},{"icon":"😤","label":"Shouting at a friend","bin":1},{"icon":"🍲","label":"Sharing your food","bin":0},{"icon":"📖","label":"Teaching what you know","bin":0},{"icon":"🙈","label":"Laughing at someone","bin":1}],"wrong":"a10-good-no","img":"a10-a"}},
@@ -154,10 +112,6 @@ window.STORY = [
   },
   {
     id: "a11", icon: "🌟", title: "Remembered Today", cite: "Boyd and Mack, The Collected Works of Nana Asma'u (1997): the introduction and the outline chronology; Wikipedia",
-    parent: [
-      "Nana Asma'u died in 1864 (some sources give 1865), aged about seventy. Schools, women's organisations and meeting halls in northern Nigeria are named after her. Source: Wikipedia; Collected Works.",
-      "This website is named after her."
-    ],
     steps: [
       {"say":"a11-a","scene":"dawn","e":"👵🏿 📖 👧🏿"},
       {"say":"a11-b","scene":"dawn","e":"🏫 👧🏿 📖"},

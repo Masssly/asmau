@@ -409,3 +409,13 @@ to date.
 | Yusuf | 3–9 (under 5 with a grown-up) | Surah Yusuf, 12:4–101 — the whole story in 13 chapters |
 | Musa | 3–10 (under 5 with a grown-up) | Surah Al-Qasas 28:3–43 and Ta-Ha 20:9–98, with passages from surahs 2, 5, 7, 10, 18, 26, 40 and 66 — 25 chapters |
 | Nana Asma'u (folder `nana-asmau`) | 4–10 (under 5 with a grown-up) | History, not the Qur'an: Boyd & Mack, *Collected Works of Nana Asma'u* (1997) and other named sources (`scripts/asmau/RESEARCH.md`) — 11 chapters |
+
+## Editing the parents' notes
+
+Each chapter's "For parents" notes are a plain text file: `games/<game>/parents/<chapter>.md`, for example
+`games/yusuf/parents/2.md` for chapter 2 of Yusuf. On GitHub, open the file, click the pencil, edit, and
+commit. Keep one empty line between paragraphs; the first line (starting with `#`) only says which chapter
+it is. The change reaches players with the next release.
+
+Every page in a story shows its number on the folded "For parents" line under it: "page 2.3" is chapter 2,
+page 3. Use it to say which page you mean.

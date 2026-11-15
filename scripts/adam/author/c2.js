@@ -5,11 +5,7 @@ const { chapter, s, p, q, ord, srt, line, BOTH, NAR, portrait } = require("./lib
 const ADAM_PIC = portrait("adam", "ADAM");
 const ADAM = require("fs").existsSync(require("path").join(__dirname, "..", "..", "..", "games", "adam", "assets", "img", "icon-adam.webp")) ? ADAM_PIC : "🧑";
 
-chapter("d7", "🍃", "The Whisper", "7:20-22", ["20:115", "20:120-121"], [
-  "'He forgot' is 20:115; the same passage also says 'Adam disobeyed his Lord' (20:121). How to understand this differs. In the hadith of intercession quoted in the commentary, Adam remembers his error and is ashamed before his Lord. Al-Tabatabai's al-Mizan says the command was 'only an advice', given before any law, so the eating was 'neither a sin ... nor an injustice against Allah'; Shia narrations call it leaving the better (tark al-awla) before prophethood (Imam al-Rida). The game uses the Qur'an's own words: he forgot, they ate, they were sorry, and they were forgiven.",
-  "The verses say their nakedness became exposed to them (7:22, 20:121). The game says only that they felt ashamed and covered themselves with leaves, and the pictures show the leaves, not the people.",
-  "Al-Tabatabai calls the stories of a serpent and a peacock helping Iblis 'extremely unreliable'; the game leaves them out."
-]);
+chapter("d7", "🍃", "The Whisper", "7:20-22", ["20:115", "20:120-121"], null);
 s("a", "garden", "But Iblis came creeping with a whisper. He said: Allah only told you not to eat from this tree so that you would not become angels, or live for ever.",
   "In {GARDEN} near the great tree, a faint wisp of {IBL} curls like smoke behind a bush and whispers toward {ADAM} and {HAWWA}, who stand listening, unsure.", { mood: "tense" });
 s("b", "garden", "And he swore: I am only giving you good advice! But it was a lie.",
@@ -26,10 +22,7 @@ srt("listen", "grey", "Good things and bad whispers. Which do we do, and which d
   ["😠", "Hit your brother", 1], ["💛", "Help at home", 0], ["🍪", "Take a sweet without asking", 1]
 ], "That one is a bad whisper. Say no to it, and do the good things.", { img: "e" });
 
-chapter("d8", "🤲", "Sorry", "7:23", ["2:37", "20:122"], [
-  "The 'words' Adam received (2:37): the commentary reports from many early scholars that they are the prayer of 7:23, which the game uses, and from Ibn Abbas a conversation in which Adam asks for Allah's mercy. Al-Tabatabai prefers other words, which al-Kafi gives from the fifth or sixth Imam: 'There is no god except Thee; Glory be to Thee, O Allah! and praise! I have committed evil and been unjust to myself; therefore, forgive me.' Other narrations, Shia (al-Kafi) and Sunni (al-Suyuti's al-Durr al-Manthur), have Adam ask by the right of the Prophet Muhammad ﷺ, the Shia ones also by the right of Ali, Fatimah, al-Hasan and al-Husayn.",
-  "Iblis blamed Allah: 'because You have put me in the wrong' (7:16). Adam and Hawwa blamed no one but themselves (7:23). The game draws that difference for children."
-]);
+chapter("d8", "🤲", "Sorry", "7:23", ["2:37", "20:122"], null);
 s("a", "dusk", "Adam and Hawwa were very, very sorry. They did not blame anyone else. They prayed: our Lord, we have wronged ourselves. If You do not forgive us and have mercy on us, we will be lost.",
   "{ADAM} and {HAWWA} kneel side by side on the grass at dusk, heads bowed and hands raised in prayer, the great tree dark behind them.", { mood: "longing" });
 ord("dua", "dusk", "Say Adam and Hawwa's prayer. Tap the parts in order.", [
@@ -42,10 +35,7 @@ s("b", "dawn", "And Allah forgave them. Allah is the Ever-Relenting, the Most Me
 p("hold", "sorry", "dawn", "Say sorry to Allah from the heart. Press and hold the hands until they shine.", { ms: 3000, icon: "🤲", hint: "Press and hold", done: "Allah is the Most Merciful" }, { img: "b" });
 q("q", "dawn", "What did Adam and Hawwa do after their mistake?", ["Said sorry to Allah", "🤲"], ["Blamed someone else", "👉"], "They blamed no one. They said sorry to Allah, and He forgave them.", { img: "b" });
 
-chapter("d9", "🌾", "Life on Earth", "7:24-25", ["2:36-38"], [
-  "Where they came down: the commentary reports Adam in India or between Mecca and Ta'if, and Hawwa near Jeddah; a Shia narration (al-Qummi, quoted in al-Mizan) puts Adam on al-Safa and Hawwa on al-Marwa. The game says only that they came down apart and found each other again near Mecca.",
-  "Jibril teaching Adam to farm and to pray is from Imam al-Baqir, in Majlisi's Hayat al-Qulub."
-]);
+chapter("d9", "🌾", "Life on Earth", "7:24-25", ["2:36-38"], null);
 s("a", "desert", "Then Allah said: go down to the earth. There you will live, for a time. And when My guidance comes, whoever follows it will have nothing to fear.",
   "{ADAM}, now in simple brown woven clothes, stands alone on a rocky hill on the wide dry earth, looking up at the big sky.", { mood: "trek" });
 s("b", "desert", "It is told that Adam and Hawwa came down to the earth far apart, and later found each other again, near Mecca.",
@@ -58,11 +48,7 @@ s("d", "field", "Adam and Hawwa worked hard, and Allah blessed their fields. Eve
   "A golden wheat field at evening; {ADAM} and {HAWWA} in brown woven clothes carry bundles of wheat toward a simple stone house, smiling.", { mood: "pastoral" });
 p("pick", "harvest", "field", "Gather only the ripe golden wheat.", { items: [{ icon: "🌾", n: 6, ok: true, name: "ripe wheat" }, { icon: "🌱", n: 3, ok: false, name: "a young shoot" }], mark: "✨" }, { img: "d" });
 
-chapter("d10", "🐑", "Two Brothers", "5:27-31", ["5:32"], [
-  "The Qur'an does not name the brothers. Tradition calls them Habil and Qabil (Abel and Cain), as do Shia narrations (Imam Zayn al-Abidin). The game does not name them.",
-  "The verse says 'he killed him' (5:30). The game says the angry brother hurt him so badly that he died, and no picture shows the harm. The lesson of 5:32 is told without its opening words ('We decreed to the Children of Israel').",
-  "If your child is very young, you can skip this chapter; the next one does not need it."
-]);
+chapter("d10", "🐑", "Two Brothers", "5:27-31", ["5:32"], null);
 s("a", "field", "Adam and Hawwa had many children. One day, two of their sons each brought a gift to offer to Allah.",
   "{HAB} carries his best young lamb in his arms and {QAB} carries a small basket of grain, both walking up a green hill in the morning.");
 s("b", "field", "Allah accepted the gift of one brother, because he was mindful of Allah. But the other brother's gift was not accepted, and he became jealous and angry.",
@@ -81,10 +67,7 @@ srt("kind", "dawn", "Be like the good brother. Which is kind, and which is unkin
   ["😒", "Staying jealous and angry", 1], ["🧸", "Making up after a fight", 0], ["👊", "Hitting back", 1]
 ], "Let's be like the good brother: kind, even when others are not.", { img: "f" });
 
-chapter("d11", "🌍", "Children of Adam", "7:26", ["7:27"], [
-  "Shith (Seth), Adam's son after Habil and his successor, called Hibatullah, and Adam's bequest to him: Imam al-Baqir and Imam al-Sadiq, in Majlisi's Hayat al-Qulub.",
-  "7:27 warns the children of Adam not to let Satan seduce them 'as he did your parents'."
-]);
+chapter("d11", "🌍", "Children of Adam", "7:26", ["7:27"], null);
 s("a", "field", "Allah gave Adam and Hawwa another son, called Shith. He was good and wise, and he learned everything his father taught him.",
   "{ADAM}, older now with grey in his beard, sits under a tree teaching {SHITH}, who listens closely; {HAWWA} smiles nearby.", { src: NAR });
 s("b", "dusk", "Adam taught all his children to remember Allah, to pray, and to be kind to one another.",

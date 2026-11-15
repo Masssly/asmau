@@ -5,10 +5,7 @@ const GIRL = portrait("girl", "GIRL"), TEACHER = portrait("jaji", "JAJI");
 
 const C_CW = "Boyd and Mack, The Collected Works of Nana Asma'u (1997): the introduction and the outline chronology";
 
-chapter("a1", "👶🏿", "Two Babies in Degel", C_CW, [], [
-  "Nana Asma'u was born in about 1793 in Degel, a village north-west of Sokoto in what is now northern Nigeria, a twin; her brother was Hassan. Her birth year is worked out from her age when she died, so it is 'about'. Source: Boyd and Mack, The Collected Works of Nana Asma'u (1997), drawing on the Sokoto historian Waziri Junaidu.",
-  "Twins were customarily named Hassan and Hussain, after the Prophet's ﷺ grandsons, so she would have been Hussaina. Her father, the Shehu Usman dan Fodio, a scholar and teacher, chose instead to name her after Asma bint Abi Bakr. Same source; also Wikipedia."
-]);
+chapter("a1", "👶🏿", "Two Babies in Degel", C_CW, [], null);
 s("a", "dusk", "Long ago, in a village called Degel, in West Africa, two babies were born on the same day. They were twins: a boy and a girl.",
   "Evening in {DEGEL}. Inside a simple round room, two newborn babies with deep dark brown skin, wrapped in white and cream cloths, lie side by side on a woven mat. Kneeling beside them are only two smiling women in long dresses with large headscarves that fully cover their hair, ears and neck, one in plum and one in orange. A soft oil lamp glows.", { mood: "nile", amb: "night" });
 s("b", "dusk", "Their father was a kind and wise teacher, called the Shehu. He named the boy Hassan.",
@@ -18,10 +15,7 @@ s("c", "dusk", "Twins were usually called Hassan and Hussaina. But the Shehu gav
 q("q", "dusk", "What did the Shehu name his baby girl?", ["Asma'u", "👧🏿"], ["Hussaina", "🍼"], "Not Hussaina. He chose a special name for her: Asma'u.", { img: "c" });
 p("memory", "mem", "dusk", "Twins come in pairs! Find the pairs.", { icons: ["👶🏿", "🌙", "⭐", "🏠", "🐐", "🌴"] });
 
-chapter("a2", "🎀", "The Girl with Two Belts", "Sahih al-Bukhari 2979 and 3907", [], [
-  "Asma bint Abi Bakr was a Companion of the Prophet ﷺ and the daughter of Abu Bakr. When the Prophet ﷺ and Abu Bakr left Makkah for Madinah, she prepared their food and water. Having nothing else to tie them with, she cut her waistband in two, tying the water-skin with one piece and the food with the other; so she was called 'the one with the two belts' (Dhat an-Nitaqayn). Sahih al-Bukhari 2979 and 3907.",
-  "Asma bint Abi Bakr is shown only from behind and by her hands. The Prophet ﷺ and Abu Bakr are mentioned, not shown."
-]);
+chapter("a2", "🎀", "The Girl with Two Belts", "Sahih al-Bukhari 2979 and 3907", [], null);
 s("a", "night", "Why Asma'u? She was named after a brave young woman who lived long before, in the time of the Prophet, peace be upon him: Asma, the daughter of Abu Bakr.",
   "Night in an old desert town of flat-roofed houses under a starry sky. A young woman in a long dark-blue dress and headscarf, seen only from behind, carries a bundle of food and a leather water-skin along a quiet lane.", { mood: "longing" });
 s("b", "night", "When the Prophet and her father set off on a long journey, Asma packed their food and water. But there was nothing to tie the bags with!",
@@ -35,10 +29,7 @@ mat("match", "night", "Match each piece of the belt to what it tied.", [
 ]);
 s("d", "dusk", "Asma was brave, clever, and always ready to help. That is the name the Shehu gave his little girl.", "Dusk in {DEGEL}: {GIRL} stands tall and smiling in the doorway of a round mud-brick house, a water jar on her hip, ready to help, while {SHEHU} watches her proudly from a mat nearby.", { mood: "wonder" });
 
-chapter("a3", "📖", "Learning at Home", C_CW, [], [
-  "Her mother died when she was small (the source gives 1795 and marks the date as uncertain). She was brought up by her father's wives Aisha and Hauwa; Hauwa was the mother of her brother Muhammad Bello. Source: Boyd and Mack, Collected Works, outline chronology.",
-  "She learned the Qur'an by heart while young (Collected Works, introduction). Learning to write on a wooden board, washed clean and used again, is how children there learned and still learn; the sources do not describe her own lessons, so the game says 'like children there still do'."
-]);
+chapter("a3", "📖", "Learning at Home", C_CW, [], null);
 s("a", "field", "When Asma'u was very small, her mother died. But she was not alone. Aisha and Hauwa, who lived in the Shehu's house, loved her and brought her up.",
   "Morning in a family compound in {DEGEL}. {AISHA} kneels and hugs {GIRL} warmly; another woman in an orange headscarf smiles beside them. Chickens, a clay pot, a baobab tree.", { mood: "longing" });
 s("b", "field", "In the Shehu's house, everybody learned. Girls learned, and boys learned. Like children there still do, Asma'u wrote her lessons on a wooden board.",
@@ -50,10 +41,7 @@ s("c", "field", "Day by day, verse by verse, Asma'u learned the whole Qur'an by 
 p("count", "verses", "field", "Learn a little every day. Tap each star to learn one more.", { total: 10, icon: "⭐", got: "🌟" });
 q("q", "field", "Who learned in the Shehu's house?", ["Girls and boys", "👧🏿👦🏿"], ["Only the boys", "👦🏿"], "No. In the Shehu's house, girls and boys learned together.", { img: "b" });
 
-chapter("a4", "🚶🏿", "The Journey", C_CW, [], [
-  "On 21 February 1804 the Shehu and his community left Degel for Gudu: the hijra, or emigration, that began the jihad, years of war against the rulers of Gobir (1804 to 1808). Asma'u was about eleven. Source: Collected Works, outline chronology. She later wrote about these years in poems, among them 'The Journey'.",
-  "The game says only that the family had to leave their home and walk to a new place. It says only that 'it was no longer safe' for them; the conflict with the rulers of Gobir, the war and its losses are left for parents (next chapter's note)."
-]);
+chapter("a4", "🚶🏿", "The Journey", C_CW, [], null);
 s("a", "desert", "When Asma'u was about eleven years old, it was no longer safe for the Shehu's people in their village. So her family and all their friends had to leave, and travel to a new place.",
   "Dawn on a dusty savanna road. A long line of {FOLK} walk away from {DEGEL}, carrying bundles on their heads and leading donkeys; {GIRL} walks holding the hand of {AISHA}.", { mood: "trek" });
 srt("pack", "desert", "What should they carry on a long walk? Something useful, or something too heavy?", ["Take it", "🎒"], ["Too heavy", "🪨"], [
@@ -63,11 +51,7 @@ p("journey", "walk", "desert", "Walk with Asma'u to the new place.", { from: "�
 s("b", "camp", "The walk was long and hard. But Asma'u looked, and listened, and remembered. Many years later she wrote poems about those journeys.",
   "Evening at a simple camp of grass shelters in the savanna. {GIRL} sits by a small fire, writing on a wooden board on her knees, while families rest around her.", { mood: "longing" });
 
-chapter("a5", "🤲🏿", "Hard Years", C_CW, [], [
-  "The years after 1804 were years of war (the Sokoto jihad, 1804 to 1808), with battles and heavy losses on both sides; Muhammad Bello wrote that about two thousand of the Shehu's people were killed at Tsuntsuwa in 1804. Source: Collected Works, outline chronology and notes.",
-  "The game says only that 'there was fighting' and shows the women's work at home. According to the same source, women of the community organised food for the army, brought up orphans, gave out goods to the poor and taught. Captives and enslavement, part of this history, are not told to children.",
-  "Talk with older children about how war hurts families, and about the women who cared for others in it."
-]);
+chapter("a5", "🤲🏿", "Hard Years", C_CW, [], null);
 s("a", "grey", "Those were hard years. There was fighting, and many people were hurt or lost their homes.",
   "A grey, cloudy sky over a camp of grass shelters; {FOLK} sit close together, sad and tired, some with bandaged arms; a woman comforts a crying child.", { mood: "dread" });
 s("b", "camp", "The women of the community did not give up. They cooked food for everyone, cared for children who had lost their parents, and shared with people who had nothing.",
@@ -76,10 +60,7 @@ p("count", "bowls", "camp", "Help share the food. Tap each bowl to give it to so
 s("c", "camp", "Asma'u helped too. She learned that caring for others is part of being a good Muslim.", "In a camp under a big tree, close up: {GIRL} kneels and gently hands a bowl of food to a frail old woman sitting on a mat, both smiling; a small child sits beside the old woman.", { mood: "triumph" });
 q("q", "camp", "What did the women do in the hard years?", ["Cared for others and shared", "🤲🏿"], ["Hid and did nothing", "🙈"], "No. They cooked, cared for children, and shared what they had.", { img: "b" });
 
-chapter("a6", "🏘️", "A New Town", C_CW, [], [
-  "In 1807 Asma'u married Usman Gidado, a close friend of her brother Muhammad Bello; Gidado later became vizier (chief minister). In 1809 she went to live in Sokoto, the new town built by Bello. Her first son, Abdulkadir, was born about 1810. Source: Collected Works, outline chronology.",
-  "She ran a household of several hundred people, seeing that they had food, clothing and shelter (Collected Works, introduction)."
-]);
+chapter("a6", "🏘️", "A New Town", C_CW, [], null);
 s("a", "egypt", "When the fighting was over, a new town was built, called Sokoto. Asma'u married a good man called Gidado, and they made their home there.",
   "Bright day in {SOKOTO}. {ASMA} and {GIDADO} stand together at the doorway of a large mud-brick family house, smiling warmly at neighbours who greet them.", { mood: "triumph", amb: "crowd" });
 p("build", "home", "egypt", "Help build the new home, brick by brick.", { n: 12, icon: "🧱", cols: 4 });
@@ -89,10 +70,7 @@ srt("care", "egypt", "Everyone needs something. Is it food, or is it clothes?", 
   ["🍚", "A bowl of rice", 0], ["🧣", "A warm scarf", 1], ["🍞", "Fresh bread", 0], ["👗", "A new dress", 1], ["🥛", "A cup of milk", 0]
 ], "Think again. Do you eat it, or wear it?", { img: "b" });
 
-chapter("a7", "📜", "Saving the Books", C_CW, [], [
-  "On 20 April 1817 the Shehu died; that November her twin Hassan died too. Asma'u and Gidado then collected all the Shehu's papers and had them copied. Source: Collected Works, outline chronology.",
-  "She wrote elegies, poems of mourning, for many of the people she lost (Collected Works)."
-]);
+chapter("a7", "📜", "Saving the Books", C_CW, [], null);
 s("a", "dusk", "When Asma'u was grown up, her father the Shehu died. A few months later, her twin brother Hassan died too. Asma'u was very sad.",
   "Evening in a quiet room in {SOKOTO}. {ASMA} sits alone by a window with her hands raised in prayer, a calm sad face, an oil lamp beside her.", { mood: "longing" });
 s("b", "dusk", "But she knew what to do. Her father had written many books. With Gidado, she gathered every page, so that nothing he wrote would be lost.",
@@ -106,10 +84,7 @@ ord("ord", "dusk", "How did they save the books? Tap in order.", [
   ["🤲🏿", "Share them", "And then people everywhere could read them."]
 ], "Not that one yet. What comes first?");
 
-chapter("a8", "✒️", "Words in Four Languages", C_CW, [], [
-  "Her first written work, The Way of the Pious, dates from 1820. She knew four languages, Arabic, Fulfulde, Hausa and Tamasheq, and wrote in the first three, using Arabic letters for all of them (ajami), so that people who did not read Arabic could learn. More than sixty of her works survive. Sources: Collected Works; Wikipedia.",
-  "In 1829 she wrote a poem that names every sura of the Qur'an, made to be easy to remember (Collected Works, chronology and introduction; Yaqeen Institute). The game's activity uses the first four suras in their order in the Qur'an."
-]);
+chapter("a8", "✒️", "Words in Four Languages", C_CW, [], null);
 s("a", "palace", "Asma'u loved words. She could speak four languages! And she wrote poems: more than sixty of them.",
   "A calm study room in {SOKOTO} with a window onto palm trees. {ASMA} sits at a low desk writing with a reed pen; stacks of handwritten pages, books and an ink pot around her. Only lines on the pages, no readable writing.", { mood: "wonder" });
 s("b", "palace", "Not everyone could read Arabic. So Asma'u wrote her poems in the languages people spoke at home, using Arabic letters, so that everyone could learn.",
@@ -123,11 +98,7 @@ ord("suras", "palace", "Asma'u's poem helped people remember the suras. Can you 
   ["4️⃣", "An-Nisa", "An-Nisa, The Women."]
 ], "Not that one yet. Which sura comes first in the Qur'an?");
 
-chapter("a9", "👒", "The Teacher of Teachers", C_CW + "; Wikipedia", [], [
-  "Asma'u trained women leaders called jaji, who came to her to learn and then taught women in their homes and villages, mostly through poems that were easy to remember. Their groups were called the 'Yan Taru, 'those who come together', the sisterhood. Each jaji wore a tall hat, the malfa, as a sign of her office. Sources: Collected Works; Wikipedia.",
-  "The sources differ on when this began: Wikipedia says from about 1830, another summary says 1840. The game gives no year. The same sources say the network also began as a way to bring women captured in the wars into the community; the game does not tell children this.",
-  "The 'Yan Taru still meet today."
-]);
+chapter("a9", "👒", "The Teacher of Teachers", C_CW + "; Wikipedia", [], null);
 s("a", "egypt", "Asma'u had a big idea. Many women lived far away in villages, and could not come to Sokoto to learn. So she trained teachers!",
   "{ASMA} sits on a mat in a shaded courtyard in {SOKOTO}, teaching a group of women teachers who listen closely, each wearing a tall woven straw hat tied with red cloth over her headscarf.", { mood: "awe" });
 s("b", "egypt", "The teachers were called jaji. Each one wore a tall, special hat, so that everyone knew: here comes a teacher!",
@@ -141,10 +112,7 @@ s("d", "field", "Then the women in the villages taught their own children, and t
 p("catch", "lamps", "night", "Light the lamps, one from the next! Tap each lamp.", { target: 8, icon: "🪔", into: "✨" });
 q("q", "field", "What did Asma'u's teachers do?", ["Taught women in the villages", "🛖"], ["Kept the lessons to themselves", "🔒"], "No. They took the lessons home, and taught everyone they could.", { img: "d" });
 
-chapter("a10", "🏠", "Mother of the Town", C_CW, [], [
-  "From about the 1830s Asma'u was known as 'Uwar Gari', mother of the town (Collected Works). She advised the rulers who followed her brother Bello, and wrote poems of guidance for them (Wikipedia; Collected Works).",
-  "She wrote elegies for those she lost, among them her brother Bello, her husband Gidado and her close friend Aisha (Collected Works)."
-]);
+chapter("a10", "🏠", "Mother of the Town", C_CW, [], null);
 s("a", "egypt", "People called Asma'u 'Uwar Gari': the mother of the town. Women came to her for help, and even the leaders asked for her advice.",
   "{ASMA} sits in a busy courtyard in {SOKOTO} listening kindly to a worried young mother holding a baby, while other women and a man in a turban wait to speak with her.", { mood: "pastoral", amb: "crowd" });
 srt("good", "egypt", "Asma'u taught people to be good. Is it a kind thing to do, or not kind?", ["Kind", "💛"], ["Not kind", "💢"], [
@@ -153,10 +121,7 @@ srt("good", "egypt", "Asma'u taught people to be good. Is it a kind thing to do,
 s("b", "egypt", "She had good friends, and she loved them dearly. When people she loved died, she wrote poems so that they would be remembered.",
   "{ASMA} and another woman in a plum headscarf sit together on a mat under a tree, laughing and sharing a bowl of dates.", { mood: "longing" });
 
-chapter("a11", "🌟", "Remembered Today", C_CW + "; Wikipedia", [], [
-  "Nana Asma'u died in 1864 (some sources give 1865), aged about seventy. Schools, women's organisations and meeting halls in northern Nigeria are named after her. Source: Wikipedia; Collected Works.",
-  "This website is named after her."
-]);
+chapter("a11", "🌟", "Remembered Today", C_CW + "; Wikipedia", [], null);
 s("a", "dawn", "Asma'u lived to be about seventy years old. All her life, she learned, and she taught.",
   "Golden morning in {SOKOTO}. {OLD} sits on a mat surrounded by girls and women of all ages reading and reciting, smiling peacefully.", { mood: "awe" });
 s("b", "dawn", "Today, more than a hundred and fifty years later, the women's groups she started still meet. And schools are named after her: Nana Asma'u.",

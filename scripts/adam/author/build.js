@@ -56,8 +56,7 @@ lib.STORY.forEach((ch) => {
 
 const head = "/*\n  The Adam story: chapters -> steps. WRITTEN BY scripts/adam/author/build.js from the\n  chapter files beside it. Change those, not this file.\n\n  A step is { say, scene, pic?, src?, amb?, fx?, cue? } (a narrated picture) or\n  { play, line, scene, opts } (something to do). See games/yusuf/story.js and\n  shared/story-engine.js for what each field means. `more` lists the other passages\n  a chapter draws on, beside its main `source`.\n*/\n";
 const body = "window.STORY = [\n" + lib.STORY.map((ch) =>
-  "  {\n    id: " + JSON.stringify(ch.id) + ", icon: " + JSON.stringify(ch.icon) + ", title: " + JSON.stringify(ch.title) + (ch.source ? ", source: " + JSON.stringify(ch.source) : "") + ", more: " + JSON.stringify(ch.more) + (ch.cite ? ", cite: " + JSON.stringify(ch.cite) : "") + ",\n    parent: [\n" +
-  ch.parent.map((x) => "      " + JSON.stringify(x)).join(",\n") + "\n    ],\n    steps: [\n" +
+  "  {\n    id: " + JSON.stringify(ch.id) + ", icon: " + JSON.stringify(ch.icon) + ", title: " + JSON.stringify(ch.title) + (ch.source ? ", source: " + JSON.stringify(ch.source) : "") + ", more: " + JSON.stringify(ch.more) + (ch.cite ? ", cite: " + JSON.stringify(ch.cite) : "") + ",\n    steps: [\n" +
   ch.steps.map((st) => "      " + JSON.stringify(st)).join(",\n") + "\n    ]\n  }").join(",\n") + "\n];\n";
 const moods = "\n/* Music for single lines; everything else uses its scene's music (sceneMood in game.js). */\nwindow.STORY_MOODS = " + JSON.stringify(lib.MOODS, null, 0).replace(/","/g, '", "') + ";\n";
 fs.writeFileSync(path.join(GAME, "story.js"), head + body + moods);

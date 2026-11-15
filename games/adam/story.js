@@ -10,10 +10,6 @@
 window.STORY = [
   {
     id: "d1", icon: "✨", title: "Someone New", source: "2:30-33", more: [],
-    parent: [
-      "'Successor' (khalifa) is told as 'someone new, to look after the earth'.",
-      "The angels' question is a question, not a refusal: when they could not name the things Allah showed them they said, 'We have knowledge only of what You have taught us' (2:32). The game tells that part in chapter 4."
-    ],
     steps: [
       {"say":"d1-a","scene":"heaven","e":"✨ ☁️ ✨"},
       {"say":"d1-b","scene":"heaven","e":"🌍 ✨"},
@@ -24,10 +20,6 @@ window.STORY = [
   },
   {
     id: "d2", icon: "🟤", title: "Made from Earth", source: "15:28-29", more: ["38:71-72","3:59"],
-    parent: [
-      "Earth of every kind: al-Tirmidhi and Abu Dawud report that Adam was made from a handful taken from all of the earth, so his children came like the earth, of many colours, some gentle and some rough. The Shia narrations give the same from Imam Ali: Adam was made 'from the soil of all the surface of the earth'.",
-      "The pictures in Asmau show everyone dark-skinned; the lesson about colours is told in words and shown with the earth itself."
-    ],
     steps: [
       {"say":"d2-a","scene":"desert","src":"Told in Sunni and Shia narrations","e":"🟤 🟫 🟠"},
       {"play":"build","line":"d2-gather","scene":"desert","opts":{"n":8,"icon":"🟤","cols":4,"img":"d2-a"}},
@@ -39,11 +31,6 @@ window.STORY = [
   },
   {
     id: "d3", icon: "🤲", title: "First Words", more: [], cite: "Ibn Abbas in Ibn Kathir's commentary on 2:37; al-Bukhari and Muslim; Majlisi, Hayat al-Qulub",
-    parent: [
-      "The sneeze: in the commentary on 2:37, Ibn Abbas has Adam remind Allah, 'when I sneezed You said, May Allah grant you His mercy'. The Shia narrations give the same: Adam said 'al-hamdu lillah' and was answered 'yarhamuk Allah'.",
-      "The greeting: al-Bukhari and Muslim report that Allah told Adam to greet a group of angels and to listen to their answer, which would be the greeting of his children. The Shia narrations give the same greeting.",
-      "Neither is in the Qur'an."
-    ],
     steps: [
       {"say":"d3-a","scene":"dawn","src":"Told in Sunni and Shia narrations","e":"🧑🏿 🤧 ✨"},
       {"say":"d3-b","scene":"dawn","src":"Told in Sunni and Shia narrations","e":"🧑🏿 💛"},
@@ -55,10 +42,6 @@ window.STORY = [
   },
   {
     id: "d4", icon: "🦁", title: "The Names", source: "2:31-33", more: [],
-    parent: [
-      "The commentary reports from Ibn Abbas that 'the names' are the names people use for everything, of every kind; al-Bukhari's hadith of intercession has people say to Adam, 'Allah ... taught you the names of everything'.",
-      "Al-Tabatabai's al-Mizan reads the named things as 'sublime creations, hidden from the heavens and the earth'. The game keeps to the plain meaning both share: Allah taught Adam what the angels did not know."
-    ],
     steps: [
       {"say":"d4-a","scene":"heaven","e":"🧑🏿 🦁 🐪"},
       {"play":"match","line":"d4-homes","scene":"heaven","opts":{"pairs":[{"a":"d4-homes-a1","aIcon":"🐪","aLabel":"Camel","b":"d4-homes-b1","bIcon":"🏜️","bLabel":"Desert"},{"a":"d4-homes-a2","aIcon":"🐟","aLabel":"Fish","b":"d4-homes-b2","bIcon":"🌊","bLabel":"Sea"},{"a":"d4-homes-a3","aIcon":"🐦","aLabel":"Bird","b":"d4-homes-b3","bIcon":"🪺","bLabel":"Nest"},{"a":"d4-homes-a4","aIcon":"🐝","aLabel":"Bee","b":"d4-homes-b4","bIcon":"🌸","bLabel":"Flower"}],"img":"d4-a"}},
@@ -70,11 +53,6 @@ window.STORY = [
   },
   {
     id: "d5", icon: "🔥", title: "The Proud One", source: "2:34", more: ["7:11-18","15:30-42","38:73-85","18:50"],
-    parent: [
-      "Iblis 'was one of the jinn' (18:50), made from fire (7:12). The commentary calls the bow Allah honouring Adam; al-Tabatabai's al-Mizan says the angels bowed to Adam 'as he was the symbol of humanity'. It is a bow of respect at Allah's command, not worship.",
-      "Iblis's vow to come at people 'from their front and their back, from their right and their left' is 7:17; 'you will have no power over My servants' is 15:42.",
-      "Asking Allah for protection (a'udhu billahi min ash-shaytan ir-rajim) is not in these verses; the game adds it as what children can do."
-    ],
     steps: [
       {"say":"d5-a","scene":"heaven","e":"✨ 🙇🏿 🧑🏿"},
       {"say":"d5-b","scene":"heaven","e":"🔥 🙅🏿"},
@@ -87,11 +65,6 @@ window.STORY = [
   },
   {
     id: "d6", icon: "🌳", title: "The Garden", source: "2:35", more: ["7:19","20:117-119","4:1"],
-    parent: [
-      "How Hawwa was made is told in two ways. The commentary reports, from Ibn Ishaq and 'the People of the Book', that she was made from Adam's rib while he slept. Narrations of the Imams of Ahl al-Bayt say she was made from the clay left over from Adam (Imam al-Baqir), and al-Tabatabai's al-Mizan prefers that. The Qur'an says Allah made his mate 'from it', the single soul (4:1). The game says only that Allah made Hawwa for Adam.",
-      "The tree is not named in the Qur'an. The commentary quotes al-Tabari: 'We do not know which tree that was.' Shia narrations call it wheat or a vine (Imam al-Rida: 'both traditions are true'). The game names no fruit.",
-      "The Garden: the commentary says most scholars place it in the heavens; al-Tabatabai says it was 'in the heaven, although it was not the Garden of eternal abode'."
-    ],
     steps: [
       {"say":"d6-a","scene":"garden","e":"🧑🏿 🌸 🧕🏿"},
       {"say":"d6-b","scene":"garden","e":"🌳 🍎 🦌"},
@@ -103,11 +76,6 @@ window.STORY = [
   },
   {
     id: "d7", icon: "🍃", title: "The Whisper", source: "7:20-22", more: ["20:115","20:120-121"],
-    parent: [
-      "'He forgot' is 20:115; the same passage also says 'Adam disobeyed his Lord' (20:121). How to understand this differs. In the hadith of intercession quoted in the commentary, Adam remembers his error and is ashamed before his Lord. Al-Tabatabai's al-Mizan says the command was 'only an advice', given before any law, so the eating was 'neither a sin ... nor an injustice against Allah'; Shia narrations call it leaving the better (tark al-awla) before prophethood (Imam al-Rida). The game uses the Qur'an's own words: he forgot, they ate, they were sorry, and they were forgiven.",
-      "The verses say their nakedness became exposed to them (7:22, 20:121). The game says only that they felt ashamed and covered themselves with leaves, and the pictures show the leaves, not the people.",
-      "Al-Tabatabai calls the stories of a serpent and a peacock helping Iblis 'extremely unreliable'; the game leaves them out."
-    ],
     steps: [
       {"say":"d7-a","scene":"garden","e":"💨 🌳"},
       {"say":"d7-b","scene":"garden","e":"💨 🌿"},
@@ -120,10 +88,6 @@ window.STORY = [
   },
   {
     id: "d8", icon: "🤲", title: "Sorry", source: "7:23", more: ["2:37","20:122"],
-    parent: [
-      "The 'words' Adam received (2:37): the commentary reports from many early scholars that they are the prayer of 7:23, which the game uses, and from Ibn Abbas a conversation in which Adam asks for Allah's mercy. Al-Tabatabai prefers other words, which al-Kafi gives from the fifth or sixth Imam: 'There is no god except Thee; Glory be to Thee, O Allah! and praise! I have committed evil and been unjust to myself; therefore, forgive me.' Other narrations, Shia (al-Kafi) and Sunni (al-Suyuti's al-Durr al-Manthur), have Adam ask by the right of the Prophet Muhammad ﷺ, the Shia ones also by the right of Ali, Fatimah, al-Hasan and al-Husayn.",
-      "Iblis blamed Allah: 'because You have put me in the wrong' (7:16). Adam and Hawwa blamed no one but themselves (7:23). The game draws that difference for children."
-    ],
     steps: [
       {"say":"d8-a","scene":"dusk","e":"🧑🏿 🧕🏿 🤲🏿"},
       {"play":"order","line":"d8-dua","scene":"dusk","opts":{"cards":[{"icon":"🤲🏿","label":"Our Lord","line":"d8-dua-c1"},{"icon":"💔","label":"we have wronged ourselves","line":"d8-dua-c2"},{"icon":"🙏","label":"if You do not forgive us","line":"d8-dua-c3"},{"icon":"💛","label":"and have mercy on us","line":"d8-dua-c4"},{"icon":"😢","label":"we will be lost","line":"d8-dua-c5"}],"wrong":"d8-dua-no","img":"d8-a"}},
@@ -134,10 +98,6 @@ window.STORY = [
   },
   {
     id: "d9", icon: "🌾", title: "Life on Earth", source: "7:24-25", more: ["2:36-38"],
-    parent: [
-      "Where they came down: the commentary reports Adam in India or between Mecca and Ta'if, and Hawwa near Jeddah; a Shia narration (al-Qummi, quoted in al-Mizan) puts Adam on al-Safa and Hawwa on al-Marwa. The game says only that they came down apart and found each other again near Mecca.",
-      "Jibril teaching Adam to farm and to pray is from Imam al-Baqir, in Majlisi's Hayat al-Qulub."
-    ],
     steps: [
       {"say":"d9-a","scene":"desert","e":"🧑🏿 ⛰️"},
       {"say":"d9-b","scene":"desert","src":"Told in Sunni and Shia narrations","e":"🧑🏿 💛 🧕🏿"},
@@ -150,11 +110,6 @@ window.STORY = [
   },
   {
     id: "d10", icon: "🐑", title: "Two Brothers", source: "5:27-31", more: ["5:32"],
-    parent: [
-      "The Qur'an does not name the brothers. Tradition calls them Habil and Qabil (Abel and Cain), as do Shia narrations (Imam Zayn al-Abidin). The game does not name them.",
-      "The verse says 'he killed him' (5:30). The game says the angry brother hurt him so badly that he died, and no picture shows the harm. The lesson of 5:32 is told without its opening words ('We decreed to the Children of Israel').",
-      "If your child is very young, you can skip this chapter; the next one does not need it."
-    ],
     steps: [
       {"say":"d10-a","scene":"field","e":"🐑 🧺"},
       {"say":"d10-b","scene":"field","e":"🐑 ✨ 😠"},
@@ -168,10 +123,6 @@ window.STORY = [
   },
   {
     id: "d11", icon: "🌍", title: "Children of Adam", source: "7:26", more: ["7:27"],
-    parent: [
-      "Shith (Seth), Adam's son after Habil and his successor, called Hibatullah, and Adam's bequest to him: Imam al-Baqir and Imam al-Sadiq, in Majlisi's Hayat al-Qulub.",
-      "7:27 warns the children of Adam not to let Satan seduce them 'as he did your parents'."
-    ],
     steps: [
       {"say":"d11-a","scene":"field","src":"From narrations in Majlisi's Hayat al-Qulub","e":"🧔🏿 👦🏿 🌳"},
       {"say":"d11-b","scene":"dusk","e":"👨🏿‍👩🏿‍👧‍👦🏿 ⭐"},

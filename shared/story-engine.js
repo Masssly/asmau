@@ -1494,6 +1494,40 @@
   }
   var shownAt = 0;
 
+  // The parents' notes are plain text files, one per chapter (parents/<n>.md beside the game), so they can be
+  // edited on GitHub. The first line ("# 2. ...") only names the chapter; each paragraph is one paragraph here.
+  var notesCache = {};
+  function notesFor(n) {
+    if (!notesCache[n]) notesCache[n] = fetch("parents/" + n + ".md").then(function (r) { return r.ok ? r.text() : ""; })
+      .catch(function () { return ""; })
+      .then(function (txt) {
+        return txt.split(/\r?\n\s*\r?\n/).map(function (p) {
+          return p.split(/\r?\n/).filter(function (l) { return !/^\s*#/.test(l); }).join(" ").trim();
+        }).filter(Boolean);
+      });
+    return notesCache[n];
+  }
+  function fillNotes(ch, n) {
+    var body = $("pnoteBody");
+    body.innerHTML = "";
+    notesFor(n).then(function (paras) {
+      if (pnoteFor !== ch.id) return;          // the child has moved on to another chapter meanwhile
+      body.innerHTML = "";
+      paras.forEach(function (para) { body.appendChild(mk("p", "", para)); });
+      if (ch.cite) body.appendChild(mk("p", "pnote-cite", "Source: " + ch.cite));
+      // which commentary "the commentary" means, said once at the foot of the notes instead of in every sentence
+      if (CFG.notesSource && paras.some(function (p) { return /commentary|Shia narration/i.test(p); })) body.appendChild(mk("p", "pnote-cite", CFG.notesSource));
+      // the chapter's main passage, then any others it draws on
+      (ch.source ? [ch.source].concat(ch.more || []) : []).forEach(function (ref, i) {
+        var more = mk("a", "pnote-link", i ? "Also: Qur’an " + ref.replace("-", "–") : "Read these verses on Quran.com");
+        more.href = "https://quran.com/" + ref;
+        more.target = "_blank";
+        more.rel = "noopener";
+        body.appendChild(more);
+      });
+    });
+  }
+
   function renderStep() {
     teardown();
     shownAt = Date.now();
@@ -1523,23 +1557,12 @@
     stage.style.touchAction = st.say ? "pan-y" : "none";
     stage.innerHTML = "";
 
+    // the page's number (chapter.page), shown only on the folded parents' line, so a page can be named in a message
+    $("pnoteSum").textContent = "For parents · page " + (ci + 1) + "." + (si + 1);
     if (pnoteFor !== ch.id) {
       pnoteFor = ch.id;
-      var body = $("pnoteBody");
-      body.innerHTML = "";
-      (ch.parent || []).forEach(function (para) { body.appendChild(mk("p", "", para)); });
-      if (ch.cite) body.appendChild(mk("p", "pnote-cite", "Source: " + ch.cite));
-      // which commentary "the commentary" means, said once at the foot of the notes instead of in every sentence
-      if (CFG.notesSource && (ch.parent || []).some(function (p) { return /commentary|Shia narration/i.test(p); })) body.appendChild(mk("p", "pnote-cite", CFG.notesSource));
-      // the chapter's main passage, then any others it draws on
-      (ch.source ? [ch.source].concat(ch.more || []) : []).forEach(function (ref, i) {
-        var more = mk("a", "pnote-link", i ? "Also: Qur’an " + ref.replace("-", "–") : "Read these verses on Quran.com");
-        more.href = "https://quran.com/" + ref;
-        more.target = "_blank";
-        more.rel = "noopener";
-        body.appendChild(more);
-      });
       $("pnote").open = false;
+      fillNotes(ch, ci + 1);
     }
 
     var lineId = st.say || st.line;

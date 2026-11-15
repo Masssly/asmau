@@ -81,14 +81,15 @@ def two_stage(keys, tries=4):
         target = brothers.PLAN[k][0]
         scene = brothers.SHOTS[k][1].replace("{BR}", FIVE)
         people = [w for w in ("YQ", "YM", "BN", "YB") if "{%s}" % w in scene]
-        first = (vertex.LOCK + vertex.STYLE + scene.format(**brothers.WHO) + " The five brothers stand together as one group on "
-                 "the LEFT side of the picture; the right side of the picture has open space for more people to join later. "
+        first = (vertex.LOCK + vertex.STYLE + scene.format(**brothers.WHO) + " The five brothers stand side by side in one row on "
+                 "the LEFT of the picture; the middle of the picture, between them and anyone on the right, is open space for "
+                 "more people to join later. "
                  "Count carefully: exactly five grown bearded brothers, each fully visible. Every brother has deep dark brown "
                  "skin." + vertex.END)
         refs = tuple([brothers.REF_BRO] + [brothers.REF[w] for w in people][:2])
         rest = target - 5
         new = ["one in a slate blue robe and turban", "one in dark green", "one in terracotta", "one in sand", "one in charcoal grey"][:rest]
-        second = ("Edit this picture. In the open space on the RIGHT side, add a second group of exactly %s more grown bearded "
+        second = ("Edit this picture. In the open space in the MIDDLE, next to the first five brothers, add a second group of exactly %s more grown bearded "
                   "brothers with deep dark brown skin and short beards: %s. They do the same as the first five brothers, each "
                   "fully visible and not hidden behind anyone. After this there are exactly %d brothers in all. %s"
                   % ({4: "four", 5: "five"}[rest], ", ".join(new), target, KEEP)) + vertex.END

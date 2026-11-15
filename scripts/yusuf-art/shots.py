@@ -132,7 +132,7 @@ SHOTS = {
     "c10-h0": ("The brothers ask to take their little brother; Yaqub is doubtful.",
                "Evening in {HOME}. {YQ} sits on a mat holding {BN} close with one protective arm, looking at {BR} with a sad, doubtful face. The brothers stand before him with open pleading hands; empty grain sacks lie at their feet."),
     "c10-h": ("The brothers find their payment back in their sacks.",
-              "Evening in {HOME}. At the far right edge of the picture, {YQ} stands watching with a worried face, one arm around {BN}. The rest of the picture, from the left to the middle, belongs to {BR}: they kneel in two rows behind a line of open grain sacks, astonished, holding up the small leather money pouches they found inside. Nobody stands in front of the brothers."),
+              "Evening in {HOME}. At the far right edge of the picture, {YQ} stands watching with a worried face, one arm around {BN}. The rest of the picture, from the left to the middle, belongs to {BR}: they stand behind a line of open grain sacks, astonished, holding up the small leather money pouches they found inside. Nobody stands in front of the brothers."),
     "c10-g": ("Yaqub tells his sons: go in by different gates.",
               "Early morning in {HOME}. {YQ} speaks earnestly to {BR}, pointing in several different directions with his open hand. With them stands {BN}. Loaded donkeys wait, ready to leave."),
     "c10-a": ("Yusuf takes his younger brother aside.",
@@ -168,7 +168,7 @@ SHOTS = {
     "c12-b": ("Far away, Yaqub lifts his face into the wind.",
               "Windy dusk in {HOME}. {YQ}, his eyes pale and clouded, stands lifting his face into the breeze, smiling in wonder, one hand raised. Family members look at him, puzzled. Grass and tent cloth blow in the wind."),
     "c12-c": ("Yaqub can see again.",
-              "Golden sunrise in {HOME}. At the far right of the picture, {YQ} sits on a mat holding a cream shirt just lowered from his face; his eyes are now clear and bright and he smiles with joy. The rest of the picture, from the left to the middle, belongs to {BR}: they kneel in two rows facing him, moved. Nobody sits or stands in front of the brothers. Family members rejoice far in the background."),
+              "Golden sunrise in {HOME}. At the far right of the picture, {YQ} sits on a mat holding a cream shirt just lowered from his face; his eyes are now clear and bright and he smiles with joy. The rest of the picture, from the left to the middle, belongs to {BR}: they stand facing him, moved and smiling. Nobody sits or stands in front of the brothers. Family members rejoice far in the background."),
     # ---- chapter 13
     "c13-a": ("Yusuf welcomes his parents to Egypt.",
               "At the great gate of {EGY}, {YM} embraces {YQ}; beside them an elderly mother in a cream scarf smiles. The big family arrives with camels and donkeys; townspeople welcome them."),

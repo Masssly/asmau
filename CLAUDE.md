@@ -55,6 +55,10 @@ things work; this file holds the decisions that must not be lost between session
   English and Arabic. Use it for any new line or game: `PROJECT=asmau-assets python3
   scripts/generate-voice-gemini.py games/<slug>` (only new or changed lines are voiced).
 - A parent's own recording always replaces it. The device's built-in voice never reads Arabic.
+- Then listen back: `PROJECT=asmau-assets python3 scripts/voice-check.py games/<slug>` (Gemini hears each clip and
+  flags extra or wrong words; it once caught a line read in Hausa and two said twice). Redo a flagged clip by
+  deleting its id from scripts/voice/<slug>.json and voicing again. On one- or two-word clips the checker itself
+  can make up words; trust the clip's length there (the voice script already redoes any clip far too long).
 - Do not run the old Piper script (scripts/generate-voice.py); it would overwrite these clips.
 
 ## Brand

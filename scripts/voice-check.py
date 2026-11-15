@@ -2,7 +2,7 @@
 """
 Listen to the voice clips with Gemini and flag any whose words are not the line's text (for example when the
 voice also read out the style instruction). Usage:
-  PROJECT=asmau-assets python3 scripts/voice-check.py games/<slug> [--max-chars N]
+  PROJECT=asmau-assets python3 scripts/voice-check.py games/<slug> [--max-chars N] [--ids a,b]
 Prints one line per suspect clip; redo them by deleting their entry in scripts/voice/<slug>.json and running
 scripts/generate-voice-gemini.py again.
 """
@@ -40,7 +40,9 @@ def words(s):
 def main():
     game = sys.argv[1]
     mx = int(sys.argv[sys.argv.index("--max-chars") + 1]) if "--max-chars" in sys.argv else 10 ** 6
-    lines = [l for l in json.load(open(os.path.join(game, "narration.json"), encoding="utf-8")) if len(l["text"]) <= mx]
+    ids = sys.argv[sys.argv.index("--ids") + 1].split(",") if "--ids" in sys.argv else None
+    lines = [l for l in json.load(open(os.path.join(game, "narration.json"), encoding="utf-8"))
+             if len(l["text"]) <= mx and (ids is None or l["id"] in ids)]
 
     def job(l):
         got = hear(os.path.join(game, "assets", "audio", l["id"] + ".mp3"), l["text"])
@@ -48,7 +50,7 @@ def main():
         extra = len(heard) - len(want)
         if got.startswith("ERROR") or extra > 2 or any(w in heard for w in ("auntie", "accent", "bedtime", "text")) \
                 and not any(w in want for w in ("auntie", "accent", "bedtime", "text")):
-            print("SUSPECT %s %s | want: %s | heard: %s" % (game, l["id"], l["text"][:70], got.strip()[:160]), flush=True)
+            print("SUSPECT %s %s | want: %s | heard: %s" % (game, l["id"], l["text"], got.strip()), flush=True)
     with ThreadPoolExecutor(8) as ex:
         list(ex.map(job, lines))
     print("checked %s: %d clips" % (game, len(lines)), flush=True)

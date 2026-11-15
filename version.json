@@ -1,12 +1,18 @@
 {
-  "version": "2026.11.23",
+  "version": "2026.11.24",
   "date": "2026-11-15",
-  "buildId": "94b240126f01",
+  "buildId": "02939d110f2d",
   "notes": [
-    "Each page shows its number on the For parents line (page 2.3 = chapter 2, page 3)",
-    "Parents' notes are now plain text files, one per chapter, easy to edit"
+    "A new, natural voice for every game: a soft West African woman's voice, in English and Arabic (your own recordings still replace it). A new look: the Asmau writing board as the app icon and logo."
   ],
   "history": [
+    {
+      "version": "2026.11.24",
+      "date": "2026-11-15",
+      "notes": [
+        "A new, natural voice for every game: a soft West African woman's voice, in English and Arabic (your own recordings still replace it). A new look: the Asmau writing board as the app icon and logo."
+      ]
+    },
     {
       "version": "2026.11.23",
       "date": "2026-11-15",

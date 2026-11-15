@@ -1,11 +1,18 @@
 {
-  "version": "2026.11.26",
+  "version": "2026.11.27",
   "date": "2026-11-15",
-  "buildId": "fd6efba77444",
+  "buildId": "669755b96085",
   "notes": [
-    "A grown-up check before any link that leaves Asmau (the verse links, Ko-fi, GitHub): a quick sum for parents"
+    "Adam: the matching and ordering games in chapters 3, 4, 8 and 11 show their cards again (they were hidden behind the picture); also Musa's prayer in chapter 11"
   ],
   "history": [
+    {
+      "version": "2026.11.27",
+      "date": "2026-11-15",
+      "notes": [
+        "Adam: the matching and ordering games in chapters 3, 4, 8 and 11 show their cards again (they were hidden behind the picture); also Musa's prayer in chapter 11"
+      ]
+    },
     {
       "version": "2026.11.26",
       "date": "2026-11-15",

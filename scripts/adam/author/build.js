@@ -29,7 +29,7 @@ lib.STORY.forEach((ch) => { ch.steps = ch.steps.filter((st) => {
 // everyone in Asmau is drawn dark-skinned, and that includes the small icons.
 const EM = require("./em");
 const TONE = "\u{1F3FF}";
-const BASES = "👶 🤱 👸 🧕 👦 🧑 🧔 👴 🧙 🙇 🚶 🏃 🤲 ✋ 🙌 👉 ☝ ✊ 🙅 👍 👂 👅 💪 🤴 👩 👨".split(" ");
+const BASES = "👶 🤱 👸 🧕 👦 🧑 🧔 👴 🧙 🙇 🚶 🏃 🤲 ✋ 🙌 👉 ☝ ✊ 🙅 👍 👂 💪 🤴 👩 👨".split(" ");
 function dark(s) {
   if (typeof s !== "string") return s;
   let out = "";

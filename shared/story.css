@@ -639,3 +639,10 @@ button { touch-action: manipulation; -webkit-tap-highlight-color: transparent; }
   .btn-go { font-size: 36px; }
   .pnote summary { font-size: 15px; }
 }
+
+/* ---------- card activities over a picture (match, order, reveal) ----------
+   These lay their cards out on the stage itself. With a picture, the picture becomes a dimmed backdrop and the
+   stage grows to fit the cards, which sit on top (otherwise the picture covers them). */
+.stage.has-pic.flow, .stage.has-pic.flow[data-mode="play"] { aspect-ratio: auto; width: 100%; height: auto; max-height: none; min-height: 290px; }
+.stage.has-pic.flow .pic, .stage.has-pic.flow .pic-fill { opacity: .3; animation: none; }
+.stage.flow > .match, .stage.flow > .order, .stage.flow > .reveal { position: relative; z-index: 2; }

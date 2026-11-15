@@ -147,7 +147,7 @@ window.STORY = [
       {"say":"m11-a","scene":"fire","e":"🧔🏿 😟"},
       {"say":"m11-b","scene":"fire","e":"🧔🏿 🤲🏿"},
       {"say":"m11-c","scene":"fire","e":"🧔🏿 🤝 🧔🏿"},
-      {"play":"order","line":"m11-ord","scene":"fire","opts":{"cards":[{"icon":"💛","label":"Open up my heart","line":"m11-ord-c1"},{"icon":"🌤️","label":"Make my task easy","line":"m11-ord-c2"},{"icon":"👅🏿","label":"Untie my tongue","line":"m11-ord-c3"},{"icon":"🤝","label":"Give me my brother","line":"m11-ord-c4"}],"wrong":"m11-ord-no","img":"m11-b"}},
+      {"play":"order","line":"m11-ord","scene":"fire","opts":{"cards":[{"icon":"💛","label":"Open up my heart","line":"m11-ord-c1"},{"icon":"🌤️","label":"Make my task easy","line":"m11-ord-c2"},{"icon":"👅","label":"Untie my tongue","line":"m11-ord-c3"},{"icon":"🤝","label":"Give me my brother","line":"m11-ord-c4"}],"wrong":"m11-ord-no","img":"m11-b"}},
       {"say":"m11-d","scene":"fire","e":"✨ 🤲🏿"},
       {"say":"m11-e0","scene":"desert","e":"🧔🏿 🧔🏿 🚶🏿"},
       {"say":"m11-e","scene":"desert","e":"🧔🏿 🧔🏿 🕊️"},

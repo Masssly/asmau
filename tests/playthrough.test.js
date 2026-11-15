@@ -26,6 +26,27 @@ module.exports = async function () {
     steps++; seen.add(st.play || "story");
     await page.waitForTimeout(500);                                   // the double-tap guard
     try {
+      if (st.play) {
+        // every button of an activity must be in sight and on top: not under its picture, not cut off by the stage.
+        // (A tap can reach a card under a picture that lets taps through, so ask what is painted there instead.)
+        await page.waitForTimeout(300);
+        const hidden = await page.evaluate(() => {
+          const stage = document.getElementById("stage"), lift = stage.querySelectorAll(".pic, .pic-fill");
+          lift.forEach((e) => { e.style.pointerEvents = "auto"; });
+          const s = stage.getBoundingClientRect(), out = [];
+          stage.querySelectorAll("button").forEach((b) => {
+            const r = b.getBoundingClientRect(); if (!r.width || !r.height) return;
+            const x = r.left + r.width / 2, y = r.top + r.height / 2;
+            if (y < s.top || y > s.bottom || x < s.left || x > s.right) { out.push((b.textContent || b.getAttribute("aria-label") || "?").trim() + " (cut off)"); return; }
+            b.scrollIntoView({ block: "nearest" });
+            const r2 = b.getBoundingClientRect(), hit = document.elementFromPoint(r2.left + r2.width / 2, r2.top + r2.height / 2);
+            if (!hit || !(hit === b || b.contains(hit) || hit.closest(".fxl"))) out.push((b.textContent || b.getAttribute("aria-label") || "?").trim() + " (covered)");
+          });
+          lift.forEach((e) => { e.style.pointerEvents = ""; });
+          return out;
+        });
+        if (hidden.length) T.check(false, where + ": buttons a child cannot see or reach: " + hidden.slice(0, 3).join(", "));
+      }
       if (st.say) {
         // a narrated scene shows its picture if it has one, and otherwise something drawn: never an empty stage
         if (art[st.pic || st.say]) { if (await page.locator(".stage.has-pic img.pic").count() !== 1) T.check(false, where + ": no picture"); }

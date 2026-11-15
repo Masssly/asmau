@@ -55,6 +55,8 @@ SHOTS = {
               "Early morning at the edge of {HOME}. {YB} walks off happily into the grassland among {BR}, waving back. Behind them {YQ} stands at the tent door watching them go, one hand raised."),
     "c2-b": ("The brothers stand around a stone well.",
              "Late afternoon in dry grassland, long shadows, sombre mood. {BR} stand around an old round stone well looking down into it; one holds a rope. Far behind them flocks graze and a shepherd walks."),
+    "c2-b1": ("In the dark well, Yusuf prays with his hands raised.",
+              "Night. At the bottom of a deep round stone well, {YB} kneels on a flat stone above the dark water, hands raised in prayer and eyes closed, his face calm; a thin silver beam of moonlight falls on him from the small round opening far above."),
     "c2-w": ("Yusuf stands on a stone in the well, looking up at the light.",
              "Inside a deep old stone well seen from the side: {YB} stands on a big stone above dark water, looking up calmly at a warm beam of golden light shining down from the round opening far above. Wet stone walls, small ferns. Peaceful, hopeful mood."),
     "c2-c": ("The brothers show their father the stained shirt.",

@@ -6,7 +6,7 @@
 */
 window.STORY_GAME = {
   slug: "musa",
-  notesSource: "“The commentary” is Ibn Kathir’s tafsir (abridged English translation).",
+  notesSource: "“The commentary” is Ibn Kathir’s tafsir (abridged English translation); “Shia narrations” are those collected in Majlisi’s Hayat al-Qulub (English, al-islam.org).",
   titleArt: [],          // the title shows the cover picture (see index.html)
   titleMood: "nile",
   endMood: "triumph",

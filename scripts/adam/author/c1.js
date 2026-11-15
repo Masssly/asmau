@@ -16,7 +16,7 @@ q("q", "heaven", "What did Allah say to the angels?", ["I know what you do not k
 p("memory", "mem", "heaven", "Find the pairs: things Allah made.", { icons: ["☀️", "🌙", "⭐", "☁️", "🌊", "⛰️"] });
 
 chapter("d2", "🟤", "Made from Earth", "15:28-29", ["38:71-72", "3:59"], [
-  "Earth of every kind: al-Tirmidhi and Abu Dawud report that Adam was made from a handful taken from all of the earth, so his children came like the earth, of many colours, some gentle and some rough. Majlisi's Hayat al-Qulub gives the same from Imam Ali: Adam was made 'from the soil of all the surface of the earth'.",
+  "Earth of every kind: al-Tirmidhi and Abu Dawud report that Adam was made from a handful taken from all of the earth, so his children came like the earth, of many colours, some gentle and some rough. The Shia narrations give the same from Imam Ali: Adam was made 'from the soil of all the surface of the earth'.",
   "The pictures in Asmau show everyone dark-skinned; the lesson about colours is told in words and shown with the earth itself."
 ]);
 s("a", "desert", "Allah gathered earth from all over the world: dark earth and light earth, red earth and brown, soft earth and hard.",
@@ -31,8 +31,8 @@ s("d", "dawn", "That is why the children of Adam are so many colours, just like 
 q("q", "dawn", "What was Adam made from?", ["Earth and clay", "🟤"], ["Fire", "🔥"], "Not fire. Adam was made from earth and clay.", { img: "c" });
 
 chapter("d3", "🤲", "First Words", null, [], [
-  "The sneeze: in the commentary on 2:37, Ibn Abbas has Adam remind Allah, 'when I sneezed You said, May Allah grant you His mercy'. Majlisi's Hayat al-Qulub gives the same: Adam said 'al-hamdu lillah' and was answered 'yarhamuk Allah'.",
-  "The greeting: al-Bukhari and Muslim report that Allah told Adam to greet a group of angels and to listen to their answer, which would be the greeting of his children. Hayat al-Qulub gives the same greeting.",
+  "The sneeze: in the commentary on 2:37, Ibn Abbas has Adam remind Allah, 'when I sneezed You said, May Allah grant you His mercy'. The Shia narrations give the same: Adam said 'al-hamdu lillah' and was answered 'yarhamuk Allah'.",
+  "The greeting: al-Bukhari and Muslim report that Allah told Adam to greet a group of angels and to listen to their answer, which would be the greeting of his children. The Shia narrations give the same greeting.",
   "Neither is in the Qur'an."
 ], "Ibn Abbas in Ibn Kathir's commentary on 2:37; al-Bukhari and Muslim; Majlisi, Hayat al-Qulub");
 s("a", "dawn", "It is told that the very first thing Adam did was sneeze! And he said: al-hamdu lillah. All praise belongs to Allah.",
@@ -91,7 +91,7 @@ s("e", "night", "But Allah said: you will have no power over My true servants.",
 p("hold", "refuge", "night", "When we feel a bad whisper, we ask Allah to keep us safe: a'udhu billahi min ash-shaytan ir-rajim. Press and hold the shield.", { ms: 2500, icon: "🛡️", hint: "Press and hold", done: "Allah keeps us safe" }, { img: "e" });
 
 chapter("d6", "🌳", "The Garden", "2:35", ["7:19", "20:117-119", "4:1"], [
-  "How Hawwa was made is told in two ways. The commentary reports, from Ibn Ishaq and 'the People of the Book', that she was made from Adam's rib while he slept. Narrations of the Imams of Ahl al-Bayt say she was made from the clay left over from Adam (Imam al-Baqir, in Majlisi's Hayat al-Qulub), and al-Tabatabai's al-Mizan prefers that. The Qur'an says Allah made his mate 'from it', the single soul (4:1). The game says only that Allah made Hawwa for Adam.",
+  "How Hawwa was made is told in two ways. The commentary reports, from Ibn Ishaq and 'the People of the Book', that she was made from Adam's rib while he slept. Narrations of the Imams of Ahl al-Bayt say she was made from the clay left over from Adam (Imam al-Baqir), and al-Tabatabai's al-Mizan prefers that. The Qur'an says Allah made his mate 'from it', the single soul (4:1). The game says only that Allah made Hawwa for Adam.",
   "The tree is not named in the Qur'an. The commentary quotes al-Tabari: 'We do not know which tree that was.' Shia narrations call it wheat or a vine (Imam al-Rida: 'both traditions are true'). The game names no fruit.",
   "The Garden: the commentary says most scholars place it in the heavens; al-Tabatabai says it was 'in the heaven, although it was not the Garden of eternal abode'."
 ]);

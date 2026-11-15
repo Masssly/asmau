@@ -25,7 +25,7 @@ window.STORY = [
   {
     id: "d2", icon: "🟤", title: "Made from Earth", source: "15:28-29", more: ["38:71-72","3:59"],
     parent: [
-      "Earth of every kind: al-Tirmidhi and Abu Dawud report that Adam was made from a handful taken from all of the earth, so his children came like the earth, of many colours, some gentle and some rough. Majlisi's Hayat al-Qulub gives the same from Imam Ali: Adam was made 'from the soil of all the surface of the earth'.",
+      "Earth of every kind: al-Tirmidhi and Abu Dawud report that Adam was made from a handful taken from all of the earth, so his children came like the earth, of many colours, some gentle and some rough. The Shia narrations give the same from Imam Ali: Adam was made 'from the soil of all the surface of the earth'.",
       "The pictures in Asmau show everyone dark-skinned; the lesson about colours is told in words and shown with the earth itself."
     ],
     steps: [
@@ -40,8 +40,8 @@ window.STORY = [
   {
     id: "d3", icon: "🤲", title: "First Words", more: [], cite: "Ibn Abbas in Ibn Kathir's commentary on 2:37; al-Bukhari and Muslim; Majlisi, Hayat al-Qulub",
     parent: [
-      "The sneeze: in the commentary on 2:37, Ibn Abbas has Adam remind Allah, 'when I sneezed You said, May Allah grant you His mercy'. Majlisi's Hayat al-Qulub gives the same: Adam said 'al-hamdu lillah' and was answered 'yarhamuk Allah'.",
-      "The greeting: al-Bukhari and Muslim report that Allah told Adam to greet a group of angels and to listen to their answer, which would be the greeting of his children. Hayat al-Qulub gives the same greeting.",
+      "The sneeze: in the commentary on 2:37, Ibn Abbas has Adam remind Allah, 'when I sneezed You said, May Allah grant you His mercy'. The Shia narrations give the same: Adam said 'al-hamdu lillah' and was answered 'yarhamuk Allah'.",
+      "The greeting: al-Bukhari and Muslim report that Allah told Adam to greet a group of angels and to listen to their answer, which would be the greeting of his children. The Shia narrations give the same greeting.",
       "Neither is in the Qur'an."
     ],
     steps: [
@@ -88,7 +88,7 @@ window.STORY = [
   {
     id: "d6", icon: "🌳", title: "The Garden", source: "2:35", more: ["7:19","20:117-119","4:1"],
     parent: [
-      "How Hawwa was made is told in two ways. The commentary reports, from Ibn Ishaq and 'the People of the Book', that she was made from Adam's rib while he slept. Narrations of the Imams of Ahl al-Bayt say she was made from the clay left over from Adam (Imam al-Baqir, in Majlisi's Hayat al-Qulub), and al-Tabatabai's al-Mizan prefers that. The Qur'an says Allah made his mate 'from it', the single soul (4:1). The game says only that Allah made Hawwa for Adam.",
+      "How Hawwa was made is told in two ways. The commentary reports, from Ibn Ishaq and 'the People of the Book', that she was made from Adam's rib while he slept. Narrations of the Imams of Ahl al-Bayt say she was made from the clay left over from Adam (Imam al-Baqir), and al-Tabatabai's al-Mizan prefers that. The Qur'an says Allah made his mate 'from it', the single soul (4:1). The game says only that Allah made Hawwa for Adam.",
       "The tree is not named in the Qur'an. The commentary quotes al-Tabari: 'We do not know which tree that was.' Shia narrations call it wheat or a vine (Imam al-Rida: 'both traditions are true'). The game names no fruit.",
       "The Garden: the commentary says most scholars place it in the heavens; al-Tabatabai says it was 'in the heaven, although it was not the Garden of eternal abode'."
     ],
@@ -104,7 +104,7 @@ window.STORY = [
   {
     id: "d7", icon: "🍃", title: "The Whisper", source: "7:20-22", more: ["20:115","20:120-121"],
     parent: [
-      "'He forgot' is 20:115; the same passage also says 'Adam disobeyed his Lord' (20:121). How to understand this differs. In the hadith of intercession quoted in the commentary, Adam remembers his error and is ashamed before his Lord. Al-Tabatabai's al-Mizan says the command was 'only an advice', given before any law, so the eating was 'neither a sin ... nor an injustice against Allah'; Shia narrations call it leaving the better (tark al-awla) before prophethood (Imam al-Rida, in Majlisi's Hayat al-Qulub). The game uses the Qur'an's own words: he forgot, they ate, they were sorry, and they were forgiven.",
+      "'He forgot' is 20:115; the same passage also says 'Adam disobeyed his Lord' (20:121). How to understand this differs. In the hadith of intercession quoted in the commentary, Adam remembers his error and is ashamed before his Lord. Al-Tabatabai's al-Mizan says the command was 'only an advice', given before any law, so the eating was 'neither a sin ... nor an injustice against Allah'; Shia narrations call it leaving the better (tark al-awla) before prophethood (Imam al-Rida). The game uses the Qur'an's own words: he forgot, they ate, they were sorry, and they were forgiven.",
       "The verses say their nakedness became exposed to them (7:22, 20:121). The game says only that they felt ashamed and covered themselves with leaves, and the pictures show the leaves, not the people.",
       "Al-Tabatabai calls the stories of a serpent and a peacock helping Iblis 'extremely unreliable'; the game leaves them out."
     ],
@@ -151,7 +151,7 @@ window.STORY = [
   {
     id: "d10", icon: "🐑", title: "Two Brothers", source: "5:27-31", more: ["5:32"],
     parent: [
-      "The Qur'an does not name the brothers. Tradition calls them Habil and Qabil (Abel and Cain), as do Shia narrations (Imam Zayn al-Abidin, in Majlisi's Hayat al-Qulub). The game does not name them.",
+      "The Qur'an does not name the brothers. Tradition calls them Habil and Qabil (Abel and Cain), as do Shia narrations (Imam Zayn al-Abidin). The game does not name them.",
       "The verse says 'he killed him' (5:30). The game says the angry brother hurt him so badly that he died, and no picture shows the harm. The lesson of 5:32 is told without its opening words ('We decreed to the Children of Israel').",
       "If your child is very young, you can skip this chapter; the next one does not need it."
     ],

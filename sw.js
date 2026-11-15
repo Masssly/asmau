@@ -20,7 +20,7 @@
 
 // BEGIN GENERATED
 const RELEASE = "2026.11.20";
-const BUILD = "6109078ebd0b";
+const BUILD = "c3dcd3407e8e";
 const SHELL = [
   "./",
   "app.webmanifest",
@@ -505,6 +505,7 @@ const MEDIA = {
   "games/musa/assets/audio/m21-c.mp3": "f1e7e47d10",
   "games/musa/assets/audio/m21-cow.mp3": "28b3ce4ea7",
   "games/musa/assets/audio/m21-d.mp3": "2859a50067",
+  "games/musa/assets/audio/m21-d1.mp3": "033812857b",
   "games/musa/assets/audio/m21-e.mp3": "615f84de94",
   "games/musa/assets/audio/m21-ord-c1.mp3": "6f9a3aa13f",
   "games/musa/assets/audio/m21-ord-c2.mp3": "f9712ae327",
@@ -540,6 +541,7 @@ const MEDIA = {
   "games/musa/assets/audio/m23-d.mp3": "21e03d9581",
   "games/musa/assets/audio/m23-e.mp3": "e708eadf5a",
   "games/musa/assets/audio/m23-f.mp3": "5960fbe7e4",
+  "games/musa/assets/audio/m23-f1.mp3": "52ecd29241",
   "games/musa/assets/audio/m23-fish.mp3": "e232b92cb8",
   "games/musa/assets/audio/m23-g.mp3": "82a3a5d79b",
   "games/musa/assets/audio/m23-g0.mp3": "1ab6c0a9c7",
@@ -1080,6 +1082,7 @@ const MEDIA = {
   "games/yusuf/assets/audio/c2-a.mp3": "6339e6c3d3",
   "games/yusuf/assets/audio/c2-a0.mp3": "a14a5833df",
   "games/yusuf/assets/audio/c2-b.mp3": "9910c7480d",
+  "games/yusuf/assets/audio/c2-b1.mp3": "b573add8a1",
   "games/yusuf/assets/audio/c2-c.mp3": "f19c394381",
   "games/yusuf/assets/audio/c2-d.mp3": "a62508042a",
   "games/yusuf/assets/audio/c2-do-opt1.mp3": "f8a3eb2c62",

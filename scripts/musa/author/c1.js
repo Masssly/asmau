@@ -99,7 +99,8 @@ q("q", "palace", "What did Allah give Musa when he was grown?", ["Wisdom and kno
 chapter("m6", "🏃", "A Big Mistake", "28:15-21", [], [
   "Musa entered the city unnoticed and found two men fighting, one of his own people and one an enemy. His kinsman called for help; Musa struck the other with his fist and killed him. The game says the man 'fell down and did not get up again'. Musa said 'this is Satan's work', asked forgiveness and was forgiven, and promised never to support wrongdoers.",
   "Left out: verses 28:18–19, where the same kinsman calls for help again the next day, Musa calls him a troublemaker, and the man lets slip what happened the day before.",
-  "In verse 28:20 the man who came running says the authorities are talking about killing Musa. The game says they are 'coming to punish' him."
+  "In verse 28:20 the man who came running says the authorities are talking about killing Musa. The game says they are 'coming to punish' him.",
+  "In a Shia narration (Imam al-Rida) Musa struck the man to stop him from wronging another and did not mean to kill him; 'Satan's work' is read as the fight that Satan stirred up."
 ]);
 s("a", "city", "One day Musa walked into the city when the streets were quiet. He found two men fighting. One was from his own people. The other was from Pharaoh's people.",
   "A quiet sunlit city street of mud-brick walls. {MY} walks around a corner and sees two men in the distance grabbing each other's clothes and arguing, one in plain brown, one in a soldier's tunic.");
@@ -139,6 +140,8 @@ p("memory", "mem", "well", "Find the pairs from the well of Madyan.", { icons: [
 chapter("m8", "🏡", "A New Home", "28:25-28", [], [
   "One of the two women came walking shyly with her father's invitation. Musa told his story and the old man said: do not be afraid, you are safe now. A daughter said: hire him, the best to hire is the strong and trustworthy. The father offered marriage to one of his daughters for eight years of work, ten if Musa chose, and Musa agreed. The verses do not name the father.",
   "From the commentary, not the verses: Musa asked her to walk behind him and throw a pebble to show the way (reported from Umar, Ibn Abbas and others, as her explanation of 'trustworthy'); and Musa completed the longer term, ten years, which the tafsir quotes from al-Bukhari on the authority of Ibn Abbas."
+,
+  "Shia narrations name the old man as the Prophet Shu'ayb; Sunni scholars are divided on it, and the verses do not say. The same narrations also tell the two details above."
 ]);
 s("a", "well", "The two sisters went home and told their father what had happened. Soon one of them came back, walking shyly. She said: my father is asking for you. He wants to thank you for watering our sheep.",
   "A modest young woman in a purple headscarf stands shyly at a distance, eyes lowered, speaking to {MY} who rises from the shade of an acacia tree by the well.");

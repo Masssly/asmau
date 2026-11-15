@@ -6,7 +6,7 @@ const ADAM_PIC = portrait("adam", "ADAM");
 const ADAM = require("fs").existsSync(require("path").join(__dirname, "..", "..", "..", "games", "adam", "assets", "img", "icon-adam.webp")) ? ADAM_PIC : "🧑";
 
 chapter("d7", "🍃", "The Whisper", "7:20-22", ["20:115", "20:120-121"], [
-  "'He forgot' is 20:115; the same passage also says 'Adam disobeyed his Lord' (20:121). How to understand this differs. In the hadith of intercession quoted in the commentary, Adam remembers his error and is ashamed before his Lord. Al-Tabatabai's al-Mizan says the command was 'only an advice', given before any law, so the eating was 'neither a sin ... nor an injustice against Allah'; Shia narrations call it leaving the better (tark al-awla) before prophethood (Imam al-Rida, in Majlisi's Hayat al-Qulub). The game uses the Qur'an's own words: he forgot, they ate, they were sorry, and they were forgiven.",
+  "'He forgot' is 20:115; the same passage also says 'Adam disobeyed his Lord' (20:121). How to understand this differs. In the hadith of intercession quoted in the commentary, Adam remembers his error and is ashamed before his Lord. Al-Tabatabai's al-Mizan says the command was 'only an advice', given before any law, so the eating was 'neither a sin ... nor an injustice against Allah'; Shia narrations call it leaving the better (tark al-awla) before prophethood (Imam al-Rida). The game uses the Qur'an's own words: he forgot, they ate, they were sorry, and they were forgiven.",
   "The verses say their nakedness became exposed to them (7:22, 20:121). The game says only that they felt ashamed and covered themselves with leaves, and the pictures show the leaves, not the people.",
   "Al-Tabatabai calls the stories of a serpent and a peacock helping Iblis 'extremely unreliable'; the game leaves them out."
 ]);
@@ -59,7 +59,7 @@ s("d", "field", "Adam and Hawwa worked hard, and Allah blessed their fields. Eve
 p("pick", "harvest", "field", "Gather only the ripe golden wheat.", { items: [{ icon: "🌾", n: 6, ok: true, name: "ripe wheat" }, { icon: "🌱", n: 3, ok: false, name: "a young shoot" }], mark: "✨" }, { img: "d" });
 
 chapter("d10", "🐑", "Two Brothers", "5:27-31", ["5:32"], [
-  "The Qur'an does not name the brothers. Tradition calls them Habil and Qabil (Abel and Cain), as do Shia narrations (Imam Zayn al-Abidin, in Majlisi's Hayat al-Qulub). The game does not name them.",
+  "The Qur'an does not name the brothers. Tradition calls them Habil and Qabil (Abel and Cain), as do Shia narrations (Imam Zayn al-Abidin). The game does not name them.",
   "The verse says 'he killed him' (5:30). The game says the angry brother hurt him so badly that he died, and no picture shows the harm. The lesson of 5:32 is told without its opening words ('We decreed to the Children of Israel').",
   "If your child is very young, you can skip this chapter; the next one does not need it."
 ]);

@@ -866,6 +866,11 @@
   "scene": "One real, living farm cow with soft short fur in a warm butter-yellow colour, a healthy, gentle animal with no spots or marks at all, stands calm and free in a green meadow by a river, grazing (an ordinary animal, not a statue, not shiny, not metal); nearby an unused wooden plough lies in the grass and a still water wheel stands by the field. Only the cow, no people.",
   "who": []
  },
+ "m21-d1": {
+  "alt": "Inside a simple mud-brick house at noon, a young man in a plain tunic sits quietly beside his old father, who sleeps peacefully on a mat; at the open door he gently…",
+  "scene": "Inside a simple mud-brick house at noon, a young man in a plain tunic sits quietly beside his old father, who sleeps peacefully on a mat; at the open door he gently waves away a merchant holding a purse, and a golden-yellow cow waits outside.",
+  "who": []
+ },
  "m21-e": {
   "alt": "A group of men lead one golden-yellow cow by a rope across a pasture toward the camp, looking relieved and tired.",
   "scene": "A group of men lead one golden-yellow cow by a rope across a pasture toward the camp, looking relieved and tired.",
@@ -945,6 +950,15 @@
  "m23-f": {
   "alt": "By a big rock on the seashore sits al-Khidr, calm and smiling gently; Musa greets him respectfully with a hand on his chest, Yusha standing behind.",
   "scene": "By a big rock on the seashore sits a wise old man with a white beard, in a green turban and a long green cloak, calm and smiling gently; a strong kind man in his thirties with a short black beard, a cream turban and an indigo robe, holding a tall wooden staff greets him respectfully with a hand on his chest, a helpful boy of twelve in a short brown tunic and a small white cap standing behind.",
+  "who": [
+   "KH",
+   "MU",
+   "YU"
+  ]
+ },
+ "m23-f1": {
+  "alt": "al-Khidr sits on a patch of bare pale sand by the seashore, and fresh green grass and small white flowers spring up all around where he sits; Musa and Yusha watch in…",
+  "scene": "a wise old man with a white beard, in a green turban and a long green cloak sits on a patch of bare pale sand by the seashore, and fresh green grass and small white flowers spring up all around where he sits; a strong kind man in his thirties with a short black beard, a cream turban and an indigo robe, holding a tall wooden staff and a helpful boy of twelve in a short brown tunic and a small white cap watch in wonder.",
   "who": [
    "KH",
    "MU",

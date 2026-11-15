@@ -1530,7 +1530,7 @@
       (ch.parent || []).forEach(function (para) { body.appendChild(mk("p", "", para)); });
       if (ch.cite) body.appendChild(mk("p", "pnote-cite", "Source: " + ch.cite));
       // which commentary "the commentary" means, said once at the foot of the notes instead of in every sentence
-      if (CFG.notesSource && (ch.parent || []).some(function (p) { return /commentary/i.test(p); })) body.appendChild(mk("p", "pnote-cite", CFG.notesSource));
+      if (CFG.notesSource && (ch.parent || []).some(function (p) { return /commentary|Shia narration/i.test(p); })) body.appendChild(mk("p", "pnote-cite", CFG.notesSource));
       // the chapter's main passage, then any others it draws on
       (ch.source ? [ch.source].concat(ch.more || []) : []).forEach(function (ref, i) {
         var more = mk("a", "pnote-link", i ? "Also: Qur’an " + ref.replace("-", "–") : "Read these verses on Quran.com");

@@ -99,7 +99,8 @@ window.STORY = [
     parent: [
       "Musa entered the city unnoticed and found two men fighting, one of his own people and one an enemy. His kinsman called for help; Musa struck the other with his fist and killed him. The game says the man 'fell down and did not get up again'. Musa said 'this is Satan's work', asked forgiveness and was forgiven, and promised never to support wrongdoers.",
       "Left out: verses 28:18–19, where the same kinsman calls for help again the next day, Musa calls him a troublemaker, and the man lets slip what happened the day before.",
-      "In verse 28:20 the man who came running says the authorities are talking about killing Musa. The game says they are 'coming to punish' him."
+      "In verse 28:20 the man who came running says the authorities are talking about killing Musa. The game says they are 'coming to punish' him.",
+      "In a Shia narration (Imam al-Rida) Musa struck the man to stop him from wronging another and did not mean to kill him; 'Satan's work' is read as the fight that Satan stirred up."
     ],
     steps: [
       {"say":"m6-a","scene":"city","e":"🧑🏿 🤼"},
@@ -136,7 +137,8 @@ window.STORY = [
     id: "m8", icon: "🏡", title: "A New Home", source: "28:25-28", more: [],
     parent: [
       "One of the two women came walking shyly with her father's invitation. Musa told his story and the old man said: do not be afraid, you are safe now. A daughter said: hire him, the best to hire is the strong and trustworthy. The father offered marriage to one of his daughters for eight years of work, ten if Musa chose, and Musa agreed. The verses do not name the father.",
-      "From the commentary, not the verses: Musa asked her to walk behind him and throw a pebble to show the way (reported from Umar, Ibn Abbas and others, as her explanation of 'trustworthy'); and Musa completed the longer term, ten years, which the tafsir quotes from al-Bukhari on the authority of Ibn Abbas."
+      "From the commentary, not the verses: Musa asked her to walk behind him and throw a pebble to show the way (reported from Umar, Ibn Abbas and others, as her explanation of 'trustworthy'); and Musa completed the longer term, ten years, which the tafsir quotes from al-Bukhari on the authority of Ibn Abbas.",
+      "Shia narrations name the old man as the Prophet Shu'ayb; Sunni scholars are divided on it, and the verses do not say. The same narrations also tell the two details above."
     ],
     steps: [
       {"say":"m8-a","scene":"well","e":"🧕🏿 💬 🧑🏿"},
@@ -248,7 +250,8 @@ window.STORY = [
     parent: [
       "Pharaoh said: how dare you believe before I give you permission? He threatened to cut off their hands and feet on opposite sides and crucify them on palm trunks. The game says only that he would punish them terribly. They answered that they would never prefer him to the clear signs and to their Creator: 'decide whatever you will: you can only decide matters of this present life.'",
       "Verse 40:28: a believing man of Pharaoh's family who had hidden his faith said, 'How can you kill a man just for saying, My Lord is Allah?' The game says 'hurt'. Verse 66:11 gives the prayer of Pharaoh's wife. The Qur'an does not say at what point in the story the believing man spoke or the queen prayed; the game places them here.",
-      "Verses 28:38–39: Pharaoh tells his chiefs he knows of no god for them but himself, and orders Haman to bake clay bricks and build a tall building so that he may climb to Musa's God. The verses fetched for this game do not say what became of the building, so neither does the game."
+      "Verses 28:38–39: Pharaoh tells his chiefs he knows of no god for them but himself, and orders Haman to bake clay bricks and build a tall building so that he may climb to Musa's God. The verses fetched for this game do not say what became of the building, so neither does the game.",
+      "Shia narrations name the believer of Pharaoh's family Hizqil."
     ],
     steps: [
       {"say":"m14-a","scene":"palace","e":"👑 😡"},
@@ -388,13 +391,15 @@ window.STORY = [
     id: "m21", icon: "🐮", title: "The Yellow Cow", source: "2:67-71", more: ["2:72-73"],
     parent: [
       "Musa told his people that Allah commands them to sacrifice a cow. They asked if he was mocking them, then asked what sort (neither old nor young, but in between), what colour (bright yellow, pleasing to the eye), and exactly which (unblemished, not trained to plough the earth or water the fields). They slaughtered it, 'though they almost failed to do so'.",
-      "Left for parents: verses 2:72–73 give the reason. A person had been killed and the people were accusing one another; they were told to strike the body with part of the cow, and so Allah showed them how He gives life to the dead. The game tells the cow and the questions, and says only that Allah used it to bring out a truth some of them had been hiding, which is the wording of 2:72."
+      "Left for parents: verses 2:72–73 give the reason. A person had been killed and the people were accusing one another; they were told to strike the body with part of the cow, and so Allah showed them how He gives life to the dead. The game tells the cow and the questions, and says only that Allah used it to bring out a truth some of them had been hiding, which is the wording of 2:72.",
+      "The cow's owner who was kind to his father is from a Shia narration (Imam al-Rida), where Musa says that kindness to parents raises a person high."
     ],
     steps: [
       {"say":"m21-a","scene":"camp","e":"🧔🏿 💬 🐄"},
       {"say":"m21-b","scene":"field","e":"🐄 ❓"},
       {"say":"m21-c","scene":"field","e":"🐄 ✨"},
       {"say":"m21-d","scene":"field","e":"🐄 🔍"},
+      {"say":"m21-d1","scene":"field","src":"From a Shia narration (Imam al-Rida)","e":"👴🏿 😴 🐄"},
       {"play":"pick","line":"m21-cow","scene":"field","opts":{"items":[{"icon":"🐄","n":1,"ok":true,"cls":"cow-yellow","name":"the yellow cow"},{"icon":"🐄","n":3,"ok":false,"name":"a spotted cow"},{"icon":"🐂","n":2,"ok":false,"name":"a brown ox"},{"icon":"🐃","n":2,"ok":false,"name":"a dark buffalo"}],"mark":"✨"}},
       {"say":"m21-e","scene":"field","e":"🐄 👍🏿"},
       {"play":"choice","line":"m21-q","scene":"field","opts":{"options":[{"label":"Asked more and more questions","icon":"❓","ok":false},{"label":"Done as they were told, straight away","icon":"👍🏿","ok":true}],"wrong":"m21-q-no","img":"m21-e"}},
@@ -422,7 +427,8 @@ window.STORY = [
     id: "m23", icon: "🐟", title: "The Fish That Swam Away", source: "18:60-70", more: [],
     parent: [
       "Musa told his servant he would not stop until he reached the place where the two seas meet. There they forgot their fish, which made its way into the sea. Later, tired and asking for the meal, the servant remembered: he had forgotten the fish by the rock, and only Satan made him forget. Musa said that was the place they were seeking, and they retraced their steps. They found a servant of Allah who had been given mercy and knowledge. He warned Musa he would not be able to bear with him patiently; Musa promised patience; the condition was that Musa ask about nothing until he himself spoke of it.",
-      "From a hadith of Ubayy bin Ka'b in al-Bukhari, as quoted in the commentary, not from the verses: Musa was asked who was the most learned of people and said 'I am', and was told of a servant who knew more; he was told to carry a fish in a basket and that he would find the man where he lost the fish; the servant boy was Yusha bin Nun; the water stood like an arch over the fish's path; and the man's name was al-Khidr."
+      "From a hadith of Ubayy bin Ka'b in al-Bukhari, as quoted in the commentary, not from the verses: Musa was asked who was the most learned of people and said 'I am', and was told of a servant who knew more; he was told to carry a fish in a basket and that he would find the man where he lost the fish; the servant boy was Yusha bin Nun; the water stood like an arch over the fish's path; and the man's name was al-Khidr.",
+      "Al-Khidr means 'the green one': wherever he sat, the bare ground turned green. Al-Bukhari reports this from the Prophet ﷺ, and the Shia narrations have it from the Imams."
     ],
     steps: [
       {"say":"m23-a","scene":"camp","src":"From a hadith in al-Bukhari","e":"🧔🏿 💬"},
@@ -434,6 +440,7 @@ window.STORY = [
       {"say":"m23-e","scene":"desert","e":"🧔🏿 👉🏿 👣"},
       {"play":"trail","line":"m23-back","scene":"desert","opts":{"n":7,"icon":"👣","walker":"img:icon-musa"}},
       {"say":"m23-f","scene":"sea","src":"From a hadith in al-Bukhari","e":"👴🏿 ✨"},
+      {"say":"m23-f1","scene":"sea","src":"Told in al-Bukhari and in Shia narrations","e":"🧔🏿 🌱 🌸"},
       {"say":"m23-g0","scene":"sea","e":"🧔🏿 💬 👴🏿"},
       {"say":"m23-g","scene":"sea","e":"🧔🏿 🤝 👴🏿"},
       {"play":"choice","line":"m23-q","scene":"sea","opts":{"options":[{"label":"To ask lots of questions","icon":"❓","ok":false},{"label":"To be patient, and not to ask","icon":"🤐","ok":true}],"wrong":"m23-q-no","img":"m23-g"}}
@@ -483,4 +490,4 @@ window.STORY = [
 ];
 
 /* Music for single lines; everything else uses its scene's music (sceneMood in game.js). */
-window.STORY_MOODS = {"m1-b":"longing", "m1-c":"nile", "m2-a":"longing", "m2-d":"nile", "m3-c":"nile", "m4-a":"longing", "m4-e":"triumph", "m4-f":"triumph", "m5-a":"nile", "m6-b":"dread", "m6-c":"longing", "m6-d":"dread", "m6-e":"dread", "m7-a":"trek", "m7-e":"longing", "m8-b":"pastoral", "m8-e":"triumph", "m9-c":"awe", "m9-d":"awe", "m10-a":"awe", "m10-b":"awe", "m10-c":"awe", "m10-d":"dread", "m11-a":"longing", "m11-b":"awe", "m11-c":"awe", "m11-d":"triumph", "m11-e0":"trek", "m11-e":"triumph", "m12-a":"court", "m12-b":"awe", "m12-c":"court", "m12-d":"court", "m12-e":"court", "m13-a":"court", "m13-b":"court", "m13-c":"dread", "m13-d":"longing", "m13-e":"awe", "m13-f":"triumph", "m14-a":"dread", "m14-b":"triumph", "m14-c":"court", "m14-d":"longing", "m14-e":"court", "m15-a":"dread", "m15-c":"dread", "m15-e":"dread", "m15-f":"longing", "m15-g":"court", "m16-a":"longing", "m16-b":"trek", "m16-c":"dread", "m16-d":"dread", "m16-e":"awe", "m17-a":"awe", "m17-b":"awe", "m17-c":"triumph", "m17-d":"triumph", "m17-e":"dread", "m17-f0":"dread", "m17-f":"longing", "m17-g":"triumph", "m18-a":"trek", "m18-b":"triumph", "m18-c":"longing", "m18-d":"triumph", "m19-a":"trek", "m19-b":"awe", "m19-c":"awe", "m19-d":"awe", "m19-e":"triumph", "m20-a":"dread", "m20-b":"dread", "m20-c":"longing", "m20-d":"dread", "m20-e":"longing", "m20-f":"triumph", "m20-g":"awe", "m21-a":"pastoral", "m21-b":"pastoral", "m21-c":"pastoral", "m21-d":"pastoral", "m21-e":"pastoral", "m22-a":"trek", "m22-b":"dread", "m22-c":"triumph", "m22-d":"longing", "m22-e":"longing", "m23-a":"pastoral", "m23-b":"trek", "m23-d":"trek", "m23-e":"triumph", "m23-f":"awe", "m23-g0":"pastoral", "m23-g":"pastoral", "m24-a":"dread", "m24-b":"pastoral", "m24-c":"awe", "m24-d":"longing", "m24-e":"pastoral", "m24-f":"awe", "m24-g":"triumph", "m24-h":"triumph", "m24-i":"awe", "m24-i2":"awe", "m25-a":"nile", "m25-b":"awe", "m25-c":"triumph"};
+window.STORY_MOODS = {"m1-b":"longing", "m1-c":"nile", "m2-a":"longing", "m2-d":"nile", "m3-c":"nile", "m4-a":"longing", "m4-e":"triumph", "m4-f":"triumph", "m5-a":"nile", "m6-b":"dread", "m6-c":"longing", "m6-d":"dread", "m6-e":"dread", "m7-a":"trek", "m7-e":"longing", "m8-b":"pastoral", "m8-e":"triumph", "m9-c":"awe", "m9-d":"awe", "m10-a":"awe", "m10-b":"awe", "m10-c":"awe", "m10-d":"dread", "m11-a":"longing", "m11-b":"awe", "m11-c":"awe", "m11-d":"triumph", "m11-e0":"trek", "m11-e":"triumph", "m12-a":"court", "m12-b":"awe", "m12-c":"court", "m12-d":"court", "m12-e":"court", "m13-a":"court", "m13-b":"court", "m13-c":"dread", "m13-d":"longing", "m13-e":"awe", "m13-f":"triumph", "m14-a":"dread", "m14-b":"triumph", "m14-c":"court", "m14-d":"longing", "m14-e":"court", "m15-a":"dread", "m15-c":"dread", "m15-e":"dread", "m15-f":"longing", "m15-g":"court", "m16-a":"longing", "m16-b":"trek", "m16-c":"dread", "m16-d":"dread", "m16-e":"awe", "m17-a":"awe", "m17-b":"awe", "m17-c":"triumph", "m17-d":"triumph", "m17-e":"dread", "m17-f0":"dread", "m17-f":"longing", "m17-g":"triumph", "m18-a":"trek", "m18-b":"triumph", "m18-c":"longing", "m18-d":"triumph", "m19-a":"trek", "m19-b":"awe", "m19-c":"awe", "m19-d":"awe", "m19-e":"triumph", "m20-a":"dread", "m20-b":"dread", "m20-c":"longing", "m20-d":"dread", "m20-e":"longing", "m20-f":"triumph", "m20-g":"awe", "m21-a":"pastoral", "m21-b":"pastoral", "m21-c":"pastoral", "m21-d":"pastoral", "m21-d1":"pastoral", "m21-e":"pastoral", "m22-a":"trek", "m22-b":"dread", "m22-c":"triumph", "m22-d":"longing", "m22-e":"longing", "m23-a":"pastoral", "m23-b":"trek", "m23-d":"trek", "m23-e":"triumph", "m23-f":"awe", "m23-f1":"wonder", "m23-g0":"pastoral", "m23-g":"pastoral", "m24-a":"dread", "m24-b":"pastoral", "m24-c":"awe", "m24-d":"longing", "m24-e":"pastoral", "m24-f":"awe", "m24-g":"triumph", "m24-h":"triumph", "m24-i":"awe", "m24-i2":"awe", "m25-a":"nile", "m25-b":"awe", "m25-c":"triumph"};

@@ -203,6 +203,17 @@ Pictures are AI-generated: say so wherever they are credited. The clothes and
 buildings are an artistic interpretation in a West African style, not a
 reconstruction of ancient Egypt, and the game's note for parents says so.
 
+## Links that leave Asmau, and the apps
+
+`shared/gate.js` (on every page) puts a grown-up check in front of every link to another site or an email
+address, including links the story code writes: a sum in words ("What is seven times eight?") that a parent
+answers in a moment and a small child cannot. Apple's Kids category requires it. Nothing needs marking: any
+`<a href>` that leaves the site is checked.
+
+The store apps open the site as `index.html?app=ios` (or `android`, `huawei`; `?app=web` undoes it). The device
+remembers it, and `<html data-asmau-app>` hides everything marked `class="web-only"` (donation links and wording)
+and shows `class="app-only"` instead. Mark anything new that must not appear in the apps the same way.
+
 ## Offline and updates
 
 The site works with no connection, game by game. The first visit saves the pages
@@ -347,7 +358,7 @@ cd tests && npm install && npx playwright install chromium && npm test
 ```
 
 GitHub runs them on every push (`.github/workflows/validate.yml`). `node tests/run.js sync`
-runs just one group (`landing`, `narration`, `offline`, `sync`, `update`, `playthrough`, `worker`).
+runs just one group (`landing`, `narration`, `offline`, `sync`, `update`, `playthrough`, `counting`, `gate`, `worker`).
 Add `?skipms=300` to a game's address to make the "Skip" button appear after 0.3 s instead of 22 s.
 
 ## Checking your work

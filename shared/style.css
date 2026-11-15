@@ -97,3 +97,8 @@ body {
 .sound-levels input[type="range"] { width: 100%; min-height: 32px; accent-color: #f0b84b; }
 .sound-levels .sl-val { text-align: right; font-variant-numeric: tabular-nums; font-size: 14px; opacity: .85; }
 .sound-levels .sl-note { margin: 6px 0 0; font-size: 13px; opacity: .8; }
+
+/* App mode (shared/gate.js): the store apps hide what is for the website only, such as donation links */
+.app-only { display: none !important; }
+html[data-asmau-app] .web-only { display: none !important; }
+html[data-asmau-app] .app-only { display: revert !important; }

@@ -19,8 +19,8 @@
 */
 
 // BEGIN GENERATED
-const RELEASE = "2026.11.25";
-const BUILD = "c6e7909132be";
+const RELEASE = "2026.11.26";
+const BUILD = "fd6efba77444";
 const SHELL = [
   "./",
   "app.webmanifest",
@@ -133,6 +133,7 @@ const SHELL = [
   "privacy.html",
   "reset.html",
   "shared/config.js",
+  "shared/gate.js",
   "shared/mp3.js",
   "shared/music.js",
   "shared/narration.js",

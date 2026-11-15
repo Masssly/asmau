@@ -199,7 +199,7 @@
         </button>
         <button class="p-card p-support" data-go="support">
           <span class="p-ico" aria-hidden="true">💛</span>
-          <span class="p-txt"><strong>Help keep it free</strong><span>Donate, share, or tell us a mistake.</span></span>
+          <span class="p-txt"><strong>Help keep it free</strong><span><span class="web-only">Donate, share, or tell us a mistake.</span><span class="app-only">Share it, or tell us a mistake.</span></span></span>
         </button>
       </div>
 
@@ -258,11 +258,13 @@
       <h3>Help keep Asmau free</h3>
       <p>Asmau is free, with no adverts and nothing to unlock, and it will stay that way. You never have to pay or give
         anything to use it.</p>
+      <div class="web-only">
       <h4>Donate</h4>
       <p>Donations from families pay for the storage, the pictures, and the time it takes to make each new story carefully.
         Any amount helps. Donating does not unlock any game; the only thing it changes is the space for your recordings, if
         you keep them online and run out.</p>
       <a class="big-link" href="https://ko-fi.com/dagbanli" target="_blank" rel="noopener">💛 Donate on Ko-fi →</a>
+      </div>
       <h4>Other ways to help</h4>
       <ul>
         <li><strong>Share it</strong> with families and teachers who would like it.</li>
@@ -546,6 +548,7 @@
 </script>
 <script src="shared/music.js"></script>
 <script src="shared/sound-panel.js"></script>
+<script src="shared/gate.js"></script>
 <script src="shared/pwa.js"></script>
 </body>
 </html>

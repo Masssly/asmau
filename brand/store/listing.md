@@ -54,11 +54,12 @@ For ages 1½ to 9. Under 5, play together with a grown-up.
 
 ## Notes for the forms (not shown to the public)
 
-- **Category:** Education. Apple: also apply for the Kids category; age band to decide (6–8 fits the stories, 5 and
-  under fits Tap & Say and Count with Me; Apple allows one band). Google: target ages "5 and under" and "6–8", which
-  puts the app in the Families programme and its rules.
-- **Before Apple's Kids category (a build task, not text):** a grown-up check in front of every link that leaves the
-  app (the verse links, the privacy page's outside links, Ko-fi) and no donation link inside the app at all.
+- **Category:** Education. Apple: the Kids category, age band **6–8** (the owner's choice, 15 November 2026; Apple
+  allows one band). Google: target ages "5 and under" and "6–8", which puts the app in the Families programme and its
+  rules.
+- **Grown-up check (built, 2026.11.26):** every link that leaves the app first asks a grown-up for a sum written in
+  words (shared/gate.js). The apps must open the site as `index.html?app=ios` (or `android`, `huawei`): in that app
+  mode there is no donation link or donation wording anywhere. Say both in the review notes for Apple.
 - **Privacy answers:** nothing collected, except the optional voice sync a parent can turn on: recordings encrypted on
   the device before upload, stored on Cloudflare under a random family code, readable by no one else. Whether the
   stores count end-to-end encrypted, optional data as "collected" must be checked in each form's own help text.

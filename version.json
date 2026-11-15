@@ -1,13 +1,18 @@
 {
-  "version": "2026.11.25",
+  "version": "2026.11.26",
   "date": "2026-11-15",
-  "buildId": "c6e7909132be",
+  "buildId": "fd6efba77444",
   "notes": [
-    "Much smaller first visit: each game downloads when it is first opened (under 1 MB to start), and parents can save every game at once for a journey",
-    "Bigger pictures, words and buttons on tablets",
-    "On small phones the story words no longer hide behind the buttons"
+    "A grown-up check before any link that leaves Asmau (the verse links, Ko-fi, GitHub): a quick sum for parents"
   ],
   "history": [
+    {
+      "version": "2026.11.26",
+      "date": "2026-11-15",
+      "notes": [
+        "A grown-up check before any link that leaves Asmau (the verse links, Ko-fi, GitHub): a quick sum for parents"
+      ]
+    },
     {
       "version": "2026.11.25",
       "date": "2026-11-15",

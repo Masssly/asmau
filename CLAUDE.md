@@ -66,6 +66,12 @@ things work; this file holds the decisions that must not be lost between session
   "Asmau", tagline "Islamic games for curious kids". Rules, colours and how to remake every icon:
   brand/README.md. Never hand-edit brand/kit; remake it.
 
+## Links, donations and the apps
+- Every link that leaves Asmau goes through the grown-up check (shared/gate.js) automatically; never open an
+  outside page another way (no window.open of an outside address from game code).
+- Anything about donations or other website-only things gets `class="web-only"`: the store apps (opened as
+  `?app=ios|android|huawei`) must show no donation link or wording. Apple Kids category, age band 6–8.
+
 ## Releasing
 - `node scripts/release.js "note"` → `node scripts/validate.js` → full tests (tests/run.js) →
   commit → `scripts/publish-media.js` (needs ADMIN_TOKEN, never committed) → push main → check

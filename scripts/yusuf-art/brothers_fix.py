@@ -69,10 +69,12 @@ def mend(log):
             print("%s: mended picture has %s brothers, want %d" % (k, got, target))
 
 
-FIVE = brothers.TEN.replace("ten grown", "five grown").replace(", maroon, sand, slate blue, dark green, terracotta and charcoal", " and maroon")
+# each brother named on his own: listing the colours together let the model merge two of them into one man
+FIVE = ("five grown brothers, all with deep dark brown skin and short beards: the first in a rust robe and turban, the second "
+        "in ochre, the third in olive green, the fourth in chocolate brown, the fifth in maroon")
 
 
-def two_stage(keys, tries=3):
+def two_stage(keys, tries=4):
     """For scenes the model keeps getting wrong: draw them with five brothers on the left (a number it gets right),
     then one edit adds the rest as a second group on the right."""
     for k in keys:
@@ -85,10 +87,11 @@ def two_stage(keys, tries=3):
                  "skin." + vertex.END)
         refs = tuple([brothers.REF_BRO] + [brothers.REF[w] for w in people][:2])
         rest = target - 5
+        new = ["one in a slate blue robe and turban", "one in dark green", "one in terracotta", "one in sand", "one in charcoal grey"][:rest]
         second = ("Edit this picture. In the open space on the RIGHT side, add a second group of exactly %s more grown bearded "
-                  "brothers with deep dark brown skin and short beards, in slate blue, dark green, terracotta, sand and charcoal "
-                  "robes and turbans, doing the same as the first five brothers, each fully visible and not hidden behind anyone. "
-                  "After this there are exactly %d brothers in all. %s" % ({4: "four", 5: "five"}[rest], target, KEEP)) + vertex.END
+                  "brothers with deep dark brown skin and short beards: %s. They do the same as the first five brothers, each "
+                  "fully visible and not hidden behind anyone. After this there are exactly %d brothers in all. %s"
+                  % ({4: "four", 5: "five"}[rest], ", ".join(new), target, KEEP)) + vertex.END
         for r in range(tries):
             a_ = os.path.join(TRY, "%s-five%d.png" % (k, r)); b_ = os.path.join(TRY, "%s-two%d.png" % (k, r))
             vertex.run([(k, a_, first, refs)], workers=1)

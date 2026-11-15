@@ -30,7 +30,7 @@ const exists = (f) => fs.existsSync(path.join(ROOT, f));
 const json = (f) => { try { return JSON.parse(read(f)); } catch (e) { fail(f + ": not valid JSON (" + e.message + ")"); return null; } };
 
 const REF = /^\d+:\d+(?:-\d+)?$/;
-const SCENES = new Set(["night", "dusk", "desert", "well", "egypt", "palace", "prison", "field", "grey", "dawn", "river", "city", "fire", "mountain", "sea", "camp", "storm"]);
+const SCENES = new Set(["night", "dusk", "desert", "well", "egypt", "palace", "prison", "field", "grey", "dawn", "river", "city", "fire", "mountain", "sea", "camp", "storm", "heaven", "garden"]);
 
 // load a browser script in an empty sandbox and hand back its globals
 function load(files) {

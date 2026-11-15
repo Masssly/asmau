@@ -1,13 +1,18 @@
 {
-  "version": "2026.11.19",
+  "version": "2026.11.20",
   "date": "2026-11-15",
-  "buildId": "f9662999f238",
+  "buildId": "6109078ebd0b",
   "notes": [
-    "The prophets are listed in order, the first prophet at the top",
-    "Each section says that more games are on the way",
-    "Shorter parents' notes in Yusuf and Musa: each fact told once"
+    "New: the story of Adam, 11 chapters, from Sunni and Shia sources (pictures are coming; for now each page shows icons)"
   ],
   "history": [
+    {
+      "version": "2026.11.20",
+      "date": "2026-11-15",
+      "notes": [
+        "New: the story of Adam, 11 chapters, from Sunni and Shia sources (pictures are coming; for now each page shows icons)"
+      ]
+    },
     {
       "version": "2026.11.19",
       "date": "2026-11-15",

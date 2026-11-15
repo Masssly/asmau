@@ -1,0 +1,315 @@
+{
+ "bg-heaven": {
+  "alt": "A calm, bright sky high above the clouds, soft white-gold light pouring down from above, gentle clouds below; no figures.",
+  "scene": "A calm, bright sky high above the clouds, soft white-gold light pouring down from above, gentle clouds below; no figures.",
+  "who": []
+ },
+ "d1-a": {
+  "alt": "the angels glide together through a vast bright sky high above soft clouds, beams of golden light all around them.",
+  "scene": "tall gentle beings made of soft white-gold light with great feathered wings, their faces hidden in glowing light glide together through a vast bright sky high above soft clouds, beams of golden light all around them.",
+  "who": [
+   "ANG"
+  ]
+ },
+ "d1-b": {
+  "alt": "Seen from high above the clouds, the round earth glows green and blue far below at dawn, while the angels gather at the edge of the clouds and look down at it in wonder.",
+  "scene": "Seen from high above the clouds, the round earth glows green and blue far below at dawn, while tall gentle beings made of soft white-gold light with great feathered wings, their faces hidden in glowing light gather at the edge of the clouds and look down at it in wonder.",
+  "who": [
+   "ANG"
+  ]
+ },
+ "d1-c": {
+  "alt": "the angels bow their glowing heads humbly in a circle of soft light, while a great warm golden light shines down on them from above.",
+  "scene": "tall gentle beings made of soft white-gold light with great feathered wings, their faces hidden in glowing light bow their glowing heads humbly in a circle of soft light, while a great warm golden light shines down on them from above.",
+  "who": [
+   "ANG"
+  ]
+ },
+ "d2-a": {
+  "alt": "Close up: heaps of earth in many colours, black, dark brown, red, ochre, sandy and pale, lying side by side on a wide plain under a glowing sky. No people.",
+  "scene": "Close up: heaps of earth in many colours, black, dark brown, red, ochre, sandy and pale, lying side by side on a wide plain under a glowing sky. No people.",
+  "who": []
+ },
+ "d2-b": {
+  "alt": "Soft wet clay in rich earth colours glistens in warm light beside a quiet stream in a wide valley, smooth and shining. No people.",
+  "scene": "Soft wet clay in rich earth colours glistens in warm light beside a quiet stream in a wide valley, smooth and shining. No people.",
+  "who": []
+ },
+ "d2-c": {
+  "alt": "Adam stands on a hilltop at sunrise, eyes just opened, looking around at the world in wonder, golden light all around him.",
+  "scene": "a tall, strong, gentle man with deep dark brown skin, short black hair and a short black beard, in a long simple cream-white garment stands on a hilltop at sunrise, eyes just opened, looking around at the world in wonder, golden light all around him.",
+  "who": [
+   "ADAM"
+  ]
+ },
+ "d2-d": {
+  "alt": "Close up: two cupped hands, deep dark brown, hold a small heap of earth of many colours, black, red, brown, ochre and sand, glowing in the morning sun.",
+  "scene": "Close up: two cupped hands, deep dark brown, hold a small heap of earth of many colours, black, red, brown, ochre and sand, glowing in the morning sun.",
+  "who": []
+ },
+ "d3-a": {
+  "alt": "Adam on a sunny hilltop, eyes squeezed shut in a big happy sneeze, a little sparkle in the air, flowers around his feet.",
+  "scene": "a tall, strong, gentle man with deep dark brown skin, short black hair and a short black beard, in a long simple cream-white garment on a sunny hilltop, eyes squeezed shut in a big happy sneeze, a little sparkle in the air, flowers around his feet.",
+  "who": [
+   "ADAM"
+  ]
+ },
+ "d3-b": {
+  "alt": "Adam smiles gently with his hand on his heart, looking up at a warm golden light shining down from the sky.",
+  "scene": "a tall, strong, gentle man with deep dark brown skin, short black hair and a short black beard, in a long simple cream-white garment smiles gently with his hand on his heart, looking up at a warm golden light shining down from the sky.",
+  "who": [
+   "ADAM"
+  ]
+ },
+ "d3-c": {
+  "alt": "Adam walks across a bright meadow toward a group of the angels, raising his right hand in greeting.",
+  "scene": "a tall, strong, gentle man with deep dark brown skin, short black hair and a short black beard, in a long simple cream-white garment walks across a bright meadow toward a group of tall gentle beings made of soft white-gold light with great feathered wings, their faces hidden in glowing light, raising his right hand in greeting.",
+  "who": [
+   "ADAM",
+   "ANG"
+  ]
+ },
+ "d3-d": {
+  "alt": "Adam and the angels face each other on the meadow; the angels' light brightens warmly and Adam smiles.",
+  "scene": "a tall, strong, gentle man with deep dark brown skin, short black hair and a short black beard, in a long simple cream-white garment and tall gentle beings made of soft white-gold light with great feathered wings, their faces hidden in glowing light face each other on the meadow; the angels' light brightens warmly and Adam smiles.",
+  "who": [
+   "ADAM",
+   "ANG"
+  ]
+ },
+ "d4-a": {
+  "alt": "Adam sits in a sunny meadow, surrounded by a lion, a camel, a horse, a deer and birds, with a tall tree and distant mountains, looking at them with a thoughtful smile;…",
+  "scene": "a tall, strong, gentle man with deep dark brown skin, short black hair and a short black beard, in a long simple cream-white garment sits in a sunny meadow, surrounded by a lion, a camel, a horse, a deer and birds, with a tall tree and distant mountains, looking at them with a thoughtful smile; the sun and a pale moon are both in the sky.",
+  "who": [
+   "ADAM"
+  ]
+ },
+ "d4-b": {
+  "alt": "the angels bow humbly before a row of animals and things glowing softly in a meadow: a lion, a camel, a bird, a tree and a small mountain.",
+  "scene": "tall gentle beings made of soft white-gold light with great feathered wings, their faces hidden in glowing light bow humbly before a row of animals and things glowing softly in a meadow: a lion, a camel, a bird, a tree and a small mountain.",
+  "who": [
+   "ANG"
+  ]
+ },
+ "d4-c": {
+  "alt": "Adam points kindly to each animal in turn while the angels listen in wonder; a lion, a camel, a horse and birds stand in a line in the meadow.",
+  "scene": "a tall, strong, gentle man with deep dark brown skin, short black hair and a short black beard, in a long simple cream-white garment points kindly to each animal in turn while tall gentle beings made of soft white-gold light with great feathered wings, their faces hidden in glowing light listen in wonder; a lion, a camel, a horse and birds stand in a line in the meadow.",
+  "who": [
+   "ADAM",
+   "ANG"
+  ]
+ },
+ "d5-a": {
+  "alt": "Wide view: rows of the angels bow low together in a vast bright hall of clouds and light before Adam, who stands humbly with his hands at his chest.",
+  "scene": "Wide view: rows of tall gentle beings made of soft white-gold light with great feathered wings, their faces hidden in glowing light bow low together in a vast bright hall of clouds and light before a tall, strong, gentle man with deep dark brown skin, short black hair and a short black beard, in a long simple cream-white garment, who stands humbly with his hands at his chest.",
+  "who": [
+   "ANG",
+   "ADAM"
+  ]
+ },
+ "d5-b": {
+  "alt": "Among rows of bowing the angels, Iblis stands upright with his arms folded, turning his head away.",
+  "scene": "Among rows of bowing tall gentle beings made of soft white-gold light with great feathered wings, their faces hidden in glowing light, a tall shadowy shape made of dim smokeless red-orange flame and dark smoke, like a hooded figure of fire, with no face to be seen stands upright with his arms folded, turning his head away.",
+  "who": [
+   "ANG",
+   "IBL"
+  ]
+ },
+ "d5-c": {
+  "alt": "Close up: Iblis with his head held high, flames flickering proudly, alone against a dim grey sky.",
+  "scene": "Close up: a tall shadowy shape made of dim smokeless red-orange flame and dark smoke, like a hooded figure of fire, with no face to be seen with his head held high, flames flickering proudly, alone against a dim grey sky.",
+  "who": [
+   "IBL"
+  ]
+ },
+ "d5-d": {
+  "alt": "Iblis drifts away into dark smoke at the edge of the clouds, glancing back slyly; the bright sky behind him stays calm.",
+  "scene": "a tall shadowy shape made of dim smokeless red-orange flame and dark smoke, like a hooded figure of fire, with no face to be seen drifts away into dark smoke at the edge of the clouds, glancing back slyly; the bright sky behind him stays calm.",
+  "who": [
+   "IBL"
+  ]
+ },
+ "d5-e": {
+  "alt": "A quiet green hill at night under a sky full of stars; a soft golden light shines down on a small lit house, while a wisp of dark smoke drifts far away.",
+  "scene": "A quiet green hill at night under a sky full of stars; a soft golden light shines down on a small lit house, while a wisp of dark smoke drifts far away.",
+  "who": []
+ },
+ "d6-a": {
+  "alt": "In the Garden, Adam and Hawwa meet for the first time under a flowering tree, smiling shyly, a respectful step apart.",
+  "scene": "In a vast peaceful garden of tall fruit trees, clear streams, flowers and soft golden light, real and natural, a tall, strong, gentle man with deep dark brown skin, short black hair and a short black beard, in a long simple cream-white garment and a kind, graceful young woman with deep dark brown skin, a soft sage-green headscarf over her head and shoulders that fully covers her hair, and a long simple cream garment meet for the first time under a flowering tree, smiling shyly, a respectful step apart.",
+  "who": [
+   "GARDEN",
+   "ADAM",
+   "HAWWA"
+  ]
+ },
+ "d6-b": {
+  "alt": "Adam and Hawwa walk together beside a clear stream in the Garden, among trees heavy with fruit, with birds and deer nearby.",
+  "scene": "a tall, strong, gentle man with deep dark brown skin, short black hair and a short black beard, in a long simple cream-white garment and a kind, graceful young woman with deep dark brown skin, a soft sage-green headscarf over her head and shoulders that fully covers her hair, and a long simple cream garment walk together beside a clear stream in a vast peaceful garden of tall fruit trees, clear streams, flowers and soft golden light, real and natural, among trees heavy with fruit, with birds and deer nearby.",
+  "who": [
+   "ADAM",
+   "HAWWA",
+   "GARDEN"
+  ]
+ },
+ "d6-c": {
+  "alt": "In the middle of the Garden stands one single great tree, apart from all the others, with a soft shadow beneath it; Adam and Hawwa look at it from a distance.",
+  "scene": "In the middle of a vast peaceful garden of tall fruit trees, clear streams, flowers and soft golden light, real and natural stands one single great tree, apart from all the others, with a soft shadow beneath it; a tall, strong, gentle man with deep dark brown skin, short black hair and a short black beard, in a long simple cream-white garment and a kind, graceful young woman with deep dark brown skin, a soft sage-green headscarf over her head and shoulders that fully covers her hair, and a long simple cream garment look at it from a distance.",
+  "who": [
+   "GARDEN",
+   "ADAM",
+   "HAWWA"
+  ]
+ },
+ "icon-adam": {
+  "alt": "Adam",
+  "scene": "a tall, strong, gentle man with deep dark brown skin, short black hair and a short black beard, in a long simple cream-white garment",
+  "who": [
+   "ADAM"
+  ],
+  "portrait": true
+ },
+ "d7-a": {
+  "alt": "In the Garden near the great tree, a faint wisp of Iblis curls like smoke behind a bush and whispers toward Adam and Hawwa, who stand listening, unsure.",
+  "scene": "In a vast peaceful garden of tall fruit trees, clear streams, flowers and soft golden light, real and natural near the great tree, a faint wisp of a tall shadowy shape made of dim smokeless red-orange flame and dark smoke, like a hooded figure of fire, with no face to be seen curls like smoke behind a bush and whispers toward a tall, strong, gentle man with deep dark brown skin, short black hair and a short black beard, in a long simple cream-white garment and a kind, graceful young woman with deep dark brown skin, a soft sage-green headscarf over her head and shoulders that fully covers her hair, and a long simple cream garment, who stand listening, unsure.",
+  "who": [
+   "GARDEN",
+   "IBL",
+   "ADAM",
+   "HAWWA"
+  ]
+ },
+ "d7-b": {
+  "alt": "Close up: the branches of the great tree, a curl of dark smoke wrapping around one branch, its leaves rustling, shadows growing longer.",
+  "scene": "Close up: the branches of the great tree, a curl of dark smoke wrapping around one branch, its leaves rustling, shadows growing longer.",
+  "who": []
+ },
+ "d7-c": {
+  "alt": "A single bitten piece of fruit lies on the grass beneath the great tree, a few leaves drifting down. No people.",
+  "scene": "A single bitten piece of fruit lies on the grass beneath the great tree, a few leaves drifting down. No people.",
+  "who": []
+ },
+ "d7-d": {
+  "alt": "Close up: large green leaves of the Garden gathered and held together by two deep dark brown hands; nothing else of the people is shown.",
+  "scene": "Close up: large green leaves of the Garden gathered and held together by two deep dark brown hands; nothing else of the people is shown.",
+  "who": []
+ },
+ "d7-e": {
+  "alt": "The great tree stands alone in fading evening light; the Garden around it is quiet and still, a cool breeze bending the grass.",
+  "scene": "The great tree stands alone in fading evening light; the Garden around it is quiet and still, a cool breeze bending the grass.",
+  "who": []
+ },
+ "d8-a": {
+  "alt": "Adam and Hawwa kneel side by side on the grass at dusk, heads bowed and hands raised in prayer, the great tree dark behind them.",
+  "scene": "a tall, strong, gentle man with deep dark brown skin, short black hair and a short black beard, in a long simple cream-white garment and a kind, graceful young woman with deep dark brown skin, a soft sage-green headscarf over her head and shoulders that fully covers her hair, and a long simple cream garment kneel side by side on the grass at dusk, heads bowed and hands raised in prayer, the great tree dark behind them.",
+  "who": [
+   "ADAM",
+   "HAWWA"
+  ]
+ },
+ "d8-b": {
+  "alt": "Adam and Hawwa look up with relief and joy as warm golden morning light breaks over them.",
+  "scene": "a tall, strong, gentle man with deep dark brown skin, short black hair and a short black beard, in a long simple cream-white garment and a kind, graceful young woman with deep dark brown skin, a soft sage-green headscarf over her head and shoulders that fully covers her hair, and a long simple cream garment look up with relief and joy as warm golden morning light breaks over them.",
+  "who": [
+   "ADAM",
+   "HAWWA"
+  ]
+ },
+ "d9-a": {
+  "alt": "Adam, now in simple brown woven clothes, stands alone on a rocky hill on the wide dry earth, looking up at the big sky.",
+  "scene": "a tall, strong, gentle man with deep dark brown skin, short black hair and a short black beard, in a long simple cream-white garment, now in simple brown woven clothes, stands alone on a rocky hill on the wide dry earth, looking up at the big sky.",
+  "who": [
+   "ADAM"
+  ]
+ },
+ "d9-b": {
+  "alt": "In a wide desert valley among bare hills, Adam and Hawwa, both in simple brown woven clothes, catch sight of each other from far away and hurry toward each other,…",
+  "scene": "In a wide desert valley among bare hills, a tall, strong, gentle man with deep dark brown skin, short black hair and a short black beard, in a long simple cream-white garment and a kind, graceful young woman with deep dark brown skin, a soft sage-green headscarf over her head and shoulders that fully covers her hair, and a long simple cream garment, both in simple brown woven clothes, catch sight of each other from far away and hurry toward each other, overjoyed.",
+  "who": [
+   "ADAM",
+   "HAWWA"
+  ]
+ },
+ "d9-c": {
+  "alt": "In a green valley, Adam in simple brown woven clothes presses seeds into dark earth with his hands, while beside him a soft glow of light shows where an angel stands,…",
+  "scene": "In a green valley, a tall, strong, gentle man with deep dark brown skin, short black hair and a short black beard, in a long simple cream-white garment in simple brown woven clothes presses seeds into dark earth with his hands, while beside him a soft glow of light shows where an angel stands, made only of light.",
+  "who": [
+   "ADAM"
+  ]
+ },
+ "d9-d": {
+  "alt": "A golden wheat field at evening; Adam and Hawwa in brown woven clothes carry bundles of wheat toward a simple stone house, smiling.",
+  "scene": "A golden wheat field at evening; a tall, strong, gentle man with deep dark brown skin, short black hair and a short black beard, in a long simple cream-white garment and a kind, graceful young woman with deep dark brown skin, a soft sage-green headscarf over her head and shoulders that fully covers her hair, and a long simple cream garment in brown woven clothes carry bundles of wheat toward a simple stone house, smiling.",
+  "who": [
+   "ADAM",
+   "HAWWA"
+  ]
+ },
+ "d10-a": {
+  "alt": "the kind brother carries his best young lamb in his arms and the angry brother carries a small basket of grain, both walking up a green hill in the morning.",
+  "scene": "a gentle young shepherd with deep dark brown skin, short black hair and a small beard, in a sand-coloured tunic carries his best young lamb in his arms and a young farmer with deep dark brown skin, short black hair and a small beard, in a dark rust-red tunic carries a small basket of grain, both walking up a green hill in the morning.",
+  "who": [
+   "HAB",
+   "QAB"
+  ]
+ },
+ "d10-b": {
+  "alt": "On the hilltop a soft light falls on the kind brother and his lamb, while the angry brother stands nearby with clenched fists and a jealous frown.",
+  "scene": "On the hilltop a soft light falls on a gentle young shepherd with deep dark brown skin, short black hair and a small beard, in a sand-coloured tunic and his lamb, while a young farmer with deep dark brown skin, short black hair and a small beard, in a dark rust-red tunic stands nearby with clenched fists and a jealous frown.",
+  "who": [
+   "HAB",
+   "QAB"
+  ]
+ },
+ "d10-c": {
+  "alt": "At dusk, the kind brother stands calmly with his open, empty hands lowered at his sides, while the angry brother faces him angrily a short distance away.",
+  "scene": "At dusk, a gentle young shepherd with deep dark brown skin, short black hair and a small beard, in a sand-coloured tunic stands calmly with his open, empty hands lowered at his sides, while a young farmer with deep dark brown skin, short black hair and a small beard, in a dark rust-red tunic faces him angrily a short distance away.",
+  "who": [
+   "HAB",
+   "QAB"
+  ]
+ },
+ "d10-d": {
+  "alt": "A lonely hill under a grey sky: an empty shepherd's staff lies in the grass, and a small lamb stands quietly beside it. No people.",
+  "scene": "A lonely hill under a grey sky: an empty shepherd's staff lies in the grass, and a small lamb stands quietly beside it. No people.",
+  "who": []
+ },
+ "d10-e": {
+  "alt": "A black raven scratches at the earth on the grey hill, while the angry brother kneels nearby with his head in his hands, full of sorrow.",
+  "scene": "A black raven scratches at the earth on the grey hill, while a young farmer with deep dark brown skin, short black hair and a small beard, in a dark rust-red tunic kneels nearby with his head in his hands, full of sorrow.",
+  "who": [
+   "QAB"
+  ]
+ },
+ "d10-f": {
+  "alt": "Sunrise over green fields: two caring deep dark brown hands gently lift a small fallen bird from the grass, the sky opening golden.",
+  "scene": "Sunrise over green fields: two caring deep dark brown hands gently lift a small fallen bird from the grass, the sky opening golden.",
+  "who": []
+ },
+ "d11-a": {
+  "alt": "Adam, older now with grey in his beard, sits under a tree teaching Shith, who listens closely; Hawwa smiles nearby.",
+  "scene": "a tall, strong, gentle man with deep dark brown skin, short black hair and a short black beard, in a long simple cream-white garment, older now with grey in his beard, sits under a tree teaching a calm, kind boy of about ten with deep dark brown skin and short black hair, in a cream tunic, who listens closely; a kind, graceful young woman with deep dark brown skin, a soft sage-green headscarf over her head and shoulders that fully covers her hair, and a long simple cream garment smiles nearby.",
+  "who": [
+   "ADAM",
+   "SHITH",
+   "HAWWA"
+  ]
+ },
+ "d11-b": {
+  "alt": "A big family of children and grown-ups sits in a circle on the grass at evening, listening to Adam, who points gently up at the first stars.",
+  "scene": "A big family of children and grown-ups sits in a circle on the grass at evening, listening to a tall, strong, gentle man with deep dark brown skin, short black hair and a short black beard, in a long simple cream-white garment, who points gently up at the first stars.",
+  "who": [
+   "ADAM"
+  ]
+ },
+ "d11-c": {
+  "alt": "Sunrise over a quiet valley with a small village; families walk out to their fields in simple modest clothes, warm light over everything.",
+  "scene": "Sunrise over a quiet valley with a small village; families walk out to their fields in simple modest clothes, warm light over everything.",
+  "who": []
+ },
+ "d11-d": {
+  "alt": "A big crowd of smiling children and families on a green hill at sunrise, greeting each other with raised hands, hugging and shaking hands.",
+  "scene": "A big crowd of smiling children and families on a green hill at sunrise, greeting each other with raised hands, hugging and shaking hands.",
+  "who": []
+ }
+}

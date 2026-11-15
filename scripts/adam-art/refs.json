@@ -1,0 +1,22 @@
+{
+ "ADAM": {
+  "name": "Adam",
+  "look": "a tall, strong, gentle man with deep dark brown skin, short black hair and a short black beard, in a long simple cream-white garment"
+ },
+ "HAWWA": {
+  "name": "Hawwa",
+  "look": "a kind, graceful young woman with deep dark brown skin, a soft sage-green headscarf over her head and shoulders that fully covers her hair, and a long simple cream garment"
+ },
+ "HAB": {
+  "name": "the kind brother",
+  "look": "a gentle young shepherd with deep dark brown skin, short black hair and a small beard, in a sand-coloured tunic"
+ },
+ "QAB": {
+  "name": "the angry brother",
+  "look": "a young farmer with deep dark brown skin, short black hair and a small beard, in a dark rust-red tunic"
+ },
+ "SHITH": {
+  "name": "Shith",
+  "look": "a calm, kind boy of about ten with deep dark brown skin and short black hair, in a cream tunic"
+ }
+}

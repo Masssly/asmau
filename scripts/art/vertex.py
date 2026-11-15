@@ -8,6 +8,7 @@ so that a person looks the same from scene to scene.
   musa-refs [KEY ...]       draw the reference pictures (scripts/musa-art/refs.json)
                             into scripts/musa-art/refs/<KEY>.png, for a person to approve
   asmau-refs / asmau-scenes  the same for the Nana Asma'u story (scripts/asmau-art)
+  adam-refs / adam-scenes    the same for the Adam story (scripts/adam-art)
   musa-scenes [KEY ...]     draw the Musa scenes (scripts/musa-art/shots.json) into
                             scripts/musa-art/out/<key>.png, each shown the approved
                             reference pictures of the people in it. Already drawn: skipped.
@@ -231,7 +232,10 @@ if __name__ == "__main__":
         sys.exit(0)
     if cmd.startswith("asmau-"):
         use("asmau")
+    if cmd.startswith("adam-"):
+        use("adam")
     failed = {"musa-refs": musa_refs, "musa-scenes": musa_scenes, "asmau-refs": musa_refs, "asmau-scenes": musa_scenes,
+              "adam-refs": musa_refs, "adam-scenes": musa_scenes,
               "yusuf-fix": yusuf_fix, "yusuf-brothers": brothers}[cmd](args)
     if failed:
         print("%d failed: %s" % (len(failed), ", ".join(failed)))

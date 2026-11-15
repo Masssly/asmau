@@ -490,6 +490,8 @@ button { touch-action: manipulation; -webkit-tap-highlight-color: transparent; }
 .stage[data-scene="sea"]      { background: linear-gradient(180deg, #ffd7a8 0%, #bfe6f2 34%, #2f9fc4 34.2%, #17688f 78%, #e2c283 78.2%, #cfa860 100%); }
 .stage[data-scene="camp"]     { background: linear-gradient(180deg, #f7c88a 0%, #fbe6c0 46%, #dcb672 46.2%, #c39a55 100%); }
 .stage[data-scene="storm"]    { background: linear-gradient(180deg, #2b2f44 0%, #565d78 50%, #6c6558 50.2%, #4f4a40 100%); }
+.stage[data-scene="heaven"]   { background: radial-gradient(ellipse at 50% 20%, #fff6dc 0%, #ffe3a8 30%, #b9c8ef 70%, #8ea3d8 100%); }
+.stage[data-scene="garden"]   { background: linear-gradient(180deg, #bfe9ff 0%, #e8f8ee 40%, #7fcf7a 62%, #4c9a52 100%); }
 .stage[data-scene="fire"] .fig, .stage[data-scene="storm"] .fig { filter: drop-shadow(0 0 10px rgba(255,214,110,.35)); }
 
 /* ---------- something always moving in the scene ---------- */

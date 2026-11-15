@@ -1,11 +1,24 @@
 {
-  "version": "2026.11.14",
-  "date": "2026-11-14",
-  "buildId": "af5d7e558017",
+  "version": "2026.11.15",
+  "date": "2026-11-15",
+  "buildId": "1f5b08baf1d1",
   "notes": [
-    "Musa now has all its pictures: 129 scenes drawn from approved reference pictures, and the six picture puzzles are back"
+    "Every page now has its own picture: 27 new pictures in Yusuf, Musa and Nana Asma'u",
+    "Nana Asma'u's walk: she faces the way she walks, and looks like herself",
+    "New covers: Yusuf with his hair as in the game, and baby Musa in the basket",
+    "Yusuf: a new picture of Yaqub with Yusuf and his little brother"
   ],
   "history": [
+    {
+      "version": "2026.11.15",
+      "date": "2026-11-15",
+      "notes": [
+        "Every page now has its own picture: 27 new pictures in Yusuf, Musa and Nana Asma'u",
+        "Nana Asma'u's walk: she faces the way she walks, and looks like herself",
+        "New covers: Yusuf with his hair as in the game, and baby Musa in the basket",
+        "Yusuf: a new picture of Yaqub with Yusuf and his little brother"
+      ]
+    },
     {
       "version": "2026.11.14",
       "date": "2026-11-14",

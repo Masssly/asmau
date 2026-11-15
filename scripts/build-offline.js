@@ -19,7 +19,7 @@ const crypto = require("crypto");
 
 const ROOT = path.join(__dirname, "..");
 const SKIP_DIRS = new Set([".git", ".github", "scripts", "sync", "tests", "node_modules"]);
-const SKIP_FILES = new Set(["sw.js", "README.md", ".nojekyll", "package.json", "package-lock.json"]);
+const SKIP_FILES = new Set(["sw.js", "README.md", "CLAUDE.md", ".nojekyll", "package.json", "package-lock.json"]);
 
 function walk(dir, out) {
   for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {

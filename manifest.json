@@ -4,16 +4,20 @@
       "id": "prophets",
       "title": "Stories of the Prophets",
       "icon": "🌟",
+      "order": "prophet",
+      "more": "More prophets’ stories are on the way.",
       "games": [
+        "adam",
         "yusuf",
-        "musa",
-        "adam"
+        "musa"
       ]
     },
     {
       "id": "great-muslims",
       "title": "Great Muslims",
       "icon": "📜",
+      "order": "born",
+      "more": "More great Muslims, women and men, are on the way.",
       "games": [
         "nana-asmau"
       ]
@@ -22,6 +26,8 @@
       "id": "little-ones",
       "title": "For little ones",
       "icon": "🧸",
+      "order": "level",
+      "more": "More games for little ones are on the way.",
       "games": [
         "tap-and-say",
         "count-the-crescents"

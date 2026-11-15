@@ -54,6 +54,32 @@ const slugs = sections.reduce((all, s) => all.concat((s && s.games) || []), []);
 if (!slugs.length) fail("manifest.json: no games listed");
 if (new Set(slugs).size !== slugs.length) fail("manifest.json: a game is listed twice");
 
+// The order of games inside a section. Prophets: the one who came first at the top, in the order below (the
+// usual order in Sunni and Shia books of the prophets' stories; the place of a few, such as Ayyub, Dhul-Kifl and
+// Yunus, is uncertain). Great Muslims: the one born first at the top ("born" in game.json, a year). Little ones:
+// the easiest first ("level" in game.json, 1 = easiest). See CLAUDE.md.
+const PROPHETS = ["Adam", "Idris", "Nuh", "Hud", "Salih", "Ibrahim", "Lut", "Ismail", "Ishaq", "Yaqub", "Yusuf", "Ayyub",
+  "Shuayb", "Musa", "Harun", "Dhul-Kifl", "Dawud", "Sulayman", "Ilyas", "Al-Yasa", "Yunus", "Zakariyya", "Yahya", "Isa", "Muhammad"];
+const ORDER = {
+  prophet: (g) => PROPHETS.indexOf(g.prophet),
+  born: (g) => (typeof g.born === "number" ? g.born : -1),
+  level: (g) => (typeof g.level === "number" ? g.level : -1)
+};
+for (const s of sections) {
+  if (!s.order) continue;
+  if (!ORDER[s.order]) { fail("manifest.json: section '" + s.title + "' has unknown order '" + s.order + "' (prophet, born or level)"); continue; }
+  if (s.more !== undefined && (typeof s.more !== "string" || !s.more.trim())) fail("manifest.json: section '" + s.title + "': 'more' must be a short sentence");
+  let last = -Infinity, lastSlug = null;
+  for (const slug of s.games) {
+    const g = json("games/" + slug + "/game.json");
+    if (!g) continue;
+    const k = ORDER[s.order](g);
+    if (k < 0) { fail("games/" + slug + "/game.json: the section '" + s.title + "' is ordered by '" + s.order + "', so this game needs " + (s.order === "prophet" ? "\"prophet\": one of " + PROPHETS.join(", ") : "a number in \"" + s.order + "\"")); continue; }
+    if (k < last) fail("manifest.json: in '" + s.title + "', " + slug + " must come before " + lastSlug + " (" + (s.order === "prophet" ? "the prophet who came first goes at the top" : s.order === "born" ? "the person born first goes at the top" : "the easiest game goes at the top") + ")");
+    last = k; lastSlug = slug;
+  }
+}
+
 let musicMoods = [], ambNames = [], sfxNames = [];
 try { const m = load(["shared/music.js"]).AsmauMusic; musicMoods = m.moodNames; ambNames = m.ambNames; sfxNames = m.sfxNames; } catch (e) { fail("shared/music.js: failed to load (" + e.message + ")"); }
 

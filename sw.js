@@ -19,8 +19,8 @@
 */
 
 // BEGIN GENERATED
-const RELEASE = "2026.11.17";
-const BUILD = "b443d29073b8";
+const RELEASE = "2026.11.18";
+const BUILD = "9b5e46c3393b";
 const SHELL = [
   "./",
   "app.webmanifest",

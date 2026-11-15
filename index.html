@@ -32,6 +32,7 @@
   .section-head h2 { font-family: var(--font-display); font-size: 21px; margin: 0; }
   .section-head::after { content: ""; flex: 1; height: 2px; border-radius: 2px; background: linear-gradient(90deg, var(--card-line), transparent); }
   .grid { display: grid; grid-template-columns: 1fr; gap: 16px; }
+  .more-note { margin: 12px 2px 0; color: var(--muted); font-size: 14px; font-style: italic; }
   @media (min-width: 560px) { .grid.many { grid-template-columns: 1fr 1fr; } }
 
   .tile { display: block; text-decoration: none; color: var(--cream); padding: 0; overflow: hidden; }
@@ -425,6 +426,7 @@
       var grid = el("div", "grid" + (s.games.length > 1 ? " many" : ""));
       s.games.forEach(function (g) { grid.appendChild(card(g)); });
       sec.appendChild(grid);
+      if (s.more) sec.appendChild(el("p", "more-note", "✦ " + s.more));
       main.appendChild(sec);
     });
   }
@@ -437,7 +439,7 @@
         return Promise.all(sections.map(function (s) {
           return Promise.all((s.games || []).map(function (slug) {
             return fetch("games/" + slug + "/game.json").then(function (r) { return r.json(); }).catch(function () { return null; });
-          })).then(function (games) { return { title: s.title, icon: s.icon, games: games.filter(Boolean) }; });
+          })).then(function (games) { return { title: s.title, icon: s.icon, more: s.more, games: games.filter(Boolean) }; });
         }));
       })
       .then(render)

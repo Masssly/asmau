@@ -1,11 +1,20 @@
 {
-  "version": "2026.11.17",
+  "version": "2026.11.18",
   "date": "2026-11-15",
-  "buildId": "b443d29073b8",
+  "buildId": "9b5e46c3393b",
   "notes": [
-    "Yusuf: the last two pictures now show all ten brothers too"
+    "The prophets are listed in order, the first prophet at the top",
+    "Each section says that more games are on the way"
   ],
   "history": [
+    {
+      "version": "2026.11.18",
+      "date": "2026-11-15",
+      "notes": [
+        "The prophets are listed in order, the first prophet at the top",
+        "Each section says that more games are on the way"
+      ]
+    },
     {
       "version": "2026.11.17",
       "date": "2026-11-15",

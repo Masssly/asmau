@@ -57,6 +57,11 @@ things work; this file holds the decisions that must not be lost between session
 - A parent's own recording always replaces it. The device's built-in voice never reads Arabic.
 - Do not run the old Piper script (scripts/generate-voice.py); it would overwrite these clips.
 
+## Brand
+- Mark: the West African writing board (allo) with أ ب ت, chosen by the owner on 15 November 2026. Name
+  "Asmau", tagline "Islamic games for curious kids". Rules, colours and how to remake every icon:
+  brand/README.md. Never hand-edit brand/kit; remake it.
+
 ## Releasing
 - `node scripts/release.js "note"` → `node scripts/validate.js` → full tests (tests/run.js) →
   commit → `scripts/publish-media.js` (needs ADMIN_TOKEN, never committed) → push main → check

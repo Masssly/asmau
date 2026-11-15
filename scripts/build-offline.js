@@ -18,7 +18,7 @@ const path = require("path");
 const crypto = require("crypto");
 
 const ROOT = path.join(__dirname, "..");
-const SKIP_DIRS = new Set([".git", ".github", "scripts", "sync", "tests", "node_modules"]);
+const SKIP_DIRS = new Set([".git", ".github", "brand", "scripts", "sync", "tests", "node_modules"]);   // brand: logo sources, not part of the app
 const SKIP_FILES = new Set(["sw.js", "README.md", "CLAUDE.md", ".nojekyll", "package.json", "package-lock.json"]);
 
 function walk(dir, out) {

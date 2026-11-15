@@ -155,7 +155,7 @@ SHOTS = {
     "c11-b": ("Yaqub sends his sons: do not lose hope.",
               "In {HOME}, {YQ}, his eyes pale and clouded, sits upright and points toward the horizon, speaking with firm hope to {BR}, who stand before him with donkeys ready to travel."),
     "c11-c0": ("The brothers come back to Egypt with very little.",
-               "In a busy grain hall {YM} sits on a raised seat. Before him {BR}, thin and tired in dusty worn robes, kneel humbly and hold out a few small, nearly empty sacks and a tiny handful of coins. Around them workers carry full sacks of grain."),
+               "In a grain hall {YM} sits on a raised seat. Before him, in the front of the picture, {BR}, thin and tired in dusty worn robes, kneel together in a group humbly and hold out a few small, nearly empty sacks and a tiny handful of coins. Around them workers carry full sacks of grain."),
     "c11-c": ("“I am Yusuf.” The brothers stare.",
               "In a grain hall {YM} stands with open arms and a warm smile. {BR} stare at him in shock, hands to their mouths. Beside him {BN} smiles. Workers stop to look."),
     "c11-e": ("The brothers hang their heads.",

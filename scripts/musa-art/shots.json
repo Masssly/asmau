@@ -494,14 +494,13 @@
   ]
  },
  "m12-d": {
-  "alt": "In the throne hall, Pharaoh leans forward on his throne and points a finger at Musa and Harun, who stand calm and unafraid before him; behind the throne the magicians…",
-  "scene": "In a grand throne hall with painted columns and hanging lamps, a proud stern king with a short black beard, an ancient Nile-valley king's tall blue-and-gold striped headdress (not a European crown, no fur) and a red-and-gold robe leans forward on his throne and points a finger at a strong kind man in his thirties with a short black beard, a cream turban and an indigo robe, holding a tall wooden staff and a gentle man with a short black beard, a white turban and a long golden-ochre robe with brown trim, who stand calm and unafraid before him; behind the throne a row of magicians in dark purple robes wait in a row, smirking.",
+  "alt": "In the throne hall, seen from the side: on the right Pharaoh leans forward on his throne and points a finger across the hall; on the left, facing him a few steps away,…",
+  "scene": "In a grand throne hall with painted columns and hanging lamps, seen from the side: on the right a proud stern king with a short black beard, an ancient Nile-valley king's tall blue-and-gold striped headdress (not a European crown, no fur) and a red-and-gold robe leans forward on his throne and points a finger across the hall; on the left, facing him a few steps away, a strong kind man in his thirties with a short black beard, a cream turban and an indigo robe, holding a tall wooden staff and a gentle man with a short black beard, a white turban and a long golden-ochre robe with brown trim stand calm and unafraid. There are only these three people in the picture.",
   "who": [
    "HALL",
    "PH",
    "MU",
-   "HA",
-   "SORC"
+   "HA"
   ]
  },
  "m12-e": {
@@ -711,8 +710,8 @@
   "who": []
  },
  "m17-f0": {
-  "alt": "A towering dark wave curls over the churning sea under a stormy sky; small in the middle of the foam floats a tall blue-and-gold striped royal headdress. No people…",
-  "scene": "A towering dark wave curls over the churning sea under a stormy sky; small in the middle of the foam floats a tall blue-and-gold striped royal headdress. No people visible.",
+  "alt": "An empty stormy sea: a towering dark wave curls over churning water under grey clouds, and a tall blue-and-gold striped royal headdress floats alone on the foam. Nobody…",
+  "scene": "An empty stormy sea: a towering dark wave curls over churning water under grey clouds, and a tall blue-and-gold striped royal headdress floats alone on the foam. Nobody at all in the picture: no people, no crowd, no shore.",
   "who": []
  },
  "m17-f": {
@@ -863,8 +862,8 @@
   "who": []
  },
  "m21-d": {
-  "alt": "One perfect golden-yellow cow with a smooth, flawless glossy coat and not a single mark stands calm and free in a green meadow by a river; nearby an unused wooden plough…",
-  "scene": "One perfect golden-yellow cow with a smooth, flawless glossy coat and not a single mark stands calm and free in a green meadow by a river; nearby an unused wooden plough lies in the grass and a still water wheel stands by the field. Only the cow, no people.",
+  "alt": "One real, living farm cow with soft short fur in a warm butter-yellow colour, a healthy, gentle animal with no spots or marks at all, stands calm and free in a green…",
+  "scene": "One real, living farm cow with soft short fur in a warm butter-yellow colour, a healthy, gentle animal with no spots or marks at all, stands calm and free in a green meadow by a river, grazing (an ordinary animal, not a statue, not shiny, not metal); nearby an unused wooden plough lies in the grass and a still water wheel stands by the field. Only the cow, no people.",
   "who": []
  },
  "m21-e": {
@@ -953,8 +952,8 @@
   ]
  },
  "m23-g0": {
-  "alt": "On the seashore by a big rock, Musa stands with a hand on his heart, asking humbly; al-Khidr sits on the rock and gently shakes his head with a kind, knowing smile, one…",
-  "scene": "On the seashore by a big rock, a strong kind man in his thirties with a short black beard, a cream turban and an indigo robe, holding a tall wooden staff stands with a hand on his heart, asking humbly; a wise old man with a white beard, in a green turban and a long green cloak sits on the rock and gently shakes his head with a kind, knowing smile, one hand raised; a helpful boy of twelve in a short brown tunic and a small white cap watches from behind, curious.",
+  "alt": "Outdoors on a sandy seashore, with blue waves, sky and rocks all around filling the whole background: Musa stands with a hand on his heart, asking humbly; al-Khidr sits…",
+  "scene": "Outdoors on a sandy seashore, with blue waves, sky and rocks all around filling the whole background: a strong kind man in his thirties with a short black beard, a cream turban and an indigo robe, holding a tall wooden staff stands with a hand on his heart, asking humbly; a wise old man with a white beard, in a green turban and a long green cloak sits on the rock and gently shakes his head with a kind, knowing smile, one hand raised; a helpful boy of twelve in a short brown tunic and a small white cap watches from behind, curious.",
   "who": [
    "MU",
    "KH",

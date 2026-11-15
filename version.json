@@ -1,11 +1,22 @@
 {
-  "version": "2026.11.24",
+  "version": "2026.11.25",
   "date": "2026-11-15",
-  "buildId": "ec1a11ef0121",
+  "buildId": "c6e7909132be",
   "notes": [
-    "A new, natural voice for every game: a soft West African woman's voice, in English and Arabic (your own recordings still replace it). A new look: the Asmau writing board as the app icon and logo."
+    "Much smaller first visit: each game downloads when it is first opened (under 1 MB to start), and parents can save every game at once for a journey",
+    "Bigger pictures, words and buttons on tablets",
+    "On small phones the story words no longer hide behind the buttons"
   ],
   "history": [
+    {
+      "version": "2026.11.25",
+      "date": "2026-11-15",
+      "notes": [
+        "Much smaller first visit: each game downloads when it is first opened (under 1 MB to start), and parents can save every game at once for a journey",
+        "Bigger pictures, words and buttons on tablets",
+        "On small phones the story words no longer hide behind the buttons"
+      ]
+    },
     {
       "version": "2026.11.24",
       "date": "2026-11-15",

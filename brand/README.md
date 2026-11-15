@@ -65,6 +65,9 @@ Huawei takes three to five, so it gets the first five.
 
 Store sizes change: check each store's current rules before submitting.
 
+The store text (name, subtitle, descriptions, keywords, and notes for the forms) is in brand/store/listing.md;
+`node brand/src/store-check.js` checks it against the stores' length limits.
+
 ## Making the files again
 ```
 python3 brand/src/marks2.py          # the board and letter marks (outlines from fonts/)

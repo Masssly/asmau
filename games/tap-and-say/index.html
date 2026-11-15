@@ -37,6 +37,22 @@
   .stars { text-align: center; font-size: 26px; min-height: 34px; margin-top: 8px; letter-spacing: 4px; }
   .note { color: var(--muted); font-size: 13px; margin-top: 18px; }
   .note a { color: var(--gold); }
+  /* tablets: a wider tray with bigger pictures to tap */
+  @media (min-width: 760px) and (min-height: 900px) {
+    .wrap { max-width: 900px; }
+    .top h1 { font-size: 28px; }
+    .pages button { width: 84px; height: 84px; font-size: 42px; }
+    .page-title { font-size: 19px; }
+    .tray { gap: 18px; }
+    .tile { min-height: 170px; }
+    .tile .e { font-size: 88px; }
+    .say-panel { min-height: 160px; }
+    .say-panel .en { font-size: 38px; }
+    .say-panel .ar { font-size: 60px; }
+    .say-panel .hint { font-size: 16px; }
+    .modes .btn { font-size: 22px; padding: 16px 30px; }
+    .note { font-size: 15px; }
+  }
 </style>
 </head>
 <body>

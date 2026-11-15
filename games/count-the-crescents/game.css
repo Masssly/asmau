@@ -313,3 +313,13 @@ body.no-arabic .arabic { visibility: hidden; }
   .conf, .spark, .puff { display: none; }
   .item.hint::after { opacity: 1; }
 }
+
+/* tablets: bigger buttons to hit, using the space */
+@media (min-width: 760px) and (min-height: 900px) {
+  .levels { max-width: 820px; }
+  .level { height: min(30vh, 340px); }
+  .level-num { font-size: min(15vh, 150px); }
+  .level-more { height: min(12vh, 140px); }
+  .level-more .level-num { font-size: min(8vh, 72px); }
+  .level-cap { font-size: 20px; }
+}

@@ -622,3 +622,20 @@ button { touch-action: manipulation; -webkit-tap-highlight-color: transparent; }
   .btn-bk, .btn-go { min-height: 58px; }
   .btn-go { font-size: 26px; }
 }
+
+/* ---------- tablets (at least 760 x 900): use the screen ----------
+   A wider column, a bigger picture (square, as tall as fits) and bigger words and buttons. Phones are unchanged. */
+@media (min-width: 760px) and (min-height: 900px) {
+  .wrap { max-width: 900px; }
+  .top h1 { font-size: 28px; }
+  .chapter-head .num { font-size: 15px; }
+  .chapter-head h2 { font-size: 30px; }
+  .stage { height: clamp(290px, 50vh, 640px); }
+  .stage.has-pic { width: min(100%, 58vh); max-height: none; margin-inline: auto; }
+  .stage.has-pic[data-mode="play"] { width: 100%; height: clamp(290px, 50vh, 640px); }
+  .caption { font-size: 24px; line-height: 1.45; padding: 18px 22px; min-height: 100px; }
+  .btn-bk, .btn-go { min-height: 86px; }
+  .btn-bk { flex-basis: 150px; font-size: 25px; }
+  .btn-go { font-size: 36px; }
+  .pnote summary { font-size: 15px; }
+}

@@ -55,6 +55,13 @@ Arabic words with full vowel marks; Qur'an references on every story chapter.
 | apple | app-store-1024.png | App Store icon: square corners, no transparency (Apple rounds it) |
 | android | play-512.png, feature-1024x500.png, adaptive/foreground, background, monochrome-432.png | Google Play icon and banner; the Android launcher icon (108 dp layers, art inside the 66 dp safe circle; monochrome for themed icons) |
 | huawei | appgallery-216.png | AppGallery icon |
+| apple | splash-2732.png | launch screen for a native wrapper: cropped from the centre to each screen, so everything sits in the middle 1200 px |
+| android | splash-icon-1152.png | Android 12+ launch icon (288 dp, art inside the 192 dp circle); the app sets the background to `#0c1530` |
+| screens | apple-iphone-6.9 (1320 × 2868), apple-ipad-13 (2064 × 2752), play-phone (1080 × 1920), play-tablet (1440 × 2560), huawei-720x1280, huawei-450x800 | store screenshots: real game screens under a one-line caption, JPEG |
+
+The seven screenshots, in order: the landing page; a story page read aloud (Yusuf 1.1); a game inside the story
+(Yusuf 1.2); recording your own voice; Tap & Say with Arabic; Nana Asma'u (1.2); a picture page (Adam 2.4).
+Huawei takes three to five, so it gets the first five.
 
 Store sizes change: check each store's current rules before submitting.
 
@@ -64,6 +71,10 @@ python3 brand/src/marks2.py          # the board and letter marks (outlines from
 python3 brand/src/lockups.py         # wordmark, lockups, store banners (brand/preview)
 node brand/src/kit.js allo           # every icon and banner into brand/kit
 python3 brand/src/mono.py brand/kit  # the one-colour Android icon
+node brand/src/splash.js             # the launch screens
+python3 -m http.server 8799 &        # then, with the site served from the repo:
+node brand/src/screens.js            # the store screenshots (real screens, so remake them when the games change)
+python3 brand/src/huawei-screens.py  # Huawei's sizes from the Play phone ones
 ```
 Then copy the site files into icons/ (see the table) and run `node scripts/build-offline.js`.
 Needs Python with fonttools, brotli and uharfbuzz (`pip install fonttools brotli uharfbuzz`) and Playwright.

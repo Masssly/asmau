@@ -13,14 +13,14 @@ chapter("d7", "🍃", "The Whisper", "7:20-22", ["20:115", "20:120-121"], [
 s("a", "garden", "But Iblis came creeping with a whisper. He said: Allah only told you not to eat from this tree so that you would not become angels, or live for ever.",
   "In {GARDEN} near the great tree, a faint wisp of {IBL} curls like smoke behind a bush and whispers toward {ADAM} and {HAWWA}, who stand listening, unsure.", { mood: "tense" });
 s("b", "garden", "And he swore: I am only giving you good advice! But it was a lie.",
-  "Close up: the branches of the great tree, a curl of dark smoke wrapping around one branch, its leaves rustling, shadows growing longer.", { mood: "tense" });
+  "Close up: the branches of the great tree, a curl of dark smoke wrapping around one branch, its leaves rustling, shadows growing longer. No people at all in the picture: only the tree, its leaves and the smoke.", { mood: "tense" });
 q("q", "garden", "Was Iblis telling the truth?", ["No, it was a lie", "🙅"], ["Yes, he was a friend", "🤝"], "Iblis lied. He was their enemy, not their friend.", { img: "b" });
 s("c", "garden", "Adam forgot what Allah had told him, and they both ate from the tree.",
-  "A single bitten piece of fruit lies on the grass beneath the great tree, a few leaves drifting down. No people.");
+  "Beneath the great tree a few green leaves drift down onto the grass and one low branch bends toward the ground. No fruit is shown, no apple, and no people at all: only the tree and the falling leaves.");
 s("d", "garden", "At once they felt ashamed, and they began to cover themselves with leaves from the Garden.",
   "Close up: large green leaves of the Garden gathered and held together by two deep dark brown hands; nothing else of the people is shown.");
 s("e", "grey", "Their Lord called to them: did I not tell you not to go near that tree? Did I not tell you that Iblis is your enemy?",
-  "The great tree stands alone in fading evening light; the Garden around it is quiet and still, a cool breeze bending the grass.", { mood: "sad" });
+  "The great tree stands alone in fading evening light; the Garden around it is quiet and still, a cool breeze bending the grass. No people at all in the picture: only the tree and the empty, quiet Garden.", { mood: "sad" });
 srt("listen", "grey", "Good things and bad whispers. Which do we do, and which do we say no to?", ["Do it", "✅"], ["Say no", "🚫"], [
   ["🕌", "Pray on time", 0], ["🤥", "Tell a little lie", 1], ["🤲", "Say sorry", 0],
   ["😠", "Hit your brother", 1], ["💛", "Help at home", 0], ["🍪", "Take a sweet without asking", 1]

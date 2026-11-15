@@ -63,7 +63,7 @@ mat("homes", "heaven", "Adam knew every animal. Match each one to its home.", [
   ["🐝", "Bee", "🌸", "Flower"]
 ], { img: "a" });
 s("b", "heaven", "Then Allah showed these things to the angels and said: tell Me their names. The angels said: glory be to You! We only know what You have taught us.",
-  "{ANG} bow humbly before a row of animals and things glowing softly in a meadow: a lion, a camel, a bird, a tree and a small mountain.");
+  "{ANG} bow humbly before a row of animals and things glowing softly in a meadow: a lion, a camel, a bird, a tree and a small mountain. There are no people in this picture at all: only the angels, made of light, and the animals.");
 s("c", "heaven", "Then Allah said: Adam, tell them their names. And Adam told them, every single one!",
   "{ADAM} points kindly to each animal in turn while {ANG} listen in wonder; a lion, a camel, a horse and birds stand in a line in the meadow.", { mood: "triumph" });
 p("memory", "mem", "heaven", "Find the pairs, and say their names.", { icons: ["🦁", "🐪", "🐘", "🐦", "🌳", "⛰️"] });
@@ -75,9 +75,9 @@ chapter("d5", "🔥", "The Proud One", "2:34", ["7:11-18", "15:30-42", "38:73-85
   "Asking Allah for protection (a'udhu billahi min ash-shaytan ir-rajim) is not in these verses; the game adds it as what children can do."
 ]);
 s("a", "heaven", "Then Allah told the angels: bow down before Adam. And all the angels bowed.",
-  "Wide view: rows of {ANG} bow low together in a vast bright hall of clouds and light before {ADAM}, who stands humbly with his hands at his chest.", { mood: "awe" });
+  "Wide view: rows of {ANG} bow low together in a vast bright hall of clouds and light before {ADAM}, who stands humbly with his hands at his chest. Adam is the only person in the picture; there are no other people, no women and no children.", { mood: "awe" });
 s("b", "heaven", "All except one: Iblis. He was one of the jinn, made from fire. He stood up stiff and proud, and he would not bow.",
-  "Among rows of bowing {ANG}, {IBL} stands upright with his arms folded, turning his head away.", { mood: "dread" });
+  "Among rows of bowing {ANG}, {IBL} stands upright with his arms folded, turning his head away. There are no people in this picture: only the angels of light and the dark flame figure.", { mood: "dread" });
 s("c", "grey", "Allah asked: what stopped you from bowing? Iblis said: I am better than him. You made me from fire, and him from clay.",
   "Close up: {IBL} with his head held high, flames flickering proudly, alone against a dim grey sky.");
 srt("proud", "grey", "Which is humble, and which is proud? Sort them.", ["Humble", "🙇"], ["Proud", "😤"], [
@@ -85,9 +85,9 @@ srt("proud", "grey", "Which is humble, and which is proud? Sort them.", ["Humble
   ["🙅", "Refusing to listen", 1], ["🤲", "Thanking Allah", 0], ["👎", "Laughing at others", 1]
 ], "Being proud is what Iblis did. Being humble is what Allah loves.", { img: "c" });
 s("d", "grey", "So Allah sent Iblis away. And Iblis said: I will whisper to Adam's children, from in front and behind, from their right and their left!",
-  "{IBL} drifts away into dark smoke at the edge of the clouds, glancing back slyly; the bright sky behind him stays calm.");
+  "High above the clouds, {IBL} drifts away into dark smoke at the edge of the sky; the bright clouds behind him stay calm. No people, no houses, no land: only sky, clouds and the drifting smoke.");
 s("e", "night", "But Allah said: you will have no power over My true servants.",
-  "A quiet green hill at night under a sky full of stars; a soft golden light shines down on a small lit house, while a wisp of dark smoke drifts far away.", { mood: "wonder" });
+  "A quiet green hill at night under a sky full of stars; a soft golden light shines down on the hilltop, while a wisp of dark smoke drifts far away. No people and no buildings at all: only the hill, the stars, the light and the smoke.", { mood: "wonder" });
 p("hold", "refuge", "night", "When we feel a bad whisper, we ask Allah to keep us safe: a'udhu billahi min ash-shaytan ir-rajim. Press and hold the shield.", { ms: 2500, icon: "🛡️", hint: "Press and hold", done: "Allah keeps us safe" }, { img: "e" });
 
 chapter("d6", "🌳", "The Garden", "2:35", ["7:19", "20:117-119", "4:1"], [

@@ -24,9 +24,11 @@ things work; this file holds the decisions that must not be lost between session
 - Never invent a source. Mark what comes from commentary ("It is told that…").
 
 ## Parents' notes
-- They live in plain text files, one per chapter: `games/<slug>/parents/<n>.md` (chapter n). The first
-  line only names the chapter; then one paragraph per paragraph, separated by an empty line. The owner
-  edits them on GitHub; edits go live with the next release. Never put notes back into story.js or the
+- They live in plain text files, **one per page**: `games/<slug>/parents/<chapter>/<chapter>.<page>.md`
+  (page 1.5 is `parents/1/1.5.md`), shown only on that page. Paragraphs are separated by an empty line; an
+  empty file means no note. The owner edits them on GitHub (parents/README.md says how); edits go live with
+  the next release. Write a note on the page it explains. When pages move, `scripts/build-offline.js` moves
+  the files with them (parents/pages.json, never edited by hand). Never put notes back into story.js or the
   author files (the checker refuses).
 - Every page shows its number on the folded parents' line ("For parents · page 2.3" = chapter 2, page 3);
   people use it to say which page they mean.

@@ -48,7 +48,9 @@ const MEDIA = /\.(?:webp|png|jpe?g|mp3|webm|ogg|m4a|woff2?)$/i;   // big, never 
 function packOf(f) { const m = /^games\/([^/]+)\/assets\//.exec(f); return m ? m[1] : "core"; }
 
 function compute() {
-  const files = walk(ROOT, []).sort();
+  const files = walk(ROOT, []).sort()
+    // a page with no note for parents is an empty file: nothing to save for offline use
+    .filter((f) => !(/^games\/[^/]+\/parents\/.+\.md$/.test(f) && fs.statSync(path.join(ROOT, f)).size === 0));
   const hash = crypto.createHash("sha1");
   const shell = ["./"];
   const media = {}, packBytes = {};
@@ -112,6 +114,9 @@ if (require.main === module) {
     }
     console.log("sw.js is current (build " + r.build + ")");
   } else {
+    // the parents' note files follow their pages, and pages.json says which pages have a note
+    const PN = require("./parent-notes");
+    for (const dir of PN.games()) { const c = PN.sync(dir, true); if (c.length) console.log(dir + "/parents: " + c.join("; ")); }
     const src = fs.readFileSync(swPath, "utf8");
     const { a, b } = currentBlock(src);
     const c = compute();

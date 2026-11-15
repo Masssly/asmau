@@ -157,10 +157,10 @@ for (const slug of slugs) {
     if (ch.source === undefined && typeof ch.cite === "string" && ch.cite.trim()) { /* a history chapter */ }
     else if (!REF.test(ch.source || "")) fail(dir + ": " + here + " has a bad Qur'an reference '" + ch.source + "' (or give a 'cite' for a chapter from history)");
     for (const r of ch.more || []) if (!REF.test(r)) fail(dir + ": " + here + " has a bad Qur'an reference '" + r + "' in 'more'");
-    // the parents' notes are a plain text file per chapter (games/<slug>/parents/<n>.md), editable on GitHub
-    if (ch.parent !== undefined) fail(dir + ": " + here + " still has its notes inside story.js; they belong in parents/" + (ci + 1) + ".md");
+    // the parents' notes are plain text files, one per page (games/<slug>/parents/<n>/<n>.<page>.md), editable on GitHub
+    if (ch.parent !== undefined) fail(dir + ": " + here + " still has its notes inside story.js; they belong in parents/" + (ci + 1) + "/");
     const notes = require("./parent-notes").read(dir, ci + 1);
-    if (!notes || !notes.length) fail(dir + "/parents/" + (ci + 1) + ".md: missing or empty (every chapter needs notes for parents)");
+    if (!notes || !notes.length) fail(dir + "/parents/" + (ci + 1) + "/: no notes for parents on any page of this chapter");
     if (!Array.isArray(ch.steps) || !ch.steps.length) { fail(dir + ": " + here + " has no steps"); return; }
 
     const artCheck = (art, where) => {
@@ -288,6 +288,16 @@ if (exists("version.json")) {
   }
 } else {
   fail("version.json: missing");
+}
+
+/* ---------- parents' notes: one file per page, kept with its page ---------- */
+{
+  const PN = require("./parent-notes");
+  for (const dir of PN.games()) {
+    const c = PN.sync(dir, false);
+    if (c.length) fail(dir + "/parents: out of step with the story (" + c.slice(0, 3).join("; ") + "). Run: node scripts/build-offline.js");
+    for (const r of PN.removed(dir)) warn(dir + "/parents/" + r + ": a note whose page was removed; move its text to another page or delete it");
+  }
 }
 
 /* ---------- offline ---------- */

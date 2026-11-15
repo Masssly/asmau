@@ -1494,24 +1494,28 @@
   }
   var shownAt = 0;
 
-  // The parents' notes are plain text files, one per chapter (parents/<n>.md beside the game), so they can be
-  // edited on GitHub. The first line ("# 2. ...") only names the chapter; each paragraph is one paragraph here.
-  var notesCache = {};
-  function notesFor(n) {
-    if (!notesCache[n]) notesCache[n] = fetch("parents/" + n + ".md").then(function (r) { return r.ok ? r.text() : ""; })
-      .catch(function () { return ""; })
-      .then(function (txt) {
-        return txt.split(/\r?\n\s*\r?\n/).map(function (p) {
-          return p.split(/\r?\n/).filter(function (l) { return !/^\s*#/.test(l); }).join(" ").trim();
-        }).filter(Boolean);
-      });
-    return notesCache[n];
+  // The parents' notes are plain text files, one per page (parents/<chapter>/<chapter>.<page>.md beside the game), so
+  // they can be edited on GitHub. parents/pages.json (written by scripts/parent-notes.js) says which pages have one.
+  var notesIndex = null, notesCache = {};
+  function notesFor(key) {
+    if (!notesIndex) notesIndex = fetch("parents/pages.json").then(function (r) { return r.ok ? r.json() : {}; }).catch(function () { return {}; });
+    return notesIndex.then(function (ix) {
+      if ((ix.notes || []).indexOf(key) < 0) return [];
+      if (!notesCache[key]) notesCache[key] = fetch("parents/" + key.split(".")[0] + "/" + key + ".md")
+        .then(function (r) { return r.ok ? r.text() : ""; }).catch(function () { return ""; })
+        .then(function (txt) {
+          return txt.split(/\r?\n\s*\r?\n/).map(function (p) {
+            return p.split(/\r?\n/).filter(function (l) { return !/^\s*#/.test(l); }).join(" ").trim();
+          }).filter(Boolean);
+        });
+      return notesCache[key];
+    });
   }
-  function fillNotes(ch, n) {
+  function fillNotes(ch, key) {
     var body = $("pnoteBody");
     body.innerHTML = "";
-    notesFor(n).then(function (paras) {
-      if (pnoteFor !== ch.id) return;          // the child has moved on to another chapter meanwhile
+    notesFor(key).then(function (paras) {
+      if (pnoteFor !== key) return;            // the child has moved on to another page meanwhile
       body.innerHTML = "";
       paras.forEach(function (para) { body.appendChild(mk("p", "", para)); });
       if (ch.cite) body.appendChild(mk("p", "pnote-cite", "Source: " + ch.cite));
@@ -1558,11 +1562,13 @@
     stage.innerHTML = "";
 
     // the page's number (chapter.page), shown only on the folded parents' line, so a page can be named in a message
-    $("pnoteSum").textContent = "For parents · page " + (ci + 1) + "." + (si + 1);
-    if (pnoteFor !== ch.id) {
-      pnoteFor = ch.id;
-      $("pnote").open = false;
-      fillNotes(ch, ci + 1);
+    var pageKey = (ci + 1) + "." + (si + 1);
+    $("pnoteSum").textContent = "For parents · page " + pageKey;
+    if (pnoteFor !== pageKey) {
+      // a new chapter folds the notes away; within a chapter they stay open if a parent opened them
+      if (!pnoteFor || pnoteFor.split(".")[0] !== String(ci + 1)) $("pnote").open = false;
+      pnoteFor = pageKey;
+      fillNotes(ch, pageKey);
     }
 
     var lineId = st.say || st.line;

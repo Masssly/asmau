@@ -431,13 +431,15 @@ to date.
 
 ## Editing the parents' notes
 
-Each chapter's "For parents" notes are a plain text file: `games/<game>/parents/<chapter>.md`, for example
-`games/yusuf/parents/2.md` for chapter 2 of Yusuf. On GitHub, open the file, click the pencil, edit, and
-commit. Keep one empty line between paragraphs; the first line (starting with `#`) only says which chapter
-it is. The change reaches players with the next release.
-
 Every page in a story shows its number on the folded "For parents" line under it: "page 2.3" is chapter 2,
-page 3. Use it to say which page you mean.
+page 3. Each page's note is its own plain text file with that number: `games/<game>/parents/<chapter>/<chapter>.<page>.md`,
+for example `games/yusuf/parents/2/2.3.md` for page 2.3 of Yusuf. On GitHub, open the file, click the pencil,
+edit, and commit. Keep one empty line between paragraphs; an empty file means no note on that page. The change
+reaches players with the next release. Each game's `parents/README.md` says the same for whoever edits them.
+
+When pages are added, removed or moved, `scripts/build-offline.js` (run at every release) renames the note
+files so every note stays with its page; it keeps the record in `parents/pages.json`. A note whose page was
+removed is kept as `removed-<step>.md`, and the checker warns about it.
 
 ## The voice
 

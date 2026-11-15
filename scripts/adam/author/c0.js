@@ -1,7 +1,7 @@
 /* Backdrops: the places activities are played in when they have no picture of their own. */
 "use strict";
 const { backdrop } = require("./lib");
-backdrop("heaven", "A calm, bright sky high above the clouds, soft white-gold light pouring down from above, gentle clouds below; no figures.");
+backdrop("heaven", "Only sky: seen from high above a sea of soft white clouds, a calm bright sky with white-gold light pouring down from above. No land, no mountains, no figures.");
 backdrop("garden", "A peaceful garden of tall fruit trees heavy with fruit, a clear stream, grass and flowers, in soft golden light.");
 backdrop("field", "Green fields of young wheat in a wide valley with a small simple house of stones and branches, under a blue sky.");
 backdrop("desert", "A wide valley of dry earth and rocky hills under a big pale sky, a few shrubs.");

@@ -7,11 +7,11 @@ chapter("d1", "✨", "Someone New", "2:30-33", [], [
   "The angels' question is a question, not a refusal: when they could not name the things Allah showed them they said, 'We have knowledge only of what You have taught us' (2:32). The game tells that part in chapter 4."
 ]);
 s("a", "heaven", "Before there were any people, there were the angels. They were made of light, and they praised Allah all the time.",
-  "{ANG} glide together through a vast bright sky high above soft clouds, beams of golden light all around them.", { mood: "awe" });
+  "{ANG} glide together through a vast bright sky high above soft clouds, beams of golden light all around them. There are no people at all: this is before the first person was made.", { mood: "awe" });
 s("b", "heaven", "One day, Allah told the angels: I am going to place someone new on the earth, to look after it.",
-  "Seen from high above the clouds, the round earth glows green and blue far below at dawn, while {ANG} gather at the edge of the clouds and look down at it in wonder.");
+  "Seen from high above the clouds, the round earth glows green and blue far below at dawn, while {ANG} gather at the edge of the clouds and look down at it in wonder. There are no people at all: only the angels, made of light.");
 s("c", "heaven", "The angels asked: will You place someone there who may do harm, when we praise You all the time? Allah said: I know what you do not know.",
-  "{ANG} bow their glowing heads humbly in a circle of soft light, while a great warm golden light shines down on them from above.");
+  "{ANG} bow their glowing heads humbly in a circle of soft light, while a great warm golden light shines down on them from above, high in the sky among the clouds. There are no people at all: only the angels, made of light.");
 q("q", "heaven", "What did Allah say to the angels?", ["I know what you do not know", "✨"], ["You are right", "👍"], "Allah knows everything. He said: I know what you do not know.", { img: "c" });
 p("memory", "mem", "heaven", "Find the pairs: things Allah made.", { icons: ["☀️", "🌙", "⭐", "☁️", "🌊", "⛰️"] });
 

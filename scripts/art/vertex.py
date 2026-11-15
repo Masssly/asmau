@@ -42,6 +42,10 @@ BACKDROP = ("Polished stylised 3D animated family-film background painting, warm
             "filling the whole frame edge to edge with no border. A real, believable place in ancient North-East Africa and the Sinai, "
             "grounded and natural: no fantasy, no glowing crystals, no floating rocks, no autumn colours, no stained glass, no European "
             "buildings. A place, with no main characters and nobody in the foreground. ")
+# for stories set partly outside this world (the Adam story: the heavens, the Garden), without the North-East Africa rule
+BACKDROP_ANY = ("Polished stylised 3D animated family-film background painting, warm cinematic lighting, rich detail, square, "
+                "filling the whole frame edge to edge with no border. Natural and believable, no glowing crystals, no floating "
+                "rocks, no buildings. A place, with no figures and nobody in it. ")
 PORTRAIT = ("Head-and-shoulders portrait of one person, front view, friendly, looking at the viewer, centred, polished stylised 3D "
             "animated family-film look, soft studio lighting, plain warm cream background, deep dark brown skin. ")
 REF = ("Character reference picture for an animated family film: the same person shown twice side by side, full body, "
@@ -154,7 +158,7 @@ def musa_scenes(keys):
     for k in keys:
         s = shots[k]
         refs = [r for r in (approved_ref(w) for w in s.get("who", [])) if r][:3]
-        lead = PORTRAIT if s.get("portrait") else BACKDROP if k.startswith("bg-") else STYLE
+        lead = PORTRAIT if s.get("portrait") else (BACKDROP_ANY if ART.endswith("adam-art") else BACKDROP) if k.startswith("bg-") else STYLE
         jobs.append((k, os.path.join(ART, "out", k + ".png"), (LOCK if refs else "") + lead + s["scene"] + END, refs))
     return run(jobs)
 

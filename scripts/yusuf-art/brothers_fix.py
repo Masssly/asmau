@@ -66,6 +66,26 @@ def mend(log):
             print("%s: mended picture has %s brothers, want %d" % (k, got, target))
 
 
+def again(keys, rounds=3):
+    """Keep mending the last mended picture of each key, recounting after every edit."""
+    for k in keys:
+        target, src = brothers.PLAN[k][0], os.path.join(TRY, k + "-mend.png")
+        n = count.count(src).get("brothers")
+        for r in range(rounds):
+            if n == target:
+                break
+            if n is None or abs(n - target) > 3:
+                print(k, "stopped at", n); break
+            out = os.path.join(TRY, "%s-mend%d.png" % (k, r + 1))
+            vertex.run([(k, out, add(target - n) if n < target else remove(n - target), (src,))], workers=1)
+            if not os.path.exists(out):
+                break
+            src, n = out, count.count(out).get("brothers")
+            print(k, "round", r + 1, "->", n, flush=True)
+        if n == target:
+            os.replace(src, os.path.join(OUT, k + ".png")); print("mended", k, flush=True)
+
+
 def tunic(keys):
     jobs = [(k, os.path.join(TRY, k + "-tunic.png"), TUNIC, (os.path.join(OUT, k + ".png"), brothers.REF["YB"])) for k in keys]
     vertex.run(jobs)
@@ -78,9 +98,11 @@ def tunic(keys):
 EDITS = {
     "c9-c": ("Edit this picture. Change only the two women in the front filling the sacks: give both of them deep dark brown "
              "skin, Black African, with their hair fully covered by their headscarves. " + KEEP + vertex.END),
-    "c10-c": ("Edit this picture. Change only the man in front who lifts the golden cup out of the sack: he is a palace guard, "
-              "not one of the brothers, so dress him in a leather breastplate over a short white kilt, with a plain dark "
-              "head-cloth instead of a turban and a short spear at his side; deep dark brown skin. " + KEEP + vertex.END),
+    "c10-c": ("Edit this picture. Change only one man: the bearded man in the dark brown robe and dark brown turban who stands "
+              "on the LEFT of the open sack in the middle and holds up the golden cup. Turn him into a palace guard: a leather "
+              "breastplate over a short white kilt, a plain dark head-cloth instead of a turban, deep dark brown skin; he still "
+              "holds up the golden cup. Do not change the man in the white turban and long blue robe, the boy in the orange "
+              "tunic, or any of the brothers. " + KEEP + vertex.END),
 }
 
 
@@ -93,7 +115,9 @@ def edit(keys):
 
 
 if __name__ == "__main__":
-    if sys.argv[1] == "edit":
+    if sys.argv[1] == "again":
+        again(sys.argv[2:])
+    elif sys.argv[1] == "edit":
         edit(sys.argv[2:])
     elif sys.argv[1] == "tunic":
         tunic(sys.argv[2:])

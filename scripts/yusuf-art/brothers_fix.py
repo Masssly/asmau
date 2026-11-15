@@ -69,6 +69,39 @@ def mend(log):
             print("%s: mended picture has %s brothers, want %d" % (k, got, target))
 
 
+FIVE = brothers.TEN.replace("ten grown", "five grown").replace(", maroon, sand, slate blue, dark green, terracotta and charcoal", " and maroon")
+
+
+def two_stage(keys, tries=3):
+    """For scenes the model keeps getting wrong: draw them with five brothers on the left (a number it gets right),
+    then one edit adds the rest as a second group on the right."""
+    for k in keys:
+        target = brothers.PLAN[k][0]
+        scene = brothers.SHOTS[k][1].replace("{BR}", FIVE)
+        people = [w for w in ("YQ", "YM", "BN", "YB") if "{%s}" % w in scene]
+        first = (vertex.LOCK + vertex.STYLE + scene.format(**brothers.WHO) + " The five brothers stand together as one group on "
+                 "the LEFT side of the picture; the right side of the picture has open space for more people to join later. "
+                 "Count carefully: exactly five grown bearded brothers, each fully visible. Every brother has deep dark brown "
+                 "skin." + vertex.END)
+        refs = tuple([brothers.REF_BRO] + [brothers.REF[w] for w in people][:2])
+        rest = target - 5
+        second = ("Edit this picture. In the open space on the RIGHT side, add a second group of exactly %s more grown bearded "
+                  "brothers with deep dark brown skin and short beards, in slate blue, dark green, terracotta, sand and charcoal "
+                  "robes and turbans, doing the same as the first five brothers, each fully visible and not hidden behind anyone. "
+                  "After this there are exactly %d brothers in all. %s" % ({4: "four", 5: "five"}[rest], target, KEEP)) + vertex.END
+        for r in range(tries):
+            a_ = os.path.join(TRY, "%s-five%d.png" % (k, r)); b_ = os.path.join(TRY, "%s-two%d.png" % (k, r))
+            vertex.run([(k, a_, first, refs)], workers=1)
+            n = count.count(a_).get("brothers") if os.path.exists(a_) else None
+            if n != 5:
+                print(k, "stage one has", n, "brothers", flush=True); continue
+            vertex.run([(k, b_, second, (a_,))], workers=1)
+            n = count.count(b_).get("brothers") if os.path.exists(b_) else None
+            print(k, "stage two has", n, "brothers", flush=True)
+            if n == target:
+                os.replace(b_, os.path.join(OUT, k + ".png")); print("kept", k, flush=True); break
+
+
 def tunic(keys):
     jobs = [(k, os.path.join(TRY, k + "-tunic.png"), TUNIC, (os.path.join(OUT, k + ".png"), brothers.REF["YB"])) for k in keys]
     vertex.run(jobs)
@@ -98,7 +131,9 @@ def edit(keys):
 
 
 if __name__ == "__main__":
-    if sys.argv[1] == "edit":
+    if sys.argv[1] == "two":
+        two_stage(sys.argv[2:])
+    elif sys.argv[1] == "edit":
         edit(sys.argv[2:])
     elif sys.argv[1] == "tunic":
         tunic(sys.argv[2:])

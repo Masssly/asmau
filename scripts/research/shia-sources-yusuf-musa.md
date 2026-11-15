@@ -20,3 +20,23 @@ is not used here. Each item names the narrator the book gives. Nothing here is i
 6. The bowing at the end was thanks to Allah (Imam al-Sadiq). Useful in the parents' note on the bow.
 7. Names: his mother Rahil (Rachel), his brother Binyamin; Yusuf aged seven or nine at the well.
 Not for children: the court scenes the book also tells, and its criticism of other readings.
+
+## Musa (https://al-islam.org/hayat-al-qulub-vol-1-stories-prophets-muhammad-baqir-majlisi/account-musa-and-harun)
+Already in the game, and also told in these Shia narrations (so the parents' notes can say both tell it):
+- Musa asks the daughter to walk behind him (an Imam Ali narration); Musa completed the ten years (Imam al-Sadiq;
+  in Sunni sources al-Bukhari from Ibn Abbas); the bird dipping its beak in the sea (Imam al-Baqir; al-Bukhari).
+New, and suitable for children:
+1. Al-Khidr means "the green one": wherever he sat, the ground turned green (in this book; al-Bukhari has the
+   same hadith). One line in the Khidr chapter.
+2. The cow belonged to a boy who would not wake his sleeping father, even to make a sale, and was rewarded for it;
+   Musa says kindness to parents raises a person high (Imam al-Rida). A lesson in kindness to parents.
+3. Al-Khidr's parting advice to Musa (Imam al-Sadiq): do not be stubborn, do not laugh without reason, do not
+   look for the faults of others.
+For the parents' notes only (Sunni scholars differ or do not name them):
+- The old man of Madyan is the Prophet Shu'ayb in these narrations (Sunni scholars are divided).
+- The believer of Pharaoh's family is named Hizqil; Musa's mother Yukabid (Majlisi: the most common opinion).
+- The killing of the Egyptian (Imam al-Rida): Musa struck to stop a man who was "openly leading astray" and did
+  not mean to kill him.
+Not for children: the book's graphic punishments (Asiya, the believer's family, the magicians, the calf-worshippers).
+Majlisi's chapter cites Ibn Babawayh (al-Saduq), al-Tha'labi, Ali ibn Ibrahim al-Qummi, al-Tabrisi, al-Rawandi
+and the tafsir attributed to Imam al-Hasan al-Askari.

@@ -57,6 +57,8 @@ def mend(log):
             continue
         src = os.path.join(TRY, "%s-%d.png" % (k, r))
         text = add(target - n) if n < target else remove(n - target)
+        if os.path.exists(os.path.join(TRY, k + "-mend.png")):   # vertex.run would skip it and count the old one
+            os.remove(os.path.join(TRY, k + "-mend.png"))
         jobs.append((k, os.path.join(TRY, k + "-mend.png"), text, (src,)))
         want[k] = target
     vertex.run(jobs)
@@ -95,6 +97,9 @@ def two_stage(keys, tries=4):
                   % ({4: "four", 5: "five"}[rest], ", ".join(new), target, KEEP)) + vertex.END
         for r in range(tries):
             a_ = os.path.join(TRY, "%s-five%d.png" % (k, r)); b_ = os.path.join(TRY, "%s-two%d.png" % (k, r))
+            for f in (a_, b_):                       # vertex.run skips pictures that exist: draw these afresh
+                if os.path.exists(f):
+                    os.remove(f)
             vertex.run([(k, a_, first, refs)], workers=1)
             n = count.count(a_).get("brothers") if os.path.exists(a_) else None
             if n != 5:

@@ -83,6 +83,12 @@ def prompt(k):
 def main(keys, rounds=5):
     os.makedirs(TRY, exist_ok=True)
     keys = [k for k in (keys or PLAN) if not os.path.exists(os.path.join(OUT, k + ".png"))]
+    # vertex.run skips pictures that already exist, so old tries of these keys would be counted again instead of
+    # redrawn: move them out of the way first
+    old = os.path.join(OUT, "rejected", "old-tries"); os.makedirs(old, exist_ok=True)
+    for f in os.listdir(TRY):
+        if any(f.startswith(k + "-") for k in keys):
+            os.replace(os.path.join(TRY, f), os.path.join(old, f))
     log = {}
     for r in range(rounds):
         if not keys:

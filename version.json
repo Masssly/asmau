@@ -1,14 +1,18 @@
 {
-  "version": "2026.11.15",
+  "version": "2026.11.16",
   "date": "2026-11-15",
-  "buildId": "1f5b08baf1d1",
+  "buildId": "7dce49d4896b",
   "notes": [
-    "Every page now has its own picture: 27 new pictures in Yusuf, Musa and Nana Asma'u",
-    "Nana Asma'u's walk: she faces the way she walks, and looks like herself",
-    "New covers: Yusuf with his hair as in the game, and baby Musa in the basket",
-    "Yusuf: a new picture of Yaqub with Yusuf and his little brother"
+    "Yusuf: the right number of brothers in 24 pictures (ten older brothers, then Benjamin with them)"
   ],
   "history": [
+    {
+      "version": "2026.11.16",
+      "date": "2026-11-15",
+      "notes": [
+        "Yusuf: the right number of brothers in 24 pictures (ten older brothers, then Benjamin with them)"
+      ]
+    },
     {
       "version": "2026.11.15",
       "date": "2026-11-15",

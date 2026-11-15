@@ -19,7 +19,7 @@
 */
 
 // BEGIN GENERATED
-const RELEASE = "2026.11.15";
+const RELEASE = "2026.11.16";
 const BUILD = "7dce49d4896b";
 const SHELL = [
   "./",

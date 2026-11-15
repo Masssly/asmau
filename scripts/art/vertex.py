@@ -76,10 +76,11 @@ def draw(prompt, refs=(), aspect="1:1", tries=10):
                                      headers={"content-type": "application/json", "x-goog-api-key": KEY, "user-agent": "asmau-art/1"})
         try:
             res = json.load(urllib.request.urlopen(req, timeout=180))
-            for cand in res.get("candidates", []):
-                for part in cand.get("content", {}).get("parts", []):
-                    if "inlineData" in part:
-                        return base64.b64decode(part["inlineData"]["data"])
+            # newer models can send draft pictures (marked "thought") before the final one: keep the last real one
+            pics = [part["inlineData"]["data"] for cand in res.get("candidates", [])
+                    for part in cand.get("content", {}).get("parts", []) if "inlineData" in part and not part.get("thought")]
+            if pics:
+                return base64.b64decode(pics[-1])
             last = "no picture in the answer: " + json.dumps(res)[:400]
         except urllib.error.HTTPError as e:
             last = "%d %s" % (e.code, e.read().decode(errors="replace")[:400])

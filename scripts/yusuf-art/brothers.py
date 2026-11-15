@@ -8,7 +8,10 @@ better), several times if needed; Gemini's text model counts the brothers in eac
 (scripts/art/count.py) and the first try with the right number is kept. A person still looks at
 every kept picture before it is imported.
 
-  PROJECT=asmau-assets python3 scripts/yusuf-art/brothers.py [KEY ...]
+  PROJECT=asmau-assets MODEL=gemini-3-pro-image python3 scripts/yusuf-art/brothers.py [KEY ...]
+
+(gemini-3-pro-image gets the number right far more often than gemini-2.5-flash-image, which drew
+the right number in 1 of 26 scenes; it costs more per picture.)
 
 Tries go to scripts/yusuf-art/bro/try/, kept pictures to scripts/yusuf-art/bro/<key>.png.
 Then: python3 scripts/yusuf-art/build.py import scripts/yusuf-art/bro
@@ -77,7 +80,7 @@ def prompt(k):
     return text, tuple([REF_BRO] + [REF[w] for w in people][:2])
 
 
-def main(keys, rounds=4):
+def main(keys, rounds=5):
     os.makedirs(TRY, exist_ok=True)
     keys = [k for k in (keys or PLAN) if not os.path.exists(os.path.join(OUT, k + ".png"))]
     log = {}

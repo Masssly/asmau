@@ -4,7 +4,7 @@ const { chapter, s, p, q, ord, mat, srt, chg, TAF, portrait } = require("./lib")
 const YOUNG = portrait("young", "MY"), MUSA = portrait("musa", "MU"), SISTER = portrait("sister", "SIS");
 
 chapter("m1", "👑", "A Proud King", "28:3-6", [], [
-  "Verses 28:3–6. Pharaoh raised himself high in the land and split its people into groups. He oppressed one group: the verse says he slaughtered their sons and let their women live. The game says only that their baby boys were to be taken away.",
+  "Pharaoh raised himself high in the land and split its people into groups. He oppressed one group: the verse says he slaughtered their sons and let their women live. The game says only that their baby boys were to be taken away.",
   "Verses 28:5–6 give Allah's plan: to favour the oppressed, make them leaders and heirs, and show Pharaoh, Haman and their armies the very thing they feared."
 ]);
 s("a", "egypt", "Long, long ago, in the land of Egypt, there lived a king called Pharaoh. He was very proud. He thought he was greater than everyone.",
@@ -17,8 +17,8 @@ q("q", "dawn", "Who had a plan to help the people who were being hurt?", ["Allah
 p("memory", "mem", "egypt", "Find the pairs: things you can see in the land of Egypt.", { icons: ["👑", "🌴", "🐪", "🏺", "☀️", "🐊"] });
 
 chapter("m2", "🧺", "The Baby on the River", "28:7", ["20:38-39"], [
-  "Verse 28:7 and verses 20:38–39. Musa's mother is inspired to nurse him and, when she fears for him, to put him into the chest and the chest into the river, with the promise that he will be returned to her and made a messenger. 20:39 adds that Allah cast His love over Musa and that he was reared under Allah's watchful eye.",
-  "The chest is in the verse (20:39). Ibn Kathir's tafsir (abridged English) adds details the verses do not give: that her house was on the bank of the Nile and that she made a box into a cradle for him. The game's 'getting the chest ready' activity is built on that."
+  "Musa's mother is inspired to nurse him and, when she fears for him, to put him into the chest and the chest into the river, with the promise that he will be returned to her and made a messenger. 20:39 adds that Allah cast His love over Musa and that he was reared under Allah's watchful eye.",
+  "The chest is in the verse (20:39). The commentary adds details the verses do not give: that her house was on the bank of the Nile and that she made a box into a cradle for him. The game's 'getting the chest ready' activity is built on that."
 ]);
 s("a", "river", "In that hard time, a mother had a baby boy. His name was Musa. She loved him very much, and she was afraid the soldiers would find him.",
   "Inside a small mud-brick home by {NILE}, {MUM} holds {BABY} close and looks anxiously toward the doorway; soft morning light, a clay pot and a woven mat.", { mood: "longing" });
@@ -34,9 +34,9 @@ p("trail", "ripples", "river", "Tap each ripple to help the river carry him alon
 q("q", "river", "What did Allah tell Musa's mother?", ["Do not be afraid", "💛"], ["Hide and cry", "😢"], "No. Allah told her: do not be afraid, and do not be sad.", { img: "b" });
 
 chapter("m3", "💛", "The Queen's Heart", "28:8-9", ["20:39"], [
-  "Verses 28:8–9. Pharaoh's household picked the child up, not knowing he would become their opponent. Pharaoh's wife said he would be a joy to the eye for her and for Pharaoh, and said: do not kill him; he may be useful to us, or we may adopt him. The game says 'do not harm him'.",
-  "The verses do not name her. Ibn Kathir's tafsir (abridged English) names her Asiyah bint Muzahim, says the servant women brought the chest to her unopened, and that Allah filled her heart with love when she saw the child. It also reports Pharaoh's reply, 'For you he may be, but not for me', which the game leaves out.",
-  "On 20:39, 'I cast My love over you', the same tafsir comments that no one saw Musa without loving him. The hearts activity is built on that."
+  "Pharaoh's household picked the child up, not knowing he would become their opponent. Pharaoh's wife said he would be a joy to the eye for her and for Pharaoh, and said: do not kill him; he may be useful to us, or we may adopt him. The game says 'do not harm him'.",
+  "The verses do not name her. The commentary names her Asiyah bint Muzahim, says the servant women brought the chest to her unopened, and that Allah filled her heart with love when she saw the child. It also reports Pharaoh's reply, 'For you he may be, but not for me', which the game leaves out.",
+  "On 20:39, 'I cast My love over you', the commentary comments that no one saw Musa without loving him. The hearts activity is built on that."
 ]);
 s("a", "palace", "The river carried the chest right up to the palace of Pharaoh! The people of his house saw it in the water.",
   "At stone steps where {PAL} meets {NILE}, three servant women in plain linen dresses and headscarves point in surprise at a small closed wooden chest floating among the reeds.");
@@ -54,9 +54,9 @@ s("e", "palace", "So baby Musa was safe, in the palace of the very king who was 
 q("q", "palace", "Who asked Pharaoh not to harm the baby?", ["Asiya, the queen", "👸"], ["A soldier", "🛡️"], "No. It was Asiya, the queen. Allah had filled her heart with love.", { img: "c" });
 
 chapter("m4", "🤱", "A Sister's Clever Plan", "28:10-13", ["20:40"], [
-  "Verses 28:10–13 and 20:40. The heart of Musa's mother became empty; she would have given him away had Allah not strengthened her heart. She told his sister to follow him, and the sister watched from a distance unnoticed. Allah had made him refuse every wet nurse, and the sister offered a household that would bring him up. He was returned to his mother so that she would be comforted and would know that Allah's promise is true.",
-  "From Ibn Kathir's tafsir (abridged English), not the verses: that 'empty' means she could think of nothing but Musa (reported from Ibn Abbas, Mujahid, Ikrimah, Sa'id bin Jubayr and others); that the sister was the older child; that the queen paid the mother; and that only about a day and a night passed between the distress and the relief, 'and Allah knows best'.",
-  "The same tafsir reports from Ibn Abbas that the palace people doubted the sister and seized her until she explained herself. The game leaves that out."
+  "The heart of Musa's mother became empty; she would have given him away had Allah not strengthened her heart. She told his sister to follow him, and the sister watched from a distance unnoticed. Allah had made him refuse every wet nurse, and the sister offered a household that would bring him up. He was returned to his mother so that she would be comforted and would know that Allah's promise is true.",
+  "From the commentary, not the verses: that 'empty' means she could think of nothing but Musa (reported from Ibn Abbas, Mujahid, Ikrimah, Sa'id bin Jubayr and others); that the sister was the older child; that the queen paid the mother; and that only about a day and a night passed between the distress and the relief, 'and Allah knows best'.",
+  "The commentary reports from Ibn Abbas that the palace people doubted the sister and seized her until she explained herself. The game leaves that out."
 ]);
 s("a", "river", "At home, Musa's mother could think of nothing but her baby. Her heart felt empty. But Allah made her heart strong, so that she would keep on trusting Him.",
   "Evening inside the small riverside home: {MUM} sits beside an empty woven cradle, one hand on her heart, eyes closed in quiet prayer; a single oil lamp glows.", { mood: "longing" });
@@ -80,8 +80,8 @@ ord("ord", "river", "What happened first? Tap them in order.", [
 ], "Not that one yet. Think: what happened before it?");
 
 chapter("m5", "🏛️", "Growing Up in the Palace", "28:14", ["20:27-28"], [
-  "Verse 28:14. When Musa reached full maturity Allah gave him wisdom and knowledge: 'this is how We reward those who do good'.",
-  "The hot coal is not in the Qur'an. Ibn Kathir's tafsir (abridged English), explaining the prayer 'untie the knot in my tongue' (20:27), says Musa had a lisp from an incident in which he was offered a date and a hot coal and put the coal on his tongue. The tafsir gives it in one sentence and refers elsewhere for the full story; the game adds nothing to it. The same tafsir says that as a child Musa stayed in Pharaoh's own room.",
+  "When Musa reached full maturity Allah gave him wisdom and knowledge: 'this is how We reward those who do good'.",
+  "The hot coal is not in the Qur'an. The commentary, explaining the prayer 'untie the knot in my tongue' (20:27), says Musa had a lisp from an incident in which he was offered a date and a hot coal and put the coal on his tongue. The tafsir gives it in one sentence and refers elsewhere for the full story; the game adds nothing to it. The commentary says that as a child Musa stayed in Pharaoh's own room.",
   "The sorting activity (safe to eat, or too hot to touch) is a safety game of ours hung on that report."
 ]);
 s("a", "palace", "Musa grew up in the palace, like a prince. It is told that he even slept in the king's own room.",
@@ -97,7 +97,7 @@ p("puzzle", "puz", "palace", "Put the picture of Musa back together. Tap two pie
 q("q", "palace", "What did Allah give Musa when he was grown?", ["Wisdom and knowledge", "💡"], ["A golden crown", "👑"], "Not a crown. Allah gave him wisdom and knowledge.", { img: "c" });
 
 chapter("m6", "🏃", "A Big Mistake", "28:15-21", [], [
-  "Verses 28:15–21. Musa entered the city unnoticed and found two men fighting, one of his own people and one an enemy. His kinsman called for help; Musa struck the other with his fist and killed him. The game says the man 'fell down and did not get up again'. Musa said 'this is Satan's work', asked forgiveness and was forgiven, and promised never to support wrongdoers.",
+  "Musa entered the city unnoticed and found two men fighting, one of his own people and one an enemy. His kinsman called for help; Musa struck the other with his fist and killed him. The game says the man 'fell down and did not get up again'. Musa said 'this is Satan's work', asked forgiveness and was forgiven, and promised never to support wrongdoers.",
   "Left out: verses 28:18–19, where the same kinsman calls for help again the next day, Musa calls him a troublemaker, and the man lets slip what happened the day before.",
   "In verse 28:20 the man who came running says the authorities are talking about killing Musa. The game says they are 'coming to punish' him."
 ]);
@@ -116,8 +116,8 @@ s("e", "desert", "So Musa left the city, afraid, looking over his shoulder. He p
 p("journey", "flee", "desert", "Help Musa slip away from the city.", { from: "🏙️", to: "🏜️", icon: YOUNG, steps: 7 });
 
 chapter("m7", "🐑", "The Well of Madyan", "28:22-24", ["28:26"], [
-  "Verses 28:22–24. Musa turned towards Madyan hoping his Lord would guide him. At its water he found men watering flocks and two women holding theirs back; they could not water until the shepherds left, and their father was very old. He watered for them, withdrew to the shade and prayed: 'My Lord, I am in dire need of whatever good You send me.'",
-  "The heavy rock is not in the verses. Ibn Kathir's tafsir (abridged English), on 'the strong, the trustworthy' in 28:26, reports from Umar, Ibn Abbas, Shurayh, Abu Malik, Qatadah, Ibn Ishaq and others that the daughter said Musa had lifted a rock that only ten men could lift. The same tafsir says he sat beneath a tree (Ibn Abbas, Ibn Mas'ud, As-Suddi).",
+  "Musa turned towards Madyan hoping his Lord would guide him. At its water he found men watering flocks and two women holding theirs back; they could not water until the shepherds left, and their father was very old. He watered for them, withdrew to the shade and prayed: 'My Lord, I am in dire need of whatever good You send me.'",
+  "The heavy rock is not in the verses. The commentary, on 'the strong, the trustworthy' in 28:26, reports from Umar, Ibn Abbas, Shurayh, Abu Malik, Qatadah, Ibn Ishaq and others that the daughter said Musa had lifted a rock that only ten men could lift. The commentary says he sat beneath a tree (Ibn Abbas, Ibn Mas'ud, As-Suddi).",
   "The tafsir also mentions, with 'and Allah knows best', a report that an angel on a horse showed Musa the way. The game does not use it."
 ]);
 s("a", "desert", "Musa set off towards a land called Madyan. It was a long, long way. He said: I hope my Lord will guide me to the right way.",
@@ -137,8 +137,8 @@ q("q", "well", "Musa had nothing left. Who did he ask for help?", ["Allah", "�
 p("memory", "mem", "well", "Find the pairs from the well of Madyan.", { icons: ["🐑", "ROCK", "💧", "🌳", "🐐", "☀️"] });
 
 chapter("m8", "🏡", "A New Home", "28:25-28", [], [
-  "Verses 28:25–28. One of the two women came walking shyly with her father's invitation. Musa told his story and the old man said: do not be afraid, you are safe now. A daughter said: hire him, the best to hire is the strong and trustworthy. The father offered marriage to one of his daughters for eight years of work, ten if Musa chose, and Musa agreed. The verses do not name the father.",
-  "From Ibn Kathir's tafsir (abridged English), not the verses: Musa asked her to walk behind him and throw a pebble to show the way (reported from Umar, Ibn Abbas and others, as her explanation of 'trustworthy'); and Musa completed the longer term, ten years, which the tafsir quotes from al-Bukhari on the authority of Ibn Abbas."
+  "One of the two women came walking shyly with her father's invitation. Musa told his story and the old man said: do not be afraid, you are safe now. A daughter said: hire him, the best to hire is the strong and trustworthy. The father offered marriage to one of his daughters for eight years of work, ten if Musa chose, and Musa agreed. The verses do not name the father.",
+  "From the commentary, not the verses: Musa asked her to walk behind him and throw a pebble to show the way (reported from Umar, Ibn Abbas and others, as her explanation of 'trustworthy'); and Musa completed the longer term, ten years, which the tafsir quotes from al-Bukhari on the authority of Ibn Abbas."
 ]);
 s("a", "well", "The two sisters went home and told their father what had happened. Soon one of them came back, walking shyly. She said: my father is asking for you. He wants to thank you for watering our sheep.",
   "A modest young woman in a purple headscarf stands shyly at a distance, eyes lowered, speaking to {MY} who rises from the shade of an acacia tree by the well.");

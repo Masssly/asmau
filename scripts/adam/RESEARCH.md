@@ -41,6 +41,30 @@ Pages: .../surah-al-baqarah-verses-30-33, .../surah-al-baqarah-verse-34, .../sur
 - The tree: 'Uyun Akhbar al-Rida: "a wheat-plant" and "the tree of envy"; he does not decide.
 - [unchecked] Adam's clay lay forty days; the angels' remark; an angel friend; spikenard.
 
+## Shia narrations: Majlisi, Hayat al-Qulub vol. 1 (English, al-islam.org)
+Page: https://al-islam.org/hayat-al-qulub-vol-1-stories-prophets-muhammad-baqir-majlisi/merits-adam-and-hawwa-eve-reasons
+(all the Adam sections are on this one page). The translation is edited, "not an exact reproduction".
+- Names: Adam from "the face of the earth" (adim al-ard; Imams al-Baqir and al-Sadiq); Hawwa from a living
+  being (hayy), that is Adam. Imam Ali: Adam made "from the soil of all the surface of the earth"; the Prophet
+  (to Ibn Salam): dust white, red, green, pink and blue. (Sunni parallel: Abu Dawud and al-Tirmidhi, Adam made from
+  a handful of all the earth, so his children are of every colour.)
+- Hawwa: both views appear. Rib: Imam Ali, Imam al-Sadiq. Clay only: Imam al-Baqir, "from the leftover of the same
+  dust He created Hawwa'", and he calls the rib account a lie. (Al-Tabatabai sides with the clay.)
+- The tree: wheat, or a vine (Imam al-Sadiq); al-Rida: "Both traditions are true". The eating: "tark al-awla"
+  before prophethood, "not a blunder" (al-Rida); a footnote: "a Prophet can never commit a sin".
+- Repentance: Imam al-Baqir's words begin "Allahumma la ilaha illa anta subhanaka"; Imam al-Sadiq: "accept my
+  repentance"; a report from Ibn Abbas: forgiven by the right of Muhammad, Ali, Fatimah, Hasan and Husayn.
+  Accepted at Mecca (between the Black Stone and the Kaaba door); Jibril taught Adam the rites of Hajj.
+- On earth: Jibril taught the five prayers ("model prayers for your children"), wudu and farming (Imam al-Baqir);
+  the Kaaba built by Jibril with the angels. Came down: India (al-Sadiq), or al-Safa and al-Marwa.
+- Habil and Qabil: Habil's offering accepted (Imam Zayn al-Abidin); Adam wept forty days; Allah gave him another
+  son "in lieu of Habil" (al-Baqir): Hibatullah / Shith, his successor; Adam's bequest to Shith (al-Sadiq).
+- Adam's age: 930 (al-Sadiq), 936 (al-Baqir).
+- Gentle narrations: Adam sneezed and said "al-hamdu lillah", answered "yarhamuk Allah" (also Sunni: Ibn Abbas,
+  al-Tirmidhi); the greeting "as-salamu alaykum wa rahmatullah"; Jibril's "hayyak Allah wa bayyak" (may Allah keep
+  you alive and happy); "love for others what you love for yourself" (al-Sadiq, al-Baqir).
+- Keep out: Qabil's punishment, the serpent, giants, the passages on the first children's marriages.
+
 ## How the game tells the differences
 - Say what both accept: "Allah made Hawwa for Adam" (4:1, 7:189: "from it its mate"); "Adam forgot and ate";
   "they were sorry and said: Our Lord, we have wronged ourselves" (7:23); Allah forgave them.

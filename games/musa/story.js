@@ -11,7 +11,7 @@ window.STORY = [
   {
     id: "m1", icon: "👑", title: "A Proud King", source: "28:3-6", more: [],
     parent: [
-      "Verses 28:3–6. Pharaoh raised himself high in the land and split its people into groups. He oppressed one group: the verse says he slaughtered their sons and let their women live. The game says only that their baby boys were to be taken away.",
+      "Pharaoh raised himself high in the land and split its people into groups. He oppressed one group: the verse says he slaughtered their sons and let their women live. The game says only that their baby boys were to be taken away.",
       "Verses 28:5–6 give Allah's plan: to favour the oppressed, make them leaders and heirs, and show Pharaoh, Haman and their armies the very thing they feared."
     ],
     steps: [
@@ -25,8 +25,8 @@ window.STORY = [
   {
     id: "m2", icon: "🧺", title: "The Baby on the River", source: "28:7", more: ["20:38-39"],
     parent: [
-      "Verse 28:7 and verses 20:38–39. Musa's mother is inspired to nurse him and, when she fears for him, to put him into the chest and the chest into the river, with the promise that he will be returned to her and made a messenger. 20:39 adds that Allah cast His love over Musa and that he was reared under Allah's watchful eye.",
-      "The chest is in the verse (20:39). Ibn Kathir's tafsir (abridged English) adds details the verses do not give: that her house was on the bank of the Nile and that she made a box into a cradle for him. The game's 'getting the chest ready' activity is built on that."
+      "Musa's mother is inspired to nurse him and, when she fears for him, to put him into the chest and the chest into the river, with the promise that he will be returned to her and made a messenger. 20:39 adds that Allah cast His love over Musa and that he was reared under Allah's watchful eye.",
+      "The chest is in the verse (20:39). The commentary adds details the verses do not give: that her house was on the bank of the Nile and that she made a box into a cradle for him. The game's 'getting the chest ready' activity is built on that."
     ],
     steps: [
       {"say":"m2-a","scene":"river","e":"🤱🏿"},
@@ -42,9 +42,9 @@ window.STORY = [
   {
     id: "m3", icon: "💛", title: "The Queen's Heart", source: "28:8-9", more: ["20:39"],
     parent: [
-      "Verses 28:8–9. Pharaoh's household picked the child up, not knowing he would become their opponent. Pharaoh's wife said he would be a joy to the eye for her and for Pharaoh, and said: do not kill him; he may be useful to us, or we may adopt him. The game says 'do not harm him'.",
-      "The verses do not name her. Ibn Kathir's tafsir (abridged English) names her Asiyah bint Muzahim, says the servant women brought the chest to her unopened, and that Allah filled her heart with love when she saw the child. It also reports Pharaoh's reply, 'For you he may be, but not for me', which the game leaves out.",
-      "On 20:39, 'I cast My love over you', the same tafsir comments that no one saw Musa without loving him. The hearts activity is built on that."
+      "Pharaoh's household picked the child up, not knowing he would become their opponent. Pharaoh's wife said he would be a joy to the eye for her and for Pharaoh, and said: do not kill him; he may be useful to us, or we may adopt him. The game says 'do not harm him'.",
+      "The verses do not name her. The commentary names her Asiyah bint Muzahim, says the servant women brought the chest to her unopened, and that Allah filled her heart with love when she saw the child. It also reports Pharaoh's reply, 'For you he may be, but not for me', which the game leaves out.",
+      "On 20:39, 'I cast My love over you', the commentary comments that no one saw Musa without loving him. The hearts activity is built on that."
     ],
     steps: [
       {"say":"m3-a","scene":"palace","e":"CHEST 🏛️"},
@@ -61,9 +61,9 @@ window.STORY = [
   {
     id: "m4", icon: "🤱", title: "A Sister's Clever Plan", source: "28:10-13", more: ["20:40"],
     parent: [
-      "Verses 28:10–13 and 20:40. The heart of Musa's mother became empty; she would have given him away had Allah not strengthened her heart. She told his sister to follow him, and the sister watched from a distance unnoticed. Allah had made him refuse every wet nurse, and the sister offered a household that would bring him up. He was returned to his mother so that she would be comforted and would know that Allah's promise is true.",
-      "From Ibn Kathir's tafsir (abridged English), not the verses: that 'empty' means she could think of nothing but Musa (reported from Ibn Abbas, Mujahid, Ikrimah, Sa'id bin Jubayr and others); that the sister was the older child; that the queen paid the mother; and that only about a day and a night passed between the distress and the relief, 'and Allah knows best'.",
-      "The same tafsir reports from Ibn Abbas that the palace people doubted the sister and seized her until she explained herself. The game leaves that out."
+      "The heart of Musa's mother became empty; she would have given him away had Allah not strengthened her heart. She told his sister to follow him, and the sister watched from a distance unnoticed. Allah had made him refuse every wet nurse, and the sister offered a household that would bring him up. He was returned to his mother so that she would be comforted and would know that Allah's promise is true.",
+      "From the commentary, not the verses: that 'empty' means she could think of nothing but Musa (reported from Ibn Abbas, Mujahid, Ikrimah, Sa'id bin Jubayr and others); that the sister was the older child; that the queen paid the mother; and that only about a day and a night passed between the distress and the relief, 'and Allah knows best'.",
+      "The commentary reports from Ibn Abbas that the palace people doubted the sister and seized her until she explained herself. The game leaves that out."
     ],
     steps: [
       {"say":"m4-a","scene":"river","e":"🧕🏿 💭"},
@@ -81,8 +81,8 @@ window.STORY = [
   {
     id: "m5", icon: "🏛️", title: "Growing Up in the Palace", source: "28:14", more: ["20:27-28"],
     parent: [
-      "Verse 28:14. When Musa reached full maturity Allah gave him wisdom and knowledge: 'this is how We reward those who do good'.",
-      "The hot coal is not in the Qur'an. Ibn Kathir's tafsir (abridged English), explaining the prayer 'untie the knot in my tongue' (20:27), says Musa had a lisp from an incident in which he was offered a date and a hot coal and put the coal on his tongue. The tafsir gives it in one sentence and refers elsewhere for the full story; the game adds nothing to it. The same tafsir says that as a child Musa stayed in Pharaoh's own room.",
+      "When Musa reached full maturity Allah gave him wisdom and knowledge: 'this is how We reward those who do good'.",
+      "The hot coal is not in the Qur'an. The commentary, explaining the prayer 'untie the knot in my tongue' (20:27), says Musa had a lisp from an incident in which he was offered a date and a hot coal and put the coal on his tongue. The tafsir gives it in one sentence and refers elsewhere for the full story; the game adds nothing to it. The commentary says that as a child Musa stayed in Pharaoh's own room.",
       "The sorting activity (safe to eat, or too hot to touch) is a safety game of ours hung on that report."
     ],
     steps: [
@@ -97,7 +97,7 @@ window.STORY = [
   {
     id: "m6", icon: "🏃", title: "A Big Mistake", source: "28:15-21", more: [],
     parent: [
-      "Verses 28:15–21. Musa entered the city unnoticed and found two men fighting, one of his own people and one an enemy. His kinsman called for help; Musa struck the other with his fist and killed him. The game says the man 'fell down and did not get up again'. Musa said 'this is Satan's work', asked forgiveness and was forgiven, and promised never to support wrongdoers.",
+      "Musa entered the city unnoticed and found two men fighting, one of his own people and one an enemy. His kinsman called for help; Musa struck the other with his fist and killed him. The game says the man 'fell down and did not get up again'. Musa said 'this is Satan's work', asked forgiveness and was forgiven, and promised never to support wrongdoers.",
       "Left out: verses 28:18–19, where the same kinsman calls for help again the next day, Musa calls him a troublemaker, and the man lets slip what happened the day before.",
       "In verse 28:20 the man who came running says the authorities are talking about killing Musa. The game says they are 'coming to punish' him."
     ],
@@ -115,8 +115,8 @@ window.STORY = [
   {
     id: "m7", icon: "🐑", title: "The Well of Madyan", source: "28:22-24", more: ["28:26"],
     parent: [
-      "Verses 28:22–24. Musa turned towards Madyan hoping his Lord would guide him. At its water he found men watering flocks and two women holding theirs back; they could not water until the shepherds left, and their father was very old. He watered for them, withdrew to the shade and prayed: 'My Lord, I am in dire need of whatever good You send me.'",
-      "The heavy rock is not in the verses. Ibn Kathir's tafsir (abridged English), on 'the strong, the trustworthy' in 28:26, reports from Umar, Ibn Abbas, Shurayh, Abu Malik, Qatadah, Ibn Ishaq and others that the daughter said Musa had lifted a rock that only ten men could lift. The same tafsir says he sat beneath a tree (Ibn Abbas, Ibn Mas'ud, As-Suddi).",
+      "Musa turned towards Madyan hoping his Lord would guide him. At its water he found men watering flocks and two women holding theirs back; they could not water until the shepherds left, and their father was very old. He watered for them, withdrew to the shade and prayed: 'My Lord, I am in dire need of whatever good You send me.'",
+      "The heavy rock is not in the verses. The commentary, on 'the strong, the trustworthy' in 28:26, reports from Umar, Ibn Abbas, Shurayh, Abu Malik, Qatadah, Ibn Ishaq and others that the daughter said Musa had lifted a rock that only ten men could lift. The commentary says he sat beneath a tree (Ibn Abbas, Ibn Mas'ud, As-Suddi).",
       "The tafsir also mentions, with 'and Allah knows best', a report that an angel on a horse showed Musa the way. The game does not use it."
     ],
     steps: [
@@ -135,8 +135,8 @@ window.STORY = [
   {
     id: "m8", icon: "🏡", title: "A New Home", source: "28:25-28", more: [],
     parent: [
-      "Verses 28:25–28. One of the two women came walking shyly with her father's invitation. Musa told his story and the old man said: do not be afraid, you are safe now. A daughter said: hire him, the best to hire is the strong and trustworthy. The father offered marriage to one of his daughters for eight years of work, ten if Musa chose, and Musa agreed. The verses do not name the father.",
-      "From Ibn Kathir's tafsir (abridged English), not the verses: Musa asked her to walk behind him and throw a pebble to show the way (reported from Umar, Ibn Abbas and others, as her explanation of 'trustworthy'); and Musa completed the longer term, ten years, which the tafsir quotes from al-Bukhari on the authority of Ibn Abbas."
+      "One of the two women came walking shyly with her father's invitation. Musa told his story and the old man said: do not be afraid, you are safe now. A daughter said: hire him, the best to hire is the strong and trustworthy. The father offered marriage to one of his daughters for eight years of work, ten if Musa chose, and Musa agreed. The verses do not name the father.",
+      "From the commentary, not the verses: Musa asked her to walk behind him and throw a pebble to show the way (reported from Umar, Ibn Abbas and others, as her explanation of 'trustworthy'); and Musa completed the longer term, ten years, which the tafsir quotes from al-Bukhari on the authority of Ibn Abbas."
     ],
     steps: [
       {"say":"m8-a","scene":"well","e":"🧕🏿 💬 🧑🏿"},
@@ -154,7 +154,7 @@ window.STORY = [
   {
     id: "m9", icon: "🔥", title: "The Fire on the Mountain", source: "20:9-14", more: ["28:29-30"],
     parent: [
-      "Verses 20:9–14 and 28:29–30. When his term was complete Musa was travelling with his family and saw a fire. He told them to wait: he might bring a burning brand, or find guidance there. He was called: 'Musa! I am your Lord. Take off your shoes: you are in the sacred valley of Tuwa. I have chosen you, so listen to what is revealed. I am Allah; there is no god but Me. So worship Me and keep up the prayer so that you remember Me.' Verse 28:30 says the call came from the right side of the valley, from a tree on blessed ground.",
+      "When his term was complete Musa was travelling with his family and saw a fire. He told them to wait: he might bring a burning brand, or find guidance there. He was called: 'Musa! I am your Lord. Take off your shoes: you are in the sacred valley of Tuwa. I have chosen you, so listen to what is revealed. I am Allah; there is no god but Me. So worship Me and keep up the prayer so that you remember Me.' Verse 28:30 says the call came from the right side of the valley, from a tree on blessed ground.",
       "The pictures show a fire and a light, and nothing else. Allah is not shown, and no angel is shown anywhere in this game."
     ],
     steps: [
@@ -172,8 +172,8 @@ window.STORY = [
   {
     id: "m10", icon: "🐍", title: "The Staff and the Shining Hand", source: "20:17-24", more: ["28:31-32"],
     parent: [
-      "Verses 20:17–24 and 28:31–32. Asked what was in his right hand, Musa said it was his staff: he leaned on it, kept his sheep in order with it, and had other uses for it. Thrown down, it became a fast-moving snake and he turned to flee; he was told to pick it up without fear and it would return to its former state. His hand, drawn out from his side, came out white and unharmed. These were two signs for Pharaoh and his chiefs.",
-      "'Shone like the moon' is from Ibn Kathir's tafsir (abridged English): the hand came out 'shining as if it were a half moon', free of any disease (reported from Ibn Abbas, Mujahid, Ikrimah, Qatadah, Ad-Dahhak and As-Suddi); Al-Hasan al-Basri said 'as if it were a lamp'."
+      "Asked what was in his right hand, Musa said it was his staff: he leaned on it, kept his sheep in order with it, and had other uses for it. Thrown down, it became a fast-moving snake and he turned to flee; he was told to pick it up without fear and it would return to its former state. His hand, drawn out from his side, came out white and unharmed. These were two signs for Pharaoh and his chiefs.",
+      "'Shone like the moon' is from the commentary: the hand came out 'shining as if it were a half moon', free of any disease (reported from Ibn Abbas, Mujahid, Ikrimah, Qatadah, Ad-Dahhak and As-Suddi); Al-Hasan al-Basri said 'as if it were a lamp'."
     ],
     steps: [
       {"say":"m10-a","scene":"fire","e":"🧔🏿 STAFF"},
@@ -190,9 +190,9 @@ window.STORY = [
     id: "m11", icon: "🤲", title: "Musa's Prayer", source: "20:25-36", more: ["28:33-35","20:42-46"],
     parent: [
       "How Musa met Harun again is not described in the verses; 20:42 says 'go, you and your brother', so the game says only that Harun went with him.",
-      "Verses 20:25–36. Musa asked: lift up my heart, ease my task, untie my tongue so they may understand my words, and give me a helper from my family, Harun my brother; strengthen me through him and let him share my task, so that we may glorify and remember You much. He was told: your request is granted.",
+      "Musa asked: lift up my heart, ease my task, untie my tongue so they may understand my words, and give me a helper from my family, Harun my brother; strengthen me through him and let him share my task, so that we may glorify and remember You much. He was told: your request is granted.",
       "Verses 28:33–35: Musa says he killed one of their men and fears they may kill him, and that Harun is the better speaker. The game says only that he was afraid of what they might do to him. Verses 20:42–46: go, both of you; speak to him gently so that he may take heed or show respect; do not be afraid, I am with you both, hearing and seeing.",
-      "Ibn Kathir's tafsir (abridged English) reports from Ibn Abbas that Harun was made a prophet at that same moment, and that A'ishah agreed with a man who said no brother was ever more useful to his brother than Musa was in this prayer."
+      "The commentary reports from Ibn Abbas that Harun was made a prophet at that same moment, and that A'ishah agreed with a man who said no brother was ever more useful to his brother than Musa was in this prayer."
     ],
     steps: [
       {"say":"m11-a","scene":"fire","e":"🧔🏿 😟"},
@@ -209,7 +209,7 @@ window.STORY = [
   {
     id: "m12", icon: "🏛️", title: "Before Pharaoh", source: "20:47-59", more: ["28:36-37"],
     parent: [
-      "Verses 20:47–59 and 28:36–37. The two brothers say: we are messengers of your Lord; send the Children of Israel with us and do not oppress them. When Musa brought clear signs, Pharaoh's people called them conjuring tricks never heard of from their forefathers. Pharaoh accused Musa of coming to drive them from their land with sorcery and demanded an appointment; Musa named the day of the feast, with the people gathered when the sun is high.",
+      "The two brothers say: we are messengers of your Lord; send the Children of Israel with us and do not oppress them. When Musa brought clear signs, Pharaoh's people called them conjuring tricks never heard of from their forefathers. Pharaoh accused Musa of coming to drive them from their land with sorcery and demanded an appointment; Musa named the day of the feast, with the people gathered when the sun is high.",
       "The long exchange about who the Lord is (20:49–55) is left out of the game."
     ],
     steps: [
@@ -227,7 +227,7 @@ window.STORY = [
   {
     id: "m13", icon: "🎪", title: "The Day of the Festival", source: "20:60-70", more: [],
     parent: [
-      "Verses 20:60–70. Pharaoh gathered his resources and returned. Musa warned the sorcerers not to invent lies against Allah. They asked whether he would throw first; he told them to throw. Through their sorcery their ropes and staffs seemed to him to be moving, and Musa was inwardly alarmed. He was told: do not be afraid, you have the upper hand; throw what is in your right hand and it will swallow what they have produced, which is only a sorcerer's trick. The sorcerers threw themselves down and said: we believe in the Lord of Harun and Musa."
+      "Pharaoh gathered his resources and returned. Musa warned the sorcerers not to invent lies against Allah. They asked whether he would throw first; he told them to throw. Through their sorcery their ropes and staffs seemed to him to be moving, and Musa was inwardly alarmed. He was told: do not be afraid, you have the upper hand; throw what is in your right hand and it will swallow what they have produced, which is only a sorcerer's trick. The sorcerers threw themselves down and said: we believe in the Lord of Harun and Musa."
     ],
     steps: [
       {"say":"m13-a","scene":"egypt","amb":"crowd","e":"🎪 🧙🏿 🧙🏿"},
@@ -246,8 +246,8 @@ window.STORY = [
   {
     id: "m14", icon: "🦁", title: "Brave Hearts", source: "20:71-73", more: ["40:28","66:11","28:38-39"],
     parent: [
-      "Verses 20:71–73. Pharaoh said: how dare you believe before I give you permission? He threatened to cut off their hands and feet on opposite sides and crucify them on palm trunks. The game says only that he would punish them terribly. They answered that they would never prefer him to the clear signs and to their Creator: 'decide whatever you will: you can only decide matters of this present life.'",
-      "Verse 40:28: a believing man of Pharaoh's family who had hidden his faith said, 'How can you kill a man just for saying, My Lord is Allah?' The game says 'hurt'. Verse 66:11 gives the prayer of Pharaoh's wife. The verses do not name her; the name Asiya comes from the commentary (see chapter 3). The Qur'an does not say at what point in the story the believing man spoke or the queen prayed; the game places them here.",
+      "Pharaoh said: how dare you believe before I give you permission? He threatened to cut off their hands and feet on opposite sides and crucify them on palm trunks. The game says only that he would punish them terribly. They answered that they would never prefer him to the clear signs and to their Creator: 'decide whatever you will: you can only decide matters of this present life.'",
+      "Verse 40:28: a believing man of Pharaoh's family who had hidden his faith said, 'How can you kill a man just for saying, My Lord is Allah?' The game says 'hurt'. Verse 66:11 gives the prayer of Pharaoh's wife. The Qur'an does not say at what point in the story the believing man spoke or the queen prayed; the game places them here.",
       "Verses 28:38–39: Pharaoh tells his chiefs he knows of no god for them but himself, and orders Haman to bake clay bricks and build a tall building so that he may climb to Musa's God. The verses fetched for this game do not say what became of the building, so neither does the game."
     ],
     steps: [
@@ -265,8 +265,8 @@ window.STORY = [
   {
     id: "m15", icon: "🐸", title: "Sign after Sign", source: "7:130-135", more: [],
     parent: [
-      "Verses 7:130–135. Pharaoh's people were afflicted with years of drought and crop failure; when good came they claimed it as their due, and when harm came they blamed Musa. They said they would never believe whatever sign he brought. Then came the flood, the locusts, the lice, the frogs and the blood, 'all clear signs'. Each time they asked Musa to pray and promised to believe and release the Children of Israel, and each time they broke the promise.",
-      "Details from Ibn Kathir's tafsir (abridged English), not the verses. The 'flood': Ibn Abbas said it was heavy rain that ruined crops and fruit; he is also reported to have said mass death, and Mujahid said water carrying plague, so the early scholars differed. The locusts eating the nails of the doors is reported from Mujahid. The third sign (qummal): Ibn Abbas said grain weevils, or small wingless locusts; Al-Hasan and Sa'id bin Jubayr said small black insects; the game says 'tiny bugs in the grain'. Frogs in the houses, food, pots and clothes is from Sa'id bin Jubayr and Ibn Ishaq.",
+      "Pharaoh's people were afflicted with years of drought and crop failure; when good came they claimed it as their due, and when harm came they blamed Musa. They said they would never believe whatever sign he brought. Then came the flood, the locusts, the lice, the frogs and the blood, 'all clear signs'. Each time they asked Musa to pray and promised to believe and release the Children of Israel, and each time they broke the promise.",
+      "Details from the commentary, not the verses. The 'flood': Ibn Abbas said it was heavy rain that ruined crops and fruit; he is also reported to have said mass death, and Mujahid said water carrying plague, so the early scholars differed. The locusts eating the nails of the doors is reported from Mujahid. The third sign (qummal): Ibn Abbas said grain weevils, or small wingless locusts; Al-Hasan and Sa'id bin Jubayr said small black insects; the game says 'tiny bugs in the grain'. Frogs in the houses, food, pots and clothes is from Sa'id bin Jubayr and Ibn Ishaq.",
       "The fifth sign is blood: the tafsir says rivers, wells and containers of water turned to blood. The game says the water 'turned red'."
     ],
     steps: [
@@ -288,7 +288,7 @@ window.STORY = [
     id: "m16", icon: "🌙", title: "Leaving by Night", source: "26:60-62", more: ["20:77"],
     parent: [
       "Verse 20:77: 'Go out at night with My servants and strike a dry path for them across the sea. Have no fear of being overtaken.' Verses 26:60–62: Pharaoh and his people pursued them at sunrise; when the two sides came in sight of each other Musa's followers said, 'We shall definitely be caught', and Musa said, 'No, my Lord is with me: He will guide me.'",
-      "Ibn Kathir's tafsir (abridged English) says they were caught up with at the shore, the sea in front and Pharaoh behind. The lamps in the 'wake the families' activity are ours."
+      "The commentary says they were caught up with at the shore, the sea in front and Pharaoh behind. The lamps in the 'wake the families' activity are ours."
     ],
     steps: [
       {"say":"m16-a","scene":"night","e":"🧔🏿 🌙"},
@@ -306,7 +306,7 @@ window.STORY = [
     id: "m17", icon: "🌊", title: "The Sea Opens", source: "26:63-66", more: ["20:77-78","10:90-92"],
     parent: [
       "Verses 26:63–66: 'Strike the sea with your staff.' It parted, each side like a mighty mountain; Musa and all his companions were saved and the others were drowned. The game says the sea 'came crashing back' and that the army 'was gone'. Verses 10:90–92: as he was drowning Pharaoh said he believed in the God of the Children of Israel, and was answered, 'Now? When you had always been a rebel?' Only his body was saved, as a sign for those after him.",
-      "From Ibn Kathir's tafsir (abridged English), not the verses: the twelve paths, one for each tribe (reported from Ibn Abbas); the openings like windows in the water through which they saw one another (As-Suddi); and the wind sent to dry the sea bed. The same tafsir gives an account in which the angels Jibril and Mika'il ride at the sea; the game does not use it.",
+      "From the commentary, not the verses: the twelve paths, one for each tribe (reported from Ibn Abbas); the openings like windows in the water through which they saw one another (As-Suddi); and the wind sent to dry the sea bed. The commentary gives an account in which the angels Jibril and Mika'il ride at the sea; the game does not use it.",
       "Ashura: the tafsir quotes al-Bukhari, from Ibn Abbas, that the Prophet ﷺ found the Jews of Madinah fasting the day Musa was given victory over Pharaoh and said, 'You have more right to Musa than they, so fast it.' The Prophet ﷺ is mentioned in the narration and is not shown."
     ],
     steps: [
@@ -330,7 +330,7 @@ window.STORY = [
     id: "m18", icon: "💧", title: "Food from the Sky, Water from the Rock", source: "2:57-60", more: [],
     parent: [
       "Verse 2:57: clouds were made to shade them, and manna and quails were sent down: 'Eat the good things We have provided for you.' Verse 2:60: Musa prayed for water for his people and was told to strike the rock with his staff; twelve springs gushed out and each group knew its drinking place.",
-      "Ibn Kathir's tafsir (abridged English) reports from Ibn Abbas that it was a square stone and that three springs came from each side, one spring for each tribe. The game does not say what manna looked like; the sparkles in the gathering activity are only a stand-in."
+      "The commentary reports from Ibn Abbas that it was a square stone and that three springs came from each side, one spring for each tribe. The game does not say what manna looked like; the sparkles in the gathering activity are only a stand-in."
     ],
     steps: [
       {"say":"m18-a","scene":"desert","e":"☁️ 🚶🏿"},
@@ -347,7 +347,7 @@ window.STORY = [
   {
     id: "m19", icon: "⛰️", title: "The Mountain and the Tablets", source: "7:142-145", more: [],
     parent: [
-      "Verses 7:142–145. Allah appointed thirty nights for Musa and added ten, making forty. Musa told Harun to take his place and act rightly. On the mountain Musa asked to see his Lord and was told: 'You will never see Me, but look at that mountain: if it remains firmly in its place, you will see Me.' When his Lord revealed Himself to the mountain He made it crumble, and Musa fell unconscious. On recovering he said: 'Glory be to You! To You I turn in repentance! I am the first to believe!' He was told to hold on to what he had been given and be thankful, and was given the Tablets.",
+      "Allah appointed thirty nights for Musa and added ten, making forty. Musa told Harun to take his place and act rightly. On the mountain Musa asked to see his Lord and was told: 'You will never see Me, but look at that mountain: if it remains firmly in its place, you will see Me.' When his Lord revealed Himself to the mountain He made it crumble, and Musa fell unconscious. On recovering he said: 'Glory be to You! To You I turn in repentance! I am the first to believe!' He was told to hold on to what he had been given and be thankful, and was given the Tablets.",
       "The picture shows a mountain crumbling and nothing else. Allah is never shown."
     ],
     steps: [
@@ -366,9 +366,9 @@ window.STORY = [
   {
     id: "m20", icon: "🐄", title: "The Golden Calf", source: "20:83-97", more: ["7:148-151"],
     parent: [
-      "Verses 20:83–97 and 7:148–151. In Musa's absence the Samiri led the people astray. They had thrown the jewellery they carried into the fire and he brought out a calf that made a lowing sound; it gave them no answer and had no power to harm or benefit them. Harun told them it was a test and that their Lord is the Lord of Mercy; they refused to stop until Musa returned. Musa came back angry and grieved, threw down the Tablets and seized his brother by the hair and beard; Harun said the people had overpowered him and almost killed him. Musa prayed for forgiveness for himself and his brother, told the Samiri to go away, and said the calf would be ground down and scattered in the sea. The people later regretted what they had done (7:149).",
+      "In Musa's absence the Samiri led the people astray. They had thrown the jewellery they carried into the fire and he brought out a calf that made a lowing sound; it gave them no answer and had no power to harm or benefit them. Harun told them it was a test and that their Lord is the Lord of Mercy; they refused to stop until Musa returned. Musa came back angry and grieved, threw down the Tablets and seized his brother by the hair and beard; Harun said the people had overpowered him and almost killed him. Musa prayed for forgiveness for himself and his brother, told the Samiri to go away, and said the calf would be ground down and scattered in the sea. The people later regretted what they had done (7:149).",
       "The game says Musa 'put down' the Tablets and 'took hold of' his brother, and that the people 'would not listen' to Harun.",
-      "From Ibn Kathir's tafsir (abridged English): Mujahid said the calf's sound came from the wind blowing through it; Ibn Abbas, by way of Ibn Ishaq, said the Samiri came from a people who worshipped cows. What the Samiri says he 'saw' and took a handful of (20:96) is explained in that tafsir as the track of the angel Jibril's horse; the game leaves it out."
+      "From the commentary: Mujahid said the calf's sound came from the wind blowing through it; Ibn Abbas, by way of Ibn Ishaq, said the Samiri came from a people who worshipped cows. What the Samiri says he 'saw' and took a handful of (20:96) is explained in the commentary as the track of the angel Jibril's horse; the game leaves it out."
     ],
     steps: [
       {"say":"m20-a","scene":"camp","amb":"fire","e":"🔥 💍 🐄"},
@@ -387,7 +387,7 @@ window.STORY = [
   {
     id: "m21", icon: "🐮", title: "The Yellow Cow", source: "2:67-71", more: ["2:72-73"],
     parent: [
-      "Verses 2:67–71. Musa told his people that Allah commands them to sacrifice a cow. They asked if he was mocking them, then asked what sort (neither old nor young, but in between), what colour (bright yellow, pleasing to the eye), and exactly which (unblemished, not trained to plough the earth or water the fields). They slaughtered it, 'though they almost failed to do so'.",
+      "Musa told his people that Allah commands them to sacrifice a cow. They asked if he was mocking them, then asked what sort (neither old nor young, but in between), what colour (bright yellow, pleasing to the eye), and exactly which (unblemished, not trained to plough the earth or water the fields). They slaughtered it, 'though they almost failed to do so'.",
       "Left for parents: verses 2:72–73 give the reason. A person had been killed and the people were accusing one another; they were told to strike the body with part of the cow, and so Allah showed them how He gives life to the dead. The game tells the cow and the questions, and says only that Allah used it to bring out a truth some of them had been hiding, which is the wording of 2:72."
     ],
     steps: [
@@ -404,7 +404,7 @@ window.STORY = [
   {
     id: "m22", icon: "🚪", title: "The Holy Land", source: "5:20-26", more: [],
     parent: [
-      "Verses 5:20–26. Musa reminded his people of Allah's blessings and told them to enter the holy land Allah had ordained for them and not turn back. They said a fearsome people lived there and they would not enter until those people left. Two men whom Allah had blessed said: go in through the gate, and you will be victorious; put your trust in Allah. The people answered: 'You and your Lord go and fight; we will stay here.' Musa said he had authority over no one but himself and his brother. The land was forbidden to them for forty years, during which they would wander.",
+      "Musa reminded his people of Allah's blessings and told them to enter the holy land Allah had ordained for them and not turn back. They said a fearsome people lived there and they would not enter until those people left. Two men whom Allah had blessed said: go in through the gate, and you will be victorious; put your trust in Allah. The people answered: 'You and your Lord go and fight; we will stay here.' Musa said he had authority over no one but himself and his brother. The land was forbidden to them for forty years, during which they would wander.",
       "The verses do not name the two men."
     ],
     steps: [
@@ -421,8 +421,8 @@ window.STORY = [
   {
     id: "m23", icon: "🐟", title: "The Fish That Swam Away", source: "18:60-70", more: [],
     parent: [
-      "Verses 18:60–70. Musa told his servant he would not stop until he reached the place where the two seas meet. There they forgot their fish, which made its way into the sea. Later, tired and asking for the meal, the servant remembered: he had forgotten the fish by the rock, and only Satan made him forget. Musa said that was the place they were seeking, and they retraced their steps. They found a servant of Allah who had been given mercy and knowledge. He warned Musa he would not be able to bear with him patiently; Musa promised patience; the condition was that Musa ask about nothing until he himself spoke of it.",
-      "From a hadith of Ubayy bin Ka'b in al-Bukhari, as quoted in Ibn Kathir's tafsir (abridged English), not from the verses: Musa was asked who was the most learned of people and said 'I am', and was told of a servant who knew more; he was told to carry a fish in a basket and that he would find the man where he lost the fish; the servant boy was Yusha bin Nun; the water stood like an arch over the fish's path; and the man's name was al-Khidr."
+      "Musa told his servant he would not stop until he reached the place where the two seas meet. There they forgot their fish, which made its way into the sea. Later, tired and asking for the meal, the servant remembered: he had forgotten the fish by the rock, and only Satan made him forget. Musa said that was the place they were seeking, and they retraced their steps. They found a servant of Allah who had been given mercy and knowledge. He warned Musa he would not be able to bear with him patiently; Musa promised patience; the condition was that Musa ask about nothing until he himself spoke of it.",
+      "From a hadith of Ubayy bin Ka'b in al-Bukhari, as quoted in the commentary, not from the verses: Musa was asked who was the most learned of people and said 'I am', and was told of a servant who knew more; he was told to carry a fish in a basket and that he would find the man where he lost the fish; the servant boy was Yusha bin Nun; the water stood like an arch over the fish's path; and the man's name was al-Khidr."
     ],
     steps: [
       {"say":"m23-a","scene":"camp","src":"From a hadith in al-Bukhari","e":"🧔🏿 💬"},
@@ -442,9 +442,9 @@ window.STORY = [
   {
     id: "m24", icon: "⛵", title: "Three Strange Things", source: "18:71-82", more: [],
     parent: [
-      "Verses 18:71–82. In the boat the man made a hole in it, and Musa objected. Verse 18:74 then says they met a young boy and the man killed him, and Musa protested more strongly. The game does not tell this to small children: it says only that the second thing was about a boy and is 'a story for when you are older'. The explanation in 18:80–81 is that the boy's parents were people of faith, that he would have burdened them with wickedness and disbelief, and that their Lord would give them a better child in his place.",
+      "In the boat the man made a hole in it, and Musa objected. Verse 18:74 then says they met a young boy and the man killed him, and Musa protested more strongly. The game does not tell this to small children: it says only that the second thing was about a boy and is 'a story for when you are older'. The explanation in 18:80–81 is that the boy's parents were people of faith, that he would have burdened them with wickedness and disbelief, and that their Lord would give them a better child in his place.",
       "The third: a town refused them food, and the man repaired a wall that was about to fall; Musa said he could have taken payment. The explanations: the boat belonged to needy people who worked at sea, and a king was seizing every sound boat by force; the wall belonged to two orphans, with a treasure beneath it, and their father had been righteous. 'I did not do these things of my own accord.'",
-      "From the hadith in al-Bukhari quoted in Ibn Kathir's tafsir (abridged English), not the verses: the crew knew al-Khidr and carried them without a fare; the bird that dipped its beak in the sea and what al-Khidr said about knowledge; and the Prophet's ﷺ words, 'We wish that Musa had been patient, so that Allah would have told us more about the two of them.' The closing sentence about good hidden inside a thing that looks bad is the game's own summary of the lesson."
+      "From the hadith in al-Bukhari quoted in the commentary, not the verses: the crew knew al-Khidr and carried them without a fare; the bird that dipped its beak in the sea and what al-Khidr said about knowledge; and the Prophet's ﷺ words, 'We wish that Musa had been patient, so that Allah would have told us more about the two of them.' The closing sentence about good hidden inside a thing that looks bad is the game's own summary of the lesson."
     ],
     steps: [
       {"say":"m24-a","scene":"sea","src":"From a hadith in al-Bukhari","e":"⛵ 🔨"},
@@ -467,7 +467,7 @@ window.STORY = [
   {
     id: "m25", icon: "📜", title: "Allah Was with Him", source: "28:43", more: ["20:46","26:62"],
     parent: [
-      "Verse 28:43: Musa was given the Scripture, to give people insight, guidance and mercy, so that they might take heed. The chapter looks back over the whole story; 'I am with you both, hearing and seeing' is 20:46 and 'My Lord is with me: He will guide me' is 26:62.",
+      "Verse 28:43: Musa was given the Scripture, to give people insight, guidance and mercy, so that they might take heed. The chapter looks back over the whole story.",
       "This game tells a large part of what the Qur'an says about Musa, not all of it: the story is spread over many surahs. A good next step with an older child is to read Surah Ta-Ha (20) and Surah Al-Qasas (28) together."
     ],
     steps: [

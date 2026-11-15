@@ -6,6 +6,7 @@
 */
 window.STORY_GAME = {
   slug: "musa",
+  notesSource: "“The commentary” is Ibn Kathir’s tafsir (abridged English translation).",
   titleArt: [],          // the title shows the cover picture (see index.html)
   titleMood: "nile",
   endMood: "triumph",

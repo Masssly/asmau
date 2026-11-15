@@ -3,7 +3,7 @@
 const { chapter, s, p, q, ord, mat, srt, chg, TAF, HAD } = require("./lib");
 
 chapter("m9", "🔥", "The Fire on the Mountain", "20:9-14", ["28:29-30"], [
-  "Verses 20:9–14 and 28:29–30. When his term was complete Musa was travelling with his family and saw a fire. He told them to wait: he might bring a burning brand, or find guidance there. He was called: 'Musa! I am your Lord. Take off your shoes: you are in the sacred valley of Tuwa. I have chosen you, so listen to what is revealed. I am Allah; there is no god but Me. So worship Me and keep up the prayer so that you remember Me.' Verse 28:30 says the call came from the right side of the valley, from a tree on blessed ground.",
+  "When his term was complete Musa was travelling with his family and saw a fire. He told them to wait: he might bring a burning brand, or find guidance there. He was called: 'Musa! I am your Lord. Take off your shoes: you are in the sacred valley of Tuwa. I have chosen you, so listen to what is revealed. I am Allah; there is no god but Me. So worship Me and keep up the prayer so that you remember Me.' Verse 28:30 says the call came from the right side of the valley, from a tree on blessed ground.",
   "The pictures show a fire and a light, and nothing else. Allah is not shown, and no angel is shown anywhere in this game."
 ]);
 s("a", "night", "When his years of work were done, Musa set off on a journey with his family. One cold, dark night, he saw a fire, far away on the side of the mountain.",
@@ -20,8 +20,8 @@ p("hold", "listen", "fire", "Be very still and listen, like Musa. Press and hold
 q("q", "fire", "Who called to Musa in the holy valley?", ["Allah, his Lord", "✨"], ["A shepherd", "🐑"], "No. It was Allah who called: Musa, I am your Lord.", { img: "d" });
 
 chapter("m10", "🐍", "The Staff and the Shining Hand", "20:17-24", ["28:31-32"], [
-  "Verses 20:17–24 and 28:31–32. Asked what was in his right hand, Musa said it was his staff: he leaned on it, kept his sheep in order with it, and had other uses for it. Thrown down, it became a fast-moving snake and he turned to flee; he was told to pick it up without fear and it would return to its former state. His hand, drawn out from his side, came out white and unharmed. These were two signs for Pharaoh and his chiefs.",
-  "'Shone like the moon' is from Ibn Kathir's tafsir (abridged English): the hand came out 'shining as if it were a half moon', free of any disease (reported from Ibn Abbas, Mujahid, Ikrimah, Qatadah, Ad-Dahhak and As-Suddi); Al-Hasan al-Basri said 'as if it were a lamp'."
+  "Asked what was in his right hand, Musa said it was his staff: he leaned on it, kept his sheep in order with it, and had other uses for it. Thrown down, it became a fast-moving snake and he turned to flee; he was told to pick it up without fear and it would return to its former state. His hand, drawn out from his side, came out white and unharmed. These were two signs for Pharaoh and his chiefs.",
+  "'Shone like the moon' is from the commentary: the hand came out 'shining as if it were a half moon', free of any disease (reported from Ibn Abbas, Mujahid, Ikrimah, Qatadah, Ad-Dahhak and As-Suddi); Al-Hasan al-Basri said 'as if it were a lamp'."
 ]);
 s("a", "fire", "Allah asked: what is that in your right hand, Musa? He said: it is my staff. I lean on it. I look after my sheep with it. And I use it for other things too.",
   "{MU}, barefoot in a rocky valley lit by golden light from one side, holds out his plain wooden staff in both hands and looks at it.", { mood: "awe" });
@@ -45,9 +45,9 @@ p("memory", "mem", "fire", "Find the pairs from that wonderful night.", { icons:
 
 chapter("m11", "🤲", "Musa's Prayer", "20:25-36", ["28:33-35", "20:42-46"], [
   "How Musa met Harun again is not described in the verses; 20:42 says 'go, you and your brother', so the game says only that Harun went with him.",
-  "Verses 20:25–36. Musa asked: lift up my heart, ease my task, untie my tongue so they may understand my words, and give me a helper from my family, Harun my brother; strengthen me through him and let him share my task, so that we may glorify and remember You much. He was told: your request is granted.",
+  "Musa asked: lift up my heart, ease my task, untie my tongue so they may understand my words, and give me a helper from my family, Harun my brother; strengthen me through him and let him share my task, so that we may glorify and remember You much. He was told: your request is granted.",
   "Verses 28:33–35: Musa says he killed one of their men and fears they may kill him, and that Harun is the better speaker. The game says only that he was afraid of what they might do to him. Verses 20:42–46: go, both of you; speak to him gently so that he may take heed or show respect; do not be afraid, I am with you both, hearing and seeing.",
-  "Ibn Kathir's tafsir (abridged English) reports from Ibn Abbas that Harun was made a prophet at that same moment, and that A'ishah agreed with a man who said no brother was ever more useful to his brother than Musa was in this prayer."
+  "The commentary reports from Ibn Abbas that Harun was made a prophet at that same moment, and that A'ishah agreed with a man who said no brother was ever more useful to his brother than Musa was in this prayer."
 ]);
 s("a", "fire", "Musa was worried. He said: my Lord, I am afraid of what they may do to me. And speaking is hard for me. My brother Harun speaks better than I do.",
   "{MU} kneels barefoot in the glowing valley, one hand on his chest and a worried look on his face, speaking upward toward the golden light.", { mood: "longing" });
@@ -70,7 +70,7 @@ srt("sort", "desert", "Is it a gentle word, or a harsh word?", ["Gentle", "🕊�
 ], "Think again. How would it feel to hear that?");
 
 chapter("m12", "🏛️", "Before Pharaoh", "20:47-59", ["28:36-37"], [
-  "Verses 20:47–59 and 28:36–37. The two brothers say: we are messengers of your Lord; send the Children of Israel with us and do not oppress them. When Musa brought clear signs, Pharaoh's people called them conjuring tricks never heard of from their forefathers. Pharaoh accused Musa of coming to drive them from their land with sorcery and demanded an appointment; Musa named the day of the feast, with the people gathered when the sun is high.",
+  "The two brothers say: we are messengers of your Lord; send the Children of Israel with us and do not oppress them. When Musa brought clear signs, Pharaoh's people called them conjuring tricks never heard of from their forefathers. Pharaoh accused Musa of coming to drive them from their land with sorcery and demanded an appointment; Musa named the day of the feast, with the people gathered when the sun is high.",
   "The long exchange about who the Lord is (20:49–55) is left out of the game."
 ]);
 s("a", "palace", "Musa and Harun stood before Pharaoh in his great hall. They said: we are messengers from your Lord. Let the Children of Israel go with us, and stop hurting them.",
@@ -88,7 +88,7 @@ p("catch", "crowd", "egypt", "Help gather all the people for the big day. Tap th
 p("puzzle", "puz", "palace", "Put the picture back together. Tap two pieces to swap them.", { pic: "m12-a", n: 3 });
 
 chapter("m13", "🎪", "The Day of the Festival", "20:60-70", [], [
-  "Verses 20:60–70. Pharaoh gathered his resources and returned. Musa warned the sorcerers not to invent lies against Allah. They asked whether he would throw first; he told them to throw. Through their sorcery their ropes and staffs seemed to him to be moving, and Musa was inwardly alarmed. He was told: do not be afraid, you have the upper hand; throw what is in your right hand and it will swallow what they have produced, which is only a sorcerer's trick. The sorcerers threw themselves down and said: we believe in the Lord of Harun and Musa."
+  "Pharaoh gathered his resources and returned. Musa warned the sorcerers not to invent lies against Allah. They asked whether he would throw first; he told them to throw. Through their sorcery their ropes and staffs seemed to him to be moving, and Musa was inwardly alarmed. He was told: do not be afraid, you have the upper hand; throw what is in your right hand and it will swallow what they have produced, which is only a sorcerer's trick. The sorcerers threw themselves down and said: we believe in the Lord of Harun and Musa."
 ]);
 s("a", "egypt", "The big day came. The sun was high, and the whole city was there. Pharaoh's magicians stood in a row, with their ropes and their sticks.",
   "A huge open festival ground under a high bright sun, packed with a cheering crowd: {SORC} stand in a row holding coils of rope and wooden sticks, facing {MU} and {HA}; {PH} watches from a shaded platform.", { mood: "court", amb: "crowd" });
@@ -108,8 +108,8 @@ s("f", "egypt", "The magicians knew magic, and they knew this was no trick. They
 q("q2", "egypt", "Why did the magicians believe?", ["They saw it was no trick. It was from Allah", "✨"], ["Pharaoh told them to", "👑"], "No. Pharaoh was furious! They believed because they saw it was truly from Allah.", { img: "f" });
 
 chapter("m14", "🦁", "Brave Hearts", "20:71-73", ["40:28", "66:11", "28:38-39"], [
-  "Verses 20:71–73. Pharaoh said: how dare you believe before I give you permission? He threatened to cut off their hands and feet on opposite sides and crucify them on palm trunks. The game says only that he would punish them terribly. They answered that they would never prefer him to the clear signs and to their Creator: 'decide whatever you will: you can only decide matters of this present life.'",
-  "Verse 40:28: a believing man of Pharaoh's family who had hidden his faith said, 'How can you kill a man just for saying, My Lord is Allah?' The game says 'hurt'. Verse 66:11 gives the prayer of Pharaoh's wife. The verses do not name her; the name Asiya comes from the commentary (see chapter 3). The Qur'an does not say at what point in the story the believing man spoke or the queen prayed; the game places them here.",
+  "Pharaoh said: how dare you believe before I give you permission? He threatened to cut off their hands and feet on opposite sides and crucify them on palm trunks. The game says only that he would punish them terribly. They answered that they would never prefer him to the clear signs and to their Creator: 'decide whatever you will: you can only decide matters of this present life.'",
+  "Verse 40:28: a believing man of Pharaoh's family who had hidden his faith said, 'How can you kill a man just for saying, My Lord is Allah?' The game says 'hurt'. Verse 66:11 gives the prayer of Pharaoh's wife. The Qur'an does not say at what point in the story the believing man spoke or the queen prayed; the game places them here.",
   "Verses 28:38–39: Pharaoh tells his chiefs he knows of no god for them but himself, and orders Haman to bake clay bricks and build a tall building so that he may climb to Musa's God. The verses fetched for this game do not say what became of the building, so neither does the game."
 ]);
 s("a", "palace", "Pharaoh was furious. He shouted: how dare you believe before I say you may? And he said he would punish them terribly.",
@@ -133,8 +133,8 @@ mat("match", "palace", "Who said it? Match the brave hearts to their words.", [
 ]);
 
 chapter("m15", "🐸", "Sign after Sign", "7:130-135", [], [
-  "Verses 7:130–135. Pharaoh's people were afflicted with years of drought and crop failure; when good came they claimed it as their due, and when harm came they blamed Musa. They said they would never believe whatever sign he brought. Then came the flood, the locusts, the lice, the frogs and the blood, 'all clear signs'. Each time they asked Musa to pray and promised to believe and release the Children of Israel, and each time they broke the promise.",
-  "Details from Ibn Kathir's tafsir (abridged English), not the verses. The 'flood': Ibn Abbas said it was heavy rain that ruined crops and fruit; he is also reported to have said mass death, and Mujahid said water carrying plague, so the early scholars differed. The locusts eating the nails of the doors is reported from Mujahid. The third sign (qummal): Ibn Abbas said grain weevils, or small wingless locusts; Al-Hasan and Sa'id bin Jubayr said small black insects; the game says 'tiny bugs in the grain'. Frogs in the houses, food, pots and clothes is from Sa'id bin Jubayr and Ibn Ishaq.",
+  "Pharaoh's people were afflicted with years of drought and crop failure; when good came they claimed it as their due, and when harm came they blamed Musa. They said they would never believe whatever sign he brought. Then came the flood, the locusts, the lice, the frogs and the blood, 'all clear signs'. Each time they asked Musa to pray and promised to believe and release the Children of Israel, and each time they broke the promise.",
+  "Details from the commentary, not the verses. The 'flood': Ibn Abbas said it was heavy rain that ruined crops and fruit; he is also reported to have said mass death, and Mujahid said water carrying plague, so the early scholars differed. The locusts eating the nails of the doors is reported from Mujahid. The third sign (qummal): Ibn Abbas said grain weevils, or small wingless locusts; Al-Hasan and Sa'id bin Jubayr said small black insects; the game says 'tiny bugs in the grain'. Frogs in the houses, food, pots and clothes is from Sa'id bin Jubayr and Ibn Ishaq.",
   "The fifth sign is blood: the tafsir says rivers, wells and containers of water turned to blood. The game says the water 'turned red'."
 ]);
 s("a", "egypt", "Still Pharaoh would not let the people go. So Allah sent signs to Pharaoh's people, to wake them up. First came years with no rain, and hardly any food grew.",
@@ -161,7 +161,7 @@ ord("ord", "egypt", "Five signs came, one after another. Tap them in order.", [
 
 chapter("m16", "🌙", "Leaving by Night", "26:60-62", ["20:77"], [
   "Verse 20:77: 'Go out at night with My servants and strike a dry path for them across the sea. Have no fear of being overtaken.' Verses 26:60–62: Pharaoh and his people pursued them at sunrise; when the two sides came in sight of each other Musa's followers said, 'We shall definitely be caught', and Musa said, 'No, my Lord is with me: He will guide me.'",
-  "Ibn Kathir's tafsir (abridged English) says they were caught up with at the shore, the sea in front and Pharaoh behind. The lamps in the 'wake the families' activity are ours."
+  "The commentary says they were caught up with at the shore, the sea in front and Pharaoh behind. The lamps in the 'wake the families' activity are ours."
 ]);
 s("a", "night", "At last, Allah told Musa: leave by night, with My servants.",
   "A moonlit night in a quarter of small mud-brick homes: {MU} walks quietly from door to door with his staff, a finger to his lips, as families peek out with small oil lamps.", { mood: "longing" });
@@ -180,7 +180,7 @@ p("puzzle", "puz", "sea", "Put the picture back together. Tap two pieces to swap
 
 chapter("m17", "🌊", "The Sea Opens", "26:63-66", ["20:77-78", "10:90-92"], [
   "Verses 26:63–66: 'Strike the sea with your staff.' It parted, each side like a mighty mountain; Musa and all his companions were saved and the others were drowned. The game says the sea 'came crashing back' and that the army 'was gone'. Verses 10:90–92: as he was drowning Pharaoh said he believed in the God of the Children of Israel, and was answered, 'Now? When you had always been a rebel?' Only his body was saved, as a sign for those after him.",
-  "From Ibn Kathir's tafsir (abridged English), not the verses: the twelve paths, one for each tribe (reported from Ibn Abbas); the openings like windows in the water through which they saw one another (As-Suddi); and the wind sent to dry the sea bed. The same tafsir gives an account in which the angels Jibril and Mika'il ride at the sea; the game does not use it.",
+  "From the commentary, not the verses: the twelve paths, one for each tribe (reported from Ibn Abbas); the openings like windows in the water through which they saw one another (As-Suddi); and the wind sent to dry the sea bed. The commentary gives an account in which the angels Jibril and Mika'il ride at the sea; the game does not use it.",
   "Ashura: the tafsir quotes al-Bukhari, from Ibn Abbas, that the Prophet ﷺ found the Jews of Madinah fasting the day Musa was given victory over Pharaoh and said, 'You have more right to Musa than they, so fast it.' The Prophet ﷺ is mentioned in the narration and is not shown."
 ]);
 s("a", "sea", "Allah told Musa: strike the sea with your staff.",

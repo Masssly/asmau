@@ -23,6 +23,11 @@ things work; this file holds the decisions that must not be lost between session
   think about it.
 - Never invent a source. Mark what comes from commentary ("It is told that…").
 
+## Parents' notes
+- Tell each fact once. The chapter header already shows the verses and the links under the notes list
+  them, so do not open a note with "Verses x–y."; call the commentary "the commentary" (the game names
+  it once). Check with `node scripts/parent-repeats.js` before release.
+
 ## Pictures
 - Polished 3D family-film look. Everyone dark-skinned Black African. Faces shown (prophets included).
   Modest clothing; every woman's and girl's hair covered.

@@ -4,7 +4,7 @@ const { chapter, s, p, q, ord, mat, srt, chg, line, TAF, HAD } = require("./lib"
 
 chapter("m18", "💧", "Food from the Sky, Water from the Rock", "2:57-60", [], [
   "Verse 2:57: clouds were made to shade them, and manna and quails were sent down: 'Eat the good things We have provided for you.' Verse 2:60: Musa prayed for water for his people and was told to strike the rock with his staff; twelve springs gushed out and each group knew its drinking place.",
-  "Ibn Kathir's tafsir (abridged English) reports from Ibn Abbas that it was a square stone and that three springs came from each side, one spring for each tribe. The game does not say what manna looked like; the sparkles in the gathering activity are only a stand-in."
+  "The commentary reports from Ibn Abbas that it was a square stone and that three springs came from each side, one spring for each tribe. The game does not say what manna looked like; the sparkles in the gathering activity are only a stand-in."
 ]);
 s("a", "desert", "Now the people travelled through the hot, dry desert. And Allah sent clouds to give them shade.",
   "{FOLK} walk through a hot sandy desert while a wide soft white cloud floats low above them casting cool shade over the whole group; {MU} walks in front.", { mood: "trek" });
@@ -21,7 +21,7 @@ q("q", "desert", "How many springs came out of the rock?", ["Twelve", "💧"], [
 p("memory", "mem", "camp", "Find the pairs: the gifts Allah sent in the desert.", { icons: ["☁️", "🐦", "💧", "ROCK", "✨", "⛺"] });
 
 chapter("m19", "⛰️", "The Mountain and the Tablets", "7:142-145", [], [
-  "Verses 7:142–145. Allah appointed thirty nights for Musa and added ten, making forty. Musa told Harun to take his place and act rightly. On the mountain Musa asked to see his Lord and was told: 'You will never see Me, but look at that mountain: if it remains firmly in its place, you will see Me.' When his Lord revealed Himself to the mountain He made it crumble, and Musa fell unconscious. On recovering he said: 'Glory be to You! To You I turn in repentance! I am the first to believe!' He was told to hold on to what he had been given and be thankful, and was given the Tablets.",
+  "Allah appointed thirty nights for Musa and added ten, making forty. Musa told Harun to take his place and act rightly. On the mountain Musa asked to see his Lord and was told: 'You will never see Me, but look at that mountain: if it remains firmly in its place, you will see Me.' When his Lord revealed Himself to the mountain He made it crumble, and Musa fell unconscious. On recovering he said: 'Glory be to You! To You I turn in repentance! I am the first to believe!' He was told to hold on to what he had been given and be thankful, and was given the Tablets.",
   "The picture shows a mountain crumbling and nothing else. Allah is never shown."
 ]);
 s("a", "camp", "Allah called Musa to the mountain for thirty nights, and then ten more. Musa said to his brother Harun: take my place with my people, and do what is right.",
@@ -43,9 +43,9 @@ srt("sort", "mountain", "Musa was told: be thankful. Is it thankful, or not than
 ], "Think again. Would a thankful person do that?");
 
 chapter("m20", "🐄", "The Golden Calf", "20:83-97", ["7:148-151"], [
-  "Verses 20:83–97 and 7:148–151. In Musa's absence the Samiri led the people astray. They had thrown the jewellery they carried into the fire and he brought out a calf that made a lowing sound; it gave them no answer and had no power to harm or benefit them. Harun told them it was a test and that their Lord is the Lord of Mercy; they refused to stop until Musa returned. Musa came back angry and grieved, threw down the Tablets and seized his brother by the hair and beard; Harun said the people had overpowered him and almost killed him. Musa prayed for forgiveness for himself and his brother, told the Samiri to go away, and said the calf would be ground down and scattered in the sea. The people later regretted what they had done (7:149).",
+  "In Musa's absence the Samiri led the people astray. They had thrown the jewellery they carried into the fire and he brought out a calf that made a lowing sound; it gave them no answer and had no power to harm or benefit them. Harun told them it was a test and that their Lord is the Lord of Mercy; they refused to stop until Musa returned. Musa came back angry and grieved, threw down the Tablets and seized his brother by the hair and beard; Harun said the people had overpowered him and almost killed him. Musa prayed for forgiveness for himself and his brother, told the Samiri to go away, and said the calf would be ground down and scattered in the sea. The people later regretted what they had done (7:149).",
   "The game says Musa 'put down' the Tablets and 'took hold of' his brother, and that the people 'would not listen' to Harun.",
-  "From Ibn Kathir's tafsir (abridged English): Mujahid said the calf's sound came from the wind blowing through it; Ibn Abbas, by way of Ibn Ishaq, said the Samiri came from a people who worshipped cows. What the Samiri says he 'saw' and took a handful of (20:96) is explained in that tafsir as the track of the angel Jibril's horse; the game leaves it out."
+  "From the commentary: Mujahid said the calf's sound came from the wind blowing through it; Ibn Abbas, by way of Ibn Ishaq, said the Samiri came from a people who worshipped cows. What the Samiri says he 'saw' and took a handful of (20:96) is explained in the commentary as the track of the angel Jibril's horse; the game leaves it out."
 ]);
 s("a", "camp", "While Musa was away on the mountain, a man called the Samiri played a wicked trick. The people threw their gold jewellery into the fire, and out of it he made the shape of a calf.",
   "Night at {CAMP}: {SAM} stands by a blazing fire pit as people toss gold bracelets and necklaces into the flames; a small shiny golden calf statue stands on a rock beside him.", { mood: "dread", amb: "fire" });
@@ -74,7 +74,7 @@ ord("ord", "camp", "What happened first? Tap them in order.", [
 ], "Not that one yet. What came before it?");
 
 chapter("m21", "🐮", "The Yellow Cow", "2:67-71", ["2:72-73"], [
-  "Verses 2:67–71. Musa told his people that Allah commands them to sacrifice a cow. They asked if he was mocking them, then asked what sort (neither old nor young, but in between), what colour (bright yellow, pleasing to the eye), and exactly which (unblemished, not trained to plough the earth or water the fields). They slaughtered it, 'though they almost failed to do so'.",
+  "Musa told his people that Allah commands them to sacrifice a cow. They asked if he was mocking them, then asked what sort (neither old nor young, but in between), what colour (bright yellow, pleasing to the eye), and exactly which (unblemished, not trained to plough the earth or water the fields). They slaughtered it, 'though they almost failed to do so'.",
   "Left for parents: verses 2:72–73 give the reason. A person had been killed and the people were accusing one another; they were told to strike the body with part of the cow, and so Allah showed them how He gives life to the dead. The game tells the cow and the questions, and says only that Allah used it to bring out a truth some of them had been hiding, which is the wording of 2:72."
 ]);
 s("a", "camp", "One day Musa told his people: Allah commands you to sacrifice a cow. They said: are you joking with us?",
@@ -95,7 +95,7 @@ ord("ord", "field", "They asked three questions. Tap them in order.", [
 ], "Not that one yet. Kind, then colour, then which one.");
 
 chapter("m22", "🚪", "The Holy Land", "5:20-26", [], [
-  "Verses 5:20–26. Musa reminded his people of Allah's blessings and told them to enter the holy land Allah had ordained for them and not turn back. They said a fearsome people lived there and they would not enter until those people left. Two men whom Allah had blessed said: go in through the gate, and you will be victorious; put your trust in Allah. The people answered: 'You and your Lord go and fight; we will stay here.' Musa said he had authority over no one but himself and his brother. The land was forbidden to them for forty years, during which they would wander.",
+  "Musa reminded his people of Allah's blessings and told them to enter the holy land Allah had ordained for them and not turn back. They said a fearsome people lived there and they would not enter until those people left. Two men whom Allah had blessed said: go in through the gate, and you will be victorious; put your trust in Allah. The people answered: 'You and your Lord go and fight; we will stay here.' Musa said he had authority over no one but himself and his brother. The land was forbidden to them for forty years, during which they would wander.",
   "The verses do not name the two men."
 ]);
 s("a", "desert", "Musa said: my people, remember the gifts Allah has given you. Go into the holy land that Allah has promised to you, and do not turn back.",
@@ -115,8 +115,8 @@ srt("sort", "desert", "Is it brave trust, or a fearful excuse?", ["Brave trust",
 ], "Think again. Is that trusting Allah?");
 
 chapter("m23", "🐟", "The Fish That Swam Away", "18:60-70", [], [
-  "Verses 18:60–70. Musa told his servant he would not stop until he reached the place where the two seas meet. There they forgot their fish, which made its way into the sea. Later, tired and asking for the meal, the servant remembered: he had forgotten the fish by the rock, and only Satan made him forget. Musa said that was the place they were seeking, and they retraced their steps. They found a servant of Allah who had been given mercy and knowledge. He warned Musa he would not be able to bear with him patiently; Musa promised patience; the condition was that Musa ask about nothing until he himself spoke of it.",
-  "From a hadith of Ubayy bin Ka'b in al-Bukhari, as quoted in Ibn Kathir's tafsir (abridged English), not from the verses: Musa was asked who was the most learned of people and said 'I am', and was told of a servant who knew more; he was told to carry a fish in a basket and that he would find the man where he lost the fish; the servant boy was Yusha bin Nun; the water stood like an arch over the fish's path; and the man's name was al-Khidr."
+  "Musa told his servant he would not stop until he reached the place where the two seas meet. There they forgot their fish, which made its way into the sea. Later, tired and asking for the meal, the servant remembered: he had forgotten the fish by the rock, and only Satan made him forget. Musa said that was the place they were seeking, and they retraced their steps. They found a servant of Allah who had been given mercy and knowledge. He warned Musa he would not be able to bear with him patiently; Musa promised patience; the condition was that Musa ask about nothing until he himself spoke of it.",
+  "From a hadith of Ubayy bin Ka'b in al-Bukhari, as quoted in the commentary, not from the verses: Musa was asked who was the most learned of people and said 'I am', and was told of a servant who knew more; he was told to carry a fish in a basket and that he would find the man where he lost the fish; the servant boy was Yusha bin Nun; the water stood like an arch over the fish's path; and the man's name was al-Khidr."
 ]);
 s("a", "camp", "One day, someone asked Musa: who knows the most, of all the people? Musa said: I do. So Allah told him: there is a servant of Mine, at the place where the two seas meet, who knows things that you do not know.",
   "{MU} stands on a low rock speaking to a seated crowd at {CAMP}; one man in the crowd raises a hand to ask a question.", { src: HAD, mood: "pastoral" });
@@ -139,9 +139,9 @@ s("g", "sea", "Musa said: if Allah wills, you will find me patient. He said: the
 q("q", "sea", "What did Musa promise al-Khidr?", ["To be patient, and not to ask", "🤐"], ["To ask lots of questions", "❓"], "No. Musa promised to be patient, and not to ask about anything.", { img: "g" });
 
 chapter("m24", "⛵", "Three Strange Things", "18:71-82", [], [
-  "Verses 18:71–82. In the boat the man made a hole in it, and Musa objected. Verse 18:74 then says they met a young boy and the man killed him, and Musa protested more strongly. The game does not tell this to small children: it says only that the second thing was about a boy and is 'a story for when you are older'. The explanation in 18:80–81 is that the boy's parents were people of faith, that he would have burdened them with wickedness and disbelief, and that their Lord would give them a better child in his place.",
+  "In the boat the man made a hole in it, and Musa objected. Verse 18:74 then says they met a young boy and the man killed him, and Musa protested more strongly. The game does not tell this to small children: it says only that the second thing was about a boy and is 'a story for when you are older'. The explanation in 18:80–81 is that the boy's parents were people of faith, that he would have burdened them with wickedness and disbelief, and that their Lord would give them a better child in his place.",
   "The third: a town refused them food, and the man repaired a wall that was about to fall; Musa said he could have taken payment. The explanations: the boat belonged to needy people who worked at sea, and a king was seizing every sound boat by force; the wall belonged to two orphans, with a treasure beneath it, and their father had been righteous. 'I did not do these things of my own accord.'",
-  "From the hadith in al-Bukhari quoted in Ibn Kathir's tafsir (abridged English), not the verses: the crew knew al-Khidr and carried them without a fare; the bird that dipped its beak in the sea and what al-Khidr said about knowledge; and the Prophet's ﷺ words, 'We wish that Musa had been patient, so that Allah would have told us more about the two of them.' The closing sentence about good hidden inside a thing that looks bad is the game's own summary of the lesson."
+  "From the hadith in al-Bukhari quoted in the commentary, not the verses: the crew knew al-Khidr and carried them without a fare; the bird that dipped its beak in the sea and what al-Khidr said about knowledge; and the Prophet's ﷺ words, 'We wish that Musa had been patient, so that Allah would have told us more about the two of them.' The closing sentence about good hidden inside a thing that looks bad is the game's own summary of the lesson."
 ]);
 s("a", "sea", "They got into a boat. It is told that the sailors knew al-Khidr, and took them for free. And then al-Khidr made a hole in the boat!",
   "On a small wooden sailing boat at sea, {KH} kneels and pries up a plank from the deck with a tool; {MU} stares in alarm; two sailors work the sail at the far end, not noticing.", { src: HAD, mood: "dread" });
@@ -172,7 +172,7 @@ s("i2", "sea", "Our Prophet, peace be upon him, said: we wish Musa had been pati
 q("q2", "sea", "What did Musa learn?", ["Allah knows what we do not know", "✨"], ["That he knew everything", "🤓"], "No. Musa learned that Allah knows what we do not know.", { img: "i" });
 
 chapter("m25", "📜", "Allah Was with Him", "28:43", ["20:46", "26:62"], [
-  "Verse 28:43: Musa was given the Scripture, to give people insight, guidance and mercy, so that they might take heed. The chapter looks back over the whole story; 'I am with you both, hearing and seeing' is 20:46 and 'My Lord is with me: He will guide me' is 26:62.",
+  "Verse 28:43: Musa was given the Scripture, to give people insight, guidance and mercy, so that they might take heed. The chapter looks back over the whole story.",
   "This game tells a large part of what the Qur'an says about Musa, not all of it: the story is spread over many surahs. A good next step with an older child is to read Surah Ta-Ha (20) and Surah Al-Qasas (28) together."
 ]);
 s("a", "river", "What a story! A baby on the river. A boy in the palace. A shepherd by the well. And then a prophet, who stood before a king with only a staff in his hand.",

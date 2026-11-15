@@ -5,6 +5,7 @@
 */
 window.STORY_GAME = {
   slug: "yusuf",
+  notesSource: "“The commentary” is Ibn Kathir’s tafsir (abridged English translation).",
   heroChild: "yusuf",
   heroAdult: "yusufMan",
   groups: { brothers: ["b1", "b3", "b2", "b4"] }

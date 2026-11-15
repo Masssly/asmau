@@ -1,12 +1,22 @@
 {
-  "version": "2026.11.18",
+  "version": "2026.11.19",
   "date": "2026-11-15",
-  "buildId": "9b5e46c3393b",
+  "buildId": "f9662999f238",
   "notes": [
     "The prophets are listed in order, the first prophet at the top",
-    "Each section says that more games are on the way"
+    "Each section says that more games are on the way",
+    "Shorter parents' notes in Yusuf and Musa: each fact told once"
   ],
   "history": [
+    {
+      "version": "2026.11.19",
+      "date": "2026-11-15",
+      "notes": [
+        "The prophets are listed in order, the first prophet at the top",
+        "Each section says that more games are on the way",
+        "Shorter parents' notes in Yusuf and Musa: each fact told once"
+      ]
+    },
     {
       "version": "2026.11.18",
       "date": "2026-11-15",

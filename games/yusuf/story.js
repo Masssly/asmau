@@ -52,8 +52,8 @@ window.STORY = [
       "The shirt: the verse says they brought his shirt with false blood on it (12:18). Ibn Kathir's tafsir (abridged English) says, citing Mujahid, As-Suddi and others, that the blood was a sheep's, and that the brothers forgot to tear the shirt, which is why Yaqub did not believe them. The untorn shirt, which the game turns into a question, is from this commentary, not from the verse."
     ],
     steps: [
-      { say: "c2-0", scene: "dusk", pic: "c1-b", art: [["P:yaqub", 60, 72, 96, "bob", { expr: "happy" }], ["P:yusuf", 38, 76, 70, "bob", { expr: "happy" }], ["P:benjamin", 24, 80, 56, "bob", { expr: "happy" }], ["💛", 48, 34, 40, "float"]] },
-      { say: "c2-a0", scene: "desert", pic: "c2-a", art: [["G:brothers", 40, 74, 200, "bob", { expr: "angry" }], ["💢", 30, 40, 34, "float"]] },
+      { say: "c2-0", scene: "dusk", art: [["P:yaqub", 60, 72, 96, "bob", { expr: "happy" }], ["P:yusuf", 38, 76, 70, "bob", { expr: "happy" }], ["P:benjamin", 24, 80, 56, "bob", { expr: "happy" }], ["💛", 48, 34, 40, "float"]] },
+      { say: "c2-a0", scene: "desert", art: [["G:brothers", 40, 74, 200, "bob", { expr: "angry" }], ["💢", 30, 40, 34, "float"]] },
       { say: "c2-a", scene: "desert", art: [["G:brothers", 36, 72, 200, "bob", { expr: "angry" }], ["P:yusuf", 82, 74, 80, "bob", { expr: "happy" }], ["💢", 30, 40, 34, "float"]] },
       { say: "c2-p1", scene: "dusk", art: [["⛺", 74, 50, 110], ["P:yaqub", 72, 72, 92, "bob", { expr: "calm" }], ["P:yusuf", 86, 76, 60, "bob", { expr: "happy" }], ["G:brothers", 30, 78, 190, "bob", { expr: "happy" }], ["💬", 34, 38, 36, "float"]] },
       { say: "c2-p2", scene: "dusk", art: [["P:yaqub", 56, 70, 100, "bob", { expr: "worried" }], ["P:yusuf", 40, 74, 70, "bob", { expr: "calm" }], ["🐺", 16, 30, 40, "float"], ["🌲", 8, 52, 50]] },
@@ -194,7 +194,7 @@ window.STORY = [
     steps: [
       { say: "c8-a1", scene: "prison", art: [["P:yusufYouth", 50, 66, 100, "bob", { expr: "calm" }], ["BARS", 0, 0, 1], ["👑", 82, 22, 46, "float"], ["✉️", 18, 24, 40, "float"]] },
       { say: "c8-a2", scene: "palace", art: [["P:king", 28, 66, 100, "bob", { expr: "neutral" }], ["P:woman1", 64, 72, 92, "bob", { expr: "sad" }], ["P:woman2", 90, 78, 66, "bob", { expr: "neutral", flip: true }], ["❓", 28, 30, 34, "float"], ["💡", 64, 30, 40, "float"]] },
-      { say: "c8-a3", scene: "palace", pic: "c8-a2", art: [["🧕", 40, 70, 80], ["✨", 60, 30, 40, "float"]] },
+      { say: "c8-a3", scene: "palace", art: [["🧕", 40, 70, 80], ["✨", 60, 30, 40, "float"]] },
       {
         play: "order", line: "c8-do-o", scene: "palace",
         opts: {
@@ -237,7 +237,7 @@ window.STORY = [
       "The brothers' own rule (12:74–76): asked what the penalty should be if one of them was lying, the brothers said the one in whose bag the cup was found would be held as the penalty, 'this is how we punish wrongdoers'. The verse says Yusuf could not have held his brother under the king's law. Ibn Kathir's tafsir (abridged English) says this was the law of Prophet Ibrahim, that a thief be handed to the one he stole from, and reports from Ad-Dahhak and others that it was not the law of the king of Egypt. The verse's word for the penalty is servitude; the game says 'must stay behind'."
     ],
     steps: [
-      { say: "c10-h0", scene: "dusk", pic: "c10-g", art: [["P:yaqub", 64, 72, 96, "bob", { expr: "worried" }], ["G:brothers", 30, 78, 170, "bob", { expr: "neutral" }]] },
+      { say: "c10-h0", scene: "dusk", art: [["P:yaqub", 64, 72, 96, "bob", { expr: "worried" }], ["G:brothers", 30, 78, 170, "bob", { expr: "neutral" }]] },
       { play: "change", line: "c10-hdo", scene: "dusk", opts: { img: "c10-h", states: [{ icon: "SACK", line: null }, { icon: "💰", line: "c10-hdo-s1", glow: true }] } },
       { say: "c10-h", scene: "dusk", art: [["SACK", 30, 70, 90], ["COINS", 30, 44, 40, "float"], ["P:yaqub", 70, 72, 92, "bob", { expr: "worried" }], ["P:benjamin", 52, 78, 60, "bob", { expr: "neutral" }]] },
       { say: "c10-g", scene: "dusk", art: [["⛺", 26, 50, 100], ["P:yaqub", 26, 72, 96, "bob", { expr: "calm" }], ["G:brothers", 68, 78, 170, "bob", { expr: "neutral", flip: true }], ["🚪", 60, 30, 34, "float"], ["🚪", 76, 24, 34, "float"], ["🚪", 90, 32, 34, "float"]] },
@@ -246,7 +246,7 @@ window.STORY = [
       { say: "c10-b", scene: "egypt", art: [["SACK", 50, 72, 120], ["CUP", 50, 26, 60, "float"], ["P:yusufMan", 18, 66, 90, "bob", { expr: "calm" }], ["P:benjamin", 84, 74, 70, "bob", { expr: "neutral", flip: true }]] },
       { play: "choice", line: "c10-q", scene: "egypt", opts: { img: "c10-b", art: [["❓", 50, 28, 70, "float"]], options: [{ label: "Allah made it for Yusuf", icon: "✨", ok: true }, { label: "The brothers made it", icon: "👥", ok: false }], wrong: "c10-qwrong" } },
       { say: "c10-l1", scene: "egypt", art: [["📣", 20, 34, 56, "float"], ["G:brothers", 60, 76, 190, "bob", { expr: "surprised" }], ["SACK", 88, 82, 70]] },
-      { say: "c10-l2", scene: "egypt", pic: "c10-l1", art: [["G:brothers", 50, 76, 190, "bob", { expr: "worried" }], ["🗣️", 50, 30, 50, "float"]] },
+      { say: "c10-l2", scene: "egypt", art: [["G:brothers", 50, 76, 190, "bob", { expr: "worried" }], ["🗣️", 50, 30, 50, "float"]] },
       { play: "choice", line: "c10-lq", scene: "egypt", opts: { img: "c10-l1", options: [{ label: "The brothers' own rule", icon: "🗣️", ok: true }, { label: "The king of Egypt's rule", icon: "👑", ok: false }], wrong: "c10-lqwrong" } },
       { play: "search", line: "c10-do", scene: "egypt", opts: { owners: ["b1", "b3", "b2", "b4", "benjamin"], nope: "c10-nope" } },
       { say: "c10-c", scene: "egypt", art: [["CUP", 18, 46, 70], ["P:yusufMan", 50, 64, 100, "bob", { expr: "happy" }], ["P:benjamin", 78, 74, 84, "bob", { expr: "happy" }], ["✨", 50, 22, 36, "float"]] },
@@ -261,11 +261,11 @@ window.STORY = [
       "The eldest brother (12:78–80): the brothers asked Yusuf to take one of them instead, because their father was very old; he said it would be unjust to take anyone but the one with whom the cup was found. The eldest then reminded the others of their solemn promise to their father and of how they had failed over Yusuf, and said he would not leave the land until his father gave him leave or Allah decided for him. So nine went home. The verse does not name him, and the commentators differ on who he was, so the game does not name him either."
     ],
     steps: [
-      { say: "c11-v0", scene: "egypt", pic: "c10-c", art: [["G:brothers", 34, 78, 170, "bob", { expr: "sad" }], ["🙏", 70, 40, 44, "float"]] },
+      { say: "c11-v0", scene: "egypt", art: [["G:brothers", 34, 78, 170, "bob", { expr: "sad" }], ["🙏", 70, 40, 44, "float"]] },
       { say: "c11-v", scene: "egypt", art: [["G:brothers", 34, 78, 170, "bob", { expr: "sad" }], ["P:b1", 76, 72, 96, "bob", { expr: "worried" }], ["🤝", 76, 34, 40, "float"]] },
       { say: "c11-a", scene: "grey", art: [["⛺", 52, 54, 110], ["P:yaqub", 50, 72, 104, "bob", { expr: "cry", blind: true }], ["☁️", 28, 20, 60, "float"], ["💧", 70, 34, 28, "float"]] },
       { say: "c11-b", scene: "dusk", art: [["⛺", 28, 52, 100], ["P:yaqub", 28, 72, 92, "bob", { expr: "sad" }], ["🕯️", 54, 48, 50, "float"], ["G:brothers", 70, 78, 150, "walk", { expr: "neutral", flip: true }]] },
-      { say: "c11-c0", scene: "egypt", pic: "c9-b", art: [["G:brothers", 34, 78, 190, "bob", { expr: "sad" }], ["P:yusufMan", 74, 64, 100, "bob", { expr: "calm" }]] },
+      { say: "c11-c0", scene: "egypt", art: [["G:brothers", 34, 78, 190, "bob", { expr: "sad" }], ["P:yusufMan", 74, 64, 100, "bob", { expr: "calm" }]] },
       { say: "c11-c", scene: "egypt", art: [["P:yusufMan", 68, 64, 104, "bob", { expr: "happy" }], ["G:brothers", 32, 78, 190, "bob", { expr: "surprised" }], ["❗", 24, 46, 36, "float"], ["✨", 68, 16, 40, "float"]] },
       { say: "c11-e", scene: "egypt", art: [["P:yusufMan", 68, 64, 104, "bob", { expr: "calm" }], ["G:brothers", 32, 78, 190, "bob", { expr: "sad" }]] },
       {

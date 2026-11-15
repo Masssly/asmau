@@ -8,7 +8,7 @@ chapter("m9", "🔥", "The Fire on the Mountain", "20:9-14", ["28:29-30"], [
 ]);
 s("a", "night", "When his years of work were done, Musa set off on a journey with his family. One cold, dark night, he saw a fire, far away on the side of the mountain.",
   "A cold starry night in rocky desert mountains: {MU} stands beside a small tent and a few sheep with his wife in a purple headscarf, pointing at a tiny bright fire glowing far off on a dark mountainside.");
-s("b", "night", "He said to his family: wait here. I can see a fire. Maybe I can bring you a burning stick to warm you, or find someone there to show us the way.", "=a");
+s("b", "night", "He said to his family: wait here. I can see a fire. Maybe I can bring you a burning stick to warm you, or find someone there to show us the way.", "A cold starry night in rocky desert mountains: {MU} turns back toward his wife in a purple headscarf, who sits wrapped in a warm blanket beside a small tent with a few sheep, and raises one open hand gently as if to say wait here; behind him a stony path climbs the dark mountain toward a tiny bright fire.");
 p("seek", "seek", "night", "It is so dark. Slide your finger around to look, and find the fire.", { icon: "🔥", r: 20 });
 p("journey", "climb", "night", "Walk with Musa up to the fire.", { from: "⛺", to: "🔥", icon: "img:icon-musa", steps: 7 });
 s("c", "fire", "When he came close, a voice called out: Musa! I am your Lord. Take off your sandals. You are in the holy valley of Tuwa.",
@@ -35,7 +35,7 @@ chg("hand", "fire", "Then Allah said: put your hand inside your shirt, and take 
 ]);
 s("c", "fire", "Musa's hand shone white. It is told that it shone like the moon. This was another sign.",
   "{MU} looks in wonder at his own raised right hand, which shines with soft pure white light that lights up his face, in a dark rocky valley at night.", { src: TAF, mood: "awe" });
-s("d", "fire", "Then Allah said: now go to Pharaoh. He has gone much too far.", "=c", { mood: "dread" });
+s("d", "fire", "Then Allah said: now go to Pharaoh. He has gone much too far.", "{MU} stands in a dark rocky valley at night, staff in hand, looking far off into the distance where, beyond the desert, the faint lights of a great river city and a palace glow on the horizon; a soft gentle light falls on him from above. He looks serious and determined.", { mood: "dread" });
 mat("match", "fire", "Match each thing to what happened. Tap one on the left, then its partner on the right.", [
   ["STAFF", "The staff", "🐍", "became a snake"],
   ["✋", "The hand", "🌕", "shone white"],
@@ -53,15 +53,15 @@ s("a", "fire", "Musa was worried. He said: my Lord, I am afraid of what they may
   "{MU} kneels barefoot in the glowing valley, one hand on his chest and a worried look on his face, speaking upward toward the golden light.", { mood: "longing" });
 s("b", "fire", "So he prayed a beautiful prayer: my Lord, open up my heart. Make my task easy for me. And untie the knot in my tongue, so that they can understand my words.",
   "{MU} kneels with both palms raised in prayer and eyes closed, calm now, golden light on his face, stars above the rocky valley.", { mood: "awe" });
-s("c", "fire", "And give me a helper from my family: Harun, my brother. Make me strong through him, and let him share my task, so that we may praise You and remember You a great deal.", "=b", { mood: "awe" });
+s("c", "fire", "And give me a helper from my family: Harun, my brother. Make me strong through him, and let him share my task, so that we may praise You and remember You a great deal.", "Far away in Egypt at dawn, {HA} stands at the door of a humble mud-brick house by the river, looking out toward the desert with a hopeful, kind face, a small clay oil lamp in his hand; date palms and the quiet river behind him.", { mood: "awe" });
 ord("ord", "fire", "Say Musa's prayer with him. Tap the parts in order.", [
   ["💛", "Open up my heart", "My Lord, open up my heart."],
   ["🌤️", "Make my task easy", "Make my task easy for me."],
   ["👅", "Untie my tongue", "Untie the knot in my tongue."],
   ["🤝", "Give me my brother", "And give me my brother to help me."]
 ], "Not yet. Listen again: heart, task, tongue, brother.", { img: "b" });
-s("d", "fire", "Allah said: Musa, you have been given what you asked for.", "=b", { mood: "triumph" });
-s("e0", "desert", "So Musa set off back to Egypt, with his brother Harun at his side.", "=e", { mood: "trek" });
+s("d", "fire", "Allah said: Musa, you have been given what you asked for.", "In the rocky valley, the first gentle light of dawn breaks over the mountains; {MU} rises from his knees with a face full of joy and peace, one hand on his heart and his staff in the other.", { mood: "triumph" });
+s("e0", "desert", "So Musa set off back to Egypt, with his brother Harun at his side.", "{MU} and {HA} walk side by side along a desert road toward a river city with date palms in warm late-afternoon light, seen from behind and a little to the side, their long shadows stretching ahead of them.", { mood: "trek" });
 s("e", "desert", "Allah told them: go to Pharaoh, both of you. Speak to him gently, so that he may think, and remember. Do not be afraid. I am with you both. I hear and I see everything.",
   "{MU} and {HA} embrace warmly as brothers meeting on a desert road at sunrise, a river city far behind them.", { mood: "triumph" });
 q("q", "desert", "How should Musa and Harun speak to Pharaoh?", ["Gently", "🕊️"], ["With shouting", "😡"], "No. Allah told them: speak to him gently.", { img: "e" });
@@ -80,7 +80,7 @@ s("b", "palace", "Musa showed them the clear signs that Allah had given him.",
 p("pick", "signs", "palace", "Which two signs did Allah give Musa? Tap them.", { items: [{ icon: "STAFF", n: 1, ok: true, name: "the staff" }, { icon: "✋", n: 1, ok: true, name: "the hand" }, { icon: "👑", n: 1, ok: false, name: "a crown" }, { icon: "💰", n: 1, ok: false, name: "gold" }, { icon: "🗡️", n: 1, ok: false, name: "a sword" }, { icon: "🐎", n: 1, ok: false, name: "a horse" }], mark: "✨" });
 s("c", "palace", "But Pharaoh and his chiefs said: this is nothing but magic tricks! We never heard of anything like this from our fathers.",
   "{PH} stands up from his throne and waves a hand dismissively, laughing, while his ministers in rich robes whisper and smirk behind him.", { mood: "court" });
-s("d", "palace", "Pharaoh said: have you come to push us out of our land with your magic, Musa? We will bring you magic just like it. So choose a day!", "=c", { mood: "court" });
+s("d", "palace", "Pharaoh said: have you come to push us out of our land with your magic, Musa? We will bring you magic just like it. So choose a day!", "In {HALL}, {PH} leans forward on his throne and points a finger at {MU} and {HA}, who stand calm and unafraid before him; behind the throne {SORC} wait in a row, smirking.", { mood: "court" });
 s("e", "palace", "Musa said: let it be the day of the festival. And let all the people gather when the sun is high.",
   "{MU} stands calmly in {HALL} and points with his staff toward a tall bright window where the sun shines; {HA} stands beside him.", { mood: "court" });
 q("q", "palace", "Which day did Musa choose?", ["The day of the festival, with everyone watching", "🎪"], ["A secret night, with nobody there", "🌙"], "No. Musa chose the festival day, so that everyone could see the truth.", { img: "e" });
@@ -92,7 +92,7 @@ chapter("m13", "🎪", "The Day of the Festival", "20:60-70", [], [
 ]);
 s("a", "egypt", "The big day came. The sun was high, and the whole city was there. Pharaoh's magicians stood in a row, with their ropes and their sticks.",
   "A huge open festival ground under a high bright sun, packed with a cheering crowd: {SORC} stand in a row holding coils of rope and wooden sticks, facing {MU} and {HA}; {PH} watches from a shaded platform.", { mood: "court", amb: "crowd" });
-s("b", "egypt", "Musa warned them: do not make up lies about Allah! Then they said: Musa, will you throw first, or shall we? Musa said: you throw.", "=a", { mood: "court", amb: "crowd" });
+s("b", "egypt", "Musa warned them: do not make up lies about Allah! Then they said: Musa, will you throw first, or shall we? Musa said: you throw.", "Close up on the festival ground under a high bright sun: {MU} raises one open hand toward {SORC} in an earnest warning, his staff in the other hand, {HA} beside him; the magicians clutch their ropes and sticks and glance at each other uneasily. A crowd watches behind them.", { mood: "court", amb: "crowd" });
 q("q1", "egypt", "Who threw first?", ["The magicians", "🧙"], ["Musa", "STAFF"], "No. Musa said to the magicians: you throw first.", { img: "a" });
 s("c", "egypt", "They threw down their ropes and their sticks. And by their magic, the ropes seemed to wriggle and slither, just like snakes!",
   "On a sandy festival ground, dozens of ropes and sticks lie scattered and seem to twist and wriggle like snakes; {SORC} raise their arms proudly, the crowd gasps.", { mood: "dread", amb: "crowd" });
@@ -151,7 +151,7 @@ s("e", "egypt", "And then the water of the river turned red. Every one of these 
   "A wide river running deep red between its green banks under a pale sky; people stand on the shore with empty water jars, staring in dismay.", { mood: "dread" });
 s("f", "storm", "Each time, they begged: Musa, pray to your Lord for us! If the trouble goes away, we will believe, and we will let your people go. Musa prayed, and Allah took the trouble away.",
   "Under a stormy sky, a group of noblemen in rich robes plead with clasped hands before {MU}, who raises his palms in prayer.", { mood: "longing" });
-p("wipe", "clear", "storm", "Musa prays, and the trouble is lifted. Rub the sky until it is clear.", { cover: "storm" }, { img: "m1-c" });
+p("wipe", "clear", "storm", "Musa prays, and the trouble is lifted. Rub the sky until it is clear.", { cover: "storm" }, { img: "g" });
 s("g", "egypt", "But every time the trouble was gone, they broke their promise.",
   "Under a clear blue sky, {PH} turns his back and walks away up palace steps with a wave of his hand, while {MU} and {HA} stand below watching him go.", { mood: "court" });
 q("q", "egypt", "What did they do each time the trouble went away?", ["They broke their promise", "💔"], ["They kept their promise", "🤝"], "No. Every time, they broke their promise.", { img: "g" });
@@ -197,7 +197,7 @@ s("d", "sea", "Musa and all his people crossed safely to the other side.",
   "{FOLK} climb out onto the far shore, hugging each other with relief and joy, the split sea behind them; {MU} and {HA} help the last ones up.", { mood: "triumph" });
 s("e", "sea", "Pharaoh and his army rushed in after them. Then the sea came crashing back together, and the army was gone.",
   "Seen from far away on the shore: the two great walls of water crash together in a huge burst of foam and spray; no people visible, only the wild sea under a bright sky.", { mood: "dread", cue: "roar" });
-s("f0", "sea", "As the water closed over him, Pharaoh cried: I believe in the God that the Children of Israel believe in! But it was too late.", "=e", { mood: "dread" });
+s("f0", "sea", "As the water closed over him, Pharaoh cried: I believe in the God that the Children of Israel believe in! But it was too late.", "A towering dark wave curls over the churning sea under a stormy sky; small in the middle of the foam floats a tall blue-and-gold striped royal headdress. No people visible.", { mood: "dread" });
 s("f", "sea", "All his life he had been proud and cruel. Allah saved only his body, as a sign for the people who came after.",
   "An empty sandy shore at the edge of a calm sea in the morning: a single tall blue-and-gold striped Nile-valley king's headdress (not a European crown) lies alone on the wet sand, small waves lapping around it. Nobody at all in the picture.", { mood: "longing" });
 s("g", "dawn", "The people were free! That day is called Ashura. Prophet Muhammad, peace be upon him, told the Muslims to fast on that day.",

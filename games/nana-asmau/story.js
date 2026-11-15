@@ -34,7 +34,7 @@ window.STORY = [
       {"play":"change","line":"a2-tear","scene":"night","opts":{"states":[{"icon":"🎗️","line":null,"glow":false},{"icon":"✂️","line":"a2-tear-s1","glow":false}],"img":"a2-b"},"src":"From a hadith in al-Bukhari"},
       {"say":"a2-c","scene":"night","src":"From a hadith in al-Bukhari","e":"🎗️ 💧 🍞"},
       {"play":"match","line":"a2-match","scene":"night","opts":{"pairs":[{"a":"a2-match-a1","aIcon":"🎗️","aLabel":"The first piece","b":"a2-match-b1","bIcon":"💧","bLabel":"tied the water"},{"a":"a2-match-a2","aIcon":"🎗️","aLabel":"The second piece","b":"a2-match-b2","bIcon":"🍞","bLabel":"tied the food"}]}},
-      {"say":"a2-d","scene":"dusk","pic":"a1-c","e":"👧🏿 💛"}
+      {"say":"a2-d","scene":"dusk","e":"👧🏿 💛"}
     ]
   },
   {
@@ -77,7 +77,7 @@ window.STORY = [
       {"say":"a5-a","scene":"grey","e":"☁️ 😢"},
       {"say":"a5-b","scene":"camp","e":"🍲 🥣 🤲🏿"},
       {"play":"count","line":"a5-bowls","scene":"camp","opts":{"total":8,"icon":"🥣","got":"😊","img":"a5-b"}},
-      {"say":"a5-c","scene":"camp","pic":"a5-b","e":"👧🏿 🥣 💛"},
+      {"say":"a5-c","scene":"camp","e":"👧🏿 🥣 💛"},
       {"play":"choice","line":"a5-q","scene":"camp","opts":{"options":[{"label":"Cared for others and shared","icon":"🤲🏿","ok":true},{"label":"Hid and did nothing","icon":"🙈","ok":false}],"wrong":"a5-q-no","img":"a5-b"}}
     ]
   },
@@ -118,7 +118,7 @@ window.STORY = [
       {"say":"a8-a","scene":"palace","e":"👩🏿 ✒️ 📜"},
       {"say":"a8-b","scene":"palace","e":"👩🏿 📖 👩🏿"},
       {"play":"choice","line":"a8-q1","scene":"palace","opts":{"options":[{"label":"To keep it a secret","icon":"🤫","ok":false},{"label":"So everyone could learn","icon":"🤲🏿","ok":true}],"wrong":"a8-q1-no","img":"a8-b"}},
-      {"say":"a8-c","scene":"palace","pic":"a8-a","e":"📖 ✨"},
+      {"say":"a8-c","scene":"palace","e":"📖 ✨"},
       {"play":"order","line":"a8-suras","scene":"palace","opts":{"cards":[{"icon":"1️⃣","label":"Al-Fatiha","line":"a8-suras-c1"},{"icon":"2️⃣","label":"Al-Baqarah","line":"a8-suras-c2"},{"icon":"3️⃣","label":"Al Imran","line":"a8-suras-c3"},{"icon":"4️⃣","label":"An-Nisa","line":"a8-suras-c4"}],"wrong":"a8-suras-no"}}
     ]
   },
@@ -162,7 +162,7 @@ window.STORY = [
       {"say":"a11-a","scene":"dawn","e":"👵🏿 📖 👧🏿"},
       {"say":"a11-b","scene":"dawn","e":"🏫 👧🏿 📖"},
       {"play":"order","line":"a11-ord","scene":"dawn","opts":{"cards":[{"icon":"👶🏿","label":"Born a twin","line":"a11-ord-c1"},{"icon":"🚶🏿‍♀️","label":"The long journey","line":"a11-ord-c2"},{"icon":"📜","label":"Saving the books","line":"a11-ord-c3"},{"icon":"👒","label":"Training teachers","line":"a11-ord-c4"}],"wrong":"a11-ord-no"}},
-      {"say":"a11-c","scene":"dawn","pic":"a11-a","e":"📖 💛 ✨"},
+      {"say":"a11-c","scene":"dawn","e":"📖 💛 ✨"},
       {"play":"memory","line":"a11-mem","scene":"dawn","opts":{"icons":["👶🏿","🎀","📖","🚶🏿‍♀️","📜","👒"]}}
     ]
   }

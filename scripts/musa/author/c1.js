@@ -50,7 +50,7 @@ p("count", "hearts", "palace", "Everyone who saw baby Musa loved him. Tap every 
 s("d", "palace", "Asiya said to Pharaoh: this baby will be a joy for me and for you. Do not harm him! He may help us one day, or we may take him as our son.",
   "In {HALL}, {ASIYA} holds {BABY} protectively and speaks earnestly to {PH}, who sits on his throne frowning with one hand raised.");
 s("e", "palace", "So baby Musa was safe, in the palace of the very king who was looking for baby boys. Pharaoh did not know what Allah had planned.",
-  "=d");
+  "In a quiet sunlit room of {PAL}, {BABY} sleeps peacefully in a carved wooden cradle with soft white cloths while {ASIYA} watches over him with a tender smile; far away through an open doorway, {PH} walks off down a long corridor with his guards, not looking back.");
 q("q", "palace", "Who asked Pharaoh not to harm the baby?", ["Asiya, the queen", "👸"], ["A soldier", "🛡️"], "No. It was Asiya, the queen. Allah had filled her heart with love.", { img: "c" });
 
 chapter("m4", "🤱", "A Sister's Clever Plan", "28:10-13", ["20:40"], [
@@ -70,7 +70,7 @@ s("d", "palace", "Then his sister stepped forward and said: shall I show you a f
   "{SIS} steps bravely forward in a palace courtyard and speaks up to {ASIYA}, who holds {BABY}; palace servants turn to look at the girl.");
 s("e", "river", "And who was it? Musa's own mother! He drank at once. Allah gave him back to her, so that her heart would be glad, and so that she would know: the promise of Allah is always true.",
   "{MUM} sits cradling {BABY} in her arms again, tears of joy on her smiling face, while {SIS} hugs her shoulder; warm golden light, the riverside home.", { mood: "triumph" });
-s("f", "river", "The queen even paid her to feed her own baby! It is told that only about a day and a night had gone by.", "=e", { src: TAF, mood: "triumph" });
+s("f", "river", "The queen even paid her to feed her own baby! It is told that only about a day and a night had gone by.", "In a sunlit palace courtyard with a fountain and date palms, {ASIYA} smiles kindly and places a small cloth purse of coins into the hand of {MUM}, who holds {BABY} in her other arm and bows her head in thanks.", { src: TAF, mood: "triumph" });
 q("q", "river", "Who fed baby Musa in the end?", ["His own mother", "🤱"], ["A palace nurse", "🧕"], "No. He would not drink from any nurse. Allah gave him back to his own mother.", { img: "e" });
 ord("ord", "river", "What happened first? Tap them in order.", [
   ["🌊", "Into the river", "First, his mother put him on the river."],
@@ -147,7 +147,7 @@ s("b", "desert", "On the way, Musa walked in front. It is told that he asked her
 p("trail", "pebble", "desert", "Show Musa the way. Tap where each pebble lands.", { n: 6, icon: "ROCK", walker: YOUNG }, { src: TAF });
 s("c", "field", "Musa told the old man his whole story. The old man said: do not be afraid. You are safe now.",
   "Inside a simple shepherd's home with woven rugs, {ELD} sits and listens warmly, one hand raised in reassurance, as {MY} sits before him telling his story over a shared bowl of food.");
-s("d", "field", "One daughter said: father, hire him! The best person to hire is one who is strong, and can be trusted.", "=c");
+s("d", "field", "One daughter said: father, hire him! The best person to hire is one who is strong, and can be trusted.", "Inside a simple shepherd's home with woven rugs, {DAU} stand beside {ELD}; the one in purple speaks to her father with an open hand, pointing to the open doorway, where {MY} can be seen outside easily carrying a heavy water skin among the sheep. The old father listens and nods.");
 q("q", "field", "What makes the best helper?", ["Strong, and can be trusted", "💪"], ["Loud and bossy", "📢"], "No. She said the best helper is strong, and can be trusted.", { img: "c" });
 s("e", "field", "The old man said: I would like you to marry one of my daughters, and to work for me for eight years. Ten, if you choose. And Musa agreed.",
   "A joyful small wedding gathering outside a shepherd's home: {ELD} clasps the hand of {MY}, a bride in a purple headscarf stands smiling shyly beside her sister, sheep and acacia trees around.", { mood: "triumph" });

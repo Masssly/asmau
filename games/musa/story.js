@@ -54,7 +54,7 @@ window.STORY = [
       {"say":"m3-c","scene":"palace","e":"👸🏿 👶🏿 💛"},
       {"play":"count","line":"m3-hearts","scene":"palace","opts":{"total":8,"icon":"🤍","got":"💛","img":"m3-c"},"src":"From Ibn Kathir's commentary"},
       {"say":"m3-d","scene":"palace","e":"👸🏿 👶🏿 👑"},
-      {"say":"m3-e","scene":"palace","pic":"m3-d","e":"👶🏿 🏛️"},
+      {"say":"m3-e","scene":"palace","e":"👶🏿 🏛️"},
       {"play":"choice","line":"m3-q","scene":"palace","opts":{"options":[{"label":"Asiya, the queen","icon":"👸🏿","ok":true},{"label":"A soldier","icon":"🛡️","ok":false}],"wrong":"m3-q-no","img":"m3-c"}}
     ]
   },
@@ -73,7 +73,7 @@ window.STORY = [
       {"play":"count","line":"m4-nurses","scene":"palace","opts":{"total":5,"icon":"🧕🏿","got":"🙅🏿","img":"m4-c"}},
       {"say":"m4-d","scene":"palace","e":"🧕🏿 💬 👸🏿"},
       {"say":"m4-e","scene":"river","e":"🤱🏿 💛"},
-      {"say":"m4-f","scene":"river","pic":"m4-e","src":"From Ibn Kathir's commentary","e":"👸🏿 💰 🤱🏿"},
+      {"say":"m4-f","scene":"river","src":"From Ibn Kathir's commentary","e":"👸🏿 💰 🤱🏿"},
       {"play":"choice","line":"m4-q","scene":"river","opts":{"options":[{"label":"A palace nurse","icon":"🧕🏿","ok":false},{"label":"His own mother","icon":"🤱🏿","ok":true}],"wrong":"m4-q-no","img":"m4-e"}},
       {"play":"order","line":"m4-ord","scene":"river","opts":{"cards":[{"icon":"🌊","label":"Into the river","line":"m4-ord-c1"},{"icon":"👸🏿","label":"Found at the palace","line":"m4-ord-c2"},{"icon":"🍼","label":"He will not drink","line":"m4-ord-c3"},{"icon":"🤱🏿","label":"Back with his mother","line":"m4-ord-c4"}],"wrong":"m4-ord-no"}}
     ]
@@ -143,7 +143,7 @@ window.STORY = [
       {"say":"m8-b","scene":"desert","src":"From Ibn Kathir's commentary","e":"🚶🏿 ROCK 🧕🏿"},
       {"play":"trail","line":"m8-pebble","scene":"desert","opts":{"n":6,"icon":"ROCK","walker":"img:icon-young"},"src":"From Ibn Kathir's commentary"},
       {"say":"m8-c","scene":"field","e":"👴🏿 🧑🏿 🍲"},
-      {"say":"m8-d","scene":"field","pic":"m8-c","e":"🧕🏿 💬 👴🏿"},
+      {"say":"m8-d","scene":"field","e":"🧕🏿 💬 👴🏿"},
       {"play":"choice","line":"m8-q","scene":"field","opts":{"options":[{"label":"Loud and bossy","icon":"📢","ok":false},{"label":"Strong, and can be trusted","icon":"💪🏿","ok":true}],"wrong":"m8-q-no","img":"m8-c"}},
       {"say":"m8-e","scene":"field","e":"👴🏿 🤝 🧑🏿"},
       {"play":"count","line":"m8-years","scene":"field","opts":{"total":10,"icon":"☀️"},"src":"From a hadith in al-Bukhari"},
@@ -159,7 +159,7 @@ window.STORY = [
     ],
     steps: [
       {"say":"m9-a","scene":"night","e":"⛺ 🧔🏿 🔥"},
-      {"say":"m9-b","scene":"night","pic":"m9-a","e":"🧔🏿 👉🏿 🔥"},
+      {"say":"m9-b","scene":"night","e":"🧔🏿 👉🏿 🔥"},
       {"play":"seek","line":"m9-seek","scene":"night","opts":{"icon":"🔥","r":20}},
       {"play":"journey","line":"m9-climb","scene":"night","opts":{"from":"⛺","to":"🔥","icon":"img:icon-musa","steps":7}},
       {"say":"m9-c","scene":"fire","e":"🌳 🔥 🧔🏿"},
@@ -181,7 +181,7 @@ window.STORY = [
       {"say":"m10-b","scene":"fire","e":"🐍 😮"},
       {"play":"change","line":"m10-hand","scene":"fire","opts":{"states":[{"icon":"✋🏿","line":null,"glow":false},{"icon":"✋🏿","line":"m10-hand-s1","glow":true},{"icon":"✋🏿","line":"m10-hand-s2","glow":false}]}},
       {"say":"m10-c","scene":"fire","src":"From Ibn Kathir's commentary","e":"✋🏿 ✨"},
-      {"say":"m10-d","scene":"fire","pic":"m10-c","e":"🧔🏿 ➡️ 👑"},
+      {"say":"m10-d","scene":"fire","e":"🧔🏿 ➡️ 👑"},
       {"play":"match","line":"m10-match","scene":"fire","opts":{"pairs":[{"a":"m10-match-a1","aIcon":"STAFF","aLabel":"The staff","b":"m10-match-b1","bIcon":"🐍","bLabel":"became a snake"},{"a":"m10-match-a2","aIcon":"✋🏿","aLabel":"The hand","b":"m10-match-b2","bIcon":"🌕","bLabel":"shone white"},{"a":"m10-match-a3","aIcon":"👡","aLabel":"The sandals","b":"m10-match-b3","bIcon":"⛰️","bLabel":"came off in the holy valley"}]}},
       {"play":"memory","line":"m10-mem","scene":"fire","opts":{"icons":["🔥","🐍","✋🏿","👡","⛰️","🌕"]}}
     ]
@@ -197,10 +197,10 @@ window.STORY = [
     steps: [
       {"say":"m11-a","scene":"fire","e":"🧔🏿 😟"},
       {"say":"m11-b","scene":"fire","e":"🧔🏿 🤲🏿"},
-      {"say":"m11-c","scene":"fire","pic":"m11-b","e":"🧔🏿 🤝 🧔🏿"},
+      {"say":"m11-c","scene":"fire","e":"🧔🏿 🤝 🧔🏿"},
       {"play":"order","line":"m11-ord","scene":"fire","opts":{"cards":[{"icon":"💛","label":"Open up my heart","line":"m11-ord-c1"},{"icon":"🌤️","label":"Make my task easy","line":"m11-ord-c2"},{"icon":"👅🏿","label":"Untie my tongue","line":"m11-ord-c3"},{"icon":"🤝","label":"Give me my brother","line":"m11-ord-c4"}],"wrong":"m11-ord-no","img":"m11-b"}},
-      {"say":"m11-d","scene":"fire","pic":"m11-b","e":"✨ 🤲🏿"},
-      {"say":"m11-e0","scene":"desert","pic":"m11-e","e":"🧔🏿 🧔🏿 🚶🏿"},
+      {"say":"m11-d","scene":"fire","e":"✨ 🤲🏿"},
+      {"say":"m11-e0","scene":"desert","e":"🧔🏿 🧔🏿 🚶🏿"},
       {"say":"m11-e","scene":"desert","e":"🧔🏿 🧔🏿 🕊️"},
       {"play":"choice","line":"m11-q","scene":"desert","opts":{"options":[{"label":"With shouting","icon":"😡","ok":false},{"label":"Gently","icon":"🕊️","ok":true}],"wrong":"m11-q-no","img":"m11-e"}},
       {"play":"sort","line":"m11-sort","scene":"desert","opts":{"bins":[{"label":"Gentle","icon":"🕊️"},{"label":"Harsh","icon":"🌩️"}],"things":[{"icon":"🙂","label":"Please listen to me","bin":0},{"icon":"😠","label":"You are stupid!","bin":1},{"icon":"🤝","label":"Let us talk together","bin":0},{"icon":"👉🏿","label":"Go away!","bin":1},{"icon":"💛","label":"Peace be with you","bin":0}],"wrong":"m11-sort-no"}}
@@ -217,7 +217,7 @@ window.STORY = [
       {"say":"m12-b","scene":"palace","e":"✋🏿 ✨ 👑"},
       {"play":"pick","line":"m12-signs","scene":"palace","opts":{"items":[{"icon":"STAFF","n":1,"ok":true,"name":"the staff"},{"icon":"✋🏿","n":1,"ok":true,"name":"the hand"},{"icon":"👑","n":1,"ok":false,"name":"a crown"},{"icon":"💰","n":1,"ok":false,"name":"gold"},{"icon":"🗡️","n":1,"ok":false,"name":"a sword"},{"icon":"🐎","n":1,"ok":false,"name":"a horse"}],"mark":"✨"}},
       {"say":"m12-c","scene":"palace","e":"👑 😤"},
-      {"say":"m12-d","scene":"palace","pic":"m12-c","e":"👑 👉🏿"},
+      {"say":"m12-d","scene":"palace","e":"👑 👉🏿"},
       {"say":"m12-e","scene":"palace","e":"🧔🏿 ☀️ 🎪"},
       {"play":"choice","line":"m12-q","scene":"palace","opts":{"options":[{"label":"The day of the festival, with everyone watching","icon":"🎪","ok":true},{"label":"A secret night, with nobody there","icon":"🌙","ok":false}],"wrong":"m12-q-no","img":"m12-e"}},
       {"play":"catch","line":"m12-crowd","scene":"egypt","opts":{"target":8,"icon":"🧑🏿","into":"🎪"}},
@@ -231,7 +231,7 @@ window.STORY = [
     ],
     steps: [
       {"say":"m13-a","scene":"egypt","amb":"crowd","e":"🎪 🧙🏿 🧙🏿"},
-      {"say":"m13-b","scene":"egypt","pic":"m13-a","amb":"crowd","e":"🧔🏿 💬 🧙🏿"},
+      {"say":"m13-b","scene":"egypt","amb":"crowd","e":"🧔🏿 💬 🧙🏿"},
       {"play":"choice","line":"m13-q1","scene":"egypt","opts":{"options":[{"label":"Musa","icon":"STAFF","ok":false},{"label":"The magicians","icon":"🧙🏿","ok":true}],"wrong":"m13-q1-no","img":"m13-a"}},
       {"say":"m13-c","scene":"egypt","amb":"crowd","e":"ROPE 🐍 ROPE"},
       {"play":"count","line":"m13-ropes","scene":"egypt","opts":{"total":9,"icon":"🐍","got":"ROPE"}},
@@ -278,7 +278,7 @@ window.STORY = [
       {"play":"pick","line":"m15-frogs","scene":"egypt","opts":{"items":[{"icon":"🐸","n":7,"ok":true,"name":"a frog"},{"icon":"🏺","n":2,"ok":false,"name":"a pot"},{"icon":"🍞","n":2,"ok":false,"name":"bread"},{"icon":"🥣","n":1,"ok":false,"name":"a bowl"}],"mark":"✨","img":"m15-d"}},
       {"say":"m15-e","scene":"egypt","e":"🌊 🔴"},
       {"say":"m15-f","scene":"storm","e":"🧔🏿 🤲🏿"},
-      {"play":"wipe","line":"m15-clear","scene":"storm","opts":{"cover":"storm","img":"m1-c"}},
+      {"play":"wipe","line":"m15-clear","scene":"storm","opts":{"cover":"storm","img":"m15-g"}},
       {"say":"m15-g","scene":"egypt","e":"👑 💔"},
       {"play":"choice","line":"m15-q","scene":"egypt","opts":{"options":[{"label":"They broke their promise","icon":"💔","ok":true},{"label":"They kept their promise","icon":"🤝","ok":false}],"wrong":"m15-q-no","img":"m15-g"}},
       {"play":"order","line":"m15-ord","scene":"egypt","opts":{"cards":[{"icon":"🌧️","label":"The flood","line":"m15-ord-c1"},{"icon":"🦗","label":"The locusts","line":"m15-ord-c2"},{"icon":"🐜","label":"The tiny bugs","line":"m15-ord-c3"},{"icon":"🐸","label":"The frogs","line":"m15-ord-c4"},{"icon":"🔴","label":"The red water","line":"m15-ord-c5"}],"wrong":"m15-ord-no"}}
@@ -319,7 +319,7 @@ window.STORY = [
       {"play":"journey","line":"m17-cross","scene":"sea","opts":{"from":"🏖️","to":"🌅","icon":"img:icon-musa","steps":8,"img":"m17-b"}},
       {"say":"m17-d","scene":"sea","e":"🚶🏿 🚶🏿 🙌🏿"},
       {"say":"m17-e","scene":"sea","cue":"roar","e":"🌊 🌊 🌊"},
-      {"say":"m17-f0","scene":"sea","pic":"m17-e","e":"👑 🌊"},
+      {"say":"m17-f0","scene":"sea","e":"👑 🌊"},
       {"say":"m17-f","scene":"sea","e":"👑 🌊"},
       {"say":"m17-g","scene":"dawn","src":"From a hadith in al-Bukhari","e":"🙌🏿 🌅"},
       {"play":"choice","line":"m17-q","scene":"dawn","opts":{"options":[{"label":"Allah","icon":"✨","ok":true},{"label":"A big boat","icon":"⛵","ok":false}],"wrong":"m17-q-no","img":"m17-g"}},
@@ -394,7 +394,7 @@ window.STORY = [
       {"say":"m21-a","scene":"camp","e":"🧔🏿 💬 🐄"},
       {"say":"m21-b","scene":"field","e":"🐄 ❓"},
       {"say":"m21-c","scene":"field","e":"🐄 ✨"},
-      {"say":"m21-d","scene":"field","pic":"m21-c","e":"🐄 🔍"},
+      {"say":"m21-d","scene":"field","e":"🐄 🔍"},
       {"play":"pick","line":"m21-cow","scene":"field","opts":{"items":[{"icon":"🐄","n":1,"ok":true,"cls":"cow-yellow","name":"the yellow cow"},{"icon":"🐄","n":3,"ok":false,"name":"a spotted cow"},{"icon":"🐂","n":2,"ok":false,"name":"a brown ox"},{"icon":"🐃","n":2,"ok":false,"name":"a dark buffalo"}],"mark":"✨"}},
       {"say":"m21-e","scene":"field","e":"🐄 👍🏿"},
       {"play":"choice","line":"m21-q","scene":"field","opts":{"options":[{"label":"Asked more and more questions","icon":"❓","ok":false},{"label":"Done as they were told, straight away","icon":"👍🏿","ok":true}],"wrong":"m21-q-no","img":"m21-e"}},
@@ -434,7 +434,7 @@ window.STORY = [
       {"say":"m23-e","scene":"desert","e":"🧔🏿 👉🏿 👣"},
       {"play":"trail","line":"m23-back","scene":"desert","opts":{"n":7,"icon":"👣","walker":"img:icon-musa"}},
       {"say":"m23-f","scene":"sea","src":"From a hadith in al-Bukhari","e":"👴🏿 ✨"},
-      {"say":"m23-g0","scene":"sea","pic":"m23-f","e":"🧔🏿 💬 👴🏿"},
+      {"say":"m23-g0","scene":"sea","e":"🧔🏿 💬 👴🏿"},
       {"say":"m23-g","scene":"sea","e":"🧔🏿 🤝 👴🏿"},
       {"play":"choice","line":"m23-q","scene":"sea","opts":{"options":[{"label":"To ask lots of questions","icon":"❓","ok":false},{"label":"To be patient, and not to ask","icon":"🤐","ok":true}],"wrong":"m23-q-no","img":"m23-g"}}
     ]
@@ -460,7 +460,7 @@ window.STORY = [
       {"play":"wipe","line":"m24-treasure","scene":"city","opts":{"cover":"sand","under":"💰"}},
       {"play":"match","line":"m24-match","scene":"city","opts":{"pairs":[{"a":"m24-match-a1","aIcon":"⛵","aLabel":"A hole in the boat","b":"m24-match-b1","bIcon":"👑","bLabel":"kept it safe from a greedy king"},{"a":"m24-match-a2","aIcon":"🧱","aLabel":"A mended wall","b":"m24-match-b2","bIcon":"💰","bLabel":"kept a treasure safe for two orphans"}]}},
       {"say":"m24-i","scene":"sea","e":"🧔🏿 🌅"},
-      {"say":"m24-i2","scene":"sea","pic":"m24-i","src":"From a hadith in al-Bukhari","e":"🌊 🐦"},
+      {"say":"m24-i2","scene":"sea","src":"From a hadith in al-Bukhari","e":"🌊 🐦"},
       {"play":"choice","line":"m24-q2","scene":"sea","opts":{"options":[{"label":"That he knew everything","icon":"🤓","ok":false},{"label":"Allah knows what we do not know","icon":"✨","ok":true}],"wrong":"m24-q2-no","img":"m24-i"}}
     ]
   },
@@ -471,9 +471,9 @@ window.STORY = [
       "This game tells a large part of what the Qur'an says about Musa, not all of it: the story is spread over many surahs. A good next step with an older child is to read Surah Ta-Ha (20) and Surah Al-Qasas (28) together."
     ],
     steps: [
-      {"say":"m25-a","scene":"river","pic":"m2-d","e":"🧺 🐑 STAFF"},
-      {"say":"m25-b","scene":"sea","pic":"m16-e","e":"🧔🏿 ✨"},
-      {"say":"m25-c","scene":"mountain","pic":"m19-e","e":"📜 ✨"},
+      {"say":"m25-a","scene":"river","e":"🧺 🐑 STAFF"},
+      {"say":"m25-b","scene":"sea","e":"🧔🏿 ✨"},
+      {"say":"m25-c","scene":"mountain","e":"📜 ✨"},
       {"play":"order","line":"m25-ord","scene":"dawn","opts":{"cards":[{"icon":"🧺","label":"The baby on the river","line":"m25-ord-c1"},{"icon":"🐑","label":"The shepherd at the well","line":"m25-ord-c2"},{"icon":"🔥","label":"The fire on the mountain","line":"m25-ord-c3"},{"icon":"🌊","label":"The sea opens","line":"m25-ord-c4"},{"icon":"📜","label":"The Tablets","line":"m25-ord-c5"}],"wrong":"m25-ord-no"}},
       {"play":"match","line":"m25-match","scene":"dawn","opts":{"pairs":[{"a":"m25-match-a1","aIcon":"👸🏿","aLabel":"Asiya","b":"m25-match-b1","bIcon":"💛","bLabel":"the queen who loved baby Musa"},{"a":"m25-match-a2","aIcon":"🧕🏿","aLabel":"Musa's sister","b":"m25-match-b2","bIcon":"👣","bLabel":"followed the chest along the river"},{"a":"m25-match-a3","aIcon":"🤝","aLabel":"Harun","b":"m25-match-b3","bIcon":"🗣️","bLabel":"the brother who helped him speak"},{"a":"m25-match-a4","aIcon":"👑","aLabel":"Pharaoh","b":"m25-match-b4","bIcon":"🌊","bLabel":"the proud king, lost in the sea"}]}},
       {"play":"memory","line":"m25-mem","scene":"dawn","opts":{"icons":["🧺","🐑","🔥","STAFF","🐸","🌊","💧","📜"]}},

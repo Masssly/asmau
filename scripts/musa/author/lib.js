@@ -76,7 +76,7 @@ function chapter(id, icon, title, source, more, parent) {
 // A narrated picture. pic is a description of a new picture, or "=<line>" to show one drawn for another line.
 function s(suffix, scene, text, pic, x) {
   const id = line(C.id + "-" + suffix, text), st = { say: id, scene };
-  if (pic && pic[0] === "=") st.pic = full(pic.slice(1));
+  if (pic && pic[0] === "=") throw new Error(id + ": every page needs its own picture (it borrows " + pic + "); write a description for it");
   else if (pic) shot(id, pic);
   C.steps.push(extras(st, x));
 }

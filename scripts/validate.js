@@ -148,10 +148,14 @@ for (const slug of slugs) {
       if (!SCENES.has(st.scene)) fail(dir + ": " + where + " has unknown scene '" + st.scene + "'");
       if (st.amb && st.amb !== "none" && !ambNames.includes(st.amb)) fail(dir + ": " + where + " uses unknown background sound '" + st.amb + "'");
       if (st.cue && !sfxNames.includes(st.cue)) fail(dir + ": " + where + " uses unknown sound effect '" + st.cue + "'");
-      if (st.say) { need(st.say, where); artCheck(st.art, where); artCheck(st.over, where); if (st.pic && !ids.has(st.pic)) fail(dir + ": " + where + " borrows the picture of '" + st.pic + "', which is not a line"); return; }
+      // every narrated page has a picture of its own: showing another page's picture makes the story feel
+      // stuck or confusing (a page about the brothers showing the dream). Draw the page its own picture.
+      if (st.say) { need(st.say, where); artCheck(st.art, where); artCheck(st.over, where); if (st.pic) fail(dir + ": " + where + " ('" + st.say + "') shows the picture of '" + st.pic + "'; every page needs its own picture"); return; }
       if (!st.play || !st.line) { fail(dir + ": " + where + " is neither narrated nor an activity"); return; }
       need(st.line, where);
       if (!activities.has(st.play)) fail(dir + ": " + where + " uses unknown activity '" + st.play + "'");
+      // an activity may play over a picture from its own chapter, not one from another part of the story
+      if (st.opts && st.opts.img && !st.opts.img.startsWith(ch.id + "-")) fail(dir + ": " + where + " plays over '" + st.opts.img + "', a picture from another chapter");
       const o = st.opts || {};
       if (o.wrong) need(o.wrong, where);
       if (o.nope) need(o.nope, where);

@@ -33,7 +33,7 @@ mat("match", "night", "Match each piece of the belt to what it tied.", [
   ["🎗️", "The first piece", "💧", "tied the water"],
   ["🎗️", "The second piece", "🍞", "tied the food"]
 ]);
-s("d", "dusk", "Asma was brave, clever, and always ready to help. That is the name the Shehu gave his little girl.", "=a1-c", { mood: "wonder" });
+s("d", "dusk", "Asma was brave, clever, and always ready to help. That is the name the Shehu gave his little girl.", "Dusk in {DEGEL}: {GIRL} stands tall and smiling in the doorway of a round mud-brick house, a water jar on her hip, ready to help, while {SHEHU} watches her proudly from a mat nearby.", { mood: "wonder" });
 
 chapter("a3", "📖", "Learning at Home", C_CW, [], [
   "Her mother died when she was small (the source gives 1795 and marks the date as uncertain). She was brought up by her father's wives Aisha and Hauwa; Hauwa was the mother of her brother Muhammad Bello. Source: Boyd and Mack, Collected Works, outline chronology.",
@@ -73,7 +73,7 @@ s("a", "grey", "Those were hard years. There was fighting, and many people were 
 s("b", "camp", "The women of the community did not give up. They cooked food for everyone, cared for children who had lost their parents, and shared with people who had nothing.",
   "A busy camp kitchen under a big tree: {WOMEN} stir large cooking pots over fires and hand out bowls of food to children and old people; {GIRL} carries a bowl carefully.", { mood: "pastoral" });
 p("count", "bowls", "camp", "Help share the food. Tap each bowl to give it to someone hungry.", { total: 8, icon: "🥣", got: "😊" }, { img: "b" });
-s("c", "camp", "Asma'u helped too. She learned that caring for others is part of being a good Muslim.", "=b", { mood: "triumph" });
+s("c", "camp", "Asma'u helped too. She learned that caring for others is part of being a good Muslim.", "In a camp under a big tree, close up: {GIRL} kneels and gently hands a bowl of food to a frail old woman sitting on a mat, both smiling; a small child sits beside the old woman.", { mood: "triumph" });
 q("q", "camp", "What did the women do in the hard years?", ["Cared for others and shared", "🤲🏿"], ["Hid and did nothing", "🙈"], "No. They cooked, cared for children, and shared what they had.", { img: "b" });
 
 chapter("a6", "🏘️", "A New Town", C_CW, [], [
@@ -115,7 +115,7 @@ s("a", "palace", "Asma'u loved words. She could speak four languages! And she wr
 s("b", "palace", "Not everyone could read Arabic. So Asma'u wrote her poems in the languages people spoke at home, using Arabic letters, so that everyone could learn.",
   "{ASMA} reads a poem aloud from a page to a circle of {WOMEN} sitting on mats in a courtyard; they listen and repeat after her, smiling.", { mood: "pastoral" });
 q("q1", "palace", "Why did Asma'u write in the languages people spoke at home?", ["So everyone could learn", "🤲🏿"], ["To keep it a secret", "🤫"], "No. She wanted everyone to be able to learn, not only people who read Arabic.", { img: "b" });
-s("c", "palace", "She even wrote a poem with the name of every sura of the Qur'an in it, so that people could remember them.", "=a", { mood: "wonder" });
+s("c", "palace", "She even wrote a poem with the name of every sura of the Qur'an in it, so that people could remember them.", "In a shady courtyard in {SOKOTO}, {ASMA} sits on a mat reciting a poem from memory with a warm smile and one hand raised, while girls and women sit before her repeating after her, some holding wooden writing boards. Only lines on the boards, no readable writing.", { mood: "wonder" });
 ord("suras", "palace", "Asma'u's poem helped people remember the suras. Can you put the first four in order?", [
   ["1️⃣", "Al-Fatiha", "Al-Fatiha, The Opening."],
   ["2️⃣", "Al-Baqarah", "Al-Baqarah, The Cow."],
@@ -167,6 +167,6 @@ ord("ord", "dawn", "Tell the story of Asma'u. Tap in order.", [
   ["📜", "Saving the books", "Then she saved her father's books."],
   ["👒", "Training teachers", "And then she trained teachers for the villages."]
 ], "Not that one yet. What came before it?");
-s("c", "dawn", "Her lesson for us is simple: learn all you can, and then teach it to someone else.", "=a", { mood: "triumph" });
+s("c", "dawn", "Her lesson for us is simple: learn all you can, and then teach it to someone else.", "Evening in a courtyard in {SOKOTO}: a girl of about ten with deep dark brown skin in a slate-blue headscarf that covers her hair teaches two smaller children, pointing to lines on a wooden writing board, while {OLD} watches from a doorway with a peaceful smile. Only lines on the board, no readable writing.", { mood: "triumph" });
 p("memory", "mem", "dawn", "One last game. Find the pairs from Asma'u's story.", { icons: ["👶🏿", "🎀", "📖", "🚶🏿‍♀️", "📜", "👒"] });
 require("./lib").line("end-a", "This is the story of Nana Asma'u. She learned, she taught, and she made sure that everyone could learn. What will you learn, and teach, today?");

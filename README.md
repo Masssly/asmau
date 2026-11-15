@@ -310,6 +310,10 @@ chapters have `cite` (where the facts come from) instead of a Qur'an `source`; t
 "Sources: for parents" and the source at the top of the chapter's note. Every fact must be in
 `scripts/asmau/RESEARCH.md` with its source, and anything the sources disagree on gets no date.
 
+**Every narrated page has a picture of its own.** A page never shows another page's picture, and an
+activity only plays over a picture from its own chapter; the checker refuses both, and so do the
+writing tools. When a long page is split in two, the second half gets its own picture too.
+
 **Before releasing a story, read it straight through.** `node scripts/story-readthrough.js
 <game>` prints it as a child hears it, chapter by chapter (`--story` for the narrated
 lines only). Read it start to end asking, at every line: would a child know how we got

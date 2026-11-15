@@ -83,7 +83,7 @@ s("b", "field", "Instead of doing as they were told, they asked: what kind of co
   "A herd of very different cows in a dry pasture: a tiny young calf, a thin old grey cow, and several strong middle-sized cows; men stand scratching their heads.", { mood: "pastoral" });
 s("c", "field", "But they asked again: what colour? Musa said: a bright yellow cow, lovely to look at.",
   "One beautiful golden-yellow cow with a glossy coat stands in sunlight in a pasture among brown, black and white cows. Only cows, no people.", { mood: "pastoral" });
-s("d", "field", "And they asked again: which one exactly? Musa said: a perfect cow, with no marks on it at all, one that has never pulled a plough or watered the fields.", "=c", { mood: "pastoral" });
+s("d", "field", "And they asked again: which one exactly? Musa said: a perfect cow, with no marks on it at all, one that has never pulled a plough or watered the fields.", "One perfect golden-yellow cow with a smooth, flawless glossy coat and not a single mark stands calm and free in a green meadow by a river; nearby an unused wooden plough lies in the grass and a still water wheel stands by the field. Only the cow, no people.", { mood: "pastoral" });
 p("pick", "cow", "field", "Find the right cow: bright yellow, with no marks at all. Tap it.", { items: [{ icon: "🐄", n: 1, ok: true, cls: "cow-yellow", name: "the yellow cow" }, { icon: "🐄", n: 3, ok: false, name: "a spotted cow" }, { icon: "🐂", n: 2, ok: false, name: "a brown ox" }, { icon: "🐃", n: 2, ok: false, name: "a dark buffalo" }], mark: "✨" });
 s("e", "field", "At last they found it, and did as they were told. But they very nearly did not! And Allah used it to bring out a truth that some of them had been hiding.",
   "A group of men lead one golden-yellow cow by a rope across a pasture toward the camp, looking relieved and tired.", { mood: "pastoral" });
@@ -133,7 +133,7 @@ s("e", "desert", "Musa said: that is the very place we were looking for! So they
 p("trail", "back", "desert", "Follow the footsteps back to the rock. Tap each one.", { n: 7, icon: "👣", walker: "img:icon-musa" });
 s("f", "sea", "And there they found a servant of Allah, to whom Allah had given mercy and special knowledge. It is told that his name was al-Khidr.",
   "By a big rock on the seashore sits {KH}, calm and smiling gently; {MU} greets him respectfully with a hand on his chest, {YU} standing behind.", { src: HAD, mood: "awe" });
-s("g0", "sea", "Musa asked: may I follow you, so that you can teach me? He said: you will not be able to be patient with me.", "=f", { mood: "pastoral" });
+s("g0", "sea", "Musa asked: may I follow you, so that you can teach me? He said: you will not be able to be patient with me.", "On the seashore by a big rock, {MU} stands with a hand on his heart, asking humbly; {KH} sits on the rock and gently shakes his head with a kind, knowing smile, one hand raised; {YU} watches from behind, curious.", { mood: "pastoral" });
 s("g", "sea", "Musa said: if Allah wills, you will find me patient. He said: then do not ask me about anything, until I tell you about it myself.",
   "{MU} and {KH} walk side by side along a beach talking, the old man holding up one finger as he sets a condition; waves roll in.", { mood: "pastoral" });
 q("q", "sea", "What did Musa promise al-Khidr?", ["To be patient, and not to ask", "🤐"], ["To ask lots of questions", "❓"], "No. Musa promised to be patient, and not to ask about anything.", { img: "g" });
@@ -168,7 +168,7 @@ mat("match", "city", "Match each strange thing to its secret.", [
 ]);
 s("i", "sea", "Musa learned that Allah knows what we do not know. Sometimes a thing looks bad, and there is good hidden inside it.",
   "{MU} stands alone on a seashore at sunset looking out thoughtfully over the calm water, staff in hand, a small bird flying over the waves.", { mood: "awe" });
-s("i2", "sea", "Our Prophet, peace be upon him, said: we wish Musa had been patient, so that Allah would have told us more about the two of them.", "=i", { src: HAD, mood: "awe" });
+s("i2", "sea", "Our Prophet, peace be upon him, said: we wish Musa had been patient, so that Allah would have told us more about the two of them.", "A peaceful seashore at sunset: two lines of footprints in the wet sand lead along the water's edge toward the horizon, a small wooden boat far out on the calm golden sea, a few birds in the sky. No people.", { src: HAD, mood: "awe" });
 q("q2", "sea", "What did Musa learn?", ["Allah knows what we do not know", "✨"], ["That he knew everything", "🤓"], "No. Musa learned that Allah knows what we do not know.", { img: "i" });
 
 chapter("m25", "📜", "Allah Was with Him", "28:43", ["20:46", "26:62"], [
@@ -176,9 +176,9 @@ chapter("m25", "📜", "Allah Was with Him", "28:43", ["20:46", "26:62"], [
   "This game tells a large part of what the Qur'an says about Musa, not all of it: the story is spread over many surahs. A good next step with an older child is to read Surah Ta-Ha (20) and Surah Al-Qasas (28) together."
 ]);
 s("a", "river", "What a story! A baby on the river. A boy in the palace. A shepherd by the well. And then a prophet, who stood before a king with only a staff in his hand.",
-  "=m2-d", { mood: "nile" });
-s("b", "sea", "And every step of the way, Allah was with Musa, hearing and seeing everything.", "=m16-e", { mood: "awe" });
-s("c", "mountain", "Allah gave Musa the Book, to be a light, and a guide, and a mercy for the people.", "=m19-e", { mood: "triumph" });
+  "A wide, peaceful view of the Nile valley at golden hour, seen from high up: the wide river with reeds where a small wooden cradle-shaped chest rests among the reeds, a sandstone palace with painted columns on the far bank, sheep grazing around a stone well on a hillside, and far off on a rise a lone small figure in an indigo robe and cream turban holding a tall staff, looking toward the palace.", { mood: "nile" });
+s("b", "sea", "And every step of the way, Allah was with Musa, hearing and seeing everything.", "{MU} walks alone along a winding desert path under a vast star-filled night sky, staff in hand, calm and unafraid; a gentle warm light falls on the path ahead of him.", { mood: "awe" });
+s("c", "mountain", "Allah gave Musa the Book, to be a light, and a guide, and a mercy for the people.", "In a desert camp of woven tents in the morning, {MU} stands before {FOLK} holding up two large stone tablets for them to see, teaching them kindly; children sit at the front listening. The tablets' surfaces are plain and blank.", { mood: "triumph" });
 ord("ord", "dawn", "Tell the whole story of Musa. Tap in order.", [
   ["🧺", "The baby on the river", "First, a baby on the river."],
   ["🐑", "The shepherd at the well", "Then a shepherd at the well."],

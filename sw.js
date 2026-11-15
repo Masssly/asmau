@@ -20,7 +20,7 @@
 
 // BEGIN GENERATED
 const RELEASE = "2026.11.14";
-const BUILD = "26cde40aa37a";
+const BUILD = "ae310ba7927c";
 const SHELL = [
   "./",
   "app.webmanifest",
@@ -1050,6 +1050,7 @@ const MEDIA = {
   "games/yusuf/assets/img/c13-b.webp": "b309474f15",
   "games/yusuf/assets/img/c13-b0.webp": "c876c37c7a",
   "games/yusuf/assets/img/c13-c.webp": "b810059cdf",
+  "games/yusuf/assets/img/c2-0.webp": "bfd95cf5c3",
   "games/yusuf/assets/img/c2-a.webp": "6dbcd3e2e2",
   "games/yusuf/assets/img/c2-b.webp": "27fff5147b",
   "games/yusuf/assets/img/c2-c.webp": "3918d3a4e4",

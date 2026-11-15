@@ -43,7 +43,8 @@ module.exports = async function () {
       else if (st.play === "order") { for (const c of o.cards) await page.locator(".ocard", { hasText: c.label }).click(); }
       else if (st.play === "puzzle") {
         for (let g = 0; g < 12; g++) {
-          const order = await page.evaluate(() => Array.from(document.querySelectorAll(".ptile")).map((t) => { const [x, y] = t.style.backgroundPosition.split(" ").map(parseFloat); return Math.round(y / 100 * 2) * 3 + Math.round(x / 100 * 2); }));
+          // the grid can be 2×2 or 3×3: read its size from the number of pieces
+          const order = await page.evaluate(() => { const ts = Array.from(document.querySelectorAll(".ptile")), n = Math.round(Math.sqrt(ts.length)); return ts.map((t) => { const [x, y] = t.style.backgroundPosition.split(" ").map(parseFloat); return Math.round(y / 100 * (n - 1)) * n + Math.round(x / 100 * (n - 1)); }); });
           const i = order.findIndex((v, k) => v !== k); if (i < 0) break;
           await page.locator(".ptile").nth(i).click(); await page.locator(".ptile").nth(order.indexOf(i)).click();
         }

@@ -15,6 +15,7 @@ window.STORY_ART = {
   "c1-a": "Yusuf asleep; through the window, eleven stars, the sun and the moon.",
   "c1-b": "Yusuf tells his father Yaqub about the dream.",
   "c2-a": "The brothers whisper together while Yusuf plays.",
+  "c2-0": "Yaqub holds Yusuf and his little brother close; the older brothers stand apart.",
   "c2-p1": "The brothers ask their father to send Yusuf out with them.",
   "c2-p2": "Yaqub holds Yusuf close: he is afraid a wolf may come.",
   "c2-p3": "Morning: Yusuf goes out with his brothers.",

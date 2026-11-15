@@ -18,6 +18,9 @@ things work; this file holds the decisions that must not be lost between session
   al-Tabrisi's Majma' al-Bayan, al-Kafi, the Qisas al-Anbiya), so the games are for all Muslims.
   Where the two differ on something a parent would notice (for example what a prophet's "slip"
   was), tell the story in words both accept and explain the difference in the parents' note.
+- Where they truly conflict and no wording can fairly hold both, **the story follows the Sunni
+  view**, and the parents' note gives the Shia view too, with its source, so parents can read and
+  think about it.
 - Never invent a source. Mark what comes from commentary ("It is told that…").
 
 ## Pictures

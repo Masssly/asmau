@@ -20,7 +20,7 @@
 
 // BEGIN GENERATED
 const RELEASE = "2026.11.15";
-const BUILD = "1091d762f735";
+const BUILD = "7dce49d4896b";
 const SHELL = [
   "./",
   "app.webmanifest",
@@ -59,7 +59,6 @@ const SHELL = [
   "games/yusuf/narration.json",
   "games/yusuf/people.js",
   "games/yusuf/story.js",
-  "impressum.html",
   "index.html",
   "manifest.json",
   "privacy.html",

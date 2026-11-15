@@ -48,6 +48,15 @@ things work; this file holds the decisions that must not be lost between session
 - Read the story straight through before release (scripts/story-readthrough.js): no gaps, no jumps.
 - Prefer more pages and activities over long pages of text.
 
+## Voice
+- The games' default voice is Google's Gemini text-to-speech on Vertex AI: model `gemini-2.5-flash-tts`,
+  voice **Aoede**, asked to speak as a kind West African woman (the exact words are STYLE and STYLE_AR in
+  scripts/generate-voice-gemini.py). Chosen by the owner on 15 November 2026 from four samples. It reads
+  English and Arabic. Use it for any new line or game: `PROJECT=asmau-assets python3
+  scripts/generate-voice-gemini.py games/<slug>` (only new or changed lines are voiced).
+- A parent's own recording always replaces it. The device's built-in voice never reads Arabic.
+- Do not run the old Piper script (scripts/generate-voice.py); it would overwrite these clips.
+
 ## Releasing
 - `node scripts/release.js "note"` → `node scripts/validate.js` → full tests (tests/run.js) →
   commit → `scripts/publish-media.js` (needs ADMIN_TOKEN, never committed) → push main → check

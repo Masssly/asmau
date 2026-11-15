@@ -419,3 +419,12 @@ it is. The change reaches players with the next release.
 
 Every page in a story shows its number on the folded "For parents" line under it: "page 2.3" is chapter 2,
 page 3. Use it to say which page you mean.
+
+## The voice
+
+The games' default voice is Google's Gemini text-to-speech (Vertex AI, project asmau-assets): model
+`gemini-2.5-flash-tts`, voice "Aoede", asked to speak as a kind West African woman. The exact instructions and
+settings are written at the top of `scripts/generate-voice-gemini.py`, so the same voice can be used again for
+anything. Run that script for a game after its words change; it voices only new or changed lines. A parent's own
+recording always replaces it.
+

@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
 """
+NO LONGER USED: the games' voice is now scripts/generate-voice-gemini.py. Kept as an offline fallback.
+Running it would replace the Gemini clips with Piper ones.
+
 Stand-in English narration for one game, made with the open-source Piper
 speech engine and a freely usable voice. It reads far better than the old
 flite voice, and it is still only a stand-in until a parent records the lines

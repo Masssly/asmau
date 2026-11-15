@@ -3,17 +3,15 @@
 
     1. A clip recorded on THIS device via tools/record-voice (or received by
        sync), stored in IndexedDB. Instant, personal, needs no commit.
-    2. assets/audio/<id>.mp3 committed in the repo. For English this is a
-       placeholder made with the open-source `flite` engine (see
-       scripts/generate-placeholder-audio.sh) until someone replaces the file
-       with a real recording of the same name. For Arabic a file only ever
-       exists if a person recorded it.
+    2. assets/audio/<id>.mp3 committed in the repo: the games' default voice,
+       Google's Gemini text-to-speech, "Aoede" as a soft West African woman
+       (scripts/generate-voice-gemini.py), for English and, since 15 November
+       2026 at the owner's choice, Arabic too. A parent's recording replaces it.
     3. The device's own speechSynthesis voice, for ENGLISH only.
 
-  Arabic is never synthesized, by flite or by the device: a guessed
-  pronunciation presented to a child as a lesson is worse than silence. An
-  Arabic line plays only from a real human recording and is otherwise
-  silent, while its text still shows on screen.
+  The device voice never reads Arabic: it would guess the pronunciation, and a
+  guessed pronunciation presented to a child as a lesson is worse than silence.
+  An Arabic line with no clip is silent, while its text still shows on screen.
 
   Only one line speaks at a time: say() and stop() both cut off whatever
   was playing, and the promise say() returns resolves when its own line

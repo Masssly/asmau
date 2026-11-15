@@ -236,7 +236,7 @@
     if (item.lang === "ar") text.setAttribute("dir", "rtl");
     var id = document.createElement("span");
     id.className = "id";
-    id.textContent = item.id + (item.lang === "ar" ? " · Arabic: plays only from a recording, never a computer voice" : "");
+    id.textContent = item.id + (item.lang === "ar" ? " · Arabic" : "");
     meta.appendChild(text);
     meta.appendChild(id);
 

@@ -4,9 +4,8 @@
   "icon": "🕌",
   "minAge": 1.5,
   "maxAge": 4,
-  "tagline": "Tap an object, hear its name, see the Arabic word.",
+  "tagline": "Tap a picture, hear its name, see the Arabic word. Then find it!",
   "basedOn": null,
-  "depictionNotes": "No human or animal figures — only everyday objects (moon, star, mosque, Kaaba, prayer beads, lamp).",
-  "status": "coming-soon",
+  "depictionNotes": "Only everyday things, animals and places (moon, mosque, camel, dates, sun and so on), shown as emoji; the hands and the headscarf are shown dark-skinned. No figures of people.",
   "level": 1
 }

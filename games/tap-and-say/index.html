@@ -12,25 +12,29 @@
 <style>
   body { background: radial-gradient(circle at 50% -10%, #1c2d5e, #0c1530 60%); min-height: 100%; }
   .top { display: flex; align-items: center; gap: 10px; margin-bottom: 6px; }
-  .top h1 { font-family: var(--font-display); font-size: 20px; margin: 0; flex: 1; text-align: center; padding-right: 64px; }
-  .tray { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; margin-top: 16px; }
-  @media (min-width: 560px) { .tray { grid-template-columns: repeat(3, 1fr); } }
-  .tile {
-    background: var(--card); border: 1px solid var(--card-line); border-radius: var(--radius);
-    padding: 18px 8px 14px; display: flex; flex-direction: column; align-items: center; gap: 6px;
-    cursor: pointer; min-height: 120px; justify-content: center;
-  }
-  .tile .e { font-size: 44px; }
+  .top h1 { font-family: var(--font-display); font-size: 20px; margin: 0; flex: 1; text-align: center; }
+  .pages { display: flex; gap: 10px; justify-content: center; margin: 10px 0 4px; flex-wrap: wrap; }
+  .pages button { width: 60px; height: 60px; border-radius: 50%; font-size: 30px; border: 2px solid var(--card-line);
+    background: var(--card); cursor: pointer; }
+  .pages button[aria-pressed="true"] { border-color: var(--gold); box-shadow: 0 0 0 3px rgba(255, 210, 120, .35); }
+  .page-title { text-align: center; color: var(--muted); font-size: 15px; margin: 4px 0 0; min-height: 20px; }
+  .tray { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 12px; }
+  .tile { background: var(--card); border: 1px solid var(--card-line); border-radius: var(--radius); min-height: 104px;
+    display: flex; align-items: center; justify-content: center; cursor: pointer; touch-action: manipulation; }
+  .tile .e { font-size: 52px; line-height: 1; }
   .tile:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
   .tile.bounce .e { animation: bounce .55s ease; }
+  .tile.glow { border-color: var(--gold); box-shadow: 0 0 18px rgba(255, 210, 120, .6); }
   @keyframes bounce { 0% { transform: scale(1); } 35% { transform: scale(1.35) rotate(-6deg); } 70% { transform: scale(.95) rotate(4deg); } 100% { transform: scale(1); } }
-  .say-panel {
-    margin-top: 18px; text-align: center; min-height: 92px; display: flex; flex-direction: column;
-    align-items: center; justify-content: center; gap: 4px;
-  }
-  .say-panel .en { font-family: var(--font-display); font-size: 24px; color: var(--gold); }
-  .say-panel .ar { font-size: 26px; direction: rtl; color: var(--cream); }
+  .say-panel { margin-top: 14px; text-align: center; min-height: 110px; display: flex; flex-direction: column;
+    align-items: center; justify-content: center; gap: 2px; }
+  .say-panel .en { font-family: var(--font-display); font-size: 26px; color: var(--gold); }
+  .say-panel .ar { font-size: 40px; direction: rtl; color: var(--cream); line-height: 1.4; }
   .say-panel .hint { color: var(--muted); font-size: 13px; }
+  .modes { display: flex; justify-content: center; margin-top: 14px; }
+  .stars { text-align: center; font-size: 26px; min-height: 34px; margin-top: 8px; letter-spacing: 4px; }
+  .note { color: var(--muted); font-size: 13px; margin-top: 18px; }
+  .note a { color: var(--gold); }
 </style>
 </head>
 <body>
@@ -39,52 +43,96 @@
     <a class="btn-back" href="../../index.html">← Asmau</a>
     <h1>Tap &amp; Say</h1>
   </div>
-
+  <div class="pages" id="pages" role="group" aria-label="Pages"></div>
+  <p class="page-title" id="pageTitle"></p>
   <div class="tray" id="tray"></div>
-
-  <div class="card say-panel" id="panel">
+  <div class="card say-panel" id="panel" aria-live="polite">
     <div class="en">Tap something!</div>
-    <div class="ar">🌙 ⭐ 🕌</div>
-    <div class="hint">Say the Arabic word together</div>
+    <div class="hint">Then say the Arabic word together</div>
   </div>
+  <div class="stars" id="stars" aria-hidden="true"></div>
+  <div class="modes"><button class="btn btn-gold" id="findBtn">🔎 Find it!</button></div>
+  <details class="parents note">
+    <summary>For parents</summary>
+    <p>For ages 1½ to 4. Tap a picture to hear its English name and see the Arabic word. The Arabic is never read
+      by a computer voice, because a computer would guess the pronunciation. Say it together, or
+      <a href="../../index.html#parents-record">record it in your own voice</a> and the game will play your recording.</p>
+    <p>“Find it!” asks for one thing at a time. A wrong tap simply says the name of what was tapped; nothing is ever
+      marked wrong. The animals are ones the Qur'an mentions; five of them give a surah its name (the cow, the bee,
+      the ant, the elephant, the spider).</p>
+    <p>The Arabic words carry full vowel marks. If you speak Arabic and spot a mistake, please tell us.</p>
+  </details>
 </div>
-
 <script src="../../shared/narration.js"></script>
+<script src="../../shared/music.js"></script>
+<script src="words.js"></script>
 <script>
 (function () {
   "use strict";
-  var GAME = "tap-and-say";
-  var ITEMS = [
-    { e: "🌙", en: "Moon",         enId: "moon-en",   ar: "قَمَر",       arId: "moon-ar" },
-    { e: "⭐", en: "Star",         enId: "star-en",   ar: "نَجْمَة",     arId: "star-ar" },
-    { e: "🕌", en: "Mosque",       enId: "mosque-en", ar: "مَسْجِد",     arId: "mosque-ar" },
-    { e: "🕋", en: "Kaaba",        enId: "kaaba-en",  ar: "الْكَعْبَة",   arId: "kaaba-ar" },
-    { e: "📿", en: "Prayer beads", enId: "beads-en",  ar: "مِسْبَحَة",    arId: "beads-ar" },
-    { e: "🪔", en: "Lamp",         enId: "lamp-en",   ar: "فَانُوس",     arId: "lamp-ar" }
-  ];
-
-  var tray = document.getElementById("tray");
-  var panel = document.getElementById("panel");
-
-  ITEMS.forEach(function (item) {
-    var tile = document.createElement("button");
-    tile.className = "tile";
-    tile.setAttribute("aria-label", item.en + ", " + item.ar);
-    tile.innerHTML = '<span class="e" aria-hidden="true">' + item.e + "</span>";
-    tile.addEventListener("click", function () {
-      tile.classList.remove("bounce");
-      void tile.offsetWidth;
-      tile.classList.add("bounce");
-      panel.innerHTML =
-        '<div class="en">' + item.en + "</div>" +
-        '<div class="ar">' + item.ar + "</div>" +
-        '<div class="hint">Say the Arabic word together</div>';
-      window.AsmauNarration.say(GAME, item.enId, item.en, { lang: "en" }).then(function () {
-        return window.AsmauNarration.say(GAME, item.arId, item.ar, { lang: "ar" });
-      });
+  var GAME = "tap-and-say", narr = window.AsmauNarration, music = window.AsmauMusic;
+  var PAGES = window.TAPSAY_PAGES || [];
+  var $ = function (id) { return document.getElementById(id); };
+  var page = 0, want = null, found = 0, seq = 0;
+  function fx(n) { try { music.unlock(); music.fx(n); } catch (e) { /* a sound must never break the game */ } }
+  function say(id, text, lang) { return narr.say(GAME, id, text, { lang: lang || "en" }).catch(function () {}); }
+  function show(item) {
+    $("panel").innerHTML = '<div class="en">' + item.en + '</div><div class="ar" lang="ar">' + item.ar + '</div>' +
+      '<div class="hint">Say it together</div>';
+  }
+  function bounce(tile) { tile.classList.remove("bounce"); void tile.offsetWidth; tile.classList.add("bounce"); }
+  function ask() {
+    var items = PAGES[page].items, prev = want;
+    do { want = items[Math.floor(Math.random() * items.length)]; } while (items.length > 1 && want === prev);
+    $("panel").innerHTML = '<div class="en">Where is it?</div><div class="hint">Listen, then tap it</div>';
+    say("find-" + want.k, "Where is " + want.en.toLowerCase() + "?");
+  }
+  function tap(item, tile) {
+    var my = ++seq;
+    bounce(tile);
+    show(item);
+    if (want && item === want) {
+      fx("win"); tile.classList.add("glow");
+      found++; $("stars").textContent = "⭐".repeat(Math.min(found, 10));
+      say("yes", "Yes! Well done!").then(function () {
+        if (my !== seq) return;
+        return say(item.k + "-en", item.en).then(function () { return say(item.k + "-ar", item.ar, "ar"); });
+      }).then(function () { tile.classList.remove("glow"); if (my === seq && want) setTimeout(function () { if (my === seq) ask(); }, 600); });
+      return;
+    }
+    fx(want ? "boing" : "tap");
+    say(item.k + "-en", item.en).then(function () { if (my === seq) return say(item.k + "-ar", item.ar, "ar"); })
+      .then(function () { if (my === seq && want) setTimeout(function () { if (my === seq) say("find-" + want.k, "Where is " + want.en.toLowerCase() + "?"); }, 500); });
+  }
+  function render() {
+    var p = PAGES[page];
+    $("pageTitle").textContent = p.title;
+    Array.prototype.forEach.call($("pages").children, function (b, i) { b.setAttribute("aria-pressed", i === page ? "true" : "false"); });
+    var tray = $("tray"); tray.innerHTML = "";
+    p.items.forEach(function (item) {
+      var tile = document.createElement("button");
+      tile.className = "tile"; tile.dataset.k = item.k;
+      tile.setAttribute("aria-label", item.en);
+      tile.innerHTML = '<span class="e" aria-hidden="true">' + item.e + "</span>";
+      tile.addEventListener("click", function () { tap(item, tile); });
+      tray.appendChild(tile);
     });
-    tray.appendChild(tile);
+  }
+  PAGES.forEach(function (p, i) {
+    var b = document.createElement("button");
+    b.textContent = p.icon; b.setAttribute("aria-label", p.title);
+    b.addEventListener("click", function () {
+      seq++; narr.stop(); page = i; want = null; found = 0; $("stars").textContent = "";
+      $("findBtn").textContent = "🔎 Find it!"; render(); fx("swish"); say("page-" + p.id, p.title);
+    });
+    $("pages").appendChild(b);
   });
+  $("findBtn").addEventListener("click", function () {
+    seq++; narr.stop();
+    if (want) { want = null; this.textContent = "🔎 Find it!"; $("panel").innerHTML = '<div class="en">Tap something!</div>'; return; }
+    this.textContent = "✋ Stop"; found = 0; $("stars").textContent = "";
+    fx("sparkle"); say("find-start", "Let's play. Find what I say!").then(ask);
+  });
+  render();
 })();
 </script>
 <script src="../../shared/pwa.js"></script>

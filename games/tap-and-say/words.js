@@ -191,6 +191,49 @@ window.TAPSAY_PAGES = [
   ]
  },
  {
+  "id": "westafrica",
+  "icon": "🥁",
+  "title": "Eid, school and prayer in West Africa",
+  "items": [
+   {
+    "k": "ram",
+    "e": "🐏",
+    "en": "Ram",
+    "ar": "كَبْش"
+   },
+   {
+    "k": "kettle",
+    "e": "🫖",
+    "en": "Kettle",
+    "ar": "إِبْرِيق"
+   },
+   {
+    "k": "pen",
+    "e": "✒️",
+    "en": "Pen",
+    "ar": "قَلَم"
+   },
+   {
+    "k": "drum",
+    "e": "🥁",
+    "en": "Drum",
+    "ar": "طَبْل"
+   },
+   {
+    "k": "turban",
+    "e": "👳🏿",
+    "en": "Turban",
+    "ar": "عِمَامَة"
+   },
+   {
+    "k": "sandals",
+    "e": "🩴",
+    "en": "Sandals",
+    "ar": "نَعْل"
+   }
+  ]
+ },
+ {
   "id": "world",
   "icon": "☀️",
   "title": "Allah's world",

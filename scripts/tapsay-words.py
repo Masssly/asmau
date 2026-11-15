@@ -16,6 +16,9 @@ PAGES = [
  ("food", "🍇", "Good food", [
    ("dates","🌴","Date palm","نَخْلَة","the date palm"), ("olive","🫒","Olives","زَيْتُون","the olives"), ("grapes","🍇","Grapes","عِنَب","the grapes"),
    ("honey","🍯","Honey","عَسَل","the honey"), ("milk","🥛","Milk","لَبَن","the milk"), ("bread","🍞","Bread","خُبْز","the bread")]),
+ ("westafrica", "🥁", "Eid, school and prayer in West Africa", [
+   ("ram","🐏","Ram","كَبْش","the ram"), ("kettle","🫖","Kettle","إِبْرِيق","the kettle"), ("pen","✒️","Pen","قَلَم","the pen"),
+   ("drum","🥁","Drum","طَبْل","the drum"), ("turban","👳🏿","Turban","عِمَامَة","the turban"), ("sandals","🩴","Sandals","نَعْل","the sandals")]),
  ("world", "☀️", "Allah's world", [
    ("sun","☀️","Sun","شَمْس","the sun"), ("cloud","☁️","Cloud","سَحَاب","the cloud"), ("rain","🌧️","Rain","مَطَر","the rain"),
    ("mountain","⛰️","Mountain","جَبَل","the mountain"), ("sea","🌊","Sea","بَحْر","the sea"), ("tree","🌳","Tree","شَجَرَة","the tree")]),

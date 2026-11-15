@@ -44,11 +44,14 @@ const ON_R2 = /\.(?:webp|mp3|webm|ogg|m4a)$/i;
 
 const MEDIA = /\.(?:webp|png|jpe?g|mp3|webm|ogg|m4a|woff2?)$/i;   // big, never change under the same name
 
+// a game's pictures and sounds (games/<slug>/assets/) are one pack, saved when the game is first opened; the rest is "core"
+function packOf(f) { const m = /^games\/([^/]+)\/assets\//.exec(f); return m ? m[1] : "core"; }
+
 function compute() {
   const files = walk(ROOT, []).sort();
   const hash = crypto.createHash("sha1");
   const shell = ["./"];
-  const media = {};
+  const media = {}, packBytes = {};
   for (const f of files) {
     const bytes = fs.readFileSync(path.join(ROOT, f));
     if (f !== "version.json") {          // the release record must not change the thing it records
@@ -56,14 +59,17 @@ function compute() {
       hash.update(bytes);
       hash.update("\0");
     }
-    if (MEDIA.test(f)) media[f] = crypto.createHash("sha1").update(bytes).digest("hex").slice(0, 10);
+    if (MEDIA.test(f)) {
+      media[f] = crypto.createHash("sha1").update(bytes).digest("hex").slice(0, 10);
+      const pack = packOf(f); packBytes[pack] = (packBytes[pack] || 0) + bytes.length;
+    }
     else {
       shell.push(f);
       // a folder URL (…/games/yusuf/) must be saved as well as …/games/yusuf/index.html
       if (f.endsWith("/index.html")) shell.push(f.slice(0, -"index.html".length));
     }
   }
-  return { build: hash.digest("hex").slice(0, 12), shell, media };
+  return { build: hash.digest("hex").slice(0, 12), shell, media, packBytes };
 }
 
 function release() {
@@ -77,6 +83,7 @@ function render(c) {
     "const BUILD = " + JSON.stringify(c.build) + ";\n" +
     "const SHELL = " + JSON.stringify(c.shell, null, 2) + ";\n" +
     "const MEDIA = " + JSON.stringify(c.media, null, 2) + ";\n" +
+    "const PACK_BYTES = " + JSON.stringify(c.packBytes) + ";\n" +
     "const MEDIA_BASE = " + JSON.stringify(MEDIA_BASE) + ";\n" +
     "// END GENERATED";
 }
@@ -113,4 +120,4 @@ if (require.main === module) {
   }
 }
 
-module.exports = { compute, isCurrent, MEDIA_BASE, ON_R2 };
+module.exports = { compute, isCurrent, packOf, MEDIA_BASE, ON_R2 };

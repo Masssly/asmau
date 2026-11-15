@@ -20,7 +20,7 @@
 
 // BEGIN GENERATED
 const RELEASE = "2026.11.24";
-const BUILD = "ec1a11ef0121";
+const BUILD = "c8b706b73929";
 const SHELL = [
   "./",
   "app.webmanifest",
@@ -1537,14 +1537,27 @@ const MEDIA = {
   "icons/icon-maskable-512.png": "531e21c419",
   "icons/og.png": "887e764bc5"
 };
+const PACK_BYTES = {"core":746830,"adam":6888842,"count-the-crescents":584828,"musa":22977703,"nana-asmau":6023155,"tap-and-say":1472336,"yusuf":12712440};
 const MEDIA_BASE = "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/";
 // END GENERATED
 
 const SHELL_CACHE = "asmau-shell-" + BUILD;
 const MEDIA_CACHE = "asmau-media";
-const INDEX_URL = new URL("media-index.json", self.registration.scope).href;
+const LEGACY_INDEX = new URL("media-index.json", self.registration.scope).href;   // releases before 2026.11.25
+const HASH = "x-asmau-hash";             // each saved picture or sound carries the version it is
 const SCOPE_PATH = new URL(self.registration.scope).pathname;
 const FRESH = /\.(?:html|js|css|json|webmanifest)$|\/$/;
+
+// Pictures and sounds come in packs: one per game (everything in games/<slug>/assets/), and "core" for the rest
+// (fonts, icons, the covers on the front page). The first visit saves only the core; a game's pack is saved when
+// the game is first opened (pwa.js asks), or all at once from For parents > Without internet. Later releases
+// update every pack already on the device, and download only what changed.
+function packOf(f) { var m = /^games\/([^/]+)\/assets\//.exec(f); return m ? m[1] : "core"; }
+function relOf(url) { return new URL(url).pathname.slice(SCOPE_PATH.length); }
+function stamp(res, h) {
+  var hd = new Headers(res.headers); hd.set(HASH, h);
+  return new Response(res.body, { status: res.status, statusText: res.statusText, headers: hd });
+}
 
 function pool(jobs, n) {
   var queue = jobs.slice();
@@ -1567,42 +1580,71 @@ function saveShell() {
   });
 }
 
-// Download only what is new or changed since the last release, and forget what was removed.
-function syncMedia() {
-  return caches.open(MEDIA_CACHE).then(function (cache) {
-    return cache.match(INDEX_URL).then(function (r) { return r ? r.json() : {}; }).catch(function () { return {}; }).then(function (have) {
-      var next = {};
-      // pictures first (the game waits for those), then fonts, then sounds
-      var order = Object.keys(MEDIA).sort(function (x, y) {
-        var rank = function (f) { return /\.(?:webp|png|jpe?g)$/i.test(f) ? 0 : (/\.woff2?$/i.test(f) ? 1 : 2); };
-        return rank(x) - rank(y);
+// What this device has: { file: version } (the version is "" when unknown)
+function saved(cache) {
+  return Promise.all([
+    cache.keys(),
+    cache.match(LEGACY_INDEX).then(function (r) { return r ? r.json() : {}; }).catch(function () { return {}; })
+  ]).then(function (got) {
+    var reqs = got[0], legacy = got[1];
+    return Promise.all(reqs.map(function (rq) {
+      if (rq.url === LEGACY_INDEX) return null;
+      return cache.match(rq).then(function (res) {
+        var f = relOf(rq.url), h = res && res.headers.get(HASH);
+        return { f: f, h: h || "", legacy: !h && legacy[f] ? legacy[f] : "" };
       });
-      var jobs = order.map(function (f) {
+    })).then(function (rows) { return rows.filter(Boolean); });
+  });
+}
+
+// Bring the packs on this device (and any asked for) up to this release: download what is new or changed.
+function syncMedia(extra) {
+  return caches.open(MEDIA_CACHE).then(function (cache) {
+    return saved(cache).then(function (rows) {
+      var have = {}, packs = { core: true }, all = extra === "all";
+      rows.forEach(function (r) { have[r.f] = r; packs[packOf(r.f)] = true; });
+      (all ? [] : extra || []).forEach(function (p) { packs[p] = true; });
+      var rank = function (f) { return /\.(?:webp|png|jpe?g)$/i.test(f) ? 0 : (/\.woff2?$/i.test(f) ? 1 : 2); };
+      // pictures first (the game waits for those), then fonts, then sounds
+      var order = Object.keys(MEDIA).filter(function (f) { return all || packs[packOf(f)]; })
+        .sort(function (x, y) { return rank(x) - rank(y); });
+      return pool(order.map(function (f) {
         return function () {
-          if (have[f] === MEDIA[f]) { next[f] = MEDIA[f]; return Promise.resolve(); }
-          function keep(res) { if (res && res.ok) { next[f] = MEDIA[f]; return cache.put(f, res); } }
+          var h = MEDIA[f], r = have[f];
+          if (r && r.h === h) return Promise.resolve();
+          if (r && r.legacy === h) {               // saved by an older release, still current: just mark it
+            return cache.match(f).then(function (res) { if (res) return cache.put(f, stamp(res, h)); });
+          }
+          function keep(res) { if (res && res.ok) return cache.put(f, stamp(res, h)); }
           var local = function () { return fetch(new Request(f, { cache: "reload" })).then(keep); };
           // pictures and sounds come from R2 first (fast, cached at the edge); anything wrong falls back to GitHub Pages
           if (!/\.(?:webp|mp3|webm|ogg|m4a)$/i.test(f)) return local();
-          return fetch(MEDIA_BASE + MEDIA[f] + "/" + f, { mode: "cors" }).then(function (res) { return res.ok ? keep(res) : local(); }).catch(local);
+          return fetch(MEDIA_BASE + h + "/" + f, { mode: "cors" }).then(function (res) { return res.ok ? keep(res) : local(); }).catch(local);
         };
-      });
-      return pool(jobs, 6).then(function () {
-        return cache.keys().then(function (reqs) {
-          return Promise.all(reqs.map(function (rq) {
-            var rel = new URL(rq.url).pathname.slice(SCOPE_PATH.length);
-            if (rq.url !== INDEX_URL && !MEDIA[rel]) return cache.delete(rq);
-          }));
-        });
-      }).then(function () {
-        return cache.put(INDEX_URL, new Response(JSON.stringify(next), { headers: { "content-type": "application/json" } }));
-      });
+      }), 6);
     });
   });
 }
 
+// one download job at a time, so two requests never fetch the same files side by side
+var queue = Promise.resolve();
+function want(packs) { queue = queue.then(function () { return syncMedia(packs); }).catch(function () {}); return queue; }
+
+// For parents > Without internet: how much of each pack is on this device
+function status() {
+  return caches.open(MEDIA_CACHE).then(saved).then(function (rows) {
+    var have = {}, out = {};
+    rows.forEach(function (r) { have[r.f] = r.h || r.legacy; });
+    Object.keys(MEDIA).forEach(function (f) {
+      var p = packOf(f), o = out[p] || (out[p] = { files: 0, saved: 0, bytes: PACK_BYTES[p] || 0 });
+      o.files += 1; if (have[f] === MEDIA[f]) o.saved += 1;
+    });
+    return { type: "asmau-status", packs: out };
+  });
+}
+
 self.addEventListener("install", function (event) {
-  event.waitUntil(Promise.all([saveShell(), syncMedia()]).then(function () { return self.skipWaiting(); }));
+  event.waitUntil(Promise.all([saveShell(), want([])]).then(function () { return self.skipWaiting(); }));
 });
 
 self.addEventListener("activate", function (event) {
@@ -1612,8 +1654,26 @@ self.addEventListener("activate", function (event) {
         // this release's shell and the long-lived media cache stay; every older shape goes
         return Promise.all(keys.filter(function (k) { return k.indexOf("asmau-") === 0 && k !== SHELL_CACHE && k !== MEDIA_CACHE; }).map(function (k) { return caches.delete(k); }));
       })
+      .then(function () { return caches.open(MEDIA_CACHE); })
+      .then(function (cache) {
+        // forget pictures and sounds this release no longer has (only the newest worker does this)
+        return cache.keys().then(function (reqs) {
+          return Promise.all(reqs.map(function (rq) { if (rq.url === LEGACY_INDEX || !MEDIA[relOf(rq.url)]) return cache.delete(rq); }));
+        });
+      })
       .then(function () { return self.clients.claim(); })
   );
+});
+
+self.addEventListener("message", function (event) {
+  var d = event.data || {};
+  if (d.type === "asmau-want") {
+    event.waitUntil(want(d.packs === "all" ? "all" : [].concat(d.packs || [])).then(function () {
+      if (event.source) event.source.postMessage({ type: "asmau-saved", packs: d.packs });
+    }));
+  } else if (d.type === "asmau-status" && event.ports && event.ports[0]) {
+    event.waitUntil(status().then(function (s) { event.ports[0].postMessage(s); }));
+  }
 });
 
 function remember(cacheName, req, res) {
@@ -1636,7 +1696,10 @@ self.addEventListener("fetch", function (event) {
   if (MEDIA[rel]) {
     event.respondWith(
       caches.open(MEDIA_CACHE).then(function (c) { return c.match(req, { ignoreSearch: true }); }).then(function (hit) {
-        return hit || fetch(req).then(function (res) { return remember(MEDIA_CACHE, req, res); });
+        return hit || fetch(req).then(function (res) {
+          if (res && res.ok) { var copy = stamp(res.clone(), MEDIA[rel]); caches.open(MEDIA_CACHE).then(function (c) { c.put(rel, copy); }); }
+          return res;
+        });
       })
     );
     return;

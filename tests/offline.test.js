@@ -16,18 +16,36 @@ module.exports = async function () {
     await page.goto(U + "index.html", { waitUntil: "networkidle" });
     await page.evaluate(() => navigator.serviceWorker.ready); await page.waitForTimeout(3000);
     const sw = fs.readFileSync(path.join(root, "sw.js"), "utf8");
-    const listed = JSON.parse(sw.match(/const SHELL = (\[[\s\S]*?\]);/)[1]).length + Object.keys(JSON.parse(sw.match(/const MEDIA = (\{[\s\S]*?\});/)[1])).length;
-    const saved = await page.evaluate(async () => { let n = 0; for (const k of (await caches.keys()).filter((x) => x.startsWith("asmau-"))) n += (await (await caches.open(k)).keys()).filter((r) => !r.url.endsWith("media-index.json")).length; return n; });
-    T.check(saved === listed, `the saved copy holds all ${listed} files (found ${saved})`);
+    const SHELL = JSON.parse(sw.match(/const SHELL = (\[[\s\S]*?\]);/)[1]), MEDIA = Object.keys(JSON.parse(sw.match(/const MEDIA = (\{[\s\S]*?\});/)[1]));
+    const packOf = (f) => (/^games\/([^/]+)\/assets\//.exec(f) || [0, "core"])[1];
+    const core = MEDIA.filter((f) => packOf(f) === "core").length, yusuf = MEDIA.filter((f) => packOf(f) === "yusuf").length;
+    const count = (re) => page.evaluate(async (src) => { const re = new RegExp(src); let n = 0;
+      for (const k of (await caches.keys()).filter((x) => x.startsWith("asmau-"))) n += (await (await caches.open(k)).keys()).filter((r) => re.test(new URL(r.url).pathname)).length; return n; }, re.source);
+    T.check(await count(/./) === SHELL.length + core, `the first visit saves the pages and the ${core} core pictures and fonts only (found ${await count(/./)} of ${SHELL.length + core})`);
+    T.check(await count(/\/games\/[^/]+\/assets\//) === 0, "no game's pictures or sounds are downloaded before the game is opened");
+    await page.goto(U + "games/yusuf/index.html", { waitUntil: "networkidle" });
+    for (let t = 0; t < 60 && await count(/\/games\/yusuf\/assets\//) < yusuf; t++) await page.waitForTimeout(1000);
+    T.check(await count(/\/games\/yusuf\/assets\//) === yusuf, `opening Yusuf saves all its ${yusuf} pictures and sounds`);
+    T.check(await count(/\/games\/musa\/assets\//) === 0, "and nothing of the other games");
     await ctx.setOffline(true);
     await page.goto(U + "games/yusuf/index.html", { waitUntil: "load" }); await page.waitForTimeout(600);
     T.check((await page.title()).startsWith("Yusuf"), "the Yusuf game opens with no network");
     await page.click("#startBtn"); await page.waitForTimeout(400);
     T.check((await page.textContent("#captionText")).includes("wonderful dream"), "the story runs with no network");
+    await page.waitForTimeout(800);
+    T.check(await page.evaluate(() => { const i = document.querySelector("#stage img.pic"); return !!i && i.complete && i.naturalWidth > 0; }), "its pictures show with no network");
     T.check(await page.evaluate(() => document.fonts.ready.then(() => document.fonts.check('16px "Baloo 2"'))), "fonts load from the local copies");
     const outside = await page.evaluate(() => performance.getEntriesByType("resource").filter((r) => !r.name.startsWith(location.origin)).map((r) => r.name));
     T.check(outside.length === 0, "no request leaves the site" + (outside.length ? ": " + outside.join() : ""));
     T.check(errs.length === 0, "no page errors offline" + (errs[0] ? ": " + errs[0] : ""));
+    // For parents > Without internet > Save every game
+    await ctx.setOffline(false);
+    await page.goto(U + "index.html", { waitUntil: "networkidle" });
+    await page.click("#parentsBtn"); await page.click('[data-go="offline"]'); await page.waitForTimeout(800);
+    T.check(/Save every game \(about \d+ MB\)/.test(await page.textContent("#saveAllBtn")), "Without internet offers to save every game, with its size: " + await page.textContent("#saveAllBtn"));
+    await page.click("#saveAllBtn");
+    for (let t = 0; t < 120 && !/Every game is saved/.test(await page.textContent("#saveAllStatus")); t++) await page.waitForTimeout(1000);
+    T.check(/Every game is saved/.test(await page.textContent("#saveAllStatus")) && await count(/./) === SHELL.length + MEDIA.length, `Save every game saves all ${MEDIA.length} pictures, sounds and fonts`);
     await ctx.close();
   }
   { // resume by name

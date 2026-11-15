@@ -18,7 +18,7 @@ asmau/
 ├── config.json             the sync/media Worker's address, written down once
 ├── manifest.json           the landing page's sections, each with its games in display order
 ├── app.webmanifest         lets the site be installed on a phone or tablet
-├── sw.js                   service worker: the whole site works offline (generated lists)
+├── sw.js                   service worker: works offline, each game saved when first opened (generated lists)
 ├── version.json            the release number, date and notes (see scripts/release.js)
 ├── reset.html              clears a device's saved copy of the site
 ├── fonts/                  Baloo 2 and Mada, self-hosted (SIL OFL 1.1)
@@ -205,17 +205,25 @@ reconstruction of ancient Egypt, and the game's note for parents says so.
 
 ## Offline and updates
 
-After the first visit the whole site works with no connection, which matters
-on a tablet. `sw.js` keeps two kinds of saved files apart:
+The site works with no connection, game by game. The first visit saves the pages
+and the core pictures (fonts, icons, the covers on the front page): under 1 MB.
+Each game's pictures and sounds (everything in `games/<slug>/assets/`, one
+"pack") are saved the first time the game is opened (`shared/pwa.js` asks the
+service worker), or all at once with "Save every game" under For parents >
+Without internet. This keeps the first visit cheap on mobile data.
+`sw.js` keeps two kinds of saved files apart:
 
 - **Pages, scripts, styles and data** are fetched from the network first and
   only fall back to the saved copy offline (or after 4 seconds), so a new
   release shows up on the next visit and nobody is stuck on an old copy.
-- **Pictures, sounds and fonts** live in one long-lived cache with a
-  fingerprint for each file. A release downloads only the files whose
-  fingerprint is new or changed (a release that touches one picture downloads
-  one picture) and drops the ones that were removed. They are served from the
-  saved copy first, so they appear instantly.
+- **Pictures, sounds and fonts** live in one long-lived cache; each saved file
+  carries its fingerprint in an `x-asmau-hash` header. A release updates every
+  pack already on the device and downloads only the files whose fingerprint is
+  new or changed (a release that touches one picture downloads one picture); the
+  newest worker drops the ones that were removed. They are served from the saved
+  copy first, so they appear instantly. (Releases before 2026.11.25 kept one
+  shared `media-index.json` instead; the first newer release marks those files
+  and deletes the list, without downloading them again.)
 
 Pictures and sounds (`.webp`, `.mp3`, `.webm`, `.ogg`, `.m4a`) are also kept on
 Cloudflare R2, and the service worker downloads them from there first (fast,

@@ -63,7 +63,10 @@
     });
   }).catch(function () { /* offline support is optional */ });
 
-  navigator.serviceWorker.ready.then(function () {
+  navigator.serviceWorker.ready.then(function (reg) {
+    // a game saves its own pictures and sounds the first time it is opened (sw.js keeps them up to date after that)
+    var game = /\/games\/([^/]+)\//.exec(location.pathname);
+    if (game && reg.active) reg.active.postMessage({ type: "asmau-want", packs: [game[1]] });
     root.setAttribute("data-offline", "ready");
     window.dispatchEvent(new Event("asmau-offline"));
   });

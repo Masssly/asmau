@@ -167,7 +167,7 @@
   </main>
 
   <footer>
-    <span id="offlineNote" hidden>✓ Saved on this device — works without internet</span>
+    <span id="offlineNote" hidden>✓ Each game you open is saved on this device and then works without internet</span>
     <br><span id="verNote" hidden><span data-asmau-version></span> · <a href="reset.html">Refresh</a></span>
     <span id="updateNote" hidden>A newer version is ready. <a href="index.html">Reload</a></span>
   </footer>
@@ -208,7 +208,7 @@
         <li><button data-go="shown"><span aria-hidden="true">👥</span><span><strong>Who is shown, and how</strong><small>Faces, prophets, and what is never shown</small></span></button></li>
         <li><button data-go="together"><span aria-hidden="true">🤲</span><span><strong>Playing together</strong><small>Ages, how to play, how much at a time</small></span></button></li>
         <li><button data-go="sound"><span aria-hidden="true">🔊</span><span><strong>Sound and volume</strong><small>Music, sounds and voice, each on its own</small></span></button></li>
-        <li><button data-go="offline"><span aria-hidden="true">📶</span><span><strong>Without internet</strong><small>Add Asmau to your home screen</small></span></button></li>
+        <li><button data-go="offline"><span aria-hidden="true">📶</span><span><strong>Without internet</strong><small>Save every game before a journey; add Asmau to your home screen</small></span></button></li>
         <li><button data-go="pictures"><span aria-hidden="true">🎨</span><span><strong>The pictures</strong><small>How they are made</small></span></button></li>
         <li><button data-go="news"><span aria-hidden="true">✨</span><span><strong>What’s new</strong><small>The latest changes</small></span></button></li>
         <li><button data-go="about"><span aria-hidden="true">ℹ️</span><span><strong>About Asmau</strong><small>Who makes it, and how to reach us</small></span></button></li>
@@ -316,8 +316,14 @@
 
     <div class="p-view" data-view="offline" hidden>
       <h3>Without internet</h3>
-      <p>After the first visit, everything works with no connection. On a phone or tablet, add Asmau to the home screen
-        from the browser’s menu (“Add to Home Screen”, or “Install app”) and it opens like an app.</p>
+      <p>Each game is saved on this device, with its pictures and sounds, the first time it is opened, and from then on it
+        works with no connection. The first visit fetches only the front page, under 1 MB, so nobody pays for data on games
+        they never play.</p>
+      <p>Going somewhere without signal? Save every game now, while you are on Wi-Fi:</p>
+      <p><button class="btn btn-gold" id="saveAllBtn" type="button">Save every game</button></p>
+      <p class="p-small" id="saveAllStatus" aria-live="polite"></p>
+      <p>On a phone or tablet, add Asmau to the home screen from the browser’s menu (“Add to Home Screen”, or “Install
+        app”) and it opens like an app.</p>
       <p>If a device ever looks out of date, <a href="reset.html">refresh it here</a>. Recordings and progress are not touched.</p>
     </div>
 
@@ -457,7 +463,42 @@
       });
   }
 
+  // For parents > Without internet: how much is saved on this device, and a button to save every game at once
+  function swStatus() {
+    if (!("serviceWorker" in navigator)) return Promise.resolve(null);
+    return navigator.serviceWorker.ready.then(function (reg) {
+      return new Promise(function (resolve) {
+        var ch = new MessageChannel(), t = setTimeout(function () { resolve(null); }, 5000);
+        ch.port1.onmessage = function (e) { clearTimeout(t); resolve(e.data); };
+        reg.active.postMessage({ type: "asmau-status" }, [ch.port2]);
+      });
+    });
+  }
+  var saving = false;
+  function saveState() {
+    var btn = document.getElementById("saveAllBtn"), out = document.getElementById("saveAllStatus");
+    return swStatus().then(function (s) {
+      if (!s) { btn.hidden = true; out.textContent = "This browser cannot save games for use without internet."; return true; }
+      var files = 0, done = 0, left = 0;
+      Object.keys(s.packs).forEach(function (k) { var p = s.packs[k]; files += p.files; done += p.saved; left += p.files ? p.bytes * (1 - p.saved / p.files) : 0; });
+      var mb = Math.max(1, Math.round(left / 1e6));
+      if (done >= files) { btn.hidden = true; out.textContent = "✓ Every game is saved on this device."; saving = false; return true; }
+      btn.hidden = false;
+      btn.disabled = saving;
+      btn.textContent = saving ? "Saving…" : "Save every game (about " + mb + " MB)";
+      out.textContent = saving ? "Saving: " + Math.floor(done / files * 100) + "%. You can close this; it carries on while Asmau is open." : "";
+      return false;
+    });
+  }
+  function saveAll() {
+    if (saving) return;
+    saving = true;
+    navigator.serviceWorker.ready.then(function (reg) { reg.active.postMessage({ type: "asmau-want", packs: "all" }); });
+    (function poll() { saveState().then(function (finished) { if (!finished && saving) setTimeout(poll, 1500); }); })();
+  }
+
   function wireParents() {
+    document.getElementById("saveAllBtn").addEventListener("click", saveAll);
     var back = document.getElementById("parents"), btn = document.getElementById("parentsBtn"), close = document.getElementById("parentsClose");
     var sheet = back.querySelector(".sheet"), backBtn = document.getElementById("pBack"), title = document.getElementById("parentsTitle");
     var views = Array.prototype.slice.call(back.querySelectorAll(".p-view")), opener = btn;
@@ -473,7 +514,7 @@
     function shut() { back.hidden = true; opener.focus(); }
     back.addEventListener("click", function (e) {
       var t = e.target.closest ? e.target.closest("[data-go]") : null;
-      if (t) go(t.getAttribute("data-go"));
+      if (t) { go(t.getAttribute("data-go")); if (t.getAttribute("data-go") === "offline") saveState(); }
     });
     backBtn.addEventListener("click", function () { go("home"); });
     btn.addEventListener("click", function () { open(); });

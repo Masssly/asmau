@@ -608,3 +608,17 @@ button { touch-action: manipulation; -webkit-tap-highlight-color: transparent; }
 .trail-walker.ico-img > img { width: 58px; height: 58px; }
 .marker.ico-img > img { width: 52px; height: 52px; }
 .trail-walker.flip { transform: translate(-50%, -50%) scaleX(-1); }
+
+/* ---------- short screens (small or older phones, about 640 px tall) ----------
+   The picture, the words and the Back / Next bar must all fit without scrolling, or the bar,
+   which stays at the bottom of the screen, covers the words. */
+@media (max-height: 720px) {
+  .stage { height: clamp(220px, 42vh, 400px); }
+  .stage.flow { min-height: 220px; }
+  .stage.has-pic { max-height: max(180px, calc(100vh - 430px)); max-height: max(180px, calc(100svh - 430px)); }
+  .stage.has-pic[data-mode="play"] { height: clamp(220px, 42vh, 400px); }
+  .caption { font-size: 17px; line-height: 1.35; padding: 10px 14px; min-height: 0; margin-top: 8px; }
+  .nav { margin-top: 4px; padding-top: 8px; }
+  .btn-bk, .btn-go { min-height: 58px; }
+  .btn-go { font-size: 26px; }
+}

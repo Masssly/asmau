@@ -8,6 +8,9 @@ scratch. Also small fixes to kept pictures (for example the colour of the boy's 
   ... brothers_fix.py tunic KEY ...      make the boy's tunic teal, as in his portrait
 
 Each mended picture is counted again (scripts/art/count.py) and kept only if the number is right.
+Mend once only: editing an edited picture again fades the colours and changes the style a little
+each time (tried: after three rounds the pictures no longer matched the rest, and one gained a
+second mother). If one edit does not do it, draw the scene afresh.
 A person still looks at every kept picture.
 """
 import os, re, sys
@@ -66,26 +69,6 @@ def mend(log):
             print("%s: mended picture has %s brothers, want %d" % (k, got, target))
 
 
-def again(keys, rounds=3):
-    """Keep mending the last mended picture of each key, recounting after every edit."""
-    for k in keys:
-        target, src = brothers.PLAN[k][0], os.path.join(TRY, k + "-mend.png")
-        n = count.count(src).get("brothers")
-        for r in range(rounds):
-            if n == target:
-                break
-            if n is None or abs(n - target) > 3:
-                print(k, "stopped at", n); break
-            out = os.path.join(TRY, "%s-mend%d.png" % (k, r + 1))
-            vertex.run([(k, out, add(target - n) if n < target else remove(n - target), (src,))], workers=1)
-            if not os.path.exists(out):
-                break
-            src, n = out, count.count(out).get("brothers")
-            print(k, "round", r + 1, "->", n, flush=True)
-        if n == target:
-            os.replace(src, os.path.join(OUT, k + ".png")); print("mended", k, flush=True)
-
-
 def tunic(keys):
     jobs = [(k, os.path.join(TRY, k + "-tunic.png"), TUNIC, (os.path.join(OUT, k + ".png"), brothers.REF["YB"])) for k in keys]
     vertex.run(jobs)
@@ -115,9 +98,7 @@ def edit(keys):
 
 
 if __name__ == "__main__":
-    if sys.argv[1] == "again":
-        again(sys.argv[2:])
-    elif sys.argv[1] == "edit":
+    if sys.argv[1] == "edit":
         edit(sys.argv[2:])
     elif sys.argv[1] == "tunic":
         tunic(sys.argv[2:])

@@ -19,8 +19,8 @@
 */
 
 // BEGIN GENERATED
-const RELEASE = "2026.11.16";
-const BUILD = "7dce49d4896b";
+const RELEASE = "2026.11.17";
+const BUILD = "b443d29073b8";
 const SHELL = [
   "./",
   "app.webmanifest",
@@ -1056,7 +1056,7 @@ const MEDIA = {
   "games/yusuf/assets/img/c10-b.webp": "144c185d05",
   "games/yusuf/assets/img/c10-c.webp": "0b1c8ab61d",
   "games/yusuf/assets/img/c10-g.webp": "df47c330b2",
-  "games/yusuf/assets/img/c10-h.webp": "890651f098",
+  "games/yusuf/assets/img/c10-h.webp": "9ad159be89",
   "games/yusuf/assets/img/c10-h0.webp": "2c32933e60",
   "games/yusuf/assets/img/c10-l1.webp": "68006b46b6",
   "games/yusuf/assets/img/c10-l2.webp": "fffdf66836",
@@ -1070,7 +1070,7 @@ const MEDIA = {
   "games/yusuf/assets/img/c11-v0.webp": "eba5cce940",
   "games/yusuf/assets/img/c12-a.webp": "bb706a1a5e",
   "games/yusuf/assets/img/c12-b.webp": "748c832026",
-  "games/yusuf/assets/img/c12-c.webp": "5e8b072059",
+  "games/yusuf/assets/img/c12-c.webp": "5e2f12e486",
   "games/yusuf/assets/img/c13-a.webp": "b9e2a43e8e",
   "games/yusuf/assets/img/c13-b.webp": "4f657f7147",
   "games/yusuf/assets/img/c13-b0.webp": "c876c37c7a",

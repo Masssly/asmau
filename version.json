@@ -1,11 +1,18 @@
 {
-  "version": "2026.11.16",
+  "version": "2026.11.17",
   "date": "2026-11-15",
-  "buildId": "7dce49d4896b",
+  "buildId": "b443d29073b8",
   "notes": [
-    "Yusuf: the right number of brothers in 24 pictures (ten older brothers, then Benjamin with them)"
+    "Yusuf: the last two pictures now show all ten brothers too"
   ],
   "history": [
+    {
+      "version": "2026.11.17",
+      "date": "2026-11-15",
+      "notes": [
+        "Yusuf: the last two pictures now show all ten brothers too"
+      ]
+    },
     {
       "version": "2026.11.16",
       "date": "2026-11-15",

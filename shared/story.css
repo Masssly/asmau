@@ -707,3 +707,9 @@ button { touch-action: manipulation; -webkit-tap-highlight-color: transparent; }
 /* a card activity over a picture shows the picture dimmed: no living layer there */
 .stage.flow .live { display: none; }
 @media (prefers-reduced-motion: reduce) { .live, .live-fx, .live-fx::before, .live-fx::after, .live-fx > i { animation: none !important; } .live-fx > i { display: none; } }
+
+/* For parents: download the whole game, or delete it to free space (the parent's choice; see prepareAll) */
+.offline-ctl { margin: 10px 0 14px; padding: 12px; border-radius: 14px; background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.14); }
+.offline-ctl .offline-txt { margin: 0 0 10px; font-size: 14px; }
+.offline-ctl .btn { font-size: 15px; padding: 9px 16px; border-radius: 999px; }
+.btn-ghost { background: transparent; color: inherit; border: 1px solid rgba(255,255,255,.35); }

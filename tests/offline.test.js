@@ -15,21 +15,29 @@ module.exports = async function () {
     page.on("pageerror", (e) => errs.push(e.message));
     await page.goto(U + "index.html", { waitUntil: "networkidle" });
     await page.evaluate(() => navigator.serviceWorker.ready); await page.waitForTimeout(3000);
-    const sw = fs.readFileSync(path.join(root, "sw.js"), "utf8");
-    const SHELL = JSON.parse(sw.match(/const SHELL = (\[[\s\S]*?\]);/)[1]), MEDIA = Object.keys(JSON.parse(sw.match(/const MEDIA = (\{[\s\S]*?\});/)[1]));
-    // a game is three packs: its pictures, the woman's voice (assets/audio/) and the man's (assets/audio-m/); a device saves one voice
-    const packOf = (f) => { const m = /^games\/([^/]+)\/assets\/(?:(audio-m|audio)\/)?/.exec(f); return m ? m[1] + (m[2] === "audio-m" ? "@m" : m[2] === "audio" ? "@w" : "") : "core"; };
-    const core = MEDIA.filter((f) => packOf(f) === "core").length, yusuf = MEDIA.filter((f) => packOf(f) === "yusuf" || packOf(f) === "yusuf@w").length;
-    const yusufMan = MEDIA.filter((f) => packOf(f) === "yusuf@m").length, men = MEDIA.filter((f) => packOf(f).endsWith("@m")).length;
-    const count = (re) => page.evaluate(async (src) => { const re = new RegExp(src); let n = 0;
-      for (const k of (await caches.keys()).filter((x) => x.startsWith("asmau-"))) n += (await (await caches.open(k)).keys()).filter((r) => re.test(new URL(r.url).pathname)).length; return n; }, re.source);
-    T.check(await count(/./) === SHELL.length + core, `the first visit saves the pages and the ${core} core pictures and fonts only (found ${await count(/./)} of ${SHELL.length + core})`);
+    // what each pack holds (scripts/build-offline.js writes packs/<pack>.json); the saved copies are in "asmau-files"
+    const PK = {}; for (const f of fs.readdirSync(path.join(root, "packs"))) PK[f.slice(0, -5)] = Object.keys(JSON.parse(fs.readFileSync(path.join(root, "packs", f), "utf8")).files).length;
+    const core = PK.core, yusuf = PK.yusuf + PK["yusuf@w"], yusufMan = PK["yusuf@m"];
+    const allOneVoice = Object.keys(PK).filter((p) => !p.endsWith("@m")).reduce((n, p) => n + PK[p], 0);
+    const count = (re) => page.evaluate(async (src) => { const re = new RegExp(src);
+      return (await (await caches.open("asmau-files")).keys()).filter((r) => re.test(new URL(r.url).pathname)).length; }, re.source);
+    T.check(await count(/./) === core, `the first visit saves the ${core} files of the home page only (found ${await count(/./)})`);
     T.check(await count(/\/games\/[^/]+\/assets\//) === 0, "no game's pictures or sounds are downloaded before the game is opened");
-    await page.goto(U + "games/yusuf/index.html", { waitUntil: "networkidle" });
-    for (let t = 0; t < 60 && await count(/\/games\/yusuf\/assets\//) < yusuf; t++) await page.waitForTimeout(1000);
-    T.check(await count(/\/games\/yusuf\/assets\//) === yusuf, `opening Yusuf saves all its ${yusuf} pictures and sounds, in the woman's voice`);
+    // opening a game downloads only what is shown (data costs money); the whole game is the parent's choice
+    await page.goto(U + "games/yusuf/index.html", { waitUntil: "networkidle" }); await page.waitForTimeout(2500);
+    const opened = await count(/\/games\/yusuf\/assets\//);
+    T.check(opened <= 3, `opening Yusuf does not download the whole game (${opened} of its pictures and sounds saved)`);
+    await page.click("details.parents summary"); await page.waitForTimeout(800);
+    const offer = await page.textContent(".offline-ctl");
+    T.check(/Download the whole game · \d+ MB/.test(offer), "its For parents box offers to download the whole game, with its size: " + offer.replace(/\s+/g, " ").slice(0, 90));
+    await page.click(".offline-ctl button");
+    for (let t = 0; t < 90 && await count(/./) < core + yusuf; t++) await page.waitForTimeout(1000);
+    T.check(await count(/./) >= core + yusuf, `Download saves its ${yusuf} pages, pictures and sounds, in the woman's voice (found ${await count(/./) - core})`);
+    for (let t = 0; t < 10 && !/whole game is on this device/.test(await page.textContent(".offline-ctl")); t++) await page.waitForTimeout(1000);
+    T.check(/whole game is on this device \(\d+ MB\)/.test(await page.textContent(".offline-ctl")) && /Delete from this device/.test(await page.textContent(".offline-ctl")),
+      "then it says the whole game is on this device, with its size, and offers to delete it");
     T.check(await count(/\/games\/yusuf\/assets\/audio-m\//) === 0, "and not the man's voice, which this family has not chosen");
-    T.check(await count(/\/games\/musa\/assets\//) === 0, "and nothing of the other games");
+    T.check(await count(/\/games\/musa\/(?!cover\.webp|game\.json)/) === 0, "and nothing of the other games");
     await ctx.setOffline(true);
     await page.goto(U + "games/yusuf/index.html", { waitUntil: "load" }); await page.waitForTimeout(600);
     T.check((await page.title()).startsWith("Yusuf"), "the Yusuf game opens with no network");
@@ -46,11 +54,20 @@ module.exports = async function () {
     await page.goto(U + "index.html", { waitUntil: "networkidle" });
     await page.click("#parentsBtn"); await page.click('[data-go="offline"]'); await page.waitForTimeout(800);
     T.check(/Save every game \(about \d+ MB\)/.test(await page.textContent("#saveAllBtn")), "Without internet offers to save every game, with its size: " + await page.textContent("#saveAllBtn"));
+    // game by game: what is on this device, its size, and Delete to free the space
+    const row = await page.$eval("#offlineList", (ul) => [...ul.querySelectorAll("li")].map((li) => li.textContent).find((x) => x.startsWith("Yusuf")) || "");
+    T.check(/Downloaded · \d+ MB/.test(row) && /Delete/.test(row), "the list shows Yusuf downloaded, with its size, and a Delete button: " + row);
+    T.check(/Asmau uses \d+ MB on this device · 1 game downloaded/.test(await page.textContent("#offlineSum")), "and how much Asmau uses on this device: " + await page.textContent("#offlineSum"));
+    page.once("dialog", (d) => d.accept());
+    await page.click('#offlineList button[aria-label^="Delete Yusuf"]');
+    for (let t = 0; t < 20 && await count(/\/games\/yusuf\/assets\//) > 0; t++) await page.waitForTimeout(500);
+    T.check(await count(/\/games\/yusuf\/assets\//) === 0, "Delete removes all of Yusuf's pictures and sounds from this device");
+    T.check(await page.evaluate(() => !!localStorage.getItem("asmau-yusuf")), "and keeps the child's progress");
     await page.click("#saveAllBtn");
     // the whole site is over 2,000 files: allow up to five minutes on a slow test machine
     for (let t = 0; t < 300 && !/Every game is saved/.test(await page.textContent("#saveAllStatus")); t++) await page.waitForTimeout(1000);
     const savedAll = await count(/./), statusText = await page.textContent("#saveAllStatus");
-    T.check(/Every game is saved/.test(statusText) && savedAll === SHELL.length + MEDIA.length - men, `Save every game saves all ${MEDIA.length - men} pictures, sounds and fonts, in the chosen voice only (saved ${savedAll - SHELL.length}; status: ${statusText.slice(0, 60)})`);
+    T.check(/Every game is saved/.test(statusText) && savedAll === allOneVoice, `Save every game saves all ${allOneVoice} files, in the chosen voice only (saved ${savedAll}; status: ${statusText.slice(0, 60)})`);
     // For parents > Your voice: choosing the man's voice fetches it for the games already on this device
     await page.click('#parentsBack, .sheet-backbtn').catch(() => {});
     await page.evaluate(() => { const b = document.querySelector('[data-voice="m"]'); b.click(); });

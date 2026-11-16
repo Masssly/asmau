@@ -1,11 +1,20 @@
 {
-  "version": "2026.11.34",
+  "version": "2026.11.35",
   "date": "2026-11-16",
-  "buildId": "82a7dc7631bd",
+  "buildId": "082df688fbb7",
   "notes": [
-    "New game: Rahmah El Yunusiyyah, the girl from the mountains of Sumatra who opened a school for girls in 1923, never gave up, and was honoured by al-Azhar"
+    "Built for many more games: the site downloads far less; games are kept as they are played, and parents can download a whole game (with its size) and delete it to free space",
+    "Home page: search, folding sections, covers that load as you scroll; Without internet shows each game's size and state"
   ],
   "history": [
+    {
+      "version": "2026.11.35",
+      "date": "2026-11-16",
+      "notes": [
+        "Built for many more games: the site downloads far less; games are kept as they are played, and parents can download a whole game (with its size) and delete it to free space",
+        "Home page: search, folding sections, covers that load as you scroll; Without internet shows each game's size and state"
+      ]
+    },
     {
       "version": "2026.11.34",
       "date": "2026-11-16",

@@ -66,10 +66,7 @@
   }).catch(function () { /* offline support is optional */ });
 
   navigator.serviceWorker.ready.then(function (reg) {
-    // a game saves its own pictures and sounds the first time it is opened (sw.js keeps them up to date after that)
-    // ... in the voice the family chose (For parents > Your voice): <slug> is the pictures, <slug>@w or @m the voice
-    var game = /\/games\/([^/]+)\//.exec(location.pathname);
-    if (game && reg.active) reg.active.postMessage({ type: "asmau-want", packs: [game[1], game[1] + "@" + voiceSet()], voice: voiceSet() });
+    // A game is kept as it is played (sw.js); the whole game is downloaded only when a parent chooses to (data costs money).
     root.setAttribute("data-offline", "ready");
     window.dispatchEvent(new Event("asmau-offline"));
   });

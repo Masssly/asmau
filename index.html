@@ -38,6 +38,16 @@
   .section-head .ico { font-size: 26px; line-height: 1; }
   .section-head h2 { font-family: var(--font-display); font-size: 21px; margin: 0; }
   .section-head::after { content: ""; flex: 1; height: 2px; border-radius: 2px; background: linear-gradient(90deg, var(--card-line), transparent); }
+  button.section-head { width: 100%; background: none; border: 0; padding: 0; color: inherit; font: inherit; cursor: pointer; text-align: left; }
+  .section-head .count { order: 3; font-size: 13px; color: var(--muted); }
+  .section-head::before { content: "▾"; order: 4; color: var(--muted); font-size: 18px; transition: transform .2s; }
+  .section-head[aria-expanded="false"]::before { transform: rotate(-90deg); }
+  .section-head::after { order: 2; }
+  .section-head:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; border-radius: 8px; }
+  .search-row { margin: 14px 0 0; }
+  .search-row input { width: 100%; box-sizing: border-box; padding: 11px 14px; border-radius: 999px; border: 1px solid var(--card-line);
+    background: rgba(255,255,255,.06); color: var(--cream); font: inherit; font-size: 16px; }
+  .search-row input:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
   .grid { display: grid; grid-template-columns: 1fr; gap: 16px; }
   .more-note { margin: 12px 2px 0; color: var(--muted); font-size: 14px; font-style: italic; }
   @media (min-width: 560px) { .grid.many { grid-template-columns: 1fr 1fr; } }
@@ -132,6 +142,17 @@
   .p-card:focus-visible, .p-list button:focus-visible, .sheet-backbtn:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
   .sheet h4 { font-family: var(--font-display); font-size: 15px; margin: 14px 0 4px; }
   .p-steps { padding-left: 20px; margin: 0 0 8px; }
+  .off-list { list-style: none; margin: 0 0 12px; padding: 0; border-top: 1px solid var(--card-line); }
+  .off-list li { display: flex; align-items: center; gap: 10px; padding: 9px 2px; border-bottom: 1px solid var(--card-line); }
+  .off-list .t { flex: 1; min-width: 0; }
+  .off-list .t small { display: block; color: var(--muted); font-size: 12.5px; }
+  .off-list button { flex: none; border-radius: 999px; padding: 7px 12px; border: 1px solid var(--card-line); background: rgba(255,255,255,.06);
+    color: var(--cream); font: inherit; font-size: 14px; cursor: pointer; }
+  .off-list button.save { background: var(--gold); color: #3a2300; border-color: var(--gold); }
+  .off-list li button + button { margin-left: 6px; }
+  .off-sum { font-weight: 600; margin: 4px 0 8px; }
+  .cover .off-tag { position: absolute; left: 10px; top: 10px; padding: 3px 9px; border-radius: 999px; font-size: 12.5px; font-weight: 700;
+    background: rgba(20,30,70,.82); color: #8be0c8; border: 1px solid rgba(139,224,200,.5); }
   .voice-pick { display: flex; gap: 8px; flex-wrap: wrap; margin: 6px 0 4px; }
   .voice-pick button { flex: 1 1 140px; display: flex; align-items: center; gap: 8px; padding: 10px 12px; border-radius: 14px;
     border: 1px solid var(--card-line); background: rgba(255,255,255,.05); color: var(--cream); font: inherit; cursor: pointer; text-align: left; }
@@ -169,6 +190,7 @@
     <span><strong>Parents: tell the stories in your own voice</strong><br>Record once, in any language, and your child hears you.</span>
   </button>
 
+  <div class="search-row"><input id="gameSearch" type="search" placeholder="Find a game…" aria-label="Find a game" autocomplete="off"></div>
   <main id="sections">
     <p class="empty">Loading games…</p>
   </main>
@@ -333,12 +355,17 @@
 
     <div class="p-view" data-view="offline" hidden>
       <h3>Without internet</h3>
-      <p>Each game is saved on this device, with its pictures and sounds, the first time it is opened, and from then on it
-        works with no connection. The first visit fetches only the front page, under 1 MB, so nobody pays for data on games
-        they never play.</p>
-      <p>Going somewhere without signal? Save every game now, while you are on Wi-Fi:</p>
+      <p>Data costs money, so Asmau downloads only what your child plays: each page is kept once it has been played, and
+        works again without a connection. To play a whole game without internet, download it here (or in the game’s own
+        “For parents” box). The first visit fetches only the front page, about 1.5 MB.</p>
+      <p>Going somewhere without signal? Save the games your child plays now, while you are on Wi-Fi, or all of them:</p>
       <p><button class="btn btn-gold" id="saveAllBtn" type="button">Save every game</button></p>
       <p class="p-small" id="saveAllStatus" aria-live="polite"></p>
+      <p>Or choose game by game. A game your child has played keeps the pages played so far; download it to have all of
+        it, and delete it when you are done to free the space. Progress and your recordings are always kept.</p>
+      <p class="off-sum" id="offlineSum" aria-live="polite"></p>
+      <ul class="off-list" id="offlineList" aria-live="polite"></ul>
+      <p><button class="btn" id="dropAllBtn" type="button" hidden>Delete all games from this device</button></p>
       <p>On a phone or tablet, add Asmau to the home screen from the browser’s menu (“Add to Home Screen”, or “Install
         app”) and it opens like an app.</p>
       <p>If a device ever looks out of date, <a href="reset.html">refresh it here</a>. Recordings and progress are not touched.</p>
@@ -403,11 +430,12 @@
     var soon = g.status === "coming-soon";
     var a = el(soon ? "div" : "a", "card tile" + (soon ? " soon" : ""));
     if (soon) a.setAttribute("aria-disabled", "true");
-    else { a.href = "games/" + g.slug + "/index.html"; a.setAttribute("aria-label", "Play " + g.title); }
+    else { a.href = "games/" + g.slug + "/index.html"; a.setAttribute("aria-label", "Play " + g.title); a.setAttribute("data-slug", g.slug); }
 
     var cover = el("div", "cover");
     if (g.cover) {
       var img = el("img");
+      img.loading = "lazy"; img.decoding = "async";          // with many games, covers load as they scroll into view
       img.src = "games/" + g.slug + "/" + g.cover;
       img.alt = g.coverAlt || "";
       cover.appendChild(img);
@@ -440,39 +468,55 @@
     return a;
   }
 
-  function render(sections) {
-    var main = document.getElementById("sections");
+  var CATALOGUE = [];
+  // folded sections are remembered on this device (with many games, a family can fold what they don't use)
+  function folded() { try { return JSON.parse(localStorage.getItem("asmau-folded") || "{}"); } catch (e) { return {}; } }
+  function setFolded(title, on) { try { var f = folded(); if (on) f[title] = 1; else delete f[title]; localStorage.setItem("asmau-folded", JSON.stringify(f)); } catch (e) { /* this visit only */ } }
+  function matches(g, q) { return !q || (g.title + " " + (g.tagline || "")).toLowerCase().indexOf(q) >= 0; }
+
+  function render(sections, query) {
+    var main = document.getElementById("sections"), q = (query || "").trim().toLowerCase(), f = folded();
     main.innerHTML = "";
-    sections = sections.filter(function (s) { return s.games.length; });
-    if (!sections.length) { main.appendChild(el("p", "empty", "No games yet — check back soon.")); return; }
+    sections = sections.map(function (s) { return { title: s.title, icon: s.icon, more: s.more, games: s.games.filter(function (g) { return matches(g, q); }) }; })
+      .filter(function (s) { return s.games.length; });
+    if (!sections.length) { main.appendChild(el("p", "empty", q ? "No game matches \u201c" + query.trim() + "\u201d." : "No games yet — check back soon.")); return; }
     sections.forEach(function (s) {
       var sec = el("section", "section");
-      var head = el("div", "section-head");
+      var head = el("button", "section-head");
+      head.type = "button";
+      var shut = !q && !!f[s.title];
+      head.setAttribute("aria-expanded", String(!shut));
       var ico = el("span", "ico", s.icon || "⭐");
       ico.setAttribute("aria-hidden", "true");
       head.appendChild(ico);
       head.appendChild(el("h2", "", s.title));
+      head.appendChild(el("span", "count", String(s.games.length)));
       sec.appendChild(head);
+      var body = el("div", "section-body");
+      body.hidden = shut;
       var grid = el("div", "grid" + (s.games.length > 1 ? " many" : ""));
       s.games.forEach(function (g) { grid.appendChild(card(g)); });
-      sec.appendChild(grid);
-      if (s.more) sec.appendChild(el("p", "more-note", "✦ " + s.more));
+      body.appendChild(grid);
+      if (s.more && !q) body.appendChild(el("p", "more-note", "✦ " + s.more));
+      sec.appendChild(body);
+      head.addEventListener("click", function () {
+        var open = head.getAttribute("aria-expanded") !== "true";
+        head.setAttribute("aria-expanded", String(open)); body.hidden = !open; if (!q) setFolded(s.title, !open);
+      });
       main.appendChild(sec);
     });
   }
+  function wireSearch() {
+    var box = document.getElementById("gameSearch"); if (!box) return;
+    box.addEventListener("input", function () { render(CATALOGUE, box.value); });
+  }
 
   function loadGames() {
-    fetch("manifest.json")
+    // one file with every game (scripts/build-offline.js writes it from manifest.json and each game.json)
+    fetch("games/index.json")
       .then(function (r) { return r.json(); })
-      .then(function (manifest) {
-        var sections = manifest.sections || [{ title: "Games", games: manifest.games || [] }];
-        return Promise.all(sections.map(function (s) {
-          return Promise.all((s.games || []).map(function (slug) {
-            return fetch("games/" + slug + "/game.json").then(function (r) { return r.json(); }).catch(function () { return null; });
-          })).then(function (games) { return { title: s.title, icon: s.icon, more: s.more, games: games.filter(Boolean) }; });
-        }));
-      })
-      .then(render)
+      .then(function (c) { CATALOGUE = c.sections; return c.sections; })
+      .then(render).then(markOffline)
       .catch(function () {
         var main = document.getElementById("sections");
         main.innerHTML = "";
@@ -500,12 +544,73 @@
       var skip = voiceSet() === "m" ? "@w" : "@m";        // only the voice this family chose is saved
       Object.keys(s.packs).forEach(function (k) { if (k.slice(-2) === skip) return; var p = s.packs[k]; files += p.files; done += p.saved; left += p.files ? p.bytes * (1 - p.saved / p.files) : 0; });
       var mb = Math.max(1, Math.round(left / 1e6));
+      offlineList(s);
       if (done >= files) { btn.hidden = true; out.textContent = "✓ Every game is saved on this device."; saving = false; return true; }
       btn.hidden = false;
       btn.disabled = saving;
       btn.textContent = saving ? "Saving…" : "Save every game (about " + mb + " MB)";
       out.textContent = saving ? "Saving: " + Math.floor(done / files * 100) + "%. You can close this; it carries on while Asmau is open." : "";
       return false;
+    });
+  }
+  // game by game: whether it is on this device (whole, partly from playing, or not), its size, download or delete
+  function mbs(b) { return b >= 1e6 ? Math.max(1, Math.round(b / 1e6)) + " MB" : Math.max(1, Math.round(b / 1e3)) + " KB"; }
+  function gameState(s, slug, v) {
+    var a = s.packs[slug], b = s.packs[slug + "@" + v] || { files: 0, saved: 0, bytes: 0, here: 0 };
+    var here = a.here + b.here + ((s.packs[slug + (v === "m" ? "@w" : "@m")] || {}).here || 0);
+    return { total: a.bytes + b.bytes, here: here, kept: a.kept, whole: a.kept && a.saved >= a.files && b.saved >= b.files,
+      pct: Math.floor((a.saved + b.saved) / Math.max(1, a.files + b.files) * 100) };
+  }
+  function postSW(msg) { return navigator.serviceWorker.ready.then(function (reg) { reg.active.postMessage(msg); }); }
+  function offlineList(s) {
+    var ul = document.getElementById("offlineList"); if (!ul) return;
+    var v = voiceSet(), games = [], used = (s.packs.core || {}).here || 0, whole = 0, any = 0;
+    CATALOGUE.forEach(function (sec) { sec.games.forEach(function (g) { if (s.packs[g.slug] && games.indexOf(g) < 0) games.push(g); }); });
+    ul.innerHTML = "";
+    games.forEach(function (g) {
+      var st = gameState(s, g.slug, v);
+      used += st.here; if (st.whole) whole++; if (st.here) any++;
+      var li = el("li"), txt = el("span", "t", g.title), state;
+      if (st.whole) state = "✓ Downloaded · " + mbs(st.total);
+      else if (st.kept) state = "Downloading… " + st.pct + "% of " + mbs(st.total);
+      else if (st.here) state = "Played pages kept · " + mbs(st.here) + " of " + mbs(st.total);
+      else state = "Not on this device · " + mbs(st.total);
+      txt.appendChild(el("small", "", state));
+      li.appendChild(txt);
+      var del = st.whole || st.kept || st.here;
+      if (!st.whole && !st.kept) {
+        var dl = el("button", "save", "Download"); dl.type = "button"; dl.setAttribute("aria-label", "Download " + g.title + ", " + mbs(st.total));
+        dl.addEventListener("click", function () { postSW({ type: "asmau-want", packs: [g.slug, g.slug + "@" + v], voice: v }); pollState(); });
+        li.appendChild(dl);
+      }
+      if (del) {
+        var rm = el("button", "", "Delete"); rm.type = "button"; rm.setAttribute("aria-label", "Delete " + g.title + ", frees " + mbs(st.here || st.total));
+        rm.addEventListener("click", function () {
+          if (!window.confirm("Delete " + g.title + " from this device? It frees " + mbs(Math.max(st.here, st.whole ? st.total : 0)) + ". Your child’s progress and your recordings are kept.")) return;
+          postSW({ type: "asmau-drop", packs: [g.slug, g.slug + "@w", g.slug + "@m"] }); setTimeout(saveState, 800);
+        });
+        li.appendChild(rm);
+      }
+      ul.appendChild(li);
+    });
+    var sum = document.getElementById("offlineSum");
+    if (sum) sum.textContent = "Asmau uses " + mbs(used) + " on this device" + (whole ? " · " + whole + (whole === 1 ? " game" : " games") + " downloaded" : "") + ".";
+    var dropAll = document.getElementById("dropAllBtn");
+    if (dropAll) dropAll.hidden = !any;
+  }
+  var polling = false;
+  function pollState() { if (polling) return; polling = true; (function p() { saveState().then(function () { setTimeout(function () { if (document.querySelector("#offlineList") && /Downloading/.test(document.getElementById("offlineList").textContent)) p(); else { polling = false; saveState(); } }, 1500); }); })(); }
+  // the home page marks games that are on this device whole
+  function markOffline() {
+    swStatus().then(function (s) {
+      if (!s) return;
+      var v = voiceSet();
+      Array.prototype.forEach.call(document.querySelectorAll("a.tile[data-slug]"), function (a) {
+        var slug = a.getAttribute("data-slug"); if (!s.packs[slug]) return;
+        var on = gameState(s, slug, v).whole, tag = a.querySelector(".off-tag");
+        if (on && !tag) { var t2 = el("span", "off-tag", "✓ Offline"); a.querySelector(".cover").appendChild(t2); }
+        if (!on && tag) tag.remove();
+      });
     });
   }
   function saveAll() {
@@ -527,7 +632,7 @@
       // games already saved on this device get the new voice too, so they keep working without internet
       swStatus().then(function (s) {
         if (!s) return;
-        var v = voiceSet(), want = Object.keys(s.packs).filter(function (k) { return k.indexOf("@") < 0 && k !== "core" && s.packs[k].saved > 0; })
+        var v = voiceSet(), want = Object.keys(s.packs).filter(function (k) { return k.indexOf("@") < 0 && k !== "core" && s.packs[k].kept; })
           .map(function (k) { return k + "@" + v; });
         if (want.length) navigator.serviceWorker.ready.then(function (reg) { reg.active.postMessage({ type: "asmau-want", packs: want, voice: v }); });
       });
@@ -538,6 +643,11 @@
   function wireParents() {
     wireVoicePick();
     document.getElementById("saveAllBtn").addEventListener("click", saveAll);
+    document.getElementById("dropAllBtn").addEventListener("click", function () {
+      if (!window.confirm("Delete every game from this device? This frees the space they use. Your child’s progress and your recordings are kept, and games can be downloaded again.")) return;
+      var all = []; CATALOGUE.forEach(function (sec) { sec.games.forEach(function (g) { all.push(g.slug, g.slug + "@w", g.slug + "@m"); }); });
+      postSW({ type: "asmau-drop", packs: all }); setTimeout(function () { saveState(); markOffline(); }, 1200);
+    });
     var back = document.getElementById("parents"), btn = document.getElementById("parentsBtn"), close = document.getElementById("parentsClose");
     var sheet = back.querySelector(".sheet"), backBtn = document.getElementById("pBack"), title = document.getElementById("parentsTitle");
     var views = Array.prototype.slice.call(back.querySelectorAll(".p-view")), opener = btn;
@@ -581,6 +691,7 @@
   buildStars();
   wireParents();
   loadGames();
+  wireSearch();
 })();
 </script>
 <script src="shared/music.js"></script>

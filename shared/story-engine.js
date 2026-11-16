@@ -14,6 +14,9 @@
   */
   var CFG = window.STORY_GAME || {};
   var GAME = CFG.slug;
+  // pictures live on R2 at addresses from the game's pack lists (shared/media.js); load the lists before the first picture
+  var MEDIA = window.AsmauMedia, mediaReady = MEDIA ? MEDIA.ready(GAME) : Promise.resolve();
+  function M(p) { return MEDIA ? MEDIA.url(p) : p; }
   var SAVE_KEY = "asmau-" + GAME;
   var HERO = CFG.heroChild, HERO_GROWN = CFG.heroAdult || CFG.heroChild;
   var story = window.STORY;
@@ -190,7 +193,7 @@
     n.classList.remove("ico-svg", "ico-img");
     if (SVG[icon]) { n.innerHTML = SVG[icon]; n.classList.add("ico-svg"); }
     else if (typeof icon === "string" && icon.indexOf("img:") === 0) {
-      n.innerHTML = '<img src="assets/img/' + icon.slice(4) + '.webp" alt="" draggable="false">';
+      n.innerHTML = '<img src="' + M("assets/img/" + icon.slice(4) + ".webp") + '" alt="" draggable="false">';
       n.classList.add("ico-img");
     }
     else { n.textContent = icon; }
@@ -263,7 +266,7 @@
   // The whole picture is always shown; on a wide stage a blurred copy of it
   // fills the space at the sides.
   function picture(id, fallback) {
-    var src = "assets/img/" + id + ".webp";
+    var src = M("assets/img/" + id + ".webp");
     var fill = mk("img", "pic-fill");
     fill.alt = "";
     fill.setAttribute("aria-hidden", "true");
@@ -887,7 +890,7 @@
       (function (i) {
         var t = mk("button", "ptile");
         t.setAttribute("aria-label", "piece " + (i + 1) + " of " + total);
-        t.style.backgroundImage = "url(assets/img/" + opts.pic + ".webp)";
+        t.style.backgroundImage = "url(" + M("assets/img/" + opts.pic + ".webp") + ")";
         t.style.backgroundSize = (n * 100) + "% " + (n * 100) + "%";
         t.addEventListener("click", function () {
           if (solved) return;
@@ -907,7 +910,7 @@
     var peek = mk("button", "peek-btn", "👁 Peek");
     peek.setAttribute("aria-label", "Hold to see the whole picture");
     var full = mk("div", "peek-full");
-    full.style.backgroundImage = "url(assets/img/" + opts.pic + ".webp)";
+    full.style.backgroundImage = "url(" + M("assets/img/" + opts.pic + ".webp") + ")";
     function showFull(on) { full.classList.toggle("on", on); }
     peek.addEventListener("pointerdown", function (e) { try { peek.setPointerCapture(e.pointerId); } catch (err) { /* optional */ } showFull(true); });
     ["pointerup", "pointercancel", "lostpointercapture"].forEach(function (ev) { peek.addEventListener(ev, function () { showFull(false); }); });
@@ -1472,60 +1475,66 @@
     var steps = story[ci].steps, nxt = steps[si + 1] || (story[ci + 1] && story[ci + 1].steps[0]);
     if (!nxt) return;
     var o = nxt.opts || {}, id = nxt.pic || nxt.say || o.img;
-    [id, !nxt.say && (o.bg || "bg-" + nxt.scene)].forEach(function (k) { if (k && ART[k]) new Image().src = "assets/img/" + k + ".webp"; });
+    [id, !nxt.say && (o.bg || "bg-" + nxt.scene)].forEach(function (k) { if (k && ART[k]) new Image().src = M("assets/img/" + k + ".webp"); });
   }
 
-  // The title screen shows how far the pictures have got. The service worker is the one
-  // downloading them (once, in the background); this only watches the saved copy, so it
-  // never competes with that download. If nothing is saved for 20 seconds (no service
-  // worker, or it is stuck), the page fetches the pictures itself.
+  // Downloading is the parent's choice (owner's decision, 16 November 2026: data costs money). A game is kept as it is
+  // played; in the game's "For parents" box a parent can download the whole of it, with its size, and delete it again
+  // to free space. The title line only says when the whole game is on this device.
   var prepared = false;
+  function swAsk(msg, port) {
+    if (!navigator.serviceWorker || !navigator.serviceWorker.controller) return Promise.resolve(null);
+    return navigator.serviceWorker.ready.then(function (reg) {
+      if (!port) { reg.active.postMessage(msg); return null; }
+      return new Promise(function (resolve) {
+        var ch = new MessageChannel(), t = setTimeout(function () { resolve(null); }, 5000);
+        ch.port1.onmessage = function (e) { clearTimeout(t); resolve(e.data); };
+        reg.active.postMessage(msg, [ch.port2]);
+      });
+    });
+  }
+  function voiceSet() { try { return localStorage.getItem("asmau-voice") === "m" ? "m" : "w"; } catch (e) { return "w"; } }
+  function mb(b) { return b >= 1e6 ? Math.max(1, Math.round(b / 1e6)) + " MB" : Math.max(1, Math.round(b / 1e3)) + " KB"; }
   function prepareAll() {
-    var el = $("prep");
-    if (prepared || !el) return;
-    var keys = Object.keys(ART), total = keys.length;
-    if (!total) return;
+    var line = $("prep"), box = document.querySelector("details.parents");
+    if (prepared || !box || !("serviceWorker" in navigator)) return;
     prepared = true;
-    el.hidden = false;
-    var have = 0, fetched = 0, lastMove = Date.now(), selfFetching = false, stopped = false;
+    var ctl = mk("div", "offline-ctl");
+    box.insertBefore(ctl, box.querySelector("summary").nextSibling);
+    var v = voiceSet(), packs = [GAME, GAME + "@" + v], busy = false;
     function paint() {
-      if (have >= total) { el.textContent = "✓ Ready — the pictures are saved on this device"; el.classList.add("ok"); stopped = true; return; }
-      var slow = Date.now() - lastMove > 15000;
-      el.innerHTML = (slow ? "Taking longer than usual. You can start now; pictures appear as you play." : "Getting the pictures ready…") + "<span class=\"prep-bar\"><i style=\"width:" + Math.round(have / total * 100) + "%\"></i></span>";
-    }
-    function selfFetch() {
-      if (selfFetching) return;
-      selfFetching = true;
-      var next = 0, running = 0;
-      (function pump() {
-        while (running < 3 && next < total) {
-          running += 1;
-          (function (k) {
-            var im = new Image(), t = setTimeout(fin, 10000);
-            function fin() { clearTimeout(t); if (im) { im.onload = im.onerror = null; im = null; running -= 1; fetched += 1; if (fetched > have) { have = fetched; paint(); } pump(); } }
-            im.onload = im.onerror = fin;
-            im.src = "assets/img/" + k + ".webp";
-          })(keys[next++]);
-        }
-      })();
-    }
-    function count() {
-      if (stopped) return;
-      var done = window.caches ? caches.open("asmau-media").then(function (c) { return c.keys(); }).then(function (reqs) {
-        var seen = {};
-        reqs.forEach(function (r) { var m = r.url.match(/assets\/img\/([^/]+)\.webp/); if (m && ART[m[1]]) seen[m[1]] = 1; });
-        return Object.keys(seen).length;
-      }) : Promise.resolve(0);
-      done.catch(function () { return 0; }).then(function (n) {
-        if (n > have) { have = n; lastMove = Date.now(); paint(); }
-        if (have >= total) { paint(); return; }
-        if (Date.now() - lastMove > 15000) paint();
-        if (!selfFetching && (!navigator.serviceWorker || Date.now() - lastMove > 20000)) selfFetch();
-        setTimeout(count, 600);
+      return swAsk({ type: "asmau-status", packs: packs }, true).then(function (s) {
+        if (!s) { ctl.hidden = true; return; }
+        var a = s.packs[GAME], b = s.packs[GAME + "@" + v] || { files: 0, saved: 0, bytes: 0, here: 0 };
+        if (!a) { ctl.hidden = true; return; }
+        var total = a.bytes + b.bytes, here = a.here + b.here, whole = a.kept && a.saved >= a.files && b.saved >= b.files;
+        ctl.innerHTML = "";
+        var txt = mk("p", "offline-txt");
+        if (whole) txt.textContent = "✓ The whole game is on this device (" + mb(total) + ") and works without internet.";
+        else if (a.kept) txt.innerHTML = "Downloading… " + Math.floor((a.saved + b.saved) / Math.max(1, a.files + b.files) * 100) + "%<span class=\"prep-bar\"><i style=\"width:" + Math.round((a.saved + b.saved) / Math.max(1, a.files + b.files) * 100) + "%\"></i></span>";
+        else txt.textContent = (here ? "The pages played so far are kept on this device (" + mb(here) + "). " : "") + "Download the whole game to play it all without internet.";
+        ctl.appendChild(txt);
+        var btn = mk("button", "btn " + (whole || a.kept ? "btn-ghost" : "btn-gold"));
+        btn.type = "button";
+        btn.textContent = whole || a.kept ? "Delete from this device (frees " + mb(Math.max(here, whole ? total : here)) + ")" : "📥 Download the whole game · " + mb(total);
+        btn.addEventListener("click", function () {
+          if (whole || a.kept) {
+            if (!window.confirm("Delete " + document.title.split(" — ")[0] + " from this device? It frees " + mb(Math.max(here, total)) + ". Your child’s progress and your recordings are kept, and the game can be downloaded again.")) return;
+            swAsk({ type: "asmau-drop", packs: [GAME, GAME + "@w", GAME + "@m"] }).then(function () { setTimeout(paint, 600); });
+          } else {
+            busy = true;
+            swAsk({ type: "asmau-want", packs: packs, voice: v }).then(function () {
+              (function poll() { paint().then(function () { if (busy) setTimeout(poll, 1500); }); })();
+            });
+          }
+        });
+        ctl.appendChild(btn);
+        if (whole) busy = false;
+        if (line) { line.hidden = !whole; if (whole) { line.textContent = "✓ On this device: plays without internet"; line.classList.add("ok"); } }
       });
     }
     paint();
-    count();
+    box.addEventListener("toggle", function () { if (box.open) paint(); });
   }
 
   // "Skip" is for a child who is stuck, not for one who is still playing: it only appears
@@ -1543,20 +1552,16 @@
   var shownAt = 0;
 
   // The parents' notes are plain text files, one per page (parents/<chapter>/<chapter>.<page>.md beside the game), so
-  // they can be edited on GitHub. parents/pages.json (written by scripts/parent-notes.js) says which pages have one.
-  var notesIndex = null, notesCache = {};
+  // they can be edited on GitHub. scripts/build-offline.js bundles the live ones into parents/notes.json: one small file
+  // per game, saved with it for use without internet.
+  var notesAll = null;
   function notesFor(key) {
-    if (!notesIndex) notesIndex = fetch("parents/pages.json").then(function (r) { return r.ok ? r.json() : {}; }).catch(function () { return {}; });
-    return notesIndex.then(function (ix) {
-      if ((ix.notes || []).indexOf(key) < 0) return [];
-      if (!notesCache[key]) notesCache[key] = fetch("parents/" + key.split(".")[0] + "/" + key + ".md")
-        .then(function (r) { return r.ok ? r.text() : ""; }).catch(function () { return ""; })
-        .then(function (txt) {
-          return txt.split(/\r?\n\s*\r?\n/).map(function (p) {
-            return p.split(/\r?\n/).filter(function (l) { return !/^\s*#/.test(l); }).join(" ").trim();
-          }).filter(Boolean);
-        });
-      return notesCache[key];
+    if (!notesAll) notesAll = fetch("parents/notes.json").then(function (r) { return r.ok ? r.json() : {}; }).catch(function () { return {}; });
+    return notesAll.then(function (all) {
+      var txt = all[key] || "";
+      return txt.split(/\r?\n\s*\r?\n/).map(function (p) {
+        return p.split(/\r?\n/).filter(function (l) { return !/^\s*#/.test(l); }).join(" ").trim();
+      }).filter(Boolean);
     });
   }
   function fillNotes(ch, key) {
@@ -1638,7 +1643,7 @@
     } else if (!st.say) {
       var bg = opts.bg || ("bg-" + st.scene);
       if (ART[bg]) {
-        stage.style.backgroundImage = "url(assets/img/" + bg + ".webp)";
+        stage.style.backgroundImage = "url(" + M("assets/img/" + bg + ".webp") + ")";
         stage.classList.add("has-bg");
       }
     }
@@ -1731,7 +1736,8 @@
     ci = Math.max(0, Math.min(i, story.length - 1));
     si = Math.max(0, Math.min(stepIdx || 0, story[ci].steps.length - 1));
     show("play");
-    renderStep();
+    var at = ci + ":" + si;
+    mediaReady.then(function () { if (ci + ":" + si === at) renderStep(); });
   }
 
   function hasProgress() { return !!resumeAt(); }

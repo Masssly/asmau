@@ -14,7 +14,13 @@ module.exports = async function () {
   const site = await serve(tmp), browser = await chromium.launch();
   const ctx = await browser.newContext({ serviceWorkers: "allow", viewport: { width: 390, height: 780 } }), p = await ctx.newPage();
   const U = site.url + "games/yusuf/index.html";
-  await p.goto(U, { waitUntil: "networkidle" }); await p.evaluate(() => navigator.serviceWorker.ready); await p.waitForTimeout(4000);
+  await p.goto(U, { waitUntil: "networkidle" }); await p.evaluate(() => navigator.serviceWorker.ready); await p.waitForTimeout(1500);
+  // a parent downloads the whole game (games are otherwise kept only as they are played)
+  await p.evaluate(() => navigator.serviceWorker.ready.then((r) => r.active.postMessage({ type: "asmau-want", packs: ["yusuf", "yusuf@w"], voice: "w" })));
+  for (let t = 0; t < 60; t++) {
+    const n = await p.evaluate(async () => (await (await caches.open("asmau-files")).keys()).filter((r) => r.url.includes("/games/yusuf/assets/")).length);
+    if (n > 250) break; await p.waitForTimeout(1000);
+  }
   const names = await p.evaluate(() => caches.keys());
   T.check(names.length === 2 && names.includes("asmau-files") && names.includes("asmau-meta"), "two caches: the saved files and the pack lists: " + names.join());
 

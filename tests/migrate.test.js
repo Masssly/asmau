@@ -34,16 +34,18 @@ module.exports = async function () {
   for (const f of ["index.html", "manifest.json", "app.webmanifest", "sw.js", "version.json", "config.json", "reset.html", "privacy.html"]) fs.copyFileSync(path.join(repo, f), path.join(tmp, f));
   site.log.length = 0;
   await p.goto(U, { waitUntil: "load" });
+  // the page reloads itself when the new release takes over (shared/pwa.js): read through it
+  const ev = async (fn, arg) => { for (let i = 0; i < 10; i++) { try { return await p.evaluate(fn, arg); } catch (e) { await p.waitForTimeout(1000); } } return null; };
   for (let t = 0; t < 60; t++) {
-    const names = await p.evaluate(() => caches.keys());
+    const names = await ev(() => caches.keys()) || [];
     if (!names.includes("asmau-media") && names.includes("asmau-files")) break; await p.waitForTimeout(1000);
   }
   await p.waitForTimeout(6000);
-  const names = await p.evaluate(() => caches.keys());
+  const names = await ev(() => caches.keys()) || [];
   T.check(!names.includes("asmau-media") && names.includes("asmau-files"), "the old saved copies were moved: " + names.join());
   const media = site.log.filter((l) => /^\/media\/.+\/games\/yusuf\/assets\//.test(l) || /\/games\/yusuf\/assets\//.test(l));
   T.check(media.length <= 2, "no picture or sound of Yusuf was downloaded again (" + media.length + " asked for)");
-  const kept = await p.evaluate(async () => { const r = await (await caches.open("asmau-meta")).match(new URL("__asmau/kept", location.href.split("/games/")[0] + "/").href); return r ? r.json() : null; });
+  const kept = await ev(async () => { const r = await (await caches.open("asmau-meta")).match(new URL("__asmau/kept", location.href.split("/games/")[0] + "/").href); return r ? r.json() : null; });
   T.check(kept && kept.includes("yusuf") && kept.includes("yusuf@w"), "Yusuf is still kept on this device: " + JSON.stringify(kept));
   await ctx.setOffline(true);
   await p.goto(U, { waitUntil: "load" }); await p.waitForTimeout(800);

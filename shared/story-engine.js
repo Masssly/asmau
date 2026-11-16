@@ -1478,58 +1478,63 @@
     [id, !nxt.say && (o.bg || "bg-" + nxt.scene)].forEach(function (k) { if (k && ART[k]) new Image().src = M("assets/img/" + k + ".webp"); });
   }
 
-  // The title screen shows how far the pictures have got. The service worker is the one
-  // downloading them (once, in the background); this only watches the saved copy, so it
-  // never competes with that download. If nothing is saved for 20 seconds (no service
-  // worker, or it is stuck), the page fetches the pictures itself.
+  // Downloading is the parent's choice (owner's decision, 16 November 2026: data costs money). A game is kept as it is
+  // played; in the game's "For parents" box a parent can download the whole of it, with its size, and delete it again
+  // to free space. The title line only says when the whole game is on this device.
   var prepared = false;
+  function swAsk(msg, port) {
+    if (!navigator.serviceWorker || !navigator.serviceWorker.controller) return Promise.resolve(null);
+    return navigator.serviceWorker.ready.then(function (reg) {
+      if (!port) { reg.active.postMessage(msg); return null; }
+      return new Promise(function (resolve) {
+        var ch = new MessageChannel(), t = setTimeout(function () { resolve(null); }, 5000);
+        ch.port1.onmessage = function (e) { clearTimeout(t); resolve(e.data); };
+        reg.active.postMessage(msg, [ch.port2]);
+      });
+    });
+  }
+  function voiceSet() { try { return localStorage.getItem("asmau-voice") === "m" ? "m" : "w"; } catch (e) { return "w"; } }
+  function mb(b) { return b >= 1e6 ? Math.max(1, Math.round(b / 1e6)) + " MB" : Math.max(1, Math.round(b / 1e3)) + " KB"; }
   function prepareAll() {
-    var el = $("prep");
-    if (prepared || !el) return;
-    var keys = Object.keys(ART), total = keys.length;
-    if (!total) return;
+    var line = $("prep"), box = document.querySelector("details.parents");
+    if (prepared || !box || !("serviceWorker" in navigator)) return;
     prepared = true;
-    el.hidden = false;
-    var have = 0, fetched = 0, lastMove = Date.now(), selfFetching = false, stopped = false;
+    var ctl = mk("div", "offline-ctl");
+    box.insertBefore(ctl, box.querySelector("summary").nextSibling);
+    var v = voiceSet(), packs = [GAME, GAME + "@" + v], busy = false;
     function paint() {
-      if (have >= total) { el.textContent = "✓ Ready — the pictures are saved on this device"; el.classList.add("ok"); stopped = true; return; }
-      var slow = Date.now() - lastMove > 15000;
-      el.innerHTML = (slow ? "Taking longer than usual. You can start now; pictures appear as you play." : "Getting the pictures ready…") + "<span class=\"prep-bar\"><i style=\"width:" + Math.round(have / total * 100) + "%\"></i></span>";
-    }
-    function selfFetch() {
-      if (selfFetching) return;
-      selfFetching = true;
-      var next = 0, running = 0;
-      (function pump() {
-        while (running < 3 && next < total) {
-          running += 1;
-          (function (k) {
-            var im = new Image(), t = setTimeout(fin, 10000);
-            function fin() { clearTimeout(t); if (im) { im.onload = im.onerror = null; im = null; running -= 1; fetched += 1; if (fetched > have) { have = fetched; paint(); } pump(); } }
-            im.onload = im.onerror = fin;
-            im.src = M("assets/img/" + k + ".webp");
-          })(keys[next++]);
-        }
-      })();
-    }
-    function count() {
-      if (stopped) return;
-      var mine = new RegExp("/games/" + GAME + "/assets/img/([^/]+)\\.webp");
-      var done = window.caches ? caches.open("asmau-files").then(function (c) { return c.keys(); }).then(function (reqs) {
-        var seen = {};
-        reqs.forEach(function (r) { var m = r.url.match(mine); if (m && ART[m[1]]) seen[m[1]] = 1; });
-        return Object.keys(seen).length;
-      }) : Promise.resolve(0);
-      done.catch(function () { return 0; }).then(function (n) {
-        if (n > have) { have = n; lastMove = Date.now(); paint(); }
-        if (have >= total) { paint(); return; }
-        if (Date.now() - lastMove > 15000) paint();
-        if (!selfFetching && (!navigator.serviceWorker || Date.now() - lastMove > 20000)) selfFetch();
-        setTimeout(count, 600);
+      return swAsk({ type: "asmau-status", packs: packs }, true).then(function (s) {
+        if (!s) { ctl.hidden = true; return; }
+        var a = s.packs[GAME], b = s.packs[GAME + "@" + v] || { files: 0, saved: 0, bytes: 0, here: 0 };
+        if (!a) { ctl.hidden = true; return; }
+        var total = a.bytes + b.bytes, here = a.here + b.here, whole = a.kept && a.saved >= a.files && b.saved >= b.files;
+        ctl.innerHTML = "";
+        var txt = mk("p", "offline-txt");
+        if (whole) txt.textContent = "✓ The whole game is on this device (" + mb(total) + ") and works without internet.";
+        else if (a.kept) txt.innerHTML = "Downloading… " + Math.floor((a.saved + b.saved) / Math.max(1, a.files + b.files) * 100) + "%<span class=\"prep-bar\"><i style=\"width:" + Math.round((a.saved + b.saved) / Math.max(1, a.files + b.files) * 100) + "%\"></i></span>";
+        else txt.textContent = (here ? "The pages played so far are kept on this device (" + mb(here) + "). " : "") + "Download the whole game to play it all without internet.";
+        ctl.appendChild(txt);
+        var btn = mk("button", "btn " + (whole || a.kept ? "btn-ghost" : "btn-gold"));
+        btn.type = "button";
+        btn.textContent = whole || a.kept ? "Delete from this device (frees " + mb(Math.max(here, whole ? total : here)) + ")" : "📥 Download the whole game · " + mb(total);
+        btn.addEventListener("click", function () {
+          if (whole || a.kept) {
+            if (!window.confirm("Delete " + document.title.split(" — ")[0] + " from this device? It frees " + mb(Math.max(here, total)) + ". Your child’s progress and your recordings are kept, and the game can be downloaded again.")) return;
+            swAsk({ type: "asmau-drop", packs: [GAME, GAME + "@w", GAME + "@m"] }).then(function () { setTimeout(paint, 600); });
+          } else {
+            busy = true;
+            swAsk({ type: "asmau-want", packs: packs, voice: v }).then(function () {
+              (function poll() { paint().then(function () { if (busy) setTimeout(poll, 1500); }); })();
+            });
+          }
+        });
+        ctl.appendChild(btn);
+        if (whole) busy = false;
+        if (line) { line.hidden = !whole; if (whole) { line.textContent = "✓ On this device: plays without internet"; line.classList.add("ok"); } }
       });
     }
     paint();
-    count();
+    box.addEventListener("toggle", function () { if (box.open) paint(); });
   }
 
   // "Skip" is for a child who is stuck, not for one who is still playing: it only appears

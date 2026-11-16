@@ -149,6 +149,10 @@
   .off-list button { flex: none; border-radius: 999px; padding: 7px 12px; border: 1px solid var(--card-line); background: rgba(255,255,255,.06);
     color: var(--cream); font: inherit; font-size: 14px; cursor: pointer; }
   .off-list button.save { background: var(--gold); color: #3a2300; border-color: var(--gold); }
+  .off-list li button + button { margin-left: 6px; }
+  .off-sum { font-weight: 600; margin: 4px 0 8px; }
+  .cover .off-tag { position: absolute; left: 10px; top: 10px; padding: 3px 9px; border-radius: 999px; font-size: 12.5px; font-weight: 700;
+    background: rgba(20,30,70,.82); color: #8be0c8; border: 1px solid rgba(139,224,200,.5); }
   .voice-pick { display: flex; gap: 8px; flex-wrap: wrap; margin: 6px 0 4px; }
   .voice-pick button { flex: 1 1 140px; display: flex; align-items: center; gap: 8px; padding: 10px 12px; border-radius: 14px;
     border: 1px solid var(--card-line); background: rgba(255,255,255,.05); color: var(--cream); font: inherit; cursor: pointer; text-align: left; }
@@ -351,14 +355,17 @@
 
     <div class="p-view" data-view="offline" hidden>
       <h3>Without internet</h3>
-      <p>Each game is saved on this device, with its pictures and sounds, the first time it is opened, and from then on it
-        works with no connection. The first visit fetches only the front page, under 1 MB, so nobody pays for data on games
-        they never play.</p>
+      <p>Data costs money, so Asmau downloads only what your child plays: each page is kept once it has been played, and
+        works again without a connection. To play a whole game without internet, download it here (or in the game’s own
+        “For parents” box). The first visit fetches only the front page, about 1.5 MB.</p>
       <p>Going somewhere without signal? Save the games your child plays now, while you are on Wi-Fi, or all of them:</p>
       <p><button class="btn btn-gold" id="saveAllBtn" type="button">Save every game</button></p>
       <p class="p-small" id="saveAllStatus" aria-live="polite"></p>
-      <p>Or choose game by game:</p>
+      <p>Or choose game by game. A game your child has played keeps the pages played so far; download it to have all of
+        it, and delete it when you are done to free the space. Progress and your recordings are always kept.</p>
+      <p class="off-sum" id="offlineSum" aria-live="polite"></p>
       <ul class="off-list" id="offlineList" aria-live="polite"></ul>
+      <p><button class="btn" id="dropAllBtn" type="button" hidden>Delete all games from this device</button></p>
       <p>On a phone or tablet, add Asmau to the home screen from the browser’s menu (“Add to Home Screen”, or “Install
         app”) and it opens like an app.</p>
       <p>If a device ever looks out of date, <a href="reset.html">refresh it here</a>. Recordings and progress are not touched.</p>
@@ -423,7 +430,7 @@
     var soon = g.status === "coming-soon";
     var a = el(soon ? "div" : "a", "card tile" + (soon ? " soon" : ""));
     if (soon) a.setAttribute("aria-disabled", "true");
-    else { a.href = "games/" + g.slug + "/index.html"; a.setAttribute("aria-label", "Play " + g.title); }
+    else { a.href = "games/" + g.slug + "/index.html"; a.setAttribute("aria-label", "Play " + g.title); a.setAttribute("data-slug", g.slug); }
 
     var cover = el("div", "cover");
     if (g.cover) {
@@ -509,7 +516,7 @@
     fetch("games/index.json")
       .then(function (r) { return r.json(); })
       .then(function (c) { CATALOGUE = c.sections; return c.sections; })
-      .then(render)
+      .then(render).then(markOffline)
       .catch(function () {
         var main = document.getElementById("sections");
         main.innerHTML = "";
@@ -546,31 +553,64 @@
       return false;
     });
   }
-  // game by game: which are on this device, how big each is (with the chosen voice), save or remove
+  // game by game: whether it is on this device (whole, partly from playing, or not), its size, download or delete
+  function mbs(b) { return b >= 1e6 ? Math.max(1, Math.round(b / 1e6)) + " MB" : Math.max(1, Math.round(b / 1e3)) + " KB"; }
+  function gameState(s, slug, v) {
+    var a = s.packs[slug], b = s.packs[slug + "@" + v] || { files: 0, saved: 0, bytes: 0, here: 0 };
+    var here = a.here + b.here + ((s.packs[slug + (v === "m" ? "@w" : "@m")] || {}).here || 0);
+    return { total: a.bytes + b.bytes, here: here, kept: a.kept, whole: a.kept && a.saved >= a.files && b.saved >= b.files,
+      pct: Math.floor((a.saved + b.saved) / Math.max(1, a.files + b.files) * 100) };
+  }
+  function postSW(msg) { return navigator.serviceWorker.ready.then(function (reg) { reg.active.postMessage(msg); }); }
   function offlineList(s) {
     var ul = document.getElementById("offlineList"); if (!ul) return;
-    var v = voiceSet(), games = [];
+    var v = voiceSet(), games = [], used = (s.packs.core || {}).here || 0, whole = 0, any = 0;
     CATALOGUE.forEach(function (sec) { sec.games.forEach(function (g) { if (s.packs[g.slug] && games.indexOf(g) < 0) games.push(g); }); });
     ul.innerHTML = "";
     games.forEach(function (g) {
-      var a = s.packs[g.slug], b = s.packs[g.slug + "@" + v] || { files: 0, saved: 0, bytes: 0 };
-      var files = a.files + b.files, saved = a.saved + b.saved, mb = Math.max(1, Math.round((a.bytes + b.bytes) / 1e6));
-      var li = el("li"), txt = el("span", "t", g.title);
-      var state = saved >= files ? "Saved on this device" : (a.kept ? "Saving… " + Math.floor(saved / files * 100) + "%" : "Not saved");
-      txt.appendChild(el("small", "", state + " · " + mb + " MB"));
+      var st = gameState(s, g.slug, v);
+      used += st.here; if (st.whole) whole++; if (st.here) any++;
+      var li = el("li"), txt = el("span", "t", g.title), state;
+      if (st.whole) state = "✓ Downloaded · " + mbs(st.total);
+      else if (st.kept) state = "Downloading… " + st.pct + "% of " + mbs(st.total);
+      else if (st.here) state = "Played pages kept · " + mbs(st.here) + " of " + mbs(st.total);
+      else state = "Not on this device · " + mbs(st.total);
+      txt.appendChild(el("small", "", state));
       li.appendChild(txt);
-      var btn = el("button", saved >= files || a.kept ? "" : "save", saved >= files || a.kept ? "Remove" : "Save");
-      btn.type = "button";
-      btn.setAttribute("aria-label", btn.textContent + " " + g.title);
-      btn.addEventListener("click", function () {
-        navigator.serviceWorker.ready.then(function (reg) {
-          if (btn.textContent === "Save") reg.active.postMessage({ type: "asmau-want", packs: [g.slug, g.slug + "@" + v], voice: v });
-          else reg.active.postMessage({ type: "asmau-drop", packs: [g.slug, g.slug + "@w", g.slug + "@m"] });
-          setTimeout(saveState, 800);
+      var del = st.whole || st.kept || st.here;
+      if (!st.whole && !st.kept) {
+        var dl = el("button", "save", "Download"); dl.type = "button"; dl.setAttribute("aria-label", "Download " + g.title + ", " + mbs(st.total));
+        dl.addEventListener("click", function () { postSW({ type: "asmau-want", packs: [g.slug, g.slug + "@" + v], voice: v }); pollState(); });
+        li.appendChild(dl);
+      }
+      if (del) {
+        var rm = el("button", "", "Delete"); rm.type = "button"; rm.setAttribute("aria-label", "Delete " + g.title + ", frees " + mbs(st.here || st.total));
+        rm.addEventListener("click", function () {
+          if (!window.confirm("Delete " + g.title + " from this device? It frees " + mbs(Math.max(st.here, st.whole ? st.total : 0)) + ". Your child’s progress and your recordings are kept.")) return;
+          postSW({ type: "asmau-drop", packs: [g.slug, g.slug + "@w", g.slug + "@m"] }); setTimeout(saveState, 800);
         });
-      });
-      li.appendChild(btn);
+        li.appendChild(rm);
+      }
       ul.appendChild(li);
+    });
+    var sum = document.getElementById("offlineSum");
+    if (sum) sum.textContent = "Asmau uses " + mbs(used) + " on this device" + (whole ? " · " + whole + (whole === 1 ? " game" : " games") + " downloaded" : "") + ".";
+    var dropAll = document.getElementById("dropAllBtn");
+    if (dropAll) dropAll.hidden = !any;
+  }
+  var polling = false;
+  function pollState() { if (polling) return; polling = true; (function p() { saveState().then(function () { setTimeout(function () { if (document.querySelector("#offlineList") && /Downloading/.test(document.getElementById("offlineList").textContent)) p(); else { polling = false; saveState(); } }, 1500); }); })(); }
+  // the home page marks games that are on this device whole
+  function markOffline() {
+    swStatus().then(function (s) {
+      if (!s) return;
+      var v = voiceSet();
+      Array.prototype.forEach.call(document.querySelectorAll("a.tile[data-slug]"), function (a) {
+        var slug = a.getAttribute("data-slug"); if (!s.packs[slug]) return;
+        var on = gameState(s, slug, v).whole, tag = a.querySelector(".off-tag");
+        if (on && !tag) { var t2 = el("span", "off-tag", "✓ Offline"); a.querySelector(".cover").appendChild(t2); }
+        if (!on && tag) tag.remove();
+      });
     });
   }
   function saveAll() {
@@ -592,7 +632,7 @@
       // games already saved on this device get the new voice too, so they keep working without internet
       swStatus().then(function (s) {
         if (!s) return;
-        var v = voiceSet(), want = Object.keys(s.packs).filter(function (k) { return k.indexOf("@") < 0 && k !== "core" && s.packs[k].saved > 0; })
+        var v = voiceSet(), want = Object.keys(s.packs).filter(function (k) { return k.indexOf("@") < 0 && k !== "core" && s.packs[k].kept; })
           .map(function (k) { return k + "@" + v; });
         if (want.length) navigator.serviceWorker.ready.then(function (reg) { reg.active.postMessage({ type: "asmau-want", packs: want, voice: v }); });
       });
@@ -603,6 +643,11 @@
   function wireParents() {
     wireVoicePick();
     document.getElementById("saveAllBtn").addEventListener("click", saveAll);
+    document.getElementById("dropAllBtn").addEventListener("click", function () {
+      if (!window.confirm("Delete every game from this device? This frees the space they use. Your child’s progress and your recordings are kept, and games can be downloaded again.")) return;
+      var all = []; CATALOGUE.forEach(function (sec) { sec.games.forEach(function (g) { all.push(g.slug, g.slug + "@w", g.slug + "@m"); }); });
+      postSW({ type: "asmau-drop", packs: all }); setTimeout(function () { saveState(); markOffline(); }, 1200);
+    });
     var back = document.getElementById("parents"), btn = document.getElementById("parentsBtn"), close = document.getElementById("parentsClose");
     var sheet = back.querySelector(".sheet"), backBtn = document.getElementById("pBack"), title = document.getElementById("parentsTitle");
     var views = Array.prototype.slice.call(back.querySelectorAll(".p-view")), opener = btn;

@@ -2,9 +2,11 @@
   Asmau service worker: the site works offline, and a device downloads only what it needs (scripts/SCALING.md).
 
   Everything the site serves belongs to a pack (scripts/build-offline.js writes packs/<pack>.json, and the index of
-  packs below): "core" (home page, shared scripts, fonts, icons, covers) is saved at the first visit; a game's pack
-  ("<slug>") when it is first opened, with the narration in the voice the family chose ("<slug>@w" or "<slug>@m").
-  A release downloads, for each pack on this device, only the files whose fingerprint changed, and drops the rest.
+  packs below): "core" (home page, shared scripts, fonts, icons, covers) is saved at the first visit. A game is saved
+  as it is played: each page, picture and sound is kept once shown, so what was played works again without internet.
+  A parent can download a whole game ("<slug>" with the voice they chose, "<slug>@w" or "<slug>@m") and delete it
+  again to free space (owner's decision, 16 November 2026: data costs money, so downloading is the parent's choice).
+  A release downloads, for each pack kept whole on this device, only the files whose fingerprint changed.
 
   Pictures and sounds of the games live on R2 (MEDIA_BASE), at addresses that include their fingerprint and so never
   change meaning: they are served from the saved copy first. Pages, scripts, styles and data are fetched from the
@@ -15,13 +17,13 @@
 
 // BEGIN GENERATED
 const RELEASE = "2026.11.34";
-const BUILD = "1497579bcad3";
+const BUILD = "3c38daedda79";
 // pack: [fingerprint of packs/<pack>.json, bytes, files]
 const PACKS = {
   "adam":["22e75c3649",2721568,55],
   "adam@m":["a617f3f408",4026446,147],
   "adam@w":["217fc43e27",4316508,147],
-  "core":["ffe5acc9c0",964898,37],
+  "core":["52afaba2ec",970220,37],
   "count-the-crescents":["551c35512f",82971,5],
   "count-the-crescents@m":["76410cb722",587647,52],
   "count-the-crescents@w":["238f9dbdf7",584828,52],
@@ -85,6 +87,22 @@ function metaPut(name, value) {
   });
 }
 function kept() { return metaGet("kept").then(function (k) { return k || ["core"]; }); }
+// games played but not downloaded whole: their played pages, pictures and sounds are kept until the game is deleted
+function played() { return metaGet("played").then(function (k) { return k || []; }); }
+var playedNow = {}, playedTimer = null;
+function notePlayed(p) {
+  if (!p || playedNow[p]) return;
+  playedNow[p] = 1;
+  clearTimeout(playedTimer);
+  playedTimer = setTimeout(function () {
+    played().then(function (k) { var add = Object.keys(playedNow).filter(function (x) { return k.indexOf(x) < 0; }); if (add.length) return metaPut("played", k.concat(add)); });
+  }, 1000);
+}
+function packFor(f) {
+  var m = /^games\/([^/]+)\/(.*)$/.exec(f);
+  if (!m) return "core";
+  return m[1] + (m[2].indexOf("assets/audio-m/") === 0 ? "@m" : m[2].indexOf("assets/audio/") === 0 ? "@w" : "");
+}
 
 // the list of one pack, as this release has it (fetched once per change, then kept)
 var lists = {};
@@ -145,40 +163,48 @@ function want(packs, voice) {
   return queue;
 }
 
-// drop packs from this device (For parents > Without internet > Remove)
+// delete games from this device (For parents > Delete): their pages, pictures and sounds; progress and recordings stay
 function drop(packs) {
   queue = queue.then(function () {
-    return kept().then(function (k) {
-      var next = k.filter(function (p) { return p === "core" || packs.indexOf(p) < 0; });
-      return metaPut("kept", next).then(clean);
+    return Promise.all([kept(), played()]).then(function (r) {
+      var out = function (p) { return p === "core" || packs.indexOf(p) < 0; };
+      packs.forEach(function (p) { delete playedNow[p]; });
+      return Promise.all([metaPut("kept", r[0].filter(out)), metaPut("played", r[1].filter(out))]).then(clean);
     });
   }).catch(function () {});
   return queue;
 }
 
-// forget files that no kept pack has any more
+// forget files that no kept or played pack has any more (old versions after a release, deleted games)
 function clean() {
-  return kept().then(function (k) {
-    return Promise.all(k.map(list)).then(function (ls) {
+  return Promise.all([kept(), played()]).then(function (r) {
+    var packs = r[0].concat(r[1].filter(function (p) { return r[0].indexOf(p) < 0; }));
+    return Promise.all(packs.map(function (p) { return list(p).catch(function () { return null; }); })).then(function (ls) {
       var keep = {};
       ls.forEach(function (l) { if (l) Object.keys(l.files).forEach(function (f) { keep[keyFor(f, l.files[f])] = 1; }); });
       return caches.open(FILES).then(function (cache) {
-        return cache.keys().then(function (reqs) { return Promise.all(reqs.map(function (rq) { if (!keep[rq.url]) return cache.delete(rq); })); });
+        return cache.keys().then(function (reqs) { return Promise.all(reqs.map(function (rq) { if (!keep[rq.url.split("?")[0]]) return cache.delete(rq); })); });
       });
     });
   });
 }
 
 // For parents > Without internet: how much of each pack is on this device
-function status() {
-  return Promise.all([kept(), caches.open(FILES)]).then(function (r) {
-    var k = r[0], cache = r[1], out = {};
-    Object.keys(PACKS).forEach(function (p) { out[p] = { files: PACKS[p][2], saved: 0, bytes: PACKS[p][1], kept: k.indexOf(p) >= 0 }; });
-    return Promise.all(k.map(function (p) {
+// files: in the pack; saved: of them on this device; bytes: the whole pack; here: bytes of it on this device
+function status(only) {
+  return Promise.all([kept(), played(), caches.open(FILES)]).then(function (r) {
+    var k = r[0], pl = r[1], cache = r[2], out = {};
+    Object.keys(PACKS).forEach(function (p) { out[p] = { files: PACKS[p][2], saved: 0, bytes: PACKS[p][1], here: 0, kept: k.indexOf(p) >= 0, played: pl.indexOf(p) >= 0 }; });
+    var look = k.concat(pl).filter(function (p, i, a) { return a.indexOf(p) === i && PACKS[p] && (!only || only.indexOf(p) >= 0); });
+    return Promise.all(look.map(function (p) {
       return list(p).then(function (l) {
         if (!l) return;
         return Promise.all(Object.keys(l.files).map(function (f) {
-          return cache.match(keyFor(f, l.files[f])).then(function (hit) { if (hit && hit.headers.get(HASH) === l.files[f]) out[p].saved += 1; });
+          return cache.match(keyFor(f, l.files[f])).then(function (hit) {
+            if (!hit) return;
+            out[p].saved += 1;
+            out[p].here += (l.sizes && l.sizes[f]) || Number(hit.headers.get("content-length")) || 0;
+          });
         }));
       }).catch(function () {});
     })).then(function () { return { type: "asmau-status", packs: out }; });
@@ -194,16 +220,15 @@ function migrate() {
       return Promise.all([old.keys(), caches.open(FILES)]).then(function (r) {
         var reqs = r[0], cache = r[1], games = {};
         return Promise.all(reqs.map(function (rq) {
-          var f = relOf(rq.url), m = /^games\/([^/]+)\//.exec(f);
+          var f = relOf(rq.url), m = /^games\/[^/]+\/assets\//.exec(f);
           return old.match(rq).then(function (res) {
             var h = res && res.headers.get(HASH);
             if (!res || !h) return;
-            if (m) games[m[1]] = 1;
+            if (m) games[packFor(f)] = 1;                  // the game, and the voice it was saved in
             return cache.put(keyFor(f, h), res);
           });
         })).then(function () {
-          var add = [];
-          Object.keys(games).forEach(function (g) { add.push(g, g + "@w"); });
+          var add = Object.keys(games);                     // saved whole by the old release: kept whole
           return kept().then(function (k) { return metaPut("kept", k.concat(add.filter(function (p) { return k.indexOf(p) < 0; }))); });
         });
       });
@@ -234,7 +259,7 @@ self.addEventListener("message", function (event) {
   } else if (d.type === "asmau-drop") {
     event.waitUntil(drop([].concat(d.packs || [])));
   } else if (d.type === "asmau-status" && event.ports && event.ports[0]) {
-    event.waitUntil(status().then(function (s) { event.ports[0].postMessage(s); }));
+    event.waitUntil(status(d.packs).then(function (s) { event.ports[0].postMessage(s); }));
   }
 });
 
@@ -260,8 +285,9 @@ self.addEventListener("fetch", function (event) {
   // a picture or sound by its R2 address: saved copy first, the address never changes meaning
   if (req.url.indexOf(MEDIA_BASE) === 0) {
     var h = req.url.slice(MEDIA_BASE.length).split("/")[0];
+    var rest = req.url.slice(MEDIA_BASE.length).split("/").slice(1).join("/");
     event.respondWith(fromCache(req.url).then(function (hit) {
-      return hit || fetch(req).then(function (res) { return save(req.url, res, h); });
+      return hit || fetch(req).then(function (res) { if (res && res.ok) notePlayed(packFor(rest)); return save(req.url, res, h); });
     }));
     return;
   }
@@ -287,6 +313,9 @@ self.addEventListener("fetch", function (event) {
       var timer = setTimeout(function () { fromCache(key).then(function (hit) { if (hit && !settled) { settled = true; resolve(hit); } }); }, 4000);
       fetch(req, { cache: "no-cache" }).then(function (res) {
         clearTimeout(timer);
+        // a game's own pages and data are kept as it is played, so it opens again without internet
+        var g = /^games\/([^/]+)\//.exec(rel);
+        if (g && res && res.ok && url.search === "") { save(key, res); notePlayed(g[1]); }
         if (!settled) { settled = true; resolve(res); }
       }).catch(function () {
         clearTimeout(timer);

@@ -18,7 +18,8 @@ module.exports = async function () {
     // what each pack holds (scripts/build-offline.js writes packs/<pack>.json); the saved copies are in "asmau-files"
     const PK = {}; for (const f of fs.readdirSync(path.join(root, "packs"))) PK[f.slice(0, -5)] = Object.keys(JSON.parse(fs.readFileSync(path.join(root, "packs", f), "utf8")).files).length;
     const core = PK.core, yusuf = PK.yusuf + PK["yusuf@w"], yusufMan = PK["yusuf@m"];
-    const allOneVoice = Object.keys(PK).filter((p) => !p.endsWith("@m")).reduce((n, p) => n + PK[p], 0);
+    // an English-speaking family with the woman's voice: each game and its @w narration (not @m, not another language)
+    const allOneVoice = Object.keys(PK).filter((p) => !p.includes("@") || p.endsWith("@w")).reduce((n, p) => n + PK[p], 0);
     const count = (re) => page.evaluate(async (src) => { const re = new RegExp(src);
       return (await (await caches.open("asmau-files")).keys()).filter((r) => re.test(new URL(r.url).pathname)).length; }, re.source);
     T.check(await count(/./) === core, `the first visit saves the ${core} files of the home page only (found ${await count(/./)})`);

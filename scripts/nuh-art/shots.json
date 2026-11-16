@@ -113,8 +113,8 @@
   ]
  },
  "n5-b": {
-  "alt": "Nuh stands in front of the believers, his arms spread wide to keep them close, while the proud chiefs point and frown.",
-  "scene": "a tall, strong, kind old man with deep dark brown skin, a full white beard and short white hair, in a long simple indigo-blue robe over a cream tunic stands in front of a small group of ordinary believers with deep dark brown skin: men in plain sand-coloured and white tunics, women in long simple dresses with headscarves that fully cover their hair, and a few children, his arms spread wide to keep them close, while three proud rich men with deep dark brown skin in heavy red and gold robes and large turbans, with gold rings and folded arms point and frown.",
+  "alt": "Nuh stands in front of the believers, his arms spread wide to keep them close, while the proud chiefs point and frown; every person has deep dark brown skin, the women…",
+  "scene": "a tall, strong, kind old man with deep dark brown skin, a full white beard and short white hair, in a long simple indigo-blue robe over a cream tunic stands in front of a small group of ordinary believers with deep dark brown skin: men in plain sand-coloured and white tunics, women in long simple dresses with headscarves that fully cover their hair, and a few children, his arms spread wide to keep them close, while three proud rich men with deep dark brown skin in heavy red and gold robes and large turbans, with gold rings and folded arms point and frown; every person has deep dark brown skin, the women and girls too.",
   "who": [
    "NUH",
    "BELIEVERS",
@@ -144,11 +144,10 @@
   ]
  },
  "n6-c": {
-  "alt": "Nuh and two of the believers measure and saw long planks of wood in a sunny clearing, wood shavings on the ground.",
-  "scene": "a tall, strong, kind old man with deep dark brown skin, a full white beard and short white hair, in a long simple indigo-blue robe over a cream tunic and two of a small group of ordinary believers with deep dark brown skin: men in plain sand-coloured and white tunics, women in long simple dresses with headscarves that fully cover their hair, and a few children measure and saw long planks of wood in a sunny clearing, wood shavings on the ground.",
+  "alt": "Nuh and two grown men with deep dark brown skin measure and saw long planks of wood in a sunny clearing, wood shavings on the ground. No women or children.",
+  "scene": "a tall, strong, kind old man with deep dark brown skin, a full white beard and short white hair, in a long simple indigo-blue robe over a cream tunic and two grown men with deep dark brown skin measure and saw long planks of wood in a sunny clearing, wood shavings on the ground. No women or children.",
   "who": [
-   "NUH",
-   "BELIEVERS"
+   "NUH"
   ]
  },
  "n6-d": {
@@ -199,7 +198,7 @@
  },
  "n8-c": {
   "alt": "Animals walk two by two up a long wooden ramp into the Ark in the rain: a pair of elephants, a pair of camels, a pair of giraffes, a pair of sheep, a pair of lions,…",
-  "scene": "Animals walk two by two up a long wooden ramp into a huge simple wooden ship built of long planks held with big iron nails, with a high curved hull and a wooden roof over its deck in the rain: a pair of elephants, a pair of camels, a pair of giraffes, a pair of sheep, a pair of lions, birds flying in above them.",
+  "scene": "Animals walk two by two up a long wooden ramp into a huge simple wooden ship built of long planks held with big iron nails, with a high curved hull and a wooden roof over its deck in the rain: a pair of elephants, a pair of camels, a pair of giraffes, a pair of sheep, a pair of lions, birds flying in above them. No people at all, and nothing modern.",
   "who": [
    "ARK"
   ]

@@ -62,7 +62,7 @@ chapter("n5", "🤗", "Everyone Is Welcome", "11:27-31", [], null);
 s("a", "village", "The proud chiefs of the people sneered: you are only a man like us! And the only people who follow you are the lowest of us.",
   "{CHIEFS} stand with their arms folded and noses in the air in the village square, looking down on {NUH}, who stands calmly with a few poor followers in patched clothes.", { mood: "tense" });
 s("b", "village", "They wanted Nuh to send his followers away. But Nuh said: I will never drive away the believers. Who would help me against Allah if I did?",
-  "{NUH} stands in front of {BELIEVERS}, his arms spread wide to keep them close, while {CHIEFS} point and frown.");
+  "{NUH} stands in front of {BELIEVERS}, his arms spread wide to keep them close, while {CHIEFS} point and frown; every person has deep dark brown skin, the women and girls too.");
 s("c", "village", "And Nuh said: I do not ask you for any reward. My reward comes only from Allah.",
   "{NUH} sits on a mat in the shade with his hands open and empty, speaking kindly; a bowl of plain dates and a cup of water beside him.");
 srt("welcome", "village", "Welcome everyone, like Nuh. Is it welcoming, or not?", ["Welcoming", "🤗"], ["Not welcoming", "🚫"], [
@@ -77,7 +77,7 @@ s("a", "dusk", "Then Allah told Nuh: no more of your people will believe, apart 
 s("b", "dawn", "And Allah said: build the Ark, under Our eyes, and as We teach you.",
   "{NUH} stands at sunrise beside a great pile of long wooden planks and tree trunks on open ground, looking up at the sky, ready to begin.", { mood: "awe" });
 s("c", "field", "It is told that Allah taught Nuh, step by step, how to build it.",
-  "{NUH} and two of {BELIEVERS} measure and saw long planks of wood in a sunny clearing, wood shavings on the ground.", { src: TAF });
+  "{NUH} and two grown men with deep dark brown skin measure and saw long planks of wood in a sunny clearing, wood shavings on the ground. No women or children.", { src: TAF });
 p("build", "planks", "field", "Help build the Ark. Tap to fit every plank.", { n: 8, icon: "🪵", cols: 4 }, { img: "c" });
 s("d", "field", "The Ark was made of wooden planks, held together with nails.",
   "Close up: strong hands with deep dark brown skin hammer a big iron nail into a thick wooden plank of {ARK}, wood shavings flying.");

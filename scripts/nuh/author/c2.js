@@ -18,7 +18,7 @@ s("a", "storm", "Then Allah's command came. Water burst up out of the ground, ev
 s("b", "storm", "And the gates of the sky opened, and the rain poured down.",
   "Heavy rain pours from dark rolling clouds over {VILLAGE}; puddles grow into streams between the round houses. No people outside.", { mood: "tense" });
 s("c", "field", "Allah said: take into the Ark a pair of every kind of animal.",
-  "Animals walk two by two up a long wooden ramp into {ARK} in the rain: a pair of elephants, a pair of camels, a pair of giraffes, a pair of sheep, a pair of lions, birds flying in above them.", { mood: "joy" });
+  "Animals walk two by two up a long wooden ramp into {ARK} in the rain: a pair of elephants, a pair of camels, a pair of giraffes, a pair of sheep, a pair of lions, birds flying in above them. No people at all, and nothing modern.", { mood: "joy" });
 p("memory", "pairs", "field", "Find the pairs! Two of every kind.", { icons: ["🐘", "🐪", "🦒", "🐑", "🦁", "🐦"] });
 p("journey", "board", "field", "Lead the animals into the Ark.", { from: "🌾", to: "🚢", icon: "🐘", steps: 6 }, { img: "c" });
 s("d", "field", "And Nuh took his family, and the believers. Only a few believed with him. It is told there were about eighty of them.",

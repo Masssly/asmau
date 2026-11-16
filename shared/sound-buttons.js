@@ -103,8 +103,58 @@
       (iphone ? " On an iPhone or iPad the voice button only turns the voice on or off: use the device's own volume buttons for how loud it is." : "");
     box.parentNode.insertBefore(note, box.nextSibling);
   }
+  // The little ones' games: one small 🔊 in the corner. A grown-up presses and holds it, and the three buttons
+  // unfold beside it; they fold away again after a few quiet seconds. A child's quick tap only says
+  // "Grown-ups: press and hold", so the game is not disturbed. Put <div data-sound-dock></div> where it goes.
+  var HOLD_MS = 700, IDLE_MS = 5000;
+  var dockCss = "" +
+    "[data-sound-dock]{position:relative;display:inline-flex;align-items:center}" +
+    ".snd-dock-btn{width:44px;height:44px;border-radius:50%;border:0;background:rgba(255,255,255,.1);color:inherit;font-size:20px;" +
+    "cursor:pointer;position:relative;overflow:hidden;touch-action:none;-webkit-user-select:none;user-select:none;-webkit-touch-callout:none}" +
+    ".snd-dock-btn::after{content:'';position:absolute;inset:0;border-radius:50%;background:rgba(240,184,75,.45);transform:scale(0)}" +
+    ".snd-dock-btn.holding::after{transform:scale(1);transition:transform " + HOLD_MS + "ms linear}" +
+    ".snd-dock-btn:focus-visible{outline:3px solid #f0b84b;outline-offset:2px}" +
+    ".snd-tray{position:absolute;top:calc(100% + 8px);right:0;z-index:50;display:flex;gap:10px;padding:10px;border-radius:99px;" +
+    "background:#15244a;border:1px solid #2d3f74;box-shadow:0 10px 24px rgba(0,0,0,.45)}" +
+    ".snd-tray[hidden]{display:none}" +
+    ".snd-tray button{width:48px;height:48px;border-radius:50%;border:0;background:rgba(255,255,255,.1);font-size:22px;cursor:pointer}";
+  var ds = document.createElement("style"); ds.textContent = dockCss; (document.head || document.documentElement).appendChild(ds);
+  function dock(box) {
+    box.innerHTML = "";
+    var btn = document.createElement("button");
+    btn.type = "button"; btn.className = "snd-dock-btn"; btn.textContent = "🔊";
+    btn.setAttribute("aria-label", "Sound and volume, for grown-ups (press and hold)");
+    btn.setAttribute("aria-expanded", "false");
+    var tray = document.createElement("div"); tray.className = "snd-tray"; tray.hidden = true; tray.setAttribute("role", "group"); tray.setAttribute("aria-label", "Sound and volume");
+    ["voice", "sounds", "music"].forEach(function (kind) {
+      var b = document.createElement("button"); b.type = "button"; b.setAttribute("data-sound-btn", kind); b.textContent = ICONS[kind]; tray.appendChild(b);
+    });
+    box.appendChild(btn); box.appendChild(tray);
+    var holdTimer = null, idle = null;
+    function fold() { tray.hidden = true; btn.setAttribute("aria-expanded", "false"); clearTimeout(idle); }
+    function rest() { clearTimeout(idle); idle = setTimeout(fold, IDLE_MS); }
+    function unfold() { tray.hidden = false; btn.setAttribute("aria-expanded", "true"); paintAll(); rest(); }
+    btn.addEventListener("pointerdown", function (e) {
+      e.preventDefault();
+      if (!tray.hidden) { fold(); return; }
+      btn.classList.add("holding");
+      holdTimer = setTimeout(function () { holdTimer = null; btn.classList.remove("holding"); unfold(); }, HOLD_MS);
+    });
+    function up() {
+      btn.classList.remove("holding");
+      if (holdTimer) { clearTimeout(holdTimer); holdTimer = null; toast("🔊 Grown-ups: press and hold"); }
+    }
+    ["pointerup", "pointercancel", "pointerleave"].forEach(function (ev) { btn.addEventListener(ev, up); });
+    btn.addEventListener("contextmenu", function (e) { e.preventDefault(); });
+    // the keyboard (Enter or Space) opens it straight away: a child does not use one
+    btn.addEventListener("click", function (e) { if (e.detail === 0) { if (tray.hidden) unfold(); else fold(); } });
+    tray.addEventListener("click", rest);
+    document.addEventListener("pointerdown", function (e) { if (!tray.hidden && !box.contains(e.target)) fold(); }, true);
+  }
+
   function init() {
     Array.prototype.forEach.call(document.querySelectorAll("[data-sound-levels]"), build);
+    Array.prototype.forEach.call(document.querySelectorAll("[data-sound-dock]"), dock);
     paintAll();
   }
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init); else init();

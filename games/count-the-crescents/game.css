@@ -323,3 +323,7 @@ body.no-arabic .arabic { visibility: hidden; }
   .level-more .level-num { font-size: min(8vh, 72px); }
   .level-cap { font-size: 20px; }
 }
+
+/* the corner with the grown-ups' sound button (shared/sound-buttons.js) and For parents */
+.bar-end { display: flex; align-items: center; gap: 8px; }
+.bar .snd-dock-btn { width: 36px; height: 36px; font-size: 17px; }

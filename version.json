@@ -1,12 +1,18 @@
 {
-  "version": "2026.11.35",
+  "version": "2026.11.36",
   "date": "2026-11-16",
-  "buildId": "082df688fbb7",
+  "buildId": "3c38daedda79",
   "notes": [
-    "Built for many more games: the site downloads far less; games are kept as they are played, and parents can download a whole game (with its size) and delete it to free space",
-    "Home page: search, folding sections, covers that load as you scroll; Without internet shows each game's size and state"
+    "Steadier offline lists: they no longer change depending on the computer that builds the release"
   ],
   "history": [
+    {
+      "version": "2026.11.36",
+      "date": "2026-11-16",
+      "notes": [
+        "Steadier offline lists: they no longer change depending on the computer that builds the release"
+      ]
+    },
     {
       "version": "2026.11.35",
       "date": "2026-11-16",

@@ -116,11 +116,11 @@ function compute({ prune = false } = {}) {
   const onDisk = walk(ROOT, []);
   const files = [...new Set([...onDisk, ...Object.keys(gen)])].sort()
     .filter((f) => !isNote(f));                 // the notes travel in the game's notes.json bundle
-  const packs = {}, whole = crypto.createHash("sha1"), missing = [];
+  const packs = {}, all = {}, missing = [];
   const add = (f, h, bytes) => {
     const p = packOf(f), pk = packs[p] || (packs[p] = { files: {}, bytes: 0 });
     pk.files[f] = h; pk.bytes += bytes;
-    if (f !== "version.json") whole.update(f + "\0" + h + "\0");   // the release record must not change the thing it records
+    if (f !== "version.json") all[f] = h;          // the release record must not change the thing it records
   };
   for (const f of files) {
     const b = gen[f] !== undefined ? Buffer.from(gen[f]) : fs.readFileSync(path.join(ROOT, f));
@@ -145,10 +145,14 @@ function compute({ prune = false } = {}) {
     }
     pk.bytes = Object.keys(pk.files).reduce((n, f) => n + (isR2(f) ? pk.sizes[f] : (gen[f] !== undefined ? Buffer.byteLength(gen[f]) : (fs.existsSync(path.join(ROOT, f)) ? fs.statSync(path.join(ROOT, f)).size : 0))), 0);
   }
+  const whole = crypto.createHash("sha1");
+  for (const f of Object.keys(all).sort()) whole.update(f + "\0" + all[f] + "\0");
   return { build: whole.digest("hex").slice(0, 12), packs, missing, gen };
 }
 
-function packJson(pk) { return JSON.stringify({ bytes: pk.bytes, files: pk.files, sizes: pk.sizes }, null, 0).replace(/,"/g, ',\n"') + "\n"; }
+// sorted, so the lists are the same whether or not this computer has the media (missing files are added last)
+const sorted = (o) => { const out = {}; Object.keys(o || {}).sort().forEach((k) => { out[k] = o[k]; }); return out; };
+function packJson(pk) { return JSON.stringify({ bytes: pk.bytes, files: sorted(pk.files), sizes: sorted(pk.sizes) }, null, 0).replace(/,"/g, ',\n"') + "\n"; }
 
 function release() {
   try { return JSON.parse(fs.readFileSync(path.join(ROOT, "version.json"), "utf8")); } catch (e) { return null; }

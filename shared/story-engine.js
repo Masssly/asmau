@@ -826,7 +826,13 @@
       if (finished || stage.querySelectorAll(".wheat").length >= 3) return;
       var w = mkIco("button", "wheat", opts.icon || "🌾");
       w.setAttribute("aria-label", opts.icon ? "tap me" : "grain");
-      place(w, 10 + Math.random() * 56, 58 + Math.random() * 30);
+      // a free spot, clear of the ones already showing, so none hides another
+      var others = Array.prototype.map.call(stage.querySelectorAll(".wheat:not(.fly)"), function (o) { return [o._x, o._y]; });
+      var x, y, tries = 0;
+      do { x = 10 + Math.random() * 56; y = 58 + Math.random() * 30; tries++; }
+      while (tries < 30 && others.some(function (o) { return Math.abs(o[0] - x) < 16 && Math.abs(o[1] - y) < 16; }));
+      w._x = x; w._y = y;
+      place(w, x, y);
       w.addEventListener("click", function () {
         if (w.disabled || finished) return;
         w.disabled = true;

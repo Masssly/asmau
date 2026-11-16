@@ -29,7 +29,12 @@ module.exports = async function () {
   T.check((await p.evaluate(() => fetch("story.js").then((r) => r.text()))).includes("// release 2"), "the changed script is the new one at once");
   const len = await p.evaluate(async () => (await (await caches.open("asmau-media")).match(new URL("assets/img/c1-b.webp", location.href).href)).headers.get("content-length"));
   T.check(Number(len) === fs.statSync(path.join(tmp, "games/yusuf/assets/img/c1-b.webp")).size, "the changed picture itself was replaced");
-  // release 3: only a page changes; no media at all
+  // release 3: only a page changes; no media at all. First let the downloads of the earlier releases finish (the
+  // first visit saves the game's whole pack in the background), so that only this release's requests are counted.
+  for (let quiet = 0, last = -1, t = 0; quiet < 3 && t < 120; t++) {
+    await p.waitForTimeout(1000);
+    const n = site.log.length; quiet = n === last ? quiet + 1 : 0; last = n;
+  }
   fs.appendFileSync(path.join(tmp, "games/yusuf/story.js"), "// release 3\n");
   execSync("node scripts/build-offline.js", { cwd: tmp, stdio: "ignore" });
   site.log.length = 0;

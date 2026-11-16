@@ -47,8 +47,10 @@ module.exports = async function () {
     await page.click("#parentsBtn"); await page.click('[data-go="offline"]'); await page.waitForTimeout(800);
     T.check(/Save every game \(about \d+ MB\)/.test(await page.textContent("#saveAllBtn")), "Without internet offers to save every game, with its size: " + await page.textContent("#saveAllBtn"));
     await page.click("#saveAllBtn");
-    for (let t = 0; t < 120 && !/Every game is saved/.test(await page.textContent("#saveAllStatus")); t++) await page.waitForTimeout(1000);
-    T.check(/Every game is saved/.test(await page.textContent("#saveAllStatus")) && await count(/./) === SHELL.length + MEDIA.length - men, `Save every game saves all ${MEDIA.length - men} pictures, sounds and fonts, in the chosen voice only`);
+    // the whole site is over 2,000 files: allow up to five minutes on a slow test machine
+    for (let t = 0; t < 300 && !/Every game is saved/.test(await page.textContent("#saveAllStatus")); t++) await page.waitForTimeout(1000);
+    const savedAll = await count(/./), statusText = await page.textContent("#saveAllStatus");
+    T.check(/Every game is saved/.test(statusText) && savedAll === SHELL.length + MEDIA.length - men, `Save every game saves all ${MEDIA.length - men} pictures, sounds and fonts, in the chosen voice only (saved ${savedAll - SHELL.length}; status: ${statusText.slice(0, 60)})`);
     // For parents > Your voice: choosing the man's voice fetches it for the games already on this device
     await page.click('#parentsBack, .sheet-backbtn').catch(() => {});
     await page.evaluate(() => { const b = document.querySelector('[data-voice="m"]'); b.click(); });

@@ -7,8 +7,8 @@
     ADMIN_TOKEN=... node scripts/publish-media.js --backfill   also publish and log every older
                                                                version found in git history
 
-  Run it before pushing a release that adds or changes pictures. If you forget, nothing
-  breaks: the service worker falls back to the copy in the repository.
+  Run it before pushing a release that adds or changes pictures: a game's pictures and sounds are
+  not in git (scripts/SCALING.md), so R2 is the only place the site can get them from.
 
   History: nothing published is ever deleted. Every version of a file stays in the bucket at
   media/<first 10 hex of its SHA-1>/<path>, and history/index.json in the bucket logs them all:
@@ -31,10 +31,13 @@ const token = process.env.ADMIN_TOKEN;
 if (!token) { console.error("Set ADMIN_TOKEN (the Worker's admin secret)."); process.exit(1); }
 
 (async () => {
-  const { media } = build.compute();
+  // every picture and sound the site uses, from the pack lists (packs/<pack>.json, written by build-offline.js);
+  // a file that is not on this computer is already on R2 (that is where it came from)
+  const media = {};
+  for (const pk of Object.values(build.readPacks())) for (const [f, h] of Object.entries(pk.files || {})) if (build.ON_R2.test(f)) media[f] = h;
   const auth = { authorization: "Bearer " + token };
   // [file, key, bytes-getter]: today's files, and with --backfill every older version in git
-  const jobs = Object.keys(media).filter((f) => build.ON_R2.test(f)).map((f) => [f, media[f] + "/" + f, () => fs.readFileSync(path.join(ROOT, f))]);
+  const jobs = Object.keys(media).filter((f) => fs.existsSync(path.join(ROOT, f))).map((f) => [f, media[f] + "/" + f, () => fs.readFileSync(path.join(ROOT, f))]);
   const seen = [];   // [file, hash, date] of older versions, for the log
   if (process.argv.includes("--backfill")) {
     const log = git("log", "--all", "--format=@%H %cs", "--name-only", "--diff-filter=AM", "--", "games", "tools").toString().split("\n");

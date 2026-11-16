@@ -25,3 +25,7 @@ scripts/ibn-battuta-art/refs/*.png
 scripts/rahmah-art/out/
 scripts/rahmah-art/old/
 scripts/rahmah-art/refs/*.png
+
+# A game's pictures and sounds live on R2, not in git (scripts/SCALING.md): packs/ lists them; fetch them with
+# node scripts/fetch-media.js, publish new ones with scripts/publish-media.js.
+games/*/assets/

@@ -19,6 +19,15 @@ const fs = require("fs");
 const path = require("path");
 const vm = require("vm");
 const offline = require("./build-offline.js");
+// A game's pictures and sounds are on R2, not in git (scripts/SCALING.md): a file counts as present when it is on this
+// computer or listed in the game's pack lists (packs/), which is where the site gets it from.
+const LISTED = {};
+for (const pk of Object.values(offline.readPacks())) for (const f of Object.keys(pk.files || {})) LISTED[f] = 1;
+function filesIn(dir) {
+  const out = new Set(fs.existsSync(path.join(ROOT, dir)) ? fs.readdirSync(path.join(ROOT, dir)) : []);
+  for (const f of Object.keys(LISTED)) if (f.startsWith(dir + "/") && !f.slice(dir.length + 1).includes("/")) out.add(f.slice(dir.length + 1));
+  return [...out];
+}
 
 const ROOT = path.join(__dirname, "..");
 const errors = [];
@@ -113,7 +122,7 @@ for (const slug of slugs) {
   const lines = json(narrationFile) || [];
   const ids = new Set();
   const audioDir = dir + "/assets/audio";
-  const audio = fs.existsSync(path.join(ROOT, audioDir)) ? fs.readdirSync(path.join(ROOT, audioDir)) : [];
+  const audio = filesIn(audioDir);
   for (const l of lines) {
     if (!l || typeof l.id !== "string" || !/^[a-z0-9-]+$/.test(l.id)) { fail(narrationFile + ": bad id " + JSON.stringify(l && l.id)); continue; }
     if (ids.has(l.id)) fail(narrationFile + ": duplicate id '" + l.id + "'");
@@ -132,7 +141,7 @@ for (const slug of slugs) {
   }
   // the man's voice (assets/audio-m, chosen by families in For parents > Your voice): every line a man's clip too
   const manDir = dir + "/assets/audio-m";
-  const man = fs.existsSync(path.join(ROOT, manDir)) ? fs.readdirSync(path.join(ROOT, manDir)) : [];
+  const man = filesIn(manDir);
   const noMan = lines.filter((l) => l && l.id && !man.includes(l.id + ".mp3")).map((l) => l.id);
   if (noMan.length) fail(manDir + ": " + noMan.length + " lines have no clip in the man's voice (VOICE=m PROJECT=asmau-assets python3 scripts/generate-voice-gemini.py " + dir + "), e.g. " + noMan.slice(0, 3).join(", "));
   for (const f of man) if (!ids.has(f.replace(/\.mp3$/, ""))) fail(manDir + "/" + f + ": no line in narration.json (orphaned audio)");
@@ -230,7 +239,7 @@ for (const slug of slugs) {
     let art = {};
     try { art = load([dir + "/art.js"]).STORY_ART || {}; } catch (e) { fail(dir + "/art.js: failed to load (" + e.message + ")"); }
     const imgDir = dir + "/assets/img";
-    const files = fs.existsSync(path.join(ROOT, imgDir)) ? fs.readdirSync(path.join(ROOT, imgDir)) : [];
+    const files = filesIn(imgDir);
     const bgs = new Set();
     // pictures used as icons ("img:<key>") anywhere in the story's activities
     const imgIcons = new Set((JSON.stringify(story).match(/"img:[A-Za-z0-9_-]+"/g) || []).map((s) => s.slice(5, -1)));

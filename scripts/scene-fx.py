@@ -121,6 +121,12 @@ def main():
             print("  failed", i, str(e)[:100], flush=True)
     with ThreadPoolExecutor(6) as ex:
         list(ex.map(job, todo))
+    # The Prophet (peace be upon him) is never drawn: the pictures where he is present (listed by the game's
+    # author tools in scripts/<slug>-art/presence.json) get a soft breeze across them instead.
+    pres = os.path.join(os.path.dirname(os.path.abspath(__file__)), os.path.basename(game.rstrip("/")) + "-art", "presence.json")
+    for i in (json.load(open(pres)) if os.path.exists(pres) else []):
+        if i in fx and not any(e.get("e") == "breeze" for e in fx[i]):
+            fx[i].append({"e": "breeze", "box": [0.0, 0.25, 1.0, 0.85]})
     json.dump(dict(sorted(fx.items())), open(path, "w"), indent=0)
     used = sum(1 for v in fx.values() if v)
     print("%s: %d pictures looked at, %d with effects, %d without" % (game, len(todo), used, len(fx) - used))

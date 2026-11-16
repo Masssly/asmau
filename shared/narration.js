@@ -6,7 +6,9 @@
     2. assets/audio/<id>.mp3 committed in the repo: the games' default voice,
        Google's Gemini text-to-speech, "Aoede" as a soft West African woman
        (scripts/generate-voice-gemini.py), for English and, since 15 November
-       2026 at the owner's choice, Arabic too. A parent's recording replaces it.
+       2026 at the owner's choice, Arabic too. Or, if the family chose the man's
+       voice (For parents > Your voice; localStorage "asmau-voice" = "m"),
+       assets/audio-m/<id>.mp3, "Achird". A parent's recording replaces either.
     3. The device's own speechSynthesis voice, for ENGLISH only.
 
   The device voice never reads Arabic: it would guess the pronunciation, and a
@@ -39,6 +41,8 @@ window.AsmauNarration = (function () {
   }
 
   function clipKey(game, id) { return game + ":" + id; }
+  // which computer voice reads the lines a parent has not recorded: "w" (the woman's, the default) or "m" (the man's)
+  function voiceSet() { try { return localStorage.getItem("asmau-voice") === "m" ? "m" : "w"; } catch (e) { return "w"; } }
 
   function getRecordedClip(game, id) {
     return openDb().then(function (db) {
@@ -281,16 +285,20 @@ window.AsmauNarration = (function () {
     opts = opts || {};
     if (voiceLevel() === 0) { stop(); return Promise.resolve(); }      // the voice button is at "off"
     var lang = opts.lang || "en";
-    var base = opts.audioBase || "assets/audio/";
+    var man = voiceSet() === "m", base = opts.audioBase || (man ? "assets/audio-m/" : "assets/audio/");
 
     stop();
     var my = token;
 
     var file = base + id + ".mp3";
+    // a line the man's voice has not read yet is read by the woman's voice
+    function committed() {
+      return playSrc(file, my, false).then(function (ok) { return ok || (man && !opts.audioBase && my === token ? playSrc("assets/audio/" + id + ".mp3", my, false) : ok); });
+    }
     return getRecordedClip(game, id).then(function (blob) {
-      if (!blob) return playSrc(file, my, false);
+      if (!blob) return committed();
       // a recording this device cannot play (an old format) falls through to the committed file
-      return playSrc(URL.createObjectURL(blob), my, true).then(function (ok) { return ok || playSrc(file, my, false); });
+      return playSrc(URL.createObjectURL(blob), my, true).then(function (ok) { return ok || committed(); });
     }).then(function (played) {
       if (!played) return speakFallback(text, lang, my);   // (never for Arabic; see speakFallback)
     }).catch(function () {
@@ -303,6 +311,7 @@ window.AsmauNarration = (function () {
     stop: stop,
     setVolume: setVolume,
     getRecordedClip: getRecordedClip,
+    voiceSet: voiceSet,
     saveRecordedClip: saveRecordedClip,
     deleteRecordedClip: deleteRecordedClip,
     listRecordedIds: listRecordedIds,

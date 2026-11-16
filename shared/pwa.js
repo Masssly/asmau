@@ -30,6 +30,8 @@
   }
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", showVersion); else showVersion();
 
+  function voiceSet() { try { return localStorage.getItem("asmau-voice") === "m" ? "m" : "w"; } catch (e) { return "w"; } }
+
   if (!("serviceWorker" in navigator)) return;
 
   var script = document.currentScript;
@@ -65,8 +67,9 @@
 
   navigator.serviceWorker.ready.then(function (reg) {
     // a game saves its own pictures and sounds the first time it is opened (sw.js keeps them up to date after that)
+    // ... in the voice the family chose (For parents > Your voice): <slug> is the pictures, <slug>@w or @m the voice
     var game = /\/games\/([^/]+)\//.exec(location.pathname);
-    if (game && reg.active) reg.active.postMessage({ type: "asmau-want", packs: [game[1]] });
+    if (game && reg.active) reg.active.postMessage({ type: "asmau-want", packs: [game[1], game[1] + "@" + voiceSet()], voice: voiceSet() });
     root.setAttribute("data-offline", "ready");
     window.dispatchEvent(new Event("asmau-offline"));
   });

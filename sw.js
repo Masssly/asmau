@@ -20,7 +20,7 @@
 
 // BEGIN GENERATED
 const RELEASE = "2026.11.31";
-const BUILD = "41d07a06d2f4";
+const BUILD = "b7b25ae48d67";
 const SHELL = [
   "./",
   "app.webmanifest",
@@ -232,6 +232,22 @@ const MEDIA = {
   "fonts/baloo2-latin.woff2": "ae196042c8",
   "fonts/mada-arabic.woff2": "5016ce2f7e",
   "fonts/mada-latin.woff2": "fd796dc139",
+  "games/adam/assets/audio-m/d1-a.mp3": "41e1224e33",
+  "games/adam/assets/audio-m/d1-b.mp3": "b0c32a9fb7",
+  "games/adam/assets/audio-m/d1-c.mp3": "5bc114f703",
+  "games/adam/assets/audio-m/d1-mem.mp3": "b7cdc94e22",
+  "games/adam/assets/audio-m/d1-q-no.mp3": "9b7f201a9d",
+  "games/adam/assets/audio-m/d1-q-opt1.mp3": "5375718837",
+  "games/adam/assets/audio-m/d1-q-opt2.mp3": "2ca9da002c",
+  "games/adam/assets/audio-m/d1-q.mp3": "0faa898739",
+  "games/adam/assets/audio-m/d2-a.mp3": "3ea5bd3431",
+  "games/adam/assets/audio-m/d2-b.mp3": "f5dbfcd6fa",
+  "games/adam/assets/audio-m/d2-c.mp3": "7534713c0d",
+  "games/adam/assets/audio-m/d2-d.mp3": "8875923c4c",
+  "games/adam/assets/audio-m/d2-gather.mp3": "174f77b3b4",
+  "games/adam/assets/audio-m/d2-q-no.mp3": "d0946d4360",
+  "games/adam/assets/audio-m/d2-q-opt2.mp3": "07de63b646",
+  "games/adam/assets/audio-m/d3-q.mp3": "4639ee881d",
   "games/adam/assets/audio/d1-a.mp3": "04c403e198",
   "games/adam/assets/audio/d1-b.mp3": "478a628781",
   "games/adam/assets/audio/d1-c.mp3": "262e8abbab",
@@ -1969,7 +1985,7 @@ const MEDIA = {
   "icons/icon-maskable-512.png": "531e21c419",
   "icons/og.png": "887e764bc5"
 };
-const PACK_BYTES = {"core":870678,"adam":6888842,"count-the-crescents":584828,"musa":22977703,"nana-asmau":6023155,"nuh":7381154,"tap-and-say":1472336,"umm-ayman":6824360,"yusuf":12712440};
+const PACK_BYTES = {"core":870678,"adam@m":500272,"adam@w":4316508,"adam":2572334,"count-the-crescents@w":584828,"musa@w":15159879,"musa":7817824,"nana-asmau@w":3639073,"nana-asmau":2384082,"nuh@w":4156508,"nuh":3224646,"tap-and-say@w":1472336,"umm-ayman@w":3632276,"umm-ayman":3192084,"yusuf@w":7039872,"yusuf":5672568};
 const MEDIA_BASE = "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/";
 // END GENERATED
 
@@ -1984,7 +2000,13 @@ const FRESH = /\.(?:html|js|css|json|webmanifest)$|\/$/;
 // (fonts, icons, the covers on the front page). The first visit saves only the core; a game's pack is saved when
 // the game is first opened (pwa.js asks), or all at once from For parents > Without internet. Later releases
 // update every pack already on the device, and download only what changed.
-function packOf(f) { var m = /^games\/([^/]+)\/assets\//.exec(f); return m ? m[1] : "core"; }
+// A game's narration is in two voices, each its own pack (<slug>@w, the woman's; <slug>@m, the man's): a device saves only
+// the voice its family chose. scripts/build-offline.js has the same function.
+function packOf(f) {
+  var m = /^games\/([^/]+)\/assets\/(?:(audio-m|audio)\/)?/.exec(f);
+  return m ? m[1] + (m[2] === "audio-m" ? "@m" : m[2] === "audio" ? "@w" : "") : "core";
+}
+function otherVoice(voice) { return voice === "m" ? "@w" : "@m"; }
 function relOf(url) { return new URL(url).pathname.slice(SCOPE_PATH.length); }
 function stamp(res, h) {
   var hd = new Headers(res.headers); hd.set(HASH, h);
@@ -2030,15 +2052,16 @@ function saved(cache) {
 }
 
 // Bring the packs on this device (and any asked for) up to this release: download what is new or changed.
-function syncMedia(extra) {
+function syncMedia(extra, voice) {
   return caches.open(MEDIA_CACHE).then(function (cache) {
     return saved(cache).then(function (rows) {
-      var have = {}, packs = { core: true }, all = extra === "all";
+      var have = {}, packs = { core: true }, all = extra === "all", skip = otherVoice(voice);
       rows.forEach(function (r) { have[r.f] = r; packs[packOf(r.f)] = true; });
       (all ? [] : extra || []).forEach(function (p) { packs[p] = true; });
       var rank = function (f) { return /\.(?:webp|png|jpe?g)$/i.test(f) ? 0 : (/\.woff2?$/i.test(f) ? 1 : 2); };
       // pictures first (the game waits for those), then fonts, then sounds
-      var order = Object.keys(MEDIA).filter(function (f) { return all || packs[packOf(f)]; })
+      // "all" is every game, in the chosen voice only
+      var order = Object.keys(MEDIA).filter(function (f) { var p = packOf(f); return all ? p.slice(-2) !== skip : packs[p]; })
         .sort(function (x, y) { return rank(x) - rank(y); });
       return pool(order.map(function (f) {
         return function () {
@@ -2060,7 +2083,7 @@ function syncMedia(extra) {
 
 // one download job at a time, so two requests never fetch the same files side by side
 var queue = Promise.resolve();
-function want(packs) { queue = queue.then(function () { return syncMedia(packs); }).catch(function () {}); return queue; }
+function want(packs, voice) { queue = queue.then(function () { return syncMedia(packs, voice); }).catch(function () {}); return queue; }
 
 // For parents > Without internet: how much of each pack is on this device
 function status() {
@@ -2100,7 +2123,7 @@ self.addEventListener("activate", function (event) {
 self.addEventListener("message", function (event) {
   var d = event.data || {};
   if (d.type === "asmau-want") {
-    event.waitUntil(want(d.packs === "all" ? "all" : [].concat(d.packs || [])).then(function () {
+    event.waitUntil(want(d.packs === "all" ? "all" : [].concat(d.packs || []), d.voice).then(function () {
       if (event.source) event.source.postMessage({ type: "asmau-saved", packs: d.packs });
     }));
   } else if (d.type === "asmau-status" && event.ports && event.ports[0]) {

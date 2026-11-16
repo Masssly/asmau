@@ -5,6 +5,7 @@ speak as a kind West African woman (chosen by the owner on 15 November 2026 from
 recording always replaces it.
 
   PROJECT=asmau-assets python3 scripts/generate-voice-gemini.py games/<slug> [--all]
+  VOICE=m PROJECT=asmau-assets python3 scripts/generate-voice-gemini.py games/<slug>    (the man's voice, Achird)
 
 Writes games/<slug>/assets/audio/<id>.mp3 for every line in narration.json, English and Arabic, skipping lines
 whose words have not changed since last time (remembered in scripts/voice/<slug>.json), and removes clips whose
@@ -29,6 +30,18 @@ STYLE = ("Read this aloud as a kind West African woman from Ghana or Nigeria, wi
          "accent, gently, like an auntie telling a bedtime story to young children.")
 STYLE_AR = ("Say this Arabic word or phrase clearly, with correct Arabic pronunciation, gently and warmly, as a kind "
             "West African woman would say it to a young child.")
+# The man's voice, which parents can choose instead on the home page (owner's choice, 16 November 2026, from four
+# samples): voice "Achird", a natural, calm reading voice. Made with VOICE=m; its clips go to assets/audio-m/ and
+# what was voiced is remembered in scripts/voice/<slug>.m.json.
+SET = os.environ.get("VOICE", "w")
+if SET == "m":
+    VOICE = "Achird"
+    STYLE = ("Read this aloud as a kind West African man from Ghana or Nigeria, with a warm West African English accent, "
+             "in a natural, clear storytelling voice at a calm, steady pace, like a good teacher reading a story to children.")
+    STYLE_AR = ("Say this Arabic word or phrase clearly, with correct Arabic pronunciation, warmly and calmly, as a kind "
+                "West African man would say it to a child.")
+AUDIO = "audio-m" if SET == "m" else "audio"
+MEMO = ".m.json" if SET == "m" else ".json"
 SIG = MODEL + "|" + VOICE + "|" + STYLE + "|" + STYLE_AR
 # A line of one to four words is easily "continued" by the voice (it once made up a whole story after "Four"),
 # so short lines also get this, and every clip far longer than its words allow is made again (see too_long).
@@ -98,9 +111,9 @@ def main():
         raise SystemExit(__doc__)
     game, redo = sys.argv[1], "--all" in sys.argv
     lines = json.load(open(os.path.join(game, "narration.json"), encoding="utf-8"))
-    out = os.path.join(game, "assets", "audio")
+    out = os.path.join(game, "assets", AUDIO)
     os.makedirs(out, exist_ok=True)
-    memo_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "voice", os.path.basename(os.path.normpath(game)) + ".json")
+    memo_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "voice", os.path.basename(os.path.normpath(game)) + MEMO)
     memo = json.load(open(memo_path)) if os.path.exists(memo_path) and not redo else {}
     todo = []
     for l in lines:

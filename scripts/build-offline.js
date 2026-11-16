@@ -50,7 +50,8 @@ function packOf(f) { const m = /^games\/([^/]+)\/assets\//.exec(f); return m ? m
 function compute() {
   const files = walk(ROOT, []).sort()
     // a page with no note for parents is an empty file: nothing to save for offline use
-    .filter((f) => !(/^games\/[^/]+\/parents\/.+\.md$/.test(f) && fs.statSync(path.join(ROOT, f)).size === 0));
+    .filter((f) => !(/^games\/[^/]+\/parents\/.+\.md$/.test(f) &&
+      (fs.statSync(path.join(ROOT, f)).size === 0 || /^\s*#\s*draft\b/i.test(fs.readFileSync(path.join(ROOT, f), "utf8")))));   // drafts are not shown
   const hash = crypto.createHash("sha1");
   const shell = ["./"];
   const media = {}, packBytes = {};

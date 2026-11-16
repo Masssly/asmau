@@ -15,6 +15,8 @@ That page's note is the file **`1/1.5.md`**: open the folder `1`, then the file 
 
 The change appears in the game with the next release (tell Claude, or wait for the next one).
 
+- **Drafts:** a file whose first line is `# draft …` is a suggestion from Claude, not shown in the game. Read it,
+  change or delete what you don't like, then delete that first line to put it in the game.
 - An empty file means that page has no note. Most pages start empty; each chapter's notes from before are on
   its first page (`1.1.md`, `2.1.md`, …), ready to be moved to the pages they belong to.
 - A note stays with its page: if pages are added or removed later, the files are renamed to match.

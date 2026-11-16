@@ -26,7 +26,7 @@ things work; this file holds the decisions that must not be lost between session
 ## Parents' notes
 - They live in plain text files, **one per page**: `games/<slug>/parents/<chapter>/<chapter>.<page>.md`
   (page 1.5 is `parents/1/1.5.md`), shown only on that page. Paragraphs are separated by an empty line; an
-  empty file means no note. The owner edits them on GitHub (parents/README.md says how); edits go live with
+  empty file means no note; a file starting with a `# draft` line is a suggestion the game does not show until the owner deletes that line. The owner edits them on GitHub (parents/README.md says how); edits go live with
   the next release. Write a note on the page it explains. When pages move, `scripts/build-offline.js` moves
   the files with them (parents/pages.json, never edited by hand). Never put notes back into story.js or the
   author files (the checker refuses).

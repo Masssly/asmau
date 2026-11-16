@@ -7,7 +7,8 @@
 
   The number is the one the game shows on the folded line ("For parents · page 1.5"). Each paragraph
   (separated by an empty line) is shown as one paragraph; plain text, no formatting. An empty file means no
-  note on that page. games/<slug>/parents/README.md explains this for whoever edits them.
+  note on that page; a file whose first line is "# draft" is a suggestion the game does not show until that
+  line is deleted. games/<slug>/parents/README.md explains this for whoever edits them.
 
   parents/pages.json is written by this script (never by hand): which step each page number is, and which
   pages have text. When pages are added, removed or moved in a story, sync() renames the note files so each
@@ -29,6 +30,9 @@ function story(dir) {
 function parse(text) {
   return text.split(/\r?\n\s*\r?\n/).map((p) => p.split(/\r?\n/).filter((l) => !/^#/.test(l.trim())).join(" ").trim()).filter(Boolean);
 }
+// A file whose first line is "# draft" is a suggestion waiting for the owner: the game does not show it until
+// that line is deleted.
+const isDraft = (text) => /^\s*#\s*draft\b/i.test(text);
 // every page of the story: its number ("1.5") and a name that stays the same when pages move (its line, and
 // which time that line comes up in the chapter)
 function pages(dir) {
@@ -48,9 +52,10 @@ function text(f) { return fs.existsSync(f) ? fs.readFileSync(f, "utf8") : ""; }
 function readPage(dir, key) { return parse(text(fileOf(dir, key))); }
 // all the notes of chapter n, page after page (for the checker and scripts/parent-repeats.js)
 function read(dir, n) {
-  const keys = Object.keys(pages(dir)).filter((k) => k.split(".")[0] === String(n));
+  const keys = Object.keys(pages(dir)).filter((k) => k.split(".")[0] === String(n) && !isDraft(text(fileOf(dir, k))));
   return [].concat(...keys.map((k) => readPage(dir, k)));
 }
+function drafts(dir) { return Object.keys(pages(dir)).filter((k) => isDraft(text(fileOf(dir, k)))); }
 function index(dir) {
   try { return JSON.parse(fs.readFileSync(path.join(base(dir), "pages.json"), "utf8")); } catch (e) { return null; }
 }
@@ -88,7 +93,7 @@ function sync(dir, write) {
       if (m && !cur[m[1]] && !parse(text(path.join(base(dir), d.name, f))).length) { changes.push("remove empty " + f); if (write) fs.unlinkSync(path.join(base(dir), d.name, f)); }
     });
   });
-  const want = { pages: cur, notes: Object.keys(cur).filter((k) => (write ? readPage(dir, k) : parse(text(fileOf(dir, k)))).length) };
+  const want = { pages: cur, notes: Object.keys(cur).filter((k) => { const t = text(fileOf(dir, k)); return !isDraft(t) && parse(t).length; }) };
   const now = index(dir);
   if (JSON.stringify(now) !== JSON.stringify(want)) {
     if (!changes.length) changes.push("pages.json is out of date (a note was added or emptied)");
@@ -106,7 +111,7 @@ function removed(dir) {
     fs.readdirSync(path.join(base(dir), d.name)).filter((f) => /^removed-/.test(f)).forEach((f) => out.push(d.name + "/" + f)));
   return out;
 }
-module.exports = { story, parse, pages, read, readPage, sync, games, removed };
+module.exports = { story, parse, pages, read, readPage, sync, games, removed, drafts, isDraft };
 
 if (require.main === module) {
   const [cmd, dir] = process.argv.slice(2);

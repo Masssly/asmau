@@ -297,6 +297,7 @@ if (exists("version.json")) {
     const c = PN.sync(dir, false);
     if (c.length) fail(dir + "/parents: out of step with the story (" + c.slice(0, 3).join("; ") + "). Run: node scripts/build-offline.js");
     for (const r of PN.removed(dir)) warn(dir + "/parents/" + r + ": a note whose page was removed; move its text to another page or delete it");
+    const d = PN.drafts(dir); if (d.length) console.log("note: " + dir + "/parents: " + d.length + " draft notes waiting to be read (not shown in the game)");
   }
 }
 

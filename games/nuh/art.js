@@ -1,0 +1,53 @@
+/*
+  The pictures the Nuh game has. Written by scripts/nuh-art/build.py: do not
+  edit by hand. Each key is a file in assets/img/<key>.webp and its value is the
+  picture's description (used as alt text): a line id, or bg-<scene> for a backdrop.
+  A step with no picture here still plays, with a plain scene behind it.
+*/
+window.STORY_ART = {
+  "bg-field": "Green fields and palm trees in a wide valley under a bright blue sky with a few white clouds. No people.",
+  "n1-a": "In the village, the good men sit in the shade of a palm tree, talking kindly with the villagers who come to them; warm afternoon light.",
+  "n1-b": "In the middle of the village, villagers with deep dark brown skin carve a plain stone statue of a standing figure; a few more rough statues stand behind them. Every…",
+  "n1-c": "the statues stand alone in an empty dusty square between round mud houses with thatched roofs at evening, long shadows across the dust, weeds growing at their feet. The…",
+  "n1-d": "Seen from behind, a crowd of villagers bow down before the statues at dusk, offerings of fruit at the statues' feet; the statues have no faces at all, only smooth blank…",
+  "n2-a": "Nuh stands on a low hill above the village at sunrise, looking out over the houses with a kind, serious face, golden light around him.",
+  "n2-b": "Nuh speaks to the people gathered in the village square, one hand raised gently, the other on his heart.",
+  "n2-c": "Nuh walks along a path between fields and palm trees toward a far village, staff in hand, the sun high; the path stretches a long way ahead.",
+  "n3-a": "In bright daylight, Nuh talks with a farmer working in a field, pointing kindly up at the sky.",
+  "n3-b": "At night under the stars, Nuh stands at the door of a round house with a small oil lamp, speaking softly to a family inside. Every woman's hair is covered.",
+  "n3-c": "Nuh sits on a low wall talking quietly with one young man in the shade, while a busy market goes on behind them.",
+  "n3-d": "A group of villagers turn away from Nuh, some with their fingers in their ears, some pulling their cloaks over their heads; Nuh holds out his hands to them patiently.",
+  "n4-a": "Soft rain falls on green fields and palm trees from grey-white clouds, the sun breaking through at one side. No people.",
+  "n4-b": "A happy family with deep dark brown skin walks beside a river through a green garden of fruit trees; the mother's and daughter's hair is covered by headscarves.",
+  "n4-c": "A wide sky at twilight: the moon glows on one side and the last of the sun on the other, with the first stars between, over a quiet valley. No people.",
+  "n4-d": "Morning over a wide land: paths wind between green hills, fields and rivers into the distance; young plants sprout in the foreground. No people.",
+  "n5-a": "the proud chiefs stand with their arms folded and noses in the air in the village square, looking down on Nuh, who stands calmly with a few poor followers in patched…",
+  "n5-b": "Nuh stands in front of the believers, his arms spread wide to keep them close, while the proud chiefs point and frown; every person has very dark brown skin; the women's…",
+  "n5-c": "Nuh sits on a mat in the shade with his hands open and empty, speaking kindly; a bowl of plain dates and a cup of water beside him.",
+  "n6-a": "Nuh sits alone on a hill at evening, looking down at the village, his hand on his heart, calm but sad.",
+  "n6-b": "Nuh stands at sunrise beside a great pile of long wooden planks and tree trunks on open ground, looking up at the sky, ready to begin.",
+  "n6-c": "Nuh and two grown men with deep dark brown skin measure and saw long planks of wood in a sunny clearing, wood shavings on the ground. No women or children.",
+  "n6-d": "Close up: strong hands with deep dark brown skin hammer a big iron nail into a thick wooden plank of the Ark, wood shavings flying.",
+  "n7-a": "the proud chiefs point and laugh at the half-built the Ark standing on wooden props in a field, while Nuh keeps working on it calmly.",
+  "n7-b": "Nuh looks down calmly from a ladder against the side of the Ark, a hammer in his hand, speaking to the laughing men below.",
+  "n7-c": "At sunset the great the Ark stands finished in a wide field, its long wooden roof glowing in the orange light; Nuh rests his hand on its side, smiling quietly.",
+  "n8-a": "Water bursts up out of the dry ground in many places in a field beside the finished the Ark, springs fountaining up between stones and an old cooking hearth, under a…",
+  "n8-b": "Heavy rain pours from dark rolling clouds over the village; puddles grow into streams between the round houses. No people anywhere: every doorway and porch is empty.",
+  "n8-c": "Animals walk two by two up a long wooden ramp into the Ark in the rain: a pair of elephants, a pair of camels, a pair of giraffes, a pair of sheep, a pair of lions,…",
+  "n8-d": "the believers climb the ramp into the Ark carrying bundles and holding children's hands, while Nuh helps an old woman up the last step. Every woman's hair is covered.",
+  "n9-a": "Nuh stands in the open doorway of the Ark in the rain, one hand raised, the other welcoming the last of the believers inside; lamplight glows warmly from within.",
+  "n9-b": "Inside the Ark, a mother and her young daughter sit together on a wooden bench by a small oil lamp, hands raised in prayer, rain streaming past a window. Both have deep…",
+  "n9-c": "Nuh sits among the believers inside the Ark by lamplight, all with hands raised in prayer, animals resting quietly in the shadows behind them.",
+  "n10-a": "Wide view: the great the Ark rides on enormous dark waves under a stormy sky, lightning far away, its lamps glowing safely in its windows. No people are seen outside.",
+  "n10-b": "Nuh leans out from the side of the Ark in the rain, calling with his arm stretched out toward a distant rocky hill where Nuh's son stands, small and far away.",
+  "n10-c": "On a rocky hillside in the rain, Nuh's son turns his back on the sea and starts to climb, arms folded, face proud; the Ark is far away behind him on the water.",
+  "n10-d": "Huge grey waves roll across the sea between the far-off the Ark and a mountain hidden in rain and mist. No people are seen.",
+  "n10-e": "Inside the Ark by a small window, Nuh sits with his head bowed and his hands raised in prayer, grey light on his face, rain on the glass.",
+  "n10-f": "Nuh kneels in prayer inside the Ark, forehead to the wooden floor, a small lamp beside him; the storm outside the window is growing calmer.",
+  "n11-a": "The storm clouds part and golden sunlight pours down on a calm sea; the water is going down around green hilltops, and the Ark floats peacefully. No people are seen.",
+  "n11-b": "the Ark rests on the green top of a mountain in soft morning light, the last of the water shining far below, a clear sky above.",
+  "n11-c": "A ring of tall rocky peaks stands high and sharp around one lower, gentle green mountain where the Ark rests in the sunshine. No people.",
+  "n11-d": "Nuh and the believers walk down a green mountainside in the morning, animals spreading out over the fresh grass around them, a clear blue sky above.",
+  "n11-e": "Nuh kneels on the fresh grass at sunrise with his hands raised in thanks, the Ark on the mountain far behind him.",
+  "n11-f": "Nuh stands at the door of a small new house of stone and wood in a green valley, welcoming the believers inside, hands open; morning light."
+};

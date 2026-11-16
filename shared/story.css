@@ -492,6 +492,7 @@ button { touch-action: manipulation; -webkit-tap-highlight-color: transparent; }
 .stage[data-scene="storm"]    { background: linear-gradient(180deg, #2b2f44 0%, #565d78 50%, #6c6558 50.2%, #4f4a40 100%); }
 .stage[data-scene="heaven"]   { background: radial-gradient(ellipse at 50% 20%, #fff6dc 0%, #ffe3a8 30%, #b9c8ef 70%, #8ea3d8 100%); }
 .stage[data-scene="garden"]   { background: linear-gradient(180deg, #bfe9ff 0%, #e8f8ee 40%, #7fcf7a 62%, #4c9a52 100%); }
+.stage[data-scene="village"]  { background: linear-gradient(180deg, #ffe2a8 0%, #fff0d2 42%, #b98c55 42.2%, #9a6f3e 100%); }
 .stage[data-scene="fire"] .fig, .stage[data-scene="storm"] .fig { filter: drop-shadow(0 0 10px rgba(255,214,110,.35)); }
 
 /* ---------- something always moving in the scene ---------- */

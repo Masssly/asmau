@@ -63,19 +63,20 @@ def seconds(pcm):
 
 
 def speak(text, arabic):
-    """The voice for one line; tried again (up to four times) while the clip is too long, keeping the shortest."""
+    """The voice for one line; tried again (up to five times) while the clip is too long, keeping the shortest."""
     best = None
-    for _ in range(4):
-        pcm = speak_once(text, arabic)
+    for n in range(5):
+        # the last try adds "say only these words, once" even to a longer line (the man's voice rambled on five words)
+        pcm = speak_once(text, arabic, force_short=(n == 4))
         if best is None or len(pcm) < len(best):
             best = pcm
         if not too_long(seconds(best), text, arabic):
             return best
-    raise RuntimeError("still too long after 4 tries (%.1f s)" % seconds(best))
+    raise RuntimeError("still too long after 5 tries (%.1f s)" % seconds(best))
 
 
-def speak_once(text, arabic):
-    style = (STYLE_AR if arabic else STYLE) + (" " + SHORT if short(text) else "")
+def speak_once(text, arabic, force_short=False):
+    style = (STYLE_AR if arabic else STYLE) + (" " + SHORT if short(text) or force_short else "")
     body = json.dumps({"contents": [{"role": "user", "parts": [{"text": style + " Text: " + text}]}],
                        "generationConfig": {"responseModalities": ["AUDIO"],
                                             "speechConfig": {"voiceConfig": {"prebuiltVoiceConfig": {"voiceName": VOICE}}}}}).encode()

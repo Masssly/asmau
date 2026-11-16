@@ -15,38 +15,38 @@
 
 // BEGIN GENERATED
 const RELEASE = "2026.11.34";
-const BUILD = "4d10832398eb";
+const BUILD = "1497579bcad3";
 // pack: [fingerprint of packs/<pack>.json, bytes, files]
 const PACKS = {
-  "adam":["07d5abf508",2625591,53],
+  "adam":["22e75c3649",2721568,55],
   "adam@m":["a617f3f408",4026446,147],
   "adam@w":["217fc43e27",4316508,147],
-  "core":["508c836279",1518300,54],
-  "count-the-crescents":["d595fc27a5",82485,4],
+  "core":["ffe5acc9c0",964898,37],
+  "count-the-crescents":["551c35512f",82971,5],
   "count-the-crescents@m":["76410cb722",587647,52],
   "count-the-crescents@w":["238f9dbdf7",584828,52],
-  "ibn-battuta":["dc3c856547",3427506,52],
+  "ibn-battuta":["9b8a2637e3",3497818,54],
   "ibn-battuta@m":["0e8002f829",3511529,130],
   "ibn-battuta@w":["f0093c205e",3797936,130],
-  "musa":["3f3688fc34",7975576,159],
+  "musa":["2483b2f15a",8063682,161],
   "musa@m":["82bed29f40",13950526,422],
   "musa@w":["5e7023ffde",15159879,422],
-  "nana-asmau":["93cb1e0ed5",2430996,49],
+  "nana-asmau":["7ee2cb084d",2470795,51],
   "nana-asmau@m":["f459229234",3366561,116],
   "nana-asmau@w":["e85f1693d8",3639073,116],
-  "nuh":["fd9b96839f",3280948,53],
+  "nuh":["8640bd54a4",3351610,55],
   "nuh@m":["8e929a1b1f",3882631,145],
   "nuh@w":["1168c320e1",4156508,145],
-  "rahmah":["9b8433cc1d",2637216,43],
+  "rahmah":["82f7861954",2715002,45],
   "rahmah@m":["a4fe8c7289",2874273,114],
   "rahmah@w":["cf884129c1",3117733,114],
-  "tap-and-say":["349d241cbd",21257,3],
+  "tap-and-say":["64ec037dc3",21672,4],
   "tap-and-say@m":["71edb942d5",1501703,126],
   "tap-and-say@w":["d9e7f925b2",1472336,126],
-  "umm-ayman":["e17a4c006d",3244643,54],
+  "umm-ayman":["415a7b5ae1",3299539,56],
   "umm-ayman@m":["9a32095eea",3300105,116],
   "umm-ayman@w":["680686d2c0",3632276,116],
-  "yusuf":["93af97ad20",5760019,91],
+  "yusuf":["f53f8bb124",5828130,93],
   "yusuf@m":["f057137d75",6578971,190],
   "yusuf@w":["60ff092efc",7039872,190]
 };

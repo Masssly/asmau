@@ -4,7 +4,7 @@ const http = require("http");
 const fs = require("fs");
 const path = require("path");
 
-const TYPES = { ".html": "text/html", ".js": "text/javascript", ".css": "text/css", ".json": "application/json", ".webp": "image/webp", ".mp3": "audio/mpeg", ".woff2": "font/woff2", ".png": "image/png", ".webmanifest": "application/manifest+json" };
+const TYPES = { ".html": "text/html", ".js": "text/javascript", ".css": "text/css", ".json": "application/json", ".webp": "image/webp", ".mp3": "audio/mpeg", ".woff2": "font/woff2", ".png": "image/png", ".webmanifest": "application/manifest+json", ".svg": "image/svg+xml" };
 
 // Serves a folder over http. `log` collects every path asked for. `delayMs` simulates a slow network.
 // Pictures and sounds live on R2 (scripts/SCALING.md); here the server stands in for it: the site's R2 address in sw.js and

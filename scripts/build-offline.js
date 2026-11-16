@@ -54,7 +54,7 @@ const isR2 = (f) => /^games\/[^/]+\/assets\//.test(f) && ON_R2.test(f);
 
 function packOf(f) {
   const m = /^games\/([^/]+)\/(.*)$/.exec(f);
-  if (!m || m[2] === "cover.webp" || m[2] === "game.json") return "core";   // the home page shows every cover and reads every game.json
+  if (!m || m[1] === "index.json") return "core";          // games/index.json: the catalogue the home page reads
   if (m[2].startsWith("assets/audio-m/")) return m[1] + "@m";
   if (m[2].startsWith("assets/audio/")) return m[1] + "@w";
   return m[1];
@@ -89,8 +89,21 @@ function readPacks() {
 }
 
 // files whose content this script writes: given here so that --check sees what they would be
+// the home page's catalogue: the sections of manifest.json with each game's game.json, in one file (one request, not
+// one per game; covers load as they scroll into view)
+function catalogue() {
+  const man = JSON.parse(fs.readFileSync(path.join(ROOT, "manifest.json"), "utf8"));
+  const sections = (man.sections || [{ title: "Games", games: man.games || [] }]).map((s) => ({
+    title: s.title, icon: s.icon, more: s.more,
+    games: (s.games || []).map((slug) => {
+      try { return JSON.parse(fs.readFileSync(path.join(ROOT, "games", slug, "game.json"), "utf8")); } catch (e) { return null; }
+    }).filter(Boolean)
+  }));
+  return JSON.stringify({ sections }) + "\n";
+}
+
 function generated() {
-  const g = { "shared/config.js": CONFIG_JS };
+  const g = { "shared/config.js": CONFIG_JS, "games/index.json": catalogue() };
   for (const d of fs.readdirSync(path.join(ROOT, "games"))) {
     const b = notesBundle("games/" + d);
     if (b !== null) g["games/" + d + "/parents/notes.json"] = b;

@@ -7,8 +7,23 @@ const fs = require("fs");
 module.exports = async function () {
   const T = checker("playthrough"), site = await serve(path.join(__dirname, ".."));
   const browser = await chromium.launch({ args: ["--autoplay-policy=no-user-gesture-required"] });
-  // every game that has a story
-  const games = fs.readdirSync(path.join(__dirname, "..", "games")).filter((g) => fs.existsSync(path.join(__dirname, "..", "games", g, "story.js")));
+  // Which story games to play (so the run time does not grow with the catalogue): every game changed since the live
+  // release (origin/main), plus Yusuf and Musa, which between them use every kind of activity. PLAY=all plays every
+  // game; PLAY=adam,nuh plays those.
+  const all = fs.readdirSync(path.join(__dirname, "..", "games")).filter((g) => fs.existsSync(path.join(__dirname, "..", "games", g, "story.js")));
+  let games;
+  if (process.env.PLAY === "all") games = all;
+  else if (process.env.PLAY) games = process.env.PLAY.split(",").filter((g) => all.includes(g));
+  else {
+    let changed = [];
+    try {
+      const out = require("child_process").execSync("git diff --name-only origin/main -- games; git ls-files --others --exclude-standard games",
+        { cwd: path.join(__dirname, ".."), encoding: "utf8", stdio: ["ignore", "pipe", "ignore"] });
+      changed = [...new Set(out.split("\n").map((l) => (/^games\/([^/]+)\//.exec(l) || [])[1]).filter(Boolean))];
+    } catch (e) { changed = all; }                                    // no git history to compare with: play everything
+    games = [...new Set(["yusuf", "musa", ...changed])].filter((g) => all.includes(g));
+  }
+  console.log("  playing: " + games.join(", ") + (games.length < all.length ? " (PLAY=all for every game)" : ""));
   for (const game of games) await play(game);
   await browser.close(); await site.close();
   return T.done();

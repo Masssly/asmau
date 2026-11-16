@@ -1,6 +1,7 @@
-{"bytes":82485,
+{"bytes":82971,
 "files":{"games/count-the-crescents/game.css":"82f100e581",
 "games/count-the-crescents/game.js":"8f7f7539a6",
+"games/count-the-crescents/game.json":"85f618a2ee",
 "games/count-the-crescents/index.html":"44b259a61c",
 "games/count-the-crescents/narration.json":"a9ba640e1c"},
 "sizes":{}}

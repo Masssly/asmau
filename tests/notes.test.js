@@ -10,7 +10,7 @@ const { serve, checker } = require("./lib");
 module.exports = async function () {
   const T = checker("notes for parents"), repo = path.join(__dirname, "..");
   const tmp = fs.mkdtempSync(path.join(os.tmpdir(), "asmau-notes-"));
-  for (const d of ["games", "shared", "fonts", "icons", "tools", "scripts"]) fs.cpSync(path.join(repo, d), path.join(tmp, d), { recursive: true });
+  for (const d of ["games", "shared", "fonts", "icons", "tools", "scripts", "packs"]) fs.cpSync(path.join(repo, d), path.join(tmp, d), { recursive: true });
   for (const f of ["index.html", "manifest.json", "app.webmanifest", "sw.js", "version.json", "config.json"]) fs.copyFileSync(path.join(repo, f), path.join(tmp, f));
   const P = path.join(tmp, "games/adam/parents");
 

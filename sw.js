@@ -19,8 +19,8 @@
 */
 
 // BEGIN GENERATED
-const RELEASE = "2026.11.28";
-const BUILD = "b53709ac250f";
+const RELEASE = "2026.11.29";
+const BUILD = "305f82b2f3f4";
 const SHELL = [
   "./",
   "app.webmanifest",
@@ -44,6 +44,7 @@ const SHELL = [
   "games/adam/parents/8/8.1.md",
   "games/adam/parents/9/9.1.md",
   "games/adam/parents/pages.json",
+  "games/adam/scene-fx.json",
   "games/adam/story.js",
   "games/count-the-crescents/game.css",
   "games/count-the-crescents/game.js",
@@ -83,6 +84,7 @@ const SHELL = [
   "games/musa/parents/8/8.1.md",
   "games/musa/parents/9/9.1.md",
   "games/musa/parents/pages.json",
+  "games/musa/scene-fx.json",
   "games/musa/story.js",
   "games/nana-asmau/art.js",
   "games/nana-asmau/game.js",
@@ -102,6 +104,7 @@ const SHELL = [
   "games/nana-asmau/parents/8/8.1.md",
   "games/nana-asmau/parents/9/9.1.md",
   "games/nana-asmau/parents/pages.json",
+  "games/nana-asmau/scene-fx.json",
   "games/nana-asmau/story.js",
   "games/tap-and-say/game.json",
   "games/tap-and-say/index.html",
@@ -129,6 +132,7 @@ const SHELL = [
   "games/yusuf/parents/9/9.1.md",
   "games/yusuf/parents/pages.json",
   "games/yusuf/people.js",
+  "games/yusuf/scene-fx.json",
   "games/yusuf/story.js",
   "icons/favicon.svg",
   "icons/mark.svg",

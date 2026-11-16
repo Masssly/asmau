@@ -45,6 +45,10 @@ things work; this file holds the decisions that must not be lost between session
   `MODEL=gemini-3-pro-image`; count every kept picture by eye. Stand the group in a line or in rows of
   five with nobody in front of them; mend a picture with one edit at most (chained edits fade it).
 - Look at every picture before it goes in (skin, covered hair, count, no text, matching the story).
+- **Living scenes:** each story picture gets gentle effects placed on it (stars in its sky, a flicker on its lamp,
+  leaves, birds, water shimmer) in games/<slug>/scene-fx.json. For new pictures run `PROJECT=asmau-assets python3
+  scripts/scene-fx.py games/<slug>`, then look at the sheet (`--sheet out.png`). Never put fire or embers on Iblis or
+  anything frightening; no animation of the snake. Real video clips only for a few chosen key moments, if ever.
 
 ## Story
 - Read the story straight through before release (scripts/story-readthrough.js): no gaps, no jumps.

@@ -1,13 +1,18 @@
 {
-  "version": "2026.11.28",
+  "version": "2026.11.29",
   "date": "2026-11-16",
-  "buildId": "b53709ac250f",
+  "buildId": "305f82b2f3f4",
   "notes": [
-    "Sound: tap a sound button (music, sounds, voice) to make it a step louder; after the loudest it turns off; a ring shows the level",
-    "Tap & Say and Count with Me: grown-ups press and hold the 🔊 in the corner to change the sound while playing",
-    "For parents: every page has its own note, easy to edit"
+    "Living pictures: stars twinkle in the night sky, lamps and fires flicker, water shimmers, leaves fall and birds cross the sky, placed on each picture"
   ],
   "history": [
+    {
+      "version": "2026.11.29",
+      "date": "2026-11-16",
+      "notes": [
+        "Living pictures: stars twinkle in the night sky, lamps and fires flicker, water shimmers, leaves fall and birds cross the sky, placed on each picture"
+      ]
+    },
     {
       "version": "2026.11.28",
       "date": "2026-11-16",

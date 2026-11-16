@@ -217,6 +217,48 @@
   }
 
   // A full picture for a step. If the file cannot be loaded the step falls
+  // Living scenes: gentle effects placed on a picture by scene-fx.json ({ "<picture>": [{ "e": "stars", "box": [x0, y0, x1, y1] },
+  // { "e": "lamp", "at": [x, y] }] }, in fractions of the picture). The layer covers exactly the picture as shown and
+  // zooms with it, so a glow stays on its lamp. Particles (leaves, birds, motes, embers) are a few small elements,
+  // placed the same way every time a picture is shown.
+  var PICFX = {};
+  fetch("scene-fx.json").then(function (r) { return r.ok ? r.json() : {}; }).then(function (j) { PICFX = j || {}; }).catch(function () {});
+  function seeded(seed) { var x = 0; for (var i = 0; i < seed.length; i++) x = (x * 31 + seed.charCodeAt(i)) >>> 0; return function () { x = (x * 1664525 + 1013904223) >>> 0; return x / 4294967296; }; }
+  var PARTS = { leaves: 7, birds: 3, motes: 7, embers: 10 };   // few, so the picture stays the picture
+  function livingLayer(list, id) {
+    var layer = mk("div", "live"), rnd = seeded(id);
+    list.forEach(function (fx) {
+      var box = fx.box || (fx.at ? [fx.at[0] - 0.08, fx.at[1] - 0.08, fx.at[0] + 0.08, fx.at[1] + 0.08] : [0, 0, 1, 1]);
+      var el = mk("div", "live-fx live-" + fx.e);
+      el.style.left = (box[0] * 100) + "%"; el.style.top = (box[1] * 100) + "%";
+      el.style.width = ((box[2] - box[0]) * 100) + "%"; el.style.height = ((box[3] - box[1]) * 100) + "%";
+      var n = PARTS[fx.e] || 0;
+      for (var i = 0; i < n; i++) {
+        var p = mk("i", "");
+        p.style.left = (rnd() * 100) + "%"; p.style.top = (rnd() * 100) + "%";
+        p.style.animationDelay = (-rnd() * 12).toFixed(2) + "s";
+        p.style.animationDuration = (6 + rnd() * 8).toFixed(2) + "s";
+        p.style.setProperty("--s", (0.6 + rnd() * 0.8).toFixed(2));
+        el.appendChild(p);
+      }
+      layer.appendChild(el);
+    });
+    // fit the layer to the picture as shown (the whole picture is always visible, centred in the stage)
+    function fit() {
+      var img = stage.querySelector("img.pic"); if (!img || !layer.parentNode) return;
+      var w = stage.clientWidth, h = stage.clientHeight, ar = img.naturalWidth && img.naturalHeight ? img.naturalWidth / img.naturalHeight : 1;
+      var pw = Math.min(w, h * ar), ph = pw / ar;
+      layer.style.width = pw + "px"; layer.style.height = ph + "px";
+      layer.style.left = ((w - pw) / 2) + "px"; layer.style.top = ((h - ph) / 2) + "px";
+    }
+    setTimeout(fit, 0);
+    var img = stage.querySelector("img.pic"); if (img) img.addEventListener("load", fit);
+    refitLive = fit;
+    return layer;
+  }
+  var refitLive = function () {};
+  window.addEventListener("resize", function () { refitLive(); });
+
   // back to its drawn sprites, so a missing picture never leaves a blank scene.
   // The whole picture is always shown; on a wide stage a blurred copy of it
   // fills the space at the sides.
@@ -1597,9 +1639,13 @@
     markWide();
     if (st.src) stage.appendChild(mk("div", "src-chip", st.src));
 
-    // the place is never still: something drifts, glints or falls in it, and it has its own sounds
-    var motion = st.fx || SCENE_FX[st.scene];
-    if (motion && motion !== "none") stage.appendChild(mk("div", "fxl fx-" + motion));
+    // the place is never still: something drifts, glints or falls in it, and it has its own sounds.
+    // A picture with its own living effects (scene-fx.json: stars in its sky, a flicker on its lamp) gets those;
+    // otherwise the scene's general one.
+    var live = hasPic && !st.fx && PICFX[picId];
+    var motion = live ? null : (st.fx || SCENE_FX[st.scene]);
+    if (live) stage.appendChild(livingLayer(live, picId));
+    else if (motion && motion !== "none") stage.appendChild(mk("div", "fxl fx-" + motion));
     if (music.amb) music.amb(st.amb || SCENE_AMB[st.scene] || "none");
     if (st.cue) setTimeout(function () { if (token === stepToken) fx(st.cue); }, 500);
 

@@ -646,3 +646,54 @@ button { touch-action: manipulation; -webkit-tap-highlight-color: transparent; }
 .stage.has-pic.flow, .stage.has-pic.flow[data-mode="play"] { aspect-ratio: auto; width: 100%; height: auto; max-height: none; min-height: 290px; }
 .stage.has-pic.flow .pic, .stage.has-pic.flow .pic-fill { opacity: .3; animation: none; }
 .stage.flow > .match, .stage.flow > .order, .stage.flow > .reveal { position: relative; z-index: 2; }
+
+/* ---------- living scenes (scene-fx.json, see livingLayer in story-engine.js) ----------
+   Gentle movement placed on each picture: stars in its sky, a flicker on its lamp, leaves from its trees. The layer
+   is the size of the picture as shown and zooms with it. Nothing here takes a tap, and all of it stops when the
+   device asks for less motion. */
+.live { position: absolute; left: 0; top: 0; width: 100%; height: 100%; pointer-events: none; z-index: 2; overflow: hidden;
+  border-radius: inherit; animation: pic-drift 26s ease-in-out .5s infinite alternate; transform-origin: 50% 50%; }
+.live-fx { position: absolute; overflow: hidden; }
+.live-fx > i { position: absolute; display: block; }
+/* stars twinkle in the sky */
+.live-stars { background-image: radial-gradient(circle, rgba(255,255,255,.95) 0 1.1px, transparent 1.9px), radial-gradient(circle, rgba(255,240,190,.9) 0 .9px, transparent 1.6px);
+  background-size: 64px 52px, 43px 71px; background-position: 9px 13px, 31px 40px; animation: live-twinkle 2.6s ease-in-out infinite alternate; mix-blend-mode: screen; }
+@keyframes live-twinkle { from { opacity: .15; } to { opacity: .85; } }
+/* water shimmers */
+.live-water { background: repeating-linear-gradient(100deg, rgba(255,255,255,0) 0 18px, rgba(255,255,255,.16) 18px 21px, rgba(255,255,255,0) 21px 52px);
+  background-size: 190px 100%; mix-blend-mode: screen; animation: fx-slide 6s linear infinite; border-radius: 40%; filter: blur(.5px);
+  -webkit-mask-image: radial-gradient(ellipse at 50% 50%, #000 55%, transparent 75%); mask-image: radial-gradient(ellipse at 50% 50%, #000 55%, transparent 75%); }
+/* rain */
+.live-rain { background-image: linear-gradient(105deg, transparent 46%, rgba(215,232,255,.5) 48%, transparent 50%); background-size: 22px 40px; animation: fx-fall .42s linear infinite; }
+/* a lamp's small flame and a fire's big one: a warm light that flickers on the spot */
+.live-lamp, .live-fire { border-radius: 50%; mix-blend-mode: screen; }
+.live-lamp { background: radial-gradient(circle, rgba(255,214,130,.75) 0%, rgba(255,170,70,.32) 32%, rgba(255,150,60,0) 68%); animation: live-flicker 1.9s ease-in-out infinite; }
+.live-fire { background: radial-gradient(circle at 50% 60%, rgba(255,200,110,.7) 0%, rgba(255,120,40,.35) 35%, rgba(255,90,20,0) 70%); animation: live-flicker 1.3s ease-in-out infinite; overflow: visible; }
+@keyframes live-flicker { 0%, 100% { opacity: .78; transform: scale(1); } 22% { opacity: .95; transform: scale(1.05); } 47% { opacity: .62; transform: scale(.97); }
+  71% { opacity: .9; transform: scale(1.03); } 86% { opacity: .7; transform: scale(.99); } }
+/* embers rise from a fire */
+.live-embers > i { width: calc(4px * var(--s)); height: calc(4px * var(--s)); border-radius: 50%; background: rgba(255,190,90,.95); box-shadow: 0 0 6px rgba(255,140,50,.9); animation-name: live-rise; animation-timing-function: linear; animation-iteration-count: infinite; }
+@keyframes live-rise { from { transform: translateY(40%); opacity: 0; } 15% { opacity: 1; } to { transform: translate(18px, -260%); opacity: 0; } }
+/* motes of light drift up slowly: holy places, light, wonder */
+.live-motes > i { width: calc(4px * var(--s)); height: calc(4px * var(--s)); border-radius: 50%; background: rgba(255,248,215,.7); box-shadow: 0 0 7px rgba(255,236,170,.75); animation-name: live-mote; animation-timing-function: ease-in-out; animation-iteration-count: infinite; }
+@keyframes live-mote { 0% { transform: translate(0, 30px); opacity: 0; } 25% { opacity: .9; } 50% { transform: translate(10px, -10px); } 75% { opacity: .7; } 100% { transform: translate(-6px, -60px); opacity: 0; } }
+/* leaves drift down from trees */
+.live-leaves > i { width: calc(9px * var(--s)); height: calc(5px * var(--s)); border-radius: 0 100% 0 100%; background: linear-gradient(135deg, #8fbf4a, #4f8a2a); opacity: .9; animation-name: live-leaf; animation-timing-function: ease-in-out; animation-iteration-count: infinite; }
+.live-leaves > i:nth-child(3n) { background: linear-gradient(135deg, #e8c25a, #b9862c); }
+@keyframes live-leaf { 0% { transform: translate(0, -20px) rotate(0); opacity: 0; } 10% { opacity: .9; } 50% { transform: translate(22px, 90px) rotate(160deg); }
+  90% { opacity: .85; } 100% { transform: translate(-10px, 200px) rotate(320deg); opacity: 0; } }
+/* birds cross the sky, far away */
+.live-birds > i { width: calc(14px * var(--s)); height: calc(6px * var(--s)); animation-name: live-fly; animation-timing-function: linear; animation-iteration-count: infinite; left: -10% !important;
+  background: no-repeat center/100% 100% url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 28 12'%3E%3Cpath d='M1 9 Q7 1 14 8 Q21 1 27 9' fill='none' stroke='%23332a24' stroke-width='2.2' stroke-linecap='round'/%3E%3C/svg%3E"); }
+@keyframes live-fly { from { transform: translateX(0) translateY(0); } 50% { transform: translateX(600%) translateY(-8px); } to { transform: translateX(1200%) translateY(4px); } }
+/* dust and mist drift through */
+.live-dust::before, .live-dust::after, .live-mist::before, .live-mist::after { content: ""; position: absolute; top: 0; bottom: 0; width: 70%;
+  background: radial-gradient(ellipse at 50% 60%, rgba(255,236,190,.24), rgba(255,236,190,0) 65%); animation: fx-drift 15s linear infinite; }
+.live-mist::before, .live-mist::after { background: radial-gradient(ellipse at 50% 50%, rgba(255,255,255,.28), rgba(255,255,255,0) 65%); animation-duration: 24s; }
+.live-dust::after, .live-mist::after { animation-delay: -8s; top: 15%; }
+/* soft rays of light */
+.live-rays { background: conic-gradient(from 160deg at 50% 0%, rgba(255,240,190,0) 0deg, rgba(255,240,190,.22) 10deg, rgba(255,240,190,0) 20deg, rgba(255,240,190,.18) 32deg, rgba(255,240,190,0) 44deg);
+  animation: live-twinkle 5s ease-in-out infinite alternate; mix-blend-mode: screen; }
+/* a card activity over a picture shows the picture dimmed: no living layer there */
+.stage.flow .live { display: none; }
+@media (prefers-reduced-motion: reduce) { .live, .live-fx, .live-fx::before, .live-fx::after, .live-fx > i { animation: none !important; } .live-fx > i { display: none; } }

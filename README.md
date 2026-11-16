@@ -205,6 +205,18 @@ Pictures are AI-generated: say so wherever they are credited. The clothes and
 buildings are an artistic interpretation in a West African style, not a
 reconstruction of ancient Egypt, and the game's note for parents says so.
 
+## Living scenes
+
+The story pictures are never quite still. Each game's `scene-fx.json` lists, for each picture, up to three
+gentle effects and where they go, in fractions of the picture: `{"c1-a": [{"e": "stars", "box": [x0, y0, x1, y1]},
+{"e": "lamp", "at": [x, y]}]}`. The effects are stars, water, rain, lamp, fire, embers, motes (light), leaves, birds,
+dust, mist and rays (`.live-*` in shared/story.css). `livingLayer()` in shared/story-engine.js lays them over the
+picture exactly as it is shown, zooming with it, so a glow stays on its lamp; nothing in it takes a tap, and it all
+stops when the device asks for less motion. A picture without an entry gets its scene's general effect, as before.
+
+`scripts/scene-fx.py` has Gemini look at each picture and propose the effects (`--sheet` draws them for checking);
+hand corrections are kept on later runs. Costs no download beyond the small JSON file.
+
 ## Links that leave Asmau, and the apps
 
 `shared/gate.js` (on every page) puts a grown-up check in front of every link to another site or an email
@@ -360,7 +372,7 @@ cd tests && npm install && npx playwright install chromium && npm test
 ```
 
 GitHub runs them on every push (`.github/workflows/validate.yml`). `node tests/run.js sync`
-runs just one group (`landing`, `narration`, `offline`, `sync`, `update`, `playthrough`, `counting`, `gate`, `worker`).
+runs just one group (`landing`, `narration`, `offline`, `sync`, `update`, `playthrough`, `counting`, `gate`, `notes`, `sound`, `live`, `worker`).
 Add `?skipms=300` to a game's address to make the "Skip" button appear after 0.3 s instead of 22 s.
 
 ## Checking your work

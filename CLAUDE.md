@@ -90,7 +90,18 @@ things work; this file holds the decisions that must not be lost between session
 - Anything about donations or other website-only things gets `class="web-only"`: the store apps (opened as
   `?app=ios|android|huawei`) must show no donation link or wording. Apple Kids category, age band 6–8.
 
+## Built for 100 games (scripts/SCALING.md, decided 16 November 2026)
+- **A game's pictures and sounds (`games/<slug>/assets/`) are not in git.** Their home is R2; `packs/<pack>.json`
+  (committed, written by `scripts/build-offline.js`) is the record of which version the site uses. After cloning, or
+  before working on pictures or voices or running the tests: `node scripts/fetch-media.js`. Deleting media on purpose:
+  `node scripts/build-offline.js --prune`.
+- Pages ask for a game's media through `shared/media.js` (`AsmauMedia.url(path)`): never hard-code `assets/...` URLs.
+- Packs: `core` at the first visit, a game's pack when it is opened, one voice pack (`@w` or `@m`). Covers, icons and
+  fonts stay in git. The home page reads `games/index.json` (generated from manifest.json and each game.json).
+- Notes for parents are still one `.md` per page; the build bundles each game's live notes into `parents/notes.json`.
+- Tests play Yusuf, Musa and every game changed since origin/main (`PLAY=all` for every game).
+
 ## Releasing
 - `node scripts/release.js "note"` → `node scripts/validate.js` → full tests (tests/run.js) →
-  commit → `scripts/publish-media.js` (needs ADMIN_TOKEN, never committed) → push main → check
-  version.json live.
+  commit → `scripts/publish-media.js` (needs ADMIN_TOKEN, never committed; **required** whenever pictures or sounds
+  changed, since R2 is their only home) → push main → check version.json live.

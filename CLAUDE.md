@@ -66,6 +66,12 @@ things work; this file holds the decisions that must not be lost between session
   scripts/generate-voice-gemini.py). Chosen by the owner on 15 November 2026 from four samples. It reads
   English and Arabic. Use it for any new line or game: `PROJECT=asmau-assets python3
   scripts/generate-voice-gemini.py games/<slug>` (only new or changed lines are voiced).
+- **A second voice, a man's:** Gemini voice **Achird**, a natural, calm reading voice (STYLE/STYLE_AR under `SET == "m"` in
+  the same script), chosen by the owner on 16 November 2026 from four samples. Families choose it in For parents ("Your
+  voice is the best voice" → which computer voice); a device downloads only the chosen voice. Its clips are in
+  `assets/audio-m/` and every line needs one (the checker refuses a game without): `VOICE=m PROJECT=asmau-assets python3
+  scripts/generate-voice-gemini.py games/<slug>`, then `VOICE=m ... scripts/voice-check.py games/<slug>`. Achird tends to
+  repeat the end of a line; the check catches it.
 - A parent's own recording always replaces it. The device's built-in voice never reads Arabic.
 - Then listen back: `PROJECT=asmau-assets python3 scripts/voice-check.py games/<slug>` (Gemini hears each clip and
   flags extra or wrong words; it once caught a line read in Hausa and two said twice). Redo a flagged clip by

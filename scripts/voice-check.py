@@ -45,7 +45,7 @@ def main():
              if len(l["text"]) <= mx and (ids is None or l["id"] in ids)]
 
     def job(l):
-        got = hear(os.path.join(game, "assets", "audio", l["id"] + ".mp3"), l["text"])
+        got = hear(os.path.join(game, "assets", "audio-m" if os.environ.get("VOICE") == "m" else "audio", l["id"] + ".mp3"), l["text"])
         want, heard = words(l["text"]), words(got)
         extra = len(heard) - len(want)
         if got.startswith("ERROR") or extra > 2 or any(w in heard for w in ("auntie", "accent", "bedtime", "text")) \

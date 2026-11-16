@@ -48,6 +48,18 @@ module.exports = async function () {
   await page.evaluate(async () => { await window.AsmauNarration.saveRecordedClip("yusuf", "c3-a", new Blob([new Uint8Array(40)], { type: "audio/x-nonsense" })); });
   await page.evaluate(`${N}.say("yusuf", "c3-a", "text")`);
   T.check(site.log.some((p) => p.endsWith("c3-a.mp3")), "an unplayable recording falls through to the committed file");
+
+  // the man's voice, when a family chooses it (For parents > Your voice): its own folder, the woman's as a fallback
+  site.log.length = 0;
+  await page.evaluate(() => localStorage.setItem("asmau-voice", "m"));
+  await page.evaluate(`${N}.say("yusuf", "c1-a", "text")`);
+  T.check(site.log.some((p) => p.endsWith("audio-m/c1-a.mp3")) && !site.log.some((p) => /\/audio\/c1-a\.mp3$/.test(p)),
+    "with the man's voice chosen, a line plays from assets/audio-m/");
+  site.log.length = 0;
+  await page.evaluate(`${N}.say("yusuf", "no-such-man-line", "text")`);
+  T.check(site.log.some((p) => p.endsWith("audio-m/no-such-man-line.mp3")) && site.log.some((p) => p.endsWith("/audio/no-such-man-line.mp3")),
+    "and a line the man's voice has not read yet tries the woman's voice next");
+  await page.evaluate(() => localStorage.removeItem("asmau-voice"));
   T.check(errs.length === 0, "no page errors" + (errs[0] ? ": " + errs[0] : ""));
   await browser.close(); await site.close();
   return T.done();

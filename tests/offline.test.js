@@ -17,15 +17,18 @@ module.exports = async function () {
     await page.evaluate(() => navigator.serviceWorker.ready); await page.waitForTimeout(3000);
     const sw = fs.readFileSync(path.join(root, "sw.js"), "utf8");
     const SHELL = JSON.parse(sw.match(/const SHELL = (\[[\s\S]*?\]);/)[1]), MEDIA = Object.keys(JSON.parse(sw.match(/const MEDIA = (\{[\s\S]*?\});/)[1]));
-    const packOf = (f) => (/^games\/([^/]+)\/assets\//.exec(f) || [0, "core"])[1];
-    const core = MEDIA.filter((f) => packOf(f) === "core").length, yusuf = MEDIA.filter((f) => packOf(f) === "yusuf").length;
+    // a game is three packs: its pictures, the woman's voice (assets/audio/) and the man's (assets/audio-m/); a device saves one voice
+    const packOf = (f) => { const m = /^games\/([^/]+)\/assets\/(?:(audio-m|audio)\/)?/.exec(f); return m ? m[1] + (m[2] === "audio-m" ? "@m" : m[2] === "audio" ? "@w" : "") : "core"; };
+    const core = MEDIA.filter((f) => packOf(f) === "core").length, yusuf = MEDIA.filter((f) => packOf(f) === "yusuf" || packOf(f) === "yusuf@w").length;
+    const yusufMan = MEDIA.filter((f) => packOf(f) === "yusuf@m").length, men = MEDIA.filter((f) => packOf(f).endsWith("@m")).length;
     const count = (re) => page.evaluate(async (src) => { const re = new RegExp(src); let n = 0;
       for (const k of (await caches.keys()).filter((x) => x.startsWith("asmau-"))) n += (await (await caches.open(k)).keys()).filter((r) => re.test(new URL(r.url).pathname)).length; return n; }, re.source);
     T.check(await count(/./) === SHELL.length + core, `the first visit saves the pages and the ${core} core pictures and fonts only (found ${await count(/./)} of ${SHELL.length + core})`);
     T.check(await count(/\/games\/[^/]+\/assets\//) === 0, "no game's pictures or sounds are downloaded before the game is opened");
     await page.goto(U + "games/yusuf/index.html", { waitUntil: "networkidle" });
     for (let t = 0; t < 60 && await count(/\/games\/yusuf\/assets\//) < yusuf; t++) await page.waitForTimeout(1000);
-    T.check(await count(/\/games\/yusuf\/assets\//) === yusuf, `opening Yusuf saves all its ${yusuf} pictures and sounds`);
+    T.check(await count(/\/games\/yusuf\/assets\//) === yusuf, `opening Yusuf saves all its ${yusuf} pictures and sounds, in the woman's voice`);
+    T.check(await count(/\/games\/yusuf\/assets\/audio-m\//) === 0, "and not the man's voice, which this family has not chosen");
     T.check(await count(/\/games\/musa\/assets\//) === 0, "and nothing of the other games");
     await ctx.setOffline(true);
     await page.goto(U + "games/yusuf/index.html", { waitUntil: "load" }); await page.waitForTimeout(600);
@@ -45,7 +48,15 @@ module.exports = async function () {
     T.check(/Save every game \(about \d+ MB\)/.test(await page.textContent("#saveAllBtn")), "Without internet offers to save every game, with its size: " + await page.textContent("#saveAllBtn"));
     await page.click("#saveAllBtn");
     for (let t = 0; t < 120 && !/Every game is saved/.test(await page.textContent("#saveAllStatus")); t++) await page.waitForTimeout(1000);
-    T.check(/Every game is saved/.test(await page.textContent("#saveAllStatus")) && await count(/./) === SHELL.length + MEDIA.length, `Save every game saves all ${MEDIA.length} pictures, sounds and fonts`);
+    T.check(/Every game is saved/.test(await page.textContent("#saveAllStatus")) && await count(/./) === SHELL.length + MEDIA.length - men, `Save every game saves all ${MEDIA.length - men} pictures, sounds and fonts, in the chosen voice only`);
+    // For parents > Your voice: choosing the man's voice fetches it for the games already on this device
+    await page.click('#parentsBack, .sheet-backbtn').catch(() => {});
+    await page.evaluate(() => { const b = document.querySelector('[data-voice="m"]'); b.click(); });
+    // every game is on this device, so the switch fetches the man's clips for all of them (Yusuf comes last)
+    for (let t = 0; t < 240 && await count(/\/games\/yusuf\/assets\/audio-m\//) < yusufMan; t++) await page.waitForTimeout(1000);
+    const gotMan = await count(/\/games\/yusuf\/assets\/audio-m\//);
+    T.check(gotMan === yusufMan && await page.evaluate(() => localStorage.getItem("asmau-voice")) === "m",
+      `choosing the man's voice saves his ${yusufMan} clips for Yusuf too (${gotMan} saved)`);
     await ctx.close();
   }
   { // resume by name

@@ -132,6 +132,13 @@
   .p-card:focus-visible, .p-list button:focus-visible, .sheet-backbtn:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
   .sheet h4 { font-family: var(--font-display); font-size: 15px; margin: 14px 0 4px; }
   .p-steps { padding-left: 20px; margin: 0 0 8px; }
+  .voice-pick { display: flex; gap: 8px; flex-wrap: wrap; margin: 6px 0 4px; }
+  .voice-pick button { flex: 1 1 140px; display: flex; align-items: center; gap: 8px; padding: 10px 12px; border-radius: 14px;
+    border: 1px solid var(--card-line); background: rgba(255,255,255,.05); color: var(--cream); font: inherit; cursor: pointer; text-align: left; }
+  .voice-pick button[aria-checked="true"] { border-color: var(--gold); background: rgba(240,180,60,.16); }
+  .voice-pick button[aria-checked="true"]::after { content: "✓"; margin-left: auto; color: var(--gold); font-weight: 800; }
+  .voice-pick button span { font-size: 22px; }
+  .voice-pick button:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
   .p-steps li { margin-bottom: 6px; }
   .p-checks { list-style: none; padding: 0; margin: 0 0 10px; }
   .p-checks li { position: relative; padding-left: 28px; margin-bottom: 8px; }
@@ -237,6 +244,13 @@
         on their own phone and the whole family hears it. Recordings are locked on the device before they travel; if you
         lose the code, the copy kept online is gone.</p>
       <a class="big-link" href="tools/record-voice/index.html">🎙️ Open the recorder →</a>
+      <h4>Until then: which computer voice?</h4>
+      <p class="p-small">Lines you have not recorded are read by a computer voice. Choose the one your family prefers; your
+        own recordings always play first.</p>
+      <div class="voice-pick" role="radiogroup" aria-label="Computer voice" id="voicePick">
+        <button type="button" role="radio" data-voice="w" aria-checked="true"><span>👩🏿</span> A woman’s voice</button>
+        <button type="button" role="radio" data-voice="m" aria-checked="false"><span>👨🏿</span> A man’s voice</button>
+      </div>
     </div>
 
     <div class="p-view" data-view="privacy" hidden>
@@ -483,7 +497,8 @@
     return swStatus().then(function (s) {
       if (!s) { btn.hidden = true; out.textContent = "This browser cannot save games for use without internet."; return true; }
       var files = 0, done = 0, left = 0;
-      Object.keys(s.packs).forEach(function (k) { var p = s.packs[k]; files += p.files; done += p.saved; left += p.files ? p.bytes * (1 - p.saved / p.files) : 0; });
+      var skip = voiceSet() === "m" ? "@w" : "@m";        // only the voice this family chose is saved
+      Object.keys(s.packs).forEach(function (k) { if (k.slice(-2) === skip) return; var p = s.packs[k]; files += p.files; done += p.saved; left += p.files ? p.bytes * (1 - p.saved / p.files) : 0; });
       var mb = Math.max(1, Math.round(left / 1e6));
       if (done >= files) { btn.hidden = true; out.textContent = "✓ Every game is saved on this device."; saving = false; return true; }
       btn.hidden = false;
@@ -496,11 +511,32 @@
   function saveAll() {
     if (saving) return;
     saving = true;
-    navigator.serviceWorker.ready.then(function (reg) { reg.active.postMessage({ type: "asmau-want", packs: "all" }); });
+    navigator.serviceWorker.ready.then(function (reg) { reg.active.postMessage({ type: "asmau-want", packs: "all", voice: voiceSet() }); });
     (function poll() { saveState().then(function (finished) { if (!finished && saving) setTimeout(poll, 1500); }); })();
   }
 
+  // For parents > Your voice: which computer voice reads the lines a parent has not recorded (shared/narration.js reads it)
+  function voiceSet() { try { return localStorage.getItem("asmau-voice") === "m" ? "m" : "w"; } catch (e) { return "w"; } }
+  function wireVoicePick() {
+    var pick = document.getElementById("voicePick");
+    function show() { Array.prototype.forEach.call(pick.querySelectorAll("[data-voice]"), function (b) { b.setAttribute("aria-checked", String(b.getAttribute("data-voice") === voiceSet())); }); }
+    pick.addEventListener("click", function (e) {
+      var b = e.target.closest ? e.target.closest("[data-voice]") : null; if (!b) return;
+      try { localStorage.setItem("asmau-voice", b.getAttribute("data-voice")); } catch (err) { /* private window: this visit only */ }
+      show();
+      // games already saved on this device get the new voice too, so they keep working without internet
+      swStatus().then(function (s) {
+        if (!s) return;
+        var v = voiceSet(), want = Object.keys(s.packs).filter(function (k) { return k.indexOf("@") < 0 && k !== "core" && s.packs[k].saved > 0; })
+          .map(function (k) { return k + "@" + v; });
+        if (want.length) navigator.serviceWorker.ready.then(function (reg) { reg.active.postMessage({ type: "asmau-want", packs: want, voice: v }); });
+      });
+    });
+    show();
+  }
+
   function wireParents() {
+    wireVoicePick();
     document.getElementById("saveAllBtn").addEventListener("click", saveAll);
     var back = document.getElementById("parents"), btn = document.getElementById("parentsBtn"), close = document.getElementById("parentsClose");
     var sheet = back.querySelector(".sheet"), backBtn = document.getElementById("pBack"), title = document.getElementById("parentsTitle");

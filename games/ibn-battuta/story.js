@@ -13,7 +13,7 @@ window.STORY = [
     steps: [
       {"say":"i1-a","scene":"city","e":"🏙️ 🌊 🌅"},
       {"say":"i1-b","scene":"dawn","src":"From his book, the Rihla","e":"🧔🏿 🌅 🧭"},
-      {"say":"i1-c","scene":"city","src":"From his book, the Rihla","e":"👴🏿 👵 🧔🏿"},
+      {"say":"i1-c","scene":"city","src":"From his book, the Rihla","e":"👴🏿 👵🏿 🧔🏿"},
       {"play":"sort","line":"i1-pack","scene":"city","opts":{"bins":[{"label":"Pack it","icon":"🎒"},{"label":"Leave it","icon":"🏠"}],"things":[{"icon":"💧","label":"A water skin","bin":0},{"icon":"🛏️","label":"A big bed","bin":1},{"icon":"🍞","label":"Bread and dates","bin":0},{"icon":"🧥","label":"A warm cloak","bin":0},{"icon":"🪑","label":"A heavy table","bin":1},{"icon":"📦","label":"A box of toys","bin":1}],"wrong":"i1-pack-no","img":"i1-c"}},
       {"say":"i1-d","scene":"desert","src":"From his book, the Rihla","e":"🐦 🪺 🛤️"},
       {"play":"choice","line":"i1-q","scene":"desert","opts":{"options":[{"label":"To go on Hajj to Makkah","icon":"🕋","ok":true},{"label":"To find treasure","icon":"💰","ok":false}],"wrong":"i1-q-no","img":"i1-d"}}

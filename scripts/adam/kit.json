@@ -1,0 +1,13 @@
+{
+ "game": "adam",
+ "art": "adam-art",
+ "prefix": "d",
+ "name": "The Adam story",
+ "chapters": [
+  "c0",
+  "c1",
+  "c2"
+ ],
+ "tone": "1F3FF",
+ "look": "africa-open"
+}

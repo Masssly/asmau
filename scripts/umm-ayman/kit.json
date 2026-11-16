@@ -1,0 +1,13 @@
+{
+ "game": "umm-ayman",
+ "art": "umm-ayman-art",
+ "prefix": "u",
+ "name": "The Umm Ayman story",
+ "chapters": [
+  "c0",
+  "c1",
+  "c2"
+ ],
+ "tone": "1F3FF",
+ "look": "arabia"
+}

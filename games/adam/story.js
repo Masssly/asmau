@@ -125,7 +125,7 @@ window.STORY = [
     id: "d11", icon: "🌍", title: "Children of Adam", source: "7:26", more: ["7:27"],
     steps: [
       {"say":"d11-a","scene":"field","src":"From narrations in Majlisi's Hayat al-Qulub","e":"🧔🏿 👦🏿 🌳"},
-      {"say":"d11-b","scene":"dusk","e":"👨🏿‍👩🏿‍👧‍👦🏿 ⭐"},
+      {"say":"d11-b","scene":"dusk","e":"👨🏿‍👩🏿‍👧🏿‍👦🏿 ⭐"},
       {"say":"d11-c","scene":"dawn","e":"🌅 🏘️"},
       {"say":"d11-d","scene":"dawn","e":"🤝 💛 🌍"},
       {"play":"order","line":"d11-story","scene":"dawn","opts":{"cards":[{"icon":"🟤","label":"Made from earth","line":"d11-story-c1"},{"icon":"🦁","label":"The names","line":"d11-story-c2"},{"icon":"🔥","label":"Iblis would not bow","line":"d11-story-c3"},{"icon":"🌳","label":"The Garden and the tree","line":"d11-story-c4"},{"icon":"🤲🏿","label":"Sorry","line":"d11-story-c5"},{"icon":"🌾","label":"Life on earth","line":"d11-story-c6"}],"wrong":"d11-story-no","img":"d11-d"}}

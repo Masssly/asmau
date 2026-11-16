@@ -70,7 +70,7 @@ window.STORY = [
       {"say":"u6-c","scene":"city","src":"From Ibn Sa'd's Tabaqat","e":"🧕🏿 🥛 💛"},
       {"say":"u6-d","scene":"field","src":"From Ibn Sa'd's Tabaqat","e":"🌴 🌟"},
       {"say":"u6-e","scene":"city","src":"From Ibn Shihab, in Sahih Muslim","e":"🧔🏿 🧕🏿 👦🏿"},
-      {"play":"match","line":"u6-names","scene":"city","opts":{"pairs":[{"a":"u6-names-a1","aIcon":"🌟","aLabel":"Barakah","b":"u6-names-b1","bIcon":"🎁","bLabel":"Blessing"},{"a":"u6-names-a2","aIcon":"👩🏿🏿","aLabel":"Umm Ayman","b":"u6-names-b2","bIcon":"👶🏿🏿","bLabel":"The mother of Ayman"},{"a":"u6-names-a3","aIcon":"👦🏿🏿","aLabel":"Usamah","b":"u6-names-b3","bIcon":"👨🏿‍👩🏿‍👦🏿","bLabel":"Son of Zayd and Umm Ayman"}],"img":"u6-e"}}
+      {"play":"match","line":"u6-names","scene":"city","opts":{"pairs":[{"a":"u6-names-a1","aIcon":"🌟","aLabel":"Barakah","b":"u6-names-b1","bIcon":"🎁","bLabel":"Blessing"},{"a":"u6-names-a2","aIcon":"👩🏿","aLabel":"Umm Ayman","b":"u6-names-b2","bIcon":"👶🏿","bLabel":"The mother of Ayman"},{"a":"u6-names-a3","aIcon":"👦🏿","aLabel":"Usamah","b":"u6-names-b3","bIcon":"👨🏿‍👩🏿‍👦🏿","bLabel":"Son of Zayd and Umm Ayman"}],"img":"u6-e"}}
     ]
   },
   {

@@ -1,0 +1,14 @@
+{
+ "game": "nana-asmau",
+ "art": "asmau-art",
+ "prefix": "a",
+ "name": "The story of Nana Asma'u",
+ "chapters": [
+  "c0",
+  "c1"
+ ],
+ "tone": "1F3FF",
+ "sourceIsCite": true,
+ "headNote": "A chapter has no Qur'an `source`: `cite`\n  says where its facts come from (see scripts/asmau/RESEARCH.md).",
+ "look": "africa-open"
+}

@@ -105,7 +105,7 @@ window.STORY = [
   {
     id: "a10", icon: "🏠", title: "Mother of the Town", cite: "Boyd and Mack, The Collected Works of Nana Asma'u (1997): the introduction and the outline chronology",
     steps: [
-      {"say":"a10-a","scene":"egypt","amb":"crowd","e":"👩🏿 🤝🏿 🏠"},
+      {"say":"a10-a","scene":"egypt","amb":"crowd","e":"👩🏿 🤝 🏠"},
       {"play":"sort","line":"a10-good","scene":"egypt","opts":{"bins":[{"label":"Kind","icon":"💛"},{"label":"Not kind","icon":"💢"}],"things":[{"icon":"🤝🏿","label":"Helping a neighbour","bin":0},{"icon":"😤","label":"Shouting at a friend","bin":1},{"icon":"🍲","label":"Sharing your food","bin":0},{"icon":"📖","label":"Teaching what you know","bin":0},{"icon":"🙈","label":"Laughing at someone","bin":1}],"wrong":"a10-good-no","img":"a10-a"}},
       {"say":"a10-b","scene":"egypt","e":"👩🏿 💛 👩🏿"}
     ]

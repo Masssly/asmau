@@ -12,7 +12,7 @@ window.STORY = [
     id: "r1", icon: "🏔️", title: "A Girl in the Mountains", more: [], cite: "Histories of her life (see the notes)",
     steps: [
       {"say":"r1-a","scene":"field","src":"From the histories of her life","e":"⛰️ 🌾 👶🏽"},
-      {"say":"r1-b","scene":"village","src":"From the histories of her life","e":"👧 📖 ⭐"},
+      {"say":"r1-b","scene":"village","src":"From the histories of her life","e":"👧🏽 📖 ⭐"},
       {"say":"r1-c","scene":"village","e":"🏠 🐃 ⛰️"},
       {"play":"memory","line":"r1-home","scene":"village","opts":{"icons":["⛰️","🌾","🏠","🐃","🕌","🌧️"],"img":"r1-c"}},
       {"play":"choice","line":"r1-q","scene":"field","opts":{"options":[{"label":"In the mountains of Sumatra","icon":"⛰️","ok":true},{"label":"In a big desert","icon":"🏜️","ok":false}],"wrong":"r1-q-no","img":"r1-a"}}
@@ -21,8 +21,8 @@ window.STORY = [
   {
     id: "r2", icon: "📖", title: "Learning to Read", more: [], cite: "Histories of her life (see the notes)",
     steps: [
-      {"say":"r2-a","scene":"dusk","src":"From the histories of her life","e":"👧 💧 🌇"},
-      {"say":"r2-b","scene":"village","src":"From the histories of her life","e":"👧 ✍️ 📖"},
+      {"say":"r2-a","scene":"dusk","src":"From the histories of her life","e":"👧🏽 💧 🌇"},
+      {"say":"r2-b","scene":"village","src":"From the histories of her life","e":"👧🏽 ✍️ 📖"},
       {"play":"count","line":"r2-books","scene":"village","opts":{"total":6,"icon":"📖","got":"✨","img":"r2-b"}},
       {"say":"r2-c","scene":"village","src":"From the histories of her life","e":"👶🏽 🤲🏽"},
       {"play":"choice","line":"r2-q","scene":"village","opts":{"options":[{"label":"Nobody at all","icon":"🚫","ok":false},{"label":"Her father's students","icon":"📖","ok":true}],"wrong":"r2-q-no","img":"r2-b"}}
@@ -31,7 +31,7 @@ window.STORY = [
   {
     id: "r3", icon: "🌙", title: "No More School", more: [], cite: "Histories of her life (see the notes)",
     steps: [
-      {"say":"r3-a","scene":"village","src":"From the histories of her life","e":"👧 🏫 🌧️"},
+      {"say":"r3-a","scene":"village","src":"From the histories of her life","e":"👧🏽 🏫 🌧️"},
       {"say":"r3-b","scene":"night","src":"From the histories of her life","e":"🌙 🧕🏽 📖"},
       {"play":"hold","line":"r3-learn","scene":"night","opts":{"ms":2500,"icon":"📚","hint":"Press and hold","done":"Never stop learning","img":"r3-b"}},
       {"say":"r3-c","scene":"dawn","src":"From the histories of her life","e":"🌅 🏫"},

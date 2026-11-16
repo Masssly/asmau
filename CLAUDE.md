@@ -57,6 +57,9 @@ things work; this file holds the decisions that must not be lost between session
   anything frightening; no animation of the snake. Real video clips only for a few chosen key moments, if ever.
 
 ## Story
+- Every story game is made with the story kit (scripts/kit/README.md): a game is `scripts/<story>/kit.json`, its cast and
+  chapter files, and `node scripts/kit/make.js <story> story|refs|scenes|import|fx|voice|listen|check`. A new one starts
+  with `node scripts/kit/new.js`. Change the kit, not a copy of it.
 - Read the story straight through before release (scripts/story-readthrough.js): no gaps, no jumps.
 - Prefer more pages and activities over long pages of text.
 

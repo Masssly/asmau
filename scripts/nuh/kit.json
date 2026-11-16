@@ -1,0 +1,13 @@
+{
+ "game": "nuh",
+ "art": "nuh-art",
+ "prefix": "n",
+ "name": "The Nuh story",
+ "chapters": [
+  "c0",
+  "c1",
+  "c2"
+ ],
+ "tone": "1F3FF",
+ "look": "africa-open"
+}

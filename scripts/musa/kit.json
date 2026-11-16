@@ -1,0 +1,15 @@
+{
+ "game": "musa",
+ "art": "musa-art",
+ "prefix": "m",
+ "name": "The Musa story",
+ "chapters": [
+  "c0",
+  "c1",
+  "c2",
+  "c3"
+ ],
+ "tone": "1F3FF",
+ "alwaysSource": true,
+ "look": "africa"
+}

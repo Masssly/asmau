@@ -1,0 +1,13 @@
+{
+ "game": "ibn-battuta",
+ "art": "ibn-battuta-art",
+ "prefix": "i",
+ "name": "The Ibn Battuta story",
+ "chapters": [
+  "c0",
+  "c1",
+  "c2"
+ ],
+ "tone": "1F3FF",
+ "look": "world"
+}

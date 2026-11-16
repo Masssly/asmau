@@ -5,6 +5,11 @@ so that a person looks the same from scene to scene.
 
   PROJECT=<google cloud project id> python3 scripts/art/vertex.py <command> ...
 
+  refs <story> [KEY ...]    a story made with the story kit (scripts/<story>/kit.json): draw its reference
+                            pictures (scripts/<art>/refs.json) into scripts/<art>/refs/<KEY>.png, for a person to approve
+  scenes <story> [KEY ...]  draw its scenes into scripts/<art>/out/<key>.png, each shown the approved references of
+                            the people in it, in the story's look (LOOKS below). Already drawn: skipped.
+  (The older per-story spellings below still work.)
   musa-refs [KEY ...]       draw the reference pictures (scripts/musa-art/refs.json)
                             into scripts/musa-art/refs/<KEY>.png, for a person to approve
   asmau-refs / asmau-scenes  the same for the Nana Asma'u story (scripts/asmau-art)
@@ -166,15 +171,29 @@ ART = os.path.join(ROOT, "scripts", "musa-art")
 ALIAS = {"OLD": "ASMA"}          # Nana Asma'u grown old is drawn from her own reference
 
 
+# The looks a story can have (its scripts/<story>/kit.json "look"): how scenes, backdrops, portraits and reference
+# pictures are asked for. A new story in a new place gets a new look here.
+LOOKS = {
+    "africa":      (STYLE, BACKDROP, PORTRAIT, REF),             # the prophets' stories set in North-East Africa and Sinai
+    "africa-open": (STYLE, BACKDROP_ANY, PORTRAIT, REF),         # the same people, backdrops anywhere (Adam, Nuh, Nana Asma'u)
+    "arabia":      (ARABIA_STYLE, ARABIA_BACKDROP, ARABIA_PORTRAIT, ARABIA_REF),
+    "world":       (WORLD_STYLE, WORLD_BACKDROP, ARABIA_PORTRAIT, ARABIA_REF),
+    "sumatra":     (SUMATRA_STYLE, SUMATRA_BACKDROP, ARABIA_PORTRAIT, ARABIA_REF),
+}
+
+
+def kit(story):
+    """A story's kit.json (scripts/<story>/kit.json), or None for the older games without one."""
+    p = os.path.join(ROOT, "scripts", story, "kit.json")
+    return json.load(open(p, encoding="utf-8")) if os.path.exists(p) else None
+
+
 def use(story):
-    global ART, STYLE, BACKDROP, PORTRAIT, REF
-    ART = os.path.join(ROOT, "scripts", story + "-art")
-    if story == "umm-ayman":
-        STYLE, BACKDROP, PORTRAIT, REF = ARABIA_STYLE, ARABIA_BACKDROP, ARABIA_PORTRAIT, ARABIA_REF
-    if story == "ibn-battuta":
-        STYLE, BACKDROP, PORTRAIT, REF = WORLD_STYLE, WORLD_BACKDROP, ARABIA_PORTRAIT, ARABIA_REF
-    if story == "rahmah":
-        STYLE, BACKDROP, PORTRAIT, REF = SUMATRA_STYLE, SUMATRA_BACKDROP, ARABIA_PORTRAIT, ARABIA_REF
+    global ART, STYLE, BACKDROP, PORTRAIT, REF, BACKDROP_ANY
+    cfg = kit(story) or {"art": story + "-art", "look": "africa"}
+    ART = os.path.join(ROOT, "scripts", cfg["art"])
+    STYLE, BACKDROP, PORTRAIT, REF = LOOKS[cfg.get("look", "africa")]
+    BACKDROP_ANY = BACKDROP
 
 
 def musa_refs(keys):
@@ -202,7 +221,7 @@ def musa_scenes(keys):
     for k in keys:
         s = shots[k]
         refs = [r for r in (approved_ref(w) for w in s.get("who", [])) if r][:3]
-        lead = PORTRAIT if s.get("portrait") else (BACKDROP_ANY if ART.endswith(("adam-art", "nuh-art")) else BACKDROP) if k.startswith("bg-") else STYLE
+        lead = PORTRAIT if s.get("portrait") else BACKDROP if k.startswith("bg-") else STYLE
         jobs.append((k, os.path.join(ART, "out", k + ".png"), (LOCK if refs else "") + lead + s["scene"] + END, refs))
     return run(jobs)
 
@@ -278,18 +297,21 @@ if __name__ == "__main__":
         data = draw("A small golden crescent moon on a plain dark blue background." + END)
         print("ok: a picture of %d bytes came back" % len(data))
         sys.exit(0)
-    if cmd.startswith("asmau-"):
-        use("asmau")
-    if cmd.startswith("adam-"):
-        use("adam")
-    if cmd.startswith("nuh-"):
-        use("nuh")
-    if cmd.startswith("ua-"):
-        use("umm-ayman")
-    if cmd.startswith("ib-"):
-        use("ibn-battuta")
-    if cmd.startswith("ry-"):
-        use("rahmah")
+    # the story kit: "refs <story>" and "scenes <story>" for any story with a scripts/<story>/kit.json
+    if cmd in ("refs", "scenes"):
+        if not args or not kit(args[0]):
+            raise SystemExit("usage: vertex.py refs|scenes <story folder in scripts/, with a kit.json> [keys...]")
+        use(args[0])
+        failed = (musa_refs if cmd == "refs" else musa_scenes)(args[1:])
+        if failed:
+            print("%d failed: %s" % (len(failed), ", ".join(failed)))
+            sys.exit(1)
+        sys.exit(0)
+    # the older spellings of the same commands
+    for pre, story in (("asmau-", "asmau"), ("adam-", "adam"), ("nuh-", "nuh"), ("ua-", "umm-ayman"), ("ib-", "ibn-battuta"),
+                       ("ry-", "rahmah"), ("musa-", "musa")):
+        if cmd.startswith(pre):
+            use(story)
     failed = {"musa-refs": musa_refs, "musa-scenes": musa_scenes, "asmau-refs": musa_refs, "asmau-scenes": musa_scenes,
               "adam-refs": musa_refs, "adam-scenes": musa_scenes, "nuh-refs": musa_refs, "nuh-scenes": musa_scenes,
               "ua-refs": musa_refs, "ua-scenes": musa_scenes,

@@ -1,0 +1,13 @@
+{
+ "game": "rahmah",
+ "art": "rahmah-art",
+ "prefix": "r",
+ "name": "The Rahmah El Yunusiyyah story",
+ "chapters": [
+  "c0",
+  "c1",
+  "c2"
+ ],
+ "tone": "1F3FD",
+ "look": "sumatra"
+}

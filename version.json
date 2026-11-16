@@ -1,11 +1,18 @@
 {
-  "version": "2026.11.38",
+  "version": "2026.11.39",
   "date": "2026-11-16",
-  "buildId": "abdb975ce90b",
+  "buildId": "25f4e71b3862",
   "notes": [
-    "Umm Ayman, pages 6.1 and 6.2: she is shown at about forty-five, her age when the Prophet married Khadijah"
+    "Languages: families can choose another language once a game is checked in it (Bahasa Indonesia first; Rahmah's draft waits for a native speaker). One shared story kit for every story game."
   ],
   "history": [
+    {
+      "version": "2026.11.39",
+      "date": "2026-11-16",
+      "notes": [
+        "Languages: families can choose another language once a game is checked in it (Bahasa Indonesia first; Rahmah's draft waits for a native speaker). One shared story kit for every story game."
+      ]
+    },
     {
       "version": "2026.11.38",
       "date": "2026-11-16",

@@ -17,36 +17,38 @@
 */
 
 // BEGIN GENERATED
-const RELEASE = "2026.11.38";
-const BUILD = "e17e147a714a";
+const RELEASE = "2026.11.39";
+const BUILD = "25f4e71b3862";
 // pack: [fingerprint of packs/<pack>.json, bytes, files]
 const PACKS = {
-  "adam":["de6fc807f2",2721613,55],
+  "adam":["4f6ded53a9",2721610,55],
   "adam@m":["a617f3f408",4026446,147],
   "adam@w":["217fc43e27",4316508,147],
-  "core":["ab9807f368",987835,39],
+  "core":["535768c932",988461,39],
   "count-the-crescents":["c58ffd2f9d",83016,5],
   "count-the-crescents@m":["76410cb722",587647,52],
   "count-the-crescents@w":["238f9dbdf7",584828,52],
-  "ibn-battuta":["29eda0025e",3497863,54],
+  "ibn-battuta":["ac55234aed",3497853,54],
   "ibn-battuta@m":["0e8002f829",3511529,130],
   "ibn-battuta@w":["f0093c205e",3797936,130],
-  "musa":["ac7658bfbd",8063727,161],
+  "musa":["7d00ec09e5",8063720,161],
   "musa@m":["82bed29f40",13950526,422],
   "musa@w":["5e7023ffde",15159879,422],
-  "nana-asmau":["72473f8c98",2470840,51],
+  "nana-asmau":["a589ac1994",2470828,51],
   "nana-asmau@m":["f459229234",3366561,116],
   "nana-asmau@w":["e85f1693d8",3639073,116],
-  "nuh":["5f6c67d1bd",3351655,55],
+  "nuh":["6c85c9020f",3351649,55],
   "nuh@m":["8e929a1b1f",3882631,145],
   "nuh@w":["1168c320e1",4156508,145],
-  "rahmah":["19904a1942",2725766,46],
+  "rahmah":["6b41d48764",2725773,46],
+  "rahmah@id-m":["646912c71b",3179389,114],
+  "rahmah@id-w":["94e09d513a",3310413,114],
   "rahmah@m":["a4fe8c7289",2874273,114],
   "rahmah@w":["cf884129c1",3117733,114],
   "tap-and-say":["284f427c70",21717,4],
   "tap-and-say@m":["71edb942d5",1501703,126],
   "tap-and-say@w":["d9e7f925b2",1472336,126],
-  "umm-ayman":["92921475be",3277499,56],
+  "umm-ayman":["bc23859126",3277475,56],
   "umm-ayman@m":["24046ad1cb",3319749,116],
   "umm-ayman@w":["8c74443e58",3651189,116],
   "yusuf":["74e1a8e90e",5828175,93],

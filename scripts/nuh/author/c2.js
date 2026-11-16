@@ -68,7 +68,7 @@ s("d", "mountain", "Allah said: Nuh, go down in peace, with blessings on you and
   "{NUH} and {BELIEVERS} walk down a green mountainside in the morning, animals spreading out over the fresh grass around them, a clear blue sky above.", { mood: "joy" });
 s("e", "dawn", "Nuh was a truly thankful servant of Allah.",
   "{NUH} kneels on the fresh grass at sunrise with his hands raised in thanks, the Ark on the mountain far behind him.", { mood: "triumph" });
-s("f", "dawn", "And Nuh prayed: my Lord, forgive me, and my parents, and everyone who comes into my house believing, and all the believers.",
+s("f", "dawn", "And Nuh prayed: my Lord, forgive me, and my parents, and everyone who comes into my house believing, and all the believing men and women.",
   "{NUH} stands at the door of a small new house of stone and wood in a green valley, welcoming {BELIEVERS} inside, hands open; morning light.");
 ord("forgive", "dawn", "Say Nuh's prayer. Tap the parts in order.", [
   ["🤲", "My Lord, forgive me", "My Lord, forgive me,"],

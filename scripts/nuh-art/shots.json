@@ -14,21 +14,21 @@
  },
  "n1-b": {
   "alt": "In the middle of the village, villagers with deep dark brown skin carve a plain stone statue of a standing figure; a few more rough statues stand behind them. Every…",
-  "scene": "In the middle of a village of round mud houses with thatched roofs among palm trees and fields, in a wide green valley, villagers with deep dark brown skin carve a plain stone statue of a standing figure; a few more rough statues stand behind them. Every woman's hair is covered.",
+  "scene": "In the middle of a village of round mud houses with thatched roofs among palm trees and fields, in a wide green valley, villagers with deep dark brown skin carve a plain stone statue of a standing figure; a few more rough statues stand behind them. Every woman and every girl wears a headscarf that covers all her hair.",
   "who": [
    "VILLAGE"
   ]
  },
  "n1-c": {
-  "alt": "the statues stand alone in an empty square at evening, long shadows across the dust, weeds growing at their feet. No people.",
-  "scene": "five tall rough stone statues of standing figures, plain and weathered, their faces worn smooth and blank stand alone in an empty square at evening, long shadows across the dust, weeds growing at their feet. No people.",
+  "alt": "the statues stand alone in an empty dusty square between round mud houses with thatched roofs at evening, long shadows across the dust, weeds growing at their feet. No…",
+  "scene": "five tall rough stone statues of standing figures, plain and weathered, their faces worn smooth and blank stand alone in an empty dusty square between round mud houses with thatched roofs at evening, long shadows across the dust, weeds growing at their feet. No people.",
   "who": [
    "STATUES"
   ]
  },
  "n1-d": {
-  "alt": "Seen from behind, a crowd of villagers bow down before the statues at dusk, offerings of fruit at the statues' feet; the faces of the people are not seen.",
-  "scene": "Seen from behind, a crowd of villagers bow down before five tall rough stone statues of standing figures, plain and weathered, their faces worn smooth and blank at dusk, offerings of fruit at the statues' feet; the faces of the people are not seen.",
+  "alt": "Seen from behind, a crowd of villagers bow down before the statues at dusk, offerings of fruit at the statues' feet; the statues have no faces at all, only smooth blank…",
+  "scene": "Seen from behind, a crowd of villagers bow down before five tall rough stone statues of standing figures, plain and weathered, their faces worn smooth and blank at dusk, offerings of fruit at the statues' feet; the statues have no faces at all, only smooth blank stone; the faces of the people are not seen.",
   "who": [
    "STATUES"
   ]

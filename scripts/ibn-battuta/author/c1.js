@@ -50,7 +50,7 @@ chapter("i4", "🕋", "Makkah", "22:27", [], null);
 s("a", "desert", "At last, after a long journey across the desert with a great caravan of camels, Ibn Battuta reached Makkah.",
   "A long caravan of camels and pilgrims crosses a wide desert towards rocky hills at golden hour; {IBY} rides a camel near the front, looking ahead with joy.", { src: RIH, mood: "trek" });
 s("b", "city", "He saw the Ka'bah, the House of Allah, with people from every land walking around it.",
-  "The Ka'bah draped in black cloth in the middle of the great mosque of Makkah long ago, pilgrims in simple white clothes walking around it, people of many lands; every woman's hair covered. {IBY} in white pilgrim clothes watches in awe in the front.", { mood: "awe" });
+  "The Ka'bah draped in black cloth in the middle of the great mosque of Makkah long ago, pilgrims in simple white clothes walking around it, people of many lands; every woman's hair covered. In front, exactly one young man, {IBY}, now in two plain white pilgrim cloths instead of his cloak, watches in awe; he appears only once.", { mood: "awe" });
 s("c", "city", "Allah says in the Qur'an: proclaim the Pilgrimage to all people. They will come to you on foot and on every kind of swift mount, from every deep mountain pass.",
   "Pilgrims in white from many lands arrive at Makkah along a mountain road, some walking, some on camels and horses, the town of Makkah in the valley below. Every woman's hair is covered.", { mood: "awe" });
 ord("hajj", "city", "Some steps of the Hajj. Put them in order.", [

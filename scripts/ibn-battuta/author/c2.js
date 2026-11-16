@@ -16,7 +16,7 @@ q("q", "field", "What grew everywhere on the islands?", ["Coconut palms", "🌴"
 
 chapter("i8", "🥭", "The Kind Sultan of Sumatra", null, [], null, "The Rihla, tr. Gibb and Beckingham, vol. IV, pp. 875-877");
 s("a", "sea", "Then he sailed east to the island of Sumatra, in what is now Indonesia.",
-  "A big sailing ship arrives at a green tropical island with tall forested hills and a harbour village of wooden houses on stilts by the sea.", { src: RIH, mood: "wonder" });
+  "A big wooden Indian Ocean trading ship of the 14th century with matting sails (not a European ship) arrives at a green tropical island with tall forested hills and a harbour village of wooden houses on stilts by the sea.", { src: RIH, mood: "wonder" });
 s("b", "sea", "People came out to the ship in little boats, with coconuts, bananas, mangoes and fish as gifts.",
   "Sumatran people with brown skin paddle small wooden boats up to the side of a big ship, holding up coconuts, bunches of bananas, mangoes and fish; {IB} smiles down from the ship. Every woman's hair covered.", { src: RIH, mood: "joy" });
 p("memory", "gifts", "sea", "Find the pairs! The gifts in the little boats.", { icons: ["🥥", "🍌", "🥭", "🐟", "⛵", "🌴"] }, { img: "b" });
@@ -33,7 +33,7 @@ s("b", "city", "In China, people paid with money made of paper, as big as your h
   "In a Chinese market long ago, a Chinese merchant hands a small sheet of paper money to {IB}, who holds it up in surprise; stalls of silk and fruit behind them.", { src: RIH, mood: "joy" });
 p("count", "notes", "city", "Pay with paper money! Tap each note.", { total: 5, icon: "📜", got: "✅" }, { img: "b" });
 s("c", "city", "He saw beautiful china dishes being made, like the dish the boy broke in Damascus!",
-  "In a Chinese pottery workshop, Chinese potters paint blue patterns on white porcelain dishes and vases while {IB} watches, delighted.", { src: RIH });
+  "In a Chinese pottery workshop, Chinese men paint blue patterns on white porcelain dishes and vases while {IB} watches, delighted. No girls; any woman wears a headscarf that covers all her hair.", { src: RIH });
 s("d", "night", "He said: China is the safest and best country for the traveller.",
   "A quiet Chinese town at night with lanterns glowing along a canal and a stone bridge; {IB} walks calmly along the path alone, peaceful and safe.", { src: RIH, mood: "longing" });
 q("q", "city", "What was money made of, in China?", ["Paper", "📜"], ["Chocolate", "🍫"], "In China, people paid with paper money.", { img: "b" });
@@ -58,7 +58,7 @@ s("a", "desert", "But soon he set out again, across the great Sahara desert with
   "A long camel caravan crosses golden sand dunes of the Sahara under a wide blue sky, {IB} riding a camel with a cloth wrapped around his face against the sun.", { src: RIH, mood: "trek" });
 p("journey", "sahara", "desert", "Lead the caravan across the Sahara to Mali.", { from: "🏜️", to: "🕌", icon: "🐪", steps: 7 }, { img: "a" });
 s("b", "city", "He wrote that the people of Mali hated injustice, and that travellers there were safe: nobody had to fear robbers.",
-  "A busy town in old Mali with buildings of earth and wooden beams, West African people in flowing robes trading in the street, travellers with camels resting safely; every woman's hair covered.", { src: RIH });
+  "A busy town in old Mali with buildings of earth and wooden beams, West African people of Mali with deep dark brown skin in flowing robes trading in the street, travellers with camels resting safely; every woman's hair covered.", { src: RIH });
 s("c", "city", "On Fridays everyone wore clean white clothes to the mosque. It was so full that people sent their prayer mats early, to keep a place.",
   "A great mosque of Mali built of earth with wooden beams sticking out of its walls, West African men in clean white robes arriving for Friday prayer carrying woven prayer mats; {IB} among them.", { src: RIH, mood: "awe" });
 s("d", "city", "And the children worked very hard to learn the Qur'an by heart.",

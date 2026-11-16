@@ -75,7 +75,7 @@ q("q", "village", "What did the brothers do for travellers?", ["Gave them food a
 
 chapter("i6", "⚖️", "A Judge in Delhi", null, [], null, "The Rihla, tr. Gibb, vol. III, pp. 746-747");
 s("a", "palace", "Ibn Battuta travelled on, over high mountains, to India. In the great city of Delhi lived a powerful Sultan.",
-  "The great city of Delhi long ago: high stone walls and domes, a crowded gate with Indian people in colourful clothes, elephants and horses; every woman's hair covered.", { src: RIH, mood: "awe" });
+  "The great city of Delhi long ago: high stone walls and domes, a crowded gate with Indian people in colourful clothes, elephants and horses; every woman and girl wears a scarf that covers all of her hair, with no hair showing at the front.", { src: RIH, mood: "awe" });
 s("b", "palace", "The Sultan made Ibn Battuta a judge, a qadi. He said: this is the highest of all jobs.",
   "On the terrace of a grand palace, a stern Indian Sultan with a dark beard and a jewelled turban sits on a royal couch and speaks to {IB}, who bows his head respectfully; courtiers stand by.", { src: RIH });
 s("c", "palace", "But Ibn Battuta did not know the language there! So the Sultan gave him two helpers.",

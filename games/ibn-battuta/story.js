@@ -37,6 +37,7 @@ window.STORY = [
       {"say":"i3-b","scene":"city","src":"From his book, the Rihla","e":"👦🏿 🍽️ 💥"},
       {"say":"i3-c","scene":"city","src":"From his book, the Rihla","e":"👥 👉🏿"},
       {"say":"i3-d","scene":"city","src":"From his book, the Rihla","e":"👴🏿 🪙 😊"},
+      {"play":"puzzle","line":"i3-mend","scene":"city","opts":{"pic":"i3-d","n":2}},
       {"say":"i3-e","scene":"city","src":"From his book, the Rihla","e":"🧔🏿 📖 💛"},
       {"play":"sort","line":"i3-hearts","scene":"city","opts":{"bins":[{"label":"Mends a heart","icon":"💛"},{"label":"Breaks a heart","icon":"💔"}],"things":[{"icon":"🤝","label":"Helping someone who dropped something","bin":0},{"icon":"😆","label":"Laughing at a mistake","bin":1},{"icon":"🍪","label":"Sharing your snack","bin":0},{"icon":"😠","label":"Shouting at someone","bin":1},{"icon":"🤗","label":"Saying: it's all right","bin":0},{"icon":"🗣️","label":"Telling everyone about it","bin":1}],"wrong":"i3-hearts-no","img":"i3-e"}}
     ]

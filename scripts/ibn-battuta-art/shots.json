@@ -135,8 +135,8 @@
   ]
  },
  "i6-a": {
-  "alt": "The great city of Delhi long ago: high stone walls and domes, a crowded gate with Indian people in colourful clothes, elephants and horses; every woman's hair covered.",
-  "scene": "The great city of Delhi long ago: high stone walls and domes, a crowded gate with Indian people in colourful clothes, elephants and horses; every woman's hair covered.",
+  "alt": "The great city of Delhi long ago: high stone walls and domes, a crowded gate with Indian people in colourful clothes, elephants and horses; every woman and girl wears a…",
+  "scene": "The great city of Delhi long ago: high stone walls and domes, a crowded gate with Indian people in colourful clothes, elephants and horses; every woman and girl wears a scarf that covers all of her hair, with no hair showing at the front.",
   "who": []
  },
  "i6-b": {
@@ -176,8 +176,8 @@
   "who": []
  },
  "i8-a": {
-  "alt": "A big sailing ship arrives at a green tropical island with tall forested hills and a harbour village of wooden houses on stilts by the sea.",
-  "scene": "A big sailing ship arrives at a green tropical island with tall forested hills and a harbour village of wooden houses on stilts by the sea.",
+  "alt": "A big wooden Indian Ocean trading ship of the 14th century with matting sails (not a European ship) arrives at a green tropical island with tall forested hills and a…",
+  "scene": "A big wooden Indian Ocean trading ship of the 14th century with matting sails (not a European ship) arrives at a green tropical island with tall forested hills and a harbour village of wooden houses on stilts by the sea.",
   "who": []
  },
  "i8-b": {
@@ -214,8 +214,8 @@
   ]
  },
  "i9-c": {
-  "alt": "In a Chinese pottery workshop, Chinese potters paint blue patterns on white porcelain dishes and vases while Ibn Battuta watches, delighted.",
-  "scene": "In a Chinese pottery workshop, Chinese potters paint blue patterns on white porcelain dishes and vases while a Moroccan man of about forty-five with warm light-brown skin and a full dark beard touched with grey, kind, curious eyes, in a cream hooded wool travelling cloak over a long white tunic, a white turban and a leather bag across his chest watches, delighted.",
+  "alt": "In a Chinese pottery workshop, Chinese men paint blue patterns on white porcelain dishes and vases while Ibn Battuta watches, delighted. No girls; any woman wears a…",
+  "scene": "In a Chinese pottery workshop, Chinese men paint blue patterns on white porcelain dishes and vases while a Moroccan man of about forty-five with warm light-brown skin and a full dark beard touched with grey, kind, curious eyes, in a cream hooded wool travelling cloak over a long white tunic, a white turban and a leather bag across his chest watches, delighted. No girls; any woman wears a headscarf that covers all her hair.",
   "who": [
    "IB"
   ]
@@ -256,8 +256,8 @@
   ]
  },
  "i11-b": {
-  "alt": "A busy town in old Mali with buildings of earth and wooden beams, West African people in flowing robes trading in the street, travellers with camels resting safely;…",
-  "scene": "A busy town in old Mali with buildings of earth and wooden beams, West African people in flowing robes trading in the street, travellers with camels resting safely; every woman's hair covered.",
+  "alt": "A busy town in old Mali with buildings of earth and wooden beams, West African people of Mali with deep dark brown skin in flowing robes trading in the street,…",
+  "scene": "A busy town in old Mali with buildings of earth and wooden beams, West African people of Mali with deep dark brown skin in flowing robes trading in the street, travellers with camels resting safely; every woman's hair covered.",
   "who": []
  },
  "i11-c": {

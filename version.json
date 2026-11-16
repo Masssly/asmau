@@ -1,11 +1,22 @@
 {
-  "version": "2026.11.27",
-  "date": "2026-11-15",
-  "buildId": "669755b96085",
+  "version": "2026.11.28",
+  "date": "2026-11-16",
+  "buildId": "b53709ac250f",
   "notes": [
-    "Adam: the matching and ordering games in chapters 3, 4, 8 and 11 show their cards again (they were hidden behind the picture); also Musa's prayer in chapter 11"
+    "Sound: tap a sound button (music, sounds, voice) to make it a step louder; after the loudest it turns off; a ring shows the level",
+    "Tap & Say and Count with Me: grown-ups press and hold the 🔊 in the corner to change the sound while playing",
+    "For parents: every page has its own note, easy to edit"
   ],
   "history": [
+    {
+      "version": "2026.11.28",
+      "date": "2026-11-16",
+      "notes": [
+        "Sound: tap a sound button (music, sounds, voice) to make it a step louder; after the loudest it turns off; a ring shows the level",
+        "Tap & Say and Count with Me: grown-ups press and hold the 🔊 in the corner to change the sound while playing",
+        "For parents: every page has its own note, easy to edit"
+      ]
+    },
     {
       "version": "2026.11.27",
       "date": "2026-11-15",

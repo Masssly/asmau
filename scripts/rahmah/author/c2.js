@@ -7,7 +7,7 @@ chapter("r7", "🏚️", "The Earthquake", null, [], null, CITE);
 s("a", "city", "In 1926, a big earthquake shook Padang Panjang, and the school building fell down.",
   "The morning after an earthquake in {TOWN}: a wooden school building leaning and partly fallen, planks on the ground, the mountains calm behind under a clear sky. No people.", { src: HIS, mood: "sad" });
 s("b", "field", "But the lessons did not stop. For years, the girls learned in simple shelters.",
-  "Under a simple shelter of bamboo poles and a palm-leaf roof beside rice fields, {GIRLS} sit on mats learning while {RY} teaches from a small board.", { src: HIS, mood: "joy" });
+  "Under a simple shelter of bamboo poles and a palm-leaf roof beside rice fields, {GIRLS} sit on mats learning, and exactly one teacher, {RY}, stands teaching from a small board (she appears only once); every woman and girl wears a headscarf that covers all of her hair, with no hair showing at the front.", { src: HIS, mood: "joy" });
 s("c", "sea", "Rahmah travelled to many towns and islands, to collect money for a new school.",
   "{RY} stands at the rail of a small steamship crossing a calm sea between green islands, a cloth bag and a notebook in her hands, looking ahead hopefully.", { src: HIS });
 p("journey", "travel", "sea", "Help Rahmah travel to collect money for the school.", { from: "🏚️", to: "🏫", icon: "⛵", steps: 6 }, { img: "c" });
@@ -17,7 +17,7 @@ p("build", "bricks", "city", "Build the new school. Tap to place every brick.", 
 
 chapter("r8", "🌱", "On Her Own Feet", null, [], null, CITE);
 s("a", "palace", "In those days the land was ruled by the Dutch, and their government paid money to some schools. But Rahmah would not take it: she wanted her school to be free to teach in its own way.",
-  "In a colonial office with a ceiling fan, a Dutch official in a white suit holds out a bag of money across a desk, and {RY} politely raises her hand to say no, calm and firm.", { src: HIS });
+  "In a colonial office with a ceiling fan, a Dutch official in a white suit holds out a plain cloth money bag with no writing or symbols on it across a desk, and {RY} politely raises her hand to say no, calm and firm.", { src: HIS });
 s("b", "city", "The school grew and grew. Soon about five hundred girls were learning there.",
   "A big school yard in {TOWN} full of {GIRLS} in neat rows for morning assembly, {RY} speaking from the steps of the school.", { src: HIS, mood: "joy" });
 s("c", "city", "She also opened a college to train women to be teachers.",
@@ -29,7 +29,7 @@ srt("teacher", "city", "What does a good teacher do? Sort them.", ["A good teach
 
 chapter("r9", "🚩", "A New Flag", null, [], null, CITE);
 s("a", "city", "For many years, Indonesia was ruled by others. Then, in 1945, Indonesia became free.",
-  "People of {TOWN} gather in the street listening to a radio set on a table outside a shop, faces full of joy and surprise; every woman's hair covered.", { src: HIS, mood: "triumph" });
+  "People of {TOWN} gather in the street listening to a radio set on a table outside a shop, faces full of joy and surprise; every woman and girl wears a headscarf that covers all of her hair, with no hair showing at the front.", { src: HIS, mood: "triumph" });
 s("b", "city", "When Rahmah heard the news, she raised the red and white flag of Indonesia in the school yard.",
   "In the school yard, {RO} pulls the rope to raise a red-and-white flag up a tall flagpole, while {GIRLS} watch and cheer under a blue sky.", { src: HIS, mood: "triumph" });
 p("hold", "flag", "city", "Raise the flag! Press and hold.", { ms: 2500, icon: "🚩", hint: "Press and hold", done: "The flag is flying!" }, { img: "b" });
@@ -44,7 +44,7 @@ p("journey", "cairo", "desert", "Help Rahmah travel to Makkah, and then to Cairo
 s("c", "palace", "In Cairo, the teachers of al-Azhar gave her the title Syaikhah: a great scholar. No woman had ever been given it before.",
   "In a grand hall of al-Azhar in Cairo with stone arches, old Egyptian scholars in turbans stand and applaud as {RO} receives a rolled certificate with a red ribbon, smiling humbly.", { src: HIS, mood: "triumph" });
 s("d", "city", "After that, girls from her school could go to study at al-Azhar too.",
-  "Two young Indonesian women in headscarves, carrying suitcases, smile and wave goodbye to {RO} at the gate of the school, ready to travel to study in Egypt.", { src: HIS, mood: "joy" });
+  "Two young Indonesian women carrying suitcases, each in a headscarf that covers all of her hair and her forehead, smile and wave goodbye to {RO} at the gate of the school, ready to travel to study in Egypt.", { src: HIS, mood: "joy" });
 q("q", "palace", "What title did al-Azhar give Rahmah?", ["Syaikhah: a great scholar", "🎓"], ["Queen", "👑"], "Al-Azhar called her Syaikhah, a great scholar. No woman had been given it before.", { img: "c" });
 
 chapter("r11", "🌟", "Her School Today", null, [], null, CITE);
@@ -55,7 +55,7 @@ s("b", "dusk", "Rahmah died in 1969, in Padang Panjang, where she was born. May 
 s("c", "city", "Her school is still open today, full of girls learning.",
   "A bright modern school campus in Padang Panjang today with buildings that have curved Minangkabau roofs, Indonesian girls in white headscarves and school uniforms walking to class with books, laughing.", { src: HIS, mood: "joy" });
 s("d", "palace", "And in 2025, Indonesia named her a National Hero.",
-  "In a grand white palace hall in Jakarta today, an Indonesian woman in a headscarf receives a framed award on behalf of the school, people applauding; a portrait of Rahmah in a white headscarf on an easel beside her.", { src: HIS, mood: "triumph" });
+  "In a grand white palace hall in Jakarta today, an Indonesian woman in a headscarf receives a framed award on behalf of the school, people applauding; every woman and girl wears a headscarf that covers all of her hair, with no hair showing at the front; a portrait of Rahmah in a white headscarf on an easel beside her.", { src: HIS, mood: "triumph" });
 ord("story", "city", "Tell Rahmah's story. Tap in order.", [
   ["⛰️", "Born in the mountains", "First, Rahmah was born in the mountains of Sumatra."],
   ["📖", "She learned to read", "She learned to read and write."],

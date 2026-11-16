@@ -13,7 +13,7 @@ picture, and 2 or 3 activities. Sources: scripts/nuh/RESEARCH.md.
    *Activity: tap the sky (sun, moon, clouds, rain). Activity: match each gift to what it gives.*
 5. **Everyone is welcome** (11:27-31): the proud leaders sneered that only "the lowest" followed Nuh; Nuh would never
    send them away. *Activity: kind or unkind?*
-6. **Build the Ark** (11:36-37, 54:13): Allah told Nuh how to build a ship of planks and nails, far from any sea.
+6. **Build the Ark** (11:36-37, 54:13): Allah told Nuh how to build a ship of planks and nails.
    *Activity: hammer the nails (tap). Activity: build it piece by piece.*
 7. **They laughed** (11:38-39): people passed by and laughed; Nuh kept building, patient. *Activity: hold the
    button to be patient, like the hold activity in Yusuf.*

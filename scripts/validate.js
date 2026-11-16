@@ -130,6 +130,12 @@ for (const slug of slugs) {
     const id = f.replace(/\.(mp3|webm|ogg|m4a)$/, "");
     if (!ids.has(id)) fail(audioDir + "/" + f + ": no line '" + id + "' in narration.json (orphaned audio)");
   }
+  // the man's voice (assets/audio-m, chosen by families in For parents > Your voice): every line a man's clip too
+  const manDir = dir + "/assets/audio-m";
+  const man = fs.existsSync(path.join(ROOT, manDir)) ? fs.readdirSync(path.join(ROOT, manDir)) : [];
+  const noMan = lines.filter((l) => l && l.id && !man.includes(l.id + ".mp3")).map((l) => l.id);
+  if (noMan.length) fail(manDir + ": " + noMan.length + " lines have no clip in the man's voice (VOICE=m PROJECT=asmau-assets python3 scripts/generate-voice-gemini.py " + dir + "), e.g. " + noMan.slice(0, 3).join(", "));
+  for (const f of man) if (!ids.has(f.replace(/\.mp3$/, ""))) fail(manDir + "/" + f + ": no line in narration.json (orphaned audio)");
 
   /* ---------- a story, if the game has one ---------- */
   if (!exists(dir + "/story.js")) continue;

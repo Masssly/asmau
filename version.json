@@ -1,11 +1,20 @@
 {
-  "version": "2026.11.32",
+  "version": "2026.11.33",
   "date": "2026-11-16",
-  "buildId": "2ece2c34b190",
+  "buildId": "da46530228d6",
   "notes": [
-    "New game: Ibn Battuta, the young man from Tangier who travelled for nearly thirty years, from Makkah to China and Mali, told from his own book"
+    "A man's voice to choose: in For parents, pick a woman's or a man's voice for the lines you have not recorded; your own recordings still play first",
+    "Without internet, a device saves only the voice its family chose"
   ],
   "history": [
+    {
+      "version": "2026.11.33",
+      "date": "2026-11-16",
+      "notes": [
+        "A man's voice to choose: in For parents, pick a woman's or a man's voice for the lines you have not recorded; your own recordings still play first",
+        "Without internet, a device saves only the voice its family chose"
+      ]
+    },
     {
       "version": "2026.11.32",
       "date": "2026-11-16",

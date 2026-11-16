@@ -44,8 +44,13 @@ const ON_R2 = /\.(?:webp|mp3|webm|ogg|m4a)$/i;
 
 const MEDIA = /\.(?:webp|png|jpe?g|mp3|webm|ogg|m4a|woff2?)$/i;   // big, never change under the same name
 
-// a game's pictures and sounds (games/<slug>/assets/) are one pack, saved when the game is first opened; the rest is "core"
-function packOf(f) { const m = /^games\/([^/]+)\/assets\//.exec(f); return m ? m[1] : "core"; }
+// a game's pictures and sounds (games/<slug>/assets/) are packs saved when the game is first opened: <slug> (pictures and
+// the rest), <slug>@w (the woman's voice, assets/audio/) and <slug>@m (the man's voice, assets/audio-m/); a device saves
+// only the voice its family chose. Everything else is "core". sw.js has the same function.
+function packOf(f) {
+  const m = /^games\/([^/]+)\/assets\/(?:(audio-m|audio)\/)?/.exec(f);
+  return m ? m[1] + (m[2] === "audio-m" ? "@m" : m[2] === "audio" ? "@w" : "") : "core";
+}
 
 function compute() {
   const files = walk(ROOT, []).sort()

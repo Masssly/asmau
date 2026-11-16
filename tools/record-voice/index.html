@@ -283,7 +283,7 @@
     }
 
     playBtn.addEventListener("click", function () {
-      window.AsmauNarration.say(slug, item.id, item.text, { lang: item.lang, audioBase: "../../games/" + slug + "/assets/audio/" });
+      window.AsmauNarration.say(slug, item.id, item.text, { lang: item.lang, audioBase: "../../games/" + slug + "/assets/" + (window.AsmauNarration.voiceSet() === "m" ? "audio-m/" : "audio/") });
     });
 
     recordBtn.addEventListener("click", function () {

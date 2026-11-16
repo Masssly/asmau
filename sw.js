@@ -16,14 +16,14 @@
 */
 
 // BEGIN GENERATED
-const RELEASE = "2026.11.37";
-const BUILD = "034697f43cef";
+const RELEASE = "2026.11.38";
+const BUILD = "abdb975ce90b";
 // pack: [fingerprint of packs/<pack>.json, bytes, files]
 const PACKS = {
   "adam":["22e75c3649",2721568,55],
   "adam@m":["a617f3f408",4026446,147],
   "adam@w":["217fc43e27",4316508,147],
-  "core":["72c6f41b61",971058,37],
+  "core":["2511d47c18",971241,37],
   "count-the-crescents":["551c35512f",82971,5],
   "count-the-crescents@m":["76410cb722",587647,52],
   "count-the-crescents@w":["238f9dbdf7",584828,52],
@@ -45,7 +45,7 @@ const PACKS = {
   "tap-and-say":["64ec037dc3",21672,4],
   "tap-and-say@m":["71edb942d5",1501703,126],
   "tap-and-say@w":["d9e7f925b2",1472336,126],
-  "umm-ayman":["f3621b9b68",3299960,56],
+  "umm-ayman":["a88bb07809",3277454,56],
   "umm-ayman@m":["24046ad1cb",3319749,116],
   "umm-ayman@w":["8c74443e58",3651189,116],
   "yusuf":["f53f8bb124",5828130,93],

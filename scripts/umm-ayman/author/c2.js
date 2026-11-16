@@ -4,9 +4,9 @@ const { chapter, s, p, q, ord, mat, srt, line, SAD, MUS, ZUH } = require("./lib"
 
 chapter("u6", "🏠", "Free, and a Family", null, [], null, "Ibn Sa'd, al-Tabaqat (vol. 8); Ibn Shihab in Sahih Muslim (1771); al-Bukhari (3737)");
 s("a", "city", "The boy grew up into a good and honest young man. When he married Khadijah, he set Barakah free.",
-  "{UAY} stands in a sunny doorway in {MAKKAH}, looking out at the street with a joyful, surprised face, holding a small cloth bundle to her chest. {HERE}.", { src: SAD, mood: "triumph", presence: true });
+  "{UA}, but younger than in her picture: about forty-five, with only a few lines on her face, stands in a sunny doorway in {MAKKAH}, looking out at the street with a joyful, surprised face, holding a small cloth bundle to her chest. {HERE}.", { src: SAD, mood: "triumph", presence: true });
 s("b", "city", "She married a good man called Ubayd, and they had a son called Ayman. So people called her Umm Ayman: the mother of Ayman.",
-  "{UAY}, a few years older, holds a baby boy wrapped in a cloth and smiles down at him, while {UBAYD} stands beside her, laughing happily, in a courtyard in {MAKKAH}.", { src: SAD, mood: "joy" });
+  "{UA}, but younger than in her picture: about forty-five, with only a few lines on her face, holds a baby boy wrapped in a cloth and smiles down at him, while {UBAYD} stands beside her, laughing happily, in a courtyard in {MAKKAH}.", { src: SAD, mood: "joy" });
 s("c", "city", "The Prophet loved her very much. He used to call her: O mother!",
   "{UA} sits on a bench in a shady courtyard, smiling warmly at the empty place beside her, where a cup of milk waits on a small stool. {HERE}.", { src: SAD, presence: true });
 s("d", "field", "It is told that he said: whoever would like to marry a woman of Paradise, let him marry Umm Ayman.",

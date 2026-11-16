@@ -1,11 +1,18 @@
 {
-  "version": "2026.11.37",
+  "version": "2026.11.38",
   "date": "2026-11-16",
-  "buildId": "034697f43cef",
+  "buildId": "abdb975ce90b",
   "notes": [
-    "Umm Ayman, page 6.5: she married Zayd after her first marriage had ended; the note for parents says what the sources do and do not tell"
+    "Umm Ayman, pages 6.1 and 6.2: she is shown at about forty-five, her age when the Prophet married Khadijah"
   ],
   "history": [
+    {
+      "version": "2026.11.38",
+      "date": "2026-11-16",
+      "notes": [
+        "Umm Ayman, pages 6.1 and 6.2: she is shown at about forty-five, her age when the Prophet married Khadijah"
+      ]
+    },
     {
       "version": "2026.11.37",
       "date": "2026-11-16",

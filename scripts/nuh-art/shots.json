@@ -20,8 +20,8 @@
   ]
  },
  "n1-c": {
-  "alt": "the statues stand alone in an empty dusty square between round mud houses with thatched roofs at evening, long shadows across the dust, weeds growing at their feet. No…",
-  "scene": "five tall rough stone statues of standing figures, plain and weathered, their faces worn smooth and blank stand alone in an empty dusty square between round mud houses with thatched roofs at evening, long shadows across the dust, weeds growing at their feet. No people.",
+  "alt": "the statues stand alone in an empty dusty square between round mud houses with thatched roofs at evening, long shadows across the dust, weeds growing at their feet. The…",
+  "scene": "five tall rough stone statues of standing figures, plain and weathered, their faces worn smooth and blank stand alone in an empty dusty square between round mud houses with thatched roofs at evening, long shadows across the dust, weeds growing at their feet. The statues have no faces at all, only smooth blank stone where a face would be. No people.",
   "who": [
    "STATUES"
   ]
@@ -113,8 +113,8 @@
   ]
  },
  "n5-b": {
-  "alt": "Nuh stands in front of the believers, his arms spread wide to keep them close, while the proud chiefs point and frown; every person has deep dark brown skin, the women…",
-  "scene": "a tall, strong, kind old man with deep dark brown skin, a full white beard and short white hair, in a long simple indigo-blue robe over a cream tunic stands in front of a small group of ordinary believers with deep dark brown skin: men in plain sand-coloured and white tunics, women in long simple dresses with headscarves that fully cover their hair, and a few children, his arms spread wide to keep them close, while three proud rich men with deep dark brown skin in heavy red and gold robes and large turbans, with gold rings and folded arms point and frown; every person has deep dark brown skin, the women and girls too.",
+  "alt": "Nuh stands in front of the believers, his arms spread wide to keep them close, while the proud chiefs point and frown; every person has very dark brown skin; the women's…",
+  "scene": "a tall, strong, kind old man with deep dark brown skin, a full white beard and short white hair, in a long simple indigo-blue robe over a cream tunic stands in front of a small group of ordinary believers with deep dark brown skin: men in plain sand-coloured and white tunics, women in long simple dresses with headscarves that fully cover their hair, and a few children, his arms spread wide to keep them close, while three proud rich men with deep dark brown skin in heavy red and gold robes and large turbans, with gold rings and folded arms point and frown; every person has very dark brown skin; the women's and girls' skin is just as dark as the men's.",
   "who": [
    "NUH",
    "BELIEVERS",
@@ -190,8 +190,8 @@
   ]
  },
  "n8-b": {
-  "alt": "Heavy rain pours from dark rolling clouds over the village; puddles grow into streams between the round houses. No people outside.",
-  "scene": "Heavy rain pours from dark rolling clouds over a village of round mud houses with thatched roofs among palm trees and fields, in a wide green valley; puddles grow into streams between the round houses. No people outside.",
+  "alt": "Heavy rain pours from dark rolling clouds over the village; puddles grow into streams between the round houses. No people anywhere: every doorway and porch is empty.",
+  "scene": "Heavy rain pours from dark rolling clouds over a village of round mud houses with thatched roofs among palm trees and fields, in a wide green valley; puddles grow into streams between the round houses. No people anywhere: every doorway and porch is empty.",
   "who": [
    "VILLAGE"
   ]
@@ -222,8 +222,8 @@
   ]
  },
  "n9-b": {
-  "alt": "Inside the Ark, a mother and her young daughter sit together on a wooden bench by a small oil lamp, hands raised in prayer, rain streaming past a window. Both have their…",
-  "scene": "Inside a huge simple wooden ship built of long planks held with big iron nails, with a high curved hull and a wooden roof over its deck, a mother and her young daughter sit together on a wooden bench by a small oil lamp, hands raised in prayer, rain streaming past a window. Both have their hair covered by headscarves.",
+  "alt": "Inside the Ark, a mother and her young daughter sit together on a wooden bench by a small oil lamp, hands raised in prayer, rain streaming past a window. Both have deep…",
+  "scene": "Inside a huge simple wooden ship built of long planks held with big iron nails, with a high curved hull and a wooden roof over its deck, a mother and her young daughter sit together on a wooden bench by a small oil lamp, hands raised in prayer, rain streaming past a window. Both have deep dark brown skin and their hair covered by headscarves. The scene fills the whole picture, with no border or frame.",
   "who": [
    "ARK"
   ]

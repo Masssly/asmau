@@ -16,7 +16,7 @@ chapter("n8", "🐘", "Two by Two", "11:40", ["23:27", "54:11-12"], null);
 s("a", "storm", "Then Allah's command came. Water burst up out of the ground, even, it is told, where fires had burned.",
   "Water bursts up out of the dry ground in many places in a field beside the finished {ARK}, springs fountaining up between stones and an old cooking hearth, under a darkening sky. No people.", { src: TAF, mood: "tense" });
 s("b", "storm", "And the gates of the sky opened, and the rain poured down.",
-  "Heavy rain pours from dark rolling clouds over {VILLAGE}; puddles grow into streams between the round houses. No people outside.", { mood: "tense" });
+  "Heavy rain pours from dark rolling clouds over {VILLAGE}; puddles grow into streams between the round houses. No people anywhere: every doorway and porch is empty.", { mood: "tense" });
 s("c", "field", "Allah said: take into the Ark a pair of every kind of animal.",
   "Animals walk two by two up a long wooden ramp into {ARK} in the rain: a pair of elephants, a pair of camels, a pair of giraffes, a pair of sheep, a pair of lions, birds flying in above them. No people at all, and nothing modern.", { mood: "joy" });
 p("memory", "pairs", "field", "Find the pairs! Two of every kind.", { icons: ["🐘", "🐪", "🦒", "🐑", "🦁", "🐦"] });
@@ -28,7 +28,7 @@ chapter("n9", "🤲", "Bismillah", "11:41", ["23:28-29"], null);
 s("a", "storm", "Nuh said: get on board. In the name of Allah it sails, and in the name of Allah it comes to rest. My Lord is Forgiving and Merciful.",
   "{NUH} stands in the open doorway of {ARK} in the rain, one hand raised, the other welcoming the last of {BELIEVERS} inside; lamplight glows warmly from within.");
 s("b", "storm", "We can say these words too, when we set off on a journey: bismillahi majraha wa mursaha.",
-  "Inside {ARK}, a mother and her young daughter sit together on a wooden bench by a small oil lamp, hands raised in prayer, rain streaming past a window. Both have their hair covered by headscarves.");
+  "Inside {ARK}, a mother and her young daughter sit together on a wooden bench by a small oil lamp, hands raised in prayer, rain streaming past a window. Both have deep dark brown skin and their hair covered by headscarves. The scene fills the whole picture, with no border or frame.");
 q("q", "storm", "What can we say when we set off on a journey?", ["Bismillah", "🤲"], ["Nothing at all", "🤐"], "We can say bismillah, in the name of Allah, just like Nuh.", { img: "b" });
 s("c", "storm", "Allah taught Nuh to say, once they were on board: praise be to Allah, who saved us. And: my Lord, let me land in a blessed place.",
   "{NUH} sits among {BELIEVERS} inside {ARK} by lamplight, all with hands raised in prayer, animals resting quietly in the shadows behind them.", { mood: "wonder" });

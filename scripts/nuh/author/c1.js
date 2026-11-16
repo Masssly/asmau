@@ -8,7 +8,7 @@ s("a", "village", "Long after Adam, his children had spread far over the earth. 
 s("b", "village", "When those good men died, the people missed them. It is told that someone said: let us make statues of them, so that we remember them.",
   "In the middle of {VILLAGE}, villagers with deep dark brown skin carve a plain stone statue of a standing figure; a few more rough statues stand behind them. Every woman and every girl wears a headscarf that covers all her hair.", { src: BUK });
 s("c", "dusk", "Years and years went by. The people who made the statues died too, and their children forgot why the statues were there.",
-  "{STATUES} stand alone in an empty dusty square between round mud houses with thatched roofs at evening, long shadows across the dust, weeds growing at their feet. No people.", { src: BUK, mood: "longing" });
+  "{STATUES} stand alone in an empty dusty square between round mud houses with thatched roofs at evening, long shadows across the dust, weeds growing at their feet. The statues have no faces at all, only smooth blank stone where a face would be. No people.", { src: BUK, mood: "longing" });
 s("d", "dusk", "Then people began to bow down to the statues and pray to them, and they forgot Allah. They called them Wadd, Suwa, Yaghuth, Ya'uq and Nasr.",
   "Seen from behind, a crowd of villagers bow down before {STATUES} at dusk, offerings of fruit at the statues' feet; the statues have no faces at all, only smooth blank stone; the faces of the people are not seen.", { mood: "tense" });
 srt("made", "village", "Who made it? Allah, or people?", ["Allah made it", "✨"], ["People made it", "🔨"], [
@@ -62,7 +62,7 @@ chapter("n5", "🤗", "Everyone Is Welcome", "11:27-31", [], null);
 s("a", "village", "The proud chiefs of the people sneered: you are only a man like us! And the only people who follow you are the lowest of us.",
   "{CHIEFS} stand with their arms folded and noses in the air in the village square, looking down on {NUH}, who stands calmly with a few poor followers in patched clothes.", { mood: "tense" });
 s("b", "village", "They wanted Nuh to send his followers away. But Nuh said: I will never drive away the believers. Who would help me against Allah if I did?",
-  "{NUH} stands in front of {BELIEVERS}, his arms spread wide to keep them close, while {CHIEFS} point and frown; every person has deep dark brown skin, the women and girls too.");
+  "{NUH} stands in front of {BELIEVERS}, his arms spread wide to keep them close, while {CHIEFS} point and frown; every person has very dark brown skin; the women's and girls' skin is just as dark as the men's.");
 s("c", "village", "And Nuh said: I do not ask you for any reward. My reward comes only from Allah.",
   "{NUH} sits on a mat in the shade with his hands open and empty, speaking kindly; a bowl of plain dates and a cup of water beside him.");
 srt("welcome", "village", "Welcome everyone, like Nuh. Is it welcoming, or not?", ["Welcoming", "🤗"], ["Not welcoming", "🚫"], [

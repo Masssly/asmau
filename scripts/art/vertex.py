@@ -12,6 +12,7 @@ so that a person looks the same from scene to scene.
   nuh-refs / nuh-scenes      the same for the Nuh story (scripts/nuh-art)
   ua-refs / ua-scenes        the same for the Umm Ayman story (scripts/umm-ayman-art), drawn in Arabia
   ib-refs / ib-scenes        the same for the Ibn Battuta story (scripts/ibn-battuta-art), each land's people
+  ry-refs / ry-scenes        the same for the Rahmah El Yunusiyyah story (scripts/rahmah-art), West Sumatra
   musa-scenes [KEY ...]     draw the Musa scenes (scripts/musa-art/shots.json) into
                             scripts/musa-art/out/<key>.png, each shown the approved
                             reference pictures of the people in it. Already drawn: skipped.
@@ -70,6 +71,15 @@ WORLD_STYLE = ("Polished stylised 3D animated family-film still, warm cinematic 
 WORLD_BACKDROP = ("Polished stylised 3D animated family-film background painting, warm cinematic lighting, rich detail, square, "
                   "filling the whole frame edge to edge with no border. A real, believable place in the 14th century, no fantasy. "
                   "A place, with no main characters and nobody in the foreground. ")
+# Rahmah El Yunusiyyah's story is set in West Sumatra, Indonesia, from 1900 to 1969: the Minangkabau as themselves.
+SUMATRA_STYLE = ("Polished stylised 3D animated family-film still, warm cinematic lighting, rich detail, square picture, "
+                 "main figures in the middle. Set in West Sumatra, Indonesia, in the early and middle 1900s. People are Minangkabau "
+                 "Indonesians with warm medium-brown skin and dark hair, in modest long clothing; every woman and girl wears a "
+                 "headscarf that fully covers her hair. ")
+SUMATRA_BACKDROP = ("Polished stylised 3D animated family-film background painting, warm cinematic lighting, rich detail, square, "
+                    "filling the whole frame edge to edge with no border. West Sumatra, Indonesia, in the early 1900s: green "
+                    "volcanic mountains, rice fields, Minangkabau houses with curved horn-shaped roofs. No fantasy. A place, "
+                    "with no main characters and nobody in the foreground. ")
 # for stories set partly outside this world (the Adam story: the heavens, the Garden), without the North-East Africa rule
 BACKDROP_ANY = ("Polished stylised 3D animated family-film background painting, warm cinematic lighting, rich detail, square, "
                 "filling the whole frame edge to edge with no border. Natural and believable, no glowing crystals, no floating "
@@ -163,6 +173,8 @@ def use(story):
         STYLE, BACKDROP, PORTRAIT, REF = ARABIA_STYLE, ARABIA_BACKDROP, ARABIA_PORTRAIT, ARABIA_REF
     if story == "ibn-battuta":
         STYLE, BACKDROP, PORTRAIT, REF = WORLD_STYLE, WORLD_BACKDROP, ARABIA_PORTRAIT, ARABIA_REF
+    if story == "rahmah":
+        STYLE, BACKDROP, PORTRAIT, REF = SUMATRA_STYLE, SUMATRA_BACKDROP, ARABIA_PORTRAIT, ARABIA_REF
 
 
 def musa_refs(keys):
@@ -276,10 +288,13 @@ if __name__ == "__main__":
         use("umm-ayman")
     if cmd.startswith("ib-"):
         use("ibn-battuta")
+    if cmd.startswith("ry-"):
+        use("rahmah")
     failed = {"musa-refs": musa_refs, "musa-scenes": musa_scenes, "asmau-refs": musa_refs, "asmau-scenes": musa_scenes,
               "adam-refs": musa_refs, "adam-scenes": musa_scenes, "nuh-refs": musa_refs, "nuh-scenes": musa_scenes,
               "ua-refs": musa_refs, "ua-scenes": musa_scenes,
               "ib-refs": musa_refs, "ib-scenes": musa_scenes,
+              "ry-refs": musa_refs, "ry-scenes": musa_scenes,
               "yusuf-fix": yusuf_fix, "yusuf-brothers": brothers}[cmd](args)
     if failed:
         print("%d failed: %s" % (len(failed), ", ".join(failed)))

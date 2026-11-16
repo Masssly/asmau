@@ -1,12 +1,18 @@
 {
-  "version": "2026.11.33",
+  "version": "2026.11.34",
   "date": "2026-11-16",
-  "buildId": "da46530228d6",
+  "buildId": "82a7dc7631bd",
   "notes": [
-    "A man's voice to choose: in For parents, pick a woman's or a man's voice for the lines you have not recorded; your own recordings still play first",
-    "Without internet, a device saves only the voice its family chose"
+    "New game: Rahmah El Yunusiyyah, the girl from the mountains of Sumatra who opened a school for girls in 1923, never gave up, and was honoured by al-Azhar"
   ],
   "history": [
+    {
+      "version": "2026.11.34",
+      "date": "2026-11-16",
+      "notes": [
+        "New game: Rahmah El Yunusiyyah, the girl from the mountains of Sumatra who opened a school for girls in 1923, never gave up, and was honoured by al-Azhar"
+      ]
+    },
     {
       "version": "2026.11.33",
       "date": "2026-11-16",

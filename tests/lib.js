@@ -7,17 +7,23 @@ const path = require("path");
 const TYPES = { ".html": "text/html", ".js": "text/javascript", ".css": "text/css", ".json": "application/json", ".webp": "image/webp", ".mp3": "audio/mpeg", ".woff2": "font/woff2", ".png": "image/png", ".webmanifest": "application/manifest+json" };
 
 // Serves a folder over http. `log` collects every path asked for. `delayMs` simulates a slow network.
+// Pictures and sounds live on R2 (scripts/SCALING.md); here the server stands in for it: the site's R2 address in sw.js and
+// shared/config.js is replaced by this server's /media/, and /media/<fingerprint>/<path> is answered from <path> on disk.
+const REAL_MEDIA = JSON.parse(fs.readFileSync(path.join(__dirname, "..", "config.json"), "utf8")).server.replace(/\/$/, "") + "/media/";
 function serve(root, { delayMs = 0 } = {}) {
   const log = [];
   const server = http.createServer((req, res) => {
     let p = decodeURIComponent(req.url.split("?")[0]);
     if (p.endsWith("/")) p += "index.html";
     log.push(p);
-    const f = path.join(root, p);
+    const own = "http://" + req.headers.host + "/media/";
+    const m = /^\/media\/[0-9a-f]{10}\/(.+)$/.exec(p);
+    const f = path.join(root, m ? "/" + m[1] : p);
     if (!f.startsWith(root)) { res.writeHead(403); return res.end(); }
     setTimeout(() => fs.readFile(f, (e, b) => {
-      if (e) { res.writeHead(404); return res.end("not found"); }
-      res.writeHead(200, { "content-type": TYPES[path.extname(f)] || "application/octet-stream", "cache-control": "max-age=600", "content-length": b.length });
+      if (e) { res.writeHead(404, { "access-control-allow-origin": "*" }); return res.end("not found"); }
+      if (/(^|\/)(sw\.js|shared\/config\.js)$/.test(p)) b = Buffer.from(b.toString().split(REAL_MEDIA).join(own));
+      res.writeHead(200, { "content-type": TYPES[path.extname(f)] || "application/octet-stream", "cache-control": "max-age=600", "content-length": b.length, "access-control-allow-origin": "*" });
       res.end(b);
     }), delayMs);
   });

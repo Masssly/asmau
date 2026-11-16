@@ -242,6 +242,8 @@
       var id = "ar-" + n;
       arReady[n] = narr.getRecordedClip(GAME, id).then(function (blob) {
         if (blob) return true;
+        // a committed recording is one the game's pack lists know (shared/media.js)
+        if (window.AsmauMedia) return window.AsmauMedia.ready(GAME).then(function () { return window.AsmauMedia.has("assets/audio/" + id + ".mp3"); });
         return fetch("assets/audio/" + id + ".mp3").then(function (r) { return !!r.ok; });
       }).catch(function () { return false; });
     }

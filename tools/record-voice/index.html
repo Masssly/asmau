@@ -170,8 +170,9 @@
   <div id="rows"></div>
 </div>
 
-<script src="../../shared/narration.js"></script>
 <script src="../../shared/config.js"></script>
+<script src="../../shared/media.js"></script>
+<script src="../../shared/narration.js"></script>
 <script src="../../shared/mp3.js"></script>
 <script src="../../shared/sync.js"></script>
 <script>
@@ -220,6 +221,7 @@
   }
 
   function loadNarration(slug) {
+    if (window.AsmauMedia) window.AsmauMedia.ready(slug);     // where the computer voice's clips are, to play them back
     return fetch("../../games/" + slug + "/narration.json").then(function (r) {
       if (!r.ok) throw new Error("no narration.json");
       return r.json();

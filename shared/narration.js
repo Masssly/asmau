@@ -290,10 +290,12 @@ window.AsmauNarration = (function () {
     stop();
     var my = token;
 
-    var file = base + id + ".mp3";
+    // a game's sounds live on R2 (shared/media.js finds their address); a path no list knows is used as it is
+    var M = function (p) { return window.AsmauMedia ? window.AsmauMedia.url(p) : p; };
+    var file = M(base + id + ".mp3");
     // a line the man's voice has not read yet is read by the woman's voice
     function committed() {
-      return playSrc(file, my, false).then(function (ok) { return ok || (man && !opts.audioBase && my === token ? playSrc("assets/audio/" + id + ".mp3", my, false) : ok); });
+      return playSrc(file, my, false).then(function (ok) { return ok || (man && !opts.audioBase && my === token ? playSrc(M("assets/audio/" + id + ".mp3"), my, false) : ok); });
     }
     return getRecordedClip(game, id).then(function (blob) {
       if (!blob) return committed();

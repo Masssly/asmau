@@ -14,6 +14,9 @@
   */
   var CFG = window.STORY_GAME || {};
   var GAME = CFG.slug;
+  // pictures live on R2 at addresses from the game's pack lists (shared/media.js); load the lists before the first picture
+  var MEDIA = window.AsmauMedia, mediaReady = MEDIA ? MEDIA.ready(GAME) : Promise.resolve();
+  function M(p) { return MEDIA ? MEDIA.url(p) : p; }
   var SAVE_KEY = "asmau-" + GAME;
   var HERO = CFG.heroChild, HERO_GROWN = CFG.heroAdult || CFG.heroChild;
   var story = window.STORY;
@@ -190,7 +193,7 @@
     n.classList.remove("ico-svg", "ico-img");
     if (SVG[icon]) { n.innerHTML = SVG[icon]; n.classList.add("ico-svg"); }
     else if (typeof icon === "string" && icon.indexOf("img:") === 0) {
-      n.innerHTML = '<img src="assets/img/' + icon.slice(4) + '.webp" alt="" draggable="false">';
+      n.innerHTML = '<img src="' + M("assets/img/" + icon.slice(4) + ".webp") + '" alt="" draggable="false">';
       n.classList.add("ico-img");
     }
     else { n.textContent = icon; }
@@ -263,7 +266,7 @@
   // The whole picture is always shown; on a wide stage a blurred copy of it
   // fills the space at the sides.
   function picture(id, fallback) {
-    var src = "assets/img/" + id + ".webp";
+    var src = M("assets/img/" + id + ".webp");
     var fill = mk("img", "pic-fill");
     fill.alt = "";
     fill.setAttribute("aria-hidden", "true");
@@ -887,7 +890,7 @@
       (function (i) {
         var t = mk("button", "ptile");
         t.setAttribute("aria-label", "piece " + (i + 1) + " of " + total);
-        t.style.backgroundImage = "url(assets/img/" + opts.pic + ".webp)";
+        t.style.backgroundImage = "url(" + M("assets/img/" + opts.pic + ".webp") + ")";
         t.style.backgroundSize = (n * 100) + "% " + (n * 100) + "%";
         t.addEventListener("click", function () {
           if (solved) return;
@@ -907,7 +910,7 @@
     var peek = mk("button", "peek-btn", "👁 Peek");
     peek.setAttribute("aria-label", "Hold to see the whole picture");
     var full = mk("div", "peek-full");
-    full.style.backgroundImage = "url(assets/img/" + opts.pic + ".webp)";
+    full.style.backgroundImage = "url(" + M("assets/img/" + opts.pic + ".webp") + ")";
     function showFull(on) { full.classList.toggle("on", on); }
     peek.addEventListener("pointerdown", function (e) { try { peek.setPointerCapture(e.pointerId); } catch (err) { /* optional */ } showFull(true); });
     ["pointerup", "pointercancel", "lostpointercapture"].forEach(function (ev) { peek.addEventListener(ev, function () { showFull(false); }); });
@@ -1472,7 +1475,7 @@
     var steps = story[ci].steps, nxt = steps[si + 1] || (story[ci + 1] && story[ci + 1].steps[0]);
     if (!nxt) return;
     var o = nxt.opts || {}, id = nxt.pic || nxt.say || o.img;
-    [id, !nxt.say && (o.bg || "bg-" + nxt.scene)].forEach(function (k) { if (k && ART[k]) new Image().src = "assets/img/" + k + ".webp"; });
+    [id, !nxt.say && (o.bg || "bg-" + nxt.scene)].forEach(function (k) { if (k && ART[k]) new Image().src = M("assets/img/" + k + ".webp"); });
   }
 
   // The title screen shows how far the pictures have got. The service worker is the one
@@ -1504,16 +1507,17 @@
             var im = new Image(), t = setTimeout(fin, 10000);
             function fin() { clearTimeout(t); if (im) { im.onload = im.onerror = null; im = null; running -= 1; fetched += 1; if (fetched > have) { have = fetched; paint(); } pump(); } }
             im.onload = im.onerror = fin;
-            im.src = "assets/img/" + k + ".webp";
+            im.src = M("assets/img/" + k + ".webp");
           })(keys[next++]);
         }
       })();
     }
     function count() {
       if (stopped) return;
-      var done = window.caches ? caches.open("asmau-media").then(function (c) { return c.keys(); }).then(function (reqs) {
+      var mine = new RegExp("/games/" + GAME + "/assets/img/([^/]+)\\.webp");
+      var done = window.caches ? caches.open("asmau-files").then(function (c) { return c.keys(); }).then(function (reqs) {
         var seen = {};
-        reqs.forEach(function (r) { var m = r.url.match(/assets\/img\/([^/]+)\.webp/); if (m && ART[m[1]]) seen[m[1]] = 1; });
+        reqs.forEach(function (r) { var m = r.url.match(mine); if (m && ART[m[1]]) seen[m[1]] = 1; });
         return Object.keys(seen).length;
       }) : Promise.resolve(0);
       done.catch(function () { return 0; }).then(function (n) {
@@ -1543,20 +1547,16 @@
   var shownAt = 0;
 
   // The parents' notes are plain text files, one per page (parents/<chapter>/<chapter>.<page>.md beside the game), so
-  // they can be edited on GitHub. parents/pages.json (written by scripts/parent-notes.js) says which pages have one.
-  var notesIndex = null, notesCache = {};
+  // they can be edited on GitHub. scripts/build-offline.js bundles the live ones into parents/notes.json: one small file
+  // per game, saved with it for use without internet.
+  var notesAll = null;
   function notesFor(key) {
-    if (!notesIndex) notesIndex = fetch("parents/pages.json").then(function (r) { return r.ok ? r.json() : {}; }).catch(function () { return {}; });
-    return notesIndex.then(function (ix) {
-      if ((ix.notes || []).indexOf(key) < 0) return [];
-      if (!notesCache[key]) notesCache[key] = fetch("parents/" + key.split(".")[0] + "/" + key + ".md")
-        .then(function (r) { return r.ok ? r.text() : ""; }).catch(function () { return ""; })
-        .then(function (txt) {
-          return txt.split(/\r?\n\s*\r?\n/).map(function (p) {
-            return p.split(/\r?\n/).filter(function (l) { return !/^\s*#/.test(l); }).join(" ").trim();
-          }).filter(Boolean);
-        });
-      return notesCache[key];
+    if (!notesAll) notesAll = fetch("parents/notes.json").then(function (r) { return r.ok ? r.json() : {}; }).catch(function () { return {}; });
+    return notesAll.then(function (all) {
+      var txt = all[key] || "";
+      return txt.split(/\r?\n\s*\r?\n/).map(function (p) {
+        return p.split(/\r?\n/).filter(function (l) { return !/^\s*#/.test(l); }).join(" ").trim();
+      }).filter(Boolean);
     });
   }
   function fillNotes(ch, key) {
@@ -1638,7 +1638,7 @@
     } else if (!st.say) {
       var bg = opts.bg || ("bg-" + st.scene);
       if (ART[bg]) {
-        stage.style.backgroundImage = "url(assets/img/" + bg + ".webp)";
+        stage.style.backgroundImage = "url(" + M("assets/img/" + bg + ".webp") + ")";
         stage.classList.add("has-bg");
       }
     }
@@ -1731,7 +1731,8 @@
     ci = Math.max(0, Math.min(i, story.length - 1));
     si = Math.max(0, Math.min(stepIdx || 0, story[ci].steps.length - 1));
     show("play");
-    renderStep();
+    var at = ci + ":" + si;
+    mediaReady.then(function () { if (ci + ":" + si === at) renderStep(); });
   }
 
   function hasProgress() { return !!resumeAt(); }

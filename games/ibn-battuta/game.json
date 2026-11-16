@@ -1,0 +1,13 @@
+{
+  "slug": "ibn-battuta",
+  "title": "Ibn Battuta",
+  "icon": "🧳",
+  "minAge": 5,
+  "maxAge": 9,
+  "tagline": "He left Tangier alone at twenty-one to go on Hajj, and kept travelling for nearly thirty years: Makkah, India, the islands, China and Mali.",
+  "basedOn": null,
+  "depictionNotes": "Ibn Battuta (1304 to about 1368), a Moroccan, and the people of every land he visited are drawn as themselves, every woman's hair covered. The facts come from his own book, the Rihla, in H. A. R. Gibb and C. F. Beckingham's English translation (Hakluyt Society). Pictures are AI-generated.",
+  "cover": "cover.webp",
+  "coverAlt": "Ibn Battuta rides a camel at the front of a caravan across the desert towards Makkah.",
+  "born": 1304
+}

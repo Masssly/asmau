@@ -1,0 +1,282 @@
+{
+ "bg-city": {
+  "alt": "A quiet courtyard of an old Damascus house long ago: a stone fountain, lemon trees, carved wooden balconies. No people.",
+  "scene": "A quiet courtyard of an old Damascus house long ago: a stone fountain, lemon trees, carved wooden balconies. No people.",
+  "who": []
+ },
+ "i1-a": {
+  "alt": "Tangier long ago, seen from a hill at sunrise: white houses with flat roofs and a mosque tower climbing a hill above a blue bay, boats in the harbour. No people in front.",
+  "scene": "Tangier long ago, seen from a hill at sunrise: white houses with flat roofs and a mosque tower climbing a hill above a blue bay, boats in the harbour. No people in front.",
+  "who": []
+ },
+ "i1-b": {
+  "alt": "Ibn Battuta stands on a hill above Tangier at dawn, looking east into the far distance, the sea shining behind him, wind in his cloak.",
+  "scene": "a young Moroccan man of about twenty-one with warm light-brown skin, a short neat dark beard and kind, curious eyes, in a cream hooded wool travelling cloak over a long white tunic, a white turban and a leather bag across his chest stands on a hill above Tangier at dawn, looking east into the far distance, the sea shining behind him, wind in his cloak.",
+  "who": [
+   "IBY"
+  ]
+ },
+ "i1-c": {
+  "alt": "At the wooden door of a white house in Tangier, Ibn Battuta says goodbye to his old parents, Moroccans with warm brown skin: his father in a white robe and turban holds…",
+  "scene": "At the wooden door of a white house in Tangier, a young Moroccan man of about twenty-one with warm light-brown skin, a short neat dark beard and kind, curious eyes, in a cream hooded wool travelling cloak over a long white tunic, a white turban and a leather bag across his chest says goodbye to his old parents, Moroccans with warm brown skin: his father in a white robe and turban holds his hand, his mother in a long dress and a headscarf that covers all her hair wipes a tear.",
+  "who": [
+   "IBY"
+  ]
+ },
+ "i1-d": {
+  "alt": "Ibn Battuta walks along a dusty road beside the sea, away from the town, while small birds fly up from a nest in a tree beside the road.",
+  "scene": "a young Moroccan man of about twenty-one with warm light-brown skin, a short neat dark beard and kind, curious eyes, in a cream hooded wool travelling cloak over a long white tunic, a white turban and a leather bag across his chest walks along a dusty road beside the sea, away from the town, while small birds fly up from a nest in a tree beside the road.",
+  "who": [
+   "IBY"
+  ]
+ },
+ "i2-a": {
+  "alt": "Alexandria long ago: a great old stone lighthouse tower on the shore of a blue sea, a busy harbour with sailing ships, and Ibn Battuta looking up at it in wonder.",
+  "scene": "Alexandria long ago: a great old stone lighthouse tower on the shore of a blue sea, a busy harbour with sailing ships, and a young Moroccan man of about twenty-one with warm light-brown skin, a short neat dark beard and kind, curious eyes, in a cream hooded wool travelling cloak over a long white tunic, a white turban and a leather bag across his chest looking up at it in wonder.",
+  "who": [
+   "IBY"
+  ]
+ },
+ "i2-b": {
+  "alt": "In a simple room with a small window, a kind old Egyptian teacher with a white beard and a walking stick sits on a mat, smiling at Ibn Battuta, who sits before him…",
+  "scene": "In a simple room with a small window, a kind old Egyptian teacher with a white beard and a walking stick sits on a mat, smiling at a young Moroccan man of about twenty-one with warm light-brown skin, a short neat dark beard and kind, curious eyes, in a cream hooded wool travelling cloak over a long white tunic, a white turban and a leather bag across his chest, who sits before him listening.",
+  "who": [
+   "IBY"
+  ]
+ },
+ "i2-c": {
+  "alt": "The old Egyptian teacher with the white beard raises his hand and points towards the far east through the window, while Ibn Battuta looks out in surprise.",
+  "scene": "The old Egyptian teacher with the white beard raises his hand and points towards the far east through the window, while a young Moroccan man of about twenty-one with warm light-brown skin, a short neat dark beard and kind, curious eyes, in a cream hooded wool travelling cloak over a long white tunic, a white turban and a leather bag across his chest looks out in surprise.",
+  "who": [
+   "IBY"
+  ]
+ },
+ "i2-d": {
+  "alt": "Ibn Battuta stands at the side of a sailing ship on a wide sea at sunset, looking towards the horizon with a hopeful smile.",
+  "scene": "a young Moroccan man of about twenty-one with warm light-brown skin, a short neat dark beard and kind, curious eyes, in a cream hooded wool travelling cloak over a long white tunic, a white turban and a leather bag across his chest stands at the side of a sailing ship on a wide sea at sunset, looking towards the horizon with a hopeful smile.",
+  "who": [
+   "IBY"
+  ]
+ },
+ "i3-a": {
+  "alt": "A street of old Damascus: stone houses with wooden balconies, a paved path on each side of the road, Syrian people walking, a fountain; every woman's hair covered by a…",
+  "scene": "A street of old Damascus: stone houses with wooden balconies, a paved path on each side of the road, Syrian people walking, a fountain; every woman's hair covered by a headscarf.",
+  "who": []
+ },
+ "i3-b": {
+  "alt": "In a stone lane of Damascus, a Syrian boy of about ten stares in shock at a blue-and-white porcelain dish broken into pieces at his feet, while Ibn Battuta watches…",
+  "scene": "In a stone lane of Damascus, a Syrian boy of about ten stares in shock at a blue-and-white porcelain dish broken into pieces at his feet, while a young Moroccan man of about twenty-one with warm light-brown skin, a short neat dark beard and kind, curious eyes, in a cream hooded wool travelling cloak over a long white tunic, a white turban and a leather bag across his chest watches nearby.",
+  "who": [
+   "IBY"
+  ]
+ },
+ "i3-c": {
+  "alt": "Kind Syrian men gather round the boy in the lane, one pointing helpfully down the street, as the boy gathers the broken blue-and-white pieces into his hands.",
+  "scene": "Kind Syrian men gather round the boy in the lane, one pointing helpfully down the street, as the boy gathers the broken blue-and-white pieces into his hands.",
+  "who": []
+ },
+ "i3-d": {
+  "alt": "In a small office with shelves of dishes, an old Syrian man with a grey beard gives coins to the smiling boy, who holds the broken pieces; Ibn Battuta smiles in the…",
+  "scene": "In a small office with shelves of dishes, an old Syrian man with a grey beard gives coins to the smiling boy, who holds the broken pieces; a young Moroccan man of about twenty-one with warm light-brown skin, a short neat dark beard and kind, curious eyes, in a cream hooded wool travelling cloak over a long white tunic, a white turban and a leather bag across his chest smiles in the doorway.",
+  "who": [
+   "IBY"
+  ]
+ },
+ "i3-e": {
+  "alt": "Ibn Battuta sits at a low table in a courtyard with a fountain in Damascus, writing in a small notebook with a reed pen and smiling to himself.",
+  "scene": "a young Moroccan man of about twenty-one with warm light-brown skin, a short neat dark beard and kind, curious eyes, in a cream hooded wool travelling cloak over a long white tunic, a white turban and a leather bag across his chest sits at a low table in a courtyard with a fountain in Damascus, writing in a small notebook with a reed pen and smiling to himself.",
+  "who": [
+   "IBY"
+  ]
+ },
+ "i4-a": {
+  "alt": "A long caravan of camels and pilgrims crosses a wide desert towards rocky hills at golden hour; Ibn Battuta rides a camel near the front, looking ahead with joy.",
+  "scene": "A long caravan of camels and pilgrims crosses a wide desert towards rocky hills at golden hour; a young Moroccan man of about twenty-one with warm light-brown skin, a short neat dark beard and kind, curious eyes, in a cream hooded wool travelling cloak over a long white tunic, a white turban and a leather bag across his chest rides a camel near the front, looking ahead with joy.",
+  "who": [
+   "IBY"
+  ]
+ },
+ "i4-b": {
+  "alt": "The Ka'bah draped in black cloth in the middle of the great mosque of Makkah long ago, pilgrims in simple white clothes walking around it, people of many lands; every…",
+  "scene": "The Ka'bah draped in black cloth in the middle of the great mosque of Makkah long ago, pilgrims in simple white clothes walking around it, people of many lands; every woman's hair covered. a young Moroccan man of about twenty-one with warm light-brown skin, a short neat dark beard and kind, curious eyes, in a cream hooded wool travelling cloak over a long white tunic, a white turban and a leather bag across his chest in white pilgrim clothes watches in awe in the front.",
+  "who": [
+   "IBY"
+  ]
+ },
+ "i4-c": {
+  "alt": "Pilgrims in white from many lands arrive at Makkah along a mountain road, some walking, some on camels and horses, the town of Makkah in the valley below. Every woman's…",
+  "scene": "Pilgrims in white from many lands arrive at Makkah along a mountain road, some walking, some on camels and horses, the town of Makkah in the valley below. Every woman's hair is covered.",
+  "who": []
+ },
+ "i4-d": {
+  "alt": "At dawn Ibn Battuta stands on a hill outside Makkah with his bag on his shoulder, looking out over many roads leading away in different directions.",
+  "scene": "At dawn a young Moroccan man of about twenty-one with warm light-brown skin, a short neat dark beard and kind, curious eyes, in a cream hooded wool travelling cloak over a long white tunic, a white turban and a leather bag across his chest stands on a hill outside Makkah with his bag on his shoulder, looking out over many roads leading away in different directions.",
+  "who": [
+   "IBY"
+  ]
+ },
+ "i5-a": {
+  "alt": "A town of Anatolia long ago with wooden houses and a small mosque on green hills; a group of cheerful young Turkish men in tunics, felt caps and boots greet Ibn Battuta…",
+  "scene": "A town of Anatolia long ago with wooden houses and a small mosque on green hills; a group of cheerful young Turkish men in tunics, felt caps and boots greet a Moroccan man of about forty-five with warm light-brown skin and a full dark beard touched with grey, kind, curious eyes, in a cream hooded wool travelling cloak over a long white tunic, a white turban and a leather bag across his chest warmly in the street.",
+  "who": [
+   "IB"
+  ]
+ },
+ "i5-b": {
+  "alt": "In the evening, young Turkish men put coins together into a cloth bag and carry baskets of bread, fruit and food into a warm lamplit guesthouse.",
+  "scene": "In the evening, young Turkish men put coins together into a cloth bag and carry baskets of bread, fruit and food into a warm lamplit guesthouse.",
+  "who": []
+ },
+ "i5-c": {
+  "alt": "Inside a lamplit guesthouse with rugs on the floor, Ibn Battuta sits with travellers eating from big bowls while the young Turkish men serve them food, smiling.",
+  "scene": "Inside a lamplit guesthouse with rugs on the floor, a Moroccan man of about forty-five with warm light-brown skin and a full dark beard touched with grey, kind, curious eyes, in a cream hooded wool travelling cloak over a long white tunic, a white turban and a leather bag across his chest sits with travellers eating from big bowls while the young Turkish men serve them food, smiling.",
+  "who": [
+   "IB"
+  ]
+ },
+ "i6-a": {
+  "alt": "The great city of Delhi long ago: high stone walls and domes, a crowded gate with Indian people in colourful clothes, elephants and horses; every woman's hair covered.",
+  "scene": "The great city of Delhi long ago: high stone walls and domes, a crowded gate with Indian people in colourful clothes, elephants and horses; every woman's hair covered.",
+  "who": []
+ },
+ "i6-b": {
+  "alt": "On the terrace of a grand palace, a stern Indian Sultan with a dark beard and a jewelled turban sits on a royal couch and speaks to Ibn Battuta, who bows his head…",
+  "scene": "On the terrace of a grand palace, a stern Indian Sultan with a dark beard and a jewelled turban sits on a royal couch and speaks to a Moroccan man of about forty-five with warm light-brown skin and a full dark beard touched with grey, kind, curious eyes, in a cream hooded wool travelling cloak over a long white tunic, a white turban and a leather bag across his chest, who bows his head respectfully; courtiers stand by.",
+  "who": [
+   "IB"
+  ]
+ },
+ "i6-c": {
+  "alt": "Ibn Battuta sits at a low judge's table with two kind Indian scholars in white turbans on either side of him, one explaining something from a book.",
+  "scene": "a Moroccan man of about forty-five with warm light-brown skin and a full dark beard touched with grey, kind, curious eyes, in a cream hooded wool travelling cloak over a long white tunic, a white turban and a leather bag across his chest sits at a low judge's table with two kind Indian scholars in white turbans on either side of him, one explaining something from a book.",
+  "who": [
+   "IB"
+  ]
+ },
+ "i7-a": {
+  "alt": "From the air: rings of tiny green islands with white beaches in a bright turquoise ocean, coconut palms on each, a small sailing ship coming through a gap in the ring of…",
+  "scene": "From the air: rings of tiny green islands with white beaches in a bright turquoise ocean, coconut palms on each, a small sailing ship coming through a gap in the ring of coral.",
+  "who": []
+ },
+ "i7-b": {
+  "alt": "On a white beach under coconut palms, Maldivian men and women with brown skin in simple clothes welcome Ibn Battuta as he steps off a small boat; every woman's hair…",
+  "scene": "On a white beach under coconut palms, Maldivian men and women with brown skin in simple clothes welcome a Moroccan man of about forty-five with warm light-brown skin and a full dark beard touched with grey, kind, curious eyes, in a cream hooded wool travelling cloak over a long white tunic, a white turban and a leather bag across his chest as he steps off a small boat; every woman's hair covered by a headscarf.",
+  "who": [
+   "IB"
+  ]
+ },
+ "i7-c": {
+  "alt": "Under tall coconut palms, Maldivian people open coconuts, pour coconut milk into bowls and lay out fish to dry on palm-leaf mats; every woman's hair covered.",
+  "scene": "Under tall coconut palms, Maldivian people open coconuts, pour coconut milk into bowls and lay out fish to dry on palm-leaf mats; every woman's hair covered.",
+  "who": []
+ },
+ "i7-d": {
+  "alt": "Seen from one island's beach at sunset, the green tops of palm trees on the next small island across the calm water. No people.",
+  "scene": "Seen from one island's beach at sunset, the green tops of palm trees on the next small island across the calm water. No people.",
+  "who": []
+ },
+ "i8-a": {
+  "alt": "A big sailing ship arrives at a green tropical island with tall forested hills and a harbour village of wooden houses on stilts by the sea.",
+  "scene": "A big sailing ship arrives at a green tropical island with tall forested hills and a harbour village of wooden houses on stilts by the sea.",
+  "who": []
+ },
+ "i8-b": {
+  "alt": "Sumatran people with brown skin paddle small wooden boats up to the side of a big ship, holding up coconuts, bunches of bananas, mangoes and fish; Ibn Battuta smiles…",
+  "scene": "Sumatran people with brown skin paddle small wooden boats up to the side of a big ship, holding up coconuts, bunches of bananas, mangoes and fish; a Moroccan man of about forty-five with warm light-brown skin and a full dark beard touched with grey, kind, curious eyes, in a cream hooded wool travelling cloak over a long white tunic, a white turban and a leather bag across his chest smiles down from the ship. Every woman's hair covered.",
+  "who": [
+   "IB"
+  ]
+ },
+ "i8-c": {
+  "alt": "In a wooden palace hall with carved pillars, a kind Sumatran Sultan in a simple robe and cap sits on a mat among scholars in turbans reading from books; Ibn Battuta sits…",
+  "scene": "In a wooden palace hall with carved pillars, a kind Sumatran Sultan in a simple robe and cap sits on a mat among scholars in turbans reading from books; a Moroccan man of about forty-five with warm light-brown skin and a full dark beard touched with grey, kind, curious eyes, in a cream hooded wool travelling cloak over a long white tunic, a white turban and a leather bag across his chest sits with them.",
+  "who": [
+   "IB"
+  ]
+ },
+ "i8-d": {
+  "alt": "The Sumatran Sultan in a simple robe walks on foot along a street of wooden houses towards a wooden mosque with a tiered roof, with ordinary townspeople walking beside…",
+  "scene": "The Sumatran Sultan in a simple robe walks on foot along a street of wooden houses towards a wooden mosque with a tiered roof, with ordinary townspeople walking beside him.",
+  "who": []
+ },
+ "i9-a": {
+  "alt": "A great Chinese harbour long ago, full of large wooden ships with ribbed sails; Ibn Battuta stands at the rail of a ship arriving, looking at the busy port in wonder.",
+  "scene": "A great Chinese harbour long ago, full of large wooden ships with ribbed sails; a Moroccan man of about forty-five with warm light-brown skin and a full dark beard touched with grey, kind, curious eyes, in a cream hooded wool travelling cloak over a long white tunic, a white turban and a leather bag across his chest stands at the rail of a ship arriving, looking at the busy port in wonder.",
+  "who": [
+   "IB"
+  ]
+ },
+ "i9-b": {
+  "alt": "In a Chinese market long ago, a Chinese merchant hands a small sheet of paper money to Ibn Battuta, who holds it up in surprise; stalls of silk and fruit behind them.",
+  "scene": "In a Chinese market long ago, a Chinese merchant hands a small sheet of paper money to a Moroccan man of about forty-five with warm light-brown skin and a full dark beard touched with grey, kind, curious eyes, in a cream hooded wool travelling cloak over a long white tunic, a white turban and a leather bag across his chest, who holds it up in surprise; stalls of silk and fruit behind them.",
+  "who": [
+   "IB"
+  ]
+ },
+ "i9-c": {
+  "alt": "In a Chinese pottery workshop, Chinese potters paint blue patterns on white porcelain dishes and vases while Ibn Battuta watches, delighted.",
+  "scene": "In a Chinese pottery workshop, Chinese potters paint blue patterns on white porcelain dishes and vases while a Moroccan man of about forty-five with warm light-brown skin and a full dark beard touched with grey, kind, curious eyes, in a cream hooded wool travelling cloak over a long white tunic, a white turban and a leather bag across his chest watches, delighted.",
+  "who": [
+   "IB"
+  ]
+ },
+ "i9-d": {
+  "alt": "A quiet Chinese town at night with lanterns glowing along a canal and a stone bridge; Ibn Battuta walks calmly along the path alone, peaceful and safe.",
+  "scene": "A quiet Chinese town at night with lanterns glowing along a canal and a stone bridge; a Moroccan man of about forty-five with warm light-brown skin and a full dark beard touched with grey, kind, curious eyes, in a cream hooded wool travelling cloak over a long white tunic, a white turban and a leather bag across his chest walks calmly along the path alone, peaceful and safe.",
+  "who": [
+   "IB"
+  ]
+ },
+ "i10-a": {
+  "alt": "Ibn Battuta stands at the front of a sailing ship heading west across a calm sea at sunrise, his hand on the rail, looking towards home.",
+  "scene": "a Moroccan man of about forty-five with warm light-brown skin and a full dark beard touched with grey, kind, curious eyes, in a cream hooded wool travelling cloak over a long white tunic, a white turban and a leather bag across his chest stands at the front of a sailing ship heading west across a calm sea at sunrise, his hand on the rail, looking towards home.",
+  "who": [
+   "IB"
+  ]
+ },
+ "i10-b": {
+  "alt": "At dusk, Ibn Battuta sits on a low wall at the edge of a Moroccan town with his head bowed and his hands raised in prayer, quiet and sad.",
+  "scene": "At dusk, a Moroccan man of about forty-five with warm light-brown skin and a full dark beard touched with grey, kind, curious eyes, in a cream hooded wool travelling cloak over a long white tunic, a white turban and a leather bag across his chest sits on a low wall at the edge of a Moroccan town with his head bowed and his hands raised in prayer, quiet and sad.",
+  "who": [
+   "IB"
+  ]
+ },
+ "i10-c": {
+  "alt": "The old city of Fez: a gate decorated with blue and green tiles, a crowded street of Moroccan people in robes and hooded cloaks, and Ibn Battuta walking in through the…",
+  "scene": "The old city of Fez: a gate decorated with blue and green tiles, a crowded street of Moroccan people in robes and hooded cloaks, and a Moroccan man of about forty-five with warm light-brown skin and a full dark beard touched with grey, kind, curious eyes, in a cream hooded wool travelling cloak over a long white tunic, a white turban and a leather bag across his chest walking in through the gate; every woman's hair covered.",
+  "who": [
+   "IB"
+  ]
+ },
+ "i11-a": {
+  "alt": "A long camel caravan crosses golden sand dunes of the Sahara under a wide blue sky, Ibn Battuta riding a camel with a cloth wrapped around his face against the sun.",
+  "scene": "A long camel caravan crosses golden sand dunes of the Sahara under a wide blue sky, a Moroccan man of about forty-five with warm light-brown skin and a full dark beard touched with grey, kind, curious eyes, in a cream hooded wool travelling cloak over a long white tunic, a white turban and a leather bag across his chest riding a camel with a cloth wrapped around his face against the sun.",
+  "who": [
+   "IB"
+  ]
+ },
+ "i11-b": {
+  "alt": "A busy town in old Mali with buildings of earth and wooden beams, West African people in flowing robes trading in the street, travellers with camels resting safely;…",
+  "scene": "A busy town in old Mali with buildings of earth and wooden beams, West African people in flowing robes trading in the street, travellers with camels resting safely; every woman's hair covered.",
+  "who": []
+ },
+ "i11-c": {
+  "alt": "A great mosque of Mali built of earth with wooden beams sticking out of its walls, West African men in clean white robes arriving for Friday prayer carrying woven prayer…",
+  "scene": "A great mosque of Mali built of earth with wooden beams sticking out of its walls, West African men in clean white robes arriving for Friday prayer carrying woven prayer mats; a Moroccan man of about forty-five with warm light-brown skin and a full dark beard touched with grey, kind, curious eyes, in a cream hooded wool travelling cloak over a long white tunic, a white turban and a leather bag across his chest among them.",
+  "who": [
+   "IB"
+  ]
+ },
+ "i11-d": {
+  "alt": "West African boys in white tunics sit on mats in a courtyard of earth walls, holding wooden boards with writing on them and reciting together with their teacher; the…",
+  "scene": "West African boys in white tunics sit on mats in a courtyard of earth walls, holding wooden boards with writing on them and reciting together with their teacher; the boards show only marks too small to read.",
+  "who": []
+ },
+ "i11-e": {
+  "alt": "In a room of a Moroccan palace with tiled walls, Ibn Battuta speaks and gestures while a young scribe in a turban writes on long sheets of paper with a reed pen; lamps…",
+  "scene": "In a room of a Moroccan palace with tiled walls, a Moroccan man of about forty-five with warm light-brown skin and a full dark beard touched with grey, kind, curious eyes, in a cream hooded wool travelling cloak over a long white tunic, a white turban and a leather bag across his chest speaks and gestures while a young scribe in a turban writes on long sheets of paper with a reed pen; lamps and books around them.",
+  "who": [
+   "IB"
+  ]
+ }
+}

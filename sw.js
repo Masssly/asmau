@@ -20,7 +20,7 @@
 
 // BEGIN GENERATED
 const RELEASE = "2026.11.31";
-const BUILD = "41d07a06d2f4";
+const BUILD = "d3bda9827c18";
 const SHELL = [
   "./",
   "app.webmanifest",
@@ -52,6 +52,13 @@ const SHELL = [
   "games/count-the-crescents/index.html",
   "games/count-the-crescents/",
   "games/count-the-crescents/narration.json",
+  "games/ibn-battuta/game.js",
+  "games/ibn-battuta/game.json",
+  "games/ibn-battuta/index.html",
+  "games/ibn-battuta/",
+  "games/ibn-battuta/narration.json",
+  "games/ibn-battuta/parents/pages.json",
+  "games/ibn-battuta/story.js",
   "games/musa/art.js",
   "games/musa/game.js",
   "games/musa/game.json",

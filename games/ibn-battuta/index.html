@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ibn Battuta — Asmau</title>
+<link rel="manifest" href="../../app.webmanifest">
+<meta name="theme-color" content="#0c1530">
+<link rel="icon" href="../../icons/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../../icons/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="../../icons/icon-180.png">
+<link rel="stylesheet" href="../../fonts/fonts.css">
+<link rel="stylesheet" href="../../shared/style.css">
+<link rel="stylesheet" href="../../shared/story.css">
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <a class="btn-back" href="../../index.html">← Asmau</a>
+    <h1>Ibn Battuta</h1>
+    <button class="icon-btn" id="musicBtn" data-sound-btn="music" aria-label="Music">🎵</button>
+    <button class="icon-btn" id="soundBtn" data-sound-btn="sounds" aria-label="Sounds">🍃</button>
+    <button class="icon-btn" id="voiceBtn" data-sound-btn="voice" aria-label="Voice">🗣️</button>
+    <button class="icon-btn" id="mapBtn" aria-label="All chapters">☰</button>
+  </div>
+
+  <section id="title" class="title">
+    <div class="title-sky has-cover" id="titleSky" aria-hidden="true"><img class="title-cover" src="cover.webp" alt=""></div>
+    <h2>The Travels of Ibn Battuta</h2>
+    <p class="sub">Eleven chapters about the young man from Tangier who travelled the world. Play a little every day.</p>
+    <span class="age-badge">Ages 5–9</span>
+    <p class="ver" data-asmau-version hidden></p>
+    <div class="title-actions">
+      <button class="btn btn-gold" id="startBtn">Start the story</button>
+      <button class="btn-back" id="restartBtn" hidden>Start from the beginning</button>
+    </div>
+
+    <p class="prep" id="prep" hidden></p>
+
+    <a class="voice-link" href="../../index.html#parents-record">🎙️ <strong>Parents:</strong> tell his story in your own voice, in any language ›</a>
+
+    <details class="parents">
+      <summary>For parents</summary>
+      <ul>
+        <li>Ibn Battuta (1304 to about 1368) left his home in Tangier, Morocco, at twenty-one to make the Hajj, and kept
+          travelling for nearly thirty years: Egypt, Syria, Makkah, Anatolia, India, the Maldives, Sumatra, China and, last,
+          Mali. Back in Fez, the Sultan had his travels written down by Ibn Juzayy: the book called the <em>Rihla</em>.</li>
+        <li>This is history, not the Qur’an. Every fact in the game is from the Rihla, in the English translation of
+          H. A. R. Gibb and C. F. Beckingham (Hakluyt Society); each chapter gives its pages. The book reports some wonders
+          (an old man foretelling his travels) as he was told them: the game says “it is told”.</li>
+        <li>Not told to children, but in the page notes for you: his marriages and the slaves he owned, the wars and cruel
+          rulers he saw, what he disliked in Mali, and the children of Mali kept in shackles until they learned the Qur’an.
+          Historians also doubt that he reached every place he describes; the notes say where.</li>
+        <li>Shown in this story: Ibn Battuta, a Moroccan, and the people of every land as themselves, every woman’s hair
+          covered. The Prophet ﷺ is mentioned and never shown.</li>
+      </ul>
+    </details>
+  </section>
+
+  <section id="play" hidden>
+    <div class="chapter-head">
+      <span class="num" id="chNum"></span>
+      <h2 id="chTitle"></h2>
+      <a class="src" id="chSource" target="_blank" rel="noopener"></a>
+    </div>
+    <div class="trail" id="trail"></div>
+    <div class="stage" id="stage"></div>
+    <button class="caption" id="caption" aria-live="polite">
+      <span id="captionText"></span>
+      <span class="ear" aria-hidden="true">🔊</span>
+    </button>
+    <details class="pnote" id="pnote">
+      <summary id="pnoteSum">For parents</summary>
+      <div id="pnoteBody"></div>
+    </details>
+    <div class="nav">
+      <button class="btn-bk" id="prevBtn" aria-label="Back"><span class="ico" aria-hidden="true">◀</span><span class="lbl">Back</span></button>
+      <button class="btn-go" id="nextBtn" aria-label="Next"><span class="lbl">Next</span><span class="ico" aria-hidden="true">▶</span></button>
+    </div>
+  </section>
+
+  <section id="chapters" hidden>
+    <div class="view-head">
+      <h2 class="view-title">All chapters</h2>
+      <button class="btn-back" id="chaptersClose">✕ Close</button>
+    </div>
+    <div class="chapter-grid" id="chapterGrid"></div>
+  </section>
+
+  <section id="end" class="end" hidden>
+    <div class="big" id="endFig" aria-hidden="true"></div>
+    <h2>The End</h2>
+    <p id="endText"></p>
+    <div class="virtues"><span>Curiosity</span><span>Kindness to strangers</span><span>Learning</span></div>
+    <div class="title-actions">
+      <button class="btn btn-gold" id="againBtn">Read it again</button>
+      <button class="btn-back" id="endChaptersBtn">Pick a chapter</button>
+    </div>
+  </section>
+</div>
+
+<script src="../../shared/narration.js"></script>
+<script src="../../shared/music.js"></script>
+<script src="../../shared/sound-buttons.js"></script>
+<script src="game.js"></script>
+<script src="art.js"></script>
+<script src="story.js"></script>
+<script src="../../shared/story-engine.js"></script>
+<script src="../../shared/gate.js"></script>
+<script src="../../shared/pwa.js"></script>
+</body>
+</html>

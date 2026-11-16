@@ -1,12 +1,20 @@
 {
-  "version": "2026.11.29",
+  "version": "2026.11.30",
   "date": "2026-11-16",
-  "buildId": "7aff7277cf8c",
+  "buildId": "a4e30cc770c5",
   "notes": [
-    "Living pictures: stars twinkle in the night sky, lamps and fires flicker, water shimmers, leaves fall and birds cross the sky, placed on each picture",
-    "Tapping games: new things to tap never land on top of each other"
+    "New game: the story of Prophet Nuh, in 11 chapters with 45 pictures, from Surah Hud and Surah Nuh",
+    "Parents' notes for Nuh from Ibn Kathir, al-Bukhari and the Shia narrations of Hayat al-Qulub"
   ],
   "history": [
+    {
+      "version": "2026.11.30",
+      "date": "2026-11-16",
+      "notes": [
+        "New game: the story of Prophet Nuh, in 11 chapters with 45 pictures, from Surah Hud and Surah Nuh",
+        "Parents' notes for Nuh from Ibn Kathir, al-Bukhari and the Shia narrations of Hayat al-Qulub"
+      ]
+    },
     {
       "version": "2026.11.29",
       "date": "2026-11-16",

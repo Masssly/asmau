@@ -9,6 +9,7 @@ so that a person looks the same from scene to scene.
                             into scripts/musa-art/refs/<KEY>.png, for a person to approve
   asmau-refs / asmau-scenes  the same for the Nana Asma'u story (scripts/asmau-art)
   adam-refs / adam-scenes    the same for the Adam story (scripts/adam-art)
+  nuh-refs / nuh-scenes      the same for the Nuh story (scripts/nuh-art)
   musa-scenes [KEY ...]     draw the Musa scenes (scripts/musa-art/shots.json) into
                             scripts/musa-art/out/<key>.png, each shown the approved
                             reference pictures of the people in it. Already drawn: skipped.
@@ -158,7 +159,7 @@ def musa_scenes(keys):
     for k in keys:
         s = shots[k]
         refs = [r for r in (approved_ref(w) for w in s.get("who", [])) if r][:3]
-        lead = PORTRAIT if s.get("portrait") else (BACKDROP_ANY if ART.endswith("adam-art") else BACKDROP) if k.startswith("bg-") else STYLE
+        lead = PORTRAIT if s.get("portrait") else (BACKDROP_ANY if ART.endswith(("adam-art", "nuh-art")) else BACKDROP) if k.startswith("bg-") else STYLE
         jobs.append((k, os.path.join(ART, "out", k + ".png"), (LOCK if refs else "") + lead + s["scene"] + END, refs))
     return run(jobs)
 
@@ -238,8 +239,10 @@ if __name__ == "__main__":
         use("asmau")
     if cmd.startswith("adam-"):
         use("adam")
+    if cmd.startswith("nuh-"):
+        use("nuh")
     failed = {"musa-refs": musa_refs, "musa-scenes": musa_scenes, "asmau-refs": musa_refs, "asmau-scenes": musa_scenes,
-              "adam-refs": musa_refs, "adam-scenes": musa_scenes,
+              "adam-refs": musa_refs, "adam-scenes": musa_scenes, "nuh-refs": musa_refs, "nuh-scenes": musa_scenes,
               "yusuf-fix": yusuf_fix, "yusuf-brothers": brothers}[cmd](args)
     if failed:
         print("%d failed: %s" % (len(failed), ", ".join(failed)))

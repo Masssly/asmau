@@ -1,0 +1,330 @@
+{
+ "bg-field": {
+  "alt": "Green fields and palm trees in a wide valley under a bright blue sky with a few white clouds. No people.",
+  "scene": "Green fields and palm trees in a wide valley under a bright blue sky with a few white clouds. No people.",
+  "who": []
+ },
+ "n1-a": {
+  "alt": "In the village, the good men sit in the shade of a palm tree, talking kindly with the villagers who come to them; warm afternoon light.",
+  "scene": "In a village of round mud houses with thatched roofs among palm trees and fields, in a wide green valley, three kind, humble old men with deep dark brown skin and grey beards, in plain white tunics sit in the shade of a palm tree, talking kindly with the villagers who come to them; warm afternoon light.",
+  "who": [
+   "VILLAGE",
+   "GOODMEN"
+  ]
+ },
+ "n1-b": {
+  "alt": "In the middle of the village, villagers with deep dark brown skin carve a plain stone statue of a standing figure; a few more rough statues stand behind them. Every…",
+  "scene": "In the middle of a village of round mud houses with thatched roofs among palm trees and fields, in a wide green valley, villagers with deep dark brown skin carve a plain stone statue of a standing figure; a few more rough statues stand behind them. Every woman and every girl wears a headscarf that covers all her hair.",
+  "who": [
+   "VILLAGE"
+  ]
+ },
+ "n1-c": {
+  "alt": "the statues stand alone in an empty dusty square between round mud houses with thatched roofs at evening, long shadows across the dust, weeds growing at their feet. The…",
+  "scene": "five tall rough stone statues of standing figures, plain and weathered, their faces worn smooth and blank stand alone in an empty dusty square between round mud houses with thatched roofs at evening, long shadows across the dust, weeds growing at their feet. The statues have no faces at all, only smooth blank stone where a face would be. No people.",
+  "who": [
+   "STATUES"
+  ]
+ },
+ "n1-d": {
+  "alt": "Seen from behind, a crowd of villagers bow down before the statues at dusk, offerings of fruit at the statues' feet; the statues have no faces at all, only smooth blank…",
+  "scene": "Seen from behind, a crowd of villagers bow down before five tall rough stone statues of standing figures, plain and weathered, their faces worn smooth and blank at dusk, offerings of fruit at the statues' feet; the statues have no faces at all, only smooth blank stone; the faces of the people are not seen.",
+  "who": [
+   "STATUES"
+  ]
+ },
+ "n2-a": {
+  "alt": "Nuh stands on a low hill above the village at sunrise, looking out over the houses with a kind, serious face, golden light around him.",
+  "scene": "a tall, strong, kind old man with deep dark brown skin, a full white beard and short white hair, in a long simple indigo-blue robe over a cream tunic stands on a low hill above a village of round mud houses with thatched roofs among palm trees and fields, in a wide green valley at sunrise, looking out over the houses with a kind, serious face, golden light around him.",
+  "who": [
+   "NUH",
+   "VILLAGE"
+  ]
+ },
+ "n2-b": {
+  "alt": "Nuh speaks to the people gathered in the village square, one hand raised gently, the other on his heart.",
+  "scene": "a tall, strong, kind old man with deep dark brown skin, a full white beard and short white hair, in a long simple indigo-blue robe over a cream tunic speaks to a crowd of villagers with deep dark brown skin in simple tunics and long dresses; every woman's and girl's hair is covered by a headscarf gathered in the village square, one hand raised gently, the other on his heart.",
+  "who": [
+   "NUH",
+   "PEOPLE"
+  ]
+ },
+ "n2-c": {
+  "alt": "Nuh walks along a path between fields and palm trees toward a far village, staff in hand, the sun high; the path stretches a long way ahead.",
+  "scene": "a tall, strong, kind old man with deep dark brown skin, a full white beard and short white hair, in a long simple indigo-blue robe over a cream tunic walks along a path between fields and palm trees toward a far village, staff in hand, the sun high; the path stretches a long way ahead.",
+  "who": [
+   "NUH"
+  ]
+ },
+ "n3-a": {
+  "alt": "In bright daylight, Nuh talks with a farmer working in a field, pointing kindly up at the sky.",
+  "scene": "In bright daylight, a tall, strong, kind old man with deep dark brown skin, a full white beard and short white hair, in a long simple indigo-blue robe over a cream tunic talks with a farmer working in a field, pointing kindly up at the sky.",
+  "who": [
+   "NUH"
+  ]
+ },
+ "n3-b": {
+  "alt": "At night under the stars, Nuh stands at the door of a round house with a small oil lamp, speaking softly to a family inside. Every woman's hair is covered.",
+  "scene": "At night under the stars, a tall, strong, kind old man with deep dark brown skin, a full white beard and short white hair, in a long simple indigo-blue robe over a cream tunic stands at the door of a round house with a small oil lamp, speaking softly to a family inside. Every woman's hair is covered.",
+  "who": [
+   "NUH"
+  ]
+ },
+ "n3-c": {
+  "alt": "Nuh sits on a low wall talking quietly with one young man in the shade, while a busy market goes on behind them.",
+  "scene": "a tall, strong, kind old man with deep dark brown skin, a full white beard and short white hair, in a long simple indigo-blue robe over a cream tunic sits on a low wall talking quietly with one young man in the shade, while a busy market goes on behind them.",
+  "who": [
+   "NUH"
+  ]
+ },
+ "n3-d": {
+  "alt": "A group of villagers turn away from Nuh, some with their fingers in their ears, some pulling their cloaks over their heads; Nuh holds out his hands to them patiently.",
+  "scene": "A group of villagers turn away from a tall, strong, kind old man with deep dark brown skin, a full white beard and short white hair, in a long simple indigo-blue robe over a cream tunic, some with their fingers in their ears, some pulling their cloaks over their heads; Nuh holds out his hands to them patiently.",
+  "who": [
+   "NUH"
+  ]
+ },
+ "n4-a": {
+  "alt": "Soft rain falls on green fields and palm trees from grey-white clouds, the sun breaking through at one side. No people.",
+  "scene": "Soft rain falls on green fields and palm trees from grey-white clouds, the sun breaking through at one side. No people.",
+  "who": []
+ },
+ "n4-b": {
+  "alt": "A happy family with deep dark brown skin walks beside a river through a green garden of fruit trees; the mother's and daughter's hair is covered by headscarves.",
+  "scene": "A happy family with deep dark brown skin walks beside a river through a green garden of fruit trees; the mother's and daughter's hair is covered by headscarves.",
+  "who": []
+ },
+ "n4-c": {
+  "alt": "A wide sky at twilight: the moon glows on one side and the last of the sun on the other, with the first stars between, over a quiet valley. No people.",
+  "scene": "A wide sky at twilight: the moon glows on one side and the last of the sun on the other, with the first stars between, over a quiet valley. No people.",
+  "who": []
+ },
+ "n4-d": {
+  "alt": "Morning over a wide land: paths wind between green hills, fields and rivers into the distance; young plants sprout in the foreground. No people.",
+  "scene": "Morning over a wide land: paths wind between green hills, fields and rivers into the distance; young plants sprout in the foreground. No people.",
+  "who": []
+ },
+ "n5-a": {
+  "alt": "the proud chiefs stand with their arms folded and noses in the air in the village square, looking down on Nuh, who stands calmly with a few poor followers in patched…",
+  "scene": "three proud rich men with deep dark brown skin in heavy red and gold robes and large turbans, with gold rings and folded arms stand with their arms folded and noses in the air in the village square, looking down on a tall, strong, kind old man with deep dark brown skin, a full white beard and short white hair, in a long simple indigo-blue robe over a cream tunic, who stands calmly with a few poor followers in patched clothes.",
+  "who": [
+   "CHIEFS",
+   "NUH"
+  ]
+ },
+ "n5-b": {
+  "alt": "Nuh stands in front of the believers, his arms spread wide to keep them close, while the proud chiefs point and frown; every person has very dark brown skin; the women's…",
+  "scene": "a tall, strong, kind old man with deep dark brown skin, a full white beard and short white hair, in a long simple indigo-blue robe over a cream tunic stands in front of a small group of ordinary believers with deep dark brown skin: men in plain sand-coloured and white tunics, women in long simple dresses with headscarves that fully cover their hair, and a few children, his arms spread wide to keep them close, while three proud rich men with deep dark brown skin in heavy red and gold robes and large turbans, with gold rings and folded arms point and frown; every person has very dark brown skin; the women's and girls' skin is just as dark as the men's.",
+  "who": [
+   "NUH",
+   "BELIEVERS",
+   "CHIEFS"
+  ]
+ },
+ "n5-c": {
+  "alt": "Nuh sits on a mat in the shade with his hands open and empty, speaking kindly; a bowl of plain dates and a cup of water beside him.",
+  "scene": "a tall, strong, kind old man with deep dark brown skin, a full white beard and short white hair, in a long simple indigo-blue robe over a cream tunic sits on a mat in the shade with his hands open and empty, speaking kindly; a bowl of plain dates and a cup of water beside him.",
+  "who": [
+   "NUH"
+  ]
+ },
+ "n6-a": {
+  "alt": "Nuh sits alone on a hill at evening, looking down at the village, his hand on his heart, calm but sad.",
+  "scene": "a tall, strong, kind old man with deep dark brown skin, a full white beard and short white hair, in a long simple indigo-blue robe over a cream tunic sits alone on a hill at evening, looking down at a village of round mud houses with thatched roofs among palm trees and fields, in a wide green valley, his hand on his heart, calm but sad.",
+  "who": [
+   "NUH",
+   "VILLAGE"
+  ]
+ },
+ "n6-b": {
+  "alt": "Nuh stands at sunrise beside a great pile of long wooden planks and tree trunks on open ground, looking up at the sky, ready to begin.",
+  "scene": "a tall, strong, kind old man with deep dark brown skin, a full white beard and short white hair, in a long simple indigo-blue robe over a cream tunic stands at sunrise beside a great pile of long wooden planks and tree trunks on open ground, looking up at the sky, ready to begin.",
+  "who": [
+   "NUH"
+  ]
+ },
+ "n6-c": {
+  "alt": "Nuh and two grown men with deep dark brown skin measure and saw long planks of wood in a sunny clearing, wood shavings on the ground. No women or children.",
+  "scene": "a tall, strong, kind old man with deep dark brown skin, a full white beard and short white hair, in a long simple indigo-blue robe over a cream tunic and two grown men with deep dark brown skin measure and saw long planks of wood in a sunny clearing, wood shavings on the ground. No women or children.",
+  "who": [
+   "NUH"
+  ]
+ },
+ "n6-d": {
+  "alt": "Close up: strong hands with deep dark brown skin hammer a big iron nail into a thick wooden plank of the Ark, wood shavings flying.",
+  "scene": "Close up: strong hands with deep dark brown skin hammer a big iron nail into a thick wooden plank of a huge simple wooden ship built of long planks held with big iron nails, with a high curved hull and a wooden roof over its deck, wood shavings flying.",
+  "who": [
+   "ARK"
+  ]
+ },
+ "n7-a": {
+  "alt": "the proud chiefs point and laugh at the half-built the Ark standing on wooden props in a field, while Nuh keeps working on it calmly.",
+  "scene": "three proud rich men with deep dark brown skin in heavy red and gold robes and large turbans, with gold rings and folded arms point and laugh at the half-built a huge simple wooden ship built of long planks held with big iron nails, with a high curved hull and a wooden roof over its deck standing on wooden props in a field, while a tall, strong, kind old man with deep dark brown skin, a full white beard and short white hair, in a long simple indigo-blue robe over a cream tunic keeps working on it calmly.",
+  "who": [
+   "CHIEFS",
+   "ARK",
+   "NUH"
+  ]
+ },
+ "n7-b": {
+  "alt": "Nuh looks down calmly from a ladder against the side of the Ark, a hammer in his hand, speaking to the laughing men below.",
+  "scene": "a tall, strong, kind old man with deep dark brown skin, a full white beard and short white hair, in a long simple indigo-blue robe over a cream tunic looks down calmly from a ladder against the side of a huge simple wooden ship built of long planks held with big iron nails, with a high curved hull and a wooden roof over its deck, a hammer in his hand, speaking to the laughing men below.",
+  "who": [
+   "NUH",
+   "ARK"
+  ]
+ },
+ "n7-c": {
+  "alt": "At sunset the great the Ark stands finished in a wide field, its long wooden roof glowing in the orange light; Nuh rests his hand on its side, smiling quietly.",
+  "scene": "At sunset the great a huge simple wooden ship built of long planks held with big iron nails, with a high curved hull and a wooden roof over its deck stands finished in a wide field, its long wooden roof glowing in the orange light; a tall, strong, kind old man with deep dark brown skin, a full white beard and short white hair, in a long simple indigo-blue robe over a cream tunic rests his hand on its side, smiling quietly.",
+  "who": [
+   "ARK",
+   "NUH"
+  ]
+ },
+ "n8-a": {
+  "alt": "Water bursts up out of the dry ground in many places in a field beside the finished the Ark, springs fountaining up between stones and an old cooking hearth, under a…",
+  "scene": "Water bursts up out of the dry ground in many places in a field beside the finished a huge simple wooden ship built of long planks held with big iron nails, with a high curved hull and a wooden roof over its deck, springs fountaining up between stones and an old cooking hearth, under a darkening sky. No people.",
+  "who": [
+   "ARK"
+  ]
+ },
+ "n8-b": {
+  "alt": "Heavy rain pours from dark rolling clouds over the village; puddles grow into streams between the round houses. No people anywhere: every doorway and porch is empty.",
+  "scene": "Heavy rain pours from dark rolling clouds over a village of round mud houses with thatched roofs among palm trees and fields, in a wide green valley; puddles grow into streams between the round houses. No people anywhere: every doorway and porch is empty.",
+  "who": [
+   "VILLAGE"
+  ]
+ },
+ "n8-c": {
+  "alt": "Animals walk two by two up a long wooden ramp into the Ark in the rain: a pair of elephants, a pair of camels, a pair of giraffes, a pair of sheep, a pair of lions,…",
+  "scene": "Animals walk two by two up a long wooden ramp into a huge simple wooden ship built of long planks held with big iron nails, with a high curved hull and a wooden roof over its deck in the rain: a pair of elephants, a pair of camels, a pair of giraffes, a pair of sheep, a pair of lions, birds flying in above them. No people at all, and nothing modern.",
+  "who": [
+   "ARK"
+  ]
+ },
+ "n8-d": {
+  "alt": "the believers climb the ramp into the Ark carrying bundles and holding children's hands, while Nuh helps an old woman up the last step. Every woman's hair is covered.",
+  "scene": "a small group of ordinary believers with deep dark brown skin: men in plain sand-coloured and white tunics, women in long simple dresses with headscarves that fully cover their hair, and a few children climb the ramp into a huge simple wooden ship built of long planks held with big iron nails, with a high curved hull and a wooden roof over its deck carrying bundles and holding children's hands, while a tall, strong, kind old man with deep dark brown skin, a full white beard and short white hair, in a long simple indigo-blue robe over a cream tunic helps an old woman up the last step. Every woman's hair is covered.",
+  "who": [
+   "BELIEVERS",
+   "ARK",
+   "NUH"
+  ]
+ },
+ "n9-a": {
+  "alt": "Nuh stands in the open doorway of the Ark in the rain, one hand raised, the other welcoming the last of the believers inside; lamplight glows warmly from within.",
+  "scene": "a tall, strong, kind old man with deep dark brown skin, a full white beard and short white hair, in a long simple indigo-blue robe over a cream tunic stands in the open doorway of a huge simple wooden ship built of long planks held with big iron nails, with a high curved hull and a wooden roof over its deck in the rain, one hand raised, the other welcoming the last of a small group of ordinary believers with deep dark brown skin: men in plain sand-coloured and white tunics, women in long simple dresses with headscarves that fully cover their hair, and a few children inside; lamplight glows warmly from within.",
+  "who": [
+   "NUH",
+   "ARK",
+   "BELIEVERS"
+  ]
+ },
+ "n9-b": {
+  "alt": "Inside the Ark, a mother and her young daughter sit together on a wooden bench by a small oil lamp, hands raised in prayer, rain streaming past a window. Both have deep…",
+  "scene": "Inside a huge simple wooden ship built of long planks held with big iron nails, with a high curved hull and a wooden roof over its deck, a mother and her young daughter sit together on a wooden bench by a small oil lamp, hands raised in prayer, rain streaming past a window. Both have deep dark brown skin and their hair covered by headscarves. The scene fills the whole picture, with no border or frame.",
+  "who": [
+   "ARK"
+  ]
+ },
+ "n9-c": {
+  "alt": "Nuh sits among the believers inside the Ark by lamplight, all with hands raised in prayer, animals resting quietly in the shadows behind them.",
+  "scene": "a tall, strong, kind old man with deep dark brown skin, a full white beard and short white hair, in a long simple indigo-blue robe over a cream tunic sits among a small group of ordinary believers with deep dark brown skin: men in plain sand-coloured and white tunics, women in long simple dresses with headscarves that fully cover their hair, and a few children inside a huge simple wooden ship built of long planks held with big iron nails, with a high curved hull and a wooden roof over its deck by lamplight, all with hands raised in prayer, animals resting quietly in the shadows behind them.",
+  "who": [
+   "NUH",
+   "BELIEVERS",
+   "ARK"
+  ]
+ },
+ "n10-a": {
+  "alt": "Wide view: the great the Ark rides on enormous dark waves under a stormy sky, lightning far away, its lamps glowing safely in its windows. No people are seen outside.",
+  "scene": "Wide view: the great a huge simple wooden ship built of long planks held with big iron nails, with a high curved hull and a wooden roof over its deck rides on enormous dark waves under a stormy sky, lightning far away, its lamps glowing safely in its windows. No people are seen outside.",
+  "who": [
+   "ARK"
+  ]
+ },
+ "n10-b": {
+  "alt": "Nuh leans out from the side of the Ark in the rain, calling with his arm stretched out toward a distant rocky hill where Nuh's son stands, small and far away.",
+  "scene": "a tall, strong, kind old man with deep dark brown skin, a full white beard and short white hair, in a long simple indigo-blue robe over a cream tunic leans out from the side of a huge simple wooden ship built of long planks held with big iron nails, with a high curved hull and a wooden roof over its deck in the rain, calling with his arm stretched out toward a distant rocky hill where a proud young man of about twenty with deep dark brown skin, short black hair and a thin beard, in a long-sleeved rust-orange tunic that reaches below his knees, over loose brown trousers stands, small and far away.",
+  "who": [
+   "NUH",
+   "ARK",
+   "SON"
+  ]
+ },
+ "n10-c": {
+  "alt": "On a rocky hillside in the rain, Nuh's son turns his back on the sea and starts to climb, arms folded, face proud; the Ark is far away behind him on the water.",
+  "scene": "On a rocky hillside in the rain, a proud young man of about twenty with deep dark brown skin, short black hair and a thin beard, in a long-sleeved rust-orange tunic that reaches below his knees, over loose brown trousers turns his back on the sea and starts to climb, arms folded, face proud; the Ark is far away behind him on the water.",
+  "who": [
+   "SON"
+  ]
+ },
+ "n10-d": {
+  "alt": "Huge grey waves roll across the sea between the far-off the Ark and a mountain hidden in rain and mist. No people are seen.",
+  "scene": "Huge grey waves roll across the sea between the far-off a huge simple wooden ship built of long planks held with big iron nails, with a high curved hull and a wooden roof over its deck and a mountain hidden in rain and mist. No people are seen.",
+  "who": [
+   "ARK"
+  ]
+ },
+ "n10-e": {
+  "alt": "Inside the Ark by a small window, Nuh sits with his head bowed and his hands raised in prayer, grey light on his face, rain on the glass.",
+  "scene": "Inside a huge simple wooden ship built of long planks held with big iron nails, with a high curved hull and a wooden roof over its deck by a small window, a tall, strong, kind old man with deep dark brown skin, a full white beard and short white hair, in a long simple indigo-blue robe over a cream tunic sits with his head bowed and his hands raised in prayer, grey light on his face, rain on the glass.",
+  "who": [
+   "ARK",
+   "NUH"
+  ]
+ },
+ "n10-f": {
+  "alt": "Nuh kneels in prayer inside the Ark, forehead to the wooden floor, a small lamp beside him; the storm outside the window is growing calmer.",
+  "scene": "a tall, strong, kind old man with deep dark brown skin, a full white beard and short white hair, in a long simple indigo-blue robe over a cream tunic kneels in prayer inside a huge simple wooden ship built of long planks held with big iron nails, with a high curved hull and a wooden roof over its deck, forehead to the wooden floor, a small lamp beside him; the storm outside the window is growing calmer.",
+  "who": [
+   "NUH",
+   "ARK"
+  ]
+ },
+ "n11-a": {
+  "alt": "The storm clouds part and golden sunlight pours down on a calm sea; the water is going down around green hilltops, and the Ark floats peacefully. No people are seen.",
+  "scene": "The storm clouds part and golden sunlight pours down on a calm sea; the water is going down around green hilltops, and a huge simple wooden ship built of long planks held with big iron nails, with a high curved hull and a wooden roof over its deck floats peacefully. No people are seen.",
+  "who": [
+   "ARK"
+  ]
+ },
+ "n11-b": {
+  "alt": "the Ark rests on the green top of a mountain in soft morning light, the last of the water shining far below, a clear sky above.",
+  "scene": "a huge simple wooden ship built of long planks held with big iron nails, with a high curved hull and a wooden roof over its deck rests on the green top of a mountain in soft morning light, the last of the water shining far below, a clear sky above.",
+  "who": [
+   "ARK"
+  ]
+ },
+ "n11-c": {
+  "alt": "A ring of tall rocky peaks stands high and sharp around one lower, gentle green mountain where the Ark rests in the sunshine. No people.",
+  "scene": "A ring of tall rocky peaks stands high and sharp around one lower, gentle green mountain where a huge simple wooden ship built of long planks held with big iron nails, with a high curved hull and a wooden roof over its deck rests in the sunshine. No people.",
+  "who": [
+   "ARK"
+  ]
+ },
+ "n11-d": {
+  "alt": "Nuh and the believers walk down a green mountainside in the morning, animals spreading out over the fresh grass around them, a clear blue sky above.",
+  "scene": "a tall, strong, kind old man with deep dark brown skin, a full white beard and short white hair, in a long simple indigo-blue robe over a cream tunic and a small group of ordinary believers with deep dark brown skin: men in plain sand-coloured and white tunics, women in long simple dresses with headscarves that fully cover their hair, and a few children walk down a green mountainside in the morning, animals spreading out over the fresh grass around them, a clear blue sky above.",
+  "who": [
+   "NUH",
+   "BELIEVERS"
+  ]
+ },
+ "n11-e": {
+  "alt": "Nuh kneels on the fresh grass at sunrise with his hands raised in thanks, the Ark on the mountain far behind him.",
+  "scene": "a tall, strong, kind old man with deep dark brown skin, a full white beard and short white hair, in a long simple indigo-blue robe over a cream tunic kneels on the fresh grass at sunrise with his hands raised in thanks, the Ark on the mountain far behind him.",
+  "who": [
+   "NUH"
+  ]
+ },
+ "n11-f": {
+  "alt": "Nuh stands at the door of a small new house of stone and wood in a green valley, welcoming the believers inside, hands open; morning light.",
+  "scene": "a tall, strong, kind old man with deep dark brown skin, a full white beard and short white hair, in a long simple indigo-blue robe over a cream tunic stands at the door of a small new house of stone and wood in a green valley, welcoming a small group of ordinary believers with deep dark brown skin: men in plain sand-coloured and white tunics, women in long simple dresses with headscarves that fully cover their hair, and a few children inside, hands open; morning light.",
+  "who": [
+   "NUH",
+   "BELIEVERS"
+  ]
+ }
+}

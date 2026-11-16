@@ -131,7 +131,7 @@
   /* ---------- sound, music and buzz ---------- */
   var VIB = { tap: 8, boing: 10, wrong: 30, win: [20, 40, 20], heave: 12, coin: 8, tick: 12, clink: 25, pour: 6 };
   function vib(pattern) {
-    if (!save.sfx) return;
+    if (!(music.level("sounds") > 0)) return;
     try { if (navigator.vibrate) navigator.vibrate(pattern); } catch (err) { /* not supported */ }
   }
   function fx(name, a, b) {
@@ -157,7 +157,7 @@
     music.duck(false);
   }
   function say(id) {
-    if (!save.voice) { stopVoice(); return Promise.resolve(); }
+    if (!(music.level("voice") > 0)) { stopVoice(); return Promise.resolve(); }
     var mine = ++sayToken;
     music.duck(true);
     return window.AsmauNarration.say(GAME, id, lines[id] || "", { lang: "en" }).then(function () {
@@ -1731,23 +1731,6 @@
     say("end-a");
   }
 
-  function paintToggles() {
-    var s = $("soundBtn");
-    s.classList.toggle("off", !save.sfx);
-    s.setAttribute("aria-label", save.sfx ? "Sounds and effects are on" : "Sounds and effects are off");
-    s.setAttribute("aria-pressed", String(save.sfx));
-    var v = $("voiceBtn");
-    if (v) {
-      v.classList.toggle("off", !save.voice);
-      v.setAttribute("aria-label", save.voice ? "The voice is on" : "The voice is off");
-      v.setAttribute("aria-pressed", String(save.voice));
-    }
-    var m = $("musicBtn");
-    m.classList.toggle("off", !save.music);
-    m.setAttribute("aria-label", save.music ? "Music is on" : "Music is off");
-    m.setAttribute("aria-pressed", String(save.music));
-  }
-
   function buildTitleSky() {
     var sky = $("titleSky");
     // a game can give its own title scene (titleArt: a list of sprites) and end picture (endIcon)
@@ -1767,23 +1750,10 @@
     $("restartBtn").addEventListener("click", function () { startChapter(0); });
     $("mapBtn").addEventListener("click", toggleChapters);
     if ($("chaptersClose")) $("chaptersClose").addEventListener("click", closeChapters);
-    $("soundBtn").addEventListener("click", function () {
-      save.sfx = !save.sfx;
-      persist();
-      music.setSfx(save.sfx);
-      paintToggles();
-    });
-    if ($("voiceBtn")) $("voiceBtn").addEventListener("click", function () {
-      save.voice = !save.voice;
-      persist();
-      paintToggles();
-      if (!save.voice) stopVoice(); else if (currentLine) say(currentLine);
-    });
-    $("musicBtn").addEventListener("click", function () {
-      save.music = !save.music;
-      persist();
-      music.setMusic(save.music);
-      paintToggles();
+    // the three sound buttons step their own levels (shared/sound-buttons.js); the voice reacts at once
+    window.addEventListener("asmau-sound", function (e) {
+      if (e.detail.kind !== "voice") return;
+      if (e.detail.level === 0) stopVoice(); else if (currentLine) say(currentLine);
     });
     $("caption").addEventListener("click", function () { if (currentLine) say(currentLine); });
     nextBtn.addEventListener("click", next);
@@ -1820,10 +1790,9 @@
     .then(function (r) { return r.json(); })
     .then(function (list) {
       list.forEach(function (l) { lines[l.id] = l.text; });
-      music.setMusic(save.music);
-      music.setSfx(save.sfx);
+      music.setMusic(true);         // how loud each is (0 = off) is set by the sound buttons
+      music.setSfx(true);
       buildTitleSky();
-      paintToggles();
       wire();
       showTitle();
     })

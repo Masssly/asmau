@@ -201,9 +201,12 @@ module.exports = async function () {
     T.check(!(await page.locator("#parents").isVisible()), tag + ": a tap does not open the parents' note either");
     await hold(page, cdp, "#parentsBtn", 1100);
     T.check(await page.locator("#parents .sheet").isVisible() && (await page.textContent("#parents")).includes("No people are drawn"), tag + ": a long press opens the note for parents");
-    await page.click("#swMusic");
-    T.check((await state(page)).settings.music === false && (await state(page)).settings.voice === true && (await page.evaluate(() => window.AsmauMusic.state().mood)) === "none",
-      tag + ": the music can be turned off on its own, the voice stays");
+    // the sound buttons: from the loudest, one tap turns that sound off; the others stay
+    await page.click('#parents [data-sound-btn="music"]');
+    T.check(await page.evaluate(() => window.AsmauMusic.level("music") === 0 && window.AsmauMusic.level("voice") > 0),
+      tag + ": the music button turns the music off on its own, the voice stays");
+    await page.click('#parents [data-sound-btn="music"]');
+    T.check(await page.evaluate(() => Math.abs(window.AsmauMusic.level("music") - 0.1) < 1e-6), tag + ": the next tap starts again from the quietest (10%)");
     await page.click("#parentsClose");
     T.check(!(await page.locator("#parents").isVisible()), tag + ": Close closes it");
     const said = await page.evaluate(() => window.__said), mine = asked.slice();   // before leaving: the landing page is not this test's business

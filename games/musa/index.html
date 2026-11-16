@@ -18,9 +18,9 @@
   <div class="top">
     <a class="btn-back" href="../../index.html">← Asmau</a>
     <h1>Musa</h1>
-    <button class="icon-btn" id="musicBtn" aria-label="Music is on">🎵</button>
-    <button class="icon-btn" id="soundBtn" aria-label="Sounds and effects are on">🍃</button>
-    <button class="icon-btn" id="voiceBtn" aria-label="The voice is on">🗣️</button>
+    <button class="icon-btn" id="musicBtn" data-sound-btn="music" aria-label="Music">🎵</button>
+    <button class="icon-btn" id="soundBtn" data-sound-btn="sounds" aria-label="Sounds">🍃</button>
+    <button class="icon-btn" id="voiceBtn" data-sound-btn="voice" aria-label="Voice">🗣️</button>
     <button class="icon-btn" id="mapBtn" aria-label="All chapters">☰</button>
   </div>
 
@@ -42,7 +42,6 @@
 
     <details class="parents">
       <summary>For parents</summary>
-      <div data-sound-levels></div>
       <ul>
         <li>The story of Musa is spread over many surahs. This game follows
           <a href="https://quran.com/28" target="_blank" rel="noopener">Surah Al-Qasas</a> (28:3–43) and
@@ -107,7 +106,7 @@
 
 <script src="../../shared/narration.js"></script>
 <script src="../../shared/music.js"></script>
-<script src="../../shared/sound-panel.js"></script>
+<script src="../../shared/sound-buttons.js"></script>
 <script src="game.js"></script>
 <script src="art.js"></script>
 <script src="story.js"></script>

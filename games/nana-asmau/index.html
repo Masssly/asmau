@@ -18,9 +18,9 @@
   <div class="top">
     <a class="btn-back" href="../../index.html">← Asmau</a>
     <h1>Nana Asma’u</h1>
-    <button class="icon-btn" id="musicBtn" aria-label="Music is on">🎵</button>
-    <button class="icon-btn" id="soundBtn" aria-label="Sounds and effects are on">🍃</button>
-    <button class="icon-btn" id="voiceBtn" aria-label="The voice is on">🗣️</button>
+    <button class="icon-btn" id="musicBtn" data-sound-btn="music" aria-label="Music">🎵</button>
+    <button class="icon-btn" id="soundBtn" data-sound-btn="sounds" aria-label="Sounds">🍃</button>
+    <button class="icon-btn" id="voiceBtn" data-sound-btn="voice" aria-label="Voice">🗣️</button>
     <button class="icon-btn" id="mapBtn" aria-label="All chapters">☰</button>
   </div>
 
@@ -42,7 +42,6 @@
 
     <details class="parents">
       <summary>For parents</summary>
-      <div data-sound-levels></div>
       <ul>
         <li>Nana Asma’u bint Usman dan Fodio (about 1793 to 1864) was a scholar, poet and teacher in Sokoto, in what is now
           northern Nigeria. She trained women teachers who took learning to the villages, and wrote more than sixty works in
@@ -103,7 +102,7 @@
 
 <script src="../../shared/narration.js"></script>
 <script src="../../shared/music.js"></script>
-<script src="../../shared/sound-panel.js"></script>
+<script src="../../shared/sound-buttons.js"></script>
 <script src="game.js"></script>
 <script src="art.js"></script>
 <script src="story.js"></script>

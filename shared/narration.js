@@ -181,7 +181,7 @@ window.AsmauNarration = (function () {
     background that could start speaking late.
   */
   var player = null, finishCurrent = null, unlocked = false;
-  // How loud the voice is: set by a parent (shared/sound-panel.js), stored by music.js for every game.
+  // How loud the voice is: set with the voice button (shared/sound-buttons.js), stored by music.js for every game.
   // (An iPhone ignores this for recordings and clips: there only the device's own volume works.)
   function voiceLevel() {
     try { var v = (JSON.parse(localStorage.getItem("asmau-sound") || "{}") || {}).voice; return typeof v === "number" ? Math.max(0, Math.min(1, v)) : 1; } catch (err) { return 1; }
@@ -279,6 +279,7 @@ window.AsmauNarration = (function () {
    */
   function say(game, id, text, opts) {
     opts = opts || {};
+    if (voiceLevel() === 0) { stop(); return Promise.resolve(); }      // the voice button is at "off"
     var lang = opts.lang || "en";
     var base = opts.audioBase || "assets/audio/";
 

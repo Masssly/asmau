@@ -142,12 +142,14 @@ including it:
   `trek`, `awe`, `triumph`, `longing`, `pastoral`
 - `AsmauMusic.amb("river" | "wind" | "night" | "fire" | "crowd" | "sea" | "rain" | "birds" | "camp" | "none")`:
   the sound of the place, under the music. It follows the effects switch, not the music switch.
-- Story games have three switches in the top bar: 🎵 music, 🍃 sounds (effects and the sound
-  of the place) and 🗣️ voice, each remembered per game. Separately, `shared/sound-panel.js`
-  draws three volume sliders wherever a page has `<div data-sound-levels></div>` (each story's
-  "For parents", and Count with Me's parents' sheet). The levels are stored once for the whole
-  device (`localStorage["asmau-sound"]`, read by `AsmauMusic.level()` and by narration.js). On an
-  iPhone the voice slider cannot change a recording's volume; the page says so.
+- Story games have three sound buttons in the top bar: 🎵 music, 🍃 sounds (effects and the sound
+  of the place) and 🗣️ voice (`shared/sound-buttons.js`, any button with `data-sound-btn`). Each tap
+  makes that sound a step (10%) louder; after the loudest it turns off; a ring shows the level and a
+  label says it. `<div data-sound-levels></div>` draws the same three with their names (the front
+  page's For parents > Sound and volume, and Count with Me's parents' sheet). The levels are stored
+  once for the whole device (`localStorage["asmau-sound"]`, read by `AsmauMusic.level()` and by
+  narration.js); 0 is off. On an iPhone a page cannot set how loud the voice is, so there the voice
+  button only turns it on and off.
   crossfades to a new background mood and never restarts the one already
   playing.
 - `AsmauMusic.tension(0..1)` makes the current mood faster, brighter and

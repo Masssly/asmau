@@ -20,7 +20,7 @@
 
 // BEGIN GENERATED
 const RELEASE = "2026.11.27";
-const BUILD = "65434ff347ad";
+const BUILD = "822ddc57da38";
 const SHELL = [
   "./",
   "app.webmanifest",
@@ -143,7 +143,7 @@ const SHELL = [
   "shared/narration.js",
   "shared/people.js",
   "shared/pwa.js",
-  "shared/sound-panel.js",
+  "shared/sound-buttons.js",
   "shared/story-engine.js",
   "shared/story.css",
   "shared/style.css",

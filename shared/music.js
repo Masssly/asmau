@@ -19,8 +19,8 @@
   - duck(on)       lowers the music while a line of narration is speaking.
   - level(kind) / setLevel(kind, 0..1)  how loud the music, the sounds (effects
                    and the sound of the place) and the voice are. Set by a
-                   parent with the sliders (shared/sound-panel.js), kept on this
-                   device for every game, and separate from the on/off switches.
+                   tap of the sound buttons (shared/sound-buttons.js), kept on this
+                   device for every game; 0 means off.
   - setMusic / setSfx  two independent switches, because families differ on
                    music in children's media and narration must survive both.
 

@@ -229,7 +229,7 @@
   function speak(id, lang) {
     var my = ++speakSeq;
     function done() { if (my === speakSeq) music.duck(false); }
-    if (!settings.voice) { narr.stop(); done(); return Promise.resolve(); }
+    if (!(music.level("voice") > 0)) { narr.stop(); done(); return Promise.resolve(); }
     music.duck(true);
     return narr.say(GAME, id, LINES[id], { lang: lang || "en" }).then(done, done);
   }
@@ -252,7 +252,7 @@
   // "Three", then the Arabic word if a person has recorded it.
   function sayNumber(n) {
     var my = ++talk;
-    var recorded = settings.arabic && settings.voice ? arRecorded(n) : Promise.resolve(false);
+    var recorded = settings.arabic && music.level("voice") > 0 ? arRecorded(n) : Promise.resolve(false);
     return both(speak("count-" + n), wait(350)).then(function () {
       if (my !== talk) return;
       return recorded.then(function (ok) { if (ok && my === talk) return speak("ar-" + n, "ar"); });
@@ -778,11 +778,11 @@
   holdButton($("parentsBtn"), 900, openParents);
 
   /* ---------- for parents ---------- */
-  var SWITCHES = { swVoice: "voice", swSfx: "sfx", swMusic: "music", swArabic: "arabic" };
+  var SWITCHES = { swArabic: "arabic" };    // voice, sounds and music: the sound buttons (shared/sound-buttons.js)
   var SEGS = { segLittle: 5, segBig: 10, seg15: 15, seg20: 20 };
   function applySettings() {
-    music.setMusic(settings.music);
-    music.setSfx(settings.sfx);
+    music.setMusic(true);
+    music.setSfx(true);
     body.classList.toggle("no-arabic", !settings.arabic);
     Object.keys(SWITCHES).forEach(function (id) { $(id).setAttribute("aria-checked", settings[SWITCHES[id]] ? "true" : "false"); });
     Object.keys(SEGS).forEach(function (id) { $(id).setAttribute("aria-pressed", state.level === SEGS[id] ? "true" : "false"); });
@@ -793,10 +793,11 @@
       settings[key] = !settings[key];
       persist();
       applySettings();
-      if (key === "voice" && !settings.voice) { narr.stop(); music.duck(false); }
+
     });
   });
   Object.keys(SEGS).forEach(function (id) { $(id).addEventListener("click", function () { state.level = SEGS[id]; applySettings(); }); });
+  window.addEventListener("asmau-sound", function (e) { if (e.detail.kind === "voice" && e.detail.level === 0) { narr.stop(); music.duck(false); } });
   function openParents() {
     narr.stop();
     music.duck(false);

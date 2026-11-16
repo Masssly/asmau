@@ -123,6 +123,7 @@ window.STORY = [
       {"say":"u11-a","scene":"city","src":"From Anas, in Sahih Muslim","e":"🧕🏿 🥛 🚪"},
       {"say":"u11-b","scene":"city","src":"From Anas, in Sahih Muslim","e":"🥛 ☝🏿 😄"},
       {"say":"u11-c","scene":"dusk","e":"🌇 🪔"},
+      {"say":"u11-g","scene":"night","e":"⭐ 🌙 🌴"},
       {"say":"u11-d","scene":"city","src":"From Anas, in Sahih Muslim","e":"👴🏿 🧔🏿 🚪"},
       {"say":"u11-e","scene":"city","src":"From Anas, in Sahih Muslim","e":"🧕🏿 💧 ✨"},
       {"say":"u11-f","scene":"city","src":"From Anas, in Sahih Muslim","e":"🤲🏿 💧"},
@@ -133,4 +134,4 @@ window.STORY = [
 ];
 
 /* Music for single lines; everything else uses its scene's music (sceneMood in game.js). */
-window.STORY_MOODS = {"u1-a":"wonder", "u1-d":"sad", "u2-a":"wonder", "u3-c":"joy", "u4-a":"sad", "u4-b":"sad", "u4-c":"longing", "u4-d":"triumph", "u5-c":"sad", "u5-d":"joy", "u6-a":"triumph", "u6-b":"joy", "u6-d":"wonder", "u6-e":"joy", "u7-a":"tense", "u7-c":"longing", "u7-d":"wonder", "u7-e":"joy", "u9-d":"joy", "u9-e":"joy", "u10-a":"joy", "u10-c":"longing", "u11-b":"joy", "u11-c":"sad", "u11-e":"sad", "u11-f":"longing"};
+window.STORY_MOODS = {"u1-a":"wonder", "u1-d":"sad", "u2-a":"wonder", "u3-c":"joy", "u4-a":"sad", "u4-b":"sad", "u4-c":"longing", "u4-d":"triumph", "u5-c":"sad", "u5-d":"joy", "u6-a":"triumph", "u6-b":"joy", "u6-d":"wonder", "u6-e":"joy", "u7-a":"tense", "u7-c":"longing", "u7-d":"wonder", "u7-e":"joy", "u9-d":"joy", "u9-e":"joy", "u10-a":"joy", "u10-c":"longing", "u11-b":"joy", "u11-c":"sad", "u11-g":"wonder", "u11-e":"sad", "u11-f":"longing"};

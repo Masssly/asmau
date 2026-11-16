@@ -3,7 +3,7 @@
 const { chapter, s, p, q, ord, mat, srt, line, SAD, MUS, ZUH } = require("./lib");
 
 chapter("u6", "🏠", "Free, and a Family", null, [], null, "Ibn Sa'd, al-Tabaqat (vol. 8); Ibn Shihab in Sahih Muslim (1771); al-Bukhari (3737)");
-s("a", "city", "The boy grew up to be the most honest man in Makkah. When he married Khadijah, he set Barakah free.",
+s("a", "city", "The boy grew up into a good and honest young man. When he married Khadijah, he set Barakah free.",
   "{UAY} stands in a sunny doorway in {MAKKAH}, looking out at the street with a joyful, surprised face, holding a small cloth bundle to her chest. {HERE}.", { src: SAD, mood: "triumph", presence: true });
 s("b", "city", "She married a good man called Ubayd, and they had a son called Ayman. So people called her Umm Ayman: the mother of Ayman.",
   "{UA} holds a baby boy wrapped in a cloth and smiles down at him, while {UBAYD} stands beside her, laughing happily, in a courtyard in {MAKKAH}.", { src: SAD, mood: "joy" });
@@ -68,7 +68,7 @@ srt("pack", "city", "What was in Fatimah's simple new home? Sort them.", ["In he
 ], "Think again. Her home was very simple.", { img: "b" });
 s("c", "dusk", "Their home was small and simple, but it was full of love.",
   "A small mud-brick house with a roof of palm branches in {MADINA} at evening, warm lamplight glowing from its open doorway, a date palm beside it. No people.", { mood: "longing" });
-p("build", "bricks", "dusk", "Help build their little home. Tap to place every brick.", { n: 6, icon: "🧱", cols: 3 }, { img: "c" });
+p("build", "bricks", "dusk", "Help make their little home strong. Tap to place every brick.", { n: 6, icon: "🧱", cols: 3 }, { img: "c" });
 
 chapter("u11", "✨", "The News of Heaven", "3:144", [], null);
 s("a", "city", "The Prophet often went to visit Umm Ayman, to see how she was.",
@@ -77,6 +77,8 @@ s("b", "city", "Once she gave him a drink, and he did not take it. So she told h
   "{UA} holds out a cup with one hand and wags a finger with the other, frowning kindly, like a mother scolding, in her courtyard. {HERE}.", { src: MUS, mood: "joy", presence: true });
 s("c", "dusk", "Then one day, the Prophet died. Everyone in Madina was very, very sad.",
   "{MADINA} at dusk: quiet empty lanes between the houses, still palm trees, a single lamp in a window. No people.", { mood: "sad" });
+s("g", "night", "Allah says in the Qur'an: Muhammad is only a messenger, before whom many messengers have been and gone.",
+  "A calm night sky full of stars over the palm trees and low houses of {MADINA}, a soft glow on the horizon. No people.", { mood: "wonder" });
 s("d", "city", "Abu Bakr said to Umar: let us go and visit Umm Ayman, as the Prophet used to visit her.",
   "{ABUBAKR} and {UMAR} walk together down a quiet lane of {MADINA} towards a simple wooden door, in soft afternoon light.", { src: MUS });
 s("e", "city", "When they came, she wept. She said: I know he is with Allah, and that is better for him. I am crying because the news from heaven has stopped coming.",

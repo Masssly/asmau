@@ -1,12 +1,18 @@
 {
-  "version": "2026.11.31",
+  "version": "2026.11.32",
   "date": "2026-11-16",
-  "buildId": "41d07a06d2f4",
+  "buildId": "2ece2c34b190",
   "notes": [
-    "New game: Umm Ayman, the Abyssinian woman who looked after the Prophet ﷺ from his birth, in 11 chapters from Sahih Muslim, al-Bukhari and Ibn Sa'd",
-    "Living pictures: a soft breeze where the Prophet ﷺ is present; he is never drawn"
+    "New game: Ibn Battuta, the young man from Tangier who travelled for nearly thirty years, from Makkah to China and Mali, told from his own book"
   ],
   "history": [
+    {
+      "version": "2026.11.32",
+      "date": "2026-11-16",
+      "notes": [
+        "New game: Ibn Battuta, the young man from Tangier who travelled for nearly thirty years, from Makkah to China and Mali, told from his own book"
+      ]
+    },
     {
       "version": "2026.11.31",
       "date": "2026-11-16",

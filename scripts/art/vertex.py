@@ -11,6 +11,7 @@ so that a person looks the same from scene to scene.
   adam-refs / adam-scenes    the same for the Adam story (scripts/adam-art)
   nuh-refs / nuh-scenes      the same for the Nuh story (scripts/nuh-art)
   ua-refs / ua-scenes        the same for the Umm Ayman story (scripts/umm-ayman-art), drawn in Arabia
+  ib-refs / ib-scenes        the same for the Ibn Battuta story (scripts/ibn-battuta-art), each land's people
   musa-scenes [KEY ...]     draw the Musa scenes (scripts/musa-art/shots.json) into
                             scripts/musa-art/out/<key>.png, each shown the approved
                             reference pictures of the people in it. Already drawn: skipped.
@@ -61,6 +62,14 @@ ARABIA_PORTRAIT = ("Head-and-shoulders portrait of one person, front view, frien
 ARABIA_REF = ("Character reference picture for an animated family film: the same person shown twice side by side, full body, "
               "front view and three-quarter view, standing relaxed with arms hanging naturally at the sides, plain warm cream "
               "background, soft studio lighting, polished stylised 3D animated family-film look. ")
+# Ibn Battuta travelled from Morocco to China and Mali in the 14th century: each scene says which land and people.
+WORLD_STYLE = ("Polished stylised 3D animated family-film still, warm cinematic lighting, rich detail, square picture, "
+               "main figures in the middle. Set in the 14th century. People are drawn as the people of the land the scene is in, "
+               "with their own looks, skin tones and clothes, all in modest long clothing; every woman and girl wears a "
+               "headscarf that fully covers her hair. ")
+WORLD_BACKDROP = ("Polished stylised 3D animated family-film background painting, warm cinematic lighting, rich detail, square, "
+                  "filling the whole frame edge to edge with no border. A real, believable place in the 14th century, no fantasy. "
+                  "A place, with no main characters and nobody in the foreground. ")
 # for stories set partly outside this world (the Adam story: the heavens, the Garden), without the North-East Africa rule
 BACKDROP_ANY = ("Polished stylised 3D animated family-film background painting, warm cinematic lighting, rich detail, square, "
                 "filling the whole frame edge to edge with no border. Natural and believable, no glowing crystals, no floating "
@@ -152,6 +161,8 @@ def use(story):
     ART = os.path.join(ROOT, "scripts", story + "-art")
     if story == "umm-ayman":
         STYLE, BACKDROP, PORTRAIT, REF = ARABIA_STYLE, ARABIA_BACKDROP, ARABIA_PORTRAIT, ARABIA_REF
+    if story == "ibn-battuta":
+        STYLE, BACKDROP, PORTRAIT, REF = WORLD_STYLE, WORLD_BACKDROP, ARABIA_PORTRAIT, ARABIA_REF
 
 
 def musa_refs(keys):
@@ -263,9 +274,12 @@ if __name__ == "__main__":
         use("nuh")
     if cmd.startswith("ua-"):
         use("umm-ayman")
+    if cmd.startswith("ib-"):
+        use("ibn-battuta")
     failed = {"musa-refs": musa_refs, "musa-scenes": musa_scenes, "asmau-refs": musa_refs, "asmau-scenes": musa_scenes,
               "adam-refs": musa_refs, "adam-scenes": musa_scenes, "nuh-refs": musa_refs, "nuh-scenes": musa_scenes,
               "ua-refs": musa_refs, "ua-scenes": musa_scenes,
+              "ib-refs": musa_refs, "ib-scenes": musa_scenes,
               "yusuf-fix": yusuf_fix, "yusuf-brothers": brothers}[cmd](args)
     if failed:
         print("%d failed: %s" % (len(failed), ", ".join(failed)))

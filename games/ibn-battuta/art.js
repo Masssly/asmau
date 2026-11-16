@@ -1,0 +1,52 @@
+/*
+  The pictures the Ibn Battuta game has. Written by scripts/ibn-battuta-art/build.py: do not
+  edit by hand. Each key is a file in assets/img/<key>.webp and its value is the
+  picture's description (used as alt text): a line id, or bg-<scene> for a backdrop.
+  A step with no picture here still plays, with a plain scene behind it.
+*/
+window.STORY_ART = {
+  "bg-city": "A quiet courtyard of an old Damascus house long ago: a stone fountain, lemon trees, carved wooden balconies. No people.",
+  "i1-a": "Tangier long ago, seen from a hill at sunrise: white houses with flat roofs and a mosque tower climbing a hill above a blue bay, boats in the harbour. No people in front.",
+  "i1-b": "Ibn Battuta stands on a hill above Tangier at dawn, looking east into the far distance, the sea shining behind him, wind in his cloak.",
+  "i1-c": "At the wooden door of a white house in Tangier, Ibn Battuta says goodbye to his old parents, Moroccans with warm brown skin: his father in a white robe and turban holds…",
+  "i1-d": "Ibn Battuta walks along a dusty road beside the sea, away from the town, while small birds fly up from a nest in a tree beside the road.",
+  "i2-a": "Alexandria long ago: a great old stone lighthouse tower on the shore of a blue sea, a busy harbour with sailing ships, and Ibn Battuta looking up at it in wonder.",
+  "i2-b": "In a simple room with a small window, a kind old Egyptian teacher with a white beard and a walking stick sits on a mat, smiling at Ibn Battuta, who sits before him…",
+  "i2-c": "The old Egyptian teacher with the white beard raises his hand and points towards the far east through the window, while Ibn Battuta looks out in surprise.",
+  "i2-d": "Ibn Battuta stands at the side of a sailing ship on a wide sea at sunset, looking towards the horizon with a hopeful smile.",
+  "i3-a": "A street of old Damascus: stone houses with wooden balconies, a paved path on each side of the road, Syrian people walking, a fountain; every woman's hair covered by a…",
+  "i3-b": "In a stone lane of Damascus, a Syrian boy of about ten stares in shock at a blue-and-white porcelain dish broken into pieces at his feet, while Ibn Battuta watches…",
+  "i3-c": "Kind Syrian men gather round the boy in the lane, one pointing helpfully down the street, as the boy gathers the broken blue-and-white pieces into his hands.",
+  "i3-d": "In a small office with shelves of dishes, an old Syrian man with a grey beard gives coins to the smiling boy, who holds the broken pieces; Ibn Battuta smiles in the…",
+  "i3-e": "Ibn Battuta sits at a low table in a courtyard with a fountain in Damascus, writing in a small notebook with a reed pen and smiling to himself.",
+  "i4-a": "A long caravan of camels and pilgrims crosses a wide desert towards rocky hills at golden hour; Ibn Battuta rides a camel near the front, looking ahead with joy.",
+  "i4-b": "The Ka'bah draped in black cloth in the middle of the great mosque of Makkah long ago, pilgrims in simple white clothes walking around it, people of many lands; every…",
+  "i4-c": "Pilgrims in white from many lands arrive at Makkah along a mountain road, some walking, some on camels and horses, the town of Makkah in the valley below. Every woman's…",
+  "i4-d": "At dawn Ibn Battuta stands on a hill outside Makkah with his bag on his shoulder, looking out over many roads leading away in different directions.",
+  "i5-a": "A town of Anatolia long ago with wooden houses and a small mosque on green hills; a group of cheerful young Turkish men in tunics, felt caps and boots greet Ibn Battuta…",
+  "i5-b": "In the evening, young Turkish men put coins together into a cloth bag and carry baskets of bread, fruit and food into a warm lamplit guesthouse.",
+  "i5-c": "Inside a lamplit guesthouse with rugs on the floor, Ibn Battuta sits with travellers eating from big bowls while the young Turkish men serve them food, smiling.",
+  "i6-a": "The great city of Delhi long ago: high stone walls and domes, a crowded gate with Indian people in colourful clothes, elephants and horses; every woman and girl wears a…",
+  "i6-b": "On the terrace of a grand palace, a stern Indian Sultan with a dark beard and a jewelled turban sits on a royal couch and speaks to Ibn Battuta, who bows his head…",
+  "i6-c": "Ibn Battuta sits at a low judge's table with two kind Indian scholars in white turbans on either side of him, one explaining something from a book.",
+  "i7-a": "From the air: rings of tiny green islands with white beaches in a bright turquoise ocean, coconut palms on each, a small sailing ship coming through a gap in the ring of…",
+  "i7-b": "On a white beach under coconut palms, Maldivian men and women with brown skin in simple clothes welcome Ibn Battuta as he steps off a small boat; every woman's hair…",
+  "i7-c": "Under tall coconut palms, Maldivian people open coconuts, pour coconut milk into bowls and lay out fish to dry on palm-leaf mats; every woman's hair covered.",
+  "i7-d": "Seen from one island's beach at sunset, the green tops of palm trees on the next small island across the calm water. No people.",
+  "i8-a": "A big wooden Indian Ocean trading ship of the 14th century with matting sails (not a European ship) arrives at a green tropical island with tall forested hills and a…",
+  "i8-b": "Sumatran people with brown skin paddle small wooden boats up to the side of a big ship, holding up coconuts, bunches of bananas, mangoes and fish; Ibn Battuta smiles…",
+  "i8-c": "In a wooden palace hall with carved pillars, a kind Sumatran Sultan in a simple robe and cap sits on a mat among scholars in turbans reading from books; Ibn Battuta sits…",
+  "i8-d": "The Sumatran Sultan in a simple robe walks on foot along a street of wooden houses towards a wooden mosque with a tiered roof, with ordinary townspeople walking beside…",
+  "i9-a": "A great Chinese harbour long ago, full of large wooden ships with ribbed sails; Ibn Battuta stands at the rail of a ship arriving, looking at the busy port in wonder.",
+  "i9-b": "In a Chinese market long ago, a Chinese merchant hands a small sheet of paper money to Ibn Battuta, who holds it up in surprise; stalls of silk and fruit behind them.",
+  "i9-c": "In a Chinese pottery workshop, Chinese men paint blue patterns on white porcelain dishes and vases while Ibn Battuta watches, delighted. No girls; any woman wears a…",
+  "i9-d": "A quiet Chinese town at night with lanterns glowing along a canal and a stone bridge; Ibn Battuta walks calmly along the path alone, peaceful and safe.",
+  "i10-a": "Ibn Battuta stands at the front of a sailing ship heading west across a calm sea at sunrise, his hand on the rail, looking towards home.",
+  "i10-b": "At dusk, Ibn Battuta sits on a low wall at the edge of a Moroccan town with his head bowed and his hands raised in prayer, quiet and sad.",
+  "i10-c": "The old city of Fez: a gate decorated with blue and green tiles, a crowded street of Moroccan people in robes and hooded cloaks, and Ibn Battuta walking in through the…",
+  "i11-a": "A long camel caravan crosses golden sand dunes of the Sahara under a wide blue sky, Ibn Battuta riding a camel with a cloth wrapped around his face against the sun.",
+  "i11-b": "A busy town in old Mali with buildings of earth and wooden beams, West African people of Mali with deep dark brown skin in flowing robes trading in the street,…",
+  "i11-c": "A great mosque of Mali built of earth with wooden beams sticking out of its walls, West African men in clean white robes arriving for Friday prayer carrying woven prayer…",
+  "i11-d": "West African boys in white tunics sit on mats in a courtyard of earth walls, holding wooden boards with writing on them and reciting together with their teacher; the…",
+  "i11-e": "In a room of a Moroccan palace with tiled walls, Ibn Battuta speaks and gestures while a young scribe in a turban writes on long sheets of paper with a reed pen; lamps…"
+};

@@ -20,7 +20,7 @@
 
 // BEGIN GENERATED
 const RELEASE = "2026.11.33";
-const BUILD = "da46530228d6";
+const BUILD = "853f5c826176";
 const SHELL = [
   "./",
   "app.webmanifest",
@@ -172,6 +172,13 @@ const SHELL = [
   "games/nuh/parents/pages.json",
   "games/nuh/scene-fx.json",
   "games/nuh/story.js",
+  "games/rahmah/game.js",
+  "games/rahmah/game.json",
+  "games/rahmah/index.html",
+  "games/rahmah/",
+  "games/rahmah/narration.json",
+  "games/rahmah/parents/pages.json",
+  "games/rahmah/story.js",
   "games/tap-and-say/game.json",
   "games/tap-and-say/index.html",
   "games/tap-and-say/",
@@ -2623,6 +2630,11 @@ const MEDIA = {
   "games/nuh/assets/img/n9-b.webp": "2a2d72be9c",
   "games/nuh/assets/img/n9-c.webp": "ae8251b418",
   "games/nuh/cover.webp": "acac1ad7bb",
+  "games/rahmah/assets/audio/r1-b.mp3": "f55acd25b9",
+  "games/rahmah/assets/audio/r1-c.mp3": "89de86df6d",
+  "games/rahmah/assets/audio/r1-home.mp3": "62a047b8cd",
+  "games/rahmah/assets/audio/r1-q-opt1.mp3": "32903ae28a",
+  "games/rahmah/assets/audio/r1-q.mp3": "0985d555e7",
   "games/tap-and-say/assets/audio-m/ant-ar.mp3": "ab4ec69873",
   "games/tap-and-say/assets/audio-m/ant-en.mp3": "07303f54e0",
   "games/tap-and-say/assets/audio-m/beads-ar.mp3": "f77cfb1af7",
@@ -3624,7 +3636,7 @@ const MEDIA = {
   "icons/icon-maskable-512.png": "531e21c419",
   "icons/og.png": "887e764bc5"
 };
-const PACK_BYTES = {"core":940256,"adam@m":4026446,"adam@w":4316508,"adam":2572334,"count-the-crescents@m":587647,"count-the-crescents@w":584828,"ibn-battuta@m":3511529,"ibn-battuta@w":3797936,"ibn-battuta":3374920,"musa@m":13950526,"musa@w":15159879,"musa":7817824,"nana-asmau@m":3366561,"nana-asmau@w":3639073,"nana-asmau":2384082,"nuh@m":3882631,"nuh@w":4156508,"nuh":3224646,"tap-and-say@m":1501703,"tap-and-say@w":1472336,"umm-ayman@m":3300105,"umm-ayman@w":3632276,"umm-ayman":3192084,"yusuf@m":6578971,"yusuf@w":7039872,"yusuf":5672568};
+const PACK_BYTES = {"core":940256,"adam@m":4026446,"adam@w":4316508,"adam":2572334,"count-the-crescents@m":587647,"count-the-crescents@w":584828,"ibn-battuta@m":3511529,"ibn-battuta@w":3797936,"ibn-battuta":3374920,"musa@m":13950526,"musa@w":15159879,"musa":7817824,"nana-asmau@m":3366561,"nana-asmau@w":3639073,"nana-asmau":2384082,"nuh@m":3882631,"nuh@w":4156508,"nuh":3224646,"rahmah@w":160482,"tap-and-say@m":1501703,"tap-and-say@w":1472336,"umm-ayman@m":3300105,"umm-ayman@w":3632276,"umm-ayman":3192084,"yusuf@m":6578971,"yusuf@w":7039872,"yusuf":5672568};
 const MEDIA_BASE = "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/";
 // END GENERATED
 

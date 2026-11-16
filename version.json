@@ -1,12 +1,20 @@
 {
-  "version": "2026.11.30",
+  "version": "2026.11.31",
   "date": "2026-11-16",
-  "buildId": "a4e30cc770c5",
+  "buildId": "41d07a06d2f4",
   "notes": [
-    "New game: the story of Prophet Nuh, in 11 chapters with 45 pictures, from Surah Hud and Surah Nuh",
-    "Parents' notes for Nuh from Ibn Kathir, al-Bukhari and the Shia narrations of Hayat al-Qulub"
+    "New game: Umm Ayman, the Abyssinian woman who looked after the Prophet ﷺ from his birth, in 11 chapters from Sahih Muslim, al-Bukhari and Ibn Sa'd",
+    "Living pictures: a soft breeze where the Prophet ﷺ is present; he is never drawn"
   ],
   "history": [
+    {
+      "version": "2026.11.31",
+      "date": "2026-11-16",
+      "notes": [
+        "New game: Umm Ayman, the Abyssinian woman who looked after the Prophet ﷺ from his birth, in 11 chapters from Sahih Muslim, al-Bukhari and Ibn Sa'd",
+        "Living pictures: a soft breeze where the Prophet ﷺ is present; he is never drawn"
+      ]
+    },
     {
       "version": "2026.11.30",
       "date": "2026-11-16",

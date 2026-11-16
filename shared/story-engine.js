@@ -224,7 +224,7 @@
   var PICFX = {};
   fetch("scene-fx.json").then(function (r) { return r.ok ? r.json() : {}; }).then(function (j) { PICFX = j || {}; }).catch(function () {});
   function seeded(seed) { var x = 0; for (var i = 0; i < seed.length; i++) x = (x * 31 + seed.charCodeAt(i)) >>> 0; return function () { x = (x * 1664525 + 1013904223) >>> 0; return x / 4294967296; }; }
-  var PARTS = { leaves: 7, birds: 3, motes: 7, embers: 10 };   // few, so the picture stays the picture
+  var PARTS = { leaves: 7, birds: 3, motes: 7, embers: 10, breeze: 6 };   // few, so the picture stays the picture
   function livingLayer(list, id) {
     var layer = mk("div", "live"), rnd = seeded(id);
     list.forEach(function (fx) {

@@ -37,8 +37,14 @@ things work; this file holds the decisions that must not be lost between session
   it once). Check with `node scripts/parent-repeats.js` before release.
 
 ## Pictures
-- Polished 3D family-film look. Everyone dark-skinned Black African. Faces shown (prophets included).
-  Modest clothing; every woman's and girl's hair covered.
+- Polished 3D family-film look. **Prophets' games:** everyone dark-skinned Black African. **Great Muslims:** people
+  drawn as the people they really were (Umm Ayman Abyssinian, Ibn Battuta Moroccan, each land's people as themselves);
+  decided by the owner on 16 November 2026. Faces shown (prophets included). Modest clothing; every woman's and
+  girl's hair covered.
+- **Never shown:** the Prophet Muhammad ﷺ at any age, not even as a baby or by his hands. Where he is present, the
+  picture leaves him out and a soft breeze (the `breeze` living effect) passes over it. Everyone else may be shown with
+  their face: Companions, his mother and family, Khadija, Fatima, 'Ali, Abu Bakr, Umar (owner's decision, 16 November
+  2026: children need to see them to follow the story).
 - **Every narrated page has its own picture**; an activity plays only over a picture from its own
   chapter. The checker and the writing tools refuse borrowing.
 - Groups of a set size (Yusuf's brothers): use scripts/yusuf-art/brothers.py and brothers_fix.py with

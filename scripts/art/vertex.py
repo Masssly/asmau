@@ -10,6 +10,7 @@ so that a person looks the same from scene to scene.
   asmau-refs / asmau-scenes  the same for the Nana Asma'u story (scripts/asmau-art)
   adam-refs / adam-scenes    the same for the Adam story (scripts/adam-art)
   nuh-refs / nuh-scenes      the same for the Nuh story (scripts/nuh-art)
+  ua-refs / ua-scenes        the same for the Umm Ayman story (scripts/umm-ayman-art), drawn in Arabia
   musa-scenes [KEY ...]     draw the Musa scenes (scripts/musa-art/shots.json) into
                             scripts/musa-art/out/<key>.png, each shown the approved
                             reference pictures of the people in it. Already drawn: skipped.
@@ -43,6 +44,23 @@ BACKDROP = ("Polished stylised 3D animated family-film background painting, warm
             "filling the whole frame edge to edge with no border. A real, believable place in ancient North-East Africa and the Sinai, "
             "grounded and natural: no fantasy, no glowing crystals, no floating rocks, no autumn colours, no stained glass, no European "
             "buildings. A place, with no main characters and nobody in the foreground. ")
+# Great Muslims are drawn as the people they really were (owner, 16 November 2026). Umm Ayman's story is set in
+# Makkah and Madina in the 6th and 7th centuries: she is Abyssinian, most people around her are Arabs of the Hijaz.
+# The Prophet (peace be upon him) is never drawn in any form.
+ARABIA_STYLE = ("Polished stylised 3D animated family-film still, warm cinematic lighting, rich detail, square picture, "
+                "main figures in the middle. Set in 6th and 7th century Makkah and Madina in Arabia. People are drawn as the "
+                "people of that place and time: Arabs of the Hijaz with warm brown skin and dark hair, and East Africans from "
+                "Abyssinia with deep dark brown skin, all in modest long clothing; every woman and girl wears a headscarf that "
+                "fully covers her hair. ")
+ARABIA_BACKDROP = ("Polished stylised 3D animated family-film background painting, warm cinematic lighting, rich detail, square, "
+                   "filling the whole frame edge to edge with no border. A real, believable place in 6th and 7th century Arabia: "
+                   "rocky dry hills, simple flat-roofed houses of mud brick and stone, date palms, no domes, no minarets, "
+                   "no European buildings, no fantasy. A place, with no main characters and nobody in the foreground. ")
+ARABIA_PORTRAIT = ("Head-and-shoulders portrait of one person, front view, friendly, looking at the viewer, centred, polished "
+                   "stylised 3D animated family-film look, soft studio lighting, plain warm cream background. ")
+ARABIA_REF = ("Character reference picture for an animated family film: the same person shown twice side by side, full body, "
+              "front view and three-quarter view, standing relaxed with arms hanging naturally at the sides, plain warm cream "
+              "background, soft studio lighting, polished stylised 3D animated family-film look. ")
 # for stories set partly outside this world (the Adam story: the heavens, the Garden), without the North-East Africa rule
 BACKDROP_ANY = ("Polished stylised 3D animated family-film background painting, warm cinematic lighting, rich detail, square, "
                 "filling the whole frame edge to edge with no border. Natural and believable, no glowing crystals, no floating "
@@ -130,8 +148,10 @@ ALIAS = {"OLD": "ASMA"}          # Nana Asma'u grown old is drawn from her own r
 
 
 def use(story):
-    global ART
+    global ART, STYLE, BACKDROP, PORTRAIT, REF
     ART = os.path.join(ROOT, "scripts", story + "-art")
+    if story == "umm-ayman":
+        STYLE, BACKDROP, PORTRAIT, REF = ARABIA_STYLE, ARABIA_BACKDROP, ARABIA_PORTRAIT, ARABIA_REF
 
 
 def musa_refs(keys):
@@ -241,8 +261,11 @@ if __name__ == "__main__":
         use("adam")
     if cmd.startswith("nuh-"):
         use("nuh")
+    if cmd.startswith("ua-"):
+        use("umm-ayman")
     failed = {"musa-refs": musa_refs, "musa-scenes": musa_scenes, "asmau-refs": musa_refs, "asmau-scenes": musa_scenes,
               "adam-refs": musa_refs, "adam-scenes": musa_scenes, "nuh-refs": musa_refs, "nuh-scenes": musa_scenes,
+              "ua-refs": musa_refs, "ua-scenes": musa_scenes,
               "yusuf-fix": yusuf_fix, "yusuf-brothers": brothers}[cmd](args)
     if failed:
         print("%d failed: %s" % (len(failed), ", ".join(failed)))

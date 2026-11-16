@@ -695,6 +695,15 @@ button { touch-action: manipulation; -webkit-tap-highlight-color: transparent; }
 /* soft rays of light */
 .live-rays { background: conic-gradient(from 160deg at 50% 0%, rgba(255,240,190,0) 0deg, rgba(255,240,190,.22) 10deg, rgba(255,240,190,0) 20deg, rgba(255,240,190,.18) 32deg, rgba(255,240,190,0) 44deg);
   animation: live-twinkle 5s ease-in-out infinite alternate; mix-blend-mode: screen; }
+/* a soft breeze passes through now and then: where the Prophet ﷺ is present in a scene, never drawn himself */
+.live-breeze::before { content: ""; position: absolute; top: 20%; bottom: 20%; left: 0; width: 45%; mix-blend-mode: screen;
+  background: linear-gradient(90deg, rgba(255,250,235,0), rgba(255,250,235,.20) 45%, rgba(255,250,235,.28) 55%, rgba(255,250,235,0));
+  filter: blur(6px); border-radius: 50%; animation: live-gust 7s ease-in-out infinite; }
+.live-breeze > i { width: calc(6px * var(--s)); height: calc(3px * var(--s)); border-radius: 50%; background: rgba(255,248,225,.85);
+  box-shadow: 0 0 5px rgba(255,240,200,.7); animation-name: live-carry; animation-duration: 7s !important; animation-timing-function: ease-in-out; animation-iteration-count: infinite; left: -5% !important; }
+@keyframes live-gust { 0%, 55% { transform: translateX(-110%); opacity: 0; } 62% { opacity: 1; } 90% { opacity: .8; } 100% { transform: translateX(240%); opacity: 0; } }
+@keyframes live-carry { 0%, 55% { transform: translate(0, 0) rotate(0); opacity: 0; } 62% { opacity: .9; } 80% { transform: translate(900%, -14px) rotate(160deg); }
+  100% { transform: translate(1900%, 6px) rotate(300deg); opacity: 0; } }
 /* a card activity over a picture shows the picture dimmed: no living layer there */
 .stage.flow .live { display: none; }
 @media (prefers-reduced-motion: reduce) { .live, .live-fx, .live-fx::before, .live-fx::after, .live-fx > i { animation: none !important; } .live-fx > i { display: none; } }

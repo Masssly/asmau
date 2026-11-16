@@ -41,9 +41,10 @@ things work; this file holds the decisions that must not be lost between session
   drawn as the people they really were (Umm Ayman Abyssinian, Ibn Battuta Moroccan, each land's people as themselves);
   decided by the owner on 16 November 2026. Faces shown (prophets included). Modest clothing; every woman's and
   girl's hair covered.
-- **Never shown:** the Prophet Muhammad ﷺ at any age, not even by his hands. Companions' faces are shown (Umm Ayman's,
-  owner's decision 16 November 2026), except his family (parents, grandfather, wives, Fatima, 'Ali, al-Hasan,
-  al-Husayn) and Abu Bakr and Umar, who are never shown or only from behind.
+- **Never shown:** the Prophet Muhammad ﷺ at any age, not even as a baby or by his hands. Where he is present, the
+  picture leaves him out and a soft breeze (the `breeze` living effect) passes over it. Everyone else may be shown with
+  their face: Companions, his mother and family, Khadija, Fatima, 'Ali, Abu Bakr, Umar (owner's decision, 16 November
+  2026: children need to see them to follow the story).
 - **Every narrated page has its own picture**; an activity plays only over a picture from its own
   chapter. The checker and the writing tools refuse borrowing.
 - Groups of a set size (Yusuf's brothers): use scripts/yusuf-art/brothers.py and brothers_fix.py with

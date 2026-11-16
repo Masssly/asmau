@@ -6,7 +6,7 @@ chapter("u6", "🏠", "Free, and a Family", null, [], null, "Ibn Sa'd, al-Tabaqa
 s("a", "city", "The boy grew up into a good and honest young man. When he married Khadijah, he set Barakah free.",
   "{UAY} stands in a sunny doorway in {MAKKAH}, looking out at the street with a joyful, surprised face, holding a small cloth bundle to her chest. {HERE}.", { src: SAD, mood: "triumph", presence: true });
 s("b", "city", "She married a good man called Ubayd, and they had a son called Ayman. So people called her Umm Ayman: the mother of Ayman.",
-  "{UA} holds a baby boy wrapped in a cloth and smiles down at him, while {UBAYD} stands beside her, laughing happily, in a courtyard in {MAKKAH}.", { src: SAD, mood: "joy" });
+  "{UAY}, a few years older, holds a baby boy wrapped in a cloth and smiles down at him, while {UBAYD} stands beside her, laughing happily, in a courtyard in {MAKKAH}.", { src: SAD, mood: "joy" });
 s("c", "city", "The Prophet loved her very much. He used to call her: O mother!",
   "{UA} sits on a bench in a shady courtyard, smiling warmly at the empty place beside her, where a cup of milk waits on a small stool. {HERE}.", { src: SAD, presence: true });
 s("d", "field", "It is told that he said: whoever would like to marry a woman of Paradise, let him marry Umm Ayman.",
@@ -49,7 +49,7 @@ s("a", "field", "In Madina, the Prophet gave Umm Ayman some date palms of her ow
 s("b", "field", "Later the palms had to go back to the family who had lent them. A boy called Anas came to ask for them.",
   "{ANAS} stands politely at the edge of the palm garden, while {UA} faces him with her hands on her hips.", { src: MUS });
 s("c", "field", "But Umm Ayman said: No! He gave them to me! The Prophet offered her other trees instead. She still said no!",
-  "{UA} folds her arms and shakes her head firmly, trying not to smile, under the palm trees; {ANAS} looks on, surprised. {HERE}.", { src: MUS, presence: true });
+  "Only two people in the whole picture, nobody else and no one at the edges: {UA} folds her arms and shakes her head firmly, trying not to smile, under the palm trees; {ANAS} looks on, surprised.", { src: MUS, presence: true });
 s("d", "field", "So he kept offering her more, until she had about ten times as many! Then she was happy.",
   "{UA} laughs with joy among a big grove of many tall date palms, her arms open wide, golden light through the leaves. {HERE}.", { src: MUS, mood: "joy", presence: true });
 p("count", "palms", "field", "Count her new palm trees! Tap all ten.", { total: 10, icon: "🌴", got: "✨" }, { img: "d" });
@@ -78,7 +78,7 @@ s("b", "city", "Once she gave him a drink, and he did not take it. So she told h
 s("c", "dusk", "Then one day, the Prophet died. Everyone in Madina was very, very sad.",
   "{MADINA} at dusk: quiet empty lanes between the houses, still palm trees, a single lamp in a window. No people.", { mood: "sad" });
 s("g", "night", "Allah says in the Qur'an: Muhammad is only a messenger, before whom many messengers have been and gone.",
-  "A calm night sky full of stars over the palm trees and low houses of {MADINA}, a soft glow on the horizon. No people.", { mood: "wonder" });
+  "A calm night sky full of stars over the palm trees and low houses of {MADINA}, a soft glow on the horizon. The scene fills the whole picture edge to edge, with no border, frame or inset. No people.", { mood: "wonder" });
 s("d", "city", "Abu Bakr said to Umar: let us go and visit Umm Ayman, as the Prophet used to visit her.",
   "{ABUBAKR} and {UMAR} walk together down a quiet lane of {MADINA} towards a simple wooden door, in soft afternoon light.", { src: MUS });
 s("e", "city", "When they came, she wept. She said: I know he is with Allah, and that is better for him. I am crying because the news from heaven has stopped coming.",

@@ -21,7 +21,7 @@
  },
  "u1-d": {
   "alt": "Inside a simple room with a small window, Amina sits on a cushion looking sad, and Barakah kneels beside her with a comforting hand on her shoulder; soft light.",
-  "scene": "Inside a simple room with a small window, a gentle young Arab mother of about twenty with warm brown skin, in a long deep-blue dress and a white headscarf that fully covers her hair sits on a cushion looking sad, and a young Abyssinian woman of about eighteen with deep dark brown skin, a gentle round face and kind eyes, in a long, loose, plain saffron-yellow dress with long sleeves down to her wrists, and a cream headscarf that fully covers her hair and neck kneels beside her with a comforting hand on her shoulder; soft light.",
+  "scene": "Inside a simple room with a small window, a gentle young Arab mother of about twenty with warm brown skin, in a long loose deep-blue dress and a white headscarf pulled well forward over her forehead, so that none of her hair shows at all sits on a cushion looking sad, and a young Abyssinian woman of about eighteen with deep dark brown skin, a gentle round face and kind eyes, in a long, loose, plain saffron-yellow dress with long sleeves down to her wrists, and a cream headscarf that fully covers her hair and neck kneels beside her with a comforting hand on her shoulder; soft light.",
   "who": [
    "AMINA",
    "UAY"
@@ -29,7 +29,7 @@
  },
  "u2-a": {
   "alt": "At night in a simple room lit by a small oil lamp, Amina rests on cushions smiling, and Barakah kneels beside a wooden cradle covered with a soft white cloth canopy,…",
-  "scene": "At night in a simple room lit by a small oil lamp, a gentle young Arab mother of about twenty with warm brown skin, in a long deep-blue dress and a white headscarf that fully covers her hair rests on cushions smiling, and a young Abyssinian woman of about eighteen with deep dark brown skin, a gentle round face and kind eyes, in a long, loose, plain saffron-yellow dress with long sleeves down to her wrists, and a cream headscarf that fully covers her hair and neck kneels beside a wooden cradle covered with a soft white cloth canopy, smiling with joy; the inside of the cradle is not seen. There is no man and no child shown in the picture: a person is present but outside the picture.",
+  "scene": "At night in a simple room lit by a small oil lamp, a gentle young Arab mother of about twenty with warm brown skin, in a long loose deep-blue dress and a white headscarf pulled well forward over her forehead, so that none of her hair shows at all rests on cushions smiling, and a young Abyssinian woman of about eighteen with deep dark brown skin, a gentle round face and kind eyes, in a long, loose, plain saffron-yellow dress with long sleeves down to her wrists, and a cream headscarf that fully covers her hair and neck kneels beside a wooden cradle covered with a soft white cloth canopy, smiling with joy; the inside of the cradle is not seen. There is no man and no child shown in the picture: a person is present but outside the picture.",
   "who": [
    "AMINA",
    "UAY",
@@ -47,8 +47,8 @@
   "presence": true
  },
  "u2-c": {
-  "alt": "In a dusty yard of a mud-brick house in Makkah, five camels rest and a few sheep graze, while Barakah carries a bundle of hay towards them.",
-  "scene": "In a dusty yard of a mud-brick house in Makkah, a town of simple flat-roofed houses of mud brick and stone in a dry, rocky valley between bare brown hills, five camels rest and a few sheep graze, while a young Abyssinian woman of about eighteen with deep dark brown skin, a gentle round face and kind eyes, in a long, loose, plain saffron-yellow dress with long sleeves down to her wrists, and a cream headscarf that fully covers her hair and neck carries a bundle of hay towards them.",
+  "alt": "In a dusty yard of a mud-brick house in Makkah, exactly five camels, all fully in view, rest side by side and a few sheep graze, while Barakah carries a bundle of hay…",
+  "scene": "In a dusty yard of a mud-brick house in Makkah, a town of simple flat-roofed houses of mud brick and stone in a dry, rocky valley between bare brown hills, exactly five camels, all fully in view, rest side by side and a few sheep graze, while a young Abyssinian woman of about eighteen with deep dark brown skin, a gentle round face and kind eyes, in a long, loose, plain saffron-yellow dress with long sleeves down to her wrists, and a cream headscarf that fully covers her hair and neck carries a bundle of hay towards them.",
   "who": [
    "MAKKAH",
    "UAY"
@@ -56,7 +56,7 @@
  },
  "u3-a": {
   "alt": "In the morning, two camels walk along a rocky desert road; Amina rides the first camel and Barakah walks beside the second, holding its rope. .",
-  "scene": "In the morning, two camels, the second one carrying a padded saddle with a small cloth canopy walk along a rocky desert road; a gentle young Arab mother of about twenty with warm brown skin, in a long deep-blue dress and a white headscarf that fully covers her hair rides the first camel and a young Abyssinian woman of about eighteen with deep dark brown skin, a gentle round face and kind eyes, in a long, loose, plain saffron-yellow dress with long sleeves down to her wrists, and a cream headscarf that fully covers her hair and neck walks beside the second, holding its rope. There is no man and no child shown in the picture: a person is present but outside the picture.",
+  "scene": "In the morning, two camels, the second one carrying a padded saddle with a small cloth canopy walk along a rocky desert road; a gentle young Arab mother of about twenty with warm brown skin, in a long loose deep-blue dress and a white headscarf pulled well forward over her forehead, so that none of her hair shows at all rides the first camel and a young Abyssinian woman of about eighteen with deep dark brown skin, a gentle round face and kind eyes, in a long, loose, plain saffron-yellow dress with long sleeves down to her wrists, and a cream headscarf that fully covers her hair and neck walks beside the second, holding its rope. There is no man and no child shown in the picture: a person is present but outside the picture.",
   "who": [
    "CAMELS",
    "AMINA",
@@ -67,18 +67,16 @@
  },
  "u3-b": {
   "alt": "In a courtyard of a mud-brick house among date palms, Barakah and Amina sit on a mat with two kind relatives, sharing a plate of dates and cups of milk.",
-  "scene": "In a courtyard of a mud-brick house among date palms, a young Abyssinian woman of about eighteen with deep dark brown skin, a gentle round face and kind eyes, in a long, loose, plain saffron-yellow dress with long sleeves down to her wrists, and a cream headscarf that fully covers her hair and neck and a gentle young Arab mother of about twenty with warm brown skin, in a long deep-blue dress and a white headscarf that fully covers her hair sit on a mat with two kind relatives, sharing a plate of dates and cups of milk.",
+  "scene": "In a courtyard of a mud-brick house among date palms, a young Abyssinian woman of about eighteen with deep dark brown skin, a gentle round face and kind eyes, in a long, loose, plain saffron-yellow dress with long sleeves down to her wrists, and a cream headscarf that fully covers her hair and neck and a gentle young Arab mother of about twenty with warm brown skin, in a long loose deep-blue dress and a white headscarf pulled well forward over her forehead, so that none of her hair shows at all sit on a mat with two kind relatives, sharing a plate of dates and cups of milk.",
   "who": [
    "UAY",
    "AMINA"
   ]
  },
  "u3-c": {
-  "alt": "A small round pond among date palms, its water rippling, white and grey pigeons flying up into the blue sky above it. .",
-  "scene": "A small round pond among date palms, its water rippling, white and grey pigeons flying up into the blue sky above it. There is no man and no child shown in the picture: a person is present but outside the picture.",
-  "who": [
-   "HERE"
-  ],
+  "alt": "A small round pond among date palms, its water rippling, white and grey pigeons flying up into the blue sky above it. No people at all.",
+  "scene": "A small round pond among date palms, its water rippling, white and grey pigeons flying up into the blue sky above it. No people at all.",
+  "who": [],
   "presence": true
  },
  "u4-a": {
@@ -146,8 +144,8 @@
   ]
  },
  "u5-d": {
-  "alt": "Abu Talib stands at the open door of his house in Makkah with his arms open in welcome, while Barakah watches, smiling with relief. .",
-  "scene": "a kind Arab man of about forty with warm brown skin and a short black beard, in a brown robe and a dark red turban stands at the open door of his house in Makkah, a town of simple flat-roofed houses of mud brick and stone in a dry, rocky valley between bare brown hills with his arms open in welcome, while a young Abyssinian woman of about eighteen with deep dark brown skin, a gentle round face and kind eyes, in a long, loose, plain saffron-yellow dress with long sleeves down to her wrists, and a cream headscarf that fully covers her hair and neck watches, smiling with relief. There is no man and no child shown in the picture: a person is present but outside the picture.",
+  "alt": "Two grown-ups in the picture: in front, Abu Talib stands at the open door of his house in Makkah, smiling, with his arms open wide in welcome; beside him Barakah…",
+  "scene": "Two grown-ups in the picture: in front, a kind Arab man of about forty with warm brown skin and a short black beard, in a brown robe and a dark red turban stands at the open door of his house in Makkah, a town of simple flat-roofed houses of mud brick and stone in a dry, rocky valley between bare brown hills, smiling, with his arms open wide in welcome; beside him a young Abyssinian woman of about eighteen with deep dark brown skin, a gentle round face and kind eyes, in a long, loose, plain saffron-yellow dress with long sleeves down to her wrists, and a cream headscarf that fully covers her hair and neck watches, smiling with relief. There is no man and no child shown in the picture: a person is present but outside the picture.",
   "who": [
    "UNCLE",
    "MAKKAH",
@@ -167,10 +165,10 @@
   "presence": true
  },
  "u6-b": {
-  "alt": "Umm Ayman holds a baby boy wrapped in a cloth and smiles down at him, while Ubayd stands beside her, laughing happily, in a courtyard in Makkah.",
-  "scene": "an East African woman from Abyssinia of about sixty with very deep dark brown skin, as dark as in her youth, a kind lined face and bright lively eyes, in a long, loose, plain saffron-yellow dress with long sleeves down to her wrists, and a cream headscarf that fully covers her hair and neck holds a baby boy wrapped in a cloth and smiles down at him, while a cheerful Arab man of about forty with warm brown skin and a short beard, in a sand-coloured tunic stands beside her, laughing happily, in a courtyard in Makkah, a town of simple flat-roofed houses of mud brick and stone in a dry, rocky valley between bare brown hills.",
+  "alt": "Barakah, a few years older, holds a baby boy wrapped in a cloth and smiles down at him, while Ubayd stands beside her, laughing happily, in a courtyard in Makkah.",
+  "scene": "a young Abyssinian woman of about eighteen with deep dark brown skin, a gentle round face and kind eyes, in a long, loose, plain saffron-yellow dress with long sleeves down to her wrists, and a cream headscarf that fully covers her hair and neck, a few years older, holds a baby boy wrapped in a cloth and smiles down at him, while a cheerful Arab man of about forty with warm brown skin and a short beard, in a sand-coloured tunic stands beside her, laughing happily, in a courtyard in Makkah, a town of simple flat-roofed houses of mud brick and stone in a dry, rocky valley between bare brown hills.",
   "who": [
-   "UA",
+   "UAY",
    "UBAYD",
    "MAKKAH"
   ]
@@ -277,12 +275,11 @@
   ]
  },
  "u9-c": {
-  "alt": "Umm Ayman folds her arms and shakes her head firmly, trying not to smile, under the palm trees; Anas looks on, surprised. .",
-  "scene": "an East African woman from Abyssinia of about sixty with very deep dark brown skin, as dark as in her youth, a kind lined face and bright lively eyes, in a long, loose, plain saffron-yellow dress with long sleeves down to her wrists, and a cream headscarf that fully covers her hair and neck folds her arms and shakes her head firmly, trying not to smile, under the palm trees; a polite Arab boy of about eleven with warm brown skin and short black hair, in a light blue tunic looks on, surprised. There is no man and no child shown in the picture: a person is present but outside the picture.",
+  "alt": "Only two people in the whole picture, nobody else and no one at the edges: Umm Ayman folds her arms and shakes her head firmly, trying not to smile, under the palm…",
+  "scene": "Only two people in the whole picture, nobody else and no one at the edges: an East African woman from Abyssinia of about sixty with very deep dark brown skin, as dark as in her youth, a kind lined face and bright lively eyes, in a long, loose, plain saffron-yellow dress with long sleeves down to her wrists, and a cream headscarf that fully covers her hair and neck folds her arms and shakes her head firmly, trying not to smile, under the palm trees; a polite Arab boy of about eleven with warm brown skin and short black hair, in a light blue tunic looks on, surprised.",
   "who": [
    "UA",
-   "ANAS",
-   "HERE"
+   "ANAS"
   ],
   "presence": true
  },
@@ -307,7 +304,7 @@
  },
  "u10-a": {
   "alt": "In a simple room, Umm Ayman gently straightens the white headscarf of Fatimah, who smiles shyly; morning light through a small window.",
-  "scene": "In a simple room, an East African woman from Abyssinia of about sixty with very deep dark brown skin, as dark as in her youth, a kind lined face and bright lively eyes, in a long, loose, plain saffron-yellow dress with long sleeves down to her wrists, and a cream headscarf that fully covers her hair and neck gently straightens the white headscarf of a gentle young Arab bride of about eighteen with warm brown skin, in a simple long white dress and a white headscarf that fully covers her hair, who smiles shyly; morning light through a small window.",
+  "scene": "In a simple room, an East African woman from Abyssinia of about sixty with very deep dark brown skin, as dark as in her youth, a kind lined face and bright lively eyes, in a long, loose, plain saffron-yellow dress with long sleeves down to her wrists, and a cream headscarf that fully covers her hair and neck gently straightens the white headscarf of a gentle young Arab bride of about eighteen with warm brown skin, in a simple long loose white dress and a white headscarf pulled well forward over her forehead, so that none of her hair shows at all, who smiles shyly; morning light through a small window.",
   "who": [
    "UA",
    "FATIMA"
@@ -352,8 +349,8 @@
   ]
  },
  "u11-g": {
-  "alt": "A calm night sky full of stars over the palm trees and low houses of Madina, a soft glow on the horizon. No people.",
-  "scene": "A calm night sky full of stars over the palm trees and low houses of Madina, an oasis town of low mud-brick houses with roofs of palm branches among green date-palm gardens, a soft glow on the horizon. No people.",
+  "alt": "A calm night sky full of stars over the palm trees and low houses of Madina, a soft glow on the horizon. The scene fills the whole picture edge to edge, with no border,…",
+  "scene": "A calm night sky full of stars over the palm trees and low houses of Madina, an oasis town of low mud-brick houses with roofs of palm branches among green date-palm gardens, a soft glow on the horizon. The scene fills the whole picture edge to edge, with no border, frame or inset. No people.",
   "who": [
    "MADINA"
   ]

@@ -21,7 +21,7 @@ s("b", "dawn", "Barakah loved the baby. She helped his mother look after him, by
   "In the early morning light, {UAY} gently rocks a wooden cradle with a white cloth canopy over it, singing softly; the inside of the cradle is not seen. {HERE}.", { src: ZUH, presence: true });
 p("hold", "rock", "dawn", "Rock the cradle gently. Press and hold, until he is fast asleep.", { ms: 2500, icon: "🌙", hint: "Press and hold", done: "Fast asleep" }, { img: "b" });
 s("c", "city", "When his father died, he left five camels, some sheep, and Barakah, who looked after the baby.",
-  "In a dusty yard of a mud-brick house in {MAKKAH}, five camels rest and a few sheep graze, while {UAY} carries a bundle of hay towards them.", { src: SAD });
+  "In a dusty yard of a mud-brick house in {MAKKAH}, exactly five camels, all fully in view, rest side by side and a few sheep graze, while {UAY} carries a bundle of hay towards them.", { src: SAD });
 p("count", "camels", "city", "Count the five camels. Tap each one.", { total: 5, icon: "🐪", got: "✨" }, { img: "c" });
 q("q", "dawn", "Who helped Amina look after baby Muhammad?", ["Barakah", "🤲"], ["Nobody at all", "🚫"], "Barakah helped his mother look after him, by day and by night.", { img: "b" });
 
@@ -31,7 +31,7 @@ s("a", "desert", "When he was six, his mother took him to visit her family in th
 s("b", "field", "They stayed a whole month with his mother's family, among the date palms.",
   "In a courtyard of a mud-brick house among date palms, {UAY} and {AMINA} sit on a mat with two kind relatives, sharing a plate of dates and cups of milk.", { src: SAD });
 s("c", "field", "Many years later, the Prophet remembered that month. He said that he learned to swim in a pond there, and flew pigeons with the boys.",
-  "A small round pond among date palms, its water rippling, white and grey pigeons flying up into the blue sky above it. {HERE}.", { src: SAD, mood: "joy", presence: true });
+  "A small round pond among date palms, its water rippling, white and grey pigeons flying up into the blue sky above it. No people at all.", { src: SAD, mood: "joy", presence: true });
 p("count", "pigeons", "field", "Count the pigeons! Tap each one.", { total: 7, icon: "🕊️", got: "✨" }, { img: "c" });
 p("memory", "pairs", "field", "Find the pairs! Things they saw in Madina.", { icons: ["🌴", "🐪", "🕊️", "💧", "🏠", "🌙"] }, { img: "b" });
 
@@ -56,7 +56,7 @@ q("q", "city", "What did the grandfather call Barakah?", ["O blessed one", "🌟
 s("c", "dusk", "But when the boy was eight, his grandfather died too. Barakah saw the boy crying as he walked behind him.",
   "At dusk {UAY} stands in a doorway in {MAKKAH} with tears in her eyes, watching a quiet line of men walk away down the lane in the distance.", { src: SAD, mood: "sad" });
 s("d", "city", "Then his uncle Abu Talib took him into his home, and loved him like his own son.",
-  "{UNCLE} stands at the open door of his house in {MAKKAH} with his arms open in welcome, while {UAY} watches, smiling with relief. {HERE}.", { src: SAD, mood: "joy", presence: true });
+  "Two grown-ups in the picture: in front, {UNCLE} stands at the open door of his house in {MAKKAH}, smiling, with his arms open wide in welcome; beside him {UAY} watches, smiling with relief. {HERE}.", { src: SAD, mood: "joy", presence: true });
 ord("care", "city", "Who looked after him, one after the other? Put them in order.", [
   ["🤱", "His mother Amina", "First, his mother Amina, with Barakah."],
   ["👴", "His grandfather", "Then his grandfather, Abd al-Muttalib."],

@@ -11,7 +11,7 @@ s("c", "city", "The Prophet loved her very much. He used to call her: O mother!"
   "{UA} sits on a bench in a shady courtyard, smiling warmly at the empty place beside her, where a cup of milk waits on a small stool. {HERE}.", { src: SAD, presence: true });
 s("d", "field", "It is told that he said: whoever would like to marry a woman of Paradise, let him marry Umm Ayman.",
   "{UA} walks through a garden of date palms in golden evening light, smiling peacefully, birds flying overhead.", { src: SAD, mood: "wonder" });
-s("e", "city", "And Zayd, a man the Prophet loved very much, married her. They had a son too, called Usamah.",
+s("e", "city", "Some years later, when her first marriage had ended, she married Zayd, a man the Prophet loved very much. They had a son too, called Usamah.",
   "{ZAYD} and {UA} walk together down a lane in {MAKKAH}, holding the hands of {USAMA} between them, all three smiling.", { src: ZUH, mood: "joy" });
 mat("names", "city", "What does each name mean? Match them.", [
   ["🌟", "Barakah", "🎁", "Blessing"],

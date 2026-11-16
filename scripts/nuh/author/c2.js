@@ -27,7 +27,7 @@ s("d", "field", "And Nuh took his family, and the believers. Only a few believed
 chapter("n9", "🤲", "Bismillah", "11:41", ["23:28-29"], null);
 s("a", "storm", "Nuh said: get on board. In the name of Allah it sails, and in the name of Allah it comes to rest. My Lord is Forgiving and Merciful.",
   "{NUH} stands in the open doorway of {ARK} in the rain, one hand raised, the other welcoming the last of {BELIEVERS} inside; lamplight glows warmly from within.");
-s("b", "storm", "Many Muslims still say these words when they set off on a journey: bismillahi majraha wa mursaha.",
+s("b", "storm", "We can say these words too, when we set off on a journey: bismillahi majraha wa mursaha.",
   "Inside {ARK}, a mother and her young daughter sit together on a wooden bench by a small oil lamp, hands raised in prayer, rain streaming past a window. Both have their hair covered by headscarves.");
 q("q", "storm", "What can we say when we set off on a journey?", ["Bismillah", "🤲"], ["Nothing at all", "🤐"], "We can say bismillah, in the name of Allah, just like Nuh.", { img: "b" });
 s("c", "storm", "Allah taught Nuh to say, once they were on board: praise be to Allah, who saved us. And: my Lord, let me land in a blessed place.",

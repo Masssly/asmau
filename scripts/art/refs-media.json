@@ -1,0 +1,137 @@
+{
+ "scripts/adam-art/refs/ADAM.png": {
+  "hash": "7429caade1",
+  "stored": "scripts/adam-art/refs/ADAM.png.webp",
+  "format": "PNG"
+ },
+ "scripts/adam-art/refs/HAB.png": {
+  "hash": "2f483d8eeb",
+  "stored": "scripts/adam-art/refs/HAB.png.webp",
+  "format": "PNG"
+ },
+ "scripts/adam-art/refs/HAWWA.png": {
+  "hash": "0a7912ae28",
+  "stored": "scripts/adam-art/refs/HAWWA.png.webp",
+  "format": "PNG"
+ },
+ "scripts/adam-art/refs/QAB.png": {
+  "hash": "683c3f8519",
+  "stored": "scripts/adam-art/refs/QAB.png.webp",
+  "format": "PNG"
+ },
+ "scripts/adam-art/refs/SHITH.png": {
+  "hash": "359799b8fe",
+  "stored": "scripts/adam-art/refs/SHITH.png.webp",
+  "format": "PNG"
+ },
+ "scripts/asmau-art/refs/old/JAJI-1.png": {
+  "hash": "e1776a44c8",
+  "stored": "scripts/asmau-art/refs/old/JAJI-1.png.webp",
+  "format": "PNG"
+ },
+ "scripts/ibn-battuta-art/refs/IB.png": {
+  "hash": "dacd61f90f",
+  "stored": "scripts/ibn-battuta-art/refs/IB.png.webp",
+  "format": "PNG"
+ },
+ "scripts/ibn-battuta-art/refs/IBY.png": {
+  "hash": "ef2ae45909",
+  "stored": "scripts/ibn-battuta-art/refs/IBY.png.webp",
+  "format": "PNG"
+ },
+ "scripts/musa-art/refs/ASIYA.png": {
+  "hash": "cbc0967f3c",
+  "stored": "scripts/musa-art/refs/ASIYA.png.webp",
+  "format": "PNG"
+ },
+ "scripts/musa-art/refs/DAU.png": {
+  "hash": "b60b918d42",
+  "stored": "scripts/musa-art/refs/DAU.png.webp",
+  "format": "PNG"
+ },
+ "scripts/musa-art/refs/ELD.png": {
+  "hash": "e853a2e751",
+  "stored": "scripts/musa-art/refs/ELD.png.webp",
+  "format": "PNG"
+ },
+ "scripts/musa-art/refs/HA.png": {
+  "hash": "bd9a2ccab1",
+  "stored": "scripts/musa-art/refs/HA.png.webp",
+  "format": "PNG"
+ },
+ "scripts/musa-art/refs/KH.png": {
+  "hash": "62d26843f1",
+  "stored": "scripts/musa-art/refs/KH.png.webp",
+  "format": "PNG"
+ },
+ "scripts/musa-art/refs/MU.png": {
+  "hash": "be54490f86",
+  "stored": "scripts/musa-art/refs/MU.png.webp",
+  "format": "PNG"
+ },
+ "scripts/musa-art/refs/MUM.png": {
+  "hash": "a4b544ccec",
+  "stored": "scripts/musa-art/refs/MUM.png.webp",
+  "format": "PNG"
+ },
+ "scripts/musa-art/refs/MY.png": {
+  "hash": "db41ec3c28",
+  "stored": "scripts/musa-art/refs/MY.png.webp",
+  "format": "PNG"
+ },
+ "scripts/musa-art/refs/PH.png": {
+  "hash": "e569ab9d63",
+  "stored": "scripts/musa-art/refs/PH.png.webp",
+  "format": "PNG"
+ },
+ "scripts/musa-art/refs/SAM.png": {
+  "hash": "b0a89a7cd8",
+  "stored": "scripts/musa-art/refs/SAM.png.webp",
+  "format": "PNG"
+ },
+ "scripts/musa-art/refs/SIS.png": {
+  "hash": "06abfae787",
+  "stored": "scripts/musa-art/refs/SIS.png.webp",
+  "format": "PNG"
+ },
+ "scripts/musa-art/refs/YU.png": {
+  "hash": "f10c7c9f4b",
+  "stored": "scripts/musa-art/refs/YU.png.webp",
+  "format": "PNG"
+ },
+ "scripts/nuh-art/refs/NUH.png": {
+  "hash": "2dc429adf5",
+  "stored": "scripts/nuh-art/refs/NUH.png.webp",
+  "format": "PNG"
+ },
+ "scripts/nuh-art/refs/SON.png": {
+  "hash": "25af29e39d",
+  "stored": "scripts/nuh-art/refs/SON.png.webp",
+  "format": "PNG"
+ },
+ "scripts/rahmah-art/refs/RG.png": {
+  "hash": "5520d9d2d1",
+  "stored": "scripts/rahmah-art/refs/RG.png.webp",
+  "format": "PNG"
+ },
+ "scripts/rahmah-art/refs/RO.png": {
+  "hash": "7510c3838c",
+  "stored": "scripts/rahmah-art/refs/RO.png.webp",
+  "format": "PNG"
+ },
+ "scripts/rahmah-art/refs/RY.png": {
+  "hash": "71d1893a5c",
+  "stored": "scripts/rahmah-art/refs/RY.png.webp",
+  "format": "PNG"
+ },
+ "scripts/umm-ayman-art/refs/UA.png": {
+  "hash": "30e4b63fbf",
+  "stored": "scripts/umm-ayman-art/refs/UA.png.webp",
+  "format": "PNG"
+ },
+ "scripts/umm-ayman-art/refs/UAY.png": {
+  "hash": "7c86dc76c8",
+  "stored": "scripts/umm-ayman-art/refs/UAY.png.webp",
+  "format": "PNG"
+ }
+}

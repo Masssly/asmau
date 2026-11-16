@@ -51,6 +51,9 @@ things work; this file holds the decisions that must not be lost between session
   `MODEL=gemini-3-pro-image`; count every kept picture by eye. Stand the group in a line or in rows of
   five with nobody in front of them; mend a picture with one edit at most (chained edits fade it).
 - Look at every picture before it goes in (skin, covered hair, count, no text, matching the story).
+- The character reference portraits (`scripts/<story>-art/refs/`) live on R2 too, as lossless WebP, listed in
+  `scripts/art/refs-media.json`: after cloning, `python3 scripts/refs-media.py fetch`; after approving a new one,
+  `ADMIN_TOKEN=... python3 scripts/refs-media.py publish`, then commit the list.
 - **Living scenes:** each story picture gets gentle effects placed on it (stars in its sky, a flicker on its lamp,
   leaves, birds, water shimmer) in games/<slug>/scene-fx.json. For new pictures run `PROJECT=asmau-assets python3
   scripts/scene-fx.py games/<slug>`, then look at the sheet (`--sheet out.png`). Never put fire or embers on Iblis or

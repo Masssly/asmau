@@ -1,5 +1,5 @@
 {
- "_note": "Bahasa Indonesia: the words shared by every page (shared/lang.js). Drafted 16 November 2026; to be checked by a native speaker with the first game.",
+ "_note": "Bahasa Indonesia: the words shared by every page (shared/lang.js). Drafted 16 November 2026 and checked by a native speaker with Rahmah.",
  "re:^Continue — Chapter (\\d+)$": "Lanjutkan — Bab $1",
  "re:^Chapter (\\d+) of (\\d+)$": "Bab $1 dari $2",
  "re:^Chapter (\\d+): (.+)$": "Bab $1: $t2",

@@ -1,11 +1,18 @@
 {
-  "version": "2026.11.39",
+  "version": "2026.11.40",
   "date": "2026-11-16",
-  "buildId": "25f4e71b3862",
+  "buildId": "cf14cb1ffbf6",
   "notes": [
-    "Languages: families can choose another language once a game is checked in it (Bahasa Indonesia first; Rahmah's draft waits for a native speaker). One shared story kit for every story game."
+    "Bahasa Indonesia: families can now choose it in For parents (Bahasa · Language). Rahmah El Yunusiyyah plays in Indonesian, words and both voices, checked by a native speaker; other games stay in English for now."
   ],
   "history": [
+    {
+      "version": "2026.11.40",
+      "date": "2026-11-16",
+      "notes": [
+        "Bahasa Indonesia: families can now choose it in For parents (Bahasa · Language). Rahmah El Yunusiyyah plays in Indonesian, words and both voices, checked by a native speaker; other games stay in English for now."
+      ]
+    },
     {
       "version": "2026.11.39",
       "date": "2026-11-16",

@@ -17,11 +17,10 @@ module.exports = async function () {
   p.on("request", (r) => { if (/\.mp3(\?|$)/.test(r.url())) sounds.push(r.url()); });
   const G = site.url + "games/rahmah/index.html?skipms=300";
 
-  // 1. Indonesian chosen, but the translation is a draft: families still see English
-  if (tr.status !== "checked") {
-    await p.goto(G, { waitUntil: "networkidle" }); await p.waitForTimeout(400);
-    T.check((await p.textContent("#startBtn")).trim() === "Start the story", "a draft translation is not shown to families");
-  }
+  // 1. a family that chose Indonesian: a draft is not shown to them; a checked translation is
+  await p.goto(G, { waitUntil: "networkidle" }); await p.waitForTimeout(400);
+  if (tr.status !== "checked") T.check((await p.textContent("#startBtn")).trim() === "Start the story", "a draft translation is not shown to families");
+  else T.check((await p.textContent("#startBtn")).trim() === "Mulai cerita", "a family that chose Indonesian plays Rahmah in Indonesian");
 
   // 2. the person checking it opens it with ?lang=id
   await p.goto(G + "&lang=id", { waitUntil: "networkidle" }); await p.waitForTimeout(500);
@@ -54,11 +53,22 @@ module.exports = async function () {
   T.check(!(await p.$("#langItem[hidden]")), "For parents offers the language choice");
   await browser.close();
 
-  // 5. a family without ?lang= and no translation checked yet: no language choice at all
-  if (tr.status !== "checked") {
-    const b2 = await chromium.launch(), p2 = await b2.newPage();
+  // 5. a family in English (nothing chosen): English everywhere; the language choice only once a translation is checked
+  {
+    const b2 = await chromium.launch(), p2 = await b2.newPage({ viewport: { width: 390, height: 844 } });
     await p2.goto(site.url + "index.html", { waitUntil: "networkidle" }); await p2.waitForTimeout(500);
-    T.check(!!(await p2.$("#langItem[hidden]")), "until a translation is checked, families see no language choice");
+    T.check((await p2.textContent("a.tile[data-slug=rahmah]")).includes("The girl from the mountains"), "an English family sees Rahmah's card in English");
+    if (tr.status !== "checked") T.check(!!(await p2.$("#langItem[hidden]")), "until a translation is checked, families see no language choice");
+    else {
+      T.check(!(await p2.$("#langItem[hidden]")), "with a checked translation, For parents offers the language choice");
+      // they choose Bahasa Indonesia in For parents: the page comes back in Indonesian, and so does the game
+      await p2.click("#parentsBtn"); await p2.click("[data-go=language]");
+      await Promise.all([p2.waitForNavigation({ waitUntil: "networkidle" }), p2.click("#langPick [data-lang=id]")]);
+      await p2.waitForTimeout(600);
+      T.check(await p2.isVisible("text=Kisah Para Nabi") && (await p2.textContent("a.tile[data-slug=rahmah]")).includes("Gadis dari pegunungan"), "choosing Bahasa Indonesia turns the home page and Rahmah's card Indonesian");
+      await p2.goto(G, { waitUntil: "networkidle" }); await p2.waitForTimeout(400);
+      T.check((await p2.textContent("#startBtn")).trim() === "Mulai cerita", "and Rahmah opens in Indonesian");
+    }
     await b2.close();
   }
   await site.close();

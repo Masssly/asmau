@@ -52,9 +52,11 @@ module.exports = async function () {
     // For parents > Your voice: choosing the man's voice fetches it for the games already on this device
     await page.click('#parentsBack, .sheet-backbtn').catch(() => {});
     await page.evaluate(() => { const b = document.querySelector('[data-voice="m"]'); b.click(); });
-    for (let t = 0; t < 60 && await count(/\/games\/yusuf\/assets\/audio-m\//) < yusufMan; t++) await page.waitForTimeout(1000);
-    T.check(await count(/\/games\/yusuf\/assets\/audio-m\//) === yusufMan && await page.evaluate(() => localStorage.getItem("asmau-voice")) === "m",
-      `choosing the man's voice saves his ${yusufMan} clips for Yusuf too`);
+    // every game is on this device, so the switch fetches the man's clips for all of them (Yusuf comes last)
+    for (let t = 0; t < 240 && await count(/\/games\/yusuf\/assets\/audio-m\//) < yusufMan; t++) await page.waitForTimeout(1000);
+    const gotMan = await count(/\/games\/yusuf\/assets\/audio-m\//);
+    T.check(gotMan === yusufMan && await page.evaluate(() => localStorage.getItem("asmau-voice")) === "m",
+      `choosing the man's voice saves his ${yusufMan} clips for Yusuf too (${gotMan} saved)`);
     await ctx.close();
   }
   { // resume by name

@@ -1,7 +1,7 @@
 /* Chapters 1 to 6: a girl in the mountains, learning to read, no more school, back to school, a school for girls, not everyone agreed. */
 "use strict";
 const { chapter, s, p, q, srt, HIS } = require("./lib");
-const CITE = "Histories of her life (Audrey Kahin, Jeffrey Hadler and others; see the notes)";
+const CITE = "Histories of her life (see the notes)";
 
 chapter("r1", "🏔️", "A Girl in the Mountains", null, [], null, CITE);
 s("a", "field", "Long ago, in the year 1900, a baby girl was born in Padang Panjang, a town in the green mountains of West Sumatra, in what is now Indonesia. Her name was Rahmah.",

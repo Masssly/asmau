@@ -1,7 +1,7 @@
 /* Chapters 7 to 11: the earthquake, on her own feet, a new flag, to Cairo, her school today. */
 "use strict";
 const { chapter, s, p, q, ord, srt, line, HIS } = require("./lib");
-const CITE = "Histories of her life (Audrey Kahin, Jeffrey Hadler and others; see the notes)";
+const CITE = "Histories of her life (see the notes)";
 
 chapter("r7", "🏚️", "The Earthquake", null, [], null, CITE);
 s("a", "city", "In 1926, a big earthquake shook Padang Panjang, and the school building fell down.",

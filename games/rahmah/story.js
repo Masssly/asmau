@@ -9,7 +9,7 @@
 */
 window.STORY = [
   {
-    id: "r1", icon: "🏔️", title: "A Girl in the Mountains", more: [], cite: "Histories of her life (Audrey Kahin, Jeffrey Hadler and others; see the notes)",
+    id: "r1", icon: "🏔️", title: "A Girl in the Mountains", more: [], cite: "Histories of her life (see the notes)",
     steps: [
       {"say":"r1-a","scene":"field","src":"From the histories of her life","e":"⛰️ 🌾 👶🏽"},
       {"say":"r1-b","scene":"village","src":"From the histories of her life","e":"👧 📖 ⭐"},
@@ -19,7 +19,7 @@ window.STORY = [
     ]
   },
   {
-    id: "r2", icon: "📖", title: "Learning to Read", more: [], cite: "Histories of her life (Audrey Kahin, Jeffrey Hadler and others; see the notes)",
+    id: "r2", icon: "📖", title: "Learning to Read", more: [], cite: "Histories of her life (see the notes)",
     steps: [
       {"say":"r2-a","scene":"dusk","src":"From the histories of her life","e":"👧 💧 🌇"},
       {"say":"r2-b","scene":"village","src":"From the histories of her life","e":"👧 ✍️ 📖"},
@@ -29,7 +29,7 @@ window.STORY = [
     ]
   },
   {
-    id: "r3", icon: "🌙", title: "No More School", more: [], cite: "Histories of her life (Audrey Kahin, Jeffrey Hadler and others; see the notes)",
+    id: "r3", icon: "🌙", title: "No More School", more: [], cite: "Histories of her life (see the notes)",
     steps: [
       {"say":"r3-a","scene":"village","src":"From the histories of her life","e":"👧 🏫 🌧️"},
       {"say":"r3-b","scene":"night","src":"From the histories of her life","e":"🌙 🧕🏽 📖"},
@@ -39,7 +39,7 @@ window.STORY = [
     ]
   },
   {
-    id: "r4", icon: "🏫", title: "Back to School", more: [], cite: "Histories of her life (Audrey Kahin, Jeffrey Hadler and others; see the notes)",
+    id: "r4", icon: "🏫", title: "Back to School", more: [], cite: "Histories of her life (see the notes)",
     steps: [
       {"say":"r4-a","scene":"village","src":"From the histories of her life","e":"🏫 🧔🏽"},
       {"say":"r4-b","scene":"village","src":"From the histories of her life","e":"🧕🏽 🧕🏽 📖"},
@@ -49,7 +49,7 @@ window.STORY = [
     ]
   },
   {
-    id: "r5", icon: "🕌", title: "A School for Girls", more: [], cite: "Histories of her life (Audrey Kahin, Jeffrey Hadler and others; see the notes)",
+    id: "r5", icon: "🕌", title: "A School for Girls", more: [], cite: "Histories of her life (see the notes)",
     steps: [
       {"say":"r5-a","scene":"city","src":"From the histories of her life","e":"🕌 🏫 ✨"},
       {"say":"r5-b","scene":"city","src":"From the histories of her life","e":"🕌 📖"},
@@ -59,7 +59,7 @@ window.STORY = [
     ]
   },
   {
-    id: "r6", icon: "💪", title: "Not Everyone Agreed", more: [], cite: "Histories of her life (Audrey Kahin, Jeffrey Hadler and others; see the notes)",
+    id: "r6", icon: "💪", title: "Not Everyone Agreed", more: [], cite: "Histories of her life (see the notes)",
     steps: [
       {"say":"r6-a","scene":"city","src":"From the histories of her life","e":"😠 🧕🏽"},
       {"say":"r6-b","scene":"city","src":"From the histories of her life","e":"🧕🏽 👴🏽 🤝"},
@@ -69,7 +69,7 @@ window.STORY = [
     ]
   },
   {
-    id: "r7", icon: "🏚️", title: "The Earthquake", more: [], cite: "Histories of her life (Audrey Kahin, Jeffrey Hadler and others; see the notes)",
+    id: "r7", icon: "🏚️", title: "The Earthquake", more: [], cite: "Histories of her life (see the notes)",
     steps: [
       {"say":"r7-a","scene":"city","src":"From the histories of her life","e":"🏚️ ⛰️"},
       {"say":"r7-b","scene":"field","src":"From the histories of her life","e":"🛖 📖"},
@@ -80,7 +80,7 @@ window.STORY = [
     ]
   },
   {
-    id: "r8", icon: "🌱", title: "On Her Own Feet", more: [], cite: "Histories of her life (Audrey Kahin, Jeffrey Hadler and others; see the notes)",
+    id: "r8", icon: "🌱", title: "On Her Own Feet", more: [], cite: "Histories of her life (see the notes)",
     steps: [
       {"say":"r8-a","scene":"palace","src":"From the histories of her life","e":"🙅🏽 💰"},
       {"say":"r8-b","scene":"city","src":"From the histories of her life","e":"🏫 🧕🏽 🧕🏽"},
@@ -89,7 +89,7 @@ window.STORY = [
     ]
   },
   {
-    id: "r9", icon: "🚩", title: "A New Flag", more: [], cite: "Histories of her life (Audrey Kahin, Jeffrey Hadler and others; see the notes)",
+    id: "r9", icon: "🚩", title: "A New Flag", more: [], cite: "Histories of her life (see the notes)",
     steps: [
       {"say":"r9-a","scene":"city","src":"From the histories of her life","e":"📻 🎉"},
       {"say":"r9-b","scene":"city","src":"From the histories of her life","e":"🚩 🏫"},
@@ -98,7 +98,7 @@ window.STORY = [
     ]
   },
   {
-    id: "r10", icon: "🎓", title: "To Cairo", more: [], cite: "Histories of her life (Audrey Kahin, Jeffrey Hadler and others; see the notes)",
+    id: "r10", icon: "🎓", title: "To Cairo", more: [], cite: "Histories of her life (see the notes)",
     steps: [
       {"say":"r10-a","scene":"city","src":"From the histories of her life","e":"👳 🏫"},
       {"say":"r10-b","scene":"desert","src":"From the histories of her life","e":"🕋 🤲🏽"},
@@ -109,7 +109,7 @@ window.STORY = [
     ]
   },
   {
-    id: "r11", icon: "🌟", title: "Her School Today", more: [], cite: "Histories of her life (Audrey Kahin, Jeffrey Hadler and others; see the notes)",
+    id: "r11", icon: "🌟", title: "Her School Today", more: [], cite: "Histories of her life (see the notes)",
     steps: [
       {"say":"r11-a","scene":"city","src":"From the histories of her life","e":"🎀 🏫"},
       {"say":"r11-b","scene":"dusk","src":"From the histories of her life","e":"🌇 🏫"},

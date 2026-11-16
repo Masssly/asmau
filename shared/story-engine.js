@@ -25,6 +25,9 @@
   var People = window.STORY_PEOPLE;
   var ART = window.STORY_ART || {};   // which pictures exist (art.js)
   var lines = {};
+  // another language (shared/lang.js): the lines and labels in it, once a native speaker has checked them
+  var LANG = window.AsmauLang, langReady = LANG ? LANG.ready() : Promise.resolve();
+  function speechLang() { return LANG && LANG.code() !== "en" && LANG.has(GAME) ? LANG.code() : "en"; }
 
   var $ = function (id) { return document.getElementById(id); };
   var stage = $("stage");
@@ -163,7 +166,7 @@
     if (!(music.level("voice") > 0)) { stopVoice(); return Promise.resolve(); }
     var mine = ++sayToken;
     music.duck(true);
-    return window.AsmauNarration.say(GAME, id, lines[id] || "", { lang: "en" }).then(function () {
+    return window.AsmauNarration.say(GAME, id, lines[id] || "", { lang: speechLang() }).then(function () {
       if (mine === sayToken) music.duck(false);
     });
   }
@@ -1501,7 +1504,7 @@
     prepared = true;
     var ctl = mk("div", "offline-ctl");
     box.insertBefore(ctl, box.querySelector("summary").nextSibling);
-    var v = voiceSet(), packs = [GAME, GAME + "@" + v], busy = false;
+    var v = LANG ? LANG.voicePack(voiceSet(), GAME) : voiceSet(), packs = [GAME, GAME + "@" + v], busy = false;
     function paint() {
       return swAsk({ type: "asmau-status", packs: packs }, true).then(function (s) {
         if (!s) { ctl.hidden = true; return; }
@@ -1520,7 +1523,7 @@
         btn.addEventListener("click", function () {
           if (whole || a.kept) {
             if (!window.confirm("Delete " + document.title.split(" — ")[0] + " from this device? It frees " + mb(Math.max(here, total)) + ". Your child’s progress and your recordings are kept, and the game can be downloaded again.")) return;
-            swAsk({ type: "asmau-drop", packs: [GAME, GAME + "@w", GAME + "@m"] }).then(function () { setTimeout(paint, 600); });
+            swAsk({ type: "asmau-drop", packs: [GAME, GAME + "@*"] }).then(function () { setTimeout(paint, 600); });
           } else {
             busy = true;
             swAsk({ type: "asmau-want", packs: packs, voice: v }).then(function () {
@@ -1844,10 +1847,16 @@
     });
   }
 
-  fetch("narration.json")
-    .then(function (r) { return r.json(); })
-    .then(function (list) {
+  Promise.all([fetch("narration.json").then(function (r) { return r.json(); }), langReady])
+    .then(function (r) {
+      var list = r[0];
       list.forEach(function (l) { lines[l.id] = l.text; });
+      if (speechLang() !== "en") {
+        // the translated lines; and English text -> translation, for labels drawn from a line's English words
+        var tr = LANG.lines(), pairs = {};
+        Object.keys(tr).forEach(function (id) { if (lines[id] !== undefined) { pairs[lines[id]] = tr[id]; lines[id] = tr[id]; } });
+        LANG.add(pairs);
+      }
       music.setMusic(true);         // how loud each is (0 = off) is set by the sound buttons
       music.setSfx(true);
       buildTitleSky();

@@ -79,6 +79,19 @@ things work; this file holds the decisions that must not be lost between session
   can make up words; trust the clip's length there (the voice script already redoes any clip far too long).
 - Do not run the old Piper script (scripts/generate-voice.py); it would overwrite these clips.
 
+## Languages (decided 16 November 2026; pilot: Bahasa Indonesia, Rahmah El Yunusiyyah)
+- English stays the site's language and the default. A family chooses another in For parents → Language (shown only
+  once a game is checked in it). The pictures, activities and page numbers never change; only words.
+- A game's translation: `games/<slug>/lang/<code>.json` (`lines` by id, `strings` by English text: titles, labels, its
+  card). Buttons shared by every page: `shared/i18n/<code>.json`. `node scripts/lang-strings.js <slug> <code>` lists what
+  is missing. A game not translated plays in English and its card says so.
+- **A translation reaches families only when a native speaker has checked it**: `"status": "checked"` (until then
+  `"draft"`, seen only with `?lang=<code>` in the address). The checker then demands every line and label and both voices.
+- Voices: the same Aoede and Achird, asked to speak as native speakers of the language:
+  `STORY_LANG=id [VOICE=m] PROJECT=asmau-assets python3 scripts/generate-voice-gemini.py games/<slug>` (clips in
+  `assets/audio-id/`, `audio-id-m/`; packs `<slug>@id-w`, `@id-m`), then the same with `scripts/voice-check.py`.
+- Parents' notes and the For parents texts stay in English for now. Arabic words and prayers stay Arabic.
+
 ## Brand
 - Mark: the West African writing board (allo) with أ ب ت, chosen by the owner on 15 November 2026. Name
   "Asmau", tagline "Islamic games for curious kids". Rules, colours and how to remake every icon:

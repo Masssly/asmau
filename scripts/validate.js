@@ -90,6 +90,8 @@ for (const s of sections) {
 }
 
 let musicMoods = [], ambNames = [], sfxNames = [];
+let LANG_NAMES = {};
+try { LANG_NAMES = /names:\s*(\{[^}]*\})/.exec(read("shared/lang.js"))[1].replace(/(\w+):/g, '"$1":'); LANG_NAMES = JSON.parse(LANG_NAMES); } catch (e) { fail("shared/lang.js: could not read AsmauLang.names"); }
 try { const m = load(["shared/music.js"]).AsmauMusic; musicMoods = m.moodNames; ambNames = m.ambNames; sfxNames = m.sfxNames; } catch (e) { fail("shared/music.js: failed to load (" + e.message + ")"); }
 
 for (const slug of slugs) {
@@ -145,6 +147,32 @@ for (const slug of slugs) {
   const noMan = lines.filter((l) => l && l.id && !man.includes(l.id + ".mp3")).map((l) => l.id);
   if (noMan.length) fail(manDir + ": " + noMan.length + " lines have no clip in the man's voice (VOICE=m PROJECT=asmau-assets python3 scripts/generate-voice-gemini.py " + dir + "), e.g. " + noMan.slice(0, 3).join(", "));
   for (const f of man) if (!ids.has(f.replace(/\.mp3$/, ""))) fail(manDir + "/" + f + ": no line in narration.json (orphaned audio)");
+
+  // translations (shared/lang.js): games/<slug>/lang/<code>.json. A draft may be incomplete; a "checked" one (shown to
+  // families) must have every line, label and title, and both voices reading every line in that language.
+  if (fs.existsSync(path.join(ROOT, dir, "lang"))) {
+    const { needs } = require("./lang-strings.js");
+    for (const f of fs.readdirSync(path.join(ROOT, dir, "lang"))) {
+      const lf = dir + "/lang/" + f, code = f.replace(/\.json$/, "");
+      if (!/^[a-z]{2,3}\.json$/.test(f)) { fail(lf + ": a translation is named by its language code, e.g. id.json"); continue; }
+      const t = json(lf); if (!t) continue;
+      if (!LANG_NAMES[code]) fail(lf + ": '" + code + "' is not in the languages of shared/lang.js (AsmauLang.names)");
+      if (!exists("shared/i18n/" + code + ".json")) fail(lf + ": shared/i18n/" + code + ".json (the buttons and labels) is missing");
+      if (t.status !== "draft" && t.status !== "checked") fail(lf + ": status must be \"draft\" or \"checked\" (checked by a native speaker)");
+      for (const id of Object.keys(t.lines || {})) if (!ids.has(id)) fail(lf + ": line '" + id + "' is not in narration.json");
+      if (t.status !== "checked") continue;
+      const n = needs(slug), shared = json("shared/i18n/" + code + ".json") || {};
+      const pats = Object.keys(shared).filter((k) => k.startsWith("re:")).map((k) => new RegExp(k.slice(3)));
+      const noLine = n.lines.filter((id) => !(t.lines || {})[id]);
+      const noStr = n.strings.filter((x) => !(t.strings || {})[x] && !shared[x] && !pats.some((r) => r.test(x)));
+      if (noLine.length + noStr.length) fail(lf + ": checked, but " + noLine.length + " lines and " + noStr.length + " labels are not translated (node scripts/lang-strings.js " + slug + " " + code + ")");
+      for (const v of ["", "-m"]) {
+        const ad = dir + "/assets/audio-" + code + v, have = filesIn(ad);
+        const miss = lines.filter((l) => l && l.id && l.lang !== "ar" && !have.includes(l.id + ".mp3")).map((l) => l.id);
+        if (miss.length) fail(ad + ": " + miss.length + " lines have no clip (STORY_LANG=" + code + (v ? " VOICE=m" : "") + " PROJECT=asmau-assets python3 scripts/generate-voice-gemini.py " + dir + ")");
+      }
+    }
+  }
 
   /* ---------- a story, if the game has one ---------- */
   if (!exists(dir + "/story.js")) continue;

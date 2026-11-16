@@ -236,6 +236,7 @@
         <li><button data-go="stories"><span aria-hidden="true">📖</span><span><strong>Where the stories come from</strong><small>The verses, the commentary, and what was simplified</small></span></button></li>
         <li><button data-go="shown"><span aria-hidden="true">👥</span><span><strong>Who is shown, and how</strong><small>Faces, prophets, and what is never shown</small></span></button></li>
         <li><button data-go="together"><span aria-hidden="true">🤲</span><span><strong>Playing together</strong><small>Ages, how to play, how much at a time</small></span></button></li>
+        <li id="langItem" hidden><button data-go="language"><span aria-hidden="true">🌐</span><span><strong>Language · Bahasa</strong><small>The language of the stories</small></span></button></li>
         <li><button data-go="sound"><span aria-hidden="true">🔊</span><span><strong>Sound and volume</strong><small>Music, sounds and voice, each on its own</small></span></button></li>
         <li><button data-go="offline"><span aria-hidden="true">📶</span><span><strong>Without internet</strong><small>Save every game before a journey; add Asmau to your home screen</small></span></button></li>
         <li><button data-go="pictures"><span aria-hidden="true">🎨</span><span><strong>The pictures</strong><small>How they are made</small></span></button></li>
@@ -343,6 +344,14 @@
       </ul>
     </div>
 
+    <div class="p-view" data-view="language" hidden>
+      <h3>Language · Bahasa</h3>
+      <p>Choose the language your child reads and hears. A game that is not translated yet stays in English, and says so on
+        its card. The notes for parents stay in English for now.</p>
+      <div class="voice-pick" role="radiogroup" aria-label="Language" id="langPick"></div>
+      <p class="p-small">Your own recordings play in any language you choose: they always come first.</p>
+    </div>
+
     <div class="p-view" data-view="sound" hidden>
       <h3>Sound and volume</h3>
       <p>Every story has three buttons at the top: 🎵 music, 🍃 the sounds of the place and the effects, and 🗣️ the voice.
@@ -395,9 +404,18 @@
   </div>
 </div>
 
+<script src="shared/lang.js"></script>
 <script>
 (function () {
   "use strict";
+
+  // the family's language (shared/lang.js; For parents > Language). A game is shown in it once its translation is
+  // checked by a native speaker (games/index.json "langs"); with ?lang=<code> drafts are shown too, for checking them.
+  var L = window.AsmauLang, CODE = L ? L.code() : "en", BYSLUG = {};
+  function inLang(g) { return CODE !== "en" && !!(g && g.tr && g.tr[CODE]) && ((g.langs || []).indexOf(CODE) >= 0 || !!(L && L.preview)); }
+  function T(g, k) { return (inLang(g) && g.tr[CODE][k]) || g[k]; }
+  // which narration of a game this family hears: "w"/"m", or in their language "id-w"/"id-m" where the game has it
+  function vFor(slug) { var v = voiceSet(); return inLang(BYSLUG[slug]) ? CODE + "-" + v : v; }
 
   function el(tag, cls, text) {
     var n = document.createElement(tag);
@@ -430,14 +448,14 @@
     var soon = g.status === "coming-soon";
     var a = el(soon ? "div" : "a", "card tile" + (soon ? " soon" : ""));
     if (soon) a.setAttribute("aria-disabled", "true");
-    else { a.href = "games/" + g.slug + "/index.html"; a.setAttribute("aria-label", "Play " + g.title); a.setAttribute("data-slug", g.slug); }
+    else { a.href = "games/" + g.slug + "/index.html" + (inLang(g) && L.preview ? "?lang=" + CODE : ""); a.setAttribute("aria-label", "Play " + T(g, "title")); a.setAttribute("data-slug", g.slug); }
 
     var cover = el("div", "cover");
     if (g.cover) {
       var img = el("img");
       img.loading = "lazy"; img.decoding = "async";          // with many games, covers load as they scroll into view
       img.src = "games/" + g.slug + "/" + g.cover;
-      img.alt = g.coverAlt || "";
+      img.alt = T(g, "coverAlt") || "";
       cover.appendChild(img);
       cover.appendChild(el("span", "glow"));
       for (var i = 0; i < 9; i++) {
@@ -460,10 +478,11 @@
     a.appendChild(cover);
 
     var meta = el("div", "meta");
-    meta.appendChild(el("h3", "", g.title));
+    meta.appendChild(el("h3", "", T(g, "title")));
     meta.appendChild(el("span", "age-badge", ageLabel(g)));
     if (g.ageNote) meta.appendChild(el("span", "age-note", g.ageNote));
-    meta.appendChild(el("p", "tagline", g.tagline));
+    meta.appendChild(el("p", "tagline", T(g, "tagline")));
+    if (CODE !== "en" && !inLang(g)) meta.appendChild(el("span", "age-note", "In English for now"));
     a.appendChild(meta);
     return a;
   }
@@ -472,7 +491,7 @@
   // folded sections are remembered on this device (with many games, a family can fold what they don't use)
   function folded() { try { return JSON.parse(localStorage.getItem("asmau-folded") || "{}"); } catch (e) { return {}; } }
   function setFolded(title, on) { try { var f = folded(); if (on) f[title] = 1; else delete f[title]; localStorage.setItem("asmau-folded", JSON.stringify(f)); } catch (e) { /* this visit only */ } }
-  function matches(g, q) { return !q || (g.title + " " + (g.tagline || "")).toLowerCase().indexOf(q) >= 0; }
+  function matches(g, q) { return !q || (g.title + " " + (g.tagline || "") + " " + T(g, "title") + " " + (T(g, "tagline") || "")).toLowerCase().indexOf(q) >= 0; }
 
   function render(sections, query) {
     var main = document.getElementById("sections"), q = (query || "").trim().toLowerCase(), f = folded();
@@ -515,8 +534,8 @@
     // one file with every game (scripts/build-offline.js writes it from manifest.json and each game.json)
     fetch("games/index.json")
       .then(function (r) { return r.json(); })
-      .then(function (c) { CATALOGUE = c.sections; return c.sections; })
-      .then(render).then(markOffline)
+      .then(function (c) { CATALOGUE = c.sections; c.sections.forEach(function (sec) { sec.games.forEach(function (g) { BYSLUG[g.slug] = g; }); }); return c.sections; })
+      .then(render).then(markOffline).then(wireLangPick)
       .catch(function () {
         var main = document.getElementById("sections");
         main.innerHTML = "";
@@ -541,8 +560,12 @@
     return swStatus().then(function (s) {
       if (!s) { btn.hidden = true; out.textContent = "This browser cannot save games for use without internet."; return true; }
       var files = 0, done = 0, left = 0;
-      var skip = voiceSet() === "m" ? "@w" : "@m";        // only the voice this family chose is saved
-      Object.keys(s.packs).forEach(function (k) { if (k.slice(-2) === skip) return; var p = s.packs[k]; files += p.files; done += p.saved; left += p.files ? p.bytes * (1 - p.saved / p.files) : 0; });
+      // each game with the one narration this family hears (its voice, in its language where the game has it)
+      Object.keys(s.packs).forEach(function (k) {
+        var at = k.indexOf("@");
+        if (at >= 0 && k.slice(at + 1) !== vFor(k.slice(0, at))) return;
+        var p = s.packs[k]; files += p.files; done += p.saved; left += p.files ? p.bytes * (1 - p.saved / p.files) : 0;
+      });
       var mb = Math.max(1, Math.round(left / 1e6));
       offlineList(s);
       if (done >= files) { btn.hidden = true; out.textContent = "✓ Every game is saved on this device."; saving = false; return true; }
@@ -555,22 +578,23 @@
   }
   // game by game: whether it is on this device (whole, partly from playing, or not), its size, download or delete
   function mbs(b) { return b >= 1e6 ? Math.max(1, Math.round(b / 1e6)) + " MB" : Math.max(1, Math.round(b / 1e3)) + " KB"; }
-  function gameState(s, slug, v) {
-    var a = s.packs[slug], b = s.packs[slug + "@" + v] || { files: 0, saved: 0, bytes: 0, here: 0 };
-    var here = a.here + b.here + ((s.packs[slug + (v === "m" ? "@w" : "@m")] || {}).here || 0);
+  function gameState(s, slug) {
+    var v = vFor(slug), a = s.packs[slug], b = s.packs[slug + "@" + v] || { files: 0, saved: 0, bytes: 0, here: 0 };
+    var here = a.here + b.here;                          // and any other narration of it saved before (another voice)
+    Object.keys(s.packs).forEach(function (k) { if (k.indexOf(slug + "@") === 0 && k !== slug + "@" + v) here += s.packs[k].here || 0; });
     return { total: a.bytes + b.bytes, here: here, kept: a.kept, whole: a.kept && a.saved >= a.files && b.saved >= b.files,
       pct: Math.floor((a.saved + b.saved) / Math.max(1, a.files + b.files) * 100) };
   }
   function postSW(msg) { return navigator.serviceWorker.ready.then(function (reg) { reg.active.postMessage(msg); }); }
   function offlineList(s) {
     var ul = document.getElementById("offlineList"); if (!ul) return;
-    var v = voiceSet(), games = [], used = (s.packs.core || {}).here || 0, whole = 0, any = 0;
+    var games = [], used = (s.packs.core || {}).here || 0, whole = 0, any = 0;
     CATALOGUE.forEach(function (sec) { sec.games.forEach(function (g) { if (s.packs[g.slug] && games.indexOf(g) < 0) games.push(g); }); });
     ul.innerHTML = "";
     games.forEach(function (g) {
-      var st = gameState(s, g.slug, v);
+      var st = gameState(s, g.slug), v = vFor(g.slug);
       used += st.here; if (st.whole) whole++; if (st.here) any++;
-      var li = el("li"), txt = el("span", "t", g.title), state;
+      var li = el("li"), txt = el("span", "t", T(g, "title")), state;
       if (st.whole) state = "✓ Downloaded · " + mbs(st.total);
       else if (st.kept) state = "Downloading… " + st.pct + "% of " + mbs(st.total);
       else if (st.here) state = "Played pages kept · " + mbs(st.here) + " of " + mbs(st.total);
@@ -587,7 +611,7 @@
         var rm = el("button", "", "Delete"); rm.type = "button"; rm.setAttribute("aria-label", "Delete " + g.title + ", frees " + mbs(st.here || st.total));
         rm.addEventListener("click", function () {
           if (!window.confirm("Delete " + g.title + " from this device? It frees " + mbs(Math.max(st.here, st.whole ? st.total : 0)) + ". Your child’s progress and your recordings are kept.")) return;
-          postSW({ type: "asmau-drop", packs: [g.slug, g.slug + "@w", g.slug + "@m"] }); setTimeout(saveState, 800);
+          postSW({ type: "asmau-drop", packs: [g.slug, g.slug + "@*"] }); setTimeout(saveState, 800);
         });
         li.appendChild(rm);
       }
@@ -604,10 +628,9 @@
   function markOffline() {
     swStatus().then(function (s) {
       if (!s) return;
-      var v = voiceSet();
       Array.prototype.forEach.call(document.querySelectorAll("a.tile[data-slug]"), function (a) {
         var slug = a.getAttribute("data-slug"); if (!s.packs[slug]) return;
-        var on = gameState(s, slug, v).whole, tag = a.querySelector(".off-tag");
+        var on = gameState(s, slug).whole, tag = a.querySelector(".off-tag");
         if (on && !tag) { var t2 = el("span", "off-tag", "✓ Offline"); a.querySelector(".cover").appendChild(t2); }
         if (!on && tag) tag.remove();
       });
@@ -616,7 +639,7 @@
   function saveAll() {
     if (saving) return;
     saving = true;
-    navigator.serviceWorker.ready.then(function (reg) { reg.active.postMessage({ type: "asmau-want", packs: "all", voice: voiceSet() }); });
+    navigator.serviceWorker.ready.then(function (reg) { reg.active.postMessage({ type: "asmau-want", packs: "all", voice: (CODE !== "en" ? CODE + "-" : "") + voiceSet() }); });
     (function poll() { saveState().then(function (finished) { if (!finished && saving) setTimeout(poll, 1500); }); })();
   }
 
@@ -632,12 +655,47 @@
       // games already saved on this device get the new voice too, so they keep working without internet
       swStatus().then(function (s) {
         if (!s) return;
-        var v = voiceSet(), want = Object.keys(s.packs).filter(function (k) { return k.indexOf("@") < 0 && k !== "core" && s.packs[k].kept; })
-          .map(function (k) { return k + "@" + v; });
-        if (want.length) navigator.serviceWorker.ready.then(function (reg) { reg.active.postMessage({ type: "asmau-want", packs: want, voice: v }); });
+        var want = Object.keys(s.packs).filter(function (k) { return k.indexOf("@") < 0 && k !== "core" && s.packs[k].kept; })
+          .map(function (k) { return k + "@" + vFor(k); });
+        if (want.length) navigator.serviceWorker.ready.then(function (reg) { reg.active.postMessage({ type: "asmau-want", packs: want }); });
       });
     });
     show();
+  }
+
+  // For parents > Language: English, and each language at least one game has (checked; or any draft with ?lang=)
+  function wireLangPick() {
+    var pick = document.getElementById("langPick"), item = document.getElementById("langItem");
+    if (!L || !pick) return;
+    var have = {};
+    CATALOGUE.forEach(function (sec) { sec.games.forEach(function (g) {
+      (g.langs || []).forEach(function (c) { have[c] = (have[c] || 0) + 1; });
+      if (L.preview && g.tr) Object.keys(g.tr).forEach(function (c) { if ((g.langs || []).indexOf(c) < 0) have[c] = (have[c] || 0) + 1; });
+    }); });
+    var codes = Object.keys(have).filter(function (c) { return L.names[c]; });
+    if (!codes.length && CODE === "en") return;           // nothing to choose yet
+    item.hidden = false;
+    pick.innerHTML = "";
+    ["en"].concat(codes).forEach(function (c) {
+      var b = el("button", "", L.names[c] || c); b.type = "button"; b.setAttribute("role", "radio");
+      b.setAttribute("data-lang", c); b.setAttribute("aria-checked", String(c === CODE)); b.lang = c;
+      if (c !== "en") b.appendChild(el("small", "", " · " + have[c] + (have[c] === 1 ? " game" : " games")));
+      pick.appendChild(b);
+    });
+    pick.addEventListener("click", function (e) {
+      var b = e.target.closest ? e.target.closest("[data-lang]") : null; if (!b) return;
+      var c = b.getAttribute("data-lang"); if (c === CODE) return;
+      L.set(c);
+      // games kept on this device get their narration in the new language too, so they keep working without internet
+      swStatus().then(function (s) {
+        if (s) {
+          var want = Object.keys(s.packs).filter(function (k) { return k.indexOf("@") < 0 && k !== "core" && s.packs[k].kept && BYSLUG[k] && (BYSLUG[k].langs || []).indexOf(c) >= 0; })
+            .map(function (k) { return k + "@" + c + "-" + voiceSet(); });
+          if (want.length) postSW({ type: "asmau-want", packs: want });
+        }
+        location.reload();
+      });
+    });
   }
 
   function wireParents() {
@@ -645,7 +703,7 @@
     document.getElementById("saveAllBtn").addEventListener("click", saveAll);
     document.getElementById("dropAllBtn").addEventListener("click", function () {
       if (!window.confirm("Delete every game from this device? This frees the space they use. Your child’s progress and your recordings are kept, and games can be downloaded again.")) return;
-      var all = []; CATALOGUE.forEach(function (sec) { sec.games.forEach(function (g) { all.push(g.slug, g.slug + "@w", g.slug + "@m"); }); });
+      var all = []; CATALOGUE.forEach(function (sec) { sec.games.forEach(function (g) { all.push(g.slug, g.slug + "@*"); }); });
       postSW({ type: "asmau-drop", packs: all }); setTimeout(function () { saveState(); markOffline(); }, 1200);
     });
     var back = document.getElementById("parents"), btn = document.getElementById("parentsBtn"), close = document.getElementById("parentsClose");

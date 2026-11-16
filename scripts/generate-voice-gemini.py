@@ -6,6 +6,8 @@ recording always replaces it.
 
   PROJECT=asmau-assets python3 scripts/generate-voice-gemini.py games/<slug> [--all]
   VOICE=m PROJECT=asmau-assets python3 scripts/generate-voice-gemini.py games/<slug>    (the man's voice, Achird)
+  STORY_LANG=id [VOICE=m] PROJECT=asmau-assets python3 scripts/generate-voice-gemini.py games/<slug>
+                                    (the game's translation, games/<slug>/lang/id.json, into assets/audio-id[-m]/)
 
 Writes games/<slug>/assets/audio/<id>.mp3 for every line in narration.json, English and Arabic, skipping lines
 whose words have not changed since last time (remembered in scripts/voice/<slug>.json), and removes clips whose
@@ -40,8 +42,20 @@ if SET == "m":
              "in a natural, clear storytelling voice at a calm, steady pace, like a good teacher reading a story to children.")
     STYLE_AR = ("Say this Arabic word or phrase clearly, with correct Arabic pronunciation, warmly and calmly, as a kind "
                 "West African man would say it to a child.")
-AUDIO = "audio-m" if SET == "m" else "audio"
-MEMO = ".m.json" if SET == "m" else ".json"
+# Another language (shared/lang.js): STORY_LANG=id reads the game's translation (games/<slug>/lang/id.json) into
+# assets/audio-id/ (VOICE=m: audio-id-m/), remembered in scripts/voice/<slug>.id.json (.id.m.json). The same two
+# voices, asked to speak as a native speaker of the language, not with a West African accent.
+TONGUE = os.environ.get("STORY_LANG", "en")
+TONGUES = {"id": "natural Bahasa Indonesia, with the accent of a native Indonesian speaker"}
+if TONGUE != "en":
+    if TONGUE not in TONGUES:
+        raise SystemExit("no voice style for STORY_LANG=" + TONGUE + " (add it to TONGUES)")
+    who = "woman" if SET != "m" else "man"
+    STYLE = ("Read this aloud in " + TONGUES[TONGUE] + ", as a kind Indonesian " + who + ", " +
+             ("gently and warmly, like a mother telling a bedtime story to young children." if SET != "m" else
+              "in a natural, clear storytelling voice at a calm, steady pace, like a good teacher reading a story to children."))
+AUDIO = ("audio-m" if SET == "m" else "audio") if TONGUE == "en" else "audio-" + TONGUE + ("-m" if SET == "m" else "")
+MEMO = ("." + TONGUE if TONGUE != "en" else "") + (".m.json" if SET == "m" else ".json")
 SIG = MODEL + "|" + VOICE + "|" + STYLE + "|" + STYLE_AR
 # A line of one to four words is easily "continued" by the voice (it once made up a whole story after "Four"),
 # so short lines also get this, and every clip far longer than its words allow is made again (see too_long).
@@ -107,11 +121,24 @@ def to_mp3(pcm, mp3):
     os.unlink(f.name)
 
 
+def game_lines(game):
+    """The lines to voice: narration.json, or in another language its translation (Arabic lines stay as they are)."""
+    lines = json.load(open(os.path.join(game, "narration.json"), encoding="utf-8"))
+    if TONGUE == "en":
+        return lines
+    tr = json.load(open(os.path.join(game, "lang", TONGUE + ".json"), encoding="utf-8")).get("lines", {})
+    missing = [l["id"] for l in lines if l.get("lang") != "ar" and not tr.get(l["id"])]
+    if missing:
+        raise SystemExit("not translated yet: " + ", ".join(missing[:10]) + (" ..." if len(missing) > 10 else ""))
+    return [dict(l, text=l["text"] if l.get("lang") == "ar" else tr[l["id"]], lang=l.get("lang", "en") if l.get("lang") == "ar" else TONGUE)
+            for l in lines]
+
+
 def main():
     if len(sys.argv) < 2:
         raise SystemExit(__doc__)
     game, redo = sys.argv[1], "--all" in sys.argv
-    lines = json.load(open(os.path.join(game, "narration.json"), encoding="utf-8"))
+    lines = game_lines(game)
     out = os.path.join(game, "assets", AUDIO)
     os.makedirs(out, exist_ok=True)
     memo_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "voice", os.path.basename(os.path.normpath(game)) + MEMO)

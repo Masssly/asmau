@@ -4,7 +4,8 @@
   Everything the site serves belongs to a pack (scripts/build-offline.js writes packs/<pack>.json, and the index of
   packs below): "core" (home page, shared scripts, fonts, icons, covers) is saved at the first visit. A game is saved
   as it is played: each page, picture and sound is kept once shown, so what was played works again without internet.
-  A parent can download a whole game ("<slug>" with the voice they chose, "<slug>@w" or "<slug>@m") and delete it
+  A parent can download a whole game ("<slug>" with the voice they chose, "<slug>@w" or "<slug>@m", or in another
+  language "<slug>@id-w" or "<slug>@id-m") and delete it
   again to free space (owner's decision, 16 November 2026: data costs money, so downloading is the parent's choice).
   A release downloads, for each pack kept whole on this device, only the files whose fingerprint changed.
 
@@ -17,38 +18,38 @@
 
 // BEGIN GENERATED
 const RELEASE = "2026.11.38";
-const BUILD = "abdb975ce90b";
+const BUILD = "e17e147a714a";
 // pack: [fingerprint of packs/<pack>.json, bytes, files]
 const PACKS = {
-  "adam":["22e75c3649",2721568,55],
+  "adam":["de6fc807f2",2721613,55],
   "adam@m":["a617f3f408",4026446,147],
   "adam@w":["217fc43e27",4316508,147],
-  "core":["2511d47c18",971241,37],
-  "count-the-crescents":["551c35512f",82971,5],
+  "core":["ab9807f368",987835,39],
+  "count-the-crescents":["c58ffd2f9d",83016,5],
   "count-the-crescents@m":["76410cb722",587647,52],
   "count-the-crescents@w":["238f9dbdf7",584828,52],
-  "ibn-battuta":["9b8a2637e3",3497818,54],
+  "ibn-battuta":["29eda0025e",3497863,54],
   "ibn-battuta@m":["0e8002f829",3511529,130],
   "ibn-battuta@w":["f0093c205e",3797936,130],
-  "musa":["2483b2f15a",8063682,161],
+  "musa":["ac7658bfbd",8063727,161],
   "musa@m":["82bed29f40",13950526,422],
   "musa@w":["5e7023ffde",15159879,422],
-  "nana-asmau":["7ee2cb084d",2470795,51],
+  "nana-asmau":["72473f8c98",2470840,51],
   "nana-asmau@m":["f459229234",3366561,116],
   "nana-asmau@w":["e85f1693d8",3639073,116],
-  "nuh":["8640bd54a4",3351610,55],
+  "nuh":["5f6c67d1bd",3351655,55],
   "nuh@m":["8e929a1b1f",3882631,145],
   "nuh@w":["1168c320e1",4156508,145],
-  "rahmah":["82f7861954",2715002,45],
+  "rahmah":["19904a1942",2725766,46],
   "rahmah@m":["a4fe8c7289",2874273,114],
   "rahmah@w":["cf884129c1",3117733,114],
-  "tap-and-say":["64ec037dc3",21672,4],
+  "tap-and-say":["284f427c70",21717,4],
   "tap-and-say@m":["71edb942d5",1501703,126],
   "tap-and-say@w":["d9e7f925b2",1472336,126],
-  "umm-ayman":["a88bb07809",3277454,56],
+  "umm-ayman":["92921475be",3277499,56],
   "umm-ayman@m":["24046ad1cb",3319749,116],
   "umm-ayman@w":["8c74443e58",3651189,116],
-  "yusuf":["f53f8bb124",5828130,93],
+  "yusuf":["74e1a8e90e",5828175,93],
   "yusuf@m":["f057137d75",6578971,190],
   "yusuf@w":["60ff092efc",7039872,190]
 };
@@ -101,7 +102,8 @@ function notePlayed(p) {
 function packFor(f) {
   var m = /^games\/([^/]+)\/(.*)$/.exec(f);
   if (!m) return "core";
-  return m[1] + (m[2].indexOf("assets/audio-m/") === 0 ? "@m" : m[2].indexOf("assets/audio/") === 0 ? "@w" : "");
+  var v = /^assets\/audio(?:-([a-z]{2,3}))?(-m)?\//.exec(m[2]);
+  return m[1] + (v ? "@" + (v[1] ? v[1] + "-" : "") + (v[2] ? "m" : "w") : "");
 }
 
 // the list of one pack, as this release has it (fetched once per change, then kept)
@@ -152,8 +154,16 @@ function want(packs, voice) {
   queue = queue.then(function () {
     return kept().then(function (k) {
       if (packs === "all") {
-        var skip = voice === "m" ? "@w" : "@m";
-        packs = Object.keys(PACKS).filter(function (p) { return p.slice(-2) !== skip; });
+        // every game, each with the one narration this family chose ("w", "m", or a language's "id-w", "id-m");
+        // a game not in that language comes with its English narration in the same voice
+        voice = voice || "w";
+        var plain = voice.slice(-1);
+        packs = [];
+        Object.keys(PACKS).forEach(function (p) {
+          if (p.indexOf("@") >= 0) return;
+          packs.push(p);
+          if (PACKS[p + "@" + voice]) packs.push(p + "@" + voice); else if (PACKS[p + "@" + plain]) packs.push(p + "@" + plain);
+        });
       }
       packs = packs.filter(function (p) { return PACKS[p]; });
       var next = k.concat(packs.filter(function (p) { return k.indexOf(p) < 0; }));
@@ -165,6 +175,10 @@ function want(packs, voice) {
 
 // delete games from this device (For parents > Delete): their pages, pictures and sounds; progress and recordings stay
 function drop(packs) {
+  // "<slug>@*" stands for every narration of the game (both voices, every language)
+  packs = [].concat.apply([], packs.map(function (p) {
+    return /@\*$/.test(p) ? Object.keys(PACKS).filter(function (k) { return k.indexOf(p.slice(0, -1)) === 0; }) : [p];
+  }));
   queue = queue.then(function () {
     return Promise.all([kept(), played()]).then(function (r) {
       var out = function (p) { return p === "core" || packs.indexOf(p) < 0; };
@@ -265,9 +279,8 @@ self.addEventListener("message", function (event) {
 
 // a page asking for a game's picture or sound by its path (pages of older releases): find its R2 address
 function mediaKey(f) {
-  var m = /^games\/([^/]+)\/(?:assets\/(audio-m|audio)\/)?/.exec(f);
-  if (!m) return Promise.resolve(null);
-  var p = m[1] + (m[2] === "audio-m" ? "@m" : m[2] === "audio" ? "@w" : "");
+  if (!/^games\/[^/]+\//.test(f)) return Promise.resolve(null);
+  var p = packFor(f);
   return list(p).then(function (l) { return l && l.files[f] ? keyFor(f, l.files[f]) : null; }).catch(function () { return null; });
 }
 

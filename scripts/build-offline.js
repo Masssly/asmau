@@ -8,6 +8,7 @@
                         <slug>     a game's pages, scripts, data, notes and pictures (saved when it is first opened)
                         <slug>@w   its narration in the woman's voice (assets/audio/)
                         <slug>@m   its narration in the man's voice (assets/audio-m/)
+                        <slug>@id-w, <slug>@id-m   its narration in another language (assets/audio-id/, audio-id-m/)
     sw.js               between its GENERATED markers: the release, a fingerprint of the whole site, and the index of
                         packs (name: fingerprint of its list, bytes, files). A few short lines per game.
     games/<slug>/parents/notes.json
@@ -55,8 +56,9 @@ const isR2 = (f) => /^games\/[^/]+\/assets\//.test(f) && ON_R2.test(f);
 function packOf(f) {
   const m = /^games\/([^/]+)\/(.*)$/.exec(f);
   if (!m || m[1] === "index.json") return "core";          // games/index.json: the catalogue the home page reads
-  if (m[2].startsWith("assets/audio-m/")) return m[1] + "@m";
-  if (m[2].startsWith("assets/audio/")) return m[1] + "@w";
+  // assets/audio/ -> @w, audio-m/ -> @m; a language's narration: audio-id/ -> @id-w, audio-id-m/ -> @id-m
+  const v = /^assets\/audio(?:-([a-z]{2,3}))?(-m)?\//.exec(m[2]);
+  if (v) return m[1] + "@" + (v[1] ? v[1] + "-" : "") + (v[2] ? "m" : "w");
   return m[1];
 }
 
@@ -91,12 +93,41 @@ function readPacks() {
 // files whose content this script writes: given here so that --check sees what they would be
 // the home page's catalogue: the sections of manifest.json with each game's game.json, in one file (one request, not
 // one per game; covers load as they scroll into view)
+function langsOf(slug) {
+  const d = path.join(ROOT, "games", slug, "lang");
+  if (!fs.existsSync(d)) return [];
+  return fs.readdirSync(d).filter((f) => /^[a-z]{2,3}\.json$/.test(f)).filter((f) => {
+    try { return JSON.parse(fs.readFileSync(path.join(d, f), "utf8")).status === "checked"; } catch (e) { return false; }
+  }).map((f) => f.slice(0, -5)).sort();
+}
+
+function cardsOf(slug, g) {
+  const d = path.join(ROOT, "games", slug, "lang"), out = {};
+  if (!fs.existsSync(d)) return out;
+  for (const f of fs.readdirSync(d).filter((x) => /^[a-z]{2,3}\.json$/.test(x)).sort()) {
+    let s;
+    try { s = JSON.parse(fs.readFileSync(path.join(d, f), "utf8")).strings || {}; } catch (e) { continue; }
+    const c = {};
+    for (const k of ["title", "tagline", "coverAlt"]) if (g[k] && s[g[k]]) c[k] = s[g[k]];
+    if (Object.keys(c).length) out[f.slice(0, -5)] = c;
+  }
+  return out;
+}
+
 function catalogue() {
   const man = JSON.parse(fs.readFileSync(path.join(ROOT, "manifest.json"), "utf8"));
   const sections = (man.sections || [{ title: "Games", games: man.games || [] }]).map((s) => ({
     title: s.title, icon: s.icon, more: s.more,
     games: (s.games || []).map((slug) => {
-      try { return JSON.parse(fs.readFileSync(path.join(ROOT, "games", slug, "game.json"), "utf8")); } catch (e) { return null; }
+      let g;
+      try { g = JSON.parse(fs.readFileSync(path.join(ROOT, "games", slug, "game.json"), "utf8")); } catch (e) { return null; }
+      // the languages it is shown in besides English: only translations a native speaker has checked (shared/lang.js)
+      const langs = langsOf(slug);
+      if (langs.length) g.langs = langs;
+      // its card in each language it has (drafts too: the home page shows a draft only with ?lang=<code>)
+      const tr = cardsOf(slug, g);
+      if (Object.keys(tr).length) g.tr = tr;
+      return g;
     }).filter(Boolean)
   }));
   return JSON.stringify({ sections }) + "\n";

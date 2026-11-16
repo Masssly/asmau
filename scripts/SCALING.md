@@ -15,6 +15,7 @@ Everything the site serves belongs to one pack:
 | `<slug>`        | a game's pages, scripts, data, notes for parents, and its pictures   | the game is first opened    |
 | `<slug>@w`      | the game's narration in the woman's voice (`assets/audio/`)          | opened, if that voice chosen |
 | `<slug>@m`      | the game's narration in the man's voice (`assets/audio-m/`)          | opened, if that voice chosen |
+| `<slug>@id-w`, `<slug>@id-m` | its narration in another language (`assets/audio-id/`, `audio-id-m/`) | opened, in that language and voice |
 
 `scripts/build-offline.js` writes one small list per pack, `packs/<pack>.json` (`{ "files": { path: fingerprint },
 "bytes": n }`), and puts only the index of packs (name, fingerprint of its list, size) inside sw.js. That index grows by

@@ -1,0 +1,66 @@
+// Languages (shared/lang.js): a game in another language shows and says its translated words, keeps its pictures,
+// activities and page numbers; a draft is seen only with ?lang=; a game without the language stays in English.
+"use strict";
+const path = require("path");
+const fs = require("fs");
+const { chromium } = require("playwright");
+const { serve, checker } = require("./lib");
+
+module.exports = async function () {
+  const T = checker("languages"), repo = path.join(__dirname, "..");
+  const tr = JSON.parse(fs.readFileSync(path.join(repo, "games/rahmah/lang/id.json"), "utf8"));
+  const site = await serve(repo), browser = await chromium.launch();
+  const ctx = await browser.newContext({ viewport: { width: 390, height: 844 } });
+  await ctx.addInitScript(() => { try { localStorage.setItem("asmau-lang", "id"); } catch (e) { /* */ } });
+  const p = await ctx.newPage();
+  const sounds = [];
+  p.on("request", (r) => { if (/\.mp3(\?|$)/.test(r.url())) sounds.push(r.url()); });
+  const G = site.url + "games/rahmah/index.html?skipms=300";
+
+  // 1. Indonesian chosen, but the translation is a draft: families still see English
+  if (tr.status !== "checked") {
+    await p.goto(G, { waitUntil: "networkidle" }); await p.waitForTimeout(400);
+    T.check((await p.textContent("#startBtn")).trim() === "Start the story", "a draft translation is not shown to families");
+  }
+
+  // 2. the person checking it opens it with ?lang=id
+  await p.goto(G + "&lang=id", { waitUntil: "networkidle" }); await p.waitForTimeout(500);
+  T.check((await p.textContent("#startBtn")).trim() === "Mulai cerita", "the start button is in Indonesian: " + (await p.textContent("#startBtn")));
+  T.check((await p.textContent("#title h2")).trim() === "Kisah Rahmah El Yunusiyyah", "the title is in Indonesian");
+  T.check(/Rahmah El Yunusiyyah \(1900/.test(await p.textContent("details.parents")), "the For parents box stays in English");
+  await p.click("#startBtn"); await p.waitForTimeout(900);
+  T.check((await p.textContent("#captionText")).trim() === tr.lines["r1-a"], "the first page reads in Indonesian");
+  T.check((await p.textContent("#chTitle")).trim() === "Gadis dari Pegunungan" && /^Bab 1 dari 11$/.test((await p.textContent("#chNum")).trim()), "the chapter heading is in Indonesian: " + (await p.textContent("#chNum")));
+  T.check(/halaman 1\.1/.test(await p.textContent("#pnoteSum")), "the page number is kept: " + (await p.textContent("#pnoteSum")));
+  T.check(await p.evaluate(() => { const i = document.querySelector("#stage img.pic"); return !!i && i.complete && i.naturalWidth > 0; }), "the picture is the same");
+  sounds.length = 0;
+  await p.click("#caption"); await p.waitForTimeout(800);
+  T.check(sounds.some((u) => /\/assets\/audio-id\/r1-a\.mp3/.test(u)), "it plays the Indonesian clip: " + sounds.slice(-2).join(" "));
+  // a choice: its options in Indonesian
+  for (let i = 0; i < 4; i++) { await p.click("#nextBtn"); await p.waitForTimeout(500); }
+  const opts = await p.$$eval("#stage button", (bs) => bs.map((b) => b.textContent.trim()).filter(Boolean));
+  T.check(opts.some((o) => o.includes("Di pegunungan Sumatra")), "the answers of a question are in Indonesian: " + JSON.stringify(opts));
+
+  // 3. a game with no Indonesian stays English, even when asked for it
+  await p.goto(site.url + "games/yusuf/index.html?lang=id", { waitUntil: "networkidle" }); await p.waitForTimeout(400);
+  T.check((await p.textContent("#startBtn")).trim() === "Start the story", "a game not translated stays wholly English");
+
+  // 4. the home page: the language choice, the card in Indonesian, the others marked as English for now
+  await p.goto(site.url + "index.html?lang=id", { waitUntil: "networkidle" }); await p.waitForTimeout(600);
+  const card = await p.textContent("a.tile[data-slug=rahmah]");
+  T.check(card.includes("Gadis dari pegunungan Sumatra"), "Rahmah's card is in Indonesian");
+  T.check((await p.textContent("a.tile[data-slug=yusuf]")).includes("Untuk sementara dalam bahasa Inggris"), "a game not translated says it is in English for now");
+  T.check(await p.isVisible("text=Kisah Para Nabi"), "the section titles are in Indonesian");
+  T.check(!(await p.$("#langItem[hidden]")), "For parents offers the language choice");
+  await browser.close();
+
+  // 5. a family without ?lang= and no translation checked yet: no language choice at all
+  if (tr.status !== "checked") {
+    const b2 = await chromium.launch(), p2 = await b2.newPage();
+    await p2.goto(site.url + "index.html", { waitUntil: "networkidle" }); await p2.waitForTimeout(500);
+    T.check(!!(await p2.$("#langItem[hidden]")), "until a translation is checked, families see no language choice");
+    await b2.close();
+  }
+  await site.close();
+  return T.done();
+};

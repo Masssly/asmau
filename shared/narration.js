@@ -9,6 +9,7 @@
        2026 at the owner's choice, Arabic too. Or, if the family chose the man's
        voice (For parents > Your voice; localStorage "asmau-voice" = "m"),
        assets/audio-m/<id>.mp3, "Achird". A parent's recording replaces either.
+       In another language (shared/lang.js) the same, from assets/audio-<code>/ and assets/audio-<code>-m/.
     3. The device's own speechSynthesis voice, for ENGLISH only.
 
   The device voice never reads Arabic: it would guess the pronunciation, and a
@@ -262,7 +263,7 @@ window.AsmauNarration = (function () {
         if (lang === "ar") { resolve(); return; } // never synthesize Arabic — see the header
         if (my !== token || !("speechSynthesis" in window) || !text) { resolve(); return; }
         var u = new SpeechSynthesisUtterance(text);
-        u.lang = "en-US";
+        u.lang = ({ en: "en-US", id: "id-ID" })[lang] || lang;
         u.rate = 0.85;
         u.pitch = 1.1;
         u.volume = voiceLevel();
@@ -285,7 +286,11 @@ window.AsmauNarration = (function () {
     opts = opts || {};
     if (voiceLevel() === 0) { stop(); return Promise.resolve(); }      // the voice button is at "off"
     var lang = opts.lang || "en";
-    var man = voiceSet() === "m", base = opts.audioBase || (man ? "assets/audio-m/" : "assets/audio/");
+    var man = voiceSet() === "m", L = window.AsmauLang;
+    // the narration in the chosen language (shared/lang.js): assets/audio-id/, audio-id-m/; English: audio/, audio-m/
+    var dir = L ? L.audioDir(man ? "m" : "w", game) : (man ? "audio-m" : "audio");
+    var base = opts.audioBase || ("assets/" + dir + "/");
+    var womans = "assets/" + dir.replace(/-m$/, "") + "/";
 
     stop();
     var my = token;
@@ -295,7 +300,7 @@ window.AsmauNarration = (function () {
     var file = M(base + id + ".mp3");
     // a line the man's voice has not read yet is read by the woman's voice
     function committed() {
-      return playSrc(file, my, false).then(function (ok) { return ok || (man && !opts.audioBase && my === token ? playSrc(M("assets/audio/" + id + ".mp3"), my, false) : ok); });
+      return playSrc(file, my, false).then(function (ok) { return ok || (man && !opts.audioBase && my === token ? playSrc(M(womans + id + ".mp3"), my, false) : ok); });
     }
     return getRecordedClip(game, id).then(function (blob) {
       if (!blob) return committed();

@@ -41,14 +41,24 @@ def main():
     game = sys.argv[1]
     mx = int(sys.argv[sys.argv.index("--max-chars") + 1]) if "--max-chars" in sys.argv else 10 ** 6
     ids = sys.argv[sys.argv.index("--ids") + 1].split(",") if "--ids" in sys.argv else None
-    lines = [l for l in json.load(open(os.path.join(game, "narration.json"), encoding="utf-8"))
-             if len(l["text"]) <= mx and (ids is None or l["id"] in ids)]
+    # STORY_LANG=id: the clips of a translation (assets/audio-id/, VOICE=m: audio-id-m/), against its words
+    tongue, man = os.environ.get("STORY_LANG", "en"), os.environ.get("VOICE") == "m"
+    folder = ("audio-m" if man else "audio") if tongue == "en" else "audio-" + tongue + ("-m" if man else "")
+    all_lines = json.load(open(os.path.join(game, "narration.json"), encoding="utf-8"))
+    if tongue != "en":
+        tr = json.load(open(os.path.join(game, "lang", tongue + ".json"), encoding="utf-8")).get("lines", {})
+        all_lines = [dict(l, text=tr.get(l["id"]) or l["text"]) if l.get("lang") != "ar" else l for l in all_lines]
+    lines = [l for l in all_lines if len(l["text"]) <= mx and (ids is None or l["id"] in ids)]
 
     def job(l):
-        got = hear(os.path.join(game, "assets", "audio-m" if os.environ.get("VOICE") == "m" else "audio", l["id"] + ".mp3"), l["text"])
+        got = hear(os.path.join(game, "assets", folder, l["id"] + ".mp3"), l["text"])
         want, heard = words(l["text"]), words(got)
         extra = len(heard) - len(want)
-        if got.startswith("ERROR") or extra > 2 or any(w in heard for w in ("auntie", "accent", "bedtime", "text")) \
+        # in a translation, also a clip read in the wrong language (few of its words heard)
+        same = len(set(want) & set(heard)) / max(1, len(set(want)))
+        if tongue != "en" and l.get("lang") != "ar" and same < 0.6:
+            print("SUSPECT %s %s | only %d%% of the words heard | want: %s | heard: %s" % (game, l["id"], same * 100, l["text"], got.strip()), flush=True)
+        elif got.startswith("ERROR") or extra > 2 or any(w in heard for w in ("auntie", "accent", "bedtime", "text")) \
                 and not any(w in want for w in ("auntie", "accent", "bedtime", "text")):
             print("SUSPECT %s %s | want: %s | heard: %s" % (game, l["id"], l["text"], got.strip()), flush=True)
     with ThreadPoolExecutor(8) as ex:

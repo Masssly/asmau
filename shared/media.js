@@ -24,7 +24,13 @@ window.AsmauMedia = (function () {
     }
     return loaded[pack];
   }
-  function ready(slug) { return Promise.all([load(slug), load(slug + "@w"), load(slug + "@m")]); }
+  function ready(slug) {
+    var l = [load(slug), load(slug + "@w"), load(slug + "@m")];
+    // another language (shared/lang.js): its narration too, where the game has it
+    var code = window.AsmauLang && window.AsmauLang.code();
+    if (code && code !== "en") l.push(load(slug + "@" + code + "-w"), load(slug + "@" + code + "-m"));
+    return Promise.all(l);
+  }
 
   // the path from the site's root, for a path relative to this page
   function sitePath(p) {

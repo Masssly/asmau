@@ -1,0 +1,176 @@
+{
+ "album": "Nuh: Music from the Game",
+ "artist": "Asmau",
+ "year": 2026,
+ "tracks": [
+  {
+   "n": 1,
+   "title": "Nuh: Title",
+   "mood": "wonder",
+   "seconds": 60,
+   "heard": [
+    "Nuh"
+   ],
+   "lufs": -15.9,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/ee3f8b6bf6/soundtrack/games/nuh/01-title.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/2e20542186/soundtrack/games/nuh/lossless/01-title.ogg"
+  },
+  {
+   "n": 2,
+   "title": "Chapter 1: Forgetting Allah",
+   "mood": "pastoral longing tense",
+   "seconds": 90,
+   "heard": [
+    "Nuh"
+   ],
+   "lufs": -16.0,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/77f17d6409/soundtrack/games/nuh/02-chapter-1-forgetting-allah.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/4c37b63449/soundtrack/games/nuh/lossless/02-chapter-1-forgetting-allah.ogg"
+  },
+  {
+   "n": 3,
+   "title": "Chapter 2: Nuh Is Sent",
+   "mood": "awe pastoral",
+   "seconds": 75,
+   "heard": [
+    "Nuh"
+   ],
+   "lufs": -16.0,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/ffc702c745/soundtrack/games/nuh/03-chapter-2-nuh-is-sent.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/c1407d41c3/soundtrack/games/nuh/lossless/03-chapter-2-nuh-is-sent.ogg"
+  },
+  {
+   "n": 4,
+   "title": "Chapter 3: Night and Day",
+   "mood": "pastoral longing",
+   "seconds": 90,
+   "heard": [
+    "Nuh"
+   ],
+   "lufs": -16.0,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/0460fd359e/soundtrack/games/nuh/04-chapter-3-night-and-day.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/9c6d4d6fe4/soundtrack/games/nuh/lossless/04-chapter-3-night-and-day.ogg"
+  },
+  {
+   "n": 5,
+   "title": "Chapter 4: Look at Allah's World",
+   "mood": "pastoral joy wonder triumph",
+   "seconds": 90,
+   "heard": [
+    "Nuh"
+   ],
+   "lufs": -16.0,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/5b11d83b63/soundtrack/games/nuh/05-chapter-4-look-at-allahs-world.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/d107278ad2/soundtrack/games/nuh/lossless/05-chapter-4-look-at-allahs-world.ogg"
+  },
+  {
+   "n": 6,
+   "title": "Chapter 5: Everyone Is Welcome",
+   "mood": "tense pastoral",
+   "seconds": 75,
+   "heard": [
+    "Nuh"
+   ],
+   "lufs": -16.0,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/3e1f32a1b5/soundtrack/games/nuh/06-chapter-5-everyone-is-welcome.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/7e39f34146/soundtrack/games/nuh/lossless/06-chapter-5-everyone-is-welcome.ogg"
+  },
+  {
+   "n": 7,
+   "title": "Chapter 6: Build the Ark",
+   "mood": "longing awe pastoral",
+   "seconds": 90,
+   "heard": [
+    "Nuh"
+   ],
+   "lufs": -16.0,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/750a0fa0ac/soundtrack/games/nuh/07-chapter-6-build-the-ark.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/5948e30f9a/soundtrack/games/nuh/lossless/07-chapter-6-build-the-ark.ogg"
+  },
+  {
+   "n": 8,
+   "title": "Chapter 7: They Laughed",
+   "mood": "tense pastoral triumph longing",
+   "seconds": 75,
+   "heard": [
+    "Nuh"
+   ],
+   "lufs": -15.9,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/bd4bf23da4/soundtrack/games/nuh/08-chapter-7-they-laughed.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/662358a4ad/soundtrack/games/nuh/lossless/08-chapter-7-they-laughed.ogg"
+  },
+  {
+   "n": 9,
+   "title": "Chapter 8: Two by Two",
+   "mood": "tense joy pastoral",
+   "seconds": 90,
+   "heard": [
+    "Nuh"
+   ],
+   "lufs": -15.9,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/489a51b689/soundtrack/games/nuh/09-chapter-8-two-by-two.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/e0111e7798/soundtrack/games/nuh/lossless/09-chapter-8-two-by-two.ogg"
+  },
+  {
+   "n": 10,
+   "title": "Chapter 9: Bismillah",
+   "mood": "tense wonder",
+   "seconds": 75,
+   "heard": [
+    "Nuh"
+   ],
+   "lufs": -16.0,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/6bd033f155/soundtrack/games/nuh/10-chapter-9-bismillah.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/3baaa502ae/soundtrack/games/nuh/lossless/10-chapter-9-bismillah.ogg"
+  },
+  {
+   "n": 11,
+   "title": "Chapter 10: The Big Waves",
+   "mood": "dread tense sad longing",
+   "seconds": 120,
+   "heard": [
+    "Nuh"
+   ],
+   "lufs": -15.9,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/9376bcaa85/soundtrack/games/nuh/11-chapter-10-the-big-waves.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/a555acd3c3/soundtrack/games/nuh/lossless/11-chapter-10-the-big-waves.ogg"
+  },
+  {
+   "n": 12,
+   "title": "Chapter 11: The Humble Mountain",
+   "mood": "triumph wonder joy",
+   "seconds": 120,
+   "heard": [
+    "Nuh"
+   ],
+   "lufs": -16.0,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/7aafb07367/soundtrack/games/nuh/12-chapter-11-the-humble-mountain.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/b7a0d06263/soundtrack/games/nuh/lossless/12-chapter-11-the-humble-mountain.ogg"
+  },
+  {
+   "n": 13,
+   "title": "Nuh: The End",
+   "mood": "triumph",
+   "seconds": 60,
+   "heard": [
+    "Nuh"
+   ],
+   "lufs": -16.0,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/778b046098/soundtrack/games/nuh/13-the-end.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/93e254989d/soundtrack/games/nuh/lossless/13-the-end.ogg"
+  }
+ ]
+}

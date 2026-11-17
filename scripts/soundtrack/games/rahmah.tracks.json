@@ -1,0 +1,176 @@
+{
+ "album": "Rahmah El Yunusiyyah: Music from the Game",
+ "artist": "Asmau",
+ "year": 2026,
+ "tracks": [
+  {
+   "n": 1,
+   "title": "Rahmah El Yunusiyyah: Title",
+   "mood": "pastoral",
+   "seconds": 60,
+   "heard": [
+    "Rahmah El Yunusiyyah"
+   ],
+   "lufs": -16.0,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/a8ee14770b/soundtrack/games/rahmah/01-title.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/1c681b39bc/soundtrack/games/rahmah/lossless/01-title.ogg"
+  },
+  {
+   "n": 2,
+   "title": "Chapter 1: A Girl in the Mountains",
+   "mood": "wonder pastoral joy",
+   "seconds": 75,
+   "heard": [
+    "Rahmah El Yunusiyyah"
+   ],
+   "lufs": -16.0,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/a18b76523f/soundtrack/games/rahmah/02-chapter-1-a-girl-in-the-mountains.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/760cb187b5/soundtrack/games/rahmah/lossless/02-chapter-1-a-girl-in-the-mountains.ogg"
+  },
+  {
+   "n": 3,
+   "title": "Chapter 2: Learning to Read",
+   "mood": "sad joy pastoral",
+   "seconds": 75,
+   "heard": [
+    "Rahmah El Yunusiyyah"
+   ],
+   "lufs": -16.0,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/149eec22b5/soundtrack/games/rahmah/03-chapter-2-learning-to-read.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/31f275d844/soundtrack/games/rahmah/lossless/03-chapter-2-learning-to-read.ogg"
+  },
+  {
+   "n": 4,
+   "title": "Chapter 3: No More School",
+   "mood": "longing wonder triumph",
+   "seconds": 75,
+   "heard": [
+    "Rahmah El Yunusiyyah"
+   ],
+   "lufs": -16.0,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/50faf8b250/soundtrack/games/rahmah/04-chapter-3-no-more-school.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/6f790da8f8/soundtrack/games/rahmah/lossless/04-chapter-3-no-more-school.ogg"
+  },
+  {
+   "n": 5,
+   "title": "Chapter 4: Back to School",
+   "mood": "pastoral joy awe",
+   "seconds": 75,
+   "heard": [
+    "Rahmah El Yunusiyyah"
+   ],
+   "lufs": -16.0,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/9be18d7d4e/soundtrack/games/rahmah/05-chapter-4-back-to-school.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/d2049866f8/soundtrack/games/rahmah/lossless/05-chapter-4-back-to-school.ogg"
+  },
+  {
+   "n": 6,
+   "title": "Chapter 5: A School for Girls",
+   "mood": "triumph joy",
+   "seconds": 75,
+   "heard": [
+    "Rahmah El Yunusiyyah"
+   ],
+   "lufs": -15.9,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/bd40cfaeab/soundtrack/games/rahmah/06-chapter-5-a-school-for-girls.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/8da1adc32e/soundtrack/games/rahmah/lossless/06-chapter-5-a-school-for-girls.ogg"
+  },
+  {
+   "n": 7,
+   "title": "Chapter 6: Not Everyone Agreed",
+   "mood": "tense joy longing",
+   "seconds": 75,
+   "heard": [
+    "Rahmah El Yunusiyyah"
+   ],
+   "lufs": -15.9,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/8c24208a18/soundtrack/games/rahmah/07-chapter-6-not-everyone-agreed.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/537a05eca8/soundtrack/games/rahmah/lossless/07-chapter-6-not-everyone-agreed.ogg"
+  },
+  {
+   "n": 8,
+   "title": "Chapter 7: The Earthquake",
+   "mood": "sad joy wonder triumph",
+   "seconds": 90,
+   "heard": [
+    "Rahmah El Yunusiyyah"
+   ],
+   "lufs": -16.0,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/26596567a7/soundtrack/games/rahmah/08-chapter-7-the-earthquake.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/04a2014d54/soundtrack/games/rahmah/lossless/08-chapter-7-the-earthquake.ogg"
+  },
+  {
+   "n": 9,
+   "title": "Chapter 8: On Her Own Feet",
+   "mood": "regal joy",
+   "seconds": 60,
+   "heard": [
+    "Rahmah El Yunusiyyah"
+   ],
+   "lufs": -15.9,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/f8c29353de/soundtrack/games/rahmah/09-chapter-8-on-her-own-feet.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/67b50b0e9d/soundtrack/games/rahmah/lossless/09-chapter-8-on-her-own-feet.ogg"
+  },
+  {
+   "n": 10,
+   "title": "Chapter 9: A New Flag",
+   "mood": "triumph joy",
+   "seconds": 60,
+   "heard": [
+    "Rahmah El Yunusiyyah"
+   ],
+   "lufs": -15.9,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/23b6a71c5d/soundtrack/games/rahmah/10-chapter-9-a-new-flag.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/77c78a1070/soundtrack/games/rahmah/lossless/10-chapter-9-a-new-flag.ogg"
+  },
+  {
+   "n": 11,
+   "title": "Chapter 10: To Cairo",
+   "mood": "awe trek triumph joy regal",
+   "seconds": 90,
+   "heard": [
+    "Rahmah El Yunusiyyah"
+   ],
+   "lufs": -16.0,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/5b322ec288/soundtrack/games/rahmah/11-chapter-10-to-cairo.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/111164e60a/soundtrack/games/rahmah/lossless/11-chapter-10-to-cairo.ogg"
+  },
+  {
+   "n": 12,
+   "title": "Chapter 11: Her School Today",
+   "mood": "triumph sad joy",
+   "seconds": 75,
+   "heard": [
+    "Rahmah El Yunusiyyah"
+   ],
+   "lufs": -16.0,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/43fa87dd16/soundtrack/games/rahmah/12-chapter-11-her-school-today.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/761854d544/soundtrack/games/rahmah/lossless/12-chapter-11-her-school-today.ogg"
+  },
+  {
+   "n": 13,
+   "title": "Rahmah El Yunusiyyah: The End",
+   "mood": "triumph",
+   "seconds": 60,
+   "heard": [
+    "Rahmah El Yunusiyyah"
+   ],
+   "lufs": -16.0,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/3530a19350/soundtrack/games/rahmah/13-the-end.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/59ea9f8fdd/soundtrack/games/rahmah/lossless/13-the-end.ogg"
+  }
+ ]
+}

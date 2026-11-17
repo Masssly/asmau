@@ -1,0 +1,202 @@
+{
+ "album": "Yusuf: Music from the Game",
+ "artist": "Asmau",
+ "year": 2026,
+ "tracks": [
+  {
+   "n": 1,
+   "title": "Yusuf: Title",
+   "mood": "wonder",
+   "seconds": 60,
+   "heard": [
+    "Yusuf"
+   ],
+   "lufs": -15.9,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/8aa3f5011b/soundtrack/games/yusuf/01-title.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/430ef29b90/soundtrack/games/yusuf/lossless/01-title.ogg"
+  },
+  {
+   "n": 2,
+   "title": "Chapter 1: The Dream",
+   "mood": "wonder sad",
+   "seconds": 75,
+   "heard": [
+    "Yusuf"
+   ],
+   "lufs": -15.9,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/2b4468f57d/soundtrack/games/yusuf/02-chapter-1-the-dream.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/76d3a1b922/soundtrack/games/yusuf/lossless/02-chapter-1-the-dream.ogg"
+  },
+  {
+   "n": 3,
+   "title": "Chapter 2: The Jealous Brothers",
+   "mood": "sad desert tense wonder",
+   "seconds": 120,
+   "heard": [
+    "Yusuf"
+   ],
+   "lufs": -16.0,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/9c2d316995/soundtrack/games/yusuf/03-chapter-2-the-jealous-brothers.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/c4609d2608/soundtrack/games/yusuf/lossless/03-chapter-2-the-jealous-brothers.ogg"
+  },
+  {
+   "n": 4,
+   "title": "Chapter 3: The Well",
+   "mood": "desert tense joy",
+   "seconds": 75,
+   "heard": [
+    "Yusuf"
+   ],
+   "lufs": -16.0,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/712c0bb914/soundtrack/games/yusuf/04-chapter-3-the-well.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/6cbad715d6/soundtrack/games/yusuf/lossless/04-chapter-3-the-well.ogg"
+  },
+  {
+   "n": 5,
+   "title": "Chapter 4: Far From Home",
+   "mood": "sad desert regal",
+   "seconds": 105,
+   "heard": [
+    "Yusuf"
+   ],
+   "lufs": -16.0,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/fd78af3ed3/soundtrack/games/yusuf/05-chapter-4-far-from-home.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/65b28be66a/soundtrack/games/yusuf/lossless/05-chapter-4-far-from-home.ogg"
+  },
+  {
+   "n": 6,
+   "title": "Chapter 5: Patience in Prison",
+   "mood": "tense wonder regal sad",
+   "seconds": 120,
+   "heard": [
+    "Yusuf"
+   ],
+   "lufs": -16.0,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/4077b925f3/soundtrack/games/yusuf/06-chapter-5-patience-in-prison.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/5908c87ea0/soundtrack/games/yusuf/lossless/06-chapter-5-patience-in-prison.ogg"
+  },
+  {
+   "n": 7,
+   "title": "Chapter 6: Two Dreams",
+   "mood": "sad wonder",
+   "seconds": 90,
+   "heard": [
+    "Yusuf"
+   ],
+   "lufs": -15.9,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/f09427609f/soundtrack/games/yusuf/07-chapter-6-two-dreams.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/0180394714/soundtrack/games/yusuf/lossless/07-chapter-6-two-dreams.ogg"
+  },
+  {
+   "n": 8,
+   "title": "Chapter 7: The King's Dream",
+   "mood": "tense joy wonder",
+   "seconds": 90,
+   "heard": [
+    "Yusuf"
+   ],
+   "lufs": -15.9,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/652a2497f3/soundtrack/games/yusuf/08-chapter-7-the-kings-dream.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/d15febdb18/soundtrack/games/yusuf/lossless/08-chapter-7-the-kings-dream.ogg"
+  },
+  {
+   "n": 9,
+   "title": "Chapter 8: Truth and Trust",
+   "mood": "tense regal wonder joy",
+   "seconds": 120,
+   "heard": [
+    "Yusuf"
+   ],
+   "lufs": -15.9,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/ab9a7cd2f3/soundtrack/games/yusuf/09-chapter-8-truth-and-trust.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/3f4cde19c5/soundtrack/games/yusuf/lossless/09-chapter-8-truth-and-trust.ogg"
+  },
+  {
+   "n": 10,
+   "title": "Chapter 9: The Brothers Come",
+   "mood": "sad desert tense regal",
+   "seconds": 105,
+   "heard": [
+    "Yusuf"
+   ],
+   "lufs": -16.0,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/66669d012a/soundtrack/games/yusuf/10-chapter-9-the-brothers-come.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/ca03a3010f/soundtrack/games/yusuf/lossless/10-chapter-9-the-brothers-come.ogg"
+  },
+  {
+   "n": 11,
+   "title": "Chapter 10: The King's Cup",
+   "mood": "sad wonder regal tense joy",
+   "seconds": 120,
+   "heard": [
+    "Yusuf"
+   ],
+   "lufs": -16.0,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/ddea56f952/soundtrack/games/yusuf/11-chapter-10-the-kings-cup.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/3a28f2a1dc/soundtrack/games/yusuf/lossless/11-chapter-10-the-kings-cup.ogg"
+  },
+  {
+   "n": 12,
+   "title": "Chapter 11: “I Am Yusuf”",
+   "mood": "regal sad tense joy wonder",
+   "seconds": 120,
+   "heard": [
+    "Yusuf"
+   ],
+   "lufs": -15.9,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/d4c2acc7a2/soundtrack/games/yusuf/12-chapter-11-i-am-yusuf.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/add8a7cfd6/soundtrack/games/yusuf/lossless/12-chapter-11-i-am-yusuf.ogg"
+  },
+  {
+   "n": 13,
+   "title": "Chapter 12: The Shirt",
+   "mood": "joy sad desert",
+   "seconds": 90,
+   "heard": [
+    "Yusuf"
+   ],
+   "lufs": -16.0,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/9287d07a5d/soundtrack/games/yusuf/13-chapter-12-the-shirt.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/a98a2d7695/soundtrack/games/yusuf/lossless/13-chapter-12-the-shirt.ogg"
+  },
+  {
+   "n": 14,
+   "title": "Chapter 13: The Dream Comes True",
+   "mood": "joy wonder",
+   "seconds": 120,
+   "heard": [
+    "Yusuf"
+   ],
+   "lufs": -16.0,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/7ab7be9896/soundtrack/games/yusuf/14-chapter-13-the-dream-comes-true.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/cea4c54be8/soundtrack/games/yusuf/lossless/14-chapter-13-the-dream-comes-true.ogg"
+  },
+  {
+   "n": 15,
+   "title": "Yusuf: The End",
+   "mood": "joy",
+   "seconds": 60,
+   "heard": [
+    "Yusuf"
+   ],
+   "lufs": -16.0,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/6a321c970d/soundtrack/games/yusuf/15-the-end.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/e7139db509/soundtrack/games/yusuf/lossless/15-the-end.ogg"
+  }
+ ]
+}

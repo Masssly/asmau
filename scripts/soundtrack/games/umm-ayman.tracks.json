@@ -1,0 +1,176 @@
+{
+ "album": "Umm Ayman: Music from the Game",
+ "artist": "Asmau",
+ "year": 2026,
+ "tracks": [
+  {
+   "n": 1,
+   "title": "Umm Ayman: Title",
+   "mood": "longing",
+   "seconds": 60,
+   "heard": [
+    "Umm Ayman"
+   ],
+   "lufs": -15.9,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/3f9cefc7c0/soundtrack/games/umm-ayman/01-title.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/31e727c7ed/soundtrack/games/umm-ayman/lossless/01-title.ogg"
+  },
+  {
+   "n": 2,
+   "title": "Chapter 1: From Across the Sea",
+   "mood": "wonder pastoral sad",
+   "seconds": 90,
+   "heard": [
+    "Umm Ayman"
+   ],
+   "lufs": -15.9,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/5d3eb5dd53/soundtrack/games/umm-ayman/02-chapter-1-from-across-the-sea.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/9845e63a48/soundtrack/games/umm-ayman/lossless/02-chapter-1-from-across-the-sea.ogg"
+  },
+  {
+   "n": 3,
+   "title": "Chapter 2: A Baby Is Born",
+   "mood": "wonder triumph pastoral",
+   "seconds": 90,
+   "heard": [
+    "Umm Ayman"
+   ],
+   "lufs": -16.0,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/2fbc9b724a/soundtrack/games/umm-ayman/03-chapter-2-a-baby-is-born.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/711fee5822/soundtrack/games/umm-ayman/lossless/03-chapter-2-a-baby-is-born.ogg"
+  },
+  {
+   "n": 4,
+   "title": "Chapter 3: A Month in Madina",
+   "mood": "trek pastoral joy",
+   "seconds": 75,
+   "heard": [
+    "Umm Ayman"
+   ],
+   "lufs": -15.9,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/b607714c04/soundtrack/games/umm-ayman/04-chapter-3-a-month-in-madina.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/df39e221e2/soundtrack/games/umm-ayman/lossless/04-chapter-3-a-month-in-madina.ogg"
+  },
+  {
+   "n": 5,
+   "title": "Chapter 4: The Road Home",
+   "mood": "sad longing triumph",
+   "seconds": 90,
+   "heard": [
+    "Umm Ayman"
+   ],
+   "lufs": -16.0,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/22eb23a3fb/soundtrack/games/umm-ayman/05-chapter-4-the-road-home.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/f0d5786b08/soundtrack/games/umm-ayman/lossless/05-chapter-4-the-road-home.ogg"
+  },
+  {
+   "n": 6,
+   "title": "Chapter 5: O Blessed One",
+   "mood": "pastoral sad joy",
+   "seconds": 90,
+   "heard": [
+    "Umm Ayman"
+   ],
+   "lufs": -16.0,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/4673706675/soundtrack/games/umm-ayman/06-chapter-5-o-blessed-one.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/e49d36b2d7/soundtrack/games/umm-ayman/lossless/06-chapter-5-o-blessed-one.ogg"
+  },
+  {
+   "n": 7,
+   "title": "Chapter 6: Free, and a Family",
+   "mood": "triumph joy pastoral wonder",
+   "seconds": 90,
+   "heard": [
+    "Umm Ayman"
+   ],
+   "lufs": -16.0,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/8006aa1a0e/soundtrack/games/umm-ayman/07-chapter-6-free-and-a-family.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/89f2e862c6/soundtrack/games/umm-ayman/lossless/07-chapter-6-free-and-a-family.ogg"
+  },
+  {
+   "n": 8,
+   "title": "Chapter 7: The Long Walk",
+   "mood": "tense trek longing wonder joy",
+   "seconds": 105,
+   "heard": [
+    "Umm Ayman"
+   ],
+   "lufs": -16.0,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/8882fce631/soundtrack/games/umm-ayman/08-chapter-7-the-long-walk.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/202f276c45/soundtrack/games/umm-ayman/lossless/08-chapter-7-the-long-walk.ogg"
+  },
+  {
+   "n": 9,
+   "title": "Chapter 8: Water for the Hurt",
+   "mood": "pastoral trek",
+   "seconds": 75,
+   "heard": [
+    "Umm Ayman"
+   ],
+   "lufs": -16.0,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/e83994eab7/soundtrack/games/umm-ayman/09-chapter-8-water-for-the-hurt.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/5731ffa3c2/soundtrack/games/umm-ayman/lossless/09-chapter-8-water-for-the-hurt.ogg"
+  },
+  {
+   "n": 10,
+   "title": "Chapter 9: Ten Palm Trees",
+   "mood": "pastoral joy",
+   "seconds": 105,
+   "heard": [
+    "Umm Ayman"
+   ],
+   "lufs": -16.0,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/a892755199/soundtrack/games/umm-ayman/10-chapter-9-ten-palm-trees.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/0bf801489f/soundtrack/games/umm-ayman/lossless/10-chapter-9-ten-palm-trees.ogg"
+  },
+  {
+   "n": 11,
+   "title": "Chapter 10: Fatimah's Wedding",
+   "mood": "joy pastoral longing",
+   "seconds": 75,
+   "heard": [
+    "Umm Ayman"
+   ],
+   "lufs": -16.0,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/2fdae9ef26/soundtrack/games/umm-ayman/11-chapter-10-fatimahs-wedding.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/e4bc6111fe/soundtrack/games/umm-ayman/lossless/11-chapter-10-fatimahs-wedding.ogg"
+  },
+  {
+   "n": 12,
+   "title": "Chapter 11: The News of Heaven",
+   "mood": "pastoral joy sad wonder longing",
+   "seconds": 120,
+   "heard": [
+    "Umm Ayman"
+   ],
+   "lufs": -16.0,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/8a93b80553/soundtrack/games/umm-ayman/12-chapter-11-the-news-of-heaven.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/3627d075aa/soundtrack/games/umm-ayman/lossless/12-chapter-11-the-news-of-heaven.ogg"
+  },
+  {
+   "n": 13,
+   "title": "Umm Ayman: The End",
+   "mood": "triumph",
+   "seconds": 60,
+   "heard": [
+    "Umm Ayman"
+   ],
+   "lufs": -16.0,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/0dfbe30dc3/soundtrack/games/umm-ayman/13-the-end.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/fed792b178/soundtrack/games/umm-ayman/lossless/13-the-end.ogg"
+  }
+ ]
+}

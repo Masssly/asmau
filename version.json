@@ -1,11 +1,18 @@
 {
-  "version": "2026.11.55",
+  "version": "2026.11.56",
   "date": "2026-11-17",
-  "buildId": "2f45d10dcfb9",
+  "buildId": "c17b3c108f43",
   "notes": [
-    "Yusuf, chapter 9: a new page tells how Yusuf learned about his youngest brother (the brothers told him about their family), so asking for him makes sense; a new picture, both voices, and a draft note for parents with the sources"
+    "Seven new names on the Great Muslims coming-soon list: Fatima al-Fihri, Rumi, Ibn al-Nafis, Yunus Emre, Gazi Husrev-beg, Abdul Sattar Edhi and Mariam Alolo."
   ],
   "history": [
+    {
+      "version": "2026.11.56",
+      "date": "2026-11-17",
+      "notes": [
+        "Seven new names on the Great Muslims coming-soon list: Fatima al-Fihri, Rumi, Ibn al-Nafis, Yunus Emre, Gazi Husrev-beg, Abdul Sattar Edhi and Mariam Alolo."
+      ]
+    },
     {
       "version": "2026.11.55",
       "date": "2026-11-17",

@@ -17,20 +17,25 @@
 */
 
 // BEGIN GENERATED
-const RELEASE = "2026.11.55";
-const BUILD = "2f45d10dcfb9";
+const RELEASE = "2026.11.56";
+const BUILD = "c17b3c108f43";
 // pack: [fingerprint of packs/<pack>.json, bytes, files]
 const PACKS = {
   "adam":["4f6ded53a9",2721610,55],
   "adam@m":["a617f3f408",4026446,147],
   "adam@w":["217fc43e27",4316508,147],
-  "core":["c8ada95ed6",1008653,39],
+  "core":["56fd6f3c6f",1011742,39],
   "count-the-crescents":["c58ffd2f9d",83016,5],
   "count-the-crescents@m":["76410cb722",587647,52],
   "count-the-crescents@w":["238f9dbdf7",584828,52],
+  "edhi":["42f9542339",442,1],
+  "fatima-al-fihri":["2c3eca2233",463,1],
+  "gazi-husrev-beg":["a83800ba50",435,1],
+  "ibn-al-nafis":["f8a52f29ab",449,1],
   "ibn-battuta":["6e7e76449b",3497890,54],
   "ibn-battuta@m":["fc1dc2b090",3523440,130],
   "ibn-battuta@w":["4418230851",3810161,130],
+  "mariam-alolo":["a06c1449ec",422,1],
   "musa":["a67650de55",8063787,161],
   "musa@m":["e8ae6e31ff",13995246,422],
   "musa@w":["5ac25136bc",15197808,422],
@@ -45,12 +50,14 @@ const PACKS = {
   "rahmah@id-w":["dde118b888",3315323,114],
   "rahmah@m":["35a8bb21ae",2876572,114],
   "rahmah@w":["ef657c152b",3123167,114],
+  "rumi":["96e3caea5b",409,1],
   "tap-and-say":["284f427c70",21717,4],
   "tap-and-say@m":["71edb942d5",1501703,126],
   "tap-and-say@w":["d9e7f925b2",1472336,126],
   "umm-ayman":["ee1ddb1e6c",3277562,56],
   "umm-ayman@m":["25ae6bd6a0",3369590,116],
   "umm-ayman@w":["aa2daf9273",3702494,116],
+  "yunus-emre":["6881152c52",408,1],
   "yusuf":["17fcaa75dd",5890449,94],
   "yusuf@m":["5f24cea0b0",6661953,191],
   "yusuf@w":["d0a6cc2e08",7128706,191]

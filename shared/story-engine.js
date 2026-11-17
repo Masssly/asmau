@@ -454,8 +454,13 @@
   // One question, two answers.
   // Speech can fail in odd ways (a blocked sound, no voice installed). Nothing a child is
   // waiting for may depend on a line finishing, so waiting for one is capped.
+  // Say a line and wait until it has been said. The limit is only a safety net for a sound that never reports its end;
+  // it is long enough for the slow storytelling voice (about 0.14 s a letter, the same allowance the voice script uses):
+  // a fixed 2.5 s cut off longer answers, e.g. Yusuf 2.12 "Yes, it is torn" (3.6 s) (owner's note, 17 November 2026).
   function spoken(line, maxMs) {
-    return Promise.race([say(line), new Promise(function (r) { setTimeout(r, maxMs || 2500); })]);
+    var words = lines[line] || "";
+    var limit = Math.max(maxMs || 0, 3000 + 140 * words.length);
+    return Promise.race([say(line), new Promise(function (r) { setTimeout(r, limit); })]);
   }
 
   // A wrong answer: say why, and leave the why on the screen until the child answers again, so it can be read at
@@ -486,7 +491,7 @@
   }
 
   ACT.choice = function (opts, done) {
-    var token = stepToken, question = opts._line, finished = false, reading = [], stopReading = function () {};
+    var token = stepToken, question = opts._line, finished = false, reading = [], stopReading = function () {}, tap = 0;
     drawArt(stage, opts.art);
     var box = mk("div", "choices");
     opts.options.forEach(function (o, i) {
@@ -507,7 +512,8 @@
         } else {
           shake(b);
           buzz();
-          spoken(line).then(function () { if (token === stepToken && !finished) return sayWrong(opts.wrong, question, token); });
+          var mine = ++tap;              // only the latest tap goes on to its explanation
+          spoken(line).then(function () { if (token === stepToken && !finished && mine === tap) return sayWrong(opts.wrong, question, token); });
         }
       });
       box.appendChild(b);
@@ -998,6 +1004,7 @@
 
   // One thing at a time: which of the two does it belong to?
   ACT.sort = function (opts, done) {
+    var wrongTaps = 0;
     var things = opts.things, at = 0, token = stepToken, question = opts._line, finished = false;
     function thingLine(i) { return question + "-it" + (i + 1); }
     var chip = mk("div", "count-chip", "0 / " + things.length);
@@ -1025,7 +1032,8 @@
         if (things[at].bin !== bi) {
           shake(card);
           buzz();
-          spoken(question + "-bin" + (bi + 1)).then(function () { if (token === stepToken && opts.wrong) return sayWrong(opts.wrong, question, token); });
+          var mine = ++wrongTaps;        // only the latest wrong tap goes on to its explanation
+          spoken(question + "-bin" + (bi + 1)).then(function () { if (token === stepToken && opts.wrong && mine === wrongTaps) return sayWrong(opts.wrong, question, token); });
           return;
         }
         at += 1;

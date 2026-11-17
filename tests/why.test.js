@@ -28,6 +28,21 @@ module.exports = async function () {
   T.check(sounds.some((u) => /u9-q-no\.mp3/.test(u)), "a tap on it says it again");
   await p.locator("#stage button", { hasText: "A big grown-up camel" }).click(); await p.waitForTimeout(800);
   T.check(!(await p.evaluate(() => document.getElementById("caption").classList.contains("why"))), "the right answer moves on, and the mark goes");
+
+  // a longer answer is read to its end before the explanation starts (owner's note, Yusuf 2.12: "Yes, it is torn",
+  // 3.6 s, was cut off after 2.5 s)
+  const y = await browser.newPage({ viewport: { width: 390, height: 844 } });
+  const heard = []; y.on("request", (r) => { const m = /\/(c2-s-opt1|c2-swrong)\.mp3/.exec(r.url()); if (m) heard.push([m[1], Date.now()]); });
+  await y.goto(site.url + "games/yusuf/index.html?skipms=300", { waitUntil: "networkidle" });
+  await y.click("#startBtn"); await y.waitForTimeout(600);
+  await y.click("#mapBtn"); await y.locator(".chapter-tile").nth(1).click(); await y.waitForTimeout(700);
+  for (let i = 0; i < 20 && !/2\.12\b/.test(await y.textContent("#pnoteSum")); i++) { await y.click("#nextBtn"); await y.waitForTimeout(450); }
+  await y.waitForTimeout(500);
+  await y.locator("#stage button", { hasText: "Yes, it is torn" }).click();
+  await y.waitForTimeout(9000);
+  const a1 = heard.find((h) => h[0] === "c2-s-opt1"), w1 = heard.find((h) => h[0] === "c2-swrong");
+  const gap = a1 && w1 ? (w1[1] - a1[1]) / 1000 : 0;
+  T.check(gap >= 3.3, "Yusuf 2.12: the explanation starts only after the 3.6-second answer has been read (" + gap.toFixed(1) + " s later)");
   await browser.close(); await site.close();
   return T.done();
 };

@@ -1,4 +1,4 @@
-{"bytes":1006036,
+{"bytes":1006951,
 "files":{"app.webmanifest":"66fa71e8ce",
 "config.json":"cb49e43234",
 "fonts/baloo2-latin.woff2":"ae196042c8",
@@ -29,7 +29,7 @@
 "shared/people.js":"dd5012e301",
 "shared/pwa.js":"e3e111f6c1",
 "shared/sound-buttons.js":"a72e8006a1",
-"shared/story-engine.js":"ab72669798",
+"shared/story-engine.js":"d2aa3cabc6",
 "shared/story.css":"fdd4722eb3",
 "shared/style.css":"1d328f4e57",
 "shared/sync.js":"1058181ef2",
@@ -37,5 +37,5 @@
 "shared/vendor/README.txt":"9c77174b0e",
 "shared/vendor/lame.min.js":"00d43c063d",
 "tools/record-voice/index.html":"228dd8e38d",
-"version.json":"12e7163ccb"},
+"version.json":"ae7d5d0314"},
 "sizes":{}}

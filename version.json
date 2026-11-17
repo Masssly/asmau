@@ -1,11 +1,18 @@
 {
-  "version": "2026.11.47",
+  "version": "2026.11.48",
   "date": "2026-11-17",
-  "buildId": "91b8d65e6430",
+  "buildId": "fef2c0806ccc",
   "notes": [
-    "Yusuf, page 2.3: a new picture: the brothers whisper their plan at home among the tents, while Yusuf plays by his father (it looked as if they had already gone out)"
+    "In every game, a chosen answer is read to its end before the explanation starts (longer answers, such as Yusuf 2.12, were cut off)"
   ],
   "history": [
+    {
+      "version": "2026.11.48",
+      "date": "2026-11-17",
+      "notes": [
+        "In every game, a chosen answer is read to its end before the explanation starts (longer answers, such as Yusuf 2.12, were cut off)"
+      ]
+    },
     {
       "version": "2026.11.47",
       "date": "2026-11-17",

@@ -133,7 +133,7 @@ SHOTS = {
     "c9-b": ("The brothers stand before Yusuf and do not know him.",
             "In a busy grain hall {YM} sits on a raised seat. {BR} stand before him with heads respectfully lowered, not recognising him; he looks at them with gentle, knowing eyes. Around them workers measure and carry grain."),
     "c9-b2": ("Yusuf asks the brothers about their family, and one of them answers.",
-              "In a busy grain hall {YM} sits on a raised seat, leaning forward with interest, one hand open as if asking a question. {BR} stand before him; the brother in the front middle speaks, holding up both hands to explain, while the others listen. None of them recognises him. Grain sacks and workers in the background."),
+              "A busy grain hall seen from the side, at eye level. On the right {YM} sits on a low raised wooden seat, the same size as the men around him, leaning forward with interest, one hand open as if asking a question. On the left {BR} stand facing him, seen from the side, every one of them turned towards him and looking at him. The brother nearest to him, in front of the others, speaks to him with both hands raised to explain. None of them recognises him. Grain sacks, scales and workers in the background."),
     "c9-c": ("Their payment is slipped back into their sacks.",
             "A grain yard. Servants quietly tuck small leather money pouches into full grain sacks loaded on donkeys while {YM} watches approvingly. In the distance the brothers prepare to leave. Workers, scales, heaps of grain."),
     # ---- chapter 10

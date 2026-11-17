@@ -1,0 +1,358 @@
+{
+ "album": "Musa: Music from the Game",
+ "artist": "Asmau",
+ "year": 2026,
+ "tracks": [
+  {
+   "n": 1,
+   "title": "Musa: Title",
+   "mood": "nile",
+   "seconds": 60,
+   "heard": [
+    "Musa"
+   ],
+   "lufs": -15.9,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/591e5777b2/soundtrack/games/musa/01-title.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/1a4575d439/soundtrack/games/musa/lossless/01-title.ogg"
+  },
+  {
+   "n": 2,
+   "title": "Chapter 1: A Proud King",
+   "mood": "court longing nile triumph",
+   "seconds": 75,
+   "heard": [
+    "Musa"
+   ],
+   "lufs": -16.0,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/2464f0bd3e/soundtrack/games/musa/02-chapter-1-a-proud-king.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/038eee51c2/soundtrack/games/musa/lossless/02-chapter-1-a-proud-king.ogg"
+  },
+  {
+   "n": 3,
+   "title": "Chapter 2: The Baby on the River",
+   "mood": "longing nile",
+   "seconds": 120,
+   "heard": [
+    "Musa"
+   ],
+   "lufs": -15.9,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/dc599b09ed/soundtrack/games/musa/03-chapter-2-the-baby-on-the-river.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/eadb730dcb/soundtrack/games/musa/lossless/03-chapter-2-the-baby-on-the-river.ogg"
+  },
+  {
+   "n": 4,
+   "title": "Chapter 3: The Queen's Heart",
+   "mood": "court nile",
+   "seconds": 120,
+   "heard": [
+    "Musa"
+   ],
+   "lufs": -16.0,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/a0b57b6406/soundtrack/games/musa/04-chapter-3-the-queens-heart.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/9f6d97ef45/soundtrack/games/musa/lossless/04-chapter-3-the-queens-heart.ogg"
+  },
+  {
+   "n": 5,
+   "title": "Chapter 4: A Sister's Clever Plan",
+   "mood": "longing nile court triumph",
+   "seconds": 120,
+   "heard": [
+    "Musa"
+   ],
+   "lufs": -16.0,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/e10a5a6b75/soundtrack/games/musa/05-chapter-4-a-sisters-clever-plan.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/1bda0708b7/soundtrack/games/musa/lossless/05-chapter-4-a-sisters-clever-plan.ogg"
+  },
+  {
+   "n": 6,
+   "title": "Chapter 5: Growing Up in the Palace",
+   "mood": "nile court",
+   "seconds": 90,
+   "heard": [
+    "Musa"
+   ],
+   "lufs": -16.0,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/66dedc78ca/soundtrack/games/musa/06-chapter-5-growing-up-in-the-palace.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/3a3e093d14/soundtrack/games/musa/lossless/06-chapter-5-growing-up-in-the-palace.ogg"
+  },
+  {
+   "n": 7,
+   "title": "Chapter 6: A Big Mistake",
+   "mood": "dread longing trek",
+   "seconds": 120,
+   "heard": [
+    "Musa"
+   ],
+   "lufs": -16.3,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/3b6b287115/soundtrack/games/musa/07-chapter-6-a-big-mistake.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/df7487e1d9/soundtrack/games/musa/lossless/07-chapter-6-a-big-mistake.ogg"
+  },
+  {
+   "n": 8,
+   "title": "Chapter 7: The Well of Madyan",
+   "mood": "trek pastoral longing",
+   "seconds": 120,
+   "heard": [
+    "Musa"
+   ],
+   "lufs": -16.0,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/51ce39e91a/soundtrack/games/musa/08-chapter-7-the-well-of-madyan.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/eafdc7813f/soundtrack/games/musa/lossless/08-chapter-7-the-well-of-madyan.ogg"
+  },
+  {
+   "n": 9,
+   "title": "Chapter 8: A New Home",
+   "mood": "pastoral trek triumph",
+   "seconds": 120,
+   "heard": [
+    "Musa"
+   ],
+   "lufs": -16.0,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/7e92b339ab/soundtrack/games/musa/09-chapter-8-a-new-home.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/8aed02b573/soundtrack/games/musa/lossless/09-chapter-8-a-new-home.ogg"
+  },
+  {
+   "n": 10,
+   "title": "Chapter 9: The Fire on the Mountain",
+   "mood": "longing awe",
+   "seconds": 120,
+   "heard": [
+    "Musa"
+   ],
+   "lufs": -15.9,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/43db84265a/soundtrack/games/musa/10-chapter-9-the-fire-on-the-mountain.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/a3967d7343/soundtrack/games/musa/lossless/10-chapter-9-the-fire-on-the-mountain.ogg"
+  },
+  {
+   "n": 11,
+   "title": "Chapter 10: The Staff and the Shining Hand",
+   "mood": "awe dread",
+   "seconds": 120,
+   "heard": [
+    "Musa"
+   ],
+   "lufs": -16.0,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/85495be659/soundtrack/games/musa/11-chapter-10-the-staff-and-the-shining-hand.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/5bf16a45fc/soundtrack/games/musa/lossless/11-chapter-10-the-staff-and-the-shining-hand.ogg"
+  },
+  {
+   "n": 12,
+   "title": "Chapter 11: Musa's Prayer",
+   "mood": "longing awe triumph trek",
+   "seconds": 120,
+   "heard": [
+    "Musa"
+   ],
+   "lufs": -16.0,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/087d72736f/soundtrack/games/musa/12-chapter-11-musas-prayer.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/1be72325b8/soundtrack/games/musa/lossless/12-chapter-11-musas-prayer.ogg"
+  },
+  {
+   "n": 13,
+   "title": "Chapter 12: Before Pharaoh",
+   "mood": "court awe",
+   "seconds": 120,
+   "heard": [
+    "Musa"
+   ],
+   "lufs": -16.0,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/1790b2e752/soundtrack/games/musa/13-chapter-12-before-pharaoh.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/5114e58b12/soundtrack/games/musa/lossless/13-chapter-12-before-pharaoh.ogg"
+  },
+  {
+   "n": 14,
+   "title": "Chapter 13: The Day of the Festival",
+   "mood": "court dread longing awe triumph",
+   "seconds": 120,
+   "heard": [
+    "Musa"
+   ],
+   "lufs": -15.9,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/6018334b0e/soundtrack/games/musa/14-chapter-13-the-day-of-the-festival.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/9e9bc3a783/soundtrack/games/musa/lossless/14-chapter-13-the-day-of-the-festival.ogg"
+  },
+  {
+   "n": 15,
+   "title": "Chapter 14: Brave Hearts",
+   "mood": "dread triumph court longing",
+   "seconds": 120,
+   "heard": [
+    "Musa"
+   ],
+   "lufs": -16.0,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/7bf5fc469a/soundtrack/games/musa/15-chapter-14-brave-hearts.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/989e3ea8c2/soundtrack/games/musa/lossless/15-chapter-14-brave-hearts.ogg"
+  },
+  {
+   "n": 16,
+   "title": "Chapter 15: Sign after Sign",
+   "mood": "dread court longing",
+   "seconds": 120,
+   "heard": [
+    "Musa"
+   ],
+   "lufs": -16.0,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/ba797e0fe7/soundtrack/games/musa/16-chapter-15-sign-after-sign.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/9999781fbb/soundtrack/games/musa/lossless/16-chapter-15-sign-after-sign.ogg"
+  },
+  {
+   "n": 17,
+   "title": "Chapter 16: Leaving by Night",
+   "mood": "longing trek dread awe",
+   "seconds": 120,
+   "heard": [
+    "Musa"
+   ],
+   "lufs": -16.1,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/2ec35ce3fa/soundtrack/games/musa/17-chapter-16-leaving-by-night.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/58698499a4/soundtrack/games/musa/lossless/17-chapter-16-leaving-by-night.ogg"
+  },
+  {
+   "n": 18,
+   "title": "Chapter 17: The Sea Opens",
+   "mood": "awe dread triumph longing",
+   "seconds": 120,
+   "heard": [
+    "Musa"
+   ],
+   "lufs": -16.1,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/b0b21b50f0/soundtrack/games/musa/18-chapter-17-the-sea-opens.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/92e3f9b6f9/soundtrack/games/musa/lossless/18-chapter-17-the-sea-opens.ogg"
+  },
+  {
+   "n": 19,
+   "title": "Chapter 18: Food from the Sky, Water from the Rock",
+   "mood": "trek triumph longing",
+   "seconds": 120,
+   "heard": [
+    "Musa"
+   ],
+   "lufs": -16.0,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/ce7d3105c6/soundtrack/games/musa/19-chapter-18-food-from-the-sky-water-from-the-rock.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/439f6b24fa/soundtrack/games/musa/lossless/19-chapter-18-food-from-the-sky-water-from-the-rock.ogg"
+  },
+  {
+   "n": 20,
+   "title": "Chapter 19: The Mountain and the Tablets",
+   "mood": "trek awe triumph",
+   "seconds": 120,
+   "heard": [
+    "Musa"
+   ],
+   "lufs": -16.0,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/fbb48b26db/soundtrack/games/musa/20-chapter-19-the-mountain-and-the-tablets.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/1a2022b0ae/soundtrack/games/musa/lossless/20-chapter-19-the-mountain-and-the-tablets.ogg"
+  },
+  {
+   "n": 21,
+   "title": "Chapter 20: The Golden Calf",
+   "mood": "dread longing trek triumph awe",
+   "seconds": 120,
+   "heard": [
+    "Musa"
+   ],
+   "lufs": -15.9,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/56678f71ba/soundtrack/games/musa/21-chapter-20-the-golden-calf.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/cae8a72a20/soundtrack/games/musa/lossless/21-chapter-20-the-golden-calf.ogg"
+  },
+  {
+   "n": 22,
+   "title": "Chapter 21: The Yellow Cow",
+   "mood": "pastoral",
+   "seconds": 120,
+   "heard": [
+    "Musa"
+   ],
+   "lufs": -16.0,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/51bae0a9f3/soundtrack/games/musa/22-chapter-21-the-yellow-cow.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/ee0a87a7d2/soundtrack/games/musa/lossless/22-chapter-21-the-yellow-cow.ogg"
+  },
+  {
+   "n": 23,
+   "title": "Chapter 22: The Holy Land",
+   "mood": "trek dread triumph longing",
+   "seconds": 120,
+   "heard": [
+    "Musa"
+   ],
+   "lufs": -16.0,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/a24224db66/soundtrack/games/musa/23-chapter-22-the-holy-land.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/890d3dc58a/soundtrack/games/musa/lossless/23-chapter-22-the-holy-land.ogg"
+  },
+  {
+   "n": 24,
+   "title": "Chapter 23: The Fish That Swam Away",
+   "mood": "pastoral trek dread triumph awe wonder",
+   "seconds": 120,
+   "heard": [
+    "Musa"
+   ],
+   "lufs": -16.0,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/3776a957fe/soundtrack/games/musa/24-chapter-23-the-fish-that-swam-away.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/7a7976773d/soundtrack/games/musa/lossless/24-chapter-23-the-fish-that-swam-away.ogg"
+  },
+  {
+   "n": 25,
+   "title": "Chapter 24: Three Strange Things",
+   "mood": "dread pastoral awe longing triumph",
+   "seconds": 120,
+   "heard": [
+    "Musa"
+   ],
+   "lufs": -16.0,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/77732933b0/soundtrack/games/musa/25-chapter-24-three-strange-things.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/4606b5ba8a/soundtrack/games/musa/lossless/25-chapter-24-three-strange-things.ogg"
+  },
+  {
+   "n": 26,
+   "title": "Chapter 25: Allah Was with Him",
+   "mood": "nile awe triumph dread",
+   "seconds": 105,
+   "heard": [
+    "Musa"
+   ],
+   "lufs": -16.0,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/4bb4990d71/soundtrack/games/musa/26-chapter-25-allah-was-with-him.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/963cd3f120/soundtrack/games/musa/lossless/26-chapter-25-allah-was-with-him.ogg"
+  },
+  {
+   "n": 27,
+   "title": "Musa: The End",
+   "mood": "triumph",
+   "seconds": 60,
+   "heard": [
+    "Musa"
+   ],
+   "lufs": -16.0,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/5a456f7e72/soundtrack/games/musa/27-the-end.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/23342e1fa8/soundtrack/games/musa/lossless/27-the-end.ogg"
+  }
+ ]
+}

@@ -1,0 +1,176 @@
+{
+ "album": "Ibn Battuta: Music from the Game",
+ "artist": "Asmau",
+ "year": 2026,
+ "tracks": [
+  {
+   "n": 1,
+   "title": "Ibn Battuta: Title",
+   "mood": "wonder",
+   "seconds": 60,
+   "heard": [
+    "Ibn Battuta"
+   ],
+   "lufs": -15.9,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/03727475f0/soundtrack/games/ibn-battuta/01-title.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/0fc4fea503/soundtrack/games/ibn-battuta/lossless/01-title.ogg"
+  },
+  {
+   "n": 2,
+   "title": "Chapter 1: Leaving Home",
+   "mood": "wonder triumph sad joy longing trek",
+   "seconds": 90,
+   "heard": [
+    "Ibn Battuta"
+   ],
+   "lufs": -16.0,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/aab75c6ee3/soundtrack/games/ibn-battuta/02-chapter-1-leaving-home.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/32d3cca508/soundtrack/games/ibn-battuta/lossless/02-chapter-1-leaving-home.ogg"
+  },
+  {
+   "n": 3,
+   "title": "Chapter 2: The Old Man of Alexandria",
+   "mood": "wonder joy awe",
+   "seconds": 90,
+   "heard": [
+    "Ibn Battuta"
+   ],
+   "lufs": -16.0,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/547a1aafbb/soundtrack/games/ibn-battuta/03-chapter-2-the-old-man-of-alexandria.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/696459e16b/soundtrack/games/ibn-battuta/lossless/03-chapter-2-the-old-man-of-alexandria.ogg"
+  },
+  {
+   "n": 4,
+   "title": "Chapter 3: The Broken Dish",
+   "mood": "joy tense",
+   "seconds": 105,
+   "heard": [
+    "Ibn Battuta"
+   ],
+   "lufs": -16.0,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/6b1b23fc07/soundtrack/games/ibn-battuta/04-chapter-3-the-broken-dish.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/116a407132/soundtrack/games/ibn-battuta/lossless/04-chapter-3-the-broken-dish.ogg"
+  },
+  {
+   "n": 5,
+   "title": "Chapter 4: Makkah",
+   "mood": "trek awe joy wonder",
+   "seconds": 90,
+   "heard": [
+    "Ibn Battuta"
+   ],
+   "lufs": -15.9,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/26cd29fc6a/soundtrack/games/ibn-battuta/05-chapter-4-makkah.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/c265bfc05b/soundtrack/games/ibn-battuta/lossless/05-chapter-4-makkah.ogg"
+  },
+  {
+   "n": 6,
+   "title": "Chapter 5: Brothers Who Welcome Strangers",
+   "mood": "joy pastoral",
+   "seconds": 75,
+   "heard": [
+    "Ibn Battuta"
+   ],
+   "lufs": -16.0,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/f8379612e0/soundtrack/games/ibn-battuta/06-chapter-5-brothers-who-welcome-strangers.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/5eb03d2eff/soundtrack/games/ibn-battuta/lossless/06-chapter-5-brothers-who-welcome-strangers.ogg"
+  },
+  {
+   "n": 7,
+   "title": "Chapter 6: A Judge in Delhi",
+   "mood": "awe regal",
+   "seconds": 60,
+   "heard": [
+    "Ibn Battuta"
+   ],
+   "lufs": -16.0,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/36b79f4349/soundtrack/games/ibn-battuta/07-chapter-6-a-judge-in-delhi.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/d6a7cf40c4/soundtrack/games/ibn-battuta/lossless/07-chapter-6-a-judge-in-delhi.ogg"
+  },
+  {
+   "n": 8,
+   "title": "Chapter 7: Two Thousand Islands",
+   "mood": "wonder joy pastoral longing",
+   "seconds": 90,
+   "heard": [
+    "Ibn Battuta"
+   ],
+   "lufs": -16.0,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/52a63c0ee0/soundtrack/games/ibn-battuta/08-chapter-7-two-thousand-islands.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/186b82a5a4/soundtrack/games/ibn-battuta/lossless/08-chapter-7-two-thousand-islands.ogg"
+  },
+  {
+   "n": 9,
+   "title": "Chapter 8: The Kind Sultan of Sumatra",
+   "mood": "wonder joy regal",
+   "seconds": 90,
+   "heard": [
+    "Ibn Battuta"
+   ],
+   "lufs": -16.0,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/6bea6ab113/soundtrack/games/ibn-battuta/09-chapter-8-the-kind-sultan-of-sumatra.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/7d4dc776fc/soundtrack/games/ibn-battuta/lossless/09-chapter-8-the-kind-sultan-of-sumatra.ogg"
+  },
+  {
+   "n": 10,
+   "title": "Chapter 9: China",
+   "mood": "wonder joy longing",
+   "seconds": 90,
+   "heard": [
+    "Ibn Battuta"
+   ],
+   "lufs": -16.0,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/b622a36d24/soundtrack/games/ibn-battuta/10-chapter-9-china.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/3be86a3342/soundtrack/games/ibn-battuta/lossless/10-chapter-9-china.ogg"
+  },
+  {
+   "n": 11,
+   "title": "Chapter 10: Home Again",
+   "mood": "longing sad joy",
+   "seconds": 75,
+   "heard": [
+    "Ibn Battuta"
+   ],
+   "lufs": -16.0,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/9abc185dd4/soundtrack/games/ibn-battuta/11-chapter-10-home-again.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/b296dacd7b/soundtrack/games/ibn-battuta/lossless/11-chapter-10-home-again.ogg"
+  },
+  {
+   "n": 12,
+   "title": "Chapter 11: Mali, and the Book",
+   "mood": "trek joy awe triumph regal",
+   "seconds": 105,
+   "heard": [
+    "Ibn Battuta"
+   ],
+   "lufs": -15.9,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/5987220539/soundtrack/games/ibn-battuta/12-chapter-11-mali-and-the-book.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/170b82b728/soundtrack/games/ibn-battuta/lossless/12-chapter-11-mali-and-the-book.ogg"
+  },
+  {
+   "n": 13,
+   "title": "Ibn Battuta: The End",
+   "mood": "triumph",
+   "seconds": 60,
+   "heard": [
+    "Ibn Battuta"
+   ],
+   "lufs": -16.0,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/8a1097c3f5/soundtrack/games/ibn-battuta/13-the-end.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/1cf39e57ab/soundtrack/games/ibn-battuta/lossless/13-the-end.ogg"
+  }
+ ]
+}

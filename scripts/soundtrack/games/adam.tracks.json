@@ -1,0 +1,176 @@
+{
+ "album": "Adam: Music from the Game",
+ "artist": "Asmau",
+ "year": 2026,
+ "tracks": [
+  {
+   "n": 1,
+   "title": "Adam: Title",
+   "mood": "wonder",
+   "seconds": 60,
+   "heard": [
+    "Adam"
+   ],
+   "lufs": -15.9,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/8e90011562/soundtrack/games/adam/01-title.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/887c614475/soundtrack/games/adam/lossless/01-title.ogg"
+  },
+  {
+   "n": 2,
+   "title": "Chapter 1: Someone New",
+   "mood": "awe",
+   "seconds": 75,
+   "heard": [
+    "Adam"
+   ],
+   "lufs": -15.9,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/1b95f7572b/soundtrack/games/adam/02-chapter-1-someone-new.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/f122de2932/soundtrack/games/adam/lossless/02-chapter-1-someone-new.ogg"
+  },
+  {
+   "n": 3,
+   "title": "Chapter 2: Made from Earth",
+   "mood": "trek awe triumph",
+   "seconds": 90,
+   "heard": [
+    "Adam"
+   ],
+   "lufs": -15.9,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/0cb569e025/soundtrack/games/adam/03-chapter-2-made-from-earth.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/b48d1a3da8/soundtrack/games/adam/lossless/03-chapter-2-made-from-earth.ogg"
+  },
+  {
+   "n": 4,
+   "title": "Chapter 3: First Words",
+   "mood": "triumph awe",
+   "seconds": 90,
+   "heard": [
+    "Adam"
+   ],
+   "lufs": -16.0,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/58e3ad2c32/soundtrack/games/adam/04-chapter-3-first-words.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/87ba830861/soundtrack/games/adam/lossless/04-chapter-3-first-words.ogg"
+  },
+  {
+   "n": 5,
+   "title": "Chapter 4: The Names",
+   "mood": "awe triumph",
+   "seconds": 90,
+   "heard": [
+    "Adam"
+   ],
+   "lufs": -16.0,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/f0151ff8dc/soundtrack/games/adam/05-chapter-4-the-names.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/7efc8afd35/soundtrack/games/adam/lossless/05-chapter-4-the-names.ogg"
+  },
+  {
+   "n": 6,
+   "title": "Chapter 5: The Proud One",
+   "mood": "awe dread sad wonder longing",
+   "seconds": 105,
+   "heard": [
+    "Adam"
+   ],
+   "lufs": -16.0,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/d264cc3372/soundtrack/games/adam/06-chapter-5-the-proud-one.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/0ab24347a6/soundtrack/games/adam/lossless/06-chapter-5-the-proud-one.ogg"
+  },
+  {
+   "n": 7,
+   "title": "Chapter 6: The Garden",
+   "mood": "wonder",
+   "seconds": 90,
+   "heard": [
+    "Adam"
+   ],
+   "lufs": -15.9,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/f17c7d15da/soundtrack/games/adam/07-chapter-6-the-garden.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/c7a3616280/soundtrack/games/adam/lossless/07-chapter-6-the-garden.ogg"
+  },
+  {
+   "n": 8,
+   "title": "Chapter 7: The Whisper",
+   "mood": "tense wonder sad",
+   "seconds": 105,
+   "heard": [
+    "Adam"
+   ],
+   "lufs": -16.0,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/9650898139/soundtrack/games/adam/08-chapter-7-the-whisper.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/38f0052d0e/soundtrack/games/adam/lossless/08-chapter-7-the-whisper.ogg"
+  },
+  {
+   "n": 9,
+   "title": "Chapter 8: Sorry",
+   "mood": "longing triumph",
+   "seconds": 75,
+   "heard": [
+    "Adam"
+   ],
+   "lufs": -16.0,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/0370653552/soundtrack/games/adam/09-chapter-8-sorry.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/67545a9223/soundtrack/games/adam/lossless/09-chapter-8-sorry.ogg"
+  },
+  {
+   "n": 10,
+   "title": "Chapter 9: Life on Earth",
+   "mood": "trek joy pastoral",
+   "seconds": 105,
+   "heard": [
+    "Adam"
+   ],
+   "lufs": -16.0,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/040623fd68/soundtrack/games/adam/10-chapter-9-life-on-earth.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/b88c6a38a6/soundtrack/games/adam/lossless/10-chapter-9-life-on-earth.ogg"
+  },
+  {
+   "n": 11,
+   "title": "Chapter 10: Two Brothers",
+   "mood": "pastoral tense longing sad triumph",
+   "seconds": 120,
+   "heard": [
+    "Adam"
+   ],
+   "lufs": -16.0,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/54d7ffb1d2/soundtrack/games/adam/11-chapter-10-two-brothers.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/e7b6d66381/soundtrack/games/adam/lossless/11-chapter-10-two-brothers.ogg"
+  },
+  {
+   "n": 12,
+   "title": "Chapter 11: Children of Adam",
+   "mood": "pastoral longing triumph joy",
+   "seconds": 75,
+   "heard": [
+    "Adam"
+   ],
+   "lufs": -16.0,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/d5c81e3b16/soundtrack/games/adam/12-chapter-11-children-of-adam.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/10868cccc4/soundtrack/games/adam/lossless/12-chapter-11-children-of-adam.ogg"
+  },
+  {
+   "n": 13,
+   "title": "Adam: The End",
+   "mood": "triumph",
+   "seconds": 60,
+   "heard": [
+    "Adam"
+   ],
+   "lufs": -16.0,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/fbce46bf7b/soundtrack/games/adam/13-the-end.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/94149c00d0/soundtrack/games/adam/lossless/13-the-end.ogg"
+  }
+ ]
+}

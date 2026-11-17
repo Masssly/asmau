@@ -1,0 +1,20 @@
+{
+ "album": "Count with Me: Music from the Game",
+ "artist": "Asmau",
+ "year": 2026,
+ "tracks": [
+  {
+   "n": 1,
+   "title": "Count with Me",
+   "mood": "wonder",
+   "seconds": 90,
+   "heard": [
+    "Count with Me"
+   ],
+   "lufs": -15.9,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/e2a1b44f5c/soundtrack/games/count-the-crescents/01-wonder.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/c3ec155f6e/soundtrack/games/count-the-crescents/lossless/01-wonder.ogg"
+  }
+ ]
+}

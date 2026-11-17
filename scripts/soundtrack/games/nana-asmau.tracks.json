@@ -1,0 +1,176 @@
+{
+ "album": "Nana Asma'u: Music from the Game",
+ "artist": "Asmau",
+ "year": 2026,
+ "tracks": [
+  {
+   "n": 1,
+   "title": "Nana Asma'u: Title",
+   "mood": "pastoral",
+   "seconds": 60,
+   "heard": [
+    "Nana Asma'u"
+   ],
+   "lufs": -16.0,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/a163ea90b1/soundtrack/games/nana-asmau/01-title.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/4d3fdaf7ce/soundtrack/games/nana-asmau/lossless/01-title.ogg"
+  },
+  {
+   "n": 2,
+   "title": "Chapter 1: Two Babies in Degel",
+   "mood": "nile wonder",
+   "seconds": 75,
+   "heard": [
+    "Nana Asma'u"
+   ],
+   "lufs": -15.9,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/57bd403587/soundtrack/games/nana-asmau/02-chapter-1-two-babies-in-degel.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/9c604742ba/soundtrack/games/nana-asmau/lossless/02-chapter-1-two-babies-in-degel.ogg"
+  },
+  {
+   "n": 3,
+   "title": "Chapter 2: The Girl with Two Belts",
+   "mood": "longing triumph wonder",
+   "seconds": 90,
+   "heard": [
+    "Nana Asma'u"
+   ],
+   "lufs": -16.0,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/fb1bfad62e/soundtrack/games/nana-asmau/03-chapter-2-the-girl-with-two-belts.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/d7376f9f83/soundtrack/games/nana-asmau/lossless/03-chapter-2-the-girl-with-two-belts.ogg"
+  },
+  {
+   "n": 4,
+   "title": "Chapter 3: Learning at Home",
+   "mood": "longing pastoral awe",
+   "seconds": 105,
+   "heard": [
+    "Nana Asma'u"
+   ],
+   "lufs": -16.0,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/52d9aa887c/soundtrack/games/nana-asmau/04-chapter-3-learning-at-home.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/2a46b79869/soundtrack/games/nana-asmau/lossless/04-chapter-3-learning-at-home.ogg"
+  },
+  {
+   "n": 5,
+   "title": "Chapter 4: The Journey",
+   "mood": "trek longing",
+   "seconds": 60,
+   "heard": [
+    "Nana Asma'u"
+   ],
+   "lufs": -16.0,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/2a262bc655/soundtrack/games/nana-asmau/05-chapter-4-the-journey.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/6d174bc449/soundtrack/games/nana-asmau/lossless/05-chapter-4-the-journey.ogg"
+  },
+  {
+   "n": 6,
+   "title": "Chapter 5: Hard Years",
+   "mood": "dread pastoral trek triumph",
+   "seconds": 75,
+   "heard": [
+    "Nana Asma'u"
+   ],
+   "lufs": -16.0,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/8b54a586fa/soundtrack/games/nana-asmau/06-chapter-5-hard-years.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/17bd33e0f5/soundtrack/games/nana-asmau/lossless/06-chapter-5-hard-years.ogg"
+  },
+  {
+   "n": 7,
+   "title": "Chapter 6: A New Town",
+   "mood": "triumph joy pastoral",
+   "seconds": 60,
+   "heard": [
+    "Nana Asma'u"
+   ],
+   "lufs": -16.0,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/a523768613/soundtrack/games/nana-asmau/07-chapter-6-a-new-town.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/87af2a1c31/soundtrack/games/nana-asmau/lossless/07-chapter-6-a-new-town.ogg"
+  },
+  {
+   "n": 8,
+   "title": "Chapter 7: Saving the Books",
+   "mood": "longing awe wonder triumph",
+   "seconds": 75,
+   "heard": [
+    "Nana Asma'u"
+   ],
+   "lufs": -16.0,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/04764abc64/soundtrack/games/nana-asmau/08-chapter-7-saving-the-books.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/af2697796f/soundtrack/games/nana-asmau/lossless/08-chapter-7-saving-the-books.ogg"
+  },
+  {
+   "n": 9,
+   "title": "Chapter 8: Words in Four Languages",
+   "mood": "wonder pastoral",
+   "seconds": 75,
+   "heard": [
+    "Nana Asma'u"
+   ],
+   "lufs": -15.9,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/6c3537056d/soundtrack/games/nana-asmau/09-chapter-8-words-in-four-languages.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/3994d32315/soundtrack/games/nana-asmau/lossless/09-chapter-8-words-in-four-languages.ogg"
+  },
+  {
+   "n": 10,
+   "title": "Chapter 9: The Teacher of Teachers",
+   "mood": "awe triumph joy trek longing pastoral",
+   "seconds": 120,
+   "heard": [
+    "Nana Asma'u"
+   ],
+   "lufs": -16.0,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/4c7bc7bd36/soundtrack/games/nana-asmau/10-chapter-9-the-teacher-of-teachers.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/6b8679a3ac/soundtrack/games/nana-asmau/lossless/10-chapter-9-the-teacher-of-teachers.ogg"
+  },
+  {
+   "n": 11,
+   "title": "Chapter 10: Mother of the Town",
+   "mood": "pastoral joy longing",
+   "seconds": 60,
+   "heard": [
+    "Nana Asma'u"
+   ],
+   "lufs": -16.0,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/35b5e9d6ec/soundtrack/games/nana-asmau/11-chapter-10-mother-of-the-town.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/5f23aeaa6b/soundtrack/games/nana-asmau/lossless/11-chapter-10-mother-of-the-town.ogg"
+  },
+  {
+   "n": 12,
+   "title": "Chapter 11: Remembered Today",
+   "mood": "awe triumph",
+   "seconds": 75,
+   "heard": [
+    "Nana Asma'u"
+   ],
+   "lufs": -16.0,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/8904fff824/soundtrack/games/nana-asmau/12-chapter-11-remembered-today.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/2f097e07ca/soundtrack/games/nana-asmau/lossless/12-chapter-11-remembered-today.ogg"
+  },
+  {
+   "n": 13,
+   "title": "Nana Asma'u: The End",
+   "mood": "triumph",
+   "seconds": 60,
+   "heard": [
+    "Nana Asma'u"
+   ],
+   "lufs": -16.0,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/59c9037792/soundtrack/games/nana-asmau/13-the-end.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/fbab65d79a/soundtrack/games/nana-asmau/lossless/13-the-end.ogg"
+  }
+ ]
+}

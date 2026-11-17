@@ -17,43 +17,43 @@
 */
 
 // BEGIN GENERATED
-const RELEASE = "2026.11.41";
-const BUILD = "ade681de1e09";
+const RELEASE = "2026.11.42";
+const BUILD = "ab84a479588d";
 // pack: [fingerprint of packs/<pack>.json, bytes, files]
 const PACKS = {
   "adam":["4f6ded53a9",2721610,55],
   "adam@m":["a617f3f408",4026446,147],
   "adam@w":["217fc43e27",4316508,147],
-  "core":["638451d5e7",990028,39],
+  "core":["e583adf5cb",990333,39],
   "count-the-crescents":["c58ffd2f9d",83016,5],
   "count-the-crescents@m":["76410cb722",587647,52],
   "count-the-crescents@w":["238f9dbdf7",584828,52],
-  "ibn-battuta":["ac55234aed",3497853,54],
-  "ibn-battuta@m":["0e8002f829",3511529,130],
-  "ibn-battuta@w":["f0093c205e",3797936,130],
-  "musa":["7d00ec09e5",8063720,161],
-  "musa@m":["82bed29f40",13950526,422],
-  "musa@w":["5e7023ffde",15159879,422],
-  "nana-asmau":["a589ac1994",2470828,51],
-  "nana-asmau@m":["f459229234",3366561,116],
-  "nana-asmau@w":["e85f1693d8",3639073,116],
-  "nuh":["6c85c9020f",3351649,55],
-  "nuh@m":["8e929a1b1f",3882631,145],
-  "nuh@w":["1168c320e1",4156508,145],
-  "rahmah":["4f75e6e66c",2725780,46],
-  "rahmah@id-m":["646912c71b",3179389,114],
-  "rahmah@id-w":["94e09d513a",3310413,114],
-  "rahmah@m":["a4fe8c7289",2874273,114],
-  "rahmah@w":["cf884129c1",3117733,114],
+  "ibn-battuta":["6e7e76449b",3497890,54],
+  "ibn-battuta@m":["fc1dc2b090",3523440,130],
+  "ibn-battuta@w":["4418230851",3810161,130],
+  "musa":["a67650de55",8063787,161],
+  "musa@m":["e8ae6e31ff",13995246,422],
+  "musa@w":["5ac25136bc",15197808,422],
+  "nana-asmau":["8699fc6e67",2470881,51],
+  "nana-asmau@m":["0a028f5761",3395505,116],
+  "nana-asmau@w":["a6c18e6bbe",3665928,116],
+  "nuh":["6f4dbb18c5",3351667,55],
+  "nuh@m":["1852874f1c",3888796,145],
+  "nuh@w":["1c57f6027a",4165390,145],
+  "rahmah":["4130bffb45",2725801,46],
+  "rahmah@id-m":["ec329859ed",3172911,114],
+  "rahmah@id-w":["dde118b888",3315323,114],
+  "rahmah@m":["35a8bb21ae",2876572,114],
+  "rahmah@w":["ef657c152b",3123167,114],
   "tap-and-say":["284f427c70",21717,4],
   "tap-and-say@m":["71edb942d5",1501703,126],
   "tap-and-say@w":["d9e7f925b2",1472336,126],
-  "umm-ayman":["bc23859126",3277475,56],
-  "umm-ayman@m":["24046ad1cb",3319749,116],
-  "umm-ayman@w":["8c74443e58",3651189,116],
-  "yusuf":["74e1a8e90e",5828175,93],
-  "yusuf@m":["f057137d75",6578971,190],
-  "yusuf@w":["60ff092efc",7039872,190]
+  "umm-ayman":["ee1ddb1e6c",3277562,56],
+  "umm-ayman@m":["25ae6bd6a0",3369590,116],
+  "umm-ayman@w":["aa2daf9273",3702494,116],
+  "yusuf":["ae7d43afbf",5828199,93],
+  "yusuf@m":["2a69833071",6587121,190],
+  "yusuf@w":["04eac29a40",7052724,190]
 };
 const MEDIA_BASE = "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/";
 // END GENERATED

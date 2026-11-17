@@ -1,11 +1,18 @@
 {
-  "version": "2026.11.41",
+  "version": "2026.11.42",
   "date": "2026-11-17",
-  "buildId": "ade681de1e09",
+  "buildId": "ab84a479588d",
   "notes": [
-    "After a wrong answer, the explanation stays on screen until the child answers again, and a tap says it again (it used to vanish as soon as it was read)"
+    "Clearer stories: 29 pages that began with an unclear he or she now say who is meant (Umm Ayman, Nana Asma'u, Musa, Ibn Battuta, Rahmah, Nuh, Yusuf), read again in both voices"
   ],
   "history": [
+    {
+      "version": "2026.11.42",
+      "date": "2026-11-17",
+      "notes": [
+        "Clearer stories: 29 pages that began with an unclear he or she now say who is meant (Umm Ayman, Nana Asma'u, Musa, Ibn Battuta, Rahmah, Nuh, Yusuf), read again in both voices"
+      ]
+    },
     {
       "version": "2026.11.41",
       "date": "2026-11-17",

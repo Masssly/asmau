@@ -30,7 +30,11 @@
     position: absolute; right: 0; top: 4px; background: rgba(255,255,255,.08); color: var(--cream); border: 1px solid var(--card-line);
     border-radius: 999px; padding: 8px 14px; font-family: var(--font-display); font-size: 14px; cursor: pointer;
   }
-  .parents-btn:focus-visible, .tile:focus-visible, .sheet-close:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
+  .lang-btn {
+    position: absolute; left: 0; top: 4px; background: rgba(255,255,255,.08); color: var(--cream); border: 1px solid var(--card-line);
+    border-radius: 999px; padding: 8px 12px; font-family: var(--font-display); font-size: 14px; cursor: pointer;
+  }
+  .lang-btn:focus-visible, .parents-btn:focus-visible, .tile:focus-visible, .sheet-close:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
 
   /* one section per kind of game; always open, so a child can see everything */
   .section { margin-top: 22px; }
@@ -185,6 +189,7 @@
 <div class="wrap">
   <div class="hero">
     <button class="parents-btn" id="parentsBtn" aria-haspopup="dialog">For parents</button>
+    <button class="lang-btn" id="langBtn" aria-haspopup="dialog" hidden><span aria-hidden="true">🌐</span> <span id="langNow">English</span></button>
     <img class="mark" src="icons/mark.svg" alt="" width="76" height="76">
     <h1>Asmau</h1>
   </div>
@@ -230,6 +235,11 @@
         <button type="button" role="radio" data-voice="w" aria-checked="true"><span>👩🏿</span> A woman’s voice</button>
         <button type="button" role="radio" data-voice="m" aria-checked="false"><span>👨🏿</span> A man’s voice</button>
       </div>
+      </div>
+
+      <div class="p-voice" id="langFront" hidden>
+        <p class="p-voice-h"><strong>🌐 Language of the stories</strong></p>
+        <div class="voice-pick" role="radiogroup" aria-label="Language" data-lang-pick></div>
       </div>
 
       <div class="p-pair">
@@ -359,7 +369,7 @@
       <h3>Language · Bahasa</h3>
       <p>Choose the language your child reads and hears. A game that is not translated yet stays in English, and says so on
         its card. The notes for parents stay in English for now.</p>
-      <div class="voice-pick" role="radiogroup" aria-label="Language" id="langPick"></div>
+      <div class="voice-pick" role="radiogroup" aria-label="Language" id="langPick" data-lang-pick></div>
       <p class="p-small">Your own recordings play in any language you choose: they always come first.</p>
     </div>
 
@@ -683,9 +693,10 @@
   }
 
   // For parents > Language: English, and each language at least one game has (checked; or any draft with ?lang=)
+  var openParents = null;              // set by wireParents: open For parents at a topic
   function wireLangPick() {
-    var pick = document.getElementById("langPick"), item = document.getElementById("langItem");
-    if (!L || !pick) return;
+    var picks = document.querySelectorAll("[data-lang-pick]"), item = document.getElementById("langItem");
+    if (!L || !picks.length) return;
     var have = {};
     CATALOGUE.forEach(function (sec) { sec.games.forEach(function (g) {
       (g.langs || []).forEach(function (c) { have[c] = (have[c] || 0) + 1; });
@@ -694,6 +705,13 @@
     var codes = Object.keys(have).filter(function (c) { return L.names[c]; });
     if (!codes.length && CODE === "en") return;           // nothing to choose yet
     item.hidden = false;
+    document.getElementById("langFront").hidden = false;
+    // the button at the top of the page: the language in use, by its own name; it opens the choice
+    var lb = document.getElementById("langBtn");
+    document.getElementById("langNow").textContent = L.names[CODE] || CODE;
+    lb.hidden = false;
+    lb.addEventListener("click", function () { if (openParents) openParents("language", lb); });
+    Array.prototype.forEach.call(picks, function (pick) {
     pick.innerHTML = "";
     ["en"].concat(codes).forEach(function (c) {
       var b = el("button", "", L.names[c] || c); b.type = "button"; b.setAttribute("role", "radio");
@@ -714,6 +732,7 @@
         }
         location.reload();
       });
+    });
     });
   }
 
@@ -744,6 +763,7 @@
     });
     backBtn.addEventListener("click", function () { go("home"); });
     btn.addEventListener("click", function () { open(); });
+    openParents = open;
     document.getElementById("voiceStrip").addEventListener("click", function () { open("record", this); });
     // a link such as index.html#parents-record opens that topic straight away
     var m = /^#parents(?:-(\w+))?$/.exec(location.hash);

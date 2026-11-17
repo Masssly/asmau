@@ -17,14 +17,14 @@
 */
 
 // BEGIN GENERATED
-const RELEASE = "2026.11.43";
-const BUILD = "97d48529a1b1";
+const RELEASE = "2026.11.44";
+const BUILD = "7d2cf033f4f8";
 // pack: [fingerprint of packs/<pack>.json, bytes, files]
 const PACKS = {
   "adam":["4f6ded53a9",2721610,55],
   "adam@m":["a617f3f408",4026446,147],
   "adam@w":["217fc43e27",4316508,147],
-  "core":["5cbf92f51a",995305,39],
+  "core":["cf5c240dd0",998500,39],
   "count-the-crescents":["c58ffd2f9d",83016,5],
   "count-the-crescents@m":["76410cb722",587647,52],
   "count-the-crescents@w":["238f9dbdf7",584828,52],

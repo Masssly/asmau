@@ -1,11 +1,18 @@
 {
-  "version": "2026.11.43",
+  "version": "2026.11.44",
   "date": "2026-11-17",
-  "buildId": "97d48529a1b1",
+  "buildId": "7d2cf033f4f8",
   "notes": [
-    "Easier to find: who reads the stories (a woman's or a man's voice) is now on the front of For parents, in Sound and volume, and in each story's own For parents box"
+    "Easier to find: the language of the stories, from a 🌐 button at the top of the home page, on the front of For parents, and in each translated game's For parents box"
   ],
   "history": [
+    {
+      "version": "2026.11.44",
+      "date": "2026-11-17",
+      "notes": [
+        "Easier to find: the language of the stories, from a 🌐 button at the top of the home page, on the front of For parents, and in each translated game's For parents box"
+      ]
+    },
     {
       "version": "2026.11.43",
       "date": "2026-11-17",

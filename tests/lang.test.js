@@ -68,6 +68,20 @@ module.exports = async function () {
       T.check(await p2.isVisible("text=Kisah Para Nabi") && (await p2.textContent("a.tile[data-slug=rahmah]")).includes("Gadis dari pegunungan"), "choosing Bahasa Indonesia turns the home page and Rahmah's card Indonesian");
       await p2.goto(G, { waitUntil: "networkidle" }); await p2.waitForTimeout(400);
       T.check((await p2.textContent("#startBtn")).trim() === "Mulai cerita", "and Rahmah opens in Indonesian");
+      // the game's own For parents box: the language, and back to English from there
+      await p2.click("details.parents summary");
+      const row = p2.locator("details.parents .voice-pick[aria-label='Language'], details.parents .voice-pick[aria-label='Bahasa']");
+      T.check(await row.locator("[lang=id][aria-checked=true]").count() === 1, "Rahmah's For parents box shows the language, Indonesian chosen");
+      await Promise.all([p2.waitForNavigation({ waitUntil: "networkidle" }), row.locator("[lang=en]").click()]);
+      await p2.waitForTimeout(500);
+      T.check((await p2.textContent("#startBtn")).trim() === "Start the story", "choosing English there brings the game back in English");
+      // the home page: a language button at the top, and the choice on the front of For parents
+      await p2.goto(site.url + "index.html", { waitUntil: "networkidle" }); await p2.waitForTimeout(600);
+      T.check(await p2.isVisible("#langBtn") && (await p2.textContent("#langNow")).trim() === "English", "the home page has a language button at the top, showing English");
+      await p2.click("#langBtn"); await p2.waitForTimeout(300);
+      T.check(await p2.isVisible('.p-view[data-view="language"] [data-lang=id]'), "it opens the language choice");
+      await p2.click("#parentsClose"); await p2.click("#parentsBtn"); await p2.waitForTimeout(300);
+      T.check(await p2.isVisible("#langFront [data-lang=id]"), "the front of For parents shows the language choice too");
     }
     await b2.close();
   }

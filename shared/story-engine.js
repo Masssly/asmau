@@ -1535,6 +1535,22 @@
     paint();
     row.appendChild(pick);
     box.insertBefore(row, box.querySelector("summary").nextSibling);
+    // and the language, where the game has a translation (shared/lang.js); choosing one reloads the page in it
+    if (!LANG) return;
+    LANG.offered(GAME).then(function (codes) {
+      if (codes.length < 2) return;
+      var lrow = mk("div", "voice-ctl"), lpick = mk("div", "voice-pick");
+      lrow.appendChild(mk("p", "voice-ctl-h", "🌐 Language of the story:"));
+      lpick.setAttribute("role", "radiogroup"); lpick.setAttribute("aria-label", "Language");
+      codes.forEach(function (c) {
+        var b = mk("button", "", LANG.names[c] || c); b.type = "button"; b.lang = c;
+        b.setAttribute("role", "radio"); b.setAttribute("aria-checked", String(c === (LANG.has(GAME) ? LANG.code() : "en")));
+        b.addEventListener("click", function () { LANG.set(c); location.href = location.pathname; });
+        lpick.appendChild(b);
+      });
+      lrow.appendChild(lpick);
+      box.insertBefore(lrow, row.nextSibling);
+    });
   }
 
   function prepareAll() {

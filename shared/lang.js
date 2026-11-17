@@ -99,6 +99,13 @@ window.AsmauLang = (function () {
     // which narration pack: English keeps "w"/"m"; another language "<code>-w"/"<code>-m", when the game is in it
     voicePack: function (v, s) { return lang === "en" || !gameOk[s || slug] ? v : lang + "-" + v; },
     audioDir: function (v, s) { return lang === "en" || !gameOk[s || slug] ? (v === "m" ? "audio-m" : "audio") : "audio-" + lang + (v === "m" ? "-m" : ""); },
-    set: function (code) { try { localStorage.setItem("asmau-lang", code); } catch (e) { /* this visit only */ } }
+    set: function (code) { try { localStorage.setItem("asmau-lang", code); } catch (e) { /* this visit only */ } },
+    // the languages a game can be played in (English, and each translation that is checked; drafts with ?lang=)
+    offered: function (s) {
+      var codes = Object.keys(this.names).filter(function (c) { return c !== "en"; });
+      return Promise.all(codes.map(function (c) {
+        return getJSON(new URL("games/" + s + "/lang/" + c + ".json", root).href).then(function (d) { return d && (d.status === "checked" || preview) ? c : null; });
+      })).then(function (r) { return ["en"].concat(r.filter(Boolean)); });
+    }
   };
 })();

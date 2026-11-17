@@ -78,7 +78,7 @@ s("a", "egypt", "The big day came. The sun was high, and the whole city was ther
   "A huge open festival ground under a high bright sun, packed with a cheering crowd: {SORC} stand in a row holding coils of rope and wooden sticks, facing {MU} and {HA}; {PH} watches from a shaded platform.", { mood: "court", amb: "crowd" });
 s("b", "egypt", "Musa warned them: do not make up lies about Allah! Then they said: Musa, will you throw first, or shall we? Musa said: you throw.", "Close up on the festival ground under a high bright sun: {MU} raises one open hand toward {SORC} in an earnest warning, his staff in the other hand, {HA} beside him; the magicians clutch their ropes and sticks and glance at each other uneasily. A crowd watches behind them.", { mood: "court", amb: "crowd" });
 q("q1", "egypt", "Who threw first?", ["The magicians", "🧙"], ["Musa", "STAFF"], "No. Musa said to the magicians: you throw first.", { img: "a" });
-s("c", "egypt", "They threw down their ropes and their sticks. And by their magic, the ropes seemed to wriggle and slither, just like snakes!",
+s("c", "egypt", "The magicians threw down their ropes and their sticks. And by their magic, the ropes seemed to wriggle and slither, just like snakes!",
   "On a sandy festival ground, dozens of ropes and sticks lie scattered and seem to twist and wriggle like snakes; {SORC} raise their arms proudly, the crowd gasps.", { mood: "dread", amb: "crowd" });
 p("count", "ropes", "egypt", "Look closely. They are only ropes! Tap each one to see what it really is.", { total: 9, icon: "🐍", got: "ROPE" });
 s("d", "egypt", "Even Musa felt afraid inside. But Allah said: do not be afraid. You will win. Throw down what is in your right hand.",

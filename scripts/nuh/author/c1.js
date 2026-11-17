@@ -45,7 +45,7 @@ chapter("n4", "🌧️", "Look at Allah's World", "71:10-20", [], null);
 s("a", "field", "Nuh said: ask your Lord to forgive you. He is always forgiving. He will send you plenty of rain from the sky.",
   "Soft rain falls on green fields and palm trees from grey-white clouds, the sun breaking through at one side. No people.");
 p("count", "rain", "field", "Help the rain fall on the fields. Tap each cloud.", { total: 6, icon: "☁️", got: "🌧️" }, { img: "a" });
-s("b", "field", "He will give you wealth and sons, and gardens and rivers.",
+s("b", "field", "Nuh told them: Allah will give you wealth and sons, and gardens and rivers.",
   "A happy family with deep dark brown skin walks beside a river through a green garden of fruit trees; the mother's and daughter's hair is covered by headscarves.", { mood: "joy" });
 s("c", "night", "Look how Allah made the seven heavens, one above the other. He put the moon in them as a light, and the sun as a lamp.",
   "A wide sky at twilight: the moon glows on one side and the last of the sun on the other, with the first stars between, over a quiet valley. No people.", { mood: "wonder" });

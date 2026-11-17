@@ -19,7 +19,7 @@ s("a", "dusk", "When Rahmah was six years old, her father died. She missed him v
 s("b", "village", "But her father's students came to teach her. She learned to read and write, in Arabic letters and in Latin letters too.",
   "{RG} sits at a low wooden desk writing carefully on a slate, while a kind young Minangkabau teacher in a white shirt and black peci cap points at the slate and smiles; books on the floor around them. The writing is only marks too small to read.", { src: HIS, mood: "joy" });
 p("count", "books", "village", "Count the books she read! Tap each one.", { total: 6, icon: "📖", got: "✨" }, { img: "b" });
-s("c", "village", "She also learned how to help mothers when their babies are born.",
+s("c", "village", "Rahmah also learned how to help mothers when their babies are born.",
   "In a simple clinic room with a wooden cradle and white cloths, a kind Minangkabau midwife in a white headscarf shows {RG}, a little older now, how to fold a soft baby blanket.", { src: HIS });
 q("q", "village", "Who taught Rahmah after her father died?", ["Her father's students", "📖"], ["Nobody at all", "🚫"], "Her father's students came and taught her to read and write.", { img: "b" });
 
@@ -34,12 +34,12 @@ s("c", "dawn", "A few years later, she went back to school.",
 q("q", "night", "What did Rahmah do when she had to leave school?", ["She kept learning", "📚"], ["She stopped learning", "😴"], "She kept learning, in study circles, until she could go back to school.", { img: "b" });
 
 chapter("r4", "🏫", "Back to School", null, [], null, CITE);
-s("a", "village", "Her big brother, Zainuddin, had started a school called Diniyah. Rahmah went back there to study.",
+s("a", "village", "Rahmah's big brother, Zainuddin, had started a school called Diniyah. Rahmah went back there to study.",
   "In front of a simple two-storey wooden school building in {TOWN}, a cheerful Minangkabau man of about thirty in a white shirt and black peci cap welcomes {RY} with a smile.", { src: HIS });
 s("b", "village", "After class, she gathered the girls together, to study more.",
   "In a classroom after lessons, {RY} sits on a mat with seven {GIRLS} in a circle around her, books open, all smiling and talking.", { src: HIS, mood: "joy" });
 p("count", "girls", "village", "Count the girls in her study circle. Tap each one.", { total: 7, icon: "🧕", got: "✨" }, { img: "b" });
-s("c", "field", "She saw that girls needed a school of their own, where they could learn everything, and feel at home.",
+s("c", "field", "Rahmah saw that girls needed a school of their own, where they could learn everything, and feel at home.",
   "{RY} stands on a hill above {TOWN} at golden hour, looking at the town thoughtfully, one hand on her heart, as if planning something.", { src: HIS, mood: "awe" });
 q("q", "field", "What did Rahmah want for girls?", ["A school of their own", "🏫"], ["No school at all", "🚫"], "She wanted girls to have a school of their own.", { img: "c" });
 

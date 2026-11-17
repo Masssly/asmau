@@ -31,7 +31,7 @@ chapter("m3", "💛", "The Queen's Heart", "28:8-9", ["20:39"], null);
 s("a", "palace", "The river carried the chest right up to the palace of Pharaoh! The people of his house saw it in the water.",
   "At stone steps where {PAL} meets {NILE}, three servant women in plain linen dresses and headscarves point in surprise at a small closed wooden chest floating among the reeds.");
 p("pull", "pull", "river", "Pull the chest out of the water. Pull, pull, pull!", { icon: "CHEST", label: "Pull!" });
-s("b", "palace", "They carried it, still closed, to the queen. Her name was Asiya.",
+s("b", "palace", "The people of Pharaoh's house carried it, still closed, to the queen. Her name was Asiya.",
   "In a bright palace room with painted columns, two servant women set a small closed wooden chest down in front of {ASIYA}, who leans forward with curiosity.", { src: TAF });
 chg("open", "palace", "What is inside? Tap the chest to open it.", [["CHEST", ""], ["👶", "A beautiful baby boy!"]], { img: "b" });
 s("c", "palace", "Inside was a beautiful baby boy. And Allah filled her heart with love for him.",

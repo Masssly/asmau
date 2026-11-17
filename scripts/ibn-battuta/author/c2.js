@@ -27,12 +27,12 @@ s("d", "city", "And he was humble: he walked to the Friday prayer on foot, like 
 q("q", "city", "How did the Sultan go to Friday prayer?", ["He walked, like everyone", "🚶"], ["On a golden throne", "👑"], "He was humble, and walked to the Friday prayer on foot.", { img: "d" });
 
 chapter("i9", "🏮", "China", null, [], null, "The Rihla, tr. Gibb and Beckingham, vol. IV, pp. 889-892");
-s("a", "sea", "His ship sailed on and on, far away, to China.",
+s("a", "sea", "Ibn Battuta's ship sailed on and on, far away, to China.",
   "A great Chinese harbour long ago, full of large wooden ships with ribbed sails; {IB} stands at the rail of a ship arriving, looking at the busy port in wonder.", { src: RIH, mood: "wonder" });
 s("b", "city", "In China, people paid with money made of paper, as big as your hand!",
   "In a Chinese market long ago, a Chinese merchant hands a small sheet of paper money to {IB}, who holds it up in surprise; stalls of silk and fruit behind them.", { src: RIH, mood: "joy" });
 p("count", "notes", "city", "Pay with paper money! Tap each note.", { total: 5, icon: "📜", got: "✅" }, { img: "b" });
-s("c", "city", "He saw beautiful china dishes being made, like the dish the boy broke in Damascus!",
+s("c", "city", "Ibn Battuta saw beautiful china dishes being made, like the dish the boy broke in Damascus!",
   "In a Chinese pottery workshop, Chinese men paint blue patterns on white porcelain dishes and vases while {IB} watches, delighted. No girls; any woman wears a headscarf that covers all her hair.", { src: RIH });
 s("d", "night", "He said: China is the safest and best country for the traveller.",
   "A quiet Chinese town at night with lanterns glowing along a canal and a stone bridge; {IB} walks calmly along the path alone, peaceful and safe.", { src: RIH, mood: "longing" });
@@ -57,7 +57,7 @@ chapter("i11", "📖", "Mali, and the Book", null, [], null, "The Rihla, tr. Gib
 s("a", "desert", "But soon he set out again, across the great Sahara desert with a camel caravan, to the land of Mali in West Africa.",
   "A long camel caravan crosses golden sand dunes of the Sahara under a wide blue sky, {IB} riding a camel with a cloth wrapped around his face against the sun.", { src: RIH, mood: "trek" });
 p("journey", "sahara", "desert", "Lead the caravan across the Sahara to Mali.", { from: "🏜️", to: "🕌", icon: "🐪", steps: 7 }, { img: "a" });
-s("b", "city", "He wrote that the people of Mali hated injustice, and that travellers there were safe: nobody had to fear robbers.",
+s("b", "city", "Ibn Battuta wrote that the people of Mali hated injustice, and that travellers there were safe: nobody had to fear robbers.",
   "A busy town in old Mali with buildings of earth and wooden beams, West African people of Mali with deep dark brown skin in flowing robes trading in the street, travellers with camels resting safely; every woman's hair covered.", { src: RIH });
 s("c", "city", "On Fridays everyone wore clean white clothes to the mosque. It was so full that people sent their prayer mats early, to keep a place.",
   "A great mosque of Mali built of earth with wooden beams sticking out of its walls, West African men in clean white robes arriving for Friday prayer carrying woven prayer mats; {IB} among them.", { src: RIH, mood: "awe" });

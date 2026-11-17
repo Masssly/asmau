@@ -215,6 +215,16 @@ for (const slug of slugs) {
       }
     };
 
+    // a page that opens with "he" or "she" where the child cannot know who that is: the first page of a chapter, or the
+    // page after an activity (owner's note, Umm Ayman 10.2: "she" could be Umm Ayman or Fatimah). Name the person.
+    const lineText = (id) => { const l = lines.find((x) => x.id === id); return l ? l.text : ""; };
+    ch.steps.forEach((st, si) => {
+      if (!st.say || (si > 0 && ch.steps[si - 1].say)) return;
+      const m = /^(He|She|They|His|Her|Him|Their)\b/.exec(lineText(st.say));
+      if (m) warn(dir + ": " + here + " page " + (ci + 1) + "." + (si + 1) + " ('" + st.say + "') starts with '" + m[1] + "' " +
+        (si ? "right after an activity" : "at the start of a chapter") + ": say who it is");
+    });
+
     ch.steps.forEach((st, si) => {
       const where = here + " step " + (si + 1);
       if (!SCENES.has(st.scene)) fail(dir + ": " + where + " has unknown scene '" + st.scene + "'");

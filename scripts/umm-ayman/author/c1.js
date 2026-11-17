@@ -20,13 +20,13 @@ s("a", "night", "Then Amina had a baby boy. He was called Muhammad, peace and bl
 s("b", "dawn", "Barakah loved the baby. She helped his mother look after him, by day and by night.",
   "In the early morning light, {UAY} gently rocks a wooden cradle with a white cloth canopy over it, singing softly; the inside of the cradle is not seen. {HERE}.", { src: ZUH, presence: true });
 p("hold", "rock", "dawn", "Rock the cradle gently. Press and hold, until he is fast asleep.", { ms: 2500, icon: "🌙", hint: "Press and hold", done: "Fast asleep" }, { img: "b" });
-s("c", "city", "When his father died, he left five camels, some sheep, and Barakah, who looked after the baby.",
+s("c", "city", "The baby's father, Abdullah, had left five camels, some sheep, and Barakah, who looked after the baby.",
   "In a dusty yard of a mud-brick house in {MAKKAH}, a single row of exactly five camels (one, two, three, four, five), all fully in view, rest side by side and a few sheep graze, while {UAY} carries a bundle of hay towards them.", { src: SAD });
 p("count", "camels", "city", "Count the five camels. Tap each one.", { total: 5, icon: "🐪", got: "✨" }, { img: "c" });
 q("q", "dawn", "Who helped Amina look after baby Muhammad?", ["Barakah", "🤲"], ["Nobody at all", "🚫"], "Barakah helped his mother look after him, by day and by night.", { img: "b" });
 
 chapter("u3", "🕊️", "A Month in Madina", null, [], null, "Ibn Sa'd, al-Tabaqat (vol. 1)");
-s("a", "desert", "When he was six, his mother took him to visit her family in the town of Yathrib, which later was called Madina. Barakah went with them, on two camels.",
+s("a", "desert", "When Muhammad was six, his mother took him to visit her family in the town of Yathrib, which later was called Madina. Barakah went with them, on two camels.",
   "In the morning, {CAMELS} walk along a rocky desert road; {AMINA} rides the first camel and {UAY} walks beside the second, holding its rope. {HERE}.", { src: SAD, presence: true });
 s("b", "field", "They stayed a whole month with his mother's family, among the date palms.",
   "In a courtyard of a mud-brick house among date palms, {UAY} and {AMINA} sit on a mat with two kind relatives, a grey-bearded man and an older woman; every woman's headscarf covers her forehead and every strand of her hair; sharing a plate of dates and cups of milk.", { src: SAD });
@@ -53,7 +53,7 @@ s("a", "city", "In Makkah, his grandfather Abd al-Muttalib looked after him. He 
 s("b", "city", "He said to Barakah: O blessed one! Look after this son of mine, and never forget him.",
   "{GRAND} speaks kindly to {UAY}, one hand raised; she listens, her hand on her heart, nodding.", { src: SAD });
 q("q", "city", "What did the grandfather call Barakah?", ["O blessed one", "🌟"], ["O lazy one", "😴"], "He called her: O blessed one. That is what Barakah means.", { img: "b" });
-s("c", "dusk", "But when the boy was eight, his grandfather died too. Barakah saw the boy crying as he walked behind him.",
+s("c", "dusk", "But when the boy was eight, his grandfather died too. Barakah saw the boy crying as he walked behind his grandfather's funeral.",
   "At dusk {UAY} stands in a doorway in {MAKKAH} with tears in her eyes, watching a quiet line of men walk away down the lane in the distance.", { src: SAD, mood: "sad" });
 s("d", "city", "Then his uncle Abu Talib took him into his home, and loved him like his own son.",
   "Only two people in the whole picture, nobody else and no one at the edges: in front, {UNCLE} stands at the open door of his house in {MAKKAH}, smiling, with his arms open wide in welcome; beside him {UAY} watches, smiling with relief. {HERE}.", { src: SAD, mood: "joy", presence: true });

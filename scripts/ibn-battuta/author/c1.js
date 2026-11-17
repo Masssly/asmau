@@ -13,7 +13,7 @@ srt("pack", "city", "What does a traveller need? Pack his bag.", ["Pack it", "�
   ["💧", "A water skin", 0], ["🛏️", "A big bed", 1], ["🍞", "Bread and dates", 0],
   ["🧥", "A warm cloak", 0], ["🪑", "A heavy table", 1], ["📦", "A box of toys", 1]
 ], "Think again. Could he carry that all the way to Makkah?", { img: "c" });
-s("d", "desert", "He said that he left his home as birds leave their nests.",
+s("d", "desert", "Ibn Battuta said that he left his home as birds leave their nests.",
   "{IBY} walks along a dusty road beside the sea, away from the town, while small birds fly up from a nest in a tree beside the road.", { src: RIH, mood: "longing" });
 q("q", "desert", "Why did Ibn Battuta leave home?", ["To go on Hajj to Makkah", "🕋"], ["To find treasure", "💰"], "He set out to go on Hajj, to Makkah.", { img: "d" });
 

@@ -5,7 +5,7 @@ const { chapter, s, p, q, ord, mat, srt, line, SAD, MUS, ZUH } = require("./lib"
 chapter("u6", "🏠", "Free, and a Family", null, [], null, "Ibn Sa'd, al-Tabaqat (vol. 8); Ibn Shihab in Sahih Muslim (1771); al-Bukhari (3737)");
 s("a", "city", "The boy grew up into a good and honest young man. When he married Khadijah, he set Barakah free.",
   "{UA}, but younger than in her picture: about forty-five, with only a few lines on her face, stands in a sunny doorway in {MAKKAH}, looking out at the street with a joyful, surprised face, holding a small cloth bundle to her chest. {HERE}.", { src: SAD, mood: "triumph", presence: true });
-s("b", "city", "She married a good man called Ubayd, and they had a son called Ayman. So people called her Umm Ayman: the mother of Ayman.",
+s("b", "city", "Barakah married a good man called Ubayd, and they had a son called Ayman. So people called her Umm Ayman: the mother of Ayman.",
   "{UA}, but younger than in her picture: about forty-five, with only a few lines on her face, holds a baby boy wrapped in a cloth and smiles down at him, while {UBAYD} stands beside her, laughing happily, in a courtyard in {MAKKAH}.", { src: SAD, mood: "joy" });
 s("c", "city", "The Prophet loved her very much. He used to call her: O mother!",
   "{UA} sits on a bench in a shady courtyard, smiling warmly at the empty place beside her, where a cup of milk waits on a small stool. {HERE}.", { src: SAD, presence: true });
@@ -39,7 +39,7 @@ s("a", "field", "Umm Ayman was brave and kind. When the Muslims had to defend Ma
 s("b", "desert", "She carried water to the thirsty, and she cared for the people who were hurt.",
   "In the shade of big rocks, {UA} kneels and gives a cup of water to a tired seated man with a cloth bandage on his arm; other tired men rest nearby. Nothing frightening.", { src: SAD });
 p("count", "cups", "desert", "Give everyone water. Tap each cup.", { total: 6, icon: "💧", got: "😊" }, { img: "b" });
-s("c", "field", "She went with the Muslims to Khaybar too, to help.",
+s("c", "field", "Umm Ayman went with the Muslims to Khaybar too, to help.",
   "Under date palms beside a camp of simple tents, {UA} and two other women roll clean cloth bandages and fill water jars.", { src: SAD });
 q("q", "field", "What did Umm Ayman bring to the people who were hurt?", ["Water", "💧"], ["Toys", "🧸"], "She brought them water, and she cared for them.", { img: "c" });
 
@@ -48,25 +48,25 @@ s("a", "field", "In Madina, the Prophet gave Umm Ayman some date palms of her ow
   "{UA} stands proudly among young date palms heavy with golden dates, one hand on a trunk, smiling. {HERE}.", { src: MUS, presence: true });
 s("b", "field", "Later the palms had to go back to the family who had lent them. A boy called Anas came to ask for them.",
   "{ANAS} stands politely at the edge of the palm garden, while {UA} faces him with her hands on her hips.", { src: MUS });
-s("c", "field", "But Umm Ayman said: No! He gave them to me! The Prophet offered her other trees instead. She still said no!",
+s("c", "field", "But Umm Ayman said: No! The Prophet gave them to me! So the Prophet offered her other trees instead. She still said no!",
   "Only two people in the whole picture, nobody else and no one at the edges: {UA} folds her arms and shakes her head firmly, trying not to smile, under the palm trees; {ANAS} looks on, surprised.", { src: MUS, presence: true });
-s("d", "field", "So he kept offering her more, until she had about ten times as many! Then she was happy.",
+s("d", "field", "He kept offering her more, until she had about ten times as many! Then she was happy.",
   "{UA} laughs with joy among a big grove of many tall date palms, her arms open wide, golden light through the leaves. {HERE}.", { src: MUS, mood: "joy", presence: true });
 p("count", "palms", "field", "Count her new palm trees! Tap all ten.", { total: 10, icon: "🌴", got: "✨" }, { img: "d" });
-s("e", "city", "Once she asked him for a camel to ride. He smiled and said: I will give you the baby of a camel! She said: but a baby camel cannot carry me!",
+s("e", "city", "Once Umm Ayman asked the Prophet for a camel to ride. He smiled and said: I will give you the baby of a camel! She said: but a baby camel cannot carry me!",
   "{UA} laughs with her hand on her cheek in front of a big, strong, grown-up camel in a yard in {MADINA}. {HERE}.", { src: SAD, mood: "joy", presence: true });
 q("q", "city", "He said he would give her the baby of a camel. What did he mean?", ["A big grown-up camel", "🐪"], ["A tiny baby camel", "🍼"], "He was joking! Every camel, even a big one, is the baby of a mother camel.", { img: "e" });
 
 chapter("u10", "💐", "Fatimah's Wedding", null, [], null, "Ibn Sa'd, al-Tabaqat (vol. 8)");
 s("a", "city", "When the Prophet's daughter Fatimah married Ali, Umm Ayman helped to get everything ready.",
   "In a simple room, {UA} gently straightens the white headscarf of {FATIMA}, who smiles shyly; morning light through a small window.", { src: SAD, mood: "joy" });
-s("b", "city", "She packed a bed made of palm leaves, a soft leather pillow stuffed with palm fibre, and a waterskin. And she spread soft sand on the floor.",
+s("b", "city", "Umm Ayman packed a bed made of palm leaves, a soft leather pillow stuffed with palm fibre, and a waterskin. And she spread soft sand on the floor.",
   "Close up in a small room: a simple bed woven of palm leaves, a leather pillow, a waterskin hanging on a peg and a clay jug, on a floor of smooth soft sand, in warm lamplight. No people.", { src: SAD });
 srt("pack", "city", "What was in Fatimah's simple new home? Sort them.", ["In her home", "🏠"], ["Not there", "🚫"], [
   ["🌴", "A bed of palm leaves", 0], ["👑", "A golden crown", 1], ["💧", "A waterskin", 0],
   ["🛋️", "A big silk sofa", 1], ["🏖️", "Soft sand on the floor", 0], ["💎", "A box of jewels", 1]
 ], "Think again. Her home was very simple.", { img: "b" });
-s("c", "dusk", "Their home was small and simple, but it was full of love.",
+s("c", "dusk", "Fatimah and Ali's home was small and simple, but it was full of love.",
   "A small mud-brick house with a roof of palm branches in {MADINA} at evening, warm lamplight glowing from its open doorway, a date palm beside it. No people.", { mood: "longing" });
 p("build", "bricks", "dusk", "Help make their little home strong. Tap to place every brick.", { n: 6, icon: "🧱", cols: 3 }, { img: "c" });
 

@@ -21,7 +21,7 @@ s("a", "night", "Why Asma'u? She was named after a brave young woman who lived l
 s("b", "night", "When the Prophet and her father set off on a long journey, Asma packed their food and water. But there was nothing to tie the bags with!",
   "Seen from above, close up: one person's two hands, in dark-blue sleeves, reaching in from the bottom edge to a wooden table at night, beside a leather water-skin, a cloth bundle of dates and bread, and a long cloth belt. Only those two hands; no other hands, no head, no face. An oil lamp glows.", { src: HAD });
 chg("tear", "night", "What did she do? Tap the belt.", [["🎗️", ""], ["✂️", "She tore her belt in two!"]], { img: "b", src: HAD });
-s("c", "night", "She tore her own belt in two. One piece tied the water. The other piece tied the food. So people called her: the one with the two belts.",
+s("c", "night", "Asma, Abu Bakr's daughter, tore her own belt in two. One piece tied the water. The other piece tied the food. So people called her: the one with the two belts.",
   "Close view of a young woman's hands, her face not shown, tying a leather water-skin with one strip of cloth and a food bundle with another strip of the same cloth, lamplight.", { src: HAD, mood: "triumph" });
 mat("match", "night", "Match each piece of the belt to what it tied.", [
   ["🎗️", "The first piece", "💧", "tied the water"],
@@ -64,7 +64,7 @@ chapter("a6", "🏘️", "A New Town", C_CW, [], null);
 s("a", "egypt", "When the fighting was over, a new town was built, called Sokoto. Asma'u married a good man called Gidado, and they made their home there.",
   "Bright day in {SOKOTO}. {ASMA} and {GIDADO} stand together at the doorway of a large mud-brick family house, smiling warmly at neighbours who greet them.", { mood: "triumph", amb: "crowd" });
 p("build", "home", "egypt", "Help build the new home, brick by brick.", { n: 12, icon: "🧱", cols: 4 });
-s("b", "egypt", "Their home was full of people: family, students, guests, and people who needed help. Hundreds of them! Asma'u made sure everyone had food, clothes, and a place to sleep.",
+s("b", "egypt", "Asma'u and Gidado's home was full of people: family, students, guests, and people who needed help. Hundreds of them! Asma'u made sure everyone had food, clothes, and a place to sleep.",
   "A lively courtyard of a big mud-brick house in {SOKOTO}: {ASMA} hands folded cloth to a mother with children, while others share a meal on mats and students read in the shade.", { mood: "pastoral", amb: "crowd" });
 srt("care", "egypt", "Everyone needs something. Is it food, or is it clothes?", ["Food", "🍲"], ["Clothes", "👕"], [
   ["🍚", "A bowl of rice", 0], ["🧣", "A warm scarf", 1], ["🍞", "Fresh bread", 0], ["👗", "A new dress", 1], ["🥛", "A cup of milk", 0]
@@ -90,7 +90,7 @@ s("a", "palace", "Asma'u loved words. She could speak four languages! And she wr
 s("b", "palace", "Not everyone could read Arabic. So Asma'u wrote her poems in the languages people spoke at home, using Arabic letters, so that everyone could learn.",
   "{ASMA} reads a poem aloud from a page to a circle of {WOMEN} sitting on mats in a courtyard; they listen and repeat after her, smiling.", { mood: "pastoral" });
 q("q1", "palace", "Why did Asma'u write in the languages people spoke at home?", ["So everyone could learn", "🤲🏿"], ["To keep it a secret", "🤫"], "No. She wanted everyone to be able to learn, not only people who read Arabic.", { img: "b" });
-s("c", "palace", "She even wrote a poem with the name of every sura of the Qur'an in it, so that people could remember them.", "In a quiet shady courtyard inside a house in {SOKOTO}, {ASMA} sits on a mat reciting a poem from memory with a warm smile and one hand raised, while women and girls sit before her repeating after her, some holding wooden writing boards. Each of them wears a long cotton headscarf in cream, blue, rust or green wrapped over her head, hair and neck, just like the teacher's; nobody's hair shows. Only lines on the boards, no readable writing.", { mood: "wonder" });
+s("c", "palace", "Asma'u even wrote a poem with the name of every sura of the Qur'an in it, so that people could remember them.", "In a quiet shady courtyard inside a house in {SOKOTO}, {ASMA} sits on a mat reciting a poem from memory with a warm smile and one hand raised, while women and girls sit before her repeating after her, some holding wooden writing boards. Each of them wears a long cotton headscarf in cream, blue, rust or green wrapped over her head, hair and neck, just like the teacher's; nobody's hair shows. Only lines on the boards, no readable writing.", { mood: "wonder" });
 ord("suras", "palace", "Asma'u's poem helped people remember the suras. Can you put the first four in order?", [
   ["1️⃣", "Al-Fatiha", "Al-Fatiha, The Opening."],
   ["2️⃣", "Al-Baqarah", "Al-Baqarah, The Cow."],
@@ -118,7 +118,7 @@ s("a", "egypt", "People called Asma'u 'Uwar Gari': the mother of the town. Women
 srt("good", "egypt", "Asma'u taught people to be good. Is it a kind thing to do, or not kind?", ["Kind", "💛"], ["Not kind", "💢"], [
   ["🤝🏿", "Helping a neighbour", 0], ["😤", "Shouting at a friend", 1], ["🍲", "Sharing your food", 0], ["📖", "Teaching what you know", 0], ["🙈", "Laughing at someone", 1]
 ], "Think again. Would that make someone happy?", { img: "a" });
-s("b", "egypt", "She had good friends, and she loved them dearly. When people she loved died, she wrote poems so that they would be remembered.",
+s("b", "egypt", "Asma'u had good friends, and she loved them dearly. When people she loved died, she wrote poems so that they would be remembered.",
   "{ASMA} and another woman in a plum headscarf sit together on a mat under a tree, laughing and sharing a bowl of dates.", { mood: "longing" });
 
 chapter("a11", "🌟", "Remembered Today", C_CW + "; Wikipedia", [], null);
@@ -132,6 +132,6 @@ ord("ord", "dawn", "Tell the story of Asma'u. Tap in order.", [
   ["📜", "Saving the books", "Then she saved her father's books."],
   ["👒", "Training teachers", "And then she trained teachers for the villages."]
 ], "Not that one yet. What came before it?");
-s("c", "dawn", "Her lesson for us is simple: learn all you can, and then teach it to someone else.", "Evening in a courtyard in {SOKOTO}: a girl of about ten with deep dark brown skin in a slate-blue headscarf that covers her hair teaches two smaller children, pointing to lines on a wooden writing board, while {OLD} watches from a doorway with a peaceful smile. Only lines on the board, no readable writing.", { mood: "triumph" });
+s("c", "dawn", "Nana Asma'u's lesson for us is simple: learn all you can, and then teach it to someone else.", "Evening in a courtyard in {SOKOTO}: a girl of about ten with deep dark brown skin in a slate-blue headscarf that covers her hair teaches two smaller children, pointing to lines on a wooden writing board, while {OLD} watches from a doorway with a peaceful smile. Only lines on the board, no readable writing.", { mood: "triumph" });
 p("memory", "mem", "dawn", "One last game. Find the pairs from Asma'u's story.", { icons: ["👶🏿", "🎀", "📖", "🚶🏿‍♀️", "📜", "👒"] });
 require("./lib").line("end-a", "This is the story of Nana Asma'u. She learned, she taught, and she made sure that everyone could learn. What will you learn, and teach, today?");

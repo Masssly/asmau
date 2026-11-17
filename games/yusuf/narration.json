@@ -181,7 +181,7 @@
 
   { "id": "c13-a",  "text": "The whole family came to Egypt. Yusuf held his parents close and said: welcome to Egypt. You will all be safe here, if Allah wills.", "lang": "en" },
   { "id": "c13-do", "text": "Tap the stars, the sun and the moon, just like in the dream.", "lang": "en" },
-  { "id": "c13-b",  "text": "They all bowed down before him. Yusuf said: Father, this is what my dream meant, long ago. My Lord has made it come true.", "lang": "en" },
+  { "id": "c13-b",  "text": "Yusuf's parents and brothers all bowed down before him. Yusuf said: Father, this is what my dream meant, long ago. My Lord has made it come true.", "lang": "en" },
   { "id": "c13-q",  "text": "Look back at the dream. Who were the eleven stars?", "lang": "en" },
   { "id": "c13-q-opt1", "text": "His eleven brothers", "lang": "en" },
   { "id": "c13-q-opt2", "text": "Eleven camels", "lang": "en" },

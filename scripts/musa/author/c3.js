@@ -106,10 +106,10 @@ s("a", "camp", "One day, someone asked Musa: who knows the most, of all the peop
 s("b", "desert", "Musa said to his young helper, Yusha: I will not stop until I reach the place where the two seas meet, even if it takes me years! They took a fish with them in a basket.",
   "{MU} and {YU} set out walking along a rocky coast path at morning; the boy carries a woven basket with a fish's tail sticking out of it.", { mood: "trek" });
 p("journey", "go", "desert", "Travel with Musa and Yusha to where the two seas meet.", { from: "⛺", to: "🌊", icon: "img:icon-musa", steps: 8 });
-s("c", "sea", "They stopped to rest by a rock. And there, the fish slipped out of the basket, into the sea, and swam away! It is told that the water stood over its path like a little tunnel.",
+s("c", "sea", "Musa and Yusha stopped to rest by a rock. And there, the fish slipped out of the basket, into the sea, and swam away! It is told that the water stood over its path like a little tunnel.",
   "By a big rock on the seashore, {MU} and {YU} lie asleep in the shade while a silver fish leaps from a tipped woven basket into the sea, leaving a clear tunnel-like trail in the water.", { src: HAD, cue: "splash" });
 p("trail", "fish", "sea", "Follow the fish along its path through the water. Tap each splash.", { n: 7, icon: "💦", walker: "🐟" });
-s("d", "desert", "They walked on and on. Musa said: bring us our lunch. This journey has made us tired. Then Yusha remembered: the fish! By the rock, it went off into the sea, in such a strange way. Shaytan made me forget to tell you.",
+s("d", "desert", "Musa and Yusha walked on and on. Musa said: bring us our lunch. This journey has made us tired. Then Yusha remembered: the fish! By the rock, it went off into the sea, in such a strange way. Shaytan made me forget to tell you.",
   "On a dusty path, {YU} looks into an empty woven basket with a shocked face and one hand on his head, while {MU} sits down tired on a stone.", { mood: "trek" });
 s("e", "desert", "Musa said: that is the very place we were looking for! So they turned around, and followed their own footsteps all the way back.",
   "{MU} points excitedly back along a sandy coast path marked with two lines of footprints; {YU} turns to follow, the sea beside them.", { mood: "triumph" });
@@ -124,7 +124,7 @@ s("g", "sea", "Musa said: if Allah wills, you will find me patient. He said: the
 q("q", "sea", "What did Musa promise al-Khidr?", ["To be patient, and not to ask", "🤐"], ["To ask lots of questions", "❓"], "No. Musa promised to be patient, and not to ask about anything.", { img: "g" });
 
 chapter("m24", "⛵", "Three Strange Things", "18:71-82", [], null);
-s("a", "sea", "They got into a boat. It is told that the sailors knew al-Khidr, and took them for free. And then al-Khidr made a hole in the boat!",
+s("a", "sea", "Musa and al-Khidr got into a boat. It is told that the sailors knew al-Khidr, and took them for free. And then al-Khidr made a hole in the boat!",
   "On a small wooden sailing boat at sea, {KH} kneels and pries up a plank from the deck with a tool; {MU} stares in alarm; two sailors work the sail at the far end, not noticing.", { src: HAD, mood: "dread" });
 s("b", "sea", "Musa cried: do you want the people in it to sink? Al-Khidr said: did I not tell you that you could not be patient with me? Musa said: forgive me. I forgot.",
   "On the deck of a small wooden boat, {MU} holds out both hands in protest and {KH} calmly raises one finger to remind him of his promise.", { mood: "pastoral" });

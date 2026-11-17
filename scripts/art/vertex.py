@@ -240,6 +240,7 @@ TEAR = ("Edit the first picture. Keep everything exactly as it is. Change only t
         "lining. Also make his hair short, neat and close-cropped like in the second picture.")
 FIXES = {
     "c1-a": (HAIR_BOY, "p-yusuf"), "c1-b": (HAIR_BOY, "p-yusuf"), "c2-w": (HAIR_BOY, "p-yusuf"),
+    "c3-b": (HAIR_BOY, "p-yusuf"),          # owner, 17 November 2026: pages 3.3 to 3.5, his hair too tall and curly
     "c5-a": (HAIR_MAN, "c4-c"), "c5-c": (HAIR_MAN, "c4-c"), "c5-b4": (HAIR_MAN, "c4-c"),
     "c5-b3": (HAIR_MAN, "c4-c"),           # the long tear here is the one to keep
     "c5-b1": (TEAR, "c5-b3"),              # the small tear here becomes the same long tear

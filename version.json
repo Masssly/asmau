@@ -1,11 +1,18 @@
 {
-  "version": "2026.11.49",
+  "version": "2026.11.50",
   "date": "2026-11-17",
-  "buildId": "6b3bb4ad4490",
+  "buildId": "94e801cb9ea0",
   "notes": [
-    "Yusuf, page 2.3: gentle living effects on the new picture (birds, leaves, dust)"
+    "Yusuf, pages 3.3 to 3.5: Yusuf's hair is short and neat, as in his other pictures"
   ],
   "history": [
+    {
+      "version": "2026.11.50",
+      "date": "2026-11-17",
+      "notes": [
+        "Yusuf, pages 3.3 to 3.5: Yusuf's hair is short and neat, as in his other pictures"
+      ]
+    },
     {
       "version": "2026.11.49",
       "date": "2026-11-17",

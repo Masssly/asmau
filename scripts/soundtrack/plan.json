@@ -1,0 +1,342 @@
+{
+ "album": "Asmau: Music from the Games",
+ "artist": "Asmau",
+ "year": 2026,
+ "tracks": [
+  {
+   "file": "wonder",
+   "mood": "wonder",
+   "title": "Wonder",
+   "heard": [
+    "Adam",
+    "Count with Me",
+    "Ibn Battuta",
+    "Musa",
+    "Nana Asma'u",
+    "Nuh",
+    "Rahmah El Yunusiyyah",
+    "Umm Ayman",
+    "Yusuf"
+   ],
+   "seconds": 120,
+   "parts": [
+    [
+     "wonder",
+     0
+    ]
+   ]
+  },
+  {
+   "file": "pastoral",
+   "mood": "pastoral",
+   "title": "Green Fields",
+   "heard": [
+    "Adam",
+    "Ibn Battuta",
+    "Musa",
+    "Nana Asma'u",
+    "Nuh",
+    "Rahmah El Yunusiyyah",
+    "Umm Ayman"
+   ],
+   "seconds": 120,
+   "parts": [
+    [
+     "pastoral",
+     0
+    ]
+   ]
+  },
+  {
+   "file": "nile",
+   "mood": "nile",
+   "title": "By the Nile",
+   "heard": [
+    "Musa",
+    "Nana Asma'u"
+   ],
+   "seconds": 120,
+   "parts": [
+    [
+     "nile",
+     0
+    ]
+   ]
+  },
+  {
+   "file": "desert",
+   "mood": "desert",
+   "title": "Desert Road",
+   "heard": [
+    "Yusuf"
+   ],
+   "seconds": 120,
+   "parts": [
+    [
+     "desert",
+     0
+    ]
+   ]
+  },
+  {
+   "file": "court",
+   "mood": "court",
+   "title": "The Court",
+   "heard": [
+    "Musa"
+   ],
+   "seconds": 120,
+   "parts": [
+    [
+     "court",
+     0
+    ]
+   ]
+  },
+  {
+   "file": "regal",
+   "mood": "regal",
+   "title": "The Palace",
+   "heard": [
+    "Ibn Battuta",
+    "Rahmah El Yunusiyyah",
+    "Yusuf"
+   ],
+   "seconds": 120,
+   "parts": [
+    [
+     "regal",
+     0
+    ]
+   ]
+  },
+  {
+   "file": "trek",
+   "mood": "trek",
+   "title": "The Long Journey",
+   "heard": [
+    "Adam",
+    "Ibn Battuta",
+    "Musa",
+    "Nana Asma'u",
+    "Rahmah El Yunusiyyah",
+    "Umm Ayman"
+   ],
+   "seconds": 120,
+   "parts": [
+    [
+     "trek",
+     0
+    ]
+   ]
+  },
+  {
+   "file": "tense",
+   "mood": "tense",
+   "title": "Hold Fast",
+   "heard": [
+    "Adam",
+    "Ibn Battuta",
+    "Nuh",
+    "Rahmah El Yunusiyyah",
+    "Umm Ayman",
+    "Yusuf"
+   ],
+   "seconds": 120,
+   "parts": [
+    [
+     "tense",
+     0
+    ]
+   ]
+  },
+  {
+   "file": "dread",
+   "mood": "dread",
+   "title": "The Storm Gathers",
+   "heard": [
+    "Adam",
+    "Musa",
+    "Nana Asma'u",
+    "Nuh"
+   ],
+   "seconds": 120,
+   "parts": [
+    [
+     "dread",
+     0
+    ]
+   ]
+  },
+  {
+   "file": "sad",
+   "mood": "sad",
+   "title": "Tears",
+   "heard": [
+    "Adam",
+    "Ibn Battuta",
+    "Nuh",
+    "Rahmah El Yunusiyyah",
+    "Umm Ayman",
+    "Yusuf"
+   ],
+   "seconds": 120,
+   "parts": [
+    [
+     "sad",
+     0
+    ]
+   ]
+  },
+  {
+   "file": "longing",
+   "mood": "longing",
+   "title": "Longing",
+   "heard": [
+    "Adam",
+    "Ibn Battuta",
+    "Musa",
+    "Nana Asma'u",
+    "Nuh",
+    "Rahmah El Yunusiyyah",
+    "Umm Ayman"
+   ],
+   "seconds": 120,
+   "parts": [
+    [
+     "longing",
+     0
+    ]
+   ]
+  },
+  {
+   "file": "awe",
+   "mood": "awe",
+   "title": "Awe",
+   "heard": [
+    "Adam",
+    "Ibn Battuta",
+    "Musa",
+    "Nana Asma'u",
+    "Nuh",
+    "Rahmah El Yunusiyyah"
+   ],
+   "seconds": 120,
+   "parts": [
+    [
+     "awe",
+     0
+    ]
+   ]
+  },
+  {
+   "file": "joy",
+   "mood": "joy",
+   "title": "Joy",
+   "heard": [
+    "Adam",
+    "Ibn Battuta",
+    "Nana Asma'u",
+    "Nuh",
+    "Rahmah El Yunusiyyah",
+    "Umm Ayman",
+    "Yusuf"
+   ],
+   "seconds": 120,
+   "parts": [
+    [
+     "joy",
+     0
+    ]
+   ]
+  },
+  {
+   "file": "triumph",
+   "mood": "triumph",
+   "title": "Triumph",
+   "heard": [
+    "Adam",
+    "Ibn Battuta",
+    "Musa",
+    "Nana Asma'u",
+    "Nuh",
+    "Rahmah El Yunusiyyah",
+    "Umm Ayman"
+   ],
+   "seconds": 120,
+   "parts": [
+    [
+     "triumph",
+     0
+    ]
+   ]
+  },
+  {
+   "file": "asmau-suite",
+   "mood": "all",
+   "title": "The Asmau Suite",
+   "heard": [
+    "every game"
+   ],
+   "seconds": 364,
+   "parts": [
+    [
+     "wonder",
+     0
+    ],
+    [
+     "pastoral",
+     26
+    ],
+    [
+     "nile",
+     52
+    ],
+    [
+     "desert",
+     78
+    ],
+    [
+     "court",
+     104
+    ],
+    [
+     "regal",
+     130
+    ],
+    [
+     "trek",
+     156
+    ],
+    [
+     "tense",
+     182
+    ],
+    [
+     "dread",
+     208
+    ],
+    [
+     "sad",
+     234
+    ],
+    [
+     "longing",
+     260
+    ],
+    [
+     "awe",
+     286
+    ],
+    [
+     "joy",
+     312
+    ],
+    [
+     "triumph",
+     338
+    ]
+   ]
+  }
+ ]
+}

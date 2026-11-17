@@ -1,0 +1,261 @@
+{
+ "album": "Asmau: Music from the Games",
+ "artist": "Asmau",
+ "year": 2026,
+ "tracks": [
+  {
+   "n": 1,
+   "title": "Wonder",
+   "mood": "wonder",
+   "seconds": 120,
+   "heard": [
+    "Adam",
+    "Count with Me",
+    "Ibn Battuta",
+    "Musa",
+    "Nana Asma'u",
+    "Nuh",
+    "Rahmah El Yunusiyyah",
+    "Umm Ayman",
+    "Yusuf"
+   ],
+   "lufs": -15.9,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/fe86a6f211/soundtrack/01-wonder.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/e865aa0d29/soundtrack/lossless/01-wonder.ogg"
+  },
+  {
+   "n": 2,
+   "title": "Green Fields",
+   "mood": "pastoral",
+   "seconds": 120,
+   "heard": [
+    "Adam",
+    "Ibn Battuta",
+    "Musa",
+    "Nana Asma'u",
+    "Nuh",
+    "Rahmah El Yunusiyyah",
+    "Umm Ayman"
+   ],
+   "lufs": -16.0,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/fe8293a90f/soundtrack/02-pastoral.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/e08836781e/soundtrack/lossless/02-pastoral.ogg"
+  },
+  {
+   "n": 3,
+   "title": "By the Nile",
+   "mood": "nile",
+   "seconds": 120,
+   "heard": [
+    "Musa",
+    "Nana Asma'u"
+   ],
+   "lufs": -15.9,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/20722ed637/soundtrack/03-nile.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/d158defaef/soundtrack/lossless/03-nile.ogg"
+  },
+  {
+   "n": 4,
+   "title": "Desert Road",
+   "mood": "desert",
+   "seconds": 120,
+   "heard": [
+    "Yusuf"
+   ],
+   "lufs": -16.0,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/354ef0a4db/soundtrack/04-desert.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/8557295084/soundtrack/lossless/04-desert.ogg"
+  },
+  {
+   "n": 5,
+   "title": "The Court",
+   "mood": "court",
+   "seconds": 120,
+   "heard": [
+    "Musa"
+   ],
+   "lufs": -16.0,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/604ddb3a66/soundtrack/05-court.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/5fb2641a75/soundtrack/lossless/05-court.ogg"
+  },
+  {
+   "n": 6,
+   "title": "The Palace",
+   "mood": "regal",
+   "seconds": 120,
+   "heard": [
+    "Ibn Battuta",
+    "Rahmah El Yunusiyyah",
+    "Yusuf"
+   ],
+   "lufs": -16.0,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/0d60587c9a/soundtrack/06-regal.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/d3ede0f2b2/soundtrack/lossless/06-regal.ogg"
+  },
+  {
+   "n": 7,
+   "title": "The Long Journey",
+   "mood": "trek",
+   "seconds": 120,
+   "heard": [
+    "Adam",
+    "Ibn Battuta",
+    "Musa",
+    "Nana Asma'u",
+    "Rahmah El Yunusiyyah",
+    "Umm Ayman"
+   ],
+   "lufs": -16.0,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/0448a8bd87/soundtrack/07-trek.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/7302563626/soundtrack/lossless/07-trek.ogg"
+  },
+  {
+   "n": 8,
+   "title": "Hold Fast",
+   "mood": "tense",
+   "seconds": 120,
+   "heard": [
+    "Adam",
+    "Ibn Battuta",
+    "Nuh",
+    "Rahmah El Yunusiyyah",
+    "Umm Ayman",
+    "Yusuf"
+   ],
+   "lufs": -16.0,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/ba9f58c44a/soundtrack/08-tense.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/c9542385a4/soundtrack/lossless/08-tense.ogg"
+  },
+  {
+   "n": 9,
+   "title": "The Storm Gathers",
+   "mood": "dread",
+   "seconds": 120,
+   "heard": [
+    "Adam",
+    "Musa",
+    "Nana Asma'u",
+    "Nuh"
+   ],
+   "lufs": -16.5,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/439e5d9da6/soundtrack/09-dread.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/1016d9c888/soundtrack/lossless/09-dread.ogg"
+  },
+  {
+   "n": 10,
+   "title": "Tears",
+   "mood": "sad",
+   "seconds": 120,
+   "heard": [
+    "Adam",
+    "Ibn Battuta",
+    "Nuh",
+    "Rahmah El Yunusiyyah",
+    "Umm Ayman",
+    "Yusuf"
+   ],
+   "lufs": -15.9,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/0e567e1730/soundtrack/10-sad.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/cf0de86b76/soundtrack/lossless/10-sad.ogg"
+  },
+  {
+   "n": 11,
+   "title": "Longing",
+   "mood": "longing",
+   "seconds": 120,
+   "heard": [
+    "Adam",
+    "Ibn Battuta",
+    "Musa",
+    "Nana Asma'u",
+    "Nuh",
+    "Rahmah El Yunusiyyah",
+    "Umm Ayman"
+   ],
+   "lufs": -15.9,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/2cbd47c88c/soundtrack/11-longing.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/317f526207/soundtrack/lossless/11-longing.ogg"
+  },
+  {
+   "n": 12,
+   "title": "Awe",
+   "mood": "awe",
+   "seconds": 120,
+   "heard": [
+    "Adam",
+    "Ibn Battuta",
+    "Musa",
+    "Nana Asma'u",
+    "Nuh",
+    "Rahmah El Yunusiyyah"
+   ],
+   "lufs": -15.9,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/1f406fd8e7/soundtrack/12-awe.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/34ece51648/soundtrack/lossless/12-awe.ogg"
+  },
+  {
+   "n": 13,
+   "title": "Joy",
+   "mood": "joy",
+   "seconds": 120,
+   "heard": [
+    "Adam",
+    "Ibn Battuta",
+    "Nana Asma'u",
+    "Nuh",
+    "Rahmah El Yunusiyyah",
+    "Umm Ayman",
+    "Yusuf"
+   ],
+   "lufs": -16.0,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/88f23296be/soundtrack/13-joy.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/8a9cde9026/soundtrack/lossless/13-joy.ogg"
+  },
+  {
+   "n": 14,
+   "title": "Triumph",
+   "mood": "triumph",
+   "seconds": 120,
+   "heard": [
+    "Adam",
+    "Ibn Battuta",
+    "Musa",
+    "Nana Asma'u",
+    "Nuh",
+    "Rahmah El Yunusiyyah",
+    "Umm Ayman"
+   ],
+   "lufs": -16.0,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/611db0bdcd/soundtrack/14-triumph.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/493f5e9e28/soundtrack/lossless/14-triumph.ogg"
+  },
+  {
+   "n": 15,
+   "title": "The Asmau Suite",
+   "mood": "all",
+   "seconds": 364,
+   "heard": [
+    "every game"
+   ],
+   "lufs": -16.4,
+   "kbps": 112,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/91b9cccbce/soundtrack/15-asmau-suite.mp3",
+   "lossless": null,
+   "note": "lossless copy too big for the server's 5 MiB limit; run this again once the limit is raised"
+  }
+ ]
+}

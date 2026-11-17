@@ -1,11 +1,18 @@
 {
-  "version": "2026.11.40",
-  "date": "2026-11-16",
-  "buildId": "cf14cb1ffbf6",
+  "version": "2026.11.41",
+  "date": "2026-11-17",
+  "buildId": "ade681de1e09",
   "notes": [
-    "Bahasa Indonesia: families can now choose it in For parents (Bahasa · Language). Rahmah El Yunusiyyah plays in Indonesian, words and both voices, checked by a native speaker; other games stay in English for now."
+    "After a wrong answer, the explanation stays on screen until the child answers again, and a tap says it again (it used to vanish as soon as it was read)"
   ],
   "history": [
+    {
+      "version": "2026.11.41",
+      "date": "2026-11-17",
+      "notes": [
+        "After a wrong answer, the explanation stays on screen until the child answers again, and a tap says it again (it used to vanish as soon as it was read)"
+      ]
+    },
     {
       "version": "2026.11.40",
       "date": "2026-11-16",

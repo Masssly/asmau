@@ -29,6 +29,7 @@ const ORIGIN = "https://masssly.github.io";
 const FAMILY = /^[0-9a-f]{64}$/;
 const NAME = /^[A-Za-z0-9._:-]{1,120}$/;
 const MAX = 5 * 1024 * 1024;          // one recording
+const MEDIA_MAX = 50 * 1024 * 1024;   // one file the owner publishes (admin only): long soundtrack tracks and their lossless copies
 const FREE_LIMIT = 25 * 1024 * 1024;  // all of one family's recordings: about 80 minutes of speech
 
 // Everyone gets the free limit. The owner can raise one family's limit (after a
@@ -201,7 +202,7 @@ async function adminMedia(req, env, key) {
   if (!want || auth !== "Bearer " + want) return new Response("forbidden", { status: 403 });
   if (req.method !== "PUT" || !MEDIA_KEY.test(key) || key.includes("..")) return new Response("bad request", { status: 400 });
   const bytes = await req.arrayBuffer();
-  if (!bytes.byteLength || bytes.byteLength > MAX) return new Response("too large or empty", { status: 413 });
+  if (!bytes.byteLength || bytes.byteLength > MEDIA_MAX) return new Response("too large or empty", { status: 413 });
   if ((await sha1Prefix(bytes)) !== key.slice(0, 10)) return new Response("the bytes do not match the address", { status: 400 });
   await env.CLIPS.put("media/" + key, bytes);
   return new Response("ok", { status: 201 });

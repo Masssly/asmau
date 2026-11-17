@@ -172,6 +172,7 @@
   }
   function setCaption(id) {
     currentLine = id;
+    if (captionText.parentNode) captionText.parentNode.classList.remove("why");
     captionText.textContent = lines[id] || "";
   }
   function moodFor(st) {
@@ -457,10 +458,14 @@
     return Promise.race([say(line), new Promise(function (r) { setTimeout(r, maxMs || 2500); })]);
   }
 
-  // A wrong answer: say why, then put the question back on the screen.
+  // A wrong answer: say why, and leave the why on the screen until the child answers again, so it can be read at
+  // leisure and heard again with a tap on it (the caption says its line again when tapped). The question is still
+  // there on the answers themselves. (Owner's note, Umm Ayman 9.7: the joke vanished before it could be found again.)
   function sayWrong(wrongLine, questionLine, token) {
+    if (token !== stepToken) return Promise.resolve();
     setCaption(wrongLine);
-    return spoken(wrongLine, 6000).then(function () { if (token === stepToken) setCaption(questionLine); });
+    captionText.parentNode.classList.add("why");
+    return spoken(wrongLine, 6000);
   }
 
   // After the question has been read, read each of the things to choose from, one by one,
@@ -497,6 +502,7 @@
           finished = true;
           Array.prototype.forEach.call(box.children, function (x) { x.disabled = true; });
           b.classList.add("right");
+          setCaption(line);              // the right answer, read out, in place of any explanation
           spoken(line).then(function () { if (token === stepToken) done(); });
         } else {
           shake(b);
@@ -1023,6 +1029,7 @@
           return;
         }
         at += 1;
+        if (opts.wrong && currentLine === opts.wrong) setCaption(question);   // answered again: the explanation gives way
         fx("coin", at);
         chip.textContent = at + " / " + things.length;
         if (at === things.length) {

@@ -112,6 +112,9 @@ button { touch-action: manipulation; -webkit-tap-highlight-color: transparent; }
 }
 .caption span:first-child { flex: 1; min-width: 0; }
 .caption .ear { font-size: 16px; opacity: .6; }
+/* after a wrong answer: the why stays, marked, until the child answers again; a tap says it again */
+.caption.why { box-shadow: inset 0 0 0 3px var(--gold); }
+.caption.why .ear { opacity: 1; }
 
 /* ---------- big Next / Back, always in thumb reach ---------- */
 .nav {

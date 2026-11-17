@@ -785,6 +785,9 @@ window.AsmauMusic = (function () {
       return { mood: engine ? engine.mood() : null, tension: engine ? engine.tension() : 0, running: ctx ? ctx.state : "none", ducked: ducked, stats: stats, amb: ambience ? ambience.name() : wantAmb };
     },
     _render: render,
+    // for scripts/soundtrack/record.js: the music engine on any context (an offline one renders a track), with the
+    // clock it should read
+    _engine: function (c, out, now) { return makeEngine(c, out, now); },
     _renderMix: renderMix,
     _level: level
   };

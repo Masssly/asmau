@@ -238,9 +238,15 @@ HAIR_MAN = ("Edit the first picture. Keep everything exactly as it is: the scene
 TEAR = ("Edit the first picture. Keep everything exactly as it is. Change only the back of the young man's long teal tunic: "
         "it is torn exactly as in the second picture, one long vertical rip down the middle of the back showing the cream "
         "lining. Also make his hair short, neat and close-cropped like in the second picture.")
+# The master of the house in 5.3 looked younger than when he first took Yusuf home (owner, 17 November 2026)
+MASTER = ("Edit the first picture. Keep everything exactly as it is: the scene, the light, the poses, the clothes and the other "
+          "people. Change only the face of the man in the middle who wears the blue turban with a gold band, so that he has exactly "
+          "the face of the man in the blue turban in the second picture: the same face, a man in his forties, with the same full "
+          "black beard. Keep his blue turban and his cream robe with gold trim.")
 FIXES = {
     "c1-a": (HAIR_BOY, "p-yusuf"), "c1-b": (HAIR_BOY, "p-yusuf"), "c2-w": (HAIR_BOY, "p-yusuf"),
-    "c3-b": (HAIR_BOY, "p-yusuf"),          # owner, 17 November 2026: pages 3.3 to 3.5, his hair too tall and curly
+    "c3-b": (HAIR_BOY, "p-yusuf"),
+    "c5-b2": (MASTER, "c4-b"),          # owner, 17 November 2026: pages 3.3 to 3.5, his hair too tall and curly
     "c5-a": (HAIR_MAN, "c4-c"), "c5-c": (HAIR_MAN, "c4-c"), "c5-b4": (HAIR_MAN, "c4-c"),
     "c5-b3": (HAIR_MAN, "c4-c"),           # the long tear here is the one to keep
     "c5-b1": (TEAR, "c5-b3"),              # the small tear here becomes the same long tear

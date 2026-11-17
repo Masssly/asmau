@@ -1,11 +1,18 @@
 {
-  "version": "2026.11.56",
+  "version": "2026.11.57",
   "date": "2026-11-17",
-  "buildId": "c17b3c108f43",
+  "buildId": "5d482dd1785e",
   "notes": [
-    "Seven new names on the Great Muslims coming-soon list: Fatima al-Fihri, Rumi, Ibn al-Nafis, Yunus Emre, Gazi Husrev-beg, Abdul Sattar Edhi and Mariam Alolo."
+    "Two more names on the Great Muslims coming-soon list: Abdullah Quilliam of Liverpool and Muhammad Asad."
   ],
   "history": [
+    {
+      "version": "2026.11.57",
+      "date": "2026-11-17",
+      "notes": [
+        "Two more names on the Great Muslims coming-soon list: Abdullah Quilliam of Liverpool and Muhammad Asad."
+      ]
+    },
     {
       "version": "2026.11.56",
       "date": "2026-11-17",

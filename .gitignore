@@ -29,3 +29,4 @@ scripts/rahmah-art/refs/*.png
 # A game's pictures and sounds live on R2, not in git (scripts/SCALING.md): packs/ lists them; fetch them with
 # node scripts/fetch-media.js, publish new ones with scripts/publish-media.js.
 games/*/assets/
+scripts/yusuf-art/refs/[A-Z]*.png

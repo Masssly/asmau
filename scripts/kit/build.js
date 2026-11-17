@@ -91,6 +91,13 @@ const refs = {};
 lib.REFS.forEach((k) => { refs[k] = { name: lib.WHO[k][0], look: lib.WHO[k][1] }; });
 fs.writeFileSync(path.join(ART, "refs.json"), JSON.stringify(refs, null, 1) + "\n");
 
+// a person in three or more pictures needs a reference picture, so they look the same everywhere (owner, 17 November 2026)
+const seen = {};
+Object.values(lib.SHOTS).forEach((x) => (x.who || []).forEach((w) => { seen[w] = (seen[w] || 0) + 1; }));
+const noRef = Object.keys(seen).filter((w) => seen[w] >= 3 && !lib.REFS.includes(w) && !lib.NOREF.includes(w));
+if (noRef.length) console.warn("warning: in 3 or more pictures without a reference: " + noRef.map((w) => w + " (" + seen[w] + ")").join(", ") +
+  ". Make one from a picture the game shows (scripts/art/ref-from.py) and add it to REFS, or list it in NOREF in cast.js with the reason.");
+
 const plays = {}; let says = 0;
 lib.STORY.forEach((ch) => ch.steps.forEach((st) => { if (st.say) says++; else plays[st.play] = (plays[st.play] || 0) + 1; }));
 const nPlays = Object.values(plays).reduce((a, b) => a + b, 0);

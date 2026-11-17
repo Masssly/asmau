@@ -17,6 +17,9 @@ BACKDROP = ("Polished stylised 3D animated family-film background painting, warm
             "filling the whole frame edge to edge with no border. A place, with no main characters and nobody in the foreground. ")
 END = " No text, no writing, no letters, no logos, no watermark."
 
+# Reference pictures of the recurring cast (refs/<KEY>.png, approved in refs/approved.json, kept on R2 through
+# scripts/refs-media.py), made on 17 November 2026 from the pictures the game already shows (scripts/art/ref-from.py):
+# YB YY YM YQ BN KG MA WF HE, and the brothers (refs/brothers.png). Use them for any new picture or edit of these people.
 WHO = {
     "YB": "a kind 9-year-old boy with short black hair, in a teal tunic with cream trim",
     "YY": "a kind young man of 18 with short black hair and no beard, in a long teal tunic with cream trim",
@@ -27,6 +30,7 @@ WHO = {
     "TR": "a water-carrier man in an orange turban and cream robe",
     "MA": "a nobleman in a blue turban with a gold band and a cream robe with gold trim",
     "KG": "a king with a gold crown, a short beard and a purple robe with gold trim",
+    "WF": "the woman of the house, in a plum headscarf that covers all her hair and a long plum robe",
     "HE": "a wise older man in a green turban and cream robe",
     "HOME": "a family compound of sun-baked mud-brick houses and a woven tent among acacia trees in dry grassland",
     "EGY": "an ancient Nile-valley city of mud-brick and sandstone buildings with painted columns and date palms",

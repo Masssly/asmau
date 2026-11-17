@@ -25,4 +25,7 @@ const WHO = {
 // (No reference for the angels or Iblis: they are light and flame, never a face.)
 const REFS = ["ADAM", "HAWWA", "HAB", "QAB", "SHITH"];
 
-module.exports = { WHO, REFS, SOURCES: { TAF, HAD, BOTH, NAR } };
+// In three or more pictures but kept without a reference on purpose: the angels and Iblis are light and flame, never a face; the Garden is a place. Anyone else seen that often gets one (scripts/art/ref-from.py).
+const NOREF = ["ANG", "IBL", "GARDEN"];
+
+module.exports = { WHO, REFS, NOREF, SOURCES: { TAF, HAD, BOTH, NAR } };

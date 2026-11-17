@@ -33,6 +33,8 @@ still work.
 2. Write `cast.js` and the chapters. `node scripts/kit/make.js <story> story` after each change.
 3. `PROJECT=asmau-assets node scripts/kit/make.js <story> refs`, look at each reference picture, list the good ones in
    `scripts/<art>/refs/approved.json`, and put them on R2: `ADMIN_TOKEN=... python3 scripts/refs-media.py publish`.
+   Anyone else who turns up in three or more pictures gets a reference too, made from a picture the game already shows
+   (`scripts/art/ref-from.py`); the kit warns about anyone missing one.
 4. `... make.js <story> scenes`, **look at every picture** (skin, covered hair, count, no text, matches the story, the
    Prophet ﷺ never shown), redraw what is wrong, then `... make.js <story> import fx`.
 5. `... make.js <story> voice listen`: both voices, and every translation in `games/<slug>/lang/`. Redo flagged clips.

@@ -21,4 +21,7 @@ const WHO = {
 // (Groups and crowds are described, not referenced.)
 const REFS = ["RG", "RY", "RO"];
 
-module.exports = { WHO, REFS, SOURCES: { HIS } };
+// In three or more pictures but kept without a reference on purpose: a place, and a group. Anyone else seen that often gets one (scripts/art/ref-from.py).
+const NOREF = ["TOWN", "GIRLS"];
+
+module.exports = { WHO, REFS, NOREF, SOURCES: { HIS } };

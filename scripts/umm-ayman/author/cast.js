@@ -30,6 +30,9 @@ const WHO = {
 // The people who get a reference picture: drawn once, approved by a person, then shown to the
 // picture tool with every scene they are in, so they look the same from scene to scene.
 // (Groups and crowds are described, not referenced.)
-const REFS = ["UAY", "UA"];
+const REFS = ["UAY", "UA", "AMINA", "ABUBAKR", "UMAR"];
 
-module.exports = { WHO, REFS, SOURCES: { SAD, MUS, ZUH } };
+// In three or more pictures but kept without a reference on purpose: HERE is the line that keeps the Prophet out of a picture; places and animals. Anyone else seen that often gets one (scripts/art/ref-from.py).
+const NOREF = ["HERE", "MAKKAH", "MADINA", "CAMELS"];
+
+module.exports = { WHO, REFS, NOREF, SOURCES: { SAD, MUS, ZUH } };

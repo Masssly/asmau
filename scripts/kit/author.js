@@ -16,7 +16,7 @@ module.exports = function kit(dir) {
   const HERE = path.join(__dirname, "..", dir);
   const cfg = JSON.parse(fs.readFileSync(path.join(HERE, "kit.json"), "utf8"));
   const cast = require(path.join(HERE, "author", "cast.js"));
-  const WHO = cast.WHO, REFS = cast.REFS || [];
+  const WHO = cast.WHO, REFS = cast.REFS || [], NOREF = cast.NOREF || [];
   const FULL = new RegExp("^" + cfg.prefix + "\\d+-");
   const STORY = [], LINES = [], SHOTS = {}, MOODS = {};
   let C = null, flip = 0;
@@ -120,5 +120,5 @@ module.exports = function kit(dir) {
   // A backdrop for activities in a scene that have no picture of their own.
   function backdrop(scene, desc) { SHOTS["bg-" + scene] = { alt: desc, scene: desc, who: [] }; }
 
-  return Object.assign({ cfg, dir, REFS, STORY, LINES, SHOTS, MOODS, WHO, chapter, s, p, q, ord, mat, srt, chg, line, backdrop, portrait }, cast.SOURCES || {});
+  return Object.assign({ cfg, dir, REFS, NOREF, STORY, LINES, SHOTS, MOODS, WHO, chapter, s, p, q, ord, mat, srt, chg, line, backdrop, portrait }, cast.SOURCES || {});
 };

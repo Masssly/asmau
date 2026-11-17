@@ -25,4 +25,7 @@ const WHO = {
 // (Groups and crowds are described, not referenced.)
 const REFS = ["NUH", "SON"];
 
-module.exports = { WHO, REFS, SOURCES: { TAF, BUK, BOTH, NAR } };
+// In three or more pictures but kept without a reference on purpose: the Ark, a place, and groups. Anyone else seen that often gets one (scripts/art/ref-from.py).
+const NOREF = ["ARK", "BELIEVERS", "VILLAGE", "CHIEFS"];
+
+module.exports = { WHO, REFS, NOREF, SOURCES: { TAF, BUK, BOTH, NAR } };

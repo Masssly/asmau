@@ -51,6 +51,10 @@ things work; this file holds the decisions that must not be lost between session
   `MODEL=gemini-3-pro-image`; count every kept picture by eye. Stand the group in a line or in rows of
   five with nobody in front of them; mend a picture with one edit at most (chained edits fade it).
 - Look at every picture before it goes in (skin, covered hair, count, no text, matching the story).
+- **Anyone seen in three or more pictures gets a reference picture** (owner, 17 November 2026), made from a picture the game
+  already shows: `PROJECT=asmau-assets MODEL=gemini-3-pro-image python3 scripts/art/ref-from.py <art> <KEY> <picture> "<who>"`.
+  Look at it, list it in `refs/approved.json`, use it for every later picture or edit of that person. The story kit warns
+  about anyone missing one; places, crowds and those kept faceless on purpose are listed in `NOREF` in cast.js with why.
 - The character reference portraits (`scripts/<story>-art/refs/`) live on R2 too, as lossless WebP, listed in
   `scripts/art/refs-media.json`: after cloning, `python3 scripts/refs-media.py fetch`; after approving a new one,
   `ADMIN_TOKEN=... python3 scripts/refs-media.py publish`, then commit the list.

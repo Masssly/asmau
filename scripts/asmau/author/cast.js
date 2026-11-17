@@ -27,4 +27,7 @@ const WHO = {
 // (No reference for the baby: a standing toddler would teach the model the wrong baby.)
 const REFS = ["GIRL", "ASMA", "SHEHU", "GIDADO", "JAJI"];
 
-module.exports = { WHO, REFS, SOURCES: { HAD, CW } };
+// In three or more pictures but kept without a reference on purpose: places, and a crowd. Anyone else seen that often gets one (scripts/art/ref-from.py).
+const NOREF = ["SOKOTO", "DEGEL", "WOMEN"];
+
+module.exports = { WHO, REFS, NOREF, SOURCES: { HAD, CW } };

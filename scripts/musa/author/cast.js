@@ -35,4 +35,7 @@ const WHO = {
 // (No reference for the baby: a standing toddler would teach the model the wrong baby.)
 const REFS = ["MU", "MY", "HA", "PH", "ASIYA", "MUM", "SIS", "ELD", "DAU", "KH", "YU", "SAM"];
 
-module.exports = { WHO, REFS, SOURCES: { TAF, HAD } };
+// In three or more pictures but kept without a reference on purpose: the baby (a standing toddler teaches the model the wrong baby), places and crowds. Anyone else seen that often gets one (scripts/art/ref-from.py).
+const NOREF = ["BABY", "FOLK", "HALL", "NILE", "SORC", "CAMP", "PAL"];
+
+module.exports = { WHO, REFS, NOREF, SOURCES: { TAF, HAD } };

@@ -182,6 +182,7 @@ window.STORY = [
       { say: "c9-a", scene: "desert", art: [["G:brothers", 34, 74, 180, "walk", { expr: "neutral" }], ["🐪", 62, 74, 56], ["🏛️", 88, 48, 80]] },
       { say: "c9-b", scene: "egypt", art: [["P:yusufMan", 76, 66, 104, "bob", { expr: "neutral" }], ["G:brothers", 32, 78, 190, "bob", { expr: "worried" }], ["❓", 26, 44, 36, "float"]] },
       { play: "choice", line: "c9-q", scene: "egypt", opts: { img: "c9-b", art: [["❓", 50, 28, 70, "float"]], options: [{ label: "Yes, straight away", icon: "👀", ok: false }, { label: "No, they did not know him", icon: "🙈", ok: true }], wrong: "c9-qwrong" } },
+      { say: "c9-b2", scene: "egypt", art: [["P:yusufMan", 76, 66, 104, "bob", { expr: "neutral" }], ["G:brothers", 32, 78, 190, "bob", { expr: "neutral" }], ["💬", 54, 40, 40, "float"]] },
       { play: "fill", line: "c9-do", scene: "egypt", opts: { sacks: 5, taps: 3 } },
       { say: "c9-c", scene: "egypt", art: [["SACK", 24, 72, 90], ["SACK", 42, 76, 90], ["COINS", 32, 40, 1, "float"], ["P:yusufMan", 76, 66, 100, "bob", { expr: "happy" }]] },
       { play: "pick", line: "c9-pick", scene: "egypt", opts: { mark: "🪙", items: [{ icon: "SACK", n: 5, ok: true, name: "sack" }] } }

@@ -127,8 +127,9 @@
   { "id": "c9-q-opt1", "text": "Yes, straight away", "lang": "en" },
   { "id": "c9-q-opt2", "text": "No, they did not know him", "lang": "en" },
   { "id": "c9-qwrong", "text": "No. Yusuf knew them, but they did not know him.", "lang": "en" },
+  { "id": "c9-b2", "text": "It is told that Yusuf asked them about their family. They said: we were twelve brothers. One was lost long ago, and our father keeps the youngest one at home with him.", "lang": "en" },
   { "id": "c9-do", "text": "Yusuf gave them full measure. Tap each sack until it is full to the top.", "lang": "en" },
-  { "id": "c9-c",  "text": "Yusuf said: next time, bring your other brother, the one at home with your father. And he had their payment put back in their bags.", "lang": "en" },
+  { "id": "c9-c",  "text": "Then Yusuf said: next time, bring me that youngest brother, the one at home with your father. And he had their payment put back in their bags.", "lang": "en" },
   { "id": "c9-pick", "text": "Help put their payment back. Tap each sack to tuck the payment inside.", "lang": "en" },
 
   { "id": "c10-h0", "text": "Back home, the brothers said: Father, we will get no more grain unless we take our little brother with us. Yaqub said: shall I trust you with him, the way I trusted you with Yusuf before?", "lang": "en" },

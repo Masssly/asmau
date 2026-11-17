@@ -47,6 +47,7 @@ PLAN = {
     "c2-c":  (10, "The brothers stand in a row of five in front and a row of five behind."),
     "c9-a":  (10, "The brothers walk in a line, each leading a donkey, all of them clearly visible in the middle distance."),
     "c9-b":  (10, "The brothers stand in a row of five in front and a row of five behind."),
+    "c9-b2": (10, "The brothers stand in a row of five in front and a row of five behind."),
     "c9-c":  (10, "Behind, in the middle distance and clearly visible, the ten brothers stand in two groups of five by their donkeys."),
     "c10-h0": (10, "The brothers stand in a row of five in front and a row of five behind."),
     "c10-h": (10, "The ten brothers stand in a single straight row from the left edge to the right edge, with a little space between each of them."),

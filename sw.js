@@ -17,14 +17,14 @@
 */
 
 // BEGIN GENERATED
-const RELEASE = "2026.11.54";
-const BUILD = "3f632a593fd2";
+const RELEASE = "2026.11.55";
+const BUILD = "2f45d10dcfb9";
 // pack: [fingerprint of packs/<pack>.json, bytes, files]
 const PACKS = {
   "adam":["4f6ded53a9",2721610,55],
   "adam@m":["a617f3f408",4026446,147],
   "adam@w":["217fc43e27",4316508,147],
-  "core":["42c8f69253",1008155,39],
+  "core":["c8ada95ed6",1008653,39],
   "count-the-crescents":["c58ffd2f9d",83016,5],
   "count-the-crescents@m":["76410cb722",587647,52],
   "count-the-crescents@w":["238f9dbdf7",584828,52],
@@ -51,9 +51,9 @@ const PACKS = {
   "umm-ayman":["ee1ddb1e6c",3277562,56],
   "umm-ayman@m":["25ae6bd6a0",3369590,116],
   "umm-ayman@w":["aa2daf9273",3702494,116],
-  "yusuf":["a751ce1a23",5823531,93],
-  "yusuf@m":["2a69833071",6587121,190],
-  "yusuf@w":["04eac29a40",7052724,190]
+  "yusuf":["17fcaa75dd",5890449,94],
+  "yusuf@m":["5f24cea0b0",6661953,191],
+  "yusuf@w":["d0a6cc2e08",7128706,191]
 };
 const MEDIA_BASE = "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/";
 // END GENERATED

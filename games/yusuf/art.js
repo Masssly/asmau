@@ -54,6 +54,7 @@ window.STORY_ART = {
   "c9-0": "The hard years: dry fields and an empty grain jar at Yaqub's home.",
   "c9-a": "The brothers travel to Egypt.",
   "c9-b": "The brothers stand before Yusuf and do not know him.",
+  "c9-b2": "Yusuf asks the brothers about their family, and one of them answers.",
   "c9-c": "Their payment is slipped back into their sacks.",
   "c10-h0": "The brothers ask to take their little brother; Yaqub is doubtful.",
   "c10-h": "The brothers find their payment back in their sacks.",

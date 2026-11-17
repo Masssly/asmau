@@ -79,5 +79,12 @@
  "tap to count": "ketuk untuk menghitung",
  "silver coin": "koin perak",
  "Parents:": "Orang tua:",
- "re:^tell (her|his|this) story in your own voice, in any language ›$": "bacakan kisah ini dengan suara Anda sendiri, dalam bahasa apa pun ›"
+ "re:^tell (her|his|this) story in your own voice, in any language ›$": "bacakan kisah ini dengan suara Anda sendiri, dalam bahasa apa pun ›",
+ "🗣️ Who reads the story (until you record your own):": "🗣️ Siapa yang membacakan cerita (sampai Anda merekam suara Anda sendiri):",
+ "Who reads the story": "Siapa yang membacakan cerita",
+ "Who reads the stories": "Siapa yang membacakan cerita",
+ "🗣️ Who reads the stories": "🗣️ Siapa yang membacakan cerita",
+ "until you record your own": "sampai Anda merekam suara Anda sendiri",
+ "A woman’s voice": "Suara perempuan",
+ "A man’s voice": "Suara laki-laki"
 }

@@ -1,11 +1,18 @@
 {
-  "version": "2026.11.42",
+  "version": "2026.11.43",
   "date": "2026-11-17",
-  "buildId": "ab84a479588d",
+  "buildId": "97d48529a1b1",
   "notes": [
-    "Clearer stories: 29 pages that began with an unclear he or she now say who is meant (Umm Ayman, Nana Asma'u, Musa, Ibn Battuta, Rahmah, Nuh, Yusuf), read again in both voices"
+    "Easier to find: who reads the stories (a woman's or a man's voice) is now on the front of For parents, in Sound and volume, and in each story's own For parents box"
   ],
   "history": [
+    {
+      "version": "2026.11.43",
+      "date": "2026-11-17",
+      "notes": [
+        "Easier to find: who reads the stories (a woman's or a man's voice) is now on the front of For parents, in Sound and volume, and in each story's own For parents box"
+      ]
+    },
     {
       "version": "2026.11.42",
       "date": "2026-11-17",

@@ -154,6 +154,9 @@
   .cover .off-tag { position: absolute; left: 10px; top: 10px; padding: 3px 9px; border-radius: 999px; font-size: 12.5px; font-weight: 700;
     background: rgba(20,30,70,.82); color: #8be0c8; border: 1px solid rgba(139,224,200,.5); }
   .voice-pick { display: flex; gap: 8px; flex-wrap: wrap; margin: 6px 0 4px; }
+  .p-voice { margin: 12px 0 4px; }
+  .p-voice-h { margin: 0 0 4px; }
+  .p-voice-h small { color: var(--muted); }
   .voice-pick button { flex: 1 1 140px; display: flex; align-items: center; gap: 8px; padding: 10px 12px; border-radius: 14px;
     border: 1px solid var(--card-line); background: rgba(255,255,255,.05); color: var(--cream); font: inherit; cursor: pointer; text-align: left; }
   .voice-pick button[aria-checked="true"] { border-color: var(--gold); background: rgba(240,180,60,.16); }
@@ -221,6 +224,14 @@
         <span class="p-go" aria-hidden="true">›</span>
       </button>
 
+      <div class="p-voice">
+        <p class="p-voice-h"><strong>🗣️ Who reads the stories</strong> <small>until you record your own</small></p>
+        <div class="voice-pick" role="radiogroup" aria-label="Who reads the stories" data-voice-pick>
+        <button type="button" role="radio" data-voice="w" aria-checked="true"><span>👩🏿</span> A woman’s voice</button>
+        <button type="button" role="radio" data-voice="m" aria-checked="false"><span>👨🏿</span> A man’s voice</button>
+      </div>
+      </div>
+
       <div class="p-pair">
         <button class="p-card p-privacy" data-go="privacy">
           <span class="p-ico" aria-hidden="true">🔒</span>
@@ -270,7 +281,7 @@
       <h4>Until then: which computer voice?</h4>
       <p class="p-small">Lines you have not recorded are read by a computer voice. Choose the one your family prefers; your
         own recordings always play first.</p>
-      <div class="voice-pick" role="radiogroup" aria-label="Computer voice" id="voicePick">
+<div class="voice-pick" role="radiogroup" aria-label="Who reads the stories" data-voice-pick>
         <button type="button" role="radio" data-voice="w" aria-checked="true"><span>👩🏿</span> A woman’s voice</button>
         <button type="button" role="radio" data-voice="m" aria-checked="false"><span>👨🏿</span> A man’s voice</button>
       </div>
@@ -360,6 +371,13 @@
         without it. The music and sounds are made by the browser as you play; there are no recordings of instruments.</p>
       <p>The same buttons, here:</p>
       <div data-sound-levels></div>
+      <h4>Who reads the stories</h4>
+      <p class="p-small">A computer voice reads every line you have not recorded yourself. Choose a woman’s or a man’s
+        voice; your own recordings always play first.</p>
+      <div class="voice-pick" role="radiogroup" aria-label="Who reads the stories" data-voice-pick>
+        <button type="button" role="radio" data-voice="w" aria-checked="true"><span>👩🏿</span> A woman’s voice</button>
+        <button type="button" role="radio" data-voice="m" aria-checked="false"><span>👨🏿</span> A man’s voice</button>
+      </div>
     </div>
 
     <div class="p-view" data-view="offline" hidden>
@@ -646,9 +664,10 @@
   // For parents > Your voice: which computer voice reads the lines a parent has not recorded (shared/narration.js reads it)
   function voiceSet() { try { return localStorage.getItem("asmau-voice") === "m" ? "m" : "w"; } catch (e) { return "w"; } }
   function wireVoicePick() {
-    var pick = document.getElementById("voicePick");
-    function show() { Array.prototype.forEach.call(pick.querySelectorAll("[data-voice]"), function (b) { b.setAttribute("aria-checked", String(b.getAttribute("data-voice") === voiceSet())); }); }
-    pick.addEventListener("click", function (e) {
+    var picks = document.querySelectorAll("[data-voice-pick]");
+    // every copy of the choice (the front of For parents, Sound and volume, Your voice) shows the same answer
+    function show() { Array.prototype.forEach.call(document.querySelectorAll("[data-voice-pick] [data-voice]"), function (b) { b.setAttribute("aria-checked", String(b.getAttribute("data-voice") === voiceSet())); }); }
+    Array.prototype.forEach.call(picks, function (pick) { pick.addEventListener("click", function (e) {
       var b = e.target.closest ? e.target.closest("[data-voice]") : null; if (!b) return;
       try { localStorage.setItem("asmau-voice", b.getAttribute("data-voice")); } catch (err) { /* private window: this visit only */ }
       show();
@@ -659,7 +678,7 @@
           .map(function (k) { return k + "@" + vFor(k); });
         if (want.length) navigator.serviceWorker.ready.then(function (reg) { reg.active.postMessage({ type: "asmau-want", packs: want }); });
       });
-    });
+    }); });
     show();
   }
 

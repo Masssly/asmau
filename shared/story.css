@@ -712,6 +712,15 @@ button { touch-action: manipulation; -webkit-tap-highlight-color: transparent; }
 @media (prefers-reduced-motion: reduce) { .live, .live-fx, .live-fx::before, .live-fx::after, .live-fx > i { animation: none !important; } .live-fx > i { display: none; } }
 
 /* For parents: download the whole game, or delete it to free space (the parent's choice; see prepareAll) */
+.voice-ctl { margin: 10px 0 6px; }
+.voice-ctl-h { margin: 0 0 6px; font-size: 14px; }
+.voice-pick { display: flex; gap: 8px; flex-wrap: wrap; }
+.voice-pick button { flex: 1 1 140px; display: flex; align-items: center; gap: 8px; padding: 10px 12px; border-radius: 14px;
+  background: rgba(255,255,255,.06); border: 2px solid rgba(255,255,255,.16); color: inherit; font: inherit; font-size: 15px; cursor: pointer; text-align: left; }
+.voice-pick button[aria-checked="true"] { border-color: var(--gold); background: rgba(240,180,60,.16); }
+.voice-pick button[aria-checked="true"]::after { content: "✓"; margin-left: auto; color: var(--gold); font-weight: 800; }
+.voice-pick button span { font-size: 22px; }
+.voice-pick button:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
 .offline-ctl { margin: 10px 0 14px; padding: 12px; border-radius: 14px; background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.14); }
 .offline-ctl .offline-txt { margin: 0 0 10px; font-size: 14px; }
 .offline-ctl .btn { font-size: 15px; padding: 9px 16px; border-radius: 999px; }

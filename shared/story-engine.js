@@ -1505,6 +1505,38 @@
   }
   function voiceSet() { try { return localStorage.getItem("asmau-voice") === "m" ? "m" : "w"; } catch (e) { return "w"; } }
   function mb(b) { return b >= 1e6 ? Math.max(1, Math.round(b / 1e6)) + " MB" : Math.max(1, Math.round(b / 1e3)) + " KB"; }
+  // For parents (the title page's box): who reads the story, a woman's or a man's computer voice (shared/narration.js
+  // reads "asmau-voice"); also on the home page's For parents. A parent's own recording always plays first.
+  var voiceChosen = false;
+  function voiceChoice() {
+    var box = document.querySelector("details.parents");
+    if (voiceChosen || !box) return;
+    voiceChosen = true;
+    var row = mk("div", "voice-ctl");
+    row.appendChild(mk("p", "voice-ctl-h", "🗣️ Who reads the story (until you record your own):"));
+    var pick = mk("div", "voice-pick");
+    pick.setAttribute("role", "radiogroup"); pick.setAttribute("aria-label", "Who reads the story");
+    [["w", "👩🏿", "A woman’s voice"], ["m", "👨🏿", "A man’s voice"]].forEach(function (v) {
+      var b = mk("button"); b.type = "button"; b.setAttribute("role", "radio"); b.setAttribute("data-voice", v[0]);
+      b.appendChild(mk("span", "", v[1])); b.appendChild(document.createTextNode(" " + v[2]));
+      b.addEventListener("click", function () {
+        try { localStorage.setItem("asmau-voice", v[0]); } catch (e) { /* private window: this visit only */ }
+        paint();
+        if (currentLine) say(currentLine);           // hear it at once, if a line is showing
+        // a game kept on this device gets the new voice too, so it keeps working without internet
+        var vp = LANG ? LANG.voicePack(v[0], GAME) : v[0];
+        swAsk({ type: "asmau-status", packs: [GAME] }, true).then(function (st) {
+          if (st && st.packs[GAME] && st.packs[GAME].kept) swAsk({ type: "asmau-want", packs: [GAME + "@" + vp], voice: vp });
+        });
+      });
+      pick.appendChild(b);
+    });
+    function paint() { Array.prototype.forEach.call(pick.children, function (b) { b.setAttribute("aria-checked", String(b.getAttribute("data-voice") === voiceSet())); }); }
+    paint();
+    row.appendChild(pick);
+    box.insertBefore(row, box.querySelector("summary").nextSibling);
+  }
+
   function prepareAll() {
     var line = $("prep"), box = document.querySelector("details.parents");
     if (prepared || !box || !("serviceWorker" in navigator)) return;
@@ -1759,6 +1791,7 @@
     music.mood(CFG.titleMood || "wonder");
     if (music.amb) music.amb("none");
     show("title");
+    voiceChoice();
     prepareAll();
   }
 

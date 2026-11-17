@@ -44,7 +44,17 @@ module.exports = async function () {
   const names = await ev(() => caches.keys()) || [];
   T.check(!names.includes("asmau-media") && names.includes("asmau-files"), "the old saved copies were moved: " + names.join());
   const media = site.log.filter((l) => /^\/media\/.+\/games\/yusuf\/assets\//.test(l) || /\/games\/yusuf\/assets\//.test(l));
-  T.check(media.length <= 2, "no picture or sound of Yusuf was downloaded again (" + media.length + " asked for)");
+  // pictures and sounds redrawn or re-voiced since that release are new files and are downloaded once, as they should
+  // be; every other one must come from what the device already had
+  const crypto = require("crypto"), now = {};
+  for (const pk of ["yusuf", "yusuf@w"]) Object.assign(now, JSON.parse(fs.readFileSync(path.join(repo, "packs", pk + ".json"), "utf8")).files);
+  const changed = new Set(Object.keys(now).filter((f) => {
+    try { return crypto.createHash("sha1").update(execSync("git show " + OLD + ":" + f, { cwd: repo, maxBuffer: 64 << 20, stdio: ["ignore", "pipe", "ignore"] })).digest("hex").slice(0, 10) !== now[f]; }
+    catch (e) { return true; }                       // a file the old release did not have at all
+  }));
+  const again = media.filter((l) => !changed.has((/games\/yusuf\/assets\/.*$/.exec(l) || [""])[0]));
+  T.check(again.length <= 2, "no unchanged picture or sound of Yusuf was downloaded again (" + again.length + " asked for; " +
+    (media.length - again.length) + " changed since then, downloaded once)");
   const kept = await ev(async () => { const r = await (await caches.open("asmau-meta")).match(new URL("__asmau/kept", location.href.split("/games/")[0] + "/").href); return r ? r.json() : null; });
   T.check(kept && kept.includes("yusuf") && kept.includes("yusuf@w"), "Yusuf is still kept on this device: " + JSON.stringify(kept));
   await ctx.setOffline(true);

@@ -1,11 +1,18 @@
 {
-  "version": "2026.11.51",
+  "version": "2026.11.52",
   "date": "2026-11-17",
-  "buildId": "ebd460fb8b44",
+  "buildId": "da6e7f3d00c6",
   "notes": [
-    "Yusuf, page 4.2: a new picture, Yusuf carried among the bundles of goods ('They hid him like a piece of merchandise', 12:19); a draft note for parents gives the scholars' explanations"
+    "Yusuf, page 5.3: the master of the house looks as he did when he first took Yusuf home (he looked younger)"
   ],
   "history": [
+    {
+      "version": "2026.11.52",
+      "date": "2026-11-17",
+      "notes": [
+        "Yusuf, page 5.3: the master of the house looks as he did when he first took Yusuf home (he looked younger)"
+      ]
+    },
     {
       "version": "2026.11.51",
       "date": "2026-11-17",

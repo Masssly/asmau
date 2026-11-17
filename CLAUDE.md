@@ -120,6 +120,13 @@ things work; this file holds the decisions that must not be lost between session
 - Notes for parents are still one `.md` per page; the build bundles each game's live notes into `parents/notes.json`.
 - Tests play Yusuf, Musa and every game changed since origin/main (`PLAY=all` for every game).
 
+## Keeping a family's things (scripts/KEEPING.md, owner's rule 17 November 2026)
+- An update never wipes what a family has on a device: the family code, recordings, the child's place, voice and
+  language. Never rename those keys or databases without moving the old values; never clear localStorage or IndexedDB.
+  `tests/keep.test.js` checks it on every release.
+- Before moving to a new domain or shipping store apps, follow the handover plan in scripts/KEEPING.md: a new address
+  is a new, empty storage on every device.
+
 ## Releasing
 - `node scripts/release.js "note"` → `node scripts/validate.js` → full tests (tests/run.js) →
   commit → `scripts/publish-media.js` (needs ADMIN_TOKEN, never committed; **required** whenever pictures or sounds

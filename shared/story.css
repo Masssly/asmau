@@ -713,6 +713,13 @@ button { touch-action: manipulation; -webkit-tap-highlight-color: transparent; }
 
 /* For parents: download the whole game, or delete it to free space (the parent's choice; see prepareAll) */
 .voice-ctl { margin: 10px 0 6px; }
+/* after an update reload: one tap carries on from the same page */
+.updated-veil { position: fixed; inset: 0; z-index: 50; display: grid; place-items: center; background: rgba(8, 14, 34, .82); padding: 20px; }
+.updated-card { display: grid; gap: 6px; justify-items: center; padding: 26px 34px; border-radius: 22px; border: 2px solid var(--gold);
+  background: var(--card, #15244a); color: var(--cream); font-family: var(--font-body); font-size: 17px; cursor: pointer; }
+.updated-card strong { font-family: var(--font-display); font-size: 22px; }
+.updated-tick { width: 52px; height: 52px; border-radius: 50%; display: grid; place-items: center; background: var(--gold); color: #3a2300; font-size: 28px; font-weight: 800; }
+.updated-card:focus-visible { outline: 3px solid var(--gold); outline-offset: 4px; }
 .voice-ctl-h { margin: 0 0 6px; font-size: 14px; }
 .voice-pick { display: flex; gap: 8px; flex-wrap: wrap; }
 .voice-pick button { flex: 1 1 140px; display: flex; align-items: center; gap: 8px; padding: 10px 12px; border-radius: 14px;

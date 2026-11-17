@@ -32,6 +32,18 @@
 
   function voiceSet() { try { return localStorage.getItem("asmau-voice") === "m" ? "m" : "w"; } catch (e) { return "w"; } }
 
+  // Keep this device's Asmau: ask the browser not to clear it when space runs low (the family code, recordings, saved
+  // games, the child's place). Asked when there is something to keep, and always in the app on the home screen, so no
+  // browser asks a family about it out of the blue. (scripts/KEEPING.md)
+  window.AsmauKeep = function () {
+    try { if (navigator.storage && navigator.storage.persist) navigator.storage.persisted().then(function (y) { if (!y) return navigator.storage.persist(); }).catch(function () {}); } catch (e) { /* not supported */ }
+  };
+  (function () {
+    var app = (window.matchMedia && matchMedia("(display-mode: standalone)").matches) || navigator.standalone;
+    var code = null; try { code = localStorage.getItem("asmau-sync-code"); } catch (e) { /* private window */ }
+    if (app || code) window.AsmauKeep();
+  })();
+
   if (!("serviceWorker" in navigator)) return;
 
   var script = document.currentScript;
@@ -46,14 +58,19 @@
   var opened = Date.now(), reloaded = false;
   function reload() {
     if (reloaded) return;
+    // never in the middle of something that would be lost (a parent recording a line: window.AsmauBusy)
+    if (window.AsmauBusy && window.AsmauBusy()) { setTimeout(reload, 3000); return; }
     reloaded = true;
+    // the page comes back where it was: a story asks to carry on from the same page (shared/story-engine.js)
+    try { sessionStorage.setItem("asmau-updated", JSON.stringify({ path: location.pathname, resume: !!(window.AsmauResumeHint && window.AsmauResumeHint()) })); } catch (e) { /* private window */ }
     location.reload();
   }
   navigator.serviceWorker.addEventListener("controllerchange", function () {
     if (!hadController) return;
     root.setAttribute("data-update", "ready");
     window.dispatchEvent(new Event("asmau-update"));
-    if (Date.now() - opened < 15000) reload();
+    var soon = +((/[?&]updatems=(\d+)/.exec(location.search) || [0, 15000])[1]);   // ?updatems= is for the automated tests
+    if (Date.now() - opened < soon) reload();
     else document.addEventListener("visibilitychange", function () { if (document.hidden) reload(); });
   });
 

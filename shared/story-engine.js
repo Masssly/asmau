@@ -1456,6 +1456,8 @@
   }
 
   var curView = "title", prevView = "title";
+  // an update reload (shared/pwa.js) asks whether a story is being played, so it can come back to the same page
+  window.AsmauResumeHint = function () { return curView === "play"; };
   function show(view) {
     curView = view;
     if ($("mapBtn")) $("mapBtn").setAttribute("aria-expanded", String(view === "chapters"));
@@ -1553,6 +1555,23 @@
     });
   }
 
+  // Asmau was updated while a story was being played (shared/pwa.js reloaded the page): come back to the same page,
+  // with one tap, which also lets the voice play again. Nothing else changes: the place is saved page by page.
+  function afterUpdate() {
+    var u = null;
+    try { u = JSON.parse(sessionStorage.getItem("asmau-updated") || "null"); sessionStorage.removeItem("asmau-updated"); } catch (e) { /* private window */ }
+    if (!u || u.path !== location.pathname || !u.resume || !resumeAt()) return;
+    var veil = mk("div", "updated-veil"), card = mk("button", "updated-card");
+    card.type = "button";
+    card.appendChild(mk("span", "updated-tick", "✓"));
+    card.appendChild(mk("strong", "", "Asmau was updated"));
+    card.appendChild(mk("span", "", "Tap to carry on"));
+    veil.appendChild(card);
+    document.body.appendChild(veil);
+    card.addEventListener("click", function () { veil.remove(); var r = resumeAt(); if (r) startChapter(r.ci, r.si); });
+    card.focus();
+  }
+
   function prepareAll() {
     var line = $("prep"), box = document.querySelector("details.parents");
     if (prepared || !box || !("serviceWorker" in navigator)) return;
@@ -1581,6 +1600,7 @@
             swAsk({ type: "asmau-drop", packs: [GAME, GAME + "@*"] }).then(function () { setTimeout(paint, 600); });
           } else {
             busy = true;
+            if (window.AsmauKeep) window.AsmauKeep();
             swAsk({ type: "asmau-want", packs: packs, voice: v }).then(function () {
               (function poll() { paint().then(function () { if (busy) setTimeout(poll, 1500); }); })();
             });
@@ -1864,6 +1884,7 @@
     ["click", "touchend", "keydown"].forEach(function (ev) { document.addEventListener(ev, music.unlock, true); });
 
     $("startBtn").addEventListener("click", function () { var r = resumeAt(); if (r) startChapter(r.ci, r.si); else startChapter(0); });
+    afterUpdate();
     $("restartBtn").addEventListener("click", function () { startChapter(0); });
     $("mapBtn").addEventListener("click", toggleChapters);
     if ($("chaptersClose")) $("chaptersClose").addEventListener("click", closeChapters);

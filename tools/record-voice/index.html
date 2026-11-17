@@ -65,6 +65,7 @@
   .more p { font-size: 14px; }
   .sync p { margin: 10px 0; font-size: 14px; line-height: 1.5; }
   .sync .warn { color: #ffd8a8; }
+  .sync .hint { font-size: 14px; color: #a9b4d6; }
   .sync .code-in { flex: 1; min-width: 190px; padding: 8px 12px; border-radius: 10px; border: 1px solid var(--card-line); background: rgba(255,255,255,.08); color: var(--cream); font-family: monospace; font-size: 16px; text-transform: uppercase; }
   .sync .code-show { font-family: monospace; font-size: 22px; letter-spacing: 1px; background: rgba(0,0,0,.3); border-radius: 10px; padding: 12px; text-align: center; user-select: all; }
   .sync .check { display: flex; gap: 8px; align-items: center; font-size: 14px; margin: 10px 0; }
@@ -124,7 +125,10 @@
       <div class="controls"><button class="mini-btn download" id="syncGo" disabled>Turn on sync</button></div>
     </div>
     <div id="syncOn" hidden>
-      <p>Sync is on for this device. Code: <strong id="syncCodeMask"></strong></p>
+      <p>Sync is on for this device. Code: <strong id="syncCodeMask"></strong>
+        <button class="mini-btn" id="syncShow" type="button">Show</button> <button class="mini-btn" id="syncCopyOn" type="button">Copy</button></p>
+      <p class="hint">Keep the code somewhere safe (your phone's notes or a password manager). It is the only way back to your
+        recordings on a new phone. Lost it? Open this page on any device where sync is on and tap Show.</p>
       <div class="controls">
         <button class="mini-btn download" id="syncNow">Sync now</button>
         <button class="mini-btn" id="syncOffBtn">Turn off on this device</button>
@@ -185,6 +189,8 @@
 
   var micStreamPromise = null;
   var activeRecorder = null;
+  // an update never reloads this page while a line is being recorded (shared/pwa.js)
+  window.AsmauBusy = function () { return !!(activeRecorder && activeRecorder.state === "recording"); };
 
   function getMicStream() {
     if (!micStreamPromise) {
@@ -410,6 +416,15 @@
     try { S.connect($("syncCodeIn").value); $("syncCodeIn").value = ""; syncView(); runSync(); } catch (e) { syncSay(e.message); }
   });
   $("syncNow").addEventListener("click", runSync);
+  $("syncShow").addEventListener("click", function () {
+    var c = S.code(), shown = this.textContent === "Hide";
+    $("syncCodeMask").textContent = shown ? "••••-••••-••••-" + c.slice(-4) : c;
+    this.textContent = shown ? "Show" : "Hide";
+  });
+  $("syncCopyOn").addEventListener("click", function () {
+    var c = S.code();
+    try { navigator.clipboard.writeText(c).then(function () { syncSay("Copied. Save it somewhere safe."); }, function () { syncSay("Your code: " + c); }); } catch (e) { syncSay("Your code: " + c); }
+  });
   $("syncOffBtn").addEventListener("click", function () { S.disconnect(); syncSay("Sync is off on this device. Your online copy is still there until you delete it."); syncView(); });
   $("syncWipe").addEventListener("click", function () {
     if (!confirm("Delete every recording kept online for this family code? Recordings on your devices stay.")) return;

@@ -1,11 +1,18 @@
 {
-  "version": "2026.11.44",
+  "version": "2026.11.45",
   "date": "2026-11-17",
-  "buildId": "7d2cf033f4f8",
+  "buildId": "aa6763c99490",
   "notes": [
-    "Easier to find: the language of the stories, from a 🌐 button at the top of the home page, on the front of For parents, and in each translated game's For parents box"
+    "Updates keep everything a family has on the device and bring a story back to the same page (\"Asmau was updated, tap to carry on\"); the family code can be shown and copied again in the recorder; Asmau asks the browser to keep its storage"
   ],
   "history": [
+    {
+      "version": "2026.11.45",
+      "date": "2026-11-17",
+      "notes": [
+        "Updates keep everything a family has on the device and bring a story back to the same page (\"Asmau was updated, tap to carry on\"); the family code can be shown and copied again in the recorder; Asmau asks the browser to keep its storage"
+      ]
+    },
     {
       "version": "2026.11.44",
       "date": "2026-11-17",

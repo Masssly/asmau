@@ -43,6 +43,8 @@ window.AsmauSync = (function () {
   }
   function saveState(st) { try { localStorage.setItem(LS_STATE, JSON.stringify(st)); } catch (e) { /* private mode */ } }
 
+  function keep() { if (window.AsmauKeep) window.AsmauKeep(); else try { navigator.storage.persist(); } catch (e) { /* not supported */ } }
+
   function normalise(code) { return String(code || "").toUpperCase().replace(/[^A-Z0-9]/g, ""); }
   function valid(code) { var c = normalise(code); return c.length === 16 && c.split("").every(function (ch) { return ALPHABET.indexOf(ch) >= 0; }); }
   function pretty(c) { return c.match(/.{4}/g).join("-"); }
@@ -255,6 +257,7 @@ window.AsmauSync = (function () {
     pretty: function (c) { return pretty(normalise(c)); },
     code: function () { var c = ls("get"); return c ? pretty(normalise(c)) : null; },
     connect: function (code) {
+      keep();                                   // a device with a family code asks to be kept (shared/pwa.js)
       if (!valid(code)) throw new Error("That does not look like a family code. It has 16 letters and numbers.");
       keyCache = null;
       ls("set", normalise(code));

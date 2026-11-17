@@ -404,7 +404,8 @@
       <ul class="off-list" id="offlineList" aria-live="polite"></ul>
       <p><button class="btn" id="dropAllBtn" type="button" hidden>Delete all games from this device</button></p>
       <p>On a phone or tablet, add Asmau to the home screen from the browser’s menu (“Add to Home Screen”, or “Install
-        app”) and it opens like an app.</p>
+        app”) and it opens like an app. On an iPhone or iPad this also keeps your family code, recordings and your child’s
+        place safe: Safari on its own clears a website’s saved things after a week without a visit.</p>
       <p>If a device ever looks out of date, <a href="reset.html">refresh it here</a>. Recordings and progress are not touched.</p>
     </div>
 
@@ -632,7 +633,7 @@
       var del = st.whole || st.kept || st.here;
       if (!st.whole && !st.kept) {
         var dl = el("button", "save", "Download"); dl.type = "button"; dl.setAttribute("aria-label", "Download " + g.title + ", " + mbs(st.total));
-        dl.addEventListener("click", function () { postSW({ type: "asmau-want", packs: [g.slug, g.slug + "@" + v], voice: v }); pollState(); });
+        dl.addEventListener("click", function () { if (window.AsmauKeep) window.AsmauKeep(); postSW({ type: "asmau-want", packs: [g.slug, g.slug + "@" + v], voice: v }); pollState(); });
         li.appendChild(dl);
       }
       if (del) {
@@ -667,6 +668,7 @@
   function saveAll() {
     if (saving) return;
     saving = true;
+    if (window.AsmauKeep) window.AsmauKeep();
     navigator.serviceWorker.ready.then(function (reg) { reg.active.postMessage({ type: "asmau-want", packs: "all", voice: (CODE !== "en" ? CODE + "-" : "") + voiceSet() }); });
     (function poll() { saveState().then(function (finished) { if (!finished && saving) setTimeout(poll, 1500); }); })();
   }

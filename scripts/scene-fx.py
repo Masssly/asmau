@@ -111,8 +111,10 @@ def main():
     if "--sheet" in sys.argv:
         return sheet(game, sys.argv[sys.argv.index("--sheet") + 1])
     path = os.path.join(game, "scene-fx.json")
-    fx = json.load(open(path)) if os.path.exists(path) and "--redo" not in sys.argv else {}
     only = sys.argv[sys.argv.index("--only") + 1].split(",") if "--only" in sys.argv else None
+    # --redo starts afresh, but with --only it redoes just those pictures and keeps every other one
+    # (once, "--redo --only c2-a" threw away the effects of 65 other pictures)
+    fx = json.load(open(path)) if os.path.exists(path) and ("--redo" not in sys.argv or only) else {}
     todo = [i for i in pictures(game) if (only and i in only) or (not only and i not in fx)]
     def job(i):
         try:

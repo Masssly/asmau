@@ -1,11 +1,18 @@
 {
-  "version": "2026.11.48",
+  "version": "2026.11.49",
   "date": "2026-11-17",
-  "buildId": "fef2c0806ccc",
+  "buildId": "6b3bb4ad4490",
   "notes": [
-    "In every game, a chosen answer is read to its end before the explanation starts (longer answers, such as Yusuf 2.12, were cut off)"
+    "Yusuf, page 2.3: gentle living effects on the new picture (birds, leaves, dust)"
   ],
   "history": [
+    {
+      "version": "2026.11.49",
+      "date": "2026-11-17",
+      "notes": [
+        "Yusuf, page 2.3: gentle living effects on the new picture (birds, leaves, dust)"
+      ]
+    },
     {
       "version": "2026.11.48",
       "date": "2026-11-17",

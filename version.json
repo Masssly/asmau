@@ -1,11 +1,18 @@
 {
-  "version": "2026.11.46",
+  "version": "2026.11.47",
   "date": "2026-11-17",
-  "buildId": "d3a2ca03d525",
+  "buildId": "91b8d65e6430",
   "notes": [
-    "Refresh fixes a stuck device without deleting downloaded games (they are kept, and not downloaded again); a separate link deletes them to free space"
+    "Yusuf, page 2.3: a new picture: the brothers whisper their plan at home among the tents, while Yusuf plays by his father (it looked as if they had already gone out)"
   ],
   "history": [
+    {
+      "version": "2026.11.47",
+      "date": "2026-11-17",
+      "notes": [
+        "Yusuf, page 2.3: a new picture: the brothers whisper their plan at home among the tents, while Yusuf plays by his father (it looked as if they had already gone out)"
+      ]
+    },
     {
       "version": "2026.11.46",
       "date": "2026-11-17",

@@ -43,8 +43,8 @@ SHOTS = {
     # ---- chapter 2
     "c2-a0": ("The jealous brothers grumble together by the fire at night.",
               "Night by a campfire just outside {HOME}. {BR} sit in a circle around the fire, frowning and grumbling, some with folded arms, one pointing angrily back toward the tents; firelight on their jealous faces, a dark starry sky, goats asleep nearby."),
-    "c2-a": ("The brothers whisper together while Yusuf plays.",
-             "Dry grassland pasture with sheep and goats. In front, {BR} huddle whispering with jealous frowns, glancing at {YB}, who plays happily with a lamb further away. Shepherds and flocks in the distance."),
+    "c2-a": ("At home, the brothers sit together behind the tents and whisper a plan, while far away Yusuf plays by his father.",
+             "Late afternoon in {HOME}, among the family's tents, before anyone has set out. In front, behind a large tent and a low mud-brick wall, {BR} sit and squat close together on the ground, whispering with jealous frowns and secretive glances. Far away in the background, by the tents, {YQ} sits on a mat and {YB} plays happily beside him with a lamb. No pasture, no well."),
     "c2-0": ("Yaqub holds Yusuf and his little brother close; the older brothers stand apart.",
              "Late afternoon in {HOME}. {YQ} sits on a mat in the front, smiling, with TWO boys hugged close: on his right {YB}, and on his left a much smaller boy of about four in a little orange tunic. Both boys smile. Further back, a little apart, a group of grown older brothers in robes and turbans stand watching, some with folded arms."),
     "c2-p1": ("The brothers ask their father to send Yusuf out with them.",

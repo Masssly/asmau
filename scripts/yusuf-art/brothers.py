@@ -39,7 +39,7 @@ NINE = TEN.replace("ten grown", "nine grown").replace(", terracotta and charcoal
 # key: (number of bearded brothers, how they are placed). The placing is added to the scene.
 PLAN = {
     "c2-a0": (10, "Five brothers sit on the left side of the fire and five on the right side."),
-    "c2-a":  (10, "The brothers stand in the front in two huddles of five."),
+    "c2-a":  (10, "Five brothers sit on the ground in a front row and five squat or kneel in a row just behind them, close together, every face visible."),
     "c2-0":  (10, "Further back, the ten older brothers stand apart in two groups of five, some with folded arms."),
     "c2-p1": (10, "The brothers stand in a row of five in front and a row of five behind."),
     "c2-p3": (10, "Five brothers walk ahead of the boy and five walk behind him."),

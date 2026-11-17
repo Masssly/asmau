@@ -1,11 +1,18 @@
 {
-  "version": "2026.11.58",
+  "version": "2026.11.59",
   "date": "2026-11-17",
-  "buildId": "728b1fcbfbc8",
+  "buildId": "3ef8074280ed",
   "notes": [
-    "Yusuf, page 9.5: a new picture. Yusuf is the right size and the brothers face him as one of them answers."
+    "Yusuf, chapters 10 to 13: Benjamin is now drawn as a teenager, since many years have passed."
   ],
   "history": [
+    {
+      "version": "2026.11.59",
+      "date": "2026-11-17",
+      "notes": [
+        "Yusuf, chapters 10 to 13: Benjamin is now drawn as a teenager, since many years have passed."
+      ]
+    },
     {
       "version": "2026.11.58",
       "date": "2026-11-17",

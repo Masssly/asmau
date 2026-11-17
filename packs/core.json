@@ -1,4 +1,4 @@
-{"bytes":1013039,
+{"bytes":1013226,
 "files":{"app.webmanifest":"66fa71e8ce",
 "config.json":"cb49e43234",
 "fonts/baloo2-latin.woff2":"ae196042c8",
@@ -37,5 +37,5 @@
 "shared/vendor/README.txt":"9c77174b0e",
 "shared/vendor/lame.min.js":"00d43c063d",
 "tools/record-voice/index.html":"228dd8e38d",
-"version.json":"d5fc0a7ca7"},
+"version.json":"d559fa7e1f"},
 "sizes":{}}

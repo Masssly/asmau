@@ -26,7 +26,7 @@ WHO = {
     "YM": "a dignified kind man in his 30s with a short black beard, a white turban with a gold band and a long deep-blue robe with gold trim",
     "YQ": "an elderly father in his 70s with a white beard, a white embroidered cap and a cream-and-grey striped wide-sleeved robe",
     "BR": "his ten older brothers, grown men all with deep dark brown skin and short beards, in rust, ochre, olive, brown, maroon, sand, slate blue, dark green, terracotta and charcoal robes and turbans",
-    "BN": "a teenage boy in an orange-brown tunic",
+    "BN": "a teenage boy of about fifteen in an orange-brown tunic, nearly as tall as a grown man, with no beard",
     "TR": "a water-carrier man in an orange turban and cream robe",
     "MA": "a nobleman in a blue turban with a gold band and a cream robe with gold trim",
     "KG": "a king with a gold crown, a short beard and a purple robe with gold trim",
@@ -138,7 +138,7 @@ SHOTS = {
             "A grain yard. Servants quietly tuck small leather money pouches into full grain sacks loaded on donkeys while {YM} watches approvingly. In the distance the brothers prepare to leave. Workers, scales, heaps of grain."),
     # ---- chapter 10
     "c10-h0": ("The brothers ask to take their little brother; Yaqub is doubtful.",
-               "Evening in {HOME}. {YQ} sits on a mat holding {BN} close with one protective arm, looking at {BR} with a sad, doubtful face. The brothers stand before him with open pleading hands; empty grain sacks lie at their feet."),
+               "Evening in {HOME}. {YQ} sits on a mat with {BN} sitting close beside him, his protective arm around the boy's shoulders, looking at {BR} with a sad, doubtful face. The brothers stand before him with open pleading hands; empty grain sacks lie at their feet."),
     "c10-h": ("The brothers find their payment back in their sacks.",
               "Evening in {HOME}. Across the front of the picture {BR} stand in one long line, side by side, each holding up a small leather money pouch he found inside his open grain sack, astonished; the open sacks stand at their feet. In the background, at the door of the tent, {YQ} watches with a worried face, one arm around {BN}."),
     "c10-g": ("Yaqub tells his sons: go in by different gates.",

@@ -248,7 +248,25 @@ MASTER = ("Edit the first picture. Keep everything exactly as it is: the scene, 
 KING = ("Edit the first picture. Keep everything exactly as it is: the hall, the light, the throne, the woman in plum, the "
         "courtiers and the poses. Change only the man sitting on the throne, so that he is exactly the king in the second "
         "picture: the same face and short beard, a gold crown, and a purple robe with gold trim. No turban.")
+# 10.9: Benjamin came out as a small child; years have passed since Yusuf was lost, so he is a teenager like his
+# reference (owner, 17 November 2026)
+TEEN = ("Edit the first picture. Keep everything exactly as it is: the place, the light, the ten bearded men, the donkeys, the "
+        "guards and the crier. Change only the small boy in the orange-brown tunic in the front row: he is now a teenage boy of "
+        "about fifteen, exactly like the boy in the second picture, tall enough to reach the shoulders of the men beside him, with "
+        "the same orange-brown tunic, short black hair, deep dark brown skin and no beard.")
+# the same in his other pictures from chapter 10 on, where he still came out as a small child
+TEEN_ANY = ("Edit the first picture. Keep everything else exactly as it is: the place, the light, the camera angle, every other "
+            "person, their faces, poses and clothes. Change only the young boy in the orange-brown tunic: he is now a teenage boy "
+            "of about fifteen, exactly like the boy in the second picture, tall enough to reach the shoulders of the grown men, with "
+            "the same orange-brown tunic, short black hair, deep dark brown skin and no beard.")
+TEEN_LAP = TEEN_ANY.replace("Change only the young boy in the orange-brown tunic:", "Change only the young boy in the orange-brown "
+                            "tunic: he no longer sits on the old man's lap but sits close beside him, the old man's arm around his "
+                            "shoulders, and")
+BN_REF = "scripts/yusuf-art/refs/BN.png"
 FIXES = {
+    "c10-l1": (TEEN, BN_REF),
+    "c10-h0": (TEEN_LAP, BN_REF), "c10-g": (TEEN_ANY, BN_REF), "c10-l2": (TEEN_ANY, BN_REF),
+    "c11-c": (TEEN_ANY, BN_REF), "c12-a": (TEEN_ANY, BN_REF), "c13-b": (TEEN_ANY, BN_REF),
     "c1-a": (HAIR_BOY, "p-yusuf"), "c1-b": (HAIR_BOY, "p-yusuf"), "c2-w": (HAIR_BOY, "p-yusuf"),
     "c3-b": (HAIR_BOY, "p-yusuf"),
     "c5-b2": (MASTER, "c4-b"),
@@ -292,6 +310,8 @@ def yusuf_fix(keys):
     keys = keys or list(FIXES)
 
     def match(k):                       # the redrawn version of the picture to match, once there is one
+        if "/" in FIXES[k][1]:          # a reference picture, by its path
+            return os.path.join(ROOT, FIXES[k][1])
         new = os.path.join(YOUT, FIXES[k][1] + ".png")
         return new if os.path.exists(new) else os.path.join(YIMG, FIXES[k][1] + ".webp")
     jobs = lambda ks: [(k, os.path.join(YOUT, k + ".png"), FIXES[k][0] + END, (os.path.join(YIMG, k + ".webp"), match(k))) for k in ks]

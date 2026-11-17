@@ -31,7 +31,7 @@ IMG = os.path.join(ROOT, "games", "yusuf", "assets", "img")
 OUT = os.path.join(HERE, "bro"); TRY = os.path.join(OUT, "try")
 REF_BRO = os.path.join(HERE, "refs", "brothers.png")         # ten brothers in two groups of five
 REF = {"YQ": os.path.join(HERE, "fix", "c1-b.png"), "YM": os.path.join(IMG, "p-yusufMan.webp"),
-       "BN": os.path.join(IMG, "p-benjamin.webp"), "YB": os.path.join(IMG, "p-yusuf.webp")}
+       "BN": os.path.join(HERE, "refs", "BN.png"), "YB": os.path.join(IMG, "p-yusuf.webp")}
 
 TEN = "ten grown brothers, all with deep dark brown skin and short beards, in rust, ochre, olive, brown, maroon, sand, slate blue, dark green, terracotta and charcoal robes and turbans"
 NINE = TEN.replace("ten grown", "nine grown").replace(", terracotta and charcoal", " and terracotta")
@@ -49,11 +49,11 @@ PLAN = {
     "c9-b":  (10, "The brothers stand in a row of five in front and a row of five behind."),
     "c9-b2": (10, "The brothers stand in a row of five in front and a row of five just behind them, all facing him."),
     "c9-c":  (10, "Behind, in the middle distance and clearly visible, the ten brothers stand in two groups of five by their donkeys."),
-    "c10-h0": (10, "The brothers stand in a row of five in front and a row of five behind."),
+    "c10-h0": (10, "The brothers stand in a row of five in front and a row of five behind. The teenage boy sits on the mat beside his father, not on his lap."),
     "c10-h": (10, "The ten brothers stand in a single straight row from the left edge to the right edge, with a little space between each of them."),
     "c10-g": (10, "The brothers stand in a row of five in front and a row of five behind; the teenage boy stands beside the father."),
     "c10-l1": (10, "The brothers stand in a row of five in front and a row of five behind; their youngest brother, a teenage boy in an orange-brown tunic, stands with them."),
-    "c10-l2": (10, "The brothers stand in a row of five in front and a row of five behind."),
+    "c10-l2": (10, "The brothers stand in a row of five in front and a row of five behind; their youngest brother, the teenage boy in the orange-brown tunic, stands with them, and there is no other boy or child."),
     "c10-c": (10, "Five brothers stand on the left and five on the right."),
     "c11-v0": (10, "The brothers kneel in a row of five in front and a row of five behind."),
     "c11-v": (10, "One brother stands alone on the left; the other nine walk away on the right in a group of five and a group of four."),

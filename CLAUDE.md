@@ -107,6 +107,11 @@ things work; this file holds the decisions that must not be lost between session
   "Asmau", tagline "Islamic games for curious kids". Rules, colours and how to remake every icon:
   brand/README.md. Never hand-edit brand/kit; remake it.
 
+## Free for ever (owner, 17 November 2026)
+- The games are always free, with no paid tier, no account and no adverts: we never charge for the knowledge. Money comes
+  from donations, grants and later a merchandise shop on the website (web-only, never in the store apps). How we talk
+  about Asmau, and what sets it apart: brand/PITCH.md.
+
 ## Links, donations and the apps
 - Every link that leaves Asmau goes through the grown-up check (shared/gate.js) automatically; never open an
   outside page another way (no window.open of an outside address from game code).

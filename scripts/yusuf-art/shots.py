@@ -71,8 +71,8 @@ SHOTS = {
     "c3-b": ("The man lifts his arms in joy: a boy has come up with the bucket.",
              "Bright day beside an old round stone well. {TR} lifts his arms in joyful surprise. {YB} sits on the edge of the well beside a wooden bucket on a rope, safe and smiling shyly. Caravan travellers gather round amazed; loaded camels and donkeys rest behind."),
     # ---- chapter 4
-    "c4-a": ("Yusuf rides with the caravan across the desert.",
-             "A long camel caravan crosses golden desert dunes under a hot sun. {YB} rides on a camel among bundles of goods, looking back sadly toward home. Merchants in robes and turbans walk alongside; distant palms and rocky hills."),
+    "c4-a": ("Yusuf sits tucked in among the bundles of goods on a camel, carried like merchandise across the desert.",
+             "Golden afternoon in the desert on the road to Egypt. A caravan of camels loaded with trade goods walks in a line. In the front, on the load of one camel, {YB} sits low, tucked in among the bundles of goods: bulging sacks, rolled carpets, tied bales and clay jars, with a striped cloth thrown over part of the load beside him, so that he looks like part of the cargo. Only his head and shoulders show above the bundles; his face is clearly visible, quiet and thoughtful. A merchant in a turban and a long robe leads the camel by its rope and glances back at the load. Other loaded camels and traders follow behind. Sand dunes, a few palm trees far away."),
     "c4-b": ("In a busy market in Egypt, a nobleman takes Yusuf home.",
              "A busy market in {EGY}. {MA} rests a kind hand on the shoulder of {YB}, who looks down sadly. Beside him his wife, in a plum scarf and robe, looks at the boy warmly. Around them traders sell grain, cloth and pots; donkeys, baskets, shoppers."),
     "c4-c": ("Yusuf, grown into a young man, in the courtyard of the house.",

@@ -28,7 +28,7 @@ window.STORY_ART = {
   "c2-d": "Yaqub prays, patient, under the night sky.",
   "c3-a": "A caravan rests by the well; a man lowers his bucket.",
   "c3-b": "The man lifts his arms in joy: a boy has come up with the bucket.",
-  "c4-a": "Yusuf rides with the caravan across the desert.",
+  "c4-a": "Yusuf sits tucked in among the bundles of goods on a camel, carried like merchandise across the desert.",
   "c4-b": "In a busy market in Egypt, a nobleman takes Yusuf home.",
   "c4-c": "Yusuf, grown into a young man, in the courtyard of the house.",
   "c5-a": "Yusuf runs for the door.",

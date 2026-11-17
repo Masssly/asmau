@@ -1,11 +1,18 @@
 {
-  "version": "2026.11.45",
+  "version": "2026.11.46",
   "date": "2026-11-17",
-  "buildId": "aa6763c99490",
+  "buildId": "d3a2ca03d525",
   "notes": [
-    "Updates keep everything a family has on the device and bring a story back to the same page (\"Asmau was updated, tap to carry on\"); the family code can be shown and copied again in the recorder; Asmau asks the browser to keep its storage"
+    "Refresh fixes a stuck device without deleting downloaded games (they are kept, and not downloaded again); a separate link deletes them to free space"
   ],
   "history": [
+    {
+      "version": "2026.11.46",
+      "date": "2026-11-17",
+      "notes": [
+        "Refresh fixes a stuck device without deleting downloaded games (they are kept, and not downloaded again); a separate link deletes them to free space"
+      ]
+    },
     {
       "version": "2026.11.45",
       "date": "2026-11-17",

@@ -13,16 +13,32 @@
 <body>
 <div>
   <h1>Refreshing Asmau…</h1>
-  <p id="msg">Clearing the saved copy of the site on this device.</p>
+  <p id="msg">Clearing the saved copy of the site's pages on this device.</p>
   <a class="b" id="go" href="index.html" hidden>Open Asmau</a>
-  <small>The pictures and sounds are downloaded again afterwards. Your voice recordings and your place in the stories are not touched.</small>
+  <small id="note">Downloaded games, your voice recordings, your family code and your child's place in the stories are kept.
+    Only the site's pages are fetched again (a few hundred KB).</small>
+  <small><a href="reset.html?all" id="allLink">Also delete the downloaded games</a> (to free space; they download again when played)</small>
 </div>
 <script>
 (function () {
   var done = [];
   var jobs = [];
   if ("serviceWorker" in navigator) jobs.push(navigator.serviceWorker.getRegistrations().then(function (rs) { return Promise.all(rs.map(function (r) { return r.unregister(); })); }));
-  if (window.caches) jobs.push(caches.keys().then(function (ks) { return Promise.all(ks.filter(function (k) { return k.indexOf("asmau-") === 0; }).map(function (k) { return caches.delete(k); })); }));
+  // Pictures and sounds are saved under addresses with their fingerprint (<server>/media/<hash>/...), so a saved copy
+  // can never be out of date: keep them, and the list of games this family downloaded, so nothing is downloaded twice.
+  // Only the pages, scripts and pack lists are cleared (they are what can be stale). ?all clears everything.
+  var all = /[?&]all\b/.test(location.search);
+  if (all) { document.getElementById("note").textContent = "Downloaded games are deleted too. Your voice recordings, your family code and your child's place in the stories are kept."; document.getElementById("allLink").parentNode.hidden = true; }
+  var MEDIA = /\/media\/[0-9a-f]{10}\//, CHOICES = /\/__asmau\/(kept|played)$/;
+  if (window.caches) jobs.push(caches.keys().then(function (ks) {
+    return Promise.all(ks.filter(function (k) { return k.indexOf("asmau-") === 0; }).map(function (k) {
+      if (all || (k !== "asmau-files" && k !== "asmau-meta")) return caches.delete(k);
+      var keep = k === "asmau-files" ? MEDIA : CHOICES;
+      return caches.open(k).then(function (c) { return c.keys().then(function (reqs) {
+        return Promise.all(reqs.filter(function (r) { return !keep.test(r.url); }).map(function (r) { return c.delete(r); }));
+      }); });
+    }));
+  }));
   Promise.all(jobs).catch(function () {}).then(function () {
     document.getElementById("msg").textContent = "Done. The newest version will load now.";
     document.querySelector("h1").textContent = "Refreshed ✓";

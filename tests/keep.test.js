@@ -47,6 +47,29 @@ module.exports = async function () {
   const r = await ctx.newPage();
   await r.goto(site.url + "tools/record-voice/index.html?updatems=600000", { waitUntil: "networkidle" }); await r.waitForTimeout(500);
   T.check(await r.evaluate(() => typeof window.AsmauBusy === "function"), "the recorder tells updates when it is busy");
+  // Refresh (reset.html) fixes a stuck device without deleting downloaded games: they are not downloaded again
+  await r.close();
+  await p.evaluate(() => navigator.serviceWorker.ready.then((g) => g.active.postMessage({ type: "asmau-want", packs: ["nuh", "nuh@m"], voice: "m" })));
+  let saved = 0;
+  for (let t = 0; t < 90; t++) {
+    saved = await p.evaluate(async () => (await (await caches.open("asmau-files")).keys()).filter((q) => /\/media\/.+\/games\/nuh\/assets\//.test(q.url)).length);
+    if (saved > 180) break; await p.waitForTimeout(1000);
+  }
+  T.check(saved > 180, "Nuh is downloaded for use without internet (" + saved + " pictures and sounds)");
+  await p.goto(site.url + "reset.html", { waitUntil: "load" });
+  await p.waitForURL(/index\.html\?fresh=/, { timeout: 20000 }).catch(() => {});
+  await p.waitForTimeout(1500);
+  const after = await p.evaluate(async () => ({
+    media: (await (await caches.open("asmau-files")).keys()).filter((q) => /\/media\/.+\/games\/nuh\/assets\//.test(q.url)).length,
+    code: localStorage.getItem("asmau-sync-code") }));
+  T.check(after.media === saved, "Refresh keeps the downloaded game's pictures and sounds (" + after.media + " of " + saved + ")");
+  T.check(after.code === CODE, "and the family code");
+  site.log.length = 0;
+  await p.goto(site.url + "games/nuh/index.html", { waitUntil: "networkidle" }); await p.evaluate(() => navigator.serviceWorker.ready); await p.waitForTimeout(5000);
+  const fetched = site.log.filter((l) => /\/games\/nuh\/assets\//.test(l));
+  T.check(fetched.length <= 2, "after Refresh, opening the game downloads none of its pictures and sounds again (" + fetched.length + ")");
+  const st = await p.evaluate(() => new Promise((res) => { const ch = new MessageChannel(); ch.port1.onmessage = (e) => res(e.data); navigator.serviceWorker.controller.postMessage({ type: "asmau-status", packs: ["nuh"] }, [ch.port2]); setTimeout(() => res(null), 5000); }));
+  T.check(!!(st && st.packs.nuh && st.packs.nuh.kept), "and the game is still marked as downloaded");
   await browser.close(); await site.close(); fs.rmSync(tmp, { recursive: true, force: true });
   return T.done();
 };

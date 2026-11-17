@@ -243,10 +243,16 @@ MASTER = ("Edit the first picture. Keep everything exactly as it is: the scene, 
           "people. Change only the face of the man in the middle who wears the blue turban with a gold band, so that he has exactly "
           "the face of the man in the blue turban in the second picture: the same face, a man in his forties, with the same full "
           "black beard. Keep his blue turban and his cream robe with gold trim.")
+# 8.3: the man on the throne came out as the master of the house in the king's place; he is the king of 8.2
+# (owner, 17 November 2026)
+KING = ("Edit the first picture. Keep everything exactly as it is: the hall, the light, the throne, the woman in plum, the "
+        "courtiers and the poses. Change only the man sitting on the throne, so that he is exactly the king in the second "
+        "picture: the same face and short beard, a gold crown, and a purple robe with gold trim. No turban.")
 FIXES = {
     "c1-a": (HAIR_BOY, "p-yusuf"), "c1-b": (HAIR_BOY, "p-yusuf"), "c2-w": (HAIR_BOY, "p-yusuf"),
     "c3-b": (HAIR_BOY, "p-yusuf"),
-    "c5-b2": (MASTER, "c4-b"),          # owner, 17 November 2026: pages 3.3 to 3.5, his hair too tall and curly
+    "c5-b2": (MASTER, "c4-b"),
+    "c8-a3": (KING, "c8-a2"),          # owner, 17 November 2026: pages 3.3 to 3.5, his hair too tall and curly
     "c5-a": (HAIR_MAN, "c4-c"), "c5-c": (HAIR_MAN, "c4-c"), "c5-b4": (HAIR_MAN, "c4-c"),
     "c5-b3": (HAIR_MAN, "c4-c"),           # the long tear here is the one to keep
     "c5-b1": (TEAR, "c5-b3"),              # the small tear here becomes the same long tear

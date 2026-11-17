@@ -66,7 +66,8 @@ if (new Set(slugs).size !== slugs.length) fail("manifest.json: a game is listed 
 // The order of games inside a section. Prophets: the one who came first at the top, in the order below (the
 // usual order in Sunni and Shia books of the prophets' stories; the place of a few, such as Ayyub, Dhul-Kifl and
 // Yunus, is uncertain). Great Muslims: the one born first at the top ("born" in game.json, a year). Little ones:
-// the easiest first ("level" in game.json, 1 = easiest). See CLAUDE.md.
+// the easiest first ("level" in game.json, 1 = easiest). Games that can be played come first, in that order; the
+// coming-soon games follow them, in the same order. See CLAUDE.md.
 const PROPHETS = ["Adam", "Idris", "Nuh", "Hud", "Salih", "Ibrahim", "Lut", "Ismail", "Ishaq", "Yaqub", "Yusuf", "Ayyub",
   "Shuayb", "Musa", "Harun", "Dhul-Kifl", "Dawud", "Sulayman", "Ilyas", "Al-Yasa", "Yunus", "Zakariyya", "Yahya", "Isa", "Muhammad"];
 const ORDER = {
@@ -78,10 +79,14 @@ for (const s of sections) {
   if (!s.order) continue;
   if (!ORDER[s.order]) { fail("manifest.json: section '" + s.title + "' has unknown order '" + s.order + "' (prophet, born or level)"); continue; }
   if (s.more !== undefined && (typeof s.more !== "string" || !s.more.trim())) fail("manifest.json: section '" + s.title + "': 'more' must be a short sentence");
-  let last = -Infinity, lastSlug = null;
+  // games that can be played first, in the section's order; then the coming-soon ones, in the same order
+  let last = -Infinity, lastSlug = null, inSoon = false;
   for (const slug of s.games) {
     const g = json("games/" + slug + "/game.json");
     if (!g) continue;
+    const soon = g.status === "coming-soon";
+    if (!soon && inSoon) { fail("manifest.json: in '" + s.title + "', " + slug + " can be played, so it must come before the coming-soon games (" + lastSlug + ")"); continue; }
+    if (soon && !inSoon) { inSoon = true; last = -Infinity; }
     const k = ORDER[s.order](g);
     if (k < 0) { fail("games/" + slug + "/game.json: the section '" + s.title + "' is ordered by '" + s.order + "', so this game needs " + (s.order === "prophet" ? "\"prophet\": one of " + PROPHETS.join(", ") : "a number in \"" + s.order + "\"")); continue; }
     if (k < last) fail("manifest.json: in '" + s.title + "', " + slug + " must come before " + lastSlug + " (" + (s.order === "prophet" ? "the prophet who came first goes at the top" : s.order === "born" ? "the person born first goes at the top" : "the easiest game goes at the top") + ")");

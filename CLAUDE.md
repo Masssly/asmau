@@ -10,6 +10,8 @@ things work; this file holds the decisions that must not be lost between session
   Adam … Muhammad ﷺ; the place of a few, such as Ayyub, Dhul-Kifl and Yunus, is uncertain).
 - **Great Muslims:** the person born first at the top: `"born"` (a year) in game.json.
 - **For little ones:** the easiest game first: `"level"` in game.json (1 = easiest).
+- In every section the games that can be played come first, in that order; the coming-soon games follow, in the same
+  order (owner, 17 November 2026).
 - Each section ends with a "more coming" line: `"more"` in manifest.json.
 
 ## Sources

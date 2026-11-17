@@ -1,0 +1,300 @@
+{
+ "album": "Adam: Music from the Game",
+ "artist": "Asmau",
+ "year": 2026,
+ "prefix": "soundtrack/games/adam/",
+ "out": "adam.tracks.json",
+ "tracks": [
+  {
+   "file": "title",
+   "mood": "wonder",
+   "title": "Adam: Title",
+   "seconds": 60,
+   "parts": [
+    [
+     "wonder",
+     0
+    ]
+   ],
+   "heard": [
+    "Adam"
+   ]
+  },
+  {
+   "file": "chapter-1-someone-new",
+   "mood": "awe",
+   "title": "Chapter 1: Someone New",
+   "seconds": 75,
+   "parts": [
+    [
+     "awe",
+     0
+    ]
+   ],
+   "heard": [
+    "Adam"
+   ]
+  },
+  {
+   "file": "chapter-2-made-from-earth",
+   "mood": "trek awe triumph",
+   "title": "Chapter 2: Made from Earth",
+   "seconds": 90,
+   "parts": [
+    [
+     "trek",
+     0
+    ],
+    [
+     "awe",
+     45
+    ],
+    [
+     "triumph",
+     60
+    ]
+   ],
+   "heard": [
+    "Adam"
+   ]
+  },
+  {
+   "file": "chapter-3-first-words",
+   "mood": "triumph awe",
+   "title": "Chapter 3: First Words",
+   "seconds": 90,
+   "parts": [
+    [
+     "triumph",
+     0
+    ],
+    [
+     "awe",
+     45
+    ],
+    [
+     "triumph",
+     75
+    ]
+   ],
+   "heard": [
+    "Adam"
+   ]
+  },
+  {
+   "file": "chapter-4-the-names",
+   "mood": "awe triumph",
+   "title": "Chapter 4: The Names",
+   "seconds": 90,
+   "parts": [
+    [
+     "awe",
+     0
+    ],
+    [
+     "triumph",
+     45
+    ],
+    [
+     "awe",
+     60
+    ]
+   ],
+   "heard": [
+    "Adam"
+   ]
+  },
+  {
+   "file": "chapter-5-the-proud-one",
+   "mood": "awe dread sad wonder longing",
+   "title": "Chapter 5: The Proud One",
+   "seconds": 105,
+   "parts": [
+    [
+     "awe",
+     0
+    ],
+    [
+     "dread",
+     15
+    ],
+    [
+     "sad",
+     30
+    ],
+    [
+     "wonder",
+     75
+    ],
+    [
+     "longing",
+     90
+    ]
+   ],
+   "heard": [
+    "Adam"
+   ]
+  },
+  {
+   "file": "chapter-6-the-garden",
+   "mood": "wonder",
+   "title": "Chapter 6: The Garden",
+   "seconds": 90,
+   "parts": [
+    [
+     "wonder",
+     0
+    ]
+   ],
+   "heard": [
+    "Adam"
+   ]
+  },
+  {
+   "file": "chapter-7-the-whisper",
+   "mood": "tense wonder sad",
+   "title": "Chapter 7: The Whisper",
+   "seconds": 105,
+   "parts": [
+    [
+     "tense",
+     0
+    ],
+    [
+     "wonder",
+     30
+    ],
+    [
+     "sad",
+     75
+    ]
+   ],
+   "heard": [
+    "Adam"
+   ]
+  },
+  {
+   "file": "chapter-8-sorry",
+   "mood": "longing triumph",
+   "title": "Chapter 8: Sorry",
+   "seconds": 75,
+   "parts": [
+    [
+     "longing",
+     0
+    ],
+    [
+     "triumph",
+     30
+    ]
+   ],
+   "heard": [
+    "Adam"
+   ]
+  },
+  {
+   "file": "chapter-9-life-on-earth",
+   "mood": "trek joy pastoral",
+   "title": "Chapter 9: Life on Earth",
+   "seconds": 105,
+   "parts": [
+    [
+     "trek",
+     0
+    ],
+    [
+     "joy",
+     15
+    ],
+    [
+     "trek",
+     30
+    ],
+    [
+     "pastoral",
+     45
+    ]
+   ],
+   "heard": [
+    "Adam"
+   ]
+  },
+  {
+   "file": "chapter-10-two-brothers",
+   "mood": "pastoral tense longing sad triumph",
+   "title": "Chapter 10: Two Brothers",
+   "seconds": 120,
+   "parts": [
+    [
+     "pastoral",
+     0
+    ],
+    [
+     "tense",
+     15
+    ],
+    [
+     "longing",
+     45
+    ],
+    [
+     "sad",
+     60
+    ],
+    [
+     "triumph",
+     90
+    ]
+   ],
+   "heard": [
+    "Adam"
+   ]
+  },
+  {
+   "file": "chapter-11-children-of-adam",
+   "mood": "pastoral longing triumph joy",
+   "title": "Chapter 11: Children of Adam",
+   "seconds": 75,
+   "parts": [
+    [
+     "pastoral",
+     0
+    ],
+    [
+     "longing",
+     15
+    ],
+    [
+     "triumph",
+     30
+    ],
+    [
+     "joy",
+     45
+    ],
+    [
+     "triumph",
+     60
+    ]
+   ],
+   "heard": [
+    "Adam"
+   ]
+  },
+  {
+   "file": "the-end",
+   "mood": "triumph",
+   "title": "Adam: The End",
+   "seconds": 60,
+   "parts": [
+    [
+     "triumph",
+     0
+    ]
+   ],
+   "heard": [
+    "Adam"
+   ]
+  }
+ ]
+}

@@ -2,12 +2,13 @@
 """
 Finish the recorded Asmau soundtrack (scripts/soundtrack/record.js wrote the .wav files) and put it on R2.
 
-  ADMIN_TOKEN=... python3 scripts/soundtrack/finish.py <folder with the .wav files>
+  ADMIN_TOKEN=... python3 scripts/soundtrack/finish.py <plan.json> <folder with the .wav files>
 
 Each track: a 2-second fade in and a 6-second fade out, levelled to -16 LUFS (true peak -1 dB), then
-  soundtrack/<nn>-<name>.mp3           MP3, 320 kbit/s, tagged (title, album, track number), for listening and sharing
-  soundtrack/lossless/<nn>-<name>.ogg  FLAC in an Ogg file (lossless), for videos and editing
-on R2 at <server>/media/<first 10 hex of SHA-1>/<path>, listed in scripts/soundtrack/tracks.json (committed).
+  <prefix><nn>-<name>.mp3           MP3, 320 kbit/s, tagged (title, album, track number), for listening and sharing
+  <prefix>lossless/<nn>-<name>.ogg  FLAC in an Ogg file (lossless), for videos and editing
+on R2 at <server>/media/<first 10 hex of SHA-1>/<path>; the plan's "prefix" (soundtrack/, soundtrack/games/<slug>/)
+and "out" (the list of addresses written beside the plan, committed: tracks.json, games/<slug>.tracks.json).
 """
 import hashlib, json, os, re, subprocess, sys, urllib.request
 
@@ -15,7 +16,6 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(os.path.dirname(HERE))
 BASE = subprocess.check_output(["node", "-e", "console.log(require('./scripts/build-offline.js').MEDIA_BASE)"], cwd=ROOT).decode().strip()
 MAX = 5 * 1024 * 1024        # the server's limit today; 50 MiB once sync/worker.js with MEDIA_MAX is deployed
-plan = json.load(open(os.path.join(HERE, "plan.json"), encoding="utf-8"))
 
 
 def ff(*a):
@@ -47,9 +47,12 @@ def put(path, data, token):
 
 def main():
     token = os.environ.get("ADMIN_TOKEN")
-    if len(sys.argv) < 2 or not token:
+    if len(sys.argv) < 3 or not token:
         raise SystemExit(__doc__)
-    src = sys.argv[1]
+    plan_path, src = sys.argv[1], sys.argv[2]
+    plan = json.load(open(plan_path, encoding="utf-8"))
+    prefix = plan.get("prefix", "soundtrack/")
+    out_path = os.path.join(os.path.dirname(os.path.abspath(plan_path)), plan.get("out", "tracks.json"))
     out, n = [], len(plan["tracks"])
     for i, t in enumerate(plan["tracks"]):
         name = "%02d-%s" % (i + 1, t["file"])
@@ -69,17 +72,17 @@ def main():
         ff("-i", wav, "-af", norm, "-ac", "2", "-c:a", "flac", "-sample_fmt", "s16", *tags, "-f", "ogg", ogg)
         lufs = re.findall(r"I:\s+(-?[\d.]+) LUFS", ff("-i", mp3, "-af", "ebur128", "-f", "null", "-"))[-1]
         entry = {"n": i + 1, "title": t["title"], "mood": t["mood"], "seconds": secs, "heard": t["heard"], "lufs": float(lufs),
-                 "kbps": rate, "mp3": put("soundtrack/" + name + ".mp3", open(mp3, "rb").read(), token)}
+                 "kbps": rate, "mp3": put(prefix + name + ".mp3", open(mp3, "rb").read(), token)}
         if os.path.getsize(ogg) < MAX:
-            entry["lossless"] = put("soundtrack/lossless/" + name + ".ogg", open(ogg, "rb").read(), token)
+            entry["lossless"] = put(prefix + "lossless/" + name + ".ogg", open(ogg, "rb").read(), token)
         else:
             entry["lossless"] = None
             entry["note"] = "lossless copy too big for the server's 5 MiB limit; run this again once the limit is raised"
         out.append(entry)
         print("%s  %s  %s LUFS" % (name, t["title"], lufs), flush=True)
     json.dump({"album": plan["album"], "artist": plan["artist"], "year": plan["year"], "tracks": out},
-              open(os.path.join(HERE, "tracks.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
-    open(os.path.join(HERE, "tracks.json"), "a").write("\n")
+              open(out_path, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    open(out_path, "a").write("\n")
 
 
 if __name__ == "__main__":

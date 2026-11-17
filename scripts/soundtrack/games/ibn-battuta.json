@@ -1,0 +1,356 @@
+{
+ "album": "Ibn Battuta: Music from the Game",
+ "artist": "Asmau",
+ "year": 2026,
+ "prefix": "soundtrack/games/ibn-battuta/",
+ "out": "ibn-battuta.tracks.json",
+ "tracks": [
+  {
+   "file": "title",
+   "mood": "wonder",
+   "title": "Ibn Battuta: Title",
+   "seconds": 60,
+   "parts": [
+    [
+     "wonder",
+     0
+    ]
+   ],
+   "heard": [
+    "Ibn Battuta"
+   ]
+  },
+  {
+   "file": "chapter-1-leaving-home",
+   "mood": "wonder triumph sad joy longing trek",
+   "title": "Chapter 1: Leaving Home",
+   "seconds": 90,
+   "parts": [
+    [
+     "wonder",
+     0
+    ],
+    [
+     "triumph",
+     15
+    ],
+    [
+     "sad",
+     30
+    ],
+    [
+     "joy",
+     45
+    ],
+    [
+     "longing",
+     60
+    ],
+    [
+     "trek",
+     75
+    ]
+   ],
+   "heard": [
+    "Ibn Battuta"
+   ]
+  },
+  {
+   "file": "chapter-2-the-old-man-of-alexandria",
+   "mood": "wonder joy awe",
+   "title": "Chapter 2: The Old Man of Alexandria",
+   "seconds": 90,
+   "parts": [
+    [
+     "wonder",
+     0
+    ],
+    [
+     "joy",
+     15
+    ],
+    [
+     "awe",
+     30
+    ],
+    [
+     "wonder",
+     45
+    ],
+    [
+     "joy",
+     75
+    ]
+   ],
+   "heard": [
+    "Ibn Battuta"
+   ]
+  },
+  {
+   "file": "chapter-3-the-broken-dish",
+   "mood": "joy tense",
+   "title": "Chapter 3: The Broken Dish",
+   "seconds": 105,
+   "parts": [
+    [
+     "joy",
+     0
+    ],
+    [
+     "tense",
+     15
+    ],
+    [
+     "joy",
+     30
+    ]
+   ],
+   "heard": [
+    "Ibn Battuta"
+   ]
+  },
+  {
+   "file": "chapter-4-makkah",
+   "mood": "trek awe joy wonder",
+   "title": "Chapter 4: Makkah",
+   "seconds": 90,
+   "parts": [
+    [
+     "trek",
+     0
+    ],
+    [
+     "awe",
+     15
+    ],
+    [
+     "joy",
+     45
+    ],
+    [
+     "wonder",
+     60
+    ],
+    [
+     "joy",
+     75
+    ]
+   ],
+   "heard": [
+    "Ibn Battuta"
+   ]
+  },
+  {
+   "file": "chapter-5-brothers-who-welcome-strangers",
+   "mood": "joy pastoral",
+   "title": "Chapter 5: Brothers Who Welcome Strangers",
+   "seconds": 75,
+   "parts": [
+    [
+     "joy",
+     0
+    ],
+    [
+     "pastoral",
+     15
+    ],
+    [
+     "joy",
+     30
+    ],
+    [
+     "pastoral",
+     45
+    ]
+   ],
+   "heard": [
+    "Ibn Battuta"
+   ]
+  },
+  {
+   "file": "chapter-6-a-judge-in-delhi",
+   "mood": "awe regal",
+   "title": "Chapter 6: A Judge in Delhi",
+   "seconds": 60,
+   "parts": [
+    [
+     "awe",
+     0
+    ],
+    [
+     "regal",
+     15
+    ]
+   ],
+   "heard": [
+    "Ibn Battuta"
+   ]
+  },
+  {
+   "file": "chapter-7-two-thousand-islands",
+   "mood": "wonder joy pastoral longing",
+   "title": "Chapter 7: Two Thousand Islands",
+   "seconds": 90,
+   "parts": [
+    [
+     "wonder",
+     0
+    ],
+    [
+     "joy",
+     15
+    ],
+    [
+     "pastoral",
+     30
+    ],
+    [
+     "longing",
+     60
+    ],
+    [
+     "pastoral",
+     75
+    ]
+   ],
+   "heard": [
+    "Ibn Battuta"
+   ]
+  },
+  {
+   "file": "chapter-8-the-kind-sultan-of-sumatra",
+   "mood": "wonder joy regal",
+   "title": "Chapter 8: The Kind Sultan of Sumatra",
+   "seconds": 90,
+   "parts": [
+    [
+     "wonder",
+     0
+    ],
+    [
+     "joy",
+     15
+    ],
+    [
+     "wonder",
+     30
+    ],
+    [
+     "regal",
+     45
+    ],
+    [
+     "joy",
+     60
+    ]
+   ],
+   "heard": [
+    "Ibn Battuta"
+   ]
+  },
+  {
+   "file": "chapter-9-china",
+   "mood": "wonder joy longing",
+   "title": "Chapter 9: China",
+   "seconds": 90,
+   "parts": [
+    [
+     "wonder",
+     0
+    ],
+    [
+     "joy",
+     15
+    ],
+    [
+     "longing",
+     60
+    ],
+    [
+     "joy",
+     75
+    ]
+   ],
+   "heard": [
+    "Ibn Battuta"
+   ]
+  },
+  {
+   "file": "chapter-10-home-again",
+   "mood": "longing sad joy",
+   "title": "Chapter 10: Home Again",
+   "seconds": 75,
+   "parts": [
+    [
+     "longing",
+     0
+    ],
+    [
+     "sad",
+     15
+    ],
+    [
+     "longing",
+     30
+    ],
+    [
+     "joy",
+     45
+    ]
+   ],
+   "heard": [
+    "Ibn Battuta"
+   ]
+  },
+  {
+   "file": "chapter-11-mali-and-the-book",
+   "mood": "trek joy awe triumph regal",
+   "title": "Chapter 11: Mali, and the Book",
+   "seconds": 105,
+   "parts": [
+    [
+     "trek",
+     0
+    ],
+    [
+     "joy",
+     30
+    ],
+    [
+     "awe",
+     45
+    ],
+    [
+     "joy",
+     60
+    ],
+    [
+     "triumph",
+     75
+    ],
+    [
+     "regal",
+     90
+    ]
+   ],
+   "heard": [
+    "Ibn Battuta"
+   ]
+  },
+  {
+   "file": "the-end",
+   "mood": "triumph",
+   "title": "Ibn Battuta: The End",
+   "seconds": 60,
+   "parts": [
+    [
+     "triumph",
+     0
+    ]
+   ],
+   "heard": [
+    "Ibn Battuta"
+   ]
+  }
+ ]
+}

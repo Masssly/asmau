@@ -1,0 +1,316 @@
+{
+ "album": "Nuh: Music from the Game",
+ "artist": "Asmau",
+ "year": 2026,
+ "prefix": "soundtrack/games/nuh/",
+ "out": "nuh.tracks.json",
+ "tracks": [
+  {
+   "file": "title",
+   "mood": "wonder",
+   "title": "Nuh: Title",
+   "seconds": 60,
+   "parts": [
+    [
+     "wonder",
+     0
+    ]
+   ],
+   "heard": [
+    "Nuh"
+   ]
+  },
+  {
+   "file": "chapter-1-forgetting-allah",
+   "mood": "pastoral longing tense",
+   "title": "Chapter 1: Forgetting Allah",
+   "seconds": 90,
+   "parts": [
+    [
+     "pastoral",
+     0
+    ],
+    [
+     "longing",
+     30
+    ],
+    [
+     "tense",
+     45
+    ],
+    [
+     "pastoral",
+     60
+    ],
+    [
+     "longing",
+     75
+    ]
+   ],
+   "heard": [
+    "Nuh"
+   ]
+  },
+  {
+   "file": "chapter-2-nuh-is-sent",
+   "mood": "awe pastoral",
+   "title": "Chapter 2: Nuh Is Sent",
+   "seconds": 75,
+   "parts": [
+    [
+     "awe",
+     0
+    ],
+    [
+     "pastoral",
+     15
+    ]
+   ],
+   "heard": [
+    "Nuh"
+   ]
+  },
+  {
+   "file": "chapter-3-night-and-day",
+   "mood": "pastoral longing",
+   "title": "Chapter 3: Night and Day",
+   "seconds": 90,
+   "parts": [
+    [
+     "pastoral",
+     0
+    ],
+    [
+     "longing",
+     15
+    ],
+    [
+     "pastoral",
+     30
+    ],
+    [
+     "longing",
+     45
+    ],
+    [
+     "pastoral",
+     60
+    ]
+   ],
+   "heard": [
+    "Nuh"
+   ]
+  },
+  {
+   "file": "chapter-4-look-at-allahs-world",
+   "mood": "pastoral joy wonder triumph",
+   "title": "Chapter 4: Look at Allah's World",
+   "seconds": 90,
+   "parts": [
+    [
+     "pastoral",
+     0
+    ],
+    [
+     "joy",
+     30
+    ],
+    [
+     "wonder",
+     45
+    ],
+    [
+     "triumph",
+     60
+    ]
+   ],
+   "heard": [
+    "Nuh"
+   ]
+  },
+  {
+   "file": "chapter-5-everyone-is-welcome",
+   "mood": "tense pastoral",
+   "title": "Chapter 5: Everyone Is Welcome",
+   "seconds": 75,
+   "parts": [
+    [
+     "tense",
+     0
+    ],
+    [
+     "pastoral",
+     15
+    ]
+   ],
+   "heard": [
+    "Nuh"
+   ]
+  },
+  {
+   "file": "chapter-6-build-the-ark",
+   "mood": "longing awe pastoral",
+   "title": "Chapter 6: Build the Ark",
+   "seconds": 90,
+   "parts": [
+    [
+     "longing",
+     0
+    ],
+    [
+     "awe",
+     15
+    ],
+    [
+     "pastoral",
+     30
+    ]
+   ],
+   "heard": [
+    "Nuh"
+   ]
+  },
+  {
+   "file": "chapter-7-they-laughed",
+   "mood": "tense pastoral triumph longing",
+   "title": "Chapter 7: They Laughed",
+   "seconds": 75,
+   "parts": [
+    [
+     "tense",
+     0
+    ],
+    [
+     "pastoral",
+     15
+    ],
+    [
+     "triumph",
+     45
+    ],
+    [
+     "longing",
+     60
+    ]
+   ],
+   "heard": [
+    "Nuh"
+   ]
+  },
+  {
+   "file": "chapter-8-two-by-two",
+   "mood": "tense joy pastoral",
+   "title": "Chapter 8: Two by Two",
+   "seconds": 90,
+   "parts": [
+    [
+     "tense",
+     0
+    ],
+    [
+     "joy",
+     30
+    ],
+    [
+     "pastoral",
+     45
+    ]
+   ],
+   "heard": [
+    "Nuh"
+   ]
+  },
+  {
+   "file": "chapter-9-bismillah",
+   "mood": "tense wonder",
+   "title": "Chapter 9: Bismillah",
+   "seconds": 75,
+   "parts": [
+    [
+     "tense",
+     0
+    ],
+    [
+     "wonder",
+     45
+    ],
+    [
+     "tense",
+     60
+    ]
+   ],
+   "heard": [
+    "Nuh"
+   ]
+  },
+  {
+   "file": "chapter-10-the-big-waves",
+   "mood": "dread tense sad longing",
+   "title": "Chapter 10: The Big Waves",
+   "seconds": 120,
+   "parts": [
+    [
+     "dread",
+     0
+    ],
+    [
+     "tense",
+     15
+    ],
+    [
+     "sad",
+     60
+    ],
+    [
+     "longing",
+     105
+    ]
+   ],
+   "heard": [
+    "Nuh"
+   ]
+  },
+  {
+   "file": "chapter-11-the-humble-mountain",
+   "mood": "triumph wonder joy",
+   "title": "Chapter 11: The Humble Mountain",
+   "seconds": 120,
+   "parts": [
+    [
+     "triumph",
+     0
+    ],
+    [
+     "wonder",
+     24
+    ],
+    [
+     "joy",
+     60
+    ],
+    [
+     "triumph",
+     72
+    ]
+   ],
+   "heard": [
+    "Nuh"
+   ]
+  },
+  {
+   "file": "the-end",
+   "mood": "triumph",
+   "title": "Nuh: The End",
+   "seconds": 60,
+   "parts": [
+    [
+     "triumph",
+     0
+    ]
+   ],
+   "heard": [
+    "Nuh"
+   ]
+  }
+ ]
+}

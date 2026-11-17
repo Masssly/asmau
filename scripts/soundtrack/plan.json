@@ -2,6 +2,8 @@
  "album": "Asmau: Music from the Games",
  "artist": "Asmau",
  "year": 2026,
+ "prefix": "soundtrack/",
+ "out": "tracks.json",
  "tracks": [
   {
    "file": "wonder",

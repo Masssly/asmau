@@ -4,18 +4,20 @@
   theme music of games that becomes a soundtrack). The games compose their music live (shared/music.js); this records
   each mood with that same engine in an offline audio context, so the tracks are exactly the music of the games.
 
-    node scripts/soundtrack/record.js [out-folder]       record every track (default: scripts/soundtrack/out/)
-
-  Writes <n>-<name>.wav (48 kHz) and tracks.json. Then scripts/soundtrack/finish.py fades, levels and encodes them,
-  and publishes them to R2 (scripts/soundtrack/README.md).
+    node scripts/soundtrack/record.js <plan.json> <out-folder>   record every track of a plan
+  Plans: scripts/soundtrack/plan.json (Music from the Games: one track per mood, and the suite) and
+  scripts/soundtrack/games/<slug>.json (one album per game: its music in the order the game plays it; written by
+  scripts/soundtrack/games.js). Writes <n>-<name>.wav (48 kHz). Then scripts/soundtrack/finish.py fades, levels and
+  encodes them, and publishes them to R2 (scripts/soundtrack/README.md).
 */
 "use strict";
 const fs = require("fs"), path = require("path");
 const { chromium } = require("playwright");
 const { serve } = require("../../tests/lib");
 const ROOT = path.join(__dirname, "..", "..");
-const OUT = path.resolve(process.argv[2] || path.join(__dirname, "out"));
-const plan = JSON.parse(fs.readFileSync(path.join(__dirname, "plan.json"), "utf8"));
+if (process.argv.length < 4) { console.error("usage: node scripts/soundtrack/record.js <plan.json> <out-folder>"); process.exit(2); }
+const plan = JSON.parse(fs.readFileSync(path.resolve(process.argv[2]), "utf8"));
+const OUT = path.resolve(process.argv[3]);
 const SR = 48000;
 
 (async () => {

@@ -1,0 +1,364 @@
+{
+ "album": "Umm Ayman: Music from the Game",
+ "artist": "Asmau",
+ "year": 2026,
+ "prefix": "soundtrack/games/umm-ayman/",
+ "out": "umm-ayman.tracks.json",
+ "tracks": [
+  {
+   "file": "title",
+   "mood": "longing",
+   "title": "Umm Ayman: Title",
+   "seconds": 60,
+   "parts": [
+    [
+     "longing",
+     0
+    ]
+   ],
+   "heard": [
+    "Umm Ayman"
+   ]
+  },
+  {
+   "file": "chapter-1-from-across-the-sea",
+   "mood": "wonder pastoral sad",
+   "title": "Chapter 1: From Across the Sea",
+   "seconds": 90,
+   "parts": [
+    [
+     "wonder",
+     0
+    ],
+    [
+     "pastoral",
+     45
+    ],
+    [
+     "sad",
+     60
+    ],
+    [
+     "pastoral",
+     75
+    ]
+   ],
+   "heard": [
+    "Umm Ayman"
+   ]
+  },
+  {
+   "file": "chapter-2-a-baby-is-born",
+   "mood": "wonder triumph pastoral",
+   "title": "Chapter 2: A Baby Is Born",
+   "seconds": 90,
+   "parts": [
+    [
+     "wonder",
+     0
+    ],
+    [
+     "triumph",
+     15
+    ],
+    [
+     "pastoral",
+     45
+    ],
+    [
+     "triumph",
+     75
+    ]
+   ],
+   "heard": [
+    "Umm Ayman"
+   ]
+  },
+  {
+   "file": "chapter-3-a-month-in-madina",
+   "mood": "trek pastoral joy",
+   "title": "Chapter 3: A Month in Madina",
+   "seconds": 75,
+   "parts": [
+    [
+     "trek",
+     0
+    ],
+    [
+     "pastoral",
+     15
+    ],
+    [
+     "joy",
+     30
+    ],
+    [
+     "pastoral",
+     45
+    ]
+   ],
+   "heard": [
+    "Umm Ayman"
+   ]
+  },
+  {
+   "file": "chapter-4-the-road-home",
+   "mood": "sad longing triumph",
+   "title": "Chapter 4: The Road Home",
+   "seconds": 90,
+   "parts": [
+    [
+     "sad",
+     0
+    ],
+    [
+     "longing",
+     30
+    ],
+    [
+     "triumph",
+     60
+    ]
+   ],
+   "heard": [
+    "Umm Ayman"
+   ]
+  },
+  {
+   "file": "chapter-5-o-blessed-one",
+   "mood": "pastoral sad joy",
+   "title": "Chapter 5: O Blessed One",
+   "seconds": 90,
+   "parts": [
+    [
+     "pastoral",
+     0
+    ],
+    [
+     "sad",
+     45
+    ],
+    [
+     "joy",
+     60
+    ],
+    [
+     "pastoral",
+     75
+    ]
+   ],
+   "heard": [
+    "Umm Ayman"
+   ]
+  },
+  {
+   "file": "chapter-6-free-and-a-family",
+   "mood": "triumph joy pastoral wonder",
+   "title": "Chapter 6: Free, and a Family",
+   "seconds": 90,
+   "parts": [
+    [
+     "triumph",
+     0
+    ],
+    [
+     "joy",
+     15
+    ],
+    [
+     "pastoral",
+     30
+    ],
+    [
+     "wonder",
+     45
+    ],
+    [
+     "joy",
+     60
+    ],
+    [
+     "pastoral",
+     75
+    ]
+   ],
+   "heard": [
+    "Umm Ayman"
+   ]
+  },
+  {
+   "file": "chapter-7-the-long-walk",
+   "mood": "tense trek longing wonder joy",
+   "title": "Chapter 7: The Long Walk",
+   "seconds": 105,
+   "parts": [
+    [
+     "tense",
+     0
+    ],
+    [
+     "trek",
+     15
+    ],
+    [
+     "longing",
+     30
+    ],
+    [
+     "trek",
+     45
+    ],
+    [
+     "wonder",
+     60
+    ],
+    [
+     "trek",
+     75
+    ],
+    [
+     "joy",
+     90
+    ]
+   ],
+   "heard": [
+    "Umm Ayman"
+   ]
+  },
+  {
+   "file": "chapter-8-water-for-the-hurt",
+   "mood": "pastoral trek",
+   "title": "Chapter 8: Water for the Hurt",
+   "seconds": 75,
+   "parts": [
+    [
+     "pastoral",
+     0
+    ],
+    [
+     "trek",
+     15
+    ],
+    [
+     "pastoral",
+     45
+    ]
+   ],
+   "heard": [
+    "Umm Ayman"
+   ]
+  },
+  {
+   "file": "chapter-9-ten-palm-trees",
+   "mood": "pastoral joy",
+   "title": "Chapter 9: Ten Palm Trees",
+   "seconds": 105,
+   "parts": [
+    [
+     "pastoral",
+     0
+    ],
+    [
+     "joy",
+     45
+    ],
+    [
+     "pastoral",
+     60
+    ],
+    [
+     "joy",
+     75
+    ],
+    [
+     "pastoral",
+     90
+    ]
+   ],
+   "heard": [
+    "Umm Ayman"
+   ]
+  },
+  {
+   "file": "chapter-10-fatimahs-wedding",
+   "mood": "joy pastoral longing",
+   "title": "Chapter 10: Fatimah's Wedding",
+   "seconds": 75,
+   "parts": [
+    [
+     "joy",
+     0
+    ],
+    [
+     "pastoral",
+     15
+    ],
+    [
+     "longing",
+     45
+    ]
+   ],
+   "heard": [
+    "Umm Ayman"
+   ]
+  },
+  {
+   "file": "chapter-11-the-news-of-heaven",
+   "mood": "pastoral joy sad wonder longing",
+   "title": "Chapter 11: The News of Heaven",
+   "seconds": 120,
+   "parts": [
+    [
+     "pastoral",
+     0
+    ],
+    [
+     "joy",
+     13
+    ],
+    [
+     "sad",
+     27
+    ],
+    [
+     "wonder",
+     40
+    ],
+    [
+     "pastoral",
+     53
+    ],
+    [
+     "sad",
+     67
+    ],
+    [
+     "longing",
+     80
+    ],
+    [
+     "pastoral",
+     93
+    ]
+   ],
+   "heard": [
+    "Umm Ayman"
+   ]
+  },
+  {
+   "file": "the-end",
+   "mood": "triumph",
+   "title": "Umm Ayman: The End",
+   "seconds": 60,
+   "parts": [
+    [
+     "triumph",
+     0
+    ]
+   ],
+   "heard": [
+    "Umm Ayman"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,324 @@
+{
+ "album": "Rahmah El Yunusiyyah: Music from the Game",
+ "artist": "Asmau",
+ "year": 2026,
+ "prefix": "soundtrack/games/rahmah/",
+ "out": "rahmah.tracks.json",
+ "tracks": [
+  {
+   "file": "title",
+   "mood": "pastoral",
+   "title": "Rahmah El Yunusiyyah: Title",
+   "seconds": 60,
+   "parts": [
+    [
+     "pastoral",
+     0
+    ]
+   ],
+   "heard": [
+    "Rahmah El Yunusiyyah"
+   ]
+  },
+  {
+   "file": "chapter-1-a-girl-in-the-mountains",
+   "mood": "wonder pastoral joy",
+   "title": "Chapter 1: A Girl in the Mountains",
+   "seconds": 75,
+   "parts": [
+    [
+     "wonder",
+     0
+    ],
+    [
+     "pastoral",
+     15
+    ],
+    [
+     "joy",
+     30
+    ],
+    [
+     "pastoral",
+     45
+    ]
+   ],
+   "heard": [
+    "Rahmah El Yunusiyyah"
+   ]
+  },
+  {
+   "file": "chapter-2-learning-to-read",
+   "mood": "sad joy pastoral",
+   "title": "Chapter 2: Learning to Read",
+   "seconds": 75,
+   "parts": [
+    [
+     "sad",
+     0
+    ],
+    [
+     "joy",
+     15
+    ],
+    [
+     "pastoral",
+     30
+    ]
+   ],
+   "heard": [
+    "Rahmah El Yunusiyyah"
+   ]
+  },
+  {
+   "file": "chapter-3-no-more-school",
+   "mood": "longing wonder triumph",
+   "title": "Chapter 3: No More School",
+   "seconds": 75,
+   "parts": [
+    [
+     "longing",
+     0
+    ],
+    [
+     "wonder",
+     15
+    ],
+    [
+     "longing",
+     30
+    ],
+    [
+     "triumph",
+     45
+    ],
+    [
+     "longing",
+     60
+    ]
+   ],
+   "heard": [
+    "Rahmah El Yunusiyyah"
+   ]
+  },
+  {
+   "file": "chapter-4-back-to-school",
+   "mood": "pastoral joy awe",
+   "title": "Chapter 4: Back to School",
+   "seconds": 75,
+   "parts": [
+    [
+     "pastoral",
+     0
+    ],
+    [
+     "joy",
+     15
+    ],
+    [
+     "pastoral",
+     30
+    ],
+    [
+     "awe",
+     45
+    ],
+    [
+     "pastoral",
+     60
+    ]
+   ],
+   "heard": [
+    "Rahmah El Yunusiyyah"
+   ]
+  },
+  {
+   "file": "chapter-5-a-school-for-girls",
+   "mood": "triumph joy",
+   "title": "Chapter 5: A School for Girls",
+   "seconds": 75,
+   "parts": [
+    [
+     "triumph",
+     0
+    ],
+    [
+     "joy",
+     15
+    ]
+   ],
+   "heard": [
+    "Rahmah El Yunusiyyah"
+   ]
+  },
+  {
+   "file": "chapter-6-not-everyone-agreed",
+   "mood": "tense joy longing",
+   "title": "Chapter 6: Not Everyone Agreed",
+   "seconds": 75,
+   "parts": [
+    [
+     "tense",
+     0
+    ],
+    [
+     "joy",
+     15
+    ],
+    [
+     "longing",
+     30
+    ]
+   ],
+   "heard": [
+    "Rahmah El Yunusiyyah"
+   ]
+  },
+  {
+   "file": "chapter-7-the-earthquake",
+   "mood": "sad joy wonder triumph",
+   "title": "Chapter 7: The Earthquake",
+   "seconds": 90,
+   "parts": [
+    [
+     "sad",
+     0
+    ],
+    [
+     "joy",
+     15
+    ],
+    [
+     "wonder",
+     30
+    ],
+    [
+     "triumph",
+     60
+    ],
+    [
+     "joy",
+     75
+    ]
+   ],
+   "heard": [
+    "Rahmah El Yunusiyyah"
+   ]
+  },
+  {
+   "file": "chapter-8-on-her-own-feet",
+   "mood": "regal joy",
+   "title": "Chapter 8: On Her Own Feet",
+   "seconds": 60,
+   "parts": [
+    [
+     "regal",
+     0
+    ],
+    [
+     "joy",
+     15
+    ]
+   ],
+   "heard": [
+    "Rahmah El Yunusiyyah"
+   ]
+  },
+  {
+   "file": "chapter-9-a-new-flag",
+   "mood": "triumph joy",
+   "title": "Chapter 9: A New Flag",
+   "seconds": 60,
+   "parts": [
+    [
+     "triumph",
+     0
+    ],
+    [
+     "joy",
+     30
+    ]
+   ],
+   "heard": [
+    "Rahmah El Yunusiyyah"
+   ]
+  },
+  {
+   "file": "chapter-10-to-cairo",
+   "mood": "awe trek triumph joy regal",
+   "title": "Chapter 10: To Cairo",
+   "seconds": 90,
+   "parts": [
+    [
+     "awe",
+     0
+    ],
+    [
+     "trek",
+     30
+    ],
+    [
+     "triumph",
+     45
+    ],
+    [
+     "joy",
+     60
+    ],
+    [
+     "regal",
+     75
+    ]
+   ],
+   "heard": [
+    "Rahmah El Yunusiyyah"
+   ]
+  },
+  {
+   "file": "chapter-11-her-school-today",
+   "mood": "triumph sad joy",
+   "title": "Chapter 11: Her School Today",
+   "seconds": 75,
+   "parts": [
+    [
+     "triumph",
+     0
+    ],
+    [
+     "sad",
+     15
+    ],
+    [
+     "joy",
+     30
+    ],
+    [
+     "triumph",
+     45
+    ],
+    [
+     "joy",
+     60
+    ]
+   ],
+   "heard": [
+    "Rahmah El Yunusiyyah"
+   ]
+  },
+  {
+   "file": "the-end",
+   "mood": "triumph",
+   "title": "Rahmah El Yunusiyyah: The End",
+   "seconds": 60,
+   "parts": [
+    [
+     "triumph",
+     0
+    ]
+   ],
+   "heard": [
+    "Rahmah El Yunusiyyah"
+   ]
+  }
+ ]
+}

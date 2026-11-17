@@ -4,15 +4,24 @@ The music of the games as tracks of their own, for publicity (owner's idea, 17 N
 music live in the browser (`shared/music.js`); these tracks are that same music, recorded by the same engine, so they
 sound exactly as in the games.
 
+Two kinds of album:
+
+- **Music from the Games** (`plan.json` → `tracks.json`): one track per mood (14), and The Asmau Suite through all of them.
+- **One album per game** (`games/<slug>.json` → `games/<slug>.tracks.json`, written by `games.js`): the game's music in
+  the order the game plays it: its title music, one track per chapter (the moods of its pages, one after another), and
+  its end music. Tap & Say has no music, so no album.
+
 | File | What it is |
 |---|---|
-| `plan.json` | the tracks: mood, title, length, the games each is heard in; the suite moves through every mood |
-| `record.js` | records each track with the music engine in an offline audio context (`node scripts/soundtrack/record.js <folder>`) |
-| `finish.py` | fades, levels to −16 LUFS, encodes MP3 and lossless FLAC (in .ogg), puts them on R2 (`ADMIN_TOKEN=... python3 scripts/soundtrack/finish.py <folder>`) |
-| `tracks.json` | where each finished track is on R2 (written by finish.py) |
+| `plan.json`, `games/<slug>.json` | the tracks: moods, title, length, the games each is heard in |
+| `games.js` | writes the per-game plans from each game's story (`node scripts/soundtrack/games.js`) |
+| `record.js` | records each track of a plan with the music engine in an offline audio context (`node scripts/soundtrack/record.js <plan> <folder>`) |
+| `finish.py` | fades, levels to −16 LUFS, encodes MP3 and lossless FLAC (in .ogg), puts them on R2 (`ADMIN_TOKEN=... python3 scripts/soundtrack/finish.py <plan> <folder>`) |
+| `tracks.json`, `games/<slug>.tracks.json` | where each finished track is on R2 (written by finish.py) |
 
-On R2: `soundtrack/<nn>-<name>.mp3` (320 kbit/s) and `soundtrack/lossless/<nn>-<name>.ogg`, at
-`<server>/media/<hash>/<path>`; the addresses are in `tracks.json`. Nothing there is ever deleted.
+On R2: `soundtrack/<nn>-<name>.mp3` (320 kbit/s) and `soundtrack/lossless/<nn>-<name>.ogg` for the main album, and
+`soundtrack/games/<slug>/...` the same way for each game, at `<server>/media/<hash>/<path>`; the addresses are in the
+`.tracks.json` files. Nothing there is ever deleted.
 
 The 6-minute suite is over the server's 5 MiB limit at full quality, so it is on R2 at 112 kbit/s and without its
 lossless copy. `sync/worker.js` allows the owner's own uploads up to 50 MiB (`MEDIA_MAX`); once that is deployed

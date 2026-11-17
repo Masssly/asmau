@@ -1,0 +1,24 @@
+{
+ "album": "Count with Me: Music from the Game",
+ "artist": "Asmau",
+ "year": 2026,
+ "prefix": "soundtrack/games/count-the-crescents/",
+ "out": "count-the-crescents.tracks.json",
+ "tracks": [
+  {
+   "file": "wonder",
+   "mood": "wonder",
+   "title": "Count with Me",
+   "seconds": 90,
+   "parts": [
+    [
+     "wonder",
+     0
+    ]
+   ],
+   "heard": [
+    "Count with Me"
+   ]
+  }
+ ]
+}

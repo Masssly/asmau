@@ -1,0 +1,494 @@
+{
+ "album": "Yusuf: Music from the Game",
+ "artist": "Asmau",
+ "year": 2026,
+ "prefix": "soundtrack/games/yusuf/",
+ "out": "yusuf.tracks.json",
+ "tracks": [
+  {
+   "file": "title",
+   "mood": "wonder",
+   "title": "Yusuf: Title",
+   "seconds": 60,
+   "parts": [
+    [
+     "wonder",
+     0
+    ]
+   ],
+   "heard": [
+    "Yusuf"
+   ]
+  },
+  {
+   "file": "chapter-1-the-dream",
+   "mood": "wonder sad",
+   "title": "Chapter 1: The Dream",
+   "seconds": 75,
+   "parts": [
+    [
+     "wonder",
+     0
+    ],
+    [
+     "sad",
+     45
+    ],
+    [
+     "wonder",
+     60
+    ]
+   ],
+   "heard": [
+    "Yusuf"
+   ]
+  },
+  {
+   "file": "chapter-2-the-jealous-brothers",
+   "mood": "sad desert tense wonder",
+   "title": "Chapter 2: The Jealous Brothers",
+   "seconds": 120,
+   "parts": [
+    [
+     "sad",
+     0
+    ],
+    [
+     "desert",
+     8
+    ],
+    [
+     "tense",
+     15
+    ],
+    [
+     "sad",
+     30
+    ],
+    [
+     "tense",
+     45
+    ],
+    [
+     "wonder",
+     60
+    ],
+    [
+     "tense",
+     75
+    ],
+    [
+     "sad",
+     98
+    ],
+    [
+     "wonder",
+     105
+    ],
+    [
+     "sad",
+     113
+    ]
+   ],
+   "heard": [
+    "Yusuf"
+   ]
+  },
+  {
+   "file": "chapter-3-the-well",
+   "mood": "desert tense joy",
+   "title": "Chapter 3: The Well",
+   "seconds": 75,
+   "parts": [
+    [
+     "desert",
+     0
+    ],
+    [
+     "tense",
+     15
+    ],
+    [
+     "joy",
+     30
+    ],
+    [
+     "desert",
+     45
+    ]
+   ],
+   "heard": [
+    "Yusuf"
+   ]
+  },
+  {
+   "file": "chapter-4-far-from-home",
+   "mood": "sad desert regal",
+   "title": "Chapter 4: Far From Home",
+   "seconds": 105,
+   "parts": [
+    [
+     "sad",
+     0
+    ],
+    [
+     "desert",
+     15
+    ],
+    [
+     "sad",
+     45
+    ],
+    [
+     "regal",
+     60
+    ]
+   ],
+   "heard": [
+    "Yusuf"
+   ]
+  },
+  {
+   "file": "chapter-5-patience-in-prison",
+   "mood": "tense wonder regal sad",
+   "title": "Chapter 5: Patience in Prison",
+   "seconds": 120,
+   "parts": [
+    [
+     "tense",
+     0
+    ],
+    [
+     "wonder",
+     34
+    ],
+    [
+     "regal",
+     43
+    ],
+    [
+     "wonder",
+     69
+    ],
+    [
+     "sad",
+     77
+    ],
+    [
+     "tense",
+     86
+    ],
+    [
+     "wonder",
+     94
+    ],
+    [
+     "regal",
+     111
+    ]
+   ],
+   "heard": [
+    "Yusuf"
+   ]
+  },
+  {
+   "file": "chapter-6-two-dreams",
+   "mood": "sad wonder",
+   "title": "Chapter 6: Two Dreams",
+   "seconds": 90,
+   "parts": [
+    [
+     "sad",
+     0
+    ],
+    [
+     "wonder",
+     15
+    ],
+    [
+     "sad",
+     30
+    ],
+    [
+     "wonder",
+     45
+    ],
+    [
+     "sad",
+     60
+    ]
+   ],
+   "heard": [
+    "Yusuf"
+   ]
+  },
+  {
+   "file": "chapter-7-the-kings-dream",
+   "mood": "tense joy wonder",
+   "title": "Chapter 7: The King's Dream",
+   "seconds": 90,
+   "parts": [
+    [
+     "tense",
+     0
+    ],
+    [
+     "joy",
+     15
+    ],
+    [
+     "tense",
+     30
+    ],
+    [
+     "wonder",
+     45
+    ],
+    [
+     "joy",
+     60
+    ]
+   ],
+   "heard": [
+    "Yusuf"
+   ]
+  },
+  {
+   "file": "chapter-8-truth-and-trust",
+   "mood": "tense regal wonder joy",
+   "title": "Chapter 8: Truth and Trust",
+   "seconds": 120,
+   "parts": [
+    [
+     "tense",
+     0
+    ],
+    [
+     "regal",
+     30
+    ],
+    [
+     "wonder",
+     45
+    ],
+    [
+     "regal",
+     60
+    ],
+    [
+     "joy",
+     75
+    ],
+    [
+     "regal",
+     105
+    ]
+   ],
+   "heard": [
+    "Yusuf"
+   ]
+  },
+  {
+   "file": "chapter-9-the-brothers-come",
+   "mood": "sad desert tense regal",
+   "title": "Chapter 9: The Brothers Come",
+   "seconds": 105,
+   "parts": [
+    [
+     "sad",
+     0
+    ],
+    [
+     "desert",
+     15
+    ],
+    [
+     "tense",
+     30
+    ],
+    [
+     "regal",
+     45
+    ],
+    [
+     "desert",
+     60
+    ],
+    [
+     "regal",
+     75
+    ]
+   ],
+   "heard": [
+    "Yusuf"
+   ]
+  },
+  {
+   "file": "chapter-10-the-kings-cup",
+   "mood": "sad wonder regal tense joy",
+   "title": "Chapter 10: The King's Cup",
+   "seconds": 120,
+   "parts": [
+    [
+     "sad",
+     0
+    ],
+    [
+     "wonder",
+     26
+    ],
+    [
+     "regal",
+     34
+    ],
+    [
+     "tense",
+     51
+    ],
+    [
+     "regal",
+     60
+    ],
+    [
+     "tense",
+     94
+    ],
+    [
+     "joy",
+     103
+    ],
+    [
+     "regal",
+     111
+    ]
+   ],
+   "heard": [
+    "Yusuf"
+   ]
+  },
+  {
+   "file": "chapter-11-i-am-yusuf",
+   "mood": "regal sad tense joy wonder",
+   "title": "Chapter 11: “I Am Yusuf”",
+   "seconds": 120,
+   "parts": [
+    [
+     "regal",
+     0
+    ],
+    [
+     "sad",
+     22
+    ],
+    [
+     "regal",
+     44
+    ],
+    [
+     "tense",
+     55
+    ],
+    [
+     "sad",
+     65
+    ],
+    [
+     "tense",
+     76
+    ],
+    [
+     "joy",
+     87
+    ],
+    [
+     "wonder",
+     98
+    ],
+    [
+     "regal",
+     109
+    ]
+   ],
+   "heard": [
+    "Yusuf"
+   ]
+  },
+  {
+   "file": "chapter-12-the-shirt",
+   "mood": "joy sad desert",
+   "title": "Chapter 12: The Shirt",
+   "seconds": 90,
+   "parts": [
+    [
+     "joy",
+     0
+    ],
+    [
+     "sad",
+     15
+    ],
+    [
+     "desert",
+     30
+    ],
+    [
+     "joy",
+     45
+    ]
+   ],
+   "heard": [
+    "Yusuf"
+   ]
+  },
+  {
+   "file": "chapter-13-the-dream-comes-true",
+   "mood": "joy wonder",
+   "title": "Chapter 13: The Dream Comes True",
+   "seconds": 120,
+   "parts": [
+    [
+     "joy",
+     0
+    ],
+    [
+     "wonder",
+     15
+    ],
+    [
+     "joy",
+     30
+    ],
+    [
+     "wonder",
+     45
+    ],
+    [
+     "joy",
+     60
+    ],
+    [
+     "wonder",
+     75
+    ]
+   ],
+   "heard": [
+    "Yusuf"
+   ]
+  },
+  {
+   "file": "the-end",
+   "mood": "joy",
+   "title": "Yusuf: The End",
+   "seconds": 60,
+   "parts": [
+    [
+     "joy",
+     0
+    ]
+   ],
+   "heard": [
+    "Yusuf"
+   ]
+  }
+ ]
+}

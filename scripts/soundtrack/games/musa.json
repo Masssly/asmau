@@ -1,0 +1,854 @@
+{
+ "album": "Musa: Music from the Game",
+ "artist": "Asmau",
+ "year": 2026,
+ "prefix": "soundtrack/games/musa/",
+ "out": "musa.tracks.json",
+ "tracks": [
+  {
+   "file": "title",
+   "mood": "nile",
+   "title": "Musa: Title",
+   "seconds": 60,
+   "parts": [
+    [
+     "nile",
+     0
+    ]
+   ],
+   "heard": [
+    "Musa"
+   ]
+  },
+  {
+   "file": "chapter-1-a-proud-king",
+   "mood": "court longing nile triumph",
+   "title": "Chapter 1: A Proud King",
+   "seconds": 75,
+   "parts": [
+    [
+     "court",
+     0
+    ],
+    [
+     "longing",
+     15
+    ],
+    [
+     "nile",
+     30
+    ],
+    [
+     "triumph",
+     45
+    ],
+    [
+     "court",
+     60
+    ]
+   ],
+   "heard": [
+    "Musa"
+   ]
+  },
+  {
+   "file": "chapter-2-the-baby-on-the-river",
+   "mood": "longing nile",
+   "title": "Chapter 2: The Baby on the River",
+   "seconds": 120,
+   "parts": [
+    [
+     "longing",
+     0
+    ],
+    [
+     "nile",
+     15
+    ]
+   ],
+   "heard": [
+    "Musa"
+   ]
+  },
+  {
+   "file": "chapter-3-the-queens-heart",
+   "mood": "court nile",
+   "title": "Chapter 3: The Queen's Heart",
+   "seconds": 120,
+   "parts": [
+    [
+     "court",
+     0
+    ],
+    [
+     "nile",
+     13
+    ],
+    [
+     "court",
+     27
+    ],
+    [
+     "nile",
+     53
+    ],
+    [
+     "court",
+     67
+    ]
+   ],
+   "heard": [
+    "Musa"
+   ]
+  },
+  {
+   "file": "chapter-4-a-sisters-clever-plan",
+   "mood": "longing nile court triumph",
+   "title": "Chapter 4: A Sister's Clever Plan",
+   "seconds": 120,
+   "parts": [
+    [
+     "longing",
+     0
+    ],
+    [
+     "nile",
+     12
+    ],
+    [
+     "court",
+     36
+    ],
+    [
+     "triumph",
+     72
+    ],
+    [
+     "nile",
+     96
+    ]
+   ],
+   "heard": [
+    "Musa"
+   ]
+  },
+  {
+   "file": "chapter-5-growing-up-in-the-palace",
+   "mood": "nile court",
+   "title": "Chapter 5: Growing Up in the Palace",
+   "seconds": 90,
+   "parts": [
+    [
+     "nile",
+     0
+    ],
+    [
+     "court",
+     15
+    ]
+   ],
+   "heard": [
+    "Musa"
+   ]
+  },
+  {
+   "file": "chapter-6-a-big-mistake",
+   "mood": "dread longing trek",
+   "title": "Chapter 6: A Big Mistake",
+   "seconds": 120,
+   "parts": [
+    [
+     "dread",
+     0
+    ],
+    [
+     "longing",
+     30
+    ],
+    [
+     "dread",
+     45
+    ],
+    [
+     "trek",
+     105
+    ]
+   ],
+   "heard": [
+    "Musa"
+   ]
+  },
+  {
+   "file": "chapter-7-the-well-of-madyan",
+   "mood": "trek pastoral longing",
+   "title": "Chapter 7: The Well of Madyan",
+   "seconds": 120,
+   "parts": [
+    [
+     "trek",
+     0
+    ],
+    [
+     "pastoral",
+     24
+    ],
+    [
+     "longing",
+     84
+    ],
+    [
+     "pastoral",
+     96
+    ]
+   ],
+   "heard": [
+    "Musa"
+   ]
+  },
+  {
+   "file": "chapter-8-a-new-home",
+   "mood": "pastoral trek triumph",
+   "title": "Chapter 8: A New Home",
+   "seconds": 120,
+   "parts": [
+    [
+     "pastoral",
+     0
+    ],
+    [
+     "trek",
+     24
+    ],
+    [
+     "pastoral",
+     36
+    ],
+    [
+     "triumph",
+     72
+    ],
+    [
+     "pastoral",
+     84
+    ]
+   ],
+   "heard": [
+    "Musa"
+   ]
+  },
+  {
+   "file": "chapter-9-the-fire-on-the-mountain",
+   "mood": "longing awe",
+   "title": "Chapter 9: The Fire on the Mountain",
+   "seconds": 120,
+   "parts": [
+    [
+     "longing",
+     0
+    ],
+    [
+     "awe",
+     53
+    ]
+   ],
+   "heard": [
+    "Musa"
+   ]
+  },
+  {
+   "file": "chapter-10-the-staff-and-the-shining-hand",
+   "mood": "awe dread",
+   "title": "Chapter 10: The Staff and the Shining Hand",
+   "seconds": 120,
+   "parts": [
+    [
+     "awe",
+     0
+    ],
+    [
+     "dread",
+     75
+    ],
+    [
+     "awe",
+     90
+    ]
+   ],
+   "heard": [
+    "Musa"
+   ]
+  },
+  {
+   "file": "chapter-11-musas-prayer",
+   "mood": "longing awe triumph trek",
+   "title": "Chapter 11: Musa's Prayer",
+   "seconds": 120,
+   "parts": [
+    [
+     "longing",
+     0
+    ],
+    [
+     "awe",
+     13
+    ],
+    [
+     "triumph",
+     53
+    ],
+    [
+     "trek",
+     67
+    ],
+    [
+     "triumph",
+     80
+    ],
+    [
+     "trek",
+     93
+    ]
+   ],
+   "heard": [
+    "Musa"
+   ]
+  },
+  {
+   "file": "chapter-12-before-pharaoh",
+   "mood": "court awe",
+   "title": "Chapter 12: Before Pharaoh",
+   "seconds": 120,
+   "parts": [
+    [
+     "court",
+     0
+    ],
+    [
+     "awe",
+     13
+    ],
+    [
+     "court",
+     27
+    ]
+   ],
+   "heard": [
+    "Musa"
+   ]
+  },
+  {
+   "file": "chapter-13-the-day-of-the-festival",
+   "mood": "court dread longing awe triumph",
+   "title": "Chapter 13: The Day of the Festival",
+   "seconds": 120,
+   "parts": [
+    [
+     "court",
+     0
+    ],
+    [
+     "dread",
+     33
+    ],
+    [
+     "court",
+     44
+    ],
+    [
+     "longing",
+     55
+    ],
+    [
+     "court",
+     65
+    ],
+    [
+     "awe",
+     76
+    ],
+    [
+     "court",
+     87
+    ],
+    [
+     "triumph",
+     98
+    ],
+    [
+     "court",
+     109
+    ]
+   ],
+   "heard": [
+    "Musa"
+   ]
+  },
+  {
+   "file": "chapter-14-brave-hearts",
+   "mood": "dread triumph court longing",
+   "title": "Chapter 14: Brave Hearts",
+   "seconds": 120,
+   "parts": [
+    [
+     "dread",
+     0
+    ],
+    [
+     "triumph",
+     13
+    ],
+    [
+     "court",
+     27
+    ],
+    [
+     "longing",
+     53
+    ],
+    [
+     "court",
+     67
+    ]
+   ],
+   "heard": [
+    "Musa"
+   ]
+  },
+  {
+   "file": "chapter-15-sign-after-sign",
+   "mood": "dread court longing",
+   "title": "Chapter 15: Sign after Sign",
+   "seconds": 120,
+   "parts": [
+    [
+     "dread",
+     0
+    ],
+    [
+     "court",
+     30
+    ],
+    [
+     "dread",
+     60
+    ],
+    [
+     "longing",
+     70
+    ],
+    [
+     "dread",
+     80
+    ],
+    [
+     "court",
+     90
+    ]
+   ],
+   "heard": [
+    "Musa"
+   ]
+  },
+  {
+   "file": "chapter-16-leaving-by-night",
+   "mood": "longing trek dread awe",
+   "title": "Chapter 16: Leaving by Night",
+   "seconds": 120,
+   "parts": [
+    [
+     "longing",
+     0
+    ],
+    [
+     "trek",
+     27
+    ],
+    [
+     "longing",
+     40
+    ],
+    [
+     "dread",
+     53
+    ],
+    [
+     "awe",
+     80
+    ],
+    [
+     "dread",
+     93
+    ]
+   ],
+   "heard": [
+    "Musa"
+   ]
+  },
+  {
+   "file": "chapter-17-the-sea-opens",
+   "mood": "awe dread triumph longing",
+   "title": "Chapter 17: The Sea Opens",
+   "seconds": 120,
+   "parts": [
+    [
+     "awe",
+     0
+    ],
+    [
+     "dread",
+     9
+    ],
+    [
+     "awe",
+     17
+    ],
+    [
+     "triumph",
+     26
+    ],
+    [
+     "dread",
+     34
+    ],
+    [
+     "triumph",
+     60
+    ],
+    [
+     "dread",
+     69
+    ],
+    [
+     "longing",
+     86
+    ],
+    [
+     "triumph",
+     94
+    ],
+    [
+     "dread",
+     111
+    ]
+   ],
+   "heard": [
+    "Musa"
+   ]
+  },
+  {
+   "file": "chapter-18-food-from-the-sky-water-from-the-rock",
+   "mood": "trek triumph longing",
+   "title": "Chapter 18: Food from the Sky, Water from the Rock",
+   "seconds": 120,
+   "parts": [
+    [
+     "trek",
+     0
+    ],
+    [
+     "triumph",
+     13
+    ],
+    [
+     "trek",
+     27
+    ],
+    [
+     "longing",
+     53
+    ],
+    [
+     "trek",
+     67
+    ],
+    [
+     "triumph",
+     80
+    ],
+    [
+     "trek",
+     93
+    ]
+   ],
+   "heard": [
+    "Musa"
+   ]
+  },
+  {
+   "file": "chapter-19-the-mountain-and-the-tablets",
+   "mood": "trek awe triumph",
+   "title": "Chapter 19: The Mountain and the Tablets",
+   "seconds": 120,
+   "parts": [
+    [
+     "trek",
+     0
+    ],
+    [
+     "awe",
+     24
+    ],
+    [
+     "triumph",
+     84
+    ],
+    [
+     "awe",
+     96
+    ]
+   ],
+   "heard": [
+    "Musa"
+   ]
+  },
+  {
+   "file": "chapter-20-the-golden-calf",
+   "mood": "dread longing trek triumph awe",
+   "title": "Chapter 20: The Golden Calf",
+   "seconds": 120,
+   "parts": [
+    [
+     "dread",
+     0
+    ],
+    [
+     "longing",
+     22
+    ],
+    [
+     "trek",
+     33
+    ],
+    [
+     "dread",
+     55
+    ],
+    [
+     "longing",
+     65
+    ],
+    [
+     "triumph",
+     76
+    ],
+    [
+     "trek",
+     87
+    ],
+    [
+     "awe",
+     98
+    ],
+    [
+     "trek",
+     109
+    ]
+   ],
+   "heard": [
+    "Musa"
+   ]
+  },
+  {
+   "file": "chapter-21-the-yellow-cow",
+   "mood": "pastoral",
+   "title": "Chapter 21: The Yellow Cow",
+   "seconds": 120,
+   "parts": [
+    [
+     "pastoral",
+     0
+    ]
+   ],
+   "heard": [
+    "Musa"
+   ]
+  },
+  {
+   "file": "chapter-22-the-holy-land",
+   "mood": "trek dread triumph longing",
+   "title": "Chapter 22: The Holy Land",
+   "seconds": 120,
+   "parts": [
+    [
+     "trek",
+     0
+    ],
+    [
+     "dread",
+     15
+    ],
+    [
+     "triumph",
+     30
+    ],
+    [
+     "trek",
+     45
+    ],
+    [
+     "longing",
+     60
+    ],
+    [
+     "trek",
+     90
+    ]
+   ],
+   "heard": [
+    "Musa"
+   ]
+  },
+  {
+   "file": "chapter-23-the-fish-that-swam-away",
+   "mood": "pastoral trek dread triumph awe wonder",
+   "title": "Chapter 23: The Fish That Swam Away",
+   "seconds": 120,
+   "parts": [
+    [
+     "pastoral",
+     0
+    ],
+    [
+     "trek",
+     9
+    ],
+    [
+     "dread",
+     28
+    ],
+    [
+     "trek",
+     46
+    ],
+    [
+     "triumph",
+     55
+    ],
+    [
+     "trek",
+     65
+    ],
+    [
+     "awe",
+     74
+    ],
+    [
+     "wonder",
+     83
+    ],
+    [
+     "pastoral",
+     92
+    ],
+    [
+     "dread",
+     111
+    ]
+   ],
+   "heard": [
+    "Musa"
+   ]
+  },
+  {
+   "file": "chapter-24-three-strange-things",
+   "mood": "dread pastoral awe longing triumph",
+   "title": "Chapter 24: Three Strange Things",
+   "seconds": 120,
+   "parts": [
+    [
+     "dread",
+     0
+    ],
+    [
+     "pastoral",
+     8
+    ],
+    [
+     "awe",
+     16
+    ],
+    [
+     "dread",
+     24
+    ],
+    [
+     "longing",
+     32
+    ],
+    [
+     "pastoral",
+     40
+    ],
+    [
+     "dread",
+     48
+    ],
+    [
+     "awe",
+     56
+    ],
+    [
+     "triumph",
+     64
+    ],
+    [
+     "dread",
+     80
+    ],
+    [
+     "awe",
+     96
+    ],
+    [
+     "dread",
+     112
+    ]
+   ],
+   "heard": [
+    "Musa"
+   ]
+  },
+  {
+   "file": "chapter-25-allah-was-with-him",
+   "mood": "nile awe triumph dread",
+   "title": "Chapter 25: Allah Was with Him",
+   "seconds": 105,
+   "parts": [
+    [
+     "nile",
+     0
+    ],
+    [
+     "awe",
+     15
+    ],
+    [
+     "triumph",
+     30
+    ],
+    [
+     "dread",
+     90
+    ]
+   ],
+   "heard": [
+    "Musa"
+   ]
+  },
+  {
+   "file": "the-end",
+   "mood": "triumph",
+   "title": "Musa: The End",
+   "seconds": 60,
+   "parts": [
+    [
+     "triumph",
+     0
+    ]
+   ],
+   "heard": [
+    "Musa"
+   ]
+  }
+ ]
+}

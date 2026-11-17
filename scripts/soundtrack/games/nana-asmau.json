@@ -1,0 +1,324 @@
+{
+ "album": "Nana Asma'u: Music from the Game",
+ "artist": "Asmau",
+ "year": 2026,
+ "prefix": "soundtrack/games/nana-asmau/",
+ "out": "nana-asmau.tracks.json",
+ "tracks": [
+  {
+   "file": "title",
+   "mood": "pastoral",
+   "title": "Nana Asma'u: Title",
+   "seconds": 60,
+   "parts": [
+    [
+     "pastoral",
+     0
+    ]
+   ],
+   "heard": [
+    "Nana Asma'u"
+   ]
+  },
+  {
+   "file": "chapter-1-two-babies-in-degel",
+   "mood": "nile wonder",
+   "title": "Chapter 1: Two Babies in Degel",
+   "seconds": 75,
+   "parts": [
+    [
+     "nile",
+     0
+    ],
+    [
+     "wonder",
+     15
+    ]
+   ],
+   "heard": [
+    "Nana Asma'u"
+   ]
+  },
+  {
+   "file": "chapter-2-the-girl-with-two-belts",
+   "mood": "longing triumph wonder",
+   "title": "Chapter 2: The Girl with Two Belts",
+   "seconds": 90,
+   "parts": [
+    [
+     "longing",
+     0
+    ],
+    [
+     "triumph",
+     45
+    ],
+    [
+     "longing",
+     60
+    ],
+    [
+     "wonder",
+     75
+    ]
+   ],
+   "heard": [
+    "Nana Asma'u"
+   ]
+  },
+  {
+   "file": "chapter-3-learning-at-home",
+   "mood": "longing pastoral awe",
+   "title": "Chapter 3: Learning at Home",
+   "seconds": 105,
+   "parts": [
+    [
+     "longing",
+     0
+    ],
+    [
+     "pastoral",
+     15
+    ],
+    [
+     "awe",
+     60
+    ],
+    [
+     "pastoral",
+     75
+    ]
+   ],
+   "heard": [
+    "Nana Asma'u"
+   ]
+  },
+  {
+   "file": "chapter-4-the-journey",
+   "mood": "trek longing",
+   "title": "Chapter 4: The Journey",
+   "seconds": 60,
+   "parts": [
+    [
+     "trek",
+     0
+    ],
+    [
+     "longing",
+     45
+    ]
+   ],
+   "heard": [
+    "Nana Asma'u"
+   ]
+  },
+  {
+   "file": "chapter-5-hard-years",
+   "mood": "dread pastoral trek triumph",
+   "title": "Chapter 5: Hard Years",
+   "seconds": 75,
+   "parts": [
+    [
+     "dread",
+     0
+    ],
+    [
+     "pastoral",
+     15
+    ],
+    [
+     "trek",
+     30
+    ],
+    [
+     "triumph",
+     45
+    ],
+    [
+     "trek",
+     60
+    ]
+   ],
+   "heard": [
+    "Nana Asma'u"
+   ]
+  },
+  {
+   "file": "chapter-6-a-new-town",
+   "mood": "triumph joy pastoral",
+   "title": "Chapter 6: A New Town",
+   "seconds": 60,
+   "parts": [
+    [
+     "triumph",
+     0
+    ],
+    [
+     "joy",
+     15
+    ],
+    [
+     "pastoral",
+     30
+    ],
+    [
+     "joy",
+     45
+    ]
+   ],
+   "heard": [
+    "Nana Asma'u"
+   ]
+  },
+  {
+   "file": "chapter-7-saving-the-books",
+   "mood": "longing awe wonder triumph",
+   "title": "Chapter 7: Saving the Books",
+   "seconds": 75,
+   "parts": [
+    [
+     "longing",
+     0
+    ],
+    [
+     "awe",
+     15
+    ],
+    [
+     "wonder",
+     30
+    ],
+    [
+     "triumph",
+     45
+    ],
+    [
+     "wonder",
+     60
+    ]
+   ],
+   "heard": [
+    "Nana Asma'u"
+   ]
+  },
+  {
+   "file": "chapter-8-words-in-four-languages",
+   "mood": "wonder pastoral",
+   "title": "Chapter 8: Words in Four Languages",
+   "seconds": 75,
+   "parts": [
+    [
+     "wonder",
+     0
+    ],
+    [
+     "pastoral",
+     15
+    ],
+    [
+     "wonder",
+     30
+    ]
+   ],
+   "heard": [
+    "Nana Asma'u"
+   ]
+  },
+  {
+   "file": "chapter-9-the-teacher-of-teachers",
+   "mood": "awe triumph joy trek longing pastoral",
+   "title": "Chapter 9: The Teacher of Teachers",
+   "seconds": 120,
+   "parts": [
+    [
+     "awe",
+     0
+    ],
+    [
+     "triumph",
+     15
+    ],
+    [
+     "joy",
+     30
+    ],
+    [
+     "trek",
+     45
+    ],
+    [
+     "triumph",
+     75
+    ],
+    [
+     "longing",
+     90
+    ],
+    [
+     "pastoral",
+     105
+    ]
+   ],
+   "heard": [
+    "Nana Asma'u"
+   ]
+  },
+  {
+   "file": "chapter-10-mother-of-the-town",
+   "mood": "pastoral joy longing",
+   "title": "Chapter 10: Mother of the Town",
+   "seconds": 60,
+   "parts": [
+    [
+     "pastoral",
+     0
+    ],
+    [
+     "joy",
+     20
+    ],
+    [
+     "longing",
+     40
+    ]
+   ],
+   "heard": [
+    "Nana Asma'u"
+   ]
+  },
+  {
+   "file": "chapter-11-remembered-today",
+   "mood": "awe triumph",
+   "title": "Chapter 11: Remembered Today",
+   "seconds": 75,
+   "parts": [
+    [
+     "awe",
+     0
+    ],
+    [
+     "triumph",
+     15
+    ]
+   ],
+   "heard": [
+    "Nana Asma'u"
+   ]
+  },
+  {
+   "file": "the-end",
+   "mood": "triumph",
+   "title": "Nana Asma'u: The End",
+   "seconds": 60,
+   "parts": [
+    [
+     "triumph",
+     0
+    ]
+   ],
+   "heard": [
+    "Nana Asma'u"
+   ]
+  }
+ ]
+}

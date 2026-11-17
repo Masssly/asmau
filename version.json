@@ -1,11 +1,18 @@
 {
-  "version": "2026.11.52",
+  "version": "2026.11.53",
   "date": "2026-11-17",
-  "buildId": "da6e7f3d00c6",
+  "buildId": "7a63825ca628",
   "notes": [
-    "Yusuf, page 5.3: the master of the house looks as he did when he first took Yusuf home (he looked younger)"
+    "Yusuf, page 5.5: the master of the house looks the same as on every other page (he had a grey beard here)"
   ],
   "history": [
+    {
+      "version": "2026.11.53",
+      "date": "2026-11-17",
+      "notes": [
+        "Yusuf, page 5.5: the master of the house looks the same as on every other page (he had a grey beard here)"
+      ]
+    },
     {
       "version": "2026.11.52",
       "date": "2026-11-17",

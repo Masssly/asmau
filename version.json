@@ -1,11 +1,18 @@
 {
-  "version": "2026.11.62",
+  "version": "2026.11.63",
   "date": "2026-11-18",
-  "buildId": "fb77add21cc5",
+  "buildId": "4768074b7ac3",
   "notes": [
-    "The copyright holder is named: Mohammed Sadat Abdulai."
+    "A wrong link now shows a clear 'page not found' page instead of an empty one."
   ],
   "history": [
+    {
+      "version": "2026.11.63",
+      "date": "2026-11-18",
+      "notes": [
+        "A wrong link now shows a clear 'page not found' page instead of an empty one."
+      ]
+    },
     {
       "version": "2026.11.62",
       "date": "2026-11-18",

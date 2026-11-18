@@ -5,7 +5,40 @@
     "title": "Yusuf",
     "kicker": "Stories of the prophets",
     "music": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/8aa3f5011b/soundtrack/games/yusuf/01-title.mp3",
-    "trailer": ["c1-a", "c2-b", "c3-b", "c5-d", "c9-b", "c11-d", "c13-b"],
-    "short": ["c1-a", "c2-b", "c9-b", "c11-d"]
+    "trailer": [
+      "c1-a",
+      "c2-b",
+      "c3-b",
+      "c5-d",
+      "c9-b",
+      "c11-d",
+      "c13-b"
+    ],
+    "short": [
+      "c1-a",
+      "c2-b",
+      "c9-b",
+      "c11-d"
+    ]
+  },
+  "nana-asmau": {
+    "title": "Nana Asma'u",
+    "kicker": "Great Muslims",
+    "music": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/a163ea90b1/soundtrack/games/nana-asmau/01-title.mp3",
+    "trailer": [
+      "a1-a",
+      "a3-c",
+      "a8-a",
+      "a9-a",
+      "a9-b",
+      "a9-c",
+      "a11-c"
+    ],
+    "short": [
+      "a1-a",
+      "a3-c",
+      "a9-b",
+      "a11-c"
+    ]
   }
 }

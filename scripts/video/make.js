@@ -26,6 +26,11 @@ const ff = (args) => execFileSync("ffmpeg", ["-y", "-loglevel", "error", ...args
 const dur = (f) => parseFloat(execFileSync("ffprobe", ["-v", "quiet", "-show_entries", "format=duration", "-of", "csv=p=0", f]).toString());
 const LOCKUP = "data:image/svg+xml;base64," + Buffer.from(fs.readFileSync(path.join(ROOT, "brand/kit/lockup/lockup-dark.svg"), "utf8")
   .replace('<rect width="1200" height="360" fill="#0c1530"/>', "")).toString("base64");
+// plain drawings of a phone, a tablet and a laptop (no company logos: the store apps are not out yet)
+const ICON = (d) => `<svg viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">${d}</svg>`;
+const DEVICES = ICON('<rect x="7" y="2.5" width="10" height="19" rx="2"/><path d="M11 18.5h2"/>') + ICON('<rect x="4" y="3" width="16" height="18" rx="2"/><path d="M11 18h2"/>') +
+  ICON('<rect x="4" y="5" width="16" height="11" rx="1.5"/><path d="M2 19h20"/>');
+const devices = (size) => `<div style="display:flex;align-items:center;gap:${size * 0.5}px;font-size:${size}px;opacity:.92"><span style="display:flex;gap:${size * 0.25}px;color:#f0b84b;font-size:${size * 1.25}px">${DEVICES}</span>Plays on iPhone, iPad, Android and computers</div>`;
 const esc = (s) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;");
 
 const CSS = `<style>
@@ -47,20 +52,24 @@ function scene(kind, img, text) {
   if (wide) return `${CSS}<body style="--w:${W}px;--h:${H}px">${bg}
     <img class="pic" src="${url(img)}" style="left:70px;top:70px;width:940px;height:940px">
     <div class="cap" style="left:1080px;top:0;bottom:0;width:770px;display:flex;align-items:center;font-size:${text.length > 130 ? 46 : 52}px">${esc(text)}</div>
-    <img src="${LOCKUP}" style="position:absolute;right:60px;bottom:40px;height:80px"></body>`;
+    <div style="position:absolute;left:1080px;right:60px;bottom:44px;display:flex;align-items:center;justify-content:space-between">
+      <img src="${LOCKUP}" style="height:80px"><div class="disp gold" style="font-size:52px">asmau.org</div></div></body>`;
   return `${CSS}<body style="--w:${W}px;--h:${H}px">${bg}
     <img src="${LOCKUP}" style="position:absolute;left:60px;top:110px;height:110px">
     <img class="pic" src="${url(img)}" style="left:40px;top:300px;width:1000px;height:1000px">
-    <div class="cap" style="left:60px;right:60px;top:1350px;font-size:${text.length > 130 ? 48 : 54}px">${esc(text)}</div></body>`;
+    <div class="cap" style="left:60px;right:60px;top:1350px;font-size:${text.length > 130 ? 48 : 54}px">${esc(text)}</div>
+    <div class="disp gold" style="position:absolute;left:0;right:0;bottom:120px;text-align:center;font-size:72px">asmau.org</div></body>`;
 }
 function card(kind, end) {
   const wide = kind === "trailer", W = wide ? 1920 : 1080, H = wide ? 1080 : 1920;
   return `${CSS}<body style="--w:${W}px;--h:${H}px"><div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:40px;text-align:center;padding:60px">
     <img src="${LOCKUP}" style="height:${wide ? 200 : 220}px">
     ${end ? `<div class="disp" style="font-size:${wide ? 84 : 92}px">Play it free at<br><span class="gold">asmau.org</span></div>
-             <div style="font-size:${wide ? 40 : 46}px;opacity:.9">No adverts · no account · nothing to buy. Ever.</div>`
+             <div style="font-size:${wide ? 40 : 46}px;opacity:.9">No adverts · no account · nothing to buy. Ever.</div>
+             ${devices(wide ? 38 : 40)}`
           : `<div class="gold" style="font-size:${wide ? 40 : 46}px;letter-spacing:.12em;text-transform:uppercase">${esc(plan.kicker)}</div>
-             <div class="disp" style="font-size:${wide ? 150 : 160}px">${esc(plan.title)}</div>`}
+             <div class="disp" style="font-size:${wide ? 150 : 160}px">${esc(plan.title)}</div>
+             <div class="disp gold" style="font-size:${wide ? 56 : 64}px">Free at asmau.org</div>`}
   </div></body>`;
 }
 
@@ -86,12 +95,12 @@ function card(kind, end) {
     await shot(card(kind, true), path.join(tmp, kind + "-end.png")); parts.push([path.join(tmp, kind + "-end.png"), 4.5, null]);
     await page.close();
 
-    // video: each still with a slow push-in, joined with short cross-fades
+    // video: each picture held still (a slow zoom moved in whole pixels and looked shaky), joined with short cross-fades
     const X = 0.5, clips = [];
     parts.forEach(([png, sec], i) => {
-      const c = path.join(tmp, `${kind}-c${i}.mp4`), frames = Math.round((sec + X) * 30);
-      ff(["-loop", "1", "-i", png, "-vf", `scale=${W * 2}:${H * 2},zoompan=z='1+0.035*on/${frames}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d=${frames}:s=${W}x${H}:fps=30,format=yuv420p`,
-          "-frames:v", String(frames), "-c:v", "libx264", "-preset", "medium", "-crf", "18", c]);
+      const c = path.join(tmp, `${kind}-c${i}.mp4`);
+      ff(["-loop", "1", "-framerate", "30", "-i", png, "-t", (sec + X).toFixed(2), "-vf", "format=yuv420p", "-c:v", "libx264", "-preset", "medium",
+          "-crf", "18", "-tune", "stillimage", c]);
       clips.push([c, sec + X]);
     });
     let filt = "", last = "[0:v]", t = clips[0][1] - X;

@@ -25,7 +25,10 @@
   (a hash, so the code itself never leaves the device). Anyone who knows the
   id can read the (encrypted) blobs, so ids must stay secret like a password.
 */
-const ORIGIN = "https://masssly.github.io";
+// The site's addresses: its own domain, and the old GitHub Pages address (kept while families move across; see
+// scripts/KEEPING.md). Each answer names the address that asked, so both can use sync and media.
+const ORIGINS = ["https://asmau.org", "https://masssly.github.io", "https://asmau.pages.dev"];
+const ORIGIN = ORIGINS[0];
 const FAMILY = /^[0-9a-f]{64}$/;
 const NAME = /^[A-Za-z0-9._:-]{1,120}$/;
 const MAX = 5 * 1024 * 1024;          // one recording
@@ -233,13 +236,25 @@ export default {
   },
 
   async fetch(req, env, ctx) {
+    const res = await handle(req, env, ctx);
+    const o = req.headers.get("origin");
+    if (o && ORIGINS.includes(o) && res.headers.has("access-control-allow-origin")) {
+      const h = new Headers(res.headers); h.set("access-control-allow-origin", o);
+      return new Response(res.body, { status: res.status, statusText: res.statusText, headers: h });
+    }
+    return res;
+  }
+};
+
+async function handle(req, env, ctx) {
+  {
     const mu = new URL(req.url);
     if (mu.pathname.startsWith("/media/")) return media(req, env, ctx, mu.pathname.slice(7));
     if (mu.pathname.startsWith("/admin/media/")) return adminMedia(req, env, mu.pathname.slice(13));
     if (mu.pathname === "/admin/history") return adminHistory(req, env);
     if (req.method === "OPTIONS") return reply(null, 204);
     const origin = req.headers.get("origin");
-    if (origin && origin !== ORIGIN) return reply("forbidden", 403);
+    if (origin && !ORIGINS.includes(origin)) return reply("forbidden", 403);
 
     const u = new URL(req.url);
     if (u.pathname === "/admin/limit") return admin(req, env, u);
@@ -295,4 +310,4 @@ export default {
     if (req.method === "DELETE") { await env.CLIPS.delete(prefix + name); return reply("ok"); }
     return reply("method not allowed", 405);
   }
-};
+}

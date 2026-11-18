@@ -1,11 +1,18 @@
 {
-  "version": "2026.11.59",
-  "date": "2026-11-17",
-  "buildId": "3ef8074280ed",
+  "version": "2026.11.60",
+  "date": "2026-11-18",
+  "buildId": "18111ac78eb5",
   "notes": [
-    "Yusuf, chapters 10 to 13: Benjamin is now drawn as a teenager, since many years have passed."
+    "Asmau now has its own address: asmau.org."
   ],
   "history": [
+    {
+      "version": "2026.11.60",
+      "date": "2026-11-18",
+      "notes": [
+        "Asmau now has its own address: asmau.org."
+      ]
+    },
     {
       "version": "2026.11.59",
       "date": "2026-11-17",

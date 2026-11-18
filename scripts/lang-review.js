@@ -53,7 +53,7 @@ for (const [k, v] of Object.entries(ui)) {
   rows.push({ k: "ui-" + key(k), g: "ui", ctx: re ? "pola: … adalah angka atau nama" : "", en: re ? human(k.slice(3)) : k,
     tr: re ? v.replace(/\$t?\d/g, "…") : v, src: k });
 }
-const data = { slug, code, title: game.title, status: tr.status, play: "https://masssly.github.io/asmau/games/" + slug + "/index.html?lang=" + code, rows };
+const data = { slug, code, title: game.title, status: tr.status, play: "https://asmau.org/games/" + slug + "/index.html?lang=" + code, rows };
 
 const html = `<title>Periksa Terjemahan ${game.title}</title>
 <meta name="claude:viewport-fit-sides" content="cover">

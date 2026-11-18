@@ -1,11 +1,18 @@
 {
-  "version": "2026.11.61",
+  "version": "2026.11.62",
   "date": "2026-11-18",
-  "buildId": "346f6cbbf0b8",
+  "buildId": "fb77add21cc5",
   "notes": [
-    "Asmau's licences: the code is open (AGPL-3.0); the stories, pictures and voices may be shared for free, never sold (CC BY-NC-SA 4.0)."
+    "The copyright holder is named: Mohammed Sadat Abdulai."
   ],
   "history": [
+    {
+      "version": "2026.11.62",
+      "date": "2026-11-18",
+      "notes": [
+        "The copyright holder is named: Mohammed Sadat Abdulai."
+      ]
+    },
     {
       "version": "2026.11.61",
       "date": "2026-11-18",

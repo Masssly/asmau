@@ -1,5 +1,7 @@
 # Licences
 
+Copyright © 2026 Mohammed Sadat Abdulai.
+
 Asmau is free for ever: no paid tier, no account, no adverts. Its two kinds of work carry two licences.
 
 ## The code: GNU Affero General Public License v3.0

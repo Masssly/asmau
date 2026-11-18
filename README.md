@@ -465,5 +465,5 @@ recording always replaces it.
 
 ## Licences
 
-Code: AGPL-3.0 (`LICENSE`). Stories, notes, pictures, voices and music: CC BY-NC-SA 4.0. The name "Asmau" and its mark are
+Copyright © 2026 Mohammed Sadat Abdulai. Code: AGPL-3.0 (`LICENSE`). Stories, notes, pictures, voices and music: CC BY-NC-SA 4.0. The name "Asmau" and its mark are
 not licensed. Details: `LICENSE-CONTENT.md`.

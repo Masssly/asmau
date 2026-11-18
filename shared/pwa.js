@@ -9,6 +9,23 @@
 (function () {
   "use strict";
 
+  // The old address (masssly.github.io/asmau) moves each family to asmau.org with what this device keeps there:
+  // the family code, sync state, voice, language and each story's place (scripts/KEEPING.md). They travel in the
+  // part of the link after "#", which browsers never send to a server; move.html on asmau.org saves them.
+  if (location.hostname === "masssly.github.io") {
+    var keep = {};
+    try {
+      for (var i = 0; i < localStorage.length; i++) {
+        var k = localStorage.key(i), v = localStorage.getItem(k);
+        if (/^asmau-/.test(k) && v != null && v.length < 20000) keep[k] = v;
+      }
+    } catch (e) { /* nothing readable: move without it */ }
+    var to = (location.pathname.replace(/^\/asmau(?=\/|$)/, "") || "/") + location.search;
+    var data = btoa(unescape(encodeURIComponent(JSON.stringify(keep))));
+    location.replace("https://asmau.org/move.html#to=" + encodeURIComponent(to) + "&keep=" + encodeURIComponent(data));
+    return;
+  }
+
   // Any element with data-asmau-version shows the release number (2026.11.1);
   // data-asmau-notes gets the latest notes as a list. Read fresh, never from an old copy.
   var here = document.currentScript ? document.currentScript.src : location.href;

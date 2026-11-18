@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Moving to asmau.org</title>
+<style>body { font-family: system-ui, sans-serif; background: #fbf6ec; color: #3b2a1a; text-align: center; padding: 3rem 1rem; }</style>
+</head>
+<body>
+<p>Asmau has moved to asmau.org. One moment…</p>
+<script>
+/*
+  The old address (masssly.github.io/asmau) sends families here with what their device kept there, after "#"
+  (never sent to a server): #to=<page>&keep=<base64 JSON of the asmau-* keys>. Each value is saved only when this
+  address does not have one yet, so nothing newer is ever overwritten. Then the address is cleaned and the family
+  goes on to the page they opened. See scripts/KEEPING.md.
+*/
+(function () {
+  "use strict";
+  var q = {};
+  location.hash.slice(1).split("&").forEach(function (p) { var i = p.indexOf("="); if (i > 0) q[p.slice(0, i)] = decodeURIComponent(p.slice(i + 1)); });
+  try {
+    var keep = JSON.parse(decodeURIComponent(escape(atob(q.keep || ""))) || "{}");
+    Object.keys(keep).forEach(function (k) {
+      if (/^asmau-/.test(k) && typeof keep[k] === "string" && localStorage.getItem(k) === null) localStorage.setItem(k, keep[k]);
+    });
+  } catch (e) { /* nothing to keep, or storage blocked: go on all the same */ }
+  var to = q.to || "/";
+  if (!/^\/(?![\/\\])/.test(to) || /[\\\s]/.test(to)) to = "/";   // only a page of this site ("//x" and "/\x" lead away)
+  location.replace(to);
+})();
+</script>
+</body>
+</html>

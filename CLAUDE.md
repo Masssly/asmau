@@ -135,10 +135,12 @@ things work; this file holds the decisions that must not be lost between session
 - An update never wipes what a family has on a device: the family code, recordings, the child's place, voice and
   language. Never rename those keys or databases without moving the old values; never clear localStorage or IndexedDB.
   `tests/keep.test.js` checks it on every release.
-- Before moving to a new domain or shipping store apps, follow the handover plan in scripts/KEEPING.md: a new address
-  is a new, empty storage on every device.
+- The site's address is **https://asmau.org** (Cloudflare Pages, deployed from main on every push; bought 18 November 2026).
+  The old address masssly.github.io/asmau hands families over to it (scripts/KEEPING.md); never put a custom domain
+  on the GitHub Pages site. Before shipping store apps, follow scripts/KEEPING.md: a new address is a new, empty
+  storage on every device.
 
 ## Releasing
 - `node scripts/release.js "note"` → `node scripts/validate.js` → full tests (tests/run.js) →
   commit → `scripts/publish-media.js` (needs ADMIN_TOKEN, never committed; **required** whenever pictures or sounds
-  changed, since R2 is their only home) → push main → check version.json live.
+  changed, since R2 is their only home) → push main → check https://asmau.org/version.json live.

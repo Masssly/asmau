@@ -1,16 +1,16 @@
 {
   "version": "2026.11.60",
   "date": "2026-11-18",
-  "buildId": "18111ac78eb5",
+  "buildId": "a06ef5e2dad3",
   "notes": [
-    "Asmau now has its own address: asmau.org."
+    "Asmau now has its own address: asmau.org. Opening the old address takes you there, with your family code, voice and place."
   ],
   "history": [
     {
       "version": "2026.11.60",
       "date": "2026-11-18",
       "notes": [
-        "Asmau now has its own address: asmau.org."
+        "Asmau now has its own address: asmau.org. Opening the old address takes you there, with your family code, voice and place."
       ]
     },
     {

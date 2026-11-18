@@ -48,15 +48,17 @@ to save it when it is made: it is the one way back.
   (with Capacitor: `server.url`, or `iosScheme` and `hostname`): a new address is a new, empty storage. The app does not
   share storage with Safari, so a family enters their code once in the app (or a "move from Safari" link carries it).
 
-## The move to our own domain (asmau.org)
+## The move to our own domain (asmau.org, 18 November 2026)
 
-A new address is a new, empty storage on every device: every family would lose their code, their place and their
-unsynced recordings. Before the move:
+A new address is a new, empty storage on every device. asmau.org is served by Cloudflare Pages from this repository
+(every push to main); the old address, masssly.github.io/asmau (GitHub Pages), hands each family over:
 
-1. A handover page on the old address reads the family's small things (code, voice, language, places) and opens the
-   new address with them in the part of the link after `#`, which browsers never send to any server; the new site
-   saves them and removes them from the address.
-2. Recordings: synced ones come back with the code. Before the move, the recorder asks parents who have recordings but
-   no sync to turn sync on, or to save them with Export and Import (the recorder already has both).
-3. The old address keeps redirecting through the handover for at least a year.
-4. Decide the final address before submitting the store apps, so they never have to move.
+1. Every page at the old address (shared/pwa.js) reads the family's small things (every `asmau-` key in localStorage:
+   code, sync state, voice, language, places) and opens the same page at asmau.org through `move.html`, with them in the
+   part of the link after `#`, which browsers never send to any server. move.html saves each one that asmau.org does not
+   have yet (never overwriting a newer one), cleans the link and goes on. `tests/move.test.js` checks it.
+2. Recordings are not carried (too big for a link): synced ones come back with the code. There were no families yet at
+   the move, so no one had unsynced recordings at the old address.
+3. The sync Worker accepts both addresses (`ORIGINS` in sync/worker.js) until the old one is switched off.
+4. Never set a custom domain on the GitHub Pages site: GitHub would then redirect the old address itself and the
+   handover in step 1 could not run.

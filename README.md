@@ -463,3 +463,7 @@ settings are written at the top of `scripts/generate-voice-gemini.py`, so the sa
 anything. Run that script for a game after its words change; it voices only new or changed lines. A parent's own
 recording always replaces it.
 
+## Licences
+
+Code: AGPL-3.0 (`LICENSE`). Stories, notes, pictures, voices and music: CC BY-NC-SA 4.0. The name "Asmau" and its mark are
+not licensed. Details: `LICENSE-CONTENT.md`.

@@ -1,11 +1,18 @@
 {
-  "version": "2026.11.60",
+  "version": "2026.11.61",
   "date": "2026-11-18",
-  "buildId": "a06ef5e2dad3",
+  "buildId": "346f6cbbf0b8",
   "notes": [
-    "Asmau now has its own address: asmau.org. Opening the old address takes you there, with your family code, voice and place."
+    "Asmau's licences: the code is open (AGPL-3.0); the stories, pictures and voices may be shared for free, never sold (CC BY-NC-SA 4.0)."
   ],
   "history": [
+    {
+      "version": "2026.11.61",
+      "date": "2026-11-18",
+      "notes": [
+        "Asmau's licences: the code is open (AGPL-3.0); the stories, pictures and voices may be shared for free, never sold (CC BY-NC-SA 4.0)."
+      ]
+    },
     {
       "version": "2026.11.60",
       "date": "2026-11-18",

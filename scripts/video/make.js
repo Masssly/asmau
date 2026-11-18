@@ -17,6 +17,8 @@ const OUT = path.join(__dirname, "out");
 const plans = JSON.parse(fs.readFileSync(path.join(__dirname, "plans.json"), "utf8"));
 const slug = process.argv[2], kinds = process.argv[3] ? [process.argv[3]] : ["trailer", "short"];
 const plan = plans[slug]; if (!plan) { console.error("no plan for " + slug); process.exit(1); }
+// the voice read a little faster than in the game (pitch kept), so a trailer stays short
+const SPEED = plan.speed || plans._speed || 1.15;
 const G = path.join(ROOT, "games", slug);
 const lines = Object.fromEntries(JSON.parse(fs.readFileSync(path.join(G, "narration.json"), "utf8")).map((l) => [l.id, l.text]));
 const url = (p) => "file://" + p;
@@ -79,7 +81,7 @@ function card(kind, end) {
       const img = path.join(G, "assets/img", id + ".webp"), voice = path.join(G, "assets/audio", id + ".mp3");
       if (!fs.existsSync(img) || !fs.existsSync(voice)) throw new Error("missing picture or voice for " + id + " (run node scripts/fetch-media.js)");
       const f = path.join(tmp, kind + "-" + id + ".png"); await shot(scene(kind, img, lines[id]), f);
-      parts.push([f, dur(voice) + 1.2, voice]);
+      parts.push([f, dur(voice) / SPEED + 1.0, voice]);
     }
     await shot(card(kind, true), path.join(tmp, kind + "-end.png")); parts.push([path.join(tmp, kind + "-end.png"), 4.5, null]);
     await page.close();
@@ -103,7 +105,7 @@ function card(kind, end) {
     const total = dur(silent); let at = 0; const voices = [];
     parts.forEach(([, sec, voice]) => { if (voice) voices.push([voice, at + 0.6]); at += sec; });
     const inputs = ["-i", silent, "-stream_loop", "-1", "-i", music, ...voices.flatMap(([v]) => ["-i", v])];
-    const vparts = voices.map(([, s], i) => `[${i + 2}:a]adelay=${Math.round(s * 1000)}|${Math.round(s * 1000)},volume=1.0[a${i}]`).join(";");
+    const vparts = voices.map(([, s], i) => `[${i + 2}:a]atempo=${SPEED},adelay=${Math.round(s * 1000)}|${Math.round(s * 1000)},volume=1.0[a${i}]`).join(";");
     const mix = `[1:a]atrim=0:${total.toFixed(2)},volume=0.16,afade=t=in:d=1.5,afade=t=out:st=${(total - 2.5).toFixed(2)}:d=2.5[m];${vparts};[m]${voices.map((_, i) => `[a${i}]`).join("")}amix=inputs=${voices.length + 1}:normalize=0,loudnorm=I=-16:TP=-1.5[a]`;
     const out = path.join(OUT, `${slug}-${kind}.mp4`);
     ff([...inputs, "-filter_complex", mix, "-map", "0:v", "-map", "[a]", "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-ar", "48000", "-t", total.toFixed(2), "-movflags", "+faststart", out]);

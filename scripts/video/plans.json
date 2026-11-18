@@ -1,0 +1,10 @@
+{
+  "_note": "Each video: the game's own pictures with the line read on them (the woman's voice), the game's music under it, a title card and an end card. A Short must stay under 60 seconds.",
+  "yusuf": {
+    "title": "Yusuf",
+    "kicker": "Stories of the prophets",
+    "music": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/8aa3f5011b/soundtrack/games/yusuf/01-title.mp3",
+    "trailer": ["c1-a", "c2-b", "c3-b", "c5-d", "c9-b", "c11-d", "c13-b"],
+    "short": ["c1-a", "c2-b", "c9-b", "c11-d"]
+  }
+}

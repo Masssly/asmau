@@ -30,3 +30,4 @@ scripts/rahmah-art/refs/*.png
 # node scripts/fetch-media.js, publish new ones with scripts/publish-media.js.
 games/*/assets/
 scripts/yusuf-art/refs/[A-Z]*.png
+scripts/video/out/

@@ -1,8 +1,9 @@
 {
   "version": "2026.11.68",
   "date": "2026-11-19",
-  "buildId": "8f454fc5e99b",
+  "buildId": "492a433a0d74",
   "notes": [
+    "Write to us: hello@asmau.org at the foot of the home page and in For parents, and on every story page a link to report a mistake on that page.",
     "Clearer follow buttons for YouTube and LinkedIn, and readable links at the foot of the home page."
   ],
   "history": [
@@ -10,6 +11,7 @@
       "version": "2026.11.68",
       "date": "2026-11-19",
       "notes": [
+        "Write to us: hello@asmau.org at the foot of the home page and in For parents, and on every story page a link to report a mistake on that page.",
         "Clearer follow buttons for YouTube and LinkedIn, and readable links at the foot of the home page."
       ]
     },

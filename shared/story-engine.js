@@ -1668,6 +1668,10 @@
         more.rel = "noopener";
         body.appendChild(more);
       });
+      // a parent who spots a mistake can say so; the game and page are filled in (owner, 19 November 2026)
+      var tell = mk("a", "pnote-link", "Spot a mistake on this page? Tell us");
+      tell.href = "mailto:hello@asmau.org?subject=" + encodeURIComponent("Asmau: " + (document.title.split(/\s+[—–-]\s+/)[0] || "a game") + ", page " + key);
+      body.appendChild(tell);
     });
   }
 

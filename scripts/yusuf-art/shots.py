@@ -24,7 +24,7 @@ WHO = {
     "YB": "a kind 9-year-old boy with short black hair, in a teal tunic with cream trim",
     "YY": "a kind young man of 18 with short black hair and no beard, in a long teal tunic with cream trim",
     "YM": "a dignified kind man in his 30s with a short black beard, a white turban with a gold band and a long deep-blue robe with gold trim",
-    "YQ": "an elderly father in his 70s with a white beard, a white embroidered cap and a cream-and-grey striped wide-sleeved robe",
+    "YQ": "an elderly father in his 70s with deep dark brown skin, a white beard, a white embroidered cap and a cream-and-grey striped wide-sleeved robe",
     "BR": "his ten older brothers, grown men all with deep dark brown skin and short beards, in rust, ochre, olive, brown, maroon, sand, slate blue, dark green, terracotta and charcoal robes and turbans",
     "BN": "a teenage boy of about fifteen in an orange-brown tunic, nearly as tall as a grown man, with no beard",
     "TR": "a water-carrier man in an orange turban and cream robe",

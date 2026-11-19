@@ -30,7 +30,7 @@ from shots import SHOTS, WHO  # noqa: E402
 IMG = os.path.join(ROOT, "games", "yusuf", "assets", "img")
 OUT = os.path.join(HERE, "bro"); TRY = os.path.join(OUT, "try")
 REF_BRO = os.path.join(HERE, "refs", "brothers.png")         # ten brothers in two groups of five
-REF = {"YQ": os.path.join(HERE, "fix", "c1-b.png"), "YM": os.path.join(IMG, "p-yusufMan.webp"),
+REF = {"YQ": os.path.join(HERE, "refs", "YQ.png"), "YM": os.path.join(IMG, "p-yusufMan.webp"),
        "BN": os.path.join(HERE, "refs", "BN.png"), "YB": os.path.join(IMG, "p-yusuf.webp")}
 
 TEN = "ten grown brothers, all with deep dark brown skin and short beards, in rust, ochre, olive, brown, maroon, sand, slate blue, dark green, terracotta and charcoal robes and turbans"

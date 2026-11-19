@@ -273,7 +273,9 @@ FIXES = {
     "c10-b": (SKIN, "scripts/yusuf-art/refs/YM.png"),
     "c10-h0": (TEEN_LAP, BN_REF), "c10-g": (TEEN_ANY, BN_REF), "c10-l2": (TEEN_ANY, BN_REF),
     "c11-c": (TEEN_ANY, BN_REF), "c12-a": (TEEN_ANY, BN_REF), "c13-b": (TEEN_ANY, BN_REF),
-    "c1-a": (HAIR_BOY, "p-yusuf"), "c1-b": (HAIR_BOY, "p-yusuf"), "c2-w": (HAIR_BOY, "p-yusuf"),
+    # c1-b (1.3) was remade on 20 November 2026 in one edit of the original drawing (git d66c699): the boy's hair and Yaqub
+    # dark-skinned from refs/YB.png and refs/YQ.png; do not run HAIR_BOY on it again
+    "c1-a": (HAIR_BOY, "p-yusuf"), "c2-w": (HAIR_BOY, "p-yusuf"),
     "c3-b": (HAIR_BOY, "p-yusuf"),
     "c5-b2": (MASTER, "c4-b"),
     "c8-a3": (KING, "c8-a2"),          # owner, 17 November 2026: pages 3.3 to 3.5, his hair too tall and curly

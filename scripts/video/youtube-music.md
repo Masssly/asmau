@@ -31,4 +31,4 @@ Play the games free at https://asmau.org — no adverts, no account, nothing to 
 | 12-awe.mp4 | Awe · Asmau: Music from the Games (12 of 15) | Adam, Ibn Battuta, Musa, Nana Asma'u, Nuh, Rahmah El Yunusiyyah |
 | 13-joy.mp4 | Joy · Asmau: Music from the Games (13 of 15) | Adam, Ibn Battuta, Nana Asma'u, Nuh, Rahmah El Yunusiyyah, Umm Ayman, Yusuf |
 | 14-triumph.mp4 | Triumph · Asmau: Music from the Games (14 of 15) | Adam, Ibn Battuta, Musa, Nana Asma'u, Nuh, Rahmah El Yunusiyyah, Umm Ayman |
-| 15-asmau-suite.mp4 | The Asmau Suite · Asmau: Music from the Games (15 of 15) | every game |
+| 15-asmau-suite-small.mp4 | The Asmau Suite · Asmau: Music from the Games (15 of 15) | every game |

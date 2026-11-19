@@ -1,11 +1,18 @@
 {
-  "version": "2026.11.64",
+  "version": "2026.11.65",
   "date": "2026-11-19",
-  "buildId": "8bd2489bd2ac",
+  "buildId": "35c37f06d795",
   "notes": [
-    "Yusuf, pages 10.7 and 10.8: Yusuf and the servant are drawn dark-skinned, like everyone in the prophets' stories."
+    "Pictures: everyone drawn dark-skinned in Yusuf 2.4, 2.11, 9.3, 10.4, 11.4 and Musa 12.4, 21.5; Yusuf 11.9 has all ten brothers again."
   ],
   "history": [
+    {
+      "version": "2026.11.65",
+      "date": "2026-11-19",
+      "notes": [
+        "Pictures: everyone drawn dark-skinned in Yusuf 2.4, 2.11, 9.3, 10.4, 11.4 and Musa 12.4, 21.5; Yusuf 11.9 has all ten brothers again."
+      ]
+    },
     {
       "version": "2026.11.64",
       "date": "2026-11-19",

@@ -64,7 +64,7 @@ PLAN = {
     "c11-d": (10, "Five brothers crowd in on his left and five on his right."),
     "c12-a": (10, "The brothers stand in a row of five in front and a row of five behind; their youngest brother, a teenage boy in an orange-brown tunic, stands with them."),
     "c12-c": (10, "The ten brothers stand in a single straight row from the left edge to the right edge, with a little space between each of them."),
-    "c13-b": (10, "The ten bearded brothers bow in a row of five in front and a row of five behind, and their youngest brother, a young man in an orange-brown tunic, bows with them: eleven brothers in all."),
+    "c13-b": (10, "The ten bearded brothers bow in a row of five in front and a row of five behind. Their youngest brother, a tall beardless young man of fifteen in an orange-brown tunic, as tall as his brothers, bows low in the front row with them: eleven brothers bowing in all, nobody standing among them."),
 }
 NOTE = (" The attached pictures show how the people look: draw them with the same faces, clothes and skin tone; the first one shows "
         "the brothers. Count carefully: exactly %d grown bearded brothers, no more and no fewer, each one fully visible and not "

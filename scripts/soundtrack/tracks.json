@@ -251,11 +251,10 @@
    "heard": [
     "every game"
    ],
-   "lufs": -16.4,
-   "kbps": 112,
-   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/91b9cccbce/soundtrack/15-asmau-suite.mp3",
-   "lossless": null,
-   "note": "lossless copy too big for the server's 5 MiB limit; run this again once the limit is raised"
+   "lufs": -16.0,
+   "kbps": 320,
+   "mp3": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/30caa30dca/soundtrack/15-asmau-suite.mp3",
+   "lossless": "https://asmau-sync.mohammed-sadat-abdulai.workers.dev/media/9e9c4af178/soundtrack/lossless/15-asmau-suite.ogg"
   }
  ]
 }

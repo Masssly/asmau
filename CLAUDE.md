@@ -72,6 +72,11 @@ things work; this file holds the decisions that must not be lost between session
 - Read the story straight through before release (scripts/story-readthrough.js): no gaps, no jumps.
 - Prefer more pages and activities over long pages of text.
 
+## Music
+- All the music is made by the games' own engine (shared/music.js): no recordings, samples or borrowed melodies, so
+  nothing to license. Every new game uses the existing moods, so the whole platform sounds like one family (owner,
+  19 November 2026); a new mood only with the owner's approval. The music as albums: scripts/soundtrack/README.md.
+
 ## Voice
 - The games' default voice is Google's Gemini text-to-speech on Vertex AI: model `gemini-2.5-flash-tts`,
   voice **Aoede**, asked to speak as a kind West African woman (the exact words are STYLE and STYLE_AR in

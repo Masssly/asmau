@@ -15,7 +15,7 @@ import hashlib, json, os, re, subprocess, sys, urllib.request
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(os.path.dirname(HERE))
 BASE = subprocess.check_output(["node", "-e", "console.log(require('./scripts/build-offline.js').MEDIA_BASE)"], cwd=ROOT).decode().strip()
-MAX = 5 * 1024 * 1024        # the server's limit today; 50 MiB once sync/worker.js with MEDIA_MAX is deployed
+MAX = 50 * 1024 * 1024       # the owner's uploads (sync/worker.js MEDIA_MAX, deployed 19 November 2026)
 
 
 def ff(*a):
@@ -54,7 +54,11 @@ def main():
     prefix = plan.get("prefix", "soundtrack/")
     out_path = os.path.join(os.path.dirname(os.path.abspath(plan_path)), plan.get("out", "tracks.json"))
     out, n = [], len(plan["tracks"])
+    only = os.environ.get("ONLY")       # ONLY=<file>: finish just that track, keep the others as they are in the list
+    old = {e["n"]: e for e in json.load(open(out_path, encoding="utf-8"))["tracks"]} if only and os.path.exists(out_path) else {}
     for i, t in enumerate(plan["tracks"]):
+        if only and t["file"] != only:
+            out.append(old[i + 1]); continue
         name = "%02d-%s" % (i + 1, t["file"])
         wav, secs = os.path.join(src, name + ".wav"), t["seconds"]
         fade = "afade=t=in:d=2,afade=t=out:st=%d:d=6" % (secs - 6)
@@ -66,7 +70,7 @@ def main():
                 "-metadata", "track=%d/%d" % (i + 1, n), "-metadata", "date=%d" % plan["year"],
                 "-metadata", "comment=Heard in: " + ", ".join(t["heard"])]
         mp3, ogg = os.path.join(src, name + ".mp3"), os.path.join(src, name + ".ogg")
-        # the server takes files up to 5 MiB (sync/worker.js MAX): a long track gets the best MP3 bitrate that fits
+        # the best MP3 bitrate that fits the server's upload limit (MAX)
         rate = next(r for r in (320, 256, 192, 160, 128, 112, 96) if secs * r * 1000 / 8 + 65536 < MAX)
         ff("-i", wav, "-af", norm, "-ac", "2", "-c:a", "libmp3lame", "-b:a", "%dk" % rate, "-id3v2_version", "3", *tags, mp3)
         ff("-i", wav, "-af", norm, "-ac", "2", "-c:a", "flac", "-sample_fmt", "s16", *tags, "-f", "ogg", ogg)
@@ -77,7 +81,7 @@ def main():
             entry["lossless"] = put(prefix + "lossless/" + name + ".ogg", open(ogg, "rb").read(), token)
         else:
             entry["lossless"] = None
-            entry["note"] = "lossless copy too big for the server's 5 MiB limit; run this again once the limit is raised"
+            entry["note"] = "lossless copy too big for the server's upload limit"
         out.append(entry)
         print("%s  %s  %s LUFS" % (name, t["title"], lufs), flush=True)
     json.dump({"album": plan["album"], "artist": plan["artist"], "year": plan["year"], "tracks": out},

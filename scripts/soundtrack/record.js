@@ -4,7 +4,7 @@
   theme music of games that becomes a soundtrack). The games compose their music live (shared/music.js); this records
   each mood with that same engine in an offline audio context, so the tracks are exactly the music of the games.
 
-    node scripts/soundtrack/record.js <plan.json> <out-folder>   record every track of a plan
+    node scripts/soundtrack/record.js <plan.json> <out-folder>   record every track of a plan (ONLY=<file> for one)
   Plans: scripts/soundtrack/plan.json (Music from the Games: one track per mood, and the suite) and
   scripts/soundtrack/games/<slug>.json (one album per game: its music in the order the game plays it; written by
   scripts/soundtrack/games.js). Writes <n>-<name>.wav (48 kHz). Then scripts/soundtrack/finish.py fades, levels and
@@ -27,6 +27,7 @@ const SR = 48000;
   await page.goto(site.url + "privacy.html");
   await page.addScriptTag({ url: site.url + "shared/music.js" });
   for (const [i, t] of plan.tracks.entries()) {
+    if (process.env.ONLY && t.file !== process.env.ONLY) continue;   // ONLY=<file>: record just that track
     const file = String(i + 1).padStart(2, "0") + "-" + t.file;
     // render in the page: a list of [mood, from-second] (one for a single mood, several for the suite)
     const b64 = await page.evaluate(async ({ parts, seconds, SR }) => {

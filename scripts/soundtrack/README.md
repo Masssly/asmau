@@ -23,8 +23,8 @@ On R2: `soundtrack/<nn>-<name>.mp3` (320 kbit/s) and `soundtrack/lossless/<nn>-<
 `soundtrack/games/<slug>/...` the same way for each game, at `<server>/media/<hash>/<path>`; the addresses are in the
 `.tracks.json` files. Nothing there is ever deleted.
 
-The 6-minute suite is over the server's 5 MiB limit at full quality, so it is on R2 at 112 kbit/s and without its
-lossless copy. `sync/worker.js` allows the owner's own uploads up to 50 MiB (`MEDIA_MAX`); once that is deployed
-(`cd sync && npx wrangler deploy`), raise `MAX` in finish.py and run it again.
+The owner's uploads may be up to 50 MiB (`MEDIA_MAX` in sync/worker.js, deployed 19 November 2026), so every track,
+the 6-minute suite included, is at 320 kbit/s with its lossless copy. To redo one track: `ONLY=<file>` before record.js
+and finish.py. As YouTube videos: scripts/video/music.js and scripts/video/youtube-music.md.
 
 If the music changes, record and finish again: changed tracks get new addresses, the old ones stay.

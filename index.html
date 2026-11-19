@@ -91,6 +91,15 @@
 
   .empty { text-align: center; color: var(--muted); padding: 30px 0; }
   footer { margin-top: 26px; color: var(--muted); font-size: 12px; text-align: center; line-height: 1.6; }
+  footer a { color: var(--gold, #f0b84b); }
+  /* follow Asmau: the platforms' own marks, as buttons big enough to tap */
+  .social { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 10px; margin: 4px 0 16px; }
+  .social .lab { width: 100%; font-size: 13px; color: var(--cream, #fdf6e8); opacity: .9; }
+  .soc { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 8px 16px; border-radius: 999px;
+         background: rgba(253,246,232,.08); border: 1px solid rgba(253,246,232,.18); color: var(--cream, #fdf6e8) !important;
+         font-size: 15px; font-weight: 600; text-decoration: none; }
+  .soc:hover, .soc:focus-visible { background: rgba(253,246,232,.16); }
+  .soc svg { width: 24px; height: 24px; flex: none; }
 
   /* for parents: a sheet over the page */
   .sheet-back { position: fixed; inset: 0; z-index: 10; background: rgba(4,8,22,.72); display: grid; place-items: end center; }
@@ -204,10 +213,14 @@
   </main>
 
   <footer>
+    <div class="social web-only">
+      <span class="lab">Follow Asmau</span>
+      <a class="soc" href="https://www.youtube.com/@asmaugames" aria-label="Asmau on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="1" y="4.5" width="22" height="15" rx="4.5" fill="#FF0000"/><path d="M10 9v6l5.2-3z" fill="#fff"/></svg>YouTube</a>
+      <a class="soc" href="https://www.linkedin.com/company/asmau/" aria-label="Asmau on LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="1" y="1" width="22" height="22" rx="4" fill="#0A66C2"/><path d="M6.3 9.6h2.6V18H6.3zM7.6 5.5a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3zM10.6 9.6h2.5v1.2c.4-.7 1.3-1.4 2.6-1.4 2.7 0 3.2 1.8 3.2 4.1V18h-2.6v-4c0-1 0-2.2-1.4-2.2s-1.6 1-1.6 2.1V18h-2.7z" fill="#fff"/></svg>LinkedIn</a>
+    </div>
     <span id="offlineNote" hidden>✓ Each game you open is saved on this device and then works without internet</span>
     <br><span id="verNote" hidden><span data-asmau-version></span> · <a href="reset.html">Refresh</a></span>
     <span id="updateNote" hidden>A newer version is ready. <a href="index.html">Reload</a></span>
-    <br><span class="follow web-only">Follow Asmau: <a href="https://www.youtube.com/@asmaugames">YouTube</a> · <a href="https://www.linkedin.com/company/asmau/">LinkedIn</a></span>
     <br><span class="licence">Free for ever. Code <a href="https://github.com/Masssly/asmau/blob/main/LICENSE">AGPL-3.0</a>; stories, pictures and voices <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>. © 2026 Mohammed Sadat Abdulai. “Asmau” and its mark are not licensed.</span>
   </footer>
 </div>

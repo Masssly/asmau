@@ -1,11 +1,18 @@
 {
-  "version": "2026.11.67",
+  "version": "2026.11.68",
   "date": "2026-11-19",
-  "buildId": "a67d7dd430e5",
+  "buildId": "8f454fc5e99b",
   "notes": [
-    "Follow Asmau on YouTube and LinkedIn: links at the foot of the home page."
+    "Clearer follow buttons for YouTube and LinkedIn, and readable links at the foot of the home page."
   ],
   "history": [
+    {
+      "version": "2026.11.68",
+      "date": "2026-11-19",
+      "notes": [
+        "Clearer follow buttons for YouTube and LinkedIn, and readable links at the foot of the home page."
+      ]
+    },
     {
       "version": "2026.11.67",
       "date": "2026-11-19",

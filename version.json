@@ -1,12 +1,18 @@
 {
-  "version": "2026.11.68",
+  "version": "2026.11.69",
   "date": "2026-11-19",
-  "buildId": "492a433a0d74",
+  "buildId": "a4ab363b2bfa",
   "notes": [
-    "Write to us: hello@asmau.org at the foot of the home page and in For parents, and on every story page a link to report a mistake on that page.",
-    "Clearer follow buttons for YouTube and LinkedIn, and readable links at the foot of the home page."
+    "Plainer words at the foot of the home page: the name Asmau and its logo are ours."
   ],
   "history": [
+    {
+      "version": "2026.11.69",
+      "date": "2026-11-19",
+      "notes": [
+        "Plainer words at the foot of the home page: the name Asmau and its logo are ours."
+      ]
+    },
     {
       "version": "2026.11.68",
       "date": "2026-11-19",

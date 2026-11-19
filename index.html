@@ -101,6 +101,7 @@
   .soc:hover, .soc:focus-visible { background: rgba(253,246,232,.16); }
   .soc svg { width: 24px; height: 24px; flex: none; }
   .write-us { margin: 0 0 14px; }
+  .guides { margin: 4px 0 10px; padding-left: 20px; columns: 2; } .guides li { margin: 3px 0; }
 
   /* for parents: a sheet over the page */
   .sheet-back { position: fixed; inset: 0; z-index: 10; background: rgba(4,8,22,.72); display: grid; place-items: end center; }
@@ -354,9 +355,11 @@
       <p>Each story from the Qur’an is a retelling in simple words, not a translation. Every chapter is checked against
         M. A. S. Abdel Haleem’s English translation. Any detail that is not in the verses comes from a named commentary,
         mostly Ibn Kathir’s tafsir (abridged English), or from a hadith quoted in it, and it carries a small label on its scene.</p>
-      <p>Under every scene, <strong>“For parents: this chapter”</strong> tells you what the verses say beyond the child’s
+      <p>Under every page, <strong>“📖 Note for parents”</strong> tells you what the verses say beyond the child’s
         version, what was told more gently or left out, whose report a detail comes from, and links to the verses, so you
         can answer your child’s questions.</p>
+      <p><strong>Parents’ guides:</strong> every note of a game on one page, to read before or after playing.</p>
+      <ul class="guides" id="guideList"></ul>
     </div>
 
     <div class="p-view" data-view="shown" hidden>
@@ -576,11 +579,20 @@
     box.addEventListener("input", function () { render(CATALOGUE, box.value); });
   }
 
+  // For parents > Where the stories come from: a parents' guide (guide.html) for each story game that can be played
+  function listGuides(sections) {
+    var ul = document.getElementById("guideList"); if (!ul) return;
+    ul.innerHTML = "";
+    sections.forEach(function (sec) { sec.games.forEach(function (g) {
+      if (g.status === "coming-soon" || !(g.prophet || g.born)) return;
+      var li = el("li"), a = el("a", "", g.icon + " " + g.title); a.href = "guide.html?g=" + g.slug; li.appendChild(a); ul.appendChild(li);
+    }); });
+  }
   function loadGames() {
     // one file with every game (scripts/build-offline.js writes it from manifest.json and each game.json)
     fetch("games/index.json")
       .then(function (r) { return r.json(); })
-      .then(function (c) { CATALOGUE = c.sections; c.sections.forEach(function (sec) { sec.games.forEach(function (g) { BYSLUG[g.slug] = g; }); }); return c.sections; })
+      .then(function (c) { CATALOGUE = c.sections; c.sections.forEach(function (sec) { sec.games.forEach(function (g) { BYSLUG[g.slug] = g; }); }); listGuides(c.sections); return c.sections; })
       .then(render).then(markOffline).then(wireLangPick)
       .catch(function () {
         var main = document.getElementById("sections");

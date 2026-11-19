@@ -1650,12 +1650,28 @@
       }).filter(Boolean);
     });
   }
+  // once per device, the first time a page has a note: a small pointer to the folded line, for the grown-up
+  function notesTip() {
+    try { if (localStorage.getItem("asmau-notes-tip")) return; localStorage.setItem("asmau-notes-tip", "1"); } catch (e) { return; }
+    var sum = $("pnoteSum"), tip = mk("div", "pnote-tip", "Grown-ups: every page has a short note, with its verses and sources. Tap here to read it.");
+    tip.setAttribute("role", "note");
+    $("pnote").parentNode.insertBefore(tip, $("pnote").nextSibling);   // outside the folded box, or it would be hidden too
+    function gone() { tip.remove(); $("pnote").removeEventListener("toggle", gone); }
+    $("pnote").addEventListener("toggle", gone);
+    tip.addEventListener("click", function () { $("pnote").open = true; gone(); });
+    setTimeout(gone, 12000);
+  }
   function fillNotes(ch, key) {
     var body = $("pnoteBody");
     body.innerHTML = "";
     notesFor(key).then(function (paras) {
       if (pnoteFor !== key) return;            // the child has moved on to another page meanwhile
       body.innerHTML = "";
+      // the folded line says when there is a note to read (owner, 19 November 2026: parents did not notice them)
+      var has = paras.length > 0;
+      $("pnote").classList.toggle("has-note", has);
+      $("pnoteSum").textContent = (has ? "📖 Note for parents · page " : "For parents · page ") + key;
+      if (has) notesTip();
       paras.forEach(function (para) { body.appendChild(mk("p", "", para)); });
       if (ch.cite) body.appendChild(mk("p", "pnote-cite", "Source: " + ch.cite));
       // which commentary "the commentary" means, said once at the foot of the notes instead of in every sentence
@@ -1668,8 +1684,15 @@
         more.rel = "noopener";
         body.appendChild(more);
       });
+      // every note of the game on one page, to read before or after playing (guide.html)
+      var slug = (/\/games\/([^/]+)\//.exec(location.pathname) || [])[1];
+      if (slug) {
+        var guide = mk("a", "pnote-link", "All of this game’s notes on one page");
+        guide.href = "../../guide.html?g=" + slug;
+        body.appendChild(guide);
+      }
       // a parent who spots a mistake can say so; the game and page are filled in (owner, 19 November 2026)
-      var tell = mk("a", "pnote-link", "Spot a mistake on this page? Tell us");
+      var tell = mk("a", "pnote-link", "Spot a mistake on this page? Tell us.");
       tell.href = "mailto:hello@asmau.org?subject=" + encodeURIComponent("Asmau: " + (document.title.split(/\s+[—–-]\s+/)[0] || "a game") + ", page " + key);
       body.appendChild(tell);
     });
@@ -1706,8 +1729,10 @@
 
     // the page's number (chapter.page), shown only on the folded parents' line, so a page can be named in a message
     var pageKey = (ci + 1) + "." + (si + 1);
-    $("pnoteSum").textContent = "For parents · page " + pageKey;
     if (pnoteFor !== pageKey) {
+      $("pnoteSum").textContent = "For parents · page " + pageKey;   // fillNotes says "Note for parents" once it knows there is one
+      $("pnote").classList.remove("has-note");
+      Array.prototype.forEach.call(document.querySelectorAll(".pnote-tip"), function (x) { x.remove(); });   // the pointer belongs to its page
       // a new chapter folds the notes away; within a chapter they stay open if a parent opened them
       if (!pnoteFor || pnoteFor.split(".")[0] !== String(ci + 1)) $("pnote").open = false;
       pnoteFor = pageKey;

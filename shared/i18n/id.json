@@ -91,5 +91,9 @@
  "🌐 Language of the story:": "🌐 Bahasa cerita:",
  "Language of the stories": "Bahasa cerita",
  "Asmau was updated": "Asmau sudah diperbarui",
- "Tap to carry on": "Ketuk untuk melanjutkan"
+ "Tap to carry on": "Ketuk untuk melanjutkan",
+ "re:^📖 Note for parents · page (.+)$": "📖 Catatan untuk orang tua · halaman $1",
+ "All of this game’s notes on one page": "Semua catatan permainan ini dalam satu halaman",
+ "Spot a mistake on this page? Tell us.": "Menemukan kesalahan di halaman ini? Beri tahu kami.",
+ "Grown-ups: every page has a short note, with its verses and sources. Tap here to read it.": "Untuk orang dewasa: setiap halaman punya catatan singkat, dengan ayat dan sumbernya. Ketuk di sini untuk membacanya."
 }

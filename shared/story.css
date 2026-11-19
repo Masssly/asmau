@@ -354,7 +354,12 @@ button { touch-action: manipulation; -webkit-tap-highlight-color: transparent; }
 .pnote { margin-top: 10px; color: var(--muted); font-size: 13.5px; line-height: 1.55; }
 .pnote summary { cursor: pointer; font-family: var(--font-display); color: var(--cream); font-size: 14px; padding: 8px 0; }
 .pnote p { margin: 0 0 8px; }
-.pnote-link { color: var(--gold); }
+.pnote-link { color: var(--gold); display: block; margin: 6px 0; }
+.pnote.has-note summary { color: var(--gold); }
+.pnote-tip { position: relative; margin: 2px 0 8px; padding: 10px 14px; border-radius: 12px; background: var(--gold); color: #1b1407;
+  font-size: 14px; line-height: 1.45; cursor: pointer; box-shadow: 0 6px 18px rgba(0,0,0,.35); }
+.pnote-tip::before { content: ""; position: absolute; left: 22px; top: -7px; border: 7px solid transparent; border-top: 0; border-bottom-color: var(--gold); }
+@media (prefers-reduced-motion: no-preference) { .pnote-tip { animation: tipIn .3s ease-out; } @keyframes tipIn { from { opacity: 0; transform: translateY(-4px); } } }
 
 /* ---------- pictures ---------- */
 /* A narrated step with a picture: the picture fills the stage. Pictures are

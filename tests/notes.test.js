@@ -16,6 +16,7 @@ module.exports = async function () {
 
   // a parent writes a note on page 1.2 on GitHub; the next release picks it up
   fs.writeFileSync(path.join(P, "1/1.2.md"), "test text\n\nsecond paragraph\n");
+  fs.writeFileSync(path.join(P, "1/1.3.md"), "");                     // a page with no note
   execSync("node scripts/build-offline.js", { cwd: tmp, stdio: "ignore" });
   T.check(JSON.parse(fs.readFileSync(path.join(P, "pages.json"), "utf8")).notes.includes("1.2"), "the release lists page 1.2 as having a note");
 
@@ -33,6 +34,10 @@ module.exports = async function () {
   T.check(await page.locator("#pnote").evaluate((d) => d.open), "the notes stay open from page to page within a chapter");
   await page.click("#nextBtn");
   T.check((await notes()).length === 0 && await page.isVisible("#pnoteBody a.pnote-link"), "page 1.3 has no note, only the link to the verses");
+  T.check(!/Note for parents/.test(await page.textContent("#pnoteSum")), "and its folded line does not promise a note");
+  await page.click("#prevBtn"); await page.waitForTimeout(800);
+  T.check(/Note for parents · page 1\.2/.test(await page.textContent("#pnoteSum")) && await page.locator("#pnote").evaluate((d) => d.classList.contains("has-note")),
+    "a page with a note says so on its folded line: " + (await page.textContent("#pnoteSum")));
   await browser.close(); await site.close();
 
   // a page is added at the start of chapter 1: every note moves with its page

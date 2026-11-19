@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Parents' guide · Asmau</title>
+<meta name="description" content="Every note for parents in an Asmau game, page by page, with its verses and sources.">
+<link rel="icon" href="icons/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="fonts/fonts.css">
+<style>
+  /* one reading column: the game's chapters in order, each page's story line and its note */
+  :root { --bg: #0c1530; --card: #15244a; --line: #2a3970; --cream: #fdf6e8; --muted: #b7bfd9; --gold: #f0b84b;
+          --font-display: "Baloo 2", "Trebuchet MS", sans-serif; --font-body: "Mada", system-ui, sans-serif; color-scheme: dark; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--cream); font-family: var(--font-body); font-size: 17px; line-height: 1.6;
+         padding: 22px max(16px, env(safe-area-inset-right, 0px)) 60px max(16px, env(safe-area-inset-left, 0px)); }
+  main { max-width: 720px; margin: 0 auto; }
+  a { color: var(--gold); }
+  .top { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; font-size: 15px; }
+  h1 { font-family: var(--font-display); font-size: 34px; line-height: 1.1; margin: 18px 0 6px; }
+  .intro { color: var(--muted); margin: 0 0 22px; }
+  .play { display: inline-block; margin: 4px 0 24px; padding: 10px 18px; border-radius: 999px; background: var(--gold); color: #0c1530;
+          font-weight: 700; text-decoration: none; }
+  nav.toc { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 12px 16px; margin-bottom: 26px; }
+  nav.toc ol { margin: 6px 0 0; padding-left: 22px; }
+  section.ch { margin: 0 0 30px; }
+  h2 { font-family: var(--font-display); font-size: 24px; margin: 0 0 2px; }
+  .src { color: var(--muted); font-size: 14.5px; margin: 0 0 12px; }
+  .page { border-top: 1px solid var(--line); padding: 14px 0 6px; }
+  .pno { font-family: var(--font-display); color: var(--gold); font-size: 15px; letter-spacing: .03em; }
+  .story { margin: 2px 0 8px; font-style: italic; color: var(--muted); }
+  .page p { margin: 0 0 10px; }
+  .empty { color: var(--muted); }
+  @media print { body { background: #fff; color: #000; } a { color: #000; } .play, .top { display: none; } }
+</style>
+</head>
+<body>
+<main>
+  <div class="top"><a href="./">← All games</a><span id="count"></span></div>
+  <h1 id="title">Parents' guide</h1>
+  <p class="intro">Every note for parents in this game, page by page: the line your child hears, then what lies behind it,
+    with its verses and sources. The same notes sit, folded, at the bottom of each page of the game.</p>
+  <a class="play" id="play" href="./">Play the game</a>
+  <nav class="toc" id="toc" hidden><strong>Chapters</strong><ol id="tocList"></ol></nav>
+  <div id="guide"><p class="empty">Loading the notes…</p></div>
+</main>
+<script>
+(function () {
+  "use strict";
+  var slug = (/[?&]g=([a-z0-9-]+)/.exec(location.search) || [])[1];
+  var $ = function (id) { return document.getElementById(id); };
+  function el(tag, cls, text) { var e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; }
+  function fail(msg) { $("guide").innerHTML = ""; $("guide").appendChild(el("p", "empty", msg)); }
+  if (!slug) return fail("No game was named. Go back and open a game's guide from For parents.");
+  var base = "games/" + slug + "/";
+  var json = function (u) { return fetch(base + u).then(function (r) { if (!r.ok) throw new Error(u); return r.json(); }); };
+  // the game's chapters come from its story file, which sets window.STORY
+  var story = new Promise(function (ok, no) {
+    var s = document.createElement("script"); s.src = base + "story.js";
+    s.onload = function () { ok(window.STORY || []); }; s.onerror = no; document.head.appendChild(s);
+  });
+  Promise.all([json("game.json"), story, json("narration.json"), json("parents/notes.json"), json("parents/pages.json")]).then(function (r) {
+    var game = r[0], chapters = r[1], lines = {}, notes = r[3], pages = r[4].pages || {};
+    r[2].forEach(function (l) { lines[l.id] = l.text; });
+    document.title = game.title + " · Parents' guide · Asmau";
+    $("title").textContent = game.title + ": parents' guide";
+    $("play").href = base; $("play").textContent = "Play " + game.title;
+    var byChapter = {};
+    Object.keys(pages).forEach(function (p) {
+      var c = +p.split(".")[0];
+      (byChapter[c] = byChapter[c] || []).push(p);
+    });
+    var box = $("guide"); box.innerHTML = "";
+    var count = 0;
+    chapters.forEach(function (ch, i) {
+      var c = i + 1, list = (byChapter[c] || []).filter(function (p) { return (notes[p] || "").trim(); })
+        .sort(function (a, b) { return +a.split(".")[1] - +b.split(".")[1]; });
+      if (!list.length) return;
+      var sec = el("section", "ch"); sec.id = "c" + c;
+      sec.appendChild(el("h2", "", "Chapter " + c + ": " + (ch.title || "")));
+      var src = [];
+      if (ch.source) src.push("Qur’an " + [ch.source].concat(ch.more || []).join(", ").replace(/-/g, "–"));
+      if (ch.cite) src.push("Source: " + ch.cite);
+      if (src.length) sec.appendChild(el("p", "src", src.join(" · ")));
+      list.forEach(function (p) {
+        var d = el("div", "page"); d.appendChild(el("div", "pno", "Page " + p));
+        var lid = (pages[p] || "").split(":")[1];
+        if (lines[lid]) d.appendChild(el("p", "story", "“" + lines[lid] + "”"));
+        notes[p].split(/\r?\n\s*\r?\n/).forEach(function (para) {
+          var t = para.split(/\r?\n/).filter(function (l) { return !/^\s*#/.test(l); }).join(" ").trim();
+          if (t) d.appendChild(el("p", "", t));
+        });
+        sec.appendChild(d); count++;
+      });
+      box.appendChild(sec);
+      var li = el("li"), a = el("a", "", ch.title || ("Chapter " + c)); a.href = "#c" + c; li.appendChild(a); $("tocList").appendChild(li);
+    });
+    $("toc").hidden = !count;
+    $("count").textContent = count ? count + " notes" : "";
+    if (!count) fail("This game has no notes for parents yet.");
+  }).catch(function () { fail("The notes could not be loaded. Check your connection and reload."); });
+})();
+</script>
+<script src="shared/gate.js"></script>
+<script src="shared/pwa.js"></script>
+</body>
+</html>

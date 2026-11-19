@@ -1,4 +1,4 @@
-{"bytes":1053908,
+{"bytes":1054067,
 "files":{"404.html":"30fef1f1da",
 "LICENSE":"f473958ef4",
 "LICENSE-CONTENT.md":"0cc084be0b",
@@ -41,5 +41,5 @@
 "shared/vendor/README.txt":"9c77174b0e",
 "shared/vendor/lame.min.js":"00d43c063d",
 "tools/record-voice/index.html":"228dd8e38d",
-"version.json":"427c05afad"},
+"version.json":"4cdfe83f5f"},
 "sizes":{}}

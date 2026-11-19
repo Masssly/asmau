@@ -1,11 +1,18 @@
 {
-  "version": "2026.11.65",
+  "version": "2026.11.66",
   "date": "2026-11-19",
-  "buildId": "35c37f06d795",
+  "buildId": "cdfb16e379c9",
   "notes": [
-    "Pictures: everyone drawn dark-skinned in Yusuf 2.4, 2.11, 9.3, 10.4, 11.4 and Musa 12.4, 21.5; Yusuf 11.9 has all ten brothers again."
+    "Yusuf 13.3: the family bows, everyone drawn dark-skinned, Benjamin bowing with his brothers."
   ],
   "history": [
+    {
+      "version": "2026.11.66",
+      "date": "2026-11-19",
+      "notes": [
+        "Yusuf 13.3: the family bows, everyone drawn dark-skinned, Benjamin bowing with his brothers."
+      ]
+    },
     {
       "version": "2026.11.65",
       "date": "2026-11-19",

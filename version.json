@@ -1,11 +1,18 @@
 {
-  "version": "2026.11.70",
+  "version": "2026.11.71",
   "date": "2026-11-19",
-  "buildId": "aab83e1f9d18",
+  "buildId": "e0f4e996966d",
   "notes": [
-    "The site no longer links to GitHub; the licence names it instead."
+    "Notes for parents on every page of every game: all 558 that were waiting are now shown, and Yusuf 1.2 to 1.5 as you edited them."
   ],
   "history": [
+    {
+      "version": "2026.11.71",
+      "date": "2026-11-19",
+      "notes": [
+        "Notes for parents on every page of every game: all 558 that were waiting are now shown, and Yusuf 1.2 to 1.5 as you edited them."
+      ]
+    },
     {
       "version": "2026.11.70",
       "date": "2026-11-19",

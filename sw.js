@@ -17,15 +17,15 @@
 */
 
 // BEGIN GENERATED
-const RELEASE = "2026.11.70";
-const BUILD = "aab83e1f9d18";
+const RELEASE = "2026.11.71";
+const BUILD = "e0f4e996966d";
 // pack: [fingerprint of packs/<pack>.json, bytes, files]
 const PACKS = {
   "abdullah-quilliam":["257759b2cf",442,1],
-  "adam":["4f6ded53a9",2721610,55],
+  "adam":["696c79662a",2735383,55],
   "adam@m":["a617f3f408",4026446,147],
   "adam@w":["217fc43e27",4316508,147],
-  "core":["b894f13ccc",1057259,43],
+  "core":["f0a628c971",1057558,43],
   "count-the-crescents":["c58ffd2f9d",83016,5],
   "count-the-crescents@m":["76410cb722",587647,52],
   "count-the-crescents@w":["238f9dbdf7",584828,52],
@@ -33,21 +33,21 @@ const PACKS = {
   "fatima-al-fihri":["2c3eca2233",463,1],
   "gazi-husrev-beg":["a83800ba50",435,1],
   "ibn-al-nafis":["f8a52f29ab",449,1],
-  "ibn-battuta":["6e7e76449b",3497890,54],
+  "ibn-battuta":["ab8e67af01",3501267,54],
   "ibn-battuta@m":["fc1dc2b090",3523440,130],
   "ibn-battuta@w":["4418230851",3810161,130],
   "mariam-alolo":["a06c1449ec",422,1],
   "muhammad-asad":["e8b07f6b96",446,1],
-  "musa":["e1ee2d4f89",8046171,161],
+  "musa":["a01235df77",8073777,161],
   "musa@m":["e8ae6e31ff",13995246,422],
   "musa@w":["5ac25136bc",15197808,422],
-  "nana-asmau":["8699fc6e67",2470881,51],
+  "nana-asmau":["dc3fb45862",2477375,51],
   "nana-asmau@m":["0a028f5761",3395505,116],
   "nana-asmau@w":["a6c18e6bbe",3665928,116],
-  "nuh":["6f4dbb18c5",3351667,55],
+  "nuh":["0996cf5174",3356785,55],
   "nuh@m":["1852874f1c",3888796,145],
   "nuh@w":["1c57f6027a",4165390,145],
-  "rahmah":["4130bffb45",2725801,46],
+  "rahmah":["615cedef90",2727915,46],
   "rahmah@id-m":["ec329859ed",3172911,114],
   "rahmah@id-w":["dde118b888",3315323,114],
   "rahmah@m":["35a8bb21ae",2876572,114],
@@ -56,11 +56,11 @@ const PACKS = {
   "tap-and-say":["284f427c70",21717,4],
   "tap-and-say@m":["71edb942d5",1501703,126],
   "tap-and-say@w":["d9e7f925b2",1472336,126],
-  "umm-ayman":["ee1ddb1e6c",3277562,56],
+  "umm-ayman":["e050164fd5",3281574,56],
   "umm-ayman@m":["25ae6bd6a0",3369590,116],
   "umm-ayman@w":["aa2daf9273",3702494,116],
   "yunus-emre":["6881152c52",408,1],
-  "yusuf":["e839f1f32f",5851790,94],
+  "yusuf":["57eba0f262",5871564,94],
   "yusuf@m":["5f24cea0b0",6661953,191],
   "yusuf@w":["d0a6cc2e08",7128706,191]
 };

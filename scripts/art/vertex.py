@@ -263,8 +263,14 @@ TEEN_LAP = TEEN_ANY.replace("Change only the young boy in the orange-brown tunic
                             "tunic: he no longer sits on the old man's lap but sits close beside him, the old man's arm around his "
                             "shoulders, and")
 BN_REF = "scripts/yusuf-art/refs/BN.png"
+# 10.7 (and the 10.8 question over it): everyone came out light-skinned (owner, 19 November 2026)
+SKIN = ("Edit the first picture. Keep everything exactly as it is: the place, the night light, the lamps, the donkeys, the sacks, "
+        "the golden cup, every pose and every piece of clothing. Change only the people: every person has deep dark brown skin, a "
+        "Black African person. The man in the blue robe and white turban has exactly the face of the man in the second picture, "
+        "with the same short black beard. The servant putting the cup into the sack is a grown man with a short black beard.")
 FIXES = {
     "c10-l1": (TEEN, BN_REF),
+    "c10-b": (SKIN, "scripts/yusuf-art/refs/YM.png"),
     "c10-h0": (TEEN_LAP, BN_REF), "c10-g": (TEEN_ANY, BN_REF), "c10-l2": (TEEN_ANY, BN_REF),
     "c11-c": (TEEN_ANY, BN_REF), "c12-a": (TEEN_ANY, BN_REF), "c13-b": (TEEN_ANY, BN_REF),
     "c1-a": (HAIR_BOY, "p-yusuf"), "c1-b": (HAIR_BOY, "p-yusuf"), "c2-w": (HAIR_BOY, "p-yusuf"),

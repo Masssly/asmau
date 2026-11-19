@@ -1,11 +1,18 @@
 {
-  "version": "2026.11.63",
-  "date": "2026-11-18",
-  "buildId": "4768074b7ac3",
+  "version": "2026.11.64",
+  "date": "2026-11-19",
+  "buildId": "8bd2489bd2ac",
   "notes": [
-    "A wrong link now shows a clear 'page not found' page instead of an empty one."
+    "Yusuf, pages 10.7 and 10.8: Yusuf and the servant are drawn dark-skinned, like everyone in the prophets' stories."
   ],
   "history": [
+    {
+      "version": "2026.11.64",
+      "date": "2026-11-19",
+      "notes": [
+        "Yusuf, pages 10.7 and 10.8: Yusuf and the servant are drawn dark-skinned, like everyone in the prophets' stories."
+      ]
+    },
     {
       "version": "2026.11.63",
       "date": "2026-11-18",

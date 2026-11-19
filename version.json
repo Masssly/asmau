@@ -1,11 +1,18 @@
 {
-  "version": "2026.11.69",
+  "version": "2026.11.70",
   "date": "2026-11-19",
-  "buildId": "a4ab363b2bfa",
+  "buildId": "aab83e1f9d18",
   "notes": [
-    "Plainer words at the foot of the home page: the name Asmau and its logo are ours."
+    "The site no longer links to GitHub; the licence names it instead."
   ],
   "history": [
+    {
+      "version": "2026.11.70",
+      "date": "2026-11-19",
+      "notes": [
+        "The site no longer links to GitHub; the licence names it instead."
+      ]
+    },
     {
       "version": "2026.11.69",
       "date": "2026-11-19",

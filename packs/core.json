@@ -1,4 +1,4 @@
-{"bytes":1057146,
+{"bytes":1057259,
 "files":{"404.html":"30fef1f1da",
 "LICENSE":"f473958ef4",
 "LICENSE-CONTENT.md":"0cc084be0b",
@@ -17,7 +17,7 @@
 "icons/icon-maskable-512.png":"531e21c419",
 "icons/mark.svg":"604f108080",
 "icons/og.png":"887e764bc5",
-"index.html":"bb423f8ae5",
+"index.html":"123a9ad51d",
 "manifest.json":"9747edac0a",
 "move.html":"a416736c8f",
 "privacy.html":"df79cd6ff1",
@@ -41,5 +41,5 @@
 "shared/vendor/README.txt":"9c77174b0e",
 "shared/vendor/lame.min.js":"00d43c063d",
 "tools/record-voice/index.html":"228dd8e38d",
-"version.json":"ff8d92864d"},
+"version.json":"ca53a32c3c"},
 "sizes":{}}

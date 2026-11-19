@@ -32,6 +32,11 @@ things work; this file holds the decisions that must not be lost between session
   the next release. Write a note on the page it explains. When pages move, `scripts/build-offline.js` moves
   the files with them (parents/pages.json, never edited by hand). Never put notes back into story.js or the
   author files (the checker refuses).
+- **The owner edits notes on the Parents' notes page** (https://claude.ai/artifact/8A5eHNzNpT5frdiDfRRUwZ, one database
+  document per page, decided 19 November 2026). Before every release: ArtifactData query `notes` where `edited == true`
+  (with `out_dir`), `python3 scripts/notes-apply.py <dir>`, name the pages in the release note; after the push, set
+  `edited: false` on them (pinned). When notes change in the repository (new game, new page, a note I write), add or
+  update their documents too, so the page never shows stale text.
 - Every page shows its number on the folded parents' line ("For parents · page 2.3" = chapter 2, page 3);
   people use it to say which page they mean.
 - Tell each fact once. The chapter header already shows the verses and the links under the notes list

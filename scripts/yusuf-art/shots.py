@@ -181,7 +181,7 @@ SHOTS = {
     "c13-a": ("Yusuf welcomes his parents to Egypt.",
               "At the great gate of {EGY}, {YM} embraces {YQ}; beside them an elderly mother in a cream scarf smiles. The big family arrives with camels and donkeys; townspeople welcome them."),
     "c13-b": ("The family bow before Yusuf.",
-              "In {HALL}, an elderly father in a white cap and striped robe, an elderly mother in a cream scarf and {BR} bow low in respect before {YM}, who stands beside a throne with hands raised humbly."),
+              "In {HALL}, {YQ}, an elderly mother with deep dark brown skin in a cream scarf that covers all her hair, and {BR} bow low in respect before {YM}, who stands beside a throne with hands raised humbly."),
     "c13-b0": ("The dream: eleven stars, the sun and the moon above the city.",
                "A dream-like night sky with eleven bright stars, a golden sun and a crescent moon glowing together above {EGY} and its wide river. On a rooftop a family stands together looking up."),
     "c13-c": ("Yusuf prays under the night sky.",

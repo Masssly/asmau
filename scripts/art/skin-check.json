@@ -1,0 +1,1620 @@
+{
+ "adam/bg-heaven": {
+  "people": 0,
+  "light": 0,
+  "who": "none"
+ },
+ "adam/d1-a": {
+  "people": 3,
+  "light": 3,
+  "who": "the central angelic figure, the angelic figure on the left, and the angelic figure on the right"
+ },
+ "adam/d1-b": {
+  "people": 3,
+  "light": 3,
+  "who": "the angel at the top left, the angel at the top right, and the angel in the foreground on the right"
+ },
+ "adam/d1-c": {
+  "people": 8,
+  "light": 8,
+  "who": "all eight angelic figures standing in a circle on the stone platform"
+ },
+ "adam/d10-a": {
+  "people": 2,
+  "light": 0,
+  "who": "none"
+ },
+ "adam/d10-b": {
+  "people": 2,
+  "light": 0,
+  "who": "none"
+ },
+ "adam/d10-c": {
+  "people": 2,
+  "light": 0,
+  "who": "none"
+ },
+ "adam/d10-d": {
+  "people": 0,
+  "light": 0,
+  "who": "none"
+ },
+ "adam/d10-e": {
+  "people": 1,
+  "light": 0,
+  "who": "none"
+ },
+ "adam/d10-f": {
+  "people": 6,
+  "light": 0,
+  "who": "none"
+ },
+ "adam/d11-a": {
+  "people": 3,
+  "light": 0,
+  "who": "none"
+ },
+ "adam/d11-b": {
+  "people": 22,
+  "light": 0,
+  "who": "none"
+ },
+ "adam/d11-c": {
+  "people": 11,
+  "light": 0,
+  "who": "none"
+ },
+ "adam/d11-d": {
+  "people": 28,
+  "light": 0,
+  "who": "none"
+ },
+ "adam/d2-a": {
+  "people": 0,
+  "light": 0,
+  "who": "none"
+ },
+ "adam/d2-b": {
+  "people": 0,
+  "light": 0,
+  "who": "none"
+ },
+ "adam/d2-c": {
+  "people": 1,
+  "light": 0,
+  "who": "none"
+ },
+ "adam/d2-d": {
+  "people": 5,
+  "light": 0,
+  "who": "none"
+ },
+ "adam/d3-a": {
+  "people": 1,
+  "light": 0,
+  "who": "none"
+ },
+ "adam/d3-b": {
+  "people": 1,
+  "light": 0,
+  "who": "none"
+ },
+ "adam/d3-c": {
+  "people": 5,
+  "light": 4,
+  "who": "the winged figure in the center-left; the winged figure in the center-right; the winged figure in the background on the left; the winged figure on the far right edge"
+ },
+ "adam/d3-d": {
+  "people": 2,
+  "light": 1,
+  "who": "the glowing angel on the right"
+ },
+ "adam/d4-a": {
+  "people": 1,
+  "light": 0,
+  "who": "none"
+ },
+ "adam/d4-b": {
+  "people": 3,
+  "light": 3,
+  "who": "The three large angel figures in the center and on the left and right sides all have glowing white skin."
+ },
+ "adam/d4-c": {
+  "people": 3,
+  "light": 2,
+  "who": "The two angelic figures standing on the right side of the image have glowing white or pale skin."
+ },
+ "adam/d5-a": {
+  "people": 9,
+  "light": 8,
+  "who": "the four bowing angels on the left and the four bowing angels on the right"
+ },
+ "adam/d5-b": {
+  "people": 15,
+  "light": 14,
+  "who": "all the glowing winged figures surrounding the central figure"
+ },
+ "adam/d5-c": {
+  "people": 1,
+  "light": 0,
+  "who": "none"
+ },
+ "adam/d5-d": {
+  "people": 1,
+  "light": 0,
+  "who": "none"
+ },
+ "adam/d5-e": {
+  "people": 0,
+  "light": 0,
+  "who": "none"
+ },
+ "adam/d6-a": {
+  "people": 2,
+  "light": 0,
+  "who": "none"
+ },
+ "adam/d6-b": {
+  "people": 2,
+  "light": 0,
+  "who": "none"
+ },
+ "adam/d6-c": {
+  "people": 2,
+  "light": 0,
+  "who": "none"
+ },
+ "adam/d7-a": {
+  "people": 2,
+  "light": 0,
+  "who": "none"
+ },
+ "adam/d7-b": {
+  "people": 0,
+  "light": 0,
+  "who": "none"
+ },
+ "adam/d7-c": {
+  "people": 0,
+  "light": 0,
+  "who": "none"
+ },
+ "adam/d7-d": {
+  "people": 1,
+  "light": 0,
+  "who": "none"
+ },
+ "adam/d7-e": {
+  "people": 0,
+  "light": 0,
+  "who": "none"
+ },
+ "adam/d8-a": {
+  "people": 2,
+  "light": 0,
+  "who": "none"
+ },
+ "adam/d8-b": {
+  "people": 2,
+  "light": 0,
+  "who": "none"
+ },
+ "adam/d9-a": {
+  "people": 1,
+  "light": 0,
+  "who": "none"
+ },
+ "adam/d9-b": {
+  "people": 2,
+  "light": 0,
+  "who": "none"
+ },
+ "adam/d9-c": {
+  "people": 2,
+  "light": 1,
+  "who": "the glowing angel figure standing behind the man, which is depicted with bright white/yellow light instead of dark brown skin"
+ },
+ "adam/d9-d": {
+  "people": 2,
+  "light": 0,
+  "who": "none"
+ },
+ "adam/icon-adam": {
+  "people": 1,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/bg-camp": {
+  "people": 0,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/bg-city": {
+  "people": 0,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/bg-dawn": {
+  "people": 0,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/bg-desert": {
+  "people": 0,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/bg-egypt": {
+  "people": 0,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/bg-field": {
+  "people": 0,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/bg-fire": {
+  "people": 0,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/bg-mountain": {
+  "people": 0,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/bg-night": {
+  "people": 0,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/bg-palace": {
+  "people": 0,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/bg-river": {
+  "people": 0,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/bg-sea": {
+  "people": 0,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/bg-well": {
+  "people": 0,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/icon-musa": {
+  "people": 1,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/icon-sister": {
+  "people": 1,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/icon-young": {
+  "people": 1,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m1-a": {
+  "people": 1,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m1-b": {
+  "people": 12,
+  "light": 2,
+  "who": "the two soldiers standing in the background between the groups of families"
+ },
+ "musa/m1-c": {
+  "people": 9,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m10-a": {
+  "people": 1,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m10-b": {
+  "people": 1,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m10-c": {
+  "people": 1,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m10-d": {
+  "people": 1,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m11-a": {
+  "people": 1,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m11-b": {
+  "people": 1,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m11-c": {
+  "people": 1,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m11-d": {
+  "people": 1,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m11-e": {
+  "people": 2,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m11-e0": {
+  "people": 2,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m12-a": {
+  "people": 10,
+  "light": 7,
+  "who": "the four attendants standing in the background on the left and the three attendants standing in the background on the right"
+ },
+ "musa/m12-b": {
+  "people": 7,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m12-c": {
+  "people": 4,
+  "light": 3,
+  "who": "the three attendants standing behind the throne, wearing blue, green, and purple robes respectively"
+ },
+ "musa/m12-d": {
+  "people": 3,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m12-e": {
+  "people": 2,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m13-a": {
+  "people": 14,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m13-b": {
+  "people": 16,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m13-c": {
+  "people": 18,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m13-d": {
+  "people": 2,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m13-e": {
+  "people": 4,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m13-f": {
+  "people": 15,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m14-a": {
+  "people": 5,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m14-b": {
+  "people": 13,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m14-c": {
+  "people": 8,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m14-d": {
+  "people": 1,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m14-e": {
+  "people": 7,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m15-a": {
+  "people": 5,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m15-b": {
+  "people": 7,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m15-c": {
+  "people": 5,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m15-d": {
+  "people": 4,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m15-e": {
+  "people": 6,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m15-f": {
+  "people": 6,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m15-g": {
+  "people": 3,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m16-a": {
+  "people": 9,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m16-b": {
+  "people": 25,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m16-c": {
+  "people": 7,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m16-d": {
+  "people": 23,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m16-e": {
+  "people": 14,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m17-a": {
+  "people": 1,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m17-b": {
+  "people": 8,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m17-c": {
+  "people": 18,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m17-d": {
+  "people": 18,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m17-e": {
+  "people": 7,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m17-f": {
+  "people": 0,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m17-f0": {
+  "people": 0,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m17-g": {
+  "people": 28,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m18-a": {
+  "people": 30,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m18-b": {
+  "people": 11,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m18-c": {
+  "people": 17,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m18-d": {
+  "people": 9,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m19-a": {
+  "people": 2,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m19-b": {
+  "people": 1,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m19-c": {
+  "people": 0,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m19-d": {
+  "people": 1,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m19-e": {
+  "people": 1,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m2-a": {
+  "people": 2,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m2-b": {
+  "people": 2,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m2-c": {
+  "people": 2,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m2-d": {
+  "people": 1,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m20-a": {
+  "people": 5,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m20-b": {
+  "people": 17,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m20-c": {
+  "people": 9,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m20-d": {
+  "people": 20,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m20-e": {
+  "people": 8,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m20-f": {
+  "people": 1,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m20-g": {
+  "people": 17,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m21-a": {
+  "people": 4,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m21-b": {
+  "people": 4,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m21-c": {
+  "people": 0,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m21-d": {
+  "people": 0,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m21-d1": {
+  "people": 3,
+  "light": 3,
+  "who": "the sleeping man on the mat, the sitting man gesturing, and the man standing in the doorway"
+ },
+ "musa/m21-e": {
+  "people": 7,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m22-a": {
+  "people": 22,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m22-b": {
+  "people": 9,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m22-c": {
+  "people": 28,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m22-d": {
+  "people": 13,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m22-e": {
+  "error": "gave up"
+ },
+ "musa/m23-a": {
+  "people": 12,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m23-b": {
+  "people": 2,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m23-c": {
+  "people": 2,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m23-d": {
+  "people": 2,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m23-e": {
+  "people": 2,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m23-f": {
+  "people": 3,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m23-f1": {
+  "people": 3,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m23-g": {
+  "people": 2,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m23-g0": {
+  "people": 3,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m24-a": {
+  "people": 4,
+  "light": 2,
+  "who": "the two crew members at the back of the boat working on the rigging"
+ },
+ "musa/m24-b": {
+  "people": 2,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m24-c": {
+  "people": 2,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m24-d": {
+  "people": 2,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m24-e": {
+  "people": 5,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m24-f": {
+  "people": 2,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m24-g": {
+  "people": 7,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m24-h": {
+  "people": 2,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m24-i": {
+  "people": 1,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m24-i2": {
+  "people": 0,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m25-a": {
+  "people": 4,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m25-b": {
+  "people": 1,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m25-c": {
+  "people": 17,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m3-a": {
+  "people": 3,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m3-b": {
+  "people": 3,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m3-c": {
+  "people": 2,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m3-d": {
+  "people": 3,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m3-e": {
+  "people": 3,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m4-a": {
+  "people": 1,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m4-b": {
+  "people": 1,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m4-c": {
+  "people": 6,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m4-d": {
+  "people": 8,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m4-e": {
+  "people": 3,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m4-f": {
+  "people": 3,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m5-a": {
+  "people": 2,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m5-b": {
+  "people": 2,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m5-c": {
+  "people": 1,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m6-a": {
+  "people": 3,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m6-b": {
+  "people": 6,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m6-c": {
+  "people": 1,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m6-d": {
+  "people": 5,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m6-e": {
+  "people": 1,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m7-a": {
+  "people": 1,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m7-b": {
+  "people": 18,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m7-c": {
+  "people": 3,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m7-d": {
+  "people": 1,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m7-e": {
+  "people": 1,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m8-a": {
+  "people": 2,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m8-b": {
+  "people": 2,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m8-c": {
+  "people": 2,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m8-d": {
+  "people": 4,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m8-e": {
+  "people": 4,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m9-a": {
+  "people": 2,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m9-b": {
+  "people": 2,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m9-c": {
+  "people": 1,
+  "light": 0,
+  "who": "none"
+ },
+ "musa/m9-d": {
+  "people": 1,
+  "light": 0,
+  "who": "none"
+ },
+ "nuh/bg-field": {
+  "people": 0,
+  "light": 0,
+  "who": "none"
+ },
+ "nuh/n1-a": {
+  "people": 15,
+  "light": 0,
+  "who": "none"
+ },
+ "nuh/n1-b": {
+  "people": 9,
+  "light": 0,
+  "who": "none"
+ },
+ "nuh/n1-c": {
+  "people": 0,
+  "light": 0,
+  "who": "none"
+ },
+ "nuh/n1-d": {
+  "people": 15,
+  "light": 0,
+  "who": "none"
+ },
+ "nuh/n10-a": {
+  "people": 5,
+  "light": 0,
+  "who": "none"
+ },
+ "nuh/n10-b": {
+  "people": 2,
+  "light": 0,
+  "who": "none"
+ },
+ "nuh/n10-c": {
+  "people": 1,
+  "light": 0,
+  "who": "none"
+ },
+ "nuh/n10-d": {
+  "people": 0,
+  "light": 0,
+  "who": "none"
+ },
+ "nuh/n10-e": {
+  "people": 1,
+  "light": 0,
+  "who": "none"
+ },
+ "nuh/n10-f": {
+  "people": 1,
+  "light": 0,
+  "who": "none"
+ },
+ "nuh/n11-a": {
+  "people": 0,
+  "light": 0,
+  "who": "none"
+ },
+ "nuh/n11-b": {
+  "people": 7,
+  "light": 0,
+  "who": "none"
+ },
+ "nuh/n11-c": {
+  "people": 0,
+  "light": 0,
+  "who": "none"
+ },
+ "nuh/n11-d": {
+  "people": 8,
+  "light": 0,
+  "who": "none"
+ },
+ "nuh/n11-e": {
+  "people": 1,
+  "light": 0,
+  "who": "none"
+ },
+ "nuh/n11-f": {
+  "people": 7,
+  "light": 0,
+  "who": "none"
+ },
+ "nuh/n2-a": {
+  "people": 1,
+  "light": 0,
+  "who": "none"
+ },
+ "nuh/n2-b": {
+  "people": 17,
+  "light": 0,
+  "who": "none"
+ },
+ "nuh/n2-c": {
+  "people": 1,
+  "light": 0,
+  "who": "none"
+ },
+ "nuh/n3-a": {
+  "people": 2,
+  "light": 0,
+  "who": "none"
+ },
+ "nuh/n3-b": {
+  "people": 4,
+  "light": 0,
+  "who": "none"
+ },
+ "nuh/n3-c": {
+  "people": 11,
+  "light": 0,
+  "who": "none"
+ },
+ "nuh/n3-d": {
+  "people": 13,
+  "light": 0,
+  "who": "none"
+ },
+ "nuh/n4-a": {
+  "people": 0,
+  "light": 0,
+  "who": "none"
+ },
+ "nuh/n4-b": {
+  "people": 4,
+  "light": 0,
+  "who": "none"
+ },
+ "nuh/n4-c": {
+  "people": 0,
+  "light": 0,
+  "who": "none"
+ },
+ "nuh/n4-d": {
+  "people": 5,
+  "light": 0,
+  "who": "none"
+ },
+ "nuh/n5-a": {
+  "people": 10,
+  "light": 0,
+  "who": "none"
+ },
+ "nuh/n5-b": {
+  "people": 12,
+  "light": 0,
+  "who": "none"
+ },
+ "nuh/n5-c": {
+  "people": 1,
+  "light": 0,
+  "who": "none"
+ },
+ "nuh/n6-a": {
+  "people": 1,
+  "light": 0,
+  "who": "none"
+ },
+ "nuh/n6-b": {
+  "people": 1,
+  "light": 0,
+  "who": "none"
+ },
+ "nuh/n6-c": {
+  "people": 3,
+  "light": 0,
+  "who": "none"
+ },
+ "nuh/n6-d": {
+  "people": 6,
+  "light": 0,
+  "who": "none"
+ },
+ "nuh/n7-a": {
+  "people": 4,
+  "light": 0,
+  "who": "none"
+ },
+ "nuh/n7-b": {
+  "people": 6,
+  "light": 0,
+  "who": "none"
+ },
+ "nuh/n7-c": {
+  "people": 6,
+  "light": 0,
+  "who": "none"
+ },
+ "nuh/n8-a": {
+  "people": 0,
+  "light": 0,
+  "who": "none"
+ },
+ "nuh/n8-b": {
+  "people": 0,
+  "light": 0,
+  "who": "none"
+ },
+ "nuh/n8-c": {
+  "people": 0,
+  "light": 0,
+  "who": "none"
+ },
+ "nuh/n8-d": {
+  "people": 9,
+  "light": 0,
+  "who": "none"
+ },
+ "nuh/n9-a": {
+  "people": 11,
+  "light": 0,
+  "who": "none"
+ },
+ "nuh/n9-b": {
+  "people": 2,
+  "light": 0,
+  "who": "none"
+ },
+ "nuh/n9-c": {
+  "people": 9,
+  "light": 0,
+  "who": "none"
+ },
+ "yusuf/bg-desert": {
+  "people": 0,
+  "light": 0,
+  "who": "none"
+ },
+ "yusuf/bg-egypt": {
+  "people": 3,
+  "light": 0,
+  "who": "none"
+ },
+ "yusuf/bg-field": {
+  "people": 2,
+  "light": 0,
+  "who": "none"
+ },
+ "yusuf/bg-market": {
+  "people": 15,
+  "light": 0,
+  "who": "none"
+ },
+ "yusuf/bg-night": {
+  "people": 0,
+  "light": 0,
+  "who": "none"
+ },
+ "yusuf/bg-palace": {
+  "people": 4,
+  "light": 4,
+  "who": "the person in pink on the left, the person in teal on the left, the person in blue on the right, and the person in tan on the right"
+ },
+ "yusuf/bg-prison": {
+  "people": 0,
+  "light": 0,
+  "who": "none"
+ },
+ "yusuf/bg-wall": {
+  "people": 3,
+  "light": 0,
+  "who": "none"
+ },
+ "yusuf/bg-well": {
+  "people": 0,
+  "light": 0,
+  "who": "none"
+ },
+ "yusuf/c1-a": {
+  "people": 1,
+  "light": 0,
+  "who": "none"
+ },
+ "yusuf/c1-b": {
+  "people": 6,
+  "light": 0,
+  "who": "none"
+ },
+ "yusuf/c10-a": {
+  "people": 6,
+  "light": 0,
+  "who": "none"
+ },
+ "yusuf/c10-b": {
+  "people": 5,
+  "light": 0,
+  "who": "none"
+ },
+ "yusuf/c10-c": {
+  "people": 13,
+  "light": 0,
+  "who": "none"
+ },
+ "yusuf/c10-g": {
+  "people": 12,
+  "light": 1,
+  "who": "the elderly man sitting on the mat in the foreground, who has light tan skin"
+ },
+ "yusuf/c10-h": {
+  "people": 18,
+  "light": 3,
+  "who": "the older man with the white beard standing behind the row of men, the woman in the blue dress in the background, and the girl in the yellow dress in the background"
+ },
+ "yusuf/c10-h0": {
+  "people": 12,
+  "light": 0,
+  "who": "none"
+ },
+ "yusuf/c10-l1": {
+  "people": 14,
+  "light": 0,
+  "who": "none"
+ },
+ "yusuf/c10-l2": {
+  "people": 13,
+  "light": 0,
+  "who": "none"
+ },
+ "yusuf/c11-a": {
+  "people": 2,
+  "light": 0,
+  "who": "none"
+ },
+ "yusuf/c11-b": {
+  "people": 10,
+  "light": 1,
+  "who": "the older man sitting on the mat in the foreground"
+ },
+ "yusuf/c11-c": {
+  "people": 15,
+  "light": 0,
+  "who": "none"
+ },
+ "yusuf/c11-c0": {
+  "people": 18,
+  "light": 0,
+  "who": "none"
+ },
+ "yusuf/c11-d": {
+  "people": 14,
+  "light": 0,
+  "who": "none"
+ },
+ "yusuf/c11-e": {
+  "people": 11,
+  "light": 0,
+  "who": "none"
+ },
+ "yusuf/c11-v": {
+  "people": 10,
+  "light": 0,
+  "who": "none"
+ },
+ "yusuf/c11-v0": {
+  "people": 17,
+  "light": 0,
+  "who": "none"
+ },
+ "yusuf/c12-a": {
+  "people": 12,
+  "light": 0,
+  "who": "none"
+ },
+ "yusuf/c12-b": {
+  "people": 6,
+  "light": 0,
+  "who": "none"
+ },
+ "yusuf/c12-c": {
+  "people": 11,
+  "light": 0,
+  "who": "none"
+ },
+ "yusuf/c13-a": {
+  "people": 9,
+  "light": 0,
+  "who": "none"
+ },
+ "yusuf/c13-b": {
+  "people": 14,
+  "light": 2,
+  "who": "the woman in the white headscarf and the older man with the white beard, both standing behind the bowing line"
+ },
+ "yusuf/c13-b0": {
+  "people": 4,
+  "light": 0,
+  "who": "none"
+ },
+ "yusuf/c13-c": {
+  "people": 1,
+  "light": 0,
+  "who": "none"
+ },
+ "yusuf/c2-0": {
+  "people": 13,
+  "light": 0,
+  "who": "none"
+ },
+ "yusuf/c2-a": {
+  "people": 12,
+  "light": 0,
+  "who": "none"
+ },
+ "yusuf/c2-a0": {
+  "people": 10,
+  "light": 0,
+  "who": "none"
+ },
+ "yusuf/c2-b": {
+  "people": 10,
+  "light": 0,
+  "who": "none"
+ },
+ "yusuf/c2-b1": {
+  "people": 1,
+  "light": 0,
+  "who": "none"
+ },
+ "yusuf/c2-c": {
+  "people": 16,
+  "light": 1,
+  "who": "the elderly man sitting on the rug by the fire, whose skin is a light tan or olive tone compared to the dark brown skin of the others"
+ },
+ "yusuf/c2-d": {
+  "people": 4,
+  "light": 0,
+  "who": "none"
+ },
+ "yusuf/c2-p1": {
+  "people": 12,
+  "light": 1,
+  "who": "the elderly man sitting on the rug, who has light tan or olive skin compared to the dark brown skin of the others"
+ },
+ "yusuf/c2-p2": {
+  "people": 2,
+  "light": 0,
+  "who": "none"
+ },
+ "yusuf/c2-p3": {
+  "people": 12,
+  "light": 0,
+  "who": "none"
+ },
+ "yusuf/c2-s": {
+  "people": 1,
+  "light": 0,
+  "who": "none"
+ },
+ "yusuf/c2-w": {
+  "people": 1,
+  "light": 0,
+  "who": "none"
+ },
+ "yusuf/c3-a": {
+  "people": 8,
+  "light": 0,
+  "who": "none"
+ },
+ "yusuf/c3-b": {
+  "people": 10,
+  "light": 0,
+  "who": "none"
+ },
+ "yusuf/c4-a": {
+  "people": 3,
+  "light": 0,
+  "who": "none"
+ },
+ "yusuf/c4-b": {
+  "people": 10,
+  "light": 0,
+  "who": "none"
+ },
+ "yusuf/c4-c": {
+  "people": 7,
+  "light": 0,
+  "who": "none"
+ },
+ "yusuf/c5-a": {
+  "people": 1,
+  "light": 0,
+  "who": "none"
+ },
+ "yusuf/c5-b1": {
+  "people": 6,
+  "light": 0,
+  "who": "none"
+ },
+ "yusuf/c5-b2": {
+  "people": 6,
+  "light": 0,
+  "who": "none"
+ },
+ "yusuf/c5-b3": {
+  "people": 7,
+  "light": 0,
+  "who": "none"
+ },
+ "yusuf/c5-b4": {
+  "people": 10,
+  "light": 0,
+  "who": "none"
+ },
+ "yusuf/c5-c": {
+  "people": 3,
+  "light": 2,
+  "who": "the two guards standing in the background outside the cell door"
+ },
+ "yusuf/c5-d": {
+  "people": 1,
+  "light": 0,
+  "who": "none"
+ },
+ "yusuf/c5-w1": {
+  "people": 6,
+  "light": 0,
+  "who": "none"
+ },
+ "yusuf/c5-w2": {
+  "people": 5,
+  "light": 0,
+  "who": "none"
+ },
+ "yusuf/c6-a": {
+  "people": 3,
+  "light": 0,
+  "who": "none"
+ },
+ "yusuf/c6-b": {
+  "people": 3,
+  "light": 0,
+  "who": "none"
+ },
+ "yusuf/c6-c": {
+  "people": 3,
+  "light": 0,
+  "who": "none"
+ },
+ "yusuf/c7-a": {
+  "people": 2,
+  "light": 0,
+  "who": "none"
+ },
+ "yusuf/c7-b": {
+  "people": 9,
+  "light": 0,
+  "who": "none"
+ },
+ "yusuf/c7-c": {
+  "people": 10,
+  "light": 0,
+  "who": "none"
+ },
+ "yusuf/c8-a1": {
+  "people": 4,
+  "light": 0,
+  "who": "none"
+ },
+ "yusuf/c8-a2": {
+  "people": 11,
+  "light": 0,
+  "who": "none"
+ },
+ "yusuf/c8-a3": {
+  "people": 10,
+  "light": 1,
+  "who": "the woman in the tan hijab standing in the background behind the bowing woman has pale, light-colored skin"
+ },
+ "yusuf/c8-b": {
+  "people": 6,
+  "light": 0,
+  "who": "none"
+ },
+ "yusuf/c8-c": {
+  "people": 7,
+  "light": 0,
+  "who": "none"
+ },
+ "yusuf/c9-0": {
+  "people": 2,
+  "light": 0,
+  "who": "none"
+ },
+ "yusuf/c9-a": {
+  "people": 14,
+  "light": 0,
+  "who": "none"
+ },
+ "yusuf/c9-b": {
+  "people": 15,
+  "light": 15,
+  "who": "all 15 clearly visible men have light tan or olive skin instead of dark brown skin: the man on the far left weighing grain, the man in the foreground left weighing grain, the five men standing in a line on the left, the man leaning in the background, the two men standing behind the seated man, the seated man in blue, the three men standing on the far right, and the man in the foreground right pouring grain."
+ },
+ "yusuf/c9-b2": {
+  "people": 13,
+  "light": 0,
+  "who": "none"
+ },
+ "yusuf/c9-c": {
+  "people": 16,
+  "light": 0,
+  "who": "none"
+ },
+ "yusuf/p-b1": {
+  "people": 1,
+  "light": 0,
+  "who": "none"
+ },
+ "yusuf/p-b2": {
+  "people": 1,
+  "light": 0,
+  "who": "none"
+ },
+ "yusuf/p-b3": {
+  "people": 1,
+  "light": 0,
+  "who": "none"
+ },
+ "yusuf/p-b4": {
+  "people": 1,
+  "light": 0,
+  "who": "none"
+ },
+ "yusuf/p-benjamin": {
+  "people": 1,
+  "light": 0,
+  "who": "none"
+ },
+ "yusuf/p-yusuf": {
+  "people": 1,
+  "light": 0,
+  "who": "none"
+ },
+ "yusuf/p-yusufMan": {
+  "people": 1,
+  "light": 0,
+  "who": "none"
+ }
+}

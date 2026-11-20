@@ -1544,6 +1544,10 @@
     function paint() { Array.prototype.forEach.call(pick.children, function (b) { b.setAttribute("aria-checked", String(b.getAttribute("data-voice") === voiceSet())); }); }
     paint();
     row.appendChild(pick);
+    // better than either: the parent's own voice, recorded page by page (tools/record-voice/story.html)
+    var rec = mk("a", "voice-rec", "🎙️ Record this story in your voice →");
+    rec.href = "../../tools/record-voice/story.html?g=" + GAME;
+    row.appendChild(rec);
     box.insertBefore(row, box.querySelector("summary").nextSibling);
     // and the language, where the game has a translation (shared/lang.js); choosing one reloads the page in it
     if (!LANG) return;
@@ -1690,6 +1694,13 @@
         var guide = mk("a", "pnote-link", "All of this game’s notes on one page");
         guide.href = "../../guide.html?g=" + slug;
         body.appendChild(guide);
+      }
+      // this page in the parent's own voice: the guided recorder opens at this very page (tools/record-voice/story.html)
+      var stp = story[ci] && story[ci].steps[si];
+      if (slug && stp && stp.say) {
+        var recHere = mk("a", "pnote-link", "🎙️ Record this page in your voice");
+        recHere.href = "../../tools/record-voice/story.html?g=" + slug + "&at=" + encodeURIComponent(stp.say) + "&back=1";
+        body.appendChild(recHere);
       }
       // a parent who spots a mistake can say so; the game and page are filled in (owner, 19 November 2026)
       var tell = mk("a", "pnote-link", "Spot a mistake on this page? Tell us.");

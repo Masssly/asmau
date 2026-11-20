@@ -1,11 +1,18 @@
 {
-  "version": "2026.11.76",
+  "version": "2026.11.77",
   "date": "2026-11-20",
-  "buildId": "7ca743b6fd4e",
+  "buildId": "48ab835ad462",
   "notes": [
-    "Recording your voice: every line now says clearly where it stands: Recording with a timer, Saving…, Saved, sent to your other devices, too short, or what went wrong and what to do; the play button says whether it plays your recording or the computer voice."
+    "Recording your voice, made simple: Record a story in your voice, one page at a time with its picture (from each story's For parents, or any page's note); My recordings shows how much of each game is in your voice; add your other phones by scanning a code, with nothing to type."
   ],
   "history": [
+    {
+      "version": "2026.11.77",
+      "date": "2026-11-20",
+      "notes": [
+        "Recording your voice, made simple: Record a story in your voice, one page at a time with its picture (from each story's For parents, or any page's note); My recordings shows how much of each game is in your voice; add your other phones by scanning a code, with nothing to type."
+      ]
+    },
     {
       "version": "2026.11.76",
       "date": "2026-11-20",

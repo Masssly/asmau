@@ -737,3 +737,6 @@ button { touch-action: manipulation; -webkit-tap-highlight-color: transparent; }
 .offline-ctl .offline-txt { margin: 0 0 10px; font-size: 14px; }
 .offline-ctl .btn { font-size: 15px; padding: 9px 16px; border-radius: 999px; }
 .btn-ghost { background: transparent; color: inherit; border: 1px solid rgba(255,255,255,.35); }
+/* the way to record the story in a parent's own voice, under who reads it (tools/record-voice/story.html) */
+.voice-rec { display: inline-block; margin-top: 10px; padding: 9px 16px; border-radius: 999px; background: var(--gold, #f0b84b); color: #26190a;
+  font-family: var(--font-display); font-weight: 700; text-decoration: none; }

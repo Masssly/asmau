@@ -59,6 +59,20 @@ window.AsmauNarration = (function () {
     });
   }
 
+  // the keys ("<game>:<line id>") of every line recorded on this device, for showing progress
+  function recordedKeys() {
+    return openDb().then(function (db) {
+      if (!db) return [];
+      return new Promise(function (resolve) {
+        try {
+          var req = db.transaction(STORE, "readonly").objectStore(STORE).getAllKeys();
+          req.onsuccess = function () { resolve((req.result || []).map(String)); };
+          req.onerror = function () { resolve([]); };
+        } catch (err) { resolve([]); }
+      });
+    });
+  }
+
   var askedToKeep = false;
   function keepStorage() {
     if (askedToKeep) return;
@@ -318,6 +332,7 @@ window.AsmauNarration = (function () {
     stop: stop,
     setVolume: setVolume,
     getRecordedClip: getRecordedClip,
+    recordedKeys: recordedKeys,
     voiceSet: voiceSet,
     saveRecordedClip: saveRecordedClip,
     deleteRecordedClip: deleteRecordedClip,

@@ -21,28 +21,36 @@ module.exports = async function () {
 
   // an old WebM recording made before conversion existed
   await pa.evaluate(async () => { const rec = await new Promise(async (res) => { const s = await navigator.mediaDevices.getUserMedia({ audio: true }); const mr = new MediaRecorder(s, { mimeType: "audio/webm;codecs=opus" }); const ch = []; mr.ondataavailable = (e) => ch.push(e.data); mr.onstop = () => res(new Blob(ch, { type: "audio/webm;codecs=opus" })); mr.start(); setTimeout(() => mr.stop(), 1200); }); await window.AsmauNarration.saveRecordedClip("yusuf", "c1-a", rec); });
-  await pa.locator("#syncBox summary").click();
+  await pa.locator("#syncBox > summary").click();
   T.check(await pa.locator("#syncOff").isVisible(), "sync is off by default and offered");
   await pa.click("#syncNew"); const code = (await pa.textContent("#syncCodeShow")).trim();
-  T.check(/^[A-Z2-9]{4}(-[A-Z2-9]{4}){3}$/.test(code), "a family code is made");
-  T.check(await pa.locator("#syncGo").isDisabled(), "sync cannot be turned on until the code is confirmed saved");
-  await pa.check("#syncSaved"); await pa.click("#syncGo"); await done(pa);
+  T.check(/^[A-Z2-9]{4}(-[A-Z2-9]{4}){3}$/.test(code), "one tap turns it on and makes a family code");
+  T.check(await pa.locator("#qr svg").isVisible(), "a code to scan with the other device's camera is shown");
+  await done(pa);
   const conv = await info(pa);
   T.check(conv && conv.type === "audio/mpeg", "turning sync on converted the old recording to MP3");
   T.check([...fake.store.values()].every((v) => !v.bytes.includes(Buffer.from("OggS")) && !v.bytes.includes(Buffer.from("ID3"))), "what the server holds is encrypted, not an MP3 or Ogg stream");
 
   const B = await browser.newContext({ serviceWorkers: "block" }); await useFakeWorker(B, REAL, fake.url);
   const pb = await B.newPage(); pb.on("pageerror", (e) => errs.push(e.message));
-  await pb.goto(U, { waitUntil: "networkidle" }); await pb.locator("#syncBox summary").click();
+  await pb.goto(U, { waitUntil: "networkidle" }); await pb.locator("#syncBox > summary").click();
   await pb.fill("#syncCodeIn", "nonsense"); await pb.click("#syncUse");
   T.check((await pb.textContent("#syncStatus")).includes("does not look like"), "a malformed code is refused");
   await pb.fill("#syncCodeIn", code.toLowerCase()); await pb.click("#syncUse"); await pb.waitForTimeout(5000); await pb.waitForLoadState("networkidle");
   const got = await info(pb);
   T.check(got && got.size === conv.size, "the second device received the same recording");
   const C = await browser.newContext({ serviceWorkers: "block" }); await useFakeWorker(C, REAL, fake.url);
-  const pc = await C.newPage(); await pc.goto(U, { waitUntil: "networkidle" }); await pc.locator("#syncBox summary").click();
+  const pc = await C.newPage(); await pc.goto(U, { waitUntil: "networkidle" }); await pc.locator("#syncBox > summary").click();
   await pc.fill("#syncCodeIn", "ABCD-EFGH-JKLM-NPQR"); await pc.click("#syncUse"); await pc.waitForTimeout(4000);
   T.check((await info(pc)) === null, "a different code gets nothing");
+  // the other way in: the link inside the code to scan (join.html#<family code>)
+  const D = await browser.newContext({ serviceWorkers: "block" }); await useFakeWorker(D, REAL, fake.url);
+  const pd = await D.newPage(); pd.on("pageerror", (e) => errs.push(e.message));
+  await pd.goto(site.url + "tools/record-voice/join.html#" + code, { waitUntil: "networkidle" });
+  T.check(!(await pd.evaluate(() => location.hash)), "the family code is taken out of the address at once");
+  await pd.click("#joinYes"); await pd.waitForFunction(() => /arrived|already/.test(document.getElementById("joinMsg").textContent), null, { timeout: 15000 }).catch(() => {});
+  T.check(/1 recording arrived/.test(await pd.textContent("#joinMsg")), "scanning the code adds the device, and the recording arrives: " + (await pd.textContent("#joinMsg")));
+  await D.close();
 
   // redo on A reaches B and replaces the old online copy
   const before = fake.store.size;
@@ -60,6 +68,7 @@ module.exports = async function () {
   await pa.click("#syncNow"); await pa.waitForTimeout(3500); await pa.waitForLoadState("networkidle");
   T.check(![...fake.store.keys()].some((k) => k.endsWith("/yusuf:c1-a")) && (await info(pa)) === null, "and the other device removes its copy instead of uploading it again");
 
+  await pa.locator("#syncOn details.more summary").click();
   pa.on("dialog", (d) => d.accept()); await pa.click("#syncWipe"); await pa.waitForTimeout(1500);
   T.check(fake.store.size === 0, "'Delete my online copy' empties it");
   await pa.click("#syncOffBtn");

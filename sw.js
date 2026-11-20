@@ -17,15 +17,15 @@
 */
 
 // BEGIN GENERATED
-const RELEASE = "2026.11.76";
-const BUILD = "7ca743b6fd4e";
+const RELEASE = "2026.11.77";
+const BUILD = "48ab835ad462";
 // pack: [fingerprint of packs/<pack>.json, bytes, files]
 const PACKS = {
   "abdullah-quilliam":["257759b2cf",442,1],
   "adam":["696c79662a",2735383,55],
   "adam@m":["a617f3f408",4026446,147],
   "adam@w":["217fc43e27",4316508,147],
-  "core":["65f09f1a44",1076738,44],
+  "core":["67702c719d",1129343,48],
   "count-the-crescents":["c58ffd2f9d",83016,5],
   "count-the-crescents@m":["76410cb722",587647,52],
   "count-the-crescents@w":["238f9dbdf7",584828,52],

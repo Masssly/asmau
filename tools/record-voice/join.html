@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Add This Device — Asmau</title>
+<meta name="referrer" content="no-referrer">
+<link rel="manifest" href="../../app.webmanifest">
+<meta name="theme-color" content="#0c1530">
+<link rel="icon" href="../../icons/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../../icons/icon-180.png">
+<link rel="stylesheet" href="../../fonts/fonts.css">
+<link rel="stylesheet" href="../../shared/style.css">
+<style>
+  /* Opened by scanning the code on another device (tools/record-voice/index.html → Add another device). The family
+     code comes after the # of the link, which a browser never sends to any server. */
+  body { background: #0c1530; min-height: 100%; }
+  .wrap { max-width: 560px; }
+  h1 { font-family: var(--font-display); font-size: 24px; margin: 8px 0 10px; }
+  p { line-height: 1.55; }
+  .muted { color: var(--muted); font-size: 14px; }
+  .yes { display: block; width: 100%; padding: 14px; border: none; border-radius: 14px; background: var(--gold); color: #26190a;
+         font-family: var(--font-display); font-weight: 700; font-size: 18px; cursor: pointer; margin: 14px 0 8px; }
+  .yes:disabled { opacity: .6; }
+  .msg { font-size: 16px; font-weight: 600; border-radius: 12px; padding: 10px 12px; background: rgba(255,255,255,.05); }
+  .msg.ok { color: var(--teal); background: rgba(70,200,170,.12); }
+  .msg.err { color: #ffb4ae; background: rgba(201,84,79,.2); }
+  .msg:empty { display: none; }
+  .acts { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 12px; }
+  .acts a { padding: 10px 16px; border-radius: 999px; border: 1px solid var(--card-line); color: var(--cream); text-decoration: none;
+            font-family: var(--font-display); font-weight: 700; }
+  .code { font-family: monospace; font-size: 20px; letter-spacing: 1px; background: rgba(0,0,0,.3); border-radius: 10px; padding: 10px;
+          text-align: center; user-select: all; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="card">
+    <h1 id="h">Hear your family's recordings on this device</h1>
+    <p id="intro">Someone in your family recorded the stories in their own voice. Add this device, and those recordings play
+      here too, in every story. New recordings arrive each time Asmau opens.</p>
+    <button class="yes" id="joinYes" type="button">Yes, add this device</button>
+    <p class="msg" id="joinMsg" role="status" aria-live="polite"></p>
+    <div class="acts" id="acts" hidden>
+      <a href="../../index.html">Open the stories</a>
+      <a href="story.html">Record a story too</a>
+    </div>
+    <div id="homeNote" hidden>
+      <p class="muted">Using the Asmau icon on your home screen? It keeps its own recordings. Open it, go to
+        <strong>For parents → Your voice → My recordings</strong>, open <em>Hear my recordings on my other devices</em> and
+        type this family code:</p>
+      <p class="code" id="code"></p>
+    </div>
+    <p class="muted">The recordings are locked before they travel; only devices with your family's code can play them.
+      <a href="../../privacy.html" style="color:var(--gold)">Privacy note</a></p>
+  </div>
+</div>
+
+<script src="../../shared/config.js"></script>
+<script src="../../shared/media.js"></script>
+<script src="../../shared/narration.js"></script>
+<script src="../../shared/mp3.js"></script>
+<script src="../../shared/sync.js"></script>
+<script>
+(function () {
+  "use strict";
+  var $ = function (id) { return document.getElementById(id); }, S = window.AsmauSync;
+  var code = decodeURIComponent((location.hash || "").slice(1));
+  // the code leaves the address bar and the history at once
+  try { history.replaceState(null, "", location.pathname); } catch (e) { /* not important */ }
+  function say(kind, words) { $("joinMsg").textContent = words; $("joinMsg").className = "msg " + kind; }
+
+  if (!S.valid(code)) {
+    $("h").textContent = "This link is not complete";
+    $("intro").textContent = "Scan the code again, or type the family code in My recordings on this device.";
+    $("joinYes").hidden = true;
+    $("acts").hidden = false;
+    return;
+  }
+  var pretty = S.pretty(code);
+  $("code").textContent = pretty;
+  // an iPhone's home-screen icon has its own storage, apart from Safari's (scripts/KEEPING.md)
+  var standalone = (window.navigator.standalone === true) || (window.matchMedia && matchMedia("(display-mode: standalone)").matches);
+  if (/iPhone|iPad|iPod/.test(navigator.userAgent) && !standalone) $("homeNote").hidden = false;
+
+  var now = S.code();
+  if (now && now === pretty) { say("ok", "✓ This device is already added. Your family's recordings play here."); $("joinYes").hidden = true; $("acts").hidden = false; return; }
+  if (now) $("intro").textContent = "This device already uses another family code. Adding it here replaces that code on this device (the recordings already on it stay).";
+
+  $("joinYes").addEventListener("click", function () {
+    $("joinYes").disabled = true;
+    say("", "Adding this device and fetching the recordings…");
+    try { S.connect(pretty); } catch (e) { say("err", "✕ " + e.message); $("joinYes").disabled = false; return; }
+    S.sync().then(function (n) {
+      $("joinYes").hidden = true; $("acts").hidden = false;
+      say("ok", "✓ Done. " + (n.down ? n.down + " recording" + (n.down === 1 ? "" : "s") + " arrived" : "No recordings yet, they arrive as they are made") +
+        ". They play in every story on this device.");
+    }, function (e) {
+      $("joinYes").hidden = true; $("acts").hidden = false;
+      say(e && e.full ? "err" : "ok", e && e.full ? "✕ " + e.message : "✓ Added. The recordings could not be fetched just now (no connection?); they arrive next time Asmau opens.");
+    });
+  });
+})();
+</script>
+<script src="../../shared/gate.js"></script>
+<script src="../../shared/pwa.js"></script>
+</body>
+</html>

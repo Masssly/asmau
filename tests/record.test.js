@@ -47,6 +47,29 @@ module.exports = async function () {
   T.check(/✓ Saved on this device/.test(await b.status()), "it is saved even when the browser cannot convert the recording");
   await b.ctx.close();
 
+  // the guided way (tools/record-voice/story.html): one page at a time, with its picture, progress kept
+  const c = await browser.newContext({ permissions: ["microphone"], serviceWorkers: "block", viewport: { width: 390, height: 844 } });
+  const g = await c.newPage(); const errs = []; g.on("pageerror", (e) => errs.push(e.message));
+  await g.goto(site.url + "tools/record-voice/story.html", { waitUntil: "load" });
+  await g.waitForSelector(".game", { timeout: 15000 });
+  T.check(await g.locator(".game", { hasText: "Yusuf" }).count() === 1 && await g.locator(".game", { hasText: "Count" }).count() === 0, "the stories to record are listed (not the little ones' games)");
+  await g.goto(site.url + "tools/record-voice/story.html?g=nuh", { waitUntil: "load" });
+  await g.waitForSelector("#line:not(:empty)");
+  T.check(/page 1\.1/.test(await g.textContent(".where")) && /0 of \d+ in your voice/.test(await g.textContent("#count")), "a story opens at its first page, with how much is in your voice");
+  T.check(await g.locator("#rec").isVisible(), "the big record button is there");
+  await g.click("#rec"); await g.waitForTimeout(1500); await g.click("#rec");
+  await g.waitForFunction(() => /Saved/.test(document.getElementById("status").textContent), null, { timeout: 15000 }).catch(() => {});
+  T.check(/Saved/.test(await g.textContent("#status")) && /^1 of/.test(await g.textContent("#count")), "a page recorded there is saved and counted");
+  await g.click("#next"); await g.reload(); await g.waitForSelector("#line:not(:empty)");
+  T.check(/page 1\.2/.test(await g.textContent(".where")), "it comes back to the page where the parent stopped");
+  await g.goto(site.url + "tools/record-voice/story.html?g=nuh&at=n6-b&back=1", { waitUntil: "load" }); await g.waitForSelector("#line:not(:empty)");
+  T.check(/page 6\.2/.test(await g.textContent(".where")) && /Back to the story/.test(await g.textContent("#back")), "opened from a story's page, it shows that page and leads back to the story");
+  // the ways in from a story: its For parents box, and each page's note
+  await g.goto(site.url + "games/nuh/index.html", { waitUntil: "load" });
+  T.check(await g.locator("details.parents a.voice-rec").count() === 1, "a story's For parents box offers to record it in your voice");
+  T.check(errs.length === 0, "no page errors" + (errs[0] ? ": " + errs[0] : ""));
+  await c.close();
+
   await browser.close(); await site.close();
   return T.done();
 };

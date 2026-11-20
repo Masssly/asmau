@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Record a Story in Your Voice — Asmau</title>
+<link rel="manifest" href="../../app.webmanifest">
+<meta name="theme-color" content="#0c1530">
+<link rel="icon" href="../../icons/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../../icons/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="../../icons/icon-180.png">
+<link rel="stylesheet" href="../../fonts/fonts.css">
+<link rel="stylesheet" href="../../shared/style.css">
+<style>
+  /* One page of the story at a time, like reading the book aloud: the picture, the line, one big button. */
+  body { background: #0c1530; min-height: 100%; }
+  .wrap { max-width: 640px; }
+  .top { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+  .top h1 { font-family: var(--font-display); font-size: 20px; margin: 0; line-height: 1.15; }
+  .lead { color: var(--muted); font-size: 15px; line-height: 1.5; margin: 0 0 16px; }
+
+  /* the chooser */
+  .games { display: flex; flex-direction: column; gap: 10px; }
+  .game { display: flex; gap: 12px; align-items: center; text-decoration: none; color: var(--cream); padding: 10px; }
+  .game img { width: 64px; height: 64px; border-radius: 12px; object-fit: cover; flex: none; background: var(--card-line); }
+  .game .g-t { font-family: var(--font-display); font-weight: 700; font-size: 18px; }
+  .game .g-p { color: var(--muted); font-size: 13px; }
+  .game > div { flex: 1; min-width: 0; }
+  .bar { height: 6px; border-radius: 999px; background: rgba(255,255,255,.1); overflow: hidden; margin-top: 6px; }
+  .bar i { display: block; height: 100%; background: var(--teal); border-radius: 999px; }
+  .others { margin-top: 18px; font-size: 14px; color: var(--muted); }
+  .others a { color: var(--gold); }
+
+  /* one page */
+  .where { display: flex; justify-content: space-between; gap: 10px; align-items: baseline; font-size: 13px; color: var(--muted); margin-bottom: 6px; }
+  .where strong { color: var(--cream); font-family: var(--font-display); font-size: 15px; }
+  .pic { width: 100%; aspect-ratio: 1 / 1; max-height: 38vh; object-fit: contain; border-radius: 16px; background: #15244a; display: block; margin: 8px 0 12px; }
+  .line { font-size: 20px; line-height: 1.45; margin: 0 0 12px; }
+  .line[dir="rtl"] { font-size: 26px; }
+  .status { font-size: 15px; line-height: 1.4; border-radius: 12px; padding: 8px 12px; color: var(--muted); background: rgba(255,255,255,.05); min-height: 1.4em; }
+  .status.ok { color: var(--teal); background: rgba(70,200,170,.12); font-weight: 600; }
+  .status.busy { color: var(--gold); background: rgba(240,184,75,.12); font-weight: 600; }
+  .status.rec { color: #ffb4ae; background: rgba(201,84,79,.2); font-weight: 700; font-variant-numeric: tabular-nums; }
+  .status.warn { color: #ffd8a8; background: rgba(240,184,75,.12); }
+  .status.err { color: #ffb4ae; background: rgba(201,84,79,.2); font-weight: 600; }
+  @media (prefers-reduced-motion: no-preference) { .status.rec { animation: recpulse 1.2s ease-in-out infinite; } }
+  @keyframes recpulse { 50% { background: rgba(201,84,79,.34); } }
+
+  .main { display: flex; align-items: center; justify-content: center; gap: 14px; margin: 16px 0 10px; flex-wrap: wrap; }
+  .big { width: 92px; height: 92px; border-radius: 50%; border: none; cursor: pointer; font-family: var(--font-display); font-weight: 700;
+         font-size: 15px; color: #fff; background: #c9544f; display: flex; flex-direction: column; align-items: center; justify-content: center;
+         box-shadow: 0 6px 18px rgba(0,0,0,.35); }
+  .big .dot { font-size: 30px; line-height: 1; }
+  .big.stop { background: #e98a8a; color: #3a0d0d; }
+  .round { border: 1px solid var(--card-line); background: transparent; color: var(--cream); border-radius: 999px; padding: 10px 16px;
+           font-family: var(--font-display); font-weight: 700; font-size: 15px; cursor: pointer; }
+  .round:disabled { opacity: .4; cursor: default; }
+  .nav { display: flex; justify-content: space-between; gap: 10px; margin-top: 6px; }
+  .nav .round.go { background: var(--gold); color: #26190a; border-color: var(--gold); }
+  .jump { margin-top: 18px; display: flex; gap: 8px; align-items: center; font-size: 14px; color: var(--muted); }
+  .jump select { flex: 1; min-width: 0; font-family: var(--font-body); font-size: 15px; padding: 8px 10px; border-radius: 10px;
+                 border: 1px solid var(--card-line); background: var(--card); color: var(--cream); }
+  .tips { font-size: 14px; line-height: 1.5; color: var(--muted); }
+  .tips strong { color: var(--cream); }
+  .tips button { margin-top: 8px; }
+  .dev-acts { display: flex; gap: 8px; margin-top: 8px; flex-wrap: wrap; }
+  .dev-acts a { text-decoration: none; }
+  .round.go { background: var(--gold); color: #26190a; border-color: var(--gold); }
+  .done { text-align: center; padding: 18px 8px; }
+  .done .big-ok { font-size: 46px; }
+  .done h2 { font-family: var(--font-display); margin: 6px 0; }
+  .done .acts { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin-top: 14px; }
+  .done a.round { text-decoration: none; }
+  button:focus-visible, a:focus-visible, select:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <a class="btn-back" id="back" href="../../index.html">← Asmau</a>
+    <h1 id="title">Record a story in your voice</h1>
+  </div>
+
+  <!-- no game named: choose one -->
+  <section id="chooser" hidden>
+    <p class="lead">Read a story aloud, one page at a time, and your child hears <strong>you</strong> instead of the computer voice.
+      Read in any language your family speaks. You can stop whenever you like; Asmau keeps your place.</p>
+    <div class="games" id="games"><p class="lead">Loading the stories…</p></div>
+    <p class="others">Questions, answers and the little ones' games, all your recordings in one place, and using them on
+      your other devices: <a href="index.html">My recordings</a>.</p>
+  </section>
+
+  <!-- one story, page by page -->
+  <section id="reader" hidden>
+    <div class="card tips" id="tips" hidden>
+      <strong>Before you start:</strong> find a quiet spot and hold the phone about a hand's width from your mouth. Tap the
+      red button, read the words under the picture, then tap it again. You hear yourself straight away. Every page is saved
+      as you go.
+      <div><button class="round" id="tipsOk" type="button">Got it</button></div>
+    </div>
+    <div class="where"><span><strong id="chName"></strong> · <span id="pageNo"></span></span><span id="count"></span></div>
+    <div class="bar" aria-hidden="true"><i id="countBar" style="width:0%"></i></div>
+    <img class="pic" id="pic" alt="">
+    <p class="line" id="line"></p>
+    <div class="status" id="status" role="status" aria-live="polite"></div>
+    <div class="card tips" id="devices" hidden>
+      <strong>Want these on your phone, or a grandparent's?</strong> Turn on your other devices once, then scan a code with the
+      other phone's camera.
+      <div class="dev-acts"><a class="round go" href="index.html#devices">Set it up</a> <button class="round" id="devNo" type="button">Not now</button></div>
+    </div>
+    <div class="main">
+      <button class="round" id="listen" type="button">▶ Listen</button>
+      <button class="big" id="rec" type="button"><span class="dot">●</span><span id="recWord">Record</span></button>
+      <span style="width:92px" aria-hidden="true"></span>
+    </div>
+    <div class="nav">
+      <button class="round" id="prev" type="button">‹ Back</button>
+      <button class="round" id="next" type="button">Next page ›</button>
+    </div>
+    <label class="jump">Chapter <select id="chapters"></select></label>
+  </section>
+
+  <section id="finished" class="card done" hidden>
+    <div class="big-ok">🎉</div>
+    <h2>You reached the end of the story</h2>
+    <p id="finCount"></p>
+    <div class="acts">
+      <a class="round go" id="playIt" href="#">▶ Play the story</a>
+      <a class="round" href="story.html">Record another story</a>
+      <button class="round" id="again" type="button">Back to the first page</button>
+    </div>
+  </section>
+</div>
+
+<script src="../../shared/config.js"></script>
+<script src="../../shared/media.js"></script>
+<script src="../../shared/narration.js"></script>
+<script src="../../shared/mp3.js"></script>
+<script src="../../shared/sync.js"></script>
+<script src="../../shared/recorder.js"></script>
+<script>
+(function () {
+  "use strict";
+  var $ = function (id) { return document.getElementById(id); };
+  var slug = (/[?&]g=([a-z0-9-]+)/.exec(location.search) || [])[1];
+  window.AsmauBusy = function () { return window.AsmauRecorder.busy(); };   // an update never reloads mid-recording (shared/pwa.js)
+  function el(tag, cls, text) { var e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; }
+  function store(k, v) { try { if (v === undefined) return localStorage.getItem(k); localStorage.setItem(k, v); } catch (e) { return null; } }
+
+  // the narrated pages of a story, in order: [{id, pic, ch}] (a page's picture is its line's, unless the step names one)
+  function pagesOf(story) {
+    var out = [];
+    (story || []).forEach(function (c, ch) {
+      (c.steps || []).forEach(function (st) { if (st.say) out.push({ id: st.say, pic: st.pic || st.say, ch: ch }); });
+    });
+    return out;
+  }
+  // a game's story file sets window.STORY; loaded one at a time, as the game itself loads it
+  var queue = Promise.resolve();
+  function loadStory(g) {
+    var job = queue.then(function () {
+      return new Promise(function (resolve, reject) {
+        window.STORY = undefined;
+        var s = document.createElement("script");
+        s.src = "../../games/" + g + "/story.js";
+        s.onload = function () { var st = window.STORY; window.STORY = undefined; s.remove(); st ? resolve(st) : reject(new Error("no story")); };
+        s.onerror = function () { s.remove(); reject(new Error("no story")); };
+        document.head.appendChild(s);
+      });
+    });
+    queue = job.catch(function () {});
+    return job;
+  }
+
+  // ---- no game named: the stories, each with how much is in the parent's voice ----
+  if (!slug) {
+    $("chooser").hidden = false;
+    Promise.all([fetch("../../games/index.json").then(function (r) { return r.json(); }), window.AsmauNarration.recordedKeys()]).then(function (r) {
+      var mine = {}; r[1].forEach(function (k) { mine[k] = 1; });
+      var games = [];
+      (r[0].sections || []).forEach(function (s) { (s.games || []).forEach(function (g) { if (g.status !== "coming-soon") games.push(g); }); });
+      return Promise.all(games.map(function (g) {
+        return loadStory(g.slug).then(function (st) { return { g: g, pages: pagesOf(st) }; }, function () { return null; });
+      })).then(function (list) {
+        var box = $("games"); box.innerHTML = "";
+        list.filter(function (x) { return x && x.pages.length; }).forEach(function (x) {
+          var done = x.pages.filter(function (p) { return mine[x.g.slug + ":" + p.id]; }).length, n = x.pages.length;
+          var a = el("a", "card game"); a.href = "story.html?g=" + x.g.slug;
+          var img = el("img"); img.src = "../../games/" + x.g.slug + "/cover.webp"; img.alt = ""; img.loading = "lazy";
+          var d = el("div"); d.appendChild(el("div", "g-t", x.g.title));
+          d.appendChild(el("div", "g-p", done ? done + " of " + n + " pages in your voice" : n + " pages · not started"));
+          var bar = el("div", "bar"), i = el("i"); i.style.width = Math.round(done / n * 100) + "%"; bar.appendChild(i); d.appendChild(bar);
+          a.appendChild(img); a.appendChild(d); box.appendChild(a);
+        });
+      });
+    }).catch(function () { $("games").innerHTML = '<p class="lead">The stories could not be loaded. Check your connection and reload.</p>'; });
+    return;
+  }
+
+  // ---- one story ----
+  var base = "../../games/" + slug + "/", pages = [], lines = {}, chapters = [], at = 0, mine = {}, recording = null, title = slug;
+  var fromGame = /[?&]back=1/.test(location.search), atId = decodeURIComponent((/[?&]at=([^&]+)/.exec(location.search) || [])[1] || "");
+  $("back").href = fromGame ? base + "index.html" : "story.html";
+  $("back").textContent = fromGame ? "← Back to the story" : "← Stories";
+  // opened from a page of the story: going back returns to that same page
+  if (fromGame) $("back").addEventListener("click", function (e) { if (history.length > 1) { e.preventDefault(); history.back(); } });
+  $("playIt").href = base + "index.html";
+  var PLACE = "asmau-rec-place-" + slug;
+
+  function say(kind, words) { $("status").textContent = words; $("status").className = "status " + kind; }
+  function setCount() {
+    var n = pages.filter(function (p) { return mine[p.id]; }).length;
+    $("count").textContent = n + " of " + pages.length + " in your voice";
+    $("countBar").style.width = Math.round(n / pages.length * 100) + "%";
+    return n;
+  }
+  function pageNumber(id) { return pageNo[id] ? "page " + pageNo[id] : ""; }
+  var pageNo = {};
+
+  function show(i) {
+    at = Math.max(0, Math.min(pages.length - 1, i));
+    store(PLACE, String(at));
+    $("reader").hidden = false; $("finished").hidden = true;
+    var p = pages[at], l = lines[p.id] || { text: "" };
+    $("chName").textContent = (chapters[p.ch] && chapters[p.ch].title) || "";
+    $("pageNo").textContent = pageNumber(p.id);
+    var img = $("pic");
+    img.src = window.AsmauMedia.url(base + "assets/img/" + p.pic + ".webp");
+    img.alt = "";
+    $("line").textContent = l.text;
+    if (l.lang === "ar") $("line").setAttribute("dir", "rtl"); else $("line").removeAttribute("dir");
+    $("chapters").value = String(p.ch);
+    $("prev").disabled = at === 0;
+    $("next").textContent = at === pages.length - 1 ? "Finish ›" : "Next page ›";
+    paint();
+    // the next picture, so it is ready when the parent taps Next
+    if (pages[at + 1]) new Image().src = window.AsmauMedia.url(base + "assets/img/" + pages[at + 1].pic + ".webp");
+  }
+  function paint() {
+    var has = !!mine[pages[at].id];
+    $("listen").textContent = has ? "▶ My recording" : "▶ Computer voice";
+    $("next").classList.toggle("go", has);
+    if (has) say("ok", "✓ This page is in your voice. Tap Next, or record it again.");
+    else say("idle", "Not recorded yet. Tap the red button and read the words above.");
+    setCount();
+  }
+
+  $("listen").addEventListener("click", function () {
+    var p = pages[at], l = lines[p.id] || {};
+    window.AsmauNarration.say(slug, p.id, l.text, { lang: l.lang, audioBase: base + "assets/" + (window.AsmauNarration.voiceSet() === "m" ? "audio-m/" : "audio/") });
+  });
+
+  function setRecUi(on) {
+    $("rec").classList.toggle("stop", on);
+    $("rec").querySelector(".dot").textContent = on ? "■" : "●";
+    $("recWord").textContent = on ? "Stop" : (mine[pages[at].id] ? "Again" : "Record");
+    ["listen", "prev", "next", "chapters"].forEach(function (k) { $(k).disabled = on || (k === "prev" && at === 0); });
+  }
+
+  $("rec").addEventListener("click", function () {
+    if (recording) { var r = recording; recording = null; finish(r); return; }
+    window.AsmauNarration.stop && window.AsmauNarration.stop();
+    say("busy", "Asking for the microphone…");
+    var id = pages[at].id;
+    window.AsmauRecorder.start(function (t) {
+      say("rec", "● Recording… " + Math.floor(t / 60) + ":" + ("0" + (t % 60)).slice(-2) + " · tap Stop when you finish");
+    }).then(function (r) { recording = { r: r, id: id }; setRecUi(true); }, function (words) { say("err", String(words)); });
+  });
+
+  function finish(rec) {
+    setRecUi(false);
+    rec.r.stop().then(function (res) {
+      if (!res.blob) { say(res.kind, res.problem); setRecUi(false); return; }
+      return window.AsmauRecorder.save(slug, rec.id, res.blob, function (kind, words) {
+        if (pages[at].id === rec.id) say(kind, words);
+      }).then(function (saved) {
+        if (!saved) return;
+        mine[rec.id] = 1; setCount();
+        // after a few pages, once: the same recordings on the family's other devices (My recordings)
+        if (!window.AsmauSync.code() && !store("asmau-rec-devices-asked") && Object.keys(mine).length >= 3) $("devices").hidden = false;
+        if (pages[at].id === rec.id) {
+          $("listen").textContent = "▶ My recording"; $("next").classList.add("go"); $("recWord").textContent = "Again";
+          $("listen").click();                     // hear it straight away
+        }
+      });
+    });
+  }
+
+  $("prev").addEventListener("click", function () { show(at - 1); });
+  $("next").addEventListener("click", function () {
+    if (at < pages.length - 1) { show(at + 1); return; }
+    $("reader").hidden = true; $("finished").hidden = false;
+    var n = setCount();
+    $("finCount").textContent = n === pages.length ? "Every page of " + title + " is now in your voice." :
+      n + " of " + pages.length + " pages of " + title + " are in your voice. The others keep the computer voice until you record them.";
+  });
+  $("again").addEventListener("click", function () { show(0); });
+  $("chapters").addEventListener("change", function () {
+    var c = +$("chapters").value;
+    for (var i = 0; i < pages.length; i++) if (pages[i].ch === c) { show(i); return; }
+  });
+  $("devNo").addEventListener("click", function () { $("devices").hidden = true; store("asmau-rec-devices-asked", "1"); });
+  $("tipsOk").addEventListener("click", function () { $("tips").hidden = true; store("asmau-rec-tips", "1"); });
+
+  window.AsmauMedia.ready(slug);
+  Promise.all([
+    fetch(base + "game.json").then(function (r) { return r.json(); }),
+    loadStory(slug),
+    fetch(base + "narration.json").then(function (r) { return r.json(); }),
+    fetch(base + "parents/pages.json").then(function (r) { return r.ok ? r.json() : {}; }).catch(function () { return {}; }),
+    window.AsmauNarration.recordedKeys(),
+    window.AsmauMedia.ready(slug)
+  ]).then(function (r) {
+    title = r[0].title || slug;
+    document.title = "Record " + title + " in your voice — Asmau";
+    $("title").textContent = "Record " + title + " in your voice";
+    pages = pagesOf(r[1]);
+    chapters = r[1].map(function (c) { return { id: c.id, icon: c.icon, title: c.title }; });
+    r[2].forEach(function (l) { lines[l.id] = l; });
+    Object.keys((r[3] && r[3].pages) || {}).forEach(function (n) { var id = (r[3].pages[n] || "").split(":")[1]; if (id) pageNo[id] = n; });
+    r[4].forEach(function (k) { if (k.indexOf(slug + ":") === 0) mine[k.slice(slug.length + 1)] = 1; });
+    if (!pages.length) throw new Error("no pages");
+    chapters.forEach(function (c, i) { if (pages.some(function (p) { return p.ch === i; })) { var o = el("option", "", (i + 1) + ". " + c.title); o.value = String(i); $("chapters").appendChild(o); } });
+    if (!store("asmau-rec-tips")) $("tips").hidden = false;
+    var want = atId ? pages.findIndex(function (p) { return p.id === atId; }) : -1;
+    var saved = +(store(PLACE) || 0);
+    show(want >= 0 ? want : (saved >= 0 && saved < pages.length ? saved : 0));
+  }).catch(function () {
+    $("reader").hidden = false;
+    $("reader").innerHTML = '<p class="lead">This story could not be loaded. Check your connection and reload, or <a href="story.html">choose another story</a>.</p>';
+  });
+})();
+</script>
+<script src="../../shared/gate.js"></script>
+<script src="../../shared/pwa.js"></script>
+</body>
+</html>

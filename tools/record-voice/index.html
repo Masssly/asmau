@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Record Your Voice — Asmau</title>
+<title>My Recordings — Asmau</title>
 <link rel="manifest" href="../../app.webmanifest">
 <meta name="theme-color" content="#0c1530">
 <link rel="icon" href="../../icons/favicon.svg" type="image/svg+xml">
@@ -31,6 +31,14 @@
   .transfer p { margin: 0 0 10px; color: var(--muted); font-size: 14px; line-height: 1.55; }
   .transfer .controls { display: flex; flex-wrap: wrap; gap: 8px; }
   .transfer label.mini-btn { display: inline-block; }
+  .rec-story { display: block; margin: 12px 0 6px; padding: 12px 16px; border-radius: 14px; background: var(--gold); color: #26190a;
+    font-family: var(--font-display); font-weight: 700; font-size: 16px; text-decoration: none; text-align: center; }
+  .small-note { font-size: 13px !important; margin: 0 !important; }
+  .transfer summary { cursor: pointer; font-size: 14px; color: var(--muted); }
+  .game-sum { font-size: 13px; color: var(--muted); margin: -8px 0 14px; }
+  .foot { text-align: center; margin: 18px 0; font-size: 12px; color: var(--muted); }
+  .foot a { color: var(--gold); }
+  .intro a.rec-story { color: #26190a; }
   .mic-state { font-size: 13px; color: var(--muted); margin-bottom: 14px; }
   .mic-state.ok { color: var(--teal); }
   .mic-state.err { color: #e98a8a; }
@@ -41,7 +49,7 @@
   .row .meta { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; }
   .row .text { font-size: 16px; }
   .row .text[dir="rtl"] { font-size: 20px; }
-  .row .id { font-size: 11px; color: var(--muted); font-family: monospace; }
+  .row .id { font-size: 12px; color: var(--muted); white-space: nowrap; }
   .row .status { font-size: 14px; line-height: 1.4; color: var(--muted); border-radius: 10px; padding: 6px 10px; background: rgba(255,255,255,.04); }
   .row .status.ok { color: var(--teal); background: rgba(70,200,170,.10); font-weight: 600; }
   .row .status.busy { color: var(--gold); background: rgba(240,184,75,.10); font-weight: 600; }
@@ -75,71 +83,63 @@
   .sync .code-in { flex: 1; min-width: 190px; padding: 8px 12px; border-radius: 10px; border: 1px solid var(--card-line); background: rgba(255,255,255,.08); color: var(--cream); font-family: monospace; font-size: 16px; text-transform: uppercase; }
   .sync .code-show { font-family: monospace; font-size: 22px; letter-spacing: 1px; background: rgba(0,0,0,.3); border-radius: 10px; padding: 12px; text-align: center; user-select: all; }
   .sync .check { display: flex; gap: 8px; align-items: center; font-size: 14px; margin: 10px 0; }
+  .add-box { border-top: 1px solid var(--card-line); margin-top: 12px; padding-top: 4px; }
+  .qr { background: #fff; border-radius: 14px; padding: 10px; width: min(240px, 70vw); margin: 6px auto 4px; }
+  .qr svg { display: block; width: 100%; height: auto; }
 </style>
 </head>
 <body>
 <div class="wrap">
   <div class="top">
     <a class="btn-back" href="../../index.html">← Asmau</a>
-    <h1>Record Your Voice</h1>
+    <h1>My recordings</h1>
   </div>
 
   <div class="card intro">
-    <p>
-      Record your own voice for the stories. <strong>Your recording always takes priority</strong> over the computer
-      voice, on the device you recorded it on. Read each line <strong>in whatever language your family speaks</strong>:
-      the words on screen stay in English, but what your child hears can be yours. Record a few lines at a time; the rest
-      keep the computer voice until you get to them. Recordings stay on this device unless you choose to send them
-      somewhere (below). <a href="../../privacy.html">Privacy note</a>
-    </p>
-    <details class="more">
-      <summary>Want a recording to play for everyone?</summary>
-      <p>Press Download on a clip and add the file to the game's <code>assets/audio/</code> folder in the repository
-        (see the game's <code>narration.json</code> for the exact filename). Think before committing: once pushed,
-        it is part of a public page.</p>
-    </details>
+    <p>Every line recorded in your voice on this device, game by game. Your recording always plays instead of the
+      computer voice. Read in <strong>whatever language your family speaks</strong>. Recordings stay on this device unless
+      you turn on your other devices below. <a href="../../privacy.html">Privacy note</a></p>
+    <a class="rec-story" href="story.html">🎙️ Record a story, page by page, with its pictures →</a>
+    <p class="small-note">Here you can also record the questions and answers in the stories, and the little ones' games.</p>
   </div>
 
   <details class="card sync" id="syncBox">
-    <summary>📲 Use my recordings on my phone and other devices</summary>
+    <summary>📲 Hear my recordings on my other devices</summary>
     <div id="syncOff">
-      <p>Record once and hear it on every device, with no file to move. This is <strong>optional</strong>. If you
-        skip it, nothing changes and nothing leaves this device.</p>
-      <p>You get a <strong>family code</strong> instead of an account. Your recordings are locked with it on this
-        device before they are sent, so nobody else, including whoever runs Asmau, can listen to them.</p>
-      <p class="warn"><strong>Keep your code safe.</strong> If you lose it, the recordings kept online are gone
-        for good and cannot be recovered. You will still have the ones on your devices.</p>
+      <p>Record on one device and hear it on all of them: your phone, a tablet, a grandparent's phone far away. There is
+        nothing to sign up for, and it is <strong>optional</strong>: if you skip it, nothing leaves this device.</p>
+      <div class="controls"><button class="mini-btn download" id="syncNew">Turn this on</button></div>
+      <p class="hint">Turned on already on another device? There, tap <em>Add another device</em> and scan its code with
+        this device's camera. Or type the family code here:</p>
       <div class="controls">
-        <button class="mini-btn download" id="syncNew">Create my family code</button>
-      </div>
-      <p><strong>How:</strong> on the device that has your recordings, press <em>Create my family code</em> and
-        save the code. Then open this same page on your phone, type the code under <em>Already have a code?</em>,
-        and the recordings appear there.</p>
-      <p>Already have a code?</p>
-      <div class="controls">
-        <input id="syncCodeIn" class="code-in" placeholder="XXXX-XXXX-XXXX-XXXX" autocomplete="off" autocapitalize="characters" spellcheck="false">
+        <input id="syncCodeIn" class="code-in" placeholder="XXXX-XXXX-XXXX-XXXX" autocomplete="off" autocapitalize="characters" spellcheck="false" aria-label="Family code">
         <button class="mini-btn" id="syncUse">Use this code</button>
       </div>
     </div>
-    <div id="syncNewBox" hidden>
-      <p>Your family code:</p>
-      <p class="code-show" id="syncCodeShow"></p>
-      <div class="controls"><button class="mini-btn" id="syncCopy">Copy</button></div>
-      <p class="warn">Write it down or save it in your password manager <strong>now</strong>. It is shown here
-        once. You will need it to add your other devices.</p>
-      <label class="check"><input type="checkbox" id="syncSaved"> I have saved my code somewhere safe</label>
-      <div class="controls"><button class="mini-btn download" id="syncGo" disabled>Turn on sync</button></div>
-    </div>
     <div id="syncOn" hidden>
-      <p>Sync is on for this device. Code: <strong id="syncCodeMask"></strong>
-        <button class="mini-btn" id="syncShow" type="button">Show</button> <button class="mini-btn" id="syncCopyOn" type="button">Copy</button></p>
-      <p class="hint">Keep the code somewhere safe (your phone's notes or a password manager). It is the only way back to your
-        recordings on a new phone. Lost it? Open this page on any device where sync is on and tap Show.</p>
+      <p>✓ <strong>On for this device.</strong> Your recordings are locked here before they travel, so nobody else,
+        including whoever runs Asmau, can listen to them.</p>
       <div class="controls">
-        <button class="mini-btn download" id="syncNow">Sync now</button>
-        <button class="mini-btn" id="syncOffBtn">Turn off on this device</button>
-        <button class="mini-btn delete" id="syncWipe">Delete my online copy</button>
+        <button class="mini-btn download" id="syncAdd">📱 Add another device</button>
+        <button class="mini-btn" id="syncNow">Sync now</button>
       </div>
+      <div id="addBox" class="add-box" hidden>
+        <p><strong>On the other phone or tablet, open the camera and point it at this code.</strong> Tap the link that appears:
+          your recordings arrive there.</p>
+        <div class="qr" id="qr" role="img" aria-label="Code to scan with the other device's camera"></div>
+        <p class="hint">No camera, or a computer? Open asmau.org there, go to <em>My recordings</em>, and type this family code:</p>
+        <p class="code-show" id="syncCodeShow"></p>
+        <div class="controls"><button class="mini-btn" id="syncCopy">Copy the code</button></div>
+        <p class="warn">Keep this code somewhere safe, in your phone's notes or a password manager. It is the way back to
+          your online copy on a new phone. You can see it again here on any device where this is on.</p>
+      </div>
+      <details class="more">
+        <summary>Turn off, or delete the online copy</summary>
+        <div class="controls">
+          <button class="mini-btn" id="syncOffBtn">Turn off on this device</button>
+          <button class="mini-btn delete" id="syncWipe">Delete my online copy</button>
+        </div>
+      </details>
     </div>
     <p class="status" id="syncUsage"></p>
     <div class="support web-only" id="syncSupport" hidden>
@@ -151,13 +151,14 @@
         it does not reveal your family code or your recordings. You never have to donate to use Asmau.</p>
       <div class="controls"><a class="mini-btn download" href="https://ko-fi.com/dagbanli" target="_blank" rel="noopener">Donate on Ko-fi ♥</a></div>
     </div>
-    <p class="status" id="syncStatus"></p>
+    <p class="status" id="syncStatus" role="status" aria-live="polite"></p>
   </details>
 
-  <div class="card transfer">
+  <details class="card transfer">
+    <summary>Other ways: move recordings with a file</summary>
     <p>
-      <strong>Or move them by hand.</strong> Save everything recorded on this device to one file, then
-      load that file on another device (for example, record on your laptop, load on the Fire tablet).
+      Save everything recorded on this device to one file, then load that file on another device (for example, record
+      on your laptop, load on the Fire tablet).
     </p>
     <div class="controls">
       <button class="mini-btn download" id="shareBtn" hidden>📲 Send to my other device</button>
@@ -168,16 +169,16 @@
     <p class="status" id="transferStatus"></p>
     <p class="status">
       You do not have to do any of this: recordings work on the device they were made on, with nothing to set up.
-      · <span data-asmau-version hidden></span> · <a href="../../reset.html">Page looks old? Refresh</a>
     </p>
-  </div>
+  </details>
 
 
 
   <select id="gameSelect"></select>
-  <p class="mic-state" id="micState">Microphone not requested yet — press Record on any line below to allow it.</p>
+  <p class="game-sum" id="gameSum"></p>
 
   <div id="rows"></div>
+  <p class="status foot"><span data-asmau-version hidden></span> · <a href="../../reset.html">Page looks old? Refresh</a></p>
 </div>
 
 <script src="../../shared/config.js"></script>
@@ -185,49 +186,24 @@
 <script src="../../shared/narration.js"></script>
 <script src="../../shared/mp3.js"></script>
 <script src="../../shared/sync.js"></script>
+<script src="../../shared/recorder.js"></script>
+<script src="../../shared/vendor/qrcode.min.js"></script>
 <script>
 (function () {
   "use strict";
 
   var gameSelect = document.getElementById("gameSelect");
   var rowsBox = document.getElementById("rows");
-  var micState = document.getElementById("micState");
 
-  var micStreamPromise = null;
-  var activeRecorder = null;
   // an update never reloads this page while a line is being recorded (shared/pwa.js)
-  window.AsmauBusy = function () { return !!(activeRecorder && activeRecorder.state === "recording"); };
-
-  function getMicStream() {
-    if (!micStreamPromise) {
-      micStreamPromise = navigator.mediaDevices.getUserMedia({ audio: true }).then(function (stream) {
-        micState.textContent = "Microphone ready.";
-        micState.className = "mic-state ok";
-        return stream;
-      }).catch(function (err) {
-        micState.textContent = "Couldn't access the microphone (" + err.name + "). Check your browser's site permissions.";
-        micState.className = "mic-state err";
-        micStreamPromise = null;
-        throw err;
-      });
-    }
-    return micStreamPromise;
-  }
-
-  function pickMimeType() {
-    // MP4 first: an iPhone records it natively and decodes it reliably (newer iPhones also offer WebM, which they
-    // could not always convert); every recording is turned into an MP3 afterwards anyway
-    var candidates = ["audio/mp4", "audio/webm;codecs=opus", "audio/webm", "audio/ogg;codecs=opus"];
-    for (var i = 0; i < candidates.length; i++) {
-      if (window.MediaRecorder && MediaRecorder.isTypeSupported(candidates[i])) return candidates[i];
-    }
-    return "";
-  }
+  window.AsmauBusy = function () { return window.AsmauRecorder.busy(); };
+  var titles = {}, pageNo = {}, mine = {}, lineCount = 0, recording = null;
 
   function loadGames() {
-    // every game in every section that has lines to record
-    return fetch("../../manifest.json").then(function (r) { return r.json(); }).then(function (m) {
-      var slugs = (m.sections || []).reduce(function (all, s) { return all.concat(s.games || []); }, m.games || []);
+    // every game that can be played and has lines to record
+    return fetch("../../games/index.json").then(function (r) { return r.json(); }).then(function (m) {
+      var slugs = [];
+      (m.sections || []).forEach(function (s) { (s.games || []).forEach(function (g) { if (g.status !== "coming-soon") { slugs.push(g.slug); titles[g.slug] = g.title; } }); });
       return Promise.all(slugs.map(function (slug) {
         return loadNarration(slug).then(function (lines) { return lines.length ? slug : null; });
       })).then(function (list) { return list.filter(Boolean); });
@@ -254,7 +230,7 @@
     if (item.lang === "ar") text.setAttribute("dir", "rtl");
     var id = document.createElement("span");
     id.className = "id";
-    id.textContent = item.id + (item.lang === "ar" ? " · Arabic" : "");
+    id.textContent = [pageNo[slug + ":" + item.id] ? "page " + pageNo[slug + ":" + item.id] : "", item.lang === "ar" ? "Arabic" : ""].filter(Boolean).join(" · ");
     meta.appendChild(text);
     meta.appendChild(id);
 
@@ -308,75 +284,29 @@
       window.AsmauNarration.say(slug, item.id, item.text, { lang: item.lang, audioBase: "../../games/" + slug + "/assets/" + (window.AsmauNarration.voiceSet() === "m" ? "audio-m/" : "audio/") });
     });
 
-    function micProblem(err) {
-      var name = err && err.name;
-      if (name === "NotAllowedError" || name === "SecurityError")
-        return "✕ Asmau may not use the microphone. Allow the microphone for asmau.org in your browser's settings (on iPhone: Settings → Apps → Safari → Microphone), then reload this page.";
-      if (name === "NotFoundError" || name === "OverconstrainedError") return "✕ No microphone was found on this device.";
-      if (name === "NotReadableError") return "✕ The microphone is busy in another app (a call?). Close it, then try again.";
-      if (!window.MediaRecorder) return "✕ This browser cannot record. Try Safari on iPhone or Chrome on Android or a computer.";
-      return "✕ The microphone did not start (" + (name || "unknown error") + "). Reload the page and try again.";
-    }
-
     recordBtn.addEventListener("click", function () {
-      if (recordBtn.classList.contains("recording")) {
-        if (activeRecorder && activeRecorder.state !== "inactive") activeRecorder.stop();
+      if (recording && recording.btn === recordBtn) {
+        var r = recording; recording = null;
+        recordBtn.classList.remove("recording"); recordBtn.textContent = "● Record";
+        r.rec.stop().then(function (res) {
+          if (!res.blob) { refreshStatus(res.problem, res.kind); return; }
+          return window.AsmauRecorder.save(slug, item.id, res.blob, say).then(function (saved) {
+            if (!saved) return;
+            mine[slug + ":" + item.id] = 1; summary(slug);
+            downloadBtn.disabled = deleteBtn.disabled = false; playBtn.textContent = "▶ Play my recording";
+            showUsage();
+          });
+        });
         return;
       }
-      if (activeRecorder) { say("warn", "Another line is still recording. Tap Stop on that line first."); return; }
-      if (!window.MediaRecorder) { say("err", micProblem(null)); return; }
+      if (recording) { say("warn", "Another line is still recording. Tap Stop on that line first."); return; }
       say("busy", "Asking for the microphone…");
-      getMicStream().then(function (stream) {
-        var mimeType = pickMimeType();
-        var recorder;
-        try { recorder = new MediaRecorder(stream, mimeType ? { mimeType: mimeType } : undefined); }
-        catch (err) { say("err", micProblem(err)); return; }
-        var chunks = [], began = Date.now();
-        recorder.ondataavailable = function (e) { if (e.data.size > 0) chunks.push(e.data); };
-        recorder.onerror = function (e) { stopTicker(); say("err", "✕ The recording stopped with an error" + (e && e.error ? " (" + e.error.name + ")" : "") + ". Try again."); };
-        recorder.onstop = function () {
-          stopTicker();
-          recordBtn.classList.remove("recording");
-          recordBtn.textContent = "● Record";
-          activeRecorder = null;
-          var raw = new Blob(chunks, { type: (chunks[0] && chunks[0].type) || mimeType || "audio/webm" });
-          if (!raw.size) { say("err", "✕ Nothing was recorded. Check that the microphone is allowed and not muted, then try again."); return; }
-          if (Date.now() - began < 700) {
-            refreshStatus("Too short to keep: tap Record, read the line, then tap Stop.", "warn");
-            return;
-          }
-          say("busy", "Saving…");
-          // saved as an MP3 so it plays on any of the parent's devices (the original if this browser cannot convert it)
-          window.AsmauMp3.convert(raw).then(function (blob) {
-            var saving = window.AsmauNarration.saveRecordedClip(slug, item.id, blob);
-            var tooLong = new Promise(function (resolve, reject) { setTimeout(function () { reject(new Error("timeout")); }, 15000); });
-            return Promise.race([saving, tooLong]).then(function () { return blob; }, function (err) {
-              var full = err && (err.name === "QuotaExceededError" || /quota/i.test(err.message || ""));
-              say("err", full ? "✕ Not saved: this device is out of space. Remove some recordings or downloaded games (Without internet), then try again."
-                : "✕ Not saved: this browser would not store the recording" + (err && err.message === "timeout" ? " (it took too long)" : "") +
-                  ". Close other Asmau tabs, then try again. In a private window recordings cannot be kept.");
-              throw { shown: true };
-            });
-          }).then(function (blob) {
-            if (!window.AsmauSync.code()) return refreshStatus();
-            // sync is on: it is saved here already; now say how sending it goes
-            refreshStatus("✓ Saved on this device · sending to your other devices…", "ok");
-            return window.AsmauSync.pushOne(slug + ":" + item.id, blob).then(function (sent) {
-              refreshStatus(sent ? "✓ Saved and sent to your other devices." : undefined);
-              showUsage();
-            }, function (e) {
-              if (e && e.full) { window.__asmauFull = true; showUsage(); refreshStatus("✓ Saved on this device · not sent: your online space is full (see above).", "warn"); return; }
-              refreshStatus("✓ Saved on this device · not sent yet (no connection). It goes with your next Sync now.", "warn");
-            });
-          }).catch(function (e) { if (!(e && e.shown)) say("err", "✕ Not saved: something went wrong (" + ((e && e.message) || "unknown") + "). Try again."); });
-        };
-        activeRecorder = recorder;
-        recorder.start();
-        recordBtn.classList.add("recording");
-        recordBtn.textContent = "■ Stop";
-        var tick = function () { var t = Math.floor((Date.now() - began) / 1000); say("rec", "● Recording… " + Math.floor(t / 60) + ":" + ("0" + (t % 60)).slice(-2) + " · tap Stop when you finish the line"); };
-        tick(); ticker = setInterval(tick, 500);
-      }).catch(function (err) { say("err", micProblem(err)); });
+      window.AsmauRecorder.start(function (t) {
+        say("rec", "● Recording… " + Math.floor(t / 60) + ":" + ("0" + (t % 60)).slice(-2) + " · tap Stop when you finish the line");
+      }).then(function (rec) {
+        recording = { rec: rec, btn: recordBtn };
+        recordBtn.classList.add("recording"); recordBtn.textContent = "■ Stop";
+      }, function (words) { say("err", String(words)); });
     });
 
     downloadBtn.addEventListener("click", function () {
@@ -397,6 +327,7 @@
     deleteBtn.addEventListener("click", function () {
       say("busy", "Removing…");
       window.AsmauNarration.deleteRecordedClip(slug, item.id).then(function () {
+        delete mine[slug + ":" + item.id]; summary(slug);
         return refreshStatus("Removed: the computer voice reads this line again.", "idle");
       }).then(function () {
         return window.AsmauSync.dropOne(slug + ":" + item.id).then(function (gone) {
@@ -418,16 +349,23 @@
     return row;
   }
 
+  // "34 of 160 lines in your voice", for the chosen game and in the list of games
+  var counts = {};
+  function summary(slug) {
+    var n = Object.keys(mine).filter(function (k) { return k.indexOf(slug + ":") === 0; }).length, all = counts[slug] || 0;
+    var words = (titles[slug] || slug) + (all ? " · " + n + " of " + all + " lines in your voice" : "");
+    var opt = gameSelect.querySelector('option[value="' + slug + '"]'); if (opt) opt.textContent = words;
+    if (gameSelect.value === slug) $("gameSum").textContent = n ? "Lines with a ✓ play in your voice; the others keep the computer voice." : "";
+  }
   function renderGame(slug) {
     rowsBox.innerHTML = "";
-    loadNarration(slug).then(function (items) {
-      if (!items.length) {
-        rowsBox.innerHTML = '<p class="empty">This game has no narration.json yet.</p>';
-        return;
-      }
-      items.forEach(function (item) {
-        rowsBox.appendChild(renderRow(slug, item));
-      });
+    try { history.replaceState(null, "", "?game=" + slug); } catch (e) { /* not important */ }
+    Promise.all([loadNarration(slug), fetch("../../games/" + slug + "/parents/pages.json").then(function (r) { return r.ok ? r.json() : {}; }).catch(function () { return {}; })]).then(function (r) {
+      var items = r[0];
+      Object.keys((r[1] && r[1].pages) || {}).forEach(function (n) { var id = (r[1].pages[n] || "").split(":")[1]; if (id) pageNo[slug + ":" + id] = n; });
+      if (!items.length) { rowsBox.innerHTML = '<p class="empty">This game has nothing to record.</p>'; return; }
+      counts[slug] = items.length; summary(slug);
+      items.forEach(function (item) { rowsBox.appendChild(renderRow(slug, item)); });
     });
   }
 
@@ -448,11 +386,21 @@
   }
   function syncView() {
     var c = S.code();
-    $("syncOff").hidden = !!c || !!pendingCode;
-    $("syncNewBox").hidden = !pendingCode;
+    $("syncOff").hidden = !!c;
     $("syncOn").hidden = !c;
-    if (c) $("syncCodeMask").textContent = "••••-••••-••••-" + c.slice(-4);
+    if (!c) $("addBox").hidden = true;
     if (c) $("syncBox").open = true;
+  }
+  // the code to scan: a link to join.html with the family code after the #, the part of a link a browser never sends
+  function showAdd() {
+    var c = S.code(); if (!c) return;
+    $("syncCodeShow").textContent = c;
+    var link = new URL("join.html", location.href).href + "#" + c;
+    try {
+      var q = window.qrcode(0, "M"); q.addData(link); q.make();
+      $("qr").innerHTML = q.createSvgTag({ cellSize: 6, margin: 3, scalable: true });
+    } catch (e) { $("qr").textContent = ""; }
+    $("addBox").hidden = false;
   }
   function runSync() {
     syncSay("Syncing…");
@@ -462,31 +410,26 @@
       if (n.down) location.reload();
     }).catch(function (e) { if (e && e.full) window.__asmauFull = true; showUsage(); syncSay(e && e.full ? e.message : "Could not sync: " + e.message); });
   }
-  $("syncNew").addEventListener("click", function () { pendingCode = S.newCode(); $("syncCodeShow").textContent = pendingCode; syncView(); });
-  $("syncCopy").addEventListener("click", function () {
-    try { navigator.clipboard.writeText(pendingCode).then(function () { syncSay("Copied."); }); } catch (e) { syncSay("Select the code and copy it."); }
+  $("syncNew").addEventListener("click", function () {
+    S.connect(S.newCode()); syncView(); showAdd(); runSync();
+    syncSay("✓ Turned on. Now add your other devices with the code below.");
   });
-  $("syncSaved").addEventListener("change", function () { $("syncGo").disabled = !this.checked; });
-  $("syncGo").addEventListener("click", function () { S.connect(pendingCode); pendingCode = null; syncView(); runSync(); });
+  $("syncAdd").addEventListener("click", function () { if ($("addBox").hidden) showAdd(); else $("addBox").hidden = true; });
+  $("syncCopy").addEventListener("click", function () {
+    var c = S.code();
+    try { navigator.clipboard.writeText(c).then(function () { syncSay("Copied. Save it somewhere safe."); }, function () { syncSay("Your code: " + c); }); } catch (e) { syncSay("Your code: " + c); }
+  });
   $("syncUse").addEventListener("click", function () {
     try { S.connect($("syncCodeIn").value); $("syncCodeIn").value = ""; syncView(); runSync(); } catch (e) { syncSay(e.message); }
   });
   $("syncNow").addEventListener("click", runSync);
-  $("syncShow").addEventListener("click", function () {
-    var c = S.code(), shown = this.textContent === "Hide";
-    $("syncCodeMask").textContent = shown ? "••••-••••-••••-" + c.slice(-4) : c;
-    this.textContent = shown ? "Show" : "Hide";
-  });
-  $("syncCopyOn").addEventListener("click", function () {
-    var c = S.code();
-    try { navigator.clipboard.writeText(c).then(function () { syncSay("Copied. Save it somewhere safe."); }, function () { syncSay("Your code: " + c); }); } catch (e) { syncSay("Your code: " + c); }
-  });
   $("syncOffBtn").addEventListener("click", function () { S.disconnect(); syncSay("Sync is off on this device. Your online copy is still there until you delete it."); syncView(); });
   $("syncWipe").addEventListener("click", function () {
     if (!confirm("Delete every recording kept online for this family code? Recordings on your devices stay.")) return;
     S.removeAll().then(function (r) { syncSay("Deleted " + r.deleted + " online recording" + (r.deleted === 1 ? "" : "s") + "."); }).catch(function (e) { syncSay("Could not delete: " + e.message); });
   });
   syncView();
+  if (location.hash === "#devices") { $("syncBox").open = true; setTimeout(function () { $("syncBox").scrollIntoView({ block: "start" }); }, 300); }
   if (S.code()) runSync();
 
   // Send the recordings through the device's own share sheet (AirDrop, a
@@ -546,11 +489,16 @@
     slugs.forEach(function (slug) {
       var opt = document.createElement("option");
       opt.value = slug;
-      opt.textContent = slug;
+      opt.textContent = titles[slug] || slug;
       gameSelect.appendChild(opt);
     });
     gameSelect.addEventListener("change", function () { renderGame(gameSelect.value); });
-    renderGame(slugs[0]);
+    var want = (/[?&]game=([a-z0-9-]+)/.exec(location.search) || [])[1];
+    gameSelect.value = slugs.indexOf(want) >= 0 ? want : slugs[0];
+    window.AsmauNarration.recordedKeys().then(function (keys) {
+      keys.forEach(function (k) { mine[k] = 1; });
+      renderGame(gameSelect.value);
+    });
   });
 })();
 </script>

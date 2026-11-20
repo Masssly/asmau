@@ -231,7 +231,9 @@ const SOCIAL_NAME = /^[a-z0-9][a-z0-9-]{0,100}\.(mp4|jpg)$/;
 const SOCIAL_MAX = 30 * 1024 * 1024;
 async function socialUpload(req, env, name) {
   const want = env.SOCIAL_TOKEN || "";
-  if (!want || (req.headers.get("x-social-token") || "") !== want) return new Response("forbidden", { status: 403 });
+  // the key as saved in a session's environment may carry a "Bearer " prefix or stray spaces
+  const got = (req.headers.get("x-social-token") || "").trim().replace(/^Bearer\s+/i, "").trim();
+  if (!want || got !== want.trim()) return new Response("forbidden", { status: 403 });
   if (req.method !== "PUT" || !SOCIAL_NAME.test(name)) return new Response("bad request", { status: 400 });
   const bytes = await req.arrayBuffer();
   if (!bytes.byteLength || bytes.byteLength > SOCIAL_MAX) return new Response("too large or empty", { status: 413 });

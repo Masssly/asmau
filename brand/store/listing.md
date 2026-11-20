@@ -47,7 +47,7 @@ HOW IT WORKS
 
 SAFE FOR CHILDREN
 • Free. No adverts, no in-app purchases, no accounts.
-• No tracking, no analytics, nothing collected about you or your child.
+• No tracking and no analytics on the device; nothing collected about you or your child. We only count, on our server, how often each game is downloaded and from which country.
 • Each game works without internet once it has been opened.
 
 For ages 1½ to 9. Under 5, play together with a grown-up.

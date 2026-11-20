@@ -125,6 +125,7 @@ module.exports = async function () {
     await page.selectOption("#gameSelect", "yusuf"); await page.waitForTimeout(300);
     const rec = page.locator(".row").first().locator("button.record");
     await rec.click(); await page.waitForTimeout(900); await rec.click(); await page.waitForTimeout(1500);
+    await page.locator("details.transfer > summary").click();      // moving by file is folded under "Other ways"
     const [dl] = await Promise.all([page.waitForEvent("download"), page.click("#exportBtn")]);
     const file = path.join(require("os").tmpdir(), "asmau-test-voice.json"); await dl.saveAs(file);
     const bundle = JSON.parse(fs.readFileSync(file, "utf8"));

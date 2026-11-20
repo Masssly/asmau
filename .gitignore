@@ -31,3 +31,4 @@ scripts/rahmah-art/refs/*.png
 games/*/assets/
 scripts/yusuf-art/refs/[A-Z]*.png
 scripts/video/out/
+scripts/social/out/

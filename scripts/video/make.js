@@ -2,6 +2,7 @@
 /*
   Trailers and Shorts from a game's own pictures, voice and music (for YouTube and the other accounts; brand/SOCIAL.md).
     NODE_PATH=$(npm root -g) node scripts/video/make.js <slug> [trailer|short]
+    ... make.js <slug> short --scenes c3-a,c3-b,c3-c --name yusuf-2026-11-23    a weekly social clip (scripts/social/README.md)
   Writes scripts/video/out/<slug>-trailer.mp4 (1920x1080) and <slug>-short.mp4 (1080x1920). Needs the game's media
   (node scripts/fetch-media.js) and ffmpeg. Each scene: the picture whole (never cropped, so no one is cut off), its line
   as a caption, read by the default voice; the game's title music quietly underneath.
@@ -15,8 +16,16 @@ const { chromium } = require("playwright");
 const ROOT = path.join(__dirname, "..", "..");
 const OUT = path.join(__dirname, "out");
 const plans = JSON.parse(fs.readFileSync(path.join(__dirname, "plans.json"), "utf8"));
-const slug = process.argv[2], kinds = process.argv[3] ? [process.argv[3]] : ["trailer", "short"];
-const plan = plans[slug]; if (!plan) { console.error("no plan for " + slug); process.exit(1); }
+const argv = process.argv.slice(2), opt = (k) => { const i = argv.indexOf(k); return i >= 0 ? argv.splice(i, 2)[1] : null; };
+const scenes = opt("--scenes"), name = opt("--name");
+const slug = argv[0], kinds = argv[1] ? [argv[1]] : ["trailer", "short"];
+// a game without a plan can still make a clip from chosen scenes: its title from game.json, the soundtrack's "Wonder" under it
+let plan = plans[slug];
+if (!plan && scenes) { const g = JSON.parse(fs.readFileSync(path.join(__dirname, "..", "..", "games", slug, "game.json"), "utf8")); plan = { title: g.title, kicker: "Free Islamic story games",
+  // "Wonder" from the soundtrack: heard in nearly every game, so it fits any of them
+  music: JSON.parse(fs.readFileSync(path.join(__dirname, "..", "soundtrack", "tracks.json"), "utf8")).tracks[0].mp3 }; }
+if (!plan) { console.error("no plan for " + slug + " (or give --scenes)"); process.exit(1); }
+if (scenes) kinds.forEach((k) => { plan = Object.assign({}, plan, { [k]: scenes.split(",") }); });
 // the voice read a little faster than in the game (pitch kept), so a trailer stays short
 const SPEED = plan.speed || plans._speed || 1.15;
 const G = path.join(ROOT, "games", slug);
@@ -76,8 +85,8 @@ function card(kind, end) {
 (async () => {
   fs.mkdirSync(OUT, { recursive: true });
   const tmp = fs.mkdtempSync(path.join(OUT, "tmp-"));
-  let music = path.join(OUT, slug + "-music.mp3");
-  if (!fs.existsSync(music)) execFileSync("curl", ["-sSfL", "-A", "asmau-video", "-o", music, plan.music]);
+  let music = plan.music ? path.join(OUT, slug + "-music.mp3") : null;
+  if (music && !fs.existsSync(music)) execFileSync("curl", ["-sSfL", "-A", "asmau-video", "-o", music, plan.music]);
   const b = await chromium.launch();
   for (const kind of kinds) {
     const wide = kind === "trailer", W = wide ? 1920 : 1080, H = wide ? 1080 : 1920;
@@ -113,10 +122,12 @@ function card(kind, end) {
     // sound: each line starts 0.6 s into its scene; the music underneath, lower while the voice speaks, faded at the end
     const total = dur(silent); let at = 0; const voices = [];
     parts.forEach(([, sec, voice]) => { if (voice) voices.push([voice, at + 0.6]); at += sec; });
-    const inputs = ["-i", silent, "-stream_loop", "-1", "-i", music, ...voices.flatMap(([v]) => ["-i", v])];
+    // without music, a silent track stands in for it so the mix is the same
+    const bed = music ? ["-stream_loop", "-1", "-i", music] : ["-f", "lavfi", "-i", "anullsrc=r=48000:cl=stereo"];
+    const inputs = ["-i", silent, ...bed, ...voices.flatMap(([v]) => ["-i", v])];
     const vparts = voices.map(([, s], i) => `[${i + 2}:a]atempo=${SPEED},adelay=${Math.round(s * 1000)}|${Math.round(s * 1000)},volume=1.0[a${i}]`).join(";");
     const mix = `[1:a]atrim=0:${total.toFixed(2)},volume=0.16,afade=t=in:d=1.5,afade=t=out:st=${(total - 2.5).toFixed(2)}:d=2.5[m];${vparts};[m]${voices.map((_, i) => `[a${i}]`).join("")}amix=inputs=${voices.length + 1}:normalize=0,loudnorm=I=-16:TP=-1.5[a]`;
-    const out = path.join(OUT, `${slug}-${kind}.mp4`);
+    const out = path.join(OUT, `${name || slug + "-" + kind}.mp4`);
     ff([...inputs, "-filter_complex", mix, "-map", "0:v", "-map", "[a]", "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-ar", "48000", "-t", total.toFixed(2), "-movflags", "+faststart", out]);
     console.log(out, total.toFixed(1) + " s");
   }

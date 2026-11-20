@@ -2,8 +2,12 @@
 
 Every Friday evening a scheduled Claude task makes the next week's three posts from the games and puts them in the
 **Asmau social queue** (https://claude.ai/artifact/AXbK2FN6eWeqBtxUN84ddu). The owner approves them on his phone and puts
-the approved ones into Buffer, which publishes them to TikTok, YouTube Shorts and LinkedIn. Claude never posts anything
-itself. Decided by the owner on 20 November 2026.
+Approve, and the page has Metricool (free plan) schedule it for TikTok and YouTube. LinkedIn (not on Metricool's free
+plan) the owner posts by hand with the page's copy button. Claude schedules only what the owner approved, and never a
+draft. Decided by the owner on 20 November 2026.
+
+Metricool's free plan publishes 20 posts a month, and a post sent to two networks counts twice. So: the Short goes to
+TikTok and YouTube (2), the picture and the note to TikTok only (1 each): 4 a week, about 17 a month. Never more.
 
 Read brand/SOCIAL.md (who we talk to, voice, British spelling) and CLAUDE.md (pictures, sources) first. They win over this file.
 
@@ -28,8 +32,12 @@ before any comes back. Read the queue's existing posts (`game`, `pages`) so a pa
    frames of the result before uploading.
 3. **Picture and note:** `ffmpeg -i games/<slug>/assets/img/<id>.webp -q:v 2 scripts/social/out/<slug>-<topic>-<date>.jpg`
    (not in git).
-4. Upload the files with the Artifact tool (`url` of the queue, `asset: true`, `file_paths`), and use the `/_blob/...`
-   urls it returns.
+4. Upload each file twice:
+   - to the queue, for the owner to see: the Artifact tool (`url` of the queue, `asset: true`, `file_paths`); keep the
+     `/_blob/...` url it returns;
+   - to a public address, for Metricool: `curl -sS -X PUT --data-binary @<file> https://asmau-sync.mohammed-sadat-abdulai.workers.dev/social/<file name>`
+     (the environment adds the X-Social-Token header; names are lower-case letters, digits and hyphens, `.mp4` or
+     `.jpg`). It answers `{"url": ...}`. A 403 means the key is missing from the environment: stop and say so.
 5. Write each post with ArtifactData into the collection `posts`, doc id `<date>-<slug>-<topic>`:
 
    | Field | |
@@ -39,10 +47,33 @@ before any comes back. Read the queue's existing posts (`game`, `pages`) so a pa
    | `kind`, `game`, `title` | `short` / `picture` / `note`; the game's title; a short title for the owner |
    | `pages` | the game's page numbers used, e.g. `["6.2","6.3"]` |
    | `clip`, `image` | the `/_blob/` urls (`""` when none) |
+   | `publicClip`, `publicImage` | the public urls from the upload |
+   | `metricool` | `{date, info}`: what the page sends to Metricool when the owner approves (below) |
    | `why` | the day to post it, which pages, anything the owner must set (YouTube: made for kids for a children's clip) |
    | `captions` | `tiktok`, `youtube` (Shorts only), `linkedin` |
    | `status` | `draft` |
    | `comment`, `at` | `""`; the time written |
+
+## The `metricool` field
+
+`date` is the post's time with its offset, 17:00 Europe/Berlin on its day (`2026-11-30T17:00:00+01:00`; +02:00 in summer
+time). `info` is Metricool's createScheduledPost post object, exactly:
+
+```json
+{"autoPublish": true, "draft": false, "descendants": [], "firstCommentText": "", "hasNotReadNotes": false,
+ "media": ["<public url>"], "mediaAltText": [], "providers": [{"network": "tiktok"}, {"network": "youtube"}],
+ "publicationDate": {"dateTime": "2026-11-30T17:00:00", "timezone": "Europe/Berlin"}, "shortener": false,
+ "smartLinkData": {"ids": []}, "text": "<the TikTok caption>",
+ "tiktokData": {"disableComment": false, "disableDuet": false, "disableStitch": false, "privacyOption": "PUBLIC_TO_EVERYONE",
+   "commercialContentThirdParty": false, "commercialContentOwnBrand": false, "title": "<the title>", "autoAddMusic": false,
+   "photoCoverIndex": 0, "isAigc": true},
+ "youtubeData": {"title": "<the YouTube title line>", "type": "short", "privacy": "public", "tags": ["<2 or 3>"],
+   "category": "EDUCATION", "madeForKids": true, "isAiGeneratedContent": false}}
+```
+
+`providers` is TikTok and YouTube for a Short, TikTok alone for a picture or a note (then no `youtubeData`, and
+`isAigc` false: TikTok ignores it on photos). `isAigc` true on every clip: the pictures and voices are made by AI.
+`madeForKids` true: the clips are cartoon stories for children. The brand is 8248331 (the page knows it).
 
 ## The captions
 

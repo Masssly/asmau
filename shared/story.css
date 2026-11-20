@@ -731,12 +731,11 @@ button { touch-action: manipulation; -webkit-tap-highlight-color: transparent; }
   background: rgba(255,255,255,.06); border: 2px solid rgba(255,255,255,.16); color: inherit; font: inherit; font-size: 15px; cursor: pointer; text-align: left; }
 .voice-pick button[aria-checked="true"] { border-color: var(--gold); background: rgba(240,180,60,.16); }
 .voice-pick button[aria-checked="true"]::after { content: "✓"; margin-left: auto; color: var(--gold); font-weight: 800; }
-.voice-pick button span { font-size: 22px; }
+.voice-pick .vp-e { font-size: 22px; }
+.voice-pick .vp-t { display: flex; flex-direction: column; line-height: 1.2; }
+.voice-pick .vp-t small { font-size: 12.5px; opacity: .75; }
 .voice-pick button:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
 .offline-ctl { margin: 10px 0 14px; padding: 12px; border-radius: 14px; background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.14); }
 .offline-ctl .offline-txt { margin: 0 0 10px; font-size: 14px; }
 .offline-ctl .btn { font-size: 15px; padding: 9px 16px; border-radius: 999px; }
 .btn-ghost { background: transparent; color: inherit; border: 1px solid rgba(255,255,255,.35); }
-/* the way to record the story in a parent's own voice, under who reads it (tools/record-voice/story.html) */
-.voice-rec { display: inline-block; margin-top: 10px; padding: 9px 16px; border-radius: 999px; background: var(--gold, #f0b84b); color: #26190a;
-  font-family: var(--font-display); font-weight: 700; text-decoration: none; }

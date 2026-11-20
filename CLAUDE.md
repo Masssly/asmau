@@ -94,6 +94,9 @@ things work; this file holds the decisions that must not be lost between session
   `assets/audio-m/` and every line needs one (the checker refuses a game without): `VOICE=m PROJECT=asmau-assets python3
   scripts/generate-voice-gemini.py games/<slug>`, then `VOICE=m ... scripts/voice-check.py games/<slug>`. Achird tends to
   repeat the end of a line; the check catches it.
+- **Families see them by name** (21 November 2026): Aoede is **Aunty Salma** ("warm and gentle"), Achird is **Uncle Sani**
+  ("calm and steady"), in index.html (three places), shared/story-engine.js and shared/i18n. Not names of prophets or of
+  people in the games.
 - A parent's own recording always replaces it. The device's built-in voice never reads Arabic.
 - Then listen back: `PROJECT=asmau-assets python3 scripts/voice-check.py games/<slug>` (Gemini hears each clip and
   flags extra or wrong words; it once caught a line read in Hausa and two said twice). Redo a flagged clip by

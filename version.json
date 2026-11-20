@@ -1,12 +1,18 @@
 {
-  "version": "2026.11.77",
+  "version": "2026.11.78",
   "date": "2026-11-20",
-  "buildId": "bf732426d787",
+  "buildId": "387ae0d5c277",
   "notes": [
-    "Recording your voice, made simple: Record a story in your voice, one page at a time with its picture (from each story's For parents, or any page's note); My recordings shows how much of each game is in your voice; add your other phones by scanning a code, with nothing to type.",
-    "On iPhone, every recording came back empty (“Nothing was recorded”): fixed. The microphone is now opened fresh for each recording and closed after."
+    "The two computer voices have names: Aunty Salma (warm and gentle) and Uncle Sani (calm and steady). Each story's 'tell this story in your own voice' opens the page-by-page recorder. For parents → Your voice is shorter to read: the main things first, the rest a tap away."
   ],
   "history": [
+    {
+      "version": "2026.11.78",
+      "date": "2026-11-20",
+      "notes": [
+        "The two computer voices have names: Aunty Salma (warm and gentle) and Uncle Sani (calm and steady). Each story's 'tell this story in your own voice' opens the page-by-page recorder. For parents → Your voice is shorter to read: the main things first, the rest a tap away."
+      ]
+    },
     {
       "version": "2026.11.77",
       "date": "2026-11-20",

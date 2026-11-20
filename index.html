@@ -176,7 +176,15 @@
     border: 1px solid var(--card-line); background: rgba(255,255,255,.05); color: var(--cream); font: inherit; cursor: pointer; text-align: left; }
   .voice-pick button[aria-checked="true"] { border-color: var(--gold); background: rgba(240,180,60,.16); }
   .voice-pick button[aria-checked="true"]::after { content: "✓"; margin-left: auto; color: var(--gold); font-weight: 800; }
-  .voice-pick button span { font-size: 22px; }
+  .voice-pick .vp-e { font-size: 22px; }
+  /* For parents: the point and the action first; the rest folded under a short question, never cut (owner, 21 November 2026) */
+  .p-more { border-top: 1px solid rgba(255,255,255,.12); padding: 10px 0 2px; }
+  .p-more:first-of-type { margin-top: 14px; }
+  .p-more > summary { cursor: pointer; font-family: var(--font-display); font-weight: 700; font-size: 15px; color: var(--cream); list-style-position: inside; }
+  .p-more[open] > summary { color: var(--gold); margin-bottom: 6px; }
+  .p-link2 { display: block; margin: 8px 0 4px; color: var(--gold); font-weight: 600; text-decoration: none; }
+  .voice-pick .vp-t { display: flex; flex-direction: column; line-height: 1.2; }
+  .voice-pick .vp-t small { font-size: 12.5px; opacity: .75; }
   .voice-pick button:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
   .p-steps li { margin-bottom: 6px; }
   .p-checks { list-style: none; padding: 0; margin: 0 0 10px; }
@@ -251,8 +259,8 @@
       <div class="p-voice">
         <p class="p-voice-h"><strong>🗣️ Who reads the stories</strong> <small>until you record your own</small></p>
         <div class="voice-pick" role="radiogroup" aria-label="Who reads the stories" data-voice-pick>
-        <button type="button" role="radio" data-voice="w" aria-checked="true"><span>👩🏿</span> A woman’s voice</button>
-        <button type="button" role="radio" data-voice="m" aria-checked="false"><span>👨🏿</span> A man’s voice</button>
+        <button type="button" role="radio" data-voice="w" aria-checked="true"><span class="vp-e">👩🏿</span><span class="vp-t"><b>Aunty Salma</b><small>warm and gentle</small></span></button>
+        <button type="button" role="radio" data-voice="m" aria-checked="false"><span class="vp-e">👨🏿</span><span class="vp-t"><b>Uncle Sani</b><small>calm and steady</small></span></button>
       </div>
       </div>
 
@@ -287,35 +295,43 @@
 
     <div class="p-view" data-view="record" hidden>
       <h3>Your voice is the best voice for your child</h3>
-      <p>The voice reading the stories today is a computer. It is there so that every game works from the first day, and
-        it is <strong>not meant to stay</strong>. Children listen differently when it is a parent or a grandparent telling
-        the story. Record the stories yourself, and the game plays your voice from then on.</p>
+      <p>Read a story aloud once, in any language, and the game plays <strong>your</strong> voice from then on.</p>
       <a class="big-link" href="tools/record-voice/story.html">🎙️ Record a story in your voice →</a>
-      <h4>In your own language</h4>
-      <p>Read each line in whatever language your family speaks: Dagbanli, Hausa, Twi, Yoruba, Swahili, Arabic, German,
-        English or any other. The words on the screen stay in English; what your child hears can be yours. The computer
-        voice also says the Arabic words and prayers, and may not say every one perfectly; your recording replaces it there too.</p>
-      <h4>How it works</h4>
-      <ol class="p-steps">
-        <li>Choose a story. Its pages come one at a time, each with its picture and its words.</li>
-        <li>Tap the red button, read the words, tap it again. You hear yourself at once; tap <em>Again</em> to redo it, or go
-          on to the next page. Every page is saved as you go.</li>
-        <li>Open the story: your pages play straight away. Pages you have not recorded yet keep the computer voice, so you
-          can record a few each evening; Asmau remembers where you stopped.</li>
-      </ol>
-      <h4>On your other devices, and for grandparents</h4>
-      <p>Recordings stay on the device you made them on. To hear them on a phone and a tablet too, make a
-        <strong>family code</strong> in My recordings. Anyone with the code, a grandparent far away for example, can record
-        on their own phone and the whole family hears it. Recordings are locked on the device before they travel; if you
-        lose the code, the copy kept online is gone.</p>
-      <a class="big-link" href="tools/record-voice/index.html">📂 My recordings, and your other devices →</a>
-      <h4>Until then: which computer voice?</h4>
-      <p class="p-small">Lines you have not recorded are read by a computer voice. Choose the one your family prefers; your
-        own recordings always play first.</p>
-<div class="voice-pick" role="radiogroup" aria-label="Who reads the stories" data-voice-pick>
-        <button type="button" role="radio" data-voice="w" aria-checked="true"><span>👩🏿</span> A woman’s voice</button>
-        <button type="button" role="radio" data-voice="m" aria-checked="false"><span>👨🏿</span> A man’s voice</button>
+      <a class="p-link2" href="tools/record-voice/index.html">📂 My recordings · hear them on your other devices →</a>
+      <h4>Until then, who reads?</h4>
+      <div class="voice-pick" role="radiogroup" aria-label="Who reads the stories" data-voice-pick>
+        <button type="button" role="radio" data-voice="w" aria-checked="true"><span class="vp-e">👩🏿</span><span class="vp-t"><b>Aunty Salma</b><small>warm and gentle</small></span></button>
+        <button type="button" role="radio" data-voice="m" aria-checked="false"><span class="vp-e">👨🏿</span><span class="vp-t"><b>Uncle Sani</b><small>calm and steady</small></span></button>
       </div>
+      <details class="p-more">
+        <summary>How it works</summary>
+        <ol class="p-steps">
+          <li>Choose a story. Its pages come one at a time, each with its picture and its words.</li>
+          <li>Tap the red button, read the words, tap it again. You hear yourself at once; tap <em>Again</em> to redo it, or go
+            on to the next page. Every page is saved as you go.</li>
+          <li>Open the story: your pages play straight away. Pages you have not recorded yet keep the computer voice, so you
+            can record a few each evening; Asmau remembers where you stopped.</li>
+        </ol>
+      </details>
+      <details class="p-more">
+        <summary>Your language, and the Arabic words</summary>
+        <p>Read each line in whatever language your family speaks: Dagbanli, Hausa, Twi, Yoruba, Swahili, Arabic, German,
+          English or any other. The words on the screen stay in English; what your child hears can be yours. The computer
+          voice also says the Arabic words and prayers, and may not say every one perfectly; your recording replaces it there too.</p>
+      </details>
+      <details class="p-more">
+        <summary>Why not the computer voice?</summary>
+        <p>The voice reading the stories today is a computer. It is there so that every game works from the first day, and
+          it is <strong>not meant to stay</strong>. Children listen differently when it is a parent or a grandparent telling
+          the story. Your own recordings always play first.</p>
+      </details>
+      <details class="p-more">
+        <summary>Phones, tablets and grandparents</summary>
+        <p>Recordings stay on the device you made them on. To hear them on a phone and a tablet too, turn on your other
+          devices in <a href="tools/record-voice/index.html">My recordings</a> and scan the code with the other phone. A
+          grandparent far away can do the same, record on their own phone, and the whole family hears it. Recordings are
+          locked on the device before they travel; keep the family code safe, because without it the copy kept online is gone.</p>
+      </details>
     </div>
 
     <div class="p-view" data-view="privacy" hidden>
@@ -418,8 +434,8 @@
       <p class="p-small">A computer voice reads every line you have not recorded yourself. Choose a woman’s or a man’s
         voice; your own recordings always play first.</p>
       <div class="voice-pick" role="radiogroup" aria-label="Who reads the stories" data-voice-pick>
-        <button type="button" role="radio" data-voice="w" aria-checked="true"><span>👩🏿</span> A woman’s voice</button>
-        <button type="button" role="radio" data-voice="m" aria-checked="false"><span>👨🏿</span> A man’s voice</button>
+        <button type="button" role="radio" data-voice="w" aria-checked="true"><span class="vp-e">👩🏿</span><span class="vp-t"><b>Aunty Salma</b><small>warm and gentle</small></span></button>
+        <button type="button" role="radio" data-voice="m" aria-checked="false"><span class="vp-e">👨🏿</span><span class="vp-t"><b>Uncle Sani</b><small>calm and steady</small></span></button>
       </div>
     </div>
 

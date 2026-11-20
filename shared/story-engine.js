@@ -1526,9 +1526,11 @@
     row.appendChild(mk("p", "voice-ctl-h", "🗣️ Who reads the story (until you record your own):"));
     var pick = mk("div", "voice-pick");
     pick.setAttribute("role", "radiogroup"); pick.setAttribute("aria-label", "Who reads the story");
-    [["w", "👩🏿", "A woman’s voice"], ["m", "👨🏿", "A man’s voice"]].forEach(function (v) {
+    // the two computer voices, by name (owner, 21 November 2026): Gemini's Aoede and Achird (scripts/generate-voice-gemini.py)
+    [["w", "👩🏿", "Aunty Salma", "warm and gentle"], ["m", "👨🏿", "Uncle Sani", "calm and steady"]].forEach(function (v) {
       var b = mk("button"); b.type = "button"; b.setAttribute("role", "radio"); b.setAttribute("data-voice", v[0]);
-      b.appendChild(mk("span", "", v[1])); b.appendChild(document.createTextNode(" " + v[2]));
+      b.appendChild(mk("span", "vp-e", v[1]));
+      var t = mk("span", "vp-t"); t.appendChild(mk("b", "", v[2])); t.appendChild(mk("small", "", v[3])); b.appendChild(t);
       b.addEventListener("click", function () {
         try { localStorage.setItem("asmau-voice", v[0]); } catch (e) { /* private window: this visit only */ }
         paint();
@@ -1544,10 +1546,6 @@
     function paint() { Array.prototype.forEach.call(pick.children, function (b) { b.setAttribute("aria-checked", String(b.getAttribute("data-voice") === voiceSet())); }); }
     paint();
     row.appendChild(pick);
-    // better than either: the parent's own voice, recorded page by page (tools/record-voice/story.html)
-    var rec = mk("a", "voice-rec", "🎙️ Record this story in your voice →");
-    rec.href = "../../tools/record-voice/story.html?g=" + GAME;
-    row.appendChild(rec);
     box.insertBefore(row, box.querySelector("summary").nextSibling);
     // and the language, where the game has a translation (shared/lang.js); choosing one reloads the page in it
     if (!LANG) return;

@@ -72,7 +72,7 @@ module.exports = async function () {
   T.check(/page 6\.2/.test(await g.textContent(".where")) && /Back to the story/.test(await g.textContent("#back")), "opened from a story's page, it shows that page and leads back to the story");
   // the ways in from a story: its For parents box, and each page's note
   await g.goto(site.url + "games/nuh/index.html", { waitUntil: "load" });
-  T.check(await g.locator("details.parents a.voice-rec").count() === 1, "a story's For parents box offers to record it in your voice");
+  T.check(/record-voice\/story\.html\?g=nuh/.test(await g.getAttribute("a.voice-link", "href")), "a story's title page offers to record it in your voice, page by page");
   T.check(errs.length === 0, "no page errors" + (errs[0] ? ": " + errs[0] : ""));
   await c.close();
 

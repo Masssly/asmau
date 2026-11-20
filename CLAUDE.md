@@ -124,6 +124,11 @@ things work; this file holds the decisions that must not be lost between session
   from donations, grants and later a merchandise shop on the website (web-only, never in the store apps). How we talk
   about Asmau, and what sets it apart: brand/PITCH.md.
 
+## Measuring (owner, 20 November 2026)
+- Nothing that counts runs on a child's device: no analytics script, so Cloudflare Web Analytics stays off. The only count is
+  the sync Worker's anonymous one (game, voice, country per picture or voice served), read with `node scripts/measures.js`.
+  The privacy texts (index.html, privacy.html) say exactly this; change them with any change to what is counted.
+
 ## Links, donations and the apps
 - Every link that leaves Asmau goes through the grown-up check (shared/gate.js) automatically; never open an
   outside page another way (no window.open of an outside address from game code).

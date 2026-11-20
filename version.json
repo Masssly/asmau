@@ -1,11 +1,18 @@
 {
-  "version": "2026.11.72",
+  "version": "2026.11.73",
   "date": "2026-11-20",
-  "buildId": "bb3be6120a38",
+  "buildId": "b5fb0ec648ff",
   "notes": [
-    "Yusuf 1.3: Yaqub is drawn dark-skinned like everyone in the prophets' stories. For parents → Who is shown, and how now says how each kind of story is drawn."
+    "Privacy: Asmau now counts, on its server only, how often each game's pictures and voices are downloaded and from which country, never by whom; the privacy note says so."
   ],
   "history": [
+    {
+      "version": "2026.11.73",
+      "date": "2026-11-20",
+      "notes": [
+        "Privacy: Asmau now counts, on its server only, how often each game's pictures and voices are downloaded and from which country, never by whom; the privacy note says so."
+      ]
+    },
     {
       "version": "2026.11.72",
       "date": "2026-11-20",

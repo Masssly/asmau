@@ -54,17 +54,23 @@ window.AsmauMp3 = (function () {
     if (!blob || isMp3(blob)) return Promise.resolve(blob);
     var AC = window.AudioContext || window.webkitAudioContext;
     if (!AC) return Promise.resolve(blob);
-    return Promise.all([load(), blob.arrayBuffer()]).then(function (r) {
-      var ctx = new AC();
+    var ctx = null;
+    var work = Promise.all([load(), blob.arrayBuffer()]).then(function (r) {
+      ctx = new AC();
       return new Promise(function (resolve, reject) {
         var p = ctx.decodeAudioData(r[1], resolve, reject);
         if (p && p.catch) p.catch(reject);
       }).then(function (buffer) {
-        try { ctx.close(); } catch (e) { /* already closed */ }
         var mp3 = encode(buffer);
         return mp3.size ? mp3 : blob;
       });
-    }).catch(function () { return blob; });
+    });
+    // an iPhone's decoder can stay silent for ever on some recordings: then the original is kept
+    var giveUp = new Promise(function (resolve) { setTimeout(function () { resolve(blob); }, 10000); });
+    return Promise.race([work, giveUp]).catch(function () { return blob; }).then(function (out) {
+      try { if (ctx && ctx.close) ctx.close(); } catch (e) { /* already closed */ }
+      return out;
+    });
   }
 
   return { convert: convert, isMp3: isMp3 };

@@ -1,11 +1,18 @@
 {
-  "version": "2026.11.74",
+  "version": "2026.11.75",
   "date": "2026-11-20",
-  "buildId": "d46cf504b2f9",
+  "buildId": "5eda52896039",
   "notes": [
-    "Follow Asmau on TikTok: a button at the foot of the home page, beside YouTube and LinkedIn."
+    "Recording your voice works again on iPhone: it records in the iPhone's own format, never waits for ever while saving, and says Saving…, then Recorded on this device, or what went wrong."
   ],
   "history": [
+    {
+      "version": "2026.11.75",
+      "date": "2026-11-20",
+      "notes": [
+        "Recording your voice works again on iPhone: it records in the iPhone's own format, never waits for ever while saving, and says Saving…, then Recorded on this device, or what went wrong."
+      ]
+    },
     {
       "version": "2026.11.74",
       "date": "2026-11-20",

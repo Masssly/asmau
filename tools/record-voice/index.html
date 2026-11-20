@@ -44,6 +44,7 @@
   .row .id { font-size: 11px; color: var(--muted); font-family: monospace; }
   .row .status { font-size: 12px; color: var(--muted); }
   .row .status.has-clip { color: var(--teal); }
+  .row .status.err { color: #ef8a7a; font-weight: 600; }
   .row .controls { display: flex; flex-wrap: wrap; gap: 8px; }
 
   .mini-btn {
@@ -209,7 +210,9 @@
   }
 
   function pickMimeType() {
-    var candidates = ["audio/webm;codecs=opus", "audio/webm", "audio/ogg;codecs=opus", "audio/mp4"];
+    // MP4 first: an iPhone records it natively and decodes it reliably (newer iPhones also offer WebM, which they
+    // could not always convert); every recording is turned into an MP3 afterwards anyway
+    var candidates = ["audio/mp4", "audio/webm;codecs=opus", "audio/webm", "audio/ogg;codecs=opus"];
     for (var i = 0; i < candidates.length; i++) {
       if (window.MediaRecorder && MediaRecorder.isTypeSupported(candidates[i])) return candidates[i];
     }
@@ -308,14 +311,29 @@
           recordBtn.classList.remove("recording");
           recordBtn.textContent = "● Record";
           activeRecorder = null;
-          var raw = new Blob(chunks, { type: mimeType || "audio/webm" });
+          var raw = new Blob(chunks, { type: (chunks[0] && chunks[0].type) || mimeType || "audio/webm" });
+          if (!raw.size) {
+            status.textContent = "Nothing was recorded. Check that Asmau may use the microphone, then try again.";
+            status.className = "status err";
+            return;
+          }
+          status.textContent = "Saving…";
+          status.className = "status";
           // saved as an MP3 so it plays on any of the parent's devices (the original if this browser cannot convert it)
           window.AsmauMp3.convert(raw).then(function (blob) {
-            return window.AsmauNarration.saveRecordedClip(slug, item.id, blob).then(refreshStatus).then(function () {
-              // if the parent turned sync on, send this recording too; recording itself never waits for it
-              return window.AsmauSync.pushOne(slug + ":" + item.id, blob).then(function (sent) { if (sent) syncSay("Recording saved and synced. The older online copy was replaced."); });
+            var saving = window.AsmauNarration.saveRecordedClip(slug, item.id, blob);
+            var tooLong = new Promise(function (resolve, reject) { setTimeout(function () { reject(new Error("timeout")); }, 15000); });
+            return Promise.race([saving, tooLong]).then(function () { return blob; }, function (err) {
+              status.textContent = "Not saved: this browser would not store the recording" + (err && err.message === "timeout" ? " (it took too long)" : "") + ". Close other Asmau tabs and try again.";
+              status.className = "status err";
+              throw { shown: true };
             });
+          }).then(function (blob) {
+            refreshStatus();
+            // if the parent turned sync on, send this recording too; recording itself never waits for it
+            return window.AsmauSync.pushOne(slug + ":" + item.id, blob).then(function (sent) { if (sent) syncSay("Recording saved and synced. The older online copy was replaced."); });
           }).then(showUsage).catch(function (e) {
+            if (e && e.shown) return;
             if (e && e.full) { window.__asmauFull = true; showUsage(); }
             syncSay(e && e.full ? e.message : "Saved on this device. Could not reach sync just now; use Sync now later.");
           });

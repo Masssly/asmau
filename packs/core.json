@@ -1,4 +1,4 @@
-{"bytes":1070529,
+{"bytes":1072441,
 "files":{"404.html":"30fef1f1da",
 "LICENSE":"f473958ef4",
 "LICENSE-CONTENT.md":"0cc084be0b",
@@ -28,7 +28,7 @@
 "shared/i18n/id.json":"92ae939a68",
 "shared/lang.js":"ac033eceff",
 "shared/media.js":"baf71bbc24",
-"shared/mp3.js":"4df0f4ff56",
+"shared/mp3.js":"7b9b49c269",
 "shared/music.js":"a81649ab4f",
 "shared/narration.js":"c870722089",
 "shared/people.js":"dd5012e301",
@@ -41,6 +41,6 @@
 "shared/vendor/LAME-LICENSE.txt":"8ca11a0034",
 "shared/vendor/README.txt":"9c77174b0e",
 "shared/vendor/lame.min.js":"00d43c063d",
-"tools/record-voice/index.html":"228dd8e38d",
-"version.json":"8411e9ad48"},
+"tools/record-voice/index.html":"d4b15c6e77",
+"version.json":"3c3173b7bd"},
 "sizes":{}}

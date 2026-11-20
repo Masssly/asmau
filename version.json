@@ -1,13 +1,18 @@
 {
-  "version": "2026.11.71",
-  "date": "2026-11-19",
-  "buildId": "58e5185afd33",
+  "version": "2026.11.72",
+  "date": "2026-11-20",
+  "buildId": "bb3be6120a38",
   "notes": [
-    "Notes for parents on every page of every game: all 558 that were waiting are now shown, and Yusuf 1.2 to 1.5 as you edited them.",
-    "The folded line says “📖 Note for parents” on every page that has one, and the first time a small pointer shows grown-ups where to tap.",
-    "Each game has a parents’ guide: every note on one page, from the note itself or For parents → Where the stories come from."
+    "Yusuf 1.3: Yaqub is drawn dark-skinned like everyone in the prophets' stories. For parents → Who is shown, and how now says how each kind of story is drawn."
   ],
   "history": [
+    {
+      "version": "2026.11.72",
+      "date": "2026-11-20",
+      "notes": [
+        "Yusuf 1.3: Yaqub is drawn dark-skinned like everyone in the prophets' stories. For parents → Who is shown, and how now says how each kind of story is drawn."
+      ]
+    },
     {
       "version": "2026.11.71",
       "date": "2026-11-19",

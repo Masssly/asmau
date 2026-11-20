@@ -17,15 +17,15 @@
 */
 
 // BEGIN GENERATED
-const RELEASE = "2026.11.71";
-const BUILD = "58e5185afd33";
+const RELEASE = "2026.11.72";
+const BUILD = "bb3be6120a38";
 // pack: [fingerprint of packs/<pack>.json, bytes, files]
 const PACKS = {
   "abdullah-quilliam":["257759b2cf",442,1],
   "adam":["696c79662a",2735383,55],
   "adam@m":["a617f3f408",4026446,147],
   "adam@w":["217fc43e27",4316508,147],
-  "core":["0b3441f579",1068249,44],
+  "core":["44d2778f8d",1068965,44],
   "count-the-crescents":["c58ffd2f9d",83016,5],
   "count-the-crescents@m":["76410cb722",587647,52],
   "count-the-crescents@w":["238f9dbdf7",584828,52],
@@ -60,7 +60,7 @@ const PACKS = {
   "umm-ayman@m":["25ae6bd6a0",3369590,116],
   "umm-ayman@w":["aa2daf9273",3702494,116],
   "yunus-emre":["6881152c52",408,1],
-  "yusuf":["57eba0f262",5871564,94],
+  "yusuf":["378c99fbf2",5870888,94],
   "yusuf@m":["5f24cea0b0",6661953,191],
   "yusuf@w":["d0a6cc2e08",7128706,191]
 };

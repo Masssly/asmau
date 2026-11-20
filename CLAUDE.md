@@ -118,6 +118,9 @@ things work; this file holds the decisions that must not be lost between session
 - Mark: the West African writing board (allo) with أ ب ت, chosen by the owner on 15 November 2026. Name
   "Asmau", tagline "Islamic games for curious kids". Rules, colours and how to remake every icon:
   brand/README.md. Never hand-edit brand/kit; remake it.
+- **Social media** (owner, 20 November 2026): a weekly scheduled Claude task fills the Asmau social queue
+  (https://claude.ai/artifact/AXbK2FN6eWeqBtxUN84ddu) with three posts made only from the games; the owner approves them
+  and Buffer publishes them. Claude never posts. The routine: scripts/social/README.md.
 
 ## Free for ever (owner, 17 November 2026)
 - The games are always free, with no paid tier, no account and no adverts: we never charge for the knowledge. Money comes

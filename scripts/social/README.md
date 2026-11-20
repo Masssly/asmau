@@ -66,5 +66,6 @@ before any comes back. Read the queue's existing posts (`game`, `pages`) so a pa
 
 1. Query `posts` where `status == "change"`: redo each as its `comment` asks (new files if needed), set `status: "draft"`,
    `comment: ""`, keeping its doc id. A change asked twice, or one you cannot do, gets a line in `why` saying so.
-2. Make the next week's three posts as above.
+2. Make the three posts for the first week (starting on a Sunday, from the coming Sunday on) that has no posts in the
+   queue yet. A week that already has its three posts is done: go on to the next one.
 3. Reply with one short line: what was made, what was redone.

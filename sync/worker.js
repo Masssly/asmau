@@ -175,8 +175,8 @@ async function tooMany(req, env, family) {
 // so a changed picture gets a new address and old addresses never go stale.
 // Public on purpose (these are the game's own pictures); no rate limit, because
 // the cache answers almost every request.
-const TYPES = { webp: "image/webp", mp3: "audio/mpeg", webm: "audio/webm", ogg: "audio/ogg", m4a: "audio/mp4" };
-const MEDIA_KEY = /^[0-9a-f]{10}\/[A-Za-z0-9_.\/-]{1,200}\.(webp|mp3|webm|ogg|m4a)$/;
+const TYPES = { webp: "image/webp", mp3: "audio/mpeg", webm: "audio/webm", ogg: "audio/ogg", m4a: "audio/mp4", mp4: "video/mp4", jpg: "image/jpeg" };
+const MEDIA_KEY = /^[0-9a-f]{10}\/[A-Za-z0-9_.\/-]{1,200}\.(webp|mp3|webm|ogg|m4a|mp4|jpg)$/;
 
 async function sha1Prefix(bytes) {
   const h = await crypto.subtle.digest("SHA-1", bytes);
@@ -187,7 +187,7 @@ async function sha1Prefix(bytes) {
 // which game, which kind (picture, voice-w, voice-m) and which country. Nothing about the person.
 function count(env, req, key) {
   try {
-    if (!env.MEDIA_COUNT) return;
+    if (!env.MEDIA_COUNT || key.includes("/social/")) return;
     const m = /^[0-9a-f]{10}\/games\/([a-z0-9-]+)\//.exec(key);
     const game = m ? m[1] : "core";
     const kind = /\/audio(-[a-z]{2})?-m\//.test(key) ? "voice-m" : /\/audio(-[a-z]{2})?\//.test(key) ? "voice-w" : "picture";
@@ -222,6 +222,22 @@ async function adminMedia(req, env, key) {
   if ((await sha1Prefix(bytes)) !== key.slice(0, 10)) return new Response("the bytes do not match the address", { status: 400 });
   await env.CLIPS.put("media/" + key, bytes);
   return new Response("ok", { status: 201 });
+}
+
+// The weekly social posts (scripts/social/README.md): PUT /social/<name>.mp4|.jpg with the X-Social-Token header
+// stores a clip or picture at a public media address (answered as {"url": ...}) for Metricool to fetch. Its own
+// key, not the admin one: it can only add files under social/, never replace or delete anything.
+const SOCIAL_NAME = /^[a-z0-9][a-z0-9-]{0,100}\.(mp4|jpg)$/;
+const SOCIAL_MAX = 30 * 1024 * 1024;
+async function socialUpload(req, env, name) {
+  const want = env.SOCIAL_TOKEN || "";
+  if (!want || (req.headers.get("x-social-token") || "") !== want) return new Response("forbidden", { status: 403 });
+  if (req.method !== "PUT" || !SOCIAL_NAME.test(name)) return new Response("bad request", { status: 400 });
+  const bytes = await req.arrayBuffer();
+  if (!bytes.byteLength || bytes.byteLength > SOCIAL_MAX) return new Response("too large or empty", { status: 413 });
+  const key = (await sha1Prefix(bytes)) + "/social/" + name;
+  if (!(await env.CLIPS.head("media/" + key))) await env.CLIPS.put("media/" + key, bytes);
+  return new Response(JSON.stringify({ url: new URL(req.url).origin + "/media/" + key }), { status: 201, headers: { "content-type": "application/json" } });
 }
 
 // Owner only: the history log. GET returns it (or {} before the first publish); PUT replaces it.
@@ -265,6 +281,7 @@ async function handle(req, env, ctx) {
     if (mu.pathname.startsWith("/media/")) return media(req, env, ctx, mu.pathname.slice(7));
     if (mu.pathname.startsWith("/admin/media/")) return adminMedia(req, env, mu.pathname.slice(13));
     if (mu.pathname === "/admin/history") return adminHistory(req, env);
+    if (mu.pathname.startsWith("/social/")) return socialUpload(req, env, mu.pathname.slice(8));
     if (req.method === "OPTIONS") return reply(null, 204);
     const origin = req.headers.get("origin");
     if (origin && !ORIGINS.includes(origin)) return reply("forbidden", 403);

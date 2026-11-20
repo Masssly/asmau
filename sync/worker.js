@@ -183,11 +183,24 @@ async function sha1Prefix(bytes) {
   return Array.prototype.map.call(new Uint8Array(h).slice(0, 5), (b) => ("0" + b.toString(16)).slice(-2)).join("");
 }
 
+// One anonymous count per picture or voice served, for the plan's measures (scripts/measures.js):
+// which game, which kind (picture, voice-w, voice-m) and which country. Nothing about the person.
+function count(env, req, key) {
+  try {
+    if (!env.MEDIA_COUNT) return;
+    const m = /^[0-9a-f]{10}\/games\/([a-z0-9-]+)\//.exec(key);
+    const game = m ? m[1] : "core";
+    const kind = /\/audio(-[a-z]{2})?-m\//.test(key) ? "voice-m" : /\/audio(-[a-z]{2})?\//.test(key) ? "voice-w" : "picture";
+    env.MEDIA_COUNT.writeDataPoint({ indexes: [game], blobs: [game, kind, (req.cf && req.cf.country) || ""] });
+  } catch (err) { /* counting never stops a picture */ }
+}
+
 async function media(req, env, ctx, key) {
   const pub = { "access-control-allow-origin": "*", "access-control-allow-methods": "GET,HEAD", "vary": "accept-encoding" };
   if (req.method === "OPTIONS") return new Response(null, { status: 204, headers: pub });
   if (req.method !== "GET" && req.method !== "HEAD") return new Response("method not allowed", { status: 405, headers: pub });
   if (!MEDIA_KEY.test(key) || key.includes("..")) return new Response("not found", { status: 404, headers: pub });
+  if (req.method === "GET") count(env, req, key);
   const cache = caches.default, cacheKey = new Request(new URL(req.url).origin + "/media/" + key);
   const hit = await cache.match(cacheKey);
   if (hit) return req.method === "HEAD" ? new Response(null, hit) : hit;

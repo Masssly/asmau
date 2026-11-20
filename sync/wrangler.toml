@@ -28,3 +28,9 @@ simple = { limit = 300, period = 60 }
 name = "NEW_FAMILY"
 namespace_id = "7103"
 simple = { limit = 10, period = 60 }
+
+# anonymous counts of pictures and voices served (game, kind, country); read with scripts/measures.js.
+# Waits for Analytics Engine to be enabled once in the dashboard (Workers → Analytics Engine); then remove the #s and deploy.
+# [[analytics_engine_datasets]]
+# binding = "MEDIA_COUNT"
+# dataset = "asmau_media"

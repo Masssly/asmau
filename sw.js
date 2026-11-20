@@ -25,7 +25,7 @@ const PACKS = {
   "adam":["696c79662a",2735383,55],
   "adam@m":["a617f3f408",4026446,147],
   "adam@w":["217fc43e27",4316508,147],
-  "core":["1a9812ecf5",1130121,48],
+  "core":["676b2ef0b4",1130121,48],
   "count-the-crescents":["c58ffd2f9d",83016,5],
   "count-the-crescents@m":["76410cb722",587647,52],
   "count-the-crescents@w":["238f9dbdf7",584828,52],

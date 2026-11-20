@@ -60,6 +60,12 @@ module.exports = async function () {
   await g.click("#rec"); await g.waitForTimeout(1500); await g.click("#rec");
   await g.waitForFunction(() => /Saved/.test(document.getElementById("status").textContent), null, { timeout: 15000 }).catch(() => {});
   T.check(/Saved/.test(await g.textContent("#status")) && /^1 of/.test(await g.textContent("#count")), "a page recorded there is saved and counted");
+  // a second page straight after: the microphone is asked for afresh each time (an iPhone mutes one kept open)
+  await g.click("#next"); await g.waitForTimeout(400);
+  await g.click("#rec"); await g.waitForTimeout(1500); await g.click("#rec");
+  await g.waitForFunction(() => /^2 of/.test(document.getElementById("count").textContent), null, { timeout: 15000 }).catch(() => {});
+  T.check(/^2 of/.test(await g.textContent("#count")), "the next page records too, one after another");
+  await g.click("#prev"); await g.waitForTimeout(300);
   await g.click("#next"); await g.reload(); await g.waitForSelector("#line:not(:empty)");
   T.check(/page 1\.2/.test(await g.textContent(".where")), "it comes back to the page where the parent stopped");
   await g.goto(site.url + "tools/record-voice/story.html?g=nuh&at=n6-b&back=1", { waitUntil: "load" }); await g.waitForSelector("#line:not(:empty)");

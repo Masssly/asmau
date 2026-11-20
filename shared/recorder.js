@@ -15,7 +15,7 @@
 */
 window.AsmauRecorder = (function () {
   "use strict";
-  var micPromise = null, active = null;
+  var active = null;
 
   function micProblem(err) {
     var name = err && err.name;
@@ -27,11 +27,13 @@ window.AsmauRecorder = (function () {
     return "✕ The microphone did not start (" + (name || "unknown error") + "). Reload the page and try again.";
   }
 
+  // a fresh microphone for every recording, let go of when it stops: an iPhone silently mutes a microphone kept open
+  // once a sound has played (Asmau plays one on every tap to wake the audio), and then every recording came back empty
   function mic() {
-    if (!micPromise) {
-      micPromise = navigator.mediaDevices.getUserMedia({ audio: true }).catch(function (err) { micPromise = null; throw err; });
-    }
-    return micPromise;
+    return navigator.mediaDevices.getUserMedia({ audio: true });
+  }
+  function release(stream) {
+    try { stream.getTracks().forEach(function (t) { t.stop(); }); } catch (e) { /* already stopped */ }
   }
 
   // MP4 first: an iPhone records it natively and decodes it reliably (newer iPhones also offer WebM, which they could
@@ -48,20 +50,21 @@ window.AsmauRecorder = (function () {
     return mic().then(function (stream) {
       var type = mimeType(), recorder;
       try { recorder = new MediaRecorder(stream, type ? { mimeType: type } : undefined); }
-      catch (err) { throw micProblem(err); }
+      catch (err) { release(stream); throw micProblem(err); }
       var chunks = [], began = Date.now(), failed = null, timer = null, finish;
       var ended = new Promise(function (resolve) { finish = resolve; });
       recorder.ondataavailable = function (e) { if (e.data && e.data.size > 0) chunks.push(e.data); };
       recorder.onerror = function (e) { failed = e && e.error ? e.error.name : "error"; };
       recorder.onstop = function () {
-        clearInterval(timer); active = null;
+        clearInterval(timer); active = null; release(stream);
         var blob = new Blob(chunks, { type: (chunks[0] && chunks[0].type) || type || "audio/webm" });
         if (failed) finish({ problem: "✕ The recording stopped with an error (" + failed + "). Try again.", kind: "err" });
         else if (!blob.size) finish({ problem: "✕ Nothing was recorded. Check that the microphone is allowed and not muted, then try again.", kind: "err" });
         else if (Date.now() - began < 700) finish({ problem: "Too short to keep: tap Record, read the line, then tap Stop.", kind: "warn" });
         else finish({ blob: blob, seconds: (Date.now() - began) / 1000 });
       };
-      recorder.start();
+      // the sound handed over in small pieces while recording: some iPhones give nothing if asked only at the end
+      try { recorder.start(250); } catch (err) { release(stream); throw micProblem(err); }
       active = recorder;
       if (onTick) { onTick(0); timer = setInterval(function () { onTick(Math.floor((Date.now() - began) / 1000)); }, 500); }
       return { stop: function () { if (recorder.state !== "inactive") recorder.stop(); return ended; } };

@@ -1,4 +1,4 @@
-{"bytes":1129343,
+{"bytes":1130121,
 "files":{"404.html":"30fef1f1da",
 "LICENSE":"f473958ef4",
 "LICENSE-CONTENT.md":"0cc084be0b",
@@ -33,7 +33,7 @@
 "shared/narration.js":"1787b6c1b2",
 "shared/people.js":"dd5012e301",
 "shared/pwa.js":"5db54176c2",
-"shared/recorder.js":"2b6797a26a",
+"shared/recorder.js":"b8eb3bba2a",
 "shared/sound-buttons.js":"a72e8006a1",
 "shared/story-engine.js":"f862c56150",
 "shared/story.css":"8b2b528dc9",
@@ -46,5 +46,5 @@
 "tools/record-voice/index.html":"2f9a3a9226",
 "tools/record-voice/join.html":"561cb169ba",
 "tools/record-voice/story.html":"9af821836d",
-"version.json":"f737cd9084"},
+"version.json":"e4bac5d920"},
 "sizes":{}}

@@ -42,9 +42,14 @@
   .row .text { font-size: 16px; }
   .row .text[dir="rtl"] { font-size: 20px; }
   .row .id { font-size: 11px; color: var(--muted); font-family: monospace; }
-  .row .status { font-size: 12px; color: var(--muted); }
-  .row .status.has-clip { color: var(--teal); }
-  .row .status.err { color: #ef8a7a; font-weight: 600; }
+  .row .status { font-size: 14px; line-height: 1.4; color: var(--muted); border-radius: 10px; padding: 6px 10px; background: rgba(255,255,255,.04); }
+  .row .status.ok { color: var(--teal); background: rgba(70,200,170,.10); font-weight: 600; }
+  .row .status.busy { color: var(--gold); background: rgba(240,184,75,.10); font-weight: 600; }
+  .row .status.rec { color: #ffb4ae; background: rgba(201,84,79,.18); font-weight: 700; font-variant-numeric: tabular-nums; }
+  .row .status.warn { color: #ffd8a8; background: rgba(240,184,75,.12); }
+  .row .status.err { color: #ffb4ae; background: rgba(201,84,79,.18); font-weight: 600; }
+  @media (prefers-reduced-motion: no-preference) { .row .status.rec { animation: recpulse 1.2s ease-in-out infinite; } }
+  @keyframes recpulse { 50% { background: rgba(201,84,79,.32); } }
   .row .controls { display: flex; flex-wrap: wrap; gap: 8px; }
 
   .mini-btn {
@@ -255,13 +260,15 @@
 
     var status = document.createElement("div");
     status.className = "status";
+    status.setAttribute("role", "status");          // read out by screen readers as it changes
+    status.setAttribute("aria-live", "polite");
 
     var controls = document.createElement("div");
     controls.className = "controls";
 
     var playBtn = document.createElement("button");
     playBtn.className = "mini-btn";
-    playBtn.textContent = "▶ Play current";
+    playBtn.textContent = "▶ Play computer voice";
 
     var recordBtn = document.createElement("button");
     recordBtn.className = "mini-btn record";
@@ -277,19 +284,23 @@
     deleteBtn.textContent = "✕ Remove my recording";
     deleteBtn.disabled = true;
 
-    function refreshStatus() {
-      window.AsmauNarration.getRecordedClip(slug, item.id).then(function (blob) {
-        if (blob) {
-          status.textContent = "Recorded on this device";
-          status.className = "status has-clip";
-          downloadBtn.disabled = false;
-          deleteBtn.disabled = false;
-        } else {
-          status.textContent = "Using the shared default (placeholder or device voice)";
-          status.className = "status";
-          downloadBtn.disabled = true;
-          deleteBtn.disabled = true;
-        }
+    // one line under the text says where this line stands: idle, rec, busy, ok, warn or err
+    var ticker = null;
+    function say(kind, words) {
+      status.textContent = words;
+      status.className = "status " + kind;
+    }
+    function stopTicker() { if (ticker) { clearInterval(ticker); ticker = null; } }
+
+    // has this line a recording? sets the buttons; `words` replaces the usual saved line (e.g. after a sync)
+    function refreshStatus(words, kind) {
+      return window.AsmauNarration.getRecordedClip(slug, item.id).then(function (blob) {
+        downloadBtn.disabled = deleteBtn.disabled = !blob;
+        playBtn.textContent = blob ? "▶ Play my recording" : "▶ Play computer voice";
+        if (words) say(kind || "ok", words);
+        else if (blob) say("ok", "✓ Saved on this device: your voice plays instead of the computer's.");
+        else say("idle", "Not recorded yet: the computer voice reads this line.");
+        return blob;
       });
     }
 
@@ -297,53 +308,75 @@
       window.AsmauNarration.say(slug, item.id, item.text, { lang: item.lang, audioBase: "../../games/" + slug + "/assets/" + (window.AsmauNarration.voiceSet() === "m" ? "audio-m/" : "audio/") });
     });
 
+    function micProblem(err) {
+      var name = err && err.name;
+      if (name === "NotAllowedError" || name === "SecurityError")
+        return "✕ Asmau may not use the microphone. Allow the microphone for asmau.org in your browser's settings (on iPhone: Settings → Apps → Safari → Microphone), then reload this page.";
+      if (name === "NotFoundError" || name === "OverconstrainedError") return "✕ No microphone was found on this device.";
+      if (name === "NotReadableError") return "✕ The microphone is busy in another app (a call?). Close it, then try again.";
+      if (!window.MediaRecorder) return "✕ This browser cannot record. Try Safari on iPhone or Chrome on Android or a computer.";
+      return "✕ The microphone did not start (" + (name || "unknown error") + "). Reload the page and try again.";
+    }
+
     recordBtn.addEventListener("click", function () {
       if (recordBtn.classList.contains("recording")) {
         if (activeRecorder && activeRecorder.state !== "inactive") activeRecorder.stop();
         return;
       }
+      if (activeRecorder) { say("warn", "Another line is still recording. Tap Stop on that line first."); return; }
+      if (!window.MediaRecorder) { say("err", micProblem(null)); return; }
+      say("busy", "Asking for the microphone…");
       getMicStream().then(function (stream) {
         var mimeType = pickMimeType();
-        var recorder = new MediaRecorder(stream, mimeType ? { mimeType: mimeType } : undefined);
-        var chunks = [];
+        var recorder;
+        try { recorder = new MediaRecorder(stream, mimeType ? { mimeType: mimeType } : undefined); }
+        catch (err) { say("err", micProblem(err)); return; }
+        var chunks = [], began = Date.now();
         recorder.ondataavailable = function (e) { if (e.data.size > 0) chunks.push(e.data); };
+        recorder.onerror = function (e) { stopTicker(); say("err", "✕ The recording stopped with an error" + (e && e.error ? " (" + e.error.name + ")" : "") + ". Try again."); };
         recorder.onstop = function () {
+          stopTicker();
           recordBtn.classList.remove("recording");
           recordBtn.textContent = "● Record";
           activeRecorder = null;
           var raw = new Blob(chunks, { type: (chunks[0] && chunks[0].type) || mimeType || "audio/webm" });
-          if (!raw.size) {
-            status.textContent = "Nothing was recorded. Check that Asmau may use the microphone, then try again.";
-            status.className = "status err";
+          if (!raw.size) { say("err", "✕ Nothing was recorded. Check that the microphone is allowed and not muted, then try again."); return; }
+          if (Date.now() - began < 700) {
+            refreshStatus("Too short to keep: tap Record, read the line, then tap Stop.", "warn");
             return;
           }
-          status.textContent = "Saving…";
-          status.className = "status";
+          say("busy", "Saving…");
           // saved as an MP3 so it plays on any of the parent's devices (the original if this browser cannot convert it)
           window.AsmauMp3.convert(raw).then(function (blob) {
             var saving = window.AsmauNarration.saveRecordedClip(slug, item.id, blob);
             var tooLong = new Promise(function (resolve, reject) { setTimeout(function () { reject(new Error("timeout")); }, 15000); });
             return Promise.race([saving, tooLong]).then(function () { return blob; }, function (err) {
-              status.textContent = "Not saved: this browser would not store the recording" + (err && err.message === "timeout" ? " (it took too long)" : "") + ". Close other Asmau tabs and try again.";
-              status.className = "status err";
+              var full = err && (err.name === "QuotaExceededError" || /quota/i.test(err.message || ""));
+              say("err", full ? "✕ Not saved: this device is out of space. Remove some recordings or downloaded games (Without internet), then try again."
+                : "✕ Not saved: this browser would not store the recording" + (err && err.message === "timeout" ? " (it took too long)" : "") +
+                  ". Close other Asmau tabs, then try again. In a private window recordings cannot be kept.");
               throw { shown: true };
             });
           }).then(function (blob) {
-            refreshStatus();
-            // if the parent turned sync on, send this recording too; recording itself never waits for it
-            return window.AsmauSync.pushOne(slug + ":" + item.id, blob).then(function (sent) { if (sent) syncSay("Recording saved and synced. The older online copy was replaced."); });
-          }).then(showUsage).catch(function (e) {
-            if (e && e.shown) return;
-            if (e && e.full) { window.__asmauFull = true; showUsage(); }
-            syncSay(e && e.full ? e.message : "Saved on this device. Could not reach sync just now; use Sync now later.");
-          });
+            if (!window.AsmauSync.code()) return refreshStatus();
+            // sync is on: it is saved here already; now say how sending it goes
+            refreshStatus("✓ Saved on this device · sending to your other devices…", "ok");
+            return window.AsmauSync.pushOne(slug + ":" + item.id, blob).then(function (sent) {
+              refreshStatus(sent ? "✓ Saved and sent to your other devices." : undefined);
+              showUsage();
+            }, function (e) {
+              if (e && e.full) { window.__asmauFull = true; showUsage(); refreshStatus("✓ Saved on this device · not sent: your online space is full (see above).", "warn"); return; }
+              refreshStatus("✓ Saved on this device · not sent yet (no connection). It goes with your next Sync now.", "warn");
+            });
+          }).catch(function (e) { if (!(e && e.shown)) say("err", "✕ Not saved: something went wrong (" + ((e && e.message) || "unknown") + "). Try again."); });
         };
         activeRecorder = recorder;
-        chunks = [];
         recorder.start();
         recordBtn.classList.add("recording");
         recordBtn.textContent = "■ Stop";
-      }).catch(function () { /* mic error already shown in micState */ });
+        var tick = function () { var t = Math.floor((Date.now() - began) / 1000); say("rec", "● Recording… " + Math.floor(t / 60) + ":" + ("0" + (t % 60)).slice(-2) + " · tap Stop when you finish the line"); };
+        tick(); ticker = setInterval(tick, 500);
+      }).catch(function (err) { say("err", micProblem(err)); });
     });
 
     downloadBtn.addEventListener("click", function () {
@@ -362,9 +395,14 @@
     });
 
     deleteBtn.addEventListener("click", function () {
-      window.AsmauNarration.deleteRecordedClip(slug, item.id).then(refreshStatus).then(function () {
-        return window.AsmauSync.dropOne(slug + ":" + item.id).then(function (gone) { if (gone) { syncSay("Removed here and online."); showUsage(); } });
-      }).catch(function () { syncSay("Removed on this device. The online copy will be removed at the next sync."); });
+      say("busy", "Removing…");
+      window.AsmauNarration.deleteRecordedClip(slug, item.id).then(function () {
+        return refreshStatus("Removed: the computer voice reads this line again.", "idle");
+      }).then(function () {
+        return window.AsmauSync.dropOne(slug + ":" + item.id).then(function (gone) {
+          if (gone) { refreshStatus("Removed here and from your other devices: the computer voice reads this line again.", "idle"); showUsage(); }
+        }, function () { refreshStatus("Removed on this device. The online copy goes at your next Sync now.", "warn"); });
+      }).catch(function () { say("err", "✕ Could not remove it. Reload the page and try again."); });
     });
 
     controls.appendChild(playBtn);

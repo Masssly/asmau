@@ -283,6 +283,12 @@ async function handle(req, env, ctx) {
     if (mu.pathname.startsWith("/media/")) return media(req, env, ctx, mu.pathname.slice(7));
     if (mu.pathname.startsWith("/admin/media/")) return adminMedia(req, env, mu.pathname.slice(13));
     if (mu.pathname === "/admin/history") return adminHistory(req, env);
+    // says whether a social key arrived and if it is right, never the key itself
+    if (mu.pathname === "/social-check") {
+      const raw = req.headers.get("x-social-token") || "", got = raw.trim().replace(/^Bearer\s+/i, "").trim();
+      return new Response(JSON.stringify({ sent: !!raw, length: got.length, bearer: /^\s*Bearer\s/i.test(raw), right: !!env.SOCIAL_TOKEN && got === env.SOCIAL_TOKEN.trim() }),
+        { headers: { "content-type": "application/json", "cache-control": "no-store" } });
+    }
     if (mu.pathname.startsWith("/social/")) return socialUpload(req, env, mu.pathname.slice(8));
     if (req.method === "OPTIONS") return reply(null, 204);
     const origin = req.headers.get("origin");

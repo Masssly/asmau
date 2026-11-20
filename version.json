@@ -1,11 +1,18 @@
 {
-  "version": "2026.11.73",
+  "version": "2026.11.74",
   "date": "2026-11-20",
-  "buildId": "b5fb0ec648ff",
+  "buildId": "d46cf504b2f9",
   "notes": [
-    "Privacy: Asmau now counts, on its server only, how often each game's pictures and voices are downloaded and from which country, never by whom; the privacy note says so."
+    "Follow Asmau on TikTok: a button at the foot of the home page, beside YouTube and LinkedIn."
   ],
   "history": [
+    {
+      "version": "2026.11.74",
+      "date": "2026-11-20",
+      "notes": [
+        "Follow Asmau on TikTok: a button at the foot of the home page, beside YouTube and LinkedIn."
+      ]
+    },
     {
       "version": "2026.11.73",
       "date": "2026-11-20",

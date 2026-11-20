@@ -17,7 +17,7 @@ grown-ups who choose what children play.
 | Instagram | parents, short posts and reels | Asmau | hello@asmau.org |
 | Facebook Page | parents and grandparents in West Africa, mosque groups | Asmau | (a Page under the owner's own Facebook) |
 | YouTube | story trailers, the soundtrack | Asmau | (a brand channel under a Google account) |
-| TikTok | short clips of the games | Asmau | hello@asmau.org |
+| TikTok | short clips of the games | Asmau, @asmaugames (on the site since 20 November 2026) | hello@asmau.org |
 | WhatsApp Channel | the way families in Ghana, Nigeria and Indonesia share | Asmau | the owner's WhatsApp |
 | LinkedIn Page | funders, partners, schools | Asmau | (a Page under the owner's LinkedIn) |
 | X | optional, for press and scholars | Asmau | hello@asmau.org |

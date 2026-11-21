@@ -390,6 +390,14 @@ if (exists("sw.js")) {
 }
 for (const f of ["app.webmanifest", "shared/pwa.js", "fonts/fonts.css"]) if (!exists(f)) fail(f + ": missing");
 
+// Cloudflare's Email Address Obfuscation rewrites any address it finds in a page and puts it back with its own script,
+// splitting the words around it so they can no longer be translated: a page that shows our address keeps it inside
+// <!--email_off--> ... <!--/email_off--> (21 November 2026)
+for (const f of fs.readdirSync(ROOT).filter((n) => n.endsWith(".html"))) {
+  const s = fs.readFileSync(path.join(ROOT, f), "utf8");
+  if (/[\w.-]+@asmau\.org/.test(s) && !(/<!--email_off-->/.test(s) && /<!--\/email_off-->/.test(s))) fail(f + ": shows an email address outside <!--email_off--> ... <!--/email_off--> (Cloudflare would rewrite it)");
+}
+
 /* ---------- report ---------- */
 for (const w of warnings) console.warn("warning: " + w);
 if (errors.length) {

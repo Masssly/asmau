@@ -115,14 +115,16 @@ things work; this file holds the decisions that must not be lost between session
   not translated plays in English and its card says so.
 - **A device downloads only the language in use**: each language is one pack, `core@<code>`; English families download
   no translations. Never put translations back into a game's folder or the core pack.
-- **A translation reaches families only when a native speaker has checked it**: `"status": "checked"` (until then
+- **A translation reaches families only when the owner says it is good enough** (a native speaker's reading, or the
+  owner's own; owner, 21 November 2026): `"status": "checked"` (until then
   `"draft"`, seen only with `?lang=<code>` in the address). The checker then demands every line and label.
 - **Voices are not required (owner, 21 November 2026).** A checked translation goes live as text; its computer voices follow
   later, only where Gemini sounds right in that language. `"voices": ["w", "m"]` in the file lists the ones it has (each must
   read every line). With none, the game reads nothing aloud in that language: never the English voice under translated
   words, and never the device's own voice (English only). Recordings still play.
-- **Arabic is Modern Standard Arabic** (owner, 21 November 2026). Languages decided: Indonesian, German (live 21 November
-  2026, from a native speaker's sample), French (live 21 November 2026 on the owner's own reading), Malay, French, Turkish, Bengali; right to left: Arabic, Urdu, Persian. Languages AI
+- **Arabic is Modern Standard Arabic** (owner, 21 November 2026). Languages live for families (21 November 2026): German
+  (a native speaker's sample), French (the owner's own reading), Indonesian and Malay (a first reading by the owner's
+  native-speaker colleagues; families report what they find). Still to do: Turkish, Bengali; right to left: Arabic, Urdu, Persian. Languages AI
   does not know well wait for paid human translators.
 - Voices: the same Aoede and Achird, asked to speak as native speakers of the language:
   `STORY_LANG=id [VOICE=m] PROJECT=asmau-assets python3 scripts/generate-voice-gemini.py games/<slug>` (clips in
@@ -158,6 +160,9 @@ things work; this file holds the decisions that must not be lost between session
 ## Links, donations and the apps
 - Every link that leaves Asmau goes through the grown-up check (shared/gate.js) automatically; never open an
   outside page another way (no window.open of an outside address from game code).
+- **Our email address on a page stays inside `<!--email_off-->` … `<!--/email_off-->`** (21 November 2026): Cloudflare's
+  Email Address Obfuscation otherwise rewrites it with its own script and splits the words around it, so they are no longer
+  translated. The checker refuses a page without it.
 - Anything about donations or other website-only things gets `class="web-only"`: the store apps (opened as
   `?app=ios|android|huawei`) must show no donation link or wording. Apple Kids category, age band 6–8.
 

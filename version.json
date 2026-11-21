@@ -1,11 +1,18 @@
 {
-  "version": "2026.11.89",
+  "version": "2026.11.90",
   "date": "2026-11-21",
-  "buildId": "aa43511695a3",
+  "buildId": "add8d21bfad7",
   "notes": [
-    "Français is on for families: every story game, the notes for parents and For parents in French (no computer voice in French yet: silent, or the English voice if you choose it; your own recordings still play)"
+    "Bahasa Indonesia and Bahasa Melayu are on for families: every story game, the notes for parents and For parents (no computer voice yet: silent, or the English voice if you choose it). The “Write to us” line at the foot of the page now shows in your language"
   ],
   "history": [
+    {
+      "version": "2026.11.90",
+      "date": "2026-11-21",
+      "notes": [
+        "Bahasa Indonesia and Bahasa Melayu are on for families: every story game, the notes for parents and For parents (no computer voice yet: silent, or the English voice if you choose it). The “Write to us” line at the foot of the page now shows in your language"
+      ]
+    },
     {
       "version": "2026.11.89",
       "date": "2026-11-21",

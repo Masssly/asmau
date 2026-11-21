@@ -188,7 +188,9 @@
           var done = x.pages.filter(function (p) { return mine[x.g.slug + ":" + p.id]; }).length, n = x.pages.length;
           var a = el("a", "card game"); a.href = "story.html?g=" + x.g.slug;
           var img = el("img"); img.src = "../../games/" + x.g.slug + "/cover.webp"; img.alt = ""; img.loading = "lazy";
-          var d = el("div"); d.appendChild(el("div", "g-t", x.g.title));
+          var L = window.AsmauLang, C = L ? L.code() : "en", g = x.g;
+          var title = C !== "en" && g.tr && g.tr[C] && ((g.langs || []).indexOf(C) >= 0 || (L && L.preview)) && g.tr[C].title || g.title;
+          var d = el("div"); d.appendChild(el("div", "g-t", title));
           d.appendChild(el("div", "g-p", done ? done + " of " + n + " pages in your voice" : n + " pages · not started"));
           var bar = el("div", "bar"), i = el("i"); i.style.width = Math.round(done / n * 100) + "%"; bar.appendChild(i); d.appendChild(bar);
           a.appendChild(img); a.appendChild(d); box.appendChild(a);

@@ -1,566 +1,566 @@
 {
  "status": "draft",
- "_note": "Français. To be checked by a native speaker; seen only with ?lang=fr until then.",
+ "_note": "Français, drafted 21 November 2026, to be checked by a native speaker. Seen only with ?lang=fr until then.",
  "lines": {
   "i1-a": {
    "en": "Long ago, in the year 1325, in the city of Tangier in Morocco, there lived a young man called Ibn Battuta.",
-   "t": ""
+   "t": "Il y a longtemps, en l’an 1325, dans la ville de Tanger au Maroc, vivait un jeune homme appelé Ibn Battuta."
   },
   "i1-b": {
    "en": "He wanted to go on Hajj to Makkah, and to visit the Prophet's mosque in Madina. It was very, very far away.",
-   "t": ""
+   "t": "Il voulait faire le hajj à La Mecque, et visiter la mosquée du Prophète à Médine. C’était très, très loin."
   },
   "i1-c": {
    "en": "He set out alone, with no friend and no caravan. His father and mother were very sad to see him go, and so was he.",
-   "t": ""
+   "t": "Il est parti seul, sans ami et sans caravane. Son père et sa mère étaient très tristes de le voir partir, et lui aussi."
   },
   "i1-pack": {
    "en": "What does a traveller need? Pack his bag.",
-   "t": ""
+   "t": "De quoi un voyageur a-t-il besoin ? Prépare son sac."
   },
   "i1-pack-bin1": {
    "en": "Pack it",
-   "t": ""
+   "t": "Je l’emporte"
   },
   "i1-pack-bin2": {
    "en": "Leave it",
-   "t": ""
+   "t": "Je le laisse"
   },
   "i1-pack-it1": {
    "en": "A water skin",
-   "t": ""
+   "t": "Une outre d’eau"
   },
   "i1-pack-it2": {
    "en": "A big bed",
-   "t": ""
+   "t": "Un grand lit"
   },
   "i1-pack-it3": {
    "en": "Bread and dates",
-   "t": ""
+   "t": "Du pain et des dattes"
   },
   "i1-pack-it4": {
    "en": "A warm cloak",
-   "t": ""
+   "t": "Un manteau chaud"
   },
   "i1-pack-it5": {
    "en": "A heavy table",
-   "t": ""
+   "t": "Une lourde table"
   },
   "i1-pack-it6": {
    "en": "A box of toys",
-   "t": ""
+   "t": "Une boîte de jouets"
   },
   "i1-pack-no": {
    "en": "Think again. Could he carry that all the way to Makkah?",
-   "t": ""
+   "t": "Réfléchis encore. Pourrait-il porter ça jusqu’à La Mecque ?"
   },
   "i1-d": {
    "en": "Ibn Battuta said that he left his home as birds leave their nests.",
-   "t": ""
+   "t": "Ibn Battuta a dit qu’il a quitté sa maison comme les oiseaux quittent leur nid."
   },
   "i1-q": {
    "en": "Why did Ibn Battuta leave home?",
-   "t": ""
+   "t": "Pourquoi Ibn Battuta a-t-il quitté sa maison ?"
   },
   "i1-q-opt1": {
    "en": "To go on Hajj to Makkah",
-   "t": ""
+   "t": "Pour faire le hajj à La Mecque"
   },
   "i1-q-opt2": {
    "en": "To find treasure",
-   "t": ""
+   "t": "Pour trouver un trésor"
   },
   "i1-q-no": {
    "en": "He set out to go on Hajj, to Makkah.",
-   "t": ""
+   "t": "Il est parti pour faire le hajj, à La Mecque."
   },
   "i2-a": {
    "en": "After many months he reached Alexandria, a great city by the sea in Egypt. He went to see its famous lighthouse.",
-   "t": ""
+   "t": "Après bien des mois, il est arrivé à Alexandrie, une grande ville au bord de la mer, en Égypte. Il est allé voir son célèbre phare."
   },
   "i2-b": {
    "en": "There he met a kind old teacher, Burhan al-Din. The old man smiled and said: I see that you love to travel!",
-   "t": ""
+   "t": "Là, il a rencontré un vieux maître très gentil, Burhan al-Din. Le vieil homme a souri et a dit : je vois que tu aimes voyager !"
   },
   "i2-c": {
    "en": "Then he said: you will visit my brothers, in India, in Sind and in China. Give them my greetings.",
-   "t": ""
+   "t": "Puis il a dit : tu rendras visite à mes frères, en Inde, au Sind et en Chine. Transmets-leur mes salutations."
   },
   "i2-d": {
    "en": "Ibn Battuta was amazed. He had never thought of going so far! But many years later, he met all three, and gave them the greetings.",
-   "t": ""
+   "t": "Ibn Battuta était stupéfait. Il n’avait jamais pensé aller si loin ! Mais bien des années plus tard, il les a rencontrés tous les trois, et leur a transmis les salutations."
   },
   "i2-lands": {
    "en": "Find the pairs! Things he would see on his travels.",
-   "t": ""
+   "t": "Trouve les paires ! Ce qu’il allait voir pendant ses voyages."
   },
   "i2-q": {
    "en": "What did the old man ask him to do?",
-   "t": ""
+   "t": "Que lui a demandé le vieil homme ?"
   },
   "i2-q-opt1": {
    "en": "Go straight back home",
-   "t": ""
+   "t": "De rentrer tout de suite chez lui"
   },
   "i2-q-opt2": {
    "en": "Greet his brothers far away",
-   "t": ""
+   "t": "De saluer ses frères au loin"
   },
   "i2-q-no": {
    "en": "He asked him to greet his brothers in India, Sind and China.",
-   "t": ""
+   "t": "Il lui a demandé de saluer ses frères en Inde, au Sind et en Chine."
   },
   "i3-a": {
    "en": "In the city of Damascus, in Syria, people loved to do good. They gave money for travellers, and to make the streets better.",
-   "t": ""
+   "t": "Dans la ville de Damas, en Syrie, les gens aimaient faire le bien. Ils donnaient de l’argent pour les voyageurs, et pour améliorer les rues."
   },
   "i3-b": {
    "en": "One day Ibn Battuta saw a young servant boy drop a beautiful china dish in the street. Crash! It broke into pieces.",
-   "t": ""
+   "t": "Un jour, Ibn Battuta a vu un jeune serviteur laisser tomber un beau plat de porcelaine dans la rue. Crac ! Il s’est cassé en morceaux."
   },
   "i3-c": {
    "en": "The people said: pick up the pieces, and take them to the keeper of the dish fund!",
-   "t": ""
+   "t": "Les gens ont dit : ramasse les morceaux, et apporte-les au gardien de la caisse des plats !"
   },
   "i3-d": {
    "en": "The keeper gave the boy money for a new dish. So nobody scolded him, and he was not sad any more.",
-   "t": ""
+   "t": "Le gardien a donné au garçon de l’argent pour un nouveau plat. Ainsi personne ne l’a grondé, et il n’était plus triste."
   },
   "i3-mend": {
    "en": "Mend the picture! Put the pieces together.",
-   "t": ""
+   "t": "Répare l’image ! Remets les morceaux ensemble."
   },
   "i3-e": {
    "en": "Ibn Battuta said: this is one of the best good deeds. It mends hearts.",
-   "t": ""
+   "t": "Ibn Battuta a dit : c’est l’une des meilleures bonnes actions. Elle répare les cœurs."
   },
   "i3-hearts": {
    "en": "Does it mend a heart, or break it? Sort them.",
-   "t": ""
+   "t": "Est-ce que ça répare un cœur, ou ça le brise ? Trie-les."
   },
   "i3-hearts-bin1": {
    "en": "Mends a heart",
-   "t": ""
+   "t": "Répare un cœur"
   },
   "i3-hearts-bin2": {
    "en": "Breaks a heart",
-   "t": ""
+   "t": "Brise un cœur"
   },
   "i3-hearts-it1": {
    "en": "Helping someone who dropped something",
-   "t": ""
+   "t": "Aider quelqu’un qui a fait tomber quelque chose"
   },
   "i3-hearts-it2": {
    "en": "Laughing at a mistake",
-   "t": ""
+   "t": "Se moquer d’une erreur"
   },
   "i3-hearts-it3": {
    "en": "Sharing your snack",
-   "t": ""
+   "t": "Partager son goûter"
   },
   "i3-hearts-it4": {
    "en": "Shouting at someone",
-   "t": ""
+   "t": "Crier sur quelqu’un"
   },
   "i3-hearts-it5": {
    "en": "Saying: it's all right",
-   "t": ""
+   "t": "Dire : ce n’est pas grave"
   },
   "i3-hearts-it6": {
    "en": "Telling everyone about it",
-   "t": ""
+   "t": "Le raconter à tout le monde"
   },
   "i3-hearts-no": {
    "en": "Think again. Would that make someone feel better, or worse?",
-   "t": ""
+   "t": "Réfléchis encore. Est-ce que ça ferait que quelqu’un se sente mieux, ou moins bien ?"
   },
   "i4-a": {
    "en": "At last, after a long journey across the desert with a great caravan of camels, Ibn Battuta reached Makkah.",
-   "t": ""
+   "t": "Enfin, après un long voyage à travers le désert avec une grande caravane de chameaux, Ibn Battuta est arrivé à La Mecque."
   },
   "i4-b": {
    "en": "He saw the Ka'bah, the House of Allah, with people from every land walking around it.",
-   "t": ""
+   "t": "Il a vu la Kaaba, la Maison d’Allah, avec des gens de tous les pays qui tournaient autour."
   },
   "i4-c": {
    "en": "Allah says in the Qur'an: proclaim the Pilgrimage to all people. They will come to you on foot and on every kind of swift mount, from every deep mountain pass.",
-   "t": ""
+   "t": "Allah dit dans le Coran : appelle les gens au Pèlerinage. Ils viendront vers toi à pied, et sur toute monture rapide, de tout chemin lointain."
   },
   "i4-hajj": {
    "en": "Some steps of the Hajj. Put them in order.",
-   "t": ""
+   "t": "Quelques étapes du hajj. Mets-les dans l’ordre."
   },
   "i4-hajj-c1": {
    "en": "First, the pilgrims put on simple white clothes.",
-   "t": ""
+   "t": "D’abord, les pèlerins mettent de simples vêtements blancs."
   },
   "i4-hajj-c2": {
    "en": "They walk around the Ka'bah.",
-   "t": ""
+   "t": "Ils tournent autour de la Kaaba."
   },
   "i4-hajj-c3": {
    "en": "They stand on the plain of Arafat and pray.",
-   "t": ""
+   "t": "Ils se tiennent dans la plaine d’Arafat et prient."
   },
   "i4-hajj-c4": {
    "en": "Then they celebrate Eid.",
-   "t": ""
+   "t": "Puis ils fêtent l’Aïd."
   },
   "i4-hajj-no": {
    "en": "Listen again, and put the steps in order.",
-   "t": ""
+   "t": "Écoute encore, et mets les étapes dans l’ordre."
   },
   "i4-d": {
    "en": "After his Hajj, Ibn Battuta did not go home. He wanted to see more of the world.",
-   "t": ""
+   "t": "Après son hajj, Ibn Battuta n’est pas rentré chez lui. Il voulait voir davantage le monde."
   },
   "i4-q": {
    "en": "What do pilgrims wear on Hajj?",
-   "t": ""
+   "t": "Que portent les pèlerins pendant le hajj ?"
   },
   "i4-q-opt1": {
    "en": "Simple white clothes",
-   "t": ""
+   "t": "De simples vêtements blancs"
   },
   "i4-q-opt2": {
    "en": "Party costumes",
-   "t": ""
+   "t": "Des déguisements de fête"
   },
   "i4-q-no": {
    "en": "Pilgrims wear simple white clothes, all the same, rich and poor.",
-   "t": ""
+   "t": "Les pèlerins portent de simples vêtements blancs, tous les mêmes, riches comme pauvres."
   },
   "i5-a": {
    "en": "In the land that is now Turkey, Ibn Battuta met groups of young men called the Akhis. Akhi means my brother.",
-   "t": ""
+   "t": "Dans le pays qui est aujourd’hui la Turquie, Ibn Battuta a rencontré des groupes de jeunes hommes appelés les Akhis. Akhi veut dire mon frère."
   },
   "i5-b": {
    "en": "They worked all day. In the evening they put their money together to buy food, for any traveller who came to their town.",
-   "t": ""
+   "t": "Ils travaillaient toute la journée. Le soir, ils mettaient leur argent ensemble pour acheter à manger, pour tout voyageur qui arrivait dans leur ville."
   },
   "i5-c": {
    "en": "Ibn Battuta said: nowhere in the world are there people like them in caring for strangers.",
-   "t": ""
+   "t": "Ibn Battuta a dit : nulle part au monde il n’y a de gens comme eux pour prendre soin des étrangers."
   },
   "i5-bowls": {
    "en": "Serve the travellers! Tap each bowl.",
-   "t": ""
+   "t": "Sers les voyageurs ! Touche chaque bol."
   },
   "i5-q": {
    "en": "What did the brothers do for travellers?",
-   "t": ""
+   "t": "Que faisaient les frères pour les voyageurs ?"
   },
   "i5-q-opt1": {
    "en": "Sent them away",
-   "t": ""
+   "t": "Ils les renvoyaient"
   },
   "i5-q-opt2": {
    "en": "Gave them food and a place to stay",
-   "t": ""
+   "t": "Ils leur donnaient à manger et un endroit où dormir"
   },
   "i5-q-no": {
    "en": "They gave every traveller food and a place to stay.",
-   "t": ""
+   "t": "Ils donnaient à chaque voyageur à manger et un endroit où dormir."
   },
   "i6-a": {
    "en": "Ibn Battuta travelled on, over high mountains, to India. In the great city of Delhi lived a powerful Sultan.",
-   "t": ""
+   "t": "Ibn Battuta a continué son voyage, par-dessus de hautes montagnes, jusqu’en Inde. Dans la grande ville de Delhi vivait un sultan puissant."
   },
   "i6-b": {
    "en": "The Sultan made Ibn Battuta a judge, a qadi. He said: this is the highest of all jobs.",
-   "t": ""
+   "t": "Le sultan a fait d’Ibn Battuta un juge, un cadi. Il a dit : c’est le plus haut de tous les métiers."
   },
   "i6-c": {
    "en": "But Ibn Battuta did not know the language there! So the Sultan gave him two helpers.",
-   "t": ""
+   "t": "Mais Ibn Battuta ne connaissait pas la langue de là-bas ! Alors le sultan lui a donné deux assistants."
   },
   "i6-fair": {
    "en": "A good judge is fair. Is it fair, or not?",
-   "t": ""
+   "t": "Un bon juge est juste. Est-ce juste, ou pas ?"
   },
   "i6-fair-bin1": {
    "en": "Fair",
-   "t": ""
+   "t": "Juste"
   },
   "i6-fair-bin2": {
    "en": "Not fair",
-   "t": ""
+   "t": "Pas juste"
   },
   "i6-fair-it1": {
    "en": "Listening to both sides",
-   "t": ""
+   "t": "Écouter les deux côtés"
   },
   "i6-fair-it2": {
    "en": "Taking a present to help one side",
-   "t": ""
+   "t": "Accepter un cadeau pour aider un côté"
   },
   "i6-fair-it3": {
    "en": "The same rules for rich and poor",
-   "t": ""
+   "t": "Les mêmes règles pour les riches et les pauvres"
   },
   "i6-fair-it4": {
    "en": "Deciding before listening",
-   "t": ""
+   "t": "Décider avant d’écouter"
   },
   "i6-fair-it5": {
    "en": "Telling the truth",
-   "t": ""
+   "t": "Dire la vérité"
   },
   "i6-fair-it6": {
    "en": "Helping only your friends",
-   "t": ""
+   "t": "N’aider que ses amis"
   },
   "i6-fair-no": {
    "en": "Think again. Would that be fair to everyone?",
-   "t": ""
+   "t": "Réfléchis encore. Est-ce que ce serait juste pour tout le monde ?"
   },
   "i7-a": {
    "en": "Later he sailed to the Maldives, tiny islands in the ocean. He said they were one of the wonders of the world: about two thousand islands!",
-   "t": ""
+   "t": "Plus tard, il a navigué jusqu’aux Maldives, de toutes petites îles dans l’océan. Il a dit qu’elles étaient l’une des merveilles du monde : environ deux mille îles !"
   },
   "i7-b": {
    "en": "The people there were all Muslims, good and kind.",
-   "t": ""
+   "t": "Les gens là-bas étaient tous musulmans, bons et gentils."
   },
   "i7-c": {
    "en": "Coconut palms grew everywhere. People ate fish and coconuts, and made milk, oil and sweets from the coconut.",
-   "t": ""
+   "t": "Les cocotiers poussaient partout. Les gens mangeaient du poisson et des noix de coco, et faisaient du lait, de l’huile et des douceurs avec la noix de coco."
   },
   "i7-coconuts": {
    "en": "Catch the falling coconuts!",
-   "t": ""
+   "t": "Attrape les noix de coco qui tombent !"
   },
   "i7-d": {
    "en": "The islands were so close together that from one, you could see the tops of the palm trees on the next.",
-   "t": ""
+   "t": "Les îles étaient si proches les unes des autres que, depuis l’une, on voyait le haut des palmiers de la suivante."
   },
   "i7-q": {
    "en": "What grew everywhere on the islands?",
-   "t": ""
+   "t": "Qu’est-ce qui poussait partout sur les îles ?"
   },
   "i7-q-opt1": {
    "en": "Coconut palms",
-   "t": ""
+   "t": "Des cocotiers"
   },
   "i7-q-opt2": {
    "en": "Apple trees",
-   "t": ""
+   "t": "Des pommiers"
   },
   "i7-q-no": {
    "en": "Coconut palms grew everywhere on the islands.",
-   "t": ""
+   "t": "Les cocotiers poussaient partout sur les îles."
   },
   "i8-a": {
    "en": "Then he sailed east to the island of Sumatra, in what is now Indonesia.",
-   "t": ""
+   "t": "Puis il a navigué vers l’est, jusqu’à l’île de Sumatra, dans le pays qui est aujourd’hui l’Indonésie."
   },
   "i8-b": {
    "en": "People came out to the ship in little boats, with coconuts, bananas, mangoes and fish as gifts.",
-   "t": ""
+   "t": "Des gens sont venus jusqu’au bateau dans de petites barques, avec des noix de coco, des bananes, des mangues et du poisson en cadeau."
   },
   "i8-gifts": {
    "en": "Find the pairs! The gifts in the little boats.",
-   "t": ""
+   "t": "Trouve les paires ! Les cadeaux dans les petites barques."
   },
   "i8-c": {
    "en": "The Sultan, al-Malik al-Zahir, loved learning. Scholars came to read the Qur'an with him, and to talk.",
-   "t": ""
+   "t": "Le sultan, al-Malik al-Zahir, aimait le savoir. Des savants venaient lire le Coran avec lui, et discuter."
   },
   "i8-d": {
    "en": "And he was humble: he walked to the Friday prayer on foot, like everyone else.",
-   "t": ""
+   "t": "Et il était humble : il allait à la prière du vendredi à pied, comme tout le monde."
   },
   "i8-q": {
    "en": "How did the Sultan go to Friday prayer?",
-   "t": ""
+   "t": "Comment le sultan allait-il à la prière du vendredi ?"
   },
   "i8-q-opt1": {
    "en": "On a golden throne",
-   "t": ""
+   "t": "Sur un trône en or"
   },
   "i8-q-opt2": {
    "en": "He walked, like everyone",
-   "t": ""
+   "t": "À pied, comme tout le monde"
   },
   "i8-q-no": {
    "en": "He was humble, and walked to the Friday prayer on foot.",
-   "t": ""
+   "t": "Il était humble, et allait à la prière du vendredi à pied."
   },
   "i9-a": {
    "en": "Ibn Battuta's ship sailed on and on, far away, to China.",
-   "t": ""
+   "t": "Le bateau d’Ibn Battuta a navigué encore et encore, très loin, jusqu’en Chine."
   },
   "i9-b": {
    "en": "In China, people paid with money made of paper, as big as your hand!",
-   "t": ""
+   "t": "En Chine, les gens payaient avec de l’argent en papier, grand comme ta main !"
   },
   "i9-notes": {
    "en": "Pay with paper money! Tap each note.",
-   "t": ""
+   "t": "Paie avec des billets en papier ! Touche chaque billet."
   },
   "i9-c": {
    "en": "Ibn Battuta saw beautiful china dishes being made, like the dish the boy broke in Damascus!",
-   "t": ""
+   "t": "Ibn Battuta a vu fabriquer de beaux plats en porcelaine, comme celui que le garçon avait cassé à Damas !"
   },
   "i9-d": {
    "en": "He said: China is the safest and best country for the traveller.",
-   "t": ""
+   "t": "Il a dit : la Chine est le pays le plus sûr et le meilleur pour le voyageur."
   },
   "i9-q": {
    "en": "What was money made of, in China?",
-   "t": ""
+   "t": "En quoi était l’argent, en Chine ?"
   },
   "i9-q-opt1": {
    "en": "Paper",
-   "t": ""
+   "t": "En papier"
   },
   "i9-q-opt2": {
    "en": "Chocolate",
-   "t": ""
+   "t": "En chocolat"
   },
   "i9-q-no": {
    "en": "In China, people paid with paper money.",
-   "t": ""
+   "t": "En Chine, les gens payaient avec de l’argent en papier."
   },
   "i10-a": {
    "en": "After twenty-four years away, Ibn Battuta set out for home, to Morocco.",
-   "t": ""
+   "t": "Après vingt-quatre ans d’absence, Ibn Battuta a pris le chemin du retour, vers le Maroc."
   },
   "i10-b": {
    "en": "On the way, he heard sad news. His mother had died, of a terrible illness. He said: may Allah have mercy on her.",
-   "t": ""
+   "t": "En route, il a appris une triste nouvelle. Sa mère était morte, d’une terrible maladie. Il a dit : qu’Allah lui fasse miséricorde."
   },
   "i10-dua": {
    "en": "Make a dua for his mother. Press and hold.",
-   "t": ""
+   "t": "Fais une dou‘a pour sa mère. Appuie longtemps."
   },
   "i10-c": {
    "en": "Then he reached Fez, the great city of Morocco, and went to greet the Sultan.",
-   "t": ""
+   "t": "Puis il est arrivé à Fès, la grande ville du Maroc, et est allé saluer le sultan."
   },
   "i10-way": {
    "en": "The long way home. Put the places in order.",
-   "t": ""
+   "t": "Le long chemin du retour. Mets les lieux dans l’ordre."
   },
   "i10-way-c1": {
    "en": "First, he left China.",
-   "t": ""
+   "t": "D’abord, il a quitté la Chine."
   },
   "i10-way-c2": {
    "en": "He sailed back past India.",
-   "t": ""
+   "t": "Il est repassé en bateau près de l’Inde."
   },
   "i10-way-c3": {
    "en": "He made Hajj once more in Makkah.",
-   "t": ""
+   "t": "Il a fait le hajj encore une fois à La Mecque."
   },
   "i10-way-c4": {
    "en": "And at last he came home to Morocco.",
-   "t": ""
+   "t": "Et enfin, il est rentré chez lui au Maroc."
   },
   "i10-way-no": {
    "en": "Listen again, and put the places in order.",
-   "t": ""
+   "t": "Écoute encore, et mets les lieux dans l’ordre."
   },
   "i11-a": {
    "en": "But soon he set out again, across the great Sahara desert with a camel caravan, to the land of Mali in West Africa.",
-   "t": ""
+   "t": "Mais bientôt il est reparti, à travers le grand désert du Sahara avec une caravane de chameaux, jusqu’au pays du Mali en Afrique de l’Ouest."
   },
   "i11-sahara": {
    "en": "Lead the caravan across the Sahara to Mali.",
-   "t": ""
+   "t": "Conduis la caravane à travers le Sahara jusqu’au Mali."
   },
   "i11-b": {
    "en": "Ibn Battuta wrote that the people of Mali hated injustice, and that travellers there were safe: nobody had to fear robbers.",
-   "t": ""
+   "t": "Ibn Battuta a écrit que les gens du Mali détestaient l’injustice, et que les voyageurs y étaient en sécurité : personne n’avait à craindre les voleurs."
   },
   "i11-c": {
    "en": "On Fridays everyone wore clean white clothes to the mosque. It was so full that people sent their prayer mats early, to keep a place.",
-   "t": ""
+   "t": "Le vendredi, tout le monde mettait des vêtements blancs et propres pour aller à la mosquée. Elle était si pleine que les gens envoyaient leur tapis de prière en avance, pour garder une place."
   },
   "i11-d": {
    "en": "And the children worked very hard to learn the Qur'an by heart.",
-   "t": ""
+   "t": "Et les enfants travaillaient très dur pour apprendre le Coran par cœur."
   },
   "i11-e": {
    "en": "Back home in Fez, the Sultan asked a writer, Ibn Juzayy, to write down all his travels. That book is still read today.",
-   "t": ""
+   "t": "De retour chez lui à Fès, le sultan a demandé à un écrivain, Ibn Juzayy, d’écrire tous ses voyages. Ce livre est encore lu aujourd’hui."
   },
   "i11-story": {
    "en": "Tell his whole journey. Tap in order.",
-   "t": ""
+   "t": "Raconte tout son voyage. Touche dans l’ordre."
   },
   "i11-story-c1": {
    "en": "First, he left his home in Tangier.",
-   "t": ""
+   "t": "D’abord, il a quitté sa maison à Tanger."
   },
   "i11-story-c2": {
    "en": "He made Hajj in Makkah.",
-   "t": ""
+   "t": "Il a fait le hajj à La Mecque."
   },
   "i11-story-c3": {
    "en": "He was a judge in India.",
-   "t": ""
+   "t": "Il a été juge en Inde."
   },
   "i11-story-c4": {
    "en": "He sailed to the islands of the Maldives.",
-   "t": ""
+   "t": "Il a navigué jusqu’aux îles Maldives."
   },
   "i11-story-c5": {
    "en": "He reached China.",
-   "t": ""
+   "t": "Il est arrivé en Chine."
   },
   "i11-story-c6": {
    "en": "And he crossed the Sahara to Mali.",
-   "t": ""
+   "t": "Et il a traversé le Sahara jusqu’au Mali."
   },
   "i11-story-no": {
    "en": "Listen again, and tell it in order.",
-   "t": ""
+   "t": "Écoute encore, et raconte dans l’ordre."
   },
   "end-a": {
    "en": "This is the story of Ibn Battuta, who travelled for nearly thirty years, from Morocco to China and Mali, and wrote it all down, so that we can travel with him today.",
-   "t": ""
+   "t": "Voici l’histoire d’Ibn Battuta, qui a voyagé pendant presque trente ans, du Maroc jusqu’en Chine et au Mali, et qui a tout fait écrire, pour que nous puissions voyager avec lui aujourd’hui."
   }
  },
  "strings": {
-  "Leaving Home": "",
-  "The Rihla, tr. Gibb, vol. I, pp. 7-8": "",
-  "From his book, the Rihla": "",
-  "The Old Man of Alexandria": "",
-  "The Rihla, tr. Gibb, vol. I, pp. 18, 22-23": "",
-  "The Broken Dish": "",
-  "The Rihla, tr. Gibb, vol. I, p. 147": "",
-  "Makkah": "",
-  "Put on simple white clothes": "",
-  "Walk around the Ka'bah": "",
-  "Pray at Arafat": "",
-  "Celebrate Eid": "",
-  "Brothers Who Welcome Strangers": "",
-  "The Rihla, tr. Gibb, vol. II, pp. 417-419": "",
-  "A Judge in Delhi": "",
-  "The Rihla, tr. Gibb, vol. III, pp. 746-747": "",
-  "Two Thousand Islands": "",
-  "The Rihla, tr. Gibb and Beckingham, vol. IV, pp. 821-822": "",
-  "The Kind Sultan of Sumatra": "",
-  "The Rihla, tr. Gibb and Beckingham, vol. IV, pp. 875-877": "",
-  "China": "",
-  "The Rihla, tr. Gibb and Beckingham, vol. IV, pp. 889-892": "",
-  "Home Again": "",
-  "The Rihla, tr. Gibb and Beckingham, vol. IV, pp. 920-925": "",
+  "Leaving Home": "Quitter la maison",
+  "The Rihla, tr. Gibb, vol. I, pp. 7-8": "La Rihla, trad. Gibb, vol. I, p. 7-8",
+  "From his book, the Rihla": "D’après son livre, la Rihla",
+  "The Old Man of Alexandria": "Le vieil homme d’Alexandrie",
+  "The Rihla, tr. Gibb, vol. I, pp. 18, 22-23": "La Rihla, trad. Gibb, vol. I, p. 18, 22-23",
+  "The Broken Dish": "Le plat cassé",
+  "The Rihla, tr. Gibb, vol. I, p. 147": "La Rihla, trad. Gibb, vol. I, p. 147",
+  "Makkah": "La Mecque",
+  "Put on simple white clothes": "Mettre de simples vêtements blancs",
+  "Walk around the Ka'bah": "Tourner autour de la Kaaba",
+  "Pray at Arafat": "Prier à Arafat",
+  "Celebrate Eid": "Fêter l’Aïd",
+  "Brothers Who Welcome Strangers": "Les frères qui accueillent les étrangers",
+  "The Rihla, tr. Gibb, vol. II, pp. 417-419": "La Rihla, trad. Gibb, vol. II, p. 417-419",
+  "A Judge in Delhi": "Juge à Delhi",
+  "The Rihla, tr. Gibb, vol. III, pp. 746-747": "La Rihla, trad. Gibb, vol. III, p. 746-747",
+  "Two Thousand Islands": "Deux mille îles",
+  "The Rihla, tr. Gibb and Beckingham, vol. IV, pp. 821-822": "La Rihla, trad. Gibb et Beckingham, vol. IV, p. 821-822",
+  "The Kind Sultan of Sumatra": "Le bon sultan de Sumatra",
+  "The Rihla, tr. Gibb and Beckingham, vol. IV, pp. 875-877": "La Rihla, trad. Gibb et Beckingham, vol. IV, p. 875-877",
+  "China": "La Chine",
+  "The Rihla, tr. Gibb and Beckingham, vol. IV, pp. 889-892": "La Rihla, trad. Gibb et Beckingham, vol. IV, p. 889-892",
+  "Home Again": "De retour chez lui",
+  "The Rihla, tr. Gibb and Beckingham, vol. IV, pp. 920-925": "La Rihla, trad. Gibb et Beckingham, vol. IV, p. 920-925",
   "Press and hold": "",
-  "May Allah have mercy on her": "",
-  "India": "",
-  "Morocco": "",
-  "Mali, and the Book": "",
-  "The Rihla, tr. Gibb and Beckingham, vol. IV, pp. 964-966; Ibn Juzayy's introduction, vol. I": "",
-  "Tangier": "",
-  "The islands": "",
-  "Mali": "",
+  "May Allah have mercy on her": "Qu’Allah lui fasse miséricorde",
+  "India": "L’Inde",
+  "Morocco": "Le Maroc",
+  "Mali, and the Book": "Le Mali, et le livre",
+  "The Rihla, tr. Gibb and Beckingham, vol. IV, pp. 964-966; Ibn Juzayy's introduction, vol. I": "La Rihla, trad. Gibb et Beckingham, vol. IV, p. 964-966 ; introduction d’Ibn Juzayy, vol. I",
+  "Tangier": "Tanger",
+  "The islands": "Les îles",
+  "Mali": "Le Mali",
   "← Asmau": "",
-  "Ibn Battuta": "",
-  "The Travels of Ibn Battuta": "",
-  "Eleven chapters about the young man from Tangier who travelled the world. Play a little every day.": "",
+  "Ibn Battuta": "Ibn Battuta",
+  "The Travels of Ibn Battuta": "Les voyages d’Ibn Battuta",
+  "Eleven chapters about the young man from Tangier who travelled the world. Play a little every day.": "Onze chapitres sur le jeune homme de Tanger qui a parcouru le monde. Joue un peu chaque jour.",
   "Start the story": "",
   "Start from the beginning": "",
   "For parents": "",
@@ -569,15 +569,277 @@
   "All chapters": "",
   "✕ Close": "",
   "The End": "",
-  "Curiosity": "",
-  "Kindness to strangers": "",
-  "Learning": "",
+  "Curiosity": "La curiosité",
+  "Kindness to strangers": "La bonté envers les étrangers",
+  "Learning": "Apprendre",
   "Read it again": "",
   "Pick a chapter": "",
   "Music": "",
   "Sounds": "",
   "Voice": "",
-  "He left Tangier alone at twenty-one to go on Hajj, and kept travelling for nearly thirty years: Makkah, India, the islands, China and Mali.": "",
-  "Ibn Battuta rides a camel at the front of a caravan across the desert towards Makkah.": ""
+  "He left Tangier alone at twenty-one to go on Hajj, and kept travelling for nearly thirty years: Makkah, India, the islands, China and Mali.": "Il a quitté Tanger seul à vingt et un ans pour faire le hajj, et a continué de voyager pendant presque trente ans : La Mecque, l’Inde, les îles, la Chine et le Mali.",
+  "Ibn Battuta rides a camel at the front of a caravan across the desert towards Makkah.": "Ibn Battuta, à dos de chameau, mène une caravane à travers le désert vers La Mecque.",
+  "📖 About this story": "📖 À propos de cette histoire",
+  "📚 Sources": "📚 Sources",
+  "This is history, not the Qur’an. Every fact in the game is from the Rihla, in the English translation of H. A. R. Gibb and C. F. Beckingham (Hakluyt Society); each chapter gives its pages. The book reports some wonders (an old man foretelling his travels) as he was told them: the game says “it is told”.": "C’est de l’histoire, pas le Coran. Chaque fait du jeu vient de la Rihla, dans la traduction anglaise de H. A. R. Gibb et C. F. Beckingham (Hakluyt Society) ; chaque chapitre donne ses pages. Le livre rapporte quelques prodiges (un vieil homme qui prédit ses voyages) tels qu’on les lui a racontés : le jeu dit « on raconte que ».",
+  "🤲 Told gently, or left out": "🤲 Raconté avec douceur, ou laissé de côté",
+  "Not told to children, but in the page notes for you: his marriages and the slaves he owned, the wars and cruel rulers he saw, what he disliked in Mali, and the children of Mali kept in shackles until they learned the Qur’an. Historians also doubt that he reached every place he describes; the notes say where.": "Non raconté aux enfants, mais dans les notes des pages pour vous : ses mariages et les esclaves qu’il possédait, les guerres et les souverains cruels qu’il a vus, ce qu’il n’aimait pas au Mali, et les enfants du Mali enchaînés jusqu’à ce qu’ils sachent le Coran. Les historiens doutent aussi qu’il soit allé partout où il le dit ; les notes disent où.",
+  "👥 Who is shown": "👥 Qui est montré",
+  "Shown in this story: Ibn Battuta, a Moroccan, and the people of every land as themselves, every woman’s hair covered. The Prophet ﷺ is mentioned and never shown.": "Dans cette histoire : Ibn Battuta, un Marocain, et les gens de chaque pays tels qu’ils sont, les cheveux de chaque femme couverts. Le Prophète ﷺ est mentionné et jamais montré.",
+  "Ibn Battuta (1304 to about 1368) left his home in Tangier, Morocco, at twenty-one to make the Hajj, and kept travelling for nearly thirty years: Egypt, Syria, Makkah, Anatolia, India, the Maldives, Sumatra, China and, last, Mali. Back in Fez, the Sultan had his travels written down by Ibn Juzayy: the book called the <em>Rihla</em>.": "Ibn Battuta (1304 - vers 1368) a quitté sa maison de Tanger, au Maroc, à vingt et un ans pour faire le hajj, et a continué de voyager pendant presque trente ans : l’Égypte, la Syrie, La Mecque, l’Anatolie, l’Inde, les Maldives, Sumatra, la Chine et, pour finir, le Mali. De retour à Fès, le sultan a fait écrire ses voyages par Ibn Juzayy : le livre appelé la <em>Rihla</em>."
+ },
+ "notes": {
+  "1.1": {
+   "en": "Ibn Battuta was born in Tangier on 25 February 1304 (Ibn Juzayy's note, vol. I, p. 8) and left on 2 Rajab 725, in June 1325. He was twenty-two in lunar years, twenty-one in ours.",
+   "t": "Ibn Battuta est né à Tanger le 25 février 1304 (note d’Ibn Juzayy, vol. I, p. 8) et est parti le 2 rajab 725, en juin 1325. Il avait vingt-deux ans en années lunaires, vingt et un dans les nôtres."
+  },
+  "1.2": {
+   "en": "Ask: where would you most like to travel one day? Why?",
+   "t": "Demandez : où aimerais-tu le plus voyager un jour ? Pourquoi ?"
+  },
+  "1.3": {
+   "en": "His own words: \"I set out alone, having neither fellow-traveller in whose companionship I might find cheer, nor caravan whose party I might join ... My parents being yet in the bonds of life, it weighed sorely upon me to part from them, and both they and I were afflicted with sorrow at this separation\" (vol. I, pp. 7-8).",
+   "t": "Ses propres mots : « Je partis seul, sans compagnon de route dont la compagnie m’eût réjoui, ni caravane à laquelle me joindre ... Mes parents étant encore en vie, il me pesa cruellement de me séparer d’eux, et eux comme moi fûmes affligés de cette séparation » (vol. I, p. 7-8)."
+  },
+  "1.4": {
+   "en": "Pack a real bag together for a pretend journey. What do you really need, and what can stay at home?",
+   "t": "Préparez ensemble un vrai sac pour un voyage pour de faux. De quoi as-tu vraiment besoin, et qu’est-ce qui peut rester à la maison ?"
+  },
+  "1.5": {
+   "en": "\"I braced my resolution to quit all my dear ones, female and male, and forsook my home as birds forsake their nests\" (vol. I, p. 8).",
+   "t": "« Je raffermis ma résolution de quitter tous ceux qui m’étaient chers, femmes et hommes, et j’abandonnai ma demeure comme les oiseaux abandonnent leurs nids » (vol. I, p. 8)."
+  },
+  "1.6": {
+   "en": "Talk about the Hajj: who in your family has been? What did they see?",
+   "t": "Parlez du hajj : qui dans votre famille y est allé ? Qu’a-t-il vu ?"
+  },
+  "2.1": {
+   "en": "He describes visiting the lighthouse of Alexandria, already partly in ruins (vol. I, p. 18).",
+   "t": "Il raconte sa visite du phare d’Alexandrie, déjà en partie en ruine (vol. I, p. 18)."
+  },
+  "2.2": {
+   "en": "Ask: who is the oldest person you know? What could you learn from them?",
+   "t": "Demandez : quelle est la personne la plus âgée que tu connais ? Que pourrais-tu apprendre d’elle ?"
+  },
+  "2.3": {
+   "en": "The imam Burhan al-Din the Lame: \"You must certainly, if God will, visit my brother Farid al-Din in India, and my brother Rukn al-Din Zakariya in Sind, and my brother Burhan al-Din in China, and when you reach them convey to them a greeting from me\" (vol. I, pp. 22-23). The book tells this as a karama, a wonder given to a holy man; the game says only what he said.",
+   "t": "L’imam Burhan al-Din le Boiteux : « Tu dois certainement, si Dieu le veut, rendre visite à mon frère Farid al-Din en Inde, à mon frère Rukn al-Din Zakariya au Sind, et à mon frère Burhan al-Din en Chine, et quand tu les rejoindras, transmets-leur mes salutations » (vol. I, p. 22-23). Le livre raconte cela comme une karama, un prodige accordé à un saint homme ; le jeu ne dit que ce qu’il a dit."
+  },
+  "2.4": {
+   "en": "\"I was amazed at his prediction, and the idea of going to these countries having been cast into my mind, my wanderings never ceased until I had met these three that he named and conveyed his greeting to them\" (vol. I, p. 23).",
+   "t": "« Je fus stupéfait de sa prédiction, et l’idée d’aller dans ces pays m’étant venue à l’esprit, mes voyages ne cessèrent pas jusqu’à ce que j’aie rencontré les trois qu’il avait nommés et que je leur aie transmis ses salutations » (vol. I, p. 23)."
+  },
+  "2.5": {
+   "en": "Find Morocco, Egypt, India, the Maldives, Indonesia, China and Mali on a map or globe together.",
+   "t": "Cherchez ensemble le Maroc, l’Égypte, l’Inde, les Maldives, l’Indonésie, la Chine et le Mali sur une carte ou un globe."
+  },
+  "2.6": {
+   "en": "Ask: have you ever passed on a greeting, 'salam from Grandma'? Why does it make people happy?",
+   "t": "Demandez : as-tu déjà transmis un salut, « salam de la part de Mamie » ? Pourquoi cela fait-il plaisir ?"
+  },
+  "3.1": {
+   "en": "Damascus had endowments (waqf) of many kinds: for freeing prisoners, for travellers (food, clothing and the cost of the journey home), and for paving the streets (vol. I, p. 147).",
+   "t": "Damas avait des fondations pieuses (waqf) de toutes sortes : pour libérer des prisonniers, pour les voyageurs (nourriture, vêtements et frais du voyage de retour), et pour paver les rues (vol. I, p. 147)."
+  },
+  "3.2": {
+   "en": "In the book the boy is a slave-boy. Slavery was part of every society Ibn Battuta saw, and he owned slaves himself (see the notes in chapters 7 and 11).",
+   "t": "Dans le livre, le garçon est un jeune esclave. L’esclavage faisait partie de toutes les sociétés que voyait Ibn Battuta, et il possédait lui-même des esclaves (voir les notes des chapitres 7 et 11)."
+  },
+  "3.3": {
+   "en": "Ask: what do you do when a friend breaks something by accident?",
+   "t": "Demandez : que fais-tu quand un ami casse quelque chose sans le faire exprès ?"
+  },
+  "3.4": {
+   "en": "Is there a 'dish fund' you could make at home: a jar for fixing things or helping someone?",
+   "t": "Pourriez-vous créer une « caisse des plats » à la maison : un bocal pour réparer des choses ou aider quelqu’un ?"
+  },
+  "3.6": {
+   "en": "\"This endowment is one of the best of good works, for the boy's master would undoubtedly have beaten him for breaking the dish ... The benefaction is thus indeed a mender of hearts\" (vol. I, p. 147).",
+   "t": "« Cette fondation est l’une des meilleures bonnes œuvres, car le maître du garçon l’aurait sans doute battu pour avoir cassé le plat ... Ce bienfait est donc vraiment un réparateur de cœurs » (vol. I, p. 147)."
+  },
+  "3.7": {
+   "en": "Ask your child for one thing they did this week that mended someone's heart.",
+   "t": "Demandez à votre enfant une chose qu’il a faite cette semaine qui a réparé le cœur de quelqu’un."
+  },
+  "4.1": {
+   "en": "Ask: how long do you think the journey took on a camel? (Many weeks.) How long would it take by plane?",
+   "t": "Demandez : combien de temps a duré le voyage à dos de chameau, à ton avis ? (Beaucoup de semaines.) Combien de temps en avion ?"
+  },
+  "4.2": {
+   "en": "His first Hajj was in 1326; he describes Makkah, the mosque and the Ka'bah at length (vol. I, pp. 188-191 and after). He made the Hajj again on his way home in 1348 (vol. IV, p. 920).",
+   "t": "Son premier hajj date de 1326 ; il décrit longuement La Mecque, la mosquée et la Kaaba (vol. I, p. 188-191 et suivantes). Il a refait le hajj sur le chemin du retour en 1348 (vol. IV, p. 920)."
+  },
+  "4.3": {
+   "en": "Read 22:27 together. Ask: why do people come from every land to the same place?",
+   "t": "Lisez ensemble 22:27. Demandez : pourquoi des gens de tous les pays viennent-ils au même endroit ?"
+  },
+  "4.4": {
+   "en": "Talk through the days of Hajj with pictures or a video together.",
+   "t": "Parcourez ensemble les jours du hajj avec des images ou une vidéo."
+  },
+  "4.5": {
+   "en": "Ask: what would you want to see next, after Makkah?",
+   "t": "Demandez : que voudrais-tu voir ensuite, après La Mecque ?"
+  },
+  "4.6": {
+   "en": "Ask: why do you think all pilgrims dress the same?",
+   "t": "Demandez : pourquoi, à ton avis, tous les pèlerins s’habillent-ils pareil ?"
+  },
+  "5.1": {
+   "en": "The Akhis were brotherhoods of young working men in the towns of Anatolia, linked to the ideal of futuwwa (chivalry). \"Nowhere in the world are there to be found any to compare with them in solicitude for strangers\" (vol. II, pp. 417-418).",
+   "t": "Les Akhis étaient des confréries de jeunes travailleurs dans les villes d’Anatolie, liées à l’idéal de la futuwwa (la chevalerie). « Nulle part au monde on n’en trouve de comparables pour leur sollicitude envers les étrangers » (vol. II, p. 417-418)."
+  },
+  "5.2": {
+   "en": "Ask: how could our family welcome a guest or a newcomer this week?",
+   "t": "Demandez : comment notre famille pourrait-elle accueillir un invité ou un nouveau venu cette semaine ?"
+  },
+  "5.3": {
+   "en": "Ask: when did someone make you feel welcome in a new place?",
+   "t": "Demandez : quand quelqu’un t’a-t-il fait te sentir bienvenu dans un nouvel endroit ?"
+  },
+  "5.4": {
+   "en": "Cook or share a simple meal with a neighbour or a guest together.",
+   "t": "Cuisinez ou partagez ensemble un repas simple avec un voisin ou un invité."
+  },
+  "5.5": {
+   "en": "Ask: what can children do to help travellers or new people?",
+   "t": "Demandez : que peuvent faire les enfants pour aider les voyageurs ou les nouveaux venus ?"
+  },
+  "6.1": {
+   "en": "Look at pictures of old Delhi's buildings together. Ask: what would a traveller from Morocco find new there?",
+   "t": "Regardez ensemble des images des anciens bâtiments de Delhi. Demandez : qu’est-ce qui serait nouveau là-bas pour un voyageur venu du Maroc ?"
+  },
+  "6.2": {
+   "en": "The Sultan was Muhammad ibn Tughluq. \"Do not think that the office of qadi of Dihli is one of the minor functions; it is the highest of functions in our estimation\" (vol. III, pp. 746-747). Ibn Battuta replied that he followed the school of Malik while the people there were Hanafis, and did not know the language; the Sultan gave him two deputies.",
+   "t": "Le sultan était Muhammad ibn Tughluq. « Ne pense pas que la charge de cadi de Delhi soit une fonction mineure ; c’est la plus haute des fonctions à nos yeux » (vol. III, p. 746-747). Ibn Battuta a répondu qu’il suivait l’école de Malik alors que les gens de là-bas étaient hanafites, et qu’il ne connaissait pas la langue ; le sultan lui a donné deux adjoints."
+  },
+  "6.3": {
+   "en": "The book also tells of this Sultan's great cruelty, and of Ibn Battuta falling out of favour and fearing for his life. In India he was also once seized by raiders, stripped and nearly killed (vol. IV, pp. 776-777). The game leaves these out.",
+   "t": "Le livre raconte aussi la grande cruauté de ce sultan, et comment Ibn Battuta est tombé en disgrâce et a craint pour sa vie. En Inde, il a aussi été un jour capturé par des pillards, dépouillé et presque tué (vol. IV, p. 776-777). Le jeu laisse cela de côté."
+  },
+  "6.4": {
+   "en": "Ask: when have you had to decide something fairly, like sharing sweets? How did you do it?",
+   "t": "Demandez : quand as-tu dû décider quelque chose de façon juste, comme partager des bonbons ? Comment as-tu fait ?"
+  },
+  "7.1": {
+   "en": "\"These islands are one of the wonders of the world and number about two thousand in all\" (vol. IV, p. 821). The translator notes that some are mere sandbanks, and rather more than 200 are inhabited.",
+   "t": "« Ces îles sont l’une des merveilles du monde et sont au nombre d’environ deux mille » (vol. IV, p. 821). Le traducteur note que certaines ne sont que des bancs de sable, et qu’un peu plus de 200 sont habitées."
+  },
+  "7.2": {
+   "en": "\"The inhabitants of the Maldives are all of them Muslims, pious and upright\" (vol. IV, p. 821). He stayed for a long time and served as a judge there.",
+   "t": "« Les habitants des Maldives sont tous musulmans, pieux et droits » (vol. IV, p. 821). Il y est resté longtemps et y a été juge."
+  },
+  "7.3": {
+   "en": "He married several times on his travels, in the Maldives too (\"I married several women there\", vol. IV, p. 828), and left wives and children behind in more than one country. The game leaves his marriages out.",
+   "t": "Il s’est marié plusieurs fois pendant ses voyages, aux Maldives aussi (« j’y épousai plusieurs femmes », vol. IV, p. 828), et a laissé des épouses et des enfants dans plus d’un pays. Le jeu laisse ses mariages de côté."
+  },
+  "7.4": {
+   "en": "If you can, open a coconut together and taste the milk.",
+   "t": "Si vous pouvez, ouvrez ensemble une noix de coco et goûtez son eau."
+  },
+  "7.5": {
+   "en": "Ask: what do you think it is like to live on a tiny island?",
+   "t": "Demandez : comment est-ce, à ton avis, de vivre sur une toute petite île ?"
+  },
+  "7.6": {
+   "en": "Ask: what grows near our home? What do we make from it?",
+   "t": "Demandez : qu’est-ce qui pousse près de chez nous ? Qu’en faisons-nous ?"
+  },
+  "8.1": {
+   "en": "Indonesia has more Muslims than any other country. Ask: how do you think Islam came there? (With traders and travellers, like Ibn Battuta.)",
+   "t": "L’Indonésie compte plus de musulmans que n’importe quel autre pays. Demandez : comment l’islam y est-il arrivé, à ton avis ? (Avec des marchands et des voyageurs, comme Ibn Battuta.)"
+  },
+  "8.2": {
+   "en": "\"The people came out to us in little boats bringing coconuts, bananas, mangoes and fish\" (vol. IV, p. 875). The city was Sumutra (Samudra-Pasai, in today's Aceh), which later gave its name to the whole island.",
+   "t": "« Les gens vinrent à nous dans de petites barques, apportant des noix de coco, des bananes, des mangues et du poisson » (vol. IV, p. 875). La ville était Sumutra (Samudra-Pasai, dans l’actuel Aceh), qui a plus tard donné son nom à toute l’île."
+  },
+  "8.3": {
+   "en": "Ask: what gift would you bring to welcome someone?",
+   "t": "Demandez : quel cadeau apporterais-tu pour accueillir quelqu’un ?"
+  },
+  "8.4": {
+   "en": "Sultan al-Malik al-Zahir: \"one of the noblest and most generous of kings, a Shafi'i ... a lover of jurists, who come to his audiences for the recitation of the Qur'an and for discussions\" (vol. IV, p. 876). The book also says he often fought the unbelievers around him; the game leaves that out.",
+   "t": "Le sultan al-Malik al-Zahir : « l’un des rois les plus nobles et les plus généreux, un chaféite ... qui aime les juristes, lesquels viennent à ses audiences pour la récitation du Coran et pour des discussions » (vol. IV, p. 876). Le livre dit aussi qu’il combattait souvent les mécréants autour de lui ; le jeu laisse cela de côté."
+  },
+  "8.5": {
+   "en": "\"He is unassuming and walks to the Friday prayer on foot\" (vol. IV, p. 876). Greeting there was by shaking hands.",
+   "t": "« Il est modeste et se rend à pied à la prière du vendredi » (vol. IV, p. 876). Là-bas, on se saluait en se serrant la main."
+  },
+  "8.6": {
+   "en": "Ask: what does it mean to be humble? Who do you know who is humble?",
+   "t": "Demandez : que veut dire être humble ? Qui connais-tu qui est humble ?"
+  },
+  "9.1": {
+   "en": "Ask: how far is China from Morocco? Trace the journey on a map.",
+   "t": "Demandez : à quelle distance la Chine est-elle du Maroc ? Suivez le voyage sur une carte."
+  },
+  "9.2": {
+   "en": "Paper money: \"pieces of paper the size of the palm of the hand\" (vol. IV, p. 889).",
+   "t": "La monnaie de papier : « des morceaux de papier de la taille de la paume de la main » (vol. IV, p. 889)."
+  },
+  "9.3": {
+   "en": "Look at real money together, coins and notes. Which is made of paper?",
+   "t": "Regardez ensemble de la vraie monnaie, pièces et billets. Lesquels sont en papier ?"
+  },
+  "9.4": {
+   "en": "Look at a china dish or cup at home together. Where was it made?",
+   "t": "Regardez ensemble une assiette ou une tasse en porcelaine à la maison. Où a-t-elle été fabriquée ?"
+  },
+  "9.5": {
+   "en": "\"China is the safest and best country for the traveller\" (vol. IV, p. 892). Historians doubt that he went as far north as he says: the translator quotes Henry Yule, \"one's doubts arise whether Ibn Batuta could have travelled beyond Hang-chau\" (vol. IV, p. 905, n. 58).",
+   "t": "« La Chine est le pays le plus sûr et le meilleur pour le voyageur » (vol. IV, p. 892). Les historiens doutent qu’il soit allé aussi loin au nord qu’il le dit : le traducteur cite Henry Yule, « on en vient à douter qu’Ibn Batuta ait voyagé au-delà de Hang-chau » (vol. IV, p. 905, n. 58)."
+  },
+  "9.6": {
+   "en": "Ask: what makes a place safe for travellers?",
+   "t": "Demandez : qu’est-ce qui rend un endroit sûr pour les voyageurs ?"
+  },
+  "10.1": {
+   "en": "Ask: how would you feel coming home after a very long time?",
+   "t": "Demandez : comment te sentirais-tu en rentrant chez toi après très longtemps ?"
+  },
+  "10.2": {
+   "en": "\"I reached the city of Taza, where I learnt that my mother had died of the plague, God Most High have mercy upon her\" (vol. IV, p. 924). It was the Black Death of 1348-49. On the way, in Damascus, he had learnt that his father had died fifteen years before (vol. IV, p. 915).",
+   "t": "« J’arrivai à la ville de Taza, où j’appris que ma mère était morte de la peste, que Dieu le Très-Haut lui fasse miséricorde » (vol. IV, p. 924). C’était la Peste noire de 1348-49. En route, à Damas, il avait appris que son père était mort quinze ans plus tôt (vol. IV, p. 915)."
+  },
+  "10.3": {
+   "en": "Make a dua together for family members who have passed away: Allahumma ighfir lahum warhamhum.",
+   "t": "Faites ensemble une dou‘a pour les membres de la famille qui sont décédés : Allahoumma-ghfir lahoum warhamhoum."
+  },
+  "10.4": {
+   "en": "He reached Fez at the end of Sha'ban 750, November 1349 (vol. IV, pp. 924-925).",
+   "t": "Il est arrivé à Fès à la fin de cha‘ban 750, en novembre 1349 (vol. IV, p. 924-925)."
+  },
+  "10.5": {
+   "en": "Ask your child to tell the way home in their own words.",
+   "t": "Demandez à votre enfant de raconter le chemin du retour avec ses propres mots."
+  },
+  "11.1": {
+   "en": "Ask: what do you need to cross a desert? (Water, camels, a guide, patience.)",
+   "t": "Demandez : de quoi a-t-on besoin pour traverser un désert ? (De l’eau, des chameaux, un guide, de la patience.)"
+  },
+  "11.2": {
+   "en": "Look at the Sahara on a map. Ask: how big is it compared to our country?",
+   "t": "Regardez le Sahara sur une carte. Demandez : quelle est sa taille comparée à notre pays ?"
+  },
+  "11.3": {
+   "en": "\"Among their good practices are their avoidance of injustice; there is no people more averse to it ... the universal security in their country, for neither the traveller nor the resident there has to fear thieves or bandits\" (vol. IV, p. 964). The Sultan was Mansa Sulayman, brother of Mansa Musa.",
+   "t": "« Parmi leurs bonnes pratiques, il y a leur rejet de l’injustice ; il n’est pas de peuple qui l’ait davantage en horreur ... et la sécurité générale dans leur pays, car ni le voyageur ni l’habitant n’y craint les voleurs ou les brigands » (vol. IV, p. 964). Le sultan était Mansa Sulayman, frère de Mansa Moussa."
+  },
+  "11.4": {
+   "en": "\"They dress in clean white clothes on Fridays; if one of them has only a threadbare shirt he washes it and cleans it and wears it for prayer on Friday\" (vol. IV, p. 965).",
+   "t": "« Ils s’habillent de vêtements blancs et propres le vendredi ; si l’un d’eux n’a qu’une chemise usée, il la lave, la nettoie et la porte pour la prière du vendredi » (vol. IV, p. 965)."
+  },
+  "11.5": {
+   "en": "\"They pay great attention to memorizing the Holy Qur'an. If their children appear to be backward in learning it they put shackles on them and do not remove them till they learn it.\" He saw the qadi's children shackled on the day of Eid, and a well-dressed young man with a heavy shackle on his foot (vol. IV, p. 965). The game says only that the children worked hard.\n\nHe also listed \"bad practices\" in Mali: servant women and slave-girls who went unclothed, people putting dust on their heads before the Sultan, and eating carrion, dogs and donkeys (vol. IV, pp. 965-966). These are a Moroccan judge's views of a culture not his own.",
+   "t": "« Ils font grand cas de l’apprentissage par cœur du noble Coran. Si leurs enfants semblent en retard pour l’apprendre, ils leur mettent des entraves et ne les leur ôtent pas avant qu’ils ne l’aient appris. » Il a vu les enfants du cadi entravés le jour de l’Aïd, et un jeune homme bien habillé avec une lourde entrave au pied (vol. IV, p. 965). Le jeu dit seulement que les enfants travaillaient dur.\n\nIl a aussi énuméré de « mauvaises pratiques » au Mali : des servantes et des esclaves qui allaient dévêtues, des gens qui se mettaient de la poussière sur la tête devant le sultan, et le fait de manger des charognes, des chiens et des ânes (vol. IV, p. 965-966). Ce sont les avis d’un juge marocain sur une culture qui n’était pas la sienne."
+  },
+  "11.6": {
+   "en": "Ibn Juzayy wrote the book in Fez in 1355-56 from what Ibn Battuta told him, at the order of the Sultan Abu 'Inan. Scholars think some passages were borrowed from earlier writers, and that he may not have reached every place he describes (Ross Dunn, The Adventures of Ibn Battuta, 1986, discusses this). He died in Morocco around 1368.",
+   "t": "Ibn Juzayy a écrit le livre à Fès en 1355-56 à partir de ce qu’Ibn Battuta lui racontait, sur l’ordre du sultan Abou ‘Inan. Les spécialistes pensent que certains passages ont été empruntés à des auteurs antérieurs, et qu’il n’est peut-être pas allé partout où il le décrit (Ross Dunn, The Adventures of Ibn Battuta, 1986, en discute). Il est mort au Maroc vers 1368."
+  },
+  "11.7": {
+   "en": "Ask your child to retell the whole journey. Which place would they most like to visit?",
+   "t": "Demandez à votre enfant de raconter de nouveau tout le voyage. Quel endroit aimerait-il le plus visiter ?"
+  }
  }
 }

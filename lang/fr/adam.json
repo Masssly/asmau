@@ -1,631 +1,631 @@
 {
  "status": "draft",
- "_note": "Français. To be checked by a native speaker; seen only with ?lang=fr until then.",
+ "_note": "Français, drafted 21 November 2026, to be checked by a native speaker. Seen only with ?lang=fr until then.",
  "lines": {
   "d1-a": {
    "en": "Before there were any people, there were the angels. They were made of light, and they praised Allah all the time.",
-   "t": ""
+   "t": "Avant qu’il y ait des hommes, il y avait les anges. Ils étaient faits de lumière, et ils louaient Allah tout le temps."
   },
   "d1-b": {
    "en": "One day, Allah told the angels: I am going to place someone new on the earth, to look after it.",
-   "t": ""
+   "t": "Un jour, Allah a dit aux anges : Je vais placer sur la terre quelqu’un de nouveau, pour en prendre soin."
   },
   "d1-c": {
    "en": "The angels asked: will You place someone there who may do harm, when we praise You all the time? Allah said: I know what you do not know.",
-   "t": ""
+   "t": "Les anges ont demandé : vas-Tu y placer quelqu’un qui risque de faire du mal, alors que nous Te louons tout le temps ? Allah a dit : Je sais ce que vous ne savez pas."
   },
   "d1-q": {
    "en": "What did Allah say to the angels?",
-   "t": ""
+   "t": "Qu’a dit Allah aux anges ?"
   },
   "d1-q-opt1": {
    "en": "I know what you do not know",
-   "t": ""
+   "t": "Je sais ce que vous ne savez pas"
   },
   "d1-q-opt2": {
    "en": "You are right",
-   "t": ""
+   "t": "Vous avez raison"
   },
   "d1-q-no": {
    "en": "Allah knows everything. He said: I know what you do not know.",
-   "t": ""
+   "t": "Allah sait tout. Il a dit : Je sais ce que vous ne savez pas."
   },
   "d1-mem": {
    "en": "Find the pairs: things Allah made.",
-   "t": ""
+   "t": "Trouve les paires : des choses qu’Allah a créées."
   },
   "d2-a": {
    "en": "Allah gathered earth from all over the world: dark earth and light earth, red earth and brown, soft earth and hard.",
-   "t": ""
+   "t": "Allah a rassemblé de la terre de partout dans le monde : de la terre sombre et de la terre claire, de la terre rouge et brune, de la terre douce et de la terre dure."
   },
   "d2-gather": {
    "en": "Help gather the earth. Tap to fill every piece.",
-   "t": ""
+   "t": "Aide à rassembler la terre. Touche pour remplir chaque morceau."
   },
   "d2-b": {
    "en": "From that earth Allah made clay, and shaped Adam from it.",
-   "t": ""
+   "t": "Avec cette terre, Allah a fait de l’argile, et en a façonné Adam."
   },
   "d2-c": {
    "en": "Then Allah breathed life into him. Adam opened his eyes, and he was alive!",
-   "t": ""
+   "t": "Puis Allah lui a insufflé la vie. Adam a ouvert les yeux, et il était vivant !"
   },
   "d2-d": {
    "en": "That is why the children of Adam are so many colours, just like the earth he was made from. And every one of them is precious to Allah.",
-   "t": ""
+   "t": "C’est pour cela que les enfants d’Adam sont de tant de couleurs, comme la terre dont il a été fait. Et chacun d’eux est précieux pour Allah."
   },
   "d2-q": {
    "en": "What was Adam made from?",
-   "t": ""
+   "t": "De quoi Adam a-t-il été fait ?"
   },
   "d2-q-opt1": {
    "en": "Fire",
-   "t": ""
+   "t": "De feu"
   },
   "d2-q-opt2": {
    "en": "Earth and clay",
-   "t": ""
+   "t": "De terre et d’argile"
   },
   "d2-q-no": {
    "en": "Not fire. Adam was made from earth and clay.",
-   "t": ""
+   "t": "Pas de feu. Adam a été fait de terre et d’argile."
   },
   "d3-a": {
    "en": "It is told that the very first thing Adam did was sneeze! And he said: al-hamdu lillah. All praise belongs to Allah.",
-   "t": ""
+   "t": "On raconte que la toute première chose qu’Adam a faite, c’est éternuer ! Et il a dit : al-hamdou lillah. Toute louange appartient à Allah."
   },
   "d3-b": {
    "en": "And Allah answered him: may Allah have mercy on you.",
-   "t": ""
+   "t": "Et Allah lui a répondu : qu’Allah te fasse miséricorde."
   },
   "d3-q": {
    "en": "What do we say when we sneeze?",
-   "t": ""
+   "t": "Que dit-on quand on éternue ?"
   },
   "d3-q-opt1": {
    "en": "Al-hamdu lillah",
-   "t": ""
+   "t": "Al-hamdou lillah"
   },
   "d3-q-opt2": {
    "en": "Nothing at all",
-   "t": ""
+   "t": "Rien du tout"
   },
   "d3-q-no": {
    "en": "We say al-hamdu lillah, just like Adam.",
-   "t": ""
+   "t": "On dit al-hamdou lillah, comme Adam."
   },
   "d3-c": {
    "en": "Then Allah told Adam: go and greet those angels, and listen to how they answer. That will be the greeting of your children.",
-   "t": ""
+   "t": "Puis Allah a dit à Adam : va saluer ces anges, et écoute comment ils répondent. Ce sera la salutation de tes enfants."
   },
   "d3-d": {
    "en": "Adam said: as-salamu alaykum, peace be upon you. The angels answered: wa alaykum as-salam wa rahmatullah. And peace be upon you, and the mercy of Allah.",
-   "t": ""
+   "t": "Adam a dit : as-salamou ‘alaykoum, que la paix soit sur vous. Les anges ont répondu : wa ‘alaykoum as-salam wa rahmatoullah. Et sur toi la paix, et la miséricorde d’Allah."
   },
   "d3-say": {
    "en": "What do we say? Match each one.",
-   "t": ""
+   "t": "Que dit-on ? Relie chacun."
   },
   "d3-say-a1": {
    "en": "When we sneeze",
-   "t": ""
+   "t": "Quand on éternue"
   },
   "d3-say-b1": {
    "en": "Al-hamdu lillah",
-   "t": ""
+   "t": "Al-hamdou lillah"
   },
   "d3-say-a2": {
    "en": "When we meet someone",
-   "t": ""
+   "t": "Quand on rencontre quelqu’un"
   },
   "d3-say-b2": {
    "en": "As-salamu alaykum",
-   "t": ""
+   "t": "As-salamou ‘alaykoum"
   },
   "d3-say-a3": {
    "en": "When someone greets us",
-   "t": ""
+   "t": "Quand quelqu’un nous salue"
   },
   "d3-say-b3": {
    "en": "Wa alaykum as-salam",
-   "t": ""
+   "t": "Wa ‘alaykoum as-salam"
   },
   "d4-a": {
    "en": "Allah taught Adam the names of everything: the sun and the moon, the sea and the mountains, every animal and every bird.",
-   "t": ""
+   "t": "Allah a appris à Adam le nom de toutes choses : le soleil et la lune, la mer et les montagnes, chaque animal et chaque oiseau."
   },
   "d4-homes": {
    "en": "Adam knew every animal. Match each one to its home.",
-   "t": ""
+   "t": "Adam connaissait chaque animal. Relie chacun à sa maison."
   },
   "d4-homes-a1": {
    "en": "Camel",
-   "t": ""
+   "t": "Chameau"
   },
   "d4-homes-b1": {
    "en": "Desert",
-   "t": ""
+   "t": "Désert"
   },
   "d4-homes-a2": {
    "en": "Fish",
-   "t": ""
+   "t": "Poisson"
   },
   "d4-homes-b2": {
    "en": "Sea",
-   "t": ""
+   "t": "Mer"
   },
   "d4-homes-a3": {
    "en": "Bird",
-   "t": ""
+   "t": "Oiseau"
   },
   "d4-homes-b3": {
    "en": "Nest",
-   "t": ""
+   "t": "Nid"
   },
   "d4-homes-a4": {
    "en": "Bee",
-   "t": ""
+   "t": "Abeille"
   },
   "d4-homes-b4": {
    "en": "Flower",
-   "t": ""
+   "t": "Fleur"
   },
   "d4-b": {
    "en": "Then Allah showed these things to the angels and said: tell Me their names. The angels said: glory be to You! We only know what You have taught us.",
-   "t": ""
+   "t": "Puis Allah a montré ces choses aux anges et a dit : dites-Moi leurs noms. Les anges ont dit : gloire à Toi ! Nous ne savons que ce que Tu nous as appris."
   },
   "d4-c": {
    "en": "Then Allah said: Adam, tell them their names. And Adam told them, every single one!",
-   "t": ""
+   "t": "Puis Allah a dit : Adam, dis-leur leurs noms. Et Adam les leur a dits, tous, sans exception !"
   },
   "d4-mem": {
    "en": "Find the pairs, and say their names.",
-   "t": ""
+   "t": "Trouve les paires, et dis leurs noms."
   },
   "d4-q": {
    "en": "Who taught Adam the names?",
-   "t": ""
+   "t": "Qui a appris les noms à Adam ?"
   },
   "d4-q-opt1": {
    "en": "The angels",
-   "t": ""
+   "t": "Les anges"
   },
   "d4-q-opt2": {
    "en": "Allah",
-   "t": ""
+   "t": "Allah"
   },
   "d4-q-no": {
    "en": "The angels did not know them. Allah taught Adam.",
-   "t": ""
+   "t": "Les anges ne les connaissaient pas. C’est Allah qui les a appris à Adam."
   },
   "d5-a": {
    "en": "Then Allah told the angels: bow down before Adam. And all the angels bowed.",
-   "t": ""
+   "t": "Puis Allah a dit aux anges : prosternez-vous devant Adam. Et tous les anges se sont prosternés."
   },
   "d5-b": {
    "en": "All except one: Iblis. He was one of the jinn, made from fire. He stood up stiff and proud, and he would not bow.",
-   "t": ""
+   "t": "Tous sauf un : Iblis. Il était l’un des djinns, créé de feu. Il est resté debout, raide et orgueilleux, et il ne voulait pas se prosterner."
   },
   "d5-c": {
    "en": "Allah asked: what stopped you from bowing? Iblis said: I am better than him. You made me from fire, and him from clay.",
-   "t": ""
+   "t": "Allah a demandé : qu’est-ce qui t’a empêché de te prosterner ? Iblis a dit : je suis meilleur que lui. Tu m’as créé de feu, et lui d’argile."
   },
   "d5-proud": {
    "en": "Which is humble, and which is proud? Sort them.",
-   "t": ""
+   "t": "Qu’est-ce qui est humble, et qu’est-ce qui est orgueilleux ? Trie-les."
   },
   "d5-proud-bin1": {
    "en": "Humble",
-   "t": ""
+   "t": "Humble"
   },
   "d5-proud-bin2": {
    "en": "Proud",
-   "t": ""
+   "t": "Orgueilleux"
   },
   "d5-proud-it1": {
    "en": "Doing what Allah asks",
-   "t": ""
+   "t": "Faire ce qu’Allah demande"
   },
   "d5-proud-it2": {
    "en": "Saying sorry",
-   "t": ""
+   "t": "Demander pardon"
   },
   "d5-proud-it3": {
    "en": "Saying: I am better than you",
-   "t": ""
+   "t": "Dire : je suis meilleur que toi"
   },
   "d5-proud-it4": {
    "en": "Refusing to listen",
-   "t": ""
+   "t": "Refuser d’écouter"
   },
   "d5-proud-it5": {
    "en": "Thanking Allah",
-   "t": ""
+   "t": "Remercier Allah"
   },
   "d5-proud-it6": {
    "en": "Laughing at others",
-   "t": ""
+   "t": "Se moquer des autres"
   },
   "d5-proud-no": {
    "en": "Being proud is what Iblis did. Being humble is what Allah loves.",
-   "t": ""
+   "t": "L’orgueil, c’est ce qu’a fait Iblis. L’humilité, c’est ce qu’Allah aime."
   },
   "d5-d": {
    "en": "So Allah sent Iblis away. And Iblis said: I will whisper to Adam's children, from in front and behind, from their right and their left!",
-   "t": ""
+   "t": "Alors Allah a chassé Iblis. Et Iblis a dit : je chuchoterai aux enfants d’Adam, par-devant et par-derrière, par leur droite et par leur gauche !"
   },
   "d5-e": {
    "en": "But Allah said: you will have no power over My true servants.",
-   "t": ""
+   "t": "Mais Allah a dit : tu n’auras aucun pouvoir sur Mes vrais serviteurs."
   },
   "d5-refuge": {
    "en": "When we feel a bad whisper, we ask Allah to keep us safe: a'udhu billahi min ash-shaytan ir-rajim. Press and hold the shield.",
-   "t": ""
+   "t": "Quand nous sentons un mauvais chuchotement, nous demandons à Allah de nous protéger : a‘oudhou billahi mina ch-chaytani r-rajim. Appuie longtemps sur le bouclier."
   },
   "d6-a": {
    "en": "Allah made a wife for Adam, so that he would not be alone. Her name was Hawwa.",
-   "t": ""
+   "t": "Allah a créé une épouse pour Adam, pour qu’il ne soit pas seul. Elle s’appelait Hawwa."
   },
   "d6-b": {
    "en": "Allah said: live in the Garden, both of you, and eat whatever you like. In this Garden you will never be hungry or thirsty, and the sun will never be too hot.",
-   "t": ""
+   "t": "Allah a dit : habitez le Jardin, tous les deux, et mangez ce que vous voulez. Dans ce Jardin, vous n’aurez jamais faim ni soif, et le soleil ne sera jamais trop chaud."
   },
   "d6-fruit": {
    "en": "Gather the fruit of the Garden.",
-   "t": ""
+   "t": "Cueille les fruits du Jardin."
   },
   "d6-c": {
    "en": "But Allah said: do not go near this one tree. And remember, Iblis is your enemy.",
-   "t": ""
+   "t": "Mais Allah a dit : n’approchez pas de cet arbre-là. Et souvenez-vous, Iblis est votre ennemi."
   },
   "d6-tree": {
    "en": "Slide your finger around to look, and find the one tree they must not go near.",
-   "t": ""
+   "t": "Fais glisser ton doigt pour regarder, et trouve le seul arbre dont ils ne doivent pas s’approcher."
   },
   "d6-q": {
    "en": "What did Allah tell them about the tree?",
-   "t": ""
+   "t": "Qu’a dit Allah à propos de l’arbre ?"
   },
   "d6-q-opt1": {
    "en": "Do not go near it",
-   "t": ""
+   "t": "N’en approchez pas"
   },
   "d6-q-opt2": {
    "en": "Eat all of it",
-   "t": ""
+   "t": "Mangez-le tout"
   },
   "d6-q-no": {
    "en": "Allah said: do not go near this tree.",
-   "t": ""
+   "t": "Allah a dit : n’approchez pas de cet arbre."
   },
   "d7-a": {
    "en": "But Iblis came creeping with a whisper. He said: Allah only told you not to eat from this tree so that you would not become angels, or live for ever.",
-   "t": ""
+   "t": "Mais Iblis est venu en douce avec un chuchotement. Il a dit : Allah vous a seulement interdit cet arbre pour que vous ne deveniez pas des anges, ou que vous ne viviez pas pour toujours."
   },
   "d7-b": {
    "en": "And he swore: I am only giving you good advice! But it was a lie.",
-   "t": ""
+   "t": "Et il a juré : je ne vous donne que de bons conseils ! Mais c’était un mensonge."
   },
   "d7-q": {
    "en": "Was Iblis telling the truth?",
-   "t": ""
+   "t": "Iblis disait-il la vérité ?"
   },
   "d7-q-opt1": {
    "en": "Yes, he was a friend",
-   "t": ""
+   "t": "Oui, c’était un ami"
   },
   "d7-q-opt2": {
    "en": "No, it was a lie",
-   "t": ""
+   "t": "Non, c’était un mensonge"
   },
   "d7-q-no": {
    "en": "Iblis lied. He was their enemy, not their friend.",
-   "t": ""
+   "t": "Iblis a menti. C’était leur ennemi, pas leur ami."
   },
   "d7-c": {
    "en": "Adam forgot what Allah had told him, and they both ate from the tree.",
-   "t": ""
+   "t": "Adam a oublié ce qu’Allah lui avait dit, et ils ont mangé tous les deux de l’arbre."
   },
   "d7-d": {
    "en": "At once they felt ashamed, and they began to cover themselves with leaves from the Garden.",
-   "t": ""
+   "t": "Aussitôt ils ont eu honte, et ils ont commencé à se couvrir de feuilles du Jardin."
   },
   "d7-e": {
    "en": "Their Lord called to them: did I not tell you not to go near that tree? Did I not tell you that Iblis is your enemy?",
-   "t": ""
+   "t": "Leur Seigneur les a appelés : ne vous avais-Je pas dit de ne pas approcher de cet arbre ? Ne vous avais-Je pas dit qu’Iblis est votre ennemi ?"
   },
   "d7-listen": {
    "en": "Good things and bad whispers. Which do we do, and which do we say no to?",
-   "t": ""
+   "t": "Les bonnes choses et les mauvais chuchotements. Que faisons-nous, et à quoi disons-nous non ?"
   },
   "d7-listen-bin1": {
    "en": "Do it",
-   "t": ""
+   "t": "Je le fais"
   },
   "d7-listen-bin2": {
    "en": "Say no",
-   "t": ""
+   "t": "Je dis non"
   },
   "d7-listen-it1": {
    "en": "Pray on time",
-   "t": ""
+   "t": "Prier à l’heure"
   },
   "d7-listen-it2": {
    "en": "Tell a little lie",
-   "t": ""
+   "t": "Dire un petit mensonge"
   },
   "d7-listen-it3": {
    "en": "Say sorry",
-   "t": ""
+   "t": "Demander pardon"
   },
   "d7-listen-it4": {
    "en": "Hit your brother",
-   "t": ""
+   "t": "Frapper son frère"
   },
   "d7-listen-it5": {
    "en": "Help at home",
-   "t": ""
+   "t": "Aider à la maison"
   },
   "d7-listen-it6": {
    "en": "Take a sweet without asking",
-   "t": ""
+   "t": "Prendre un bonbon sans demander"
   },
   "d7-listen-no": {
    "en": "That one is a bad whisper. Say no to it, and do the good things.",
-   "t": ""
+   "t": "Celui-là est un mauvais chuchotement. Dis-lui non, et fais les bonnes choses."
   },
   "d8-a": {
    "en": "Adam and Hawwa were very, very sorry. They did not blame anyone else. They prayed: our Lord, we have wronged ourselves. If You do not forgive us and have mercy on us, we will be lost.",
-   "t": ""
+   "t": "Adam et Hawwa regrettaient beaucoup, beaucoup. Ils n’ont accusé personne d’autre. Ils ont prié : notre Seigneur, nous nous sommes fait du tort à nous-mêmes. Si Tu ne nous pardonnes pas et ne nous fais pas miséricorde, nous serons perdus."
   },
   "d8-dua": {
    "en": "Say Adam and Hawwa's prayer. Tap the parts in order.",
-   "t": ""
+   "t": "Dis la prière d’Adam et Hawwa. Touche les parties dans l’ordre."
   },
   "d8-dua-c1": {
    "en": "Our Lord,",
-   "t": ""
+   "t": "Notre Seigneur,"
   },
   "d8-dua-c2": {
    "en": "we have wronged ourselves.",
-   "t": ""
+   "t": "nous nous sommes fait du tort à nous-mêmes."
   },
   "d8-dua-c3": {
    "en": "If You do not forgive us",
-   "t": ""
+   "t": "Si Tu ne nous pardonnes pas"
   },
   "d8-dua-c4": {
    "en": "and have mercy on us,",
-   "t": ""
+   "t": "et ne nous fais pas miséricorde,"
   },
   "d8-dua-c5": {
    "en": "we will be lost.",
-   "t": ""
+   "t": "nous serons perdus."
   },
   "d8-dua-no": {
    "en": "Listen again, and say the prayer in order.",
-   "t": ""
+   "t": "Écoute encore, et dis la prière dans l’ordre."
   },
   "d8-b": {
    "en": "And Allah forgave them. Allah is the Ever-Relenting, the Most Merciful.",
-   "t": ""
+   "t": "Et Allah leur a pardonné. Allah est Celui qui accueille toujours le repentir, le Très Miséricordieux."
   },
   "d8-sorry": {
    "en": "Say sorry to Allah from the heart. Press and hold the hands until they shine.",
-   "t": ""
+   "t": "Demande pardon à Allah du fond du cœur. Appuie longtemps sur les mains jusqu’à ce qu’elles brillent."
   },
   "d8-q": {
    "en": "What did Adam and Hawwa do after their mistake?",
-   "t": ""
+   "t": "Qu’ont fait Adam et Hawwa après leur erreur ?"
   },
   "d8-q-opt1": {
    "en": "Said sorry to Allah",
-   "t": ""
+   "t": "Ils ont demandé pardon à Allah"
   },
   "d8-q-opt2": {
    "en": "Blamed someone else",
-   "t": ""
+   "t": "Ils ont accusé quelqu’un d’autre"
   },
   "d8-q-no": {
    "en": "They blamed no one. They said sorry to Allah, and He forgave them.",
-   "t": ""
+   "t": "Ils n’ont accusé personne. Ils ont demandé pardon à Allah, et Il leur a pardonné."
   },
   "d9-a": {
    "en": "Then Allah said: go down to the earth. There you will live, for a time. And when My guidance comes, whoever follows it will have nothing to fear.",
-   "t": ""
+   "t": "Puis Allah a dit : descendez sur la terre. Vous y vivrez, pour un temps. Et quand Ma guidée viendra, ceux qui la suivront n’auront rien à craindre."
   },
   "d9-b": {
    "en": "It is told that Adam and Hawwa came down to the earth far apart, and later found each other again, near Mecca.",
-   "t": ""
+   "t": "On raconte qu’Adam et Hawwa sont descendus sur la terre loin l’un de l’autre, et qu’ils se sont retrouvés plus tard, près de La Mecque."
   },
   "d9-find": {
    "en": "Help Adam find Hawwa again.",
-   "t": ""
+   "t": "Aide Adam à retrouver Hawwa."
   },
   "d9-c": {
    "en": "It is told that the angel Jibril taught Adam how to plant seeds and grow food, and how to pray.",
-   "t": ""
+   "t": "On raconte que l’ange Jibril a appris à Adam à planter des graines et faire pousser à manger, et à prier."
   },
   "d9-plant": {
    "en": "Plant the seeds. Tap each spot.",
-   "t": ""
+   "t": "Plante les graines. Touche chaque endroit."
   },
   "d9-d": {
    "en": "Adam and Hawwa worked hard, and Allah blessed their fields. Every day they remembered Allah and thanked Him.",
-   "t": ""
+   "t": "Adam et Hawwa travaillaient dur, et Allah a béni leurs champs. Chaque jour, ils se souvenaient d’Allah et Le remerciaient."
   },
   "d9-harvest": {
    "en": "Gather only the ripe golden wheat.",
-   "t": ""
+   "t": "Ne récolte que le blé doré et mûr."
   },
   "d10-a": {
    "en": "Adam and Hawwa had many children. One day, two of their sons each brought a gift to offer to Allah.",
-   "t": ""
+   "t": "Adam et Hawwa ont eu beaucoup d’enfants. Un jour, deux de leurs fils ont chacun apporté un cadeau à offrir à Allah."
   },
   "d10-b": {
    "en": "Allah accepted the gift of one brother, because he was mindful of Allah. But the other brother's gift was not accepted, and he became jealous and angry.",
-   "t": ""
+   "t": "Allah a accepté le cadeau d’un frère, parce qu’il craignait Allah. Mais le cadeau de l’autre frère n’a pas été accepté, et il est devenu jaloux et en colère."
   },
   "d10-c": {
    "en": "The angry brother said: I will kill you! But the good brother said: even if you raise your hand to hurt me, I will never raise mine to hurt you. I fear Allah.",
-   "t": ""
+   "t": "Le frère en colère a dit : je vais te tuer ! Mais le bon frère a dit : même si tu lèves la main pour me faire du mal, jamais je ne lèverai la mienne pour te faire du mal. Je crains Allah."
   },
   "d10-q": {
    "en": "What did the good brother say?",
-   "t": ""
+   "t": "Qu’a dit le bon frère ?"
   },
   "d10-q-opt1": {
    "en": "I will hit you back",
-   "t": ""
+   "t": "Je vais te frapper aussi"
   },
   "d10-q-opt2": {
    "en": "I will never hurt you",
-   "t": ""
+   "t": "Jamais je ne te ferai de mal"
   },
   "d10-q-no": {
    "en": "The good brother said: I will never raise my hand to hurt you.",
-   "t": ""
+   "t": "Le bon frère a dit : jamais je ne lèverai la main pour te faire du mal."
   },
   "d10-d": {
    "en": "But the angry brother would not calm down. He hurt his brother so badly that his brother died.",
-   "t": ""
+   "t": "Mais le frère en colère ne voulait pas se calmer. Il a blessé son frère si gravement que son frère est mort."
   },
   "d10-e": {
    "en": "Then Allah sent a raven, which scratched in the ground. The brother cried: what have I done? And he was full of sorrow.",
-   "t": ""
+   "t": "Alors Allah a envoyé un corbeau, qui grattait la terre. Le frère s’est écrié : qu’ai-je fait ? Et il était plein de chagrin."
   },
   "d10-f": {
    "en": "Allah teaches us: whoever saves one life, it is as if they had saved all people.",
-   "t": ""
+   "t": "Allah nous enseigne : celui qui sauve une vie, c’est comme s’il avait sauvé tous les hommes."
   },
   "d10-kind": {
    "en": "Be like the good brother. Which is kind, and which is unkind?",
-   "t": ""
+   "t": "Sois comme le bon frère. Qu’est-ce qui est gentil, et qu’est-ce qui ne l’est pas ?"
   },
   "d10-kind-bin1": {
    "en": "Kind",
-   "t": ""
+   "t": "Gentil"
   },
   "d10-kind-bin2": {
    "en": "Unkind",
-   "t": ""
+   "t": "Pas gentil"
   },
   "d10-kind-it1": {
    "en": "Sharing your toys",
-   "t": ""
+   "t": "Partager ses jouets"
   },
   "d10-kind-it2": {
    "en": "Pushing someone",
-   "t": ""
+   "t": "Pousser quelqu’un"
   },
   "d10-kind-it3": {
    "en": "Helping someone who is hurt",
-   "t": ""
+   "t": "Aider quelqu’un qui s’est fait mal"
   },
   "d10-kind-it4": {
    "en": "Staying jealous and angry",
-   "t": ""
+   "t": "Rester jaloux et en colère"
   },
   "d10-kind-it5": {
    "en": "Making up after a fight",
-   "t": ""
+   "t": "Se réconcilier après une dispute"
   },
   "d10-kind-it6": {
    "en": "Hitting back",
-   "t": ""
+   "t": "Rendre les coups"
   },
   "d10-kind-no": {
    "en": "Let's be like the good brother: kind, even when others are not.",
-   "t": ""
+   "t": "Soyons comme le bon frère : gentils, même quand les autres ne le sont pas."
   },
   "d11-a": {
    "en": "Allah gave Adam and Hawwa another son, called Shith. He was good and wise, and he learned everything his father taught him.",
-   "t": ""
+   "t": "Allah a donné à Adam et Hawwa un autre fils, appelé Shith. Il était bon et sage, et il a appris tout ce que son père lui enseignait."
   },
   "d11-b": {
    "en": "Adam taught all his children to remember Allah, to pray, and to be kind to one another.",
-   "t": ""
+   "t": "Adam a appris à tous ses enfants à se souvenir d’Allah, à prier, et à être gentils les uns avec les autres."
   },
   "d11-c": {
    "en": "And Allah says: children of Adam, the best clothes of all are being mindful of Allah.",
-   "t": ""
+   "t": "Et Allah dit : enfants d’Adam, le meilleur des vêtements, c’est la crainte d’Allah."
   },
   "d11-d": {
    "en": "We are all children of Adam: one big family, in every colour. So we greet each other with peace, and we help each other.",
-   "t": ""
+   "t": "Nous sommes tous des enfants d’Adam : une grande famille, de toutes les couleurs. Alors nous nous saluons avec la paix, et nous nous aidons les uns les autres."
   },
   "d11-story": {
    "en": "Tell the whole story of Adam. Tap in order.",
-   "t": ""
+   "t": "Raconte toute l’histoire d’Adam. Touche dans l’ordre."
   },
   "d11-story-c1": {
    "en": "First, Allah made Adam from earth.",
-   "t": ""
+   "t": "D’abord, Allah a fait Adam de terre."
   },
   "d11-story-c2": {
    "en": "Allah taught him the names of everything.",
-   "t": ""
+   "t": "Allah lui a appris le nom de toutes choses."
   },
   "d11-story-c3": {
    "en": "Iblis was too proud to bow.",
-   "t": ""
+   "t": "Iblis était trop orgueilleux pour se prosterner."
   },
   "d11-story-c4": {
    "en": "In the Garden, they ate from the tree.",
-   "t": ""
+   "t": "Dans le Jardin, ils ont mangé de l’arbre."
   },
   "d11-story-c5": {
    "en": "They said sorry, and Allah forgave them.",
-   "t": ""
+   "t": "Ils ont demandé pardon, et Allah leur a pardonné."
   },
   "d11-story-c6": {
    "en": "Then they lived and worked on the earth.",
-   "t": ""
+   "t": "Puis ils ont vécu et travaillé sur la terre."
   },
   "d11-story-no": {
    "en": "Listen again, and tell it in order.",
-   "t": ""
+   "t": "Écoute encore, et raconte dans l’ordre."
   },
   "end-a": {
    "en": "This is the story of Adam, peace be upon him, the first of all people. He made a mistake, and he said sorry, and Allah forgave him. When we make a mistake, we can turn to Allah too.",
-   "t": ""
+   "t": "Voici l’histoire d’Adam, que la paix soit sur lui, le premier de tous les hommes. Il a fait une erreur, il a demandé pardon, et Allah lui a pardonné. Quand nous faisons une erreur, nous aussi pouvons nous tourner vers Allah."
   }
  },
  "strings": {
-  "Someone New": "",
-  "Made from Earth": "",
-  "Told in Sunni and Shia narrations": "",
-  "First Words": "",
-  "Ibn Abbas in Ibn Kathir's commentary on 2:37; al-Bukhari and Muslim; Majlisi, Hayat al-Qulub": "",
-  "From a hadith in al-Bukhari": "",
-  "The Names": "",
-  "The Proud One": "",
+  "Someone New": "Quelqu’un de nouveau",
+  "Made from Earth": "Fait de terre",
+  "Told in Sunni and Shia narrations": "Rapporté par des récits sunnites et chiites",
+  "First Words": "Les premiers mots",
+  "Ibn Abbas in Ibn Kathir's commentary on 2:37; al-Bukhari and Muslim; Majlisi, Hayat al-Qulub": "Ibn Abbas dans l’exégèse d’Ibn Kathir sur 2:37 ; al-Bukhari et Muslim ; al-Majlisi, Hayat al-Qulub",
+  "From a hadith in al-Bukhari": "D’après un hadith d’al-Bukhari",
+  "The Names": "Les noms",
+  "The Proud One": "L’orgueilleux",
   "Press and hold": "",
-  "Allah keeps us safe": "",
-  "The Garden": "",
-  "The Whisper": "",
-  "Sorry": "",
-  "Our Lord": "",
-  "we have wronged ourselves": "",
-  "if You do not forgive us": "",
-  "and have mercy on us": "",
-  "we will be lost": "",
-  "Allah is the Most Merciful": "",
-  "Life on Earth": "",
-  "From narrations in Majlisi's Hayat al-Qulub": "",
-  "ripe wheat": "",
-  "a young shoot": "",
-  "Two Brothers": "",
-  "Children of Adam": "",
-  "Made from earth": "",
-  "The names": "",
-  "Iblis would not bow": "",
-  "The Garden and the tree": "",
-  "Life on earth": "",
+  "Allah keeps us safe": "Allah nous protège",
+  "The Garden": "Le Jardin",
+  "The Whisper": "Le chuchotement",
+  "Sorry": "Pardon",
+  "Our Lord": "Notre Seigneur",
+  "we have wronged ourselves": "nous nous sommes fait du tort",
+  "if You do not forgive us": "si Tu ne nous pardonnes pas",
+  "and have mercy on us": "et ne nous fais pas miséricorde",
+  "we will be lost": "nous serons perdus",
+  "Allah is the Most Merciful": "Allah est le Très Miséricordieux",
+  "Life on Earth": "La vie sur la terre",
+  "From narrations in Majlisi's Hayat al-Qulub": "D’après des récits du Hayat al-Qulub d’al-Majlisi",
+  "ripe wheat": "du blé mûr",
+  "a young shoot": "une jeune pousse",
+  "Two Brothers": "Deux frères",
+  "Children of Adam": "Les enfants d’Adam",
+  "Made from earth": "Fait de terre",
+  "The names": "Les noms",
+  "Iblis would not bow": "Iblis refuse de se prosterner",
+  "The Garden and the tree": "Le Jardin et l’arbre",
+  "Life on earth": "La vie sur la terre",
   "← Asmau": "",
-  "Adam": "",
-  "The Story of Adam": "",
-  "Eleven chapters about the first of all people. Play a little every day.": "",
+  "Adam": "Adam",
+  "The Story of Adam": "L’histoire d’Adam",
+  "Eleven chapters about the first of all people. Play a little every day.": "Onze chapitres sur le premier de tous les hommes. Joue un peu chaque jour.",
   "Start the story": "",
   "Start from the beginning": "",
   "For parents": "",
@@ -634,14 +634,296 @@
   "All chapters": "",
   "✕ Close": "",
   "The End": "",
-  "Humility": "",
-  "Kindness": "",
+  "Humility": "L’humilité",
+  "Kindness": "La gentillesse",
   "Read it again": "",
   "Pick a chapter": "",
   "Music": "",
   "Sounds": "",
   "Voice": "",
-  "The first of all people: made from earth, taught the names, forgiven.": "",
-  "A bright garden with a great tree, a stream, birds and deer.": ""
+  "The first of all people: made from earth, taught the names, forgiven.": "Le premier de tous les hommes : fait de terre, instruit des noms, pardonné.",
+  "A bright garden with a great tree, a stream, birds and deer.": "Un jardin lumineux avec un grand arbre, un ruisseau, des oiseaux et des cerfs.",
+  "📖 About this story": "📖 À propos de cette histoire",
+  "📚 Sources": "📚 Sources",
+  "It draws on Sunni and Shia sources: Ibn Kathir’s commentary and hadith in al-Bukhari, Muslim, al-Tirmidhi and Abu Dawud; al-Tabatabai’s al-Mizan and the narrations of the Imams of Ahl al-Bayt collected in Majlisi’s Hayat al-Qulub. Where they differ (how Hawwa was made, what the tree was, how to understand Adam’s eating from it, the words of his repentance) the story uses words both accept and the chapter note gives both.": "Elle s’appuie sur des sources sunnites et chiites : l’exégèse d’Ibn Kathir et les hadiths d’al-Bukhari, Muslim, al-Tirmidhi et Abou Dawoud ; al-Mizan d’al-Tabatabai et les récits des Imams de Ahl al-Bayt rassemblés par al-Majlisi dans Hayat al-Qulub. Là où elles diffèrent (comment Hawwa a été créée, quel était l’arbre, comment comprendre qu’Adam en ait mangé, les mots de son repentir), l’histoire emploie des mots que les deux acceptent et la note du chapitre donne les deux.",
+  "🤲 Told gently, or left out": "🤲 Raconté avec douceur, ou laissé de côté",
+  "Told gently: the eating from the tree (the pictures show leaves, not people), and the two brothers (5:27–31), which a parent may skip.": "Raconté avec douceur : le fruit de l’arbre mangé (les images montrent des feuilles, pas les personnes), et les deux frères (5:27–31), qu’un parent peut passer.",
+  "👥 Who is shown": "👥 Qui est montré",
+  "Shown in this story: Prophet Adam (peace be upon him), Hawwa and their children. The angels are shown only as light with wings, and Iblis only as smoke and flame, never with a face.": "Dans cette histoire : le Prophète Adam (que la paix soit sur lui), Hawwa et leurs enfants. Les anges ne sont montrés que comme une lumière avec des ailes, et Iblis seulement comme de la fumée et des flammes, jamais avec un visage.",
+  "The story of Adam is told in several surahs. This game follows <a href=\"https://quran.com/2/30-38\" target=\"_blank\" rel=\"noopener\">Surah Al-Baqarah 2:30–38</a>, <a href=\"https://quran.com/7/11-27\" target=\"_blank\" rel=\"noopener\">Surah Al-A‘raf 7:11–27</a> and <a href=\"https://quran.com/20/115-123\" target=\"_blank\" rel=\"noopener\">Surah Ta-Ha 20:115–123</a>, with passages from surahs 3, 4, 5, 15, 18 and 38.": "L’histoire d’Adam est racontée dans plusieurs sourates. Ce jeu suit <a href=\"https://quran.com/2/30-38\" target=\"_blank\" rel=\"noopener\">la sourate Al-Baqara 2:30–38</a>, <a href=\"https://quran.com/7/11-27\" target=\"_blank\" rel=\"noopener\">la sourate Al-A‘raf 7:11–27</a> et <a href=\"https://quran.com/20/115-123\" target=\"_blank\" rel=\"noopener\">la sourate Ta-Ha 20:115–123</a>, avec des passages des sourates 3, 4, 5, 15, 18 et 38."
+ },
+ "notes": {
+  "1.1": {
+   "en": "'Successor' (khalifa) is told as 'someone new, to look after the earth'.\n\nThe angels' question is a question, not a refusal: when they could not name the things Allah showed them they said, 'We have knowledge only of what You have taught us' (2:32). The game tells that part in chapter 4.",
+   "t": "« Successeur » (khalifa) est raconté comme « quelqu’un de nouveau, pour prendre soin de la terre ».\n\nLa question des anges est une question, pas un refus : quand ils n’ont pas pu nommer les choses qu’Allah leur montrait, ils ont dit : « Nous n’avons de savoir que ce que Tu nous as appris » (2:32). Le jeu raconte ce passage au chapitre 4."
+  },
+  "1.2": {
+   "en": "Ask your child: if you were given a garden to look after, what would you do every day? Looking after the earth is part of the trust Allah gave Adam's children.\n\nThe Qur'an says Allah 'honoured the children of Adam' and provided good things for them (17:70).",
+   "t": "Demandez à votre enfant : si on te confiait un jardin, que ferais-tu chaque jour ? Prendre soin de la terre fait partie du dépôt qu’Allah a confié aux enfants d’Adam.\n\nLe Coran dit qu’Allah « a honoré les enfants d’Adam » et leur a accordé de bonnes choses (17:70)."
+  },
+  "1.3": {
+   "en": "The angels asked because they wanted to understand, not to argue. Talk about it: is it all right to ask questions about Allah and His world? How can we ask politely, the way the angels did?",
+   "t": "Les anges demandaient parce qu’ils voulaient comprendre, pas pour discuter. Parlez-en : est-ce bien de poser des questions sur Allah et Son monde ? Comment pouvons-nous demander poliment, comme les anges ?"
+  },
+  "1.4": {
+   "en": "Allah's answer, 'I know what you do not know', is a good one for children to keep. Ask: what is something you did not understand at first, but understood later?",
+   "t": "La réponse d’Allah, « Je sais ce que vous ne savez pas », est bonne à garder pour les enfants. Demandez : qu’est-ce que tu n’as pas compris au début, mais compris plus tard ?"
+  },
+  "1.5": {
+   "en": "While you play, name each thing together and say who made it: 'Allah made the sun.' Small children learn the words and the habit of thanking at the same time.",
+   "t": "Pendant que vous jouez, nommez ensemble chaque chose et dites qui l’a créée : « Allah a créé le soleil. » Les petits apprennent les mots et l’habitude de remercier en même temps."
+  },
+  "2.1": {
+   "en": "Earth of every kind: al-Tirmidhi and Abu Dawud report that Adam was made from a handful taken from all of the earth, so his children came like the earth, of many colours, some gentle and some rough. The Shia narrations give the same from Imam Ali: Adam was made 'from the soil of all the surface of the earth'.\n\nThe pictures in Asmau show everyone dark-skinned; the lesson about colours is told in words and shown with the earth itself.",
+   "t": "De la terre de toutes sortes : al-Tirmidhi et Abou Dawoud rapportent qu’Adam a été fait d’une poignée prise de toute la terre, si bien que ses enfants sont comme la terre, de toutes les couleurs, certains doux et certains rudes. Les récits chiites donnent la même chose d’après l’Imam Ali : Adam a été fait « de la terre de toute la surface du sol ».\n\nLes images d’Asmau montrent tout le monde à la peau foncée ; la leçon sur les couleurs est racontée en mots et montrée avec la terre elle-même."
+  },
+  "2.2": {
+   "en": "Talk about it: if you could pick up a handful of earth from anywhere in the world, where would it come from? Look at the soil near your home together: is it red, brown, sandy?",
+   "t": "Parlez-en : si tu pouvais prendre une poignée de terre n’importe où dans le monde, d’où viendrait-elle ? Regardez ensemble la terre près de chez vous : est-elle rouge, brune, sableuse ?"
+  },
+  "2.3": {
+   "en": "The Qur'an also says Allah made Adam 'from dust', said 'Be', and he was; it says the same about 'Isa (Jesus) (3:59). Neither had a father.",
+   "t": "Le Coran dit aussi qu’Allah a fait Adam « de poussière », a dit « Sois », et il fut ; il dit la même chose de ‘Issa (Jésus) (3:59). Ni l’un ni l’autre n’avait de père."
+  },
+  "2.4": {
+   "en": "Ask your child to put a hand on their chest and feel their breath. Every breath is a gift. A good moment to teach a short thank-you: al-hamdu lillah.",
+   "t": "Demandez à votre enfant de poser la main sur sa poitrine et de sentir sa respiration. Chaque souffle est un cadeau. Un bon moment pour apprendre un court merci : al-hamdou lillah."
+  },
+  "2.5": {
+   "en": "The Qur'an: 'People, We created you all from a single man and a single woman, and made you into races and tribes so that you should recognize one another. In God's eyes, the most honoured of you are the ones most mindful of Him' (49:13).\n\nAsk: what colours of people do you know? Which matters more to Allah: colour, or how kind and good someone is?",
+   "t": "Le Coran : « Ô hommes, Nous vous avons créés d’un mâle et d’une femelle, et Nous avons fait de vous des peuples et des tribus pour que vous vous connaissiez. Le plus noble d’entre vous auprès d’Allah est le plus pieux » (49:13).\n\nDemandez : de quelles couleurs sont les gens que tu connais ? Qu’est-ce qui compte le plus pour Allah : la couleur, ou la gentillesse et la bonté de quelqu’un ?"
+  },
+  "2.6": {
+   "en": "If your child chooses 'fire', talk about why it matters: Iblis will later boast that he was made from fire (chapter 5). Being made from earth is not lower; it is how Allah chose to make us.",
+   "t": "Si votre enfant choisit « feu », parlez de pourquoi c’est important : Iblis se vantera plus tard d’avoir été créé de feu (chapitre 5). Être fait de terre n’est pas inférieur ; c’est ainsi qu’Allah a choisi de nous créer."
+  },
+  "3.1": {
+   "en": "The sneeze: in the commentary on 2:37, Ibn Abbas has Adam remind Allah, 'when I sneezed You said, May Allah grant you His mercy'. The Shia narrations give the same: Adam said 'al-hamdu lillah' and was answered 'yarhamuk Allah'.\n\nThe greeting: al-Bukhari and Muslim report that Allah told Adam to greet a group of angels and to listen to their answer, which would be the greeting of his children. The Shia narrations give the same greeting.\n\nNeither is in the Qur'an.",
+   "t": "L’éternuement : dans l’exégèse de 2:37, Ibn Abbas fait dire à Adam, rappelant à Allah : « quand j’ai éternué, Tu as dit : qu’Allah te fasse miséricorde ». Les récits chiites donnent la même chose : Adam a dit « al-hamdou lillah » et on lui a répondu « yarhamouk Allah ».\n\nLa salutation : al-Bukhari et Muslim rapportent qu’Allah a dit à Adam de saluer un groupe d’anges et d’écouter leur réponse, qui serait la salutation de ses enfants. Les récits chiites donnent la même salutation.\n\nNi l’un ni l’autre n’est dans le Coran."
+  },
+  "3.2": {
+   "en": "The same words are still our answer today: when someone sneezes and says al-hamdu lillah, we say yarhamuk Allah (may Allah have mercy on you), and they answer yahdikum Allah (may Allah guide you).\n\nPractise it together: pretend to sneeze, and take turns saying each part.",
+   "t": "Ce sont toujours nos réponses aujourd’hui : quand quelqu’un éternue et dit al-hamdou lillah, on dit yarhamouk Allah (qu’Allah te fasse miséricorde), et il répond yahdikoum Allah (qu’Allah vous guide).\n\nEntraînez-vous ensemble : faites semblant d’éternuer, et dites chaque partie à tour de rôle."
+  },
+  "3.3": {
+   "en": "A gentle game for the week: whenever someone in the family sneezes, see who remembers the words first.",
+   "t": "Un petit jeu pour la semaine : chaque fois que quelqu’un éternue dans la famille, voyez qui se souvient des mots en premier."
+  },
+  "3.4": {
+   "en": "The Shia narrations in Majlisi's Hayat al-Qulub add that Jibril greeted Adam with 'hayyak Allah wa bayyak': may Allah keep you alive and make you happy.",
+   "t": "Les récits chiites du Hayat al-Qulub d’al-Majlisi ajoutent que Jibril a salué Adam par « hayyak Allah wa bayyak » : qu’Allah te garde en vie et te rende heureux."
+  },
+  "3.5": {
+   "en": "Ask: how do you feel when someone greets you with a smile? Make a family habit of greeting first when you come home: as-salamu alaykum.",
+   "t": "Demandez : comment te sens-tu quand quelqu’un te salue avec un sourire ? Prenez l’habitude en famille de saluer les premiers en rentrant : as-salamou ‘alaykoum."
+  },
+  "3.6": {
+   "en": "Turn it into a game at home: one person says a situation (I sneezed; I met my teacher; someone said salam to me) and the other says the right words.",
+   "t": "Faites-en un jeu à la maison : l’un dit une situation (j’ai éternué ; j’ai croisé ma maîtresse ; quelqu’un m’a dit salam) et l’autre dit les bons mots."
+  },
+  "4.1": {
+   "en": "The commentary reports from Ibn Abbas that 'the names' are the names people use for everything, of every kind; al-Bukhari's hadith of intercession has people say to Adam, 'Allah ... taught you the names of everything'.\n\nAl-Tabatabai's al-Mizan reads the named things as 'sublime creations, hidden from the heavens and the earth'. The game keeps to the plain meaning both share: Allah taught Adam what the angels did not know.",
+   "t": "L’exégèse rapporte d’Ibn Abbas que « les noms » sont les noms que les gens utilisent pour toutes choses, de toutes sortes ; le hadith de l’intercession chez al-Bukhari fait dire aux gens à Adam : « Allah ... t’a appris le nom de toutes choses ».\n\nAl-Mizan d’al-Tabatabai comprend les choses nommées comme « des créations sublimes, cachées aux cieux et à la terre ». Le jeu s’en tient au sens simple que les deux partagent : Allah a appris à Adam ce que les anges ne savaient pas."
+  },
+  "4.2": {
+   "en": "Talk about where animals live near you: where do birds sleep? Where do goats go in the rain? Naming things carefully is a way of noticing what Allah made.",
+   "t": "Parlez des endroits où vivent les animaux près de chez vous : où dorment les oiseaux ? Où vont les chèvres quand il pleut ? Nommer les choses avec soin, c’est une façon de remarquer ce qu’Allah a créé."
+  },
+  "4.3": {
+   "en": "The angels' answer, 'glory be to You, we only know what You have taught us', is a beautiful thing to say when we do not know something. Encourage your child to say 'I don't know' without shame.",
+   "t": "La réponse des anges, « gloire à Toi, nous ne savons que ce que Tu nous as appris », est une belle chose à dire quand on ne sait pas. Encouragez votre enfant à dire « je ne sais pas » sans honte."
+  },
+  "4.4": {
+   "en": "Ask: what new word did you learn this week? Who taught it to you? Every bit of knowledge has a teacher, and the first Teacher is Allah.",
+   "t": "Demandez : quel mot nouveau as-tu appris cette semaine ? Qui te l’a appris ? Tout savoir a un enseignant, et le premier Enseignant est Allah."
+  },
+  "4.5": {
+   "en": "Before turning each card, ask your child to say the name out loud in English and, if you can, in your home language or in Arabic.",
+   "t": "Avant de retourner chaque carte, demandez à votre enfant de dire le nom à voix haute en français et, si vous pouvez, dans votre langue familiale ou en arabe."
+  },
+  "4.6": {
+   "en": "Talk about it: the angels did not know everything, and they were not ashamed to say so. Being humble about what we know is part of learning.",
+   "t": "Parlez-en : les anges ne savaient pas tout, et ils n’avaient pas honte de le dire. Être humble au sujet de ce qu’on sait fait partie d’apprendre."
+  },
+  "5.1": {
+   "en": "Iblis 'was one of the jinn' (18:50), made from fire (7:12). The commentary calls the bow Allah honouring Adam; al-Tabatabai's al-Mizan says the angels bowed to Adam 'as he was the symbol of humanity'. It is a bow of respect at Allah's command, not worship.\n\nIblis's vow to come at people 'from their front and their back, from their right and their left' is 7:17; 'you will have no power over My servants' is 15:42.\n\nAsking Allah for protection (a'udhu billahi min ash-shaytan ir-rajim) is not in these verses; the game adds it as what children can do.",
+   "t": "Iblis « était du nombre des djinns » (18:50), créé de feu (7:12). L’exégèse dit que la prosternation était Allah qui honorait Adam ; al-Mizan d’al-Tabatabai dit que les anges se sont prosternés devant Adam « parce qu’il était le symbole de l’humanité ». C’est une prosternation de respect sur l’ordre d’Allah, pas une adoration.\n\nLe serment d’Iblis de venir aux hommes « par-devant et par-derrière, par leur droite et par leur gauche » est en 7:17 ; « tu n’auras aucun pouvoir sur Mes serviteurs » est en 15:42.\n\nDemander la protection d’Allah (a‘oudhou billahi mina ch-chaytani r-rajim) n’est pas dans ces versets ; le jeu l’ajoute comme ce que les enfants peuvent faire."
+  },
+  "5.2": {
+   "en": "Ask: what does 'proud' look like? What does 'humble' look like? Let your child show it with their body: standing stiff with the chin up, or bowing the head.",
+   "t": "Demandez : à quoi ressemble quelqu’un d’« orgueilleux » ? Et quelqu’un d’« humble » ? Laissez votre enfant le montrer avec son corps : debout, raide, le menton levé, ou la tête baissée."
+  },
+  "5.3": {
+   "en": "Iblis compared what he was made of. Talk about it: is anyone better because of what they look like, or where they come from? What makes someone good?",
+   "t": "Iblis a comparé ce dont il était fait. Parlez-en : quelqu’un est-il meilleur à cause de son apparence, ou de l’endroit d’où il vient ? Qu’est-ce qui rend quelqu’un bon ?"
+  },
+  "5.4": {
+   "en": "After the game, ask: can you remember a time you were humble, or a time you were proud? No scolding; just noticing.",
+   "t": "Après le jeu, demandez : te souviens-tu d’une fois où tu as été humble, ou d’une fois où tu as été orgueilleux ? Sans gronder ; juste remarquer."
+  },
+  "5.5": {
+   "en": "Children sometimes feel 'a voice' telling them to do something wrong. You can call it a bad whisper and teach them they can say no to it.",
+   "t": "Les enfants sentent parfois « une voix » qui leur dit de faire quelque chose de mal. Vous pouvez l’appeler un mauvais chuchotement et leur apprendre qu’ils peuvent lui dire non."
+  },
+  "5.6": {
+   "en": "The verse continues: Iblis has power 'only over the ones who go astray and follow you' (15:42). Reassure your child: someone who turns to Allah is not helpless.",
+   "t": "Le verset continue : Iblis n’a de pouvoir « que sur ceux qui s’égarent et te suivent » (15:42). Rassurez votre enfant : celui qui se tourne vers Allah n’est pas sans défense."
+  },
+  "5.7": {
+   "en": "Practise the words slowly together: a'udhu billahi min ash-shaytan ir-rajim. Some families say it before sleep, or when a child feels angry.",
+   "t": "Entraînez-vous lentement ensemble à dire : a‘oudhou billahi mina ch-chaytani r-rajim. Certaines familles le disent avant de dormir, ou quand un enfant est en colère."
+  },
+  "6.1": {
+   "en": "How Hawwa was made is told in two ways. The commentary reports, from Ibn Ishaq and 'the People of the Book', that she was made from Adam's rib while he slept. Narrations of the Imams of Ahl al-Bayt say she was made from the clay left over from Adam (Imam al-Baqir), and al-Tabatabai's al-Mizan prefers that. The Qur'an says Allah made his mate 'from it', the single soul (4:1). The game says only that Allah made Hawwa for Adam.\n\nThe tree is not named in the Qur'an. The commentary quotes al-Tabari: 'We do not know which tree that was.' Shia narrations call it wheat or a vine (Imam al-Rida: 'both traditions are true'). The game names no fruit.\n\nThe Garden: the commentary says most scholars place it in the heavens; al-Tabatabai says it was 'in the heaven, although it was not the Garden of eternal abode'.",
+   "t": "Comment Hawwa a été créée est raconté de deux façons. L’exégèse rapporte, d’après Ibn Ishaq et « les Gens du Livre », qu’elle a été faite d’une côte d’Adam pendant qu’il dormait. Des récits des Imams de Ahl al-Bayt disent qu’elle a été faite de l’argile restée d’Adam (l’Imam al-Baqir), et al-Mizan d’al-Tabatabai préfère cela. Le Coran dit qu’Allah a créé son épouse « de lui », l’âme unique (4:1). Le jeu dit seulement qu’Allah a créé Hawwa pour Adam.\n\nL’arbre n’est pas nommé dans le Coran. L’exégèse cite al-Tabari : « Nous ne savons pas quel était cet arbre. » Des récits chiites parlent de blé ou de vigne (l’Imam al-Rida : « les deux traditions sont vraies »). Le jeu ne nomme aucun fruit.\n\nLe Jardin : l’exégèse dit que la plupart des savants le placent dans les cieux ; al-Tabatabai dit qu’il était « dans le ciel, bien que ce ne fût pas le Jardin de la demeure éternelle »."
+  },
+  "6.2": {
+   "en": "The Qur'an describes that Garden: 'you will never go hungry, feel naked, be thirsty, or suffer the heat of the sun' (20:118-119). Ask: what would you like most about a place like that?",
+   "t": "Le Coran décrit ce Jardin : « tu n’y auras pas faim, tu n’y seras pas nu, tu n’y auras pas soif et tu n’y souffriras pas de la chaleur du soleil » (20:118-119). Demandez : qu’est-ce que tu aimerais le plus dans un tel endroit ?"
+  },
+  "6.3": {
+   "en": "Ask your child to name their favourite fruit, and to say who made it. A good moment for bismillah before eating, and al-hamdu lillah after.",
+   "t": "Demandez à votre enfant de nommer son fruit préféré, et de dire qui l’a créé. Un bon moment pour bismillah avant de manger, et al-hamdou lillah après."
+  },
+  "6.4": {
+   "en": "One rule among so many gifts. Talk about it: why do parents make a few rules, even when they give a lot? Rules are part of caring.",
+   "t": "Une seule règle au milieu de tant de cadeaux. Parlez-en : pourquoi les parents font-ils quelques règles, même quand ils donnent beaucoup ? Les règles font partie de l’amour."
+  },
+  "6.5": {
+   "en": "The Qur'an does not name the tree, and the game shows no fruit on purpose. If your child asks 'was it an apple?', you can say: nobody knows, and it does not matter.",
+   "t": "Le Coran ne nomme pas l’arbre, et le jeu ne montre exprès aucun fruit. Si votre enfant demande « c’était une pomme ? », vous pouvez dire : personne ne le sait, et ce n’est pas important."
+  },
+  "6.6": {
+   "en": "Ask: what are some rules in our home? Which one is hardest to remember? How can we help each other remember?",
+   "t": "Demandez : quelles sont les règles de notre maison ? Laquelle est la plus difficile à retenir ? Comment pouvons-nous nous aider à nous en souvenir ?"
+  },
+  "7.1": {
+   "en": "'He forgot' is 20:115; the same passage also says 'Adam disobeyed his Lord' (20:121). How to understand this differs. In the hadith of intercession quoted in the commentary, Adam remembers his error and is ashamed before his Lord. Al-Tabatabai's al-Mizan says the command was 'only an advice', given before any law, so the eating was 'neither a sin ... nor an injustice against Allah'; Shia narrations call it leaving the better (tark al-awla) before prophethood (Imam al-Rida). The game uses the Qur'an's own words: he forgot, they ate, they were sorry, and they were forgiven.\n\nThe verses say their nakedness became exposed to them (7:22, 20:121). The game says only that they felt ashamed and covered themselves with leaves, and the pictures show the leaves, not the people.\n\nAl-Tabatabai calls the stories of a serpent and a peacock helping Iblis 'extremely unreliable'; the game leaves them out.",
+   "t": "« Il oublia » est en 20:115 ; le même passage dit aussi « Adam désobéit à son Seigneur » (20:121). La façon de le comprendre diffère. Dans le hadith de l’intercession cité par l’exégèse, Adam se souvient de sa faute et a honte devant son Seigneur. Al-Mizan d’al-Tabatabai dit que l’ordre n’était « qu’un conseil », donné avant toute loi, si bien que le fait de manger n’était « ni un péché ... ni une injustice envers Allah » ; des récits chiites parlent de délaisser le meilleur (tark al-awla) avant la prophétie (l’Imam al-Rida). Le jeu emploie les mots mêmes du Coran : il a oublié, ils ont mangé, ils ont regretté, et ils ont été pardonnés.\n\nLes versets disent que leur nudité leur est apparue (7:22, 20:121). Le jeu dit seulement qu’ils ont eu honte et se sont couverts de feuilles, et les images montrent les feuilles, pas les personnes.\n\nAl-Tabatabai qualifie d’« extrêmement peu fiables » les histoires d’un serpent et d’un paon aidant Iblis ; le jeu les laisse de côté."
+  },
+  "7.2": {
+   "en": "Iblis swore he was giving good advice (7:21). Talk about it: can someone say 'trust me' and still be lying? How can we tell?\n\nYou may meet the story that Iblis got into the Garden inside the mouth of a serpent. Ibn Kathir says early commentators such as as-Suddi, Abu al-'Aliya and Wahb bin Munabbih passed on 'Israelite reports' (isra'iliyyat) about the serpent and Iblis entering the Garden, and he notes the story comes from the Torah. The Qur'an says only that Satan whispered to them.",
+   "t": "Iblis a juré qu’il donnait de bons conseils (7:21). Parlez-en : quelqu’un peut-il dire « fais-moi confiance » et mentir quand même ? Comment le savoir ?\n\nVous rencontrerez peut-être l’histoire selon laquelle Iblis est entré dans le Jardin caché dans la gueule d’un serpent. Ibn Kathir dit que des exégètes anciens comme as-Suddi, Abu al-'Aliya et Wahb bin Munabbih ont transmis des « récits israélites » (isra'iliyyat) sur le serpent et Iblis entrant dans le Jardin, et il note que l’histoire vient de la Torah. Le Coran dit seulement que Satan leur a chuchoté."
+  },
+  "7.3": {
+   "en": "Ask: what can you do if someone tells you to do something you know is wrong, even if they are friendly? Who can you tell?",
+   "t": "Demandez : que peux-tu faire si quelqu’un te dit de faire quelque chose que tu sais mal, même s’il est gentil ? À qui peux-tu le dire ?"
+  },
+  "7.4": {
+   "en": "Everyone forgets. Ask your child about a time they forgot something important. What helps us remember? (Reminders, asking, saying it out loud.)",
+   "t": "Tout le monde oublie. Demandez à votre enfant une fois où il a oublié quelque chose d’important. Qu’est-ce qui nous aide à nous souvenir ? (Des rappels, demander, le dire à voix haute.)"
+  },
+  "7.5": {
+   "en": "Feeling ashamed after a mistake is normal. Talk about it gently: the feeling tells us something went wrong; the next step is to say sorry, as Adam and Hawwa will.\n\nYou may meet a report that Adam ran away in shame, his hair caught in a tree of the Garden, and Allah called: 'Adam, are you running from Me?' and he answered: 'No, out of shame before You.' Ibn Kathir calls this hadith 'strange' (gharib), with a break in its chain between Qatada and Ubayy bin Ka'b, so it is weak.",
+   "t": "Avoir honte après une erreur, c’est normal. Parlez-en doucement : ce sentiment nous dit que quelque chose n’allait pas ; l’étape suivante, c’est demander pardon, comme vont le faire Adam et Hawwa.\n\nVous rencontrerez peut-être un récit selon lequel Adam s’est enfui de honte, ses cheveux pris dans un arbre du Jardin, et Allah l’a appelé : « Adam, Me fuis-tu ? » et il a répondu : « Non, c’est par honte devant Toi. » Ibn Kathir qualifie ce hadith d’« étrange » (gharib), avec une rupture dans sa chaîne entre Qatada et Ubayy bin Ka'b ; il est donc faible."
+  },
+  "7.6": {
+   "en": "Allah reminded them of what He had said before. Ask: how do you feel when someone reminds you kindly? How do you like to be reminded?",
+   "t": "Allah leur a rappelé ce qu’Il avait dit avant. Demandez : comment te sens-tu quand quelqu’un te le rappelle gentiment ? Comment aimes-tu qu’on te le rappelle ?"
+  },
+  "7.7": {
+   "en": "Make your own list at home: good things to do (help, share, pray) and whispers to say no to (lying, hitting, taking without asking).",
+   "t": "Faites votre propre liste à la maison : les bonnes choses à faire (aider, partager, prier) et les chuchotements auxquels dire non (mentir, frapper, prendre sans demander)."
+  },
+  "8.1": {
+   "en": "The 'words' Adam received (2:37): the commentary reports from many early scholars that they are the prayer of 7:23, which the game uses, and from Ibn Abbas a conversation in which Adam asks for Allah's mercy. Al-Tabatabai prefers other words, which al-Kafi gives from the fifth or sixth Imam: 'There is no god except Thee; Glory be to Thee, O Allah! and praise! I have committed evil and been unjust to myself; therefore, forgive me.' Other narrations, Shia (al-Kafi) and Sunni (al-Suyuti's al-Durr al-Manthur), have Adam ask by the right of the Prophet Muhammad ﷺ, the Shia ones also by the right of Ali, Fatimah, al-Hasan and al-Husayn.\n\nIblis blamed Allah: 'because You have put me in the wrong' (7:16). Adam and Hawwa blamed no one but themselves (7:23). The game draws that difference for children.",
+   "t": "Les « paroles » qu’Adam a reçues (2:37) : l’exégèse rapporte de nombreux savants anciens qu’il s’agit de la prière de 7:23, que le jeu emploie, et d’Ibn Abbas une conversation où Adam demande la miséricorde d’Allah. Al-Tabatabai préfère d’autres mots, que donne al-Kafi d’après le cinquième ou le sixième Imam : « Il n’y a pas de dieu en dehors de Toi ; gloire à Toi, ô Allah ! et louange ! J’ai fait le mal et je me suis fait du tort ; pardonne-moi donc. » D’autres récits, chiites (al-Kafi) et sunnites (al-Durr al-Manthur d’al-Suyuti), font demander à Adam par le droit du Prophète Muhammad ﷺ, les récits chiites aussi par le droit d’Ali, Fatima, al-Hasan et al-Husayn.\n\nIblis a accusé Allah : « parce que Tu m’as égaré » (7:16). Adam et Hawwa n’ont accusé personne qu’eux-mêmes (7:23). Le jeu fait ressortir cette différence pour les enfants."
+  },
+  "8.2": {
+   "en": "This prayer is 7:23 and can be learnt by heart: Rabbana zalamna anfusana wa in lam taghfir lana wa tarhamna lanakunanna min al-khasirin.",
+   "t": "Cette prière est en 7:23 et peut s’apprendre par cœur : Rabbana zalamna anfousana wa in lam taghfir lana wa tarhamna lanakounanna mina l-khasirin."
+  },
+  "8.3": {
+   "en": "Ask: when you say sorry to someone, how do you hope they will answer? Allah is the Ever-Relenting: He accepts sorry again and again.\n\nIn al-Mizan, al-Tabatabai quotes a narration from al-Qummi that after coming down to earth Adam stayed in prostration for forty days, weeping for the Garden. This is a Shia narration; the Qur'an says only that Allah forgave them.",
+   "t": "Demandez : quand tu demandes pardon à quelqu’un, comment espères-tu qu’il réponde ? Allah est Celui qui accueille sans cesse le repentir : Il accepte le pardon encore et encore.\n\nDans al-Mizan, al-Tabatabai cite un récit d’al-Qummi selon lequel, après être descendu sur la terre, Adam est resté prosterné quarante jours, pleurant le Jardin. C’est un récit chiite ; le Coran dit seulement qu’Allah leur a pardonné."
+  },
+  "8.4": {
+   "en": "A quiet moment: ask your child if there is anything they want to say sorry for today, to Allah or to someone at home. Let them answer in private if they prefer.",
+   "t": "Un moment calme : demandez à votre enfant s’il veut demander pardon pour quelque chose aujourd’hui, à Allah ou à quelqu’un de la maison. Laissez-le répondre en privé s’il préfère."
+  },
+  "8.5": {
+   "en": "The game draws one difference: Iblis blamed Allah, and Adam and Hawwa blamed no one but themselves. Ask: why is it hard to say 'it was my fault'?",
+   "t": "Le jeu fait ressortir une différence : Iblis a accusé Allah, et Adam et Hawwa n’ont accusé personne qu’eux-mêmes. Demandez : pourquoi est-ce difficile de dire « c’est ma faute » ?"
+  },
+  "9.1": {
+   "en": "Where they came down: the commentary reports Adam in India or between Mecca and Ta'if, and Hawwa near Jeddah; a Shia narration (al-Qummi, quoted in al-Mizan) puts Adam on al-Safa and Hawwa on al-Marwa. The game says only that they came down apart and found each other again near Mecca.\n\nJibril teaching Adam to farm and to pray is from Imam al-Baqir, in Majlisi's Hayat al-Qulub.",
+   "t": "Où ils sont descendus : l’exégèse rapporte Adam en Inde ou entre La Mecque et Taïf, et Hawwa près de Djeddah ; un récit chiite (al-Qummi, cité dans al-Mizan) place Adam sur al-Safa et Hawwa sur al-Marwa. Le jeu dit seulement qu’ils sont descendus loin l’un de l’autre et se sont retrouvés près de La Mecque.\n\nJibril apprenant à Adam à cultiver et à prier vient de l’Imam al-Baqir, dans le Hayat al-Qulub d’al-Majlisi."
+  },
+  "9.2": {
+   "en": "In al-Mizan, al-Tabatabai quotes a narration from al-Qummi: Adam came down on al-Safa and Hawwa on al-Marwa, the two hills pilgrims walk between in Hajj and 'Umrah.\n\nAsk: how would you feel if you were lost and then found your family again?\n\nYou may hear different places for where Adam came down. Ibn Kathir's full Arabic commentary collects them: India (as-Suddi, al-Hasan al-Basri, and Ibn Abbas in one report), a land called Dahna between Mecca and Ta'if (Ibn Abbas in another), or al-Safa with Hawwa on al-Marwa (Ibn 'Umar). Al-Hasan's report also places Hawwa at Jeddah, Iblis near Basra and the serpent at Isfahan. As-Suddi adds that the Black Stone came down with Adam. These are reports from early scholars, not from the Qur'an, and they disagree with each other.\n\nYou may also hear how long Adam was in the Garden: Ibn Abbas, in al-Hakim (who calls it authentic by the standard of al-Bukhari and Muslim), says from the afternoon prayer to sunset; al-Hasan says an hour of the Garden's day, which is 130 years of ours. (Translations from Ibn Kathir's Arabic are ours.)",
+   "t": "Dans al-Mizan, al-Tabatabai cite un récit d’al-Qummi : Adam est descendu sur al-Safa et Hawwa sur al-Marwa, les deux collines entre lesquelles marchent les pèlerins pendant le hajj et la ‘omra.\n\nDemandez : comment te sentirais-tu si tu étais perdu et que tu retrouvais ta famille ?\n\nVous entendrez peut-être des lieux différents pour la descente d’Adam. L’exégèse arabe complète d’Ibn Kathir les rassemble : l’Inde (as-Suddi, al-Hasan al-Basri, et Ibn Abbas dans un récit), une terre appelée Dahna entre La Mecque et Taïf (Ibn Abbas dans un autre), ou al-Safa avec Hawwa sur al-Marwa (Ibn ‘Omar). Le récit d’al-Hasan place aussi Hawwa à Djeddah, Iblis près de Bassora et le serpent à Ispahan. As-Suddi ajoute que la Pierre noire est descendue avec Adam. Ce sont des récits de savants anciens, pas du Coran, et ils se contredisent.\n\nVous entendrez peut-être aussi combien de temps Adam est resté au Jardin : Ibn Abbas, chez al-Hakim (qui le juge authentique selon les critères d’al-Bukhari et Muslim), dit de la prière de l’après-midi au coucher du soleil ; al-Hasan dit une heure du jour du Jardin, soit 130 de nos années. (Les traductions de l’arabe d’Ibn Kathir sont les nôtres.)"
+  },
+  "9.3": {
+   "en": "If you have been to Hajj or 'Umrah, or know someone who has, tell your child about walking between al-Safa and al-Marwa.",
+   "t": "Si vous avez fait le hajj ou la ‘omra, ou connaissez quelqu’un qui l’a fait, racontez à votre enfant la marche entre al-Safa et al-Marwa."
+  },
+  "9.4": {
+   "en": "In Hayat al-Qulub, Imam al-Baqir is reported to say that Jibril taught Adam the five prayers as 'model prayers for your children', and also wudu.\n\nAsk: who taught you to pray? Who would you like to teach?",
+   "t": "Dans le Hayat al-Qulub, l’Imam al-Baqir aurait dit que Jibril a appris à Adam les cinq prières comme « prières modèles pour tes enfants », et aussi les ablutions.\n\nDemandez : qui t’a appris à prier ? À qui aimerais-tu l’apprendre ?"
+  },
+  "9.5": {
+   "en": "If you can, plant a seed together this week: in a cup, a pot or the garden. Water it each day and talk about who makes it grow.",
+   "t": "Si vous pouvez, plantez ensemble une graine cette semaine : dans un gobelet, un pot ou le jardin. Arrosez-la chaque jour et parlez de Celui qui la fait pousser."
+  },
+  "9.6": {
+   "en": "Talk about the people who grow our food: farmers in your country or your family's village. Ask: what would you like to grow?",
+   "t": "Parlez des gens qui cultivent notre nourriture : les agriculteurs de votre pays ou du village de votre famille. Demandez : qu’aimerais-tu faire pousser ?"
+  },
+  "9.7": {
+   "en": "Ask: why do we wait for fruit and grain to be ripe? What else in life needs patience to be ready?",
+   "t": "Demandez : pourquoi attendons-nous que les fruits et le grain soient mûrs ? Qu’est-ce qui, dans la vie, demande aussi de la patience pour être prêt ?"
+  },
+  "10.1": {
+   "en": "The Qur'an does not name the brothers. Tradition calls them Habil and Qabil (Abel and Cain), as do Shia narrations (Imam Zayn al-Abidin). The game does not name them.\n\nThe verse says 'he killed him' (5:30). The game says the angry brother hurt him so badly that he died, and no picture shows the harm. The lesson of 5:32 is told without its opening words ('We decreed to the Children of Israel').\n\nIf your child is very young, you can skip this chapter; the next one does not need it.",
+   "t": "Le Coran ne nomme pas les frères. La tradition les appelle Habil et Qabil (Abel et Caïn), comme les récits chiites (l’Imam Zayn al-Abidin). Le jeu ne les nomme pas.\n\nLe verset dit « il le tua » (5:30). Le jeu dit que le frère en colère l’a blessé si gravement qu’il est mort, et aucune image ne montre le mal. La leçon de 5:32 est racontée sans ses premiers mots (« Nous avons prescrit aux Enfants d’Israël »).\n\nSi votre enfant est très jeune, vous pouvez passer ce chapitre ; le suivant n’en a pas besoin."
+  },
+  "10.2": {
+   "en": "Ask: what makes a gift good, its size or the heart behind it? The gift that was accepted came from someone mindful of Allah.\n\nYou may hear why the gifts were offered. Ibn Kathir reports from several early scholars, and from Ibn Abbas (in Ibn Abi Hatim), that each of Adam's children was born a twin, a boy and a girl, and that a son married the twin sister of another son, as the first family had no one else; the brothers quarrelled over which sister each would marry, and Adam asked both to offer a gift to settle it. Ibn Kathir calls Ibn Abbas's chain 'better than good'. The Qur'an does not give the reason, and the game leaves the question out.",
+   "t": "Demandez : qu’est-ce qui fait qu’un cadeau est bon, sa taille ou le cœur qu’il y a derrière ? Le cadeau accepté venait de quelqu’un qui craignait Allah.\n\nVous entendrez peut-être pourquoi les cadeaux ont été offerts. Ibn Kathir rapporte de plusieurs savants anciens, et d’Ibn Abbas (chez Ibn Abi Hatim), que chaque enfant d’Adam naissait jumeau, un garçon et une fille, et qu’un fils épousait la sœur jumelle d’un autre fils, la première famille n’ayant personne d’autre ; les frères se sont disputés pour savoir quelle sœur chacun épouserait, et Adam leur a demandé à tous les deux d’offrir un cadeau pour trancher. Ibn Kathir juge la chaîne d’Ibn Abbas « meilleure que bonne ». Le Coran ne donne pas la raison, et le jeu laisse la question de côté."
+  },
+  "10.3": {
+   "en": "The kind brother's words are 5:28. Talk about it: is it brave to refuse to hit back? What else can we do when someone wants to fight? (Walk away, get help, speak calmly.)",
+   "t": "Les paroles du bon frère sont en 5:28. Parlez-en : est-ce courageux de refuser de rendre les coups ? Que pouvons-nous faire d’autre quand quelqu’un veut se battre ? (S’éloigner, chercher de l’aide, parler calmement.)"
+  },
+  "10.4": {
+   "en": "Ask: has anyone ever been jealous of you, or have you felt jealous? What helps the feeling go away?",
+   "t": "Demandez : quelqu’un a-t-il déjà été jaloux de toi, ou as-tu été jaloux ? Qu’est-ce qui aide ce sentiment à passer ?"
+  },
+  "10.5": {
+   "en": "This page is sad on purpose. If your child is upset, hold them and talk about it: anger that is not calmed can do terrible harm. That is why we stop, breathe and make wudu when we are angry.\n\nYou may meet these reports: that Satan showed the angry brother how to kill by crushing an animal's head with a rock (Ibn Jarir, in Ibn Kathir), and that when Hawwa learned of it she wept (Ibn Abi Hatim from Zayd bin Aslam). Ibn Kathir passes them on without calling them strong; they are commentary, not Qur'an or hadith.\n\nA hadith in al-Bukhari, Muslim and others (quoted by Ibn Kathir) says that whenever a life is taken unjustly, the first son of Adam carries a share of it, because he was the first to make killing a practice.",
+   "t": "Cette page est triste exprès. Si votre enfant est bouleversé, prenez-le dans vos bras et parlez-en : une colère qu’on ne calme pas peut faire un mal terrible. C’est pour cela qu’on s’arrête, qu’on respire et qu’on fait ses ablutions quand on est en colère.\n\nVous rencontrerez peut-être ces récits : que Satan a montré au frère en colère comment tuer en écrasant la tête d’un animal avec une pierre (Ibn Jarir, chez Ibn Kathir), et que Hawwa a pleuré en l’apprenant (Ibn Abi Hatim d’après Zayd bin Aslam). Ibn Kathir les transmet sans les dire solides ; c’est de l’exégèse, pas du Coran ni du hadith.\n\nUn hadith d’al-Bukhari, Muslim et d’autres (cité par Ibn Kathir) dit qu’à chaque fois qu’une vie est prise injustement, le premier fils d’Adam en porte une part, parce qu’il a été le premier à faire du meurtre une pratique."
+  },
+  "10.6": {
+   "en": "The verse says the raven showed the brother how to cover his brother's body, and he said 'Could I not have been like this raven?' (5:31). The game says only that the raven scratched in the ground.\n\nIn Hayat al-Qulub, Adam wept for forty days for the son he lost.\n\nAs-Suddi reports from the Companions (in Ibn Kathir) that Allah sent two ravens, one of which killed the other and buried it, and that is how the brother learned to bury. The verse itself says only that a raven scratched the ground to show him.",
+   "t": "Le verset dit que le corbeau a montré au frère comment couvrir le corps de son frère, et qu’il a dit : « N’ai-je pas pu être comme ce corbeau ? » (5:31). Le jeu dit seulement que le corbeau grattait la terre.\n\nDans le Hayat al-Qulub, Adam a pleuré quarante jours le fils qu’il avait perdu.\n\nAs-Suddi rapporte des Compagnons (chez Ibn Kathir) qu’Allah a envoyé deux corbeaux, dont l’un a tué l’autre et l’a enterré, et que c’est ainsi que le frère a appris à enterrer. Le verset lui-même dit seulement qu’un corbeau a gratté la terre pour le lui montrer."
+  },
+  "10.7": {
+   "en": "Ask: what are small ways we can save or protect someone? (Holding a little one's hand at the road, helping someone who fell, calling a grown-up.)",
+   "t": "Demandez : quelles sont les petites façons de sauver ou de protéger quelqu’un ? (Tenir la main d’un petit pour traverser, aider quelqu’un qui est tombé, appeler un adulte.)"
+  },
+  "10.8": {
+   "en": "Make a family 'kindness list' for the week and tick off each kind thing someone does.",
+   "t": "Faites une « liste de gentillesse » familiale pour la semaine et cochez chaque geste gentil."
+  },
+  "11.1": {
+   "en": "Shith (Seth), Adam's son after Habil and his successor, called Hibatullah, and Adam's bequest to him: Imam al-Baqir and Imam al-Sadiq, in Majlisi's Hayat al-Qulub.\n\n7:27 warns the children of Adam not to let Satan seduce them 'as he did your parents'.",
+   "t": "Shith (Seth), le fils d’Adam après Habil et son successeur, appelé Hibatullah, et le testament d’Adam pour lui : l’Imam al-Baqir et l’Imam al-Sadiq, dans le Hayat al-Qulub d’al-Majlisi.\n\n7:27 avertit les enfants d’Adam de ne pas laisser Satan les séduire « comme il a fait sortir vos parents »."
+  },
+  "11.2": {
+   "en": "Ask: what do you want to teach your own children one day? What did your grandparents teach your parents?\n\nIn Hayat al-Qulub, Adam lived 930 years (Imam al-Sadiq) or 936 (Imam al-Baqir).\n\nYou may read that Qur'an 7:190, which speaks of a couple who were given a child and then 'ascribed partners' to Allah, is about Adam and Hawwa. Ibn Kathir prefers al-Hasan al-Basri's explanation, which he says has authentic chains: the verse moves from the first couple to their descendants, and it is the idol-worshippers among their children it describes, not Adam and Hawwa.",
+   "t": "Demandez : que voudrais-tu apprendre un jour à tes propres enfants ? Qu’ont appris tes grands-parents à tes parents ?\n\nDans le Hayat al-Qulub, Adam a vécu 930 ans (l’Imam al-Sadiq) ou 936 (l’Imam al-Baqir).\n\nVous lirez peut-être que le verset 7:190, qui parle d’un couple qui a reçu un enfant puis a « donné des associés » à Allah, concerne Adam et Hawwa. Ibn Kathir préfère l’explication d’al-Hasan al-Basri, dont il dit que les chaînes sont authentiques : le verset passe du premier couple à ses descendants, et ce sont les idolâtres parmi leurs enfants qu’il décrit, pas Adam et Hawwa."
+  },
+  "11.3": {
+   "en": "This is 7:26: the best garment is being mindful of Allah (libas al-taqwa). Ask: what does it look like when someone is mindful of Allah? (Honest, kind, careful.)",
+   "t": "C’est 7:26 : le meilleur vêtement est la crainte d’Allah (libas al-taqwa). Demandez : à quoi ressemble quelqu’un qui craint Allah ? (Honnête, gentil, attentif.)"
+  },
+  "11.4": {
+   "en": "A narration in Hayat al-Qulub from Imams al-Sadiq and al-Baqir: love for others what you love for yourself. Ask: what would you like others to do for you? Can you do that for them today?\n\nMuslim reports that Adam was created on a Friday, entered the Garden on a Friday and left it on a Friday.",
+   "t": "Un récit du Hayat al-Qulub d’après les Imams al-Sadiq et al-Baqir : aime pour les autres ce que tu aimes pour toi-même. Demandez : qu’aimerais-tu que les autres fassent pour toi ? Peux-tu le faire pour eux aujourd’hui ?\n\nMuslim rapporte qu’Adam a été créé un vendredi, est entré au Jardin un vendredi et en est sorti un vendredi."
+  },
+  "11.5": {
+   "en": "Ask your child to tell you the whole story in their own words, in any order they remember. Then ask: which part did you like best? Which part would you tell a friend?",
+   "t": "Demandez à votre enfant de vous raconter toute l’histoire avec ses propres mots, dans l’ordre dont il se souvient. Puis demandez : quelle partie as-tu préférée ? Quelle partie raconterais-tu à un ami ?"
+  }
  }
 }

@@ -1,9 +1,10 @@
 {
  "status": "draft",
- "_note": "Français. To be checked by a native speaker; seen only with ?lang=fr until then.",
+ "_note": "Français, drafted 21 November 2026, to be checked by a native speaker. Seen only with ?lang=fr until then.",
  "lines": {},
  "strings": {
-  "Ibn al-Nafis": "",
-  "The doctor of Damascus and Cairo who first described how blood travels through the lungs, and gave his house and books to a hospital.": ""
- }
+  "Ibn al-Nafis": "Ibn al-Nafis",
+  "The doctor of Damascus and Cairo who first described how blood travels through the lungs, and gave his house and books to a hospital.": "Le médecin de Damas et du Caire qui a décrit le premier comment le sang passe par les poumons, et a donné sa maison et ses livres à un hôpital."
+ },
+ "notes": {}
 }

@@ -1,491 +1,491 @@
 {
  "status": "draft",
- "_note": "Français. To be checked by a native speaker; seen only with ?lang=fr until then.",
+ "_note": "Français, drafted 21 November 2026, to be checked by a native speaker. Seen only with ?lang=fr until then.",
  "lines": {
   "r1-a": {
    "en": "Long ago, in the year 1900, a baby girl was born in Padang Panjang, a town in the green mountains of West Sumatra, in what is now Indonesia. Her name was Rahmah.",
-   "t": ""
+   "t": "Il y a longtemps, en l’an 1900, une petite fille est née à Padang Panjang, une ville dans les montagnes vertes de Sumatra occidental, dans le pays qui s’appelle aujourd’hui l’Indonésie. Elle s’appelait Rahmah."
   },
   "r1-b": {
    "en": "Her family loved learning. Her father was a judge, and her grandfather was a scholar who studied the stars.",
-   "t": ""
+   "t": "Sa famille aimait apprendre. Son père était juge, et son grand-père était un savant qui étudiait les étoiles."
   },
   "r1-c": {
    "en": "Her people, the Minangkabau, build beautiful houses with roofs that curve up like the horns of a buffalo.",
-   "t": ""
+   "t": "Son peuple, les Minangkabau, construit de belles maisons aux toits qui se relèvent comme les cornes d’un buffle."
   },
   "r1-home": {
    "en": "Find the pairs! Things of her home in the mountains.",
-   "t": ""
+   "t": "Trouve les paires ! Les choses de sa maison dans les montagnes."
   },
   "r1-q": {
    "en": "Where was Rahmah born?",
-   "t": ""
+   "t": "Où Rahmah est-elle née ?"
   },
   "r1-q-opt1": {
    "en": "In the mountains of Sumatra",
-   "t": ""
+   "t": "Dans les montagnes de Sumatra"
   },
   "r1-q-opt2": {
    "en": "In a big desert",
-   "t": ""
+   "t": "Dans un grand désert"
   },
   "r1-q-no": {
    "en": "She was born in Padang Panjang, in the green mountains of West Sumatra.",
-   "t": ""
+   "t": "Elle est née à Padang Panjang, dans les montagnes vertes de Sumatra occidental."
   },
   "r2-a": {
    "en": "When Rahmah was six years old, her father died. She missed him very much.",
-   "t": ""
+   "t": "Quand Rahmah avait six ans, son père est mort. Il lui manquait beaucoup."
   },
   "r2-b": {
    "en": "But her father's students came to teach her. She learned to read and write, in Arabic letters and in Latin letters too.",
-   "t": ""
+   "t": "Mais les élèves de son père sont venus lui faire classe. Elle a appris à lire et à écrire, en lettres arabes et en lettres latines aussi."
   },
   "r2-books": {
    "en": "Count the books she read! Tap each one.",
-   "t": ""
+   "t": "Compte les livres qu’elle a lus ! Touche chacun d’eux."
   },
   "r2-c": {
    "en": "Rahmah also learned how to help mothers when their babies are born.",
-   "t": ""
+   "t": "Rahmah a aussi appris à aider les mamans quand leurs bébés naissent."
   },
   "r2-q": {
    "en": "Who taught Rahmah after her father died?",
-   "t": ""
+   "t": "Qui a fait classe à Rahmah après la mort de son père ?"
   },
   "r2-q-opt1": {
    "en": "Nobody at all",
-   "t": ""
+   "t": "Personne du tout"
   },
   "r2-q-opt2": {
    "en": "Her father's students",
-   "t": ""
+   "t": "Les élèves de son père"
   },
   "r2-q-no": {
    "en": "Her father's students came and taught her to read and write.",
-   "t": ""
+   "t": "Les élèves de son père sont venus lui apprendre à lire et à écrire."
   },
   "r3-a": {
    "en": "When Rahmah was still very young, her family arranged for her to marry, and she had to leave school.",
-   "t": ""
+   "t": "Quand Rahmah était encore très jeune, sa famille l’a mariée, et elle a dû quitter l’école."
   },
   "r3-b": {
    "en": "But Rahmah did not stop learning. She joined study circles, where women sat together in the evening to learn about Islam.",
-   "t": ""
+   "t": "Mais Rahmah n’a pas arrêté d’apprendre. Elle a rejoint des cercles d’étude, où des femmes se réunissaient le soir pour apprendre l’islam."
   },
   "r3-learn": {
    "en": "Keep learning, like Rahmah. Press and hold.",
-   "t": ""
+   "t": "Continue d’apprendre, comme Rahmah. Appuie longtemps."
   },
   "r3-c": {
    "en": "A few years later, she went back to school.",
-   "t": ""
+   "t": "Quelques années plus tard, elle est retournée à l’école."
   },
   "r3-q": {
    "en": "What did Rahmah do when she had to leave school?",
-   "t": ""
+   "t": "Qu’a fait Rahmah quand elle a dû quitter l’école ?"
   },
   "r3-q-opt1": {
    "en": "She kept learning",
-   "t": ""
+   "t": "Elle a continué d’apprendre"
   },
   "r3-q-opt2": {
    "en": "She stopped learning",
-   "t": ""
+   "t": "Elle a arrêté d’apprendre"
   },
   "r3-q-no": {
    "en": "She kept learning, in study circles, until she could go back to school.",
-   "t": ""
+   "t": "Elle a continué d’apprendre, dans des cercles d’étude, jusqu’à pouvoir retourner à l’école."
   },
   "r4-a": {
    "en": "Rahmah's big brother, Zainuddin, had started a school called Diniyah. Rahmah went back there to study.",
-   "t": ""
+   "t": "Le grand frère de Rahmah, Zainuddin, avait ouvert une école appelée Diniyah. Rahmah y est retournée pour étudier."
   },
   "r4-b": {
    "en": "After class, she gathered the girls together, to study more.",
-   "t": ""
+   "t": "Après la classe, elle rassemblait les filles pour étudier encore."
   },
   "r4-girls": {
    "en": "Count the girls in her study circle. Tap each one.",
-   "t": ""
+   "t": "Compte les filles de son cercle d’étude. Touche chacune d’elles."
   },
   "r4-c": {
    "en": "Rahmah saw that girls needed a school of their own, where they could learn everything, and feel at home.",
-   "t": ""
+   "t": "Rahmah a vu que les filles avaient besoin d’une école à elles, où elles pourraient tout apprendre, et se sentir chez elles."
   },
   "r4-q": {
    "en": "What did Rahmah want for girls?",
-   "t": ""
+   "t": "Que voulait Rahmah pour les filles ?"
   },
   "r4-q-opt1": {
    "en": "No school at all",
-   "t": ""
+   "t": "Pas d’école du tout"
   },
   "r4-q-opt2": {
    "en": "A school of their own",
-   "t": ""
+   "t": "Une école à elles"
   },
   "r4-q-no": {
    "en": "She wanted girls to have a school of their own.",
-   "t": ""
+   "t": "Elle voulait que les filles aient une école à elles."
   },
   "r5-a": {
    "en": "On the first of November, 1923, Rahmah opened a school just for girls. She called it Diniyah Putri.",
-   "t": ""
+   "t": "Le premier novembre 1923, Rahmah a ouvert une école rien que pour les filles. Elle l’a appelée Diniyah Putri."
   },
   "r5-b": {
    "en": "At first there was no school building. Lessons were in a mosque, and Rahmah was the main teacher.",
-   "t": ""
+   "t": "Au début, il n’y avait pas de bâtiment. Les cours avaient lieu dans une mosquée, et Rahmah était la principale enseignante."
   },
   "r5-c": {
    "en": "The first students were seventy-one women and girls. Many of them were young mothers.",
-   "t": ""
+   "t": "Les premières élèves étaient soixante et onze femmes et filles. Beaucoup étaient de jeunes mamans."
   },
   "r5-lessons": {
    "en": "What did they learn at Diniyah Putri? Sort them.",
-   "t": ""
+   "t": "Qu’apprenait-on à Diniyah Putri ? Trie-les."
   },
   "r5-lessons-bin1": {
    "en": "They learned it",
-   "t": ""
+   "t": "Elles l’apprenaient"
   },
   "r5-lessons-bin2": {
    "en": "Not on the list",
-   "t": ""
+   "t": "Pas au programme"
   },
   "r5-lessons-it1": {
    "en": "The Qur'an and Islam",
-   "t": ""
+   "t": "Le Coran et l’islam"
   },
   "r5-lessons-it2": {
    "en": "Video games",
-   "t": ""
+   "t": "Les jeux vidéo"
   },
   "r5-lessons-it3": {
    "en": "Arabic",
-   "t": ""
+   "t": "L’arabe"
   },
   "r5-lessons-it4": {
    "en": "Sewing and crafts",
-   "t": ""
+   "t": "La couture et l’artisanat"
   },
   "r5-lessons-it5": {
    "en": "Magic tricks",
-   "t": ""
+   "t": "Les tours de magie"
   },
   "r5-lessons-it6": {
    "en": "Skateboarding",
-   "t": ""
+   "t": "Le skateboard"
   },
   "r5-lessons-no": {
    "en": "Think again. Was that taught in 1923?",
-   "t": ""
+   "t": "Réfléchis encore. Est-ce qu’on apprenait ça en 1923 ?"
   },
   "r5-q": {
    "en": "Where were the very first lessons?",
-   "t": ""
+   "t": "Où ont eu lieu les tout premiers cours ?"
   },
   "r5-q-opt1": {
    "en": "In a mosque",
-   "t": ""
+   "t": "Dans une mosquée"
   },
   "r5-q-opt2": {
    "en": "In a palace",
-   "t": ""
+   "t": "Dans un palais"
   },
   "r5-q-no": {
    "en": "The first lessons were in a mosque.",
-   "t": ""
+   "t": "Les premiers cours avaient lieu dans une mosquée."
   },
   "r6-a": {
    "en": "Not everyone liked the new school. Some people said that girls did not need to go to school.",
-   "t": ""
+   "t": "Tout le monde n’aimait pas la nouvelle école. Certains disaient que les filles n’avaient pas besoin d’aller à l’école."
   },
   "r6-b": {
    "en": "Rahmah talked kindly with the scholars of her town, and showed them that Islam honours learning, for girls as well as boys.",
-   "t": ""
+   "t": "Rahmah a parlé gentiment avec les savants de sa ville, et leur a montré que l’islam honore le savoir, pour les filles comme pour les garçons."
   },
   "r6-c": {
    "en": "Then, in 1924, her brother Zainuddin died. Many thought the school would close. But Rahmah kept going.",
-   "t": ""
+   "t": "Puis, en 1924, son frère Zainuddin est mort. Beaucoup pensaient que l’école allait fermer. Mais Rahmah a continué."
   },
   "r6-going": {
    "en": "When something is hard: keep going, or give up?",
-   "t": ""
+   "t": "Quand quelque chose est difficile : continuer, ou abandonner ?"
   },
   "r6-going-bin1": {
    "en": "Keep going",
-   "t": ""
+   "t": "Continuer"
   },
   "r6-going-bin2": {
    "en": "Give up",
-   "t": ""
+   "t": "Abandonner"
   },
   "r6-going-it1": {
    "en": "Try again tomorrow",
-   "t": ""
+   "t": "Réessayer demain"
   },
   "r6-going-it2": {
    "en": "Throw it away",
-   "t": ""
+   "t": "Tout jeter"
   },
   "r6-going-it3": {
    "en": "Ask for help",
-   "t": ""
+   "t": "Demander de l’aide"
   },
   "r6-going-it4": {
    "en": "Go slowly but steadily",
-   "t": ""
+   "t": "Aller doucement mais sûrement"
   },
   "r6-going-it5": {
    "en": "Stop at the first mistake",
-   "t": ""
+   "t": "S’arrêter à la première erreur"
   },
   "r6-going-it6": {
    "en": "Say: I can't do it",
-   "t": ""
+   "t": "Dire : je n’y arrive pas"
   },
   "r6-going-no": {
    "en": "Think again. Is that keeping going, or giving up?",
-   "t": ""
+   "t": "Réfléchis encore. Est-ce continuer, ou abandonner ?"
   },
   "r6-q": {
    "en": "What did Rahmah do when things were hard?",
-   "t": ""
+   "t": "Qu’a fait Rahmah quand c’était difficile ?"
   },
   "r6-q-opt1": {
    "en": "She gave up",
-   "t": ""
+   "t": "Elle a abandonné"
   },
   "r6-q-opt2": {
    "en": "She kept going",
-   "t": ""
+   "t": "Elle a continué"
   },
   "r6-q-no": {
    "en": "She kept going, and the school did not close.",
-   "t": ""
+   "t": "Elle a continué, et l’école n’a pas fermé."
   },
   "r7-a": {
    "en": "In 1926, a big earthquake shook Padang Panjang, and the school building fell down.",
-   "t": ""
+   "t": "En 1926, un grand tremblement de terre a secoué Padang Panjang, et le bâtiment de l’école s’est effondré."
   },
   "r7-b": {
    "en": "But the lessons did not stop. For years, the girls learned in simple shelters.",
-   "t": ""
+   "t": "Mais les cours ne se sont pas arrêtés. Pendant des années, les filles ont appris sous de simples abris."
   },
   "r7-c": {
    "en": "Rahmah travelled to many towns and islands, to collect money for a new school.",
-   "t": ""
+   "t": "Rahmah a voyagé dans beaucoup de villes et d’îles pour réunir l’argent d’une nouvelle école."
   },
   "r7-travel": {
    "en": "Help Rahmah travel to collect money for the school.",
-   "t": ""
+   "t": "Aide Rahmah à voyager pour réunir l’argent de l’école."
   },
   "r7-d": {
    "en": "In 1928, the new school opened!",
-   "t": ""
+   "t": "En 1928, la nouvelle école a ouvert !"
   },
   "r7-bricks": {
    "en": "Build the new school. Tap to place every brick.",
-   "t": ""
+   "t": "Construis la nouvelle école. Touche pour poser chaque brique."
   },
   "r8-a": {
    "en": "In those days the land was ruled by the Dutch, and their government paid money to some schools. But Rahmah would not take it: she wanted her school to be free to teach in its own way.",
-   "t": ""
+   "t": "À cette époque, le pays était gouverné par les Hollandais, et leur gouvernement donnait de l’argent à certaines écoles. Mais Rahmah n’en voulait pas : elle voulait que son école soit libre d’enseigner à sa façon."
   },
   "r8-b": {
    "en": "The school grew and grew. Soon about five hundred girls were learning there.",
-   "t": ""
+   "t": "L’école a grandi, grandi. Bientôt, environ cinq cents filles y apprenaient."
   },
   "r8-c": {
    "en": "She also opened a college to train women to be teachers.",
-   "t": ""
+   "t": "Elle a aussi ouvert une école pour former des femmes à devenir enseignantes."
   },
   "r8-teacher": {
    "en": "What does a good teacher do? Sort them.",
-   "t": ""
+   "t": "Que fait un bon enseignant ? Trie-les."
   },
   "r8-teacher-bin1": {
    "en": "A good teacher",
-   "t": ""
+   "t": "Un bon enseignant"
   },
   "r8-teacher-bin2": {
    "en": "Not a good teacher",
-   "t": ""
+   "t": "Pas un bon enseignant"
   },
   "r8-teacher-it1": {
    "en": "Listens to every child",
-   "t": ""
+   "t": "Écoute chaque enfant"
   },
   "r8-teacher-it2": {
    "en": "Laughs at mistakes",
-   "t": ""
+   "t": "Se moque des erreurs"
   },
   "r8-teacher-it3": {
    "en": "Explains again, kindly",
-   "t": ""
+   "t": "Explique encore, gentiment"
   },
   "r8-teacher-it4": {
    "en": "Shouts all the time",
-   "t": ""
+   "t": "Crie tout le temps"
   },
   "r8-teacher-it5": {
    "en": "Is patient",
-   "t": ""
+   "t": "Est patient"
   },
   "r8-teacher-it6": {
    "en": "Helps only some children",
-   "t": ""
+   "t": "N’aide que certains enfants"
   },
   "r8-teacher-no": {
    "en": "Think again. Would a good teacher do that?",
-   "t": ""
+   "t": "Réfléchis encore. Un bon enseignant ferait-il ça ?"
   },
   "r9-a": {
    "en": "For many years, Indonesia was ruled by others. Then, in 1945, Indonesia became free.",
-   "t": ""
+   "t": "Pendant de longues années, l’Indonésie a été gouvernée par d’autres. Puis, en 1945, l’Indonésie est devenue libre."
   },
   "r9-b": {
    "en": "When Rahmah heard the news, she raised the red and white flag of Indonesia in the school yard.",
-   "t": ""
+   "t": "Quand Rahmah a appris la nouvelle, elle a hissé le drapeau rouge et blanc de l’Indonésie dans la cour de l’école."
   },
   "r9-flag": {
    "en": "Raise the flag! Press and hold.",
-   "t": ""
+   "t": "Hisse le drapeau ! Appuie longtemps."
   },
   "r9-q": {
    "en": "What colours are on Indonesia's flag?",
-   "t": ""
+   "t": "Quelles sont les couleurs du drapeau de l’Indonésie ?"
   },
   "r9-q-opt1": {
    "en": "Red and white",
-   "t": ""
+   "t": "Rouge et blanc"
   },
   "r9-q-opt2": {
    "en": "Blue and yellow",
-   "t": ""
+   "t": "Bleu et jaune"
   },
   "r9-q-no": {
    "en": "Indonesia's flag is red and white.",
-   "t": ""
+   "t": "Le drapeau de l’Indonésie est rouge et blanc."
   },
   "r10-a": {
    "en": "Years later, the head of al-Azhar, a great old university in Egypt, came all the way to visit her school.",
-   "t": ""
+   "t": "Des années plus tard, le chef d’al-Azhar, une grande et ancienne université d’Égypte, est venu de très loin pour visiter son école."
   },
   "r10-b": {
    "en": "Then Rahmah went on Hajj to Makkah.",
-   "t": ""
+   "t": "Puis Rahmah est partie faire le hajj à La Mecque."
   },
   "r10-cairo": {
    "en": "Help Rahmah travel to Makkah, and then to Cairo.",
-   "t": ""
+   "t": "Aide Rahmah à voyager jusqu’à La Mecque, puis jusqu’au Caire."
   },
   "r10-c": {
    "en": "In Cairo, the teachers of al-Azhar gave her the title Syaikhah: a great scholar. No woman had ever been given it before.",
-   "t": ""
+   "t": "Au Caire, les enseignants d’al-Azhar lui ont donné le titre de Syaikhah : une grande savante. Aucune femme ne l’avait jamais reçu avant elle."
   },
   "r10-d": {
    "en": "After that, girls from her school could go to study at al-Azhar too.",
-   "t": ""
+   "t": "Après cela, les filles de son école ont pu aller étudier à al-Azhar, elles aussi."
   },
   "r10-q": {
    "en": "What title did al-Azhar give Rahmah?",
-   "t": ""
+   "t": "Quel titre al-Azhar a-t-il donné à Rahmah ?"
   },
   "r10-q-opt1": {
    "en": "Queen",
-   "t": ""
+   "t": "Reine"
   },
   "r10-q-opt2": {
    "en": "Syaikhah: a great scholar",
-   "t": ""
+   "t": "Syaikhah : une grande savante"
   },
   "r10-q-no": {
    "en": "Al-Azhar called her Syaikhah, a great scholar. No woman had been given it before.",
-   "t": ""
+   "t": "Al-Azhar l’a appelée Syaikhah, une grande savante. Aucune femme ne l’avait reçu avant elle."
   },
   "r11-a": {
    "en": "Rahmah never stopped working. In 1967, a university for women, which she had worked for, was opened.",
-   "t": ""
+   "t": "Rahmah n’a jamais arrêté de travailler. En 1967, une université pour les femmes, pour laquelle elle s’était battue, a ouvert."
   },
   "r11-b": {
    "en": "Rahmah died in 1969, in Padang Panjang, where she was born. May Allah have mercy on her.",
-   "t": ""
+   "t": "Rahmah est morte en 1969, à Padang Panjang, là où elle était née. Qu’Allah lui fasse miséricorde."
   },
   "r11-c": {
    "en": "Her school is still open today, full of girls learning.",
-   "t": ""
+   "t": "Son école est toujours ouverte aujourd’hui, pleine de filles qui apprennent."
   },
   "r11-d": {
    "en": "And in 2025, Indonesia named her a National Hero.",
-   "t": ""
+   "t": "Et en 2025, l’Indonésie l’a nommée Héroïne nationale."
   },
   "r11-story": {
    "en": "Tell Rahmah's story. Tap in order.",
-   "t": ""
+   "t": "Raconte l’histoire de Rahmah. Touche dans l’ordre."
   },
   "r11-story-c1": {
    "en": "First, Rahmah was born in the mountains of Sumatra.",
-   "t": ""
+   "t": "D’abord, Rahmah est née dans les montagnes de Sumatra."
   },
   "r11-story-c2": {
    "en": "She learned to read and write.",
-   "t": ""
+   "t": "Elle a appris à lire et à écrire."
   },
   "r11-story-c3": {
    "en": "She opened a school for girls.",
-   "t": ""
+   "t": "Elle a ouvert une école pour les filles."
   },
   "r11-story-c4": {
    "en": "An earthquake knocked it down, and she built it again.",
-   "t": ""
+   "t": "Un tremblement de terre l’a détruite, et elle l’a reconstruite."
   },
   "r11-story-c5": {
    "en": "She raised Indonesia's flag at the school.",
-   "t": ""
+   "t": "Elle a hissé le drapeau de l’Indonésie à l’école."
   },
   "r11-story-c6": {
    "en": "And al-Azhar called her Syaikhah.",
-   "t": ""
+   "t": "Et al-Azhar l’a appelée Syaikhah."
   },
   "r11-story-no": {
    "en": "Listen again, and tell it in order.",
-   "t": ""
+   "t": "Écoute encore, et raconte dans l’ordre."
   },
   "end-a": {
    "en": "This is the story of Rahmah El Yunusiyyah, who opened a school for girls when many people said girls did not need one, and never gave up. Her school is still open today.",
-   "t": ""
+   "t": "Voici l’histoire de Rahmah El Yunusiyyah, qui a ouvert une école pour les filles alors que beaucoup disaient qu’elles n’en avaient pas besoin, et qui n’a jamais abandonné. Son école est toujours ouverte aujourd’hui."
   }
  },
  "strings": {
-  "A Girl in the Mountains": "",
-  "Histories of her life (see the notes)": "",
-  "From the histories of her life": "",
-  "Learning to Read": "",
-  "No More School": "",
+  "A Girl in the Mountains": "Une fille dans les montagnes",
+  "Histories of her life (see the notes)": "Les récits de sa vie (voir les notes)",
+  "From the histories of her life": "D’après les récits de sa vie",
+  "Learning to Read": "Apprendre à lire",
+  "No More School": "Plus d’école",
   "Press and hold": "",
-  "Never stop learning": "",
-  "Back to School": "",
-  "A School for Girls": "",
-  "Not Everyone Agreed": "",
-  "The Earthquake": "",
-  "On Her Own Feet": "",
-  "A New Flag": "",
-  "The flag is flying!": "",
-  "To Cairo": "",
-  "Her School Today": "",
-  "Born in the mountains": "",
-  "She learned to read": "",
-  "A school for girls": "",
-  "The earthquake": "",
-  "The new flag": "",
-  "Al-Azhar": "",
+  "Never stop learning": "Ne jamais arrêter d’apprendre",
+  "Back to School": "Retour à l’école",
+  "A School for Girls": "Une école pour les filles",
+  "Not Everyone Agreed": "Tout le monde n’était pas d’accord",
+  "The Earthquake": "Le tremblement de terre",
+  "On Her Own Feet": "Debout toute seule",
+  "A New Flag": "Un nouveau drapeau",
+  "The flag is flying!": "Le drapeau flotte !",
+  "To Cairo": "Vers Le Caire",
+  "Her School Today": "Son école aujourd’hui",
+  "Born in the mountains": "Née dans les montagnes",
+  "She learned to read": "Elle a appris à lire",
+  "A school for girls": "Une école pour les filles",
+  "The earthquake": "Le tremblement de terre",
+  "The new flag": "Le nouveau drapeau",
+  "Al-Azhar": "Al-Azhar",
   "← Asmau": "",
-  "Rahmah El Yunusiyyah": "",
-  "The Story of Rahmah El Yunusiyyah": "",
-  "Eleven chapters about the girl who opened a school for girls. Play a little every day.": "",
+  "Rahmah El Yunusiyyah": "Rahmah El Yunusiyyah",
+  "The Story of Rahmah El Yunusiyyah": "L’histoire de Rahmah El Yunusiyyah",
+  "Eleven chapters about the girl who opened a school for girls. Play a little every day.": "Onze chapitres sur la fille qui a ouvert une école pour les filles. Joue un peu chaque jour.",
   "Start the story": "",
   "Start from the beginning": "",
   "For parents": "",
@@ -494,15 +494,237 @@
   "All chapters": "",
   "✕ Close": "",
   "The End": "",
-  "Learning": "",
-  "Never giving up": "",
-  "Courage": "",
+  "Learning": "Apprendre",
+  "Never giving up": "Ne jamais abandonner",
+  "Courage": "Le courage",
   "Read it again": "",
   "Pick a chapter": "",
   "Music": "",
   "Sounds": "",
   "Voice": "",
-  "The girl from the mountains of Sumatra who opened a school for girls in 1923, never gave up, and was honoured by al-Azhar.": "",
-  "Rahmah welcomes girls arriving with their books at a mosque in the mountains of West Sumatra.": ""
+  "The girl from the mountains of Sumatra who opened a school for girls in 1923, never gave up, and was honoured by al-Azhar.": "La fille des montagnes de Sumatra qui a ouvert une école pour les filles en 1923, n’a jamais abandonné, et a été honorée par al-Azhar.",
+  "Rahmah welcomes girls arriving with their books at a mosque in the mountains of West Sumatra.": "Rahmah accueille des filles qui arrivent avec leurs livres dans une mosquée des montagnes de Sumatra occidental.",
+  "📖 About this story": "📖 À propos de cette histoire",
+  "Rahmah El Yunusiyyah (1900 to 1969), of the Minangkabau people of West Sumatra, Indonesia, opened Diniyah Putri in Padang Panjang on 1 November 1923: generally thought to be the first Islamic school for girls in the Indies. It is still open. Al-Azhar gave her the title Syaikhah, and in 2025 Indonesia named her a National Hero.": "Rahmah El Yunusiyyah (1900-1969), du peuple minangkabau de Sumatra occidental, en Indonésie, a ouvert Diniyah Putri à Padang Panjang le 1er novembre 1923 : on la considère généralement comme la première école islamique pour filles des Indes néerlandaises. Elle est toujours ouverte. Al-Azhar lui a donné le titre de Syaikhah, et en 2025 l’Indonésie l’a nommée Héroïne nationale.",
+  "📚 Sources": "📚 Sources",
+  "This is modern history, not the Qur’an. The facts come from published histories of her life; the notes for each page name them. Where the sources disagree (her birthday; the year of the al-Azhar title) the game gives no date and the notes say so.": "C’est de l’histoire moderne, pas le Coran. Les faits viennent de récits publiés de sa vie ; les notes de chaque page les nomment. Là où les sources ne sont pas d’accord (sa date de naissance ; l’année du titre d’al-Azhar), le jeu ne donne pas de date et les notes le disent.",
+  "🤲 Told gently, or left out": "🤲 Raconté avec douceur, ou laissé de côté",
+  "Not told to children, but in the page notes for you: her marriage when she was very young and her divorce, the Japanese occupation and the war, her months in a Dutch prison, and her years in politics.": "Non raconté aux enfants, mais dans les notes des pages pour vous : son mariage très jeune et son divorce, l’occupation japonaise et la guerre, ses mois dans une prison hollandaise, et ses années en politique.",
+  "👥 Who is shown": "👥 Qui est montré",
+  "Shown in this story: Rahmah and the Minangkabau people as themselves, every woman’s hair covered, as in her own photographs.": "Dans cette histoire : Rahmah et le peuple minangkabau tels qu’ils sont, les cheveux de chaque femme couverts, comme sur ses propres photographies."
+ },
+ "notes": {
+  "1.1": {
+   "en": "Rahmah El Yunusiyyah was born in 1900 in Bukit Surungan, Padang Panjang, West Sumatra, then part of the Dutch East Indies. Her birthday is given differently: 26 October 1900 (Wikipedia's article on her) or 20 or 29 December 1900 (Indonesian sources), so the game gives only the year.\n\nThe notes in this game come from the histories cited in Wikipedia's article \"Rahmah el Yunusiyah\" (Audrey Kahin, Jeffrey Hadler's Muslims and Matriarchs, Pieternella van Doorn-Harder's Women Shaping Islam, and others) and from Fitriyanti et al., Journal of Educational Sciences 10(1), 2026.",
+   "t": "Rahmah El Yunusiyyah est née en 1900 à Bukit Surungan, Padang Panjang, à Sumatra occidental, qui faisait alors partie des Indes orientales néerlandaises. Sa date de naissance varie selon les sources : le 26 octobre 1900 (l’article de Wikipédia qui lui est consacré) ou le 20 ou le 29 décembre 1900 (sources indonésiennes) ; le jeu ne donne donc que l’année.\n\nLes notes de ce jeu viennent des ouvrages d’histoire cités dans l’article de Wikipédia « Rahmah el Yunusiyah » (Audrey Kahin, Muslims and Matriarchs de Jeffrey Hadler, Women Shaping Islam de Pieternella van Doorn-Harder, et d’autres) et de Fitriyanti et al., Journal of Educational Sciences 10(1), 2026."
+  },
+  "1.2": {
+   "en": "She was the youngest child of a Minangkabau family of Islamic scholars. Her father, Muhammad Yunus, was a qadi (judge); her mother was Rafi'ah. Her grandfather was a well-known scholar and astronomer.",
+   "t": "Elle était la plus jeune enfant d’une famille minangkabau de savants musulmans. Son père, Muhammad Yunus, était cadi (juge) ; sa mère s’appelait Rafi'ah. Son grand-père était un savant et astronome connu."
+  },
+  "1.3": {
+   "en": "The Minangkabau are matrilineal: family and property pass through the mother's line. The 2026 article points out the paradox Rahmah saw: women were honoured in Minangkabau custom, yet had little access to religious education.",
+   "t": "Les Minangkabau sont matrilinéaires : la famille et les biens se transmettent par la lignée de la mère. L’article de 2026 souligne le paradoxe que voyait Rahmah : les femmes étaient honorées dans la coutume minangkabau, mais avaient peu accès à l’enseignement religieux."
+  },
+  "1.4": {
+   "en": "Ask: what are the special things of the place where we live?",
+   "t": "Demandez : qu’est-ce qui est spécial dans l’endroit où nous vivons ?"
+  },
+  "1.5": {
+   "en": "Find Sumatra and Padang Panjang on a map together. Ask: what is it like to live in the mountains?",
+   "t": "Cherchez ensemble Sumatra et Padang Panjang sur une carte. Demandez : comment est-ce de vivre dans les montagnes ?"
+  },
+  "2.1": {
+   "en": "If your child has lost someone, this page may bring it up. Hold them and talk about who looks after them.",
+   "t": "Si votre enfant a perdu quelqu’un, cette page peut le lui rappeler. Prenez-le dans vos bras et parlez de qui prend soin de lui."
+  },
+  "2.2": {
+   "en": "After her father died, his former students taught her. She learned to read and write in Arabic script and in Latin script (most likely Arabic and Malay in Jawi, and Malay in Latin letters).",
+   "t": "Après la mort de son père, ses anciens élèves lui ont fait classe. Elle a appris à lire et à écrire en écriture arabe et en écriture latine (très probablement l’arabe et le malais en jawi, et le malais en lettres latines)."
+  },
+  "2.3": {
+   "en": "Count the books in your home together. Which is your child's favourite?",
+   "t": "Comptez ensemble les livres de votre maison. Lequel est le préféré de votre enfant ?"
+  },
+  "2.4": {
+   "en": "She had some training in midwifery at a local hospital.",
+   "t": "Elle a reçu une certaine formation de sage-femme dans un hôpital local."
+  },
+  "2.5": {
+   "en": "Ask: who are the teachers in our family? What have they taught you?",
+   "t": "Demandez : qui sont les enseignants de notre famille ? Que t’ont-ils appris ?"
+  },
+  "3.1": {
+   "en": "Her family arranged for her to be married in 1916, at about sixteen, to a scholar, Bahauddin Lathif, and she had to leave school. In 1922 her husband married two more wives; she obtained a divorce and went back to her education. They had no children. The game says only that she had to leave school.",
+   "t": "Sa famille l’a mariée en 1916, vers seize ans, à un savant, Bahauddin Lathif, et elle a dû quitter l’école. En 1922, son mari a pris deux autres épouses ; elle a obtenu le divorce et a repris ses études. Ils n’ont pas eu d’enfants. Le jeu dit seulement qu’elle a dû quitter l’école."
+  },
+  "3.2": {
+   "en": "From 1918 she studied Islam in private study circles.",
+   "t": "À partir de 1918, elle a étudié l’islam dans des cercles d’étude privés."
+  },
+  "3.3": {
+   "en": "Ask: what are you learning right now that is hard? How can you keep going?",
+   "t": "Demandez : qu’est-ce que tu apprends en ce moment qui est difficile ? Comment peux-tu continuer ?"
+  },
+  "3.5": {
+   "en": "Ask: why is learning important for girls and boys alike?",
+   "t": "Demandez : pourquoi apprendre est-il important pour les filles comme pour les garçons ?"
+  },
+  "4.1": {
+   "en": "Her brother Zainuddin Labay el Yunusi had founded the Diniyah School, for boys and girls, in 1915.",
+   "t": "Son frère Zainuddin Labay el Yunusi avait fondé l’école Diniyah, pour garçons et filles, en 1915."
+  },
+  "4.2": {
+   "en": "Her study circle for the girls was influenced by Ruhana Kuddus's women's association, Amai Setia, and was called the Women and Girls' Association.",
+   "t": "Son cercle d’étude pour les filles était inspiré de l’association de femmes de Ruhana Kuddus, Amai Setia, et s’appelait l’Association des femmes et des filles."
+  },
+  "4.3": {
+   "en": "Ask: what makes a group of friends good to learn with?",
+   "t": "Demandez : qu’est-ce qui fait qu’un groupe d’amis est bien pour apprendre ensemble ?"
+  },
+  "4.4": {
+   "en": "She was unhappy with the Islamic education girls could get, and with the ways mixed schools kept them from taking full part.",
+   "t": "Elle n’était pas satisfaite de l’enseignement islamique auquel les filles avaient accès, ni de la façon dont les écoles mixtes les empêchaient de participer pleinement."
+  },
+  "4.5": {
+   "en": "Ask: what would your dream school be like?",
+   "t": "Demandez : à quoi ressemblerait l’école de tes rêves ?"
+  },
+  "5.1": {
+   "en": "Diniyah Putri (also called Madrasah Diniyah li al-Banat) opened on 1 November 1923. It is generally thought to be the first Islamic school for girls in the Indies; the 2026 article calls it the first Islamic educational institution exclusively for women in Southeast Asia.",
+   "t": "Diniyah Putri (aussi appelée Madrasah Diniyah li al-Banat) a ouvert le 1er novembre 1923. On la considère généralement comme la première école islamique pour filles des Indes néerlandaises ; l’article de 2026 la décrit comme le premier établissement d’enseignement islamique réservé aux femmes en Asie du Sud-Est."
+  },
+  "5.2": {
+   "en": "Ask: what was it like to have lessons in a mosque? Have you ever learned in a mosque?",
+   "t": "Demandez : comment était-ce d’avoir cours dans une mosquée ? As-tu déjà appris dans une mosquée ?"
+  },
+  "5.3": {
+   "en": "The first 71 students were mostly young housewives. The lessons were basic Islamic education, Arabic grammar, some modern subjects and handicrafts; later also health, sewing, leadership, English, history and geography.",
+   "t": "Les 71 premières élèves étaient surtout de jeunes mères au foyer. Les cours portaient sur les bases de l’enseignement islamique, la grammaire arabe, quelques matières modernes et l’artisanat ; plus tard aussi la santé, la couture, le leadership, l’anglais, l’histoire et la géographie."
+  },
+  "5.4": {
+   "en": "Ask: which of these lessons would you like most?",
+   "t": "Demandez : lequel de ces cours aimerais-tu le plus ?"
+  },
+  "5.5": {
+   "en": "Ask: what do you need to start a school? (A teacher, students, a place, books.)",
+   "t": "Demandez : de quoi a-t-on besoin pour ouvrir une école ? (Un enseignant, des élèves, un lieu, des livres.)"
+  },
+  "6.1": {
+   "en": "She faced hostility and criticism: not everyone accepted a modern school for girls.",
+   "t": "Elle a fait face à l’hostilité et aux critiques : tout le monde n’acceptait pas une école moderne pour filles."
+  },
+  "6.2": {
+   "en": "She consulted the local scholars before opening the school, and believed that Islam demanded a central role for women and for women's education.",
+   "t": "Elle a consulté les savants locaux avant d’ouvrir l’école, et croyait que l’islam exigeait une place centrale pour les femmes et pour leur instruction."
+  },
+  "6.3": {
+   "en": "Her brother Zainuddin, who had supported the school, died in 1924.",
+   "t": "Son frère Zainuddin, qui avait soutenu l’école, est mort en 1924."
+  },
+  "6.4": {
+   "en": "Ask your child for a time they kept going when something was hard.",
+   "t": "Demandez à votre enfant de raconter une fois où il a continué alors que c’était difficile."
+  },
+  "6.5": {
+   "en": "Ask: who helps you keep going when things are hard?",
+   "t": "Demandez : qui t’aide à continuer quand c’est difficile ?"
+  },
+  "7.1": {
+   "en": "The Padang Panjang earthquakes of 1926 destroyed the school building. The game leaves out the people who died in them.",
+   "t": "Les tremblements de terre de Padang Panjang en 1926 ont détruit le bâtiment de l’école. Le jeu ne parle pas des personnes qui y sont mortes."
+  },
+  "7.2": {
+   "en": "Ask: is a school the building, or the people in it?",
+   "t": "Demandez : une école, est-ce le bâtiment, ou les gens qui sont dedans ?"
+  },
+  "7.3": {
+   "en": "Muhammadiyah, a large Islamic organisation, offered to take over the school and rebuild it; she said no, and toured the Indies to raise the money herself. The new building opened in 1928.",
+   "t": "La Muhammadiyah, une grande organisation islamique, a proposé de reprendre l’école et de la reconstruire ; elle a refusé, et a parcouru les Indes pour réunir l’argent elle-même. Le nouveau bâtiment a ouvert en 1928."
+  },
+  "7.4": {
+   "en": "Ask: how could we help a school or a mosque that needs money?",
+   "t": "Demandez : comment pourrions-nous aider une école ou une mosquée qui a besoin d’argent ?"
+  },
+  "7.6": {
+   "en": "Build a school together from blocks or boxes.",
+   "t": "Construisez ensemble une école avec des cubes ou des cartons."
+  },
+  "8.1": {
+   "en": "She would not accept Dutch government subsidies, so that the school's dress, calendar and lessons could stay centred on Islam. Like the Taman Siswa schools, she had to fight the Dutch rules against \"wild\" (unlicensed) schools, and she was fined for discussing politics.",
+   "t": "Elle refusait les subventions du gouvernement hollandais, pour que la tenue, le calendrier et les cours de l’école restent centrés sur l’islam. Comme les écoles Taman Siswa, elle a dû lutter contre les règles hollandaises visant les écoles « sauvages » (sans licence), et elle a reçu une amende pour avoir parlé de politique."
+  },
+  "8.2": {
+   "en": "By the end of the 1930s the school had about 500 students. The historian Audrey Kahin calls Diniyah Putri \"one of the most successful and influential of the schools for women\" before independence.",
+   "t": "À la fin des années 1930, l’école comptait environ 500 élèves. L’historienne Audrey Kahin qualifie Diniyah Putri de « l’une des écoles pour femmes les plus réussies et les plus influentes » d’avant l’indépendance."
+  },
+  "8.3": {
+   "en": "Kulliyatul Muallimat al-Islamiyyah, a college for women teachers, opened in 1937. She also founded schools in Jakarta (1935) and a high school in Padang Panjang (1938).",
+   "t": "Kulliyatul Muallimat al-Islamiyyah, une école normale pour enseignantes, a ouvert en 1937. Elle a aussi fondé des écoles à Jakarta (1935) et un lycée à Padang Panjang (1938)."
+  },
+  "8.4": {
+   "en": "Ask your child about a teacher they love, and why.",
+   "t": "Demandez à votre enfant de vous parler d’un enseignant qu’il aime, et pourquoi."
+  },
+  "9.1": {
+   "en": "Indonesia's independence was proclaimed on 17 August 1945. During the Japanese occupation before it, she led a local defence unit (Giyugun) in Padang Panjang, and campaigned against the Japanese use of Indonesian women as \"comfort women\".",
+   "t": "L’indépendance de l’Indonésie a été proclamée le 17 août 1945. Pendant l’occupation japonaise qui l’a précédée, elle a dirigé une unité de défense locale (Giyugun) à Padang Panjang, et a fait campagne contre l’utilisation par les Japonais de femmes indonésiennes comme « femmes de réconfort »."
+  },
+  "9.2": {
+   "en": "During the war of independence that followed, she set up supplies for the Republic's side. The Dutch held her prisoner for seven months in 1949.\n\nIn 1955 she was elected to parliament for the Masyumi party, one of the first women in it. She later supported the PRRI, a rebellion against the central government (1958), lost her seat, and was arrested in 1961, then freed under an amnesty. The game leaves her politics out.",
+   "t": "Pendant la guerre d’indépendance qui a suivi, elle a organisé le ravitaillement du camp républicain. Les Hollandais l’ont emprisonnée sept mois en 1949.\n\nEn 1955, elle a été élue au parlement pour le parti Masyumi, parmi les premières femmes à y siéger. Elle a ensuite soutenu le PRRI, une rébellion contre le gouvernement central (1958), a perdu son siège, et a été arrêtée en 1961, puis libérée par une amnistie. Le jeu ne parle pas de sa vie politique."
+  },
+  "9.3": {
+   "en": "Ask: what does a flag mean to the people of a country?",
+   "t": "Demandez : que représente un drapeau pour les habitants d’un pays ?"
+  },
+  "9.4": {
+   "en": "Look at the flags of Indonesia and of our own country together.",
+   "t": "Regardez ensemble le drapeau de l’Indonésie et celui de notre pays."
+  },
+  "10.1": {
+   "en": "The Grand Imam of al-Azhar, Abd al-Rahman Taj, visited the school: in 1956 according to Wikipedia, 1955 according to other sources.",
+   "t": "Le grand imam d’al-Azhar, Abd al-Rahman Taj, a visité l’école : en 1956 selon Wikipédia, en 1955 selon d’autres sources."
+  },
+  "10.2": {
+   "en": "Ask: who in your family has been on Hajj? What did they tell you?",
+   "t": "Demandez : qui dans ta famille a fait le hajj ? Que t’a-t-il raconté ?"
+  },
+  "10.3": {
+   "en": "Find Indonesia, Makkah and Cairo on a map. How far is that?",
+   "t": "Cherchez sur une carte l’Indonésie, La Mecque et Le Caire. Quelle distance cela fait-il ?"
+  },
+  "10.4": {
+   "en": "Syaikhah is the feminine of shaykh: a title for a great scholar. Wikipedia gives 1957, after her Hajj; the 2026 article gives 1955. Both say no woman had been given it before. The game gives no year.",
+   "t": "Syaikhah est le féminin de cheikh : un titre pour une grande savante. Wikipédia donne 1957, après son hajj ; l’article de 2026 donne 1955. Les deux disent qu’aucune femme ne l’avait reçu avant elle. Le jeu ne donne pas d’année."
+  },
+  "10.5": {
+   "en": "After her visit, Egypt gave scholarships for Diniyah Putri graduates to study at al-Azhar.",
+   "t": "Après sa visite, l’Égypte a accordé des bourses aux diplômées de Diniyah Putri pour étudier à al-Azhar."
+  },
+  "10.6": {
+   "en": "Ask: what would you like to become one day?",
+   "t": "Demandez : que voudrais-tu devenir un jour ?"
+  },
+  "11.1": {
+   "en": "The women's Islamic university was opened in 1967 by the governor of West Sumatra, Harun Zain.",
+   "t": "L’université islamique pour femmes a été ouverte en 1967 par le gouverneur de Sumatra occidental, Harun Zain."
+  },
+  "11.2": {
+   "en": "She died on 26 February 1969. Her grave, in the grounds of the school's boarding house, is a protected heritage site.",
+   "t": "Elle est morte le 26 février 1969. Sa tombe, dans l’enceinte de l’internat de l’école, est un site patrimonial protégé."
+  },
+  "11.3": {
+   "en": "Ask: what is one good thing you would like people to remember you for?",
+   "t": "Demandez : pour quelle bonne chose voudrais-tu qu’on se souvienne de toi ?"
+  },
+  "11.4": {
+   "en": "President Prabowo Subianto named her a National Hero of Indonesia in November 2025. The award was received by Fauziah Fauzan El Muhammady, head of the Diniyyah Puteri school today.",
+   "t": "Le président Prabowo Subianto l’a nommée Héroïne nationale de l’Indonésie en novembre 2025. La distinction a été reçue par Fauziah Fauzan El Muhammady, qui dirige aujourd’hui l’école Diniyyah Puteri."
+  },
+  "11.5": {
+   "en": "Ask your child to tell Rahmah's whole story in their own words.",
+   "t": "Demandez à votre enfant de raconter toute l’histoire de Rahmah avec ses propres mots."
+  }
  }
 }

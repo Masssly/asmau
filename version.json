@@ -1,11 +1,18 @@
 {
-  "version": "2026.11.87",
+  "version": "2026.11.88",
   "date": "2026-11-21",
-  "buildId": "afb4a09b5e02",
+  "buildId": "88f3eabfd12b",
   "notes": [
-    "Bahasa Melayu, complete as a draft: For parents, the notes for parents in every game, the stories' About boxes, the privacy note, the voice recorder, the little ones' games and every message are now in Malay, for a native speaker to check (seen only with ?lang=ms)"
+    "Français, complete as a draft: every story game, the notes for parents, For parents, the stories' About boxes, the privacy note, the voice recorder and the little ones' games are in French, for a native speaker to check (seen only with ?lang=fr). The voice recorder and the list of parents' guides now show each game's name in the family's language"
   ],
   "history": [
+    {
+      "version": "2026.11.88",
+      "date": "2026-11-21",
+      "notes": [
+        "Français, complete as a draft: every story game, the notes for parents, For parents, the stories' About boxes, the privacy note, the voice recorder and the little ones' games are in French, for a native speaker to check (seen only with ?lang=fr). The voice recorder and the list of parents' guides now show each game's name in the family's language"
+      ]
+    },
     {
       "version": "2026.11.87",
       "date": "2026-11-21",

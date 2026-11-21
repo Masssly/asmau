@@ -1,9 +1,10 @@
 {
  "status": "draft",
- "_note": "Français. To be checked by a native speaker; seen only with ?lang=fr until then.",
+ "_note": "Français, drafted 21 November 2026, to be checked by a native speaker. Seen only with ?lang=fr until then.",
  "lines": {},
  "strings": {
-  "Muhammad Asad": "",
-  "The young newspaper writer from Europe who crossed the deserts of Arabia, found Islam and spent his life explaining the Qur'an.": ""
- }
+  "Muhammad Asad": "Muhammad Asad",
+  "The young newspaper writer from Europe who crossed the deserts of Arabia, found Islam and spent his life explaining the Qur'an.": "Le jeune journaliste venu d’Europe qui a traversé les déserts d’Arabie, a trouvé l’islam et a passé sa vie à expliquer le Coran."
+ },
+ "notes": {}
 }

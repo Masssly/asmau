@@ -1,9 +1,139 @@
 {
  "status": "draft",
- "_note": "Français. To be checked by a native speaker; seen only with ?lang=fr until then.",
- "lines": {},
+ "_note": "Français, drafted 21 November 2026, to be checked by a native speaker. Seen only with ?lang=fr until then.",
+ "lines": {
+  "count-1": {
+   "en": "One",
+   "t": "Un"
+  },
+  "count-2": {
+   "en": "Two",
+   "t": "Deux"
+  },
+  "count-3": {
+   "en": "Three",
+   "t": "Trois"
+  },
+  "count-4": {
+   "en": "Four",
+   "t": "Quatre"
+  },
+  "count-5": {
+   "en": "Five",
+   "t": "Cinq"
+  },
+  "count-6": {
+   "en": "Six",
+   "t": "Six"
+  },
+  "count-7": {
+   "en": "Seven",
+   "t": "Sept"
+  },
+  "count-8": {
+   "en": "Eight",
+   "t": "Huit"
+  },
+  "count-9": {
+   "en": "Nine",
+   "t": "Neuf"
+  },
+  "count-10": {
+   "en": "Ten",
+   "t": "Dix"
+  },
+  "count-11": {
+   "en": "Eleven",
+   "t": "Onze"
+  },
+  "count-12": {
+   "en": "Twelve",
+   "t": "Douze"
+  },
+  "count-13": {
+   "en": "Thirteen",
+   "t": "Treize"
+  },
+  "count-14": {
+   "en": "Fourteen",
+   "t": "Quatorze"
+  },
+  "count-15": {
+   "en": "Fifteen",
+   "t": "Quinze"
+  },
+  "count-16": {
+   "en": "Sixteen",
+   "t": "Seize"
+  },
+  "count-17": {
+   "en": "Seventeen",
+   "t": "Dix-sept"
+  },
+  "count-18": {
+   "en": "Eighteen",
+   "t": "Dix-huit"
+  },
+  "count-19": {
+   "en": "Nineteen",
+   "t": "Dix-neuf"
+  },
+  "count-20": {
+   "en": "Twenty",
+   "t": "Vingt"
+  },
+  "prompt-moons": {
+   "en": "Tap the moons!",
+   "t": "Touche les lunes !"
+  },
+  "prompt-stars": {
+   "en": "Tap the stars!",
+   "t": "Touche les étoiles !"
+  },
+  "prompt-lanterns": {
+   "en": "Light the lanterns!",
+   "t": "Allume les lanternes !"
+  },
+  "prompt-beads": {
+   "en": "Count the beads!",
+   "t": "Compte les perles !"
+  },
+  "prompt-rain": {
+   "en": "Pop the raindrops!",
+   "t": "Éclate les gouttes de pluie !"
+  },
+  "prompt-dates": {
+   "en": "Pick the dates!",
+   "t": "Cueille les dattes !"
+  },
+  "prompt-sheep": {
+   "en": "Feed the sheep!",
+   "t": "Nourris les moutons !"
+  },
+  "how-many": {
+   "en": "How many?",
+   "t": "Combien ?"
+  },
+  "lets-count": {
+   "en": "Let's count!",
+   "t": "On compte !"
+  },
+  "mashallah": {
+   "en": "Mashallah!",
+   "t": "Machallah !"
+  },
+  "well-done": {
+   "en": "Well done!",
+   "t": "Bravo !"
+  },
+  "counted-all": {
+   "en": "You counted them all!",
+   "t": "Tu les as tous comptés !"
+  }
+ },
  "strings": {
-  "Count with Me": "",
-  "Tap moons, lanterns, raindrops and dates one by one and count out loud, up to five, ten, fifteen or twenty.": ""
- }
+  "Count with Me": "Compte avec moi",
+  "Tap moons, lanterns, raindrops and dates one by one and count out loud, up to five, ten, fifteen or twenty.": "Touche les lunes, les lanternes, les gouttes de pluie et les dattes une par une et compte à voix haute, jusqu’à cinq, dix, quinze ou vingt."
+ },
+ "notes": {}
 }

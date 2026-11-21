@@ -1,9 +1,363 @@
 {
  "status": "draft",
- "_note": "Français. To be checked by a native speaker; seen only with ?lang=fr until then.",
- "lines": {},
+ "_note": "Français, drafted 21 November 2026, to be checked by a native speaker. Seen only with ?lang=fr until then.",
+ "lines": {
+  "hello": {
+   "en": "Tap something!",
+   "t": "Touche quelque chose !"
+  },
+  "find-start": {
+   "en": "Let's play. Find what I say!",
+   "t": "On joue. Trouve ce que je dis !"
+  },
+  "yes": {
+   "en": "Yes! Well done!",
+   "t": "Oui ! Bravo !"
+  },
+  "page-sky": {
+   "en": "Night and the mosque",
+   "t": "La nuit et la mosquée"
+  },
+  "moon-en": {
+   "en": "Moon",
+   "t": "Lune"
+  },
+  "find-moon": {
+   "en": "Where is the moon?",
+   "t": "Où est la lune ?"
+  },
+  "star-en": {
+   "en": "Star",
+   "t": "Étoile"
+  },
+  "find-star": {
+   "en": "Where is the star?",
+   "t": "Où est l’étoile ?"
+  },
+  "mosque-en": {
+   "en": "Mosque",
+   "t": "Mosquée"
+  },
+  "find-mosque": {
+   "en": "Where is the mosque?",
+   "t": "Où est la mosquée ?"
+  },
+  "kaaba-en": {
+   "en": "Kaaba",
+   "t": "Kaaba"
+  },
+  "find-kaaba": {
+   "en": "Where is the Kaaba?",
+   "t": "Où est la Kaaba ?"
+  },
+  "beads-en": {
+   "en": "Prayer beads",
+   "t": "Chapelet"
+  },
+  "find-beads": {
+   "en": "Where are the prayer beads?",
+   "t": "Où est le chapelet ?"
+  },
+  "lamp-en": {
+   "en": "Lamp",
+   "t": "Lampe"
+  },
+  "find-lamp": {
+   "en": "Where is the lamp?",
+   "t": "Où est la lampe ?"
+  },
+  "page-prayer": {
+   "en": "Time to pray",
+   "t": "L’heure de la prière"
+  },
+  "mat-en": {
+   "en": "Prayer mat",
+   "t": "Tapis de prière"
+  },
+  "find-mat": {
+   "en": "Where is the prayer mat?",
+   "t": "Où est le tapis de prière ?"
+  },
+  "quran-en": {
+   "en": "Qur'an",
+   "t": "Coran"
+  },
+  "find-quran": {
+   "en": "Where is the Qur'an?",
+   "t": "Où est le Coran ?"
+  },
+  "water-en": {
+   "en": "Water",
+   "t": "Eau"
+  },
+  "find-water": {
+   "en": "Where is the water?",
+   "t": "Où est l’eau ?"
+  },
+  "hands-en": {
+   "en": "Hands",
+   "t": "Mains"
+  },
+  "find-hands": {
+   "en": "Where are our hands?",
+   "t": "Où sont nos mains ?"
+  },
+  "clock-en": {
+   "en": "Clock",
+   "t": "Horloge"
+  },
+  "find-clock": {
+   "en": "Where is the clock?",
+   "t": "Où est l’horloge ?"
+  },
+  "scarf-en": {
+   "en": "Headscarf",
+   "t": "Foulard"
+  },
+  "find-scarf": {
+   "en": "Where is the headscarf?",
+   "t": "Où est le foulard ?"
+  },
+  "page-animals": {
+   "en": "Animals in the Qur'an",
+   "t": "Les animaux du Coran"
+  },
+  "camel-en": {
+   "en": "Camel",
+   "t": "Chameau"
+  },
+  "find-camel": {
+   "en": "Where is the camel?",
+   "t": "Où est le chameau ?"
+  },
+  "cow-en": {
+   "en": "Cow",
+   "t": "Vache"
+  },
+  "find-cow": {
+   "en": "Where is the cow?",
+   "t": "Où est la vache ?"
+  },
+  "bee-en": {
+   "en": "Bee",
+   "t": "Abeille"
+  },
+  "find-bee": {
+   "en": "Where is the bee?",
+   "t": "Où est l’abeille ?"
+  },
+  "ant-en": {
+   "en": "Ant",
+   "t": "Fourmi"
+  },
+  "find-ant": {
+   "en": "Where is the ant?",
+   "t": "Où est la fourmi ?"
+  },
+  "elephant-en": {
+   "en": "Elephant",
+   "t": "Éléphant"
+  },
+  "find-elephant": {
+   "en": "Where is the elephant?",
+   "t": "Où est l’éléphant ?"
+  },
+  "spider-en": {
+   "en": "Spider",
+   "t": "Araignée"
+  },
+  "find-spider": {
+   "en": "Where is the spider?",
+   "t": "Où est l’araignée ?"
+  },
+  "horse-en": {
+   "en": "Horse",
+   "t": "Cheval"
+  },
+  "find-horse": {
+   "en": "Where is the horse?",
+   "t": "Où est le cheval ?"
+  },
+  "fish-en": {
+   "en": "Fish",
+   "t": "Poisson"
+  },
+  "find-fish": {
+   "en": "Where is the fish?",
+   "t": "Où est le poisson ?"
+  },
+  "raven-en": {
+   "en": "Raven",
+   "t": "Corbeau"
+  },
+  "find-raven": {
+   "en": "Where is the raven?",
+   "t": "Où est le corbeau ?"
+  },
+  "page-food": {
+   "en": "Good food",
+   "t": "Les bonnes choses à manger"
+  },
+  "dates-en": {
+   "en": "Date palm",
+   "t": "Palmier dattier"
+  },
+  "find-dates": {
+   "en": "Where is the date palm?",
+   "t": "Où est le palmier dattier ?"
+  },
+  "olive-en": {
+   "en": "Olives",
+   "t": "Olives"
+  },
+  "find-olive": {
+   "en": "Where are the olives?",
+   "t": "Où sont les olives ?"
+  },
+  "grapes-en": {
+   "en": "Grapes",
+   "t": "Raisin"
+  },
+  "find-grapes": {
+   "en": "Where are the grapes?",
+   "t": "Où est le raisin ?"
+  },
+  "honey-en": {
+   "en": "Honey",
+   "t": "Miel"
+  },
+  "find-honey": {
+   "en": "Where is the honey?",
+   "t": "Où est le miel ?"
+  },
+  "milk-en": {
+   "en": "Milk",
+   "t": "Lait"
+  },
+  "find-milk": {
+   "en": "Where is the milk?",
+   "t": "Où est le lait ?"
+  },
+  "bread-en": {
+   "en": "Bread",
+   "t": "Pain"
+  },
+  "find-bread": {
+   "en": "Where is the bread?",
+   "t": "Où est le pain ?"
+  },
+  "page-westafrica": {
+   "en": "Eid, school and prayer in West Africa",
+   "t": "L’Aïd, l’école et la prière en Afrique de l’Ouest"
+  },
+  "ram-en": {
+   "en": "Ram",
+   "t": "Bélier"
+  },
+  "find-ram": {
+   "en": "Where is the ram?",
+   "t": "Où est le bélier ?"
+  },
+  "kettle-en": {
+   "en": "Kettle",
+   "t": "Bouilloire"
+  },
+  "find-kettle": {
+   "en": "Where is the kettle?",
+   "t": "Où est la bouilloire ?"
+  },
+  "pen-en": {
+   "en": "Pen",
+   "t": "Plume"
+  },
+  "find-pen": {
+   "en": "Where is the pen?",
+   "t": "Où est la plume ?"
+  },
+  "drum-en": {
+   "en": "Drum",
+   "t": "Tambour"
+  },
+  "find-drum": {
+   "en": "Where is the drum?",
+   "t": "Où est le tambour ?"
+  },
+  "turban-en": {
+   "en": "Turban",
+   "t": "Turban"
+  },
+  "find-turban": {
+   "en": "Where is the turban?",
+   "t": "Où est le turban ?"
+  },
+  "sandals-en": {
+   "en": "Sandals",
+   "t": "Sandales"
+  },
+  "find-sandals": {
+   "en": "Where are the sandals?",
+   "t": "Où sont les sandales ?"
+  },
+  "page-world": {
+   "en": "Allah's world",
+   "t": "Le monde d’Allah"
+  },
+  "sun-en": {
+   "en": "Sun",
+   "t": "Soleil"
+  },
+  "find-sun": {
+   "en": "Where is the sun?",
+   "t": "Où est le soleil ?"
+  },
+  "cloud-en": {
+   "en": "Cloud",
+   "t": "Nuage"
+  },
+  "find-cloud": {
+   "en": "Where is the cloud?",
+   "t": "Où est le nuage ?"
+  },
+  "rain-en": {
+   "en": "Rain",
+   "t": "Pluie"
+  },
+  "find-rain": {
+   "en": "Where is the rain?",
+   "t": "Où est la pluie ?"
+  },
+  "mountain-en": {
+   "en": "Mountain",
+   "t": "Montagne"
+  },
+  "find-mountain": {
+   "en": "Where is the mountain?",
+   "t": "Où est la montagne ?"
+  },
+  "sea-en": {
+   "en": "Sea",
+   "t": "Mer"
+  },
+  "find-sea": {
+   "en": "Where is the sea?",
+   "t": "Où est la mer ?"
+  },
+  "tree-en": {
+   "en": "Tree",
+   "t": "Arbre"
+  },
+  "find-tree": {
+   "en": "Where is the tree?",
+   "t": "Où est l’arbre ?"
+  }
+ },
  "strings": {
-  "Tap & Say": "",
-  "Tap a picture, hear its name, see the Arabic word. Then find it!": ""
- }
+  "Tap & Say": "Touche et dis",
+  "Tap a picture, hear its name, see the Arabic word. Then find it!": "Touche une image, écoute son nom, regarde le mot arabe. Puis trouve-la !",
+  "“Find it!” asks for one thing at a time. A wrong tap simply says the name of what was tapped; nothing is ever marked wrong. The animals are ones the Qur'an mentions; five of them give a surah its name (the cow, the bee, the ant, the elephant, the spider).": "« Trouve-le ! » demande une chose à la fois. Un mauvais toucher dit simplement le nom de ce qui a été touché ; rien n’est jamais compté faux. Les animaux sont des animaux que le Coran mentionne ; cinq d’entre eux donnent leur nom à une sourate (la vache, l’abeille, la fourmi, l’éléphant, l’araignée).",
+  "The Arabic words carry full vowel marks. If you speak Arabic and spot a mistake, please tell us.": "Les mots arabes portent toutes leurs voyelles. Si vous parlez arabe et repérez une erreur, dites-le-nous s’il vous plaît.",
+  "For ages 1½ to 4. Tap a picture to hear its name in English and then in Arabic. The voice is computer-made (Google’s text-to-speech), so it may not say every Arabic word perfectly. Say it together, or <a href=\"../../index.html#parents-record\">record it in your own voice</a> and the game will play your recording instead.": "Pour les 1 an ½ à 4 ans. Touchez une image pour entendre son nom en anglais puis en arabe. La voix est faite par ordinateur (la synthèse vocale de Google), elle ne prononce donc peut-être pas chaque mot arabe parfaitement. Dites-le ensemble, ou <a href=\"../../index.html#parents-record\">enregistrez-le avec votre propre voix</a> et le jeu jouera votre enregistrement à la place.",
+  "The West African page: the ram for Tabaski (Eid al-Adha); the kettle for wudu (the <i>buta</i> in Hausa); the pen of the Qur'an school; the drummers who go round in Ramadan to wake people for suhur; the turban; and the sandals left at the mosque door.": "La page Afrique de l’Ouest : le bélier de la Tabaski (l’Aïd al-Adha) ; la bouilloire pour les ablutions (la <i>buta</i> en haoussa) ; la plume de l’école coranique ; les joueurs de tambour qui font le tour pendant le Ramadan pour réveiller les gens pour le shour ; le turban ; et les sandales laissées à la porte de la mosquée."
+ },
+ "notes": {}
 }

@@ -446,7 +446,7 @@
     <div class="p-view" data-view="language" hidden>
       <h3>Language · Bahasa</h3>
       <p>Choose the language your child reads and hears. A game that is not translated yet stays in English, and says so on
-        its card. The notes for parents stay in English for now.</p>
+        its card.</p>
       <div class="voice-pick" role="radiogroup" aria-label="Language" id="langPick" data-lang-pick></div>
       <div id="fallbackBox" hidden>
         <p>There is no computer voice in this language yet. Until there is, the stories:</p>
@@ -670,7 +670,7 @@
     ul.innerHTML = "";
     sections.forEach(function (sec) { sec.games.forEach(function (g) {
       if (g.status === "coming-soon" || !(g.prophet || g.born)) return;
-      var li = el("li"), a = el("a", "", g.icon + " " + g.title); a.href = "guide.html?g=" + g.slug; li.appendChild(a); ul.appendChild(li);
+      var li = el("li"), a = el("a", "", g.icon + " " + T(g, "title")); a.href = "guide.html?g=" + g.slug; li.appendChild(a); ul.appendChild(li);
     }); });
   }
   function loadGames() {

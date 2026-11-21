@@ -1,817 +1,817 @@
 {
  "status": "draft",
- "_note": "Français. To be checked by a native speaker; seen only with ?lang=fr until then.",
+ "_note": "Français, drafted 21 November 2026, to be checked by a native speaker. Seen only with ?lang=fr until then.",
  "lines": {
   "c1-a": {
    "en": "One night, young Yusuf had a wonderful dream. He saw eleven stars, the sun and the moon, all bowing down to him.",
-   "t": ""
+   "t": "Une nuit, le jeune Youssouf a fait un rêve merveilleux. Il a vu onze étoiles, le soleil et la lune, qui se prosternaient tous devant lui."
   },
   "c1-do": {
    "en": "Tap every star, the sun and the moon, and watch them bow.",
-   "t": ""
+   "t": "Touche chaque étoile, le soleil et la lune, et regarde-les se prosterner."
   },
   "c1-b": {
    "en": "Yusuf told his father, Yaqub. His father said: my son, do not tell your brothers about this dream. Allah will choose you, and teach you the meaning of dreams.",
-   "t": ""
+   "t": "Youssouf l’a raconté à son père, Yacoub. Son père a dit : mon fils, ne raconte pas ce rêve à tes frères. Allah va te choisir, et t’apprendre le sens des rêves."
   },
   "c1-q": {
    "en": "What did his father Yaqub tell Yusuf to do about the dream?",
-   "t": ""
+   "t": "Que lui a dit son père Yacoub au sujet du rêve ?"
   },
   "c1-q-opt1": {
    "en": "Tell all his brothers",
-   "t": ""
+   "t": "Le raconter à tous ses frères"
   },
   "c1-q-opt2": {
    "en": "Keep it from his brothers",
-   "t": ""
+   "t": "Le cacher à ses frères"
   },
   "c1-qwrong": {
    "en": "Not quite. His father said: do not tell your brothers.",
-   "t": ""
+   "t": "Pas tout à fait. Son père a dit : ne le raconte pas à tes frères."
   },
   "c2-0": {
    "en": "Yusuf had eleven brothers. Ten were older than him, and one was his little brother. Their father loved Yusuf and his little brother very dearly.",
-   "t": ""
+   "t": "Youssouf avait onze frères. Dix étaient plus grands que lui, et l’un était son petit frère. Leur père aimait tendrement Youssouf et son petit frère."
   },
   "c2-a0": {
    "en": "Yusuf's brothers were jealous. They said: our father loves Yusuf and his little brother more than us! So they made a bad plan.",
-   "t": ""
+   "t": "Les frères de Youssouf étaient jaloux. Ils disaient : notre père aime Youssouf et son petit frère plus que nous ! Alors ils ont fait un mauvais plan."
   },
   "c2-a": {
    "en": "Some of them wanted to get rid of Yusuf. But one said: do not hurt him. Leave him in a deep well, where travellers may find him.",
-   "t": ""
+   "t": "Certains voulaient se débarrasser de Youssouf. Mais l’un d’eux a dit : ne lui faites pas de mal. Laissez-le dans un puits profond, où des voyageurs pourront le trouver."
   },
   "c2-p1": {
    "en": "Then the brothers went to their father. They said: Father, why do you not trust us with Yusuf? We only want what is good for him. Send him with us tomorrow, so he can enjoy himself and play. We will take good care of him.",
-   "t": ""
+   "t": "Puis les frères sont allés voir leur père. Ils ont dit : père, pourquoi ne nous fais-tu pas confiance pour Youssouf ? Nous ne voulons que son bien. Envoie-le avec nous demain, pour qu’il s’amuse et qu’il joue. Nous prendrons bien soin de lui."
   },
   "c2-p2": {
    "en": "Their father Yaqub said: it makes me sad to think of you taking him away. And I am afraid a wolf may eat him, while you are not watching.",
-   "t": ""
+   "t": "Leur père Yacoub a dit : ça me rend triste de penser que vous l’emmenez. Et j’ai peur qu’un loup le mange, pendant que vous ne faites pas attention."
   },
   "c2-pq": {
    "en": "What was their father afraid of?",
-   "t": ""
+   "t": "De quoi leur père avait-il peur ?"
   },
   "c2-pq-opt1": {
    "en": "A storm",
-   "t": ""
+   "t": "D’une tempête"
   },
   "c2-pq-opt2": {
    "en": "A wolf",
-   "t": ""
+   "t": "D’un loup"
   },
   "c2-pqwrong": {
    "en": "Not a storm. Yaqub said: I am afraid a wolf may eat him.",
-   "t": ""
+   "t": "Pas d’une tempête. Yacoub a dit : j’ai peur qu’un loup le mange."
   },
   "c2-p3": {
    "en": "The brothers said: a wolf? When there are so many of us? Then we would be good for nothing! So the next day, Yusuf went out with them.",
-   "t": ""
+   "t": "Les frères ont dit : un loup ? Alors que nous sommes si nombreux ? Nous ne serions bons à rien ! Alors le lendemain, Youssouf est parti avec eux."
   },
   "c2-b": {
    "en": "They took Yusuf far away and put him down into a deep, dark well.",
-   "t": ""
+   "t": "Ils ont emmené Youssouf très loin et l’ont descendu dans un puits profond et sombre."
   },
   "c2-b1": {
    "en": "In the dark, Yusuf prayed: O Lord of Ibrahim, and Ishaq, and Ya'qub, have mercy on me. I am small, and weak, and all alone.",
-   "t": ""
+   "t": "Dans le noir, Youssouf a prié : ô Seigneur d’Ibrahim, d’Ishaq et de Yacoub, aie pitié de moi. Je suis petit, et faible, et tout seul."
   },
   "c2-w": {
    "en": "But down in the dark, Yusuf was not alone. Allah comforted his heart: one day, you will tell your brothers about all this, and they will not even know it is you.",
-   "t": ""
+   "t": "Mais au fond du noir, Youssouf n’était pas seul. Allah a réconforté son cœur : un jour, tu raconteras tout cela à tes frères, et ils ne sauront même pas que c’est toi."
   },
   "c2-c": {
    "en": "That night the brothers came home crying. They said: Father, a wolf ate Yusuf! And they showed him Yusuf's shirt, stained to make their story look true.",
-   "t": ""
+   "t": "Ce soir-là, les frères sont rentrés en pleurant. Ils ont dit : père, un loup a mangé Youssouf ! Et ils lui ont montré la chemise de Youssouf, tachée pour que leur histoire ait l’air vraie."
   },
   "c2-s": {
    "en": "Look closely at the shirt, just as Yaqub did. A wolf has sharp teeth. Is the shirt torn?",
-   "t": ""
+   "t": "Regarde bien la chemise, comme Yacoub l’a fait. Un loup a les dents pointues. La chemise est-elle déchirée ?"
   },
   "c2-s-opt1": {
    "en": "Yes, it is torn",
-   "t": ""
+   "t": "Oui, elle est déchirée"
   },
   "c2-s-opt2": {
    "en": "No, not one tear",
-   "t": ""
+   "t": "Non, pas un seul trou"
   },
   "c2-swrong": {
    "en": "Look again. The shirt is stained, but there is not one tear in it.",
-   "t": ""
+   "t": "Regarde encore. La chemise est tachée, mais il n’y a pas un seul trou."
   },
   "c2-do": {
    "en": "A wolf would have torn the shirt to pieces. So what do you think? Was the brothers' story true?",
-   "t": ""
+   "t": "Un loup aurait mis la chemise en morceaux. Alors, qu’en penses-tu ? L’histoire des frères était-elle vraie ?"
   },
   "c2-do-opt1": {
    "en": "Yes, a wolf did it",
-   "t": ""
+   "t": "Oui, c’est un loup"
   },
   "c2-do-opt2": {
    "en": "No, it was not true",
-   "t": ""
+   "t": "Non, ce n’était pas vrai"
   },
   "c2-wrong": {
    "en": "Not quite. The wolf did nothing at all! Try again.",
-   "t": ""
+   "t": "Pas tout à fait. Le loup n’a rien fait du tout ! Essaie encore."
   },
   "c2-d": {
    "en": "No, it was not true, and their father Yaqub knew it. He said: it is best to be patient. I ask Allah alone for help.",
-   "t": ""
+   "t": "Non, ce n’était pas vrai, et leur père Yacoub le savait. Il a dit : mieux vaut être patient. C’est à Allah seul que je demande de l’aide."
   },
   "c2-o1": {
    "en": "The brothers were jealous of Yusuf.",
-   "t": ""
+   "t": "Les frères étaient jaloux de Youssouf."
   },
   "c2-o2": {
    "en": "They put Yusuf down into the well.",
-   "t": ""
+   "t": "Ils ont descendu Youssouf dans le puits."
   },
   "c2-o3": {
    "en": "They showed their father the shirt.",
-   "t": ""
+   "t": "Ils ont montré la chemise à leur père."
   },
   "c2-o4": {
    "en": "Yaqub chose to be patient.",
-   "t": ""
+   "t": "Yacoub a choisi d’être patient."
   },
   "c3-a": {
    "en": "Some travellers came by. They sent a man to fetch water, and he let his bucket down into the well.",
-   "t": ""
+   "t": "Des voyageurs sont passés. Ils ont envoyé un homme chercher de l’eau, et il a descendu son seau dans le puits."
   },
   "c3-do": {
    "en": "Help him pull! Drag the rope up, or tap fast, to bring the bucket up.",
-   "t": ""
+   "t": "Aide-le à tirer ! Fais remonter la corde, ou touche vite, pour remonter le seau."
   },
   "c3-b": {
    "en": "Good news! shouted the man. Here is a boy! The travellers hid Yusuf away to sell him. But Allah knew everything they did.",
-   "t": ""
+   "t": "Bonne nouvelle ! a crié l’homme. Voici un garçon ! Les voyageurs ont caché Youssouf pour le vendre. Mais Allah savait tout ce qu’ils faisaient."
   },
   "c3-q": {
    "en": "What did the man shout when he saw Yusuf?",
-   "t": ""
+   "t": "Qu’a crié l’homme quand il a vu Youssouf ?"
   },
   "c3-q-opt1": {
    "en": "Good news! Here is a boy!",
-   "t": ""
+   "t": "Bonne nouvelle ! Voici un garçon !"
   },
   "c3-q-opt2": {
    "en": "Oh no, my bucket!",
-   "t": ""
+   "t": "Oh non, mon seau !"
   },
   "c3-qwrong": {
    "en": "Listen again. He shouted: good news!",
-   "t": ""
+   "t": "Écoute encore. Il a crié : bonne nouvelle !"
   },
   "c4-count": {
    "en": "Yusuf was sold for a very small price: just a few silver coins. Tap the coins to count them.",
-   "t": ""
+   "t": "Youssouf a été vendu pour un tout petit prix : seulement quelques pièces d’argent. Touche les pièces pour les compter."
   },
   "c4-counted": {
    "en": "Twenty small coins. They did not know how precious Yusuf was.",
-   "t": ""
+   "t": "Vingt petites pièces. Ils ne savaient pas combien Youssouf était précieux."
   },
   "c4-a": {
    "en": "So Yusuf was carried far from home, all the way to the land of Egypt.",
-   "t": ""
+   "t": "Ainsi Youssouf a été emmené loin de chez lui, jusqu’au pays d’Égypte."
   },
   "c4-do": {
    "en": "Drag the camel along the path, or tap it, to help the caravan cross the desert.",
-   "t": ""
+   "t": "Fais avancer le chameau sur le chemin, ou touche-le, pour aider la caravane à traverser le désert."
   },
   "c4-b": {
    "en": "In Egypt, a man bought Yusuf and took him to his home. He told his wife: look after him well.",
-   "t": ""
+   "t": "En Égypte, un homme a acheté Youssouf et l’a emmené chez lui. Il a dit à sa femme : prends bien soin de lui."
   },
   "c4-q": {
    "en": "What did the man say to his wife about Yusuf?",
-   "t": ""
+   "t": "Qu’a dit l’homme à sa femme au sujet de Youssouf ?"
   },
   "c4-q-opt1": {
    "en": "Send him away",
-   "t": ""
+   "t": "Renvoie-le"
   },
   "c4-q-opt2": {
    "en": "Look after him well",
-   "t": ""
+   "t": "Prends bien soin de lui"
   },
   "c4-qwrong": {
    "en": "No. He said: look after him well.",
-   "t": ""
+   "t": "Non. Il a dit : prends bien soin de lui."
   },
   "c4-c": {
    "en": "The years passed, and Yusuf grew into a young man in Egypt. When he was grown, Allah gave him wisdom and knowledge.",
-   "t": ""
+   "t": "Les années ont passé, et Youssouf est devenu un jeune homme en Égypte. Quand il a été grand, Allah lui a donné la sagesse et le savoir."
   },
   "c5-a": {
    "en": "One day, the woman of the house tried to make Yusuf do something wrong. Yusuf said: Allah forbid! My master has been good to me. And he ran for the door.",
-   "t": ""
+   "t": "Un jour, la femme de la maison a voulu pousser Youssouf à faire quelque chose de mal. Youssouf a dit : qu’Allah m’en préserve ! Mon maître a été bon avec moi. Et il a couru vers la porte."
   },
   "c5-b1": {
    "en": "She pulled at his shirt from behind, and it tore. At the door they met her husband. She said that Yusuf was to blame. But Yusuf said: she is the one who tried to make me do wrong.",
-   "t": ""
+   "t": "Elle a tiré sa chemise par-derrière, et elle s’est déchirée. À la porte, ils ont rencontré son mari. Elle a dit que Youssouf était coupable. Mais Youssouf a dit : c’est elle qui a voulu me pousser à mal faire."
   },
   "c5-b2": {
    "en": "A wise person in the house said: look at his shirt. If it is torn at the front, she is telling the truth. If it is torn at the back, Yusuf is.",
-   "t": ""
+   "t": "Une personne sage de la maison a dit : regardez sa chemise. Si elle est déchirée devant, elle dit la vérité. Si elle est déchirée derrière, c’est Youssouf qui dit vrai."
   },
   "c5-do2": {
    "en": "Where is Yusuf's shirt torn?",
-   "t": ""
+   "t": "Où la chemise de Youssouf est-elle déchirée ?"
   },
   "c5-do2-opt1": {
    "en": "At the front",
-   "t": ""
+   "t": "Devant"
   },
   "c5-do2-opt2": {
    "en": "At the back",
-   "t": ""
+   "t": "Derrière"
   },
   "c5-wrong2": {
    "en": "Not that way. Remember, she pulled it from behind.",
-   "t": ""
+   "t": "Pas de ce côté. Souviens-toi, elle l’a tirée par-derrière."
   },
   "c5-b3": {
    "en": "The shirt was torn at the back! So everyone could see that Yusuf was telling the truth.",
-   "t": ""
+   "t": "La chemise était déchirée derrière ! Ainsi tout le monde a pu voir que Youssouf disait la vérité."
   },
   "c5-w1": {
    "en": "Soon, some women of the city were gossiping about the woman of the house. So she invited them to a great meal, and gave each of them a knife to cut their fruit. Then she said to Yusuf: come out, and let them see you.",
-   "t": ""
+   "t": "Bientôt, des femmes de la ville se sont mises à bavarder sur la femme de la maison. Alors elle les a invitées à un grand repas, et a donné à chacune un couteau pour couper leurs fruits. Puis elle a dit à Youssouf : viens, qu’elles te voient."
   },
   "c5-w2": {
    "en": "When the women saw Yusuf, they were so amazed at how beautiful he was that they cut their own hands without even noticing! They said: Allah is perfect! This is no ordinary man. He must be a noble angel!",
-   "t": ""
+   "t": "Quand les femmes ont vu Youssouf, elles ont été tellement émerveillées par sa beauté qu’elles se sont coupé les mains sans même s’en rendre compte ! Elles ont dit : Allah est parfait ! Ce n’est pas un homme ordinaire. Ce doit être un ange noble !"
   },
   "c5-wq": {
    "en": "Why did the women cut their hands?",
-   "t": ""
+   "t": "Pourquoi les femmes se sont-elles coupé les mains ?"
   },
   "c5-wq-opt1": {
    "en": "The fruit was too hard",
-   "t": ""
+   "t": "Les fruits étaient trop durs"
   },
   "c5-wq-opt2": {
    "en": "They were amazed by Yusuf",
-   "t": ""
+   "t": "Elles étaient émerveillées par Youssouf"
   },
   "c5-wqwrong": {
    "en": "Not the fruit. They were so amazed by Yusuf that they did not notice what their knives were doing.",
-   "t": ""
+   "t": "Pas à cause des fruits. Elles étaient si émerveillées par Youssouf qu’elles n’ont pas vu ce que faisaient leurs couteaux."
   },
   "c5-b4": {
    "en": "But people kept on talking, and the woman kept on at him. Yusuf prayed: My Lord, prison is better for me than what they ask of me. And Allah answered his prayer and kept him safe from doing wrong.",
-   "t": ""
+   "t": "Mais les gens continuaient de parler, et la femme continuait de le harceler. Youssouf a prié : mon Seigneur, la prison m’est préférable à ce qu’elles me demandent. Et Allah a exaucé sa prière et l’a gardé de faire le mal."
   },
   "c5-c": {
    "en": "Everyone had seen the signs that Yusuf was innocent. But in the end they put him in prison for a while anyway.",
-   "t": ""
+   "t": "Tout le monde avait vu les signes que Youssouf était innocent. Mais finalement, ils l’ont quand même mis en prison pour un temps."
   },
   "c5-do": {
    "en": "Be patient, like Yusuf. Press and hold the lamp until it shines. Don't let go!",
-   "t": ""
+   "t": "Sois patient, comme Youssouf. Appuie longtemps sur la lampe jusqu’à ce qu’elle brille. Ne lâche pas !"
   },
   "c5-d": {
    "en": "Yusuf stayed patient in prison, and he never stopped trusting Allah.",
-   "t": ""
+   "t": "Youssouf est resté patient en prison, et il n’a jamais cessé de faire confiance à Allah."
   },
   "c5-o1": {
    "en": "Yusuf ran for the door.",
-   "t": ""
+   "t": "Youssouf a couru vers la porte."
   },
   "c5-o2": {
    "en": "His shirt was torn from behind.",
-   "t": ""
+   "t": "Sa chemise a été déchirée par-derrière."
   },
   "c5-o3": {
    "en": "A wise person said: look at the shirt.",
-   "t": ""
+   "t": "Une personne sage a dit : regardez la chemise."
   },
   "c5-o4": {
    "en": "Yusuf was put in prison, and he stayed patient.",
-   "t": ""
+   "t": "Youssouf a été mis en prison, et il est resté patient."
   },
   "c6-a": {
    "en": "Two young men were in prison with Yusuf. Each of them had a dream, and they asked Yusuf what the dreams meant.",
-   "t": ""
+   "t": "Deux jeunes hommes étaient en prison avec Youssouf. Chacun d’eux a fait un rêve, et ils ont demandé à Youssouf ce que voulaient dire leurs rêves."
   },
   "c6-b": {
    "en": "First, Yusuf told them the most important thing: worship no one but Allah, the One.",
-   "t": ""
+   "t": "D’abord, Youssouf leur a dit la chose la plus importante : n’adorez personne d’autre qu’Allah, l’Unique."
   },
   "c6-q": {
    "en": "What was the first thing Yusuf told the two men?",
-   "t": ""
+   "t": "Quelle est la première chose que Youssouf a dite aux deux hommes ?"
   },
   "c6-q-opt1": {
    "en": "Worship Allah alone",
-   "t": ""
+   "t": "Adorez Allah seul"
   },
   "c6-q-opt2": {
    "en": "Dig a tunnel",
-   "t": ""
+   "t": "Creusez un tunnel"
   },
   "c6-qwrong": {
    "en": "No. First he told them: worship no one but Allah.",
-   "t": ""
+   "t": "Non. D’abord il leur a dit : n’adorez personne d’autre qu’Allah."
   },
   "c6-do": {
    "en": "Now match each dream to its meaning. Tap a dream, then tap what it means.",
-   "t": ""
+   "t": "Maintenant, relie chaque rêve à son sens. Touche un rêve, puis touche ce qu’il veut dire."
   },
   "c6-d1": {
    "en": "I dreamed I was pressing grapes.",
-   "t": ""
+   "t": "J’ai rêvé que je pressais du raisin."
   },
   "c6-d2": {
    "en": "I dreamed birds ate the bread I carried on my head.",
-   "t": ""
+   "t": "J’ai rêvé que des oiseaux mangeaient le pain que je portais sur la tête."
   },
   "c6-m1": {
    "en": "You will be saved, and you will serve your master.",
-   "t": ""
+   "t": "Tu seras sauvé, et tu serviras ton maître."
   },
   "c6-m2": {
    "en": "A sad end. You will be put to death.",
-   "t": ""
+   "t": "Une triste fin. Tu seras mis à mort."
   },
   "c6-c": {
    "en": "Yusuf said to the man who would go free: tell your master about me. But the man forgot. So Yusuf stayed in prison for more years.",
-   "t": ""
+   "t": "Youssouf a dit à l’homme qui allait être libéré : parle de moi à ton maître. Mais l’homme a oublié. Alors Youssouf est resté en prison encore des années."
   },
   "c7-a": {
    "en": "Then the king had a strange dream. Seven fat cows were eaten by seven thin cows. And he saw seven green ears of grain, and seven dry ones.",
-   "t": ""
+   "t": "Puis le roi a fait un rêve étrange. Sept vaches grasses étaient mangées par sept vaches maigres. Et il a vu sept épis verts, et sept épis secs."
   },
   "c7-pick": {
    "en": "Seven fat cows! Can you find them? Tap all seven of the fat cows.",
-   "t": ""
+   "t": "Sept vaches grasses ! Peux-tu les trouver ? Touche les sept vaches grasses."
   },
   "c7-b": {
    "en": "Nobody could explain it. Then the man from the prison remembered Yusuf at last! He hurried to ask him.",
-   "t": ""
+   "t": "Personne ne pouvait l’expliquer. Puis l’homme de la prison s’est enfin souvenu de Youssouf ! Il s’est dépêché d’aller lui demander."
   },
   "c7-do": {
    "en": "Tap each side of the dream to hear what Yusuf said it means.",
-   "t": ""
+   "t": "Touche chaque côté du rêve pour entendre ce que Youssouf a dit qu’il voulait dire."
   },
   "c7-good": {
    "en": "The fat cows and the green grain: seven good years are coming. Plant, and save what you harvest.",
-   "t": ""
+   "t": "Les vaches grasses et les épis verts : sept bonnes années arrivent. Semez, et gardez ce que vous récoltez."
   },
   "c7-hard": {
    "en": "The thin cows and the dry grain: then seven hard years will come, and you will eat what you saved.",
-   "t": ""
+   "t": "Les vaches maigres et les épis secs : ensuite viendront sept années difficiles, et vous mangerez ce que vous avez gardé."
   },
   "c7-c": {
    "en": "And after that, said Yusuf, will come a year with plenty of rain.",
-   "t": ""
+   "t": "Et après cela, a dit Youssouf, viendra une année avec beaucoup de pluie."
   },
   "c7-sort": {
    "en": "Help the people get ready. Is each job for the good years, or for the hard years?",
-   "t": ""
+   "t": "Aide les gens à se préparer. Chaque tâche est-elle pour les bonnes années, ou pour les années difficiles ?"
   },
   "c7-sort-bin1": {
    "en": "Good years",
-   "t": ""
+   "t": "Bonnes années"
   },
   "c7-sort-bin2": {
    "en": "Hard years",
-   "t": ""
+   "t": "Années difficiles"
   },
   "c7-sort-it1": {
    "en": "Plant the fields",
-   "t": ""
+   "t": "Semer les champs"
   },
   "c7-sort-it2": {
    "en": "Eat what was saved",
-   "t": ""
+   "t": "Manger ce qui a été gardé"
   },
   "c7-sort-it3": {
    "en": "Save the grain",
-   "t": ""
+   "t": "Garder le grain"
   },
   "c7-sort-it4": {
    "en": "Open the storehouse",
-   "t": ""
+   "t": "Ouvrir le grenier"
   },
   "c7-sort-it5": {
    "en": "Bring in the harvest",
-   "t": ""
+   "t": "Rentrer la récolte"
   },
   "c7-swrong": {
    "en": "Think again. Save in the good years, and use it in the hard years.",
-   "t": ""
+   "t": "Réfléchis encore. On garde pendant les bonnes années, et on s’en sert pendant les années difficiles."
   },
   "c8-a1": {
    "en": "The king said: bring Yusuf to me! But Yusuf did not hurry out of prison. He said: first, find out what really happened to me.",
-   "t": ""
+   "t": "Le roi a dit : amenez-moi Youssouf ! Mais Youssouf ne s’est pas pressé de sortir de prison. Il a dit : d’abord, découvrez ce qui m’est vraiment arrivé."
   },
   "c8-a2": {
    "en": "So the king asked the women who had spoken against Yusuf: what really happened? They said: Allah forbid! We know nothing bad about him.",
-   "t": ""
+   "t": "Alors le roi a demandé aux femmes qui avaient parlé contre Youssouf : que s’est-il vraiment passé ? Elles ont dit : qu’Allah nous en préserve ! Nous ne savons rien de mal sur lui."
   },
   "c8-a3": {
    "en": "And the woman of the house said: now the truth is out. It was I who tried to make him do wrong. Yusuf is an honest man.",
-   "t": ""
+   "t": "Et la femme de la maison a dit : maintenant la vérité éclate. C’est moi qui ai voulu le pousser à mal faire. Youssouf est un homme honnête."
   },
   "c8-do-o": {
    "en": "Put the story in order. Tap what happened first, then what came next.",
-   "t": ""
+   "t": "Mets l’histoire dans l’ordre. Touche ce qui s’est passé d’abord, puis ce qui est venu ensuite."
   },
   "c8-o1": {
    "en": "Yusuf asked for the truth to be found.",
-   "t": ""
+   "t": "Youssouf a demandé qu’on découvre la vérité."
   },
   "c8-o2": {
    "en": "The king asked what had happened.",
-   "t": ""
+   "t": "Le roi a demandé ce qui s’était passé."
   },
   "c8-o3": {
    "en": "The woman told the truth.",
-   "t": ""
+   "t": "La femme a dit la vérité."
   },
   "c8-o4": {
    "en": "The king trusted Yusuf.",
-   "t": ""
+   "t": "Le roi a fait confiance à Youssouf."
   },
   "c8-wrong-o": {
    "en": "Not yet. Think about what came first.",
-   "t": ""
+   "t": "Pas encore. Réfléchis à ce qui est venu en premier."
   },
   "c8-b": {
    "en": "The king trusted Yusuf completely. Yusuf said: put me in charge of the storehouses. I will look after them with care.",
-   "t": ""
+   "t": "Le roi faisait entièrement confiance à Youssouf. Youssouf a dit : confie-moi les greniers. J’en prendrai soin avec attention."
   },
   "c8-do": {
    "en": "The good years are here! Tap the grain as it grows, and save it in the storehouse.",
-   "t": ""
+   "t": "Les bonnes années sont là ! Touche le grain qui pousse, et garde-le dans le grenier."
   },
   "c8-c": {
    "en": "The storehouse is full. The grain is saved, just as Yusuf said.",
-   "t": ""
+   "t": "Le grenier est plein. Le grain est gardé, comme Youssouf l’avait dit."
   },
   "c9-0": {
    "en": "Then the seven hard years came, just as Yusuf had said. There was little food anywhere, even far away where Yusuf's family lived. But in Egypt there was grain, because Yusuf had saved it.",
-   "t": ""
+   "t": "Puis les sept années difficiles sont venues, comme Youssouf l’avait dit. Il y avait peu à manger partout, même loin, là où vivait la famille de Youssouf. Mais en Égypte il y avait du grain, parce que Youssouf l’avait gardé."
   },
   "c9-a": {
    "en": "Later, Yusuf's brothers travelled to Egypt to get grain for their family.",
-   "t": ""
+   "t": "Plus tard, les frères de Youssouf sont venus en Égypte chercher du grain pour leur famille."
   },
   "c9-b": {
    "en": "Yusuf knew them at once. But they did not know it was him!",
-   "t": ""
+   "t": "Youssouf les a reconnus tout de suite. Mais eux ne savaient pas que c’était lui !"
   },
   "c9-q": {
    "en": "Did the brothers know who he was?",
-   "t": ""
+   "t": "Les frères savaient-ils qui il était ?"
   },
   "c9-q-opt1": {
    "en": "Yes, straight away",
-   "t": ""
+   "t": "Oui, tout de suite"
   },
   "c9-q-opt2": {
    "en": "No, they did not know him",
-   "t": ""
+   "t": "Non, ils ne l’ont pas reconnu"
   },
   "c9-qwrong": {
    "en": "No. Yusuf knew them, but they did not know him.",
-   "t": ""
+   "t": "Non. Youssouf les a reconnus, mais eux ne l’ont pas reconnu."
   },
   "c9-b2": {
    "en": "It is told that Yusuf asked them about their family. They said: we were twelve brothers. One was lost long ago, and our father keeps the youngest one at home with him.",
-   "t": ""
+   "t": "On raconte que Youssouf les a questionnés sur leur famille. Ils ont dit : nous étions douze frères. L’un s’est perdu il y a longtemps, et notre père garde le plus jeune à la maison avec lui."
   },
   "c9-do": {
    "en": "Yusuf gave them full measure. Tap each sack until it is full to the top.",
-   "t": ""
+   "t": "Youssouf leur a donné pleine mesure. Touche chaque sac jusqu’à ce qu’il soit plein à ras bord."
   },
   "c9-c": {
    "en": "Then Yusuf said: next time, bring me that youngest brother, the one at home with your father. And he had their payment put back in their bags.",
-   "t": ""
+   "t": "Puis Youssouf a dit : la prochaine fois, amenez-moi ce plus jeune frère, celui qui est à la maison avec votre père. Et il a fait remettre leur paiement dans leurs sacs."
   },
   "c9-pick": {
    "en": "Help put their payment back. Tap each sack to tuck the payment inside.",
-   "t": ""
+   "t": "Aide à remettre leur paiement. Touche chaque sac pour y glisser le paiement."
   },
   "c10-h0": {
    "en": "Back home, the brothers said: Father, we will get no more grain unless we take our little brother with us. Yaqub said: shall I trust you with him, the way I trusted you with Yusuf before?",
-   "t": ""
+   "t": "De retour chez eux, les frères ont dit : père, nous n’aurons plus de grain si nous n’emmenons pas notre petit frère avec nous. Yacoub a dit : vais-je vous le confier, comme je vous ai confié Youssouf autrefois ?"
   },
   "c10-hdo": {
    "en": "Look, a sack from Egypt. Tap it to open it. What is inside?",
-   "t": ""
+   "t": "Regarde, un sac d’Égypte. Touche-le pour l’ouvrir. Qu’y a-t-il dedans ?"
   },
   "c10-hdo-s1": {
    "en": "Their payment! It was given back to them.",
-   "t": ""
+   "t": "Leur paiement ! On le leur a rendu."
   },
   "c10-h": {
    "en": "Then they found that their payment had been given back! In the end Yaqub let their little brother go, but only after they promised by Allah to bring him back.",
-   "t": ""
+   "t": "Puis ils ont découvert qu’on leur avait rendu leur paiement ! Finalement, Yacoub a laissé partir leur petit frère, mais seulement après qu’ils ont promis par Allah de le ramener."
   },
   "c10-g": {
    "en": "Before the brothers set off again, their father Yaqub said: my sons, do not all go in by one gate. Go in by different gates. I trust in Allah.",
-   "t": ""
+   "t": "Avant que les frères repartent, leur père Yacoub a dit : mes fils, n’entrez pas tous par une seule porte. Entrez par des portes différentes. Je place ma confiance en Allah."
   },
   "c10-gdo": {
    "en": "Do as their father said. Tap a gate for each brother, a different gate each time.",
-   "t": ""
+   "t": "Fais comme leur père a dit. Touche une porte pour chaque frère, une porte différente à chaque fois."
   },
   "c10-a": {
    "en": "The brothers came again, and this time they brought their brother. Yusuf took him aside and said: I am your brother. Do not be sad.",
-   "t": ""
+   "t": "Les frères sont revenus, et cette fois ils ont amené leur frère. Youssouf l’a pris à part et lui a dit : je suis ton frère. Ne sois pas triste."
   },
   "c10-b": {
    "en": "Then came a plan that Allah made for Yusuf, so that his brother could stay with him. The king's drinking cup was placed in his brother's bag.",
-   "t": ""
+   "t": "Puis est venu un plan qu’Allah a fait pour Youssouf, pour que son frère puisse rester avec lui. La coupe du roi a été placée dans le sac de son frère."
   },
   "c10-q": {
    "en": "Whose plan was this, so that his brother could stay?",
-   "t": ""
+   "t": "De qui était ce plan, pour que son frère puisse rester ?"
   },
   "c10-q-opt1": {
    "en": "Allah made it for Yusuf",
-   "t": ""
+   "t": "Allah l’a fait pour Youssouf"
   },
   "c10-q-opt2": {
    "en": "The brothers made it",
-   "t": ""
+   "t": "Les frères l’ont fait"
   },
   "c10-qwrong": {
    "en": "No. This was a plan that Allah made for Yusuf.",
-   "t": ""
+   "t": "Non. C’était un plan qu’Allah a fait pour Youssouf."
   },
   "c10-l1": {
    "en": "As the brothers were leaving, a man called out: stop, you are thieves! The king's cup is missing! The brothers said: we are not thieves!",
-   "t": ""
+   "t": "Alors que les frères partaient, un homme a crié : arrêtez, vous êtes des voleurs ! La coupe du roi a disparu ! Les frères ont dit : nous ne sommes pas des voleurs !"
   },
   "c10-l2": {
    "en": "Then they were asked: if one of you is lying, what should happen to him? The brothers said: whoever has the cup in his bag must stay behind. That is our own rule.",
-   "t": ""
+   "t": "Alors on leur a demandé : si l’un de vous ment, que doit-il lui arriver ? Les frères ont dit : celui qui a la coupe dans son sac doit rester. C’est notre propre règle."
   },
   "c10-lq": {
    "en": "Whose rule was it, that the one with the cup must stay behind?",
-   "t": ""
+   "t": "De qui était la règle selon laquelle celui qui a la coupe doit rester ?"
   },
   "c10-lq-opt1": {
    "en": "The brothers' own rule",
-   "t": ""
+   "t": "La règle des frères eux-mêmes"
   },
   "c10-lq-opt2": {
    "en": "The king of Egypt's rule",
-   "t": ""
+   "t": "La règle du roi d’Égypte"
   },
   "c10-lqwrong": {
    "en": "Not the king's. Under the king's rule, Yusuf could not have kept his brother. The brothers chose the rule themselves.",
-   "t": ""
+   "t": "Pas celle du roi. Avec la règle du roi, Youssouf n’aurait pas pu garder son frère. Ce sont les frères qui ont choisi la règle."
   },
   "c10-do": {
    "en": "The king's cup is missing! Search the bags one by one, starting with the oldest brother's.",
-   "t": ""
+   "t": "La coupe du roi a disparu ! Fouille les sacs un par un, en commençant par celui du frère aîné."
   },
   "c10-nope": {
    "en": "Not in this one.",
-   "t": ""
+   "t": "Pas dans celui-là."
   },
   "c10-c": {
    "en": "There it is, in his brother's bag! So his brother stayed in Egypt with Yusuf.",
-   "t": ""
+   "t": "La voilà, dans le sac de son frère ! Ainsi son frère est resté en Égypte avec Youssouf."
   },
   "c11-v0": {
    "en": "The brothers begged: please, take one of us instead! Our father is very old. But Yusuf said: we can only keep the one who had the cup.",
-   "t": ""
+   "t": "Les frères ont supplié : s’il te plaît, prends l’un de nous à sa place ! Notre père est très vieux. Mais Youssouf a dit : nous ne pouvons garder que celui qui avait la coupe."
   },
   "c11-v": {
    "en": "Then the eldest brother said: remember the promise we made to our father, and how we broke our promise about Yusuf. I will not leave this land until my father lets me. The rest of you, go home and tell him.",
-   "t": ""
+   "t": "Alors le frère aîné a dit : souvenez-vous de la promesse que nous avons faite à notre père, et de la façon dont nous avons trahi notre promesse au sujet de Youssouf. Je ne quitterai pas ce pays tant que mon père ne me l’aura pas permis. Vous autres, rentrez et dites-le-lui."
   },
   "c11-a": {
    "en": "The others went home and told their father what had happened. Yaqub said: it is best to be patient. Maybe Allah will bring them all back to me. But he missed Yusuf so much that his eyes turned white with grief.",
-   "t": ""
+   "t": "Les autres sont rentrés et ont raconté à leur père ce qui s’était passé. Yacoub a dit : mieux vaut être patient. Peut-être qu’Allah me les ramènera tous. Mais Youssouf lui manquait tant que ses yeux sont devenus blancs de chagrin."
   },
   "c11-b": {
    "en": "But Yaqub did not lose hope. He said: my sons, go and look for Yusuf and his brother. Never lose hope in Allah's mercy.",
-   "t": ""
+   "t": "Mais Yacoub n’a pas perdu espoir. Il a dit : mes fils, allez chercher Youssouf et son frère. Ne perdez jamais espoir en la miséricorde d’Allah."
   },
   "c11-c0": {
    "en": "So the brothers went back to Egypt, and came before Yusuf once more. They said: hard times have hit our family, and we have brought very little. Please be kind to us.",
-   "t": ""
+   "t": "Alors les frères sont retournés en Égypte, et se sont présentés encore une fois devant Youssouf. Ils ont dit : des temps durs ont frappé notre famille, et nous n’avons apporté que très peu. S’il te plaît, sois bon avec nous."
   },
   "c11-c": {
    "en": "Then Yusuf asked them: do you know what you did to Yusuf and his brother? They cried: could it be that you are Yusuf? He said: I am Yusuf, and this is my brother. Allah has been good to us.",
-   "t": ""
+   "t": "Alors Youssouf leur a demandé : savez-vous ce que vous avez fait à Youssouf et à son frère ? Ils se sont écriés : se pourrait-il que tu sois Youssouf ? Il a dit : je suis Youssouf, et voici mon frère. Allah a été bon envers nous."
   },
   "c11-e": {
    "en": "The brothers hung their heads. They said: By Allah, Allah chose you over us, and we were in the wrong.",
-   "t": ""
+   "t": "Les frères ont baissé la tête. Ils ont dit : par Allah, Allah t’a préféré à nous, et nous avions tort."
   },
   "c11-do": {
    "en": "The brothers said they were sorry. What did Yusuf do?",
-   "t": ""
+   "t": "Les frères ont demandé pardon. Qu’a fait Youssouf ?"
   },
   "c11-do-opt1": {
    "en": "He sent them away",
-   "t": ""
+   "t": "Il les a renvoyés"
   },
   "c11-do-opt2": {
    "en": "He forgave them",
-   "t": ""
+   "t": "Il leur a pardonné"
   },
   "c11-wrong": {
    "en": "No. Yusuf did something much more beautiful. Try again.",
-   "t": ""
+   "t": "Non. Youssouf a fait quelque chose de bien plus beau. Essaie encore."
   },
   "c11-d": {
    "en": "Yusuf forgave them! He said: you will hear no blame today. May Allah forgive you. He is the Most Merciful of all.",
-   "t": ""
+   "t": "Youssouf leur a pardonné ! Il a dit : aucun reproche contre vous aujourd’hui. Qu’Allah vous pardonne. Il est le plus Miséricordieux de tous."
   },
   "c11-o1": {
    "en": "Yaqub said: never lose hope.",
-   "t": ""
+   "t": "Yacoub a dit : ne perdez jamais espoir."
   },
   "c11-o2": {
    "en": "Yusuf said: I am Yusuf.",
-   "t": ""
+   "t": "Youssouf a dit : je suis Youssouf."
   },
   "c11-o3": {
    "en": "The brothers said: we were in the wrong.",
-   "t": ""
+   "t": "Les frères ont dit : nous avions tort."
   },
   "c11-o4": {
    "en": "Yusuf forgave them.",
-   "t": ""
+   "t": "Youssouf leur a pardonné."
   },
   "c12-a": {
    "en": "Yusuf gave them his shirt. He said: lay it over my father's face, and he will see again. Then bring your whole family to me.",
-   "t": ""
+   "t": "Youssouf leur a donné sa chemise. Il a dit : posez-la sur le visage de mon père, et il verra de nouveau. Puis amenez-moi toute votre famille."
   },
   "c12-b": {
    "en": "Far away, as the caravan set off, a wind began to blow. And Yaqub said: I can smell Yusuf!",
-   "t": ""
+   "t": "Au loin, alors que la caravane partait, un vent s’est mis à souffler. Et Yacoub a dit : je sens l’odeur de Youssouf !"
   },
   "c12-do": {
    "en": "Drag the shirt along the path, or tap it, to carry the good news home.",
-   "t": ""
+   "t": "Fais avancer la chemise sur le chemin, ou touche-la, pour porter la bonne nouvelle à la maison."
   },
   "c12-c": {
    "en": "The shirt was laid on Yaqub's face, and he could see again! The brothers said: Father, ask Allah to forgive us. And he said: I will ask my Lord to forgive you.",
-   "t": ""
+   "t": "La chemise a été posée sur le visage de Yacoub, et il a vu de nouveau ! Les frères ont dit : père, demande à Allah de nous pardonner. Et il a dit : je demanderai à mon Seigneur de vous pardonner."
   },
   "c12-q": {
    "en": "What happened when the shirt was laid on Yaqub's face?",
-   "t": ""
+   "t": "Que s’est-il passé quand la chemise a été posée sur le visage de Yacoub ?"
   },
   "c12-q-opt1": {
    "en": "He fell asleep",
-   "t": ""
+   "t": "Il s’est endormi"
   },
   "c12-q-opt2": {
    "en": "He could see again",
-   "t": ""
+   "t": "Il a vu de nouveau"
   },
   "c12-qwrong": {
    "en": "No. Something wonderful happened: he could see again!",
-   "t": ""
+   "t": "Non. Quelque chose de merveilleux est arrivé : il a vu de nouveau !"
   },
   "c13-a": {
    "en": "The whole family came to Egypt. Yusuf held his parents close and said: welcome to Egypt. You will all be safe here, if Allah wills.",
-   "t": ""
+   "t": "Toute la famille est venue en Égypte. Youssouf a serré ses parents contre lui et a dit : bienvenue en Égypte. Vous serez tous en sécurité ici, si Allah le veut."
   },
   "c13-do": {
    "en": "Tap the stars, the sun and the moon, just like in the dream.",
-   "t": ""
+   "t": "Touche les étoiles, le soleil et la lune, comme dans le rêve."
   },
   "c13-b": {
    "en": "Yusuf's parents and brothers all bowed down before him. Yusuf said: Father, this is what my dream meant, long ago. My Lord has made it come true.",
-   "t": ""
+   "t": "Les parents et les frères de Youssouf se sont tous prosternés devant lui. Youssouf a dit : père, voilà ce que voulait dire mon rêve, il y a longtemps. Mon Seigneur l’a rendu vrai."
   },
   "c13-q": {
    "en": "Look back at the dream. Who were the eleven stars?",
-   "t": ""
+   "t": "Repense au rêve. Qui étaient les onze étoiles ?"
   },
   "c13-q-opt1": {
    "en": "His eleven brothers",
-   "t": ""
+   "t": "Ses onze frères"
   },
   "c13-q-opt2": {
    "en": "Eleven camels",
-   "t": ""
+   "t": "Onze chameaux"
   },
   "c13-qwrong": {
    "en": "Think again. Who came to Egypt to bow before Yusuf?",
-   "t": ""
+   "t": "Réfléchis encore. Qui est venu en Égypte se prosterner devant Youssouf ?"
   },
   "c13-b0": {
    "en": "Yes! The eleven stars were his eleven brothers, and the sun and the moon were his father and mother. The dream had come true.",
-   "t": ""
+   "t": "Oui ! Les onze étoiles étaient ses onze frères, et le soleil et la lune étaient son père et sa mère. Le rêve s’était réalisé."
   },
   "c13-sort": {
    "en": "What have we learned from Yusuf? For each one, tap: like Yusuf, or not like Yusuf.",
-   "t": ""
+   "t": "Qu’avons-nous appris de Youssouf ? Pour chacun, touche : comme Youssouf, ou pas comme Youssouf."
   },
   "c13-sort-bin1": {
    "en": "Like Yusuf",
-   "t": ""
+   "t": "Comme Youssouf"
   },
   "c13-sort-bin2": {
    "en": "Not like Yusuf",
-   "t": ""
+   "t": "Pas comme Youssouf"
   },
   "c13-sort-it1": {
    "en": "Being patient",
-   "t": ""
+   "t": "Être patient"
   },
   "c13-sort-it2": {
    "en": "Making up a story",
-   "t": ""
+   "t": "Inventer une histoire"
   },
   "c13-sort-it3": {
    "en": "Telling the truth",
-   "t": ""
+   "t": "Dire la vérité"
   },
   "c13-sort-it4": {
    "en": "Staying angry",
-   "t": ""
+   "t": "Rester en colère"
   },
   "c13-sort-it5": {
    "en": "Forgiving",
-   "t": ""
+   "t": "Pardonner"
   },
   "c13-sort-it6": {
    "en": "Trusting Allah",
-   "t": ""
+   "t": "Faire confiance à Allah"
   },
   "c13-swrong": {
    "en": "Think about what Yusuf did.",
-   "t": ""
+   "t": "Pense à ce que Youssouf a fait."
   },
   "c13-c": {
    "en": "Then Yusuf prayed: My Lord, You are my protector in this world and the next. Let me die devoted to You, and join me with the righteous.",
-   "t": ""
+   "t": "Puis Youssouf a prié : mon Seigneur, Tu es mon protecteur dans ce monde et dans l’autre. Fais-moi mourir soumis à Toi, et réunis-moi avec les vertueux."
   },
   "pz-do": {
    "en": "This picture is all mixed up! Tap two pieces to swap them, until the picture is whole again.",
-   "t": ""
+   "t": "Cette image est toute mélangée ! Touche deux morceaux pour les échanger, jusqu’à ce que l’image soit entière."
   },
   "mem-do": {
    "en": "Find the pairs. Tap two cards. If they match, they stay.",
-   "t": ""
+   "t": "Trouve les paires. Touche deux cartes. Si elles vont ensemble, elles restent."
   },
   "end-a": {
    "en": "The end. Yusuf was patient, he told the truth, and he forgave. What will you remember from his story?",
-   "t": ""
+   "t": "Fin. Youssouf a été patient, il a dit la vérité, et il a pardonné. Que retiendras-tu de son histoire ?"
   }
  },
  "strings": {
-  "The Dream": "",
-  "The Jealous Brothers": "",
-  "From a Shia narration (al-Qummi)": "",
-  "The stone: Ibn Kathir's tafsir": "",
-  "The untorn shirt: Ibn Kathir's tafsir": "",
-  "The brothers are jealous": "",
-  "Yusuf is put in the well": "",
-  "They show the shirt": "",
-  "Yaqub is patient": "",
-  "The Well": "",
-  "Far From Home": "",
-  "Twenty coins: Ibn Kathir's tafsir": "",
-  "Patience in Prison": "",
-  "The fruit: Ibn Kathir's tafsir": "",
-  "Yusuf runs for the door": "",
-  "His shirt is torn": "",
-  "Look at the shirt!": "",
-  "Patient in prison": "",
-  "Two Dreams": "",
-  "The King's Dream": "",
-  "fat cow": "",
-  "thin cow": "",
-  "7 good years": "",
-  "7 hard years": "",
-  "Truth and Trust": "",
-  "Yusuf asks for the truth": "",
-  "The king asks what happened": "",
-  "The woman tells the truth": "",
-  "The king trusts Yusuf": "",
-  "The Brothers Come": "",
-  "sack": "",
-  "The King's Cup": "",
-  "“I Am Yusuf”": "",
-  "Never lose hope": "",
-  "I am Yusuf": "",
-  "We were wrong": "",
-  "Yusuf forgives": "",
-  "The Shirt": "",
-  "The Dream Comes True": "",
+  "The Dream": "Le rêve",
+  "The Jealous Brothers": "Les frères jaloux",
+  "From a Shia narration (al-Qummi)": "D’après un récit chiite (al-Qummi)",
+  "The stone: Ibn Kathir's tafsir": "La pierre : tafsir d’Ibn Kathir",
+  "The untorn shirt: Ibn Kathir's tafsir": "La chemise intacte : tafsir d’Ibn Kathir",
+  "The brothers are jealous": "Les frères sont jaloux",
+  "Yusuf is put in the well": "Youssouf est mis dans le puits",
+  "They show the shirt": "Ils montrent la chemise",
+  "Yaqub is patient": "Yacoub est patient",
+  "The Well": "Le puits",
+  "Far From Home": "Loin de chez lui",
+  "Twenty coins: Ibn Kathir's tafsir": "Vingt pièces : tafsir d’Ibn Kathir",
+  "Patience in Prison": "La patience en prison",
+  "The fruit: Ibn Kathir's tafsir": "Les fruits : tafsir d’Ibn Kathir",
+  "Yusuf runs for the door": "Youssouf court vers la porte",
+  "His shirt is torn": "Sa chemise est déchirée",
+  "Look at the shirt!": "Regardez la chemise !",
+  "Patient in prison": "Patient en prison",
+  "Two Dreams": "Deux rêves",
+  "The King's Dream": "Le rêve du roi",
+  "fat cow": "vache grasse",
+  "thin cow": "vache maigre",
+  "7 good years": "7 bonnes années",
+  "7 hard years": "7 années difficiles",
+  "Truth and Trust": "Vérité et confiance",
+  "Yusuf asks for the truth": "Youssouf demande la vérité",
+  "The king asks what happened": "Le roi demande ce qui s’est passé",
+  "The woman tells the truth": "La femme dit la vérité",
+  "The king trusts Yusuf": "Le roi fait confiance à Youssouf",
+  "The Brothers Come": "Les frères arrivent",
+  "sack": "sac",
+  "The King's Cup": "La coupe du roi",
+  "“I Am Yusuf”": "« Je suis Youssouf »",
+  "Never lose hope": "Ne jamais perdre espoir",
+  "I am Yusuf": "Je suis Youssouf",
+  "We were wrong": "Nous avions tort",
+  "Yusuf forgives": "Youssouf pardonne",
+  "The Shirt": "La chemise",
+  "The Dream Comes True": "Le rêve se réalise",
   "← Asmau": "",
-  "Yusuf": "",
-  "The Story of Yusuf": "",
-  "Thirteen chapters. Three or four things to do in every one.": "",
-  "Under 5: play it together with a grown-up": "",
+  "Yusuf": "Youssouf",
+  "The Story of Yusuf": "L’histoire de Youssouf",
+  "Thirteen chapters. Three or four things to do in every one.": "Treize chapitres. Trois ou quatre choses à faire dans chacun.",
+  "Under 5: play it together with a grown-up": "Moins de 5 ans : à jouer avec un adulte",
   "Start the story": "",
   "Start from the beginning": "",
   "For parents": "",
@@ -820,15 +820,483 @@
   "All chapters": "",
   "✕ Close": "",
   "The End": "",
-  "Patience": "",
-  "Truth": "",
-  "Forgiveness": "",
+  "Patience": "La patience",
+  "Truth": "La vérité",
+  "Forgiveness": "Le pardon",
   "Read it again": "",
   "Pick a chapter": "",
   "Music": "",
   "Sounds": "",
   "Voice": "",
-  "His whole story in thirteen chapters, with three or four things to do in every one.": "",
-  "Yusuf as a boy, looking up at the stars, the sun and the moon.": ""
+  "His whole story in thirteen chapters, with three or four things to do in every one.": "Toute son histoire en treize chapitres, avec trois ou quatre choses à faire dans chacun.",
+  "Yusuf as a boy, looking up at the stars, the sun and the moon.": "Youssouf enfant, qui regarde les étoiles, le soleil et la lune.",
+  "📖 About this story": "📖 À propos de cette histoire",
+  "🤲 Told gently, or left out": "🤲 Raconté avec douceur, ou laissé de côté",
+  "Told more gently than the verses tell them: what the woman of the house tried to do (12:23–25), the gathering of the women of the city (12:30–32), and how the second prisoner’s dream ends (12:41), where the game says he “will be put to death”. Verses 12:52–53 are left out because scholars differ on who is speaking.": "Raconté plus doucement que dans les versets : ce que la femme de la maison a tenté de faire (12:23–25), la réunion des femmes de la ville (12:30–32), et la fin du rêve du deuxième prisonnier (12:41), où le jeu dit qu’il « sera mis à mort ». Les versets 12:52–53 sont laissés de côté parce que les savants divergent sur qui parle.",
+  "📚 From the commentary, not the verses": "📚 De l’exégèse, pas des versets",
+  "From Ibn Kathir’s tafsir and not the verses: the stone Yusuf stood on in the well, the shirt the brothers forgot to tear, the twenty coins, and the wind that carried the scent of the shirt.": "Du tafsir d’Ibn Kathir et non des versets : la pierre sur laquelle Youssouf se tenait dans le puits, la chemise que les frères ont oublié de déchirer, les vingt pièces, et le vent qui a porté l’odeur de la chemise.",
+  "👥 Who is shown": "👥 Qui est montré",
+  "Shown in this story: Prophet Yusuf and Prophet Yaqub (peace be upon them), Yusuf’s ten older brothers and his younger brother.": "Dans cette histoire : le Prophète Youssouf et le Prophète Yacoub (que la paix soit sur eux), les dix frères aînés de Youssouf et son petit frère.",
+  "🧒 Ages and how long it is": "🧒 Âges et durée",
+  "For ages 5 to 9. A child of 3 or 4 can enjoy it with a grown-up beside them: putting events in order, the picture puzzles and sorting need a helping hand, and the well, the prison and the second prisoner’s dream may need explaining or skipping.": "Pour les 5 à 9 ans. Un enfant de 3 ou 4 ans peut en profiter avec un adulte à côté : remettre les événements dans l’ordre, les puzzles et les tris demandent un coup de main, et le puits, la prison et le rêve du deuxième prisonnier peuvent demander des explications ou être passés.",
+  "This story is <a href=\"https://quran.com/12\" target=\"_blank\" rel=\"noopener\">Surah Yusuf</a> (Qur’an 12:4–101), from the dream to the family reunited in Egypt. How the stories are made and checked is under “For parents” on the first page of Asmau.": "Cette histoire est <a href=\"https://quran.com/12\" target=\"_blank\" rel=\"noopener\">la sourate Youssouf</a> (Coran 12:4–101), du rêve jusqu’à la famille réunie en Égypte. Comment les histoires sont faites et vérifiées se trouve dans « Pour les parents », sur la première page d’Asmau."
+ },
+ "notes": {
+  "1.1": {
+   "en": "Yusuf tells his father about his dream, and his father warns him not to tell his brothers.\n\nWho the stars, sun and moon stand for is not spelled out in the verses. The commentary reports that scholars including Ibn Abbas, Ad-Dahhak, Qatadah, Sufyan al-Thawri and Abd al-Rahman bin Zayd bin Aslam explained the eleven stars as his eleven brothers, and the sun and moon as his father and mother. The game tells children this in the last chapter.",
+   "t": "Youssouf raconte son rêve à son père, et son père lui dit de ne pas le raconter à ses frères.\n\nQui représentent les étoiles, le soleil et la lune, les versets ne le disent pas clairement. L’exégèse rapporte que des savants, dont Ibn Abbas, Ad-Dahhak, Qatada, Sufyan al-Thawri et Abd al-Rahman bin Zayd bin Aslam, ont expliqué les onze étoiles comme ses onze frères, et le soleil et la lune comme son père et sa mère. Le jeu le dit aux enfants au dernier chapitre."
+  },
+  "1.2": {
+   "en": "Ask your child: have you ever had a dream you remember? Was it happy or strange? Dreams are a gentle way into this story.",
+   "t": "Demandez à votre enfant : as-tu déjà fait un rêve dont tu te souviens ? Était-il joyeux ou étrange ? Les rêves sont une douce entrée dans cette histoire."
+  },
+  "1.3": {
+   "en": "Yaqub's warning comes with a reason: 'Satan is man's sworn enemy' (12:5). Ask: why might it be wise to keep some good news quiet sometimes?\n\nHis father also says Allah will choose Yusuf and teach him to interpret dreams, as He blessed Ibrahim and Ishaq before (12:6).",
+   "t": "L’avertissement de Yacoub vient avec une raison : « le Diable est pour l’homme un ennemi déclaré » (12:5). Demandez : pourquoi est-il parfois sage de garder une bonne nouvelle pour soi ?\n\nSon père dit aussi qu’Allah choisira Youssouf et lui apprendra l’interprétation des rêves, comme Il a comblé Ibrahim et Ishaq avant lui (12:6)."
+  },
+  "1.4": {
+   "en": "Talk about it: is keeping a secret the same as lying? A good moment to talk about safe secrets (a surprise) and unsafe ones (anything that makes you worried, which you should always tell a grown-up).",
+   "t": "Parlez-en : garder un secret, est-ce la même chose que mentir ? Un bon moment pour parler des secrets sans danger (une surprise) et des secrets dangereux (tout ce qui t’inquiète, que tu dois toujours dire à un adulte)."
+  },
+  "1.5": {
+   "en": "The Qur'an says: 'There are lessons in the story of Joseph and his brothers for all who seek them' (12:7). Ask your child, as you go: what lesson do you think this story will teach?",
+   "t": "Le Coran dit : « Il y a dans l’histoire de Joseph et de ses frères des leçons pour ceux qui cherchent » (12:7). Demandez à votre enfant, au fil du jeu : quelle leçon cette histoire va-t-elle nous apprendre, à ton avis ?"
+  },
+  "2.1": {
+   "en": "The verses say one brother proposed killing Yusuf or banishing him, and another said not to kill him but to throw him into the well where a caravan might pick him up (12:9–10). The game says only that some wanted to get rid of him and one said not to hurt him.\n\n'Joseph and his brother' are dearer to their father (12:8): the little brother is called Benjamin in the commentary; the verses do not name him, and neither does the game.\n\nVerses 12:11–14. Before taking him, the brothers asked their father why he did not trust them with Yusuf, and asked to take him out the next day so that he would enjoy himself and play; they promised to look after him. Yaqub said it grieved him to let him go and that he feared a wolf would eat him while they were not paying attention; they answered that if a wolf ate him when there were so many of them, they would be losers. The commentary gives the same reason, 'so that we all enjoy ourselves and play', reported from Qatadah, Ad-Dahhak and As-Suddi. Some retellings add that the brothers said Yusuf stayed indoors too much and needed to grow strong; that is not in the verses or in the commentary, so the game does not say it. Notice with your child that the brothers later used the very thing their father had said he feared: the wolf.\n\nYaqub's answer, that patience is best and that he seeks Allah's help against what they describe (12:18), is kept.\n\nIn the well: the verse says Allah revealed to Yusuf that he would one day tell his brothers of this while they did not realise (12:15). The commentary explains this as comfort sent in his distress, and reports from Ibn Abbas that the brothers would not recognise him when he reminded them. The commentary relates that Yusuf stood on a stone in the water of the well; the picture shows that. The stone is from the commentary, not from the verse.\n\nThe shirt: the verse says they brought his shirt with false blood on it (12:18). The commentary says, citing Mujahid, As-Suddi and others, that the blood was a sheep's, and that the brothers forgot to tear the shirt, which is why Yaqub did not believe them. The untorn shirt, which the game turns into a question, is from the commentary, not from the verse.\n\nShia narrations add two things in the well: Yusuf's prayer, from al-Qummi's commentary, which the game uses ('O Lord of Ibrahim, Ishaq and Ya'qub, have mercy on my helplessness, weakness and tender age'); and Jibril coming to him with the news that Allah would raise him in honour (Imam al-Baqir).",
+   "t": "Les versets disent qu’un frère a proposé de tuer Youssouf ou de le bannir, et qu’un autre a dit de ne pas le tuer mais de le jeter dans le puits où une caravane pourrait le recueillir (12:9–10). Le jeu dit seulement que certains voulaient se débarrasser de lui et que l’un a dit de ne pas lui faire de mal.\n\n« Joseph et son frère » sont plus chers à leur père (12:8) : l’exégèse appelle le petit frère Benjamin ; les versets ne le nomment pas, et le jeu non plus.\n\nVersets 12:11–14. Avant de l’emmener, les frères ont demandé à leur père pourquoi il ne leur confiait pas Youssouf, et lui ont demandé de l’emmener le lendemain pour qu’il s’amuse et joue ; ils ont promis de veiller sur lui. Yacoub a dit qu’il lui était pénible de le laisser partir et qu’il craignait qu’un loup le mange pendant qu’ils ne feraient pas attention ; ils ont répondu que si un loup le mangeait alors qu’ils étaient si nombreux, ils seraient des perdants. L’exégèse donne la même raison, « pour que nous nous amusions et jouions tous », rapportée de Qatada, Ad-Dahhak et As-Suddi. Certains récits ajoutent que les frères disaient que Youssouf restait trop à la maison et devait devenir fort ; ce n’est ni dans les versets ni dans l’exégèse, le jeu ne le dit donc pas. Remarquez avec votre enfant que les frères ont ensuite utilisé justement ce que leur père avait dit craindre : le loup.\n\nLa réponse de Yacoub, que la patience est meilleure et qu’il demande l’aide d’Allah contre ce qu’ils racontent (12:18), est gardée.\n\nDans le puits : le verset dit qu’Allah a révélé à Youssouf qu’un jour il rappellerait cela à ses frères sans qu’ils s’en rendent compte (12:15). L’exégèse l’explique comme un réconfort envoyé dans sa détresse, et rapporte d’Ibn Abbas que les frères ne le reconnaîtraient pas quand il le leur rappellerait. L’exégèse raconte que Youssouf se tenait sur une pierre dans l’eau du puits ; l’image le montre. La pierre vient de l’exégèse, pas du verset.\n\nLa chemise : le verset dit qu’ils ont apporté sa chemise avec un faux sang (12:18). L’exégèse dit, citant Mujahid, As-Suddi et d’autres, que le sang était celui d’un mouton, et que les frères ont oublié de déchirer la chemise, raison pour laquelle Yacoub ne les a pas crus. La chemise intacte, dont le jeu fait une question, vient de l’exégèse, pas du verset.\n\nDes récits chiites ajoutent deux choses dans le puits : la prière de Youssouf, tirée de l’exégèse d’al-Qummi, que le jeu emploie (« Ô Seigneur d’Ibrahim, d’Ishaq et de Yacoub, aie pitié de mon impuissance, de ma faiblesse et de mon jeune âge ») ; et Jibril venant lui annoncer qu’Allah l’élèverait en honneur (l’Imam al-Baqir)."
+  },
+  "2.2": {
+   "en": "The brothers felt their father loved Yusuf and his little brother more (12:8). Ask: have you ever felt someone was loved more than you? What did you do with that feeling?",
+   "t": "Les frères sentaient que leur père aimait plus Youssouf et son petit frère (12:8). Demandez : as-tu déjà senti que quelqu’un était plus aimé que toi ? Qu’as-tu fait de ce sentiment ?"
+  },
+  "2.3": {
+   "en": "One brother spoke up for Yusuf (12:10). Ask: what can you do when friends want to do something mean? Even one voice can make a difference.",
+   "t": "Un frère a pris la défense de Youssouf (12:10). Demandez : que peux-tu faire quand des amis veulent faire quelque chose de méchant ? Même une seule voix peut changer les choses."
+  },
+  "2.4": {
+   "en": "The brothers promised Yusuf would 'enjoy himself and play' (12:12). Ask: what makes a promise worth trusting?",
+   "t": "Les frères ont promis que Youssouf « s’amuserait et jouerait » (12:12). Demandez : qu’est-ce qui fait qu’une promesse mérite confiance ?"
+  },
+  "2.5": {
+   "en": "Yaqub said the thought of them taking Yusuf away worried him (12:13). Ask: what do you think parents worry about? How can children help them worry less?",
+   "t": "Yacoub a dit que l’idée qu’ils emmènent Youssouf l’inquiétait (12:13). Demandez : de quoi les parents s’inquiètent-ils, à ton avis ? Comment les enfants peuvent-ils les aider à moins s’inquiéter ?"
+  },
+  "2.6": {
+   "en": "Ask your child what they are afraid of. Fears are normal; Yaqub had one too, and he said it out loud.",
+   "t": "Demandez à votre enfant de quoi il a peur. Avoir peur, c’est normal ; Yacoub aussi avait peur, et il l’a dit à voix haute."
+  },
+  "2.7": {
+   "en": "'If a wolf were to eat him when there are so many of us, we would truly be losers!' (12:14). Ask: why do people sometimes say too much when they are hiding something?",
+   "t": "« Si le loup le dévorait alors que nous sommes si nombreux, nous serions vraiment des perdants ! » (12:14). Demandez : pourquoi les gens en disent-ils parfois trop quand ils cachent quelque chose ?"
+  },
+  "2.8": {
+   "en": "This page can be frightening. Hold your child close and remind them how the story ends: Yusuf is safe, and much loved.",
+   "t": "Cette page peut faire peur. Serrez votre enfant contre vous et rappelez-lui comment l’histoire finit : Youssouf est sauvé, et très aimé."
+  },
+  "2.9": {
+   "en": "Ask your child: when you feel small or scared, what can you say to Allah? Let them make their own short prayer.",
+   "t": "Demandez à votre enfant : quand tu te sens petit ou que tu as peur, que peux-tu dire à Allah ? Laissez-le faire sa propre petite prière."
+  },
+  "2.10": {
+   "en": "The Qur'an says Allah revealed to Yusuf in the well that he would one day tell his brothers about all this (12:15). Ask: how does it feel to know that someone is with you, even when you cannot see them?",
+   "t": "Le Coran dit qu’Allah a révélé à Youssouf dans le puits qu’un jour il raconterait tout cela à ses frères (12:15). Demandez : comment se sent-on quand on sait que quelqu’un est avec nous, même quand on ne le voit pas ?"
+  },
+  "2.11": {
+   "en": "The brothers came home 'weeping' at nightfall (12:16) and said they had been racing and left Yusuf with their things (12:17). Ask: can tears be used to hide a lie?",
+   "t": "Les frères sont rentrés « en pleurant » à la tombée de la nuit (12:16) et ont dit qu’ils faisaient la course et avaient laissé Youssouf près de leurs affaires (12:17). Demandez : des larmes peuvent-elles servir à cacher un mensonge ?"
+  },
+  "2.12": {
+   "en": "Shia narrations in Majlisi's Hayat al-Qulub tell the same detail as the Sunni commentary: Yaqub said the wolf 'tore apart Yusuf but did not damage his shirt a bit' (al-Qummi, Imam al-Baqir).",
+   "t": "Les récits chiites du Hayat al-Qulub d’al-Majlisi racontent le même détail que l’exégèse sunnite : Yacoub a dit que le loup « a déchiré Youssouf mais n’a pas abîmé sa chemise du tout » (al-Qummi, l’Imam al-Baqir)."
+  },
+  "2.13": {
+   "en": "Ask: how did Yaqub know they were not telling the truth? Lies often leave clues. That is one reason honesty is easier.",
+   "t": "Demandez : comment Yacoub savait-il qu’ils ne disaient pas la vérité ? Les mensonges laissent souvent des indices. C’est une des raisons pour lesquelles l’honnêteté est plus facile."
+  },
+  "2.14": {
+   "en": "'It is best to be patient: from God alone I seek help' (12:18). A beautiful sentence to learn: sabrun jamil, a patience without complaint. Ask: when do you need patience?",
+   "t": "« Belle patience ! C’est Allah qu’il faut appeler au secours » (12:18). Une belle phrase à apprendre : sabroun jamil, une patience sans plainte. Demandez : quand as-tu besoin de patience ?"
+  },
+  "2.15": {
+   "en": "Ask your child to tell the chapter in their own words before tapping. Telling a story in order is a skill worth practising.",
+   "t": "Demandez à votre enfant de raconter le chapitre avec ses propres mots avant de toucher. Raconter une histoire dans l’ordre est une compétence qui vaut la peine d’être travaillée."
+  },
+  "2.16": {
+   "en": "While playing, name each card and say what it reminds you of in the story.",
+   "t": "En jouant, nommez chaque carte et dites ce qu’elle vous rappelle dans l’histoire."
+  },
+  "3.1": {
+   "en": "A caravan sends someone to draw water, he lets down his bucket and finds a boy (12:19). The verses then say they hid him like merchandise and sold him for a small price (12:20), which the next chapter picks up. The bucket in the game is the one in the verse.",
+   "t": "Une caravane envoie quelqu’un chercher de l’eau, il descend son seau et trouve un garçon (12:19). Les versets disent ensuite qu’ils l’ont caché comme une marchandise et l’ont vendu à bas prix (12:20), ce que reprend le chapitre suivant. Le seau du jeu est celui du verset."
+  },
+  "3.2": {
+   "en": "Ask: how do you think Yusuf felt when he saw the bucket coming down? A good moment to talk about hope.",
+   "t": "Demandez : qu’a ressenti Youssouf, à ton avis, quand il a vu le seau descendre ? Un bon moment pour parler de l’espoir."
+  },
+  "3.3": {
+   "en": "The travellers 'hid him like a piece of merchandise' (12:19). Ask: is it ever right to treat a person like a thing? Why not?",
+   "t": "Les voyageurs « le cachèrent comme une marchandise » (12:19). Demandez : est-ce juste de traiter une personne comme une chose ? Pourquoi pas ?"
+  },
+  "3.4": {
+   "en": "'Good news!' (12:19). Ask: what is the best good news you have ever heard?",
+   "t": "« Bonne nouvelle ! » (12:19). Demandez : quelle est la meilleure nouvelle que tu aies jamais entendue ?"
+  },
+  "3.5": {
+   "en": "Hayat al-Qulub says Yusuf was seven or nine years old at the well. Ask your child: how old are you? How would you feel in his place?",
+   "t": "Le Hayat al-Qulub dit que Youssouf avait sept ou neuf ans au puits. Demandez à votre enfant : quel âge as-tu ? Que ressentirais-tu à sa place ?"
+  },
+  "4.1": {
+   "en": "Yusuf is sold for a few pieces of silver. The Egyptian who bought him tells his wife to look after him well (12:21), and when Yusuf reaches maturity Allah gives him judgement and knowledge (12:22).\n\nThe twenty coins: the verse says only 'a few dirhams' (12:20). The commentary gives the number as twenty dirhams, according to Abdullah bin Mas'ud, and says the same was reported from Ibn Abbas, Nawf al-Bikali, As-Suddi, Qatadah and Atiyah al-Awfi. The number in the counting game is from the commentary, not from the verse.\n\nWho sold him: the commentary reports from Ibn Abbas, Mujahid and Ad-Dahhak that 'they sold him' refers to Yusuf's brothers, who sold him to the caravan. The game's wording does not say who sold him. The line that they did not know how precious he was follows Ad-Dahhak's comment, in the commentary, that they had no knowledge of his prophethood and rank with Allah.",
+   "t": "Youssouf est vendu pour quelques pièces d’argent. L’Égyptien qui l’achète dit à sa femme de bien s’occuper de lui (12:21), et quand Youssouf atteint l’âge adulte, Allah lui donne la sagesse et le savoir (12:22).\n\nLes vingt pièces : le verset dit seulement « quelques dirhams » (12:20). L’exégèse donne le nombre de vingt dirhams, selon Abdullah bin Mas'ud, et dit que la même chose a été rapportée d’Ibn Abbas, Nawf al-Bikali, As-Suddi, Qatada et Atiyah al-Awfi. Le nombre du jeu de comptage vient de l’exégèse, pas du verset.\n\nQui l’a vendu : l’exégèse rapporte d’Ibn Abbas, Mujahid et Ad-Dahhak que « ils le vendirent » désigne les frères de Youssouf, qui l’ont vendu à la caravane. Les mots du jeu ne disent pas qui l’a vendu. La phrase selon laquelle ils ne savaient pas combien il était précieux suit le commentaire d’Ad-Dahhak, dans l’exégèse, qu’ils ignoraient sa prophétie et son rang auprès d’Allah."
+  },
+  "4.2": {
+   "en": "The picture shows Yusuf sitting among the bundles of goods on a camel. It follows the verse 'They hid him like a piece of merchandise' (12:19). The scholars explain that hiding in different ways, and none of them says he was buried under the goods. So the picture shows only what their explanations share: he was carried along like something to be sold, not like a traveller.\n\nAl-Tafsir al-Muyassar: the man who drew the water and his companions hid Yusuf from the rest of the travellers and did not show him to them, saying that he was goods they had been given to trade.\n\nAl-Tabari, in his tafsir Jami' al-Bayan, records four explanations from the early scholars. First, from Mujahid and as-Suddi: the man with the bucket and his companions told the rest of the caravan that the boy was goods the people of the water had given them to sell, because they feared the others would ask for a share if they knew the men had found and bought him. Second, also from Mujahid: the traders hid him from one another. Third, from Qatadah: they kept his sale secret. Fourth, from Ibn Abbas: it was Yusuf's brothers who hid that he was their brother and said he was their slave; Yusuf kept quiet about it, fearing they would kill him, and chose to be sold.\n\nAl-Tabari prefers the first explanation, because these words come straight after the man who found him and so most likely speak about him and his companions. The commentary (Ibn Kathir) quotes only the explanation from Ibn Abbas.\n\nAl-Tabari also reports from Mujahid that the brothers followed the caravan, telling the men to keep a close watch on the boy so that he would not run away, until he was stood up for sale in Egypt. That is the market on page 4.4: the first time he is shown openly.\n\nLook at a map together: from the land of Canaan (Palestine) to Egypt. Ask: how long do you think it took to cross the desert by camel?",
+   "t": "L’image montre Youssouf assis parmi les ballots de marchandises sur un chameau. Elle suit le verset « Ils le cachèrent comme une marchandise » (12:19). Les savants expliquent cette dissimulation de diverses façons, et aucun ne dit qu’il était enfoui sous les marchandises. L’image montre donc seulement ce que leurs explications ont en commun : on le transportait comme une chose à vendre, pas comme un voyageur.\n\nAl-Tafsir al-Muyassar : l’homme qui a puisé l’eau et ses compagnons ont caché Youssouf au reste des voyageurs et ne le leur ont pas montré, disant qu’il était une marchandise qu’on leur avait confiée pour la vendre.\n\nAl-Tabari, dans son tafsir Jami' al-Bayan, rapporte quatre explications des premiers savants. D’abord, de Mujahid et as-Suddi : l’homme au seau et ses compagnons ont dit au reste de la caravane que le garçon était une marchandise que les gens du point d’eau leur avaient donnée à vendre, car ils craignaient que les autres réclament une part s’ils savaient que ces hommes l’avaient trouvé et acheté. Ensuite, aussi de Mujahid : les marchands l’ont caché les uns aux autres. Puis, de Qatada : ils ont tenu sa vente secrète. Enfin, d’Ibn Abbas : ce sont les frères de Youssouf qui ont caché qu’il était leur frère et ont dit qu’il était leur esclave ; Youssouf s’est tu, craignant qu’ils le tuent, et a choisi d’être vendu.\n\nAl-Tabari préfère la première explication, car ces mots viennent juste après l’homme qui l’a trouvé et parlent donc très probablement de lui et de ses compagnons. L’exégèse (Ibn Kathir) ne cite que l’explication d’Ibn Abbas.\n\nAl-Tabari rapporte aussi de Mujahid que les frères ont suivi la caravane, disant aux hommes de bien surveiller le garçon pour qu’il ne s’enfuie pas, jusqu’à ce qu’il soit mis en vente en Égypte. C’est le marché de la page 4.4 : la première fois qu’il est montré ouvertement.\n\nRegardez ensemble une carte : du pays de Canaan (la Palestine) jusqu’à l’Égypte. Demandez : combien de temps fallait-il, à ton avis, pour traverser le désert à dos de chameau ?"
+  },
+  "4.3": {
+   "en": "Ask: what do people need for a long journey in the desert? (Water, shade, food, camels.)",
+   "t": "Demandez : de quoi les gens ont-ils besoin pour un long voyage dans le désert ? (De l’eau, de l’ombre, de la nourriture, des chameaux.)"
+  },
+  "4.4": {
+   "en": "The man who bought Yusuf said: 'Look after him well! He may be useful to us, or we may adopt him as a son' (12:21). Ask: how should we treat someone new in our home or class?\n\nThe man who bought Yusuf was a minister of Egypt with the title al-'Aziz (Ibn Kathir). Ibn Mas'ud is reported to have said that three people showed the most insight: the 'Aziz, who told his wife to look after Yusuf; the young woman of Madyan who told her father to hire Musa (28:26); and Abu Bakr when he chose 'Umar to lead after him.\n\nYou may hear the woman of the house called Zulaykha. The Qur'an does not name her (12:23 calls her 'the woman in whose house he was living').",
+   "t": "L’homme qui a acheté Youssouf a dit : « Accorde-lui une généreuse hospitalité ! Il pourra nous être utile, ou nous l’adopterons comme fils » (12:21). Demandez : comment devons-nous traiter quelqu’un de nouveau chez nous ou dans la classe ?\n\nL’homme qui a acheté Youssouf était un ministre d’Égypte portant le titre d’al-'Aziz (Ibn Kathir). Ibn Mas'ud aurait dit que trois personnes ont montré la plus grande perspicacité : al-'Aziz, qui a dit à sa femme de bien s’occuper de Youssouf ; la jeune femme de Madyan qui a dit à son père d’engager Moussa (28:26) ; et Abou Bakr quand il a choisi ‘Omar pour lui succéder.\n\nVous entendrez peut-être la femme de la maison appelée Zoulaykha. Le Coran ne la nomme pas (12:23 l’appelle « celle dans la maison de qui il se trouvait »)."
+  },
+  "4.5": {
+   "en": "The verse ends: 'God always prevails in His purpose, though most people do not realize it' (12:21). Ask: can something that looks bad turn out to be good?\n\nThe commentators give names the Qur'an does not: the 'Aziz is Qitfir (Ibn Abbas, in al-'Awfi's report) or Itfir (Muhammad bin Ishaq); his wife Ra'il (Ibn Ishaq) or Zulaykha ('others said'); the king al-Rayyan bin al-Walid (Ibn Ishaq). All from Ibn Kathir's Arabic commentary on 12:21; none of the names is in the Qur'an.",
+   "t": "Le verset se termine : « Allah est souverain dans Son commandement, mais la plupart des gens ne savent pas » (12:21). Demandez : quelque chose qui a l’air mauvais peut-il finir par être bon ?\n\nLes exégètes donnent des noms que le Coran ne donne pas : al-'Aziz est Qitfir (Ibn Abbas, dans le récit d’al-'Awfi) ou Itfir (Muhammad bin Ishaq) ; sa femme Ra'il (Ibn Ishaq) ou Zoulaykha (« d’autres ont dit ») ; le roi al-Rayyan bin al-Walid (Ibn Ishaq). Tout cela vient de l’exégèse arabe d’Ibn Kathir sur 12:21 ; aucun de ces noms n’est dans le Coran."
+  },
+  "4.6": {
+   "en": "'This is how We reward those who do good' (12:22). Ask: what good things do you want to grow up to do?",
+   "t": "« C’est ainsi que Nous récompensons ceux qui font le bien » (12:22). Demandez : quelles bonnes choses voudrais-tu faire en grandissant ?"
+  },
+  "4.7": {
+   "en": "Name each card as you match it, and ask: which part of Yusuf's story does this remind you of?",
+   "t": "Nommez chaque carte en l’associant, et demandez : quelle partie de l’histoire de Youssouf cela te rappelle-t-il ?"
+  },
+  "5.1": {
+   "en": "The verses are more explicit than the game. The woman of the house bolted the doors and called him to her (12:23); Yusuf refused, they raced for the door, and she tore his shirt from behind (12:25). The game says only that she tried to make him do something wrong.\n\nThe shirt test is in the verses: a member of her household suggested that a shirt torn at the front would mean she was telling the truth, and one torn at the back that Yusuf was (12:26–27). Her husband saw that it was torn at the back (12:28).\n\nThe women of the city (12:30–31): they gossiped that the governor's wife was trying to seduce her servant; she invited them to a banquet, gave each a knife, and told Yusuf to come out; stunned by his beauty they cut their hands and said he could not be mortal but must be a noble angel. The game keeps the banquet, the knives and their words, and says only that the women were 'gossiping'. That they were cutting fruit (citron) is from the commentary, reported from Ibn Abbas, Sa'id bin Jubayr, Mujahid, Al-Hasan, As-Suddi and others; the commentary quotes the authentic hadith that Yusuf 'was given half of all beauty'. Left out: her words in 12:32, that she had tried to seduce him and that he would be imprisoned if he did not obey her.\n\nKept: Yusuf's prayer that prison is better for him than what they ask (12:33–34), and the decision to imprison him even after the signs of his innocence had been seen (12:35).",
+   "t": "Les versets sont plus explicites que le jeu. La femme de la maison a fermé les portes à clé et l’a appelé à elle (12:23) ; Youssouf a refusé, ils se sont précipités vers la porte, et elle a déchiré sa chemise par-derrière (12:25). Le jeu dit seulement qu’elle a voulu le pousser à faire quelque chose de mal.\n\nL’épreuve de la chemise est dans les versets : un membre de sa famille a suggéré qu’une chemise déchirée devant voudrait dire qu’elle disait vrai, et déchirée derrière que c’était Youssouf (12:26–27). Son mari a vu qu’elle était déchirée derrière (12:28).\n\nLes femmes de la ville (12:30–31) : elles médisaient que la femme du gouverneur cherchait à séduire son serviteur ; elle les a invitées à un banquet, a donné à chacune un couteau, et a dit à Youssouf de sortir ; saisies par sa beauté, elles se sont coupé les mains et ont dit qu’il ne pouvait pas être un humain mais un noble ange. Le jeu garde le banquet, les couteaux et leurs paroles, et dit seulement que les femmes « bavardaient ». Qu’elles coupaient des fruits (des cédrats) vient de l’exégèse, rapporté d’Ibn Abbas, Sa'id bin Jubayr, Mujahid, Al-Hasan, As-Suddi et d’autres ; l’exégèse cite le hadith authentique selon lequel Youssouf « a reçu la moitié de toute la beauté ». Laissé de côté : ses paroles en 12:32, qu’elle avait cherché à le séduire et qu’il serait emprisonné s’il ne lui obéissait pas.\n\nGardé : la prière de Youssouf, que la prison lui est préférable à ce qu’elles lui demandent (12:33–34), et la décision de l’emprisonner même après qu’on a vu les signes de son innocence (12:35)."
+  },
+  "5.2": {
+   "en": "In Hayat al-Qulub, Imam al-Rida explains 12:24: the woman intended wrong and Yusuf intended to avoid it; the 'evidence of his Lord' was Allah's protection.\n\nWith young children you can say: someone tried to make Yusuf do something wrong, and he ran away from it.\n\nYou may hear what Yusuf 'saw' in that moment (12:24): some reports say the face of his father Ya'qub, others an angel, others a voice forbidding him. Al-Tabari, quoted by Ibn Kathir, says there is no clear proof for any one of these, so it is best left vague, 'as Allah left it'.",
+   "t": "Dans le Hayat al-Qulub, l’Imam al-Rida explique 12:24 : la femme voulait le mal et Youssouf voulait l’éviter ; la « preuve de son Seigneur » était la protection d’Allah.\n\nAux jeunes enfants, vous pouvez dire : quelqu’un a voulu pousser Youssouf à faire quelque chose de mal, et il s’est enfui.\n\nVous entendrez peut-être ce que Youssouf a « vu » à ce moment-là (12:24) : certains récits disent le visage de son père Yacoub, d’autres un ange, d’autres une voix qui le lui interdisait. Al-Tabari, cité par Ibn Kathir, dit qu’il n’y a de preuve claire pour aucun d’eux, et qu’il vaut mieux le laisser vague, « comme Allah l’a laissé »."
+  },
+  "5.3": {
+   "en": "Ask: how can we find out what really happened when two people tell different stories? Looking at clues, like the shirt, is fairer than guessing.",
+   "t": "Demandez : comment savoir ce qui s’est vraiment passé quand deux personnes racontent des histoires différentes ? Regarder les indices, comme la chemise, est plus juste que deviner."
+  },
+  "5.4": {
+   "en": "Ask: what does 'telling the truth' feel like, even when it is hard?",
+   "t": "Demandez : qu’est-ce qu’on ressent quand on dit la vérité, même quand c’est difficile ?"
+  },
+  "5.5": {
+   "en": "Her husband told Yusuf to 'overlook this' and told his wife to ask forgiveness (12:29). Ask: what does it mean to forgive and move on?",
+   "t": "Son mari a dit à Youssouf de « ne plus y penser » et a dit à sa femme de demander pardon (12:29). Demandez : que veut dire pardonner et passer à autre chose ?"
+  },
+  "5.6": {
+   "en": "Talk about gossip: what is it? How does it feel when people talk about you behind your back? The women gossiped; the story shows where that led.",
+   "t": "Parlez de la médisance : qu’est-ce que c’est ? Comment se sent-on quand les gens parlent de nous dans notre dos ? Les femmes médisaient ; l’histoire montre où cela a mené."
+  },
+  "5.7": {
+   "en": "Ask: why do you think the women were so surprised that they did not notice the knife? Being careless with sharp things hurts, so we always pay attention.",
+   "t": "Demandez : pourquoi les femmes étaient-elles si surprises qu’elles n’ont pas remarqué le couteau, à ton avis ? Être distrait avec des objets coupants fait mal, alors on fait toujours attention."
+  },
+  "5.8": {
+   "en": "A gentle check: the story says the women cut their hands by accident. Ask your child what they do if they cut themselves: tell a grown-up, wash it, cover it.",
+   "t": "Une petite vérification : l’histoire dit que les femmes se sont coupé les mains par accident. Demandez à votre enfant ce qu’il fait s’il se coupe : le dire à un adulte, laver, couvrir."
+  },
+  "5.9": {
+   "en": "Yusuf prayed: 'My Lord! I would prefer prison to what these women are calling me to do' (12:33), and Allah answered his prayer (12:34). Ask: is it brave to choose something hard instead of something wrong?",
+   "t": "Youssouf a prié : « Ô mon Seigneur ! La prison m’est préférable à ce à quoi elles m’invitent » (12:33), et Allah a exaucé sa prière (12:34). Demandez : est-ce courageux de choisir quelque chose de difficile plutôt que quelque chose de mal ?"
+  },
+  "5.10": {
+   "en": "Talk about unfairness: Yusuf was innocent and still went to prison (12:35). Ask: what can we do when something unfair happens? (Stay patient, keep doing right, ask Allah for help.)",
+   "t": "Parlez de l’injustice : Youssouf était innocent et il est quand même allé en prison (12:35). Demandez : que pouvons-nous faire quand quelque chose d’injuste arrive ? (Rester patient, continuer à bien faire, demander l’aide d’Allah.)"
+  },
+  "5.11": {
+   "en": "Count together how long your child can hold the lamp. Then talk about waiting: what is the hardest thing to wait for?",
+   "t": "Comptez ensemble combien de temps votre enfant peut tenir la lampe. Puis parlez de l’attente : qu’est-ce qui est le plus difficile à attendre ?"
+  },
+  "5.12": {
+   "en": "Ask: what helps you stay patient? (Breathing slowly, saying a dua, doing something kind while you wait.)",
+   "t": "Demandez : qu’est-ce qui t’aide à rester patient ? (Respirer lentement, dire une dou‘a, faire quelque chose de gentil en attendant.)"
+  },
+  "5.13": {
+   "en": "Let your child put the events in order out loud before tapping.",
+   "t": "Laissez votre enfant mettre les événements dans l’ordre à voix haute avant de toucher."
+  },
+  "5.14": {
+   "en": "While solving the puzzle, ask: what is Yusuf doing in this picture? How is he feeling?",
+   "t": "Pendant le puzzle, demandez : que fait Youssouf sur cette image ? Que ressent-il ?"
+  },
+  "6.1": {
+   "en": "Yusuf first calls the two prisoners to worship Allah alone (12:37–40), then interprets the dreams (12:41).\n\nThe verse says the second prisoner would be crucified and birds would eat from his head. The game says only that he would be put to death. The commentary notes that Yusuf spoke without naming either man, to lessen the second man's grief; the game follows that gentleness.\n\nThe freed prisoner forgot to mention Yusuf to his master, so Yusuf stayed in prison for some years (12:42).",
+   "t": "Youssouf appelle d’abord les deux prisonniers à adorer Allah seul (12:37–40), puis interprète les rêves (12:41).\n\nLe verset dit que le second prisonnier serait crucifié et que les oiseaux mangeraient de sa tête. Le jeu dit seulement qu’il serait mis à mort. L’exégèse note que Youssouf a parlé sans nommer aucun des deux hommes, pour atténuer le chagrin du second ; le jeu suit cette douceur.\n\nLe prisonnier libéré a oublié de parler de Youssouf à son maître, si bien que Youssouf est resté en prison quelques années (12:42)."
+  },
+  "6.2": {
+   "en": "Yusuf said he follows 'the faith of my forefathers Abraham, Isaac, and Jacob' (12:38). Ask: what do we learn from our parents and grandparents about Allah?",
+   "t": "Youssouf a dit qu’il suivait « la religion de mes ancêtres Ibrahim, Ishaq et Yacoub » (12:38). Demandez : qu’apprenons-nous de nos parents et grands-parents au sujet d’Allah ?"
+  },
+  "6.3": {
+   "en": "Yusuf asked: 'would many diverse gods be better than God the One?' (12:39). Even in prison, he spoke about Allah first. Ask: what matters most to you?",
+   "t": "Youssouf a demandé : « Des seigneurs éparpillés valent-ils mieux qu’Allah, l’Unique ? » (12:39). Même en prison, il a parlé d’Allah en premier. Demandez : qu’est-ce qui compte le plus pour toi ?"
+  },
+  "6.4": {
+   "en": "Ask: what do you think your dreams mean? Many families say: tell good dreams to people you love, and seek Allah's protection from bad ones.",
+   "t": "Demandez : que veulent dire tes rêves, à ton avis ? Beaucoup de familles disent : raconte les bons rêves à ceux que tu aimes, et demande la protection d’Allah contre les mauvais."
+  },
+  "6.5": {
+   "en": "'Satan made him forget' (12:42). Ask: have you ever forgotten to do something you promised? What helps us remember?",
+   "t": "« Le Diable lui fit oublier » (12:42). Demandez : as-tu déjà oublié de faire quelque chose que tu avais promis ? Qu’est-ce qui nous aide à nous souvenir ?"
+  },
+  "6.6": {
+   "en": "As you match, ask your child to name each picture from the prison chapter.",
+   "t": "Pendant que vous associez, demandez à votre enfant de nommer chaque image du chapitre de la prison."
+  },
+  "7.1": {
+   "en": "The king dreams of seven fat cows eaten by seven lean ones, and of seven green ears of grain and seven withered ones. Yusuf's interpretation: seven years of sowing as usual with the harvest stored, seven hard years that use up the store, and then a year of abundant rain (12:47–49). The freed prisoner finally remembered Yusuf and asked to go and find out the meaning (12:45).",
+   "t": "Le roi rêve de sept vaches grasses mangées par sept vaches maigres, et de sept épis verts et sept autres secs. L’interprétation de Youssouf : sept années de semailles comme d’habitude, en mettant la récolte de côté, sept années dures qui épuisent les réserves, puis une année de pluie abondante (12:47–49). Le prisonnier libéré s’est enfin souvenu de Youssouf et a demandé à aller connaître le sens du rêve (12:45)."
+  },
+  "7.2": {
+   "en": "Count to seven together, then count the fat cows and the thin cows. Ask: which would you rather be, a fat cow or a thin one?",
+   "t": "Comptez ensemble jusqu’à sept, puis comptez les vaches grasses et les vaches maigres. Demandez : préférerais-tu être une vache grasse ou une vache maigre ?"
+  },
+  "7.3": {
+   "en": "The king's counsellors said: 'These are confusing dreams and we are not skilled at dream-interpretation' (12:44). Ask: is it all right to say 'I don't know'?",
+   "t": "Les conseillers du roi ont dit : « Ce sont des rêves confus, et nous ne savons pas interpréter les rêves » (12:44). Demandez : est-ce bien de dire « je ne sais pas » ?"
+  },
+  "7.4": {
+   "en": "The freed prisoner called him 'Truthful Joseph' (12:46). Ask: what would you like people to call you because of how you behave?",
+   "t": "Le prisonnier libéré l’a appelé « Joseph, le véridique » (12:46). Demandez : comment aimerais-tu qu’on t’appelle grâce à ta façon de te conduire ?"
+  },
+  "7.5": {
+   "en": "After the hard years 'will come a year when the people will have abundant rain and will press grapes' (12:49). Ask: after a hard time, what good thing are you looking forward to?",
+   "t": "Après les années dures « viendra une année où les gens seront secourus par la pluie et iront au pressoir » (12:49). Demandez : après un moment difficile, quelle bonne chose attends-tu avec impatience ?"
+  },
+  "7.6": {
+   "en": "Talk about saving: what does our family save for? Ask your child to think of one thing they could save for, a little at a time.",
+   "t": "Parlez de l’épargne : pour quoi notre famille met-elle de côté ? Demandez à votre enfant de penser à une chose pour laquelle il pourrait économiser, un peu à la fois."
+  },
+  "8.1": {
+   "en": "When the king's messenger came, Yusuf asked first that the king look into what had happened (12:50). The commentary says he refused to leave prison until the king and his people declared his innocence. The king questioned the women; they said they knew no evil of Yusuf, and the woman of the house said the truth had come out and that Yusuf was among the truthful (12:51).\n\nVerses 12:52–53 are left out of the game because scholars differ on who is speaking. The commentary favours them as the woman's words, and says Ibn Jarir al-Tabari and Ibn Abi Hatim took them as Yusuf's. Some translations put them in Yusuf's mouth. Read them with your child, and with a scholar if you wish.\n\nThe king then trusted Yusuf (12:54), and Yusuf asked to be put in charge of the storehouses (12:55).",
+   "t": "Quand le messager du roi est venu, Youssouf a d’abord demandé que le roi enquête sur ce qui s’était passé (12:50). L’exégèse dit qu’il a refusé de sortir de prison avant que le roi et son peuple ne déclarent son innocence. Le roi a interrogé les femmes ; elles ont dit ne connaître aucun mal de Youssouf, et la femme de la maison a dit que la vérité avait éclaté et que Youssouf était parmi les véridiques (12:51).\n\nLes versets 12:52–53 sont laissés de côté parce que les savants divergent sur qui parle. L’exégèse préfère y voir les paroles de la femme, et dit qu’Ibn Jarir al-Tabari et Ibn Abi Hatim les attribuaient à Youssouf. Certaines traductions les mettent dans la bouche de Youssouf. Lisez-les avec votre enfant, et avec un savant si vous le souhaitez.\n\nLe roi a ensuite fait confiance à Youssouf (12:54), et Youssouf a demandé qu’on lui confie les greniers (12:55)."
+  },
+  "8.2": {
+   "en": "Yusuf would not leave prison until the truth was known (12:50). Ask: why is it important that people know the truth about you?",
+   "t": "Youssouf n’a pas voulu sortir de prison avant que la vérité soit connue (12:50). Demandez : pourquoi est-il important que les gens connaissent la vérité sur toi ?"
+  },
+  "8.3": {
+   "en": "Ask: how hard is it to say 'it was my fault'? The woman finally said it (12:51). Saying it can make things right.",
+   "t": "Demandez : est-ce difficile de dire « c’est ma faute » ? La femme a fini par le dire (12:51). Le dire peut tout arranger."
+  },
+  "8.4": {
+   "en": "Ask your child to say what happened first, then next, before tapping.",
+   "t": "Demandez à votre enfant de dire ce qui s’est passé d’abord, puis ensuite, avant de toucher."
+  },
+  "8.5": {
+   "en": "Yusuf said: 'I shall manage them prudently and carefully' (12:55). Ask: what are you good at? What could you look after carefully at home?\n\nYou may hear that Yusuf later married the woman of the house. Ibn Kathir quotes Muhammad bin Ishaq: 'it was mentioned to me, and Allah knows best' that her husband died, and the king married her to Yusuf; 'they claim' she bore him two sons, Ephraim and Manasseh. Ibn Ishaq himself presents it as hearsay, and the Qur'an says nothing of it.\n\nIbn Kathir also quotes al-Fudayl bin 'Iyad: she stood by the road as Yusuf passed and said, 'Praise be to Allah, who makes servants into kings by their obedience, and kings into servants by their disobedience.' (Our translation from the Arabic.)",
+   "t": "Youssouf a dit : « Je suis bon gardien et connaisseur » (12:55). Demandez : en quoi es-tu doué ? De quoi pourrais-tu prendre soin avec attention à la maison ?\n\nVous entendrez peut-être que Youssouf a plus tard épousé la femme de la maison. Ibn Kathir cite Muhammad bin Ishaq : « on me l’a raconté, et Allah sait mieux », que son mari est mort et que le roi l’a mariée à Youssouf ; « ils prétendent » qu’elle lui a donné deux fils, Éphraïm et Manassé. Ibn Ishaq lui-même le présente comme un ouï-dire, et le Coran n’en dit rien.\n\nIbn Kathir cite aussi al-Fudayl bin 'Iyad : elle se tenait au bord du chemin quand Youssouf est passé et a dit : « Louange à Allah, qui fait des serviteurs des rois par leur obéissance, et des rois des serviteurs par leur désobéissance. » (Notre traduction de l’arabe.)"
+  },
+  "8.6": {
+   "en": "If you can, look at stored grain, rice or flour at home or in a market. Ask: why do families keep food for later?",
+   "t": "Si vous pouvez, regardez du grain, du riz ou de la farine en réserve à la maison ou au marché. Demandez : pourquoi les familles gardent-elles de la nourriture pour plus tard ?"
+  },
+  "8.7": {
+   "en": "The Qur'an: 'We grant Our mercy to whoever We will and do not fail to reward those who do good' (12:56). Ask: how did Yusuf get from the well to the storehouse?",
+   "t": "Le Coran : « Nous accordons Notre miséricorde à qui Nous voulons et Nous ne laissons pas perdre la récompense des bienfaisants » (12:56). Demandez : comment Youssouf est-il passé du puits au grenier ?"
+  },
+  "8.8": {
+   "en": "While solving the puzzle, ask: what is happening in this picture?",
+   "t": "Pendant le puzzle, demandez : que se passe-t-il sur cette image ?"
+  },
+  "9.1": {
+   "en": "The hard years: Yusuf foretold seven hard years after the seven good ones (12:47–48). The verses go straight from his appointment to his brothers' arrival (12:58); the game adds one line saying the hard years had come, so that a child knows why the brothers travelled.\n\nYusuf recognised his brothers but they did not recognise him (12:58). He asked them to bring their other brother, and had their goods put back into their saddlebags (12:59–62).",
+   "t": "Les années dures : Youssouf avait annoncé sept années dures après les sept bonnes (12:47–48). Les versets passent directement de sa nomination à l’arrivée de ses frères (12:58) ; le jeu ajoute une phrase disant que les années dures étaient venues, pour qu’un enfant sache pourquoi les frères ont voyagé.\n\nYoussouf a reconnu ses frères mais eux ne l’ont pas reconnu (12:58). Il leur a demandé d’amener leur autre frère, et a fait remettre leurs marchandises dans leurs sacs (12:59–62)."
+  },
+  "9.2": {
+   "en": "Ask: why do you think the brothers had to travel so far for food? Talk about families today who travel for work or food.",
+   "t": "Demandez : pourquoi les frères devaient-ils aller si loin pour trouver à manger, à ton avis ? Parlez des familles d’aujourd’hui qui voyagent pour le travail ou pour se nourrir."
+  },
+  "9.3": {
+   "en": "Ask: how would you feel if you saw someone who had hurt you long ago? What would you do?",
+   "t": "Demandez : que ressentirais-tu si tu voyais quelqu’un qui t’a fait du mal il y a longtemps ? Que ferais-tu ?"
+  },
+  "9.4": {
+   "en": "Yusuf recognised them but they did not recognise him (12:58). Ask: how do people change as they grow up? Look at an old photo of your child together.",
+   "t": "Youssouf les a reconnus mais eux ne l’ont pas reconnu (12:58). Demandez : comment les gens changent-ils en grandissant ? Regardez ensemble une vieille photo de votre enfant."
+  },
+  "9.5": {
+   "en": "How could Yusuf ask for his youngest brother without giving himself away? The Qur'an tells only that he recognised them, gave them their grain and then asked them to bring 'the brother you left with your father' (12:58–59). This page comes from the commentaries, so the game says 'It is told that'.\n\nAl-Tafsir al-Muyassar: the brothers had told him that they had a brother from their father whom they had not brought with them.\n\nAs-Suddi, reported by al-Tabari and in the commentary (Ibn Kathir): Yusuf questioned them and said they might be spies. They answered that they were brothers, sons of a truthful man, Yaqub of the land of Canaan; that they had been twelve; that one of them, the one their father loved most, had died in the desert; and that their father kept that boy's full brother at home with him. In al-Tabari's report, Yusuf then asks how their father can be truthful if he loves the youngest more than the older ones, and tells them to bring him so that he can see him.\n\nNotice what the brothers say about the lost brother: they still tell their own story of what happened to Yusuf, to Yusuf himself, without knowing who he is. Ask your child: how do you think Yusuf felt, hearing that?",
+   "t": "Comment Youssouf pouvait-il demander son plus jeune frère sans se trahir ? Le Coran dit seulement qu’il les a reconnus, leur a donné leur grain, puis leur a demandé d’amener « un frère à vous, du côté de votre père » (12:58–59). Cette page vient des exégèses, le jeu dit donc « On raconte que ».\n\nAl-Tafsir al-Muyassar : les frères lui avaient dit qu’ils avaient un frère de père qu’ils n’avaient pas amené avec eux.\n\nAs-Suddi, rapporté par al-Tabari et dans l’exégèse (Ibn Kathir) : Youssouf les a interrogés et a dit qu’ils étaient peut-être des espions. Ils ont répondu qu’ils étaient frères, fils d’un homme véridique, Yacoub du pays de Canaan ; qu’ils avaient été douze ; que l’un d’eux, celui que leur père aimait le plus, était mort dans le désert ; et que leur père gardait à la maison avec lui le frère de même mère de ce garçon. Dans le récit d’al-Tabari, Youssouf demande alors comment leur père peut être véridique s’il aime le plus jeune plus que les aînés, et leur dit de l’amener pour qu’il le voie.\n\nRemarquez ce que les frères disent du frère perdu : ils racontent toujours leur propre version de ce qui est arrivé à Youssouf, à Youssouf lui-même, sans savoir qui il est. Demandez à votre enfant : qu’a ressenti Youssouf en entendant cela, à ton avis ?"
+  },
+  "9.6": {
+   "en": "Yusuf said: 'Have you not seen me giving generous measure and being the best of hosts?' (12:59). Ask: how can we be good hosts when guests come?",
+   "t": "Youssouf a dit : « Ne voyez-vous pas que je donne la pleine mesure et que je suis le meilleur des hôtes ? » (12:59). Demandez : comment être de bons hôtes quand des invités viennent ?"
+  },
+  "9.7": {
+   "en": "Ask: why would Yusuf want to see his little brother? Who do you miss when they are away?",
+   "t": "Demandez : pourquoi Youssouf voulait-il voir son petit frère ? Qui te manque quand il est loin ?"
+  },
+  "9.8": {
+   "en": "Yusuf secretly returned their goods so they would come back (12:62). Ask: have you ever done something kind in secret?",
+   "t": "Youssouf a rendu en secret leurs marchandises pour qu’ils reviennent (12:62). Demandez : as-tu déjà fait quelque chose de gentil en secret ?"
+  },
+  "10.1": {
+   "en": "The gates: Yaqub told his sons not to enter by one gate but by different gates, adding that he could not protect them from anything Allah had decreed and that he put his trust in Allah (12:67). The verse does not give his reason. The commentary reports from Ibn Abbas, Muhammad bin Ka'b, Mujahid, Ad-Dahhak, Qatadah, As-Suddi and others that he feared the evil eye for them. The game shows the gates and leaves the reason for you to explain.\n\nYaqub let Benjamin go only after his sons swore to bring him back (12:63–66). Yusuf told Benjamin privately that he was his brother (12:69), and the king's cup was put in Benjamin's pack (12:70). The verse says Yusuf searched the other bags first and then his brother's, where he found the cup (12:76), so the game keeps that order: the cup is in the last bag on purpose. The same verse says this was a plan Allah devised for Yusuf.\n\nThe brothers' own rule (12:74–76): asked what the penalty should be if one of them was lying, the brothers said the one in whose bag the cup was found would be held as the penalty, 'this is how we punish wrongdoers'. The verse says Yusuf could not have held his brother under the king's law. The commentary says this was the law of Prophet Ibrahim, that a thief be handed to the one he stole from, and reports from Ad-Dahhak and others that it was not the law of the king of Egypt. The verse's word for the penalty is servitude; the game says 'must stay behind'.",
+   "t": "Les portes : Yacoub a dit à ses fils de ne pas entrer par une seule porte mais par des portes différentes, ajoutant qu’il ne pouvait les protéger de rien de ce qu’Allah avait décrété et qu’il plaçait sa confiance en Allah (12:67). Le verset ne donne pas sa raison. L’exégèse rapporte d’Ibn Abbas, Muhammad bin Ka'b, Mujahid, Ad-Dahhak, Qatada, As-Suddi et d’autres qu’il craignait pour eux le mauvais œil. Le jeu montre les portes et vous laisse expliquer la raison.\n\nYacoub n’a laissé partir Benjamin qu’après que ses fils ont juré de le ramener (12:63–66). Youssouf a dit en privé à Benjamin qu’il était son frère (12:69), et la coupe du roi a été mise dans le bagage de Benjamin (12:70). Le verset dit que Youssouf a fouillé d’abord les autres sacs, puis celui de son frère, où il a trouvé la coupe (12:76) ; le jeu garde cet ordre : la coupe est exprès dans le dernier sac. Le même verset dit que c’était un stratagème qu’Allah avait conçu pour Youssouf.\n\nLa règle des frères eux-mêmes (12:74–76) : à la question de savoir quelle devait être la peine si l’un d’eux mentait, les frères ont dit que celui dans le sac duquel on trouverait la coupe serait retenu en paiement, « c’est ainsi que nous punissons les injustes ». Le verset dit que Youssouf n’aurait pas pu retenir son frère selon la loi du roi. L’exégèse dit que c’était la loi du Prophète Ibrahim, que le voleur soit remis à celui qu’il a volé, et rapporte d’Ad-Dahhak et d’autres que ce n’était pas la loi du roi d’Égypte. Le mot du verset pour la peine est la servitude ; le jeu dit « doit rester »."
+  },
+  "10.2": {
+   "en": "Ask: how would you feel if you found your money given back to you? What would you do?",
+   "t": "Demandez : que ressentirais-tu si tu découvrais qu’on t’a rendu ton argent ? Que ferais-tu ?"
+  },
+  "10.3": {
+   "en": "Yaqub said: 'God is the best guardian and the Most Merciful of the merciful' (12:64), and later: 'Our words are entrusted to God' (12:66). Ask: what does it mean to trust Allah?",
+   "t": "Yacoub a dit : « Allah est le meilleur gardien, et Il est le plus Miséricordieux des miséricordieux » (12:64), et plus tard : « Allah est garant de ce que nous disons » (12:66). Demandez : que veut dire faire confiance à Allah ?"
+  },
+  "10.4": {
+   "en": "'I trust in Him; let everyone put their trust in Him' (12:67). Yaqub took care and also trusted Allah. Ask: what do we do to stay safe, and what do we leave to Allah?",
+   "t": "« En Lui je place ma confiance, et c’est en Lui que doivent placer leur confiance ceux qui se confient » (12:67). Yacoub a pris ses précautions et a aussi fait confiance à Allah. Demandez : que faisons-nous pour rester en sécurité, et que laissons-nous à Allah ?"
+  },
+  "10.5": {
+   "en": "Count the gates and the brothers together. Ask: why might Yaqub not want them all to go through one gate?",
+   "t": "Comptez ensemble les portes et les frères. Demandez : pourquoi Yacoub ne voulait-il peut-être pas qu’ils passent tous par une seule porte ?"
+  },
+  "10.6": {
+   "en": "Yusuf told his brother: 'I am your brother, so do not be saddened by their past actions' (12:69). Ask: how can we comfort a brother, sister or friend who is sad?",
+   "t": "Youssouf a dit à son frère : « Je suis ton frère, ne t’afflige donc pas de ce qu’ils faisaient » (12:69). Demandez : comment consoler un frère, une sœur ou un ami triste ?"
+  },
+  "10.7": {
+   "en": "Ask: can a plan be good even when we don't understand it at first? The verse calls it a plan Allah devised for Yusuf (12:76).",
+   "t": "Demandez : un plan peut-il être bon même si on ne le comprend pas au début ? Le verset l’appelle un stratagème qu’Allah a conçu pour Youssouf (12:76)."
+  },
+  "10.8": {
+   "en": "The verse ends: 'Above everyone who has knowledge there is the One who is all knowing' (12:76). Ask: who knows everything?",
+   "t": "Le verset se termine : « Au-dessus de tout homme de savoir, il y a un plus savant » (12:76). Demandez : qui sait tout ?"
+  },
+  "10.9": {
+   "en": "A reward was offered: 'Whoever returns it will get a camel-load of grain' (12:72). Ask: what would you do if you found something that someone lost?",
+   "t": "Une récompense a été proposée : « Celui qui la rapportera aura la charge d’un chameau » (12:72). Demandez : que ferais-tu si tu trouvais quelque chose que quelqu’un a perdu ?"
+  },
+  "10.10": {
+   "en": "Ask: is it fair to make a rule for others that you would not follow yourself? The brothers made the rule (12:75).",
+   "t": "Demandez : est-ce juste de faire pour les autres une règle qu’on ne suivrait pas soi-même ? Ce sont les frères qui ont fait la règle (12:75)."
+  },
+  "10.11": {
+   "en": "Ask: what does it mean to keep your word, even when it is hard?",
+   "t": "Demandez : que veut dire tenir sa parole, même quand c’est difficile ?"
+  },
+  "10.12": {
+   "en": "Count the bags together as you search. Ask: why did Yusuf search the others first? (12:76)",
+   "t": "Comptez ensemble les sacs pendant la fouille. Demandez : pourquoi Youssouf a-t-il fouillé les autres d’abord ? (12:76)"
+  },
+  "10.13": {
+   "en": "The brothers then said hurtful things about Yusuf, but he 'kept his secrets' (12:77). Ask: what can we do when someone says something unkind about us? Sometimes staying calm is the strongest answer.",
+   "t": "Les frères ont ensuite dit des choses blessantes sur Youssouf, mais il « garda cela secret » (12:77). Demandez : que pouvons-nous faire quand quelqu’un dit une méchanceté sur nous ? Parfois rester calme est la réponse la plus forte."
+  },
+  "10.14": {
+   "en": "While solving the puzzle, ask your child how each brother in the picture might be feeling.",
+   "t": "Pendant le puzzle, demandez à votre enfant ce que ressent peut-être chaque frère sur l’image."
+  },
+  "11.1": {
+   "en": "Yaqub's eyes went white with grief (12:84), yet he told his sons not to despair of Allah's mercy (12:87). When the brothers came again, Yusuf asked whether they understood what they had done, and revealed himself (12:89–90). The brothers admitted they had been in the wrong (12:91). Yusuf said there would be no reproach that day and asked Allah to forgive them (12:92).\n\nGoing home and coming back (12:81–88): the brothers told their father his son had stolen; he answered that patience is best and that Allah might bring them all back to him (12:83), then turned away grieving for Yusuf (12:84). On their third journey they told Yusuf that hardship had struck them and their family, that they had brought little money, and asked him to give full measure and be charitable (12:88).\n\nThe eldest brother (12:78–80): the brothers asked Yusuf to take one of them instead, because their father was very old; he said it would be unjust to take anyone but the one with whom the cup was found. The eldest then reminded the others of their solemn promise to their father and of how they had failed over Yusuf, and said he would not leave the land until his father gave him leave or Allah decided for him. So nine went home. The verse does not name him, and the commentators differ on who he was, so the game does not name him either.\n\nA Shia narration (Imam Zayn al-Abidin) says the family's long trial followed a night when a fasting believer was turned away hungry from Ya'qub's door at iftar; the translator notes that the man's plea never reached Ya'qub himself. The Imam fed everyone who came to his door, for fear of such a trial. The game does not tell this.",
+   "t": "Les yeux de Yacoub ont blanchi de chagrin (12:84), et pourtant il a dit à ses fils de ne pas désespérer de la miséricorde d’Allah (12:87). Quand les frères sont revenus, Youssouf leur a demandé s’ils comprenaient ce qu’ils avaient fait, et s’est fait reconnaître (12:89–90). Les frères ont reconnu leurs torts (12:91). Youssouf a dit qu’il n’y aurait aucun reproche ce jour-là et a demandé à Allah de leur pardonner (12:92).\n\nLe retour et le nouveau voyage (12:81–88) : les frères ont dit à leur père que son fils avait volé ; il a répondu que la patience est meilleure et qu’Allah les lui ramènerait peut-être tous (12:83), puis s’est détourné, affligé pour Youssouf (12:84). Lors de leur troisième voyage, ils ont dit à Youssouf que le malheur les avait frappés, eux et leur famille, qu’ils n’apportaient que peu d’argent, et lui ont demandé de donner la pleine mesure et d’être charitable (12:88).\n\nLe frère aîné (12:78–80) : les frères ont demandé à Youssouf de prendre l’un d’eux à la place, car leur père était très âgé ; il a dit qu’il serait injuste de prendre quelqu’un d’autre que celui chez qui on avait trouvé la coupe. L’aîné a alors rappelé aux autres leur promesse solennelle à leur père et leur faute envers Youssouf, et a dit qu’il ne quitterait pas le pays avant que son père ne le lui permette ou qu’Allah ne décide pour lui. Neuf sont donc rentrés. Le verset ne le nomme pas, et les exégètes divergent sur qui il était ; le jeu ne le nomme donc pas non plus.\n\nUn récit chiite (l’Imam Zayn al-Abidin) dit que la longue épreuve de la famille a suivi une nuit où un croyant qui jeûnait a été renvoyé affamé de la porte de Yacoub à l’heure de la rupture du jeûne ; le traducteur note que la demande de l’homme n’est jamais parvenue à Yacoub lui-même. L’Imam nourrissait tous ceux qui venaient à sa porte, par crainte d’une telle épreuve. Le jeu ne le raconte pas."
+  },
+  "11.2": {
+   "en": "The eldest brother said: 'I will not leave this land until my father gives me leave or God decides for me' (12:80). Ask: what does it mean to take responsibility?",
+   "t": "L’aîné a dit : « Je ne quitterai pas cette terre avant que mon père ne me le permette ou qu’Allah ne juge en ma faveur » (12:80). Demandez : que veut dire prendre ses responsabilités ?"
+  },
+  "11.3": {
+   "en": "Yaqub said again: 'it is best to be patient' (12:83). Ask: what helps you when you are very sad?",
+   "t": "Yacoub a dit encore : « belle patience » (12:83). Demandez : qu’est-ce qui t’aide quand tu es très triste ?"
+  },
+  "11.4": {
+   "en": "Yaqub said: 'I plead my grief and sorrow before God' (12:86) and 'do not despair of God's mercy' (12:87). Ask: who can we tell when we are sad? It is good to tell Allah, and good to tell people who love us.",
+   "t": "Yacoub a dit : « Je ne me plains qu’à Allah de mon déchirement et de mon chagrin » (12:86) et « ne désespérez pas de la miséricorde d’Allah » (12:87). Demandez : à qui pouvons-nous le dire quand nous sommes tristes ? C’est bien de le dire à Allah, et bien de le dire aux gens qui nous aiment."
+  },
+  "11.5": {
+   "en": "The brothers asked Yusuf to 'be charitable' (12:88). Ask: who do we give charity to? How does giving feel?",
+   "t": "Les frères ont demandé à Youssouf d’« être charitable » (12:88). Demandez : à qui faisons-nous la charité ? Qu’est-ce qu’on ressent en donnant ?"
+  },
+  "11.6": {
+   "en": "Ask: how do you think the brothers felt when they realised who he was? (Surprised, ashamed, happy, afraid?)",
+   "t": "Demandez : qu’ont ressenti les frères, à ton avis, quand ils ont compris qui il était ? (De la surprise, de la honte, de la joie, de la peur ?)"
+  },
+  "11.7": {
+   "en": "'We were in the wrong!' (12:91). Ask: what are the hardest words to say? Practise saying sorry together.",
+   "t": "« Nous étions vraiment fautifs ! » (12:91). Demandez : quels sont les mots les plus difficiles à dire ? Entraînez-vous ensemble à demander pardon."
+  },
+  "11.8": {
+   "en": "Ask: is it easy to forgive? Who have you forgiven? Who has forgiven you?",
+   "t": "Demandez : est-ce facile de pardonner ? À qui as-tu pardonné ? Qui t’a pardonné ?"
+  },
+  "11.9": {
+   "en": "'You will hear no reproaches today' (12:92). Ask: what does it mean to forgive and not bring it up again?",
+   "t": "« Pas de récrimination contre vous aujourd’hui » (12:92). Demandez : que veut dire pardonner et ne plus en reparler ?"
+  },
+  "11.10": {
+   "en": "Ask your child to tell this chapter in order, from the eldest brother staying behind to Yusuf forgiving them.",
+   "t": "Demandez à votre enfant de raconter ce chapitre dans l’ordre, de l’aîné qui reste en arrière jusqu’au pardon de Youssouf."
+  },
+  "11.11": {
+   "en": "While solving the puzzle, ask: which part of this chapter made you happiest?",
+   "t": "Pendant le puzzle, demandez : quelle partie de ce chapitre t’a rendu le plus heureux ?"
+  },
+  "12.1": {
+   "en": "Yusuf sent his shirt to be laid over his father's face (12:93). Yaqub said he could smell Yusuf (12:94), and when the shirt was laid on his face his sight returned (12:96). The brothers asked him to seek forgiveness for them, and he said he would (12:97–98).\n\nThe wind: the verse says that when the caravan departed, Yaqub said he could sense the scent of Yusuf (12:94). The commentary reports, through Abd al-Razzaq, that Ibn Abbas said a wind began to blow and carried the scent of the shirt to Yaqub from a distance of eight days' travel. The wind in the game's telling is from this report, not from the verse.",
+   "t": "Youssouf a envoyé sa chemise pour qu’on la pose sur le visage de son père (12:93). Yacoub a dit qu’il sentait l’odeur de Youssouf (12:94), et quand la chemise a été posée sur son visage, il a retrouvé la vue (12:96). Les frères lui ont demandé d’implorer pardon pour eux, et il a dit qu’il le ferait (12:97–98).\n\nLe vent : le verset dit que lorsque la caravane est partie, Yacoub a dit qu’il sentait l’odeur de Youssouf (12:94). L’exégèse rapporte, par Abd al-Razzaq, qu’Ibn Abbas a dit qu’un vent s’est mis à souffler et a porté l’odeur de la chemise jusqu’à Yacoub, à huit jours de marche. Le vent du récit du jeu vient de ce rapport, pas du verset."
+  },
+  "12.2": {
+   "en": "'You may think I am senile but I can smell Joseph' (12:94). Ask: what smell reminds you of someone you love?",
+   "t": "« Je sens l’odeur de Joseph, même si vous me traitez de radoteur » (12:94). Demandez : quelle odeur te rappelle quelqu’un que tu aimes ?"
+  },
+  "12.3": {
+   "en": "Ask: what good news would you like to carry to someone? Who would you run to first?",
+   "t": "Demandez : quelle bonne nouvelle aimerais-tu porter à quelqu’un ? Vers qui courrais-tu en premier ?"
+  },
+  "12.4": {
+   "en": "Yaqub said: 'Did I not tell you that I have knowledge from God that you do not have?' (12:96). Ask: why did Yaqub never give up hope?",
+   "t": "Yacoub a dit : « Ne vous avais-je pas dit que je sais par Allah ce que vous ne savez pas ? » (12:96). Demandez : pourquoi Yacoub n’a-t-il jamais perdu espoir ?"
+  },
+  "12.5": {
+   "en": "The brothers asked their father to ask Allah to forgive them, and he said he would (12:97-98). Ask: who can you ask to make dua for you?",
+   "t": "Les frères ont demandé à leur père de demander à Allah de leur pardonner, et il a dit qu’il le ferait (12:97-98). Demandez : à qui peux-tu demander de faire une dou‘a pour toi ?"
+  },
+  "12.6": {
+   "en": "Name each card as you match it, and ask: what part of the story is this?",
+   "t": "Nommez chaque carte en l’associant, et demandez : de quelle partie de l’histoire s’agit-il ?"
+  },
+  "13.1": {
+   "en": "Yusuf welcomed his parents to Egypt, they all bowed down before him, and he said this was the fulfilment of his dream (12:99–100). He ends with a prayer (12:101), which the game keeps.\n\nThe bowing: The commentary says that, according to Qatadah and other scholars, prostrating to people of authority as a greeting was allowed in the laws of earlier prophets and was later prohibited, and that in Islam prostration is for Allah alone. It is worth explaining this to a child, so the scene is not read as an example to follow.\n\nScholars differ on whether Yusuf's mother was still alive. As-Suddi and Abd al-Rahman bin Zayd bin Aslam said his parents were his father and his maternal aunt; Muhammad bin Ishaq and Ibn Jarir al-Tabari said both parents were alive (the commentary). The game says only 'his parents'.\n\nThe stars, sun and moon: see chapter 1 for the explanation attributed to Ibn Abbas and others, which the game gives children here.\n\nImam al-Sadiq (in Majlisi's Hayat al-Qulub) explains the bow as thanks to Allah.",
+   "t": "Youssouf a accueilli ses parents en Égypte, ils se sont tous prosternés devant lui, et il a dit que c’était l’accomplissement de son rêve (12:99–100). Il termine par une prière (12:101), que le jeu garde.\n\nLa prosternation : l’exégèse dit que, selon Qatada et d’autres savants, se prosterner devant les gens d’autorité en guise de salutation était permis dans les lois des prophètes antérieurs et a été interdit plus tard, et qu’en islam la prosternation est pour Allah seul. Cela vaut la peine de l’expliquer à un enfant, pour que la scène ne soit pas lue comme un exemple à suivre.\n\nLes savants divergent sur la question de savoir si la mère de Youssouf était encore en vie. As-Suddi et Abd al-Rahman bin Zayd bin Aslam ont dit que ses parents étaient son père et sa tante maternelle ; Muhammad bin Ishaq et Ibn Jarir al-Tabari ont dit que ses deux parents étaient vivants (l’exégèse). Le jeu dit seulement « ses parents ».\n\nLes étoiles, le soleil et la lune : voir le chapitre 1 pour l’explication attribuée à Ibn Abbas et à d’autres, que le jeu donne ici aux enfants.\n\nL’Imam al-Sadiq (dans le Hayat al-Qulub d’al-Majlisi) explique la prosternation comme un remerciement à Allah."
+  },
+  "13.2": {
+   "en": "Ask your child to remember the dream from chapter 1. What did Yusuf see?",
+   "t": "Demandez à votre enfant de se souvenir du rêve du chapitre 1. Qu’avait vu Youssouf ?"
+  },
+  "13.3": {
+   "en": "Yusuf welcomed his parents: 'Welcome to Egypt: you will all be safe here, God willing' (12:99). Ask: how do we welcome family when they come to visit?",
+   "t": "Youssouf a accueilli ses parents : « Entrez en Égypte, en sécurité, si Allah le veut » (12:99). Demandez : comment accueillons-nous la famille quand elle vient nous rendre visite ?"
+  },
+  "13.4": {
+   "en": "Yusuf said 'Satan sowed discord between me and my brothers' (12:100); he blamed the whisper, not his brothers. Ask: what does that tell us about Yusuf's heart?",
+   "t": "Youssouf a dit « le Diable a semé la discorde entre mes frères et moi » (12:100) ; il a accusé le chuchotement, pas ses frères. Demandez : qu’est-ce que cela nous dit du cœur de Youssouf ?"
+  },
+  "13.5": {
+   "en": "'My Lord is most subtle in achieving what He will' (12:100). Ask: what is the happiest ending you know?",
+   "t": "« Mon Seigneur est plein de douceur pour ce qu’Il veut » (12:100). Demandez : quelle est la fin la plus heureuse que tu connaisses ?"
+  },
+  "13.6": {
+   "en": "Ask: which of Yusuf's good qualities do you want to practise this week? Patience, honesty, forgiveness, trust in Allah?",
+   "t": "Demandez : quelle qualité de Youssouf veux-tu pratiquer cette semaine ? La patience, l’honnêteté, le pardon, la confiance en Allah ?"
+  },
+  "13.7": {
+   "en": "While solving the puzzle, ask your child to tell the whole story from the dream to the reunion.",
+   "t": "Pendant le puzzle, demandez à votre enfant de raconter toute l’histoire, du rêve jusqu’aux retrouvailles."
+  },
+  "13.8": {
+   "en": "Yusuf's prayer (12:101) ends: 'Let me die in true devotion to You. Join me with the righteous.' Some families learn this dua together. Ask: what would you like to ask Allah for?",
+   "t": "La prière de Youssouf (12:101) se termine ainsi : « Fais-moi mourir en parfaite soumission et fais-moi rejoindre les vertueux. » Certaines familles apprennent cette dou‘a ensemble. Demandez : que voudrais-tu demander à Allah ?"
+  }
  }
 }

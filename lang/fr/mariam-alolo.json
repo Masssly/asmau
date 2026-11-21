@@ -1,9 +1,10 @@
 {
  "status": "draft",
- "_note": "Français. To be checked by a native speaker; seen only with ?lang=fr until then.",
+ "_note": "Français, drafted 21 November 2026, to be checked by a native speaker. Seen only with ?lang=fr until then.",
  "lines": {},
  "strings": {
-  "Mariam Alolo": "",
-  "The woman from Tamale in Ghana who became a preacher and opened a centre to train women to teach Islam.": ""
- }
+  "Mariam Alolo": "Mariam Alolo",
+  "The woman from Tamale in Ghana who became a preacher and opened a centre to train women to teach Islam.": "La femme de Tamale, au Ghana, devenue prédicatrice, qui a ouvert un centre pour former des femmes à enseigner l’islam."
+ },
+ "notes": {}
 }

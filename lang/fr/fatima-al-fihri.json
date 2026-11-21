@@ -1,9 +1,10 @@
 {
  "status": "draft",
- "_note": "Français. To be checked by a native speaker; seen only with ?lang=fr until then.",
+ "_note": "Français, drafted 21 November 2026, to be checked by a native speaker. Seen only with ?lang=fr until then.",
  "lines": {},
  "strings": {
-  "Fatima al-Fihri": "",
-  "The young woman from Kairouan who used her inheritance to build a mosque in Fez that became one of the oldest universities in the world.": ""
- }
+  "Fatima al-Fihri": "Fatima al-Fihri",
+  "The young woman from Kairouan who used her inheritance to build a mosque in Fez that became one of the oldest universities in the world.": "La jeune femme de Kairouan qui a utilisé son héritage pour bâtir à Fès une mosquée devenue l’une des plus anciennes universités du monde."
+ },
+ "notes": {}
 }

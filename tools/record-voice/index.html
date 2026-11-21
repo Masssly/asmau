@@ -204,7 +204,14 @@
     // every game that can be played and has lines to record
     return fetch("../../games/index.json").then(function (r) { return r.json(); }).then(function (m) {
       var slugs = [];
-      (m.sections || []).forEach(function (s) { (s.games || []).forEach(function (g) { if (g.status !== "coming-soon") { slugs.push(g.slug); titles[g.slug] = g.title; } }); });
+      // a game's title in the family's language, where the game is live in it (or the language is being previewed)
+      var L = window.AsmauLang, C = L ? L.code() : "en";
+      (m.sections || []).forEach(function (s) { (s.games || []).forEach(function (g) {
+        if (g.status === "coming-soon") return;
+        slugs.push(g.slug);
+        var tr = C !== "en" && g.tr && g.tr[C] && ((g.langs || []).indexOf(C) >= 0 || (L && L.preview)) ? g.tr[C].title : "";
+        titles[g.slug] = tr || g.title;
+      }); });
       return Promise.all(slugs.map(function (slug) {
         return loadNarration(slug).then(function (lines) { return lines.length ? slug : null; });
       })).then(function (list) { return list.filter(Boolean); });

@@ -1,9 +1,10 @@
 {
  "status": "draft",
- "_note": "Français. To be checked by a native speaker; seen only with ?lang=fr until then.",
+ "_note": "Français, drafted 21 November 2026, to be checked by a native speaker. Seen only with ?lang=fr until then.",
  "lines": {},
  "strings": {
-  "Rumi": "",
-  "The scholar and poet born in Balkh who taught love of Allah and kindness to everyone, and is read all over the world.": ""
- }
+  "Rumi": "Rûmî",
+  "The scholar and poet born in Balkh who taught love of Allah and kindness to everyone, and is read all over the world.": "Le savant et poète né à Balkh qui a enseigné l’amour d’Allah et la bonté envers tous, et qu’on lit dans le monde entier."
+ },
+ "notes": {}
 }

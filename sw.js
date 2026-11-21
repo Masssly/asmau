@@ -17,19 +17,19 @@
 */
 
 // BEGIN GENERATED
-const RELEASE = "2026.11.87";
-const BUILD = "afb4a09b5e02";
+const RELEASE = "2026.11.88";
+const BUILD = "88f3eabfd12b";
 // pack: [fingerprint of packs/<pack>.json, bytes, files]
 const PACKS = {
   "abdullah-quilliam":["257759b2cf",442,1],
   "adam":["901008555f",2735394,55],
   "adam@m":["a617f3f408",4026446,147],
   "adam@w":["217fc43e27",4316508,147],
-  "core":["0028910f79",1157036,47],
-  "core@de":["c709fe1472",703334,20],
-  "core@fr":["30d6e0a30e",164545,20],
-  "core@id":["cc850d43a3",701774,20],
-  "core@ms":["ed6a3f801c",715166,20],
+  "core":["e57042dff4",1162158,47],
+  "core@de":["542b448cb0",704010,20],
+  "core@fr":["68752c8ce1",719650,20],
+  "core@id":["32151e7d07",702425,20],
+  "core@ms":["119bfe8c7a",715808,20],
   "count-the-crescents":["c58ffd2f9d",83016,5],
   "count-the-crescents@m":["76410cb722",587647,52],
   "count-the-crescents@w":["238f9dbdf7",584828,52],

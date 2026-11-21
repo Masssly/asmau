@@ -142,7 +142,7 @@ window.AsmauLang = (function () {
   }
 
   return {
-    names: { en: "English", id: "Bahasa Indonesia", ms: "Bahasa Melayu", de: "Deutsch", fr: "Français" },              // each language by its own name
+    names: { en: "English", id: "Bahasa Indonesia", ms: "Bahasa Melayu", de: "Deutsch", fr: "Français", tr: "Türkçe" },              // each language by its own name
     code: function () { return lang; },
     preview: preview,
     ready: function () { return ready; },

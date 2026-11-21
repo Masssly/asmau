@@ -1,0 +1,363 @@
+{
+ "status": "draft",
+ "_note": "Türkçe. To be checked by a native speaker; seen only with ?lang=tr until then.",
+ "lines": {
+  "hello": {
+   "en": "Tap something!",
+   "t": "Bir şeye dokun!"
+  },
+  "find-start": {
+   "en": "Let's play. Find what I say!",
+   "t": "Hadi oynayalım. Söylediğimi bul!"
+  },
+  "yes": {
+   "en": "Yes! Well done!",
+   "t": "Evet! Aferin!"
+  },
+  "page-sky": {
+   "en": "Night and the mosque",
+   "t": "Gece ve cami"
+  },
+  "moon-en": {
+   "en": "Moon",
+   "t": "Ay"
+  },
+  "find-moon": {
+   "en": "Where is the moon?",
+   "t": "Ay nerede?"
+  },
+  "star-en": {
+   "en": "Star",
+   "t": "Yıldız"
+  },
+  "find-star": {
+   "en": "Where is the star?",
+   "t": "Yıldız nerede?"
+  },
+  "mosque-en": {
+   "en": "Mosque",
+   "t": "Cami"
+  },
+  "find-mosque": {
+   "en": "Where is the mosque?",
+   "t": "Cami nerede?"
+  },
+  "kaaba-en": {
+   "en": "Kaaba",
+   "t": "Kâbe"
+  },
+  "find-kaaba": {
+   "en": "Where is the Kaaba?",
+   "t": "Kâbe nerede?"
+  },
+  "beads-en": {
+   "en": "Prayer beads",
+   "t": "Tesbih"
+  },
+  "find-beads": {
+   "en": "Where are the prayer beads?",
+   "t": "Tesbih nerede?"
+  },
+  "lamp-en": {
+   "en": "Lamp",
+   "t": "Kandil"
+  },
+  "find-lamp": {
+   "en": "Where is the lamp?",
+   "t": "Kandil nerede?"
+  },
+  "page-prayer": {
+   "en": "Time to pray",
+   "t": "Namaz vakti"
+  },
+  "mat-en": {
+   "en": "Prayer mat",
+   "t": "Seccade"
+  },
+  "find-mat": {
+   "en": "Where is the prayer mat?",
+   "t": "Seccade nerede?"
+  },
+  "quran-en": {
+   "en": "Qur'an",
+   "t": "Kur’an"
+  },
+  "find-quran": {
+   "en": "Where is the Qur'an?",
+   "t": "Kur’an nerede?"
+  },
+  "water-en": {
+   "en": "Water",
+   "t": "Su"
+  },
+  "find-water": {
+   "en": "Where is the water?",
+   "t": "Su nerede?"
+  },
+  "hands-en": {
+   "en": "Hands",
+   "t": "Eller"
+  },
+  "find-hands": {
+   "en": "Where are our hands?",
+   "t": "Ellerimiz nerede?"
+  },
+  "clock-en": {
+   "en": "Clock",
+   "t": "Saat"
+  },
+  "find-clock": {
+   "en": "Where is the clock?",
+   "t": "Saat nerede?"
+  },
+  "scarf-en": {
+   "en": "Headscarf",
+   "t": "Başörtüsü"
+  },
+  "find-scarf": {
+   "en": "Where is the headscarf?",
+   "t": "Başörtüsü nerede?"
+  },
+  "page-animals": {
+   "en": "Animals in the Qur'an",
+   "t": "Kur’an’daki hayvanlar"
+  },
+  "camel-en": {
+   "en": "Camel",
+   "t": "Deve"
+  },
+  "find-camel": {
+   "en": "Where is the camel?",
+   "t": "Deve nerede?"
+  },
+  "cow-en": {
+   "en": "Cow",
+   "t": "İnek"
+  },
+  "find-cow": {
+   "en": "Where is the cow?",
+   "t": "İnek nerede?"
+  },
+  "bee-en": {
+   "en": "Bee",
+   "t": "Arı"
+  },
+  "find-bee": {
+   "en": "Where is the bee?",
+   "t": "Arı nerede?"
+  },
+  "ant-en": {
+   "en": "Ant",
+   "t": "Karınca"
+  },
+  "find-ant": {
+   "en": "Where is the ant?",
+   "t": "Karınca nerede?"
+  },
+  "elephant-en": {
+   "en": "Elephant",
+   "t": "Fil"
+  },
+  "find-elephant": {
+   "en": "Where is the elephant?",
+   "t": "Fil nerede?"
+  },
+  "spider-en": {
+   "en": "Spider",
+   "t": "Örümcek"
+  },
+  "find-spider": {
+   "en": "Where is the spider?",
+   "t": "Örümcek nerede?"
+  },
+  "horse-en": {
+   "en": "Horse",
+   "t": "At"
+  },
+  "find-horse": {
+   "en": "Where is the horse?",
+   "t": "At nerede?"
+  },
+  "fish-en": {
+   "en": "Fish",
+   "t": "Balık"
+  },
+  "find-fish": {
+   "en": "Where is the fish?",
+   "t": "Balık nerede?"
+  },
+  "raven-en": {
+   "en": "Raven",
+   "t": "Karga"
+  },
+  "find-raven": {
+   "en": "Where is the raven?",
+   "t": "Karga nerede?"
+  },
+  "page-food": {
+   "en": "Good food",
+   "t": "Güzel yiyecekler"
+  },
+  "dates-en": {
+   "en": "Date palm",
+   "t": "Hurma ağacı"
+  },
+  "find-dates": {
+   "en": "Where is the date palm?",
+   "t": "Hurma ağacı nerede?"
+  },
+  "olive-en": {
+   "en": "Olives",
+   "t": "Zeytin"
+  },
+  "find-olive": {
+   "en": "Where are the olives?",
+   "t": "Zeytinler nerede?"
+  },
+  "grapes-en": {
+   "en": "Grapes",
+   "t": "Üzüm"
+  },
+  "find-grapes": {
+   "en": "Where are the grapes?",
+   "t": "Üzümler nerede?"
+  },
+  "honey-en": {
+   "en": "Honey",
+   "t": "Bal"
+  },
+  "find-honey": {
+   "en": "Where is the honey?",
+   "t": "Bal nerede?"
+  },
+  "milk-en": {
+   "en": "Milk",
+   "t": "Süt"
+  },
+  "find-milk": {
+   "en": "Where is the milk?",
+   "t": "Süt nerede?"
+  },
+  "bread-en": {
+   "en": "Bread",
+   "t": "Ekmek"
+  },
+  "find-bread": {
+   "en": "Where is the bread?",
+   "t": "Ekmek nerede?"
+  },
+  "page-westafrica": {
+   "en": "Eid, school and prayer in West Africa",
+   "t": "Batı Afrika’da bayram, okul ve namaz"
+  },
+  "ram-en": {
+   "en": "Ram",
+   "t": "Koç"
+  },
+  "find-ram": {
+   "en": "Where is the ram?",
+   "t": "Koç nerede?"
+  },
+  "kettle-en": {
+   "en": "Kettle",
+   "t": "İbrik"
+  },
+  "find-kettle": {
+   "en": "Where is the kettle?",
+   "t": "İbrik nerede?"
+  },
+  "pen-en": {
+   "en": "Pen",
+   "t": "Kalem"
+  },
+  "find-pen": {
+   "en": "Where is the pen?",
+   "t": "Kalem nerede?"
+  },
+  "drum-en": {
+   "en": "Drum",
+   "t": "Davul"
+  },
+  "find-drum": {
+   "en": "Where is the drum?",
+   "t": "Davul nerede?"
+  },
+  "turban-en": {
+   "en": "Turban",
+   "t": "Sarık"
+  },
+  "find-turban": {
+   "en": "Where is the turban?",
+   "t": "Sarık nerede?"
+  },
+  "sandals-en": {
+   "en": "Sandals",
+   "t": "Sandalet"
+  },
+  "find-sandals": {
+   "en": "Where are the sandals?",
+   "t": "Sandaletler nerede?"
+  },
+  "page-world": {
+   "en": "Allah's world",
+   "t": "Allah’ın dünyası"
+  },
+  "sun-en": {
+   "en": "Sun",
+   "t": "Güneş"
+  },
+  "find-sun": {
+   "en": "Where is the sun?",
+   "t": "Güneş nerede?"
+  },
+  "cloud-en": {
+   "en": "Cloud",
+   "t": "Bulut"
+  },
+  "find-cloud": {
+   "en": "Where is the cloud?",
+   "t": "Bulut nerede?"
+  },
+  "rain-en": {
+   "en": "Rain",
+   "t": "Yağmur"
+  },
+  "find-rain": {
+   "en": "Where is the rain?",
+   "t": "Yağmur nerede?"
+  },
+  "mountain-en": {
+   "en": "Mountain",
+   "t": "Dağ"
+  },
+  "find-mountain": {
+   "en": "Where is the mountain?",
+   "t": "Dağ nerede?"
+  },
+  "sea-en": {
+   "en": "Sea",
+   "t": "Deniz"
+  },
+  "find-sea": {
+   "en": "Where is the sea?",
+   "t": "Deniz nerede?"
+  },
+  "tree-en": {
+   "en": "Tree",
+   "t": "Ağaç"
+  },
+  "find-tree": {
+   "en": "Where is the tree?",
+   "t": "Ağaç nerede?"
+  }
+ },
+ "strings": {
+  "Tap & Say": "Dokun ve Söyle",
+  "Tap a picture, hear its name, see the Arabic word. Then find it!": "Bir resme dokun, adını duy, Arapça kelimeyi gör. Sonra onu bul!",
+  "“Find it!” asks for one thing at a time. A wrong tap simply says the name of what was tapped; nothing is ever marked wrong. The animals are ones the Qur'an mentions; five of them give a surah its name (the cow, the bee, the ant, the elephant, the spider).": "“Bul!” her seferinde tek bir şey ister. Yanlış bir dokunuş yalnızca dokunulan şeyin adını söyler; hiçbir şey yanlış diye işaretlenmez. Hayvanlar Kur’an’da adı geçenlerdir; beşi bir sureye adını verir (inek, arı, karınca, fil, örümcek).",
+  "The Arabic words carry full vowel marks. If you speak Arabic and spot a mistake, please tell us.": "Arapça kelimeler tam harekelidir. Arapça biliyor ve bir hata görüyorsanız lütfen bize bildirin.",
+  "For ages 1½ to 4. Tap a picture to hear its name in English and then in Arabic. The voice is computer-made (Google’s text-to-speech), so it may not say every Arabic word perfectly. Say it together, or <a href=\"../../index.html#parents-record\">record it in your own voice</a> and the game will play your recording instead.": "1,5–4 yaş için. Bir resme dokununca adı gösterilir ve Arapçası okunur. Ses bilgisayarla yapılmıştır (Google’ın metin okuma sistemi), bu yüzden her Arapça kelimeyi kusursuz söylemeyebilir. Birlikte söyleyin ya da <a href=\"../../index.html#parents-record\">kendi sesinizle kaydedin</a>; oyun bunun yerine sizin kaydınızı çalar.",
+  "The West African page: the ram for Tabaski (Eid al-Adha); the kettle for wudu (the <i>buta</i> in Hausa); the pen of the Qur'an school; the drummers who go round in Ramadan to wake people for suhur; the turban; and the sandals left at the mosque door.": "Batı Afrika sayfası: Tabaski (Kurban Bayramı) için koç; abdest için ibrik (Hausa dilinde <i>buta</i>); Kur’an okulunun kalemi; Ramazan’da insanları sahura kaldırmak için dolaşan davulcular; sarık; ve cami kapısında bırakılan sandaletler."
+ },
+ "notes": {}
+}

@@ -1,0 +1,765 @@
+{
+ "status": "draft",
+ "_note": "Türkçe. To be checked by a native speaker; seen only with ?lang=tr until then.",
+ "lines": {
+  "a1-a": {
+   "en": "Long ago, in a village called Degel, in West Africa, two babies were born on the same day. They were twins: a boy and a girl.",
+   "t": "Çok eskiden, Batı Afrika’da Degel denen bir köyde, aynı gün iki bebek doğdu. İkizdiler: bir erkek ve bir kız."
+  },
+  "a1-b": {
+   "en": "Their father was a kind and wise teacher, called the Shehu. He named the boy Hassan.",
+   "t": "Babaları iyi kalpli ve bilge bir hocaydı; ona Şehu derlerdi. Erkek bebeğe Hasan adını verdi."
+  },
+  "a1-c": {
+   "en": "Twins were usually called Hassan and Hussaina. But the Shehu gave his daughter a different name: Asma'u.",
+   "t": "İkizlere genellikle Hasan ve Hüseyne adı verilirdi. Ama Şehu kızına başka bir ad verdi: Asma’u."
+  },
+  "a1-q": {
+   "en": "What did the Shehu name his baby girl?",
+   "t": "Şehu kız bebeğine hangi adı verdi?"
+  },
+  "a1-q-opt1": {
+   "en": "Asma'u",
+   "t": "Asma’u"
+  },
+  "a1-q-opt2": {
+   "en": "Hussaina",
+   "t": "Hüseyne"
+  },
+  "a1-q-no": {
+   "en": "Not Hussaina. He chose a special name for her: Asma'u.",
+   "t": "Hüseyne değil. Ona özel bir ad seçti: Asma’u."
+  },
+  "a1-mem": {
+   "en": "Twins come in pairs! Find the pairs.",
+   "t": "İkizler çift olur! Eşleri bul."
+  },
+  "a2-a": {
+   "en": "Why Asma'u? She was named after a brave young woman who lived long before, in the time of the Prophet, peace be upon him: Asma, the daughter of Abu Bakr.",
+   "t": "Neden Asma’u? Ona, çok önceleri, Peygamberimizin (selam onun üzerine olsun) zamanında yaşamış cesur bir genç kadının adı verilmişti: Ebû Bekir’in kızı Esmâ."
+  },
+  "a2-b": {
+   "en": "When the Prophet and her father set off on a long journey, Asma packed their food and water. But there was nothing to tie the bags with!",
+   "t": "Peygamberimiz ve babası uzun bir yolculuğa çıkarken, Esmâ onların yiyeceğini ve suyunu hazırladı. Ama torbaları bağlayacak hiçbir şey yoktu!"
+  },
+  "a2-tear": {
+   "en": "What did she do? Tap the belt.",
+   "t": "Ne yaptı? Kuşağa dokun."
+  },
+  "a2-tear-s1": {
+   "en": "She tore her belt in two!",
+   "t": "Kuşağını ikiye ayırdı!"
+  },
+  "a2-c": {
+   "en": "Asma, Abu Bakr's daughter, tore her own belt in two. One piece tied the water. The other piece tied the food. So people called her: the one with the two belts.",
+   "t": "Ebû Bekir’in kızı Esmâ kendi kuşağını ikiye ayırdı. Bir parçayla suyu bağladı. Öbür parçayla yiyeceği bağladı. Bu yüzden insanlar ona “iki kuşaklı” dediler."
+  },
+  "a2-match": {
+   "en": "Match each piece of the belt to what it tied.",
+   "t": "Kuşağın her parçasını bağladığı şeyle eşleştir."
+  },
+  "a2-match-a1": {
+   "en": "The first piece",
+   "t": "Birinci parça"
+  },
+  "a2-match-b1": {
+   "en": "tied the water",
+   "t": "suyu bağladı"
+  },
+  "a2-match-a2": {
+   "en": "The second piece",
+   "t": "İkinci parça"
+  },
+  "a2-match-b2": {
+   "en": "tied the food",
+   "t": "yiyeceği bağladı"
+  },
+  "a2-d": {
+   "en": "Asma was brave, clever, and always ready to help. That is the name the Shehu gave his little girl.",
+   "t": "Esmâ cesur ve akıllıydı, yardıma her zaman hazırdı. Şehu küçük kızına işte bu adı verdi."
+  },
+  "a3-a": {
+   "en": "When Asma'u was very small, her mother died. But she was not alone. Aisha and Hauwa, who lived in the Shehu's house, loved her and brought her up.",
+   "t": "Asma’u çok küçükken annesi vefat etti. Ama yalnız değildi. Şehu’nun evinde yaşayan Âişe ve Havva onu sevdiler ve büyüttüler."
+  },
+  "a3-b": {
+   "en": "In the Shehu's house, everybody learned. Girls learned, and boys learned. Like children there still do, Asma'u wrote her lessons on a wooden board.",
+   "t": "Şehu’nun evinde herkes öğrenirdi. Kızlar da öğrenirdi, erkekler de. Oradaki çocukların bugün hâlâ yaptığı gibi, Asma’u da derslerini tahta bir levhaya yazardı."
+  },
+  "a3-trace": {
+   "en": "Help Asma'u write her lesson. Tap each dot to follow the line.",
+   "t": "Asma’u’nun dersini yazmasına yardım et. Çizgiyi takip etmek için her noktaya dokun."
+  },
+  "a3-wash": {
+   "en": "Lesson learned! Wash the board clean for tomorrow. Rub, rub, rub!",
+   "t": "Ders öğrenildi! Yarın için levhayı yıka. Ov, ov, ov!"
+  },
+  "a3-c": {
+   "en": "Day by day, verse by verse, Asma'u learned the whole Qur'an by heart while she was still young.",
+   "t": "Gün gün, ayet ayet, Asma’u daha küçükken bütün Kur’an’ı ezberledi."
+  },
+  "a3-verses": {
+   "en": "Learn a little every day. Tap each star to learn one more.",
+   "t": "Her gün biraz öğren. Bir tane daha öğrenmek için her yıldıza dokun."
+  },
+  "a3-q": {
+   "en": "Who learned in the Shehu's house?",
+   "t": "Şehu’nun evinde kimler öğrenirdi?"
+  },
+  "a3-q-opt1": {
+   "en": "Only the boys",
+   "t": "Yalnızca erkekler"
+  },
+  "a3-q-opt2": {
+   "en": "Girls and boys",
+   "t": "Kızlar ve erkekler"
+  },
+  "a3-q-no": {
+   "en": "No. In the Shehu's house, girls and boys learned together.",
+   "t": "Hayır. Şehu’nun evinde kızlar ve erkekler birlikte öğrenirdi."
+  },
+  "a4-a": {
+   "en": "When Asma'u was about eleven years old, it was no longer safe for the Shehu's people in their village. So her family and all their friends had to leave, and travel to a new place.",
+   "t": "Asma’u on bir yaşlarındayken, köyleri artık Şehu’nun insanları için güvenli değildi. Bu yüzden ailesi ve bütün dostları oradan ayrılıp yeni bir yere gitmek zorunda kaldı."
+  },
+  "a4-pack": {
+   "en": "What should they carry on a long walk? Something useful, or something too heavy?",
+   "t": "Uzun bir yürüyüşte ne taşımalılar? İşe yarayan bir şey mi, yoksa çok ağır bir şey mi?"
+  },
+  "a4-pack-bin1": {
+   "en": "Take it",
+   "t": "Götür"
+  },
+  "a4-pack-bin2": {
+   "en": "Too heavy",
+   "t": "Çok ağır"
+  },
+  "a4-pack-it1": {
+   "en": "A pot of water",
+   "t": "Bir testi su"
+  },
+  "a4-pack-it2": {
+   "en": "A big wooden bed",
+   "t": "Tahtadan büyük bir yatak"
+  },
+  "a4-pack-it3": {
+   "en": "Their books",
+   "t": "Kitapları"
+  },
+  "a4-pack-it4": {
+   "en": "A bag of grain",
+   "t": "Bir torba tahıl"
+  },
+  "a4-pack-it5": {
+   "en": "The front door",
+   "t": "Evin kapısı"
+  },
+  "a4-pack-no": {
+   "en": "Think again. Could you carry that a long way?",
+   "t": "Bir daha düşün. Bunu uzun bir yol boyunca taşıyabilir miydin?"
+  },
+  "a4-walk": {
+   "en": "Walk with Asma'u to the new place.",
+   "t": "Asma’u’yla birlikte yeni yere yürü."
+  },
+  "a4-b": {
+   "en": "The walk was long and hard. But Asma'u looked, and listened, and remembered. Many years later she wrote poems about those journeys.",
+   "t": "Yürüyüş uzun ve zordu. Ama Asma’u baktı, dinledi ve aklında tuttu. Yıllar sonra bu yolculuklar hakkında şiirler yazdı."
+  },
+  "a5-a": {
+   "en": "Those were hard years. There was fighting, and many people were hurt or lost their homes.",
+   "t": "O yıllar zor yıllardı. Savaş vardı; birçok insan yaralandı ya da evini kaybetti."
+  },
+  "a5-b": {
+   "en": "The women of the community did not give up. They cooked food for everyone, cared for children who had lost their parents, and shared with people who had nothing.",
+   "t": "Topluluğun kadınları pes etmedi. Herkese yemek pişirdiler, anne babasını kaybetmiş çocuklara baktılar ve hiçbir şeyi olmayanlarla paylaştılar."
+  },
+  "a5-bowls": {
+   "en": "Help share the food. Tap each bowl to give it to someone hungry.",
+   "t": "Yemeği paylaşmaya yardım et. Aç birine vermek için her kâseye dokun."
+  },
+  "a5-c": {
+   "en": "Asma'u helped too. She learned that caring for others is part of being a good Muslim.",
+   "t": "Asma’u da yardım etti. Başkalarına bakmanın iyi bir Müslüman olmanın bir parçası olduğunu öğrendi."
+  },
+  "a5-q": {
+   "en": "What did the women do in the hard years?",
+   "t": "Kadınlar zor yıllarda ne yaptı?"
+  },
+  "a5-q-opt1": {
+   "en": "Cared for others and shared",
+   "t": "Başkalarına baktılar ve paylaştılar"
+  },
+  "a5-q-opt2": {
+   "en": "Hid and did nothing",
+   "t": "Saklandılar ve hiçbir şey yapmadılar"
+  },
+  "a5-q-no": {
+   "en": "No. They cooked, cared for children, and shared what they had.",
+   "t": "Hayır. Yemek pişirdiler, çocuklara baktılar ve ellerindekini paylaştılar."
+  },
+  "a6-a": {
+   "en": "When the fighting was over, a new town was built, called Sokoto. Asma'u married a good man called Gidado, and they made their home there.",
+   "t": "Savaş bitince Sokoto adında yeni bir şehir kuruldu. Asma’u, Gidado adında iyi bir adamla evlendi ve evlerini orada kurdular."
+  },
+  "a6-home": {
+   "en": "Help build the new home, brick by brick.",
+   "t": "Yeni evi tuğla tuğla yapmaya yardım et."
+  },
+  "a6-b": {
+   "en": "Asma'u and Gidado's home was full of people: family, students, guests, and people who needed help. Hundreds of them! Asma'u made sure everyone had food, clothes, and a place to sleep.",
+   "t": "Asma’u ile Gidado’nun evi insanlarla doluydu: aile, öğrenciler, misafirler ve yardıma ihtiyacı olanlar. Yüzlercesi! Asma’u herkesin yiyeceği, giyeceği ve uyuyacak bir yeri olmasına özen gösterdi."
+  },
+  "a6-care": {
+   "en": "Everyone needs something. Is it food, or is it clothes?",
+   "t": "Herkesin bir şeye ihtiyacı var. Bu yiyecek mi, yoksa giyecek mi?"
+  },
+  "a6-care-bin1": {
+   "en": "Food",
+   "t": "Yiyecek"
+  },
+  "a6-care-bin2": {
+   "en": "Clothes",
+   "t": "Giyecek"
+  },
+  "a6-care-it1": {
+   "en": "A bowl of rice",
+   "t": "Bir kâse pilav"
+  },
+  "a6-care-it2": {
+   "en": "A warm scarf",
+   "t": "Sıcak bir atkı"
+  },
+  "a6-care-it3": {
+   "en": "Fresh bread",
+   "t": "Taze ekmek"
+  },
+  "a6-care-it4": {
+   "en": "A new dress",
+   "t": "Yeni bir elbise"
+  },
+  "a6-care-it5": {
+   "en": "A cup of milk",
+   "t": "Bir bardak süt"
+  },
+  "a6-care-no": {
+   "en": "Think again. Do you eat it, or wear it?",
+   "t": "Bir daha düşün. Bunu yer misin, yoksa giyer misin?"
+  },
+  "a7-a": {
+   "en": "When Asma'u was grown up, her father the Shehu died. A few months later, her twin brother Hassan died too. Asma'u was very sad.",
+   "t": "Asma’u büyüdüğünde babası Şehu vefat etti. Birkaç ay sonra ikiz kardeşi Hasan da vefat etti. Asma’u çok üzüldü."
+  },
+  "a7-b": {
+   "en": "But she knew what to do. Her father had written many books. With Gidado, she gathered every page, so that nothing he wrote would be lost.",
+   "t": "Ama ne yapması gerektiğini biliyordu. Babası birçok kitap yazmıştı. Gidado’yla birlikte her sayfayı topladı ki yazdıklarından hiçbiri kaybolmasın."
+  },
+  "a7-pages": {
+   "en": "Find every page of the Shehu's books. Tap them all.",
+   "t": "Şehu’nun kitaplarının her sayfasını bul. Hepsine dokun."
+  },
+  "a7-c": {
+   "en": "Then the pages were copied, again and again, so that people everywhere could read them.",
+   "t": "Sonra sayfalar tekrar tekrar kopyalandı ki her yerde insanlar onları okuyabilsin."
+  },
+  "a7-ord": {
+   "en": "How did they save the books? Tap in order.",
+   "t": "Kitapları nasıl kurtardılar? Sırayla dokun."
+  },
+  "a7-ord-c1": {
+   "en": "First, they gathered every page.",
+   "t": "Önce her sayfayı topladılar."
+  },
+  "a7-ord-c2": {
+   "en": "Then they copied them.",
+   "t": "Sonra onları kopyaladılar."
+  },
+  "a7-ord-c3": {
+   "en": "And then people everywhere could read them.",
+   "t": "Sonra da her yerde insanlar onları okuyabildi."
+  },
+  "a7-ord-no": {
+   "en": "Not that one yet. What comes first?",
+   "t": "Henüz o değil. Önce ne gelir?"
+  },
+  "a8-a": {
+   "en": "Asma'u loved words. She could speak four languages! And she wrote poems: more than sixty of them.",
+   "t": "Asma’u kelimeleri çok severdi. Dört dil konuşabiliyordu! Şiirler de yazdı: altmıştan fazla."
+  },
+  "a8-b": {
+   "en": "Not everyone could read Arabic. So Asma'u wrote her poems in the languages people spoke at home, using Arabic letters, so that everyone could learn.",
+   "t": "Herkes Arapça okuyamıyordu. Bu yüzden Asma’u şiirlerini, insanların evde konuştuğu dillerde, Arap harfleriyle yazdı ki herkes öğrenebilsin."
+  },
+  "a8-q1": {
+   "en": "Why did Asma'u write in the languages people spoke at home?",
+   "t": "Asma’u neden insanların evde konuştuğu dillerde yazdı?"
+  },
+  "a8-q1-opt1": {
+   "en": "To keep it a secret",
+   "t": "Sır olarak saklamak için"
+  },
+  "a8-q1-opt2": {
+   "en": "So everyone could learn",
+   "t": "Herkes öğrenebilsin diye"
+  },
+  "a8-q1-no": {
+   "en": "No. She wanted everyone to be able to learn, not only people who read Arabic.",
+   "t": "Hayır. Yalnızca Arapça okuyanlar değil, herkes öğrenebilsin istiyordu."
+  },
+  "a8-c": {
+   "en": "Asma'u even wrote a poem with the name of every sura of the Qur'an in it, so that people could remember them.",
+   "t": "Asma’u, insanlar hatırlayabilsin diye içinde Kur’an’ın bütün surelerinin adı geçen bir şiir bile yazdı."
+  },
+  "a8-suras": {
+   "en": "Asma'u's poem helped people remember the suras. Can you put the first four in order?",
+   "t": "Asma’u’nun şiiri insanların sureleri hatırlamasına yardım etti. İlk dördünü sıraya koyabilir misin?"
+  },
+  "a8-suras-c1": {
+   "en": "Al-Fatiha, The Opening.",
+   "t": "Fâtiha, Açılış."
+  },
+  "a8-suras-c2": {
+   "en": "Al-Baqarah, The Cow.",
+   "t": "Bakara, İnek."
+  },
+  "a8-suras-c3": {
+   "en": "Al Imran, The Family of Imran.",
+   "t": "Âl-i İmrân, İmrân Ailesi."
+  },
+  "a8-suras-c4": {
+   "en": "An-Nisa, The Women.",
+   "t": "Nisâ, Kadınlar."
+  },
+  "a8-suras-no": {
+   "en": "Not that one yet. Which sura comes first in the Qur'an?",
+   "t": "Henüz o değil. Kur’an’da hangi sure önce gelir?"
+  },
+  "a9-a": {
+   "en": "Asma'u had a big idea. Many women lived far away in villages, and could not come to Sokoto to learn. So she trained teachers!",
+   "t": "Asma’u’nun büyük bir fikri vardı. Birçok kadın uzak köylerde yaşıyordu ve öğrenmek için Sokoto’ya gelemiyordu. Bu yüzden öğretmenler yetiştirdi!"
+  },
+  "a9-b": {
+   "en": "The teachers were called jaji. Each one wore a tall, special hat, so that everyone knew: here comes a teacher!",
+   "t": "Öğretmenlere jaji denirdi. Her biri uzun, özel bir şapka takardı ki herkes bilsin: işte bir öğretmen geliyor!"
+  },
+  "a9-hats": {
+   "en": "Give every teacher her hat. Tap each one.",
+   "t": "Her öğretmene şapkasını ver. Her birine dokun."
+  },
+  "a9-c": {
+   "en": "The teachers walked back to their villages, and taught the women there, with poems that were easy to remember.",
+   "t": "Öğretmenler köylerine yürüyerek döndüler ve oradaki kadınlara, akılda kalması kolay şiirlerle ders verdiler."
+  },
+  "a9-villages": {
+   "en": "Walk with the teacher from village to village. Tap each house.",
+   "t": "Öğretmenle birlikte köyden köye yürü. Her eve dokun."
+  },
+  "a9-d": {
+   "en": "Then the women in the villages taught their own children, and their friends. Learning spread like light, from one lamp to the next.",
+   "t": "Sonra köylerdeki kadınlar kendi çocuklarına ve dostlarına öğrettiler. İlim, bir lambadan ötekine geçen ışık gibi yayıldı."
+  },
+  "a9-lamps": {
+   "en": "Light the lamps, one from the next! Tap each lamp.",
+   "t": "Lambaları birbirinden yak! Her lambaya dokun."
+  },
+  "a9-q": {
+   "en": "What did Asma'u's teachers do?",
+   "t": "Asma’u’nun öğretmenleri ne yaptı?"
+  },
+  "a9-q-opt1": {
+   "en": "Taught women in the villages",
+   "t": "Köylerdeki kadınlara öğrettiler"
+  },
+  "a9-q-opt2": {
+   "en": "Kept the lessons to themselves",
+   "t": "Dersleri kendilerine sakladılar"
+  },
+  "a9-q-no": {
+   "en": "No. They took the lessons home, and taught everyone they could.",
+   "t": "Hayır. Dersleri evlerine götürdüler ve öğretebildikleri herkese öğrettiler."
+  },
+  "a10-a": {
+   "en": "People called Asma'u 'Uwar Gari': the mother of the town. Women came to her for help, and even the leaders asked for her advice.",
+   "t": "İnsanlar Asma’u’ya “Uwar Gari”, yani “şehrin annesi” derdi. Kadınlar ona yardım için gelir, yöneticiler bile ona danışırdı."
+  },
+  "a10-good": {
+   "en": "Asma'u taught people to be good. Is it a kind thing to do, or not kind?",
+   "t": "Asma’u insanlara iyi olmayı öğretti. Bu iyi bir davranış mı, değil mi?"
+  },
+  "a10-good-bin1": {
+   "en": "Kind",
+   "t": "İyi"
+  },
+  "a10-good-bin2": {
+   "en": "Not kind",
+   "t": "İyi değil"
+  },
+  "a10-good-it1": {
+   "en": "Helping a neighbour",
+   "t": "Komşuya yardım etmek"
+  },
+  "a10-good-it2": {
+   "en": "Shouting at a friend",
+   "t": "Arkadaşa bağırmak"
+  },
+  "a10-good-it3": {
+   "en": "Sharing your food",
+   "t": "Yemeğini paylaşmak"
+  },
+  "a10-good-it4": {
+   "en": "Teaching what you know",
+   "t": "Bildiğini öğretmek"
+  },
+  "a10-good-it5": {
+   "en": "Laughing at someone",
+   "t": "Birine gülmek"
+  },
+  "a10-good-no": {
+   "en": "Think again. Would that make someone happy?",
+   "t": "Bir daha düşün. Bu birini mutlu eder miydi?"
+  },
+  "a10-b": {
+   "en": "Asma'u had good friends, and she loved them dearly. When people she loved died, she wrote poems so that they would be remembered.",
+   "t": "Asma’u’nun iyi dostları vardı ve onları çok severdi. Sevdiği insanlar vefat edince, hatırlansınlar diye şiirler yazdı."
+  },
+  "a11-a": {
+   "en": "Asma'u lived to be about seventy years old. All her life, she learned, and she taught.",
+   "t": "Asma’u yetmiş yaşlarına kadar yaşadı. Bütün ömrü boyunca öğrendi ve öğretti."
+  },
+  "a11-b": {
+   "en": "Today, more than a hundred and fifty years later, the women's groups she started still meet. And schools are named after her: Nana Asma'u.",
+   "t": "Bugün, yüz elli yıldan fazla zaman sonra, kurduğu kadın toplulukları hâlâ toplanıyor. Okullara da onun adı veriliyor: Nana Asma’u."
+  },
+  "a11-ord": {
+   "en": "Tell the story of Asma'u. Tap in order.",
+   "t": "Asma’u’nun hikâyesini anlat. Sırayla dokun."
+  },
+  "a11-ord-c1": {
+   "en": "First, she was born, a twin, in Degel.",
+   "t": "Önce Degel’de, ikiz olarak doğdu."
+  },
+  "a11-ord-c2": {
+   "en": "Then her family made a long journey.",
+   "t": "Sonra ailesi uzun bir yolculuk yaptı."
+  },
+  "a11-ord-c3": {
+   "en": "Then she saved her father's books.",
+   "t": "Sonra babasının kitaplarını kurtardı."
+  },
+  "a11-ord-c4": {
+   "en": "And then she trained teachers for the villages.",
+   "t": "Sonra da köyler için öğretmenler yetiştirdi."
+  },
+  "a11-ord-no": {
+   "en": "Not that one yet. What came before it?",
+   "t": "Henüz o değil. Ondan önce ne oldu?"
+  },
+  "a11-c": {
+   "en": "Nana Asma'u's lesson for us is simple: learn all you can, and then teach it to someone else.",
+   "t": "Nana Asma’u’nun bize dersi basittir: öğrenebildiğin her şeyi öğren, sonra da başka birine öğret."
+  },
+  "a11-mem": {
+   "en": "One last game. Find the pairs from Asma'u's story.",
+   "t": "Son bir oyun. Asma’u’nun hikâyesinden eşleri bul."
+  },
+  "end-a": {
+   "en": "This is the story of Nana Asma'u. She learned, she taught, and she made sure that everyone could learn. What will you learn, and teach, today?",
+   "t": "Bu, Nana Asma’u’nun hikâyesidir. Öğrendi, öğretti ve herkesin öğrenebilmesini sağladı. Sen bugün ne öğrenecek ve ne öğreteceksin?"
+  }
+ },
+ "strings": {
+  "Two Babies in Degel": "Degel’de İki Bebek",
+  "Boyd and Mack, The Collected Works of Nana Asma'u (1997): the introduction and the outline chronology": "Boyd ve Mack, The Collected Works of Nana Asma'u (1997): giriş ve kronoloji",
+  "The Girl with Two Belts": "İki Kuşaklı Kız",
+  "Sahih al-Bukhari 2979 and 3907": "Sahîh-i Buhârî 2979 ve 3907",
+  "From a hadith in al-Bukhari": "Buhârî’deki bir hadisten",
+  "Learning at Home": "Evde Öğrenmek",
+  "The Journey": "Yolculuk",
+  "Hard Years": "Zor Yıllar",
+  "A New Town": "Yeni Bir Şehir",
+  "Saving the Books": "Kitapları Kurtarmak",
+  "a page": "bir sayfa",
+  "a pot": "bir testi",
+  "a basket": "bir sepet",
+  "Gather the pages": "Sayfaları topla",
+  "Copy them": "Kopyala",
+  "Share them": "Paylaş",
+  "Words in Four Languages": "Dört Dilde Kelimeler",
+  "Al-Fatiha": "Fâtiha",
+  "Al-Baqarah": "Bakara",
+  "Al Imran": "Âl-i İmrân",
+  "An-Nisa": "Nisâ",
+  "The Teacher of Teachers": "Öğretmenlerin Öğretmeni",
+  "Boyd and Mack, The Collected Works of Nana Asma'u (1997): the introduction and the outline chronology; Wikipedia": "Boyd ve Mack, The Collected Works of Nana Asma'u (1997): giriş ve kronoloji; Vikipedi",
+  "Mother of the Town": "Şehrin Annesi",
+  "Remembered Today": "Bugün de Anılıyor",
+  "Born a twin": "İkiz doğdu",
+  "The long journey": "Uzun yolculuk",
+  "Saving the books": "Kitapları kurtarmak",
+  "Training teachers": "Öğretmen yetiştirmek",
+  "← Asmau": "",
+  "Nana Asma’u": "Nana Asma’u",
+  "The Story of Nana Asma’u": "Nana Asma’u’nun Hikâyesi",
+  "Eleven chapters about the woman this site is named after.": "Bu siteye adını veren kadın hakkında on bir bölüm.",
+  "Under 5: play it together with a grown-up": "5 yaşından küçükler: bir büyükle birlikte oynayın",
+  "Start the story": "",
+  "Start from the beginning": "",
+  "For parents": "",
+  "Back": "",
+  "Next": "",
+  "All chapters": "",
+  "✕ Close": "",
+  "The End": "",
+  "Learning": "Öğrenmek",
+  "Teaching": "Öğretmek",
+  "Caring": "Şefkat",
+  "Read it again": "",
+  "Pick a chapter": "",
+  "Music": "",
+  "Sounds": "",
+  "Voice": "",
+  "Nana Asma'u": "Nana Asma’u",
+  "The girl who learned the Qur'an by heart, and grew up to teach a whole land: the woman this site is named after.": "Kur’an’ı ezberleyen ve büyüyünce bütün bir ülkeye öğreten kız: bu siteye adını veren kadın.",
+  "Nana Asma'u reading to a circle of women and girls in a Sokoto courtyard, with two teachers in tall straw hats.": "Nana Asma’u, Sokoto’da bir avluda, uzun hasır şapkalı iki öğretmenin yanında, halka olmuş kadınlara ve kızlara okuyor.",
+  "📖 About this story": "📖 Bu hikâye hakkında",
+  "Nana Asma’u bint Usman dan Fodio (about 1793 to 1864) was a scholar, poet and teacher in Sokoto, in what is now northern Nigeria. She trained women teachers who took learning to the villages, and wrote more than sixty works in Arabic, Fulfulde and Hausa. This site is named after her.": "Nana Asma’u bint Osman b. Fûdî (yaklaşık 1793 – 1864), bugünkü kuzey Nijerya’daki Sokoto’da bir âlim, şair ve öğretmendi. İlmi köylere götüren kadın öğretmenler yetiştirdi; Arapça, Fulfulde ve Hausa dillerinde altmıştan fazla eser yazdı. Bu site adını ondan alır.",
+  "📚 Sources": "📚 Kaynaklar",
+  "🤲 Told gently, or left out": "🤲 Yumuşak anlatılanlar ya da atlananlar",
+  "Not told to children: the war years in detail (the Sokoto jihad, 1804 to 1808), and the captives who were part of that history. Each chapter note says what was left out.": "Çocuklara anlatılmayanlar: savaş yıllarının ayrıntıları (Sokoto cihadı, 1804 – 1808) ve bu tarihin bir parçası olan esirler. Her bölümün notu neyin atlandığını söyler.",
+  "👥 Who is shown": "👥 Kimler gösteriliyor",
+  "Shown in this story: Nana Asma’u, her father the Shehu Usman dan Fodio, her family and her women teachers. In chapter 2, Asma bint Abi Bakr, a Companion of the Prophet ﷺ, is shown only from behind and by her hands.": "Bu hikâyede gösterilenler: Nana Asma’u, babası Şehu Osman b. Fûdî, ailesi ve kadın öğretmenleri. 2. bölümde Peygamberimizin ﷺ sahabîsi Esmâ bint Ebû Bekir yalnızca arkadan ve elleriyle gösterilir.",
+  "🧒 Ages and how long it is": "🧒 Yaşlar ve süre",
+  "For ages 4 to 10. Under 5, sit with your child: the journey and the hard years may need explaining.": "4–10 yaş için. 5 yaşından küçüklerde çocuğunuzla birlikte oturun: yolculuğun ve zor yılların açıklanması gerekebilir.",
+  "This is history, not the Qur’an. The facts come from Jean Boyd and Beverly Mack, <em>The Collected Works of Nana Asma’u</em> (1997), which draws on the Sokoto historian Waziri Junaidu, and from other sources each chapter names. Where the sources differ on a date, the chapter note says so, and the game gives no year.": "Bu Kur’an değil, tarihtir. Bilgiler, Sokotolu tarihçi Waziri Junaidu’ya dayanan Jean Boyd ve Beverly Mack’in <em>The Collected Works of Nana Asma’u</em> (1997) adlı eserinden ve her bölümün adını verdiği başka kaynaklardan gelir. Kaynakların bir tarih konusunda ayrıldığı yerde bölüm notu bunu söyler ve oyun yıl vermez."
+ },
+ "notes": {
+  "1.1": {
+   "en": "Nana Asma'u was born in about 1793 in Degel, a village north-west of Sokoto in what is now northern Nigeria, a twin; her brother was Hassan. Her birth year is worked out from her age when she died, so it is 'about'. Source: Boyd and Mack, The Collected Works of Nana Asma'u (1997), drawing on the Sokoto historian Waziri Junaidu.\n\nTwins were customarily named Hassan and Hussain, after the Prophet's ﷺ grandsons, so she would have been Hussaina. Her father, the Shehu Usman dan Fodio, a scholar and teacher, chose instead to name her after Asma bint Abi Bakr. Same source; also Wikipedia.",
+   "t": "Nana Asma’u yaklaşık 1793’te, bugünkü kuzey Nijerya’da Sokoto’nun kuzeybatısındaki Degel köyünde ikiz olarak doğdu; kardeşi Hasan’dı. Doğum yılı vefat ettiği yaştan hesaplanır, bu yüzden “yaklaşık”tır. Kaynak: Boyd ve Mack, The Collected Works of Nana Asma'u (1997); Sokotolu tarihçi Waziri Junaidu’ya dayanır.\n\nİkizlere, Peygamberimizin ﷺ torunlarının adıyla, geleneksel olarak Hasan ve Hüseyin adı verilirdi; yani onun adı Hüseyne olacaktı. Bir âlim ve öğretmen olan babası Şehu Osman b. Fûdî bunun yerine ona Esmâ bint Ebû Bekir’in adını vermeyi seçti. Aynı kaynak; ayrıca Vikipedi."
+  },
+  "1.2": {
+   "en": "The Shehu, Usman dan Fodio, is the scholar at the centre of this story; 'Shehu' is the Hausa form of the Arabic 'shaykh'.\n\nAsk your child: who chose your name, and why? If there is a story behind it, this is a lovely moment to tell it.",
+   "t": "Şehu Osman b. Fûdî bu hikâyenin merkezindeki âlimdir; “Şehu”, Arapça “şeyh” kelimesinin Hausa dilindeki biçimidir.\n\nÇocuğunuza sorun: Senin adını kim seçti ve neden? Arkasında bir hikâye varsa, onu anlatmak için güzel bir an."
+  },
+  "1.3": {
+   "en": "Ask: do you know any twins? What do you think it is like to have a twin? Asma'u and Hassan were close all their lives (chapter 7).",
+   "t": "Sorun: İkiz tanıyor musun? Sence ikiz kardeşin olması nasıldır? Asma’u ile Hasan ömürleri boyunca birbirlerine yakın oldular (7. bölüm)."
+  },
+  "1.4": {
+   "en": "Ask your child what their name means. If you do not know, find out together: many Muslim names carry a meaning or the memory of someone good.",
+   "t": "Çocuğunuza adının ne anlama geldiğini sorun. Bilmiyorsanız birlikte öğrenin: Birçok Müslüman adı bir anlam ya da iyi birinin hatırasını taşır."
+  },
+  "1.5": {
+   "en": "While matching, count the pairs out loud together, in English and in your home language.",
+   "t": "Eşleştirirken çiftleri birlikte, Türkçe ve evde konuştuğunuz başka bir dil varsa onunla da yüksek sesle sayın."
+  },
+  "2.1": {
+   "en": "Asma bint Abi Bakr was a Companion of the Prophet ﷺ and the daughter of Abu Bakr. When the Prophet ﷺ and Abu Bakr left Makkah for Madinah, she prepared their food and water. Having nothing else to tie them with, she cut her waistband in two, tying the water-skin with one piece and the food with the other; so she was called 'the one with the two belts' (Dhat an-Nitaqayn). Sahih al-Bukhari 2979 and 3907.\n\nAsma bint Abi Bakr is shown only from behind and by her hands. The Prophet ﷺ and Abu Bakr are mentioned, not shown.",
+   "t": "Esmâ bint Ebû Bekir, Peygamberimizin ﷺ bir sahabîsi ve Ebû Bekir’in kızıydı. Peygamberimiz ﷺ ve Ebû Bekir Mekke’den Medine’ye giderken onların yiyeceğini ve suyunu hazırladı. Bağlayacak başka bir şeyi olmadığı için kuşağını ikiye ayırdı; bir parçayla su tulumunu, öbürüyle yiyeceği bağladı; bu yüzden ona “iki kuşaklı” (Zâtü’n-Nitâkayn) denildi. Sahîh-i Buhârî 2979 ve 3907.\n\nEsmâ bint Ebû Bekir yalnızca arkadan ve elleriyle gösterilir. Peygamberimizin ﷺ ve Ebû Bekir’in adı geçer, kendileri gösterilmez."
+  },
+  "2.2": {
+   "en": "Ask: what do we pack for a long journey? Who usually packs in our family? Asma bint Abi Bakr thought ahead and helped without being asked.",
+   "t": "Sorun: Uzun bir yolculuk için neler hazırlarız? Ailemizde çantaları genellikle kim hazırlar? Esmâ bint Ebû Bekir ileriyi düşündü ve kendisinden istenmeden yardım etti."
+  },
+  "2.3": {
+   "en": "Ask your child: if you had nothing to tie a bag with, what could you use? Solving a problem with what you have is a kind of cleverness.",
+   "t": "Çocuğunuza sorun: Bir çantayı bağlayacak hiçbir şeyin olmasa ne kullanabilirdin? Bir sorunu elindekiyle çözmek de bir tür akıllılıktır."
+  },
+  "2.4": {
+   "en": "Asma bint Abi Bakr gave up something of her own to help: her belt. Ask: what could you give up, or share, to help someone today?",
+   "t": "Esmâ bint Ebû Bekir yardım etmek için kendine ait bir şeyden vazgeçti: kuşağından. Sorun: Bugün birine yardım etmek için neden vazgeçebilir ya da neyi paylaşabilirsin?"
+  },
+  "2.5": {
+   "en": "Retell the story together using two scarves or two strings at home: one for the water, one for the food.",
+   "t": "Hikâyeyi evde iki eşarp ya da iki ip kullanarak birlikte yeniden anlatın: biri su için, biri yiyecek için."
+  },
+  "2.6": {
+   "en": "Ask: whose name would you give your child one day, and why? Names can be a way of remembering good people.",
+   "t": "Sorun: Bir gün çocuğuna kimin adını verirdin ve neden? İsimler iyi insanları hatırlamanın bir yolu olabilir."
+  },
+  "3.1": {
+   "en": "Her mother died when she was small (the source gives 1795 and marks the date as uncertain). She was brought up by her father's wives Aisha and Hauwa; Hauwa was the mother of her brother Muhammad Bello. Source: Boyd and Mack, Collected Works, outline chronology.\n\nShe learned the Qur'an by heart while young (Collected Works, introduction). Learning to write on a wooden board, washed clean and used again, is how children there learned and still learn; the sources do not describe her own lessons, so the game says 'like children there still do'.",
+   "t": "Annesi o küçükken vefat etti (kaynak 1795’i verir ve tarihin kesin olmadığını belirtir). Onu babasının eşleri Âişe ve Havva büyüttü; Havva, kardeşi Muhammed Bello’nun annesiydi. Kaynak: Boyd ve Mack, Collected Works, kronoloji.\n\nKüçük yaşta Kur’an’ı ezberledi (Collected Works, giriş). Tahta bir levhaya yazıp onu yıkayarak yeniden kullanmak, oradaki çocukların öğrendiği ve hâlâ öğrendiği yoldur; kaynaklar onun kendi derslerini anlatmaz, bu yüzden oyun “oradaki çocukların bugün hâlâ yaptığı gibi” der."
+  },
+  "3.2": {
+   "en": "In northern Nigeria and across West Africa, children in Qur'an schools still write on wooden boards (allo) with ink, and wash them to write the next lesson. The Asmau logo is one of these boards.\n\nAsk: what do you use to write your lessons?",
+   "t": "Kuzey Nijerya’da ve bütün Batı Afrika’da Kur’an okullarındaki çocuklar hâlâ mürekkeple tahta levhalara (allo) yazar ve sonraki dersi yazmak için onları yıkar. Asmau’nun logosu da bu levhalardan biridir.\n\nSorun: Sen derslerini neye yazıyorsun?"
+  },
+  "3.3": {
+   "en": "Ask your child to trace a letter in the air with a finger, then on paper. If you know the Arabic letters, start with alif, ba, ta.",
+   "t": "Çocuğunuzdan bir harfi önce parmağıyla havada, sonra kâğıt üzerinde çizmesini isteyin. Arap harflerini biliyorsanız elif, be, te ile başlayın."
+  },
+  "3.4": {
+   "en": "Ask: why would someone wash the board? Learning a little, then making room for the next lesson, is how the whole Qur'an is learnt.",
+   "t": "Sorun: Biri levhayı neden yıkar? Biraz öğrenip sonra bir sonraki derse yer açmak, bütün Kur’an’ın öğrenildiği yoldur."
+  },
+  "3.5": {
+   "en": "Ask: how much Qur'an do you know by heart? Learn one short surah or one ayah together this week, a little each day.",
+   "t": "Sorun: Kur’an’dan ne kadarını ezbere biliyorsun? Bu hafta her gün biraz çalışarak birlikte kısa bir sure ya da bir ayet ezberleyin."
+  },
+  "3.6": {
+   "en": "Talk about it: what can you learn a little of every day? Small daily steps add up, as they did for Asma'u.",
+   "t": "Konuşun: Her gün neyin birazını öğrenebilirsin? Küçük günlük adımlar, Asma’u’da olduğu gibi, birikir."
+  },
+  "3.7": {
+   "en": "In the Shehu's house girls and boys both learned. Ask: why is it good for everyone to learn? Who taught your mother and grandmother?",
+   "t": "Şehu’nun evinde kızlar da erkekler de öğrenirdi. Sorun: Herkesin öğrenmesi neden iyidir? Annene ve ninene kim ders verdi?"
+  },
+  "4.1": {
+   "en": "On 21 February 1804 the Shehu and his community left Degel for Gudu: the hijra, or emigration, that began the jihad, years of war against the rulers of Gobir (1804 to 1808). Asma'u was about eleven. Source: Collected Works, outline chronology. She later wrote about these years in poems, among them 'The Journey'.\n\nThe game says only that the family had to leave their home and walk to a new place. It says only that 'it was no longer safe' for them; the conflict with the rulers of Gobir, the war and its losses are left for parents (next chapter's note).",
+   "t": "21 Şubat 1804’te Şehu ve topluluğu Degel’den Gudu’ya göç etti: cihadı, yani Gobir hükümdarlarına karşı yıllarca süren savaşı (1804 – 1808) başlatan hicret. Asma’u on bir yaşlarındaydı. Kaynak: Collected Works, kronoloji. Bu yılları sonradan şiirlerinde, aralarında “Yolculuk” da olmak üzere anlattı.\n\nOyun yalnızca ailenin evini bırakıp yeni bir yere yürümek zorunda kaldığını söyler. Yalnızca onlar için “artık güvenli olmadığını” söyler; Gobir hükümdarlarıyla çatışma, savaş ve kayıplar anne babalara bırakılır (sonraki bölümün notu)."
+  },
+  "4.2": {
+   "en": "Ask: if you had to leave home and walk a long way, what would you take? What would you leave behind?",
+   "t": "Sorun: Evini bırakıp uzun bir yol yürümek zorunda kalsan neleri yanına alırdın? Neleri geride bırakırdın?"
+  },
+  "4.3": {
+   "en": "Talk about people today who have to leave their homes. Some families in West Africa and elsewhere have had to do this. How can we help them?",
+   "t": "Bugün evlerini bırakmak zorunda kalan insanları konuşun. Batı Afrika’da ve başka yerlerde bazı aileler bunu yaşamak zorunda kaldı. Onlara nasıl yardım edebiliriz?"
+  },
+  "4.4": {
+   "en": "Asma'u later wrote poems about these years, among them 'The Journey' and 'The Song of Wandering' (Collected Works). Ask: what is something you remember from a long journey?",
+   "t": "Asma’u sonradan bu yıllar hakkında, aralarında “Yolculuk” ve “Gurbet Türküsü” de olan şiirler yazdı (Collected Works). Sorun: Uzun bir yolculuktan hatırladığın bir şey var mı?"
+  },
+  "5.1": {
+   "en": "The years after 1804 were years of war (the Sokoto jihad, 1804 to 1808), with battles and heavy losses on both sides; Muhammad Bello wrote that about two thousand of the Shehu's people were killed at Tsuntsuwa in 1804. Source: Collected Works, outline chronology and notes.\n\nThe game says only that 'there was fighting' and shows the women's work at home. According to the same source, women of the community organised food for the army, brought up orphans, gave out goods to the poor and taught. Captives and enslavement, part of this history, are not told to children.\n\nTalk with older children about how war hurts families, and about the women who cared for others in it.",
+   "t": "1804’ten sonraki yıllar savaş yıllarıydı (Sokoto cihadı, 1804 – 1808); iki tarafta da çarpışmalar ve ağır kayıplar oldu; Muhammed Bello, 1804’te Tsuntsuwa’da Şehu’nun insanlarından yaklaşık iki bin kişinin öldürüldüğünü yazdı. Kaynak: Collected Works, kronoloji ve notlar.\n\nOyun yalnızca “savaş vardı” der ve kadınların evdeki çalışmasını gösterir. Aynı kaynağa göre topluluğun kadınları ordu için yiyecek düzenledi, yetimleri büyüttü, yoksullara erzak dağıttı ve ders verdi. Bu tarihin bir parçası olan esirler ve köleleştirme çocuklara anlatılmaz.\n\nBüyük çocuklarla savaşın aileleri nasıl yaraladığını ve savaşta başkalarına bakan kadınları konuşun."
+  },
+  "5.2": {
+   "en": "Ask: what can children do to help when times are hard? (Share, help with little ones, be patient.)",
+   "t": "Sorun: Zor zamanlarda çocuklar yardım etmek için ne yapabilir? (Paylaşmak, küçüklere yardım etmek, sabırlı olmak.)"
+  },
+  "5.3": {
+   "en": "A family idea: cook or pack something extra this week and share it with a neighbour or someone in need.",
+   "t": "Bir aile fikri: Bu hafta fazladan bir şey pişirin ya da hazırlayın ve onu bir komşuyla ya da ihtiyacı olan biriyle paylaşın."
+  },
+  "5.4": {
+   "en": "Talk about someone you know who cares for others. What do they do? How could we be like them?",
+   "t": "Başkalarına bakan tanıdığınız birini konuşun. Ne yapıyor? Biz nasıl onun gibi olabiliriz?"
+  },
+  "5.5": {
+   "en": "Ask: who looks after people in hard times in our community? Women's groups, mosques, neighbours?",
+   "t": "Sorun: Toplumumuzda zor zamanlarda insanlara kimler bakıyor? Kadın grupları, camiler, komşular?"
+  },
+  "6.1": {
+   "en": "In 1807 Asma'u married Usman Gidado, a close friend of her brother Muhammad Bello; Gidado later became vizier (chief minister). In 1809 she went to live in Sokoto, the new town built by Bello. Her first son, Abdulkadir, was born about 1810. Source: Collected Works, outline chronology.\n\nShe ran a household of several hundred people, seeing that they had food, clothing and shelter (Collected Works, introduction).",
+   "t": "1807’de Asma’u, kardeşi Muhammed Bello’nun yakın dostu Osman Gidado ile evlendi; Gidado sonradan vezir (başbakan) oldu. 1809’da Bello’nun kurduğu yeni şehir Sokoto’ya yerleşti. İlk oğlu Abdülkadir 1810 civarında doğdu. Kaynak: Collected Works, kronoloji.\n\nBirkaç yüz kişilik bir haneyi yönetti; onların yiyeceği, giyeceği ve barınağı olmasını sağladı (Collected Works, giriş)."
+  },
+  "6.2": {
+   "en": "Ask: what makes a house a home? Bricks, or the people inside?",
+   "t": "Sorun: Bir evi yuva yapan nedir? Tuğlalar mı, yoksa içindeki insanlar mı?"
+  },
+  "6.3": {
+   "en": "Hundreds of people in one household! Ask: how many people live in our home? How many could we look after if we had to?",
+   "t": "Bir hanede yüzlerce insan! Sorun: Bizim evimizde kaç kişi yaşıyor? Gerekirse kaç kişiye bakabilirdik?"
+  },
+  "6.4": {
+   "en": "Ask: what do people need to live well? Food, clothes, a home... and what else? (Kindness, learning, friends.)",
+   "t": "Sorun: İnsanların iyi yaşamak için neye ihtiyacı vardır? Yiyecek, giyecek, bir ev… başka? (İyilik, öğrenmek, arkadaşlar.)"
+  },
+  "7.1": {
+   "en": "On 20 April 1817 the Shehu died; that November her twin Hassan died too. Asma'u and Gidado then collected all the Shehu's papers and had them copied. Source: Collected Works, outline chronology.\n\nShe wrote elegies, poems of mourning, for many of the people she lost (Collected Works).",
+   "t": "20 Nisan 1817’de Şehu vefat etti; o yılın Kasım ayında ikizi Hasan da vefat etti. Sonra Asma’u ve Gidado, Şehu’nun bütün yazılarını topladılar ve kopyalattılar. Kaynak: Collected Works, kronoloji.\n\nKaybettiği insanların çoğu için mersiyeler, yani yas şiirleri yazdı (Collected Works)."
+  },
+  "7.2": {
+   "en": "Ask: what are the most precious things in our home? Asma'u knew that books and knowledge were worth saving.",
+   "t": "Sorun: Evimizdeki en değerli şeyler nelerdir? Asma’u, kitapların ve ilmin kurtarılmaya değer olduğunu biliyordu."
+  },
+  "7.3": {
+   "en": "Talk about it: when someone we love dies, what do we keep to remember them? (Photos, their words, the good things they taught us.)",
+   "t": "Konuşun: Sevdiğimiz biri vefat edince onu hatırlamak için neleri saklarız? (Fotoğraflar, sözleri, bize öğrettiği iyi şeyler.)"
+  },
+  "7.4": {
+   "en": "Before printing, books were copied by hand, page by page. Ask: how long would it take you to copy one page?",
+   "t": "Matbaadan önce kitaplar elle, sayfa sayfa kopyalanırdı. Sorun: Bir sayfayı kopyalaman ne kadar sürerdi?"
+  },
+  "7.5": {
+   "en": "Ask your child to tell the steps in their own words: gather, copy, share.",
+   "t": "Çocuğunuzdan adımları kendi sözleriyle anlatmasını isteyin: topla, kopyala, paylaş."
+  },
+  "8.1": {
+   "en": "Her first written work, The Way of the Pious, dates from 1820. She knew four languages, Arabic, Fulfulde, Hausa and Tamasheq, and wrote in the first three, using Arabic letters for all of them (ajami), so that people who did not read Arabic could learn. More than sixty of her works survive. Sources: Collected Works; Wikipedia.\n\nIn 1829 she wrote a poem that names every sura of the Qur'an, made to be easy to remember (Collected Works, chronology and introduction; Yaqeen Institute). The game's activity uses the first four suras in their order in the Qur'an.",
+   "t": "İlk yazılı eseri, Takva Sahiplerinin Yolu, 1820 tarihlidir. Dört dil biliyordu: Arapça, Fulfulde, Hausa ve Tamaşek; ilk üçünde yazdı ve Arapça okuyamayan insanlar da öğrenebilsin diye hepsinde Arap harflerini kullandı (acemî). Altmıştan fazla eseri günümüze ulaşmıştır. Kaynaklar: Collected Works; Vikipedi.\n\n1829’da, akılda kalması kolay olsun diye Kur’an’ın bütün surelerinin adını veren bir şiir yazdı (Collected Works, kronoloji ve giriş; Yaqeen Institute). Oyundaki etkinlik ilk dört sureyi Kur’an’daki sıralarıyla kullanır."
+  },
+  "8.2": {
+   "en": "Writing a local language in Arabic letters is called ajami. Hausa and Fulfulde were written this way long before the Latin alphabet came, and ajami is still used in parts of West Africa.\n\nAsk: what languages does our family speak? Which can you write?",
+   "t": "Yerel bir dili Arap harfleriyle yazmaya acemî denir. Hausa ve Fulfulde, Latin alfabesi gelmeden çok önce böyle yazılırdı ve acemî bugün Batı Afrika’nın bazı yerlerinde hâlâ kullanılır.\n\nSorun: Ailemiz hangi dilleri konuşuyor? Sen hangilerini yazabiliyorsun?"
+  },
+  "8.3": {
+   "en": "Ask: what is easier to remember, a list or a song? Many of us still remember songs from when we were small.",
+   "t": "Sorun: Hangisini hatırlamak daha kolay, bir listeyi mi, bir şarkıyı mı? Birçoğumuz küçükken öğrendiğimiz şarkıları hâlâ hatırlarız."
+  },
+  "8.4": {
+   "en": "Asma'u's poem names every sura of the Qur'an (1829). Ask: how many suras can you name? (There are 114.)",
+   "t": "Asma’u’nun şiiri Kur’an’ın bütün surelerinin adını verir (1829). Sorun: Kaç surenin adını söyleyebilirsin? (114 sure vardır.)"
+  },
+  "8.5": {
+   "en": "Al-Fatiha, al-Baqara, Al 'Imran, al-Nisa: the first four suras. Say them together, then add the next one you know.",
+   "t": "Fâtiha, Bakara, Âl-i İmrân, Nisâ: ilk dört sure. Onları birlikte söyleyin, sonra bildiğiniz bir sonrakini ekleyin."
+  },
+  "9.1": {
+   "en": "Asma'u trained women leaders called jaji, who came to her to learn and then taught women in their homes and villages, mostly through poems that were easy to remember. Their groups were called the 'Yan Taru, 'those who come together', the sisterhood. Each jaji wore a tall hat, the malfa, as a sign of her office. Sources: Collected Works; Wikipedia.\n\nThe sources differ on when this began: Wikipedia says from about 1830, another summary says 1840. The game gives no year. The same sources say the network also began as a way to bring women captured in the wars into the community; the game does not tell children this.\n\nThe 'Yan Taru still meet today.",
+   "t": "Asma’u, jaji denen kadın önderler yetiştirdi; bunlar ondan öğrenmeye gelir, sonra evlerinde ve köylerinde kadınlara, çoğunlukla akılda kalması kolay şiirlerle ders verirlerdi. Gruplarına ’Yan Taru, yani “bir araya gelenler”, kız kardeşlik denirdi. Her jaji, görevinin işareti olarak malfa denen uzun bir şapka takardı. Kaynaklar: Collected Works; Vikipedi.\n\nKaynaklar bunun ne zaman başladığı konusunda ayrılır: Vikipedi yaklaşık 1830’dan itibaren der, başka bir özet 1840 der. Oyun yıl vermez. Aynı kaynaklar bu ağın, savaşlarda esir alınan kadınları topluluğa kazandırmanın bir yolu olarak da başladığını söyler; oyun bunu çocuklara anlatmaz.\n\n’Yan Taru bugün de toplanıyor."
+  },
+  "9.2": {
+   "en": "The tall hat of the jaji was called the malfa. Ask: what do teachers, doctors or police wear so that we know who they are?",
+   "t": "Jajinin uzun şapkasına malfa denirdi. Sorun: Öğretmenler, doktorlar ya da polisler kim olduklarını bilelim diye ne giyerler?"
+  },
+  "9.3": {
+   "en": "Ask: who is a teacher you love? What makes them a good teacher?",
+   "t": "Sorun: Sevdiğin bir öğretmen kim? Onu iyi bir öğretmen yapan nedir?"
+  },
+  "9.4": {
+   "en": "Ask: why would a poem be easier to learn than a lesson? Try making up a short rhyme about something you learned today.",
+   "t": "Sorun: Bir şiir bir dersten neden daha kolay öğrenilir? Bugün öğrendiğin bir şey hakkında kısa bir tekerleme uydurmayı deneyin."
+  },
+  "9.5": {
+   "en": "Talk about how people in villages learn today: radio, phones, teachers who travel. Asma'u's teachers walked.",
+   "t": "Bugün köylerdeki insanların nasıl öğrendiğini konuşun: radyo, telefon, gezici öğretmenler. Asma’u’nun öğretmenleri yürürdü."
+  },
+  "9.6": {
+   "en": "Ask: what is something you learned that you could teach a younger child? Let them teach you something right now.",
+   "t": "Sorun: Öğrendiğin ve daha küçük bir çocuğa öğretebileceğin bir şey var mı? Şimdi size bir şey öğretmesine izin verin."
+  },
+  "9.7": {
+   "en": "The lamps show how knowledge spreads: lighting another lamp takes nothing away from your own.",
+   "t": "Lambalar ilmin nasıl yayıldığını gösterir: Başka bir lambayı yakmak senin lambandan hiçbir şey eksiltmez."
+  },
+  "9.8": {
+   "en": "The 'Yan Taru, the women's groups Asma'u started, still meet today in northern Nigeria (Wikipedia; Collected Works field notes).",
+   "t": "Asma’u’nun kurduğu kadın grupları ’Yan Taru, bugün de kuzey Nijerya’da toplanıyor (Vikipedi; Collected Works saha notları)."
+  },
+  "10.1": {
+   "en": "From about the 1830s Asma'u was known as 'Uwar Gari', mother of the town (Collected Works). She advised the rulers who followed her brother Bello, and wrote poems of guidance for them (Wikipedia; Collected Works).\n\nShe wrote elegies for those she lost, among them her brother Bello, her husband Gidado and her close friend Aisha (Collected Works).",
+   "t": "Yaklaşık 1830’lardan itibaren Asma’u “Uwar Gari”, yani şehrin annesi olarak tanındı (Collected Works). Kardeşi Bello’dan sonra gelen yöneticilere danışmanlık yaptı ve onlar için öğüt şiirleri yazdı (Vikipedi; Collected Works).\n\nKaybettikleri için, aralarında kardeşi Bello, eşi Gidado ve yakın dostu Âişe’nin de olduğu mersiyeler yazdı (Collected Works)."
+  },
+  "10.2": {
+   "en": "Make a family list of 'kind things to do this week', as Asma'u taught people to be good.",
+   "t": "Asma’u’nun insanlara iyi olmayı öğrettiği gibi, bir “bu hafta yapılacak iyilikler” aile listesi yapın."
+  },
+  "10.3": {
+   "en": "Ask: who is your best friend? What do you love about them? A good moment to make a dua for the people we love.",
+   "t": "Sorun: En iyi arkadaşın kim? Onda en çok neyi seviyorsun? Sevdiğimiz insanlar için dua etmek için güzel bir an."
+  },
+  "11.1": {
+   "en": "Nana Asma'u died in 1864 (some sources give 1865), aged about seventy. Schools, women's organisations and meeting halls in northern Nigeria are named after her. Source: Wikipedia; Collected Works.\n\nThis website is named after her.",
+   "t": "Nana Asma’u 1864’te (bazı kaynaklar 1865 der), yetmiş yaşlarında vefat etti. Kuzey Nijerya’da okullara, kadın kuruluşlarına ve toplantı salonlarına onun adı verilmiştir. Kaynak: Vikipedi; Collected Works.\n\nBu site de adını ondan alır."
+  },
+  "11.2": {
+   "en": "Schools, women's groups and halls in northern Nigeria are named after her. Ask: if a school were named after you, what would you want it to teach?",
+   "t": "Kuzey Nijerya’da okullara, kadın gruplarına ve salonlara onun adı verilmiştir. Sorun: Bir okula senin adın verilse orada ne öğretilmesini isterdin?"
+  },
+  "11.3": {
+   "en": "Ask your child to tell Asma'u's life in their own words, from the twins in Degel to the teachers in the villages.",
+   "t": "Çocuğunuzdan Asma’u’nun hayatını, Degel’deki ikizlerden köylerdeki öğretmenlere kadar kendi sözleriyle anlatmasını isteyin."
+  },
+  "11.4": {
+   "en": "Ask: what will you learn this week? Who will you teach it to? Make it a family challenge.",
+   "t": "Sorun: Bu hafta ne öğreneceksin? Onu kime öğreteceksin? Bunu bir aile yarışması yapın."
+  },
+  "11.5": {
+   "en": "After the game, ask which part of Asma'u's story your child liked best, and why.",
+   "t": "Oyundan sonra çocuğunuza Asma’u’nun hikâyesinin en çok hangi kısmını sevdiğini ve nedenini sorun."
+  }
+ }
+}

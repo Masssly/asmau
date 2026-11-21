@@ -1,0 +1,929 @@
+{
+ "status": "draft",
+ "_note": "Türkçe. To be checked by a native speaker; seen only with ?lang=tr until then.",
+ "lines": {
+  "d1-a": {
+   "en": "Before there were any people, there were the angels. They were made of light, and they praised Allah all the time.",
+   "t": "Daha hiç insan yokken melekler vardı. Nurdan yaratılmışlardı ve Allah’ı durmadan tesbih ederlerdi."
+  },
+  "d1-b": {
+   "en": "One day, Allah told the angels: I am going to place someone new on the earth, to look after it.",
+   "t": "Bir gün Allah meleklere şöyle dedi: Yeryüzüne ona bakacak yeni birini yerleştireceğim."
+  },
+  "d1-c": {
+   "en": "The angels asked: will You place someone there who may do harm, when we praise You all the time? Allah said: I know what you do not know.",
+   "t": "Melekler sordu: Biz Seni durmadan tesbih ederken, oraya zarar verebilecek birini mi yerleştireceksin? Allah şöyle dedi: Ben sizin bilmediğinizi bilirim."
+  },
+  "d1-q": {
+   "en": "What did Allah say to the angels?",
+   "t": "Allah meleklere ne dedi?"
+  },
+  "d1-q-opt1": {
+   "en": "I know what you do not know",
+   "t": "Ben sizin bilmediğinizi bilirim"
+  },
+  "d1-q-opt2": {
+   "en": "You are right",
+   "t": "Haklısınız"
+  },
+  "d1-q-no": {
+   "en": "Allah knows everything. He said: I know what you do not know.",
+   "t": "Allah her şeyi bilir. Şöyle dedi: Ben sizin bilmediğinizi bilirim."
+  },
+  "d1-mem": {
+   "en": "Find the pairs: things Allah made.",
+   "t": "Eşleri bul: Allah’ın yarattığı şeyler."
+  },
+  "d2-a": {
+   "en": "Allah gathered earth from all over the world: dark earth and light earth, red earth and brown, soft earth and hard.",
+   "t": "Allah dünyanın her yerinden toprak topladı: koyu toprak ve açık toprak, kırmızı toprak ve kahverengi, yumuşak toprak ve sert."
+  },
+  "d2-gather": {
+   "en": "Help gather the earth. Tap to fill every piece.",
+   "t": "Toprağı toplamaya yardım et. Her parçayı doldurmak için dokun."
+  },
+  "d2-b": {
+   "en": "From that earth Allah made clay, and shaped Adam from it.",
+   "t": "Allah o topraktan çamur yaptı ve Âdem’i ondan şekillendirdi."
+  },
+  "d2-c": {
+   "en": "Then Allah breathed life into him. Adam opened his eyes, and he was alive!",
+   "t": "Sonra Allah ona can verdi. Âdem gözlerini açtı ve yaşıyordu!"
+  },
+  "d2-d": {
+   "en": "That is why the children of Adam are so many colours, just like the earth he was made from. And every one of them is precious to Allah.",
+   "t": "İşte bu yüzden Âdemoğulları, yaratıldığı toprak gibi, rengârenktir. Ve her biri Allah katında çok değerlidir."
+  },
+  "d2-q": {
+   "en": "What was Adam made from?",
+   "t": "Âdem neyden yaratıldı?"
+  },
+  "d2-q-opt1": {
+   "en": "Fire",
+   "t": "Ateşten"
+  },
+  "d2-q-opt2": {
+   "en": "Earth and clay",
+   "t": "Toprak ve çamurdan"
+  },
+  "d2-q-no": {
+   "en": "Not fire. Adam was made from earth and clay.",
+   "t": "Ateşten değil. Âdem toprak ve çamurdan yaratıldı."
+  },
+  "d3-a": {
+   "en": "It is told that the very first thing Adam did was sneeze! And he said: al-hamdu lillah. All praise belongs to Allah.",
+   "t": "Anlatıldığına göre Âdem’in yaptığı ilk şey hapşırmak oldu! Ve “Elhamdülillah” dedi. Bütün övgüler Allah’adır."
+  },
+  "d3-b": {
+   "en": "And Allah answered him: may Allah have mercy on you.",
+   "t": "Allah da ona şöyle karşılık verdi: Allah sana rahmet etsin."
+  },
+  "d3-q": {
+   "en": "What do we say when we sneeze?",
+   "t": "Hapşırınca ne deriz?"
+  },
+  "d3-q-opt1": {
+   "en": "Al-hamdu lillah",
+   "t": "Elhamdülillah"
+  },
+  "d3-q-opt2": {
+   "en": "Nothing at all",
+   "t": "Hiçbir şey"
+  },
+  "d3-q-no": {
+   "en": "We say al-hamdu lillah, just like Adam.",
+   "t": "Tıpkı Âdem gibi “Elhamdülillah” deriz."
+  },
+  "d3-c": {
+   "en": "Then Allah told Adam: go and greet those angels, and listen to how they answer. That will be the greeting of your children.",
+   "t": "Sonra Allah Âdem’e şöyle dedi: Git, şu melekleri selamla ve sana nasıl karşılık verdiklerini dinle. Bu, çocuklarının selamı olacak."
+  },
+  "d3-d": {
+   "en": "Adam said: as-salamu alaykum, peace be upon you. The angels answered: wa alaykum as-salam wa rahmatullah. And peace be upon you, and the mercy of Allah.",
+   "t": "Âdem “Esselâmü aleyküm”, yani “Selam üzerinize olsun” dedi. Melekler de “Ve aleyküm selâm ve rahmetullah”, yani “Selam ve Allah’ın rahmeti senin de üzerine olsun” diye karşılık verdi."
+  },
+  "d3-say": {
+   "en": "What do we say? Match each one.",
+   "t": "Ne deriz? Her birini eşleştir."
+  },
+  "d3-say-a1": {
+   "en": "When we sneeze",
+   "t": "Hapşırınca"
+  },
+  "d3-say-b1": {
+   "en": "Al-hamdu lillah",
+   "t": "Elhamdülillah"
+  },
+  "d3-say-a2": {
+   "en": "When we meet someone",
+   "t": "Biriyle karşılaşınca"
+  },
+  "d3-say-b2": {
+   "en": "As-salamu alaykum",
+   "t": "Esselâmü aleyküm"
+  },
+  "d3-say-a3": {
+   "en": "When someone greets us",
+   "t": "Biri bizi selamlayınca"
+  },
+  "d3-say-b3": {
+   "en": "Wa alaykum as-salam",
+   "t": "Ve aleyküm selâm"
+  },
+  "d4-a": {
+   "en": "Allah taught Adam the names of everything: the sun and the moon, the sea and the mountains, every animal and every bird.",
+   "t": "Allah Âdem’e her şeyin adını öğretti: güneşi ve ayı, denizi ve dağları, her hayvanı ve her kuşu."
+  },
+  "d4-homes": {
+   "en": "Adam knew every animal. Match each one to its home.",
+   "t": "Âdem her hayvanı bilirdi. Her birini yuvasıyla eşleştir."
+  },
+  "d4-homes-a1": {
+   "en": "Camel",
+   "t": "Deve"
+  },
+  "d4-homes-b1": {
+   "en": "Desert",
+   "t": "Çöl"
+  },
+  "d4-homes-a2": {
+   "en": "Fish",
+   "t": "Balık"
+  },
+  "d4-homes-b2": {
+   "en": "Sea",
+   "t": "Deniz"
+  },
+  "d4-homes-a3": {
+   "en": "Bird",
+   "t": "Kuş"
+  },
+  "d4-homes-b3": {
+   "en": "Nest",
+   "t": "Yuva"
+  },
+  "d4-homes-a4": {
+   "en": "Bee",
+   "t": "Arı"
+  },
+  "d4-homes-b4": {
+   "en": "Flower",
+   "t": "Çiçek"
+  },
+  "d4-b": {
+   "en": "Then Allah showed these things to the angels and said: tell Me their names. The angels said: glory be to You! We only know what You have taught us.",
+   "t": "Sonra Allah bunları meleklere gösterdi ve şöyle dedi: Bana bunların adlarını söyleyin. Melekler şöyle dediler: Sen münezzehsin! Öğrettiğinden başka bizim bir bilgimiz yoktur."
+  },
+  "d4-c": {
+   "en": "Then Allah said: Adam, tell them their names. And Adam told them, every single one!",
+   "t": "Sonra Allah şöyle dedi: Ey Âdem, onlara bunların adlarını söyle. Âdem de hepsini, bir bir söyledi!"
+  },
+  "d4-mem": {
+   "en": "Find the pairs, and say their names.",
+   "t": "Eşleri bul ve adlarını söyle."
+  },
+  "d4-q": {
+   "en": "Who taught Adam the names?",
+   "t": "Âdem’e adları kim öğretti?"
+  },
+  "d4-q-opt1": {
+   "en": "The angels",
+   "t": "Melekler"
+  },
+  "d4-q-opt2": {
+   "en": "Allah",
+   "t": "Allah"
+  },
+  "d4-q-no": {
+   "en": "The angels did not know them. Allah taught Adam.",
+   "t": "Melekler onları bilmiyordu. Âdem’e Allah öğretti."
+  },
+  "d5-a": {
+   "en": "Then Allah told the angels: bow down before Adam. And all the angels bowed.",
+   "t": "Sonra Allah meleklere şöyle dedi: Âdem’in önünde secdeye kapanın. Ve bütün melekler secde etti."
+  },
+  "d5-b": {
+   "en": "All except one: Iblis. He was one of the jinn, made from fire. He stood up stiff and proud, and he would not bow.",
+   "t": "Biri hariç: İblis. O, ateşten yaratılmış cinlerdendi. Dimdik ve kibirli durdu ve secde etmedi."
+  },
+  "d5-c": {
+   "en": "Allah asked: what stopped you from bowing? Iblis said: I am better than him. You made me from fire, and him from clay.",
+   "t": "Allah sordu: Secde etmekten seni ne alıkoydu? İblis şöyle dedi: Ben ondan üstünüm. Beni ateşten, onu çamurdan yarattın."
+  },
+  "d5-proud": {
+   "en": "Which is humble, and which is proud? Sort them.",
+   "t": "Hangisi alçakgönüllü, hangisi kibirli? Ayır bakalım."
+  },
+  "d5-proud-bin1": {
+   "en": "Humble",
+   "t": "Alçakgönüllü"
+  },
+  "d5-proud-bin2": {
+   "en": "Proud",
+   "t": "Kibirli"
+  },
+  "d5-proud-it1": {
+   "en": "Doing what Allah asks",
+   "t": "Allah’ın istediğini yapmak"
+  },
+  "d5-proud-it2": {
+   "en": "Saying sorry",
+   "t": "Özür dilemek"
+  },
+  "d5-proud-it3": {
+   "en": "Saying: I am better than you",
+   "t": "“Ben senden üstünüm” demek"
+  },
+  "d5-proud-it4": {
+   "en": "Refusing to listen",
+   "t": "Dinlemeyi reddetmek"
+  },
+  "d5-proud-it5": {
+   "en": "Thanking Allah",
+   "t": "Allah’a şükretmek"
+  },
+  "d5-proud-it6": {
+   "en": "Laughing at others",
+   "t": "Başkalarına gülmek"
+  },
+  "d5-proud-no": {
+   "en": "Being proud is what Iblis did. Being humble is what Allah loves.",
+   "t": "Kibirlenmek İblis’in yaptığıdır. Alçakgönüllülük ise Allah’ın sevdiğidir."
+  },
+  "d5-d": {
+   "en": "So Allah sent Iblis away. And Iblis said: I will whisper to Adam's children, from in front and behind, from their right and their left!",
+   "t": "Bunun üzerine Allah İblis’i kovdu. İblis de şöyle dedi: Âdemoğullarına önlerinden ve ardlarından, sağlarından ve sollarından fısıldayacağım!"
+  },
+  "d5-e": {
+   "en": "But Allah said: you will have no power over My true servants.",
+   "t": "Ama Allah şöyle dedi: Benim gerçek kullarımın üzerinde senin hiçbir gücün olmayacak."
+  },
+  "d5-refuge": {
+   "en": "When we feel a bad whisper, we ask Allah to keep us safe: a'udhu billahi min ash-shaytan ir-rajim. Press and hold the shield.",
+   "t": "Kötü bir fısıltı hissedince Allah’tan bizi korumasını isteriz: Eûzü billâhi mineş-şeytânir-racîm. Kalkanı basılı tut."
+  },
+  "d6-a": {
+   "en": "Allah made a wife for Adam, so that he would not be alone. Her name was Hawwa.",
+   "t": "Allah, yalnız kalmasın diye Âdem’e bir eş yarattı. Onun adı Havva’ydı."
+  },
+  "d6-b": {
+   "en": "Allah said: live in the Garden, both of you, and eat whatever you like. In this Garden you will never be hungry or thirsty, and the sun will never be too hot.",
+   "t": "Allah şöyle dedi: İkiniz de cennette yaşayın ve dilediğinizi yiyin. Bu cennette asla acıkmayacak, susamayacaksınız ve güneş size hiç fazla sıcak gelmeyecek."
+  },
+  "d6-fruit": {
+   "en": "Gather the fruit of the Garden.",
+   "t": "Cennetin meyvelerini topla."
+  },
+  "d6-c": {
+   "en": "But Allah said: do not go near this one tree. And remember, Iblis is your enemy.",
+   "t": "Ama Allah şöyle dedi: Şu tek ağaca yaklaşmayın. Ve unutmayın, İblis sizin düşmanınızdır."
+  },
+  "d6-tree": {
+   "en": "Slide your finger around to look, and find the one tree they must not go near.",
+   "t": "Bakmak için parmağını gezdir ve yaklaşmamaları gereken o tek ağacı bul."
+  },
+  "d6-q": {
+   "en": "What did Allah tell them about the tree?",
+   "t": "Allah onlara ağaç hakkında ne dedi?"
+  },
+  "d6-q-opt1": {
+   "en": "Do not go near it",
+   "t": "Ona yaklaşmayın"
+  },
+  "d6-q-opt2": {
+   "en": "Eat all of it",
+   "t": "Hepsini yiyin"
+  },
+  "d6-q-no": {
+   "en": "Allah said: do not go near this tree.",
+   "t": "Allah şöyle dedi: Bu ağaca yaklaşmayın."
+  },
+  "d7-a": {
+   "en": "But Iblis came creeping with a whisper. He said: Allah only told you not to eat from this tree so that you would not become angels, or live for ever.",
+   "t": "Ama İblis sinsice bir fısıltıyla geldi. Şöyle dedi: Allah size bu ağaçtan yemeyi yalnızca melek olmayasınız ya da sonsuza kadar yaşamayasınız diye yasakladı."
+  },
+  "d7-b": {
+   "en": "And he swore: I am only giving you good advice! But it was a lie.",
+   "t": "Ve yemin etti: Ben size yalnızca iyi öğüt veriyorum! Ama bu bir yalandı."
+  },
+  "d7-q": {
+   "en": "Was Iblis telling the truth?",
+   "t": "İblis doğru mu söylüyordu?"
+  },
+  "d7-q-opt1": {
+   "en": "Yes, he was a friend",
+   "t": "Evet, o bir dosttu"
+  },
+  "d7-q-opt2": {
+   "en": "No, it was a lie",
+   "t": "Hayır, bu bir yalandı"
+  },
+  "d7-q-no": {
+   "en": "Iblis lied. He was their enemy, not their friend.",
+   "t": "İblis yalan söyledi. O onların dostu değil, düşmanıydı."
+  },
+  "d7-c": {
+   "en": "Adam forgot what Allah had told him, and they both ate from the tree.",
+   "t": "Âdem, Allah’ın ona söylediğini unuttu ve ikisi de ağaçtan yediler."
+  },
+  "d7-d": {
+   "en": "At once they felt ashamed, and they began to cover themselves with leaves from the Garden.",
+   "t": "Hemen utandılar ve cennetin yapraklarıyla örtünmeye başladılar."
+  },
+  "d7-e": {
+   "en": "Their Lord called to them: did I not tell you not to go near that tree? Did I not tell you that Iblis is your enemy?",
+   "t": "Rableri onlara seslendi: Ben size o ağaca yaklaşmayın demedim mi? Size İblis’in düşmanınız olduğunu söylemedim mi?"
+  },
+  "d7-listen": {
+   "en": "Good things and bad whispers. Which do we do, and which do we say no to?",
+   "t": "İyi şeyler ve kötü fısıltılar. Hangisini yaparız, hangisine hayır deriz?"
+  },
+  "d7-listen-bin1": {
+   "en": "Do it",
+   "t": "Yap"
+  },
+  "d7-listen-bin2": {
+   "en": "Say no",
+   "t": "Hayır de"
+  },
+  "d7-listen-it1": {
+   "en": "Pray on time",
+   "t": "Namazı vaktinde kılmak"
+  },
+  "d7-listen-it2": {
+   "en": "Tell a little lie",
+   "t": "Küçük bir yalan söylemek"
+  },
+  "d7-listen-it3": {
+   "en": "Say sorry",
+   "t": "Özür dilemek"
+  },
+  "d7-listen-it4": {
+   "en": "Hit your brother",
+   "t": "Kardeşine vurmak"
+  },
+  "d7-listen-it5": {
+   "en": "Help at home",
+   "t": "Evde yardım etmek"
+  },
+  "d7-listen-it6": {
+   "en": "Take a sweet without asking",
+   "t": "Sormadan şeker almak"
+  },
+  "d7-listen-no": {
+   "en": "That one is a bad whisper. Say no to it, and do the good things.",
+   "t": "Bu kötü bir fısıltı. Ona hayır de ve iyi şeyleri yap."
+  },
+  "d8-a": {
+   "en": "Adam and Hawwa were very, very sorry. They did not blame anyone else. They prayed: our Lord, we have wronged ourselves. If You do not forgive us and have mercy on us, we will be lost.",
+   "t": "Âdem ile Havva çok ama çok pişman oldular. Kimseyi suçlamadılar. Şöyle dua ettiler: Rabbimiz! Kendimize yazık ettik; bizi bağışlamaz ve bize merhamet etmezsen biz kaybedenlerden oluruz."
+  },
+  "d8-dua": {
+   "en": "Say Adam and Hawwa's prayer. Tap the parts in order.",
+   "t": "Âdem ile Havva’nın duasını söyle. Parçalara sırayla dokun."
+  },
+  "d8-dua-c1": {
+   "en": "Our Lord,",
+   "t": "Rabbimiz!"
+  },
+  "d8-dua-c2": {
+   "en": "we have wronged ourselves.",
+   "t": "Kendimize yazık ettik."
+  },
+  "d8-dua-c3": {
+   "en": "If You do not forgive us",
+   "t": "Bizi bağışlamaz"
+  },
+  "d8-dua-c4": {
+   "en": "and have mercy on us,",
+   "t": "ve bize merhamet etmezsen,"
+  },
+  "d8-dua-c5": {
+   "en": "we will be lost.",
+   "t": "biz kaybedenlerden oluruz."
+  },
+  "d8-dua-no": {
+   "en": "Listen again, and say the prayer in order.",
+   "t": "Yeniden dinle ve duayı sırayla söyle."
+  },
+  "d8-b": {
+   "en": "And Allah forgave them. Allah is the Ever-Relenting, the Most Merciful.",
+   "t": "Ve Allah onları bağışladı. Allah tevbeleri çok kabul edendir, çok merhametlidir."
+  },
+  "d8-sorry": {
+   "en": "Say sorry to Allah from the heart. Press and hold the hands until they shine.",
+   "t": "Allah’tan gönülden af dile. Eller parlayana kadar basılı tut."
+  },
+  "d8-q": {
+   "en": "What did Adam and Hawwa do after their mistake?",
+   "t": "Âdem ile Havva hatalarından sonra ne yaptı?"
+  },
+  "d8-q-opt1": {
+   "en": "Said sorry to Allah",
+   "t": "Allah’tan af dilediler"
+  },
+  "d8-q-opt2": {
+   "en": "Blamed someone else",
+   "t": "Başkasını suçladılar"
+  },
+  "d8-q-no": {
+   "en": "They blamed no one. They said sorry to Allah, and He forgave them.",
+   "t": "Kimseyi suçlamadılar. Allah’tan af dilediler, O da onları bağışladı."
+  },
+  "d9-a": {
+   "en": "Then Allah said: go down to the earth. There you will live, for a time. And when My guidance comes, whoever follows it will have nothing to fear.",
+   "t": "Sonra Allah şöyle dedi: Yeryüzüne inin. Bir süre orada yaşayacaksınız. Benden size bir yol gösterici geldiğinde, ona uyan kimseye hiçbir korku yoktur."
+  },
+  "d9-b": {
+   "en": "It is told that Adam and Hawwa came down to the earth far apart, and later found each other again, near Mecca.",
+   "t": "Anlatıldığına göre Âdem ile Havva yeryüzüne birbirinden uzak yerlere indiler ve daha sonra Mekke yakınlarında yeniden birbirlerini buldular."
+  },
+  "d9-find": {
+   "en": "Help Adam find Hawwa again.",
+   "t": "Âdem’in Havva’yı yeniden bulmasına yardım et."
+  },
+  "d9-c": {
+   "en": "It is told that the angel Jibril taught Adam how to plant seeds and grow food, and how to pray.",
+   "t": "Anlatıldığına göre melek Cebrâil Âdem’e tohum ekmeyi, yiyecek yetiştirmeyi ve namaz kılmayı öğretti."
+  },
+  "d9-plant": {
+   "en": "Plant the seeds. Tap each spot.",
+   "t": "Tohumları ek. Her yere dokun."
+  },
+  "d9-d": {
+   "en": "Adam and Hawwa worked hard, and Allah blessed their fields. Every day they remembered Allah and thanked Him.",
+   "t": "Âdem ile Havva çok çalıştılar ve Allah tarlalarını bereketlendirdi. Her gün Allah’ı andılar ve O’na şükrettiler."
+  },
+  "d9-harvest": {
+   "en": "Gather only the ripe golden wheat.",
+   "t": "Yalnızca olgun, altın sarısı buğdayı topla."
+  },
+  "d10-a": {
+   "en": "Adam and Hawwa had many children. One day, two of their sons each brought a gift to offer to Allah.",
+   "t": "Âdem ile Havva’nın birçok çocuğu oldu. Bir gün oğullarından ikisi Allah’a birer kurban sundu."
+  },
+  "d10-b": {
+   "en": "Allah accepted the gift of one brother, because he was mindful of Allah. But the other brother's gift was not accepted, and he became jealous and angry.",
+   "t": "Allah kardeşlerden birinin kurbanını kabul etti, çünkü o Allah’tan sakınıyordu. Ama öbür kardeşin kurbanı kabul edilmedi; o da kıskandı ve öfkelendi."
+  },
+  "d10-c": {
+   "en": "The angry brother said: I will kill you! But the good brother said: even if you raise your hand to hurt me, I will never raise mine to hurt you. I fear Allah.",
+   "t": "Öfkeli kardeş şöyle dedi: Seni öldüreceğim! Ama iyi kardeş şöyle dedi: Beni incitmek için elini kaldırsan bile, ben seni incitmek için elimi asla kaldırmam. Ben Allah’tan korkarım."
+  },
+  "d10-q": {
+   "en": "What did the good brother say?",
+   "t": "İyi kardeş ne dedi?"
+  },
+  "d10-q-opt1": {
+   "en": "I will hit you back",
+   "t": "Ben de sana vururum"
+  },
+  "d10-q-opt2": {
+   "en": "I will never hurt you",
+   "t": "Seni asla incitmem"
+  },
+  "d10-q-no": {
+   "en": "The good brother said: I will never raise my hand to hurt you.",
+   "t": "İyi kardeş şöyle dedi: Seni incitmek için elimi asla kaldırmam."
+  },
+  "d10-d": {
+   "en": "But the angry brother would not calm down. He hurt his brother so badly that his brother died.",
+   "t": "Ama öfkeli kardeş sakinleşmedi. Kardeşini öyle incitti ki kardeşi öldü."
+  },
+  "d10-e": {
+   "en": "Then Allah sent a raven, which scratched in the ground. The brother cried: what have I done? And he was full of sorrow.",
+   "t": "Sonra Allah yeri eşeleyen bir karga gönderdi. Kardeş ağladı: Ben ne yaptım? Ve büyük bir pişmanlık duydu."
+  },
+  "d10-f": {
+   "en": "Allah teaches us: whoever saves one life, it is as if they had saved all people.",
+   "t": "Allah bize şunu öğretir: Kim bir canı kurtarırsa, sanki bütün insanları kurtarmış gibidir."
+  },
+  "d10-kind": {
+   "en": "Be like the good brother. Which is kind, and which is unkind?",
+   "t": "İyi kardeş gibi ol. Hangisi iyilik, hangisi kötülük?"
+  },
+  "d10-kind-bin1": {
+   "en": "Kind",
+   "t": "İyilik"
+  },
+  "d10-kind-bin2": {
+   "en": "Unkind",
+   "t": "Kötülük"
+  },
+  "d10-kind-it1": {
+   "en": "Sharing your toys",
+   "t": "Oyuncaklarını paylaşmak"
+  },
+  "d10-kind-it2": {
+   "en": "Pushing someone",
+   "t": "Birini itmek"
+  },
+  "d10-kind-it3": {
+   "en": "Helping someone who is hurt",
+   "t": "Canı yanan birine yardım etmek"
+  },
+  "d10-kind-it4": {
+   "en": "Staying jealous and angry",
+   "t": "Kıskanç ve öfkeli kalmak"
+  },
+  "d10-kind-it5": {
+   "en": "Making up after a fight",
+   "t": "Kavgadan sonra barışmak"
+  },
+  "d10-kind-it6": {
+   "en": "Hitting back",
+   "t": "Karşılık olarak vurmak"
+  },
+  "d10-kind-no": {
+   "en": "Let's be like the good brother: kind, even when others are not.",
+   "t": "İyi kardeş gibi olalım: başkaları iyi olmasa bile iyi."
+  },
+  "d11-a": {
+   "en": "Allah gave Adam and Hawwa another son, called Shith. He was good and wise, and he learned everything his father taught him.",
+   "t": "Allah Âdem ile Havva’ya Şît adında bir oğul daha verdi. O iyi ve bilgeydi; babasının ona öğrettiği her şeyi öğrendi."
+  },
+  "d11-b": {
+   "en": "Adam taught all his children to remember Allah, to pray, and to be kind to one another.",
+   "t": "Âdem bütün çocuklarına Allah’ı anmayı, namaz kılmayı ve birbirlerine iyi davranmayı öğretti."
+  },
+  "d11-c": {
+   "en": "And Allah says: children of Adam, the best clothes of all are being mindful of Allah.",
+   "t": "Ve Allah şöyle buyurur: Ey Âdemoğulları! Takva örtüsü, yani Allah’tan sakınmak, giysilerin en hayırlısıdır."
+  },
+  "d11-d": {
+   "en": "We are all children of Adam: one big family, in every colour. So we greet each other with peace, and we help each other.",
+   "t": "Hepimiz Âdemoğluyuz: her renkten tek büyük bir aile. Bu yüzden birbirimizi selamla karşılar ve birbirimize yardım ederiz."
+  },
+  "d11-story": {
+   "en": "Tell the whole story of Adam. Tap in order.",
+   "t": "Âdem’in bütün hikâyesini anlat. Sırayla dokun."
+  },
+  "d11-story-c1": {
+   "en": "First, Allah made Adam from earth.",
+   "t": "Önce Allah Âdem’i topraktan yarattı."
+  },
+  "d11-story-c2": {
+   "en": "Allah taught him the names of everything.",
+   "t": "Allah ona her şeyin adını öğretti."
+  },
+  "d11-story-c3": {
+   "en": "Iblis was too proud to bow.",
+   "t": "İblis secde etmeyecek kadar kibirliydi."
+  },
+  "d11-story-c4": {
+   "en": "In the Garden, they ate from the tree.",
+   "t": "Cennette ağaçtan yediler."
+  },
+  "d11-story-c5": {
+   "en": "They said sorry, and Allah forgave them.",
+   "t": "Af dilediler ve Allah onları bağışladı."
+  },
+  "d11-story-c6": {
+   "en": "Then they lived and worked on the earth.",
+   "t": "Sonra yeryüzünde yaşayıp çalıştılar."
+  },
+  "d11-story-no": {
+   "en": "Listen again, and tell it in order.",
+   "t": "Yeniden dinle ve sırayla anlat."
+  },
+  "end-a": {
+   "en": "This is the story of Adam, peace be upon him, the first of all people. He made a mistake, and he said sorry, and Allah forgave him. When we make a mistake, we can turn to Allah too.",
+   "t": "Bu, bütün insanların ilki olan Âdem’in (selam onun üzerine olsun) hikâyesidir. Bir hata yaptı, af diledi ve Allah onu bağışladı. Biz de bir hata yapınca Allah’a yönelebiliriz."
+  }
+ },
+ "strings": {
+  "Someone New": "Yeni Biri",
+  "Made from Earth": "Topraktan Yaratıldı",
+  "Told in Sunni and Shia narrations": "Sünni ve Şii rivayetlerde anlatılır",
+  "First Words": "İlk Sözler",
+  "Ibn Abbas in Ibn Kathir's commentary on 2:37; al-Bukhari and Muslim; Majlisi, Hayat al-Qulub": "İbn Kesîr’in 2:37 tefsirinde İbn Abbas; Buhârî ve Müslim; Meclisî, Hayâtü’l-Kulûb",
+  "From a hadith in al-Bukhari": "Buhârî’deki bir hadisten",
+  "The Names": "İsimler",
+  "The Proud One": "Kibirli Olan",
+  "Press and hold": "",
+  "Allah keeps us safe": "Allah bizi korur",
+  "The Garden": "Cennet",
+  "The Whisper": "Fısıltı",
+  "Sorry": "Pişmanlık",
+  "Our Lord": "Rabbimiz",
+  "we have wronged ourselves": "kendimize yazık ettik",
+  "if You do not forgive us": "bizi bağışlamazsan",
+  "and have mercy on us": "ve bize merhamet etmezsen",
+  "we will be lost": "kaybedenlerden oluruz",
+  "Allah is the Most Merciful": "Allah çok merhametlidir",
+  "Life on Earth": "Yeryüzünde Hayat",
+  "From narrations in Majlisi's Hayat al-Qulub": "Meclisî’nin Hayâtü’l-Kulûb’undaki rivayetlerden",
+  "ripe wheat": "olgun buğday",
+  "a young shoot": "genç bir filiz",
+  "Two Brothers": "İki Kardeş",
+  "Children of Adam": "Âdemoğulları",
+  "Made from earth": "Topraktan yaratıldı",
+  "The names": "İsimler",
+  "Iblis would not bow": "İblis secde etmedi",
+  "The Garden and the tree": "Cennet ve ağaç",
+  "Life on earth": "Yeryüzünde hayat",
+  "← Asmau": "",
+  "Adam": "Âdem",
+  "The Story of Adam": "Âdem’in Hikâyesi",
+  "Eleven chapters about the first of all people. Play a little every day.": "Bütün insanların ilki hakkında on bir bölüm. Her gün biraz oyna.",
+  "Start the story": "",
+  "Start from the beginning": "",
+  "For parents": "",
+  "Back": "",
+  "Next": "",
+  "All chapters": "",
+  "✕ Close": "",
+  "The End": "",
+  "Humility": "Alçakgönüllülük",
+  "Kindness": "İyilik",
+  "Read it again": "",
+  "Pick a chapter": "",
+  "Music": "",
+  "Sounds": "",
+  "Voice": "",
+  "The first of all people: made from earth, taught the names, forgiven.": "Bütün insanların ilki: topraktan yaratıldı, isimler ona öğretildi, bağışlandı.",
+  "A bright garden with a great tree, a stream, birds and deer.": "Büyük bir ağacı, bir deresi, kuşları ve geyikleri olan aydınlık bir bahçe.",
+  "📖 About this story": "📖 Bu hikâye hakkında",
+  "📚 Sources": "📚 Kaynaklar",
+  "It draws on Sunni and Shia sources: Ibn Kathir’s commentary and hadith in al-Bukhari, Muslim, al-Tirmidhi and Abu Dawud; al-Tabatabai’s al-Mizan and the narrations of the Imams of Ahl al-Bayt collected in Majlisi’s Hayat al-Qulub. Where they differ (how Hawwa was made, what the tree was, how to understand Adam’s eating from it, the words of his repentance) the story uses words both accept and the chapter note gives both.": "Sünni ve Şii kaynaklara dayanır: İbn Kesîr’in tefsiri ve Buhârî, Müslim, Tirmizî ve Ebû Dâvûd’daki hadisler; Tabâtabâî’nin el-Mîzân’ı ve Meclisî’nin Hayâtü’l-Kulûb’unda toplanan Ehl-i Beyt imamlarının rivayetleri. Ayrıldıkları yerlerde (Havva’nın nasıl yaratıldığı, ağacın ne olduğu, Âdem’in ondan yemesinin nasıl anlaşılacağı, tevbesinin sözleri) hikâye ikisinin de kabul ettiği sözleri kullanır ve bölüm notu ikisini de verir.",
+  "🤲 Told gently, or left out": "🤲 Yumuşak anlatılanlar ya da atlananlar",
+  "Told gently: the eating from the tree (the pictures show leaves, not people), and the two brothers (5:27–31), which a parent may skip.": "Yumuşak anlatılanlar: ağaçtan yeme (resimlerde insanlar değil, yapraklar gösterilir) ve anne babanın isterse atlayabileceği iki kardeş (5:27–31).",
+  "👥 Who is shown": "👥 Kimler gösteriliyor",
+  "Shown in this story: Prophet Adam (peace be upon him), Hawwa and their children. The angels are shown only as light with wings, and Iblis only as smoke and flame, never with a face.": "Bu hikâyede gösterilenler: Âdem Peygamber (selam onun üzerine olsun), Havva ve çocukları. Melekler yalnızca kanatlı bir ışık olarak, İblis ise yalnızca duman ve alev olarak gösterilir; hiçbir zaman yüzüyle değil.",
+  "The story of Adam is told in several surahs. This game follows <a href=\"https://quran.com/2/30-38\" target=\"_blank\" rel=\"noopener\">Surah Al-Baqarah 2:30–38</a>, <a href=\"https://quran.com/7/11-27\" target=\"_blank\" rel=\"noopener\">Surah Al-A‘raf 7:11–27</a> and <a href=\"https://quran.com/20/115-123\" target=\"_blank\" rel=\"noopener\">Surah Ta-Ha 20:115–123</a>, with passages from surahs 3, 4, 5, 15, 18 and 38.": "Âdem’in hikâyesi birkaç surede anlatılır. Bu oyun <a href=\"https://quran.com/2/30-38\" target=\"_blank\" rel=\"noopener\">Bakara suresi 2:30–38</a>, <a href=\"https://quran.com/7/11-27\" target=\"_blank\" rel=\"noopener\">A‘râf suresi 7:11–27</a> ve <a href=\"https://quran.com/20/115-123\" target=\"_blank\" rel=\"noopener\">Tâhâ suresi 20:115–123</a> ile birlikte 3, 4, 5, 15, 18 ve 38. surelerden bölümleri izler."
+ },
+ "notes": {
+  "1.1": {
+   "en": "'Successor' (khalifa) is told as 'someone new, to look after the earth'.\n\nThe angels' question is a question, not a refusal: when they could not name the things Allah showed them they said, 'We have knowledge only of what You have taught us' (2:32). The game tells that part in chapter 4.",
+   "t": "“Halife” kelimesi “yeryüzüne bakacak yeni biri” olarak anlatılır.\n\nMeleklerin sorusu bir itiraz değil, bir sorudur: Allah’ın gösterdiği şeylerin adlarını söyleyemeyince şöyle dediler: “Sen münezzehsin, öğrettiğinden başka bizim bir bilgimiz yoktur” (2:32). Oyun bu kısmı 4. bölümde anlatır."
+  },
+  "1.2": {
+   "en": "Ask your child: if you were given a garden to look after, what would you do every day? Looking after the earth is part of the trust Allah gave Adam's children.\n\nThe Qur'an says Allah 'honoured the children of Adam' and provided good things for them (17:70).",
+   "t": "Çocuğunuza sorun: Sana bakman için bir bahçe verilse her gün ne yapardın? Yeryüzüne bakmak, Allah’ın Âdemoğullarına verdiği emanetin bir parçasıdır.\n\nKur’an şöyle der: “Biz insanoğullarını şerefli kıldık” ve Allah onları “temiz şeylerle rızıklandırdı” (17:70)."
+  },
+  "1.3": {
+   "en": "The angels asked because they wanted to understand, not to argue. Talk about it: is it all right to ask questions about Allah and His world? How can we ask politely, the way the angels did?",
+   "t": "Melekler tartışmak için değil, anlamak istedikleri için sordular. Konuşun: Allah ve O’nun dünyası hakkında soru sormak doğru mudur? Meleklerin yaptığı gibi nasıl kibarca sorabiliriz?"
+  },
+  "1.4": {
+   "en": "Allah's answer, 'I know what you do not know', is a good one for children to keep. Ask: what is something you did not understand at first, but understood later?",
+   "t": "Allah’ın cevabı, “Ben sizin bilmediğinizi bilirim”, çocukların aklında tutması güzel bir sözdür. Sorun: İlk başta anlamadığın ama sonra anladığın bir şey var mı?"
+  },
+  "1.5": {
+   "en": "While you play, name each thing together and say who made it: 'Allah made the sun.' Small children learn the words and the habit of thanking at the same time.",
+   "t": "Oynarken her şeyin adını birlikte söyleyin ve onu kimin yarattığını söyleyin: “Güneşi Allah yarattı.” Küçük çocuklar kelimeleri ve şükretme alışkanlığını aynı anda öğrenir."
+  },
+  "2.1": {
+   "en": "Earth of every kind: al-Tirmidhi and Abu Dawud report that Adam was made from a handful taken from all of the earth, so his children came like the earth, of many colours, some gentle and some rough. The Shia narrations give the same from Imam Ali: Adam was made 'from the soil of all the surface of the earth'.\n\nThe pictures in Asmau show everyone dark-skinned; the lesson about colours is told in words and shown with the earth itself.",
+   "t": "Her türden toprak: Tirmizî ve Ebû Dâvûd, Âdem’in yeryüzünün her yerinden alınmış bir avuç topraktan yaratıldığını, bu yüzden çocuklarının toprak gibi rengârenk, kimi yumuşak kimi sert olduğunu rivayet eder. Şii rivayetler aynısını İmam Ali’den verir: Âdem “yeryüzünün bütün yüzeyinin toprağından” yaratıldı.\n\nAsmau’daki resimler herkesi koyu tenli gösterir; renklerle ilgili ders sözle anlatılır ve toprağın kendisiyle gösterilir."
+  },
+  "2.2": {
+   "en": "Talk about it: if you could pick up a handful of earth from anywhere in the world, where would it come from? Look at the soil near your home together: is it red, brown, sandy?",
+   "t": "Konuşun: Dünyanın herhangi bir yerinden bir avuç toprak alabilsen nereden alırdın? Evinizin yakınındaki toprağa birlikte bakın: kırmızı mı, kahverengi mi, kumlu mu?"
+  },
+  "2.3": {
+   "en": "The Qur'an also says Allah made Adam 'from dust', said 'Be', and he was; it says the same about 'Isa (Jesus) (3:59). Neither had a father.",
+   "t": "Kur’an ayrıca Allah’ın Âdem’i “topraktan” yarattığını, “ol” dediğini ve onun olduğunu söyler; aynısını İsa için de söyler (3:59). İkisinin de babası yoktu."
+  },
+  "2.4": {
+   "en": "Ask your child to put a hand on their chest and feel their breath. Every breath is a gift. A good moment to teach a short thank-you: al-hamdu lillah.",
+   "t": "Çocuğunuzdan elini göğsüne koymasını ve nefesini hissetmesini isteyin. Her nefes bir nimettir. Kısa bir teşekkürü öğretmek için güzel bir an: elhamdülillah."
+  },
+  "2.5": {
+   "en": "The Qur'an: 'People, We created you all from a single man and a single woman, and made you into races and tribes so that you should recognize one another. In God's eyes, the most honoured of you are the ones most mindful of Him' (49:13).\n\nAsk: what colours of people do you know? Which matters more to Allah: colour, or how kind and good someone is?",
+   "t": "Kur’an: “Ey insanlar! Doğrusu Biz sizleri bir erkekle bir dişiden yarattık. Sizi milletler ve kabileler haline koyduk ki birbirinizi kolayca tanıyasınız. Şüphesiz, Allah katında en değerliniz, O’na karşı gelmekten en çok sakınanızdır” (49:13).\n\nSorun: İnsanların hangi renklerini biliyorsun? Allah için hangisi daha önemli: renk mi, yoksa birinin ne kadar iyi ve iyiliksever olduğu mu?"
+  },
+  "2.6": {
+   "en": "If your child chooses 'fire', talk about why it matters: Iblis will later boast that he was made from fire (chapter 5). Being made from earth is not lower; it is how Allah chose to make us.",
+   "t": "Çocuğunuz “ateş”i seçerse bunun neden önemli olduğunu konuşun: İblis sonradan ateşten yaratıldığıyla övünecek (5. bölüm). Topraktan yaratılmış olmak daha aşağı olmak değildir; Allah bizi böyle yaratmayı seçmiştir."
+  },
+  "3.1": {
+   "en": "The sneeze: in the commentary on 2:37, Ibn Abbas has Adam remind Allah, 'when I sneezed You said, May Allah grant you His mercy'. The Shia narrations give the same: Adam said 'al-hamdu lillah' and was answered 'yarhamuk Allah'.\n\nThe greeting: al-Bukhari and Muslim report that Allah told Adam to greet a group of angels and to listen to their answer, which would be the greeting of his children. The Shia narrations give the same greeting.\n\nNeither is in the Qur'an.",
+   "t": "Hapşırık: 2:37’nin tefsirinde İbn Abbas’a göre Âdem Allah’a şunu hatırlatır: “Hapşırdığımda Sen ‘Allah sana rahmet etsin’ dedin.” Şii rivayetler aynısını verir: Âdem “elhamdülillah” dedi ve ona “yerhamükallah” diye karşılık verildi.\n\nSelam: Buhârî ve Müslim, Allah’ın Âdem’e bir grup meleği selamlamasını ve cevaplarını dinlemesini söylediğini, bunun onun çocuklarının selamı olacağını rivayet eder. Şii rivayetler de aynı selamı verir.\n\nİkisi de Kur’an’da yoktur."
+  },
+  "3.2": {
+   "en": "The same words are still our answer today: when someone sneezes and says al-hamdu lillah, we say yarhamuk Allah (may Allah have mercy on you), and they answer yahdikum Allah (may Allah guide you).\n\nPractise it together: pretend to sneeze, and take turns saying each part.",
+   "t": "Aynı sözler bugün de bizim cevabımızdır: Biri hapşırıp elhamdülillah deyince biz yerhamükallah (Allah sana rahmet etsin) deriz, o da yehdîkumullah (Allah size hidayet versin) diye cevap verir.\n\nBirlikte alıştırma yapın: Hapşırıyormuş gibi yapın ve sırayla her bölümü söyleyin."
+  },
+  "3.3": {
+   "en": "A gentle game for the week: whenever someone in the family sneezes, see who remembers the words first.",
+   "t": "Bu hafta için hoş bir oyun: Ailede biri hapşırınca sözleri ilk kimin hatırlayacağına bakın."
+  },
+  "3.4": {
+   "en": "The Shia narrations in Majlisi's Hayat al-Qulub add that Jibril greeted Adam with 'hayyak Allah wa bayyak': may Allah keep you alive and make you happy.",
+   "t": "Meclisî’nin Hayâtü’l-Kulûb’undaki Şii rivayetler, Cebrâil’in Âdem’i “hayyâkallâhu ve beyyâk”, yani “Allah seni yaşatsın ve sevindirsin” diye selamladığını ekler."
+  },
+  "3.5": {
+   "en": "Ask: how do you feel when someone greets you with a smile? Make a family habit of greeting first when you come home: as-salamu alaykum.",
+   "t": "Sorun: Biri seni gülümseyerek selamlayınca nasıl hissedersin? Eve gelince önce selam vermeyi bir aile alışkanlığı yapın: Esselâmü aleyküm."
+  },
+  "3.6": {
+   "en": "Turn it into a game at home: one person says a situation (I sneezed; I met my teacher; someone said salam to me) and the other says the right words.",
+   "t": "Evde bunu bir oyuna çevirin: Biri bir durum söyler (hapşırdım; öğretmenimle karşılaştım; biri bana selam verdi), öbürü doğru sözleri söyler."
+  },
+  "4.1": {
+   "en": "The commentary reports from Ibn Abbas that 'the names' are the names people use for everything, of every kind; al-Bukhari's hadith of intercession has people say to Adam, 'Allah ... taught you the names of everything'.\n\nAl-Tabatabai's al-Mizan reads the named things as 'sublime creations, hidden from the heavens and the earth'. The game keeps to the plain meaning both share: Allah taught Adam what the angels did not know.",
+   "t": "Tefsir, İbn Abbas’tan “isimlerin” insanların her türden her şey için kullandığı adlar olduğunu rivayet eder; Buhârî’deki şefaat hadisinde insanlar Âdem’e şöyle der: “Allah … sana her şeyin adını öğretti.”\n\nTabâtabâî’nin el-Mîzân’ı adı verilen şeyleri “göklerden ve yerden gizli yüce yaratılmışlar” olarak okur. Oyun ikisinin de paylaştığı açık anlama bağlı kalır: Allah Âdem’e meleklerin bilmediğini öğretti."
+  },
+  "4.2": {
+   "en": "Talk about where animals live near you: where do birds sleep? Where do goats go in the rain? Naming things carefully is a way of noticing what Allah made.",
+   "t": "Yakınınızda hayvanların nerede yaşadığını konuşun: Kuşlar nerede uyur? Keçiler yağmurda nereye gider? Şeyleri dikkatle adlandırmak, Allah’ın yarattıklarını fark etmenin bir yoludur."
+  },
+  "4.3": {
+   "en": "The angels' answer, 'glory be to You, we only know what You have taught us', is a beautiful thing to say when we do not know something. Encourage your child to say 'I don't know' without shame.",
+   "t": "Meleklerin cevabı, “Sen münezzehsin, öğrettiğinden başka bizim bir bilgimiz yoktur”, bir şeyi bilmediğimizde söylenecek güzel bir sözdür. Çocuğunuzu utanmadan “bilmiyorum” demeye teşvik edin."
+  },
+  "4.4": {
+   "en": "Ask: what new word did you learn this week? Who taught it to you? Every bit of knowledge has a teacher, and the first Teacher is Allah.",
+   "t": "Sorun: Bu hafta hangi yeni kelimeyi öğrendin? Onu sana kim öğretti? Her bilginin bir öğretmeni vardır ve ilk Öğretmen Allah’tır."
+  },
+  "4.5": {
+   "en": "Before turning each card, ask your child to say the name out loud in English and, if you can, in your home language or in Arabic.",
+   "t": "Her kartı çevirmeden önce çocuğunuzdan adını yüksek sesle, Türkçe ve yapabilirseniz Arapça ya da evde konuştuğunuz başka bir dilde söylemesini isteyin."
+  },
+  "4.6": {
+   "en": "Talk about it: the angels did not know everything, and they were not ashamed to say so. Being humble about what we know is part of learning.",
+   "t": "Konuşun: Melekler her şeyi bilmiyordu ve bunu söylemekten utanmadılar. Bildiklerimiz konusunda alçakgönüllü olmak öğrenmenin bir parçasıdır."
+  },
+  "5.1": {
+   "en": "Iblis 'was one of the jinn' (18:50), made from fire (7:12). The commentary calls the bow Allah honouring Adam; al-Tabatabai's al-Mizan says the angels bowed to Adam 'as he was the symbol of humanity'. It is a bow of respect at Allah's command, not worship.\n\nIblis's vow to come at people 'from their front and their back, from their right and their left' is 7:17; 'you will have no power over My servants' is 15:42.\n\nAsking Allah for protection (a'udhu billahi min ash-shaytan ir-rajim) is not in these verses; the game adds it as what children can do.",
+   "t": "İblis “cinlerden idi” (18:50), ateşten yaratılmıştı (7:12). Tefsir secdeyi Allah’ın Âdem’i şereflendirmesi olarak açıklar; Tabâtabâî’nin el-Mîzân’ı meleklerin Âdem’e “insanlığın simgesi olduğu için” secde ettiğini söyler. Bu, Allah’ın emriyle yapılan bir saygı secdesidir, ibadet değil.\n\nİblis’in insanlara “önlerinden, ardlarından, sağ ve sollarından” sokulacağı yemini 7:17’dedir; “kullarımın üzerinde senin bir nüfuzun olamaz” 15:42’dedir.\n\nAllah’a sığınmak (eûzü billâhi mineş-şeytânir-racîm) bu ayetlerde yoktur; oyun bunu çocukların yapabileceği bir şey olarak ekler."
+  },
+  "5.2": {
+   "en": "Ask: what does 'proud' look like? What does 'humble' look like? Let your child show it with their body: standing stiff with the chin up, or bowing the head.",
+   "t": "Sorun: “Kibirli” nasıl görünür? “Alçakgönüllü” nasıl görünür? Çocuğunuz bunu bedeniyle göstersin: çenesi havada dimdik durarak ya da başını eğerek."
+  },
+  "5.3": {
+   "en": "Iblis compared what he was made of. Talk about it: is anyone better because of what they look like, or where they come from? What makes someone good?",
+   "t": "İblis neyden yaratıldıklarını karşılaştırdı. Konuşun: Biri görünüşü ya da nereden geldiği yüzünden daha mı iyidir? Birini iyi yapan nedir?"
+  },
+  "5.4": {
+   "en": "After the game, ask: can you remember a time you were humble, or a time you were proud? No scolding; just noticing.",
+   "t": "Oyundan sonra sorun: Alçakgönüllü olduğun ya da kibirlendiğin bir anı hatırlıyor musun? Azarlamadan; yalnızca fark ederek."
+  },
+  "5.5": {
+   "en": "Children sometimes feel 'a voice' telling them to do something wrong. You can call it a bad whisper and teach them they can say no to it.",
+   "t": "Çocuklar bazen kendilerine yanlış bir şey yapmalarını söyleyen “bir ses” hisseder. Buna kötü bir fısıltı diyebilir ve ona hayır diyebileceklerini öğretebilirsiniz."
+  },
+  "5.6": {
+   "en": "The verse continues: Iblis has power 'only over the ones who go astray and follow you' (15:42). Reassure your child: someone who turns to Allah is not helpless.",
+   "t": "Ayet devam eder: İblis’in nüfuzu “ancak sana uyan sapıklar” üzerindedir (15:42). Çocuğunuza güven verin: Allah’a yönelen biri çaresiz değildir."
+  },
+  "5.7": {
+   "en": "Practise the words slowly together: a'udhu billahi min ash-shaytan ir-rajim. Some families say it before sleep, or when a child feels angry.",
+   "t": "Sözleri birlikte yavaşça çalışın: eûzü billâhi mineş-şeytânir-racîm. Bazı aileler bunu uyumadan önce ya da çocuk öfkelendiğinde söyler."
+  },
+  "6.1": {
+   "en": "How Hawwa was made is told in two ways. The commentary reports, from Ibn Ishaq and 'the People of the Book', that she was made from Adam's rib while he slept. Narrations of the Imams of Ahl al-Bayt say she was made from the clay left over from Adam (Imam al-Baqir), and al-Tabatabai's al-Mizan prefers that. The Qur'an says Allah made his mate 'from it', the single soul (4:1). The game says only that Allah made Hawwa for Adam.\n\nThe tree is not named in the Qur'an. The commentary quotes al-Tabari: 'We do not know which tree that was.' Shia narrations call it wheat or a vine (Imam al-Rida: 'both traditions are true'). The game names no fruit.\n\nThe Garden: the commentary says most scholars place it in the heavens; al-Tabatabai says it was 'in the heaven, although it was not the Garden of eternal abode'.",
+   "t": "Havva’nın nasıl yaratıldığı iki şekilde anlatılır. Tefsir, İbn İshak’tan ve “Ehl-i Kitap’tan”, onun Âdem uyurken kaburgasından yaratıldığını rivayet eder. Ehl-i Beyt imamlarının rivayetleri onun Âdem’den artan çamurdan yaratıldığını söyler (İmam Bâkır) ve Tabâtabâî’nin el-Mîzân’ı bunu tercih eder. Kur’an, Allah’ın tek nefisten “eşini var ettiğini” söyler (4:1). Oyun yalnızca Allah’ın Havva’yı Âdem için yarattığını söyler.\n\nAğacın adı Kur’an’da verilmez. Tefsir Taberî’yi aktarır: “O ağacın hangi ağaç olduğunu bilmiyoruz.” Şii rivayetler ona buğday ya da asma der (İmam Rızâ: “iki rivayet de doğrudur”). Oyun hiçbir meyvenin adını vermez.\n\nCennet: Tefsir, âlimlerin çoğunun onu göklere yerleştirdiğini söyler; Tabâtabâî onun “gökteydi, ama ebedî kalınacak cennet değildi” der."
+  },
+  "6.2": {
+   "en": "The Qur'an describes that Garden: 'you will never go hungry, feel naked, be thirsty, or suffer the heat of the sun' (20:118-119). Ask: what would you like most about a place like that?",
+   "t": "Kur’an o cenneti şöyle anlatır: “cennette ne acıkırsın, ne de çıplak kalırsın; orada ne susarsın ne de güneşin sıcağında kalırsın” (20:118-119). Sorun: Böyle bir yerde en çok neyi severdin?"
+  },
+  "6.3": {
+   "en": "Ask your child to name their favourite fruit, and to say who made it. A good moment for bismillah before eating, and al-hamdu lillah after.",
+   "t": "Çocuğunuzdan en sevdiği meyvenin adını ve onu kimin yarattığını söylemesini isteyin. Yemekten önce bismillah, sonra elhamdülillah demek için güzel bir an."
+  },
+  "6.4": {
+   "en": "One rule among so many gifts. Talk about it: why do parents make a few rules, even when they give a lot? Rules are part of caring.",
+   "t": "O kadar nimetin arasında tek bir kural. Konuşun: Anne babalar çok şey verdikleri halde neden birkaç kural koyarlar? Kurallar da sevginin bir parçasıdır."
+  },
+  "6.5": {
+   "en": "The Qur'an does not name the tree, and the game shows no fruit on purpose. If your child asks 'was it an apple?', you can say: nobody knows, and it does not matter.",
+   "t": "Kur’an ağacın adını vermez ve oyun bilerek hiçbir meyve göstermez. Çocuğunuz “Elma mıydı?” diye sorarsa şöyle diyebilirsiniz: Kimse bilmiyor ve bunun önemi yok."
+  },
+  "6.6": {
+   "en": "Ask: what are some rules in our home? Which one is hardest to remember? How can we help each other remember?",
+   "t": "Sorun: Evimizde hangi kurallar var? Hangisini hatırlamak en zor? Birbirimize hatırlamakta nasıl yardım edebiliriz?"
+  },
+  "7.1": {
+   "en": "'He forgot' is 20:115; the same passage also says 'Adam disobeyed his Lord' (20:121). How to understand this differs. In the hadith of intercession quoted in the commentary, Adam remembers his error and is ashamed before his Lord. Al-Tabatabai's al-Mizan says the command was 'only an advice', given before any law, so the eating was 'neither a sin ... nor an injustice against Allah'; Shia narrations call it leaving the better (tark al-awla) before prophethood (Imam al-Rida). The game uses the Qur'an's own words: he forgot, they ate, they were sorry, and they were forgiven.\n\nThe verses say their nakedness became exposed to them (7:22, 20:121). The game says only that they felt ashamed and covered themselves with leaves, and the pictures show the leaves, not the people.\n\nAl-Tabatabai calls the stories of a serpent and a peacock helping Iblis 'extremely unreliable'; the game leaves them out.",
+   "t": "“Unuttu” 20:115’tedir; aynı bölüm “Adem, Rabbine baş kaldırdı” da der (20:121). Bunun nasıl anlaşılacağı konusunda görüşler ayrılır. Tefsirde aktarılan şefaat hadisinde Âdem hatasını hatırlar ve Rabbinden utanır. Tabâtabâî’nin el-Mîzân’ı emrin herhangi bir şeriatten önce verilmiş “yalnızca bir öğüt” olduğunu, bu yüzden yemenin “ne bir günah … ne de Allah’a karşı bir haksızlık” olduğunu söyler; Şii rivayetler onu peygamberlikten önce daha iyi olanı terk etmek (terk-i evlâ) olarak adlandırır (İmam Rızâ). Oyun Kur’an’ın kendi sözlerini kullanır: unuttu, yediler, pişman oldular ve bağışlandılar.\n\nAyetler, ayıp yerlerinin kendilerine göründüğünü söyler (7:22, 20:121). Oyun yalnızca utandıklarını ve yapraklarla örtündüklerini söyler; resimler de insanları değil, yaprakları gösterir.\n\nTabâtabâî, bir yılanın ve bir tavus kuşunun İblis’e yardım ettiği hikâyelerine “son derece güvenilmez” der; oyun bunları anlatmaz."
+  },
+  "7.2": {
+   "en": "Iblis swore he was giving good advice (7:21). Talk about it: can someone say 'trust me' and still be lying? How can we tell?\n\nYou may meet the story that Iblis got into the Garden inside the mouth of a serpent. Ibn Kathir says early commentators such as as-Suddi, Abu al-'Aliya and Wahb bin Munabbih passed on 'Israelite reports' (isra'iliyyat) about the serpent and Iblis entering the Garden, and he notes the story comes from the Torah. The Qur'an says only that Satan whispered to them.",
+   "t": "İblis iyi öğüt verdiğine yemin etti (7:21). Konuşun: Biri “Bana güven” deyip yine de yalan söyleyebilir mi? Bunu nasıl anlayabiliriz?\n\nİblis’in cennete bir yılanın ağzında girdiği hikâyesiyle karşılaşabilirsiniz. İbn Kesîr, Süddî, Ebü’l-Âliye ve Vehb b. Münebbih gibi ilk müfessirlerin yılan ve İblis’in cennete girişi hakkında “İsrâiliyat” aktardığını söyler ve hikâyenin Tevrat’tan geldiğini not eder. Kur’an yalnızca şeytanın onlara vesvese verdiğini söyler."
+  },
+  "7.3": {
+   "en": "Ask: what can you do if someone tells you to do something you know is wrong, even if they are friendly? Who can you tell?",
+   "t": "Sorun: Biri, güler yüzlü olsa bile, sana yanlış olduğunu bildiğin bir şeyi yapmanı söylerse ne yapabilirsin? Kime anlatabilirsin?"
+  },
+  "7.4": {
+   "en": "Everyone forgets. Ask your child about a time they forgot something important. What helps us remember? (Reminders, asking, saying it out loud.)",
+   "t": "Herkes unutur. Çocuğunuza önemli bir şeyi unuttuğu bir anı sorun. Hatırlamamıza ne yardım eder? (Hatırlatıcılar, sormak, yüksek sesle söylemek.)"
+  },
+  "7.5": {
+   "en": "Feeling ashamed after a mistake is normal. Talk about it gently: the feeling tells us something went wrong; the next step is to say sorry, as Adam and Hawwa will.\n\nYou may meet a report that Adam ran away in shame, his hair caught in a tree of the Garden, and Allah called: 'Adam, are you running from Me?' and he answered: 'No, out of shame before You.' Ibn Kathir calls this hadith 'strange' (gharib), with a break in its chain between Qatada and Ubayy bin Ka'b, so it is weak.",
+   "t": "Bir hatadan sonra utanmak normaldir. Bunu nazikçe konuşun: Bu duygu bize bir şeylerin yanlış gittiğini söyler; sonraki adım, Âdem ile Havva’nın yapacağı gibi, özür dilemektir.\n\nÂdem’in utancından kaçtığı, saçlarının cennetteki bir ağaca takıldığı ve Allah’ın “Ey Âdem, Benden mi kaçıyorsun?” diye seslendiği, onun da “Hayır, Senden utandığım için” diye cevap verdiği bir rivayetle karşılaşabilirsiniz. İbn Kesîr bu hadise, Katâde ile Übey b. Kâ'b arasında senedinde kopukluk olduğu için “garip” der; yani zayıftır."
+  },
+  "7.6": {
+   "en": "Allah reminded them of what He had said before. Ask: how do you feel when someone reminds you kindly? How do you like to be reminded?",
+   "t": "Allah onlara daha önce söylediğini hatırlattı. Sorun: Biri sana nazikçe hatırlatınca nasıl hissedersin? Sana nasıl hatırlatılmasını seversin?"
+  },
+  "7.7": {
+   "en": "Make your own list at home: good things to do (help, share, pray) and whispers to say no to (lying, hitting, taking without asking).",
+   "t": "Evde kendi listenizi yapın: yapılacak iyi şeyler (yardım etmek, paylaşmak, namaz kılmak) ve hayır denecek fısıltılar (yalan söylemek, vurmak, sormadan almak)."
+  },
+  "8.1": {
+   "en": "The 'words' Adam received (2:37): the commentary reports from many early scholars that they are the prayer of 7:23, which the game uses, and from Ibn Abbas a conversation in which Adam asks for Allah's mercy. Al-Tabatabai prefers other words, which al-Kafi gives from the fifth or sixth Imam: 'There is no god except Thee; Glory be to Thee, O Allah! and praise! I have committed evil and been unjust to myself; therefore, forgive me.' Other narrations, Shia (al-Kafi) and Sunni (al-Suyuti's al-Durr al-Manthur), have Adam ask by the right of the Prophet Muhammad ﷺ, the Shia ones also by the right of Ali, Fatimah, al-Hasan and al-Husayn.\n\nIblis blamed Allah: 'because You have put me in the wrong' (7:16). Adam and Hawwa blamed no one but themselves (7:23). The game draws that difference for children.",
+   "t": "Âdem’in aldığı “kelimeler” (2:37): Tefsir, birçok ilk âlimden bunların oyunun kullandığı 7:23’teki dua olduğunu, İbn Abbas’tan ise Âdem’in Allah’ın rahmetini istediği bir konuşma olduğunu rivayet eder. Tabâtabâî, el-Kâfî’nin beşinci ya da altıncı imamdan verdiği başka sözleri tercih eder: “Senden başka ilah yoktur; Sen münezzehsin, ey Allah’ım, hamd Sanadır! Kötülük ettim ve kendime zulmettim; öyleyse beni bağışla.” Başka rivayetler, Şii (el-Kâfî) ve Sünni (Suyûtî’nin ed-Dürrü’l-Mensûr’u), Âdem’in Peygamber Muhammed ﷺ hakkı için, Şii olanlar ayrıca Ali, Fâtıma, Hasan ve Hüseyin hakkı için istediğini anlatır.\n\nİblis Allah’ı suçladı: “Beni azdırdığın için” (7:16). Âdem ile Havva kendilerinden başka kimseyi suçlamadılar (7:23). Oyun bu farkı çocuklar için ortaya koyar."
+  },
+  "8.2": {
+   "en": "This prayer is 7:23 and can be learnt by heart: Rabbana zalamna anfusana wa in lam taghfir lana wa tarhamna lanakunanna min al-khasirin.",
+   "t": "Bu dua 7:23’tür ve ezberlenebilir: Rabbenâ zalemnâ enfüsenâ ve in lem tağfir lenâ ve terhamnâ le-nekûnenne mine’l-hâsirîn."
+  },
+  "8.3": {
+   "en": "Ask: when you say sorry to someone, how do you hope they will answer? Allah is the Ever-Relenting: He accepts sorry again and again.\n\nIn al-Mizan, al-Tabatabai quotes a narration from al-Qummi that after coming down to earth Adam stayed in prostration for forty days, weeping for the Garden. This is a Shia narration; the Qur'an says only that Allah forgave them.",
+   "t": "Sorun: Birinden özür dileyince sana nasıl cevap vermesini umarsın? Allah tevbeleri çok kabul edendir: Özrü defalarca kabul eder.\n\nTabâtabâî el-Mîzân’da Kummî’den bir rivayet aktarır: Yeryüzüne indikten sonra Âdem, cenneti özleyerek ağlayıp kırk gün secdede kaldı. Bu bir Şii rivayetidir; Kur’an yalnızca Allah’ın onları bağışladığını söyler."
+  },
+  "8.4": {
+   "en": "A quiet moment: ask your child if there is anything they want to say sorry for today, to Allah or to someone at home. Let them answer in private if they prefer.",
+   "t": "Sessiz bir an: Çocuğunuza bugün Allah’tan ya da evdeki birinden özür dilemek istediği bir şey olup olmadığını sorun. İsterse cevabı kendine saklasın."
+  },
+  "8.5": {
+   "en": "The game draws one difference: Iblis blamed Allah, and Adam and Hawwa blamed no one but themselves. Ask: why is it hard to say 'it was my fault'?",
+   "t": "Oyun bir farkı ortaya koyar: İblis Allah’ı suçladı, Âdem ile Havva ise kendilerinden başka kimseyi suçlamadı. Sorun: “Benim hatamdı” demek neden zordur?"
+  },
+  "9.1": {
+   "en": "Where they came down: the commentary reports Adam in India or between Mecca and Ta'if, and Hawwa near Jeddah; a Shia narration (al-Qummi, quoted in al-Mizan) puts Adam on al-Safa and Hawwa on al-Marwa. The game says only that they came down apart and found each other again near Mecca.\n\nJibril teaching Adam to farm and to pray is from Imam al-Baqir, in Majlisi's Hayat al-Qulub.",
+   "t": "Nereye indikleri: Tefsir Âdem’in Hindistan’a ya da Mekke ile Tâif arasına, Havva’nın Cidde yakınına indiğini rivayet eder; bir Şii rivayet (Kummî, el-Mîzân’da aktarılır) Âdem’i Safâ’ya, Havva’yı Merve’ye yerleştirir. Oyun yalnızca ayrı yerlere indiklerini ve Mekke yakınında yeniden birbirlerini bulduklarını söyler.\n\nCebrâil’in Âdem’e çiftçiliği ve namazı öğretmesi, Meclisî’nin Hayâtü’l-Kulûb’unda İmam Bâkır’dandır."
+  },
+  "9.2": {
+   "en": "In al-Mizan, al-Tabatabai quotes a narration from al-Qummi: Adam came down on al-Safa and Hawwa on al-Marwa, the two hills pilgrims walk between in Hajj and 'Umrah.\n\nAsk: how would you feel if you were lost and then found your family again?\n\nYou may hear different places for where Adam came down. Ibn Kathir's full Arabic commentary collects them: India (as-Suddi, al-Hasan al-Basri, and Ibn Abbas in one report), a land called Dahna between Mecca and Ta'if (Ibn Abbas in another), or al-Safa with Hawwa on al-Marwa (Ibn 'Umar). Al-Hasan's report also places Hawwa at Jeddah, Iblis near Basra and the serpent at Isfahan. As-Suddi adds that the Black Stone came down with Adam. These are reports from early scholars, not from the Qur'an, and they disagree with each other.\n\nYou may also hear how long Adam was in the Garden: Ibn Abbas, in al-Hakim (who calls it authentic by the standard of al-Bukhari and Muslim), says from the afternoon prayer to sunset; al-Hasan says an hour of the Garden's day, which is 130 years of ours. (Translations from Ibn Kathir's Arabic are ours.)",
+   "t": "Tabâtabâî el-Mîzân’da Kummî’den bir rivayet aktarır: Âdem, hacıların hac ve umrede aralarında gidip geldiği iki tepeden Safâ’ya, Havva ise Merve’ye indi.\n\nSorun: Kaybolsan ve sonra aileni yeniden bulsan nasıl hissederdin?\n\nÂdem’in indiği yer için farklı yerler duyabilirsiniz. İbn Kesîr’in Arapça tam tefsiri bunları toplar: Hindistan (Süddî, Hasan-ı Basrî ve bir rivayette İbn Abbas), Mekke ile Tâif arasında Dehnâ denen bir yer (başka bir rivayette İbn Abbas) ya da Havva Merve’deyken Safâ (İbn Ömer). Hasan’ın rivayeti ayrıca Havva’yı Cidde’ye, İblis’i Basra yakınına, yılanı İsfahan’a yerleştirir. Süddî, Hacerülesved’in Âdem’le birlikte indiğini ekler. Bunlar Kur’an’dan değil, ilk âlimlerden gelen rivayetlerdir ve birbirleriyle çelişir.\n\nÂdem’in cennette ne kadar kaldığını da duyabilirsiniz: Hâkim’de İbn Abbas (Hâkim bunu Buhârî ve Müslim’in ölçüsüne göre sahih sayar) ikindi namazından gün batımına kadar der; Hasan, cennetin gününden bir saat, yani bizim 130 yılımız der. (İbn Kesîr’in Arapçasından çeviriler bizimdir.)"
+  },
+  "9.3": {
+   "en": "If you have been to Hajj or 'Umrah, or know someone who has, tell your child about walking between al-Safa and al-Marwa.",
+   "t": "Hacca ya da umreye gittiyseniz veya giden birini tanıyorsanız, çocuğunuza Safâ ile Merve arasında yürümeyi anlatın."
+  },
+  "9.4": {
+   "en": "In Hayat al-Qulub, Imam al-Baqir is reported to say that Jibril taught Adam the five prayers as 'model prayers for your children', and also wudu.\n\nAsk: who taught you to pray? Who would you like to teach?",
+   "t": "Hayâtü’l-Kulûb’da İmam Bâkır’ın, Cebrâil’in Âdem’e beş vakit namazı “çocukların için örnek namazlar” olarak ve abdesti de öğrettiğini söylediği aktarılır.\n\nSorun: Sana namaz kılmayı kim öğretti? Sen kime öğretmek isterdin?"
+  },
+  "9.5": {
+   "en": "If you can, plant a seed together this week: in a cup, a pot or the garden. Water it each day and talk about who makes it grow.",
+   "t": "Yapabilirseniz bu hafta birlikte bir tohum ekin: bir bardağa, bir saksıya ya da bahçeye. Her gün sulayın ve onu kimin büyüttüğünü konuşun."
+  },
+  "9.6": {
+   "en": "Talk about the people who grow our food: farmers in your country or your family's village. Ask: what would you like to grow?",
+   "t": "Yiyeceğimizi yetiştiren insanları konuşun: ülkenizdeki ya da ailenizin köyündeki çiftçiler. Sorun: Sen ne yetiştirmek isterdin?"
+  },
+  "9.7": {
+   "en": "Ask: why do we wait for fruit and grain to be ripe? What else in life needs patience to be ready?",
+   "t": "Sorun: Meyvenin ve tahılın olgunlaşmasını neden bekleriz? Hayatta hazır olması için sabır gereken başka neler var?"
+  },
+  "10.1": {
+   "en": "The Qur'an does not name the brothers. Tradition calls them Habil and Qabil (Abel and Cain), as do Shia narrations (Imam Zayn al-Abidin). The game does not name them.\n\nThe verse says 'he killed him' (5:30). The game says the angry brother hurt him so badly that he died, and no picture shows the harm. The lesson of 5:32 is told without its opening words ('We decreed to the Children of Israel').\n\nIf your child is very young, you can skip this chapter; the next one does not need it.",
+   "t": "Kur’an kardeşlerin adını vermez. Gelenek onlara Hâbil ve Kâbil der, Şii rivayetler de öyle der (İmam Zeynelâbidîn). Oyun onlara ad vermez.\n\nAyet “onu öldürerek” der (5:30). Oyun öfkeli kardeşin onu öyle incittiğini söyler ki kardeşi öldü ve hiçbir resim zararı göstermez. 5:32’nin dersi, başlangıç sözleri olmadan (“İsrailoğullarına şöyle yazdık”) anlatılır.\n\nÇocuğunuz çok küçükse bu bölümü atlayabilirsiniz; sonraki bölüm ona ihtiyaç duymaz."
+  },
+  "10.2": {
+   "en": "Ask: what makes a gift good, its size or the heart behind it? The gift that was accepted came from someone mindful of Allah.\n\nYou may hear why the gifts were offered. Ibn Kathir reports from several early scholars, and from Ibn Abbas (in Ibn Abi Hatim), that each of Adam's children was born a twin, a boy and a girl, and that a son married the twin sister of another son, as the first family had no one else; the brothers quarrelled over which sister each would marry, and Adam asked both to offer a gift to settle it. Ibn Kathir calls Ibn Abbas's chain 'better than good'. The Qur'an does not give the reason, and the game leaves the question out.",
+   "t": "Sorun: Bir hediyeyi iyi yapan nedir, büyüklüğü mü, yoksa arkasındaki kalp mi? Kabul edilen hediye Allah’tan sakınan birinden geldi.\n\nHediyelerin neden sunulduğunu duyabilirsiniz. İbn Kesîr, birkaç ilk âlimden ve İbn Abbas’tan (İbn Ebî Hâtim’de), Âdem’in her çocuğunun bir erkek ve bir kız olarak ikiz doğduğunu ve ilk ailenin başka kimsesi olmadığı için bir oğlun başka bir oğlun ikiz kız kardeşiyle evlendiğini rivayet eder; kardeşler hangisinin hangi kızla evleneceği konusunda anlaşmazlığa düştüler ve Âdem işi çözmek için ikisinden de bir kurban sunmalarını istedi. İbn Kesîr İbn Abbas’ın senedine “iyiden de iyi” der. Kur’an sebebi vermez ve oyun bu soruyu anlatmaz."
+  },
+  "10.3": {
+   "en": "The kind brother's words are 5:28. Talk about it: is it brave to refuse to hit back? What else can we do when someone wants to fight? (Walk away, get help, speak calmly.)",
+   "t": "İyi kardeşin sözleri 5:28’dedir. Konuşun: Karşılık olarak vurmayı reddetmek cesaret midir? Biri kavga etmek isteyince başka ne yapabiliriz? (Uzaklaşmak, yardım çağırmak, sakin konuşmak.)"
+  },
+  "10.4": {
+   "en": "Ask: has anyone ever been jealous of you, or have you felt jealous? What helps the feeling go away?",
+   "t": "Sorun: Hiç biri seni kıskandı mı ya da sen kıskandın mı? Bu duygunun geçmesine ne yardım eder?"
+  },
+  "10.5": {
+   "en": "This page is sad on purpose. If your child is upset, hold them and talk about it: anger that is not calmed can do terrible harm. That is why we stop, breathe and make wudu when we are angry.\n\nYou may meet these reports: that Satan showed the angry brother how to kill by crushing an animal's head with a rock (Ibn Jarir, in Ibn Kathir), and that when Hawwa learned of it she wept (Ibn Abi Hatim from Zayd bin Aslam). Ibn Kathir passes them on without calling them strong; they are commentary, not Qur'an or hadith.\n\nA hadith in al-Bukhari, Muslim and others (quoted by Ibn Kathir) says that whenever a life is taken unjustly, the first son of Adam carries a share of it, because he was the first to make killing a practice.",
+   "t": "Bu sayfa bilerek hüzünlüdür. Çocuğunuz üzülürse ona sarılın ve konuşun: Yatıştırılmayan öfke korkunç zararlar verebilir. Bu yüzden öfkelenince durur, nefes alır ve abdest alırız.\n\nŞu rivayetlerle karşılaşabilirsiniz: Şeytanın öfkeli kardeşe bir hayvanın başını taşla ezerek öldürmeyi gösterdiği (İbn Cerîr, İbn Kesîr’de) ve Havva’nın bunu öğrenince ağladığı (İbn Ebî Hâtim, Zeyd b. Eslem’den). İbn Kesîr bunları sağlam demeden aktarır; bunlar Kur’an ya da hadis değil, tefsirdir.\n\nBuhârî, Müslim ve başkalarındaki bir hadis (İbn Kesîr’in aktardığı), haksız yere bir can alındığında, öldürmeyi ilk kez bir âdet haline getirdiği için Âdem’in ilk oğlunun bundan bir pay taşıdığını söyler."
+  },
+  "10.6": {
+   "en": "The verse says the raven showed the brother how to cover his brother's body, and he said 'Could I not have been like this raven?' (5:31). The game says only that the raven scratched in the ground.\n\nIn Hayat al-Qulub, Adam wept for forty days for the son he lost.\n\nAs-Suddi reports from the Companions (in Ibn Kathir) that Allah sent two ravens, one of which killed the other and buried it, and that is how the brother learned to bury. The verse itself says only that a raven scratched the ground to show him.",
+   "t": "Ayet, karganın kardeşe kardeşinin ölüsünü nasıl örteceğini gösterdiğini ve onun “Bana yazıklar olsun! Kardeşimin ölüsünü örtmek için bu karga kadar olmaktan aciz kaldım” dediğini söyler (5:31). Oyun yalnızca karganın yeri eşelediğini söyler.\n\nHayâtü’l-Kulûb’da Âdem kaybettiği oğlu için kırk gün ağladı.\n\nSüddî, sahabeden (İbn Kesîr’de), Allah’ın iki karga gönderdiğini, birinin öbürünü öldürüp gömdüğünü ve kardeşin gömmeyi böyle öğrendiğini rivayet eder. Ayetin kendisi yalnızca bir karganın ona göstermek için yeri eşelediğini söyler."
+  },
+  "10.7": {
+   "en": "Ask: what are small ways we can save or protect someone? (Holding a little one's hand at the road, helping someone who fell, calling a grown-up.)",
+   "t": "Sorun: Birini kurtarmanın ya da korumanın küçük yolları nelerdir? (Yolda küçük birinin elini tutmak, düşen birine yardım etmek, bir büyüğü çağırmak.)"
+  },
+  "10.8": {
+   "en": "Make a family 'kindness list' for the week and tick off each kind thing someone does.",
+   "t": "Hafta için bir aile “iyilik listesi” yapın ve biri her iyilik yaptığında onu işaretleyin."
+  },
+  "11.1": {
+   "en": "Shith (Seth), Adam's son after Habil and his successor, called Hibatullah, and Adam's bequest to him: Imam al-Baqir and Imam al-Sadiq, in Majlisi's Hayat al-Qulub.\n\n7:27 warns the children of Adam not to let Satan seduce them 'as he did your parents'.",
+   "t": "Âdem’in Hâbil’den sonraki oğlu ve halefi olan, Hibetullah diye de anılan Şît ve Âdem’in ona vasiyeti: Meclisî’nin Hayâtü’l-Kulûb’unda İmam Bâkır ve İmam Câfer es-Sâdık.\n\n7:27, Âdemoğullarını şeytanın onları “ananızı babanızı cennetten çıkardığı gibi” şaşırtmasına izin vermemeleri konusunda uyarır."
+  },
+  "11.2": {
+   "en": "Ask: what do you want to teach your own children one day? What did your grandparents teach your parents?\n\nIn Hayat al-Qulub, Adam lived 930 years (Imam al-Sadiq) or 936 (Imam al-Baqir).\n\nYou may read that Qur'an 7:190, which speaks of a couple who were given a child and then 'ascribed partners' to Allah, is about Adam and Hawwa. Ibn Kathir prefers al-Hasan al-Basri's explanation, which he says has authentic chains: the verse moves from the first couple to their descendants, and it is the idol-worshippers among their children it describes, not Adam and Hawwa.",
+   "t": "Sorun: Bir gün kendi çocuklarına ne öğretmek istersin? Büyükannelerin ve büyükbabaların anne babana ne öğretti?\n\nHayâtü’l-Kulûb’da Âdem 930 yıl (İmam Câfer es-Sâdık) ya da 936 yıl (İmam Bâkır) yaşadı.\n\nKendilerine bir çocuk verilen ve sonra Allah’a “ortaklar koşan” bir çiftten söz eden Kur’an 7:190’ın Âdem ile Havva hakkında olduğunu okuyabilirsiniz. İbn Kesîr, sahih senetleri olduğunu söylediği Hasan-ı Basrî’nin açıklamasını tercih eder: Ayet ilk çiftten onların soyuna geçer ve anlattığı, Âdem ile Havva değil, çocuklarından putlara tapanlardır."
+  },
+  "11.3": {
+   "en": "This is 7:26: the best garment is being mindful of Allah (libas al-taqwa). Ask: what does it look like when someone is mindful of Allah? (Honest, kind, careful.)",
+   "t": "Bu, 7:26’dır: “Takva örtüsü ise bunlardan daha hayırlıdır” (libâsü’t-takvâ). Sorun: Biri Allah’tan sakındığında bu nasıl görünür? (Dürüst, iyiliksever, dikkatli.)"
+  },
+  "11.4": {
+   "en": "A narration in Hayat al-Qulub from Imams al-Sadiq and al-Baqir: love for others what you love for yourself. Ask: what would you like others to do for you? Can you do that for them today?\n\nMuslim reports that Adam was created on a Friday, entered the Garden on a Friday and left it on a Friday.",
+   "t": "Hayâtü’l-Kulûb’da İmam Câfer es-Sâdık ve İmam Bâkır’dan bir rivayet: Kendin için sevdiğini başkaları için de sev. Sorun: Başkalarının senin için ne yapmasını isterdin? Bugün bunu sen onlar için yapabilir misin?\n\nMüslim, Âdem’in bir Cuma günü yaratıldığını, bir Cuma günü cennete girdiğini ve bir Cuma günü oradan çıktığını rivayet eder."
+  },
+  "11.5": {
+   "en": "Ask your child to tell you the whole story in their own words, in any order they remember. Then ask: which part did you like best? Which part would you tell a friend?",
+   "t": "Çocuğunuzdan bütün hikâyeyi kendi sözleriyle, hatırladığı herhangi bir sırayla anlatmasını isteyin. Sonra sorun: En çok hangi kısmını sevdin? Bir arkadaşına hangi kısmını anlatırdın?"
+  }
+ }
+}

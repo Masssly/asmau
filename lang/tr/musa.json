@@ -1,0 +1,2770 @@
+{
+ "status": "draft",
+ "_note": "Türkçe. To be checked by a native speaker; seen only with ?lang=tr until then.",
+ "lines": {
+  "m1-a": {
+   "en": "Long, long ago, in the land of Egypt, there lived a king called Pharaoh. He was very proud. He thought he was greater than everyone.",
+   "t": "Çok çok eskiden, Mısır ülkesinde Firavun adında bir kral yaşardı. Çok kibirliydi. Kendini herkesten büyük sanırdı."
+  },
+  "m1-b": {
+   "en": "Pharaoh was cruel to one group of people, the Children of Israel. He made their lives very hard. And he gave a terrible order: their baby boys were to be taken away.",
+   "t": "Firavun bir topluluğa, İsrailoğullarına zulmediyordu. Onların hayatını çok zorlaştırdı. Ve korkunç bir emir verdi: Erkek bebekleri ellerinden alınacaktı."
+  },
+  "m1-c": {
+   "en": "But Allah had a plan. Allah wanted to help the people who were being hurt, and one day to make them the leaders.",
+   "t": "Ama Allah’ın bir planı vardı. Allah, zulme uğrayan insanlara yardım etmek ve bir gün onları önder yapmak istiyordu."
+  },
+  "m1-q": {
+   "en": "Who had a plan to help the people who were being hurt?",
+   "t": "Zulme uğrayan insanlara yardım etmek için kimin bir planı vardı?"
+  },
+  "m1-q-opt1": {
+   "en": "Allah",
+   "t": "Allah’ın"
+  },
+  "m1-q-opt2": {
+   "en": "Pharaoh",
+   "t": "Firavun’un"
+  },
+  "m1-q-no": {
+   "en": "Not Pharaoh. He was the one hurting them. Allah had a plan to help.",
+   "t": "Firavun’un değil. Onlara zulmeden oydu. Yardım etmek için Allah’ın bir planı vardı."
+  },
+  "m1-mem": {
+   "en": "Find the pairs: things you can see in the land of Egypt.",
+   "t": "Eşleri bul: Mısır ülkesinde görebileceğin şeyler."
+  },
+  "m2-a": {
+   "en": "In that hard time, a mother had a baby boy. His name was Musa. She loved him very much, and she was afraid the soldiers would find him.",
+   "t": "O zor zamanda bir annenin bir erkek bebeği oldu. Adı Musa’ydı. Annesi onu çok seviyordu ve askerlerin onu bulmasından korkuyordu."
+  },
+  "m2-b": {
+   "en": "Allah put a message in her heart: feed your baby. And when you are afraid for him, put him into the river. Do not be afraid, and do not be sad. We will bring him back to you, and make him one of the messengers.",
+   "t": "Allah onun kalbine bir haber koydu: Bebeğini emzir. Onun için korktuğun zaman onu ırmağa bırak. Korkma ve üzülme. Biz onu sana geri döndüreceğiz ve onu peygamberlerden biri yapacağız."
+  },
+  "m2-build": {
+   "en": "She got a little chest ready, like a cradle. Tap to fit every piece.",
+   "t": "Bir beşik gibi küçük bir sandık hazırladı. Her parçayı yerine oturtmak için dokun."
+  },
+  "m2-c": {
+   "en": "With a brave heart, she laid baby Musa in the chest, and set it on the water of the great river.",
+   "t": "Cesur bir kalple bebek Musa’yı sandığa yatırdı ve onu büyük ırmağın sularına bıraktı."
+  },
+  "m2-push": {
+   "en": "Gently, gently, help the chest float out onto the river.",
+   "t": "Yavaşça, yavaşça, sandığın ırmakta yüzmeye başlamasına yardım et."
+  },
+  "m2-d": {
+   "en": "The river carried him along, gently, gently. And Allah was watching over baby Musa the whole way.",
+   "t": "Irmak onu yavaşça, yavaşça taşıdı. Ve Allah bütün yol boyunca bebek Musa’yı gözetiyordu."
+  },
+  "m2-ripples": {
+   "en": "Tap each ripple to help the river carry him along.",
+   "t": "Irmağın onu taşımasına yardım etmek için her dalgacığa dokun."
+  },
+  "m2-q": {
+   "en": "What did Allah tell Musa's mother?",
+   "t": "Allah Musa’nın annesine ne söyledi?"
+  },
+  "m2-q-opt1": {
+   "en": "Hide and cry",
+   "t": "Saklan ve ağla"
+  },
+  "m2-q-opt2": {
+   "en": "Do not be afraid",
+   "t": "Korkma"
+  },
+  "m2-q-no": {
+   "en": "No. Allah told her: do not be afraid, and do not be sad.",
+   "t": "Hayır. Allah ona şöyle dedi: Korkma ve üzülme."
+  },
+  "m3-a": {
+   "en": "The river carried the chest right up to the palace of Pharaoh! The people of his house saw it in the water.",
+   "t": "Irmak sandığı ta Firavun’un sarayına kadar taşıdı! Onun ev halkı sandığı suyun içinde gördü."
+  },
+  "m3-pull": {
+   "en": "Pull the chest out of the water. Pull, pull, pull!",
+   "t": "Sandığı sudan çıkar. Çek, çek, çek!"
+  },
+  "m3-b": {
+   "en": "The people of Pharaoh's house carried it, still closed, to the queen. Her name was Asiya.",
+   "t": "Firavun’un ev halkı sandığı, hâlâ kapalıyken, kraliçeye götürdü. Onun adı Âsiye’ydi."
+  },
+  "m3-open": {
+   "en": "What is inside? Tap the chest to open it.",
+   "t": "İçinde ne var? Açmak için sandığa dokun."
+  },
+  "m3-open-s1": {
+   "en": "A beautiful baby boy!",
+   "t": "Güzel bir erkek bebek!"
+  },
+  "m3-c": {
+   "en": "Inside was a beautiful baby boy. And Allah filled her heart with love for him.",
+   "t": "İçinde güzel bir erkek bebek vardı. Ve Allah onun kalbini bebeğe karşı sevgiyle doldurdu."
+  },
+  "m3-hearts": {
+   "en": "Everyone who saw baby Musa loved him. Tap every heart to make it glow.",
+   "t": "Bebek Musa’yı gören herkes onu sevdi. Parlatmak için her kalbe dokun."
+  },
+  "m3-d": {
+   "en": "Asiya said to Pharaoh: this baby will be a joy for me and for you. Do not harm him! He may help us one day, or we may take him as our son.",
+   "t": "Âsiye Firavun’a şöyle dedi: Bu bebek benim için de senin için de bir göz aydınlığıdır. Ona zarar verme! Belki bir gün bize faydası olur ya da onu evlat ediniriz."
+  },
+  "m3-e": {
+   "en": "So baby Musa was safe, in the palace of the very king who was looking for baby boys. Pharaoh did not know what Allah had planned.",
+   "t": "Böylece bebek Musa, erkek bebekleri arayan kralın ta kendi sarayında güvendeydi. Firavun, Allah’ın ne planladığını bilmiyordu."
+  },
+  "m3-q": {
+   "en": "Who asked Pharaoh not to harm the baby?",
+   "t": "Firavun’dan bebeğe zarar vermemesini kim istedi?"
+  },
+  "m3-q-opt1": {
+   "en": "Asiya, the queen",
+   "t": "Kraliçe Âsiye"
+  },
+  "m3-q-opt2": {
+   "en": "A soldier",
+   "t": "Bir asker"
+  },
+  "m3-q-no": {
+   "en": "No. It was Asiya, the queen. Allah had filled her heart with love.",
+   "t": "Hayır. Kraliçe Âsiye’ydi. Allah onun kalbini sevgiyle doldurmuştu."
+  },
+  "m4-a": {
+   "en": "At home, Musa's mother could think of nothing but her baby. Her heart felt empty. But Allah made her heart strong, so that she would keep on trusting Him.",
+   "t": "Evde Musa’nın annesi bebeğinden başka hiçbir şey düşünemiyordu. Kalbi bomboştu. Ama Allah, O’na güvenmeye devam etsin diye onun kalbini güçlendirdi."
+  },
+  "m4-b": {
+   "en": "She said to Musa's big sister: follow him. So his sister watched from far away, and nobody noticed her.",
+   "t": "Musa’nın ablasına şöyle dedi: Onun ardından git. Böylece ablası onu uzaktan izledi ve kimse onu fark etmedi."
+  },
+  "m4-follow": {
+   "en": "Follow the chest quietly along the bank. Tap each footprint.",
+   "t": "Sandığı kıyı boyunca sessizce takip et. Her ayak izine dokun."
+  },
+  "m4-c": {
+   "en": "In the palace, baby Musa was hungry. He cried and cried. Nurse after nurse came to feed him, but he would not drink from any of them.",
+   "t": "Sarayda bebek Musa acıkmıştı. Ağladı da ağladı. Sütanneler birbiri ardınca onu emzirmeye geldi, ama hiçbirinden süt emmedi."
+  },
+  "m4-nurses": {
+   "en": "Try every nurse. Tap each one. Baby Musa says no, no, no!",
+   "t": "Her sütanneyi dene. Her birine dokun. Bebek Musa hayır, hayır, hayır diyor!"
+  },
+  "m4-d": {
+   "en": "Then his sister stepped forward and said: shall I show you a family who will feed him, and take good care of him?",
+   "t": "Sonra ablası öne çıktı ve şöyle dedi: Size onu emzirecek ve ona iyi bakacak bir aile göstereyim mi?"
+  },
+  "m4-e": {
+   "en": "And who was it? Musa's own mother! He drank at once. Allah gave him back to her, so that her heart would be glad, and so that she would know: the promise of Allah is always true.",
+   "t": "Peki bu kimdi? Musa’nın kendi annesi! Hemen emdi. Allah onu annesine geri verdi ki kalbi sevinsin ve şunu bilsin: Allah’ın vaadi her zaman gerçektir."
+  },
+  "m4-f": {
+   "en": "The queen even paid her to feed her own baby! It is told that only about a day and a night had gone by.",
+   "t": "Kraliçe ona kendi bebeğini emzirmesi için para bile ödedi! Anlatıldığına göre aradan yalnızca bir gün bir gece kadar geçmişti."
+  },
+  "m4-q": {
+   "en": "Who fed baby Musa in the end?",
+   "t": "Sonunda bebek Musa’yı kim emzirdi?"
+  },
+  "m4-q-opt1": {
+   "en": "A palace nurse",
+   "t": "Saraydan bir sütanne"
+  },
+  "m4-q-opt2": {
+   "en": "His own mother",
+   "t": "Kendi annesi"
+  },
+  "m4-q-no": {
+   "en": "No. He would not drink from any nurse. Allah gave him back to his own mother.",
+   "t": "Hayır. Hiçbir sütanneden emmedi. Allah onu kendi annesine geri verdi."
+  },
+  "m4-ord": {
+   "en": "What happened first? Tap them in order.",
+   "t": "Önce ne oldu? Sırayla dokun."
+  },
+  "m4-ord-c1": {
+   "en": "First, his mother put him on the river.",
+   "t": "Önce annesi onu ırmağa bıraktı."
+  },
+  "m4-ord-c2": {
+   "en": "Then the queen found him and loved him.",
+   "t": "Sonra kraliçe onu buldu ve sevdi."
+  },
+  "m4-ord-c3": {
+   "en": "Then he would not drink from any nurse.",
+   "t": "Sonra hiçbir sütanneden emmedi."
+  },
+  "m4-ord-c4": {
+   "en": "And then he was back in his mother's arms.",
+   "t": "Sonra da yeniden annesinin kollarındaydı."
+  },
+  "m4-ord-no": {
+   "en": "Not that one yet. Think: what happened before it?",
+   "t": "Henüz o değil. Düşün: Ondan önce ne oldu?"
+  },
+  "m5-a": {
+   "en": "Musa grew up in the palace, like a prince. It is told that he even slept in the king's own room.",
+   "t": "Musa sarayda bir şehzade gibi büyüdü. Anlatıldığına göre kralın kendi odasında bile uyurdu."
+  },
+  "m5-b": {
+   "en": "It is told that once, when he was little, Musa was given a sweet date and a hot, glowing coal. He put the coal to his tongue! After that, speaking was hard for him.",
+   "t": "Anlatıldığına göre bir keresinde, küçükken, Musa’ya tatlı bir hurma ve kıpkızıl yanan bir kor verildi. Koru diline götürdü! Ondan sonra konuşmak ona zor geldi."
+  },
+  "m5-sort": {
+   "en": "Help the little ones choose. Is it safe to eat, or too hot to touch?",
+   "t": "Küçüklerin seçmesine yardım et. Yemek güvenli mi, yoksa dokunulamayacak kadar sıcak mı?"
+  },
+  "m5-sort-bin1": {
+   "en": "Safe to eat",
+   "t": "Yemek güvenli"
+  },
+  "m5-sort-bin2": {
+   "en": "Too hot! Do not touch",
+   "t": "Çok sıcak! Dokunma"
+  },
+  "m5-sort-it1": {
+   "en": "A sweet date",
+   "t": "Tatlı bir hurma"
+  },
+  "m5-sort-it2": {
+   "en": "A glowing coal",
+   "t": "Yanan bir kor"
+  },
+  "m5-sort-it3": {
+   "en": "Warm bread",
+   "t": "Ilık ekmek"
+  },
+  "m5-sort-it4": {
+   "en": "A candle flame",
+   "t": "Bir mum alevi"
+  },
+  "m5-sort-it5": {
+   "en": "A cup of milk",
+   "t": "Bir bardak süt"
+  },
+  "m5-sort-no": {
+   "en": "Think again. Would it burn you?",
+   "t": "Bir daha düşün. Seni yakar mıydı?"
+  },
+  "m5-c": {
+   "en": "When Musa was fully grown and strong, Allah gave him wisdom and knowledge. That is how Allah rewards the people who do good.",
+   "t": "Musa tam yetişip güçlenince Allah ona hikmet ve bilgi verdi. Allah iyilik yapanları işte böyle mükafatlandırır."
+  },
+  "m5-d": {
+   "en": "Musa never forgot the family who fed him as a baby. It is told that when he grew up, he looked after the Children of Israel. While he was near, Pharaoh's men did not dare to hurt them.",
+   "t": "Musa bebekken kendisini emziren aileyi hiç unutmadı. Anlatıldığına göre büyüyünce İsrailoğullarını korudu. O yakındayken Firavun’un adamları onlara zarar vermeye cesaret edemezdi."
+  },
+  "m5-puz": {
+   "en": "Put the picture of Musa back together. Tap two pieces to swap them.",
+   "t": "Musa’nın resmini yeniden birleştir. Yerlerini değiştirmek için iki parçaya dokun."
+  },
+  "m5-q": {
+   "en": "What did Allah give Musa when he was grown?",
+   "t": "Musa büyüyünce Allah ona ne verdi?"
+  },
+  "m5-q-opt1": {
+   "en": "Wisdom and knowledge",
+   "t": "Hikmet ve bilgi"
+  },
+  "m5-q-opt2": {
+   "en": "A golden crown",
+   "t": "Altın bir taç"
+  },
+  "m5-q-no": {
+   "en": "Not a crown. Allah gave him wisdom and knowledge.",
+   "t": "Taç değil. Allah ona hikmet ve bilgi verdi."
+  },
+  "m6-a": {
+   "en": "One day Musa walked into the city when the streets were quiet. He found two men fighting. One was from his own people. The other was from Pharaoh's people.",
+   "t": "Bir gün Musa, sokakların sessiz olduğu bir vakitte şehre girdi. Kavga eden iki adam gördü. Biri kendi kavmindendi. Öbürü Firavun’un kavmindendi."
+  },
+  "m6-b": {
+   "en": "The man from his people shouted: help me! Musa hit the other man with his fist, just once. But the man fell down, and did not get up again.",
+   "t": "Kendi kavminden olan adam bağırdı: Bana yardım et! Musa öbür adama yumruğuyla bir kez vurdu. Ama adam yere düştü ve bir daha kalkmadı."
+  },
+  "m6-c": {
+   "en": "Musa was so sorry. He said: this is the work of Shaytan. My Lord, I have done wrong. Please forgive me. And Allah forgave him. Allah is the Most Forgiving, the Most Kind.",
+   "t": "Musa çok pişman oldu. Şöyle dedi: Bu şeytanın işidir. Rabbim! Doğrusu kendime yazık ettim, beni bağışla. Ve Allah onu bağışladı. Allah çok bağışlayandır, çok merhametlidir."
+  },
+  "m6-sorry": {
+   "en": "Say sorry from the heart, like Musa. Press and hold the hands until they shine.",
+   "t": "Musa gibi gönülden af dile. Eller parlayana kadar basılı tut."
+  },
+  "m6-q": {
+   "en": "What did Musa do when he had done something wrong?",
+   "t": "Musa yanlış bir şey yapınca ne yaptı?"
+  },
+  "m6-q-opt1": {
+   "en": "He pretended nothing happened",
+   "t": "Hiçbir şey olmamış gibi davrandı"
+  },
+  "m6-q-opt2": {
+   "en": "He asked Allah to forgive him",
+   "t": "Allah’tan onu bağışlamasını istedi"
+  },
+  "m6-q-no": {
+   "en": "No. Musa said sorry straight away, and asked Allah to forgive him.",
+   "t": "Hayır. Musa hemen pişman oldu ve Allah’tan onu bağışlamasını istedi."
+  },
+  "m6-d": {
+   "en": "Soon the whole city knew what had happened. Then a man came running from the far side of the city. He said: Musa! The chiefs are coming to punish you. Leave now! I am giving you good advice.",
+   "t": "Çok geçmeden bütün şehir olanları öğrendi. Sonra şehrin öbür ucundan bir adam koşarak geldi. Şöyle dedi: Ey Musa! İleri gelenler seni cezalandırmaya geliyor. Hemen git! Ben sana iyi öğüt veriyorum."
+  },
+  "m6-e": {
+   "en": "So Musa left the city, afraid, looking over his shoulder. He prayed: my Lord, save me from the people who do wrong.",
+   "t": "Böylece Musa korku içinde, arkasına bakarak şehirden ayrıldı. Şöyle dua etti: Rabbim, beni zalimler topluluğundan kurtar."
+  },
+  "m6-flee": {
+   "en": "Help Musa slip away from the city.",
+   "t": "Musa’nın şehirden gizlice çıkmasına yardım et."
+  },
+  "m7-a": {
+   "en": "Musa set off towards a land called Madyan. It was a long, long way. He said: I hope my Lord will guide me to the right way.",
+   "t": "Musa Medyen denen bir ülkeye doğru yola çıktı. Çok ama çok uzun bir yoldu. Şöyle dedi: Umarım Rabbim beni doğru yola iletir."
+  },
+  "m7-walk": {
+   "en": "Walk with Musa across the desert. Tap each footprint.",
+   "t": "Musa’yla birlikte çölü geç. Her ayak izine dokun."
+  },
+  "m7-b": {
+   "en": "At last he came to the water of Madyan. A crowd of shepherds were watering their sheep. And standing back, away from the crowd, were two young women, holding their sheep back.",
+   "t": "Sonunda Medyen suyuna vardı. Bir sürü çoban koyunlarını suluyordu. Ve kalabalıktan uzakta, geride, koyunlarını tutan iki genç kadın duruyordu."
+  },
+  "m7-c": {
+   "en": "Musa asked: what is the matter? They said: we cannot water our sheep until the shepherds have gone. And our father is a very old man.",
+   "t": "Musa sordu: Ne oldu? Şöyle dediler: Çobanlar gidene kadar koyunlarımızı sulayamıyoruz. Babamız da çok yaşlı bir adam."
+  },
+  "m7-d": {
+   "en": "It is told that a great heavy rock covered the well, a rock that it took ten men to lift. Musa lifted it all by himself!",
+   "t": "Anlatıldığına göre kuyunun üzerini, ancak on adamın kaldırabildiği büyük, ağır bir kaya örtüyordu. Musa onu tek başına kaldırdı!"
+  },
+  "m7-rock": {
+   "en": "Lift the heavy rock off the well. Pull, pull, pull!",
+   "t": "Ağır kayayı kuyunun üzerinden kaldır. Çek, çek, çek!"
+  },
+  "m7-sheep": {
+   "en": "Now give every sheep a drink. Tap each one.",
+   "t": "Şimdi her koyuna su ver. Her birine dokun."
+  },
+  "m7-e": {
+   "en": "When every sheep had drunk, Musa went to rest in the shade. He was tired and hungry, and far from home. He prayed: my Lord, I am in need of whatever good You send me.",
+   "t": "Bütün koyunlar su içince Musa dinlenmek için gölgeye çekildi. Yorgun ve açtı, evinden de çok uzaktaydı. Şöyle dua etti: Rabbim! Doğrusu bana indireceğin hayra muhtacım."
+  },
+  "m7-q": {
+   "en": "Musa had nothing left. Who did he ask for help?",
+   "t": "Musa’nın elinde hiçbir şey kalmamıştı. Kimden yardım istedi?"
+  },
+  "m7-q-opt1": {
+   "en": "Allah",
+   "t": "Allah’tan"
+  },
+  "m7-q-opt2": {
+   "en": "The shepherds",
+   "t": "Çobanlardan"
+  },
+  "m7-q-no": {
+   "en": "No. Musa asked Allah: my Lord, I am in need of whatever good You send me.",
+   "t": "Hayır. Musa Allah’tan istedi: Rabbim! Doğrusu bana indireceğin hayra muhtacım."
+  },
+  "m7-mem": {
+   "en": "Find the pairs from the well of Madyan.",
+   "t": "Medyen kuyusundan eşleri bul."
+  },
+  "m8-a": {
+   "en": "The two sisters went home and told their father what had happened. Soon one of them came back, walking shyly. She said: my father is asking for you. He wants to thank you for watering our sheep.",
+   "t": "İki kız kardeş eve gidip babalarına olanları anlattılar. Çok geçmeden biri utana utana yürüyerek geri geldi. Şöyle dedi: Babam seni çağırıyor. Koyunlarımızı suladığın için sana teşekkür etmek istiyor."
+  },
+  "m8-b": {
+   "en": "On the way, Musa walked in front. It is told that he asked her to walk behind him, and to throw a little pebble to show him which way to turn.",
+   "t": "Yolda Musa önden yürüdü. Anlatıldığına göre kızdan arkasından yürümesini ve hangi yöne döneceğini göstermek için küçük bir çakıl taşı atmasını istedi."
+  },
+  "m8-pebble": {
+   "en": "Show Musa the way. Tap where each pebble lands.",
+   "t": "Musa’ya yolu göster. Her çakıl taşının düştüğü yere dokun."
+  },
+  "m8-c": {
+   "en": "Musa told the old man his whole story. The old man said: do not be afraid. You are safe now.",
+   "t": "Musa yaşlı adama bütün hikâyesini anlattı. Yaşlı adam şöyle dedi: Korkma. Artık güvendesin."
+  },
+  "m8-d": {
+   "en": "One daughter said: father, hire him! The best person to hire is one who is strong, and can be trusted.",
+   "t": "Kızlardan biri şöyle dedi: Babacığım, onu ücretli olarak tut! Ücretle tuttuklarının en iyisi, güçlü ve güvenilir olandır."
+  },
+  "m8-q": {
+   "en": "What makes the best helper?",
+   "t": "En iyi yardımcıyı ne yapar?"
+  },
+  "m8-q-opt1": {
+   "en": "Loud and bossy",
+   "t": "Bağırmak ve emir vermek"
+  },
+  "m8-q-opt2": {
+   "en": "Strong, and can be trusted",
+   "t": "Güçlü ve güvenilir olmak"
+  },
+  "m8-q-no": {
+   "en": "No. She said the best helper is strong, and can be trusted.",
+   "t": "Hayır. Kız, en iyi yardımcının güçlü ve güvenilir olan olduğunu söyledi."
+  },
+  "m8-e": {
+   "en": "The old man said: I would like you to marry one of my daughters, and to work for me for eight years. Ten, if you choose. And Musa agreed.",
+   "t": "Yaşlı adam şöyle dedi: Kızlarımdan biriyle evlenmeni ve sekiz yıl yanımda çalışmanı istiyorum. Dilersen on yıl. Ve Musa kabul etti."
+  },
+  "m8-years": {
+   "en": "It is told that Musa stayed the full ten years. Tap each sun to count them.",
+   "t": "Anlatıldığına göre Musa on yılın tamamını kaldı. Saymak için her güneşe dokun."
+  },
+  "m8-flock": {
+   "en": "Musa was a shepherd now. Gather the sheep as they wander.",
+   "t": "Musa artık bir çobandı. Dolaşan koyunları topla."
+  },
+  "m8-puz": {
+   "en": "Put the picture back together. Tap two pieces to swap them.",
+   "t": "Resmi yeniden birleştir. Yerlerini değiştirmek için iki parçaya dokun."
+  },
+  "m9-a": {
+   "en": "When his years of work were done, Musa set off on a journey with his family. One cold, dark night, he saw a fire, far away on the side of the mountain.",
+   "t": "Çalışma yılları bitince Musa ailesiyle yola çıktı. Soğuk, karanlık bir gecede, uzakta, dağın yamacında bir ateş gördü."
+  },
+  "m9-b": {
+   "en": "He said to his family: wait here. I can see a fire. Maybe I can bring you a burning stick to warm you, or find someone there to show us the way.",
+   "t": "Ailesine şöyle dedi: Burada bekleyin. Bir ateş görüyorum. Belki sizi ısıtmak için yanan bir odun getiririm ya da orada bize yolu gösterecek birini bulurum."
+  },
+  "m9-seek": {
+   "en": "It is so dark. Slide your finger around to look, and find the fire.",
+   "t": "Çok karanlık. Bakmak için parmağını gezdir ve ateşi bul."
+  },
+  "m9-climb": {
+   "en": "Walk with Musa up to the fire.",
+   "t": "Musa’yla birlikte ateşe kadar yürü."
+  },
+  "m9-c": {
+   "en": "When he came close, a voice called out: Musa! I am your Lord. Take off your sandals. You are in the holy valley of Tuwa.",
+   "t": "Yaklaşınca bir ses seslendi: Ey Musa! Ben senin Rabbinim. Ayakkabılarını çıkar. Sen kutsal Tuvâ vadisindesin."
+  },
+  "m9-sandals": {
+   "en": "Help Musa take off his sandals. Tap each one.",
+   "t": "Musa’nın sandaletlerini çıkarmasına yardım et. Her birine dokun."
+  },
+  "m9-d": {
+   "en": "I have chosen you, so listen. I am Allah. There is no god but Me. So worship Me, and keep up the prayer, to remember Me.",
+   "t": "Seni Ben seçtim, öyleyse dinle. Ben Allah’ım. Benden başka tanrı yoktur. Öyleyse Bana kulluk et ve Beni anmak için namaz kıl."
+  },
+  "m9-listen": {
+   "en": "Be very still and listen, like Musa. Press and hold the light.",
+   "t": "Musa gibi kıpırdamadan dur ve dinle. Işığı basılı tut."
+  },
+  "m9-q": {
+   "en": "Who called to Musa in the holy valley?",
+   "t": "Kutsal vadide Musa’ya kim seslendi?"
+  },
+  "m9-q-opt1": {
+   "en": "Allah, his Lord",
+   "t": "Rabbi Allah"
+  },
+  "m9-q-opt2": {
+   "en": "A shepherd",
+   "t": "Bir çoban"
+  },
+  "m9-q-no": {
+   "en": "No. It was Allah who called: Musa, I am your Lord.",
+   "t": "Hayır. Seslenen Allah’tı: Ey Musa, Ben senin Rabbinim."
+  },
+  "m10-a": {
+   "en": "Allah asked: what is that in your right hand, Musa? He said: it is my staff. I lean on it. I look after my sheep with it. And I use it for other things too.",
+   "t": "Allah sordu: Sağ elindeki nedir, ey Musa? Şöyle dedi: Bu benim değneğim. Ona dayanırım. Onunla koyunlarıma bakarım. Başka işlerde de onu kullanırım."
+  },
+  "m10-staff": {
+   "en": "Allah said: throw it down. Tap the staff to throw it.",
+   "t": "Allah şöyle dedi: Onu yere at. Atmak için değneğe dokun."
+  },
+  "m10-staff-s1": {
+   "en": "It became a snake, moving fast! Musa turned to run. Allah said: pick it up, and do not be afraid. Tap the snake.",
+   "t": "Hızla hareket eden bir yılan oldu! Musa kaçmak için döndü. Allah şöyle dedi: Onu tut ve korkma. Yılana dokun."
+  },
+  "m10-staff-s2": {
+   "en": "And it was a staff again.",
+   "t": "Ve yeniden bir değnek oldu."
+  },
+  "m10-b": {
+   "en": "The staff had become a real snake, and then a staff again. It was a sign from Allah.",
+   "t": "Değnek gerçek bir yılan olmuş, sonra yeniden değnek olmuştu. Bu, Allah’tan bir mucizeydi."
+  },
+  "m10-hand": {
+   "en": "Then Allah said: put your hand inside your shirt, and take it out. Tap the hand.",
+   "t": "Sonra Allah şöyle dedi: Elini gömleğinin içine sok ve çıkar. Ele dokun."
+  },
+  "m10-hand-s1": {
+   "en": "It shone white, bright and beautiful, and it did not hurt at all! Tap it again.",
+   "t": "Bembeyaz, parlak ve güzel parladı ve hiç acımadı! Yeniden dokun."
+  },
+  "m10-hand-s2": {
+   "en": "And it was just as before.",
+   "t": "Ve eskisi gibi oldu."
+  },
+  "m10-c": {
+   "en": "Musa's hand shone white. It is told that it shone like the moon. This was another sign.",
+   "t": "Musa’nın eli bembeyaz parladı. Anlatıldığına göre ay gibi parlıyordu. Bu da başka bir mucizeydi."
+  },
+  "m10-d": {
+   "en": "Then Allah said: now go to Pharaoh. He has gone much too far.",
+   "t": "Sonra Allah şöyle dedi: Şimdi Firavun’a git. O çok azdı."
+  },
+  "m10-match": {
+   "en": "Match each thing to what happened. Tap one on the left, then its partner on the right.",
+   "t": "Her şeyi olanla eşleştir. Soldakine, sonra sağdaki eşine dokun."
+  },
+  "m10-match-a1": {
+   "en": "The staff",
+   "t": "Değnek"
+  },
+  "m10-match-b1": {
+   "en": "became a snake",
+   "t": "yılan oldu"
+  },
+  "m10-match-a2": {
+   "en": "The hand",
+   "t": "El"
+  },
+  "m10-match-b2": {
+   "en": "shone white",
+   "t": "bembeyaz parladı"
+  },
+  "m10-match-a3": {
+   "en": "The sandals",
+   "t": "Sandaletler"
+  },
+  "m10-match-b3": {
+   "en": "came off in the holy valley",
+   "t": "kutsal vadide çıkarıldı"
+  },
+  "m10-mem": {
+   "en": "Find the pairs from that wonderful night.",
+   "t": "O harika geceden eşleri bul."
+  },
+  "m11-a": {
+   "en": "Musa was worried. He said: my Lord, I am afraid of what they may do to me. And speaking is hard for me. My brother Harun speaks better than I do.",
+   "t": "Musa endişelendi. Şöyle dedi: Rabbim, bana ne yapacaklarından korkuyorum. Konuşmak da bana zor geliyor. Kardeşim Harun benden daha güzel konuşur."
+  },
+  "m11-b": {
+   "en": "So he prayed a beautiful prayer: my Lord, open up my heart. Make my task easy for me. And untie the knot in my tongue, so that they can understand my words.",
+   "t": "Bunun üzerine güzel bir dua etti: Rabbim! Göğsümü genişlet, işimi kolaylaştır, dilimin düğümünü çöz ki sözümü iyi anlasınlar."
+  },
+  "m11-c": {
+   "en": "And give me a helper from my family: Harun, my brother. Make me strong through him, and let him share my task, so that we may praise You and remember You a great deal.",
+   "t": "Ailemden kardeşim Harun’u bana yardımcı yap. Beni onunla destekle ve onu görevimde ortak kıl ki Seni daha çok tesbih edelim ve çokça analım."
+  },
+  "m11-ord": {
+   "en": "Say Musa's prayer with him. Tap the parts in order.",
+   "t": "Musa’yla birlikte onun duasını söyle. Parçalara sırayla dokun."
+  },
+  "m11-ord-c1": {
+   "en": "My Lord, open up my heart.",
+   "t": "Rabbim! Göğsümü genişlet."
+  },
+  "m11-ord-c2": {
+   "en": "Make my task easy for me.",
+   "t": "İşimi kolaylaştır."
+  },
+  "m11-ord-c3": {
+   "en": "Untie the knot in my tongue.",
+   "t": "Dilimin düğümünü çöz."
+  },
+  "m11-ord-c4": {
+   "en": "And give me my brother to help me.",
+   "t": "Ve kardeşimi bana yardımcı yap."
+  },
+  "m11-ord-no": {
+   "en": "Not yet. Listen again: heart, task, tongue, brother.",
+   "t": "Henüz değil. Yeniden dinle: göğüs, iş, dil, kardeş."
+  },
+  "m11-d": {
+   "en": "Allah said: Musa, you have been given what you asked for.",
+   "t": "Allah şöyle dedi: Ey Musa, istediğin sana verildi."
+  },
+  "m11-e0": {
+   "en": "So Musa set off back to Egypt, with his brother Harun at his side.",
+   "t": "Böylece Musa, yanında kardeşi Harun’la Mısır’a doğru yola çıktı."
+  },
+  "m11-e": {
+   "en": "Allah told them: go to Pharaoh, both of you. Speak to him gently, so that he may think, and remember. Do not be afraid. I am with you both. I hear and I see everything.",
+   "t": "Allah onlara şöyle dedi: İkiniz Firavun’a gidin. Ona yumuşak söz söyleyin ki belki düşünür, öğüt alır. Korkmayın. Ben sizinle beraberim. Her şeyi işitir ve görürüm."
+  },
+  "m11-q": {
+   "en": "How should Musa and Harun speak to Pharaoh?",
+   "t": "Musa ile Harun Firavun’la nasıl konuşmalıydı?"
+  },
+  "m11-q-opt1": {
+   "en": "With shouting",
+   "t": "Bağırarak"
+  },
+  "m11-q-opt2": {
+   "en": "Gently",
+   "t": "Yumuşakça"
+  },
+  "m11-q-no": {
+   "en": "No. Allah told them: speak to him gently.",
+   "t": "Hayır. Allah onlara şöyle dedi: Ona yumuşak söz söyleyin."
+  },
+  "m11-sort": {
+   "en": "Is it a gentle word, or a harsh word?",
+   "t": "Bu yumuşak bir söz mü, yoksa sert bir söz mü?"
+  },
+  "m11-sort-bin1": {
+   "en": "Gentle",
+   "t": "Yumuşak"
+  },
+  "m11-sort-bin2": {
+   "en": "Harsh",
+   "t": "Sert"
+  },
+  "m11-sort-it1": {
+   "en": "Please listen to me",
+   "t": "Lütfen beni dinle"
+  },
+  "m11-sort-it2": {
+   "en": "You are stupid!",
+   "t": "Sen aptalsın!"
+  },
+  "m11-sort-it3": {
+   "en": "Let us talk together",
+   "t": "Gel birlikte konuşalım"
+  },
+  "m11-sort-it4": {
+   "en": "Go away!",
+   "t": "Defol!"
+  },
+  "m11-sort-it5": {
+   "en": "Peace be with you",
+   "t": "Selam sana"
+  },
+  "m11-sort-no": {
+   "en": "Think again. How would it feel to hear that?",
+   "t": "Bir daha düşün. Bunu duymak nasıl hissettirirdi?"
+  },
+  "m12-a": {
+   "en": "Musa and Harun stood before Pharaoh in his great hall. They said: we are messengers from your Lord. Let the Children of Israel go with us, and stop hurting them.",
+   "t": "Musa ile Harun, Firavun’un büyük salonunda onun karşısında durdular. Şöyle dediler: Biz senin Rabbinin elçileriyiz. İsrailoğullarını bizimle gönder ve onlara zulmetmeyi bırak."
+  },
+  "m12-b": {
+   "en": "Musa showed them the clear signs that Allah had given him.",
+   "t": "Musa onlara Allah’ın kendisine verdiği apaçık mucizeleri gösterdi."
+  },
+  "m12-signs": {
+   "en": "Which two signs did Allah give Musa? Tap them.",
+   "t": "Allah Musa’ya hangi iki mucizeyi verdi? Onlara dokun."
+  },
+  "m12-c": {
+   "en": "But Pharaoh and his chiefs said: this is nothing but magic tricks! We never heard of anything like this from our fathers.",
+   "t": "Ama Firavun ve ileri gelenleri şöyle dediler: Bu sihir oyunlarından başka bir şey değil! Atalarımızdan böyle bir şey hiç duymadık."
+  },
+  "m12-d": {
+   "en": "Pharaoh said: have you come to push us out of our land with your magic, Musa? We will bring you magic just like it. So choose a day!",
+   "t": "Firavun şöyle dedi: Ey Musa, sihrinle bizi yurdumuzdan çıkarmaya mı geldin? Biz de sana onun gibi bir sihir getireceğiz. Öyleyse bir gün seç!"
+  },
+  "m12-e": {
+   "en": "Musa said: let it be the day of the festival. And let all the people gather when the sun is high.",
+   "t": "Musa şöyle dedi: Bayram günü olsun. Ve bütün insanlar kuşluk vakti toplansın."
+  },
+  "m12-q": {
+   "en": "Which day did Musa choose?",
+   "t": "Musa hangi günü seçti?"
+  },
+  "m12-q-opt1": {
+   "en": "The day of the festival, with everyone watching",
+   "t": "Herkesin izlediği bayram gününü"
+  },
+  "m12-q-opt2": {
+   "en": "A secret night, with nobody there",
+   "t": "Kimsenin olmadığı gizli bir geceyi"
+  },
+  "m12-q-no": {
+   "en": "No. Musa chose the festival day, so that everyone could see the truth.",
+   "t": "Hayır. Musa, herkes gerçeği görebilsin diye bayram gününü seçti."
+  },
+  "m12-crowd": {
+   "en": "Help gather all the people for the big day. Tap them as they come.",
+   "t": "Büyük gün için bütün insanları toplamaya yardım et. Geldikçe onlara dokun."
+  },
+  "m12-puz": {
+   "en": "Put the picture back together. Tap two pieces to swap them.",
+   "t": "Resmi yeniden birleştir. Yerlerini değiştirmek için iki parçaya dokun."
+  },
+  "m13-a": {
+   "en": "The big day came. The sun was high, and the whole city was there. Pharaoh's magicians stood in a row, with their ropes and their sticks.",
+   "t": "Büyük gün geldi. Güneş yükselmişti ve bütün şehir oradaydı. Firavun’un sihirbazları ipleri ve değnekleriyle sıra sıra dizilmişti."
+  },
+  "m13-b": {
+   "en": "Musa warned them: do not make up lies about Allah! Then they said: Musa, will you throw first, or shall we? Musa said: you throw.",
+   "t": "Musa onları uyardı: Allah hakkında yalan uydurmayın! Sonra onlar şöyle dediler: Ey Musa, önce sen mi atacaksın, yoksa biz mi? Musa şöyle dedi: Siz atın."
+  },
+  "m13-q1": {
+   "en": "Who threw first?",
+   "t": "Önce kim attı?"
+  },
+  "m13-q1-opt1": {
+   "en": "Musa",
+   "t": "Musa"
+  },
+  "m13-q1-opt2": {
+   "en": "The magicians",
+   "t": "Sihirbazlar"
+  },
+  "m13-q1-no": {
+   "en": "No. Musa said to the magicians: you throw first.",
+   "t": "Hayır. Musa sihirbazlara şöyle dedi: Önce siz atın."
+  },
+  "m13-c": {
+   "en": "The magicians threw down their ropes and their sticks. And by their magic, the ropes seemed to wriggle and slither, just like snakes!",
+   "t": "Sihirbazlar iplerini ve değneklerini yere attılar. Ve sihirleriyle ipler tıpkı yılanlar gibi kıvrılıp sürünüyormuş gibi göründü!"
+  },
+  "m13-ropes": {
+   "en": "Look closely. They are only ropes! Tap each one to see what it really is.",
+   "t": "Dikkatle bak. Bunlar yalnızca ip! Gerçekte ne olduğunu görmek için her birine dokun."
+  },
+  "m13-d": {
+   "en": "Even Musa felt afraid inside. But Allah said: do not be afraid. You will win. Throw down what is in your right hand.",
+   "t": "Musa bile içinde bir korku duydu. Ama Allah şöyle dedi: Korkma. Sen üstün geleceksin. Sağ elindekini at."
+  },
+  "m13-throw": {
+   "en": "Throw down the staff! Tap it.",
+   "t": "Değneği at! Ona dokun."
+  },
+  "m13-throw-s1": {
+   "en": "It swallowed up everything the magicians had made!",
+   "t": "Sihirbazların yaptığı her şeyi yutuverdi!"
+  },
+  "m13-e": {
+   "en": "Musa's staff swallowed up everything they had made, every rope and every stick, until nothing was left.",
+   "t": "Musa’nın değneği onların yaptığı her şeyi, her ipi ve her değneği, hiçbir şey kalmayana kadar yuttu."
+  },
+  "m13-swallow": {
+   "en": "Help the staff swallow the tricks. Tap the ropes as they appear.",
+   "t": "Değneğin hileleri yutmasına yardım et. Göründükçe iplere dokun."
+  },
+  "m13-f": {
+   "en": "The magicians knew magic, and they knew this was no trick. They fell to the ground and said: we believe in the Lord of Harun and Musa!",
+   "t": "Sihirbazlar sihri bilirdi ve bunun bir hile olmadığını anladılar. Secdeye kapandılar ve şöyle dediler: Harun’un ve Musa’nın Rabbine inandık!"
+  },
+  "m13-q2": {
+   "en": "Why did the magicians believe?",
+   "t": "Sihirbazlar neden inandılar?"
+  },
+  "m13-q2-opt1": {
+   "en": "They saw it was no trick. It was from Allah",
+   "t": "Bunun hile olmadığını gördüler. Allah’tandı"
+  },
+  "m13-q2-opt2": {
+   "en": "Pharaoh told them to",
+   "t": "Firavun onlara öyle söyledi"
+  },
+  "m13-q2-no": {
+   "en": "No. Pharaoh was furious! They believed because they saw it was truly from Allah.",
+   "t": "Hayır. Firavun öfkeden kudurmuştu! Bunun gerçekten Allah’tan olduğunu gördükleri için inandılar."
+  },
+  "m14-a": {
+   "en": "Pharaoh was furious. He shouted: how dare you believe before I say you may? And he said he would punish them terribly.",
+   "t": "Firavun öfkeden kudurdu. Bağırdı: Ben size izin vermeden nasıl inanırsınız? Ve onları korkunç şekilde cezalandıracağını söyledi."
+  },
+  "m14-b": {
+   "en": "But the magicians were not afraid any more. They said: we will never choose you over the clear signs that have come to us. Do what you like. You only rule this short life. Allah is better, and Allah lasts for ever.",
+   "t": "Ama sihirbazlar artık korkmuyordu. Şöyle dediler: Bize gelen apaçık mucizelere karşı seni asla seçmeyiz. Ne yapacaksan yap. Sen ancak bu kısa dünya hayatında hüküm sürersin. Allah daha hayırlıdır ve Allah’ın varlığı sonsuzdur."
+  },
+  "m14-q": {
+   "en": "What did the magicians choose?",
+   "t": "Sihirbazlar neyi seçti?"
+  },
+  "m14-q-opt1": {
+   "en": "Pharaoh's gold",
+   "t": "Firavun’un altınını"
+  },
+  "m14-q-opt2": {
+   "en": "The truth from Allah",
+   "t": "Allah’tan gelen gerçeği"
+  },
+  "m14-q-no": {
+   "en": "No. They gave up Pharaoh's rewards. They chose the truth from Allah.",
+   "t": "Hayır. Firavun’un ödüllerinden vazgeçtiler. Allah’tan gelen gerçeği seçtiler."
+  },
+  "m14-c": {
+   "en": "There was a man in Pharaoh's own family who had kept his faith a secret. He spoke up: would you hurt a man only because he says, my Lord is Allah? He has brought you clear signs!",
+   "t": "Firavun’un kendi ailesinden, imanını gizli tutan bir adam vardı. Söz aldı: Sırf “Rabbim Allah’tır” diyor diye bir adama zarar mı vereceksiniz? O size apaçık mucizeler getirdi!"
+  },
+  "m14-d": {
+   "en": "And Asiya the queen believed too. She prayed: my Lord, build me a house near You in the Garden. And save me from Pharaoh, and from what he does.",
+   "t": "Kraliçe Âsiye de inandı. Şöyle dua etti: Rabbim! Katından bana cennette bir ev yap. Beni Firavun’dan ve onun işlediklerinden kurtar."
+  },
+  "m14-dua": {
+   "en": "Make her prayer with her. Press and hold the hands until they shine.",
+   "t": "Onunla birlikte onun duasını et. Eller parlayana kadar basılı tut."
+  },
+  "m14-e": {
+   "en": "But proud Pharaoh said to his chiefs: I know of no god for you but me! Haman, bake bricks of clay, and build me a tall tower, so that I can climb up and look for the God of Musa. I think he is lying.",
+   "t": "Ama kibirli Firavun ileri gelenlerine şöyle dedi: Sizin için benden başka bir tanrı bilmiyorum! Ey Hâmân, benim için çamurdan tuğla pişir ve bana yüksek bir kule yap da çıkıp Musa’nın Tanrısına bakayım. Bence o yalan söylüyor."
+  },
+  "m14-tower": {
+   "en": "Pharaoh thought a tower could reach the sky. Tap to stack the bricks and see.",
+   "t": "Firavun bir kulenin göğe ulaşabileceğini sandı. Tuğlaları üst üste koymak için dokun ve gör."
+  },
+  "m14-tower-after": {
+   "en": "Up and up it went. But no tower can reach Allah. Pharaoh and his armies were proud in the land, with no right to be.",
+   "t": "Yükseldi de yükseldi. Ama hiçbir kule Allah’a ulaşamaz. Firavun ve orduları yeryüzünde haksız yere büyüklendiler."
+  },
+  "m14-match": {
+   "en": "Who said it? Match the brave hearts to their words.",
+   "t": "Bunu kim söyledi? Cesur kalpleri sözleriyle eşleştir."
+  },
+  "m14-match-a1": {
+   "en": "The magicians",
+   "t": "Sihirbazlar"
+  },
+  "m14-match-b1": {
+   "en": "We believe in the Lord of Harun and Musa",
+   "t": "Harun’un ve Musa’nın Rabbine inandık"
+  },
+  "m14-match-a2": {
+   "en": "Asiya the queen",
+   "t": "Kraliçe Âsiye"
+  },
+  "m14-match-b2": {
+   "en": "Build me a house near You in the Garden",
+   "t": "Katından bana cennette bir ev yap"
+  },
+  "m14-match-a3": {
+   "en": "The secret believer",
+   "t": "Gizli mümin"
+  },
+  "m14-match-b3": {
+   "en": "My Lord is Allah",
+   "t": "Rabbim Allah’tır"
+  },
+  "m15-a": {
+   "en": "Still Pharaoh would not let the people go. So Allah sent signs to Pharaoh's people, to wake them up. First came years with no rain, and hardly any food grew.",
+   "t": "Firavun yine de insanların gitmesine izin vermedi. Bunun üzerine Allah, onları uyandırmak için Firavun’un kavmine mucizeler gönderdi. Önce yağmursuz yıllar geldi ve neredeyse hiç ürün yetişmedi."
+  },
+  "m15-b": {
+   "en": "Then came a great flood of rain. It is told that it spoiled the crops and the fruit.",
+   "t": "Sonra büyük bir yağmur seli geldi. Anlatıldığına göre ekinleri ve meyveleri bozdu."
+  },
+  "m15-c": {
+   "en": "Then came clouds of locusts that ate up the plants. It is told that they even chewed the nails out of the doors!",
+   "t": "Sonra bitkileri yiyip bitiren çekirge sürüleri geldi. Anlatıldığına göre kapılardaki çivileri bile kemirdiler!"
+  },
+  "m15-locusts": {
+   "en": "Shoo! Tap the locusts to chase them off the plants.",
+   "t": "Kışşt! Çekirgeleri bitkilerden kovmak için onlara dokun."
+  },
+  "m15-d": {
+   "en": "Then tiny bugs got into the grain. And then came frogs. Frogs, frogs, everywhere! It is told that they were in the pots, in the beds, and even in the clothes.",
+   "t": "Sonra tahılın içine minicik böcekler girdi. Sonra da kurbağalar geldi. Kurbağalar, kurbağalar, her yerde! Anlatıldığına göre tencerelerde, yataklarda, hatta elbiselerin içindeydiler."
+  },
+  "m15-frogs": {
+   "en": "Find every frog hiding in the kitchen. Tap them all.",
+   "t": "Mutfakta saklanan her kurbağayı bul. Hepsine dokun."
+  },
+  "m15-e": {
+   "en": "And then the water of the river turned red. Every one of these was a clear sign.",
+   "t": "Sonra da ırmağın suyu kıpkırmızı oldu. Bunların her biri apaçık bir mucizeydi."
+  },
+  "m15-f": {
+   "en": "Each time, they begged: Musa, pray to your Lord for us! If the trouble goes away, we will believe, and we will let your people go. Musa prayed, and Allah took the trouble away.",
+   "t": "Her seferinde yalvardılar: Ey Musa, bizim için Rabbine dua et! Bu sıkıntı kalkarsa inanacağız ve kavmini göndereceğiz. Musa dua etti ve Allah sıkıntıyı kaldırdı."
+  },
+  "m15-clear": {
+   "en": "Musa prays, and the trouble is lifted. Rub the sky until it is clear.",
+   "t": "Musa dua ediyor ve sıkıntı kalkıyor. Gökyüzü açılana kadar ov."
+  },
+  "m15-g": {
+   "en": "But every time the trouble was gone, they broke their promise.",
+   "t": "Ama sıkıntı her kalktığında sözlerini bozdular."
+  },
+  "m15-q": {
+   "en": "What did they do each time the trouble went away?",
+   "t": "Sıkıntı her kalktığında ne yaptılar?"
+  },
+  "m15-q-opt1": {
+   "en": "They broke their promise",
+   "t": "Sözlerini bozdular"
+  },
+  "m15-q-opt2": {
+   "en": "They kept their promise",
+   "t": "Sözlerini tuttular"
+  },
+  "m15-q-no": {
+   "en": "No. Every time, they broke their promise.",
+   "t": "Hayır. Her seferinde sözlerini bozdular."
+  },
+  "m15-ord": {
+   "en": "Five signs came, one after another. Tap them in order.",
+   "t": "Beş mucize birbiri ardınca geldi. Sırayla dokun."
+  },
+  "m15-ord-c1": {
+   "en": "First, the flood.",
+   "t": "Önce sel."
+  },
+  "m15-ord-c2": {
+   "en": "Then the locusts.",
+   "t": "Sonra çekirgeler."
+  },
+  "m15-ord-c3": {
+   "en": "Then the tiny bugs.",
+   "t": "Sonra minicik böcekler."
+  },
+  "m15-ord-c4": {
+   "en": "Then the frogs.",
+   "t": "Sonra kurbağalar."
+  },
+  "m15-ord-c5": {
+   "en": "And then the red water.",
+   "t": "Sonra da kırmızı su."
+  },
+  "m15-ord-no": {
+   "en": "Not that one yet. Rain, locusts, bugs, frogs, red water.",
+   "t": "Henüz o değil. Sel, çekirgeler, böcekler, kurbağalar, kırmızı su."
+  },
+  "m16-a": {
+   "en": "At last, Allah told Musa: leave by night, with My servants.",
+   "t": "Sonunda Allah Musa’ya şöyle dedi: Kullarımla birlikte geceleyin yola çık."
+  },
+  "m16-wake": {
+   "en": "Quietly wake the families. Tap each house to light its lamp.",
+   "t": "Aileleri sessizce uyandır. Lambasını yakmak için her eve dokun."
+  },
+  "m16-b": {
+   "en": "Quietly, quietly, in the dark, the families took what they could carry, and followed Musa out of Egypt.",
+   "t": "Sessizce, sessizce, karanlıkta, aileler taşıyabildiklerini alıp Musa’nın ardından Mısır’dan çıktılar."
+  },
+  "m16-leave": {
+   "en": "Lead the people out of Egypt.",
+   "t": "İnsanları Mısır’dan çıkar."
+  },
+  "m16-c": {
+   "en": "When Pharaoh found out, he was furious. He gathered a huge army and chased after them. At sunrise, he caught up.",
+   "t": "Firavun bunu öğrenince öfkeden kudurdu. Kocaman bir ordu topladı ve onların peşine düştü. Gün doğarken onlara yetişti."
+  },
+  "m16-d": {
+   "en": "In front of the people was the sea. Behind them was Pharaoh's army. The people cried: we are caught!",
+   "t": "İnsanların önünde deniz vardı. Arkalarında Firavun’un ordusu. İnsanlar haykırdı: Yakalandık!"
+  },
+  "m16-e": {
+   "en": "But Musa said: no! My Lord is with me. He will guide me.",
+   "t": "Ama Musa şöyle dedi: Hayır! Rabbim benimle beraberdir, bana elbette yol gösterecektir."
+  },
+  "m16-q": {
+   "en": "What did Musa say when everyone was afraid?",
+   "t": "Herkes korkarken Musa ne dedi?"
+  },
+  "m16-q-opt1": {
+   "en": "We are lost",
+   "t": "Kaybolduk"
+  },
+  "m16-q-opt2": {
+   "en": "My Lord is with me",
+   "t": "Rabbim benimle beraberdir"
+  },
+  "m16-q-no": {
+   "en": "No. Musa said: my Lord is with me. He will guide me.",
+   "t": "Hayır. Musa şöyle dedi: Rabbim benimle beraberdir, bana yol gösterecektir."
+  },
+  "m16-puz": {
+   "en": "Put the picture back together. Tap two pieces to swap them.",
+   "t": "Resmi yeniden birleştir. Yerlerini değiştirmek için iki parçaya dokun."
+  },
+  "m17-a": {
+   "en": "Allah told Musa: strike the sea with your staff.",
+   "t": "Allah Musa’ya şöyle dedi: Değneğinle denize vur."
+  },
+  "m17-part": {
+   "en": "Strike the sea! Press the staff and hold, and watch.",
+   "t": "Denize vur! Değneğe bas, basılı tut ve izle."
+  },
+  "m17-b": {
+   "en": "And the sea split in two! Each side stood up like a huge mountain, with a dry path in between.",
+   "t": "Ve deniz ikiye ayrıldı! Her yanı kocaman bir dağ gibi dikildi; aralarında kuru bir yol vardı."
+  },
+  "m17-c": {
+   "en": "It is told that there were twelve paths, one for each of the twelve families, with windows in the water so that they could see each other. And Allah sent the wind to dry the ground.",
+   "t": "Anlatıldığına göre on iki aileden her biri için bir tane olmak üzere on iki yol vardı ve birbirlerini görebilsinler diye suda pencereler vardı. Ve Allah yeri kurutmak için rüzgârı gönderdi."
+  },
+  "m17-dry": {
+   "en": "Help the wind dry the path. Rub away the water.",
+   "t": "Rüzgârın yolu kurutmasına yardım et. Suyu ovarak sil."
+  },
+  "m17-paths": {
+   "en": "Count the twelve paths. Tap each one.",
+   "t": "On iki yolu say. Her birine dokun."
+  },
+  "m17-cross": {
+   "en": "Walk the people across, between the walls of water.",
+   "t": "İnsanları su duvarlarının arasından karşıya geçir."
+  },
+  "m17-d": {
+   "en": "Musa and all his people crossed safely to the other side.",
+   "t": "Musa ve bütün kavmi güven içinde karşı kıyıya geçtiler."
+  },
+  "m17-e": {
+   "en": "Pharaoh and his army rushed in after them. Then the sea came crashing back together, and the army was gone.",
+   "t": "Firavun ve ordusu onların arkasından daldılar. Sonra deniz gürültüyle yeniden kapandı ve ordu yok oldu."
+  },
+  "m17-f0": {
+   "en": "As the water closed over him, Pharaoh cried: I believe in the God that the Children of Israel believe in! But it was too late.",
+   "t": "Su onun üzerine kapanırken Firavun haykırdı: İsrailoğullarının inandığı Tanrı’ya inandım! Ama artık çok geçti."
+  },
+  "m17-f": {
+   "en": "All his life he had been proud and cruel. Allah saved only his body, as a sign for the people who came after.",
+   "t": "Bütün hayatı boyunca kibirli ve zalim olmuştu. Allah, kendisinden sonra gelenlere bir ibret olsun diye yalnızca onun bedenini kurtardı."
+  },
+  "m17-g": {
+   "en": "The people were free! That day is called Ashura. Prophet Muhammad, peace be upon him, told the Muslims to fast on that day.",
+   "t": "İnsanlar özgürdü! O güne Âşûrâ denir. Hz. Muhammed (selam onun üzerine olsun) Müslümanlara o gün oruç tutmalarını söyledi."
+  },
+  "m17-q": {
+   "en": "Who saved Musa and his people?",
+   "t": "Musa’yı ve kavmini kim kurtardı?"
+  },
+  "m17-q-opt1": {
+   "en": "Allah",
+   "t": "Allah"
+  },
+  "m17-q-opt2": {
+   "en": "A big boat",
+   "t": "Büyük bir gemi"
+  },
+  "m17-q-no": {
+   "en": "No, there was no boat. Allah opened the sea for them.",
+   "t": "Hayır, gemi yoktu. Allah onlar için denizi açtı."
+  },
+  "m17-ord": {
+   "en": "Tell the story of the sea. Tap in order.",
+   "t": "Denizin hikâyesini anlat. Sırayla dokun."
+  },
+  "m17-ord-c1": {
+   "en": "First, they were caught between the sea and the army.",
+   "t": "Önce denizle ordunun arasında sıkıştılar."
+  },
+  "m17-ord-c2": {
+   "en": "Then Musa struck the sea with his staff.",
+   "t": "Sonra Musa değneğiyle denize vurdu."
+  },
+  "m17-ord-c3": {
+   "en": "Then a dry path opened, and everyone crossed.",
+   "t": "Sonra kuru bir yol açıldı ve herkes karşıya geçti."
+  },
+  "m17-ord-c4": {
+   "en": "And then the sea closed again.",
+   "t": "Sonra da deniz yeniden kapandı."
+  },
+  "m17-ord-no": {
+   "en": "Not that one yet. What came before it?",
+   "t": "Henüz o değil. Ondan önce ne geldi?"
+  },
+  "m18-a": {
+   "en": "Now the people travelled through the hot, dry desert. And Allah sent clouds to give them shade.",
+   "t": "Şimdi insanlar sıcak, kurak çölde yol alıyordu. Ve Allah onlara gölge olsun diye bulutlar gönderdi."
+  },
+  "m18-b": {
+   "en": "Allah sent down food for them too: a special food called manna, and little birds called quails. Eat from the good things We have given you!",
+   "t": "Allah onlara yiyecek de indirdi: kudret helvası denen özel bir yiyecek ve bıldırcın denen küçük kuşlar. Size verdiğimiz güzel şeylerden yiyin!"
+  },
+  "m18-manna": {
+   "en": "Gather the manna in your basket. Tap each piece.",
+   "t": "Kudret helvasını sepetine topla. Her parçaya dokun."
+  },
+  "m18-quail": {
+   "en": "Here come the quails! Tap each little bird.",
+   "t": "İşte bıldırcınlar geliyor! Her küçük kuşa dokun."
+  },
+  "m18-c": {
+   "en": "Then the people were thirsty, and there was no water anywhere. Musa prayed for water. Allah said: strike the rock with your staff.",
+   "t": "Sonra insanlar susadı ve hiçbir yerde su yoktu. Musa su için dua etti. Allah şöyle dedi: Değneğinle taşa vur."
+  },
+  "m18-springs": {
+   "en": "Strike the rock! Tap it twelve times, and count the springs.",
+   "t": "Taşa vur! On iki kez dokun ve pınarları say."
+  },
+  "m18-d": {
+   "en": "Twelve springs came gushing out of the rock, one for each of the twelve families. And everybody knew their own place to drink.",
+   "t": "Taştan, on iki aileden her biri için bir tane olmak üzere on iki pınar fışkırdı. Ve herkes kendi içeceği yeri bildi."
+  },
+  "m18-q": {
+   "en": "How many springs came out of the rock?",
+   "t": "Taştan kaç pınar çıktı?"
+  },
+  "m18-q-opt1": {
+   "en": "Two",
+   "t": "İki"
+  },
+  "m18-q-opt2": {
+   "en": "Twelve",
+   "t": "On iki"
+  },
+  "m18-q-no": {
+   "en": "No. Twelve springs, one for each of the twelve families.",
+   "t": "Hayır. On iki aileden her biri için bir tane, on iki pınar."
+  },
+  "m18-mem": {
+   "en": "Find the pairs: the gifts Allah sent in the desert.",
+   "t": "Eşleri bul: Allah’ın çölde gönderdiği nimetler."
+  },
+  "m19-a": {
+   "en": "Allah called Musa to the mountain for thirty nights, and then ten more. Musa said to his brother Harun: take my place with my people, and do what is right.",
+   "t": "Allah Musa’yı otuz gece ve on gece daha için dağa çağırdı. Musa kardeşi Harun’a şöyle dedi: Kavmimin içinde benim yerime geç ve doğru olanı yap."
+  },
+  "m19-q1": {
+   "en": "Thirty nights, and ten more. How many nights is that?",
+   "t": "Otuz gece ve on gece daha. Bu kaç gece eder?"
+  },
+  "m19-q1-opt1": {
+   "en": "Forty",
+   "t": "Kırk"
+  },
+  "m19-q1-opt2": {
+   "en": "Thirteen",
+   "t": "On üç"
+  },
+  "m19-q1-no": {
+   "en": "Count again. Thirty and ten make forty.",
+   "t": "Yeniden say. Otuz ile on, kırk eder."
+  },
+  "m19-climb": {
+   "en": "Climb the mountain with Musa.",
+   "t": "Musa’yla birlikte dağa tırman."
+  },
+  "m19-b": {
+   "en": "On the mountain, Allah spoke to Musa. Musa said: my Lord, let me see You. Allah said: you will not see Me. But look at that mountain. If it stays in its place, then you will see Me.",
+   "t": "Dağda Allah Musa’yla konuştu. Musa şöyle dedi: Rabbim! Bana Kendini göster, Sana bakayım. Allah şöyle dedi: Sen Beni göremezsin. Ama şu dağa bak; eğer yerinde kalırsa sen de Beni göreceksin."
+  },
+  "m19-c": {
+   "en": "Then Allah showed His glory to the mountain, and the mountain crumbled into dust! Musa fell down in a faint.",
+   "t": "Sonra Allah dağa tecelli etti ve dağ yerle bir oldu! Musa da baygın düştü."
+  },
+  "m19-q2": {
+   "en": "What happened to the mountain?",
+   "t": "Dağa ne oldu?"
+  },
+  "m19-q2-opt1": {
+   "en": "It grew taller",
+   "t": "Daha da yükseldi"
+  },
+  "m19-q2-opt2": {
+   "en": "It crumbled into dust",
+   "t": "Yerle bir oldu"
+  },
+  "m19-q2-no": {
+   "en": "No. The mountain could not stay in its place. It crumbled into dust.",
+   "t": "Hayır. Dağ yerinde kalamadı. Yerle bir oldu."
+  },
+  "m19-d": {
+   "en": "When he woke up, Musa said: glory be to You! I turn back to You, and I am the first to believe.",
+   "t": "Ayılınca Musa şöyle dedi: Yarabbi, münezzehsin, Sana tevbe ettim, ben inananların ilkiyim."
+  },
+  "m19-e": {
+   "en": "Allah said: Musa, I have chosen you, with My messages and My words. So hold on to what I give you, and be thankful. And Allah gave him the Tablets, with guidance for his people.",
+   "t": "Allah şöyle dedi: Ey Musa, Ben seni elçiliklerimle ve sözlerimle seçtim. Öyleyse sana verdiğimi al ve şükredenlerden ol. Ve Allah ona, kavmi için yol gösterici olan Levhaları verdi."
+  },
+  "m19-puz": {
+   "en": "Put the picture back together. Tap two pieces to swap them.",
+   "t": "Resmi yeniden birleştir. Yerlerini değiştirmek için iki parçaya dokun."
+  },
+  "m19-sort": {
+   "en": "Musa was told: be thankful. Is it thankful, or not thankful?",
+   "t": "Musa’ya “Şükret” denildi. Bu şükür mü, değil mi?"
+  },
+  "m19-sort-bin1": {
+   "en": "Thankful",
+   "t": "Şükür"
+  },
+  "m19-sort-bin2": {
+   "en": "Not thankful",
+   "t": "Şükür değil"
+  },
+  "m19-sort-it1": {
+   "en": "Saying: thank You, Allah",
+   "t": "“Teşekkürler Allah’ım” demek"
+  },
+  "m19-sort-it2": {
+   "en": "Saying: I want more, more, more",
+   "t": "“Daha çok, daha çok, daha çok istiyorum” demek"
+  },
+  "m19-sort-it3": {
+   "en": "Sharing your food",
+   "t": "Yemeğini paylaşmak"
+  },
+  "m19-sort-it4": {
+   "en": "Throwing good food away",
+   "t": "Güzel yemeği çöpe atmak"
+  },
+  "m19-sort-no": {
+   "en": "Think again. Would a thankful person do that?",
+   "t": "Bir daha düşün. Şükreden biri bunu yapar mı?"
+  },
+  "m20-a": {
+   "en": "While Musa was away on the mountain, a man called the Samiri played a wicked trick. The people threw their gold jewellery into the fire, and out of it he made the shape of a calf.",
+   "t": "Musa dağdayken Sâmirî denen bir adam kötü bir oyun oynadı. İnsanlar altın takılarını ateşe attılar ve o da bundan bir buzağı şekli yaptı."
+  },
+  "m20-b": {
+   "en": "The golden calf made a sound like a cow. It is told that this was only the wind blowing through it. The Samiri said: this is your god! And many of the people believed him.",
+   "t": "Altın buzağı bir inek gibi ses çıkardı. Anlatıldığına göre bu yalnızca içinden esen rüzgârdı. Sâmirî şöyle dedi: İşte sizin tanrınız bu! Ve insanların çoğu ona inandı."
+  },
+  "m20-c": {
+   "en": "But the calf could not talk to them. It could not guide them. It could not help them, or hurt them, at all.",
+   "t": "Ama buzağı onlarla konuşamıyordu. Onlara yol gösteremiyordu. Onlara ne yardım edebiliyor ne de zarar verebiliyordu."
+  },
+  "m20-q": {
+   "en": "Could the golden calf hear them, or help them?",
+   "t": "Altın buzağı onları duyabilir miydi, onlara yardım edebilir miydi?"
+  },
+  "m20-q-opt1": {
+   "en": "No. It was only gold",
+   "t": "Hayır. Yalnızca altındı"
+  },
+  "m20-q-opt2": {
+   "en": "Yes, it could",
+   "t": "Evet, edebilirdi"
+  },
+  "m20-q-no": {
+   "en": "No. It could not speak, or guide, or help. It was only a thing made of gold.",
+   "t": "Hayır. Ne konuşabilir, ne yol gösterebilir, ne de yardım edebilirdi. Altından yapılmış bir şeyden ibaretti."
+  },
+  "m20-sort": {
+   "en": "Who is it true about? Only Allah, or the golden calf?",
+   "t": "Bu kimin için doğru? Yalnızca Allah için mi, yoksa altın buzağı için mi?"
+  },
+  "m20-sort-bin1": {
+   "en": "Only Allah",
+   "t": "Yalnızca Allah"
+  },
+  "m20-sort-bin2": {
+   "en": "The golden calf",
+   "t": "Altın buzağı"
+  },
+  "m20-sort-it1": {
+   "en": "Made the earth and the sky",
+   "t": "Yeri ve göğü yarattı"
+  },
+  "m20-sort-it2": {
+   "en": "Was made by a man's hands",
+   "t": "Bir adamın elleriyle yapıldı"
+  },
+  "m20-sort-it3": {
+   "en": "Hears every prayer",
+   "t": "Her duayı işitir"
+  },
+  "m20-sort-it4": {
+   "en": "Cannot say a single word",
+   "t": "Tek bir kelime bile söyleyemez"
+  },
+  "m20-sort-it5": {
+   "en": "Gives us our food and water",
+   "t": "Bize yiyeceğimizi ve suyumuzu verir"
+  },
+  "m20-sort-no": {
+   "en": "Think again. A statue cannot do anything.",
+   "t": "Bir daha düşün. Bir heykel hiçbir şey yapamaz."
+  },
+  "m20-d": {
+   "en": "Harun told them: my people, this is only a test for you! Your Lord is the Lord of Mercy. Follow me! But they said: we will not stop until Musa comes back.",
+   "t": "Harun onlara şöyle dedi: Ey kavmim, bu sizin için yalnızca bir imtihandır! Sizin Rabbiniz Rahmân’dır. Bana uyun! Ama onlar şöyle dediler: Musa dönene kadar bundan vazgeçmeyeceğiz."
+  },
+  "m20-e": {
+   "en": "Musa came back, angry and very sad. He put down the Tablets, and took hold of his brother. Harun said: son of my mother, the people would not listen to me! Then Musa prayed: my Lord, forgive me and my brother.",
+   "t": "Musa öfkeli ve çok üzgün döndü. Levhaları yere koydu ve kardeşini tuttu. Harun şöyle dedi: Ey anamın oğlu, kavim beni dinlemedi! Sonra Musa şöyle dua etti: Rabbim, beni ve kardeşimi bağışla."
+  },
+  "m20-f": {
+   "en": "Musa sent the Samiri away. And the calf was ground into dust, and scattered into the sea.",
+   "t": "Musa Sâmirî’yi uzaklaştırdı. Buzağı ise toz haline getirilip denize savruldu."
+  },
+  "m20-grind": {
+   "en": "Grind the calf into dust and blow it away. Rub, rub, rub!",
+   "t": "Buzağıyı toz haline getir ve savur. Ov, ov, ov!"
+  },
+  "m20-g": {
+   "en": "The people were sorry for what they had done. And Musa told them: your God is only Allah. There is no god but Him.",
+   "t": "İnsanlar yaptıklarına pişman oldular. Ve Musa onlara şöyle dedi: Sizin ilahınız yalnızca Allah’tır. O’ndan başka ilah yoktur."
+  },
+  "m20-ord": {
+   "en": "What happened first? Tap them in order.",
+   "t": "Önce ne oldu? Sırayla dokun."
+  },
+  "m20-ord-c1": {
+   "en": "First, the gold went into the fire.",
+   "t": "Önce altın ateşe atıldı."
+  },
+  "m20-ord-c2": {
+   "en": "Then the Samiri made the calf.",
+   "t": "Sonra Sâmirî buzağıyı yaptı."
+  },
+  "m20-ord-c3": {
+   "en": "Then Musa came back, angry and sad.",
+   "t": "Sonra Musa öfkeli ve üzgün döndü."
+  },
+  "m20-ord-c4": {
+   "en": "And then the calf was dust in the sea.",
+   "t": "Sonra da buzağı denizde toz oldu."
+  },
+  "m20-ord-no": {
+   "en": "Not that one yet. What came before it?",
+   "t": "Henüz o değil. Ondan önce ne geldi?"
+  },
+  "m21-a": {
+   "en": "One day Musa told his people: Allah commands you to sacrifice a cow. They said: are you joking with us?",
+   "t": "Bir gün Musa kavmine şöyle dedi: Allah size bir inek kesmenizi emrediyor. Şöyle dediler: Bizimle alay mı ediyorsun?"
+  },
+  "m21-b": {
+   "en": "Instead of doing as they were told, they asked: what kind of cow? Musa said: not too old, and not too young, but in between. Now do as you are told!",
+   "t": "Kendilerine söyleneni yapmak yerine sordular: Nasıl bir inek? Musa şöyle dedi: Ne çok yaşlı, ne çok genç, ikisinin arası. Şimdi size söyleneni yapın!"
+  },
+  "m21-c": {
+   "en": "But they asked again: what colour? Musa said: a bright yellow cow, lovely to look at.",
+   "t": "Ama yine sordular: Rengi ne? Musa şöyle dedi: Parlak sarı, bakanın içini açan bir inek."
+  },
+  "m21-d": {
+   "en": "And they asked again: which one exactly? Musa said: a perfect cow, with no marks on it at all, one that has never pulled a plough or watered the fields.",
+   "t": "Ve yine sordular: Tam olarak hangisi? Musa şöyle dedi: Üzerinde hiç alacası olmayan, hiç saban sürmemiş ve tarla sulamamış kusursuz bir inek."
+  },
+  "m21-d1": {
+   "en": "It is told that the cow belonged to a young man who was very kind to his father. He would not even wake his sleeping father to make a good sale. And Musa said: see how high kindness to parents can lift a person!",
+   "t": "Anlatıldığına göre inek, babasına çok iyi davranan bir gencindi. İyi bir satış yapmak için bile uyuyan babasını uyandırmazdı. Ve Musa şöyle dedi: Bakın, anne babaya iyilik bir insanı ne kadar yükseltir!"
+  },
+  "m21-cow": {
+   "en": "Find the right cow: bright yellow, with no marks at all. Tap it.",
+   "t": "Doğru ineği bul: parlak sarı ve hiç alacası yok. Ona dokun."
+  },
+  "m21-e": {
+   "en": "At last they found it, and did as they were told. But they very nearly did not! And Allah used it to bring out a truth that some of them had been hiding.",
+   "t": "Sonunda onu buldular ve kendilerine söyleneni yaptılar. Ama az kalsın yapmayacaklardı! Ve Allah bununla, bazılarının sakladığı bir gerçeği ortaya çıkardı."
+  },
+  "m21-q": {
+   "en": "What should they have done at the start?",
+   "t": "En başta ne yapmaları gerekirdi?"
+  },
+  "m21-q-opt1": {
+   "en": "Asked more and more questions",
+   "t": "Durmadan soru sormak"
+  },
+  "m21-q-opt2": {
+   "en": "Done as they were told, straight away",
+   "t": "Söyleneni hemen yapmak"
+  },
+  "m21-q-no": {
+   "en": "No. All those questions only made it harder. They should have obeyed straight away.",
+   "t": "Hayır. O kadar soru işi yalnızca zorlaştırdı. Hemen itaat etmeleri gerekirdi."
+  },
+  "m21-ord": {
+   "en": "They asked three questions. Tap them in order.",
+   "t": "Üç soru sordular. Sırayla dokun."
+  },
+  "m21-ord-c1": {
+   "en": "First they asked: what kind of cow?",
+   "t": "Önce sordular: Nasıl bir inek?"
+  },
+  "m21-ord-c2": {
+   "en": "Then they asked: what colour?",
+   "t": "Sonra sordular: Rengi ne?"
+  },
+  "m21-ord-c3": {
+   "en": "And then they asked: which one exactly?",
+   "t": "Sonra da sordular: Tam olarak hangisi?"
+  },
+  "m21-ord-no": {
+   "en": "Not that one yet. Kind, then colour, then which one.",
+   "t": "Henüz o değil. Önce nasıl, sonra renk, sonra hangisi."
+  },
+  "m22-a": {
+   "en": "Musa said: my people, remember the gifts Allah has given you. Go into the holy land that Allah has promised to you, and do not turn back.",
+   "t": "Musa şöyle dedi: Ey kavmim, Allah’ın size verdiği nimetleri hatırlayın. Allah’ın size vaat ettiği kutsal topraklara girin ve geri dönmeyin."
+  },
+  "m22-b": {
+   "en": "But they said: Musa, there are strong, frightening people in that land. We will not go in until they have left!",
+   "t": "Ama onlar şöyle dediler: Ey Musa, o topraklarda güçlü, korkutucu insanlar var. Onlar çıkmadıkça biz oraya girmeyiz!"
+  },
+  "m22-c": {
+   "en": "Two men who trusted Allah said: go in through the gate! If you go in, you will win. Put your trust in Allah.",
+   "t": "Allah’a güvenen iki adam şöyle dedi: Kapıdan girin! Girerseniz üstün gelirsiniz. Allah’a güvenin."
+  },
+  "m22-q": {
+   "en": "What did the two brave men say?",
+   "t": "İki cesur adam ne dedi?"
+  },
+  "m22-q-opt1": {
+   "en": "Trust Allah, and go in",
+   "t": "Allah’a güvenin ve girin"
+  },
+  "m22-q-opt2": {
+   "en": "Run away and hide",
+   "t": "Kaçıp saklanın"
+  },
+  "m22-q-no": {
+   "en": "No. The two men said: go in through the gate, and put your trust in Allah.",
+   "t": "Hayır. İki adam şöyle dedi: Kapıdan girin ve Allah’a güvenin."
+  },
+  "m22-d": {
+   "en": "But the people said: you and your Lord go and fight. We are staying right here.",
+   "t": "Ama kavim şöyle dedi: Sen ve Rabbin gidin savaşın. Biz tam burada oturuyoruz."
+  },
+  "m22-e": {
+   "en": "Musa said: my Lord, I can only answer for myself and my brother. And Allah said: then that land is closed to them for forty years. They will wander in the desert.",
+   "t": "Musa şöyle dedi: Rabbim, ben ancak kendime ve kardeşime söz geçirebilirim. Allah da şöyle dedi: Öyleyse o topraklar kırk yıl onlara yasaktır. Çölde şaşkın şaşkın dolaşacaklar."
+  },
+  "m22-wander": {
+   "en": "Round and round they wandered. Tap each footprint.",
+   "t": "Dönüp dolaştılar. Her ayak izine dokun."
+  },
+  "m22-sort": {
+   "en": "Is it brave trust, or a fearful excuse?",
+   "t": "Bu cesur bir güven mi, yoksa korkak bir bahane mi?"
+  },
+  "m22-sort-bin1": {
+   "en": "Brave trust",
+   "t": "Cesur güven"
+  },
+  "m22-sort-bin2": {
+   "en": "Fearful excuse",
+   "t": "Korkak bahane"
+  },
+  "m22-sort-it1": {
+   "en": "Go in through the gate!",
+   "t": "Kapıdan girin!"
+  },
+  "m22-sort-it2": {
+   "en": "We are staying right here",
+   "t": "Biz tam burada oturuyoruz"
+  },
+  "m22-sort-it3": {
+   "en": "Put your trust in Allah",
+   "t": "Allah’a güvenin"
+  },
+  "m22-sort-it4": {
+   "en": "You go. We will wait",
+   "t": "Siz gidin. Biz bekleriz"
+  },
+  "m22-sort-no": {
+   "en": "Think again. Is that trusting Allah?",
+   "t": "Bir daha düşün. Bu Allah’a güvenmek midir?"
+  },
+  "m23-a": {
+   "en": "One day, someone asked Musa: who knows the most, of all the people? Musa said: I do. So Allah told him: there is a servant of Mine, at the place where the two seas meet, who knows things that you do not know.",
+   "t": "Bir gün biri Musa’ya sordu: İnsanların içinde en çok kim bilir? Musa şöyle dedi: Ben. Bunun üzerine Allah ona şöyle dedi: İki denizin birleştiği yerde Benim bir kulum var; o senin bilmediğin şeyleri bilir."
+  },
+  "m23-b": {
+   "en": "Musa said to his young helper, Yusha: I will not stop until I reach the place where the two seas meet, even if it takes me years! They took a fish with them in a basket.",
+   "t": "Musa genç yardımcısı Yûşâ’ya şöyle dedi: İki denizin birleştiği yere ulaşana kadar durmayacağım, yıllarca sürse bile! Yanlarına bir sepet içinde bir balık aldılar."
+  },
+  "m23-go": {
+   "en": "Travel with Musa and Yusha to where the two seas meet.",
+   "t": "Musa ve Yûşâ ile birlikte iki denizin birleştiği yere yolculuk et."
+  },
+  "m23-c": {
+   "en": "Musa and Yusha stopped to rest by a rock. And there, the fish slipped out of the basket, into the sea, and swam away! It is told that the water stood over its path like a little tunnel.",
+   "t": "Musa ile Yûşâ bir kayanın yanında dinlenmek için durdular. Ve orada balık sepetten kayıp denize süzüldü ve yüzüp gitti! Anlatıldığına göre su, onun yolunun üzerinde küçük bir tünel gibi durdu."
+  },
+  "m23-fish": {
+   "en": "Follow the fish along its path through the water. Tap each splash.",
+   "t": "Balığı sudaki yolu boyunca takip et. Her su sıçramasına dokun."
+  },
+  "m23-d": {
+   "en": "Musa and Yusha walked on and on. Musa said: bring us our lunch. This journey has made us tired. Then Yusha remembered: the fish! By the rock, it went off into the sea, in such a strange way. Shaytan made me forget to tell you.",
+   "t": "Musa ile Yûşâ yürüdüler de yürüdüler. Musa şöyle dedi: Yemeğimizi getir. Bu yolculuk bizi yordu. Sonra Yûşâ hatırladı: Balık! Kayanın yanında, çok tuhaf bir şekilde denize gitti. Onu sana söylemeyi bana şeytan unutturdu."
+  },
+  "m23-e": {
+   "en": "Musa said: that is the very place we were looking for! So they turned around, and followed their own footsteps all the way back.",
+   "t": "Musa şöyle dedi: İşte aradığımız yer orası! Böylece geri döndüler ve kendi ayak izlerini takip ederek ta oraya kadar yürüdüler."
+  },
+  "m23-back": {
+   "en": "Follow the footsteps back to the rock. Tap each one.",
+   "t": "Ayak izlerini takip ederek kayaya geri dön. Her birine dokun."
+  },
+  "m23-f": {
+   "en": "And there they found a servant of Allah, to whom Allah had given mercy and special knowledge. It is told that his name was al-Khidr.",
+   "t": "Ve orada, Allah’ın rahmet ve özel bir ilim verdiği bir kulunu buldular. Anlatıldığına göre onun adı Hızır’dı."
+  },
+  "m23-f1": {
+   "en": "Al-Khidr means the green one. It is told that wherever he sat down, the bare ground turned green.",
+   "t": "Hızır “yeşil olan” demektir. Anlatıldığına göre nereye otursa çıplak toprak yeşerirdi."
+  },
+  "m23-g0": {
+   "en": "Musa asked: may I follow you, so that you can teach me? He said: you will not be able to be patient with me.",
+   "t": "Musa sordu: Bana öğretmen için sana uyabilir miyim? O şöyle dedi: Benimle birlikte olmaya sabredemezsin."
+  },
+  "m23-g": {
+   "en": "Musa said: if Allah wills, you will find me patient. He said: then do not ask me about anything, until I tell you about it myself.",
+   "t": "Musa şöyle dedi: İnşallah beni sabırlı bulacaksın. O şöyle dedi: Öyleyse ben sana kendim anlatana kadar bana hiçbir şey sorma."
+  },
+  "m23-q": {
+   "en": "What did Musa promise al-Khidr?",
+   "t": "Musa Hızır’a ne söz verdi?"
+  },
+  "m23-q-opt1": {
+   "en": "To ask lots of questions",
+   "t": "Çok soru sormaya"
+  },
+  "m23-q-opt2": {
+   "en": "To be patient, and not to ask",
+   "t": "Sabırlı olmaya ve sormamaya"
+  },
+  "m23-q-no": {
+   "en": "No. Musa promised to be patient, and not to ask about anything.",
+   "t": "Hayır. Musa sabırlı olmaya ve hiçbir şey sormamaya söz verdi."
+  },
+  "m24-a": {
+   "en": "Musa and al-Khidr got into a boat. It is told that the sailors knew al-Khidr, and took them for free. And then al-Khidr made a hole in the boat!",
+   "t": "Musa ile Hızır bir gemiye bindiler. Anlatıldığına göre gemiciler Hızır’ı tanıyordu ve onları parasız götürdüler. Sonra Hızır gemide bir delik açtı!"
+  },
+  "m24-b": {
+   "en": "Musa cried: do you want the people in it to sink? Al-Khidr said: did I not tell you that you could not be patient with me? Musa said: forgive me. I forgot.",
+   "t": "Musa haykırdı: İçindekileri batırmak mı istiyorsun? Hızır şöyle dedi: Ben sana, benimle birlikte olmaya sabredemezsin demedim mi? Musa şöyle dedi: Beni bağışla. Unuttum."
+  },
+  "m24-c": {
+   "en": "A little bird landed on the edge of the boat, and dipped its beak in the sea. Al-Khidr said: my knowledge and your knowledge, next to the knowledge of Allah, are like the sip this bird took from the sea.",
+   "t": "Küçük bir kuş geminin kenarına kondu ve gagasını denize daldırdı. Hızır şöyle dedi: Benim bilgim ve senin bilgin, Allah’ın bilgisinin yanında, bu kuşun denizden aldığı bir yudum gibidir."
+  },
+  "m24-q1": {
+   "en": "How much is all that we know, next to what Allah knows?",
+   "t": "Bütün bildiklerimiz, Allah’ın bildiğinin yanında ne kadardır?"
+  },
+  "m24-q1-opt1": {
+   "en": "Like one little sip from the sea",
+   "t": "Denizden alınmış küçücük bir yudum gibi"
+  },
+  "m24-q1-opt2": {
+   "en": "Like the whole sea",
+   "t": "Bütün deniz gibi"
+  },
+  "m24-q1-no": {
+   "en": "No. It is only like the sip of a little bird, from the whole sea.",
+   "t": "Hayır. Koca denizden küçük bir kuşun aldığı bir yudum gibidir."
+  },
+  "m24-d": {
+   "en": "Then came something much harder for Musa to understand. It was about a boy, and it is a story for when you are older. Musa spoke up again. Then he said: if I ask you about anything after this, send me away.",
+   "t": "Sonra Musa’nın anlaması çok daha zor bir şey oldu. Bu bir oğlanla ilgiliydi ve büyüyünce dinleyeceğin bir hikâyedir. Musa yine konuştu. Sonra şöyle dedi: Bundan sonra sana bir şey sorarsam beni yanından gönder."
+  },
+  "m24-e": {
+   "en": "They came to a town and asked for food, but nobody would give them any. In that town was a wall that was about to fall down. And al-Khidr fixed it! Musa said: you could have asked them to pay you for that.",
+   "t": "Bir kasabaya geldiler ve yemek istediler, ama kimse onlara bir şey vermedi. O kasabada yıkılmak üzere olan bir duvar vardı. Ve Hızır onu onardı! Musa şöyle dedi: Bunun için onlardan ücret isteyebilirdin."
+  },
+  "m24-wall": {
+   "en": "Help mend the wall. Tap to put every brick back.",
+   "t": "Duvarı onarmaya yardım et. Her tuğlayı geri koymak için dokun."
+  },
+  "m24-f": {
+   "en": "Al-Khidr said: this is where you and I must part. But first, I will tell you what it all meant.",
+   "t": "Hızır şöyle dedi: İşte burada ayrılıyoruz. Ama önce sana bütün bunların anlamını anlatacağım."
+  },
+  "m24-g": {
+   "en": "The boat belonged to poor people who worked on the sea. A king was coming who took every good boat by force. So I made it look damaged, and he would leave it alone.",
+   "t": "Gemi, denizde çalışan yoksul insanlarındı. Her sağlam gemiye zorla el koyan bir kral geliyordu. Ben de onu kusurlu gösterdim ki kral ona dokunmasın."
+  },
+  "m24-h": {
+   "en": "And the wall belonged to two orphan boys. Hidden under it was a treasure, kept for them. Their father had been a good man. Allah wanted them to grow up, and find it for themselves. I did none of this by my own choice.",
+   "t": "Duvar ise iki yetim çocuğundu. Altında onlar için saklanmış bir hazine vardı. Babaları iyi bir adamdı. Allah onların büyüyüp hazineyi kendilerinin bulmasını istedi. Bunların hiçbirini kendi isteğimle yapmadım."
+  },
+  "m24-treasure": {
+   "en": "The treasure is safe under the wall. Brush away the sand to see it.",
+   "t": "Hazine duvarın altında güvende. Görmek için kumu fırçala."
+  },
+  "m24-match": {
+   "en": "Match each strange thing to its secret.",
+   "t": "Her tuhaf şeyi sırrıyla eşleştir."
+  },
+  "m24-match-a1": {
+   "en": "A hole in the boat",
+   "t": "Gemideki delik"
+  },
+  "m24-match-b1": {
+   "en": "kept it safe from a greedy king",
+   "t": "onu açgözlü bir kraldan korudu"
+  },
+  "m24-match-a2": {
+   "en": "A mended wall",
+   "t": "Onarılan duvar"
+  },
+  "m24-match-b2": {
+   "en": "kept a treasure safe for two orphans",
+   "t": "iki yetim için bir hazineyi korudu"
+  },
+  "m24-i": {
+   "en": "Musa learned that Allah knows what we do not know. Sometimes a thing looks bad, and there is good hidden inside it.",
+   "t": "Musa, Allah’ın bizim bilmediğimizi bildiğini öğrendi. Bazen bir şey kötü görünür, ama içinde gizli bir hayır vardır."
+  },
+  "m24-i2": {
+   "en": "Our Prophet, peace be upon him, said: we wish Musa had been patient, so that Allah would have told us more about the two of them.",
+   "t": "Peygamberimiz (selam onun üzerine olsun) şöyle dedi: Keşke Musa sabretseydi de Allah bize onlar hakkında daha fazlasını anlatsaydı."
+  },
+  "m24-q2": {
+   "en": "What did Musa learn?",
+   "t": "Musa ne öğrendi?"
+  },
+  "m24-q2-opt1": {
+   "en": "That he knew everything",
+   "t": "Her şeyi bildiğini"
+  },
+  "m24-q2-opt2": {
+   "en": "Allah knows what we do not know",
+   "t": "Allah’ın bizim bilmediğimizi bildiğini"
+  },
+  "m24-q2-no": {
+   "en": "No. Musa learned that Allah knows what we do not know.",
+   "t": "Hayır. Musa, Allah’ın bizim bilmediğimizi bildiğini öğrendi."
+  },
+  "m25-a": {
+   "en": "What a story! A baby on the river. A boy in the palace. A shepherd by the well. And then a prophet, who stood before a king with only a staff in his hand.",
+   "t": "Ne hikâye ama! Irmakta bir bebek. Sarayda bir çocuk. Kuyu başında bir çoban. Sonra da elinde yalnızca bir değnekle bir kralın karşısında duran bir peygamber."
+  },
+  "m25-b": {
+   "en": "And every step of the way, Allah was with Musa, hearing and seeing everything.",
+   "t": "Ve yolun her adımında Allah Musa’yla beraberdi; her şeyi işitiyor ve görüyordu."
+  },
+  "m25-c": {
+   "en": "Allah gave Musa the Book, to be a light, and a guide, and a mercy for the people.",
+   "t": "Allah Musa’ya, insanlar için bir nur, bir yol gösterici ve bir rahmet olsun diye Kitabı verdi."
+  },
+  "m25-ord": {
+   "en": "Tell the whole story of Musa. Tap in order.",
+   "t": "Musa’nın bütün hikâyesini anlat. Sırayla dokun."
+  },
+  "m25-ord-c1": {
+   "en": "First, a baby on the river.",
+   "t": "Önce ırmakta bir bebek."
+  },
+  "m25-ord-c2": {
+   "en": "Then a shepherd at the well.",
+   "t": "Sonra kuyu başında bir çoban."
+  },
+  "m25-ord-c3": {
+   "en": "Then the fire on the mountain.",
+   "t": "Sonra dağdaki ateş."
+  },
+  "m25-ord-c4": {
+   "en": "Then the sea opened.",
+   "t": "Sonra deniz açıldı."
+  },
+  "m25-ord-c5": {
+   "en": "And then the Tablets, on the mountain.",
+   "t": "Sonra da dağda Levhalar."
+  },
+  "m25-ord-no": {
+   "en": "Not that one yet. What came before it?",
+   "t": "Henüz o değil. Ondan önce ne geldi?"
+  },
+  "m25-match": {
+   "en": "Who is who? Match each person to their part.",
+   "t": "Kim kimdir? Her kişiyi kendi rolüyle eşleştir."
+  },
+  "m25-match-a1": {
+   "en": "Asiya",
+   "t": "Âsiye"
+  },
+  "m25-match-b1": {
+   "en": "the queen who loved baby Musa",
+   "t": "bebek Musa’yı seven kraliçe"
+  },
+  "m25-match-a2": {
+   "en": "Musa's sister",
+   "t": "Musa’nın ablası"
+  },
+  "m25-match-b2": {
+   "en": "followed the chest along the river",
+   "t": "sandığı ırmak boyunca takip etti"
+  },
+  "m25-match-a3": {
+   "en": "Harun",
+   "t": "Harun"
+  },
+  "m25-match-b3": {
+   "en": "the brother who helped him speak",
+   "t": "konuşmasına yardım eden kardeş"
+  },
+  "m25-match-a4": {
+   "en": "Pharaoh",
+   "t": "Firavun"
+  },
+  "m25-match-b4": {
+   "en": "the proud king, lost in the sea",
+   "t": "denizde yok olan kibirli kral"
+  },
+  "m25-mem": {
+   "en": "One last game. Find all the pairs from the story of Musa.",
+   "t": "Son bir oyun. Musa’nın hikâyesindeki bütün eşleri bul."
+  },
+  "m25-puz": {
+   "en": "Put the sea back together. Tap two pieces to swap them.",
+   "t": "Denizi yeniden birleştir. Yerlerini değiştirmek için iki parçaya dokun."
+  },
+  "end-a": {
+   "en": "This is the story of Musa, peace be upon him. When the sea was in front of him, and the army was behind him, he said: my Lord is with me. He will guide me.",
+   "t": "Bu, Musa’nın (selam onun üzerine olsun) hikâyesidir. Önünde deniz, arkasında ordu varken şöyle dedi: Rabbim benimle beraberdir, bana elbette yol gösterecektir."
+  }
+ },
+ "strings": {
+  "A Proud King": "Kibirli Bir Kral",
+  "The Baby on the River": "Irmaktaki Bebek",
+  "From Ibn Kathir's commentary": "İbn Kesîr’in tefsirinden",
+  "The Queen's Heart": "Kraliçenin Kalbi",
+  "Pull!": "",
+  "A Sister's Clever Plan": "Bir Ablanın Akıllıca Planı",
+  "Into the river": "Irmağa",
+  "Found at the palace": "Sarayda bulundu",
+  "He will not drink": "Emmiyor",
+  "Back with his mother": "Yeniden annesinin yanında",
+  "Growing Up in the Palace": "Sarayda Büyümek",
+  "From Ibn Abbas, in al-Tabari's commentary": "Taberî’nin tefsirinde İbn Abbas’tan",
+  "A Big Mistake": "Büyük Bir Hata",
+  "Press and hold": "",
+  "Allah is the Most Forgiving": "Allah çok bağışlayandır",
+  "The Well of Madyan": "Medyen Kuyusu",
+  "Lift!": "Kaldır!",
+  "A New Home": "Yeni Bir Yuva",
+  "From a hadith in al-Bukhari": "Buhârî’deki bir hadisten",
+  "The Fire on the Mountain": "Dağdaki Ateş",
+  "There is no god but Allah": "Allah’tan başka ilah yoktur",
+  "The Staff and the Shining Hand": "Değnek ve Parlayan El",
+  "Musa's Prayer": "Musa’nın Duası",
+  "Open up my heart": "Göğsümü genişlet",
+  "Make my task easy": "İşimi kolaylaştır",
+  "Untie my tongue": "Dilimin düğümünü çöz",
+  "Give me my brother": "Kardeşimi bana yardımcı yap",
+  "Before Pharaoh": "Firavun’un Karşısında",
+  "the staff": "değnek",
+  "the hand": "el",
+  "a crown": "bir taç",
+  "gold": "altın",
+  "a sword": "bir kılıç",
+  "a horse": "bir at",
+  "The Day of the Festival": "Bayram Günü",
+  "Brave Hearts": "Cesur Kalpler",
+  "My Lord, build me a house near You": "Rabbim, katından bana bir ev yap",
+  "Sign after Sign": "Mucize Ardına Mucize",
+  "a frog": "bir kurbağa",
+  "a pot": "bir tencere",
+  "bread": "ekmek",
+  "a bowl": "bir kâse",
+  "The flood": "Sel",
+  "The locusts": "Çekirgeler",
+  "The tiny bugs": "Minicik böcekler",
+  "The frogs": "Kurbağalar",
+  "The red water": "Kırmızı su",
+  "Leaving by Night": "Geceleyin Yola Çıkış",
+  "The Sea Opens": "Deniz Açılıyor",
+  "Caught at the sea": "Denizde sıkıştılar",
+  "Musa strikes the sea": "Musa denize vuruyor",
+  "A dry path": "Kuru bir yol",
+  "The sea closes": "Deniz kapanıyor",
+  "Food from the Sky, Water from the Rock": "Gökten Yiyecek, Taştan Su",
+  "The Mountain and the Tablets": "Dağ ve Levhalar",
+  "The Golden Calf": "Altın Buzağı",
+  "Gold into the fire": "Altın ateşe",
+  "The calf": "Buzağı",
+  "Musa comes back": "Musa dönüyor",
+  "Dust in the sea": "Denizde toz",
+  "The Yellow Cow": "Sarı İnek",
+  "From a Shia narration (Imam al-Rida)": "Bir Şii rivayetinden (İmam Rızâ)",
+  "the yellow cow": "sarı inek",
+  "a spotted cow": "alaca bir inek",
+  "a brown ox": "kahverengi bir öküz",
+  "a dark buffalo": "kara bir manda",
+  "What kind of cow?": "Nasıl bir inek?",
+  "What colour?": "Rengi ne?",
+  "Which one exactly?": "Tam olarak hangisi?",
+  "The Holy Land": "Kutsal Topraklar",
+  "The Fish That Swam Away": "Yüzüp Giden Balık",
+  "Told in al-Bukhari and in Shia narrations": "Buhârî’de ve Şii rivayetlerde anlatılır",
+  "Three Strange Things": "Üç Tuhaf Olay",
+  "Allah Was with Him": "Allah Onunla Beraberdi",
+  "The baby on the river": "Irmaktaki bebek",
+  "The shepherd at the well": "Kuyu başındaki çoban",
+  "The fire on the mountain": "Dağdaki ateş",
+  "The sea opens": "Deniz açılıyor",
+  "The Tablets": "Levhalar",
+  "← Asmau": "",
+  "The Story of Musa": "Musa’nın Hikâyesi",
+  "Twenty-five chapters. About a hundred things to do. Play a little every day.": "Yirmi beş bölüm. Yapılacak yaklaşık yüz şey. Her gün biraz oyna.",
+  "Under 5: play it together with a grown-up": "5 yaşından küçükler: bir büyükle birlikte oynayın",
+  "Start the story": "",
+  "Start from the beginning": "",
+  "For parents": "",
+  "Back": "",
+  "Next": "",
+  "All chapters": "",
+  "✕ Close": "",
+  "The End": "",
+  "Trust in Allah": "Allah’a güven",
+  "Courage": "Cesaret",
+  "Gentle words": "Yumuşak sözler",
+  "Read it again": "",
+  "Pick a chapter": "",
+  "Music": "",
+  "Sounds": "",
+  "Voice": "",
+  "From the baby on the river to the sea that opened: twenty-five chapters and a hundred things to do.": "Irmaktaki bebekten açılan denize: yirmi beş bölüm ve yapılacak yüz şey.",
+  "A basket floating on the river among the reeds, glowing softly.": "Sazlıkların arasında, ırmakta yüzen ve hafifçe parlayan bir sepet.",
+  "📖 About this story": "📖 Bu hikâye hakkında",
+  "🤲 Told gently, or left out": "🤲 Yumuşak anlatılanlar ya da atlananlar",
+  "Told more gently than the verses tell them: Pharaoh’s order against the baby boys (28:4), the man Musa struck (28:15), Pharaoh’s threats to the magicians (20:71), the drowning (26:66) and Musa’s anger at his brother (7:150). Not told to children at all: the boy in 18:74, which the game calls “a story for when you are older”.": "Ayetlerin anlattığından daha yumuşak anlatılanlar: Firavun’un erkek bebeklere karşı emri (28:4), Musa’nın vurduğu adam (28:15), Firavun’un sihirbazları tehdidi (20:71), boğulma (26:66) ve Musa’nın kardeşine öfkesi (7:150). Çocuklara hiç anlatılmayan: 18:74’teki oğlan; oyun ondan “büyüyünce dinleyeceğin bir hikâye” diye söz eder.",
+  "📚 From the commentary, not the verses": "📚 Ayetlerden değil, tefsirden",
+  "From the commentary or hadith and not the verses, among others: the queen’s name, the hot coal, the heavy rock at the well, the pebbles on the path, the twelve paths through the sea, the frogs in the pots, the name al-Khidr and the bird on the boat. Where the early scholars differed, the chapter note says so.": "Ayetlerden değil, tefsirden ya da hadisten gelenler, başkalarının yanında: kraliçenin adı, yanan kor, kuyudaki ağır kaya, yoldaki çakıl taşları, denizdeki on iki yol, tencerelerdeki kurbağalar, Hızır adı ve gemideki kuş. İlk âlimlerin ayrıldığı yerlerde bölüm notu bunu söyler.",
+  "👥 Who is shown": "👥 Kimler gösteriliyor",
+  "Shown in this story: Prophet Musa and Prophet Harun (peace be upon them), al-Khidr, and the people around them. Allah’s speech to Musa is shown only as a fire and a light. Prophet Muhammad ﷺ is mentioned once, at the fast of Ashura.": "Bu hikâyede gösterilenler: Musa Peygamber ve Harun Peygamber (selam onların üzerine olsun), Hızır ve çevrelerindeki insanlar. Allah’ın Musa’yla konuşması yalnızca bir ateş ve bir ışık olarak gösterilir. Hz. Muhammed’in ﷺ adı bir kez, Âşûrâ orucunda geçer.",
+  "🧒 Ages and how long it is": "🧒 Yaşlar ve süre",
+  "It is long on purpose: about a hundred activities over 25 chapters. Nobody is meant to finish it in one sitting. A child of 3 or 4 will need a grown-up for the ordering, sorting and matching games.": "Bilerek uzun tutuldu: 25 bölümde yaklaşık yüz etkinlik. Kimsenin onu bir oturuşta bitirmesi beklenmez. 3 ya da 4 yaşındaki bir çocuğun sıralama, ayırma ve eşleştirme oyunları için bir büyüğe ihtiyacı olacaktır.",
+  "The story of Musa is spread over many surahs. This game follows <a href=\"https://quran.com/28\" target=\"_blank\" rel=\"noopener\">Surah Al-Qasas</a> (28:3–43) and <a href=\"https://quran.com/20\" target=\"_blank\" rel=\"noopener\">Surah Ta-Ha</a> (20:9–98), with passages from surahs 2, 5, 7, 10, 18, 26, 40 and 66. It is a large part of what the Qur’an tells of Musa, not all of it.": "Musa’nın hikâyesi birçok sureye yayılmıştır. Bu oyun <a href=\"https://quran.com/28\" target=\"_blank\" rel=\"noopener\">Kasas suresi</a> (28:3–43) ve <a href=\"https://quran.com/20\" target=\"_blank\" rel=\"noopener\">Tâhâ suresi</a> (20:9–98) ile birlikte 2, 5, 7, 10, 18, 26, 40 ve 66. surelerden bölümleri izler. Kur’an’ın Musa hakkında anlattıklarının büyük bir kısmıdır, tamamı değil.",
+  "Musa": "Musa"
+ },
+ "notes": {
+  "1.1": {
+   "en": "Pharaoh raised himself high in the land and split its people into groups. He oppressed one group: the verse says he slaughtered their sons and let their women live. The game says only that their baby boys were to be taken away.\n\nVerses 28:5–6 give Allah's plan: to favour the oppressed, make them leaders and heirs, and show Pharaoh, Haman and their armies the very thing they feared.",
+   "t": "Firavun yeryüzünde büyüklendi ve halkını gruplara ayırdı. Bir grubu eziyordu: Ayet, onların oğullarını boğazladığını ve kadınlarını sağ bıraktığını söyler. Oyun yalnızca erkek bebeklerin ellerinden alınacağını söyler.\n\n28:5–6. ayetler Allah’ın planını verir: ezilenlere lütufta bulunmak, onları önderler ve mirasçılar yapmak ve Firavun’a, Hâmân’a ve ordularına tam da korktukları şeyi göstermek."
+  },
+  "1.2": {
+   "en": "Ask your child: what does it feel like when someone is unfair to you? What do you wish someone would do?",
+   "t": "Çocuğunuza sorun: Biri sana haksızlık edince nasıl hissedersin? Birinin ne yapmasını isterdin?"
+  },
+  "1.3": {
+   "en": "Ask: when bad things happen, does Allah see? This whole story is about Allah helping people who were being hurt.\n\nIbn Kathir explains that Pharaoh killed the newborn boys of the Children of Israel because he feared a boy would be born among them who would bring about his downfall; the precaution could not stop what Allah had decreed.",
+   "t": "Sorun: Kötü şeyler olunca Allah görür mü? Bu hikâyenin tamamı, Allah’ın zulme uğrayan insanlara yardım etmesi hakkındadır.\n\nİbn Kesîr, Firavun’un İsrailoğullarının yeni doğan erkek çocuklarını, aralarında onun sonunu getirecek bir oğlanın doğmasından korktuğu için öldürdüğünü açıklar; bu tedbir Allah’ın takdir ettiğini durduramazdı."
+  },
+  "1.4": {
+   "en": "Talk about plans: what plans does our family make? Allah's plan in this story takes many years, and it starts with a baby.\n\nWhere did Pharaoh's fear come from? Ibn Kathir (in his Arabic commentary on 28:4) says the Egyptians had heard it from the Children of Israel: a saying of Ibrahim, after a tyrant of Egypt tried to take his wife Sara, that among his descendants would be one who would bring down the king of Egypt. (Our translation.)",
+   "t": "Planları konuşun: Ailemiz ne gibi planlar yapar? Bu hikâyede Allah’ın planı yıllar sürer ve bir bebekle başlar.\n\nFiravun’un korkusu nereden geliyordu? İbn Kesîr (28:4 hakkındaki Arapça tefsirinde) Mısırlıların bunu İsrailoğullarından duyduğunu söyler: Mısır’ın bir zorbası eşi Sâre’yi almaya çalıştıktan sonra İbrahim’in, soyundan Mısır kralını yıkacak birinin geleceğini söylediği bir söz. (Çeviri bizimdir.)"
+  },
+  "1.5": {
+   "en": "Name each card as you match it: the river Nile, palm trees, the pyramids... Ask: what would you like to see in Egypt?",
+   "t": "Eşleştirirken her kartın adını söyleyin: Nil nehri, hurma ağaçları, piramitler… Sorun: Mısır’da ne görmek isterdin?"
+  },
+  "2.1": {
+   "en": "Musa's mother is inspired to nurse him and, when she fears for him, to put him into the chest and the chest into the river, with the promise that he will be returned to her and made a messenger. 20:39 adds that Allah cast His love over Musa and that he was reared under Allah's watchful eye.\n\nThe chest is in the verse (20:39). The commentary adds details the verses do not give: that her house was on the bank of the Nile and that she made a box into a cradle for him. The game's 'getting the chest ready' activity is built on that.",
+   "t": "Musa’nın annesine onu emzirmesi ve onun için korkunca onu sandığa, sandığı da ırmağa koyması ilham edilir; onun kendisine geri verileceği ve bir peygamber yapılacağı vaadiyle. 20:39 ayrıca Allah’ın Musa’yı sevimli kıldığını ve onun Allah’ın gözetimi altında yetiştiğini ekler: “Gözümün önünde yetişesin diye seni sevimli kıldım.”\n\nSandık ayettedir (20:39). Tefsir ayetlerin vermediği ayrıntılar ekler: evinin Nil kıyısında olduğu ve onun için bir kutuyu beşiğe çevirdiği. Oyunun “sandığı hazırlama” etkinliği buna dayanır."
+  },
+  "2.2": {
+   "en": "Ask: what do you think Musa's mother felt when she heard this message? Being brave doesn't mean not being afraid.\n\nIn Majlisi's Hayat al-Qulub, Musa's mother is called Yukabid, which Majlisi says is the most common opinion. The Qur'an does not name her.",
+   "t": "Sorun: Sence Musa’nın annesi bu haberi duyunca ne hissetti? Cesur olmak korkmamak demek değildir.\n\nMeclisî’nin Hayâtü’l-Kulûb’unda Musa’nın annesine Yûkâbid denir; Meclisî bunun en yaygın görüş olduğunu söyler. Kur’an onun adını vermez."
+  },
+  "2.3": {
+   "en": "Ask: what would you put in a cradle to keep a baby warm and safe?",
+   "t": "Sorun: Bir bebeği sıcak ve güvende tutmak için beşiğe ne koyardın?"
+  },
+  "2.4": {
+   "en": "Ask: what is the bravest thing your mother or father has done for you? This is a good moment to tell your child a story from when they were a baby.\n\nIbn Kathir passes on what 'they mention' (dhakaru), commentary rather than Qur'an: that Pharaoh's people, afraid of losing their workers, had the boys killed one year and spared the next; Harun was born in a year of sparing and Musa in a year of killing. Musa's mother lived by the Nile; she would hide him in the chest on the water, tied with a rope, whenever someone she feared came in, and one day she forgot to tie it, and the river carried him to Pharaoh's house. (Our translation from the Arabic.)",
+   "t": "Sorun: Annenin ya da babanın senin için yaptığı en cesur şey nedir? Çocuğunuza o bebekken yaşanmış bir hikâye anlatmak için güzel bir an.\n\nİbn Kesîr, Kur’an değil tefsir olarak “anlattıklarını” (zekerû) aktarır: Firavun’un adamları, işçilerini kaybetmekten korktukları için erkek çocukları bir yıl öldürtüp ertesi yıl bağışlarlardı; Harun bağışlanan bir yılda, Musa ise öldürülen bir yılda doğdu. Musa’nın annesi Nil kıyısında yaşardı; korktuğu biri gelince onu ipe bağlı sandıkta suya saklardı; bir gün ipi bağlamayı unuttu ve ırmak onu Firavun’un evine taşıdı. (Arapçadan çeviri bizimdir.)"
+  },
+  "2.5": {
+   "en": "Move slowly and gently as you play. Ask: how would you carry something very precious?",
+   "t": "Oynarken yavaş ve nazik hareket edin. Sorun: Çok değerli bir şeyi nasıl taşırdın?"
+  },
+  "2.6": {
+   "en": "Ask: who watches over you when you sleep? Allah watches over everyone, all the time.",
+   "t": "Sorun: Sen uyurken seni kim gözetir? Allah herkesi her zaman gözetir."
+  },
+  "2.7": {
+   "en": "Look at a river or stream together if you can, or a bowl of water. Ask: where does a river go?",
+   "t": "Yapabilirseniz birlikte bir ırmağa ya da dereye, olmazsa bir kâse suya bakın. Sorun: Bir ırmak nereye gider?"
+  },
+  "2.8": {
+   "en": "Ask: what can we do when we are afraid for someone we love? (Make dua, trust Allah, do what we can.)",
+   "t": "Sorun: Sevdiğimiz biri için korkunca ne yapabiliriz? (Dua etmek, Allah’a güvenmek, elimizden geleni yapmak.)"
+  },
+  "3.1": {
+   "en": "Pharaoh's household picked the child up, not knowing he would become their opponent. Pharaoh's wife said he would be a joy to the eye for her and for Pharaoh, and said: do not kill him; he may be useful to us, or we may adopt him. The game says 'do not harm him'.\n\nThe verses do not name her. The commentary names her Asiyah bint Muzahim, says the servant women brought the chest to her unopened, and that Allah filled her heart with love when she saw the child. It also reports Pharaoh's reply, 'For you he may be, but not for me', which the game leaves out.\n\nOn 20:39, 'I cast My love over you', the commentary comments that no one saw Musa without loving him. The hearts activity is built on that.",
+   "t": "Firavun’un ev halkı, onun ileride kendilerine düşman olacağını bilmeden çocuğu aldı. Firavun’un karısı, onun kendisi ve Firavun için bir göz aydınlığı olacağını söyledi ve şöyle dedi: Onu öldürmeyin; belki bize faydası olur ya da onu evlat ediniriz. Oyun “ona zarar verme” der.\n\nAyetler onun adını vermez. Tefsir ona Âsiye bint Müzâhim der, hizmetçi kadınların sandığı ona açılmadan getirdiğini ve çocuğu görünce Allah’ın onun kalbini sevgiyle doldurduğunu söyler. Firavun’un “Senin için olabilir, ama benim için değil” cevabını da aktarır; oyun bunu anlatmaz.\n\n20:39 hakkında, “Gözümün önünde yetişesin diye seni sevimli kıldım”, tefsir Musa’yı gören hiç kimsenin onu sevmeden edemediğini söyler. Kalpler etkinliği buna dayanır."
+  },
+  "3.2": {
+   "en": "Ask: who do you think will find the chest? Let your child guess before the next page.",
+   "t": "Sorun: Sence sandığı kim bulacak? Bir sonraki sayfadan önce çocuğunuz tahmin etsin."
+  },
+  "3.3": {
+   "en": "Asiya is one of the great women of Islam. Ask: why do you think she was kind, even though she lived in Pharaoh's palace?",
+   "t": "Âsiye İslam’ın büyük kadınlarından biridir. Sorun: Sence Firavun’un sarayında yaşadığı halde neden iyi kalpliydi?"
+  },
+  "3.4": {
+   "en": "Ask: what is the best surprise you have ever found?",
+   "t": "Sorun: Şimdiye kadar bulduğun en güzel sürpriz neydi?"
+  },
+  "3.5": {
+   "en": "Ask: how do you feel when you see a baby? Allah put love for baby Musa in people's hearts.",
+   "t": "Sorun: Bir bebek görünce nasıl hissedersin? Allah insanların kalbine bebek Musa’ya karşı sevgi koydu."
+  },
+  "3.6": {
+   "en": "Ask: who loves you? Count them on your fingers together.",
+   "t": "Sorun: Seni kimler seviyor? Birlikte parmaklarınızla sayın."
+  },
+  "3.7": {
+   "en": "Ask: what does it mean to speak up for someone? Asiya spoke up for a baby she had just met.",
+   "t": "Sorun: Birini savunmak ne demektir? Âsiye daha yeni gördüğü bir bebeği savundu."
+  },
+  "3.8": {
+   "en": "Ask: isn't it amazing that the safest place for Musa was in the king's own palace? How did Allah do that?",
+   "t": "Sorun: Musa için en güvenli yerin kralın kendi sarayı olması harika değil mi? Allah bunu nasıl yaptı?"
+  },
+  "3.9": {
+   "en": "Talk about kind people who stand up for the weak. Who do you know who does that?",
+   "t": "Zayıfları savunan iyi insanları konuşun. Bunu yapan kimi tanıyorsun?"
+  },
+  "4.1": {
+   "en": "The heart of Musa's mother became empty; she would have given him away had Allah not strengthened her heart. She told his sister to follow him, and the sister watched from a distance unnoticed. Allah had made him refuse every wet nurse, and the sister offered a household that would bring him up. He was returned to his mother so that she would be comforted and would know that Allah's promise is true.\n\nFrom the commentary, not the verses: that 'empty' means she could think of nothing but Musa (reported from Ibn Abbas, Mujahid, Ikrimah, Sa'id bin Jubayr and others); that the sister was the older child; that the queen paid the mother; and that only about a day and a night passed between the distress and the relief, 'and Allah knows best'.\n\nThe commentary reports from Ibn Abbas that the palace people doubted the sister and seized her until she explained herself. The game leaves that out.",
+   "t": "Musa’nın annesinin kalbi bomboş oldu; Allah kalbini güçlendirmeseydi onu ele verecekti. Ablasına onun ardından gitmesini söyledi ve ablası onu uzaktan, fark edilmeden izledi. Allah onu her sütanneyi reddeder yapmıştı ve ablası onu büyütecek bir aile önerdi. Annesine, gönlü ferahlasın ve Allah’ın vaadinin gerçek olduğunu bilsin diye geri verildi.\n\nAyetlerden değil, tefsirden gelenler: “boş” sözünün onun Musa’dan başka hiçbir şey düşünemediği anlamına geldiği (İbn Abbas, Mücâhid, İkrime, Saîd b. Cübeyr ve başkalarından rivayet edilir); ablanın büyük çocuk olduğu; kraliçenin anneye para ödediği; ve sıkıntı ile ferahlık arasında yalnızca bir gün bir gece kadar geçtiği, “Allah en iyisini bilir”.\n\nTefsir, İbn Abbas’tan, saray halkının abladan şüphelendiğini ve kendini açıklayana kadar onu yakaladıklarını aktarır. Oyun bunu anlatmaz."
+  },
+  "4.2": {
+   "en": "Ask your child about their own brother, sister or cousin: how do you look out for each other?",
+   "t": "Çocuğunuza kendi kardeşini ya da kuzenini sorun: Birbirinizi nasıl kolluyorsunuz?"
+  },
+  "4.3": {
+   "en": "Play a quiet-footsteps game at home: who can walk the most silently?",
+   "t": "Evde sessiz adımlar oyunu oynayın: Kim en sessiz yürüyebilir?"
+  },
+  "4.4": {
+   "en": "Ask: what does a baby need more than anything? (Their mother, food, sleep, love.)",
+   "t": "Sorun: Bir bebeğin her şeyden çok neye ihtiyacı vardır? (Annesine, yiyeceğe, uykuya, sevgiye.)"
+  },
+  "4.5": {
+   "en": "Ask: why do you think baby Musa said no to every nurse? Allah was bringing him home.",
+   "t": "Sorun: Sence bebek Musa neden her sütanneye hayır dedi? Allah onu evine getiriyordu."
+  },
+  "4.6": {
+   "en": "Ask: how did Musa's sister help without telling anyone the secret? Being clever and kind together.",
+   "t": "Sorun: Musa’nın ablası sırrı kimseye söylemeden nasıl yardım etti? Akıllı ve iyi olmak bir arada."
+  },
+  "4.7": {
+   "en": "Ask: how do you think his mother felt when she held him again? A lovely moment to hug your child.",
+   "t": "Sorun: Sence annesi onu yeniden kucağına alınca nasıl hissetti? Çocuğunuza sarılmak için güzel bir an."
+  },
+  "4.8": {
+   "en": "Ask: what promise did Allah make to Musa's mother, and did He keep it?",
+   "t": "Sorun: Allah Musa’nın annesine ne vaat etti ve vaadini tuttu mu?"
+  },
+  "4.9": {
+   "en": "Ask your child to tell this chapter to someone else in the family.",
+   "t": "Çocuğunuzdan bu bölümü ailede başka birine anlatmasını isteyin."
+  },
+  "4.10": {
+   "en": "Let your child say each step out loud before tapping.",
+   "t": "Dokunmadan önce çocuğunuz her adımı yüksek sesle söylesin."
+  },
+  "5.1": {
+   "en": "When Musa reached full maturity Allah gave him wisdom and knowledge: 'this is how We reward those who do good'.\n\nThe hot coal is not in the Qur'an. The commentary, explaining the prayer 'untie the knot in my tongue' (20:27), says Musa had a lisp from an incident in which he was offered a date and a hot coal and put the coal on his tongue. The tafsir gives it in one sentence and refers elsewhere for the full story; the game adds nothing to it. The commentary says that as a child Musa stayed in Pharaoh's own room.\n\nThe sorting activity (safe to eat, or too hot to touch) is a safety game of ours hung on that report.",
+   "t": "Musa tam olgunluğa erişince Allah ona hikmet ve bilgi verdi: “İyi davrananları böyle mükafatlandırırız.”\n\nYanan kor Kur’an’da yoktur. Tefsir, “dilimin düğümünü çöz” duasını (20:27) açıklarken, Musa’nın diline bir hurma ve yanan bir kor uzatıldığı ve koru diline koyduğu bir olaydan dolayı peltek konuştuğunu söyler. Tefsir bunu tek bir cümleyle verir ve hikâyenin tamamı için başka bir yere gönderir; oyun buna bir şey eklemez. Tefsir Musa’nın çocukken Firavun’un kendi odasında kaldığını söyler.\n\nAyırma etkinliği (yemek güvenli mi, yoksa dokunulamayacak kadar sıcak mı) bu rivayete bağladığımız bir güvenlik oyunudur."
+  },
+  "5.2": {
+   "en": "Ask: how do you know if something is too hot? Talk about safety at home: the stove, hot tea, matches.",
+   "t": "Sorun: Bir şeyin çok sıcak olduğunu nasıl anlarsın? Evde güvenliği konuşun: ocak, sıcak çay, kibrit."
+  },
+  "5.3": {
+   "en": "Make it a real safety lesson: walk around the kitchen together and name what is hot or sharp.",
+   "t": "Bunu gerçek bir güvenlik dersine çevirin: Birlikte mutfakta dolaşın ve sıcak ya da keskin olan şeylerin adını söyleyin."
+  },
+  "5.4": {
+   "en": "Ask: what do you want to learn when you grow up? Wisdom is knowing what to do with what you know.",
+   "t": "Sorun: Büyüyünce ne öğrenmek istersin? Hikmet, bildiğin şeyle ne yapacağını bilmektir."
+  },
+  "5.5": {
+   "en": "The Qur'an does not say how Musa knew which people were his own; in 28:15 it simply calls the Israelite in the fight \"one of his own party\". This page, added so that page 6.1 makes sense to a child, tells what the early reports give as the background.\n\nThe commentary reports that Musa's mother would not live in the palace: she nursed him in her own home, and the queen paid her for it, so he spent his first years with his real family.\n\nAl-Tabari's commentary reports from Ibn Abbas that once Musa was grown, none of Pharaoh's people could wrong an Israelite or force him to work while Musa was there. People put this down to his having been nursed by an Israelite woman, \"unless Allah had shown Musa what He had not shown anyone else\". Al-Tabari also reports, from Ibn Ishaq, that a following from the Children of Israel gathered to Musa and listened to him. These are reports, so the game says \"it is told that\".",
+   "t": "Kur’an, Musa’nın kendi halkının hangisi olduğunu nasıl bildiğini söylemez; 28:15’te kavgadaki İsrailoğlunu yalnızca “kendi tarafından olan” diye anar. 6.1. sayfa bir çocuğa anlamlı gelsin diye eklenen bu sayfa, ilk rivayetlerin arka plan olarak verdiklerini anlatır.\n\nTefsir, Musa’nın annesinin sarayda yaşamadığını aktarır: Onu kendi evinde emzirdi ve kraliçe bunun için ona para ödedi; böylece Musa ilk yıllarını gerçek ailesiyle geçirdi.\n\nTaberî’nin tefsiri İbn Abbas’tan, Musa büyüdükten sonra o oradayken Firavun’un adamlarından hiçbirinin bir İsrailoğluna haksızlık edemediğini ya da onu zorla çalıştıramadığını aktarır. İnsanlar bunu onun İsrailli bir kadın tarafından emzirilmesine bağladılar, “meğer ki Allah Musa’ya başka kimseye göstermediği bir şey göstermiş olsun”. Taberî ayrıca İbn İshak’tan, İsrailoğullarından bir topluluğun Musa’nın etrafında toplandığını ve onu dinlediğini aktarır. Bunlar rivayettir, bu yüzden oyun “anlatıldığına göre” der."
+  },
+  "5.6": {
+   "en": "While solving, ask: what do you think Musa learned in the palace?",
+   "t": "Çözerken sorun: Sence Musa sarayda neler öğrendi?"
+  },
+  "5.7": {
+   "en": "Ask: who gives us wisdom and knowledge? A short dua from the Qur'an children can learn: rabbi zidni 'ilma, 'Lord, increase me in knowledge!' (20:114).",
+   "t": "Sorun: Bize hikmeti ve bilgiyi kim verir? Çocukların öğrenebileceği Kur’an’dan kısa bir dua: Rabbi zidnî ilmâ, “Rabbim! ilmimi artır” (20:114)."
+  },
+  "6.1": {
+   "en": "Musa entered the city unnoticed and found two men fighting, one of his own people and one an enemy. His kinsman called for help; Musa struck the other with his fist and killed him. The game says the man 'fell down and did not get up again'. Musa said 'this is Satan's work', asked forgiveness and was forgiven, and promised never to support wrongdoers.\n\nLeft out: verses 28:18–19, where the same kinsman calls for help again the next day, Musa calls him a troublemaker, and the man lets slip what happened the day before.\n\nIn verse 28:20 the man who came running says the authorities are talking about killing Musa. The game says they are 'coming to punish' him.\n\nIn a Shia narration (Imam al-Rida) Musa struck the man to stop him from wronging another and did not mean to kill him; 'Satan's work' is read as the fight that Satan stirred up.",
+   "t": "Musa fark edilmeden şehre girdi ve kavga eden iki adam buldu: biri kendi halkından, biri düşman. Kendi tarafından olan yardım istedi; Musa öbürüne yumruğuyla vurdu ve ölümüne sebep oldu. Oyun adamın “yere düştüğünü ve bir daha kalkmadığını” söyler. Musa “Bu şeytanın işidir” dedi, bağışlanma diledi ve bağışlandı ve suçlulara asla yardımcı olmayacağına söz verdi.\n\nAtlanan: Aynı adamın ertesi gün yine yardım istediği, Musa’nın ona azgın dediği ve adamın önceki gün olanı ağzından kaçırdığı 28:18–19. ayetler.\n\n28:20. ayette koşarak gelen adam, ileri gelenlerin Musa’yı öldürmek için görüştüklerini söyler. Oyun onu “cezalandırmaya geldiklerini” söyler.\n\nBir Şii rivayette (İmam Rızâ) Musa adama, başkasına haksızlık etmesini durdurmak için vurdu ve onu öldürmeyi kastetmedi; “şeytanın işi” şeytanın körüklediği kavga olarak okunur."
+  },
+  "6.2": {
+   "en": "Ask: what can happen when we act too fast when we are angry? What could Musa have done instead?\n\nIn Hayat al-Qulub, Imam al-Rida explains that Musa struck to stop a man who was 'openly leading astray' and did not mean to kill him. In the game Musa calls it the work of Shaytan and asks forgiveness, as the Qur'an tells it.",
+   "t": "Sorun: Öfkeliyken çok hızlı davranınca ne olabilir? Musa bunun yerine ne yapabilirdi?\n\nHayâtü’l-Kulûb’da İmam Rızâ, Musa’nın “açıkça saptıran” bir adamı durdurmak için vurduğunu ve onu öldürmeyi kastetmediğini açıklar. Oyunda Musa, Kur’an’ın anlattığı gibi, buna şeytanın işi der ve bağışlanma diler."
+  },
+  "6.3": {
+   "en": "Ask: what does a real sorry sound like? Practise one together.",
+   "t": "Sorun: Gerçek bir özür nasıl söylenir? Birlikte çalışın."
+  },
+  "6.4": {
+   "en": "Hold the hands together with your child. Ask: is there anyone you want to say sorry to?",
+   "t": "Elleri çocuğunuzla birlikte tutun. Sorun: Özür dilemek istediğin biri var mı?"
+  },
+  "6.5": {
+   "en": "Musa did not hide his mistake; he turned to Allah at once. Ask: what do you do when you've done something wrong?",
+   "t": "Musa hatasını saklamadı; hemen Allah’a yöneldi. Sorun: Yanlış bir şey yapınca ne yaparsın?"
+  },
+  "6.6": {
+   "en": "Ask: who was the man who came running? Someone who cared enough to warn Musa. Who would you warn if they were in danger?",
+   "t": "Sorun: Koşarak gelen adam kimdi? Musa’yı uyaracak kadar onu önemseyen biri. Tehlikedeyse sen kimi uyarırdın?"
+  },
+  "6.7": {
+   "en": "Ask: what can we say to Allah when we feel afraid? Let your child make up a short dua.",
+   "t": "Sorun: Korkunca Allah’a ne diyebiliriz? Çocuğunuz kısa bir dua uydursun."
+  },
+  "6.8": {
+   "en": "Ask: how do you think Musa felt leaving his home? Talk about times your family moved or travelled.",
+   "t": "Sorun: Sence Musa evinden ayrılırken nasıl hissetti? Ailenizin taşındığı ya da yolculuk ettiği zamanları konuşun."
+  },
+  "7.1": {
+   "en": "Musa turned towards Madyan hoping his Lord would guide him. At its water he found men watering flocks and two women holding theirs back; they could not water until the shepherds left, and their father was very old. He watered for them, withdrew to the shade and prayed: 'My Lord, I am in dire need of whatever good You send me.'\n\nThe heavy rock is not in the verses. The commentary, on 'the strong, the trustworthy' in 28:26, reports from Umar, Ibn Abbas, Shurayh, Abu Malik, Qatadah, Ibn Ishaq and others that the daughter said Musa had lifted a rock that only ten men could lift. The commentary says he sat beneath a tree (Ibn Abbas, Ibn Mas'ud, As-Suddi).\n\nThe tafsir also mentions, with 'and Allah knows best', a report that an angel on a horse showed Musa the way. The game does not use it.",
+   "t": "Musa, Rabbinin kendisine yol göstereceğini umarak Medyen’e yöneldi. Oranın suyunda sürülerini sulayan adamlar ve sürülerini geri tutan iki kadın buldu; çobanlar gitmeden sulayamıyorlardı ve babaları çok yaşlıydı. Onlar için suladı, gölgeye çekildi ve şöyle dua etti: “Rabbim! Doğrusu bana indireceğin hayra muhtacım.”\n\nAğır kaya ayetlerde yoktur. Tefsir, 28:26’daki “güçlü ve güvenilir” hakkında Ömer, İbn Abbas, Şüreyh, Ebû Mâlik, Katâde, İbn İshak ve başkalarından, kızın Musa’nın ancak on adamın kaldırabileceği bir kayayı kaldırdığını söylediğini aktarır. Tefsir onun bir ağacın altına oturduğunu söyler (İbn Abbas, İbn Mes'ûd, Süddî).\n\nTefsir ayrıca, “Allah en iyisini bilir” diyerek, atlı bir meleğin Musa’ya yolu gösterdiğine dair bir rivayetten söz eder. Oyun bunu kullanmaz."
+  },
+  "7.2": {
+   "en": "Ask: how long can you walk? Count your steps on your next walk together.",
+   "t": "Sorun: Ne kadar uzun yürüyebilirsin? Bir dahaki yürüyüşünüzde adımlarınızı birlikte sayın."
+  },
+  "7.3": {
+   "en": "Ask: what did Musa notice that others didn't? (Two young women waiting.) Noticing people who need help is the first step to helping.",
+   "t": "Sorun: Musa başkalarının fark etmediği neyi fark etti? (Bekleyen iki genç kadını.) Yardıma ihtiyacı olan insanları fark etmek yardım etmenin ilk adımıdır."
+  },
+  "7.4": {
+   "en": "Ask: what would you do if you saw someone left out, waiting at the back?",
+   "t": "Sorun: Dışarıda bırakılmış, arkada bekleyen birini görsen ne yapardın?"
+  },
+  "7.5": {
+   "en": "Ask: is it better to be strong, or to use your strength to help? Musa used his for others.",
+   "t": "Sorun: Güçlü olmak mı daha iyidir, yoksa gücünü yardım etmek için kullanmak mı? Musa gücünü başkaları için kullandı."
+  },
+  "7.6": {
+   "en": "Try lifting something heavy together, then something light. Ask: what is heavy for you that is easy for a grown-up?",
+   "t": "Birlikte önce ağır bir şeyi, sonra hafif bir şeyi kaldırmayı deneyin. Sorun: Senin için ağır olan ama bir büyük için kolay olan ne?"
+  },
+  "7.7": {
+   "en": "Ask: how many animals have you helped look after? Count the sheep together as you play.",
+   "t": "Sorun: Şimdiye kadar kaç hayvana bakmaya yardım ettin? Oynarken koyunları birlikte sayın."
+  },
+  "7.8": {
+   "en": "Musa had nothing left, so he asked Allah. Ask: what do you ask Allah for when you need something?",
+   "t": "Musa’nın elinde hiçbir şey kalmamıştı, bu yüzden Allah’tan istedi. Sorun: Bir şeye ihtiyacın olunca Allah’tan ne istersin?"
+  },
+  "7.9": {
+   "en": "Musa's prayer under the tree can be learnt: rabbi inni lima anzalta ilayya min khayrin faqir, 'My Lord, I am in dire need of whatever good thing You may send me' (28:24).",
+   "t": "Musa’nın ağaç altındaki duası öğrenilebilir: Rabbi innî limâ enzelte ileyye min hayrin fakîr, “Rabbim! Doğrusu bana indireceğin hayra muhtacım” (28:24)."
+  },
+  "7.10": {
+   "en": "Name each card from the well as you match it.",
+   "t": "Eşleştirirken kuyu başındaki her kartın adını söyleyin."
+  },
+  "8.1": {
+   "en": "One of the two women came walking shyly with her father's invitation. Musa told his story and the old man said: do not be afraid, you are safe now. A daughter said: hire him, the best to hire is the strong and trustworthy. The father offered marriage to one of his daughters for eight years of work, ten if Musa chose, and Musa agreed. The verses do not name the father.\n\nFrom the commentary, not the verses: Musa asked her to walk behind him and throw a pebble to show the way (reported from Umar, Ibn Abbas and others, as her explanation of 'trustworthy'); and Musa completed the longer term, ten years, which the tafsir quotes from al-Bukhari on the authority of Ibn Abbas.\n\nShia narrations name the old man as the Prophet Shu'ayb; Sunni scholars are divided on it, and the verses do not say. The same narrations also tell the two details above.",
+   "t": "İki kadından biri babasının davetiyle utana utana yürüyerek geldi. Musa hikâyesini anlattı ve yaşlı adam şöyle dedi: Korkma, artık güvendesin. Kızlardan biri şöyle dedi: Onu ücretle tut; ücretle tutulanların en iyisi güçlü ve güvenilir olandır. Baba, sekiz yıl, Musa dilerse on yıl çalışması karşılığında kızlarından biriyle evlenmeyi teklif etti ve Musa kabul etti. Ayetler babanın adını vermez.\n\nAyetlerden değil, tefsirden gelenler: Musa’nın ondan arkasından yürümesini ve yolu göstermek için çakıl taşı atmasını istediği (kızın “güvenilir” sözünü açıklaması olarak Ömer, İbn Abbas ve başkalarından rivayet edilir); ve Musa’nın uzun süreyi, on yılı tamamladığı; tefsir bunu İbn Abbas’a dayanarak Buhârî’den aktarır.\n\nŞii rivayetler yaşlı adamın Şuayb Peygamber olduğunu söyler; Sünni âlimler bu konuda ayrılır ve ayetler bunu söylemez. Aynı rivayetler yukarıdaki iki ayrıntıyı da anlatır."
+  },
+  "8.2": {
+   "en": "Ask: how did Musa show respect? Talk about good manners when walking with others.",
+   "t": "Sorun: Musa saygısını nasıl gösterdi? Başkalarıyla yürürken güzel davranışları konuşun."
+  },
+  "8.3": {
+   "en": "Ask: how do you give directions to someone? Practise: 'left, right, straight on.'",
+   "t": "Sorun: Birine yolu nasıl tarif edersin? Çalışın: “sola, sağa, dümdüz.”"
+  },
+  "8.4": {
+   "en": "In the Shia narrations (Hayat al-Qulub) the old man of Madyan is the Prophet Shu'ayb; Sunni scholars are divided. Ask: what does it feel like when someone says 'you are safe now'?",
+   "t": "Şii rivayetlerde (Hayâtü’l-Kulûb) Medyen’in yaşlı adamı Şuayb Peygamberdir; Sünni âlimler ayrılır. Sorun: Biri sana “Artık güvendesin” deyince nasıl hissedersin?"
+  },
+  "8.5": {
+   "en": "'The best person to hire is one who is strong and trustworthy' (28:26). Ask: what makes you a good helper at home?",
+   "t": "“Ücretle tuttuklarının en iyisi bu güçlü ve güvenilir adamdır” (28:26). Sorun: Seni evde iyi bir yardımcı yapan nedir?"
+  },
+  "8.6": {
+   "en": "Ask: which is more important, being strong or being honest? Can someone be both?",
+   "t": "Sorun: Hangisi daha önemli, güçlü olmak mı, dürüst olmak mı? Biri ikisi birden olabilir mi?"
+  },
+  "8.7": {
+   "en": "Ask: what do people promise when they marry? Talk about a wedding your family remembers.",
+   "t": "Sorun: İnsanlar evlenirken neye söz verir? Ailenizin hatırladığı bir düğünü konuşun."
+  },
+  "8.8": {
+   "en": "Count the ten years together. Ask: what will you be doing in ten years?",
+   "t": "On yılı birlikte sayın. Sorun: On yıl sonra ne yapıyor olacaksın?"
+  },
+  "8.9": {
+   "en": "Ask: why do sheep need a shepherd? Many prophets were shepherds for a time.",
+   "t": "Sorun: Koyunların neden bir çobana ihtiyacı vardır? Birçok peygamber bir süre çobanlık yaptı."
+  },
+  "8.10": {
+   "en": "While solving, ask your child to describe life in Madyan.",
+   "t": "Çözerken çocuğunuzdan Medyen’deki hayatı anlatmasını isteyin."
+  },
+  "9.1": {
+   "en": "When his term was complete Musa was travelling with his family and saw a fire. He told them to wait: he might bring a burning brand, or find guidance there. He was called: 'Musa! I am your Lord. Take off your shoes: you are in the sacred valley of Tuwa. I have chosen you, so listen to what is revealed. I am Allah; there is no god but Me. So worship Me and keep up the prayer so that you remember Me.' Verse 28:30 says the call came from the right side of the valley, from a tree on blessed ground.\n\nThe pictures show a fire and a light, and nothing else. Allah is not shown, and no angel is shown anywhere in this game.",
+   "t": "Süresi dolunca Musa ailesiyle yolculuk ediyordu ve bir ateş gördü. Onlara beklemelerini söyledi: Belki yanan bir odun getirir ya da orada bir yol gösterici bulurdu. Ona seslenildi: “Ey Musa! Ben şüphesiz senin Rabbinim; ayağındakileri çıkar; çünkü sen, kutsal bir vadi olan Tuva’dasın. Ben seni seçtim; artık vahyolunanları dinle. Şüphesiz Ben Allah’ım, Benden başka tanrı yoktur; Bana kulluk et; Beni anmak için namaz kıl.” 28:30. ayet, sesin vadinin sağ yanından, kutlu yerdeki bir ağaç cihetinden geldiğini söyler.\n\nResimler bir ateş ve bir ışıktan başka bir şey göstermez. Allah gösterilmez ve bu oyunun hiçbir yerinde melek gösterilmez."
+  },
+  "9.2": {
+   "en": "Ask: what would you do if you saw a fire in the dark? Talk about fire safety too.",
+   "t": "Sorun: Karanlıkta bir ateş görsen ne yapardın? Yangın güvenliğini de konuşun."
+  },
+  "9.3": {
+   "en": "Turn off the lights for a moment and look for a small light together. Ask: how does the light help?",
+   "t": "Bir an ışıkları kapatın ve birlikte küçük bir ışık arayın. Sorun: Işık nasıl yardım ediyor?"
+  },
+  "9.4": {
+   "en": "Ask: what do you think Musa expected to find at the fire?",
+   "t": "Sorun: Sence Musa ateşin yanında ne bulmayı bekliyordu?"
+  },
+  "9.5": {
+   "en": "Ask: why do we take off our shoes at the mosque? Respect for holy places.",
+   "t": "Sorun: Camide neden ayakkabılarımızı çıkarırız? Kutsal yerlere saygıdan."
+  },
+  "9.6": {
+   "en": "A good moment to remind your child: shoes off at the door of the mosque, and placed neatly.",
+   "t": "Çocuğunuza hatırlatmak için güzel bir an: Cami kapısında ayakkabılar çıkarılır ve düzgünce yerleştirilir."
+  },
+  "9.7": {
+   "en": "'Keep up the prayer to remember Me' (20:14). Ask: why do we pray? To remember Allah.",
+   "t": "“Beni anmak için namaz kıl” (20:14). Sorun: Neden namaz kılarız? Allah’ı anmak için."
+  },
+  "9.8": {
+   "en": "Ask your child to be still and quiet for a minute, and listen. What can you hear?",
+   "t": "Çocuğunuzdan bir dakika kıpırdamadan ve sessizce durmasını ve dinlemesini isteyin. Ne duyabiliyorsun?"
+  },
+  "9.9": {
+   "en": "Talk about it: Musa is called kalimullah, the one Allah spoke to.",
+   "t": "Konuşun: Musa’ya, Allah’ın konuştuğu kişi anlamında Kelîmullah denir."
+  },
+  "10.1": {
+   "en": "Asked what was in his right hand, Musa said it was his staff: he leaned on it, kept his sheep in order with it, and had other uses for it. Thrown down, it became a fast-moving snake and he turned to flee; he was told to pick it up without fear and it would return to its former state. His hand, drawn out from his side, came out white and unharmed. These were two signs for Pharaoh and his chiefs.\n\n'Shone like the moon' is from the commentary: the hand came out 'shining as if it were a half moon', free of any disease (reported from Ibn Abbas, Mujahid, Ikrimah, Qatadah, Ad-Dahhak and As-Suddi); Al-Hasan al-Basri said 'as if it were a lamp'.",
+   "t": "Sağ elindekinin ne olduğu sorulunca Musa onun değneği olduğunu söyledi: Ona dayanır, onunla koyunlarını güder ve onu başka işlerde de kullanırdı. Yere atılınca hızla hareket eden bir yılan oldu ve Musa kaçmak için döndü; ona korkmadan onu tutması söylendi, eski haline dönecekti. Yanından çıkardığı eli bembeyaz ve kusursuz çıktı. Bunlar Firavun ve ileri gelenleri için iki mucizeydi.\n\n“Ay gibi parladı” tefsirdendir: El “yarım ay gibi parlayarak”, hiçbir hastalık olmadan çıktı (İbn Abbas, Mücâhid, İkrime, Katâde, Dahhâk ve Süddî’den rivayet edilir); Hasan-ı Basrî “bir kandil gibi” dedi."
+  },
+  "10.2": {
+   "en": "Ask: what do you think will happen to the staff? Let your child guess.",
+   "t": "Sorun: Sence değneğe ne olacak? Çocuğunuz tahmin etsin."
+  },
+  "10.3": {
+   "en": "Ask: who made the staff become a snake? Only Allah can do that. Musa did not do it by himself.",
+   "t": "Sorun: Değneği yılan yapan kimdi? Bunu yalnızca Allah yapabilir. Musa bunu kendi başına yapmadı."
+  },
+  "10.4": {
+   "en": "Ask: how did Musa feel when his hand shone? Surprised? Happy?",
+   "t": "Sorun: Eli parlayınca Musa nasıl hissetti? Şaşırmış mı? Mutlu mu?"
+  },
+  "10.5": {
+   "en": "Ask: what are some of the signs of Allah we can see every day? (The sun rising, rain, a baby growing.)",
+   "t": "Sorun: Her gün görebildiğimiz Allah’ın ayetlerinden bazıları nelerdir? (Güneşin doğması, yağmur, büyüyen bir bebek.)"
+  },
+  "10.6": {
+   "en": "Ask: is it easy to go and speak to someone who is unkind? What would help you be brave?",
+   "t": "Sorun: Kaba biriyle gidip konuşmak kolay mıdır? Cesur olmana ne yardım ederdi?"
+  },
+  "10.7": {
+   "en": "Let your child explain each match out loud.",
+   "t": "Çocuğunuz her eşleştirmeyi yüksek sesle açıklasın."
+  },
+  "10.8": {
+   "en": "Name each card from that night as you match it.",
+   "t": "Eşleştirirken o geceden her kartın adını söyleyin."
+  },
+  "11.1": {
+   "en": "How Musa met Harun again is not described in the verses; 20:42 says 'go, you and your brother', so the game says only that Harun went with him.\n\nMusa asked: lift up my heart, ease my task, untie my tongue so they may understand my words, and give me a helper from my family, Harun my brother; strengthen me through him and let him share my task, so that we may glorify and remember You much. He was told: your request is granted.\n\nVerses 28:33–35: Musa says he killed one of their men and fears they may kill him, and that Harun is the better speaker. The game says only that he was afraid of what they might do to him. Verses 20:42–46: go, both of you; speak to him gently so that he may take heed or show respect; do not be afraid, I am with you both, hearing and seeing.\n\nThe commentary reports from Ibn Abbas that Harun was made a prophet at that same moment, and that A'ishah agreed with a man who said no brother was ever more useful to his brother than Musa was in this prayer.",
+   "t": "Musa’nın Harun’la nasıl yeniden buluştuğu ayetlerde anlatılmaz; 20:42 “Sen ve kardeşin … gidin” der, bu yüzden oyun yalnızca Harun’un onunla gittiğini söyler.\n\nMusa şöyle istedi: göğsümü genişlet, işimi kolaylaştır, sözümü anlasınlar diye dilimin düğümünü çöz ve ailemden bana bir yardımcı ver, kardeşim Harun’u; beni onunla destekle ve onu görevime ortak et ki Seni çokça tesbih edelim ve çokça analım. Ona şöyle denildi: İstediğin sana verildi.\n\n28:33–35. ayetler: Musa onlardan bir cana kıydığını ve kendisini öldürmelerinden korktuğunu, Harun’un dilinin daha düzgün olduğunu söyler. Oyun yalnızca onun kendisine ne yapacaklarından korktuğunu söyler. 20:42–46. ayetler: İkiniz gidin; ona yumuşak söz söyleyin, belki öğüt dinler veya korkar; korkmayın, Ben sizinle beraberim, görür ve işitirim.\n\nTefsir, İbn Abbas’tan Harun’un tam o anda peygamber yapıldığını ve Âişe’nin, hiçbir kardeşin bir kardeşine Musa’nın bu duada olduğundan daha faydalı olmadığını söyleyen bir adama hak verdiğini aktarır."
+  },
+  "11.2": {
+   "en": "Musa's prayer is a beautiful one to learn: rabbishrah li sadri, wa yassir li amri (20:25-26). Many families say it before exams or a new school year.",
+   "t": "Musa’nın duası öğrenilecek güzel bir duadır: Rabbişrah lî sadrî, ve yessir lî emrî (20:25-26), “Rabbim! Göğsümü genişlet, işimi kolaylaştır.” Birçok aile bunu sınavlardan ya da yeni bir okul yılından önce okur."
+  },
+  "11.3": {
+   "en": "Ask: who helps you be brave? Musa asked for his brother. Who would you ask for?",
+   "t": "Sorun: Cesur olmana kim yardım ediyor? Musa kardeşini istedi. Sen kimi isterdin?"
+  },
+  "11.4": {
+   "en": "Say the prayer together line by line before tapping.",
+   "t": "Dokunmadan önce duayı birlikte satır satır söyleyin."
+  },
+  "11.5": {
+   "en": "Ask: did Allah listen to Musa? Does Allah listen to you? Yes, always.",
+   "t": "Sorun: Allah Musa’yı dinledi mi? Allah seni dinliyor mu? Evet, her zaman."
+  },
+  "11.6": {
+   "en": "Ask: what is it like to do something hard with a brother, sister or friend beside you?",
+   "t": "Sorun: Zor bir şeyi yanında bir kardeş ya da arkadaşla yapmak nasıldır?"
+  },
+  "11.7": {
+   "en": "Allah told them to speak gently, even to Pharaoh. Ask: is it easy to be gentle with someone who is unkind? Why is it better?",
+   "t": "Allah onlara, Firavun’a bile yumuşak konuşmalarını söyledi. Sorun: Kaba birine yumuşak davranmak kolay mıdır? Neden daha iyidir?"
+  },
+  "11.8": {
+   "en": "Practise saying the same sentence gently and harshly. Ask: which one would you listen to?",
+   "t": "Aynı cümleyi bir yumuşak, bir sert söylemeyi deneyin. Sorun: Hangisini dinlerdin?"
+  },
+  "11.9": {
+   "en": "Ask: what gentle words do you use at home? Make a list together.",
+   "t": "Sorun: Evde hangi yumuşak sözleri kullanıyoruz? Birlikte bir liste yapın."
+  },
+  "12.1": {
+   "en": "The two brothers say: we are messengers of your Lord; send the Children of Israel with us and do not oppress them. When Musa brought clear signs, Pharaoh's people called them conjuring tricks never heard of from their forefathers. Pharaoh accused Musa of coming to drive them from their land with sorcery and demanded an appointment; Musa named the day of the feast, with the people gathered when the sun is high.\n\nThe long exchange about who the Lord is (20:49–55) is left out of the game.",
+   "t": "İki kardeş şöyle der: Biz senin Rabbinin elçileriyiz; İsrailoğullarını bizimle gönder ve onlara azap etme. Musa apaçık mucizeler getirince Firavun’un adamları onlara atalarından hiç duyulmamış sihir oyunları dediler. Firavun Musa’yı onları sihirle yurtlarından çıkarmak için gelmekle suçladı ve bir buluşma günü istedi; Musa, insanların kuşluk vakti toplandığı bayram gününü belirledi.\n\nRabbin kim olduğu hakkındaki uzun konuşma (20:49–55) oyunda yoktur."
+  },
+  "12.2": {
+   "en": "Ask: what signs did Allah give Musa? Can your child remember both?",
+   "t": "Sorun: Allah Musa’ya hangi mucizeleri verdi? Çocuğunuz ikisini de hatırlayabiliyor mu?"
+  },
+  "12.3": {
+   "en": "Ask: why do you think Pharaoh did not believe, even after seeing the signs?",
+   "t": "Sorun: Sence Firavun mucizeleri gördükten sonra bile neden inanmadı?"
+  },
+  "12.4": {
+   "en": "Ask: what does it mean to be stubborn? Have you ever not wanted to listen, even when someone was right?",
+   "t": "Sorun: İnatçı olmak ne demektir? Biri haklıyken bile dinlemek istemediğin oldu mu?"
+  },
+  "12.5": {
+   "en": "Ask: how do you think Musa felt when Pharaoh mocked him?",
+   "t": "Sorun: Sence Firavun onunla alay edince Musa nasıl hissetti?"
+  },
+  "12.6": {
+   "en": "Ask: why did Musa choose a day when everyone was there, in daylight? So everyone could see the truth.",
+   "t": "Sorun: Musa neden herkesin orada olduğu, gün ışığında bir günü seçti? Herkes gerçeği görebilsin diye."
+  },
+  "12.7": {
+   "en": "Ask: what festivals do we celebrate? What do people do on Eid?",
+   "t": "Sorun: Biz hangi bayramları kutlarız? İnsanlar bayramda ne yapar?"
+  },
+  "12.8": {
+   "en": "Count the people as they come. Ask: why would everyone come to watch?",
+   "t": "Geldikçe insanları sayın. Sorun: Neden herkes izlemeye gelsin?"
+  },
+  "12.9": {
+   "en": "While solving, ask: what is happening in this picture?",
+   "t": "Çözerken sorun: Bu resimde neler oluyor?"
+  },
+  "13.1": {
+   "en": "Pharaoh gathered his resources and returned. Musa warned the sorcerers not to invent lies against Allah. They asked whether he would throw first; he told them to throw. Through their sorcery their ropes and staffs seemed to him to be moving, and Musa was inwardly alarmed. He was told: do not be afraid, you have the upper hand; throw what is in your right hand and it will swallow what they have produced, which is only a sorcerer's trick. The sorcerers threw themselves down and said: we believe in the Lord of Harun and Musa.",
+   "t": "Firavun hazırlığını topladı ve geri geldi. Musa sihirbazları Allah hakkında yalan uydurmamaları için uyardı. Önce onun mu atacağını sordular; o atmalarını söyledi. Sihirleri yüzünden ipleri ve değnekleri ona hareket ediyormuş gibi göründü ve Musa içinde bir korku duydu. Ona şöyle denildi: Korkma, üstün gelecek olan sensin; sağ elindekini at, onların yaptıklarını yutacak; onların yaptığı yalnızca bir sihirbaz hilesidir. Sihirbazlar secdeye kapandılar ve şöyle dediler: Harun’un ve Musa’nın Rabbine inandık."
+  },
+  "13.2": {
+   "en": "Musa warned the magicians not to make up lies about Allah. Ask: is a trick the same as a lie?",
+   "t": "Musa sihirbazları Allah hakkında yalan uydurmamaları için uyardı. Sorun: Bir hile bir yalanla aynı mıdır?"
+  },
+  "13.3": {
+   "en": "Ask: why do you think Musa let them go first?",
+   "t": "Sorun: Sence Musa neden önce onların atmasına izin verdi?"
+  },
+  "13.4": {
+   "en": "Ask: have you ever seen a magic trick? Did it really change anything, or only look like it?",
+   "t": "Sorun: Hiç bir sihirbazlık numarası gördün mü? Gerçekten bir şeyi değiştirdi mi, yoksa yalnızca öyle mi göründü?"
+  },
+  "13.5": {
+   "en": "Ask: how can we tell what is real and what is a trick? Looking closely helps.",
+   "t": "Sorun: Neyin gerçek, neyin hile olduğunu nasıl anlayabiliriz? Dikkatle bakmak yardım eder."
+  },
+  "13.6": {
+   "en": "Even prophets feel afraid. Ask: what did Allah tell Musa? Whenever you are afraid, you can remember that Allah is with you.",
+   "t": "Peygamberler bile korku duyar. Sorun: Allah Musa’ya ne dedi? Ne zaman korksan Allah’ın seninle olduğunu hatırlayabilirsin."
+  },
+  "13.7": {
+   "en": "Ask: what do you think will happen when Musa throws the staff?",
+   "t": "Sorun: Sence Musa değneği atınca ne olacak?"
+  },
+  "13.8": {
+   "en": "Ask: who was stronger, the magic or the sign of Allah?",
+   "t": "Sorun: Hangisi daha güçlüydü, sihir mi, Allah’ın mucizesi mi?"
+  },
+  "13.9": {
+   "en": "Ask: how did the magicians feel when they saw this? Surprised? Amazed?",
+   "t": "Sorun: Sihirbazlar bunu görünce nasıl hissettiler? Şaşırmış mı? Hayran mı?"
+  },
+  "13.10": {
+   "en": "The magicians changed their minds in a moment. Ask: is it brave to say 'I was wrong'?",
+   "t": "Sihirbazlar bir anda fikirlerini değiştirdiler. Sorun: “Yanılmışım” demek cesaret midir?"
+  },
+  "13.11": {
+   "en": "Ask: what made the magicians believe? They knew tricks, so they knew this was real.",
+   "t": "Sorun: Sihirbazları inandıran neydi? Hileleri biliyorlardı, bu yüzden bunun gerçek olduğunu anladılar."
+  },
+  "14.1": {
+   "en": "Pharaoh said: how dare you believe before I give you permission? He threatened to cut off their hands and feet on opposite sides and crucify them on palm trunks. The game says only that he would punish them terribly. They answered that they would never prefer him to the clear signs and to their Creator: 'decide whatever you will: you can only decide matters of this present life.'\n\nVerse 40:28: a believing man of Pharaoh's family who had hidden his faith said, 'How can you kill a man just for saying, My Lord is Allah?' The game says 'hurt'. Verse 66:11 gives the prayer of Pharaoh's wife. The Qur'an does not say at what point in the story the believing man spoke or the queen prayed; the game places them here.\n\nVerses 28:38–39: Pharaoh tells his chiefs he knows of no god for them but himself, and orders Haman to bake clay bricks and build a tall building so that he may climb to Musa's God. The verses fetched for this game do not say what became of the building, so neither does the game.\n\nShia narrations name the believer of Pharaoh's family Hizqil.",
+   "t": "Firavun şöyle dedi: Ben size izin vermeden nasıl inanırsınız? Ellerini ve ayaklarını çaprazlama kesmek ve onları hurma kütüklerine asmakla tehdit etti. Oyun yalnızca onları korkunç şekilde cezalandıracağını söyler. Onlar, onu apaçık mucizelere ve kendilerini yaratana asla üstün tutmayacaklarını söylediler: “Ne hüküm vereceksen ver. Sen, ancak bu dünya hayatına hükmedebilirsin.”\n\n40:28. ayet: Firavun ailesinden olup inandığını gizleyen bir adam şöyle dedi: “Rabbim Allah’tır diyen bir adamı mı öldüreceksiniz?” Oyun “zarar mı vereceksiniz” der. 66:11. ayet Firavun’un karısının duasını verir. Kur’an inanan adamın ne zaman konuştuğunu ya da kraliçenin ne zaman dua ettiğini söylemez; oyun onları buraya yerleştirir.\n\n28:38–39. ayetler: Firavun ileri gelenlerine kendilerinin ondan başka bir tanrısı olduğunu bilmediğini söyler ve Hâmân’a, Musa’nın tanrısına çıkabilmek için tuğla pişirip yüksek bir kule yapmasını emreder. Bu oyun için okunan ayetler kuleye ne olduğunu söylemez, bu yüzden oyun da söylemez.\n\nŞii rivayetler Firavun ailesindeki mümine Hizkîl der."
+  },
+  "14.2": {
+   "en": "Ask: what does it mean to choose the truth, even when it is hard?",
+   "t": "Sorun: Zor olsa bile gerçeği seçmek ne demektir?"
+  },
+  "14.3": {
+   "en": "Talk about courage: who is the bravest person you know?",
+   "t": "Cesareti konuşun: Tanıdığın en cesur insan kim?"
+  },
+  "14.4": {
+   "en": "Ask: is it brave to speak up in a crowd? The believer in Pharaoh's family did it (40:28).\n\nIn Hayat al-Qulub, the believer in Pharaoh's family is named Hizqil. The Qur'an does not name him.",
+   "t": "Sorun: Bir kalabalığın içinde söz almak cesaret midir? Firavun ailesindeki mümin bunu yaptı (40:28).\n\nHayâtü’l-Kulûb’da Firavun ailesindeki mümine Hizkîl denir. Kur’an onun adını vermez."
+  },
+  "14.5": {
+   "en": "Asiya's prayer: 'My Lord, build me a house near You in the Garden' (66:11). Ask: what would you ask Allah for?",
+   "t": "Âsiye’nin duası: “Rabbim! Katından bana cennette bir ev yap” (66:11). Sorun: Sen Allah’tan ne isterdin?"
+  },
+  "14.6": {
+   "en": "Hold the hands together and say Asiya's prayer slowly.",
+   "t": "Elleri birlikte tutun ve Âsiye’nin duasını yavaşça söyleyin."
+  },
+  "14.7": {
+   "en": "Ask: can people build their way to Allah? What did Pharaoh misunderstand?",
+   "t": "Sorun: İnsanlar Allah’a ulaşmak için bina yapabilir mi? Firavun neyi yanlış anladı?"
+  },
+  "14.8": {
+   "en": "Build a tower of cups or blocks together. Ask: how high can it go before it falls?",
+   "t": "Birlikte bardaklardan ya da bloklardan bir kule yapın. Sorun: Devrilmeden önce ne kadar yükselebilir?"
+  },
+  "14.9": {
+   "en": "Ask your child which brave person in this chapter they liked best, and why.",
+   "t": "Çocuğunuza bu bölümdeki cesur insanlardan en çok hangisini sevdiğini ve nedenini sorun."
+  },
+  "15.1": {
+   "en": "Pharaoh's people were afflicted with years of drought and crop failure; when good came they claimed it as their due, and when harm came they blamed Musa. They said they would never believe whatever sign he brought. Then came the flood, the locusts, the lice, the frogs and the blood, 'all clear signs'. Each time they asked Musa to pray and promised to believe and release the Children of Israel, and each time they broke the promise.\n\nDetails from the commentary, not the verses. The 'flood': Ibn Abbas said it was heavy rain that ruined crops and fruit; he is also reported to have said mass death, and Mujahid said water carrying plague, so the early scholars differed. The locusts eating the nails of the doors is reported from Mujahid. The third sign (qummal): Ibn Abbas said grain weevils, or small wingless locusts; Al-Hasan and Sa'id bin Jubayr said small black insects; the game says 'tiny bugs in the grain'. Frogs in the houses, food, pots and clothes is from Sa'id bin Jubayr and Ibn Ishaq.\n\nThe fifth sign is blood: the tafsir says rivers, wells and containers of water turned to blood. The game says the water 'turned red'.",
+   "t": "Firavun’un kavmi yıllarca kuraklık ve kıtlıkla sınandı; iyilik gelince onu kendi hakları saydılar, kötülük gelince Musa’yı suçladılar. Hangi mucizeyi getirirse getirsin asla inanmayacaklarını söylediler. Sonra tufan, çekirgeler, haşereler, kurbağalar ve kan geldi: “hepsi apaçık mucizeler”. Her seferinde Musa’dan dua etmesini istediler ve inanıp İsrailoğullarını salıvereceklerine söz verdiler, her seferinde de sözlerini bozdular.\n\nAyetlerden değil, tefsirden gelen ayrıntılar. “Tufan”: İbn Abbas onun ekinleri ve meyveleri bozan şiddetli yağmur olduğunu söyledi; ondan toplu ölüm dediği de rivayet edilir, Mücâhid ise veba taşıyan su dedi; yani ilk âlimler ayrıldı. Çekirgelerin kapılardaki çivileri yemesi Mücâhid’den rivayet edilir. Üçüncü mucize (kummel): İbn Abbas tahıl biti ya da kanatsız küçük çekirgeler dedi; Hasan ve Saîd b. Cübeyr küçük siyah böcekler dedi; oyun “tahılın içinde minicik böcekler” der. Evlerde, yiyeceklerde, tencerelerde ve elbiselerde kurbağalar Saîd b. Cübeyr ve İbn İshak’tandır.\n\nBeşinci mucize kandır: Tefsir ırmakların, kuyuların ve su kaplarının kana döndüğünü söyler. Oyun suyun “kıpkırmızı olduğunu” söyler."
+  },
+  "15.2": {
+   "en": "Ask: what does rain do for crops? When can too much rain be a problem?",
+   "t": "Sorun: Yağmur ekinlere ne yapar? Çok fazla yağmur ne zaman sorun olabilir?"
+  },
+  "15.3": {
+   "en": "Ask: have you ever seen locusts or grasshoppers? What do they eat?",
+   "t": "Sorun: Hiç çekirge gördün mü? Ne yerler?"
+  },
+  "15.4": {
+   "en": "Ask: how do farmers protect their crops today?",
+   "t": "Sorun: Çiftçiler bugün ekinlerini nasıl korur?"
+  },
+  "15.5": {
+   "en": "Ask: which would you find worst, the bugs or the frogs? Make it light-hearted.",
+   "t": "Sorun: Hangisi daha kötü olurdu, böcekler mi, kurbağalar mı? Bunu eğlenceli tutun."
+  },
+  "15.6": {
+   "en": "Ask your child to count the frogs out loud as they find them.",
+   "t": "Çocuğunuzdan kurbağaları buldukça yüksek sesle saymasını isteyin."
+  },
+  "15.7": {
+   "en": "Ask: why did Allah send these signs? To give Pharaoh's people a chance to change.",
+   "t": "Sorun: Allah bu mucizeleri neden gönderdi? Firavun’un kavmine değişmeleri için bir fırsat vermek için."
+  },
+  "15.8": {
+   "en": "Ask: is a promise made when you're in trouble still a promise when the trouble goes away?",
+   "t": "Sorun: Başın dertteyken verilen bir söz, dert geçince hâlâ söz müdür?"
+  },
+  "15.9": {
+   "en": "Ask: who did they ask for help? Musa prayed, and Allah lifted the trouble.",
+   "t": "Sorun: Kimden yardım istediler? Musa dua etti ve Allah sıkıntıyı kaldırdı."
+  },
+  "15.10": {
+   "en": "Ask: have you ever made a promise and forgotten it? How can we keep promises better?",
+   "t": "Sorun: Hiç bir söz verip unuttun mu? Sözlerimizi nasıl daha iyi tutabiliriz?"
+  },
+  "15.11": {
+   "en": "Ask: what should they have done? (Keep their promise, believe.)",
+   "t": "Sorun: Ne yapmaları gerekirdi? (Sözlerini tutmak, inanmak.)"
+  },
+  "15.12": {
+   "en": "Let your child name the five signs in order before tapping.",
+   "t": "Dokunmadan önce çocuğunuz beş mucizenin adını sırayla söylesin."
+  },
+  "16.1": {
+   "en": "Verse 20:77: 'Go out at night with My servants and strike a dry path for them across the sea. Have no fear of being overtaken.' Verses 26:60–62: Pharaoh and his people pursued them at sunrise; when the two sides came in sight of each other Musa's followers said, 'We shall definitely be caught', and Musa said, 'No, my Lord is with me: He will guide me.'\n\nThe commentary says they were caught up with at the shore, the sea in front and Pharaoh behind. The lamps in the 'wake the families' activity are ours.",
+   "t": "20:77. ayet: “Kullarımı geceleyin yürüt, denizde onlara kuru bir yol aç, batmaktan ve düşmanların yetişmesinden korkma, endişe etme.” 26:60–62. ayetler: Firavun ve adamları onları gün doğarken takip ettiler; iki topluluk birbirini görünce Musa’nın adamları “İşte yakalandık” dediler, Musa da şöyle dedi: “Hayır; Rabbim benimle beraberdir, bana elbette yol gösterecektir.”\n\nTefsir, önlerinde deniz, arkalarında Firavun varken kıyıda yakalandıklarını söyler. “Aileleri uyandır” etkinliğindeki lambalar bizimdir."
+  },
+  "16.2": {
+   "en": "Ask: why did they have to be so quiet? Play a quiet game at home.",
+   "t": "Sorun: Neden bu kadar sessiz olmak zorundaydılar? Evde sessiz bir oyun oynayın."
+  },
+  "16.3": {
+   "en": "Ask: if you had to leave at night, what would you take?",
+   "t": "Sorun: Gece yola çıkmak zorunda kalsan neleri yanına alırdın?"
+  },
+  "16.4": {
+   "en": "Ask: how do you think the people felt following Musa in the dark? Trust is following someone you know is good.",
+   "t": "Sorun: Sence insanlar karanlıkta Musa’nın ardından giderken nasıl hissettiler? Güven, iyi olduğunu bildiğin birinin ardından gitmektir."
+  },
+  "16.5": {
+   "en": "Ask: why do you think Pharaoh chased them? He did not want to let them go.",
+   "t": "Sorun: Sence Firavun onları neden kovaladı? Gitmelerine izin vermek istemiyordu."
+  },
+  "16.6": {
+   "en": "Ask: what would you do with the sea in front and an army behind? Musa's answer is on the next page.",
+   "t": "Sorun: Önünde deniz, arkanda bir ordu olsa ne yapardın? Musa’nın cevabı bir sonraki sayfada."
+  },
+  "16.7": {
+   "en": "'No! My Lord is with me. He will guide me' (26:62). A sentence worth learning by heart for scary moments.",
+   "t": "“Hayır; Rabbim benimle beraberdir, bana elbette yol gösterecektir” (26:62). Korkulu anlar için ezberlemeye değer bir cümle."
+  },
+  "16.8": {
+   "en": "Ask: when you are afraid, what can you say? Practise Musa's words together.",
+   "t": "Sorun: Korkunca ne diyebilirsin? Musa’nın sözlerini birlikte çalışın."
+  },
+  "16.9": {
+   "en": "While solving, ask: what do you think will happen next?",
+   "t": "Çözerken sorun: Sence bundan sonra ne olacak?"
+  },
+  "17.1": {
+   "en": "Verses 26:63–66: 'Strike the sea with your staff.' It parted, each side like a mighty mountain; Musa and all his companions were saved and the others were drowned. The game says the sea 'came crashing back' and that the army 'was gone'. Verses 10:90–92: as he was drowning Pharaoh said he believed in the God of the Children of Israel, and was answered, 'Now? When you had always been a rebel?' Only his body was saved, as a sign for those after him.\n\nFrom the commentary, not the verses: the twelve paths, one for each tribe (reported from Ibn Abbas); the openings like windows in the water through which they saw one another (As-Suddi); and the wind sent to dry the sea bed. The commentary gives an account in which the angels Jibril and Mika'il ride at the sea; the game does not use it.\n\nAshura: the tafsir quotes al-Bukhari, from Ibn Abbas, that the Prophet ﷺ found the Jews of Madinah fasting the day Musa was given victory over Pharaoh and said, 'You have more right to Musa than they, so fast it.' The Prophet ﷺ is mentioned in the narration and is not shown.",
+   "t": "26:63–66. ayetler: “Değneğinle denize vur.” Deniz ikiye ayrıldı, her yanı koca bir dağ gibiydi; Musa ve bütün yanındakiler kurtarıldı, öbürleri boğuldu. Oyun denizin “gürültüyle yeniden kapandığını” ve ordunun “yok olduğunu” söyler. 10:90–92. ayetler: Boğulurken Firavun İsrailoğullarının Tanrısına inandığını söyledi ve ona şöyle denildi: “Şimdi mi inandın? Daha önce baş kaldırmış ve bozgunculuk etmiştin.” Yalnızca cesedi, kendisinden sonrakilere bir ibret olsun diye kurtarıldı.\n\nAyetlerden değil, tefsirden gelenler: her kabile için bir tane olmak üzere on iki yol (İbn Abbas’tan rivayet edilir); birbirlerini gördükleri, suyun içindeki pencere gibi açıklıklar (Süddî); ve deniz yatağını kurutmak için gönderilen rüzgâr. Tefsir, Cebrâil ve Mîkâil meleklerinin denize doğru at sürdüğü bir anlatım verir; oyun bunu kullanmaz.\n\nÂşûrâ: Tefsir, Buhârî’den İbn Abbas’a dayanarak, Peygamberimizin ﷺ Medine Yahudilerini Musa’nın Firavun’a karşı zafer kazandığı gün oruç tutarken bulduğunu ve “Musa’ya siz onlardan daha layıksınız, öyleyse o gün oruç tutun” dediğini aktarır. Peygamberimizin ﷺ adı rivayette geçer, kendisi gösterilmez."
+  },
+  "17.2": {
+   "en": "Ask: who made the sea open, Musa or Allah? Musa struck; Allah opened it.",
+   "t": "Sorun: Denizi kim açtı, Musa mı, Allah mı? Musa vurdu; Allah açtı."
+  },
+  "17.3": {
+   "en": "Ask your child to imagine walking between two walls of water. What would you see? Fish?",
+   "t": "Çocuğunuz iki su duvarının arasında yürüdüğünü hayal etsin. Ne görürdün? Balıklar mı?"
+  },
+  "17.4": {
+   "en": "It is told (in the commentary) that there were twelve paths, one for each family. Ask: why would each family have its own path?",
+   "t": "Anlatıldığına göre (tefsirde) her aile için bir tane olmak üzere on iki yol vardı. Sorun: Neden her ailenin kendi yolu olsun?"
+  },
+  "17.5": {
+   "en": "Ask: what does the wind do? Can you feel it today?",
+   "t": "Sorun: Rüzgâr ne yapar? Bugün onu hissedebiliyor musun?"
+  },
+  "17.6": {
+   "en": "Count the twelve paths together, slowly.",
+   "t": "On iki yolu birlikte, yavaşça sayın."
+  },
+  "17.7": {
+   "en": "Ask: how do you think the people felt walking across? Scared? Amazed? Thankful?",
+   "t": "Sorun: Sence insanlar karşıya geçerken nasıl hissettiler? Korkmuş mu? Hayran mı? Şükür dolu mu?"
+  },
+  "17.8": {
+   "en": "Say al-hamdu lillah together. Ask: what are you thankful for today?",
+   "t": "Birlikte elhamdülillah deyin. Sorun: Bugün neye şükrediyorsun?"
+  },
+  "17.9": {
+   "en": "This page can be sad. Explain gently: Pharaoh chose not to listen, again and again, until it was too late.",
+   "t": "Bu sayfa hüzünlü olabilir. Nazikçe açıklayın: Firavun tekrar tekrar dinlememeyi seçti, ta ki çok geç olana kadar."
+  },
+  "17.10": {
+   "en": "Ask: why is it important to believe and do good now, not only when we are in trouble?",
+   "t": "Sorun: Yalnızca başımız dertteyken değil, şimdi inanmak ve iyilik yapmak neden önemlidir?"
+  },
+  "17.11": {
+   "en": "Allah kept Pharaoh's body 'as a sign' (10:92). Ask: what lesson does Pharaoh's story teach?",
+   "t": "Allah Firavun’un cesedini “bir ibret” olarak korudu (10:92). Sorun: Firavun’un hikâyesi hangi dersi öğretir?"
+  },
+  "17.12": {
+   "en": "Many Muslims fast on 'Ashura, and the day before or after it. Ask your family about your own traditions for 'Ashura.",
+   "t": "Birçok Müslüman Âşûrâ günü ve ondan bir gün önce ya da sonra oruç tutar. Ailenize Âşûrâ için kendi geleneklerinizi sorun."
+  },
+  "17.13": {
+   "en": "Ask your child: who saves us when we are in trouble? Make a short dua of thanks together.",
+   "t": "Çocuğunuza sorun: Başımız dertteyken bizi kim kurtarır? Birlikte kısa bir şükür duası edin."
+  },
+  "17.14": {
+   "en": "Let your child tell the whole crossing in their own words.",
+   "t": "Çocuğunuz bütün geçişi kendi sözleriyle anlatsın."
+  },
+  "18.1": {
+   "en": "Verse 2:57: clouds were made to shade them, and manna and quails were sent down: 'Eat the good things We have provided for you.' Verse 2:60: Musa prayed for water for his people and was told to strike the rock with his staff; twelve springs gushed out and each group knew its drinking place.\n\nThe commentary reports from Ibn Abbas that it was a square stone and that three springs came from each side, one spring for each tribe. The game does not say what manna looked like; the sparkles in the gathering activity are only a stand-in.",
+   "t": "2:57. ayet: Bulutlar onlara gölge yapıldı, kudret helvası ve bıldırcın indirildi: “Verdiğimiz rızıkların iyi ve güzel olanlarından yiyin.” 2:60. ayet: Musa kavmi için su istedi ve ona değneğiyle taşa vurması söylendi; on iki pınar fışkırdı ve her topluluk kendi içeceği yeri bildi.\n\nTefsir, İbn Abbas’tan onun dört köşeli bir taş olduğunu ve her yanından üç pınar, her kabileye bir pınar çıktığını aktarır. Oyun kudret helvasının neye benzediğini söylemez; toplama etkinliğindeki parıltılar yalnızca onun yerini tutar."
+  },
+  "18.2": {
+   "en": "Ask: what is your favourite food? Who gives it to us in the end?",
+   "t": "Sorun: En sevdiğin yemek ne? Sonunda onu bize kim veriyor?"
+  },
+  "18.3": {
+   "en": "Ask: what would it be like to find breakfast on the ground every morning?",
+   "t": "Sorun: Her sabah kahvaltını yerde bulmak nasıl olurdu?"
+  },
+  "18.4": {
+   "en": "Count the birds together. Ask: have you seen quails or other small birds near your home?",
+   "t": "Kuşları birlikte sayın. Sorun: Evinizin yakınında bıldırcın ya da başka küçük kuşlar gördün mü?"
+  },
+  "18.5": {
+   "en": "Ask: how does it feel to be very thirsty? Have a glass of water together and say bismillah.",
+   "t": "Sorun: Çok susamak nasıl hissettirir? Birlikte bir bardak su için ve bismillah deyin."
+  },
+  "18.6": {
+   "en": "Count the springs out loud, all twelve.",
+   "t": "Pınarları, on ikisini de yüksek sesle sayın."
+  },
+  "18.7": {
+   "en": "Ask: why do you think each family got its own spring? Sharing fairly keeps the peace.",
+   "t": "Sorun: Sence neden her ailenin kendi pınarı oldu? Adil paylaşmak barışı korur."
+  },
+  "18.8": {
+   "en": "Ask: how many springs, and how many families? Twelve and twelve.",
+   "t": "Sorun: Kaç pınar, kaç aile? On iki ve on iki."
+  },
+  "18.9": {
+   "en": "Name each gift of the desert as you match it.",
+   "t": "Eşleştirirken çöldeki her nimetin adını söyleyin."
+  },
+  "19.1": {
+   "en": "Allah appointed thirty nights for Musa and added ten, making forty. Musa told Harun to take his place and act rightly. On the mountain Musa asked to see his Lord and was told: 'You will never see Me, but look at that mountain: if it remains firmly in its place, you will see Me.' When his Lord revealed Himself to the mountain He made it crumble, and Musa fell unconscious. On recovering he said: 'Glory be to You! To You I turn in repentance! I am the first to believe!' He was told to hold on to what he had been given and be thankful, and was given the Tablets.\n\nThe picture shows a mountain crumbling and nothing else. Allah is never shown.",
+   "t": "Allah Musa’ya otuz gece belirledi ve buna on gece ekleyerek kırka tamamladı. Musa Harun’a kendi yerine geçmesini ve doğru davranmasını söyledi. Dağda Musa Rabbini görmek istedi ve ona şöyle denildi: “Sen Beni göremezsin ama dağa bak, eğer o yerinde kalırsa sen de Beni göreceksin.” Rabbi dağa tecelli edince onu yerle bir etti ve Musa baygın düştü. Ayılınca şöyle dedi: “Yarabbi, münezzehsin, Sana tevbe ettim, ben inananların ilkiyim.” Ona verileni tutması ve şükretmesi söylendi ve Levhalar verildi.\n\nResim yerle bir olan bir dağdan başka bir şey göstermez. Allah asla gösterilmez."
+  },
+  "19.2": {
+   "en": "Count to thirty, then add ten. Ask: what could you do every day for forty days?",
+   "t": "Otuza kadar sayın, sonra on ekleyin. Sorun: Kırk gün boyunca her gün ne yapabilirdin?"
+  },
+  "19.3": {
+   "en": "Ask: have you ever climbed a big hill or a mountain? How did it feel at the top?",
+   "t": "Sorun: Hiç büyük bir tepeye ya da dağa tırmandın mı? Tepede nasıl hissettin?"
+  },
+  "19.4": {
+   "en": "Ask: what is something you wish you could see? Some things are too great for our eyes.",
+   "t": "Sorun: Görebilmeyi dilediğin bir şey var mı? Bazı şeyler gözlerimiz için fazla büyüktür."
+  },
+  "19.5": {
+   "en": "Ask: if a mountain could not stand it, how great must Allah be?",
+   "t": "Sorun: Bir dağ buna dayanamadıysa Allah ne kadar büyük olmalı?"
+  },
+  "19.6": {
+   "en": "Ask your child to describe the mountain in their own words.",
+   "t": "Çocuğunuzdan dağı kendi sözleriyle anlatmasını isteyin."
+  },
+  "19.7": {
+   "en": "Musa said: 'Glory be to You! To You I turn in repentance! I am the first to believe!' (7:143). Ask: what does subhanallah mean? (Glory be to Allah.) Say it together.",
+   "t": "Musa şöyle dedi: “Yarabbi, münezzehsin, Sana tevbe ettim, ben inananların ilkiyim” (7:143). Sorun: Sübhanallah ne demektir? (Allah’ı her türlü eksiklikten tenzih ederim.) Birlikte söyleyin."
+  },
+  "19.8": {
+   "en": "Ask: what did Allah give Musa? (The Tablets, His words.) What has Allah given us? (The Qur'an.)",
+   "t": "Sorun: Allah Musa’ya ne verdi? (Levhaları, Kendi sözlerini.) Allah bize ne verdi? (Kur’an’ı.)"
+  },
+  "19.9": {
+   "en": "While solving, ask your child what Musa is holding.",
+   "t": "Çözerken çocuğunuza Musa’nın elinde ne tuttuğunu sorun."
+  },
+  "19.10": {
+   "en": "Ask: what are three things you are thankful for today?",
+   "t": "Sorun: Bugün şükrettiğin üç şey nedir?"
+  },
+  "20.1": {
+   "en": "In Musa's absence the Samiri led the people astray. They had thrown the jewellery they carried into the fire and he brought out a calf that made a lowing sound; it gave them no answer and had no power to harm or benefit them. Harun told them it was a test and that their Lord is the Lord of Mercy; they refused to stop until Musa returned. Musa came back angry and grieved, threw down the Tablets and seized his brother by the hair and beard; Harun said the people had overpowered him and almost killed him. Musa prayed for forgiveness for himself and his brother, told the Samiri to go away, and said the calf would be ground down and scattered in the sea. The people later regretted what they had done (7:149).\n\nThe game says Musa 'put down' the Tablets and 'took hold of' his brother, and that the people 'would not listen' to Harun.\n\nFrom the commentary: Mujahid said the calf's sound came from the wind blowing through it; Ibn Abbas, by way of Ibn Ishaq, said the Samiri came from a people who worshipped cows. What the Samiri says he 'saw' and took a handful of (20:96) is explained in the commentary as the track of the angel Jibril's horse; the game leaves it out.",
+   "t": "Musa yokken Sâmirî halkı saptırdı. Taşıdıkları takıları ateşe atmışlardı ve o, böğüren bir buzağı çıkardı; buzağı onlara hiçbir cevap vermiyor, onlara ne zarar ne de fayda verebiliyordu. Harun onlara bunun bir imtihan olduğunu ve Rablerinin Rahmân olduğunu söyledi; onlar Musa dönene kadar vazgeçmeyi reddettiler. Musa öfkeli ve üzgün döndü, Levhaları attı ve kardeşini saçından ve sakalından tuttu; Harun, halkın kendisini güçsüz bıraktığını ve neredeyse öldüreceklerini söyledi. Musa kendisi ve kardeşi için bağışlanma diledi, Sâmirî’ye gitmesini söyledi ve buzağının toz edilip denize savrulacağını söyledi. Halk daha sonra yaptığına pişman oldu (7:149).\n\nOyun Musa’nın Levhaları “yere koyduğunu” ve kardeşini “tuttuğunu”, halkın da Harun’u “dinlemediğini” söyler.\n\nTefsirden: Mücâhid buzağının sesinin içinden esen rüzgârdan geldiğini söyledi; İbn Abbas, İbn İshak yoluyla, Sâmirî’nin ineklere tapan bir kavimden geldiğini söyledi. Sâmirî’nin “gördüğünü” ve bir avuç aldığını söylediği şey (20:96) tefsirde melek Cebrâil’in atının izi olarak açıklanır; oyun bunu anlatmaz."
+  },
+  "20.2": {
+   "en": "Ask: can something look special and still be useless? Talk about things that glitter.",
+   "t": "Sorun: Bir şey özel görünüp yine de işe yaramaz olabilir mi? Parıldayan şeyleri konuşun."
+  },
+  "20.3": {
+   "en": "Ask: what can Allah do that nothing else can? (Hear us, help us, guide us.)",
+   "t": "Sorun: Allah’ın yapabilip başka hiçbir şeyin yapamadığı nedir? (Bizi işitmek, bize yardım etmek, bize yol göstermek.)"
+  },
+  "20.4": {
+   "en": "Ask: why do you think the people made the calf? They were impatient and forgot.",
+   "t": "Sorun: Sence insanlar buzağıyı neden yaptılar? Sabırsızdılar ve unuttular."
+  },
+  "20.5": {
+   "en": "Ask your child to explain why only Allah deserves worship.",
+   "t": "Çocuğunuzdan neden yalnızca Allah’ın ibadete layık olduğunu açıklamasını isteyin."
+  },
+  "20.6": {
+   "en": "Ask: how did Harun try to help? Sometimes speaking up is hard, but right.",
+   "t": "Sorun: Harun nasıl yardım etmeye çalıştı? Bazen söz almak zordur ama doğrudur."
+  },
+  "20.7": {
+   "en": "Ask: is it all right to feel angry? What should we do with that feeling?",
+   "t": "Sorun: Öfkelenmek doğru mudur? Bu duyguyla ne yapmalıyız?"
+  },
+  "20.8": {
+   "en": "Ask: why was the calf ground to dust? So no one could worship it again.",
+   "t": "Sorun: Buzağı neden toz edildi? Kimse bir daha ona tapamasın diye."
+  },
+  "20.9": {
+   "en": "Ask: what are things that can distract us from Allah today? (Screens, toys, wanting more.)",
+   "t": "Sorun: Bugün bizi Allah’tan uzaklaştırabilecek şeyler nelerdir? (Ekranlar, oyuncaklar, daha fazlasını istemek.)"
+  },
+  "20.10": {
+   "en": "Ask: what can we do when we've made a mistake as a group, as a family or a class?",
+   "t": "Sorun: Bir grup olarak, aile ya da sınıf olarak hata yaptığımızda ne yapabiliriz?"
+  },
+  "20.11": {
+   "en": "Let your child say each step out loud before tapping.",
+   "t": "Dokunmadan önce çocuğunuz her adımı yüksek sesle söylesin."
+  },
+  "21.1": {
+   "en": "Musa told his people that Allah commands them to sacrifice a cow. They asked if he was mocking them, then asked what sort (neither old nor young, but in between), what colour (bright yellow, pleasing to the eye), and exactly which (unblemished, not trained to plough the earth or water the fields). They slaughtered it, 'though they almost failed to do so'.\n\nLeft for parents: verses 2:72–73 give the reason. A person had been killed and the people were accusing one another; they were told to strike the body with part of the cow, and so Allah showed them how He gives life to the dead. The game tells the cow and the questions, and says only that Allah used it to bring out a truth some of them had been hiding, which is the wording of 2:72.\n\nThe cow's owner who was kind to his father is from a Shia narration (Imam al-Rida), where Musa says that kindness to parents raises a person high.",
+   "t": "Musa kavmine Allah’ın onlara bir inek kesmelerini emrettiğini söyledi. Onunla alay edip etmediğini sordular, sonra nasıl bir inek olduğunu (ne yaşlı ne genç, ikisinin arası), rengini (parlak sarı, bakanın içini açan) ve tam olarak hangisi olduğunu (kusursuz, toprağı sürmek ya da tarla sulamak için alıştırılmamış) sordular. Onu kestiler, “az kalsın bunu yapmayacaklardı”.\n\nAnne babalara bırakılan: 2:72–73. ayetler sebebi verir. Bir kişi öldürülmüştü ve insanlar birbirlerini suçluyordu; onlara cesede ineğin bir parçasıyla vurmaları söylendi ve Allah böylece ölüleri nasıl dirilttiğini onlara gösterdi. Oyun ineği ve soruları anlatır ve yalnızca Allah’ın bununla bazılarının sakladığı bir gerçeği ortaya çıkardığını söyler; bu, 2:72’nin ifadesidir: “Allah gizlemekte olduğunuzu ortaya çıkaracaktı.”\n\nBabasına iyi davranan inek sahibi bir Şii rivayetindendir (İmam Rızâ); orada Musa, anne babaya iyiliğin insanı yükselttiğini söyler."
+  },
+  "21.2": {
+   "en": "Ask: is it better to do what you're asked straight away, or to ask lots of questions to avoid doing it?",
+   "t": "Sorun: Senden isteneni hemen yapmak mı daha iyidir, yoksa yapmamak için bir sürü soru sormak mı?"
+  },
+  "21.3": {
+   "en": "Ask: what colour cow would you choose? Have some fun with it.",
+   "t": "Sorun: Sen hangi renk bir inek seçerdin? Biraz eğlenin."
+  },
+  "21.4": {
+   "en": "Ask: what happens when people make simple things complicated?",
+   "t": "Sorun: İnsanlar basit şeyleri karmaşık hale getirince ne olur?"
+  },
+  "21.5": {
+   "en": "In Majlisi's Hayat al-Qulub, Imam al-Rida tells that the cow belonged to a boy who would not wake his sleeping father, even to make a sale, and was rewarded for it; kindness to parents raises a person high. Ask: how can you be kind to your parents today?",
+   "t": "Meclisî’nin Hayâtü’l-Kulûb’unda İmam Rızâ, ineğin bir satış yapmak için bile uyuyan babasını uyandırmayan bir gence ait olduğunu ve bunun için ödüllendirildiğini anlatır; anne babaya iyilik insanı yükseltir. Sorun: Bugün anne babana nasıl iyilik yapabilirsin?"
+  },
+  "21.6": {
+   "en": "Ask your child to describe the cow before tapping it: yellow, no marks.",
+   "t": "Dokunmadan önce çocuğunuzdan ineği anlatmasını isteyin: sarı, hiç alacası yok."
+  },
+  "21.7": {
+   "en": "Ask: why is it better to listen the first time?",
+   "t": "Sorun: İlk seferde dinlemek neden daha iyidir?"
+  },
+  "21.8": {
+   "en": "Ask: what is one thing you could do this week the first time you're asked?",
+   "t": "Sorun: Bu hafta senden istendiği ilk anda yapabileceğin bir şey nedir?"
+  },
+  "21.9": {
+   "en": "Let your child say the three questions in order before tapping.",
+   "t": "Dokunmadan önce çocuğunuz üç soruyu sırayla söylesin."
+  },
+  "22.1": {
+   "en": "Musa reminded his people of Allah's blessings and told them to enter the holy land Allah had ordained for them and not turn back. They said a fearsome people lived there and they would not enter until those people left. Two men whom Allah had blessed said: go in through the gate, and you will be victorious; put your trust in Allah. The people answered: 'You and your Lord go and fight; we will stay here.' Musa said he had authority over no one but himself and his brother. The land was forbidden to them for forty years, during which they would wander.\n\nThe verses do not name the two men.",
+   "t": "Musa kavmine Allah’ın nimetlerini hatırlattı ve onlara Allah’ın kendileri için yazdığı kutsal topraklara girmelerini ve geri dönmemelerini söyledi. Onlar orada korkunç bir kavmin yaşadığını ve o kavim çıkmadıkça girmeyeceklerini söylediler. Allah’ın nimete erdirdiği iki adam şöyle dedi: “Üstlerine kapıdan yürüyün, oradan girerseniz şüphesiz galip gelirsiniz; eğer inanıyorsanız Allah’a güvenin.” Kavim şöyle cevap verdi: “Sen ve Rabbin gidin savaşın, doğrusu biz burada oturacağız.” Musa kendisinden ve kardeşinden başka kimseye söz geçiremediğini söyledi. O topraklar kırk yıl onlara yasaklandı; bu süre boyunca şaşkın şaşkın dolaşacaklardı.\n\nAyetler iki adamın adını vermez."
+  },
+  "22.2": {
+   "en": "Ask: what are you afraid of trying? Being afraid is normal; what matters is what we do next.\n\nYou may meet stories of giants in that land, above all 'Uj bin 'Anaq, said to be more than three thousand cubits tall and to have outlived the Flood. Ibn Kathir rejects them firmly: they are 'reports made up by the Children of Israel', 'something one is ashamed to mention', against the authentic hadith that Adam was sixty cubits tall and people have grown smaller since; the claim that he survived the Flood is 'a lie and a fabrication', since the Qur'an says the unbelievers were drowned; and 'whether a man called 'Uj bin 'Anaq existed at all is doubtful, and Allah knows best'.\n\nThe story that a giant scooped up Musa's twelve scouts in his sleeve with his fruit: Ibn Kathir says of its chain, 'there is doubt about it'. (Our translations from the Arabic.)",
+   "t": "Sorun: Denemekten korktuğun şey nedir? Korkmak normaldir; önemli olan sonra ne yaptığımızdır.\n\nO topraklardaki devlerin hikâyeleriyle, özellikle de üç bin arşından daha uzun olduğu ve tufandan sağ çıktığı söylenen Ûc b. Anak’la karşılaşabilirsiniz. İbn Kesîr bunları kesin bir dille reddeder: Bunlar “İsrailoğullarının uydurduğu haberler”dir, “anmaktan utanılacak bir şey”dir; Âdem’in altmış arşın boyunda olduğu ve insanların o zamandan beri küçüldüğü sahih hadise aykırıdır; tufandan sağ çıktığı iddiası, Kur’an kâfirlerin boğulduğunu söylediği için “bir yalan ve uydurmadır”; ve “Ûc b. Anak adında bir adamın var olup olmadığı bile şüphelidir, Allah en iyisini bilir”.\n\nBir devin Musa’nın on iki gözcüsünü meyveleriyle birlikte yeninin içine aldığı hikâyesi için İbn Kesîr senedi hakkında “bunda şüphe vardır” der. (Arapçadan çeviriler bizimdir.)"
+  },
+  "22.3": {
+   "en": "Ask: what did the two brave men trust? Allah's promise.\n\nIbn Abbas, Mujahid, 'Ikrimah, As-Suddi and others name the two brave men: Yusha' bin Nun (Joshua) and Kalib (Caleb) (in Ibn Kathir).",
+   "t": "Sorun: İki cesur adam neye güvendi? Allah’ın vaadine.\n\nİbn Abbas, Mücâhid, İkrime, Süddî ve başkaları iki cesur adamın adını verir: Yûşâ b. Nûn ve Kâlib (İbn Kesîr’de)."
+  },
+  "22.4": {
+   "en": "Ask your child to say the brave men's words in their own way.",
+   "t": "Çocuğunuzdan cesur adamların sözlerini kendi tarzında söylemesini isteyin."
+  },
+  "22.5": {
+   "en": "Ask: is saying 'you go, I'll stay here' fair? What would you have said?",
+   "t": "Sorun: “Sen git, ben burada kalayım” demek adil midir? Sen ne derdin?"
+  },
+  "22.6": {
+   "en": "Ask: how do you think Musa felt when his people would not listen?",
+   "t": "Sorun: Sence kavmi onu dinlemeyince Musa nasıl hissetti?"
+  },
+  "22.7": {
+   "en": "Ask: what does it feel like to go round in circles? Sometimes we must wait for a long time.\n\nYou may hear what came after the forty years. Ibn Kathir reports from Ibn Abbas that Musa and Harun died during the wandering, and that Yusha' bin Nun then led the next generation into Jerusalem; as the sun was about to set on a Friday, Yusha' asked Allah to hold it back until the city was won. Ibn Kathir says there is evidence for this in the Sahih.",
+   "t": "Sorun: Dönüp dolaşıp durmak nasıl hissettirir? Bazen uzun süre beklemek zorunda kalırız.\n\nKırk yıldan sonra ne olduğunu duyabilirsiniz. İbn Kesîr, İbn Abbas’tan Musa ile Harun’un şaşkınlık yılları sırasında vefat ettiğini ve sonra Yûşâ b. Nûn’un yeni nesli Kudüs’e götürdüğünü aktarır; bir Cuma günü güneş batmak üzereyken Yûşâ, şehir fethedilene kadar onu tutması için Allah’a dua etti. İbn Kesîr bunun için Sahîh’te delil olduğunu söyler."
+  },
+  "22.8": {
+   "en": "Ask your child to think of one brave thing they could do this week.",
+   "t": "Çocuğunuzdan bu hafta yapabileceği cesur bir şey düşünmesini isteyin."
+  },
+  "23.1": {
+   "en": "Musa told his servant he would not stop until he reached the place where the two seas meet. There they forgot their fish, which made its way into the sea. Later, tired and asking for the meal, the servant remembered: he had forgotten the fish by the rock, and only Satan made him forget. Musa said that was the place they were seeking, and they retraced their steps. They found a servant of Allah who had been given mercy and knowledge. He warned Musa he would not be able to bear with him patiently; Musa promised patience; the condition was that Musa ask about nothing until he himself spoke of it.\n\nFrom a hadith of Ubayy bin Ka'b in al-Bukhari, as quoted in the commentary, not from the verses: Musa was asked who was the most learned of people and said 'I am', and was told of a servant who knew more; he was told to carry a fish in a basket and that he would find the man where he lost the fish; the servant boy was Yusha bin Nun; the water stood like an arch over the fish's path; and the man's name was al-Khidr.\n\nAl-Khidr means 'the green one': wherever he sat, the bare ground turned green. Al-Bukhari reports this from the Prophet ﷺ, and the Shia narrations have it from the Imams.",
+   "t": "Musa genç yardımcısına iki denizin birleştiği yere ulaşana kadar durmayacağını söyledi. Orada balıklarını unuttular; balık denize doğru yolunu tuttu. Sonra yorulup azıklarını isteyince genç hatırladı: Balığı kayanın yanında unutmuştu ve onu ona yalnızca şeytan unutturmuştu. Musa aradıkları yerin orası olduğunu söyledi ve izlerini takip ederek geri döndüler. Allah’ın rahmet ve ilim verdiği bir kulunu buldular. O Musa’yı kendisine sabredemeyeceği konusunda uyardı; Musa sabır sözü verdi; şart, o kendisi söz edene kadar Musa’nın hiçbir şey sormamasıydı.\n\nAyetlerden değil, tefsirde aktarıldığı şekliyle Buhârî’deki Übey b. Kâ'b hadisinden: Musa’ya insanların en âliminin kim olduğu soruldu ve “Benim” dedi ve ona daha çok bilen bir kul olduğu bildirildi; ona bir sepette bir balık taşıması ve adamı balığı kaybettiği yerde bulacağı söylendi; genç yardımcı Yûşâ b. Nûn’du; su, balığın yolunun üzerinde bir kemer gibi durdu; ve adamın adı Hızır’dı.\n\nHızır “yeşil olan” demektir: Nereye otursa çıplak toprak yeşerirdi. Buhârî bunu Peygamberimizden ﷺ rivayet eder, Şii rivayetler de bunu imamlardan aktarır."
+  },
+  "23.2": {
+   "en": "Musa wanted to keep learning, even though he was a great prophet. Ask: what would you travel far to learn?\n\nWhy did Musa set out? In a hadith in al-Bukhari (quoted by Ibn Kathir), Musa was asked who was the most learned person, and he said: I am. Allah rebuked him 'because he did not refer the knowledge to Allah', and told him of a servant at the meeting of the two seas who knew what Musa did not.\n\nMusa said he would travel 'for a long time' (huqub): Ibn Kathir reports that 'Abdullah bin 'Amr said eighty years, Mujahid seventy, and Ibn Abbas a lifetime.",
+   "t": "Musa büyük bir peygamber olduğu halde öğrenmeye devam etmek istedi. Sorun: Neyi öğrenmek için çok uzaklara giderdin?\n\nMusa neden yola çıktı? Buhârî’deki bir hadiste (İbn Kesîr’in aktardığı) Musa’ya en âlim kişinin kim olduğu soruldu ve “Benim” dedi. Allah onu “ilmi Allah’a havale etmediği için” uyardı ve ona iki denizin birleştiği yerde Musa’nın bilmediğini bilen bir kul olduğunu bildirdi.\n\nMusa “uzun bir süre” (hukub) yolculuk edeceğini söyledi: İbn Kesîr, Abdullah b. Amr’ın seksen yıl, Mücâhid’in yetmiş yıl, İbn Abbas’ın ise bir ömür dediğini aktarır."
+  },
+  "23.3": {
+   "en": "Look at a map together for a place where two seas or rivers meet. Ask: what would it look like?",
+   "t": "Birlikte haritada iki denizin ya da iki ırmağın birleştiği bir yere bakın. Sorun: Nasıl görünürdü?"
+  },
+  "23.4": {
+   "en": "Ask: what would you think if you saw a fish jump into the sea?\n\nOne narration in al-Bukhari (quoted by Ibn Kathir) says there was a spring at the foot of the rock called al-Hayat, the Spring of Life, whose water brought to life whatever it touched; a drop touched the fish, and it slipped into the sea.",
+   "t": "Sorun: Bir balığın denize atladığını görsen ne düşünürdün?\n\nBuhârî’deki bir rivayet (İbn Kesîr’in aktardığı), kayanın dibinde, suyu dokunduğu her şeyi dirilten Hayat Pınarı denen bir pınar olduğunu söyler; balığa bir damla dokundu ve balık denize kaydı."
+  },
+  "23.5": {
+   "en": "Ask your child to follow the fish with their finger as it swims.",
+   "t": "Çocuğunuzdan yüzen balığı parmağıyla takip etmesini isteyin."
+  },
+  "23.6": {
+   "en": "Ask: have you ever forgotten to tell someone something important? Yusha forgot too.\n\nYou may meet a report (in Ibn Jarir al-Tabari) that Musa's young helper drank from the Spring of Life, became immortal, and was set adrift in a boat until the Day of Judgement. Ibn Kathir: 'a weak chain; al-Hasan [bin 'Umara] is abandoned as a narrator, and his father is unknown'. The authentic hadiths name the helper as Yusha' bin Nun, who led the people after Musa.",
+   "t": "Sorun: Birine önemli bir şeyi söylemeyi hiç unuttun mu? Yûşâ da unuttu.\n\nMusa’nın genç yardımcısının Hayat Pınarı’ndan içtiği, ölümsüz olduğu ve kıyamete kadar bir kayıkla denize bırakıldığına dair bir rivayetle (İbn Cerîr et-Taberî’de) karşılaşabilirsiniz. İbn Kesîr: “Zayıf bir sened; Hasan [b. Umâre] terk edilmiş bir ravidir, babası da bilinmez.” Sahih hadisler yardımcının adını, Musa’dan sonra halka önderlik eden Yûşâ b. Nûn olarak verir."
+  },
+  "23.7": {
+   "en": "Ask: what do we do when we realise we went the wrong way? Turn back.",
+   "t": "Sorun: Yanlış yöne gittiğimizi fark edince ne yaparız? Geri döneriz."
+  },
+  "23.8": {
+   "en": "Count the footsteps back to the rock together.",
+   "t": "Kayaya kadar geri giden ayak izlerini birlikte sayın."
+  },
+  "23.9": {
+   "en": "Ask: who is a teacher who knows things you don't know?",
+   "t": "Sorun: Senin bilmediğin şeyleri bilen bir öğretmen kim?"
+  },
+  "23.10": {
+   "en": "Ask: what makes things grow green? Al-Khidr's name means 'the green one'.\n\nYou may hear that al-Khidr is still alive. Ibn Kathir reports that al-Nawawi and Ibn al-Salah leaned that way, but says 'none of that is authentic; the best known are the hadiths of condolence, and their chain is weak'. Other scholars held that he died, citing 21:34 ('We have not granted everlasting life to any other human being before you'), and that he never came to the Prophet ﷺ, though he would have followed him had he been alive. (Our translation.)\n\nThe meaning of his name is authentic: al-Bukhari reports the Prophet ﷺ saying he was called al-Khidr because he sat on a patch of dry, withered plants, and it stirred green behind him.",
+   "t": "Sorun: Bir şeyleri yeşerten nedir? Hızır’ın adı “yeşil olan” demektir.\n\nHızır’ın hâlâ yaşadığını duyabilirsiniz. İbn Kesîr, Nevevî’nin ve İbnü’s-Salâh’ın bu görüşe meylettiğini aktarır, ama “bunların hiçbiri sahih değildir; en bilinenleri taziye hadisleridir ve senedleri zayıftır” der. Başka âlimler, 21:34’ü (“Senden önce de hiçbir insanı ölümsüz kılmadık”) delil göstererek onun vefat ettiğini ve Peygamberimize ﷺ hiç gelmediğini, hayatta olsaydı ona uyacağını savundular. (Çeviri bizimdir.)\n\nAdının anlamı sahihtir: Buhârî, Peygamberimizin ﷺ ona Hızır denmesinin, kuru, solmuş bitkilerin olduğu bir yere oturması ve arkasında orasının yeşermesi yüzünden olduğunu söylediğini rivayet eder."
+  },
+  "23.11": {
+   "en": "Musa asked politely to learn. Ask: how do we ask a teacher for help?",
+   "t": "Musa öğrenmek için kibarca istedi. Sorun: Bir öğretmenden nasıl yardım isteriz?"
+  },
+  "23.12": {
+   "en": "Ask: is it easy to wait without asking questions? What is the hardest thing to be patient about?",
+   "t": "Sorun: Soru sormadan beklemek kolay mıdır? Sabretmesi en zor şey nedir?"
+  },
+  "23.13": {
+   "en": "Ask your child what Musa promised, and whether they think he can keep it.",
+   "t": "Çocuğunuza Musa’nın ne söz verdiğini ve sence onu tutabilecek mi diye sorun."
+  },
+  "24.1": {
+   "en": "In the boat the man made a hole in it, and Musa objected. Verse 18:74 then says they met a young boy and the man killed him, and Musa protested more strongly. The game does not tell this to small children: it says only that the second thing was about a boy and is 'a story for when you are older'. The explanation in 18:80–81 is that the boy's parents were people of faith, that he would have burdened them with wickedness and disbelief, and that their Lord would give them a better child in his place.\n\nThe third: a town refused them food, and the man repaired a wall that was about to fall; Musa said he could have taken payment. The explanations: the boat belonged to needy people who worked at sea, and a king was seizing every sound boat by force; the wall belonged to two orphans, with a treasure beneath it, and their father had been righteous. 'I did not do these things of my own accord.'\n\nFrom the hadith in al-Bukhari quoted in the commentary, not the verses: the crew knew al-Khidr and carried them without a fare; the bird that dipped its beak in the sea and what al-Khidr said about knowledge; and the Prophet's ﷺ words, 'We wish that Musa had been patient, so that Allah would have told us more about the two of them.' The closing sentence about good hidden inside a thing that looks bad is the game's own summary of the lesson.",
+   "t": "Gemide adam onda bir delik açtı ve Musa itiraz etti. 18:74. ayet sonra onların genç bir oğlanla karşılaştığını ve adamın onu öldürdüğünü, Musa’nın daha şiddetle karşı çıktığını söyler. Oyun bunu küçük çocuklara anlatmaz: yalnızca ikinci şeyin bir oğlanla ilgili olduğunu ve “büyüyünce dinleyeceğin bir hikâye” olduğunu söyler. 18:80–81’deki açıklama, oğlanın anne babasının iman sahibi insanlar olduğu, onun onları azgınlık ve inkârla yükleyeceği ve Rablerinin onun yerine onlara daha hayırlı bir çocuk vereceğidir.\n\nÜçüncüsü: Bir kasaba onlara yemek vermedi ve adam yıkılmak üzere olan bir duvarı onardı; Musa bunun için ücret alabileceğini söyledi. Açıklamalar: Gemi denizde çalışan yoksul insanlarındı ve bir kral her sağlam gemiye zorla el koyuyordu; duvar ise iki yetimindi, altında bir hazine vardı ve babaları iyi bir kimseydi. “Ben bunları kendiliğimden yapmadım.”\n\nAyetlerden değil, tefsirde aktarılan Buhârî’deki hadisten: Gemiciler Hızır’ı tanıyordu ve onları ücretsiz taşıdılar; gagasını denize daldıran kuş ve Hızır’ın ilim hakkında söyledikleri; ve Peygamberimizin ﷺ şu sözleri: “Keşke Musa sabretseydi de Allah bize onlar hakkında daha fazlasını anlatsaydı.” Kötü görünen bir şeyin içinde gizli bir hayır olduğuna dair kapanış cümlesi, oyunun dersi kendi özetleyişidir."
+  },
+  "24.2": {
+   "en": "Ask: what would you think if someone made a hole in a boat? Would you ask why?\n\nIn the hadith in al-Bukhari, the boat's crew recognised al-Khidr and carried them for free, which is why Musa was so shocked when al-Khidr damaged it.",
+   "t": "Sorun: Biri bir gemide delik açsa ne düşünürdün? Nedenini sorar mıydın?\n\nBuhârî’deki hadiste geminin tayfası Hızır’ı tanımış ve onları parasız taşımıştı; bu yüzden Hızır gemiye zarar verince Musa çok şaşırdı."
+  },
+  "24.3": {
+   "en": "Ask: how much water can a bird take in its beak, compared to the whole sea? That is how little we know, next to Allah.",
+   "t": "Sorun: Bir kuş bütün denize göre gagasında ne kadar su alabilir? Allah’ın yanında bizim bildiğimiz işte o kadar azdır."
+  },
+  "24.4": {
+   "en": "Talk about it: all the books in the world are like a bird's sip from the sea. How does that make you feel about Allah?",
+   "t": "Konuşun: Dünyadaki bütün kitaplar bir kuşun denizden aldığı bir yudum gibidir. Bu sana Allah hakkında ne hissettiriyor?"
+  },
+  "24.5": {
+   "en": "If your child is older and asks, this is in Surah al-Kahf (18:74, 18:80-81); otherwise it is enough to say it was hard for Musa to understand.",
+   "t": "Çocuğunuz daha büyükse ve sorarsa, bu Kehf suresindedir (18:74, 18:80-81); değilse bunun Musa için anlaşılması zor bir şey olduğunu söylemek yeterlidir."
+  },
+  "24.6": {
+   "en": "Ask: why would al-Khidr mend the wall for people who would not feed them? Doing good without being thanked.",
+   "t": "Sorun: Hızır onları doyurmayan insanların duvarını neden onardı? Teşekkür beklemeden iyilik yapmak."
+  },
+  "24.7": {
+   "en": "Ask: what can you fix or help with at home, even if nobody says thank you?",
+   "t": "Sorun: Kimse teşekkür etmese bile evde neyi onarabilir ya da neye yardım edebilirsin?"
+  },
+  "24.8": {
+   "en": "Ask: have you ever had to say goodbye to a teacher or friend? What did they teach you?",
+   "t": "Sorun: Hiç bir öğretmenle ya da arkadaşla vedalaşmak zorunda kaldın mı? Sana ne öğrettiler?"
+  },
+  "24.9": {
+   "en": "Ask: can something that looks bad turn out to protect us? Think of an example together.",
+   "t": "Sorun: Kötü görünen bir şey bizi korumuş olabilir mi? Birlikte bir örnek düşünün."
+  },
+  "24.10": {
+   "en": "Ask: who looks after orphans? The verse says their father was a righteous man (18:82).",
+   "t": "Sorun: Yetimlere kim bakar? Ayet babalarının iyi bir kimse olduğunu söyler (18:82)."
+  },
+  "24.11": {
+   "en": "Ask: what treasure would you hide for your children one day?",
+   "t": "Sorun: Bir gün çocukların için hangi hazineyi saklardın?"
+  },
+  "24.12": {
+   "en": "Let your child explain each secret in their own words.",
+   "t": "Çocuğunuz her sırrı kendi sözleriyle açıklasın."
+  },
+  "24.13": {
+   "en": "In Hayat al-Qulub, Imam al-Sadiq gives al-Khidr's parting advice to Musa: do not be stubborn, do not laugh without reason, and do not look for the faults of others. Ask: which one is hardest?",
+   "t": "Hayâtü’l-Kulûb’da İmam Câfer es-Sâdık, Hızır’ın Musa’ya veda öğüdünü verir: İnatçı olma, sebepsiz gülme ve başkalarının kusurlarını arama. Sorun: Hangisi en zor?"
+  },
+  "24.14": {
+   "en": "Ask: what could we have learned if Musa had kept quiet? Patience opens doors.",
+   "t": "Sorun: Musa sessiz kalsaydı neler öğrenebilirdik? Sabır kapılar açar."
+  },
+  "24.15": {
+   "en": "Ask your child what they learned from al-Khidr.",
+   "t": "Çocuğunuza Hızır’dan ne öğrendiğini sorun."
+  },
+  "25.1": {
+   "en": "Verse 28:43: Musa was given the Scripture, to give people insight, guidance and mercy, so that they might take heed. The chapter looks back over the whole story.\n\nThis game tells a large part of what the Qur'an says about Musa, not all of it: the story is spread over many surahs. A good next step with an older child is to read Surah Ta-Ha (20) and Surah Al-Qasas (28) together.",
+   "t": "28:43. ayet: Musa’ya Kitap, insanlar düşünsünler diye “açık belgeler, doğruluk rehberi ve rahmet olarak” verildi. Bu bölüm bütün hikâyeye geri bakar.\n\nBu oyun Kur’an’ın Musa hakkında anlattıklarının büyük bir kısmını anlatır, tamamını değil: Hikâye birçok sureye yayılmıştır. Büyük bir çocukla atılacak güzel bir sonraki adım, Tâhâ (20) ve Kasas (28) surelerini birlikte okumaktır."
+  },
+  "25.2": {
+   "en": "Ask: when is Allah with you? Always, everywhere.\n\nYou may meet two hadiths about Musa in al-Bukhari that surprise people. In one, the angel of death came to Musa and Musa struck him; Allah then offered Musa a year of life for every hair his hand would cover on an ox's back (al-Bukhari 1339 and 3407). In the other, Musa bathed alone and a stone ran off with his clothes, and he chased after it (in al-Bukhari's book on the Prophets; check the number on sunnah.com before quoting it). Both are in al-Bukhari; scholars explain them at length, and they are best read with a teacher.",
+   "t": "Sorun: Allah seninle ne zaman beraberdir? Her zaman, her yerde.\n\nBuhârî’de Musa hakkında insanları şaşırtan iki hadisle karşılaşabilirsiniz. Birinde ölüm meleği Musa’ya geldi ve Musa ona vurdu; Allah sonra Musa’ya, elinin bir öküzün sırtında örteceği her kıl için bir yıl ömür teklif etti (Buhârî 1339 ve 3407). Öbüründe Musa tek başına yıkandı ve bir taş elbiselerini alıp kaçtı, o da onun ardından koştu (Buhârî’nin peygamberler bölümünde; aktarmadan önce numarasını sunnah.com’da kontrol edin). İkisi de Buhârî’dedir; âlimler onları uzun uzun açıklar ve en iyisi onları bir öğretmenle okumaktır."
+  },
+  "25.3": {
+   "en": "Ask: what book did Allah give us? The Qur'an is light and guidance for us.",
+   "t": "Sorun: Allah bize hangi kitabı verdi? Kur’an bizim için nur ve yol göstericidir."
+  },
+  "25.4": {
+   "en": "Let your child tell the whole story of Musa from the river to the sea.",
+   "t": "Çocuğunuz Musa’nın bütün hikâyesini ırmaktan denize kadar anlatsın."
+  },
+  "25.5": {
+   "en": "Ask: who was your favourite person in the story? Asiya? Musa's sister? The magicians?",
+   "t": "Sorun: Hikâyede en sevdiğin kişi kimdi? Âsiye mi? Musa’nın ablası mı? Sihirbazlar mı?"
+  },
+  "25.6": {
+   "en": "Name each card as you match it, and say one thing about that part of the story.",
+   "t": "Eşleştirirken her kartın adını söyleyin ve hikâyenin o kısmı hakkında bir şey söyleyin."
+  },
+  "25.7": {
+   "en": "While solving, ask: what would you like to remember from Musa's story?",
+   "t": "Çözerken sorun: Musa’nın hikâyesinden neyi hatırlamak isterdin?"
+  }
+ }
+}

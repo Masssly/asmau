@@ -1,0 +1,845 @@
+{
+ "status": "draft",
+ "_note": "Türkçe. To be checked by a native speaker; seen only with ?lang=tr until then.",
+ "lines": {
+  "i1-a": {
+   "en": "Long ago, in the year 1325, in the city of Tangier in Morocco, there lived a young man called Ibn Battuta.",
+   "t": "Çok eskiden, 1325 yılında, Fas’ın Tanca şehrinde İbn Battûta adında bir genç yaşardı."
+  },
+  "i1-b": {
+   "en": "He wanted to go on Hajj to Makkah, and to visit the Prophet's mosque in Madina. It was very, very far away.",
+   "t": "Mekke’ye hacca gitmek ve Medine’deki Peygamber Mescidi’ni ziyaret etmek istiyordu. Orası çok ama çok uzaktaydı."
+  },
+  "i1-c": {
+   "en": "He set out alone, with no friend and no caravan. His father and mother were very sad to see him go, and so was he.",
+   "t": "Tek başına yola çıktı; ne bir arkadaşı vardı ne de bir kervanı. Annesi ve babası onun gidişine çok üzüldüler, o da üzüldü."
+  },
+  "i1-pack": {
+   "en": "What does a traveller need? Pack his bag.",
+   "t": "Bir yolcunun neye ihtiyacı vardır? Çantasını hazırla."
+  },
+  "i1-pack-bin1": {
+   "en": "Pack it",
+   "t": "Çantaya koy"
+  },
+  "i1-pack-bin2": {
+   "en": "Leave it",
+   "t": "Bırak"
+  },
+  "i1-pack-it1": {
+   "en": "A water skin",
+   "t": "Bir su tulumu"
+  },
+  "i1-pack-it2": {
+   "en": "A big bed",
+   "t": "Büyük bir yatak"
+  },
+  "i1-pack-it3": {
+   "en": "Bread and dates",
+   "t": "Ekmek ve hurma"
+  },
+  "i1-pack-it4": {
+   "en": "A warm cloak",
+   "t": "Sıcak bir pelerin"
+  },
+  "i1-pack-it5": {
+   "en": "A heavy table",
+   "t": "Ağır bir masa"
+  },
+  "i1-pack-it6": {
+   "en": "A box of toys",
+   "t": "Bir kutu oyuncak"
+  },
+  "i1-pack-no": {
+   "en": "Think again. Could he carry that all the way to Makkah?",
+   "t": "Bir daha düşün. Bunu Mekke’ye kadar taşıyabilir miydi?"
+  },
+  "i1-d": {
+   "en": "Ibn Battuta said that he left his home as birds leave their nests.",
+   "t": "İbn Battûta, kuşların yuvalarını bıraktığı gibi evini bıraktığını söyledi."
+  },
+  "i1-q": {
+   "en": "Why did Ibn Battuta leave home?",
+   "t": "İbn Battûta evinden neden ayrıldı?"
+  },
+  "i1-q-opt1": {
+   "en": "To go on Hajj to Makkah",
+   "t": "Mekke’ye hacca gitmek için"
+  },
+  "i1-q-opt2": {
+   "en": "To find treasure",
+   "t": "Hazine bulmak için"
+  },
+  "i1-q-no": {
+   "en": "He set out to go on Hajj, to Makkah.",
+   "t": "Mekke’ye, hacca gitmek için yola çıktı."
+  },
+  "i2-a": {
+   "en": "After many months he reached Alexandria, a great city by the sea in Egypt. He went to see its famous lighthouse.",
+   "t": "Aylar sonra Mısır’da, deniz kenarındaki büyük bir şehre, İskenderiye’ye vardı. Ünlü deniz fenerini görmeye gitti."
+  },
+  "i2-b": {
+   "en": "There he met a kind old teacher, Burhan al-Din. The old man smiled and said: I see that you love to travel!",
+   "t": "Orada Burhâneddin adında iyi kalpli, yaşlı bir hocayla tanıştı. Yaşlı adam gülümseyip şöyle dedi: Görüyorum ki yolculuğu çok seviyorsun!"
+  },
+  "i2-c": {
+   "en": "Then he said: you will visit my brothers, in India, in Sind and in China. Give them my greetings.",
+   "t": "Sonra şöyle dedi: Hindistan’da, Sind’de ve Çin’de kardeşlerimi ziyaret edeceksin. Onlara selamımı ilet."
+  },
+  "i2-d": {
+   "en": "Ibn Battuta was amazed. He had never thought of going so far! But many years later, he met all three, and gave them the greetings.",
+   "t": "İbn Battûta şaşırıp kaldı. O kadar uzağa gitmeyi hiç düşünmemişti! Ama yıllar sonra üçüyle de karşılaştı ve selamlarını iletti."
+  },
+  "i2-lands": {
+   "en": "Find the pairs! Things he would see on his travels.",
+   "t": "Eşleri bul! Yolculuklarında göreceği şeyler."
+  },
+  "i2-q": {
+   "en": "What did the old man ask him to do?",
+   "t": "Yaşlı adam ondan ne istedi?"
+  },
+  "i2-q-opt1": {
+   "en": "Go straight back home",
+   "t": "Hemen eve dönmesini"
+  },
+  "i2-q-opt2": {
+   "en": "Greet his brothers far away",
+   "t": "Uzaklardaki kardeşlerine selam vermesini"
+  },
+  "i2-q-no": {
+   "en": "He asked him to greet his brothers in India, Sind and China.",
+   "t": "Hindistan’da, Sind’de ve Çin’deki kardeşlerine selam vermesini istedi."
+  },
+  "i3-a": {
+   "en": "In the city of Damascus, in Syria, people loved to do good. They gave money for travellers, and to make the streets better.",
+   "t": "Suriye’deki Şam şehrinde insanlar iyilik yapmayı çok severdi. Yolcular için ve sokakları güzelleştirmek için para bağışlarlardı."
+  },
+  "i3-b": {
+   "en": "One day Ibn Battuta saw a young servant boy drop a beautiful china dish in the street. Crash! It broke into pieces.",
+   "t": "Bir gün İbn Battûta, genç bir hizmetçi çocuğun sokakta güzel bir porselen tabağı düşürdüğünü gördü. Şangır! Tabak paramparça oldu."
+  },
+  "i3-c": {
+   "en": "The people said: pick up the pieces, and take them to the keeper of the dish fund!",
+   "t": "İnsanlar şöyle dedi: Parçaları topla ve tabak vakfının görevlisine götür!"
+  },
+  "i3-d": {
+   "en": "The keeper gave the boy money for a new dish. So nobody scolded him, and he was not sad any more.",
+   "t": "Görevli çocuğa yeni bir tabak için para verdi. Böylece kimse onu azarlamadı ve artık üzgün değildi."
+  },
+  "i3-mend": {
+   "en": "Mend the picture! Put the pieces together.",
+   "t": "Resmi onar! Parçaları birleştir."
+  },
+  "i3-e": {
+   "en": "Ibn Battuta said: this is one of the best good deeds. It mends hearts.",
+   "t": "İbn Battûta şöyle dedi: Bu, iyiliklerin en güzellerinden biridir. Kalpleri onarır."
+  },
+  "i3-hearts": {
+   "en": "Does it mend a heart, or break it? Sort them.",
+   "t": "Bir kalbi onarır mı, yoksa kırar mı? Ayır bakalım."
+  },
+  "i3-hearts-bin1": {
+   "en": "Mends a heart",
+   "t": "Kalbi onarır"
+  },
+  "i3-hearts-bin2": {
+   "en": "Breaks a heart",
+   "t": "Kalbi kırar"
+  },
+  "i3-hearts-it1": {
+   "en": "Helping someone who dropped something",
+   "t": "Bir şey düşürene yardım etmek"
+  },
+  "i3-hearts-it2": {
+   "en": "Laughing at a mistake",
+   "t": "Bir hataya gülmek"
+  },
+  "i3-hearts-it3": {
+   "en": "Sharing your snack",
+   "t": "Atıştırmalığını paylaşmak"
+  },
+  "i3-hearts-it4": {
+   "en": "Shouting at someone",
+   "t": "Birine bağırmak"
+  },
+  "i3-hearts-it5": {
+   "en": "Saying: it's all right",
+   "t": "“Önemli değil” demek"
+  },
+  "i3-hearts-it6": {
+   "en": "Telling everyone about it",
+   "t": "Bunu herkese anlatmak"
+  },
+  "i3-hearts-no": {
+   "en": "Think again. Would that make someone feel better, or worse?",
+   "t": "Bir daha düşün. Bu birini daha iyi mi hissettirir, yoksa daha kötü mü?"
+  },
+  "i4-a": {
+   "en": "At last, after a long journey across the desert with a great caravan of camels, Ibn Battuta reached Makkah.",
+   "t": "Sonunda, büyük bir deve kervanıyla çölü aşan uzun bir yolculuktan sonra İbn Battûta Mekke’ye vardı."
+  },
+  "i4-b": {
+   "en": "He saw the Ka'bah, the House of Allah, with people from every land walking around it.",
+   "t": "Allah’ın evi Kâbe’yi ve onun etrafında dönen, her ülkeden gelmiş insanları gördü."
+  },
+  "i4-c": {
+   "en": "Allah says in the Qur'an: proclaim the Pilgrimage to all people. They will come to you on foot and on every kind of swift mount, from every deep mountain pass.",
+   "t": "Allah Kur’an’da şöyle buyurur: İnsanları hacca çağır; yürüyerek veya binekler üstünde uzak yollardan sana gelsinler."
+  },
+  "i4-hajj": {
+   "en": "Some steps of the Hajj. Put them in order.",
+   "t": "Haccın bazı adımları. Onları sıraya koy."
+  },
+  "i4-hajj-c1": {
+   "en": "First, the pilgrims put on simple white clothes.",
+   "t": "Önce hacılar sade beyaz giysiler giyer."
+  },
+  "i4-hajj-c2": {
+   "en": "They walk around the Ka'bah.",
+   "t": "Kâbe’nin etrafında dönerler."
+  },
+  "i4-hajj-c3": {
+   "en": "They stand on the plain of Arafat and pray.",
+   "t": "Arafat ovasında durup dua ederler."
+  },
+  "i4-hajj-c4": {
+   "en": "Then they celebrate Eid.",
+   "t": "Sonra bayram ederler."
+  },
+  "i4-hajj-no": {
+   "en": "Listen again, and put the steps in order.",
+   "t": "Yeniden dinle ve adımları sıraya koy."
+  },
+  "i4-d": {
+   "en": "After his Hajj, Ibn Battuta did not go home. He wanted to see more of the world.",
+   "t": "Haccından sonra İbn Battûta eve dönmedi. Dünyanın başka yerlerini de görmek istiyordu."
+  },
+  "i4-q": {
+   "en": "What do pilgrims wear on Hajj?",
+   "t": "Hacılar hacda ne giyer?"
+  },
+  "i4-q-opt1": {
+   "en": "Simple white clothes",
+   "t": "Sade beyaz giysiler"
+  },
+  "i4-q-opt2": {
+   "en": "Party costumes",
+   "t": "Parti kostümleri"
+  },
+  "i4-q-no": {
+   "en": "Pilgrims wear simple white clothes, all the same, rich and poor.",
+   "t": "Hacılar, zengin olsun fakir olsun, hepsi aynı sade beyaz giysileri giyer."
+  },
+  "i5-a": {
+   "en": "In the land that is now Turkey, Ibn Battuta met groups of young men called the Akhis. Akhi means my brother.",
+   "t": "Bugün Türkiye olan topraklarda İbn Battûta, Ahîler denen genç adam topluluklarıyla tanıştı. Ahî “kardeşim” demektir."
+  },
+  "i5-b": {
+   "en": "They worked all day. In the evening they put their money together to buy food, for any traveller who came to their town.",
+   "t": "Bütün gün çalışırlardı. Akşam olunca da kasabalarına gelen her yolcuya yemek almak için paralarını birleştirirlerdi."
+  },
+  "i5-c": {
+   "en": "Ibn Battuta said: nowhere in the world are there people like them in caring for strangers.",
+   "t": "İbn Battûta şöyle dedi: Yabancılara gösterdikleri ilgide dünyanın hiçbir yerinde onlar gibisi yoktur."
+  },
+  "i5-bowls": {
+   "en": "Serve the travellers! Tap each bowl.",
+   "t": "Yolculara yemek ver! Her kâseye dokun."
+  },
+  "i5-q": {
+   "en": "What did the brothers do for travellers?",
+   "t": "Kardeşler yolcular için ne yaptı?"
+  },
+  "i5-q-opt1": {
+   "en": "Sent them away",
+   "t": "Onları kovdular"
+  },
+  "i5-q-opt2": {
+   "en": "Gave them food and a place to stay",
+   "t": "Onlara yemek ve kalacak yer verdiler"
+  },
+  "i5-q-no": {
+   "en": "They gave every traveller food and a place to stay.",
+   "t": "Her yolcuya yemek ve kalacak yer verdiler."
+  },
+  "i6-a": {
+   "en": "Ibn Battuta travelled on, over high mountains, to India. In the great city of Delhi lived a powerful Sultan.",
+   "t": "İbn Battûta yüksek dağları aşarak Hindistan’a doğru yoluna devam etti. Büyük Delhi şehrinde güçlü bir sultan yaşardı."
+  },
+  "i6-b": {
+   "en": "The Sultan made Ibn Battuta a judge, a qadi. He said: this is the highest of all jobs.",
+   "t": "Sultan, İbn Battûta’yı hâkim, yani kadı yaptı. Şöyle dedi: Bu, bütün işlerin en yücesidir."
+  },
+  "i6-c": {
+   "en": "But Ibn Battuta did not know the language there! So the Sultan gave him two helpers.",
+   "t": "Ama İbn Battûta oranın dilini bilmiyordu! Bu yüzden sultan ona iki yardımcı verdi."
+  },
+  "i6-fair": {
+   "en": "A good judge is fair. Is it fair, or not?",
+   "t": "İyi bir hâkim adaletlidir. Bu adil mi, değil mi?"
+  },
+  "i6-fair-bin1": {
+   "en": "Fair",
+   "t": "Adil"
+  },
+  "i6-fair-bin2": {
+   "en": "Not fair",
+   "t": "Adil değil"
+  },
+  "i6-fair-it1": {
+   "en": "Listening to both sides",
+   "t": "İki tarafı da dinlemek"
+  },
+  "i6-fair-it2": {
+   "en": "Taking a present to help one side",
+   "t": "Bir tarafa yardım etmek için hediye almak"
+  },
+  "i6-fair-it3": {
+   "en": "The same rules for rich and poor",
+   "t": "Zengine de fakire de aynı kurallar"
+  },
+  "i6-fair-it4": {
+   "en": "Deciding before listening",
+   "t": "Dinlemeden karar vermek"
+  },
+  "i6-fair-it5": {
+   "en": "Telling the truth",
+   "t": "Doğruyu söylemek"
+  },
+  "i6-fair-it6": {
+   "en": "Helping only your friends",
+   "t": "Yalnızca arkadaşlarına yardım etmek"
+  },
+  "i6-fair-no": {
+   "en": "Think again. Would that be fair to everyone?",
+   "t": "Bir daha düşün. Bu herkese karşı adil olur muydu?"
+  },
+  "i7-a": {
+   "en": "Later he sailed to the Maldives, tiny islands in the ocean. He said they were one of the wonders of the world: about two thousand islands!",
+   "t": "Daha sonra okyanustaki minicik adalara, Maldivlere yelken açtı. Buraların dünyanın harikalarından biri olduğunu söyledi: Yaklaşık iki bin ada!"
+  },
+  "i7-b": {
+   "en": "The people there were all Muslims, good and kind.",
+   "t": "Oradaki insanların hepsi Müslümandı; iyi ve yumuşak kalpliydiler."
+  },
+  "i7-c": {
+   "en": "Coconut palms grew everywhere. People ate fish and coconuts, and made milk, oil and sweets from the coconut.",
+   "t": "Her yerde hindistancevizi ağaçları vardı. İnsanlar balık ve hindistancevizi yer, hindistancevizinden süt, yağ ve tatlı yaparlardı."
+  },
+  "i7-coconuts": {
+   "en": "Catch the falling coconuts!",
+   "t": "Düşen hindistancevizlerini yakala!"
+  },
+  "i7-d": {
+   "en": "The islands were so close together that from one, you could see the tops of the palm trees on the next.",
+   "t": "Adalar birbirine o kadar yakındı ki birinden bakınca öbüründeki palmiyelerin tepeleri görünürdü."
+  },
+  "i7-q": {
+   "en": "What grew everywhere on the islands?",
+   "t": "Adalarda her yerde ne yetişiyordu?"
+  },
+  "i7-q-opt1": {
+   "en": "Coconut palms",
+   "t": "Hindistancevizi ağaçları"
+  },
+  "i7-q-opt2": {
+   "en": "Apple trees",
+   "t": "Elma ağaçları"
+  },
+  "i7-q-no": {
+   "en": "Coconut palms grew everywhere on the islands.",
+   "t": "Adaların her yerinde hindistancevizi ağaçları yetişiyordu."
+  },
+  "i8-a": {
+   "en": "Then he sailed east to the island of Sumatra, in what is now Indonesia.",
+   "t": "Sonra doğuya, bugün Endonezya olan topraklardaki Sumatra adasına yelken açtı."
+  },
+  "i8-b": {
+   "en": "People came out to the ship in little boats, with coconuts, bananas, mangoes and fish as gifts.",
+   "t": "İnsanlar küçük kayıklarla gemiye geldiler; hediye olarak hindistancevizi, muz, mango ve balık getirdiler."
+  },
+  "i8-gifts": {
+   "en": "Find the pairs! The gifts in the little boats.",
+   "t": "Eşleri bul! Küçük kayıklardaki hediyeler."
+  },
+  "i8-c": {
+   "en": "The Sultan, al-Malik al-Zahir, loved learning. Scholars came to read the Qur'an with him, and to talk.",
+   "t": "Sultan el-Melikü’z-Zâhir ilmi çok severdi. Âlimler onunla Kur’an okumaya ve sohbet etmeye gelirdi."
+  },
+  "i8-d": {
+   "en": "And he was humble: he walked to the Friday prayer on foot, like everyone else.",
+   "t": "Ve alçakgönüllüydü: Cuma namazına herkes gibi yürüyerek giderdi."
+  },
+  "i8-q": {
+   "en": "How did the Sultan go to Friday prayer?",
+   "t": "Sultan Cuma namazına nasıl giderdi?"
+  },
+  "i8-q-opt1": {
+   "en": "On a golden throne",
+   "t": "Altın bir taht üzerinde"
+  },
+  "i8-q-opt2": {
+   "en": "He walked, like everyone",
+   "t": "Herkes gibi yürüyerek"
+  },
+  "i8-q-no": {
+   "en": "He was humble, and walked to the Friday prayer on foot.",
+   "t": "Alçakgönüllüydü ve Cuma namazına yürüyerek giderdi."
+  },
+  "i9-a": {
+   "en": "Ibn Battuta's ship sailed on and on, far away, to China.",
+   "t": "İbn Battûta’nın gemisi uzun uzun, çok uzaklara, Çin’e doğru yol aldı."
+  },
+  "i9-b": {
+   "en": "In China, people paid with money made of paper, as big as your hand!",
+   "t": "Çin’de insanlar kâğıttan yapılmış, avucun kadar büyük paralarla alışveriş yapardı!"
+  },
+  "i9-notes": {
+   "en": "Pay with paper money! Tap each note.",
+   "t": "Kâğıt parayla öde! Her banknota dokun."
+  },
+  "i9-c": {
+   "en": "Ibn Battuta saw beautiful china dishes being made, like the dish the boy broke in Damascus!",
+   "t": "İbn Battûta güzel porselen tabakların yapıldığını gördü; tıpkı Şam’da o çocuğun kırdığı tabak gibi!"
+  },
+  "i9-d": {
+   "en": "He said: China is the safest and best country for the traveller.",
+   "t": "Şöyle dedi: Çin, yolcu için en güvenli ve en güzel ülkedir."
+  },
+  "i9-q": {
+   "en": "What was money made of, in China?",
+   "t": "Çin’de para neyden yapılmıştı?"
+  },
+  "i9-q-opt1": {
+   "en": "Paper",
+   "t": "Kâğıttan"
+  },
+  "i9-q-opt2": {
+   "en": "Chocolate",
+   "t": "Çikolatadan"
+  },
+  "i9-q-no": {
+   "en": "In China, people paid with paper money.",
+   "t": "Çin’de insanlar kâğıt parayla ödeme yapardı."
+  },
+  "i10-a": {
+   "en": "After twenty-four years away, Ibn Battuta set out for home, to Morocco.",
+   "t": "Yirmi dört yıl uzak kaldıktan sonra İbn Battûta evine, Fas’a doğru yola çıktı."
+  },
+  "i10-b": {
+   "en": "On the way, he heard sad news. His mother had died, of a terrible illness. He said: may Allah have mercy on her.",
+   "t": "Yolda acı bir haber aldı. Annesi korkunç bir hastalıktan vefat etmişti. Şöyle dedi: Allah ona rahmet etsin."
+  },
+  "i10-dua": {
+   "en": "Make a dua for his mother. Press and hold.",
+   "t": "Annesi için dua et. Basılı tut."
+  },
+  "i10-c": {
+   "en": "Then he reached Fez, the great city of Morocco, and went to greet the Sultan.",
+   "t": "Sonra Fas’ın büyük şehri Fes’e vardı ve sultanı selamlamaya gitti."
+  },
+  "i10-way": {
+   "en": "The long way home. Put the places in order.",
+   "t": "Eve giden uzun yol. Yerleri sıraya koy."
+  },
+  "i10-way-c1": {
+   "en": "First, he left China.",
+   "t": "Önce Çin’den ayrıldı."
+  },
+  "i10-way-c2": {
+   "en": "He sailed back past India.",
+   "t": "Hindistan’ın yanından geçerek geri döndü."
+  },
+  "i10-way-c3": {
+   "en": "He made Hajj once more in Makkah.",
+   "t": "Mekke’de bir kez daha hac yaptı."
+  },
+  "i10-way-c4": {
+   "en": "And at last he came home to Morocco.",
+   "t": "Ve sonunda evine, Fas’a geldi."
+  },
+  "i10-way-no": {
+   "en": "Listen again, and put the places in order.",
+   "t": "Yeniden dinle ve yerleri sıraya koy."
+  },
+  "i11-a": {
+   "en": "But soon he set out again, across the great Sahara desert with a camel caravan, to the land of Mali in West Africa.",
+   "t": "Ama çok geçmeden yine yola çıktı; bir deve kervanıyla büyük Sahra çölünü aşıp Batı Afrika’daki Mali ülkesine gitti."
+  },
+  "i11-sahara": {
+   "en": "Lead the caravan across the Sahara to Mali.",
+   "t": "Kervanı Sahra’nın öbür yanına, Mali’ye götür."
+  },
+  "i11-b": {
+   "en": "Ibn Battuta wrote that the people of Mali hated injustice, and that travellers there were safe: nobody had to fear robbers.",
+   "t": "İbn Battûta, Mali halkının haksızlıktan nefret ettiğini ve oradaki yolcuların güvende olduğunu yazdı: Kimse hırsızdan korkmak zorunda değildi."
+  },
+  "i11-c": {
+   "en": "On Fridays everyone wore clean white clothes to the mosque. It was so full that people sent their prayer mats early, to keep a place.",
+   "t": "Cuma günleri herkes camiye temiz beyaz giysilerle giderdi. Cami o kadar dolardı ki insanlar yer tutmak için seccadelerini erkenden gönderirdi."
+  },
+  "i11-d": {
+   "en": "And the children worked very hard to learn the Qur'an by heart.",
+   "t": "Ve çocuklar Kur’an’ı ezberlemek için çok çalışırdı."
+  },
+  "i11-e": {
+   "en": "Back home in Fez, the Sultan asked a writer, Ibn Juzayy, to write down all his travels. That book is still read today.",
+   "t": "Fes’e döndüğünde sultan, İbn Cüzey adında bir yazardan bütün yolculuklarını yazmasını istedi. O kitap bugün hâlâ okunuyor."
+  },
+  "i11-story": {
+   "en": "Tell his whole journey. Tap in order.",
+   "t": "Bütün yolculuğunu anlat. Sırayla dokun."
+  },
+  "i11-story-c1": {
+   "en": "First, he left his home in Tangier.",
+   "t": "Önce Tanca’daki evinden ayrıldı."
+  },
+  "i11-story-c2": {
+   "en": "He made Hajj in Makkah.",
+   "t": "Mekke’de hac yaptı."
+  },
+  "i11-story-c3": {
+   "en": "He was a judge in India.",
+   "t": "Hindistan’da hâkimlik yaptı."
+  },
+  "i11-story-c4": {
+   "en": "He sailed to the islands of the Maldives.",
+   "t": "Maldiv adalarına yelken açtı."
+  },
+  "i11-story-c5": {
+   "en": "He reached China.",
+   "t": "Çin’e ulaştı."
+  },
+  "i11-story-c6": {
+   "en": "And he crossed the Sahara to Mali.",
+   "t": "Ve Sahra’yı aşıp Mali’ye gitti."
+  },
+  "i11-story-no": {
+   "en": "Listen again, and tell it in order.",
+   "t": "Yeniden dinle ve sırayla anlat."
+  },
+  "end-a": {
+   "en": "This is the story of Ibn Battuta, who travelled for nearly thirty years, from Morocco to China and Mali, and wrote it all down, so that we can travel with him today.",
+   "t": "Bu, Fas’tan Çin’e ve Mali’ye kadar yaklaşık otuz yıl yolculuk eden ve hepsini yazdıran İbn Battûta’nın hikâyesidir; böylece bugün biz de onunla yolculuk edebiliyoruz."
+  }
+ },
+ "strings": {
+  "Leaving Home": "Evden Ayrılış",
+  "The Rihla, tr. Gibb, vol. I, pp. 7-8": "Rihle, İng. çev. Gibb, c. I, s. 7-8",
+  "From his book, the Rihla": "Kitabı Rihle’den",
+  "The Old Man of Alexandria": "İskenderiyeli Yaşlı Adam",
+  "The Rihla, tr. Gibb, vol. I, pp. 18, 22-23": "Rihle, İng. çev. Gibb, c. I, s. 18, 22-23",
+  "The Broken Dish": "Kırık Tabak",
+  "The Rihla, tr. Gibb, vol. I, p. 147": "Rihle, İng. çev. Gibb, c. I, s. 147",
+  "Makkah": "Mekke",
+  "Put on simple white clothes": "Sade beyaz giysiler giy",
+  "Walk around the Ka'bah": "Kâbe’nin etrafında dön",
+  "Pray at Arafat": "Arafat’ta dua et",
+  "Celebrate Eid": "Bayram et",
+  "Brothers Who Welcome Strangers": "Yabancıları Ağırlayan Kardeşler",
+  "The Rihla, tr. Gibb, vol. II, pp. 417-419": "Rihle, İng. çev. Gibb, c. II, s. 417-419",
+  "A Judge in Delhi": "Delhi’de Bir Hâkim",
+  "The Rihla, tr. Gibb, vol. III, pp. 746-747": "Rihle, İng. çev. Gibb, c. III, s. 746-747",
+  "Two Thousand Islands": "İki Bin Ada",
+  "The Rihla, tr. Gibb and Beckingham, vol. IV, pp. 821-822": "Rihle, İng. çev. Gibb ve Beckingham, c. IV, s. 821-822",
+  "The Kind Sultan of Sumatra": "Sumatra’nın İyi Kalpli Sultanı",
+  "The Rihla, tr. Gibb and Beckingham, vol. IV, pp. 875-877": "Rihle, İng. çev. Gibb ve Beckingham, c. IV, s. 875-877",
+  "China": "Çin",
+  "The Rihla, tr. Gibb and Beckingham, vol. IV, pp. 889-892": "Rihle, İng. çev. Gibb ve Beckingham, c. IV, s. 889-892",
+  "Home Again": "Yeniden Evde",
+  "The Rihla, tr. Gibb and Beckingham, vol. IV, pp. 920-925": "Rihle, İng. çev. Gibb ve Beckingham, c. IV, s. 920-925",
+  "Press and hold": "",
+  "May Allah have mercy on her": "Allah ona rahmet etsin",
+  "India": "Hindistan",
+  "Morocco": "Fas",
+  "Mali, and the Book": "Mali ve Kitap",
+  "The Rihla, tr. Gibb and Beckingham, vol. IV, pp. 964-966; Ibn Juzayy's introduction, vol. I": "Rihle, İng. çev. Gibb ve Beckingham, c. IV, s. 964-966; İbn Cüzey’in girişi, c. I",
+  "Tangier": "Tanca",
+  "The islands": "Adalar",
+  "Mali": "Mali",
+  "← Asmau": "",
+  "Ibn Battuta": "İbn Battûta",
+  "The Travels of Ibn Battuta": "İbn Battûta’nın Yolculukları",
+  "Eleven chapters about the young man from Tangier who travelled the world. Play a little every day.": "Dünyayı dolaşan Tancalı genç hakkında on bir bölüm. Her gün biraz oyna.",
+  "Start the story": "",
+  "Start from the beginning": "",
+  "For parents": "",
+  "Back": "",
+  "Next": "",
+  "All chapters": "",
+  "✕ Close": "",
+  "The End": "",
+  "Curiosity": "Merak",
+  "Kindness to strangers": "Yabancılara iyilik",
+  "Learning": "Öğrenmek",
+  "Read it again": "",
+  "Pick a chapter": "",
+  "Music": "",
+  "Sounds": "",
+  "Voice": "",
+  "He left Tangier alone at twenty-one to go on Hajj, and kept travelling for nearly thirty years: Makkah, India, the islands, China and Mali.": "Yirmi bir yaşında hacca gitmek için Tanca’dan tek başına ayrıldı ve yaklaşık otuz yıl yolculuk etti: Mekke, Hindistan, adalar, Çin ve Mali.",
+  "Ibn Battuta rides a camel at the front of a caravan across the desert towards Makkah.": "İbn Battûta, çölde Mekke’ye giden bir kervanın önünde deveye biniyor.",
+  "📖 About this story": "📖 Bu hikâye hakkında",
+  "📚 Sources": "📚 Kaynaklar",
+  "This is history, not the Qur’an. Every fact in the game is from the Rihla, in the English translation of H. A. R. Gibb and C. F. Beckingham (Hakluyt Society); each chapter gives its pages. The book reports some wonders (an old man foretelling his travels) as he was told them: the game says “it is told”.": "Bu Kur’an değil, tarihtir. Oyundaki her bilgi, H. A. R. Gibb ve C. F. Beckingham’ın İngilizce çevirisiyle (Hakluyt Society) Rihle’den gelir; her bölüm kendi sayfalarını verir. Kitap bazı harikaları (yolculuklarını önceden bildiren yaşlı bir adam) ona anlatıldığı gibi aktarır: oyun bunlar için “anlatıldığına göre” der.",
+  "🤲 Told gently, or left out": "🤲 Yumuşak anlatılanlar ya da atlananlar",
+  "Not told to children, but in the page notes for you: his marriages and the slaves he owned, the wars and cruel rulers he saw, what he disliked in Mali, and the children of Mali kept in shackles until they learned the Qur’an. Historians also doubt that he reached every place he describes; the notes say where.": "Çocuklara anlatılmayan ama sizin için sayfa notlarında olanlar: evlilikleri ve sahip olduğu köleler, gördüğü savaşlar ve zalim hükümdarlar, Mali’de beğenmediği şeyler ve Kur’an’ı öğrenene kadar zincirde tutulan Malili çocuklar. Tarihçiler ayrıca anlattığı her yere gerçekten gittiğinden şüphe eder; notlar nerede olduğunu söyler.",
+  "👥 Who is shown": "👥 Kimler gösteriliyor",
+  "Shown in this story: Ibn Battuta, a Moroccan, and the people of every land as themselves, every woman’s hair covered. The Prophet ﷺ is mentioned and never shown.": "Bu hikâyede gösterilenler: Faslı İbn Battûta ve her ülkenin insanları kendi halleriyle; her kadının saçı örtülü. Peygamberimizin ﷺ adı geçer ama kendisi hiç gösterilmez.",
+  "Ibn Battuta (1304 to about 1368) left his home in Tangier, Morocco, at twenty-one to make the Hajj, and kept travelling for nearly thirty years: Egypt, Syria, Makkah, Anatolia, India, the Maldives, Sumatra, China and, last, Mali. Back in Fez, the Sultan had his travels written down by Ibn Juzayy: the book called the <em>Rihla</em>.": "İbn Battûta (1304 – yaklaşık 1368), yirmi bir yaşında hac yapmak için Fas’taki Tanca’da bulunan evinden ayrıldı ve yaklaşık otuz yıl yolculuk etti: Mısır, Suriye, Mekke, Anadolu, Hindistan, Maldivler, Sumatra, Çin ve en son Mali. Fes’e döndüğünde sultan, yolculuklarını İbn Cüzey’e yazdırdı: <em>Rihle</em> denen kitap."
+ },
+ "notes": {
+  "1.1": {
+   "en": "Ibn Battuta was born in Tangier on 25 February 1304 (Ibn Juzayy's note, vol. I, p. 8) and left on 2 Rajab 725, in June 1325. He was twenty-two in lunar years, twenty-one in ours.",
+   "t": "İbn Battûta 25 Şubat 1304’te Tanca’da doğdu (İbn Cüzey’in notu, c. I, s. 8) ve 2 Recep 725’te, Haziran 1325’te yola çıktı. Kamerî yılla yirmi iki, bizim yılımızla yirmi bir yaşındaydı."
+  },
+  "1.2": {
+   "en": "Ask: where would you most like to travel one day? Why?",
+   "t": "Sorun: Bir gün en çok nereye yolculuk etmek isterdin? Neden?"
+  },
+  "1.3": {
+   "en": "His own words: \"I set out alone, having neither fellow-traveller in whose companionship I might find cheer, nor caravan whose party I might join ... My parents being yet in the bonds of life, it weighed sorely upon me to part from them, and both they and I were afflicted with sorrow at this separation\" (vol. I, pp. 7-8).",
+   "t": "Kendi sözleri: “Yanında neşe bulabileceğim bir yol arkadaşım da, katılabileceğim bir kervan da olmadan tek başıma yola çıktım … Anam babam hayatta olduğu için onlardan ayrılmak bana çok ağır geldi; bu ayrılıktan hem onlar hem ben üzüntü içindeydik” (c. I, s. 7-8)."
+  },
+  "1.4": {
+   "en": "Pack a real bag together for a pretend journey. What do you really need, and what can stay at home?",
+   "t": "Hayalî bir yolculuk için birlikte gerçek bir çanta hazırlayın. Gerçekten neye ihtiyacınız var, ne evde kalabilir?"
+  },
+  "1.5": {
+   "en": "\"I braced my resolution to quit all my dear ones, female and male, and forsook my home as birds forsake their nests\" (vol. I, p. 8).",
+   "t": "“Kadın erkek bütün sevdiklerimi bırakmaya karar verdim ve kuşların yuvalarını bıraktığı gibi evimi bıraktım” (c. I, s. 8)."
+  },
+  "1.6": {
+   "en": "Talk about the Hajj: who in your family has been? What did they see?",
+   "t": "Hac hakkında konuşun: Ailenizde kimler gitti? Neler gördüler?"
+  },
+  "2.1": {
+   "en": "He describes visiting the lighthouse of Alexandria, already partly in ruins (vol. I, p. 18).",
+   "t": "Daha o zaman kısmen yıkık olan İskenderiye fenerini ziyaretini anlatır (c. I, s. 18)."
+  },
+  "2.2": {
+   "en": "Ask: who is the oldest person you know? What could you learn from them?",
+   "t": "Sorun: Tanıdığın en yaşlı insan kim? Ondan ne öğrenebilirsin?"
+  },
+  "2.3": {
+   "en": "The imam Burhan al-Din the Lame: \"You must certainly, if God will, visit my brother Farid al-Din in India, and my brother Rukn al-Din Zakariya in Sind, and my brother Burhan al-Din in China, and when you reach them convey to them a greeting from me\" (vol. I, pp. 22-23). The book tells this as a karama, a wonder given to a holy man; the game says only what he said.",
+   "t": "Topal İmam Burhâneddin: “İnşallah Hindistan’da kardeşim Ferîdüddin’i, Sind’de kardeşim Rükneddin Zekeriyya’yı ve Çin’de kardeşim Burhâneddin’i mutlaka ziyaret edeceksin; onlara ulaşınca benden selam ilet” (c. I, s. 22-23). Kitap bunu bir keramet, yani salih bir kula verilen bir harika olarak anlatır; oyun yalnızca onun ne dediğini söyler."
+  },
+  "2.4": {
+   "en": "\"I was amazed at his prediction, and the idea of going to these countries having been cast into my mind, my wanderings never ceased until I had met these three that he named and conveyed his greeting to them\" (vol. I, p. 23).",
+   "t": "“Onun bu önceden bildirmesine şaştım; bu ülkelere gitme fikri aklıma düşünce, adını verdiği bu üç kişiyle karşılaşıp selamını iletene kadar dolaşmalarım hiç bitmedi” (c. I, s. 23)."
+  },
+  "2.5": {
+   "en": "Find Morocco, Egypt, India, the Maldives, Indonesia, China and Mali on a map or globe together.",
+   "t": "Fas’ı, Mısır’ı, Hindistan’ı, Maldivleri, Endonezya’yı, Çin’i ve Mali’yi birlikte haritada ya da küre üzerinde bulun."
+  },
+  "2.6": {
+   "en": "Ask: have you ever passed on a greeting, 'salam from Grandma'? Why does it make people happy?",
+   "t": "Sorun: Hiç bir selam ilettin mi, “Ninenden selam var” gibi? Bu insanları neden mutlu eder?"
+  },
+  "3.1": {
+   "en": "Damascus had endowments (waqf) of many kinds: for freeing prisoners, for travellers (food, clothing and the cost of the journey home), and for paving the streets (vol. I, p. 147).",
+   "t": "Şam’da her türlü vakıf vardı: esirleri kurtarmak için, yolcular için (yiyecek, giyecek ve eve dönüş yolunun masrafı) ve sokakları döşemek için (c. I, s. 147)."
+  },
+  "3.2": {
+   "en": "In the book the boy is a slave-boy. Slavery was part of every society Ibn Battuta saw, and he owned slaves himself (see the notes in chapters 7 and 11).",
+   "t": "Kitapta çocuk bir köle çocuktur. Kölelik İbn Battûta’nın gördüğü her toplumun bir parçasıydı ve kendisi de köle sahibiydi (7. ve 11. bölümlerdeki notlara bakın)."
+  },
+  "3.3": {
+   "en": "Ask: what do you do when a friend breaks something by accident?",
+   "t": "Sorun: Bir arkadaşın kazara bir şeyi kırınca ne yaparsın?"
+  },
+  "3.4": {
+   "en": "Is there a 'dish fund' you could make at home: a jar for fixing things or helping someone?",
+   "t": "Evde bir “tabak vakfı” yapabilir misiniz: bir şeyleri onarmak ya da birine yardım etmek için bir kavanoz?"
+  },
+  "3.6": {
+   "en": "\"This endowment is one of the best of good works, for the boy's master would undoubtedly have beaten him for breaking the dish ... The benefaction is thus indeed a mender of hearts\" (vol. I, p. 147).",
+   "t": "“Bu vakıf iyiliklerin en güzellerindendir; çünkü çocuğun efendisi tabağı kırdığı için onu şüphesiz döverdi … Bu iyilik gerçekten de kalpleri onaran bir iyiliktir” (c. I, s. 147)."
+  },
+  "3.7": {
+   "en": "Ask your child for one thing they did this week that mended someone's heart.",
+   "t": "Çocuğunuzdan, bu hafta birinin kalbini onaran yaptığı bir şeyi anlatmasını isteyin."
+  },
+  "4.1": {
+   "en": "Ask: how long do you think the journey took on a camel? (Many weeks.) How long would it take by plane?",
+   "t": "Sorun: Sence deveyle yolculuk ne kadar sürdü? (Haftalarca.) Uçakla ne kadar sürerdi?"
+  },
+  "4.2": {
+   "en": "His first Hajj was in 1326; he describes Makkah, the mosque and the Ka'bah at length (vol. I, pp. 188-191 and after). He made the Hajj again on his way home in 1348 (vol. IV, p. 920).",
+   "t": "İlk haccı 1326’daydı; Mekke’yi, mescidi ve Kâbe’yi uzun uzun anlatır (c. I, s. 188-191 ve sonrası). 1348’de eve dönüş yolunda yeniden hac yaptı (c. IV, s. 920)."
+  },
+  "4.3": {
+   "en": "Read 22:27 together. Ask: why do people come from every land to the same place?",
+   "t": "22:27’yi birlikte okuyun. Sorun: İnsanlar neden her ülkeden aynı yere gelir?"
+  },
+  "4.4": {
+   "en": "Talk through the days of Hajj with pictures or a video together.",
+   "t": "Haccın günlerini birlikte resimlerle ya da bir videoyla gözden geçirin."
+  },
+  "4.5": {
+   "en": "Ask: what would you want to see next, after Makkah?",
+   "t": "Sorun: Mekke’den sonra ne görmek isterdin?"
+  },
+  "4.6": {
+   "en": "Ask: why do you think all pilgrims dress the same?",
+   "t": "Sorun: Sence bütün hacılar neden aynı giyinir?"
+  },
+  "5.1": {
+   "en": "The Akhis were brotherhoods of young working men in the towns of Anatolia, linked to the ideal of futuwwa (chivalry). \"Nowhere in the world are there to be found any to compare with them in solicitude for strangers\" (vol. II, pp. 417-418).",
+   "t": "Ahîler, Anadolu şehirlerinde fütüvvet (yiğitlik) ülküsüne bağlı genç esnaf kardeşlikleriydi. “Yabancılara gösterdikleri ilgide dünyanın hiçbir yerinde onlarla kıyaslanacak kimse bulunmaz” (c. II, s. 417-418)."
+  },
+  "5.2": {
+   "en": "Ask: how could our family welcome a guest or a newcomer this week?",
+   "t": "Sorun: Ailemiz bu hafta bir misafiri ya da yeni geleni nasıl ağırlayabilir?"
+  },
+  "5.3": {
+   "en": "Ask: when did someone make you feel welcome in a new place?",
+   "t": "Sorun: Yeni bir yerde biri seni ne zaman hoş karşıladı?"
+  },
+  "5.4": {
+   "en": "Cook or share a simple meal with a neighbour or a guest together.",
+   "t": "Bir komşuyla ya da misafirle birlikte basit bir yemek pişirin veya paylaşın."
+  },
+  "5.5": {
+   "en": "Ask: what can children do to help travellers or new people?",
+   "t": "Sorun: Çocuklar yolculara ya da yeni gelenlere yardım etmek için ne yapabilir?"
+  },
+  "6.1": {
+   "en": "Look at pictures of old Delhi's buildings together. Ask: what would a traveller from Morocco find new there?",
+   "t": "Eski Delhi’nin binalarının resimlerine birlikte bakın. Sorun: Faslı bir yolcu orada neyi yeni bulurdu?"
+  },
+  "6.2": {
+   "en": "The Sultan was Muhammad ibn Tughluq. \"Do not think that the office of qadi of Dihli is one of the minor functions; it is the highest of functions in our estimation\" (vol. III, pp. 746-747). Ibn Battuta replied that he followed the school of Malik while the people there were Hanafis, and did not know the language; the Sultan gave him two deputies.",
+   "t": "Sultan, Muhammed b. Tuğluk’tu. “Delhi kadılığını küçük görevlerden sanma; bizim gözümüzde görevlerin en yücesidir” (c. III, s. 746-747). İbn Battûta, kendisinin Mâlikî mezhebine uyduğunu, oradaki insanların ise Hanefî olduğunu ve dili bilmediğini söyledi; sultan ona iki naip verdi."
+  },
+  "6.3": {
+   "en": "The book also tells of this Sultan's great cruelty, and of Ibn Battuta falling out of favour and fearing for his life. In India he was also once seized by raiders, stripped and nearly killed (vol. IV, pp. 776-777). The game leaves these out.",
+   "t": "Kitap bu sultanın büyük zulmünü ve İbn Battûta’nın gözden düşüp canından korktuğunu da anlatır. Hindistan’da bir keresinde akıncılar onu yakalamış, soymuş ve az kalsın öldürmüşlerdi (c. IV, s. 776-777). Oyun bunları anlatmaz."
+  },
+  "6.4": {
+   "en": "Ask: when have you had to decide something fairly, like sharing sweets? How did you do it?",
+   "t": "Sorun: Ne zaman bir şeyi adil biçimde karar vermek zorunda kaldın, şeker paylaşmak gibi? Bunu nasıl yaptın?"
+  },
+  "7.1": {
+   "en": "\"These islands are one of the wonders of the world and number about two thousand in all\" (vol. IV, p. 821). The translator notes that some are mere sandbanks, and rather more than 200 are inhabited.",
+   "t": "“Bu adalar dünyanın harikalarındandır ve hepsi yaklaşık iki bin tanedir” (c. IV, s. 821). Çevirmen, bazılarının yalnızca kum adası olduğunu ve 200’den biraz fazlasında insan yaşadığını not eder."
+  },
+  "7.2": {
+   "en": "\"The inhabitants of the Maldives are all of them Muslims, pious and upright\" (vol. IV, p. 821). He stayed for a long time and served as a judge there.",
+   "t": "“Maldivlerin halkının hepsi Müslümandır; dindar ve doğru insanlardır” (c. IV, s. 821). Uzun süre kaldı ve orada kadılık yaptı."
+  },
+  "7.3": {
+   "en": "He married several times on his travels, in the Maldives too (\"I married several women there\", vol. IV, p. 828), and left wives and children behind in more than one country. The game leaves his marriages out.",
+   "t": "Yolculuklarında birkaç kez evlendi, Maldivlerde de (“Orada birkaç kadınla evlendim”, c. IV, s. 828), ve birden fazla ülkede eşler ve çocuklar bıraktı. Oyun evliliklerini anlatmaz."
+  },
+  "7.4": {
+   "en": "If you can, open a coconut together and taste the milk.",
+   "t": "Yapabilirseniz birlikte bir hindistancevizi açın ve sütünü tadın."
+  },
+  "7.5": {
+   "en": "Ask: what do you think it is like to live on a tiny island?",
+   "t": "Sorun: Sence minicik bir adada yaşamak nasıldır?"
+  },
+  "7.6": {
+   "en": "Ask: what grows near our home? What do we make from it?",
+   "t": "Sorun: Evimizin yakınında neler yetişir? Onlardan ne yaparız?"
+  },
+  "8.1": {
+   "en": "Indonesia has more Muslims than any other country. Ask: how do you think Islam came there? (With traders and travellers, like Ibn Battuta.)",
+   "t": "Endonezya, Müslümanların en çok yaşadığı ülkedir. Sorun: Sence İslam oraya nasıl geldi? (İbn Battûta gibi tüccarlar ve yolcularla.)"
+  },
+  "8.2": {
+   "en": "\"The people came out to us in little boats bringing coconuts, bananas, mangoes and fish\" (vol. IV, p. 875). The city was Sumutra (Samudra-Pasai, in today's Aceh), which later gave its name to the whole island.",
+   "t": "“İnsanlar küçük kayıklarla, hindistancevizi, muz, mango ve balık getirerek yanımıza geldiler” (c. IV, s. 875). Şehir, Sumutra’ydı (bugünkü Açe’de Samudra-Pasai); sonradan bütün adaya adını verdi."
+  },
+  "8.3": {
+   "en": "Ask: what gift would you bring to welcome someone?",
+   "t": "Sorun: Birini karşılamak için ne hediye götürürdün?"
+  },
+  "8.4": {
+   "en": "Sultan al-Malik al-Zahir: \"one of the noblest and most generous of kings, a Shafi'i ... a lover of jurists, who come to his audiences for the recitation of the Qur'an and for discussions\" (vol. IV, p. 876). The book also says he often fought the unbelievers around him; the game leaves that out.",
+   "t": "Sultan el-Melikü’z-Zâhir: “Hükümdarların en asil ve en cömertlerinden biri, Şâfiî … fakihleri seven biri; onlar Kur’an okumak ve sohbet etmek için meclisine gelirler” (c. IV, s. 876). Kitap onun çevresindeki kâfirlerle sık sık savaştığını da söyler; oyun bunu anlatmaz."
+  },
+  "8.5": {
+   "en": "\"He is unassuming and walks to the Friday prayer on foot\" (vol. IV, p. 876). Greeting there was by shaking hands.",
+   "t": "“Alçakgönüllüdür ve Cuma namazına yürüyerek gider” (c. IV, s. 876). Orada selamlaşma tokalaşarak yapılırdı."
+  },
+  "8.6": {
+   "en": "Ask: what does it mean to be humble? Who do you know who is humble?",
+   "t": "Sorun: Alçakgönüllü olmak ne demektir? Tanıdığın alçakgönüllü biri var mı?"
+  },
+  "9.1": {
+   "en": "Ask: how far is China from Morocco? Trace the journey on a map.",
+   "t": "Sorun: Çin, Fas’tan ne kadar uzak? Yolculuğu haritada çizin."
+  },
+  "9.2": {
+   "en": "Paper money: \"pieces of paper the size of the palm of the hand\" (vol. IV, p. 889).",
+   "t": "Kâğıt para: “avuç içi büyüklüğünde kâğıt parçaları” (c. IV, s. 889)."
+  },
+  "9.3": {
+   "en": "Look at real money together, coins and notes. Which is made of paper?",
+   "t": "Birlikte gerçek paralara, madenî paralara ve banknotlara bakın. Hangisi kâğıttan?"
+  },
+  "9.4": {
+   "en": "Look at a china dish or cup at home together. Where was it made?",
+   "t": "Evde birlikte bir porselen tabağa ya da fincana bakın. Nerede yapılmış?"
+  },
+  "9.5": {
+   "en": "\"China is the safest and best country for the traveller\" (vol. IV, p. 892). Historians doubt that he went as far north as he says: the translator quotes Henry Yule, \"one's doubts arise whether Ibn Batuta could have travelled beyond Hang-chau\" (vol. IV, p. 905, n. 58).",
+   "t": "“Çin, yolcu için en güvenli ve en güzel ülkedir” (c. IV, s. 892). Tarihçiler, söylediği kadar kuzeye gittiğinden şüphe eder: Çevirmen, Henry Yule’u aktarır: “İbn Battûta’nın Hang-çau’nun ötesine gidip gitmediğinden insan şüpheye düşüyor” (c. IV, s. 905, n. 58)."
+  },
+  "9.6": {
+   "en": "Ask: what makes a place safe for travellers?",
+   "t": "Sorun: Bir yeri yolcular için güvenli yapan nedir?"
+  },
+  "10.1": {
+   "en": "Ask: how would you feel coming home after a very long time?",
+   "t": "Sorun: Çok uzun bir süre sonra eve dönsen nasıl hissederdin?"
+  },
+  "10.2": {
+   "en": "\"I reached the city of Taza, where I learnt that my mother had died of the plague, God Most High have mercy upon her\" (vol. IV, p. 924). It was the Black Death of 1348-49. On the way, in Damascus, he had learnt that his father had died fifteen years before (vol. IV, p. 915).",
+   "t": "“Tâze şehrine vardım; orada annemin vebadan öldüğünü öğrendim, yüce Allah ona rahmet etsin” (c. IV, s. 924). Bu, 1348-49’daki Kara Ölüm’dü. Yolda, Şam’da, babasının on beş yıl önce vefat ettiğini öğrenmişti (c. IV, s. 915)."
+  },
+  "10.3": {
+   "en": "Make a dua together for family members who have passed away: Allahumma ighfir lahum warhamhum.",
+   "t": "Vefat etmiş aile büyükleri için birlikte dua edin: Allâhümmağfir lehüm verhamhüm."
+  },
+  "10.4": {
+   "en": "He reached Fez at the end of Sha'ban 750, November 1349 (vol. IV, pp. 924-925).",
+   "t": "Fes’e Şaban 750’nin sonunda, Kasım 1349’da vardı (c. IV, s. 924-925)."
+  },
+  "10.5": {
+   "en": "Ask your child to tell the way home in their own words.",
+   "t": "Çocuğunuzdan eve dönüş yolunu kendi sözleriyle anlatmasını isteyin."
+  },
+  "11.1": {
+   "en": "Ask: what do you need to cross a desert? (Water, camels, a guide, patience.)",
+   "t": "Sorun: Bir çölü geçmek için neye ihtiyaç vardır? (Su, develer, bir kılavuz, sabır.)"
+  },
+  "11.2": {
+   "en": "Look at the Sahara on a map. Ask: how big is it compared to our country?",
+   "t": "Sahra’ya haritada bakın. Sorun: Bizim ülkemize göre ne kadar büyük?"
+  },
+  "11.3": {
+   "en": "\"Among their good practices are their avoidance of injustice; there is no people more averse to it ... the universal security in their country, for neither the traveller nor the resident there has to fear thieves or bandits\" (vol. IV, p. 964). The Sultan was Mansa Sulayman, brother of Mansa Musa.",
+   "t": "“Güzel adetlerinden biri haksızlıktan kaçınmalarıdır; ondan onlar kadar nefret eden bir halk yoktur … ülkelerindeki genel güvenlik de öyle; orada ne yolcu ne de yerli hırsızdan ya da yol kesiciden korkar” (c. IV, s. 964). Sultan, Mansa Musa’nın kardeşi Mansa Süleyman’dı."
+  },
+  "11.4": {
+   "en": "\"They dress in clean white clothes on Fridays; if one of them has only a threadbare shirt he washes it and cleans it and wears it for prayer on Friday\" (vol. IV, p. 965).",
+   "t": "“Cuma günleri temiz beyaz elbiseler giyerler; birinin yalnızca eski püskü bir gömleği varsa onu yıkar, temizler ve Cuma namazına onu giyer” (c. IV, s. 965)."
+  },
+  "11.5": {
+   "en": "\"They pay great attention to memorizing the Holy Qur'an. If their children appear to be backward in learning it they put shackles on them and do not remove them till they learn it.\" He saw the qadi's children shackled on the day of Eid, and a well-dressed young man with a heavy shackle on his foot (vol. IV, p. 965). The game says only that the children worked hard.\n\nHe also listed \"bad practices\" in Mali: servant women and slave-girls who went unclothed, people putting dust on their heads before the Sultan, and eating carrion, dogs and donkeys (vol. IV, pp. 965-966). These are a Moroccan judge's views of a culture not his own.",
+   "t": "“Kur’an-ı Kerim’i ezberlemeye çok önem verirler. Çocuklarının onu öğrenmekte geri kaldığını görürlerse ayaklarına zincir vururlar ve öğrenene kadar çıkarmazlar.” Bayram günü kadının çocuklarını zincirli, iyi giyimli bir genci de ayağında ağır bir zincirle gördü (c. IV, s. 965). Oyun yalnızca çocukların çok çalıştığını söyler.\n\nMali’de “kötü adetler” de saydı: çıplak dolaşan hizmetçi kadınlar ve cariyeler, sultanın huzurunda başlarına toprak koyan insanlar ve leş, köpek ve eşek eti yemek (c. IV, s. 965-966). Bunlar, kendisine ait olmayan bir kültüre bakan Faslı bir kadının görüşleridir."
+  },
+  "11.6": {
+   "en": "Ibn Juzayy wrote the book in Fez in 1355-56 from what Ibn Battuta told him, at the order of the Sultan Abu 'Inan. Scholars think some passages were borrowed from earlier writers, and that he may not have reached every place he describes (Ross Dunn, The Adventures of Ibn Battuta, 1986, discusses this). He died in Morocco around 1368.",
+   "t": "İbn Cüzey kitabı 1355-56’da Fes’te, Sultan Ebû İnân’ın emriyle, İbn Battûta’nın ona anlattıklarından yazdı. Âlimler bazı bölümlerin önceki yazarlardan alındığını ve anlattığı her yere gitmemiş olabileceğini düşünür (Ross Dunn, The Adventures of Ibn Battuta, 1986, bunu tartışır). 1368 civarında Fas’ta vefat etti."
+  },
+  "11.7": {
+   "en": "Ask your child to retell the whole journey. Which place would they most like to visit?",
+   "t": "Çocuğunuzdan bütün yolculuğu yeniden anlatmasını isteyin. En çok hangi yeri ziyaret etmek isterdi?"
+  }
+ }
+}

@@ -1,11 +1,18 @@
 {
-  "version": "2026.11.91",
+  "version": "2026.11.92",
   "date": "2026-11-21",
-  "buildId": "dd0655734104",
+  "buildId": "97cd0790d1cd",
   "notes": [
-    "Français: the verses quoted in the notes for parents now use Muhammad Hamidullah's French translation of the Qur'an, word for word"
+    "Türkçe, complete as a draft: every story game, the notes for parents, For parents, the stories' About boxes, the privacy note, the voice recorder and the little ones' games are in Turkish, for a native speaker to check (seen only with ?lang=tr). The verses quoted in the Turkish notes follow the Diyanet translation of the Qur'an"
   ],
   "history": [
+    {
+      "version": "2026.11.92",
+      "date": "2026-11-21",
+      "notes": [
+        "Türkçe, complete as a draft: every story game, the notes for parents, For parents, the stories' About boxes, the privacy note, the voice recorder and the little ones' games are in Turkish, for a native speaker to check (seen only with ?lang=tr). The verses quoted in the Turkish notes follow the Diyanet translation of the Qur'an"
+      ]
+    },
     {
       "version": "2026.11.91",
       "date": "2026-11-21",

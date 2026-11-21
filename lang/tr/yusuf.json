@@ -1,0 +1,1302 @@
+{
+ "status": "draft",
+ "_note": "Türkçe. To be checked by a native speaker; seen only with ?lang=tr until then.",
+ "lines": {
+  "c1-a": {
+   "en": "One night, young Yusuf had a wonderful dream. He saw eleven stars, the sun and the moon, all bowing down to him.",
+   "t": "Bir gece küçük Yusuf harika bir rüya gördü. On bir yıldızın, güneşin ve ayın önünde eğildiğini gördü."
+  },
+  "c1-do": {
+   "en": "Tap every star, the sun and the moon, and watch them bow.",
+   "t": "Her yıldıza, güneşe ve aya dokun, eğilişlerini izle."
+  },
+  "c1-b": {
+   "en": "Yusuf told his father, Yaqub. His father said: my son, do not tell your brothers about this dream. Allah will choose you, and teach you the meaning of dreams.",
+   "t": "Yusuf rüyasını babası Yakup’a anlattı. Babası şöyle dedi: Oğulcuğum! Rüyanı kardeşlerine anlatma. Allah seni seçecek ve sana rüyaların anlamını öğretecek."
+  },
+  "c1-q": {
+   "en": "What did his father Yaqub tell Yusuf to do about the dream?",
+   "t": "Babası Yakup, Yusuf’a rüya hakkında ne yapmasını söyledi?"
+  },
+  "c1-q-opt1": {
+   "en": "Tell all his brothers",
+   "t": "Bütün kardeşlerine anlatmasını"
+  },
+  "c1-q-opt2": {
+   "en": "Keep it from his brothers",
+   "t": "Kardeşlerinden saklamasını"
+  },
+  "c1-qwrong": {
+   "en": "Not quite. His father said: do not tell your brothers.",
+   "t": "Tam değil. Babası şöyle dedi: Rüyanı kardeşlerine anlatma."
+  },
+  "c2-0": {
+   "en": "Yusuf had eleven brothers. Ten were older than him, and one was his little brother. Their father loved Yusuf and his little brother very dearly.",
+   "t": "Yusuf’un on bir kardeşi vardı. Onu ondan büyüktü, biri de küçük kardeşiydi. Babaları Yusuf’u ve küçük kardeşini çok severdi."
+  },
+  "c2-a0": {
+   "en": "Yusuf's brothers were jealous. They said: our father loves Yusuf and his little brother more than us! So they made a bad plan.",
+   "t": "Yusuf’un kardeşleri kıskandılar. Şöyle dediler: Babamız Yusuf’u ve küçük kardeşini bizden daha çok seviyor! Ve kötü bir plan yaptılar."
+  },
+  "c2-a": {
+   "en": "Some of them wanted to get rid of Yusuf. But one said: do not hurt him. Leave him in a deep well, where travellers may find him.",
+   "t": "Bazıları Yusuf’tan kurtulmak istedi. Ama biri şöyle dedi: Ona zarar vermeyin. Onu, yolcuların bulabileceği derin bir kuyuya bırakın."
+  },
+  "c2-p1": {
+   "en": "Then the brothers went to their father. They said: Father, why do you not trust us with Yusuf? We only want what is good for him. Send him with us tomorrow, so he can enjoy himself and play. We will take good care of him.",
+   "t": "Sonra kardeşler babalarının yanına gittiler. Şöyle dediler: Ey babamız! Yusuf’u neden bize emanet etmiyorsun? Biz yalnızca onun iyiliğini istiyoruz. Yarın onu bizimle gönder de gezsin oynasın. Biz onu iyi koruruz."
+  },
+  "c2-p2": {
+   "en": "Their father Yaqub said: it makes me sad to think of you taking him away. And I am afraid a wolf may eat him, while you are not watching.",
+   "t": "Babaları Yakup şöyle dedi: Onu götürmeniz beni üzer. Siz ondan habersizken onu bir kurdun yemesinden korkarım."
+  },
+  "c2-pq": {
+   "en": "What was their father afraid of?",
+   "t": "Babaları neden korkuyordu?"
+  },
+  "c2-pq-opt1": {
+   "en": "A storm",
+   "t": "Bir fırtınadan"
+  },
+  "c2-pq-opt2": {
+   "en": "A wolf",
+   "t": "Bir kurttan"
+  },
+  "c2-pqwrong": {
+   "en": "Not a storm. Yaqub said: I am afraid a wolf may eat him.",
+   "t": "Fırtınadan değil. Yakup şöyle dedi: Onu bir kurdun yemesinden korkarım."
+  },
+  "c2-p3": {
+   "en": "The brothers said: a wolf? When there are so many of us? Then we would be good for nothing! So the next day, Yusuf went out with them.",
+   "t": "Kardeşler şöyle dedi: Kurt mu? Biz bu kadar kalabalıkken mi? O zaman hiçbir işe yaramayız! Böylece ertesi gün Yusuf onlarla birlikte çıktı."
+  },
+  "c2-b": {
+   "en": "They took Yusuf far away and put him down into a deep, dark well.",
+   "t": "Yusuf’u çok uzaklara götürdüler ve derin, karanlık bir kuyuya indirdiler."
+  },
+  "c2-b1": {
+   "en": "In the dark, Yusuf prayed: O Lord of Ibrahim, and Ishaq, and Ya'qub, have mercy on me. I am small, and weak, and all alone.",
+   "t": "Karanlıkta Yusuf şöyle dua etti: Ey İbrahim’in, İshak’ın ve Yakup’un Rabbi, bana merhamet et. Ben küçüğüm, güçsüzüm ve yapayalnızım."
+  },
+  "c2-w": {
+   "en": "But down in the dark, Yusuf was not alone. Allah comforted his heart: one day, you will tell your brothers about all this, and they will not even know it is you.",
+   "t": "Ama aşağıda, karanlıkta Yusuf yalnız değildi. Allah onun kalbini teselli etti: Bir gün kardeşlerine bütün bunları anlatacaksın ve onlar senin kim olduğunu bile bilmeyecekler."
+  },
+  "c2-c": {
+   "en": "That night the brothers came home crying. They said: Father, a wolf ate Yusuf! And they showed him Yusuf's shirt, stained to make their story look true.",
+   "t": "O gece kardeşler ağlayarak eve geldiler. Şöyle dediler: Ey babamız, Yusuf’u kurt yedi! Ve hikâyelerini doğru gibi göstermek için lekelenmiş olan Yusuf’un gömleğini gösterdiler."
+  },
+  "c2-s": {
+   "en": "Look closely at the shirt, just as Yaqub did. A wolf has sharp teeth. Is the shirt torn?",
+   "t": "Tıpkı Yakup gibi gömleğe dikkatle bak. Kurdun keskin dişleri vardır. Gömlek yırtık mı?"
+  },
+  "c2-s-opt1": {
+   "en": "Yes, it is torn",
+   "t": "Evet, yırtık"
+  },
+  "c2-s-opt2": {
+   "en": "No, not one tear",
+   "t": "Hayır, tek bir yırtık bile yok"
+  },
+  "c2-swrong": {
+   "en": "Look again. The shirt is stained, but there is not one tear in it.",
+   "t": "Yeniden bak. Gömlek lekeli, ama üzerinde tek bir yırtık bile yok."
+  },
+  "c2-do": {
+   "en": "A wolf would have torn the shirt to pieces. So what do you think? Was the brothers' story true?",
+   "t": "Kurt gömleği paramparça ederdi. Peki sen ne düşünüyorsun? Kardeşlerin hikâyesi doğru muydu?"
+  },
+  "c2-do-opt1": {
+   "en": "Yes, a wolf did it",
+   "t": "Evet, kurt yaptı"
+  },
+  "c2-do-opt2": {
+   "en": "No, it was not true",
+   "t": "Hayır, doğru değildi"
+  },
+  "c2-wrong": {
+   "en": "Not quite. The wolf did nothing at all! Try again.",
+   "t": "Tam değil. Kurt hiçbir şey yapmamıştı! Yeniden dene."
+  },
+  "c2-d": {
+   "en": "No, it was not true, and their father Yaqub knew it. He said: it is best to be patient. I ask Allah alone for help.",
+   "t": "Hayır, doğru değildi ve babaları Yakup bunu biliyordu. Şöyle dedi: Bana güzelce sabır gerekir. Yalnızca Allah’tan yardım dilerim."
+  },
+  "c2-o1": {
+   "en": "The brothers were jealous of Yusuf.",
+   "t": "Kardeşler Yusuf’u kıskandılar."
+  },
+  "c2-o2": {
+   "en": "They put Yusuf down into the well.",
+   "t": "Yusuf’u kuyuya indirdiler."
+  },
+  "c2-o3": {
+   "en": "They showed their father the shirt.",
+   "t": "Babalarına gömleği gösterdiler."
+  },
+  "c2-o4": {
+   "en": "Yaqub chose to be patient.",
+   "t": "Yakup sabretmeyi seçti."
+  },
+  "c3-a": {
+   "en": "Some travellers came by. They sent a man to fetch water, and he let his bucket down into the well.",
+   "t": "Bir kervan geçti. Su getirmesi için bir adam gönderdiler; adam kovasını kuyuya saldı."
+  },
+  "c3-do": {
+   "en": "Help him pull! Drag the rope up, or tap fast, to bring the bucket up.",
+   "t": "Çekmesine yardım et! Kovayı yukarı çıkarmak için ipi yukarı sürükle ya da hızlı hızlı dokun."
+  },
+  "c3-b": {
+   "en": "Good news! shouted the man. Here is a boy! The travellers hid Yusuf away to sell him. But Allah knew everything they did.",
+   "t": "Müjde! diye bağırdı adam. İşte bir oğlan! Yolcular onu satmak için Yusuf’u sakladılar. Ama Allah yaptıkları her şeyi biliyordu."
+  },
+  "c3-q": {
+   "en": "What did the man shout when he saw Yusuf?",
+   "t": "Adam Yusuf’u görünce ne diye bağırdı?"
+  },
+  "c3-q-opt1": {
+   "en": "Good news! Here is a boy!",
+   "t": "Müjde! İşte bir oğlan!"
+  },
+  "c3-q-opt2": {
+   "en": "Oh no, my bucket!",
+   "t": "Eyvah, kovam!"
+  },
+  "c3-qwrong": {
+   "en": "Listen again. He shouted: good news!",
+   "t": "Yeniden dinle. Şöyle bağırdı: Müjde!"
+  },
+  "c4-count": {
+   "en": "Yusuf was sold for a very small price: just a few silver coins. Tap the coins to count them.",
+   "t": "Yusuf çok ucuz bir fiyata satıldı: yalnızca birkaç gümüş paraya. Saymak için paralara dokun."
+  },
+  "c4-counted": {
+   "en": "Twenty small coins. They did not know how precious Yusuf was.",
+   "t": "Yirmi küçük para. Yusuf’un ne kadar değerli olduğunu bilmiyorlardı."
+  },
+  "c4-a": {
+   "en": "So Yusuf was carried far from home, all the way to the land of Egypt.",
+   "t": "Böylece Yusuf evinden çok uzaklara, ta Mısır ülkesine götürüldü."
+  },
+  "c4-do": {
+   "en": "Drag the camel along the path, or tap it, to help the caravan cross the desert.",
+   "t": "Kervanın çölü geçmesine yardım etmek için deveyi yol boyunca sürükle ya da ona dokun."
+  },
+  "c4-b": {
+   "en": "In Egypt, a man bought Yusuf and took him to his home. He told his wife: look after him well.",
+   "t": "Mısır’da bir adam Yusuf’u satın aldı ve evine götürdü. Karısına şöyle dedi: Ona güzel bak."
+  },
+  "c4-q": {
+   "en": "What did the man say to his wife about Yusuf?",
+   "t": "Adam karısına Yusuf hakkında ne dedi?"
+  },
+  "c4-q-opt1": {
+   "en": "Send him away",
+   "t": "Onu gönder"
+  },
+  "c4-q-opt2": {
+   "en": "Look after him well",
+   "t": "Ona güzel bak"
+  },
+  "c4-qwrong": {
+   "en": "No. He said: look after him well.",
+   "t": "Hayır. Şöyle dedi: Ona güzel bak."
+  },
+  "c4-c": {
+   "en": "The years passed, and Yusuf grew into a young man in Egypt. When he was grown, Allah gave him wisdom and knowledge.",
+   "t": "Yıllar geçti ve Yusuf Mısır’da büyüyüp bir genç oldu. Büyüyünce Allah ona hikmet ve bilgi verdi."
+  },
+  "c5-a": {
+   "en": "One day, the woman of the house tried to make Yusuf do something wrong. Yusuf said: Allah forbid! My master has been good to me. And he ran for the door.",
+   "t": "Bir gün evin hanımı Yusuf’a yanlış bir şey yaptırmaya çalıştı. Yusuf şöyle dedi: Allah’a sığınırım! Efendim bana iyilik etti. Ve kapıya koştu."
+  },
+  "c5-b1": {
+   "en": "She pulled at his shirt from behind, and it tore. At the door they met her husband. She said that Yusuf was to blame. But Yusuf said: she is the one who tried to make me do wrong.",
+   "t": "Kadın onun gömleğini arkadan çekti ve gömlek yırtıldı. Kapıda kadının kocasıyla karşılaştılar. Kadın suçun Yusuf’ta olduğunu söyledi. Ama Yusuf şöyle dedi: Bana yanlış bir şey yaptırmaya çalışan odur."
+  },
+  "c5-b2": {
+   "en": "A wise person in the house said: look at his shirt. If it is torn at the front, she is telling the truth. If it is torn at the back, Yusuf is.",
+   "t": "Evden bilge biri şöyle dedi: Gömleğine bakın. Önden yırtılmışsa kadın doğru söylüyordur. Arkadan yırtılmışsa Yusuf doğru söylüyordur."
+  },
+  "c5-do2": {
+   "en": "Where is Yusuf's shirt torn?",
+   "t": "Yusuf’un gömleği nereden yırtılmış?"
+  },
+  "c5-do2-opt1": {
+   "en": "At the front",
+   "t": "Önden"
+  },
+  "c5-do2-opt2": {
+   "en": "At the back",
+   "t": "Arkadan"
+  },
+  "c5-wrong2": {
+   "en": "Not that way. Remember, she pulled it from behind.",
+   "t": "O taraftan değil. Unutma, kadın onu arkadan çekmişti."
+  },
+  "c5-b3": {
+   "en": "The shirt was torn at the back! So everyone could see that Yusuf was telling the truth.",
+   "t": "Gömlek arkadan yırtılmıştı! Böylece herkes Yusuf’un doğru söylediğini görebildi."
+  },
+  "c5-w1": {
+   "en": "Soon, some women of the city were gossiping about the woman of the house. So she invited them to a great meal, and gave each of them a knife to cut their fruit. Then she said to Yusuf: come out, and let them see you.",
+   "t": "Çok geçmeden şehrin bazı kadınları evin hanımı hakkında dedikodu yapmaya başladılar. Bunun üzerine o da onları büyük bir yemeğe çağırdı ve her birine meyvesini kesmesi için bir bıçak verdi. Sonra Yusuf’a şöyle dedi: Çık da seni görsünler."
+  },
+  "c5-w2": {
+   "en": "When the women saw Yusuf, they were so amazed at how beautiful he was that they cut their own hands without even noticing! They said: Allah is perfect! This is no ordinary man. He must be a noble angel!",
+   "t": "Kadınlar Yusuf’u görünce onun güzelliğine öyle hayran kaldılar ki farkına bile varmadan ellerini kestiler! Şöyle dediler: Allah’ı tenzih ederiz! Bu sıradan bir insan değil. Bu ancak değerli bir melek olmalı!"
+  },
+  "c5-wq": {
+   "en": "Why did the women cut their hands?",
+   "t": "Kadınlar ellerini neden kestiler?"
+  },
+  "c5-wq-opt1": {
+   "en": "The fruit was too hard",
+   "t": "Meyve çok sertti"
+  },
+  "c5-wq-opt2": {
+   "en": "They were amazed by Yusuf",
+   "t": "Yusuf’a hayran kaldılar"
+  },
+  "c5-wqwrong": {
+   "en": "Not the fruit. They were so amazed by Yusuf that they did not notice what their knives were doing.",
+   "t": "Meyve yüzünden değil. Yusuf’a öyle hayran kaldılar ki bıçaklarının ne yaptığını fark etmediler."
+  },
+  "c5-b4": {
+   "en": "But people kept on talking, and the woman kept on at him. Yusuf prayed: My Lord, prison is better for me than what they ask of me. And Allah answered his prayer and kept him safe from doing wrong.",
+   "t": "Ama insanlar konuşmaya, kadın da onun üzerine gitmeye devam etti. Yusuf şöyle dua etti: Rabbim! Hapis benim için, bunların istediklerini yapmaktan daha iyidir. Ve Allah onun duasını kabul etti ve onu yanlış yapmaktan korudu."
+  },
+  "c5-c": {
+   "en": "Everyone had seen the signs that Yusuf was innocent. But in the end they put him in prison for a while anyway.",
+   "t": "Herkes Yusuf’un suçsuz olduğunun işaretlerini görmüştü. Ama sonunda yine de onu bir süreliğine hapse attılar."
+  },
+  "c5-do": {
+   "en": "Be patient, like Yusuf. Press and hold the lamp until it shines. Don't let go!",
+   "t": "Yusuf gibi sabırlı ol. Lamba parlayana kadar basılı tut. Bırakma!"
+  },
+  "c5-d": {
+   "en": "Yusuf stayed patient in prison, and he never stopped trusting Allah.",
+   "t": "Yusuf hapiste sabırlı kaldı ve Allah’a güvenmekten hiç vazgeçmedi."
+  },
+  "c5-o1": {
+   "en": "Yusuf ran for the door.",
+   "t": "Yusuf kapıya koştu."
+  },
+  "c5-o2": {
+   "en": "His shirt was torn from behind.",
+   "t": "Gömleği arkadan yırtıldı."
+  },
+  "c5-o3": {
+   "en": "A wise person said: look at the shirt.",
+   "t": "Bilge biri şöyle dedi: Gömleğe bakın."
+  },
+  "c5-o4": {
+   "en": "Yusuf was put in prison, and he stayed patient.",
+   "t": "Yusuf hapse atıldı ve sabırlı kaldı."
+  },
+  "c6-a": {
+   "en": "Two young men were in prison with Yusuf. Each of them had a dream, and they asked Yusuf what the dreams meant.",
+   "t": "Hapiste Yusuf’la birlikte iki genç vardı. Her biri bir rüya gördü ve Yusuf’a rüyalarının ne anlama geldiğini sordular."
+  },
+  "c6-b": {
+   "en": "First, Yusuf told them the most important thing: worship no one but Allah, the One.",
+   "t": "Önce Yusuf onlara en önemli şeyi söyledi: Tek olan Allah’tan başkasına kulluk etmeyin."
+  },
+  "c6-q": {
+   "en": "What was the first thing Yusuf told the two men?",
+   "t": "Yusuf’un iki adama söylediği ilk şey neydi?"
+  },
+  "c6-q-opt1": {
+   "en": "Worship Allah alone",
+   "t": "Yalnızca Allah’a kulluk edin"
+  },
+  "c6-q-opt2": {
+   "en": "Dig a tunnel",
+   "t": "Bir tünel kazın"
+  },
+  "c6-qwrong": {
+   "en": "No. First he told them: worship no one but Allah.",
+   "t": "Hayır. Önce onlara şunu söyledi: Allah’tan başkasına kulluk etmeyin."
+  },
+  "c6-do": {
+   "en": "Now match each dream to its meaning. Tap a dream, then tap what it means.",
+   "t": "Şimdi her rüyayı anlamıyla eşleştir. Bir rüyaya dokun, sonra onun anlamına dokun."
+  },
+  "c6-d1": {
+   "en": "I dreamed I was pressing grapes.",
+   "t": "Rüyamda üzüm sıktığımı gördüm."
+  },
+  "c6-d2": {
+   "en": "I dreamed birds ate the bread I carried on my head.",
+   "t": "Rüyamda başımda taşıdığım ekmeği kuşların yediğini gördüm."
+  },
+  "c6-m1": {
+   "en": "You will be saved, and you will serve your master.",
+   "t": "Kurtulacaksın ve efendine hizmet edeceksin."
+  },
+  "c6-m2": {
+   "en": "A sad end. You will be put to death.",
+   "t": "Üzücü bir son. Öldürüleceksin."
+  },
+  "c6-c": {
+   "en": "Yusuf said to the man who would go free: tell your master about me. But the man forgot. So Yusuf stayed in prison for more years.",
+   "t": "Yusuf serbest kalacak olan adama şöyle dedi: Efendinin yanında beni an. Ama adam unuttu. Böylece Yusuf daha birkaç yıl hapiste kaldı."
+  },
+  "c7-a": {
+   "en": "Then the king had a strange dream. Seven fat cows were eaten by seven thin cows. And he saw seven green ears of grain, and seven dry ones.",
+   "t": "Sonra kral tuhaf bir rüya gördü. Yedi semiz ineği yedi zayıf inek yiyordu. Bir de yedi yeşil başak ve yedi kuru başak gördü."
+  },
+  "c7-pick": {
+   "en": "Seven fat cows! Can you find them? Tap all seven of the fat cows.",
+   "t": "Yedi semiz inek! Onları bulabilir misin? Semiz ineklerin yedisine de dokun."
+  },
+  "c7-b": {
+   "en": "Nobody could explain it. Then the man from the prison remembered Yusuf at last! He hurried to ask him.",
+   "t": "Kimse bunu açıklayamadı. Sonra hapisteki adam sonunda Yusuf’u hatırladı! Ona sormak için koştu."
+  },
+  "c7-do": {
+   "en": "Tap each side of the dream to hear what Yusuf said it means.",
+   "t": "Yusuf’un rüyanın her yanı için ne dediğini duymak için her birine dokun."
+  },
+  "c7-good": {
+   "en": "The fat cows and the green grain: seven good years are coming. Plant, and save what you harvest.",
+   "t": "Semiz inekler ve yeşil başaklar: Yedi bereketli yıl geliyor. Ekin ve hasat ettiğinizi saklayın."
+  },
+  "c7-hard": {
+   "en": "The thin cows and the dry grain: then seven hard years will come, and you will eat what you saved.",
+   "t": "Zayıf inekler ve kuru başaklar: Sonra yedi zor yıl gelecek ve sakladığınızı yiyeceksiniz."
+  },
+  "c7-c": {
+   "en": "And after that, said Yusuf, will come a year with plenty of rain.",
+   "t": "Ve ondan sonra, dedi Yusuf, bol yağmurlu bir yıl gelecek."
+  },
+  "c7-sort": {
+   "en": "Help the people get ready. Is each job for the good years, or for the hard years?",
+   "t": "İnsanların hazırlanmasına yardım et. Her iş bereketli yıllar için mi, yoksa zor yıllar için mi?"
+  },
+  "c7-sort-bin1": {
+   "en": "Good years",
+   "t": "Bereketli yıllar"
+  },
+  "c7-sort-bin2": {
+   "en": "Hard years",
+   "t": "Zor yıllar"
+  },
+  "c7-sort-it1": {
+   "en": "Plant the fields",
+   "t": "Tarlaları ek"
+  },
+  "c7-sort-it2": {
+   "en": "Eat what was saved",
+   "t": "Saklananı ye"
+  },
+  "c7-sort-it3": {
+   "en": "Save the grain",
+   "t": "Tahılı sakla"
+  },
+  "c7-sort-it4": {
+   "en": "Open the storehouse",
+   "t": "Ambarı aç"
+  },
+  "c7-sort-it5": {
+   "en": "Bring in the harvest",
+   "t": "Hasadı topla"
+  },
+  "c7-swrong": {
+   "en": "Think again. Save in the good years, and use it in the hard years.",
+   "t": "Bir daha düşün. Bereketli yıllarda sakla, zor yıllarda kullan."
+  },
+  "c8-a1": {
+   "en": "The king said: bring Yusuf to me! But Yusuf did not hurry out of prison. He said: first, find out what really happened to me.",
+   "t": "Kral şöyle dedi: Yusuf’u bana getirin! Ama Yusuf hapisten çıkmak için acele etmedi. Şöyle dedi: Önce bana gerçekte ne olduğunu araştırın."
+  },
+  "c8-a2": {
+   "en": "So the king asked the women who had spoken against Yusuf: what really happened? They said: Allah forbid! We know nothing bad about him.",
+   "t": "Bunun üzerine kral, Yusuf aleyhine konuşan kadınlara sordu: Gerçekte ne oldu? Şöyle dediler: Allah’ı tenzih ederiz! Onun hakkında hiçbir kötülük bilmiyoruz."
+  },
+  "c8-a3": {
+   "en": "And the woman of the house said: now the truth is out. It was I who tried to make him do wrong. Yusuf is an honest man.",
+   "t": "Ve evin hanımı şöyle dedi: Şimdi gerçek ortaya çıktı. Ona yanlış bir şey yaptırmaya çalışan bendim. Yusuf dürüst bir insandır."
+  },
+  "c8-do-o": {
+   "en": "Put the story in order. Tap what happened first, then what came next.",
+   "t": "Hikâyeyi sıraya koy. Önce ne olduysa ona, sonra ardından gelene dokun."
+  },
+  "c8-o1": {
+   "en": "Yusuf asked for the truth to be found.",
+   "t": "Yusuf gerçeğin araştırılmasını istedi."
+  },
+  "c8-o2": {
+   "en": "The king asked what had happened.",
+   "t": "Kral ne olduğunu sordu."
+  },
+  "c8-o3": {
+   "en": "The woman told the truth.",
+   "t": "Kadın gerçeği söyledi."
+  },
+  "c8-o4": {
+   "en": "The king trusted Yusuf.",
+   "t": "Kral Yusuf’a güvendi."
+  },
+  "c8-wrong-o": {
+   "en": "Not yet. Think about what came first.",
+   "t": "Henüz değil. Önce ne geldiğini düşün."
+  },
+  "c8-b": {
+   "en": "The king trusted Yusuf completely. Yusuf said: put me in charge of the storehouses. I will look after them with care.",
+   "t": "Kral Yusuf’a tamamen güvendi. Yusuf şöyle dedi: Beni ambarların başına getir. Onları özenle korurum."
+  },
+  "c8-do": {
+   "en": "The good years are here! Tap the grain as it grows, and save it in the storehouse.",
+   "t": "Bereketli yıllar geldi! Büyüyen tahıla dokun ve onu ambarda sakla."
+  },
+  "c8-c": {
+   "en": "The storehouse is full. The grain is saved, just as Yusuf said.",
+   "t": "Ambar dolu. Tahıl, tıpkı Yusuf’un dediği gibi saklandı."
+  },
+  "c9-0": {
+   "en": "Then the seven hard years came, just as Yusuf had said. There was little food anywhere, even far away where Yusuf's family lived. But in Egypt there was grain, because Yusuf had saved it.",
+   "t": "Sonra, tıpkı Yusuf’un dediği gibi, yedi zor yıl geldi. Hiçbir yerde, Yusuf’un ailesinin yaşadığı uzak yerlerde bile, pek yiyecek yoktu. Ama Mısır’da tahıl vardı, çünkü Yusuf onu saklamıştı."
+  },
+  "c9-a": {
+   "en": "Later, Yusuf's brothers travelled to Egypt to get grain for their family.",
+   "t": "Daha sonra Yusuf’un kardeşleri aileleri için tahıl almak üzere Mısır’a geldiler."
+  },
+  "c9-b": {
+   "en": "Yusuf knew them at once. But they did not know it was him!",
+   "t": "Yusuf onları hemen tanıdı. Ama onlar onun kim olduğunu bilmiyorlardı!"
+  },
+  "c9-q": {
+   "en": "Did the brothers know who he was?",
+   "t": "Kardeşler onun kim olduğunu biliyor muydu?"
+  },
+  "c9-q-opt1": {
+   "en": "Yes, straight away",
+   "t": "Evet, hemen"
+  },
+  "c9-q-opt2": {
+   "en": "No, they did not know him",
+   "t": "Hayır, onu tanımadılar"
+  },
+  "c9-qwrong": {
+   "en": "No. Yusuf knew them, but they did not know him.",
+   "t": "Hayır. Yusuf onları tanıdı, ama onlar onu tanımadılar."
+  },
+  "c9-b2": {
+   "en": "It is told that Yusuf asked them about their family. They said: we were twelve brothers. One was lost long ago, and our father keeps the youngest one at home with him.",
+   "t": "Anlatıldığına göre Yusuf onlara ailelerini sordu. Şöyle dediler: Biz on iki kardeştik. Biri uzun zaman önce kayboldu, en küçüğümüzü de babamız evde yanında tutuyor."
+  },
+  "c9-do": {
+   "en": "Yusuf gave them full measure. Tap each sack until it is full to the top.",
+   "t": "Yusuf onlara ölçüyü tam verdi. Her çuval ağzına kadar dolana kadar ona dokun."
+  },
+  "c9-c": {
+   "en": "Then Yusuf said: next time, bring me that youngest brother, the one at home with your father. And he had their payment put back in their bags.",
+   "t": "Sonra Yusuf şöyle dedi: Bir dahaki sefere, babanızın yanında evde kalan o en küçük kardeşinizi bana getirin. Ve ödedikleri bedelin yüklerine geri konmasını emretti."
+  },
+  "c9-pick": {
+   "en": "Help put their payment back. Tap each sack to tuck the payment inside.",
+   "t": "Bedellerini geri koymaya yardım et. Bedeli içine yerleştirmek için her çuvala dokun."
+  },
+  "c10-h0": {
+   "en": "Back home, the brothers said: Father, we will get no more grain unless we take our little brother with us. Yaqub said: shall I trust you with him, the way I trusted you with Yusuf before?",
+   "t": "Eve dönünce kardeşler şöyle dediler: Ey babamız, küçük kardeşimizi yanımızda götürmezsek bize artık tahıl verilmeyecek. Yakup şöyle dedi: Daha önce kardeşini size emanet ettiğim gibi, şimdi onu emanet eder miyim?"
+  },
+  "c10-hdo": {
+   "en": "Look, a sack from Egypt. Tap it to open it. What is inside?",
+   "t": "Bak, Mısır’dan bir çuval. Açmak için ona dokun. İçinde ne var?"
+  },
+  "c10-hdo-s1": {
+   "en": "Their payment! It was given back to them.",
+   "t": "Ödedikleri bedel! Onlara geri verilmiş."
+  },
+  "c10-h": {
+   "en": "Then they found that their payment had been given back! In the end Yaqub let their little brother go, but only after they promised by Allah to bring him back.",
+   "t": "Sonra ödedikleri bedelin kendilerine geri verildiğini gördüler! Sonunda Yakup küçük kardeşlerinin gitmesine izin verdi, ama ancak onu geri getireceklerine Allah adına söz verdikten sonra."
+  },
+  "c10-g": {
+   "en": "Before the brothers set off again, their father Yaqub said: my sons, do not all go in by one gate. Go in by different gates. I trust in Allah.",
+   "t": "Kardeşler yeniden yola çıkmadan önce babaları Yakup şöyle dedi: Oğullarım! Tek bir kapıdan değil, ayrı ayrı kapılardan girin. Ben Allah’a güvendim."
+  },
+  "c10-gdo": {
+   "en": "Do as their father said. Tap a gate for each brother, a different gate each time.",
+   "t": "Babalarının dediğini yap. Her kardeş için bir kapıya dokun, her seferinde başka bir kapıya."
+  },
+  "c10-a": {
+   "en": "The brothers came again, and this time they brought their brother. Yusuf took him aside and said: I am your brother. Do not be sad.",
+   "t": "Kardeşler yeniden geldiler ve bu sefer kardeşlerini de getirdiler. Yusuf onu bir kenara çekti ve şöyle dedi: Ben senin kardeşinim. Üzülme."
+  },
+  "c10-b": {
+   "en": "Then came a plan that Allah made for Yusuf, so that his brother could stay with him. The king's drinking cup was placed in his brother's bag.",
+   "t": "Sonra kardeşi yanında kalabilsin diye Allah’ın Yusuf için kurduğu bir plan geldi. Kralın su kabı kardeşinin yüküne konuldu."
+  },
+  "c10-q": {
+   "en": "Whose plan was this, so that his brother could stay?",
+   "t": "Kardeşi kalabilsin diye bu kimin planıydı?"
+  },
+  "c10-q-opt1": {
+   "en": "Allah made it for Yusuf",
+   "t": "Allah onu Yusuf için kurdu"
+  },
+  "c10-q-opt2": {
+   "en": "The brothers made it",
+   "t": "Kardeşler kurdu"
+  },
+  "c10-qwrong": {
+   "en": "No. This was a plan that Allah made for Yusuf.",
+   "t": "Hayır. Bu, Allah’ın Yusuf için kurduğu bir plandı."
+  },
+  "c10-l1": {
+   "en": "As the brothers were leaving, a man called out: stop, you are thieves! The king's cup is missing! The brothers said: we are not thieves!",
+   "t": "Kardeşler ayrılırken bir adam seslendi: Durun, siz hırsızsınız! Kralın su kabı kayıp! Kardeşler şöyle dedi: Biz hırsız değiliz!"
+  },
+  "c10-l2": {
+   "en": "Then they were asked: if one of you is lying, what should happen to him? The brothers said: whoever has the cup in his bag must stay behind. That is our own rule.",
+   "t": "Sonra onlara soruldu: İçinizden biri yalan söylüyorsa, ona ne olmalı? Kardeşler şöyle dedi: Su kabı kimin yükünde çıkarsa o geride kalsın. Bu bizim kendi kuralımızdır."
+  },
+  "c10-lq": {
+   "en": "Whose rule was it, that the one with the cup must stay behind?",
+   "t": "Su kabı kimdeyse onun geride kalması kimin kuralıydı?"
+  },
+  "c10-lq-opt1": {
+   "en": "The brothers' own rule",
+   "t": "Kardeşlerin kendi kuralı"
+  },
+  "c10-lq-opt2": {
+   "en": "The king of Egypt's rule",
+   "t": "Mısır kralının kuralı"
+  },
+  "c10-lqwrong": {
+   "en": "Not the king's. Under the king's rule, Yusuf could not have kept his brother. The brothers chose the rule themselves.",
+   "t": "Kralın değil. Kralın kanununa göre Yusuf kardeşini alıkoyamazdı. Kuralı kardeşler kendileri seçti."
+  },
+  "c10-do": {
+   "en": "The king's cup is missing! Search the bags one by one, starting with the oldest brother's.",
+   "t": "Kralın su kabı kayıp! Yükleri en büyük kardeşinkinden başlayarak tek tek ara."
+  },
+  "c10-nope": {
+   "en": "Not in this one.",
+   "t": "Bunda yok."
+  },
+  "c10-c": {
+   "en": "There it is, in his brother's bag! So his brother stayed in Egypt with Yusuf.",
+   "t": "İşte orada, kardeşinin yükünde! Böylece kardeşi Mısır’da Yusuf’un yanında kaldı."
+  },
+  "c11-v0": {
+   "en": "The brothers begged: please, take one of us instead! Our father is very old. But Yusuf said: we can only keep the one who had the cup.",
+   "t": "Kardeşler yalvardılar: Ne olur, onun yerine birimizi al! Babamız çok yaşlı. Ama Yusuf şöyle dedi: Biz ancak su kabı kendisinde çıkanı alıkoyabiliriz."
+  },
+  "c11-v": {
+   "en": "Then the eldest brother said: remember the promise we made to our father, and how we broke our promise about Yusuf. I will not leave this land until my father lets me. The rest of you, go home and tell him.",
+   "t": "Sonra en büyük kardeş şöyle dedi: Babamıza verdiğimiz sözü ve Yusuf konusunda sözümüzü nasıl tutmadığımızı hatırlayın. Babam bana izin verene kadar bu yerden ayrılmayacağım. Siz eve dönün ve ona anlatın."
+  },
+  "c11-a": {
+   "en": "The others went home and told their father what had happened. Yaqub said: it is best to be patient. Maybe Allah will bring them all back to me. But he missed Yusuf so much that his eyes turned white with grief.",
+   "t": "Ötekiler eve dönüp babalarına olanları anlattılar. Yakup şöyle dedi: Bana güzelce sabır gerekir. Belki Allah hepsini bana geri getirir. Ama Yusuf’u öyle özledi ki üzüntüden gözlerine ak düştü."
+  },
+  "c11-b": {
+   "en": "But Yaqub did not lose hope. He said: my sons, go and look for Yusuf and his brother. Never lose hope in Allah's mercy.",
+   "t": "Ama Yakup ümidini kaybetmedi. Şöyle dedi: Ey oğullarım! Gidin, Yusuf’u ve kardeşini arayın. Allah’ın rahmetinden asla ümidinizi kesmeyin."
+  },
+  "c11-c0": {
+   "en": "So the brothers went back to Egypt, and came before Yusuf once more. They said: hard times have hit our family, and we have brought very little. Please be kind to us.",
+   "t": "Böylece kardeşler Mısır’a geri döndüler ve bir kez daha Yusuf’un huzuruna çıktılar. Şöyle dediler: Ailemiz darlığa uğradı ve pek az bir şeyle geldik. Ne olur bize iyilik et."
+  },
+  "c11-c": {
+   "en": "Then Yusuf asked them: do you know what you did to Yusuf and his brother? They cried: could it be that you are Yusuf? He said: I am Yusuf, and this is my brother. Allah has been good to us.",
+   "t": "Sonra Yusuf onlara sordu: Yusuf’a ve kardeşine ne yaptığınızı biliyor musunuz? Haykırdılar: Yoksa sen Yusuf musun? Şöyle dedi: Ben Yusuf’um, bu da kardeşim. Allah bize iyilik etti."
+  },
+  "c11-e": {
+   "en": "The brothers hung their heads. They said: By Allah, Allah chose you over us, and we were in the wrong.",
+   "t": "Kardeşler başlarını önlerine eğdiler. Şöyle dediler: Allah’a yemin ederiz ki, Allah seni bizden üstün tutmuştur; doğrusu biz suç işlemiştik."
+  },
+  "c11-do": {
+   "en": "The brothers said they were sorry. What did Yusuf do?",
+   "t": "Kardeşler özür dilediler. Yusuf ne yaptı?"
+  },
+  "c11-do-opt1": {
+   "en": "He sent them away",
+   "t": "Onları kovdu"
+  },
+  "c11-do-opt2": {
+   "en": "He forgave them",
+   "t": "Onları affetti"
+  },
+  "c11-wrong": {
+   "en": "No. Yusuf did something much more beautiful. Try again.",
+   "t": "Hayır. Yusuf çok daha güzel bir şey yaptı. Yeniden dene."
+  },
+  "c11-d": {
+   "en": "Yusuf forgave them! He said: you will hear no blame today. May Allah forgive you. He is the Most Merciful of all.",
+   "t": "Yusuf onları affetti! Şöyle dedi: Bugün azarlanacak değilsiniz. Allah sizi bağışlar. O, merhametlilerin merhametlisidir."
+  },
+  "c11-o1": {
+   "en": "Yaqub said: never lose hope.",
+   "t": "Yakup şöyle dedi: Asla ümidinizi kesmeyin."
+  },
+  "c11-o2": {
+   "en": "Yusuf said: I am Yusuf.",
+   "t": "Yusuf şöyle dedi: Ben Yusuf’um."
+  },
+  "c11-o3": {
+   "en": "The brothers said: we were in the wrong.",
+   "t": "Kardeşler şöyle dedi: Biz suç işlemiştik."
+  },
+  "c11-o4": {
+   "en": "Yusuf forgave them.",
+   "t": "Yusuf onları affetti."
+  },
+  "c12-a": {
+   "en": "Yusuf gave them his shirt. He said: lay it over my father's face, and he will see again. Then bring your whole family to me.",
+   "t": "Yusuf onlara gömleğini verdi. Şöyle dedi: Bunu babamın yüzüne koyun, görmeye başlar. Sonra bütün ailenizi bana getirin."
+  },
+  "c12-b": {
+   "en": "Far away, as the caravan set off, a wind began to blow. And Yaqub said: I can smell Yusuf!",
+   "t": "Uzakta, kervan yola çıkınca bir rüzgâr esmeye başladı. Ve Yakup şöyle dedi: Yusuf’un kokusunu duyuyorum!"
+  },
+  "c12-do": {
+   "en": "Drag the shirt along the path, or tap it, to carry the good news home.",
+   "t": "Müjdeyi eve taşımak için gömleği yol boyunca sürükle ya da ona dokun."
+  },
+  "c12-c": {
+   "en": "The shirt was laid on Yaqub's face, and he could see again! The brothers said: Father, ask Allah to forgive us. And he said: I will ask my Lord to forgive you.",
+   "t": "Gömlek Yakup’un yüzüne kondu ve gözleri yeniden gördü! Kardeşler şöyle dedi: Ey babamız, Allah’tan bizim için bağışlanma dile. O da şöyle dedi: Sizin için Rabbimden bağışlanma dileyeceğim."
+  },
+  "c12-q": {
+   "en": "What happened when the shirt was laid on Yaqub's face?",
+   "t": "Gömlek Yakup’un yüzüne konunca ne oldu?"
+  },
+  "c12-q-opt1": {
+   "en": "He fell asleep",
+   "t": "Uyuyakaldı"
+  },
+  "c12-q-opt2": {
+   "en": "He could see again",
+   "t": "Gözleri yeniden gördü"
+  },
+  "c12-qwrong": {
+   "en": "No. Something wonderful happened: he could see again!",
+   "t": "Hayır. Harika bir şey oldu: gözleri yeniden gördü!"
+  },
+  "c13-a": {
+   "en": "The whole family came to Egypt. Yusuf held his parents close and said: welcome to Egypt. You will all be safe here, if Allah wills.",
+   "t": "Bütün aile Mısır’a geldi. Yusuf anasını babasını bağrına bastı ve şöyle dedi: Mısır’a hoş geldiniz. Allah’ın dileğiyle burada hepiniz güvende olacaksınız."
+  },
+  "c13-do": {
+   "en": "Tap the stars, the sun and the moon, just like in the dream.",
+   "t": "Tıpkı rüyadaki gibi yıldızlara, güneşe ve aya dokun."
+  },
+  "c13-b": {
+   "en": "Yusuf's parents and brothers all bowed down before him. Yusuf said: Father, this is what my dream meant, long ago. My Lord has made it come true.",
+   "t": "Yusuf’un anası babası ve kardeşleri hep birlikte onun önünde eğildiler. Yusuf şöyle dedi: Babacığım! İşte bu, vaktiyle gördüğüm rüyanın anlamıdır. Rabbim onu gerçekleştirdi."
+  },
+  "c13-q": {
+   "en": "Look back at the dream. Who were the eleven stars?",
+   "t": "Rüyayı hatırla. On bir yıldız kimlerdi?"
+  },
+  "c13-q-opt1": {
+   "en": "His eleven brothers",
+   "t": "On bir kardeşi"
+  },
+  "c13-q-opt2": {
+   "en": "Eleven camels",
+   "t": "On bir deve"
+  },
+  "c13-qwrong": {
+   "en": "Think again. Who came to Egypt to bow before Yusuf?",
+   "t": "Bir daha düşün. Yusuf’un önünde eğilmek için Mısır’a kimler geldi?"
+  },
+  "c13-b0": {
+   "en": "Yes! The eleven stars were his eleven brothers, and the sun and the moon were his father and mother. The dream had come true.",
+   "t": "Evet! On bir yıldız onun on bir kardeşiydi; güneş ve ay da babası ve annesiydi. Rüya gerçek olmuştu."
+  },
+  "c13-sort": {
+   "en": "What have we learned from Yusuf? For each one, tap: like Yusuf, or not like Yusuf.",
+   "t": "Yusuf’tan ne öğrendik? Her biri için dokun: Yusuf gibi, ya da Yusuf gibi değil."
+  },
+  "c13-sort-bin1": {
+   "en": "Like Yusuf",
+   "t": "Yusuf gibi"
+  },
+  "c13-sort-bin2": {
+   "en": "Not like Yusuf",
+   "t": "Yusuf gibi değil"
+  },
+  "c13-sort-it1": {
+   "en": "Being patient",
+   "t": "Sabırlı olmak"
+  },
+  "c13-sort-it2": {
+   "en": "Making up a story",
+   "t": "Hikâye uydurmak"
+  },
+  "c13-sort-it3": {
+   "en": "Telling the truth",
+   "t": "Doğruyu söylemek"
+  },
+  "c13-sort-it4": {
+   "en": "Staying angry",
+   "t": "Öfkeli kalmak"
+  },
+  "c13-sort-it5": {
+   "en": "Forgiving",
+   "t": "Affetmek"
+  },
+  "c13-sort-it6": {
+   "en": "Trusting Allah",
+   "t": "Allah’a güvenmek"
+  },
+  "c13-swrong": {
+   "en": "Think about what Yusuf did.",
+   "t": "Yusuf’un ne yaptığını düşün."
+  },
+  "c13-c": {
+   "en": "Then Yusuf prayed: My Lord, You are my protector in this world and the next. Let me die devoted to You, and join me with the righteous.",
+   "t": "Sonra Yusuf şöyle dua etti: Rabbim! Dünyada ve ahirette benim dostum Sensin. Canımı Sana teslim olmuş olarak al ve beni iyilerin arasına kat."
+  },
+  "pz-do": {
+   "en": "This picture is all mixed up! Tap two pieces to swap them, until the picture is whole again.",
+   "t": "Bu resim karmakarışık olmuş! Resim yeniden bütün olana kadar yerlerini değiştirmek için iki parçaya dokun."
+  },
+  "mem-do": {
+   "en": "Find the pairs. Tap two cards. If they match, they stay.",
+   "t": "Eşleri bul. İki karta dokun. Eşleşirlerse açık kalırlar."
+  },
+  "end-a": {
+   "en": "The end. Yusuf was patient, he told the truth, and he forgave. What will you remember from his story?",
+   "t": "Son. Yusuf sabırlıydı, doğruyu söyledi ve affetti. Onun hikâyesinden sen neyi hatırlayacaksın?"
+  }
+ },
+ "strings": {
+  "The Dream": "Rüya",
+  "The Jealous Brothers": "Kıskanç Kardeşler",
+  "From a Shia narration (al-Qummi)": "Bir Şii rivayetinden (Kummî)",
+  "The stone: Ibn Kathir's tafsir": "Taş: İbn Kesîr’in tefsiri",
+  "The untorn shirt: Ibn Kathir's tafsir": "Yırtılmamış gömlek: İbn Kesîr’in tefsiri",
+  "The brothers are jealous": "Kardeşler kıskanıyor",
+  "Yusuf is put in the well": "Yusuf kuyuya indiriliyor",
+  "They show the shirt": "Gömleği gösteriyorlar",
+  "Yaqub is patient": "Yakup sabrediyor",
+  "The Well": "Kuyu",
+  "Far From Home": "Evden Uzakta",
+  "Twenty coins: Ibn Kathir's tafsir": "Yirmi para: İbn Kesîr’in tefsiri",
+  "Patience in Prison": "Hapiste Sabır",
+  "The fruit: Ibn Kathir's tafsir": "Meyve: İbn Kesîr’in tefsiri",
+  "Yusuf runs for the door": "Yusuf kapıya koşuyor",
+  "His shirt is torn": "Gömleği yırtılıyor",
+  "Look at the shirt!": "Gömleğe bakın!",
+  "Patient in prison": "Hapiste sabırlı",
+  "Two Dreams": "İki Rüya",
+  "The King's Dream": "Kralın Rüyası",
+  "fat cow": "semiz inek",
+  "thin cow": "zayıf inek",
+  "7 good years": "7 bereketli yıl",
+  "7 hard years": "7 zor yıl",
+  "Truth and Trust": "Doğruluk ve Güven",
+  "Yusuf asks for the truth": "Yusuf gerçeği istiyor",
+  "The king asks what happened": "Kral ne olduğunu soruyor",
+  "The woman tells the truth": "Kadın gerçeği söylüyor",
+  "The king trusts Yusuf": "Kral Yusuf’a güveniyor",
+  "The Brothers Come": "Kardeşler Geliyor",
+  "sack": "çuval",
+  "The King's Cup": "Kralın Su Kabı",
+  "“I Am Yusuf”": "“Ben Yusuf’um”",
+  "Never lose hope": "Asla ümidini kesme",
+  "I am Yusuf": "Ben Yusuf’um",
+  "We were wrong": "Biz suç işlemiştik",
+  "Yusuf forgives": "Yusuf affediyor",
+  "The Shirt": "Gömlek",
+  "The Dream Comes True": "Rüya Gerçek Oluyor",
+  "← Asmau": "",
+  "Yusuf": "Yusuf",
+  "The Story of Yusuf": "Yusuf’un Hikâyesi",
+  "Thirteen chapters. Three or four things to do in every one.": "On üç bölüm. Her birinde yapılacak üç dört şey.",
+  "Under 5: play it together with a grown-up": "5 yaşından küçükler: bir büyükle birlikte oynayın",
+  "Start the story": "",
+  "Start from the beginning": "",
+  "For parents": "",
+  "Back": "",
+  "Next": "",
+  "All chapters": "",
+  "✕ Close": "",
+  "The End": "",
+  "Patience": "Sabır",
+  "Truth": "Doğruluk",
+  "Forgiveness": "Affetmek",
+  "Read it again": "",
+  "Pick a chapter": "",
+  "Music": "",
+  "Sounds": "",
+  "Voice": "",
+  "His whole story in thirteen chapters, with three or four things to do in every one.": "Bütün hikâyesi on üç bölümde; her birinde yapılacak üç dört şey var.",
+  "Yusuf as a boy, looking up at the stars, the sun and the moon.": "Küçük Yusuf yıldızlara, güneşe ve aya bakıyor.",
+  "📖 About this story": "📖 Bu hikâye hakkında",
+  "🤲 Told gently, or left out": "🤲 Yumuşak anlatılanlar ya da atlananlar",
+  "Told more gently than the verses tell them: what the woman of the house tried to do (12:23–25), the gathering of the women of the city (12:30–32), and how the second prisoner’s dream ends (12:41), where the game says he “will be put to death”. Verses 12:52–53 are left out because scholars differ on who is speaking.": "Ayetlerin anlattığından daha yumuşak anlatılanlar: evin hanımının yapmaya çalıştığı şey (12:23–25), şehrin kadınlarının toplanması (12:30–32) ve ikinci mahpusun rüyasının sonu (12:41); oyun burada onun “öldürüleceğini” söyler. 12:52–53. ayetler, âlimler konuşanın kim olduğu konusunda ayrıldığı için atlanmıştır.",
+  "📚 From the commentary, not the verses": "📚 Ayetlerden değil, tefsirden",
+  "From Ibn Kathir’s tafsir and not the verses: the stone Yusuf stood on in the well, the shirt the brothers forgot to tear, the twenty coins, and the wind that carried the scent of the shirt.": "Ayetlerden değil, İbn Kesîr’in tefsirinden: Yusuf’un kuyuda üzerinde durduğu taş, kardeşlerin yırtmayı unuttuğu gömlek, yirmi para ve gömleğin kokusunu taşıyan rüzgâr.",
+  "👥 Who is shown": "👥 Kimler gösteriliyor",
+  "Shown in this story: Prophet Yusuf and Prophet Yaqub (peace be upon them), Yusuf’s ten older brothers and his younger brother.": "Bu hikâyede gösterilenler: Yusuf Peygamber ve Yakup Peygamber (selam onların üzerine olsun), Yusuf’un on ağabeyi ve küçük kardeşi.",
+  "🧒 Ages and how long it is": "🧒 Yaşlar ve süre",
+  "For ages 5 to 9. A child of 3 or 4 can enjoy it with a grown-up beside them: putting events in order, the picture puzzles and sorting need a helping hand, and the well, the prison and the second prisoner’s dream may need explaining or skipping.": "5–9 yaş için. 3 ya da 4 yaşında bir çocuk da yanında bir büyükle keyif alabilir: olayları sıraya koymak, resim bulmacaları ve ayırma oyunları bir yardım eli ister; kuyu, hapis ve ikinci mahpusun rüyası açıklanmalı ya da atlanabilir.",
+  "This story is <a href=\"https://quran.com/12\" target=\"_blank\" rel=\"noopener\">Surah Yusuf</a> (Qur’an 12:4–101), from the dream to the family reunited in Egypt. How the stories are made and checked is under “For parents” on the first page of Asmau.": "Bu hikâye <a href=\"https://quran.com/12\" target=\"_blank\" rel=\"noopener\">Yusuf suresidir</a> (Kur’an 12:4–101); rüyadan, ailenin Mısır’da yeniden bir araya gelmesine kadar. Hikâyelerin nasıl yapıldığı ve kontrol edildiği, Asmau’nun ilk sayfasında “Anne babalar için” bölümündedir."
+ },
+ "notes": {
+  "1.1": {
+   "en": "Yusuf tells his father about his dream, and his father warns him not to tell his brothers.\n\nWho the stars, sun and moon stand for is not spelled out in the verses. The commentary reports that scholars including Ibn Abbas, Ad-Dahhak, Qatadah, Sufyan al-Thawri and Abd al-Rahman bin Zayd bin Aslam explained the eleven stars as his eleven brothers, and the sun and moon as his father and mother. The game tells children this in the last chapter.",
+   "t": "Yusuf rüyasını babasına anlatır ve babası onu kardeşlerine anlatmaması için uyarır.\n\nYıldızların, güneşin ve ayın kimi temsil ettiği ayetlerde açıkça söylenmez. Tefsir, İbn Abbas, Dahhâk, Katâde, Süfyân es-Sevrî ve Abdurrahman b. Zeyd b. Eslem gibi âlimlerin on bir yıldızı on bir kardeşi, güneşi ve ayı da annesi ve babası olarak açıkladığını aktarır. Oyun bunu çocuklara son bölümde anlatır."
+  },
+  "1.2": {
+   "en": "Ask your child: have you ever had a dream you remember? Was it happy or strange? Dreams are a gentle way into this story.",
+   "t": "Çocuğunuza sorun: Hatırladığın bir rüya gördün mü? Mutlu muydu, tuhaf mı? Rüyalar bu hikâyeye yumuşak bir giriştir."
+  },
+  "1.3": {
+   "en": "Yaqub's warning comes with a reason: 'Satan is man's sworn enemy' (12:5). Ask: why might it be wise to keep some good news quiet sometimes?\n\nHis father also says Allah will choose Yusuf and teach him to interpret dreams, as He blessed Ibrahim and Ishaq before (12:6).",
+   "t": "Yakup’un uyarısının bir sebebi vardır: “şeytan insanın apaçık düşmanıdır” (12:5). Sorun: Bazen güzel bir haberi kendine saklamak neden akıllıca olabilir?\n\nBabası ayrıca, daha önce İbrahim’i ve İshak’ı nimetlendirdiği gibi, Allah’ın Yusuf’u seçeceğini ve ona rüya yorumlamayı öğreteceğini söyler (12:6)."
+  },
+  "1.4": {
+   "en": "Talk about it: is keeping a secret the same as lying? A good moment to talk about safe secrets (a surprise) and unsafe ones (anything that makes you worried, which you should always tell a grown-up).",
+   "t": "Konuşun: Bir sırrı saklamak yalan söylemekle aynı mıdır? Güvenli sırlar (bir sürpriz) ve güvensiz sırlar (seni endişelendiren ve her zaman bir büyüğe anlatman gereken her şey) hakkında konuşmak için güzel bir an."
+  },
+  "1.5": {
+   "en": "The Qur'an says: 'There are lessons in the story of Joseph and his brothers for all who seek them' (12:7). Ask your child, as you go: what lesson do you think this story will teach?",
+   "t": "Kur’an şöyle der: “Yusuf ve kardeşlerinin olayında, soranlara nice ibretler vardır” (12:7). İlerledikçe çocuğunuza sorun: Sence bu hikâye bize hangi dersi öğretecek?"
+  },
+  "2.1": {
+   "en": "The verses say one brother proposed killing Yusuf or banishing him, and another said not to kill him but to throw him into the well where a caravan might pick him up (12:9–10). The game says only that some wanted to get rid of him and one said not to hurt him.\n\n'Joseph and his brother' are dearer to their father (12:8): the little brother is called Benjamin in the commentary; the verses do not name him, and neither does the game.\n\nVerses 12:11–14. Before taking him, the brothers asked their father why he did not trust them with Yusuf, and asked to take him out the next day so that he would enjoy himself and play; they promised to look after him. Yaqub said it grieved him to let him go and that he feared a wolf would eat him while they were not paying attention; they answered that if a wolf ate him when there were so many of them, they would be losers. The commentary gives the same reason, 'so that we all enjoy ourselves and play', reported from Qatadah, Ad-Dahhak and As-Suddi. Some retellings add that the brothers said Yusuf stayed indoors too much and needed to grow strong; that is not in the verses or in the commentary, so the game does not say it. Notice with your child that the brothers later used the very thing their father had said he feared: the wolf.\n\nYaqub's answer, that patience is best and that he seeks Allah's help against what they describe (12:18), is kept.\n\nIn the well: the verse says Allah revealed to Yusuf that he would one day tell his brothers of this while they did not realise (12:15). The commentary explains this as comfort sent in his distress, and reports from Ibn Abbas that the brothers would not recognise him when he reminded them. The commentary relates that Yusuf stood on a stone in the water of the well; the picture shows that. The stone is from the commentary, not from the verse.\n\nThe shirt: the verse says they brought his shirt with false blood on it (12:18). The commentary says, citing Mujahid, As-Suddi and others, that the blood was a sheep's, and that the brothers forgot to tear the shirt, which is why Yaqub did not believe them. The untorn shirt, which the game turns into a question, is from the commentary, not from the verse.\n\nShia narrations add two things in the well: Yusuf's prayer, from al-Qummi's commentary, which the game uses ('O Lord of Ibrahim, Ishaq and Ya'qub, have mercy on my helplessness, weakness and tender age'); and Jibril coming to him with the news that Allah would raise him in honour (Imam al-Baqir).",
+   "t": "Ayetler, bir kardeşin Yusuf’u öldürmeyi ya da uzaklaştırmayı önerdiğini, bir başkasının ise onu öldürmeyip bir kervanın bulabileceği kuyuya atmayı söylediğini anlatır (12:9–10). Oyun yalnızca bazılarının ondan kurtulmak istediğini ve birinin ona zarar vermemelerini söylediğini anlatır.\n\n“Yusuf ve kardeşi” babalarına daha sevgilidir (12:8): Tefsir küçük kardeşe Bünyamin der; ayetler onun adını vermez, oyun da vermez.\n\nAyetler 12:11–14. Kardeşler onu götürmeden önce babalarına Yusuf’u neden kendilerine emanet etmediğini sordular ve onu ertesi gün gezsin oynasın diye götürmek istediler; ona iyi bakacaklarına söz verdiler. Yakup onu göndermenin kendisini üzdüğünü ve onlar dikkat etmezken bir kurdun onu yemesinden korktuğunu söyledi; onlar da bu kadar kalabalıkken bir kurt onu yerse kaybedenlerden olacaklarını söylediler. Tefsir aynı sebebi, “hepimiz gezelim oynayalım diye”, Katâde, Dahhâk ve Süddî’den aktarır. Bazı yeniden anlatımlar, kardeşlerin Yusuf’un çok fazla evde kaldığını ve güçlenmesi gerektiğini söylediğini ekler; bu ayetlerde ya da tefsirde yoktur, bu yüzden oyun bunu söylemez. Kardeşlerin sonradan babalarının korktuğunu söylediği şeyi, kurdu kullandıklarını çocuğunuzla birlikte fark edin.\n\nYakup’un cevabı, güzelce sabrın gerektiği ve anlattıklarına karşı Allah’tan yardım istediği (12:18), korunmuştur.\n\nKuyuda: Ayet, Allah’ın Yusuf’a bir gün kardeşlerine bunu onlar farkında olmadan anlatacağını vahyettiğini söyler (12:15). Tefsir bunu sıkıntısında gönderilen bir teselli olarak açıklar ve İbn Abbas’tan, Yusuf onlara bunu hatırlattığında kardeşlerin onu tanımayacağını aktarır. Tefsir Yusuf’un kuyunun suyunda bir taşın üzerinde durduğunu anlatır; resim bunu gösterir. Taş ayetten değil, tefsirdendir.\n\nGömlek: Ayet, gömleğini üzerinde sahte bir kanla getirdiklerini söyler (12:18). Tefsir, Mücâhid, Süddî ve başkalarına dayanarak kanın bir koyunun kanı olduğunu ve kardeşlerin gömleği yırtmayı unuttuklarını, Yakup’un onlara bu yüzden inanmadığını söyler. Oyunun bir soruya dönüştürdüğü yırtılmamış gömlek ayetten değil, tefsirdendir.\n\nŞii rivayetler kuyuda iki şey ekler: Kummî’nin tefsirinden, oyunun kullandığı Yusuf’un duası (“Ey İbrahim’in, İshak’ın ve Yakup’un Rabbi, çaresizliğime, güçsüzlüğüme ve küçük yaşıma merhamet et”); ve Cebrâil’in ona Allah’ın onu şerefle yükselteceği haberini getirmesi (İmam Bâkır)."
+  },
+  "2.2": {
+   "en": "The brothers felt their father loved Yusuf and his little brother more (12:8). Ask: have you ever felt someone was loved more than you? What did you do with that feeling?",
+   "t": "Kardeşler babalarının Yusuf’u ve küçük kardeşini daha çok sevdiğini hissettiler (12:8). Sorun: Hiç birinin senden daha çok sevildiğini hissettin mi? Bu duyguyla ne yaptın?"
+  },
+  "2.3": {
+   "en": "One brother spoke up for Yusuf (12:10). Ask: what can you do when friends want to do something mean? Even one voice can make a difference.",
+   "t": "Bir kardeş Yusuf’u savundu (12:10). Sorun: Arkadaşların kötü bir şey yapmak istediğinde ne yapabilirsin? Tek bir ses bile fark yaratabilir."
+  },
+  "2.4": {
+   "en": "The brothers promised Yusuf would 'enjoy himself and play' (12:12). Ask: what makes a promise worth trusting?",
+   "t": "Kardeşler Yusuf’un “gezsin oynasın” diye söz verdiler (12:12). Sorun: Bir sözü güvenilir yapan nedir?"
+  },
+  "2.5": {
+   "en": "Yaqub said the thought of them taking Yusuf away worried him (12:13). Ask: what do you think parents worry about? How can children help them worry less?",
+   "t": "Yakup, Yusuf’u götürmeleri düşüncesinin kendisini üzdüğünü söyledi (12:13). Sorun: Sence anne babalar neler için endişelenir? Çocuklar onların daha az endişelenmesine nasıl yardım edebilir?"
+  },
+  "2.6": {
+   "en": "Ask your child what they are afraid of. Fears are normal; Yaqub had one too, and he said it out loud.",
+   "t": "Çocuğunuza neden korktuğunu sorun. Korkular normaldir; Yakup’un da bir korkusu vardı ve onu yüksek sesle söyledi."
+  },
+  "2.7": {
+   "en": "'If a wolf were to eat him when there are so many of us, we would truly be losers!' (12:14). Ask: why do people sometimes say too much when they are hiding something?",
+   "t": "“Biz kuvvetli bir toplulukken kurt onu yerse, biz aciz sayılırız” (12:14). Sorun: İnsanlar bir şey saklarken neden bazen gereğinden fazla konuşur?"
+  },
+  "2.8": {
+   "en": "This page can be frightening. Hold your child close and remind them how the story ends: Yusuf is safe, and much loved.",
+   "t": "Bu sayfa korkutucu olabilir. Çocuğunuzu kucaklayın ve hikâyenin nasıl bittiğini hatırlatın: Yusuf güvende ve çok seviliyor."
+  },
+  "2.9": {
+   "en": "Ask your child: when you feel small or scared, what can you say to Allah? Let them make their own short prayer.",
+   "t": "Çocuğunuza sorun: Kendini küçük ya da korkmuş hissettiğinde Allah’a ne diyebilirsin? Kendi kısa duasını etsin."
+  },
+  "2.10": {
+   "en": "The Qur'an says Allah revealed to Yusuf in the well that he would one day tell his brothers about all this (12:15). Ask: how does it feel to know that someone is with you, even when you cannot see them?",
+   "t": "Kur’an, Allah’ın kuyudaki Yusuf’a bir gün kardeşlerine bütün bunları anlatacağını vahyettiğini söyler (12:15). Sorun: Göremesen bile birinin yanında olduğunu bilmek nasıl hissettirir?"
+  },
+  "2.11": {
+   "en": "The brothers came home 'weeping' at nightfall (12:16) and said they had been racing and left Yusuf with their things (12:17). Ask: can tears be used to hide a lie?",
+   "t": "Kardeşler akşam ağlayarak eve geldiler (12:16) ve yarıştıklarını, Yusuf’u eşyalarının yanında bıraktıklarını söylediler (12:17). Sorun: Gözyaşları bir yalanı saklamak için kullanılabilir mi?"
+  },
+  "2.12": {
+   "en": "Shia narrations in Majlisi's Hayat al-Qulub tell the same detail as the Sunni commentary: Yaqub said the wolf 'tore apart Yusuf but did not damage his shirt a bit' (al-Qummi, Imam al-Baqir).",
+   "t": "Meclisî’nin Hayâtü’l-Kulûb’undaki Şii rivayetler Sünni tefsirle aynı ayrıntıyı anlatır: Yakup, kurdun “Yusuf’u parçaladığını ama gömleğine hiç zarar vermediğini” söyledi (Kummî, İmam Bâkır)."
+  },
+  "2.13": {
+   "en": "Ask: how did Yaqub know they were not telling the truth? Lies often leave clues. That is one reason honesty is easier.",
+   "t": "Sorun: Yakup onların doğruyu söylemediğini nasıl anladı? Yalanlar çoğu zaman ipucu bırakır. Dürüstlüğün daha kolay olmasının bir sebebi de budur."
+  },
+  "2.14": {
+   "en": "'It is best to be patient: from God alone I seek help' (12:18). A beautiful sentence to learn: sabrun jamil, a patience without complaint. Ask: when do you need patience?",
+   "t": "“Artık bana güzelce sabır gerekir. Anlattıklarınıza ancak Allah’tan yardım istenir” (12:18). Öğrenmek için güzel bir cümle: sabrun cemîl, şikâyetsiz bir sabır. Sorun: Ne zaman sabra ihtiyacın olur?"
+  },
+  "2.15": {
+   "en": "Ask your child to tell the chapter in their own words before tapping. Telling a story in order is a skill worth practising.",
+   "t": "Dokunmadan önce çocuğunuzdan bölümü kendi sözleriyle anlatmasını isteyin. Bir hikâyeyi sırasıyla anlatmak çalışmaya değer bir beceridir."
+  },
+  "2.16": {
+   "en": "While playing, name each card and say what it reminds you of in the story.",
+   "t": "Oynarken her kartın adını söyleyin ve size hikâyeden neyi hatırlattığını söyleyin."
+  },
+  "3.1": {
+   "en": "A caravan sends someone to draw water, he lets down his bucket and finds a boy (12:19). The verses then say they hid him like merchandise and sold him for a small price (12:20), which the next chapter picks up. The bucket in the game is the one in the verse.",
+   "t": "Bir kervan su çekmesi için birini gönderir; o kovasını sarkıtır ve bir oğlan bulur (12:19). Ayetler sonra onu ticari bir mal olarak sakladıklarını ve ucuz bir fiyata sattıklarını söyler (12:20); sonraki bölüm buradan devam eder. Oyundaki kova ayetteki kovadır."
+  },
+  "3.2": {
+   "en": "Ask: how do you think Yusuf felt when he saw the bucket coming down? A good moment to talk about hope.",
+   "t": "Sorun: Sence Yusuf kovanın indiğini görünce nasıl hissetti? Ümit hakkında konuşmak için güzel bir an."
+  },
+  "3.3": {
+   "en": "The travellers 'hid him like a piece of merchandise' (12:19). Ask: is it ever right to treat a person like a thing? Why not?",
+   "t": "Yolcular “onu ticari bir mal olarak sakladılar” (12:19). Sorun: Bir insana bir eşya gibi davranmak hiç doğru olur mu? Neden olmaz?"
+  },
+  "3.4": {
+   "en": "'Good news!' (12:19). Ask: what is the best good news you have ever heard?",
+   "t": "“Müjde!” (12:19). Sorun: Şimdiye kadar duyduğun en güzel haber neydi?"
+  },
+  "3.5": {
+   "en": "Hayat al-Qulub says Yusuf was seven or nine years old at the well. Ask your child: how old are you? How would you feel in his place?",
+   "t": "Hayâtü’l-Kulûb, Yusuf’un kuyudayken yedi ya da dokuz yaşında olduğunu söyler. Çocuğunuza sorun: Sen kaç yaşındasın? Onun yerinde olsan nasıl hissederdin?"
+  },
+  "4.1": {
+   "en": "Yusuf is sold for a few pieces of silver. The Egyptian who bought him tells his wife to look after him well (12:21), and when Yusuf reaches maturity Allah gives him judgement and knowledge (12:22).\n\nThe twenty coins: the verse says only 'a few dirhams' (12:20). The commentary gives the number as twenty dirhams, according to Abdullah bin Mas'ud, and says the same was reported from Ibn Abbas, Nawf al-Bikali, As-Suddi, Qatadah and Atiyah al-Awfi. The number in the counting game is from the commentary, not from the verse.\n\nWho sold him: the commentary reports from Ibn Abbas, Mujahid and Ad-Dahhak that 'they sold him' refers to Yusuf's brothers, who sold him to the caravan. The game's wording does not say who sold him. The line that they did not know how precious he was follows Ad-Dahhak's comment, in the commentary, that they had no knowledge of his prophethood and rank with Allah.",
+   "t": "Yusuf birkaç gümüş paraya satılır. Onu satın alan Mısırlı karısına ona güzel bakmasını söyler (12:21) ve Yusuf erginlik çağına erişince Allah ona hikmet ve bilgi verir (12:22).\n\nYirmi para: Ayet yalnızca “birkaç dirhem” der (12:20). Tefsir, Abdullah b. Mes'ûd’a göre sayıyı yirmi dirhem olarak verir ve aynısının İbn Abbas, Nevf el-Bikâlî, Süddî, Katâde ve Atiyye el-Avfî’den de rivayet edildiğini söyler. Sayma oyunundaki sayı ayetten değil, tefsirdendir.\n\nOnu kimin sattığı: Tefsir, İbn Abbas, Mücâhid ve Dahhâk’tan “onu sattılar” sözünün onu kervana satan Yusuf’un kardeşlerini kastettiğini aktarır. Oyunun sözleri onu kimin sattığını söylemez. Onun ne kadar değerli olduğunu bilmedikleri cümlesi, Dahhâk’ın tefsirdeki, onun peygamberliğinden ve Allah katındaki derecesinden haberleri olmadığı yorumuna dayanır."
+  },
+  "4.2": {
+   "en": "The picture shows Yusuf sitting among the bundles of goods on a camel. It follows the verse 'They hid him like a piece of merchandise' (12:19). The scholars explain that hiding in different ways, and none of them says he was buried under the goods. So the picture shows only what their explanations share: he was carried along like something to be sold, not like a traveller.\n\nAl-Tafsir al-Muyassar: the man who drew the water and his companions hid Yusuf from the rest of the travellers and did not show him to them, saying that he was goods they had been given to trade.\n\nAl-Tabari, in his tafsir Jami' al-Bayan, records four explanations from the early scholars. First, from Mujahid and as-Suddi: the man with the bucket and his companions told the rest of the caravan that the boy was goods the people of the water had given them to sell, because they feared the others would ask for a share if they knew the men had found and bought him. Second, also from Mujahid: the traders hid him from one another. Third, from Qatadah: they kept his sale secret. Fourth, from Ibn Abbas: it was Yusuf's brothers who hid that he was their brother and said he was their slave; Yusuf kept quiet about it, fearing they would kill him, and chose to be sold.\n\nAl-Tabari prefers the first explanation, because these words come straight after the man who found him and so most likely speak about him and his companions. The commentary (Ibn Kathir) quotes only the explanation from Ibn Abbas.\n\nAl-Tabari also reports from Mujahid that the brothers followed the caravan, telling the men to keep a close watch on the boy so that he would not run away, until he was stood up for sale in Egypt. That is the market on page 4.4: the first time he is shown openly.\n\nLook at a map together: from the land of Canaan (Palestine) to Egypt. Ask: how long do you think it took to cross the desert by camel?",
+   "t": "Resim, Yusuf’u bir devenin üzerinde mal denklerinin arasında otururken gösterir. Bu, “onu ticari bir mal olarak sakladılar” ayetine dayanır (12:19). Âlimler bu saklamayı farklı şekillerde açıklar ve hiçbiri onun malların altına gömüldüğünü söylemez. Bu yüzden resim yalnızca açıklamalarının ortak noktasını gösterir: Bir yolcu gibi değil, satılacak bir şey gibi taşındı.\n\net-Tefsîrü’l-Müyesser: Suyu çeken adam ve arkadaşları Yusuf’u öbür yolculardan saklayıp onlara göstermediler ve onun ticaret için kendilerine verilmiş bir mal olduğunu söylediler.\n\nTaberî, Câmiu’l-Beyân adlı tefsirinde ilk âlimlerden dört açıklama kaydeder. Birincisi, Mücâhid ve Süddî’den: Kovalı adam ve arkadaşları kervanın geri kalanına oğlanın, su başındaki insanların satmaları için kendilerine verdiği bir mal olduğunu söylediler; çünkü öbürlerinin, onu bulup satın aldıklarını bilirlerse pay isteyeceklerinden korktular. İkincisi, yine Mücâhid’den: Tüccarlar onu birbirlerinden sakladılar. Üçüncüsü, Katâde’den: Satışını gizli tuttular. Dördüncüsü, İbn Abbas’tan: Onun kardeşleri olduklarını saklayan ve onun köleleri olduğunu söyleyen Yusuf’un kardeşleriydi; Yusuf, onu öldürürler korkusuyla sesini çıkarmadı ve satılmayı seçti.\n\nTaberî birinci açıklamayı tercih eder, çünkü bu sözler onu bulan adamdan hemen sonra gelir ve büyük olasılıkla onun ve arkadaşlarının durumunu anlatır. Tefsir (İbn Kesîr) yalnızca İbn Abbas’tan gelen açıklamayı aktarır.\n\nTaberî ayrıca Mücâhid’den, kardeşlerin kervanın ardından gidip adamlara oğlanın kaçmaması için ona iyi göz kulak olmalarını söylediklerini, ta ki Mısır’da satışa çıkarılana kadar, rivayet eder. Bu, 4.4. sayfadaki pazardır: onun ilk kez açıkça gösterildiği yer.\n\nBirlikte bir haritaya bakın: Ken'ân ülkesinden (Filistin) Mısır’a. Sorun: Sence çölü deveyle geçmek ne kadar sürdü?"
+  },
+  "4.3": {
+   "en": "Ask: what do people need for a long journey in the desert? (Water, shade, food, camels.)",
+   "t": "Sorun: İnsanların çölde uzun bir yolculuk için neye ihtiyacı vardır? (Su, gölge, yiyecek, develer.)"
+  },
+  "4.4": {
+   "en": "The man who bought Yusuf said: 'Look after him well! He may be useful to us, or we may adopt him as a son' (12:21). Ask: how should we treat someone new in our home or class?\n\nThe man who bought Yusuf was a minister of Egypt with the title al-'Aziz (Ibn Kathir). Ibn Mas'ud is reported to have said that three people showed the most insight: the 'Aziz, who told his wife to look after Yusuf; the young woman of Madyan who told her father to hire Musa (28:26); and Abu Bakr when he chose 'Umar to lead after him.\n\nYou may hear the woman of the house called Zulaykha. The Qur'an does not name her (12:23 calls her 'the woman in whose house he was living').",
+   "t": "Yusuf’u satın alan adam şöyle dedi: “Ona güzel bak, belki bize faydası olur yahut ta onu evlat ediniriz” (12:21). Sorun: Evimizdeki ya da sınıfımızdaki yeni birine nasıl davranmalıyız?\n\nYusuf’u satın alan adam, el-Azîz unvanlı bir Mısır veziriydi (İbn Kesîr). İbn Mes'ûd’un, en çok feraset gösteren üç kişinin şunlar olduğunu söylediği rivayet edilir: karısına Yusuf’a güzel bakmasını söyleyen Azîz; babasına Musa’yı ücretle tutmasını söyleyen Medyenli genç kadın (28:26); ve kendisinden sonra yönetmesi için Ömer’i seçen Ebû Bekir.\n\nEvin hanımına Züleyha dendiğini duyabilirsiniz. Kur’an onun adını vermez (12:23 ona yalnızca Yusuf’un evinde kaldığı kadın diye işaret eder)."
+  },
+  "4.5": {
+   "en": "The verse ends: 'God always prevails in His purpose, though most people do not realize it' (12:21). Ask: can something that looks bad turn out to be good?\n\nThe commentators give names the Qur'an does not: the 'Aziz is Qitfir (Ibn Abbas, in al-'Awfi's report) or Itfir (Muhammad bin Ishaq); his wife Ra'il (Ibn Ishaq) or Zulaykha ('others said'); the king al-Rayyan bin al-Walid (Ibn Ishaq). All from Ibn Kathir's Arabic commentary on 12:21; none of the names is in the Qur'an.",
+   "t": "Ayet şöyle biter: “Allah, işinde hakimdir, fakat insanların çoğu bunu bilmezler” (12:21). Sorun: Kötü görünen bir şey iyi çıkabilir mi?\n\nMüfessirler Kur’an’ın vermediği adlar verir: Azîz, Kıtfîr (İbn Abbas, Avfî’nin rivayetinde) ya da Itfîr’dir (Muhammed b. İshak); karısı Râîl (İbn İshak) ya da Züleyha’dır (“başkaları dedi ki”); kral Reyyân b. Velîd’dir (İbn İshak). Hepsi İbn Kesîr’in 12:21 hakkındaki Arapça tefsirindendir; adların hiçbiri Kur’an’da yoktur."
+  },
+  "4.6": {
+   "en": "'This is how We reward those who do good' (12:22). Ask: what good things do you want to grow up to do?",
+   "t": "“İyi davrananları böyle mükafatlandırırız” (12:22). Sorun: Büyüyünce hangi iyi şeyleri yapmak istersin?"
+  },
+  "4.7": {
+   "en": "Name each card as you match it, and ask: which part of Yusuf's story does this remind you of?",
+   "t": "Eşleştirirken her kartın adını söyleyin ve sorun: Bu sana Yusuf’un hikâyesinin hangi kısmını hatırlatıyor?"
+  },
+  "5.1": {
+   "en": "The verses are more explicit than the game. The woman of the house bolted the doors and called him to her (12:23); Yusuf refused, they raced for the door, and she tore his shirt from behind (12:25). The game says only that she tried to make him do something wrong.\n\nThe shirt test is in the verses: a member of her household suggested that a shirt torn at the front would mean she was telling the truth, and one torn at the back that Yusuf was (12:26–27). Her husband saw that it was torn at the back (12:28).\n\nThe women of the city (12:30–31): they gossiped that the governor's wife was trying to seduce her servant; she invited them to a banquet, gave each a knife, and told Yusuf to come out; stunned by his beauty they cut their hands and said he could not be mortal but must be a noble angel. The game keeps the banquet, the knives and their words, and says only that the women were 'gossiping'. That they were cutting fruit (citron) is from the commentary, reported from Ibn Abbas, Sa'id bin Jubayr, Mujahid, Al-Hasan, As-Suddi and others; the commentary quotes the authentic hadith that Yusuf 'was given half of all beauty'. Left out: her words in 12:32, that she had tried to seduce him and that he would be imprisoned if he did not obey her.\n\nKept: Yusuf's prayer that prison is better for him than what they ask (12:33–34), and the decision to imprison him even after the signs of his innocence had been seen (12:35).",
+   "t": "Ayetler oyundan daha açıktır. Evin hanımı kapıları kilitledi ve onu kendine çağırdı (12:23); Yusuf reddetti, kapıya doğru koştular ve kadın onun gömleğini arkadan yırttı (12:25). Oyun yalnızca kadının ona yanlış bir şey yaptırmaya çalıştığını söyler.\n\nGömlek sınavı ayetlerdedir: Kadının ailesinden biri, önden yırtılmış bir gömleğin kadının doğru söylediği, arkadan yırtılmış bir gömleğin ise Yusuf’un doğru söylediği anlamına geleceğini önerdi (12:26–27). Kocası gömleğin arkadan yırtıldığını gördü (12:28).\n\nŞehrin kadınları (12:30–31): Valinin karısının uşağını baştan çıkarmaya çalıştığı dedikodusunu yaptılar; o da onları bir ziyafete çağırdı, her birine bir bıçak verdi ve Yusuf’a çıkmasını söyledi; onun güzelliğinden büyülenince ellerini kestiler ve onun bir insan olamayacağını, ancak değerli bir melek olabileceğini söylediler. Oyun ziyafeti, bıçakları ve onların sözlerini korur ve yalnızca kadınların “dedikodu yaptığını” söyler. Meyve (ağaç kavunu) kestikleri tefsirdendir ve İbn Abbas, Saîd b. Cübeyr, Mücâhid, Hasan, Süddî ve başkalarından rivayet edilir; tefsir Yusuf’a “bütün güzelliğin yarısının verildiği” sahih hadisini aktarır. Atlanan: Kadının 12:32’deki, onu baştan çıkarmaya çalıştığı ve kendisine itaat etmezse hapse atılacağı sözleri.\n\nKorunanlar: Yusuf’un hapsin onun için istediklerinden daha iyi olduğu duası (12:33–34) ve suçsuzluğunun işaretleri görüldükten sonra bile onu hapse atma kararı (12:35)."
+  },
+  "5.2": {
+   "en": "In Hayat al-Qulub, Imam al-Rida explains 12:24: the woman intended wrong and Yusuf intended to avoid it; the 'evidence of his Lord' was Allah's protection.\n\nWith young children you can say: someone tried to make Yusuf do something wrong, and he ran away from it.\n\nYou may hear what Yusuf 'saw' in that moment (12:24): some reports say the face of his father Ya'qub, others an angel, others a voice forbidding him. Al-Tabari, quoted by Ibn Kathir, says there is no clear proof for any one of these, so it is best left vague, 'as Allah left it'.",
+   "t": "Hayâtü’l-Kulûb’da İmam Rızâ 12:24’ü açıklar: Kadın kötülüğe niyetlendi, Yusuf ise ondan kaçınmaya niyetlendi; “Rabbinin delili” Allah’ın korumasıydı.\n\nKüçük çocuklara şöyle diyebilirsiniz: Biri Yusuf’a yanlış bir şey yaptırmaya çalıştı ve o bundan kaçtı.\n\nYusuf’un o anda neyi “gördüğünü” duyabilirsiniz (12:24): Bazı rivayetler babası Yakup’un yüzü der, başkaları bir melek, başkaları onu yasaklayan bir ses. İbn Kesîr’in aktardığı Taberî, bunlardan herhangi biri için açık bir delil olmadığını, bu yüzden en iyisinin onu “Allah’ın bıraktığı gibi” belirsiz bırakmak olduğunu söyler."
+  },
+  "5.3": {
+   "en": "Ask: how can we find out what really happened when two people tell different stories? Looking at clues, like the shirt, is fairer than guessing.",
+   "t": "Sorun: İki kişi farklı hikâyeler anlattığında gerçekte ne olduğunu nasıl öğrenebiliriz? Gömlek gibi ipuçlarına bakmak tahmin etmekten daha adildir."
+  },
+  "5.4": {
+   "en": "Ask: what does 'telling the truth' feel like, even when it is hard?",
+   "t": "Sorun: Zor olsa bile “doğruyu söylemek” nasıl hissettirir?"
+  },
+  "5.5": {
+   "en": "Her husband told Yusuf to 'overlook this' and told his wife to ask forgiveness (12:29). Ask: what does it mean to forgive and move on?",
+   "t": "Kocası Yusuf’a “bunu geç” dedi ve karısına bağışlanma dilemesini söyledi (12:29). Sorun: Affedip yola devam etmek ne demektir?"
+  },
+  "5.6": {
+   "en": "Talk about gossip: what is it? How does it feel when people talk about you behind your back? The women gossiped; the story shows where that led.",
+   "t": "Dedikoduyu konuşun: Nedir? İnsanlar arkandan konuşunca nasıl hissedersin? Kadınlar dedikodu yaptı; hikâye bunun nereye vardığını gösterir."
+  },
+  "5.7": {
+   "en": "Ask: why do you think the women were so surprised that they did not notice the knife? Being careless with sharp things hurts, so we always pay attention.",
+   "t": "Sorun: Sence kadınlar bıçağı fark etmeyecek kadar neden şaşırdılar? Keskin şeylerle dikkatsiz olmak canımızı yakar, bu yüzden her zaman dikkat ederiz."
+  },
+  "5.8": {
+   "en": "A gentle check: the story says the women cut their hands by accident. Ask your child what they do if they cut themselves: tell a grown-up, wash it, cover it.",
+   "t": "Nazik bir kontrol: Hikâye kadınların ellerini kazara kestiğini söyler. Çocuğunuza kendini kesince ne yaptığını sorun: bir büyüğe söylemek, yıkamak, kapatmak."
+  },
+  "5.9": {
+   "en": "Yusuf prayed: 'My Lord! I would prefer prison to what these women are calling me to do' (12:33), and Allah answered his prayer (12:34). Ask: is it brave to choose something hard instead of something wrong?",
+   "t": "Yusuf şöyle dua etti: “Rabbim! Hapis benim için, bunların istediklerini yapmaktan daha iyidir” (12:33) ve Allah onun duasını kabul etti (12:34). Sorun: Yanlış bir şey yerine zor bir şeyi seçmek cesaret midir?"
+  },
+  "5.10": {
+   "en": "Talk about unfairness: Yusuf was innocent and still went to prison (12:35). Ask: what can we do when something unfair happens? (Stay patient, keep doing right, ask Allah for help.)",
+   "t": "Haksızlığı konuşun: Yusuf suçsuzdu ve yine de hapse girdi (12:35). Sorun: Haksız bir şey olunca ne yapabiliriz? (Sabırlı kalmak, doğru olanı yapmaya devam etmek, Allah’tan yardım istemek.)"
+  },
+  "5.11": {
+   "en": "Count together how long your child can hold the lamp. Then talk about waiting: what is the hardest thing to wait for?",
+   "t": "Çocuğunuzun lambayı ne kadar süre tutabildiğini birlikte sayın. Sonra beklemeyi konuşun: Beklemesi en zor şey nedir?"
+  },
+  "5.12": {
+   "en": "Ask: what helps you stay patient? (Breathing slowly, saying a dua, doing something kind while you wait.)",
+   "t": "Sorun: Sabırlı kalmana ne yardım eder? (Yavaşça nefes almak, bir dua etmek, beklerken iyi bir şey yapmak.)"
+  },
+  "5.13": {
+   "en": "Let your child put the events in order out loud before tapping.",
+   "t": "Dokunmadan önce çocuğunuz olayları yüksek sesle sıraya koysun."
+  },
+  "5.14": {
+   "en": "While solving the puzzle, ask: what is Yusuf doing in this picture? How is he feeling?",
+   "t": "Yapbozu çözerken sorun: Bu resimde Yusuf ne yapıyor? Nasıl hissediyor?"
+  },
+  "6.1": {
+   "en": "Yusuf first calls the two prisoners to worship Allah alone (12:37–40), then interprets the dreams (12:41).\n\nThe verse says the second prisoner would be crucified and birds would eat from his head. The game says only that he would be put to death. The commentary notes that Yusuf spoke without naming either man, to lessen the second man's grief; the game follows that gentleness.\n\nThe freed prisoner forgot to mention Yusuf to his master, so Yusuf stayed in prison for some years (12:42).",
+   "t": "Yusuf önce iki mahpusu yalnızca Allah’a kulluk etmeye çağırır (12:37–40), sonra rüyaları yorumlar (12:41).\n\nAyet, ikinci mahpusun asılacağını ve kuşların onun başından yiyeceğini söyler. Oyun yalnızca öldürüleceğini söyler. Tefsir, Yusuf’un ikinci adamın üzüntüsünü hafifletmek için ikisinden hiçbirinin adını vermeden konuştuğunu not eder; oyun bu yumuşaklığı izler.\n\nSerbest kalan mahpus Yusuf’u efendisine anmayı unuttu, bu yüzden Yusuf daha birkaç yıl hapiste kaldı (12:42)."
+  },
+  "6.2": {
+   "en": "Yusuf said he follows 'the faith of my forefathers Abraham, Isaac, and Jacob' (12:38). Ask: what do we learn from our parents and grandparents about Allah?",
+   "t": "Yusuf, “Atalarım İbrahim, İshak ve Yakub’un dinine uydum” dedi (12:38). Sorun: Anne babamızdan ve büyükanne ve büyükbabalarımızdan Allah hakkında neler öğreniriz?"
+  },
+  "6.3": {
+   "en": "Yusuf asked: 'would many diverse gods be better than God the One?' (12:39). Even in prison, he spoke about Allah first. Ask: what matters most to you?",
+   "t": "Yusuf sordu: “Ayrı ayrı bir sürü uydurma rabler mi daha iyidir, yoksa her şeyden üstün tek Allah mı?” (12:39). Hapiste bile önce Allah’tan söz etti. Sorun: Senin için en önemli şey nedir?"
+  },
+  "6.4": {
+   "en": "Ask: what do you think your dreams mean? Many families say: tell good dreams to people you love, and seek Allah's protection from bad ones.",
+   "t": "Sorun: Sence rüyaların ne anlama geliyor? Birçok aile şöyle der: Güzel rüyaları sevdiğin insanlara anlat, kötü olanlardan Allah’a sığın."
+  },
+  "6.5": {
+   "en": "'Satan made him forget' (12:42). Ask: have you ever forgotten to do something you promised? What helps us remember?",
+   "t": "“Şeytan efendisine onu hatırlatmayı unutturdu” (12:42). Sorun: Söz verdiğin bir şeyi yapmayı hiç unuttun mu? Hatırlamamıza ne yardım eder?"
+  },
+  "6.6": {
+   "en": "As you match, ask your child to name each picture from the prison chapter.",
+   "t": "Eşleştirirken çocuğunuzdan hapis bölümündeki her resmin adını söylemesini isteyin."
+  },
+  "7.1": {
+   "en": "The king dreams of seven fat cows eaten by seven lean ones, and of seven green ears of grain and seven withered ones. Yusuf's interpretation: seven years of sowing as usual with the harvest stored, seven hard years that use up the store, and then a year of abundant rain (12:47–49). The freed prisoner finally remembered Yusuf and asked to go and find out the meaning (12:45).",
+   "t": "Kral, yedi semiz ineği yedi zayıf ineğin yediğini, bir de yedi yeşil başak ile yedi kuru başak gördüğü bir rüya görür. Yusuf’un yorumu: Her zamanki gibi ekilen ve hasadı saklanan yedi yıl, saklananı tüketen yedi zor yıl ve sonra bol yağmurlu bir yıl (12:47–49). Serbest kalan mahpus sonunda Yusuf’u hatırladı ve gidip anlamını öğrenmek için izin istedi (12:45)."
+  },
+  "7.2": {
+   "en": "Count to seven together, then count the fat cows and the thin cows. Ask: which would you rather be, a fat cow or a thin one?",
+   "t": "Birlikte yediye kadar sayın, sonra semiz inekleri ve zayıf inekleri sayın. Sorun: Semiz bir inek mi olmak isterdin, zayıf bir inek mi?"
+  },
+  "7.3": {
+   "en": "The king's counsellors said: 'These are confusing dreams and we are not skilled at dream-interpretation' (12:44). Ask: is it all right to say 'I don't know'?",
+   "t": "Kralın danışmanları şöyle dedi: “Bir takım karışık rüyalar; biz böyle rüyaların yorumunu bilmeyiz” (12:44). Sorun: “Bilmiyorum” demek doğru mudur?"
+  },
+  "7.4": {
+   "en": "The freed prisoner called him 'Truthful Joseph' (12:46). Ask: what would you like people to call you because of how you behave?",
+   "t": "Serbest kalan mahpus ona “Ey doğru sözlü Yusuf!” diye seslendi (12:46). Sorun: Davranışların yüzünden insanların sana ne demesini isterdin?"
+  },
+  "7.5": {
+   "en": "After the hard years 'will come a year when the people will have abundant rain and will press grapes' (12:49). Ask: after a hard time, what good thing are you looking forward to?",
+   "t": "Zor yıllardan sonra “halkın yağmur göreceği bir yıl gelir, o zaman sıkıp sağarlar” (12:49). Sorun: Zor bir zamandan sonra hangi güzel şeyi dört gözle beklersin?"
+  },
+  "7.6": {
+   "en": "Talk about saving: what does our family save for? Ask your child to think of one thing they could save for, a little at a time.",
+   "t": "Biriktirmeyi konuşun: Ailemiz ne için biriktirir? Çocuğunuzdan azar azar biriktirebileceği bir şey düşünmesini isteyin."
+  },
+  "8.1": {
+   "en": "When the king's messenger came, Yusuf asked first that the king look into what had happened (12:50). The commentary says he refused to leave prison until the king and his people declared his innocence. The king questioned the women; they said they knew no evil of Yusuf, and the woman of the house said the truth had come out and that Yusuf was among the truthful (12:51).\n\nVerses 12:52–53 are left out of the game because scholars differ on who is speaking. The commentary favours them as the woman's words, and says Ibn Jarir al-Tabari and Ibn Abi Hatim took them as Yusuf's. Some translations put them in Yusuf's mouth. Read them with your child, and with a scholar if you wish.\n\nThe king then trusted Yusuf (12:54), and Yusuf asked to be put in charge of the storehouses (12:55).",
+   "t": "Kralın elçisi gelince Yusuf önce kralın olanları araştırmasını istedi (12:50). Tefsir, onun kral ve adamları suçsuzluğunu ilan edene kadar hapisten çıkmayı reddettiğini söyler. Kral kadınları sorguladı; onlar Yusuf hakkında hiçbir kötülük bilmediklerini söylediler, evin hanımı da gerçeğin ortaya çıktığını ve Yusuf’un doğru söyleyenlerden olduğunu söyledi (12:51).\n\n12:52–53. ayetler, âlimler konuşanın kim olduğu konusunda ayrıldığı için oyunda yoktur. Tefsir bunların kadının sözleri olduğunu tercih eder ve İbn Cerîr et-Taberî ile İbn Ebî Hâtim’in onları Yusuf’un sözleri olarak aldığını söyler. Bazı çeviriler onları Yusuf’un ağzından verir. Onları çocuğunuzla, isterseniz bir âlimle birlikte okuyun.\n\nSonra kral Yusuf’a güvendi (12:54) ve Yusuf ambarların başına getirilmesini istedi (12:55)."
+  },
+  "8.2": {
+   "en": "Yusuf would not leave prison until the truth was known (12:50). Ask: why is it important that people know the truth about you?",
+   "t": "Yusuf gerçek ortaya çıkana kadar hapisten çıkmadı (12:50). Sorun: İnsanların senin hakkındaki gerçeği bilmesi neden önemlidir?"
+  },
+  "8.3": {
+   "en": "Ask: how hard is it to say 'it was my fault'? The woman finally said it (12:51). Saying it can make things right.",
+   "t": "Sorun: “Benim hatamdı” demek ne kadar zordur? Kadın sonunda bunu söyledi (12:51). Bunu söylemek işleri düzeltebilir."
+  },
+  "8.4": {
+   "en": "Ask your child to say what happened first, then next, before tapping.",
+   "t": "Dokunmadan önce çocuğunuzdan önce ne olduğunu, sonra neyin geldiğini söylemesini isteyin."
+  },
+  "8.5": {
+   "en": "Yusuf said: 'I shall manage them prudently and carefully' (12:55). Ask: what are you good at? What could you look after carefully at home?\n\nYou may hear that Yusuf later married the woman of the house. Ibn Kathir quotes Muhammad bin Ishaq: 'it was mentioned to me, and Allah knows best' that her husband died, and the king married her to Yusuf; 'they claim' she bore him two sons, Ephraim and Manasseh. Ibn Ishaq himself presents it as hearsay, and the Qur'an says nothing of it.\n\nIbn Kathir also quotes al-Fudayl bin 'Iyad: she stood by the road as Yusuf passed and said, 'Praise be to Allah, who makes servants into kings by their obedience, and kings into servants by their disobedience.' (Our translation from the Arabic.)",
+   "t": "Yusuf şöyle dedi: “Beni memleketin hazinelerine memur et, çünkü ben korumasını ve yönetmesini bilirim” (12:55). Sorun: Sen neyde iyisin? Evde neye dikkatle bakabilirsin?\n\nYusuf’un sonradan evin hanımıyla evlendiğini duyabilirsiniz. İbn Kesîr, Muhammed b. İshak’ı aktarır: “Bana anlatıldı, Allah en iyisini bilir” ki kocası öldü ve kral onu Yusuf’la evlendirdi; “iddia ederler ki” ona Efrâim ve Menşâ adında iki oğul doğurdu. İbn İshak bunu kendisi de bir duyum olarak sunar ve Kur’an bu konuda hiçbir şey söylemez.\n\nİbn Kesîr ayrıca Fudayl b. İyâz’ı aktarır: Kadın Yusuf’un geçtiği yolun kenarında durdu ve şöyle dedi: “Kulları itaatleriyle krallara, kralları da isyanlarıyla kullara çeviren Allah’a hamdolsun.” (Arapçadan çeviri bizimdir.)"
+  },
+  "8.6": {
+   "en": "If you can, look at stored grain, rice or flour at home or in a market. Ask: why do families keep food for later?",
+   "t": "Yapabilirseniz evde ya da pazarda saklanan tahıla, pirince ya da una bakın. Sorun: Aileler yiyeceği neden sonrası için saklar?"
+  },
+  "8.7": {
+   "en": "The Qur'an: 'We grant Our mercy to whoever We will and do not fail to reward those who do good' (12:56). Ask: how did Yusuf get from the well to the storehouse?",
+   "t": "Kur’an: “Rahmetimizi tıpkı bu misalde olduğu gibi istediğimize veririz; iyi davrananların ecrini zayi etmeyiz” (12:56). Sorun: Yusuf kuyudan ambara nasıl geldi?"
+  },
+  "8.8": {
+   "en": "While solving the puzzle, ask: what is happening in this picture?",
+   "t": "Yapbozu çözerken sorun: Bu resimde neler oluyor?"
+  },
+  "9.1": {
+   "en": "The hard years: Yusuf foretold seven hard years after the seven good ones (12:47–48). The verses go straight from his appointment to his brothers' arrival (12:58); the game adds one line saying the hard years had come, so that a child knows why the brothers travelled.\n\nYusuf recognised his brothers but they did not recognise him (12:58). He asked them to bring their other brother, and had their goods put back into their saddlebags (12:59–62).",
+   "t": "Zor yıllar: Yusuf yedi bereketli yıldan sonra yedi zor yıl geleceğini önceden bildirdi (12:47–48). Ayetler onun göreve getirilmesinden doğrudan kardeşlerinin gelişine geçer (12:58); oyun, bir çocuk kardeşlerin neden yolculuk ettiğini bilsin diye zor yılların geldiğini söyleyen bir satır ekler.\n\nYusuf kardeşlerini tanıdı ama onlar onu tanımadı (12:58). Öbür kardeşlerini getirmelerini istedi ve mallarının heybelerine geri konmasını emretti (12:59–62)."
+  },
+  "9.2": {
+   "en": "Ask: why do you think the brothers had to travel so far for food? Talk about families today who travel for work or food.",
+   "t": "Sorun: Sence kardeşler yiyecek için neden bu kadar uzağa gitmek zorunda kaldı? Bugün iş ya da yiyecek için yolculuk eden aileleri konuşun."
+  },
+  "9.3": {
+   "en": "Ask: how would you feel if you saw someone who had hurt you long ago? What would you do?",
+   "t": "Sorun: Uzun zaman önce seni incitmiş birini görsen nasıl hissederdin? Ne yapardın?"
+  },
+  "9.4": {
+   "en": "Yusuf recognised them but they did not recognise him (12:58). Ask: how do people change as they grow up? Look at an old photo of your child together.",
+   "t": "Yusuf onları tanıdı ama onlar onu tanımadı (12:58). Sorun: İnsanlar büyüdükçe nasıl değişir? Birlikte çocuğunuzun eski bir fotoğrafına bakın."
+  },
+  "9.5": {
+   "en": "How could Yusuf ask for his youngest brother without giving himself away? The Qur'an tells only that he recognised them, gave them their grain and then asked them to bring 'the brother you left with your father' (12:58–59). This page comes from the commentaries, so the game says 'It is told that'.\n\nAl-Tafsir al-Muyassar: the brothers had told him that they had a brother from their father whom they had not brought with them.\n\nAs-Suddi, reported by al-Tabari and in the commentary (Ibn Kathir): Yusuf questioned them and said they might be spies. They answered that they were brothers, sons of a truthful man, Yaqub of the land of Canaan; that they had been twelve; that one of them, the one their father loved most, had died in the desert; and that their father kept that boy's full brother at home with him. In al-Tabari's report, Yusuf then asks how their father can be truthful if he loves the youngest more than the older ones, and tells them to bring him so that he can see him.\n\nNotice what the brothers say about the lost brother: they still tell their own story of what happened to Yusuf, to Yusuf himself, without knowing who he is. Ask your child: how do you think Yusuf felt, hearing that?",
+   "t": "Yusuf kendini ele vermeden en küçük kardeşini nasıl isteyebilirdi? Kur’an yalnızca onları tanıdığını, onlara tahıllarını verdiğini ve sonra baba bir kardeşlerini getirmelerini istediğini anlatır (12:58–59). Bu sayfa tefsirlerden gelir, bu yüzden oyun “Anlatıldığına göre” der.\n\net-Tefsîrü’l-Müyesser: Kardeşler ona, yanlarında getirmedikleri baba bir bir kardeşleri olduğunu söylemişlerdi.\n\nSüddî, Taberî’nin ve tefsirin (İbn Kesîr) rivayetiyle: Yusuf onları sorguladı ve casus olabileceklerini söyledi. Onlar kardeş olduklarını, doğru sözlü bir adamın, Ken'ân ülkesinden Yakup’un oğulları olduklarını; on iki kişi olduklarını; birinin, babalarının en çok sevdiğinin çölde öldüğünü; babalarının da o çocuğun öz kardeşini evde yanında tuttuğunu söylediler. Taberî’nin rivayetinde Yusuf sonra babaları en küçüğü büyüklerden daha çok seviyorsa nasıl doğru sözlü olabileceğini sorar ve onu görebilmesi için getirmelerini söyler.\n\nKardeşlerin kayıp kardeş hakkında ne dediğine dikkat edin: Yusuf’a ne olduğuna dair kendi hikâyelerini, onun kim olduğunu bilmeden, Yusuf’un kendisine anlatıyorlar. Çocuğunuza sorun: Sence Yusuf bunu duyunca nasıl hissetti?"
+  },
+  "9.6": {
+   "en": "Yusuf said: 'Have you not seen me giving generous measure and being the best of hosts?' (12:59). Ask: how can we be good hosts when guests come?",
+   "t": "Yusuf şöyle dedi: “Sizlere ölçüyü bol tuttuğumu ve benim misafir konuklayanların en iyisi olduğumu görmüyor musunuz?” (12:59). Sorun: Misafirler gelince nasıl iyi ev sahipleri olabiliriz?"
+  },
+  "9.7": {
+   "en": "Ask: why would Yusuf want to see his little brother? Who do you miss when they are away?",
+   "t": "Sorun: Yusuf küçük kardeşini neden görmek istesin? Uzaktayken kimleri özlersin?"
+  },
+  "9.8": {
+   "en": "Yusuf secretly returned their goods so they would come back (12:62). Ask: have you ever done something kind in secret?",
+   "t": "Yusuf geri gelsinler diye mallarını gizlice geri verdi (12:62). Sorun: Hiç gizlice iyi bir şey yaptın mı?"
+  },
+  "10.1": {
+   "en": "The gates: Yaqub told his sons not to enter by one gate but by different gates, adding that he could not protect them from anything Allah had decreed and that he put his trust in Allah (12:67). The verse does not give his reason. The commentary reports from Ibn Abbas, Muhammad bin Ka'b, Mujahid, Ad-Dahhak, Qatadah, As-Suddi and others that he feared the evil eye for them. The game shows the gates and leaves the reason for you to explain.\n\nYaqub let Benjamin go only after his sons swore to bring him back (12:63–66). Yusuf told Benjamin privately that he was his brother (12:69), and the king's cup was put in Benjamin's pack (12:70). The verse says Yusuf searched the other bags first and then his brother's, where he found the cup (12:76), so the game keeps that order: the cup is in the last bag on purpose. The same verse says this was a plan Allah devised for Yusuf.\n\nThe brothers' own rule (12:74–76): asked what the penalty should be if one of them was lying, the brothers said the one in whose bag the cup was found would be held as the penalty, 'this is how we punish wrongdoers'. The verse says Yusuf could not have held his brother under the king's law. The commentary says this was the law of Prophet Ibrahim, that a thief be handed to the one he stole from, and reports from Ad-Dahhak and others that it was not the law of the king of Egypt. The verse's word for the penalty is servitude; the game says 'must stay behind'.",
+   "t": "Kapılar: Yakup oğullarına tek bir kapıdan değil, ayrı ayrı kapılardan girmelerini söyledi ve Allah’ın takdir ettiği hiçbir şeyden onları koruyamayacağını, Allah’a güvendiğini ekledi (12:67). Ayet sebebini vermez. Tefsir, İbn Abbas, Muhammed b. Kâ'b, Mücâhid, Dahhâk, Katâde, Süddî ve başkalarından onların nazara uğramasından korktuğunu aktarır. Oyun kapıları gösterir ve sebebini açıklamayı size bırakır.\n\nYakup, Bünyamin’in gitmesine ancak oğulları onu geri getireceklerine yemin ettikten sonra izin verdi (12:63–66). Yusuf, Bünyamin’e gizlice kardeşi olduğunu söyledi (12:69) ve kralın su kabı Bünyamin’in yüküne konuldu (12:70). Ayet, Yusuf’un önce öbür yükleri, sonra kardeşininkini aradığını ve su kabını orada bulduğunu söyler (12:76); oyun bu sırayı korur: Su kabı bilerek son yüktedir. Aynı ayet bunun Allah’ın Yusuf için kurduğu bir plan olduğunu söyler.\n\nKardeşlerin kendi kuralı (12:74–76): İçlerinden biri yalan söylüyorsa cezanın ne olması gerektiği sorulunca kardeşler, su kabı kimin yükünde bulunursa onun ceza olarak alıkonacağını söylediler: “zalimleri böyle cezalandırırız”. Ayet, Yusuf’un kralın kanununa göre kardeşini alıkoyamayacağını söyler. Tefsir bunun İbrahim Peygamber’in şeriatı olduğunu, hırsızın çaldığı kişiye teslim edildiğini söyler ve Dahhâk ve başkalarından bunun Mısır kralının kanunu olmadığını aktarır. Ayetin ceza için kullandığı kelime kulluktur; oyun “geride kalmalı” der."
+  },
+  "10.2": {
+   "en": "Ask: how would you feel if you found your money given back to you? What would you do?",
+   "t": "Sorun: Paranın sana geri verildiğini görsen nasıl hissederdin? Ne yapardın?"
+  },
+  "10.3": {
+   "en": "Yaqub said: 'God is the best guardian and the Most Merciful of the merciful' (12:64), and later: 'Our words are entrusted to God' (12:66). Ask: what does it mean to trust Allah?",
+   "t": "Yakup şöyle dedi: “Allah en iyi koruyandır, O merhametlilerin merhametlisidir” (12:64), sonra da: “Sözümüze Allah vekildir” (12:66). Sorun: Allah’a güvenmek ne demektir?"
+  },
+  "10.4": {
+   "en": "'I trust in Him; let everyone put their trust in Him' (12:67). Yaqub took care and also trusted Allah. Ask: what do we do to stay safe, and what do we leave to Allah?",
+   "t": "“O’na güvendim, güvenenler de O’na güvensinler” (12:67). Yakup hem tedbir aldı hem de Allah’a güvendi. Sorun: Güvende kalmak için biz ne yaparız, neyi Allah’a bırakırız?"
+  },
+  "10.5": {
+   "en": "Count the gates and the brothers together. Ask: why might Yaqub not want them all to go through one gate?",
+   "t": "Kapıları ve kardeşleri birlikte sayın. Sorun: Yakup neden hepsinin tek bir kapıdan geçmesini istememiş olabilir?"
+  },
+  "10.6": {
+   "en": "Yusuf told his brother: 'I am your brother, so do not be saddened by their past actions' (12:69). Ask: how can we comfort a brother, sister or friend who is sad?",
+   "t": "Yusuf kardeşine şöyle dedi: “Ben senin kardeşinim, onların yaptıklarına artık üzülme” (12:69). Sorun: Üzgün bir kardeşi ya da arkadaşı nasıl teselli edebiliriz?"
+  },
+  "10.7": {
+   "en": "Ask: can a plan be good even when we don't understand it at first? The verse calls it a plan Allah devised for Yusuf (12:76).",
+   "t": "Sorun: Bir plan, ilk başta anlamasak bile iyi olabilir mi? Ayet ona Allah’ın Yusuf için kurduğu bir plan der (12:76)."
+  },
+  "10.8": {
+   "en": "The verse ends: 'Above everyone who has knowledge there is the One who is all knowing' (12:76). Ask: who knows everything?",
+   "t": "Ayet şöyle biter: “Her ilim sahibinden üstün bir bilen bulunur” (12:76). Sorun: Her şeyi kim bilir?"
+  },
+  "10.9": {
+   "en": "A reward was offered: 'Whoever returns it will get a camel-load of grain' (12:72). Ask: what would you do if you found something that someone lost?",
+   "t": "Bir ödül verildi: “onu getirene bir deve yükü mükafat verilecek” (12:72). Sorun: Birinin kaybettiği bir şeyi bulsan ne yapardın?"
+  },
+  "10.10": {
+   "en": "Ask: is it fair to make a rule for others that you would not follow yourself? The brothers made the rule (12:75).",
+   "t": "Sorun: Başkaları için kendinin uymayacağı bir kural koymak adil midir? Kuralı kardeşler koydu (12:75)."
+  },
+  "10.11": {
+   "en": "Ask: what does it mean to keep your word, even when it is hard?",
+   "t": "Sorun: Zor olsa bile sözünü tutmak ne demektir?"
+  },
+  "10.12": {
+   "en": "Count the bags together as you search. Ask: why did Yusuf search the others first? (12:76)",
+   "t": "Ararken yükleri birlikte sayın. Sorun: Yusuf neden önce öbürlerini aradı? (12:76)"
+  },
+  "10.13": {
+   "en": "The brothers then said hurtful things about Yusuf, but he 'kept his secrets' (12:77). Ask: what can we do when someone says something unkind about us? Sometimes staying calm is the strongest answer.",
+   "t": "Kardeşler sonra Yusuf hakkında incitici şeyler söylediler, ama “Yusuf bunu içinde sakladı, onlara açmadı” (12:77). Sorun: Biri hakkımızda kötü bir şey söyleyince ne yapabiliriz? Bazen sakin kalmak en güçlü cevaptır."
+  },
+  "10.14": {
+   "en": "While solving the puzzle, ask your child how each brother in the picture might be feeling.",
+   "t": "Yapbozu çözerken çocuğunuza resimdeki her kardeşin nasıl hissediyor olabileceğini sorun."
+  },
+  "11.1": {
+   "en": "Yaqub's eyes went white with grief (12:84), yet he told his sons not to despair of Allah's mercy (12:87). When the brothers came again, Yusuf asked whether they understood what they had done, and revealed himself (12:89–90). The brothers admitted they had been in the wrong (12:91). Yusuf said there would be no reproach that day and asked Allah to forgive them (12:92).\n\nGoing home and coming back (12:81–88): the brothers told their father his son had stolen; he answered that patience is best and that Allah might bring them all back to him (12:83), then turned away grieving for Yusuf (12:84). On their third journey they told Yusuf that hardship had struck them and their family, that they had brought little money, and asked him to give full measure and be charitable (12:88).\n\nThe eldest brother (12:78–80): the brothers asked Yusuf to take one of them instead, because their father was very old; he said it would be unjust to take anyone but the one with whom the cup was found. The eldest then reminded the others of their solemn promise to their father and of how they had failed over Yusuf, and said he would not leave the land until his father gave him leave or Allah decided for him. So nine went home. The verse does not name him, and the commentators differ on who he was, so the game does not name him either.\n\nA Shia narration (Imam Zayn al-Abidin) says the family's long trial followed a night when a fasting believer was turned away hungry from Ya'qub's door at iftar; the translator notes that the man's plea never reached Ya'qub himself. The Imam fed everyone who came to his door, for fear of such a trial. The game does not tell this.",
+   "t": "Yakup’un gözlerine üzüntüden ak düştü (12:84), yine de oğullarına Allah’ın rahmetinden ümit kesmemelerini söyledi (12:87). Kardeşler yeniden gelince Yusuf onlara ne yaptıklarını anlayıp anlamadıklarını sordu ve kendini açıkladı (12:89–90). Kardeşler suç işlediklerini kabul ettiler (12:91). Yusuf o gün hiçbir azar olmayacağını söyledi ve Allah’tan onları bağışlamasını istedi (12:92).\n\nEve dönüş ve geri geliş (12:81–88): Kardeşler babalarına oğlunun hırsızlık yaptığını söylediler; o da sabrın en güzel olduğunu ve Allah’ın belki hepsini kendisine geri getireceğini söyledi (12:83), sonra Yusuf için yas tutarak onlardan yüz çevirdi (12:84). Üçüncü yolculuklarında Yusuf’a kendilerinin ve ailelerinin darlığa uğradığını, az bir mal getirdiklerini söylediler ve ondan ölçeği tam yapmasını ve sadaka vermesini istediler (12:88).\n\nEn büyük kardeş (12:78–80): Kardeşler babaları çok yaşlı olduğu için Yusuf’tan onun yerine içlerinden birini almasını istediler; o, su kabı kendisinde bulunandan başkasını almanın haksızlık olacağını söyledi. Sonra en büyükleri öbürlerine babalarına verdikleri kesin sözü ve Yusuf konusunda nasıl başarısız olduklarını hatırlattı ve babası izin verene ya da Allah onun hakkında hüküm verene kadar o topraklardan ayrılmayacağını söyledi. Böylece dokuzu eve döndü. Ayet onun adını vermez ve müfessirler onun kim olduğu konusunda ayrılır; bu yüzden oyun da adını vermez.\n\nBir Şii rivayet (İmam Zeynelâbidîn), ailenin uzun sınavının, oruçlu bir müminin iftar vakti Yakup’un kapısından aç çevrildiği bir geceden sonra geldiğini söyler; çevirmen, adamın yakarışının Yakup’un kendisine hiç ulaşmadığını not eder. İmam, böyle bir sınav korkusuyla kapısına gelen herkesi doyururdu. Oyun bunu anlatmaz."
+  },
+  "11.2": {
+   "en": "The eldest brother said: 'I will not leave this land until my father gives me leave or God decides for me' (12:80). Ask: what does it mean to take responsibility?",
+   "t": "En büyük kardeş şöyle dedi: “babam bana izin verene veya Allah hakkımda hüküm verene kadar … bu yerden ayrılmayacağım” (12:80). Sorun: Sorumluluk almak ne demektir?"
+  },
+  "11.3": {
+   "en": "Yaqub said again: 'it is best to be patient' (12:83). Ask: what helps you when you are very sad?",
+   "t": "Yakup yine sabrın en güzel olduğunu söyledi (12:83). Sorun: Çok üzgün olduğunda sana ne yardım eder?"
+  },
+  "11.4": {
+   "en": "Yaqub said: 'I plead my grief and sorrow before God' (12:86) and 'do not despair of God's mercy' (12:87). Ask: who can we tell when we are sad? It is good to tell Allah, and good to tell people who love us.",
+   "t": "Yakup şöyle dedi: “Ben üzüntü ve tasamı yalnız Allah’a açarım” (12:86) ve “Allah’ın rahmetinden ümidinizi kesmeyin” (12:87). Sorun: Üzgün olduğumuzda kime anlatabiliriz? Allah’a anlatmak da iyidir, bizi seven insanlara anlatmak da."
+  },
+  "11.5": {
+   "en": "The brothers asked Yusuf to 'be charitable' (12:88). Ask: who do we give charity to? How does giving feel?",
+   "t": "Kardeşler Yusuf’tan “sadaka ver” diye istediler (12:88). Sorun: Kimlere sadaka veririz? Vermek nasıl hissettirir?"
+  },
+  "11.6": {
+   "en": "Ask: how do you think the brothers felt when they realised who he was? (Surprised, ashamed, happy, afraid?)",
+   "t": "Sorun: Sence kardeşler onun kim olduğunu anlayınca nasıl hissettiler? (Şaşırmış, utanmış, mutlu, korkmuş?)"
+  },
+  "11.7": {
+   "en": "'We were in the wrong!' (12:91). Ask: what are the hardest words to say? Practise saying sorry together.",
+   "t": "“Doğrusu biz suç işlemiştik” (12:91). Sorun: Söylenmesi en zor sözler hangileri? Birlikte özür dilemeyi çalışın."
+  },
+  "11.8": {
+   "en": "Ask: is it easy to forgive? Who have you forgiven? Who has forgiven you?",
+   "t": "Sorun: Affetmek kolay mıdır? Sen kimi affettin? Seni kim affetti?"
+  },
+  "11.9": {
+   "en": "'You will hear no reproaches today' (12:92). Ask: what does it mean to forgive and not bring it up again?",
+   "t": "“Bugün azarlanacak değilsiniz” (12:92). Sorun: Affedip bir daha açmamak ne demektir?"
+  },
+  "11.10": {
+   "en": "Ask your child to tell this chapter in order, from the eldest brother staying behind to Yusuf forgiving them.",
+   "t": "Çocuğunuzdan bu bölümü, en büyük kardeşin geride kalmasından Yusuf’un onları affetmesine kadar sırasıyla anlatmasını isteyin."
+  },
+  "11.11": {
+   "en": "While solving the puzzle, ask: which part of this chapter made you happiest?",
+   "t": "Yapbozu çözerken sorun: Bu bölümün hangi kısmı seni en çok mutlu etti?"
+  },
+  "12.1": {
+   "en": "Yusuf sent his shirt to be laid over his father's face (12:93). Yaqub said he could smell Yusuf (12:94), and when the shirt was laid on his face his sight returned (12:96). The brothers asked him to seek forgiveness for them, and he said he would (12:97–98).\n\nThe wind: the verse says that when the caravan departed, Yaqub said he could sense the scent of Yusuf (12:94). The commentary reports, through Abd al-Razzaq, that Ibn Abbas said a wind began to blow and carried the scent of the shirt to Yaqub from a distance of eight days' travel. The wind in the game's telling is from this report, not from the verse.",
+   "t": "Yusuf gömleğini babasının yüzüne konması için gönderdi (12:93). Yakup Yusuf’un kokusunu duyduğunu söyledi (12:94) ve gömlek yüzüne konunca gözleri yeniden gördü (12:96). Kardeşler ondan kendileri için bağışlanma dilemesini istediler, o da dileyeceğini söyledi (12:97–98).\n\nRüzgâr: Ayet, kervan ayrılınca Yakup’un Yusuf’un kokusunu duyduğunu söylediğini anlatır (12:94). Tefsir, Abdürrezzâk yoluyla İbn Abbas’ın şöyle dediğini aktarır: Bir rüzgâr esmeye başladı ve gömleğin kokusunu sekiz günlük yol uzaktan Yakup’a taşıdı. Oyunun anlatımındaki rüzgâr ayetten değil, bu rivayettendir."
+  },
+  "12.2": {
+   "en": "'You may think I am senile but I can smell Joseph' (12:94). Ask: what smell reminds you of someone you love?",
+   "t": "“Doğrusu ben Yusuf’un kokusunu duyuyorum; ne olur bana bunak demeyin” (12:94). Sorun: Hangi koku sana sevdiğin birini hatırlatıyor?"
+  },
+  "12.3": {
+   "en": "Ask: what good news would you like to carry to someone? Who would you run to first?",
+   "t": "Sorun: Birine hangi güzel haberi götürmek isterdin? İlk kime koşardın?"
+  },
+  "12.4": {
+   "en": "Yaqub said: 'Did I not tell you that I have knowledge from God that you do not have?' (12:96). Ask: why did Yaqub never give up hope?",
+   "t": "Yakup şöyle dedi: “Ben size, Allah katından sizin bilmediğinizi biliyorum dememiş miydim?” (12:96). Sorun: Yakup neden hiç ümidini kaybetmedi?"
+  },
+  "12.5": {
+   "en": "The brothers asked their father to ask Allah to forgive them, and he said he would (12:97-98). Ask: who can you ask to make dua for you?",
+   "t": "Kardeşler babalarından kendileri için Allah’tan bağışlanma dilemesini istediler, o da dileyeceğini söyledi (12:97-98). Sorun: Senin için dua etmesini kimden isteyebilirsin?"
+  },
+  "12.6": {
+   "en": "Name each card as you match it, and ask: what part of the story is this?",
+   "t": "Eşleştirirken her kartın adını söyleyin ve sorun: Bu hikâyenin hangi kısmı?"
+  },
+  "13.1": {
+   "en": "Yusuf welcomed his parents to Egypt, they all bowed down before him, and he said this was the fulfilment of his dream (12:99–100). He ends with a prayer (12:101), which the game keeps.\n\nThe bowing: The commentary says that, according to Qatadah and other scholars, prostrating to people of authority as a greeting was allowed in the laws of earlier prophets and was later prohibited, and that in Islam prostration is for Allah alone. It is worth explaining this to a child, so the scene is not read as an example to follow.\n\nScholars differ on whether Yusuf's mother was still alive. As-Suddi and Abd al-Rahman bin Zayd bin Aslam said his parents were his father and his maternal aunt; Muhammad bin Ishaq and Ibn Jarir al-Tabari said both parents were alive (the commentary). The game says only 'his parents'.\n\nThe stars, sun and moon: see chapter 1 for the explanation attributed to Ibn Abbas and others, which the game gives children here.\n\nImam al-Sadiq (in Majlisi's Hayat al-Qulub) explains the bow as thanks to Allah.",
+   "t": "Yusuf anne babasını Mısır’a buyur etti, hepsi onun önünde eğildiler ve o bunun rüyasının gerçekleşmesi olduğunu söyledi (12:99–100). Oyunun koruduğu bir duayla bitirir (12:101).\n\nEğilme: Tefsir, Katâde ve başka âlimlere göre yetki sahibi insanlara selam olarak secde etmenin önceki peygamberlerin şeriatlerinde serbest olduğunu ve sonradan yasaklandığını, İslam’da secdenin yalnızca Allah’a olduğunu söyler. Sahne izlenecek bir örnek olarak okunmasın diye bunu çocuğa açıklamaya değer.\n\nÂlimler Yusuf’un annesinin hâlâ hayatta olup olmadığı konusunda ayrılır. Süddî ve Abdurrahman b. Zeyd b. Eslem, anne babasının babası ve teyzesi olduğunu söyledi; Muhammed b. İshak ve İbn Cerîr et-Taberî ikisinin de hayatta olduğunu söyledi (tefsir). Oyun yalnızca “anne babası” der.\n\nYıldızlar, güneş ve ay: İbn Abbas ve başkalarına dayandırılan ve oyunun burada çocuklara verdiği açıklama için 1. bölüme bakın.\n\nİmam Câfer es-Sâdık (Meclisî’nin Hayâtü’l-Kulûb’unda) eğilmeyi Allah’a şükür olarak açıklar."
+  },
+  "13.2": {
+   "en": "Ask your child to remember the dream from chapter 1. What did Yusuf see?",
+   "t": "Çocuğunuzdan 1. bölümdeki rüyayı hatırlamasını isteyin. Yusuf ne görmüştü?"
+  },
+  "13.3": {
+   "en": "Yusuf welcomed his parents: 'Welcome to Egypt: you will all be safe here, God willing' (12:99). Ask: how do we welcome family when they come to visit?",
+   "t": "Yusuf anne babasını buyur etti: “Allah’ın dileğince, güven içinde Mısır’da yerleşin” (12:99). Sorun: Aile büyükleri ziyarete gelince onları nasıl karşılarız?"
+  },
+  "13.4": {
+   "en": "Yusuf said 'Satan sowed discord between me and my brothers' (12:100); he blamed the whisper, not his brothers. Ask: what does that tell us about Yusuf's heart?",
+   "t": "Yusuf, “Şeytan, benimle kardeşlerimin arasını bozduktan sonra” dedi (12:100); kardeşlerini değil, fısıltıyı suçladı. Sorun: Bu bize Yusuf’un kalbi hakkında ne söyler?"
+  },
+  "13.5": {
+   "en": "'My Lord is most subtle in achieving what He will' (12:100). Ask: what is the happiest ending you know?",
+   "t": "“Doğrusu Rabbim dilediğine lütufkardır” (12:100). Sorun: Bildiğin en mutlu son hangisi?"
+  },
+  "13.6": {
+   "en": "Ask: which of Yusuf's good qualities do you want to practise this week? Patience, honesty, forgiveness, trust in Allah?",
+   "t": "Sorun: Yusuf’un güzel huylarından hangisini bu hafta çalışmak istersin? Sabır, dürüstlük, affetmek, Allah’a güven?"
+  },
+  "13.7": {
+   "en": "While solving the puzzle, ask your child to tell the whole story from the dream to the reunion.",
+   "t": "Yapbozu çözerken çocuğunuzdan rüyadan kavuşmaya kadar bütün hikâyeyi anlatmasını isteyin."
+  },
+  "13.8": {
+   "en": "Yusuf's prayer (12:101) ends: 'Let me die in true devotion to You. Join me with the righteous.' Some families learn this dua together. Ask: what would you like to ask Allah for?",
+   "t": "Yusuf’un duası (12:101), canının Allah’a teslim olmuş olarak alınmasını ve iyilerin arasına katılmayı istemekle biter. Bazı aileler bu duayı birlikte öğrenir. Sorun: Sen Allah’tan ne istemek isterdin?"
+  }
+ }
+}

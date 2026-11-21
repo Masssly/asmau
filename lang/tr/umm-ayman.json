@@ -1,0 +1,804 @@
+{
+ "status": "draft",
+ "_note": "Türkçe. To be checked by a native speaker; seen only with ?lang=tr until then.",
+ "lines": {
+  "u1-a": {
+   "en": "Long ago, across the Red Sea from Arabia, there was a green land of high mountains called Abyssinia. Today we call it Ethiopia and Eritrea.",
+   "t": "Çok eskiden, Arabistan’ın karşısında, Kızıldeniz’in öbür yakasında, yüksek dağlarıyla yemyeşil bir ülke vardı: Habeşistan. Bugün ona Etiyopya ve Eritre diyoruz."
+  },
+  "u1-b": {
+   "en": "A girl called Barakah came from there, across the sea, to the town of Makkah. Barakah means blessing.",
+   "t": "Bereke adında bir kız oradan, denizi aşarak Mekke şehrine geldi. Bereke “bereket” demektir."
+  },
+  "u1-sail": {
+   "en": "Help Barakah's boat cross the sea to Arabia.",
+   "t": "Bereke’nin gemisinin denizi aşıp Arabistan’a varmasına yardım et."
+  },
+  "u1-c": {
+   "en": "In Makkah she lived in the house of a young man called Abdullah. She was not free: she had to work for his family.",
+   "t": "Mekke’de Abdullah adında genç bir adamın evinde yaşadı. Hür değildi: onun ailesi için çalışmak zorundaydı."
+  },
+  "u1-d": {
+   "en": "Abdullah married a kind young woman called Amina. But soon Abdullah went away on a journey, and he died, far from home.",
+   "t": "Abdullah, Âmine adında iyi kalpli genç bir kadınla evlendi. Ama çok geçmeden Abdullah bir yolculuğa çıktı ve evinden uzakta vefat etti."
+  },
+  "u1-q": {
+   "en": "Where did Barakah come from?",
+   "t": "Bereke nereden gelmişti?"
+  },
+  "u1-q-opt1": {
+   "en": "From Abyssinia, across the sea",
+   "t": "Denizin öbür yakasındaki Habeşistan’dan"
+  },
+  "u1-q-opt2": {
+   "en": "From the next street",
+   "t": "Yan sokaktan"
+  },
+  "u1-q-no": {
+   "en": "Barakah came from Abyssinia, across the sea.",
+   "t": "Bereke denizin öbür yakasındaki Habeşistan’dan gelmişti."
+  },
+  "u2-a": {
+   "en": "Then Amina had a baby boy. He was called Muhammad, peace and blessings be upon him.",
+   "t": "Sonra Âmine’nin bir erkek bebeği oldu. Adı Muhammed’di; Allah’ın selamı ve bereketi onun üzerine olsun."
+  },
+  "u2-b": {
+   "en": "Barakah loved the baby. She helped his mother look after him, by day and by night.",
+   "t": "Bereke bebeği çok sevdi. Gece gündüz onun bakımında annesine yardım etti."
+  },
+  "u2-rock": {
+   "en": "Rock the cradle gently. Press and hold, until he is fast asleep.",
+   "t": "Beşiği yavaşça salla. Mışıl mışıl uyuyana kadar basılı tut."
+  },
+  "u2-c": {
+   "en": "The baby's father, Abdullah, had left five camels, some sheep, and Barakah, who looked after the baby.",
+   "t": "Bebeğin babası Abdullah geride beş deve, birkaç koyun ve bebeğe bakan Bereke’yi bırakmıştı."
+  },
+  "u2-camels": {
+   "en": "Count the five camels. Tap each one.",
+   "t": "Beş deveyi say. Her birine dokun."
+  },
+  "u2-q": {
+   "en": "Who helped Amina look after baby Muhammad?",
+   "t": "Bebek Muhammed’e bakmakta Âmine’ye kim yardım etti?"
+  },
+  "u2-q-opt1": {
+   "en": "Nobody at all",
+   "t": "Hiç kimse"
+  },
+  "u2-q-opt2": {
+   "en": "Barakah",
+   "t": "Bereke"
+  },
+  "u2-q-no": {
+   "en": "Barakah helped his mother look after him, by day and by night.",
+   "t": "Bereke gece gündüz onun bakımında annesine yardım etti."
+  },
+  "u3-a": {
+   "en": "When Muhammad was six, his mother took him to visit her family in the town of Yathrib, which later was called Madina. Barakah went with them, on two camels.",
+   "t": "Muhammed altı yaşındayken annesi onu, sonradan Medine adını alacak olan Yesrib şehrindeki akrabalarını ziyarete götürdü. Bereke de iki deveyle onlarla gitti."
+  },
+  "u3-b": {
+   "en": "They stayed a whole month with his mother's family, among the date palms.",
+   "t": "Hurma ağaçlarının arasında, annesinin akrabalarının yanında koca bir ay kaldılar."
+  },
+  "u3-c": {
+   "en": "Many years later, the Prophet remembered that month. He said that he learned to swim in a pond there, and flew pigeons with the boys.",
+   "t": "Yıllar sonra Peygamberimiz o ayı hatırladı. Orada bir havuzda yüzmeyi öğrendiğini ve çocuklarla güvercin uçurduğunu anlattı."
+  },
+  "u3-pigeons": {
+   "en": "Count the pigeons! Tap each one.",
+   "t": "Güvercinleri say! Her birine dokun."
+  },
+  "u3-pairs": {
+   "en": "Find the pairs! Things they saw in Madina.",
+   "t": "Eşleri bul! Medine’de gördükleri şeyler."
+  },
+  "u4-a": {
+   "en": "On the way home, at a place called al-Abwa, his mother Amina fell ill.",
+   "t": "Dönüş yolunda, Ebvâ denen bir yerde annesi Âmine hastalandı."
+  },
+  "u4-b": {
+   "en": "And there, Amina died. Barakah stayed close to the little boy, and they were sad together.",
+   "t": "Ve orada Âmine vefat etti. Bereke küçük çocuğun yanından hiç ayrılmadı ve birlikte üzüldüler."
+  },
+  "u4-c": {
+   "en": "Then Barakah brought him home to Makkah, on the two camels.",
+   "t": "Sonra Bereke onu iki deveyle Mekke’deki evine geri getirdi."
+  },
+  "u4-home": {
+   "en": "Help Barakah bring him home to Makkah.",
+   "t": "Bereke’nin onu Mekke’ye geri getirmesine yardım et."
+  },
+  "u4-d": {
+   "en": "Allah says to the Prophet in the Qur'an: Did He not find you an orphan and shelter you?",
+   "t": "Allah Kur’an’da Peygamberine şöyle der: Seni öksüz bulup da barındırmadı mı?"
+  },
+  "u4-q": {
+   "en": "Who brought the little boy home to Makkah?",
+   "t": "Küçük çocuğu Mekke’ye kim geri getirdi?"
+  },
+  "u4-q-opt1": {
+   "en": "Barakah, on the camels",
+   "t": "Develerle Bereke"
+  },
+  "u4-q-opt2": {
+   "en": "He walked home alone",
+   "t": "Eve tek başına yürüdü"
+  },
+  "u4-q-no": {
+   "en": "Barakah brought him home, on the two camels.",
+   "t": "Bereke onu iki deveyle eve getirdi."
+  },
+  "u5-a": {
+   "en": "In Makkah, his grandfather Abd al-Muttalib looked after him. He was a great old man of Makkah.",
+   "t": "Mekke’de ona dedesi Abdülmuttalib baktı. O, Mekke’nin büyük, yaşlı bir adamıydı."
+  },
+  "u5-b": {
+   "en": "He said to Barakah: O blessed one! Look after this son of mine, and never forget him.",
+   "t": "Bereke’ye şöyle dedi: Ey bereketli! Bu oğluma iyi bak ve onu asla unutma."
+  },
+  "u5-q": {
+   "en": "What did the grandfather call Barakah?",
+   "t": "Dede Bereke’ye ne diye seslendi?"
+  },
+  "u5-q-opt1": {
+   "en": "O lazy one",
+   "t": "Ey tembel"
+  },
+  "u5-q-opt2": {
+   "en": "O blessed one",
+   "t": "Ey bereketli"
+  },
+  "u5-q-no": {
+   "en": "He called her: O blessed one. That is what Barakah means.",
+   "t": "Ona “Ey bereketli” diye seslendi. Bereke’nin anlamı da budur."
+  },
+  "u5-c": {
+   "en": "But when the boy was eight, his grandfather died too. Barakah saw the boy crying as he walked behind his grandfather's funeral.",
+   "t": "Ama çocuk sekiz yaşındayken dedesi de vefat etti. Bereke, dedesinin cenazesinin arkasından yürürken çocuğun ağladığını gördü."
+  },
+  "u5-d": {
+   "en": "Then his uncle Abu Talib took him into his home, and loved him like his own son.",
+   "t": "Sonra amcası Ebû Tâlib onu evine aldı ve onu kendi oğlu gibi sevdi."
+  },
+  "u5-care": {
+   "en": "Who looked after him, one after the other? Put them in order.",
+   "t": "Ona kimler, birbiri ardınca baktı? Sıraya koy."
+  },
+  "u5-care-c1": {
+   "en": "First, his mother Amina, with Barakah.",
+   "t": "Önce, Bereke’yle birlikte annesi Âmine."
+  },
+  "u5-care-c2": {
+   "en": "Then his grandfather, Abd al-Muttalib.",
+   "t": "Sonra dedesi Abdülmuttalib."
+  },
+  "u5-care-c3": {
+   "en": "Then his uncle, Abu Talib.",
+   "t": "Sonra amcası Ebû Tâlib."
+  },
+  "u5-care-no": {
+   "en": "Listen again, and put them in order.",
+   "t": "Yeniden dinle ve sıraya koy."
+  },
+  "u6-a": {
+   "en": "The boy grew up into a good and honest young man. When he married Khadijah, he set Barakah free.",
+   "t": "Çocuk büyüdü, iyi ve dürüst bir genç oldu. Hatice ile evlendiğinde Bereke’yi azat etti."
+  },
+  "u6-b": {
+   "en": "Barakah married a good man called Ubayd, and they had a son called Ayman. So people called her Umm Ayman: the mother of Ayman.",
+   "t": "Bereke, Ubeyd adında iyi bir adamla evlendi ve Eymen adında bir oğulları oldu. Bu yüzden insanlar ona Ümmü Eymen, yani “Eymen’in annesi” dediler."
+  },
+  "u6-c": {
+   "en": "The Prophet loved her very much. He used to call her: O mother!",
+   "t": "Peygamberimiz onu çok severdi. Ona “Anneciğim!” diye seslenirdi."
+  },
+  "u6-d": {
+   "en": "It is told that he said: whoever would like to marry a woman of Paradise, let him marry Umm Ayman.",
+   "t": "Anlatıldığına göre şöyle demiştir: Cennetlik bir kadınla evlenmek isteyen, Ümmü Eymen’le evlensin."
+  },
+  "u6-e": {
+   "en": "Some years later, when her first marriage had ended, she married Zayd, a man the Prophet loved very much. They had a son too, called Usamah.",
+   "t": "Birkaç yıl sonra, ilk evliliği sona erdiğinde, Peygamberimizin çok sevdiği bir adam olan Zeyd ile evlendi. Onların da Üsâme adında bir oğulları oldu."
+  },
+  "u6-names": {
+   "en": "What does each name mean? Match them.",
+   "t": "Her isim ne demek? Eşleştir."
+  },
+  "u6-names-a1": {
+   "en": "Barakah",
+   "t": "Bereke"
+  },
+  "u6-names-b1": {
+   "en": "Blessing",
+   "t": "Bereket"
+  },
+  "u6-names-a2": {
+   "en": "Umm Ayman",
+   "t": "Ümmü Eymen"
+  },
+  "u6-names-b2": {
+   "en": "The mother of Ayman",
+   "t": "Eymen’in annesi"
+  },
+  "u6-names-a3": {
+   "en": "Usamah",
+   "t": "Üsâme"
+  },
+  "u6-names-b3": {
+   "en": "Son of Zayd and Umm Ayman",
+   "t": "Zeyd ile Ümmü Eymen’in oğlu"
+  },
+  "u7-a": {
+   "en": "Many people in Makkah were cruel to the Muslims. So Allah let the Muslims move to Madina, far to the north.",
+   "t": "Mekke’de birçok kişi Müslümanlara zulmediyordu. Bu yüzden Allah, Müslümanların kuzeyde, uzaklardaki Medine’ye göç etmesine izin verdi."
+  },
+  "u7-b": {
+   "en": "Umm Ayman set out too, on the long, hot road to Madina.",
+   "t": "Ümmü Eymen de Medine’ye giden uzun ve sıcak yola çıktı."
+  },
+  "u7-c": {
+   "en": "She was fasting, and she grew very thirsty. And she had no water.",
+   "t": "Oruçluydu ve çok susadı. Yanında hiç su yoktu."
+  },
+  "u7-patient": {
+   "en": "Be patient, like Umm Ayman. Press and hold.",
+   "t": "Ümmü Eymen gibi sabırlı ol. Basılı tut."
+  },
+  "u7-d": {
+   "en": "It is told that a bucket of cool water came down from the sky. She drank, and after that she was never thirsty again, even when she fasted on a hot day.",
+   "t": "Anlatıldığına göre gökten serin su dolu bir kova indi. Ondan içti ve ondan sonra, sıcak bir günde oruç tuttuğunda bile bir daha hiç susamadı."
+  },
+  "u7-drops": {
+   "en": "Catch the cool drops of water!",
+   "t": "Serin su damlalarını yakala!"
+  },
+  "u7-e": {
+   "en": "At last she reached Madina, with its green date palms and its kind people.",
+   "t": "Sonunda yeşil hurma ağaçları ve iyi kalpli insanlarıyla Medine’ye vardı."
+  },
+  "u8-a": {
+   "en": "Umm Ayman was brave and kind. When the Muslims had to defend Madina, at the mountain of Uhud, she went too.",
+   "t": "Ümmü Eymen cesur ve iyi kalpliydi. Müslümanlar Uhud dağının yanında Medine’yi savunmak zorunda kaldığında o da gitti."
+  },
+  "u8-b": {
+   "en": "She carried water to the thirsty, and she cared for the people who were hurt.",
+   "t": "Susayanlara su taşıdı ve yaralananlara baktı."
+  },
+  "u8-cups": {
+   "en": "Give everyone water. Tap each cup.",
+   "t": "Herkese su ver. Her bardağa dokun."
+  },
+  "u8-c": {
+   "en": "Umm Ayman went with the Muslims to Khaybar too, to help.",
+   "t": "Ümmü Eymen yardım etmek için Müslümanlarla birlikte Hayber’e de gitti."
+  },
+  "u8-q": {
+   "en": "What did Umm Ayman bring to the people who were hurt?",
+   "t": "Ümmü Eymen yaralılara ne götürdü?"
+  },
+  "u8-q-opt1": {
+   "en": "Water",
+   "t": "Su"
+  },
+  "u8-q-opt2": {
+   "en": "Toys",
+   "t": "Oyuncak"
+  },
+  "u8-q-no": {
+   "en": "She brought them water, and she cared for them.",
+   "t": "Onlara su götürdü ve onlara baktı."
+  },
+  "u9-a": {
+   "en": "In Madina, the Prophet gave Umm Ayman some date palms of her own.",
+   "t": "Medine’de Peygamberimiz Ümmü Eymen’e kendine ait birkaç hurma ağacı verdi."
+  },
+  "u9-b": {
+   "en": "Later the palms had to go back to the family who had lent them. A boy called Anas came to ask for them.",
+   "t": "Sonradan ağaçların, onları ödünç vermiş olan aileye geri verilmesi gerekti. Enes adında bir çocuk onları istemeye geldi."
+  },
+  "u9-c": {
+   "en": "But Umm Ayman said: No! The Prophet gave them to me! So the Prophet offered her other trees instead. She still said no!",
+   "t": "Ama Ümmü Eymen “Hayır! Onları bana Peygamber verdi!” dedi. Bunun üzerine Peygamberimiz ona yerine başka ağaçlar teklif etti. O yine de hayır dedi!"
+  },
+  "u9-d": {
+   "en": "He kept offering her more, until she had about ten times as many! Then she was happy.",
+   "t": "Peygamberimiz ona daha fazlasını teklif etmeye devam etti, sonunda yaklaşık on katı oldu! O zaman Ümmü Eymen mutlu oldu."
+  },
+  "u9-palms": {
+   "en": "Count her new palm trees! Tap all ten.",
+   "t": "Yeni hurma ağaçlarını say! Onuna da dokun."
+  },
+  "u9-e": {
+   "en": "Once Umm Ayman asked the Prophet for a camel to ride. He smiled and said: I will give you the baby of a camel! She said: but a baby camel cannot carry me!",
+   "t": "Bir keresinde Ümmü Eymen Peygamberimizden binmek için bir deve istedi. Peygamberimiz gülümseyerek: Sana bir devenin yavrusunu vereceğim! dedi. O da: Ama bir deve yavrusu beni taşıyamaz ki! dedi."
+  },
+  "u9-q": {
+   "en": "He said he would give her the baby of a camel. What did he mean?",
+   "t": "Ona bir devenin yavrusunu vereceğini söyledi. Ne demek istiyordu?"
+  },
+  "u9-q-opt1": {
+   "en": "A tiny baby camel",
+   "t": "Minicik bir deve yavrusu"
+  },
+  "u9-q-opt2": {
+   "en": "A big grown-up camel",
+   "t": "Kocaman, büyümüş bir deve"
+  },
+  "u9-q-no": {
+   "en": "He was joking! Every camel, even a big one, is the baby of a mother camel.",
+   "t": "Şaka yapıyordu! Her deve, büyük olsa bile, bir anne devenin yavrusudur."
+  },
+  "u10-a": {
+   "en": "When the Prophet's daughter Fatimah married Ali, Umm Ayman helped to get everything ready.",
+   "t": "Peygamberimizin kızı Fâtıma, Ali ile evlendiğinde, her şeyin hazırlanmasına Ümmü Eymen yardım etti."
+  },
+  "u10-b": {
+   "en": "Umm Ayman packed a bed made of palm leaves, a soft leather pillow stuffed with palm fibre, and a waterskin. And she spread soft sand on the floor.",
+   "t": "Ümmü Eymen hurma yapraklarından bir yatak, içi hurma lifiyle dolu yumuşak deri bir yastık ve bir su tulumu hazırladı. Yere de yumuşak kum serdi."
+  },
+  "u10-pack": {
+   "en": "What was in Fatimah's simple new home? Sort them.",
+   "t": "Fâtıma’nın sade yeni evinde neler vardı? Ayır bakalım."
+  },
+  "u10-pack-bin1": {
+   "en": "In her home",
+   "t": "Evinde vardı"
+  },
+  "u10-pack-bin2": {
+   "en": "Not there",
+   "t": "Orada yoktu"
+  },
+  "u10-pack-it1": {
+   "en": "A bed of palm leaves",
+   "t": "Hurma yapraklarından bir yatak"
+  },
+  "u10-pack-it2": {
+   "en": "A golden crown",
+   "t": "Altın bir taç"
+  },
+  "u10-pack-it3": {
+   "en": "A waterskin",
+   "t": "Bir su tulumu"
+  },
+  "u10-pack-it4": {
+   "en": "A big silk sofa",
+   "t": "Büyük ipek bir kanepe"
+  },
+  "u10-pack-it5": {
+   "en": "Soft sand on the floor",
+   "t": "Yerde yumuşak kum"
+  },
+  "u10-pack-it6": {
+   "en": "A box of jewels",
+   "t": "Bir kutu mücevher"
+  },
+  "u10-pack-no": {
+   "en": "Think again. Her home was very simple.",
+   "t": "Bir daha düşün. Evi çok sadeydi."
+  },
+  "u10-c": {
+   "en": "Fatimah and Ali's home was small and simple, but it was full of love.",
+   "t": "Fâtıma ile Ali’nin evi küçük ve sadeydi, ama sevgiyle doluydu."
+  },
+  "u10-bricks": {
+   "en": "Help make their little home strong. Tap to place every brick.",
+   "t": "Küçük evlerini sağlam yapmaya yardım et. Her tuğlayı yerine koymak için dokun."
+  },
+  "u11-a": {
+   "en": "The Prophet often went to visit Umm Ayman, to see how she was.",
+   "t": "Peygamberimiz nasıl olduğunu görmek için sık sık Ümmü Eymen’i ziyaret ederdi."
+  },
+  "u11-b": {
+   "en": "Once she gave him a drink, and he did not take it. So she told him off, just like a mother!",
+   "t": "Bir keresinde ona bir içecek verdi, o da almadı. Bunun üzerine Ümmü Eymen onu tıpkı bir anne gibi azarladı!"
+  },
+  "u11-c": {
+   "en": "Then one day, the Prophet died. Everyone in Madina was very, very sad.",
+   "t": "Sonra bir gün Peygamberimiz vefat etti. Medine’de herkes çok ama çok üzüldü."
+  },
+  "u11-g": {
+   "en": "Allah says in the Qur'an: Muhammad is only a messenger, before whom many messengers have been and gone.",
+   "t": "Allah Kur’an’da şöyle buyurur: Muhammed ancak bir peygamberdir. Ondan önce de peygamberler geçmişti."
+  },
+  "u11-d": {
+   "en": "Abu Bakr said to Umar: let us go and visit Umm Ayman, as the Prophet used to visit her.",
+   "t": "Ebû Bekir, Ömer’e: Peygamberin onu ziyaret ettiği gibi gel biz de Ümmü Eymen’i ziyaret edelim, dedi."
+  },
+  "u11-e": {
+   "en": "When they came, she wept. She said: I know he is with Allah, and that is better for him. I am crying because the news from heaven has stopped coming.",
+   "t": "Geldiklerinde ağladı. Şöyle dedi: Onun Allah’ın yanında olduğunu ve bunun onun için daha hayırlı olduğunu biliyorum. Gökten haberlerin gelmesi kesildi diye ağlıyorum."
+  },
+  "u11-f": {
+   "en": "And Abu Bakr and Umar cried with her.",
+   "t": "Ve Ebû Bekir ile Ömer de onunla birlikte ağladılar."
+  },
+  "u11-q": {
+   "en": "Why did Umm Ayman cry?",
+   "t": "Ümmü Eymen neden ağladı?"
+  },
+  "u11-q-opt1": {
+   "en": "The revelation had stopped",
+   "t": "Vahiy kesilmişti"
+  },
+  "u11-q-opt2": {
+   "en": "She was hungry",
+   "t": "Acıkmıştı"
+  },
+  "u11-q-no": {
+   "en": "She cried because the revelation, the news from heaven, had stopped coming.",
+   "t": "Vahiy, yani gökten gelen haberler kesildiği için ağladı."
+  },
+  "u11-story": {
+   "en": "Tell Umm Ayman's whole story. Tap in order.",
+   "t": "Ümmü Eymen’in bütün hikâyesini anlat. Sırayla dokun."
+  },
+  "u11-story-c1": {
+   "en": "First, Barakah came from Abyssinia, across the sea.",
+   "t": "Önce Bereke denizin öbür yakasındaki Habeşistan’dan geldi."
+  },
+  "u11-story-c2": {
+   "en": "She looked after the baby, with his mother.",
+   "t": "Annesiyle birlikte bebeğe baktı."
+  },
+  "u11-story-c3": {
+   "en": "She brought the little boy home to Makkah on two camels.",
+   "t": "Küçük çocuğu iki deveyle Mekke’ye geri getirdi."
+  },
+  "u11-story-c4": {
+   "en": "He set her free, and she had a family.",
+   "t": "Peygamberimiz onu azat etti ve onun bir ailesi oldu."
+  },
+  "u11-story-c5": {
+   "en": "She carried water to the hurt.",
+   "t": "Yaralılara su taşıdı."
+  },
+  "u11-story-c6": {
+   "en": "And he gave her ten times the palm trees.",
+   "t": "Ve Peygamberimiz ona on kat hurma ağacı verdi."
+  },
+  "u11-story-no": {
+   "en": "Listen again, and tell it in order.",
+   "t": "Yeniden dinle ve sırayla anlat."
+  },
+  "end-a": {
+   "en": "This is the story of Umm Ayman, Barakah, the blessing. She looked after the Prophet from the day he was born, and he called her: O mother.",
+   "t": "Bu, Bereke’nin, yani bereketin, Ümmü Eymen’in hikâyesidir. Peygamberimize doğduğu günden itibaren baktı ve o da ona “Anneciğim” derdi."
+  }
+ },
+ "strings": {
+  "From Across the Sea": "Denizin Öbür Yakasından",
+  "Ibn Shihab in Sahih Muslim (1771); Ibn Sa'd, al-Tabaqat": "Sahîh-i Müslim’de İbn Şihâb (1771); İbn Sa'd, et-Tabakât",
+  "From Ibn Shihab, in Sahih Muslim": "Sahîh-i Müslim’de İbn Şihâb’dan",
+  "From Ibn Sa'd's Tabaqat": "İbn Sa'd’ın Tabakât’ından",
+  "A Baby Is Born": "Bir Bebek Doğuyor",
+  "Press and hold": "",
+  "Fast asleep": "Mışıl mışıl uyuyor",
+  "A Month in Madina": "Medine’de Bir Ay",
+  "Ibn Sa'd, al-Tabaqat (vol. 1)": "İbn Sa'd, et-Tabakât (c. 1)",
+  "The Road Home": "Eve Dönüş Yolu",
+  "O Blessed One": "Ey Bereketli",
+  "His mother Amina": "Annesi Âmine",
+  "His grandfather": "Dedesi",
+  "His uncle Abu Talib": "Amcası Ebû Tâlib",
+  "Free, and a Family": "Hürriyet ve Bir Aile",
+  "Ibn Sa'd, al-Tabaqat (vol. 8); Ibn Shihab in Sahih Muslim (1771); al-Bukhari (3737)": "İbn Sa'd, et-Tabakât (c. 8); Sahîh-i Müslim’de İbn Şihâb (1771); Buhârî (3737)",
+  "The Long Walk": "Uzun Yürüyüş",
+  "Ibn Sa'd, al-Tabaqat (vols. 1 and 8)": "İbn Sa'd, et-Tabakât (c. 1 ve 8)",
+  "Patient, like Umm Ayman": "Ümmü Eymen gibi sabırlı",
+  "Water for the Hurt": "Yaralılara Su",
+  "Ibn Sa'd, al-Tabaqat (vol. 8)": "İbn Sa'd, et-Tabakât (c. 8)",
+  "Ten Palm Trees": "On Hurma Ağacı",
+  "Anas in Sahih Muslim (1771, 2453) and al-Bukhari (2630); Ibn Sa'd, al-Tabaqat (vol. 8)": "Sahîh-i Müslim’de (1771, 2453) ve Buhârî’de (2630) Enes; İbn Sa'd, et-Tabakât (c. 8)",
+  "From Anas, in Sahih Muslim": "Sahîh-i Müslim’de Enes’ten",
+  "Fatimah's Wedding": "Fâtıma’nın Düğünü",
+  "The News of Heaven": "Gökten Gelen Haberler",
+  "From Abyssinia": "Habeşistan’dan",
+  "She cared for the baby": "Bebeğe baktı",
+  "She brought him home": "Onu eve getirdi",
+  "Free, with a family": "Hür ve ailesiyle",
+  "Water for the hurt": "Yaralılara su",
+  "Ten palm trees": "On hurma ağacı",
+  "← Asmau": "",
+  "The Story of Umm Ayman": "Ümmü Eymen’in Hikâyesi",
+  "Eleven chapters about Barakah, who looked after the Prophet ﷺ all his life. Play a little every day.": "Peygamberimize ﷺ ömrü boyunca bakan Bereke hakkında on bir bölüm. Her gün biraz oyna.",
+  "Start the story": "",
+  "Start from the beginning": "",
+  "For parents": "",
+  "Back": "",
+  "Next": "",
+  "All chapters": "",
+  "✕ Close": "",
+  "The End": "",
+  "Caring": "Şefkat",
+  "Loyalty": "Vefa",
+  "Patience": "Sabır",
+  "Read it again": "",
+  "Pick a chapter": "",
+  "Music": "",
+  "Sounds": "",
+  "Voice": "",
+  "Barakah from Abyssinia looked after the Prophet ﷺ from the day he was born, and he called her: O mother.": "Habeşistanlı Bereke, Peygamberimize ﷺ doğduğu günden itibaren baktı; o da ona “Anneciğim” derdi.",
+  "Umm Ayman leads two camels home to Makkah under the stars.": "Ümmü Eymen, yıldızların altında iki deveyi Mekke’ye götürüyor.",
+  "Umm Ayman": "Ümmü Eymen",
+  "📖 About this story": "📖 Bu hikâye hakkında",
+  "Umm Ayman, whose name was Barakah, was an Abyssinian woman in the household of the Prophet’s father. She looked after the Prophet ﷺ from his birth, brought him home to Makkah when his mother died, and stayed close to him all his life. He set her free and called her “O mother”. She was the mother of Ayman and of Usamah ibn Zayd.": "Asıl adı Bereke olan Ümmü Eymen, Peygamberimizin babasının evinde yaşayan Habeşli bir kadındı. Peygamberimize ﷺ doğumundan itibaren baktı, annesi vefat edince onu Mekke’ye geri getirdi ve ömrü boyunca ona yakın oldu. Peygamberimiz onu azat etti ve ona “Anneciğim” derdi. Eymen’in ve Üsâme b. Zeyd’in annesiydi.",
+  "📚 Sources": "📚 Kaynaklar",
+  "🤲 Told gently, or left out": "🤲 Yumuşak anlatılanlar ya da atlananlar",
+  "Told gently: the deaths of the Prophet’s mother, his grandfather and the Prophet himself. At Uhud only her care for the hurt is shown, never the fighting.": "Yumuşak anlatılanlar: Peygamberimizin annesinin, dedesinin ve kendisinin vefatı. Uhud’da yalnızca yaralılara bakması gösterilir, asla savaş değil.",
+  "👥 Who is shown": "👥 Kimler gösteriliyor",
+  "Shown in this story: Umm Ayman, an Abyssinian with deep dark brown skin, and the Arabs of Makkah and Madina around her, every woman’s hair covered. The Prophet ﷺ is never shown, at any age: where he is there, the picture leaves him out and a soft breeze passes over it.": "Bu hikâyede gösterilenler: koyu esmer tenli Habeşli Ümmü Eymen ve çevresindeki Mekke ve Medine Arapları; her kadının saçı örtülü. Peygamberimiz ﷺ hiçbir yaşta gösterilmez: bulunduğu yerde resim onu göstermez ve üzerinden hafif bir esinti geçer.",
+  "This is history, not the Qur’an. The facts come from Sahih Muslim and al-Bukhari (the words of Anas and Ibn Shihab), from Ibn Sa’d’s <em>al-Tabaqat</em>, and from Shia collections (al-Saduq’s <em>al-Amali</em>, al-Kulayni’s <em>al-Kafi</em>). Things only Ibn Sa’d reports are told as “it is told”. Where the sources differ (when she died; a dream before al-Husayn’s birth; Fadak) the page notes give both.": "Bu Kur’an değil, tarihtir. Bilgiler Sahîh-i Müslim ve Buhârî’den (Enes’in ve İbn Şihâb’ın sözleri), İbn Sa’d’ın <em>et-Tabakât</em>’ından ve Şii derlemelerden (Sadûk’un <em>el-Emâlî</em>’si, Küleynî’nin <em>el-Kâfî</em>’si) gelir. Yalnızca İbn Sa’d’ın aktardıkları “anlatıldığına göre” diye anlatılır. Kaynakların ayrıldığı yerlerde (vefat tarihi; Hüseyin’in doğumundan önceki bir rüya; Fedek) sayfa notları ikisini de verir."
+ },
+ "notes": {
+  "1.1": {
+   "en": "Abyssinia (al-Habasha) was the Christian kingdom across the Red Sea, roughly today's Ethiopia and Eritrea. Years later some of the first Muslims found safety there with its king, the Najashi (Ibn Ishaq).",
+   "t": "Habeşistan (el-Habeşe), Kızıldeniz’in karşı yakasındaki Hristiyan krallıktı; aşağı yukarı bugünkü Etiyopya ve Eritre. Yıllar sonra ilk Müslümanların bir kısmı orada, kralı Necâşî’nin yanında güvenlik buldu (İbn İshak)."
+  },
+  "1.2": {
+   "en": "Barakah is her own name; Umm Ayman, \"the mother of Ayman\", is a name of honour taken from her son (Ibn Sa'd, vol. 8). That she came from Abyssinia is in Ibn Shihab's words in Sahih Muslim 1771.",
+   "t": "Bereke onun kendi adıdır; “Eymen’in annesi” anlamına gelen Ümmü Eymen ise oğlundan alınmış bir saygı adıdır (İbn Sa'd, c. 8). Habeşistan’dan geldiği, Sahîh-i Müslim 1771’de İbn Şihâb’ın sözlerinde geçer."
+  },
+  "1.3": {
+   "en": "Find Ethiopia, Eritrea, the Red Sea and Makkah on a map together. How long would the crossing take in a small sailing boat?",
+   "t": "Etiyopya’yı, Eritre’yi, Kızıldeniz’i ve Mekke’yi birlikte haritada bulun. Küçük bir yelkenliyle karşıya geçmek ne kadar sürerdi?"
+  },
+  "1.4": {
+   "en": "\"She was not free\": Ibn Shihab (Sahih Muslim 1771) calls her the slave-girl of 'Abdullah ibn 'Abd al-Muttalib. The Prophet ﷺ later freed her (chapter 6), and the Qur'an counts freeing a slave among the steep, good deeds (90:12-13).",
+   "t": "“Hür değildi”: İbn Şihâb (Sahîh-i Müslim 1771) onu Abdullah b. Abdülmuttalib’in cariyesi olarak anar. Peygamberimiz ﷺ daha sonra onu azat etti (6. bölüm) ve Kur’an köle azat etmeyi sarp ve güzel işler arasında sayar (90:12-13)."
+  },
+  "1.5": {
+   "en": "That 'Abdullah died before his son was born is in Sahih Muslim 1771 (\"after the death of his father\"). In Ibn Sa'd the Prophet ﷺ later points out his father's grave in Madina, in the house where they stayed (chapter 3).",
+   "t": "Abdullah’ın oğlu doğmadan önce vefat ettiği Sahîh-i Müslim 1771’dedir (“babasının vefatından sonra”). İbn Sa'd’da Peygamberimiz ﷺ daha sonra Medine’de, kaldıkları evde babasının kabrini gösterir (3. bölüm)."
+  },
+  "1.6": {
+   "en": "Ask: have you ever moved somewhere new, or met someone who did? How can we help a newcomer feel at home?",
+   "t": "Sorun: Hiç yeni bir yere taşındın mı ya da taşınan biriyle tanıştın mı? Yeni gelen birinin kendini evinde hissetmesine nasıl yardım edebiliriz?"
+  },
+  "2.1": {
+   "en": "The Prophet ﷺ is never shown in this game, at any age, not even as a baby. Where he is present, the picture leaves him out and a soft breeze passes over it.",
+   "t": "Peygamberimiz ﷺ bu oyunda hiçbir yaşta, bebekken bile gösterilmez. Bulunduğu yerde resim onu göstermez ve üzerinden hafif bir esinti geçer."
+  },
+  "2.2": {
+   "en": "Ask: who looked after you when you were a baby? Thank them together, or make them a card.",
+   "t": "Sorun: Sen bebekken sana kim baktı? Onlara birlikte teşekkür edin ya da bir kart yapın."
+  },
+  "2.3": {
+   "en": "Sing your child the lullaby you sang when they were small, while they rock the cradle.",
+   "t": "Çocuğunuz beşiği sallarken ona, küçükken söylediğiniz ninniyi söyleyin."
+  },
+  "2.4": {
+   "en": "\"'Abd Allah left behind Umm Ayman, five camels ... and a flock of sheep, which the Prophet inherited\" (Ibn Sa'd, vol. 1, from al-Waqidi). \"Nursed\" in the sources means she looked after and carried him; he was breast-fed by his mother and by wet-nurses such as Halimah.",
+   "t": "“Abdullah geride Ümmü Eymen’i, beş deveyi … ve Peygamberimizin miras aldığı bir koyun sürüsünü bıraktı” (İbn Sa'd, c. 1, Vâkıdî’den). Kaynaklardaki “bakmak”, ona baktığı ve onu taşıdığı anlamına gelir; onu annesi ve Halîme gibi sütanneler emzirdi."
+  },
+  "2.5": {
+   "en": "Count other things in fives together: fingers, toes, the five daily prayers.",
+   "t": "Başka şeyleri de birlikte beşer beşer sayın: el parmakları, ayak parmakları, beş vakit namaz."
+  },
+  "2.6": {
+   "en": "Ask: what does it mean to care for someone by day and by night?",
+   "t": "Sorun: Birine gece gündüz bakmak ne demektir?"
+  },
+  "3.1": {
+   "en": "Ibn Sa'd (vol. 1): when he was six his mother took him to her relatives of Banu 'Adi ibn al-Najjar in Madina, \"and with him was his nurse Umm Ayman. They were riding two camels\". They stayed a month in the house of al-Nabighah.",
+   "t": "İbn Sa'd (c. 1): Altı yaşındayken annesi onu Medine’deki akrabaları Benî Adî b. Neccâr’a götürdü, “yanında da dadısı Ümmü Eymen vardı. İki deveye binmişlerdi”. Nâbiğa’nın evinde bir ay kaldılar."
+  },
+  "3.2": {
+   "en": "Ask: who do we visit in our family? What do you remember from a visit when you were little?",
+   "t": "Sorun: Ailemizde kimleri ziyaret ederiz? Küçükken yaptığın bir ziyaretten neler hatırlıyorsun?"
+  },
+  "3.3": {
+   "en": "The Prophet's ﷺ own memories of that month, in Ibn Sa'd (vol. 1): \"I used to play with Unaysah, a hand-maid of the Ansar ... and I used to fly pigeons with the boys of my maternal uncles\", and \"I obtained proficiency in swimming in a pond of Bani 'Adi ibn al-Najjar.\"",
+   "t": "Peygamberimizin ﷺ o aya dair kendi hatıraları, İbn Sa'd’da (c. 1): “Ensar’dan bir cariye olan Üneyse ile oynardım … dayılarımın oğullarıyla güvercin uçururdum” ve “Benî Adî b. Neccâr’ın bir havuzunda yüzmeyi iyice öğrendim.”"
+  },
+  "3.4": {
+   "en": "If you can, watch pigeons or other birds together in a park, and count them.",
+   "t": "Yapabilirseniz bir parkta birlikte güvercinleri ya da başka kuşları izleyin ve onları sayın."
+  },
+  "3.5": {
+   "en": "Ask your child what they would pack for a month-long visit to family.",
+   "t": "Çocuğunuza, ailesini bir ay ziyaret etmek için çantasına neler koyacağını sorun."
+  },
+  "4.1": {
+   "en": "Al-Abwa lies between Makkah and Madina; Ibn Ishaq says Amina died there when he was six, on the way back from her relatives (in Ibn Kathir's Sira). Al-Waqidi adds that Umm Ayman was with them.",
+   "t": "Ebvâ, Mekke ile Medine arasındadır; İbn İshak, Âmine’nin akrabalarından dönerken, oğlu altı yaşındayken orada vefat ettiğini söyler (İbn Kesîr’in Siyer’inde). Vâkıdî, Ümmü Eymen’in de onlarla birlikte olduğunu ekler."
+  },
+  "4.2": {
+   "en": "The books go on to discuss the fate of the Prophet's parents in the next life. Scholars differ on it, and the game leaves it out.",
+   "t": "Kitaplar daha sonra Peygamberimizin anne babasının ahiretteki durumunu tartışır. Âlimler bu konuda ayrılır ve oyun bunu anlatmaz."
+  },
+  "4.3": {
+   "en": "\"Then Umm Ayman brought him to Makkah on the two camels which were with them\" (Ibn Sa'd, vol. 1, from al-Waqidi, whose reports are weak by the standards of hadith; the outline of the story is not disputed).",
+   "t": "“Sonra Ümmü Eymen onu yanlarındaki iki deveyle Mekke’ye getirdi” (İbn Sa'd, c. 1, Vâkıdî’den; Vâkıdî’nin rivayetleri hadis ölçülerine göre zayıftır, ama hikâyenin ana hatları tartışmalı değildir)."
+  },
+  "4.4": {
+   "en": "A long journey at night with two camels: ask how brave Barakah must have been, and who keeps us company on hard days.",
+   "t": "Gece iki deveyle uzun bir yolculuk: Bereke’nin ne kadar cesur olması gerektiğini ve zor günlerde bize kimin eşlik ettiğini sorun."
+  },
+  "4.5": {
+   "en": "Read 93:6 together, with the rest of Surah ad-Duha. Ask: how does Allah look after people who have lost someone?",
+   "t": "93:6’yı Duhâ suresinin geri kalanıyla birlikte okuyun. Sorun: Allah birini kaybetmiş insanlara nasıl bakar?"
+  },
+  "4.6": {
+   "en": "If your child knows a child who has lost a parent, talk about kind things they could do.",
+   "t": "Çocuğunuz anne ya da babasını kaybetmiş bir çocuk tanıyorsa, yapabileceği güzel şeyleri konuşun."
+  },
+  "5.1": {
+   "en": "Ask about your child's grandparents: what do they love doing together?",
+   "t": "Çocuğunuzun büyükanne ve büyükbabalarını sorun: Birlikte ne yapmayı severler?"
+  },
+  "5.2": {
+   "en": "\"O blessed one! do not neglect this son of mine\" (Ibn Sa'd, vol. 1). \"Blessed one\" is her own name, Barakah.",
+   "t": "“Ey bereketli! Bu oğlumu ihmal etme” (İbn Sa'd, c. 1). “Bereketli”, onun kendi adıdır: Bereke."
+  },
+  "5.3": {
+   "en": "Ask: what does your name mean? Look it up together if you don't know.",
+   "t": "Sorun: Senin adın ne anlama geliyor? Bilmiyorsanız birlikte araştırın."
+  },
+  "5.4": {
+   "en": "He was eight. \"Umm Ayman said: I saw the Apostle of Allah weeping that day behind the bier of 'Abd al-Muttalib\" (Ibn Sa'd, vol. 1).",
+   "t": "Sekiz yaşındaydı. “Ümmü Eymen şöyle dedi: O gün Allah’ın Resûlü’nü Abdülmuttalib’in cenazesinin arkasında ağlarken gördüm” (İbn Sa'd, c. 1)."
+  },
+  "5.5": {
+   "en": "Ask: who is the Abu Talib in your family, the one who always opens the door for everyone?",
+   "t": "Sorun: Ailemizin Ebû Tâlib’i, yani kapısını herkese her zaman açan kişi kim?"
+  },
+  "5.6": {
+   "en": "Ask your child to retell, in their own words, who looked after the boy and in what order.",
+   "t": "Çocuğunuzdan, çocuğa kimlerin ve hangi sırayla baktığını kendi sözleriyle yeniden anlatmasını isteyin."
+  },
+  "6.1": {
+   "en": "When she was freed: Ibn Sa'd (vol. 8) says when he married Khadijah; Ibn Shihab in Sahih Muslim 1771 says only that he freed her and married her to Zayd.",
+   "t": "Ne zaman azat edildiği: İbn Sa'd (c. 8) Hatice ile evlendiğinde der; Sahîh-i Müslim 1771’de İbn Şihâb yalnızca onu azat ettiğini ve Zeyd ile evlendirdiğini söyler."
+  },
+  "6.2": {
+   "en": "Her first husband was 'Ubayd ibn Zayd of the Khazraj. Their son Ayman became a Companion and was killed at Hunayn (Ibn Sa'd, vol. 8). Ibn 'Umar remembered how much the Prophet ﷺ loved the children of Umm Ayman (al-Bukhari 3737).",
+   "t": "İlk kocası Hazreclerden Ubeyd b. Zeyd’di. Oğulları Eymen sahabî oldu ve Huneyn’de şehit düştü (İbn Sa'd, c. 8). İbn Ömer, Peygamberimizin ﷺ Ümmü Eymen’in çocuklarını ne kadar sevdiğini hatırlardı (Buhârî 3737)."
+  },
+  "6.3": {
+   "en": "\"O mother\": Ibn Sa'd (vol. 8) records that he called her this. Years later a judge of Madina punished a man who tried to belittle her son by calling him \"son of Barakah\", saying the Prophet ﷺ had called her \"O mother\".",
+   "t": "“Anneciğim”: İbn Sa'd (c. 8) ona böyle seslendiğini kaydeder. Yıllar sonra Medine’nin bir kadısı, oğlunu “Bereke’nin oğlu” diyerek küçümsemeye çalışan bir adamı, Peygamberimizin ﷺ ona “Anneciğim” dediğini söyleyerek cezalandırdı."
+  },
+  "6.4": {
+   "en": "This saying is reported by Ibn Sa'd from Sufyan ibn 'Uqba, without a strong chain. Shia collections also count her among the people of Paradise (Muhsini, Mu'jam al-Ahadith al-Mu'tabara).",
+   "t": "Bu söz İbn Sa'd tarafından Süfyân b. Ukbe’den, sağlam olmayan bir senedle rivayet edilir. Şii derlemeler de onu cennet ehlinden sayar (Muhsinî, Mu'cemü’l-Ehâdîsi’l-Mu'tebere)."
+  },
+  "6.5": {
+   "en": "Zayd ibn Haritha had been given to the Prophet ﷺ by Khadijah, and he freed him (Ibn Sa'd, vol. 8).\n\nUmm Ayman married Zayd after her marriage to 'Ubayd ibn Zayd had ended. The sources read for this game (Ibn Sa'd, vol. 8; Ibn Shihab in Sahih Muslim 1771) do not say whether 'Ubayd died or they divorced; some retellings say he died, but give no early source. In Islam a woman is married to one husband at a time, so the game says only that her first marriage had ended.",
+   "t": "Zeyd b. Hârise’yi Peygamberimize ﷺ Hatice vermişti ve Peygamberimiz onu azat etti (İbn Sa'd, c. 8).\n\nÜmmü Eymen, Ubeyd b. Zeyd ile evliliği sona erdikten sonra Zeyd ile evlendi. Bu oyun için okunan kaynaklar (İbn Sa'd, c. 8; Sahîh-i Müslim 1771’de İbn Şihâb) Ubeyd’in vefat mı ettiğini, yoksa boşandılar mı söylemez; bazı yeniden anlatımlar onun vefat ettiğini söyler, ama erken bir kaynak vermez. İslam’da bir kadın aynı anda yalnızca bir kocayla evli olur; bu yüzden oyun yalnızca ilk evliliğinin sona erdiğini söyler."
+  },
+  "6.6": {
+   "en": "Talk about names in your family and what they mean. Many families have a kunya too, like Umm Ayman or Abu Bakr.",
+   "t": "Ailenizdeki isimleri ve anlamlarını konuşun. Birçok ailede Ümmü Eymen ya da Ebû Bekir gibi bir künye de vardır."
+  },
+  "7.1": {
+   "en": "The hijra to Madina was in 622. Ibn Sa'd (vol. 1) says Zayd brought Umm Ayman and Usamah; vol. 8 tells of her on the road at al-Munsarif, below al-Rawha'.",
+   "t": "Medine’ye hicret 622’deydi. İbn Sa'd (c. 1) Ümmü Eymen’i ve Üsâme’yi Zeyd’in getirdiğini söyler; c. 8 ise onun Revhâ’nın aşağısında, Munsaraf’ta yolda olduğunu anlatır."
+  },
+  "7.2": {
+   "en": "Ask: what is the longest walk you have ever done? How did you feel at the end?",
+   "t": "Sorun: Şimdiye kadar yaptığın en uzun yürüyüş hangisiydi? Sonunda nasıl hissettin?"
+  },
+  "7.3": {
+   "en": "Ask: what helps you be patient when you are hungry or thirsty? Remember her the next time you fast.",
+   "t": "Sorun: Aç ya da susuzken sabretmene ne yardım ediyor? Bir dahaki oruçta onu hatırlayın."
+  },
+  "7.4": {
+   "en": "While your child holds, say a short dua together: Allahumma inni as'aluka as-sabr (O Allah, I ask You for patience).",
+   "t": "Çocuğunuz basılı tutarken birlikte kısa bir dua edin: Allâhümme innî es'elüke’s-sabr (Allah’ım, Senden sabır istiyorum)."
+  },
+  "7.5": {
+   "en": "The bucket from the sky is reported by Ibn Sa'd from 'Uthman ibn al-Qasim. It is a story of a wonder (karama) without a strong chain, so the game says \"it is told\". She said: \"No thirst afflicted me after that ... even when I fasted on a hot day.\"",
+   "t": "Gökten gelen kovayı İbn Sa'd, Osman b. Kâsım’dan rivayet eder. Sağlam bir senedi olmayan bir keramet hikâyesidir; bu yüzden oyun “anlatıldığına göre” der. Şöyle demiştir: “Ondan sonra bana hiç susuzluk dokunmadı … sıcak bir günde oruç tuttuğumda bile.”"
+  },
+  "7.6": {
+   "en": "Ask: when have you been really thirsty? Say al-hamdu lillah for a cold glass of water together.",
+   "t": "Sorun: Ne zaman çok susadın? Bir bardak soğuk su için birlikte elhamdülillah deyin."
+  },
+  "7.7": {
+   "en": "Ask: how did the people of Madina welcome the newcomers? How can we welcome guests?",
+   "t": "Sorun: Medineliler yeni gelenleri nasıl karşıladılar? Biz misafirleri nasıl karşılayabiliriz?"
+  },
+  "8.1": {
+   "en": "\"Umm Ayman was at Uhud and she was bringing water and treating the wounded, and she was at Khaybar\" (Ibn Sa'd, vol. 8, from al-Waqidi). The game shows only her care, never the fighting.",
+   "t": "“Ümmü Eymen Uhud’daydı; su taşıyor ve yaralıları tedavi ediyordu; Hayber’de de bulundu” (İbn Sa'd, c. 8, Vâkıdî’den). Oyun yalnızca onun şefkatini gösterir, savaşı asla."
+  },
+  "8.2": {
+   "en": "Ask: who looks after people who are hurt today? Doctors, nurses, first-aiders: talk about how we can help too.",
+   "t": "Sorun: Bugün yaralananlara kimler bakıyor? Doktorlar, hemşireler, ilk yardımcılar: bizim de nasıl yardım edebileceğimizi konuşun."
+  },
+  "8.3": {
+   "en": "Make a small first-aid kit together and talk about what each thing is for.",
+   "t": "Birlikte küçük bir ilk yardım çantası hazırlayın ve her şeyin ne işe yaradığını konuşun."
+  },
+  "8.4": {
+   "en": "Ask: what is brave about caring for others when things are hard?",
+   "t": "Sorun: İşler zorken başkalarına bakmanın cesurca olan yanı nedir?"
+  },
+  "8.5": {
+   "en": "Ask: what could you bring to someone who is ill? Water, a drawing, a visit.",
+   "t": "Sorun: Hasta birine ne götürebilirsin? Su, bir resim, bir ziyaret."
+  },
+  "9.1": {
+   "en": "Sahih Muslim 1771 and al-Bukhari 2630: Anas's mother had given the Prophet ﷺ date palms, and he gave them to Umm Ayman. After Khaybar the emigrants gave back what the Ansar had lent them, and he gave Umm Ayman trees from his own garden instead.",
+   "t": "Sahîh-i Müslim 1771 ve Buhârî 2630: Enes’in annesi Peygamberimize ﷺ hurma ağaçları vermişti, o da onları Ümmü Eymen’e verdi. Hayber’den sonra muhacirler Ensar’ın kendilerine ödünç verdiklerini geri verdiler ve Peygamberimiz Ümmü Eymen’e onların yerine kendi bahçesinden ağaçlar verdi."
+  },
+  "9.2": {
+   "en": "Ask: is it easy to give back something you like? What would you do?",
+   "t": "Sorun: Sevdiğin bir şeyi geri vermek kolay mıdır? Sen ne yapardın?"
+  },
+  "9.3": {
+   "en": "In Sahih Muslim 1771 Anas says she \"put the cloth round my neck\" and swore she would not give the trees back. The Prophet ﷺ kept offering more \"until he had granted her ten times or nearly ten times more\".",
+   "t": "Sahîh-i Müslim 1771’de Enes, onun “örtüyü boynuma doladığını” ve ağaçları geri vermeyeceğine yemin ettiğini söyler. Peygamberimiz ﷺ ona “on katını ya da on katına yakınını verene kadar” daha fazlasını teklif etmeye devam etti."
+  },
+  "9.4": {
+   "en": "Ask: why do you think the Prophet ﷺ gave her even more, instead of getting cross?",
+   "t": "Sorun: Sence Peygamberimiz ﷺ kızmak yerine ona neden daha da fazlasını verdi?"
+  },
+  "9.5": {
+   "en": "Count ten dates together, and share them with the family.",
+   "t": "Birlikte on hurma sayın ve onları aileyle paylaşın."
+  },
+  "9.6": {
+   "en": "From Muhammad ibn Qays, in Ibn Sa'd (vol. 8): \"The Messenger of Allah used to joke, but he only spoke the truth. All camels are the offspring of she-camels.\"",
+   "t": "Muhammed b. Kays’tan, İbn Sa'd’da (c. 8): “Allah’ın Resûlü şaka yapardı, ama yalnızca doğruyu söylerdi. Bütün develer dişi develerin yavrusudur.”"
+  },
+  "9.7": {
+   "en": "Talk about kind jokes: jokes that are true and make everyone laugh, not jokes that hurt.",
+   "t": "Güzel şakaları konuşun: doğru olan ve herkesi güldüren şakalar, incitenler değil."
+  },
+  "10.1": {
+   "en": "Umm Ayman's own account of Fatimah's wedding to 'Ali is in Ibn Sa'd (vol. 8): \"I arranged her trousseau.\" Shia narrations (al-Saduq, al-Amali) also have her at the wedding, sad that nothing was scattered over the bride, and the Prophet ﷺ telling her of the gifts of Paradise at it.",
+   "t": "Ümmü Eymen’in Fâtıma’nın Ali ile düğününe dair kendi anlatımı İbn Sa'd’dadır (c. 8): “Onun çeyizini ben hazırladım.” Şii rivayetler de (Sadûk, el-Emâlî) onu düğünde gösterir: gelinin üzerine bir şey saçılmadığı için üzülür ve Peygamberimiz ﷺ ona düğündeki cennet hediyelerini anlatır."
+  },
+  "10.2": {
+   "en": "Look around your home together: what do you really need? What could we give to someone else?",
+   "t": "Evinizde birlikte etrafa bakın: Gerçekten neye ihtiyacımız var? Başka birine ne verebiliriz?"
+  },
+  "10.3": {
+   "en": "Ask your child why a simple home can still be a happy one.",
+   "t": "Çocuğunuza sade bir evin neden yine de mutlu bir ev olabileceğini sorun."
+  },
+  "10.4": {
+   "en": "You may hear (al-Saduq, al-Amali, from Imam al-Sadiq) that Umm Ayman dreamed \"one of your limbs was lying in my house\", that the Prophet ﷺ said it meant Fatimah would have al-Husayn, and that she carried the newborn to him. Sunni books tell the same dream of Umm al-Fadl, the wife of al-'Abbas (Ibn Majah 3923). The game leaves both out.",
+   "t": "Şunu duyabilirsiniz (Sadûk, el-Emâlî, İmam Câfer es-Sâdık’tan): Ümmü Eymen rüyasında “uzuvlarınızdan birinin benim evimde yattığını” gördü, Peygamberimiz ﷺ bunun Fâtıma’nın Hüseyin’i doğuracağı anlamına geldiğini söyledi ve Ümmü Eymen yeni doğan bebeği ona taşıdı. Sünni kitaplar aynı rüyayı Abbas’ın eşi Ümmü’l-Fazl için anlatır (İbn Mâce 3923). Oyun ikisini de anlatmaz."
+  },
+  "10.5": {
+   "en": "Build a little house together from blocks or boxes, and talk about what makes a home full of love.",
+   "t": "Birlikte tahta bloklardan ya da kutulardan küçük bir ev yapın ve bir evi sevgiyle dolu yapan şeyi konuşun."
+  },
+  "11.1": {
+   "en": "\"Let us visit Umm Ayman as Allah's Messenger used to visit her\" (Sahih Muslim 2454).",
+   "t": "“Allah’ın Resûlü’nün ziyaret ettiği gibi gel biz de Ümmü Eymen’i ziyaret edelim” (Sahîh-i Müslim 2454)."
+  },
+  "11.2": {
+   "en": "Sahih Muslim 2453: Anas did not know whether the Prophet ﷺ was fasting or simply did not want it, but \"she raised her voice and showed annoyance to him\". He loved her for her plain speaking.",
+   "t": "Sahîh-i Müslim 2453: Enes, Peygamberimizin ﷺ oruçlu mu olduğunu yoksa sadece istemedi mi bilmiyordu, ama “o sesini yükseltti ve ona kızgınlığını gösterdi”. Peygamberimiz onu bu açık sözlülüğü için severdi."
+  },
+  "11.3": {
+   "en": "When she died is not certain: five months after the Prophet ﷺ (Ibn Shihab, in Sahih Muslim 1771), or at the beginning of 'Uthman's caliphate (al-Waqidi, in Ibn Sa'd). The game does not say.",
+   "t": "Ne zaman vefat ettiği kesin değildir: Peygamberimizden ﷺ beş ay sonra (İbn Şihâb, Sahîh-i Müslim 1771’de) ya da Osman’ın halifeliğinin başında (Vâkıdî, İbn Sa'd’da). Oyun bunu söylemez."
+  },
+  "11.5": {
+   "en": "Ask: who do you visit to check how they are? Maybe call or visit an older relative this week.",
+   "t": "Sorun: Nasıl olduklarını öğrenmek için kimleri ziyaret edersin? Belki bu hafta yaşlı bir akrabanızı arayın ya da ziyaret edin."
+  },
+  "11.6": {
+   "en": "In Shia collections (al-Kafi; Tahdhib al-Ahkam) Umm Ayman is one of the witnesses Fatimah brought in the matter of Fadak, the land Fatimah held to be hers. Sunni and Shia accounts of Fadak differ, and the game does not tell it.",
+   "t": "Şii derlemelerde (el-Kâfî; Tehzîbü’l-Ahkâm) Ümmü Eymen, Fâtıma’nın kendisine ait saydığı Fedek arazisi konusunda getirdiği şahitlerden biridir. Sünni ve Şii anlatımlar Fedek konusunda ayrılır ve oyun bunu anlatmaz."
+  },
+  "11.7": {
+   "en": "If your child is sad, talk about people we miss, and how we can make dua for them.",
+   "t": "Çocuğunuz üzgünse özlediğimiz insanları ve onlar için nasıl dua edebileceğimizi konuşun."
+  },
+  "11.8": {
+   "en": "Ask: what is the revelation? (The Qur'an, which came from Allah through the angel Jibril.)",
+   "t": "Sorun: Vahiy nedir? (Allah’tan melek Cebrâil aracılığıyla gelen Kur’an.)"
+  },
+  "11.9": {
+   "en": "Ask your child to tell Umm Ayman's whole story in their own words. Which part did they like best?",
+   "t": "Çocuğunuzdan Ümmü Eymen’in bütün hikâyesini kendi sözleriyle anlatmasını isteyin. En çok hangi kısmını sevdi?"
+  }
+ }
+}

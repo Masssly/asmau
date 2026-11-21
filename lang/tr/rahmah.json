@@ -1,0 +1,730 @@
+{
+ "status": "draft",
+ "_note": "Türkçe. To be checked by a native speaker; seen only with ?lang=tr until then.",
+ "lines": {
+  "r1-a": {
+   "en": "Long ago, in the year 1900, a baby girl was born in Padang Panjang, a town in the green mountains of West Sumatra, in what is now Indonesia. Her name was Rahmah.",
+   "t": "Çok eskiden, 1900 yılında, bugün Endonezya denen ülkede, Batı Sumatra’nın yeşil dağlarındaki Padang Panjang kasabasında bir kız bebek dünyaya geldi. Adı Rahmah’tı."
+  },
+  "r1-b": {
+   "en": "Her family loved learning. Her father was a judge, and her grandfather was a scholar who studied the stars.",
+   "t": "Ailesi öğrenmeyi çok severdi. Babası bir hâkimdi, dedesi de yıldızları inceleyen bir âlimdi."
+  },
+  "r1-c": {
+   "en": "Her people, the Minangkabau, build beautiful houses with roofs that curve up like the horns of a buffalo.",
+   "t": "Onun halkı Minangkabaular, çatıları manda boynuzları gibi yukarı kıvrılan güzel evler yapar."
+  },
+  "r1-home": {
+   "en": "Find the pairs! Things of her home in the mountains.",
+   "t": "Eşleri bul! Dağlardaki evinden şeyler."
+  },
+  "r1-q": {
+   "en": "Where was Rahmah born?",
+   "t": "Rahmah nerede doğdu?"
+  },
+  "r1-q-opt1": {
+   "en": "In the mountains of Sumatra",
+   "t": "Sumatra’nın dağlarında"
+  },
+  "r1-q-opt2": {
+   "en": "In a big desert",
+   "t": "Büyük bir çölde"
+  },
+  "r1-q-no": {
+   "en": "She was born in Padang Panjang, in the green mountains of West Sumatra.",
+   "t": "Batı Sumatra’nın yeşil dağlarında, Padang Panjang’da doğdu."
+  },
+  "r2-a": {
+   "en": "When Rahmah was six years old, her father died. She missed him very much.",
+   "t": "Rahmah altı yaşındayken babası vefat etti. Onu çok özledi."
+  },
+  "r2-b": {
+   "en": "But her father's students came to teach her. She learned to read and write, in Arabic letters and in Latin letters too.",
+   "t": "Ama babasının öğrencileri gelip ona ders verdi. Okumayı ve yazmayı öğrendi; hem Arap harfleriyle hem de Latin harfleriyle."
+  },
+  "r2-books": {
+   "en": "Count the books she read! Tap each one.",
+   "t": "Okuduğu kitapları say! Her birine dokun."
+  },
+  "r2-c": {
+   "en": "Rahmah also learned how to help mothers when their babies are born.",
+   "t": "Rahmah, bebekleri dünyaya gelirken annelere nasıl yardım edileceğini de öğrendi."
+  },
+  "r2-q": {
+   "en": "Who taught Rahmah after her father died?",
+   "t": "Babası vefat ettikten sonra Rahmah’a kim ders verdi?"
+  },
+  "r2-q-opt1": {
+   "en": "Nobody at all",
+   "t": "Hiç kimse"
+  },
+  "r2-q-opt2": {
+   "en": "Her father's students",
+   "t": "Babasının öğrencileri"
+  },
+  "r2-q-no": {
+   "en": "Her father's students came and taught her to read and write.",
+   "t": "Babasının öğrencileri gelip ona okumayı ve yazmayı öğretti."
+  },
+  "r3-a": {
+   "en": "When Rahmah was still very young, her family arranged for her to marry, and she had to leave school.",
+   "t": "Rahmah daha çok küçükken ailesi onu evlendirdi ve okulu bırakmak zorunda kaldı."
+  },
+  "r3-b": {
+   "en": "But Rahmah did not stop learning. She joined study circles, where women sat together in the evening to learn about Islam.",
+   "t": "Ama Rahmah öğrenmeyi bırakmadı. Kadınların akşamları İslam’ı öğrenmek için bir araya geldiği ders halkalarına katıldı."
+  },
+  "r3-learn": {
+   "en": "Keep learning, like Rahmah. Press and hold.",
+   "t": "Rahmah gibi öğrenmeye devam et. Basılı tut."
+  },
+  "r3-c": {
+   "en": "A few years later, she went back to school.",
+   "t": "Birkaç yıl sonra okula geri döndü."
+  },
+  "r3-q": {
+   "en": "What did Rahmah do when she had to leave school?",
+   "t": "Rahmah okulu bırakmak zorunda kalınca ne yaptı?"
+  },
+  "r3-q-opt1": {
+   "en": "She kept learning",
+   "t": "Öğrenmeye devam etti"
+  },
+  "r3-q-opt2": {
+   "en": "She stopped learning",
+   "t": "Öğrenmeyi bıraktı"
+  },
+  "r3-q-no": {
+   "en": "She kept learning, in study circles, until she could go back to school.",
+   "t": "Okula dönebilene kadar ders halkalarında öğrenmeye devam etti."
+  },
+  "r4-a": {
+   "en": "Rahmah's big brother, Zainuddin, had started a school called Diniyah. Rahmah went back there to study.",
+   "t": "Rahmah’ın ağabeyi Zainuddin, Diniyah adında bir okul açmıştı. Rahmah okumak için oraya döndü."
+  },
+  "r4-b": {
+   "en": "After class, she gathered the girls together, to study more.",
+   "t": "Dersten sonra kızları bir araya toplar, daha çok çalışırlardı."
+  },
+  "r4-girls": {
+   "en": "Count the girls in her study circle. Tap each one.",
+   "t": "Ders halkasındaki kızları say. Her birine dokun."
+  },
+  "r4-c": {
+   "en": "Rahmah saw that girls needed a school of their own, where they could learn everything, and feel at home.",
+   "t": "Rahmah, kızların her şeyi öğrenebilecekleri ve kendilerini evlerinde gibi hissedecekleri kendilerine ait bir okula ihtiyaçları olduğunu gördü."
+  },
+  "r4-q": {
+   "en": "What did Rahmah want for girls?",
+   "t": "Rahmah kızlar için ne istiyordu?"
+  },
+  "r4-q-opt1": {
+   "en": "No school at all",
+   "t": "Hiç okul olmamasını"
+  },
+  "r4-q-opt2": {
+   "en": "A school of their own",
+   "t": "Kendilerine ait bir okul"
+  },
+  "r4-q-no": {
+   "en": "She wanted girls to have a school of their own.",
+   "t": "Kızların kendilerine ait bir okulu olmasını istiyordu."
+  },
+  "r5-a": {
+   "en": "On the first of November, 1923, Rahmah opened a school just for girls. She called it Diniyah Putri.",
+   "t": "1 Kasım 1923’te Rahmah sadece kızlar için bir okul açtı. Adını Diniyah Putri koydu."
+  },
+  "r5-b": {
+   "en": "At first there was no school building. Lessons were in a mosque, and Rahmah was the main teacher.",
+   "t": "Başta okulun binası yoktu. Dersler bir camide yapılıyordu ve baş öğretmen Rahmah’tı."
+  },
+  "r5-c": {
+   "en": "The first students were seventy-one women and girls. Many of them were young mothers.",
+   "t": "İlk öğrenciler yetmiş bir kadın ve kızdı. Birçoğu genç annelerdi."
+  },
+  "r5-lessons": {
+   "en": "What did they learn at Diniyah Putri? Sort them.",
+   "t": "Diniyah Putri’de neler öğrenirlerdi? Ayır bakalım."
+  },
+  "r5-lessons-bin1": {
+   "en": "They learned it",
+   "t": "Öğrenirlerdi"
+  },
+  "r5-lessons-bin2": {
+   "en": "Not on the list",
+   "t": "Listede yok"
+  },
+  "r5-lessons-it1": {
+   "en": "The Qur'an and Islam",
+   "t": "Kur’an ve İslam"
+  },
+  "r5-lessons-it2": {
+   "en": "Video games",
+   "t": "Video oyunları"
+  },
+  "r5-lessons-it3": {
+   "en": "Arabic",
+   "t": "Arapça"
+  },
+  "r5-lessons-it4": {
+   "en": "Sewing and crafts",
+   "t": "Dikiş ve el işi"
+  },
+  "r5-lessons-it5": {
+   "en": "Magic tricks",
+   "t": "Sihirbazlık numaraları"
+  },
+  "r5-lessons-it6": {
+   "en": "Skateboarding",
+   "t": "Kaykay"
+  },
+  "r5-lessons-no": {
+   "en": "Think again. Was that taught in 1923?",
+   "t": "Bir daha düşün. 1923’te bu öğretiliyor muydu?"
+  },
+  "r5-q": {
+   "en": "Where were the very first lessons?",
+   "t": "En ilk dersler nerede yapıldı?"
+  },
+  "r5-q-opt1": {
+   "en": "In a mosque",
+   "t": "Bir camide"
+  },
+  "r5-q-opt2": {
+   "en": "In a palace",
+   "t": "Bir sarayda"
+  },
+  "r5-q-no": {
+   "en": "The first lessons were in a mosque.",
+   "t": "İlk dersler bir camide yapıldı."
+  },
+  "r6-a": {
+   "en": "Not everyone liked the new school. Some people said that girls did not need to go to school.",
+   "t": "Herkes yeni okulu sevmedi. Bazıları kızların okula gitmesine gerek olmadığını söyledi."
+  },
+  "r6-b": {
+   "en": "Rahmah talked kindly with the scholars of her town, and showed them that Islam honours learning, for girls as well as boys.",
+   "t": "Rahmah kasabasının âlimleriyle nazikçe konuştu ve onlara İslam’ın, erkekler gibi kızlar için de ilmi yücelttiğini gösterdi."
+  },
+  "r6-c": {
+   "en": "Then, in 1924, her brother Zainuddin died. Many thought the school would close. But Rahmah kept going.",
+   "t": "Sonra, 1924’te ağabeyi Zainuddin vefat etti. Birçok kişi okulun kapanacağını düşündü. Ama Rahmah devam etti."
+  },
+  "r6-going": {
+   "en": "When something is hard: keep going, or give up?",
+   "t": "Bir şey zor olduğunda: devam mı, vazgeçmek mi?"
+  },
+  "r6-going-bin1": {
+   "en": "Keep going",
+   "t": "Devam etmek"
+  },
+  "r6-going-bin2": {
+   "en": "Give up",
+   "t": "Vazgeçmek"
+  },
+  "r6-going-it1": {
+   "en": "Try again tomorrow",
+   "t": "Yarın yeniden denemek"
+  },
+  "r6-going-it2": {
+   "en": "Throw it away",
+   "t": "Atıp gitmek"
+  },
+  "r6-going-it3": {
+   "en": "Ask for help",
+   "t": "Yardım istemek"
+  },
+  "r6-going-it4": {
+   "en": "Go slowly but steadily",
+   "t": "Yavaş ama emin adımlarla gitmek"
+  },
+  "r6-going-it5": {
+   "en": "Stop at the first mistake",
+   "t": "İlk hatada durmak"
+  },
+  "r6-going-it6": {
+   "en": "Say: I can't do it",
+   "t": "“Yapamam” demek"
+  },
+  "r6-going-no": {
+   "en": "Think again. Is that keeping going, or giving up?",
+   "t": "Bir daha düşün. Bu devam etmek mi, vazgeçmek mi?"
+  },
+  "r6-q": {
+   "en": "What did Rahmah do when things were hard?",
+   "t": "İşler zorlaşınca Rahmah ne yaptı?"
+  },
+  "r6-q-opt1": {
+   "en": "She gave up",
+   "t": "Vazgeçti"
+  },
+  "r6-q-opt2": {
+   "en": "She kept going",
+   "t": "Devam etti"
+  },
+  "r6-q-no": {
+   "en": "She kept going, and the school did not close.",
+   "t": "Devam etti ve okul kapanmadı."
+  },
+  "r7-a": {
+   "en": "In 1926, a big earthquake shook Padang Panjang, and the school building fell down.",
+   "t": "1926’da büyük bir deprem Padang Panjang’ı salladı ve okul binası yıkıldı."
+  },
+  "r7-b": {
+   "en": "But the lessons did not stop. For years, the girls learned in simple shelters.",
+   "t": "Ama dersler durmadı. Yıllarca kızlar basit barınaklarda öğrendi."
+  },
+  "r7-c": {
+   "en": "Rahmah travelled to many towns and islands, to collect money for a new school.",
+   "t": "Rahmah yeni bir okul için para toplamak üzere birçok kasabaya ve adaya yolculuk yaptı."
+  },
+  "r7-travel": {
+   "en": "Help Rahmah travel to collect money for the school.",
+   "t": "Okul için para toplamak üzere Rahmah’ın yolculuğuna yardım et."
+  },
+  "r7-d": {
+   "en": "In 1928, the new school opened!",
+   "t": "1928’de yeni okul açıldı!"
+  },
+  "r7-bricks": {
+   "en": "Build the new school. Tap to place every brick.",
+   "t": "Yeni okulu yap. Her tuğlayı yerine koymak için dokun."
+  },
+  "r8-a": {
+   "en": "In those days the land was ruled by the Dutch, and their government paid money to some schools. But Rahmah would not take it: she wanted her school to be free to teach in its own way.",
+   "t": "O günlerde ülkeyi Hollandalılar yönetiyordu ve hükümetleri bazı okullara para veriyordu. Ama Rahmah bunu kabul etmedi: okulunun kendi bildiği gibi öğretmekte özgür olmasını istiyordu."
+  },
+  "r8-b": {
+   "en": "The school grew and grew. Soon about five hundred girls were learning there.",
+   "t": "Okul büyüdükçe büyüdü. Çok geçmeden orada yaklaşık beş yüz kız okuyordu."
+  },
+  "r8-c": {
+   "en": "She also opened a college to train women to be teachers.",
+   "t": "Kadınları öğretmen olarak yetiştirmek için bir okul da açtı."
+  },
+  "r8-teacher": {
+   "en": "What does a good teacher do? Sort them.",
+   "t": "İyi bir öğretmen ne yapar? Ayır bakalım."
+  },
+  "r8-teacher-bin1": {
+   "en": "A good teacher",
+   "t": "İyi bir öğretmen"
+  },
+  "r8-teacher-bin2": {
+   "en": "Not a good teacher",
+   "t": "İyi bir öğretmen değil"
+  },
+  "r8-teacher-it1": {
+   "en": "Listens to every child",
+   "t": "Her çocuğu dinler"
+  },
+  "r8-teacher-it2": {
+   "en": "Laughs at mistakes",
+   "t": "Hatalara güler"
+  },
+  "r8-teacher-it3": {
+   "en": "Explains again, kindly",
+   "t": "Nazikçe yeniden anlatır"
+  },
+  "r8-teacher-it4": {
+   "en": "Shouts all the time",
+   "t": "Hep bağırır"
+  },
+  "r8-teacher-it5": {
+   "en": "Is patient",
+   "t": "Sabırlıdır"
+  },
+  "r8-teacher-it6": {
+   "en": "Helps only some children",
+   "t": "Sadece bazı çocuklara yardım eder"
+  },
+  "r8-teacher-no": {
+   "en": "Think again. Would a good teacher do that?",
+   "t": "Bir daha düşün. İyi bir öğretmen bunu yapar mı?"
+  },
+  "r9-a": {
+   "en": "For many years, Indonesia was ruled by others. Then, in 1945, Indonesia became free.",
+   "t": "Yıllarca Endonezya’yı başkaları yönetti. Sonra, 1945’te Endonezya özgür oldu."
+  },
+  "r9-b": {
+   "en": "When Rahmah heard the news, she raised the red and white flag of Indonesia in the school yard.",
+   "t": "Rahmah haberi duyunca Endonezya’nın kırmızı-beyaz bayrağını okulun bahçesine çekti."
+  },
+  "r9-flag": {
+   "en": "Raise the flag! Press and hold.",
+   "t": "Bayrağı çek! Basılı tut."
+  },
+  "r9-q": {
+   "en": "What colours are on Indonesia's flag?",
+   "t": "Endonezya bayrağında hangi renkler var?"
+  },
+  "r9-q-opt1": {
+   "en": "Red and white",
+   "t": "Kırmızı ve beyaz"
+  },
+  "r9-q-opt2": {
+   "en": "Blue and yellow",
+   "t": "Mavi ve sarı"
+  },
+  "r9-q-no": {
+   "en": "Indonesia's flag is red and white.",
+   "t": "Endonezya bayrağı kırmızı ve beyazdır."
+  },
+  "r10-a": {
+   "en": "Years later, the head of al-Azhar, a great old university in Egypt, came all the way to visit her school.",
+   "t": "Yıllar sonra, Mısır’daki büyük ve eski bir üniversite olan Ezher’in başkanı, onun okulunu ziyaret etmek için ta oradan geldi."
+  },
+  "r10-b": {
+   "en": "Then Rahmah went on Hajj to Makkah.",
+   "t": "Sonra Rahmah hac için Mekke’ye gitti."
+  },
+  "r10-cairo": {
+   "en": "Help Rahmah travel to Makkah, and then to Cairo.",
+   "t": "Rahmah’ın önce Mekke’ye, sonra Kahire’ye yolculuğuna yardım et."
+  },
+  "r10-c": {
+   "en": "In Cairo, the teachers of al-Azhar gave her the title Syaikhah: a great scholar. No woman had ever been given it before.",
+   "t": "Kahire’de Ezher’in hocaları ona Şeyha unvanını verdi: büyük bir âlim kadın. Bu unvan daha önce hiçbir kadına verilmemişti."
+  },
+  "r10-d": {
+   "en": "After that, girls from her school could go to study at al-Azhar too.",
+   "t": "Bundan sonra onun okulundaki kızlar da Ezher’de okumaya gidebildi."
+  },
+  "r10-q": {
+   "en": "What title did al-Azhar give Rahmah?",
+   "t": "Ezher Rahmah’a hangi unvanı verdi?"
+  },
+  "r10-q-opt1": {
+   "en": "Queen",
+   "t": "Kraliçe"
+  },
+  "r10-q-opt2": {
+   "en": "Syaikhah: a great scholar",
+   "t": "Şeyha: büyük bir âlim"
+  },
+  "r10-q-no": {
+   "en": "Al-Azhar called her Syaikhah, a great scholar. No woman had been given it before.",
+   "t": "Ezher ona büyük bir âlim demek olan Şeyha dedi. Daha önce hiçbir kadına verilmemişti."
+  },
+  "r11-a": {
+   "en": "Rahmah never stopped working. In 1967, a university for women, which she had worked for, was opened.",
+   "t": "Rahmah çalışmayı hiç bırakmadı. 1967’de, uğrunda çalıştığı bir kadın üniversitesi açıldı."
+  },
+  "r11-b": {
+   "en": "Rahmah died in 1969, in Padang Panjang, where she was born. May Allah have mercy on her.",
+   "t": "Rahmah 1969’da doğduğu yer olan Padang Panjang’da vefat etti. Allah ona rahmet etsin."
+  },
+  "r11-c": {
+   "en": "Her school is still open today, full of girls learning.",
+   "t": "Okulu bugün hâlâ açık ve öğrenen kızlarla dolu."
+  },
+  "r11-d": {
+   "en": "And in 2025, Indonesia named her a National Hero.",
+   "t": "Ve 2025’te Endonezya onu Millî Kahraman ilan etti."
+  },
+  "r11-story": {
+   "en": "Tell Rahmah's story. Tap in order.",
+   "t": "Rahmah’ın hikâyesini anlat. Sırayla dokun."
+  },
+  "r11-story-c1": {
+   "en": "First, Rahmah was born in the mountains of Sumatra.",
+   "t": "Önce Rahmah Sumatra’nın dağlarında doğdu."
+  },
+  "r11-story-c2": {
+   "en": "She learned to read and write.",
+   "t": "Okumayı ve yazmayı öğrendi."
+  },
+  "r11-story-c3": {
+   "en": "She opened a school for girls.",
+   "t": "Kızlar için bir okul açtı."
+  },
+  "r11-story-c4": {
+   "en": "An earthquake knocked it down, and she built it again.",
+   "t": "Bir deprem okulu yıktı, o da yeniden yaptı."
+  },
+  "r11-story-c5": {
+   "en": "She raised Indonesia's flag at the school.",
+   "t": "Okulda Endonezya bayrağını çekti."
+  },
+  "r11-story-c6": {
+   "en": "And al-Azhar called her Syaikhah.",
+   "t": "Ve Ezher ona Şeyha dedi."
+  },
+  "r11-story-no": {
+   "en": "Listen again, and tell it in order.",
+   "t": "Yeniden dinle ve sırayla anlat."
+  },
+  "end-a": {
+   "en": "This is the story of Rahmah El Yunusiyyah, who opened a school for girls when many people said girls did not need one, and never gave up. Her school is still open today.",
+   "t": "Bu, birçok kişi kızların okula ihtiyacı olmadığını söylerken kızlar için okul açan ve hiç vazgeçmeyen Rahmah El Yunusiyyah’ın hikâyesidir. Okulu bugün hâlâ açık."
+  }
+ },
+ "strings": {
+  "A Girl in the Mountains": "Dağlarda Bir Kız",
+  "Histories of her life (see the notes)": "Hayatını anlatan tarih kitapları (notlara bakın)",
+  "From the histories of her life": "Hayatını anlatan tarih kitaplarından",
+  "Learning to Read": "Okumayı Öğrenmek",
+  "No More School": "Okul Bitti",
+  "Press and hold": "",
+  "Never stop learning": "Öğrenmeyi asla bırakma",
+  "Back to School": "Okula Dönüş",
+  "A School for Girls": "Kızlar İçin Bir Okul",
+  "Not Everyone Agreed": "Herkes Aynı Fikirde Değildi",
+  "The Earthquake": "Deprem",
+  "On Her Own Feet": "Kendi Ayakları Üzerinde",
+  "A New Flag": "Yeni Bir Bayrak",
+  "The flag is flying!": "Bayrak dalgalanıyor!",
+  "To Cairo": "Kahire’ye",
+  "Her School Today": "Okulu Bugün",
+  "Born in the mountains": "Dağlarda doğdu",
+  "She learned to read": "Okumayı öğrendi",
+  "A school for girls": "Kızlar için bir okul",
+  "The earthquake": "Deprem",
+  "The new flag": "Yeni bayrak",
+  "Al-Azhar": "Ezher",
+  "← Asmau": "",
+  "Rahmah El Yunusiyyah": "Rahmah El Yunusiyyah",
+  "The Story of Rahmah El Yunusiyyah": "Rahmah El Yunusiyyah’ın Hikâyesi",
+  "Eleven chapters about the girl who opened a school for girls. Play a little every day.": "Kızlar için okul açan kız hakkında on bir bölüm. Her gün biraz oyna.",
+  "Start the story": "",
+  "Start from the beginning": "",
+  "For parents": "",
+  "Back": "",
+  "Next": "",
+  "All chapters": "",
+  "✕ Close": "",
+  "The End": "",
+  "Learning": "Öğrenmek",
+  "Never giving up": "Asla vazgeçmemek",
+  "Courage": "Cesaret",
+  "Read it again": "",
+  "Pick a chapter": "",
+  "Music": "",
+  "Sounds": "",
+  "Voice": "",
+  "The girl from the mountains of Sumatra who opened a school for girls in 1923, never gave up, and was honoured by al-Azhar.": "1923’te kızlar için bir okul açan, hiç vazgeçmeyen ve Ezher tarafından onurlandırılan, Sumatra dağlarından bir kız.",
+  "Rahmah welcomes girls arriving with their books at a mosque in the mountains of West Sumatra.": "Rahmah, Batı Sumatra dağlarındaki bir camide, kitaplarıyla gelen kızları karşılıyor.",
+  "📖 About this story": "📖 Bu hikâye hakkında",
+  "Rahmah El Yunusiyyah (1900 to 1969), of the Minangkabau people of West Sumatra, Indonesia, opened Diniyah Putri in Padang Panjang on 1 November 1923: generally thought to be the first Islamic school for girls in the Indies. It is still open. Al-Azhar gave her the title Syaikhah, and in 2025 Indonesia named her a National Hero.": "Endonezya’nın Batı Sumatra bölgesinin Minangkabau halkından Rahmah El Yunusiyyah (1900–1969), 1 Kasım 1923’te Padang Panjang’da Diniyah Putri’yi açtı: genellikle Hollanda Doğu Hint Adaları’ndaki ilk İslami kız okulu kabul edilir. Okul hâlâ açıktır. Ezher ona Şeyha unvanını verdi ve 2025’te Endonezya onu Millî Kahraman ilan etti.",
+  "📚 Sources": "📚 Kaynaklar",
+  "This is modern history, not the Qur’an. The facts come from published histories of her life; the notes for each page name them. Where the sources disagree (her birthday; the year of the al-Azhar title) the game gives no date and the notes say so.": "Bu Kur’an değil, yakın tarihtir. Bilgiler, hayatını anlatan yayımlanmış tarih kitaplarından gelir; her sayfanın notu kaynaklarını belirtir. Kaynakların ayrıldığı yerlerde (doğum günü; Ezher unvanının yılı) oyun tarih vermez ve notlar bunu söyler.",
+  "🤲 Told gently, or left out": "🤲 Yumuşak anlatılanlar ya da atlananlar",
+  "Not told to children, but in the page notes for you: her marriage when she was very young and her divorce, the Japanese occupation and the war, her months in a Dutch prison, and her years in politics.": "Çocuklara anlatılmayan, ama sayfa notlarında sizin için olanlar: çok küçük yaşta evlenmesi ve boşanması, Japon işgali ve savaş, Hollanda hapishanesinde geçen ayları ve siyasetteki yılları.",
+  "👥 Who is shown": "👥 Kimler gösteriliyor",
+  "Shown in this story: Rahmah and the Minangkabau people as themselves, every woman’s hair covered, as in her own photographs.": "Bu hikâyede gösterilenler: Rahmah ve Minangkabau halkı, kendi hâlleriyle; kendi fotoğraflarında olduğu gibi her kadının saçı örtülü."
+ },
+ "notes": {
+  "1.1": {
+   "en": "Rahmah El Yunusiyyah was born in 1900 in Bukit Surungan, Padang Panjang, West Sumatra, then part of the Dutch East Indies. Her birthday is given differently: 26 October 1900 (Wikipedia's article on her) or 20 or 29 December 1900 (Indonesian sources), so the game gives only the year.\n\nThe notes in this game come from the histories cited in Wikipedia's article \"Rahmah el Yunusiyah\" (Audrey Kahin, Jeffrey Hadler's Muslims and Matriarchs, Pieternella van Doorn-Harder's Women Shaping Islam, and others) and from Fitriyanti et al., Journal of Educational Sciences 10(1), 2026.",
+   "t": "Rahmah El Yunusiyyah 1900’de, o zaman Hollanda Doğu Hint Adaları’nın bir parçası olan Batı Sumatra’da, Padang Panjang’daki Bukit Surungan’da doğdu. Doğum günü farklı verilir: 26 Ekim 1900 (Vikipedi’deki maddesi) ya da 20 veya 29 Aralık 1900 (Endonezya kaynakları); bu yüzden oyun yalnızca yılı verir.\n\nBu oyundaki notlar, Vikipedi’nin “Rahmah el Yunusiyah” maddesinde kaynak gösterilen tarih eserlerinden (Audrey Kahin, Jeffrey Hadler’ın Muslims and Matriarchs’ı, Pieternella van Doorn-Harder’ın Women Shaping Islam’ı ve başkaları) ve Fitriyanti ve diğerleri, Journal of Educational Sciences 10(1), 2026’dan gelir."
+  },
+  "1.2": {
+   "en": "She was the youngest child of a Minangkabau family of Islamic scholars. Her father, Muhammad Yunus, was a qadi (judge); her mother was Rafi'ah. Her grandfather was a well-known scholar and astronomer.",
+   "t": "İslam âlimlerinden oluşan bir Minangkabau ailesinin en küçük çocuğuydu. Babası Muhammed Yunus bir kadıydı; annesi Rafi'ah’tı. Dedesi tanınmış bir âlim ve gökbilimciydi."
+  },
+  "1.3": {
+   "en": "The Minangkabau are matrilineal: family and property pass through the mother's line. The 2026 article points out the paradox Rahmah saw: women were honoured in Minangkabau custom, yet had little access to religious education.",
+   "t": "Minangkabaular anaerkildir: aile ve mülk anne soyundan geçer. 2026 tarihli makale, Rahmah’ın gördüğü çelişkiye dikkat çeker: Kadınlar Minangkabau geleneğinde saygı görürdü, ama dinî eğitime pek ulaşamazlardı."
+  },
+  "1.4": {
+   "en": "Ask: what are the special things of the place where we live?",
+   "t": "Sorun: Yaşadığımız yerin özel şeyleri nelerdir?"
+  },
+  "1.5": {
+   "en": "Find Sumatra and Padang Panjang on a map together. Ask: what is it like to live in the mountains?",
+   "t": "Sumatra’yı ve Padang Panjang’ı birlikte haritada bulun. Sorun: Dağlarda yaşamak nasıldır?"
+  },
+  "2.1": {
+   "en": "If your child has lost someone, this page may bring it up. Hold them and talk about who looks after them.",
+   "t": "Çocuğunuz birini kaybettiyse bu sayfa bunu hatırlatabilir. Ona sarılın ve ona kimlerin baktığını konuşun."
+  },
+  "2.2": {
+   "en": "After her father died, his former students taught her. She learned to read and write in Arabic script and in Latin script (most likely Arabic and Malay in Jawi, and Malay in Latin letters).",
+   "t": "Babası vefat ettikten sonra onun eski öğrencileri Rahmah’a ders verdi. Arap harfleriyle ve Latin harfleriyle okumayı ve yazmayı öğrendi (büyük olasılıkla Arapça ve Cavi harfleriyle Malayca, bir de Latin harfleriyle Malayca)."
+  },
+  "2.3": {
+   "en": "Count the books in your home together. Which is your child's favourite?",
+   "t": "Evinizdeki kitapları birlikte sayın. Çocuğunuzun en sevdiği hangisi?"
+  },
+  "2.4": {
+   "en": "She had some training in midwifery at a local hospital.",
+   "t": "Yerel bir hastanede ebelik eğitimi de aldı."
+  },
+  "2.5": {
+   "en": "Ask: who are the teachers in our family? What have they taught you?",
+   "t": "Sorun: Ailemizdeki öğretmenler kimler? Sana neler öğrettiler?"
+  },
+  "3.1": {
+   "en": "Her family arranged for her to be married in 1916, at about sixteen, to a scholar, Bahauddin Lathif, and she had to leave school. In 1922 her husband married two more wives; she obtained a divorce and went back to her education. They had no children. The game says only that she had to leave school.",
+   "t": "Ailesi onu 1916’da, on altı yaşlarındayken, bir âlim olan Bahauddin Lathif’le evlendirdi ve okulu bırakmak zorunda kaldı. 1922’de kocası iki kadınla daha evlendi; Rahmah boşandı ve eğitimine geri döndü. Çocukları olmadı. Oyun yalnızca okulu bırakmak zorunda kaldığını söyler."
+  },
+  "3.2": {
+   "en": "From 1918 she studied Islam in private study circles.",
+   "t": "1918’den itibaren İslam’ı özel ders halkalarında okudu."
+  },
+  "3.3": {
+   "en": "Ask: what are you learning right now that is hard? How can you keep going?",
+   "t": "Sorun: Şu anda öğrendiğin ve zor gelen bir şey var mı? Nasıl devam edebilirsin?"
+  },
+  "3.5": {
+   "en": "Ask: why is learning important for girls and boys alike?",
+   "t": "Sorun: Öğrenmek kızlar için de erkekler için de neden önemlidir?"
+  },
+  "4.1": {
+   "en": "Her brother Zainuddin Labay el Yunusi had founded the Diniyah School, for boys and girls, in 1915.",
+   "t": "Ağabeyi Zainuddin Labay el Yunusi, 1915’te kızlar ve erkekler için Diniyah Okulu’nu kurmuştu."
+  },
+  "4.2": {
+   "en": "Her study circle for the girls was influenced by Ruhana Kuddus's women's association, Amai Setia, and was called the Women and Girls' Association.",
+   "t": "Kızlar için kurduğu ders halkası, Ruhana Kuddus’un kadın derneği Amai Setia’dan etkilenmişti ve adı Kadınlar ve Kızlar Derneği’ydi."
+  },
+  "4.3": {
+   "en": "Ask: what makes a group of friends good to learn with?",
+   "t": "Sorun: Birlikte öğrenmek için bir arkadaş grubunu iyi yapan nedir?"
+  },
+  "4.4": {
+   "en": "She was unhappy with the Islamic education girls could get, and with the ways mixed schools kept them from taking full part.",
+   "t": "Kızların alabildiği İslami eğitimden ve karma okulların onları tam olarak katılmaktan alıkoyduğu durumlardan memnun değildi."
+  },
+  "4.5": {
+   "en": "Ask: what would your dream school be like?",
+   "t": "Sorun: Hayalindeki okul nasıl olurdu?"
+  },
+  "5.1": {
+   "en": "Diniyah Putri (also called Madrasah Diniyah li al-Banat) opened on 1 November 1923. It is generally thought to be the first Islamic school for girls in the Indies; the 2026 article calls it the first Islamic educational institution exclusively for women in Southeast Asia.",
+   "t": "Diniyah Putri (Medresetü Diniyye li’l-Benât diye de bilinir) 1 Kasım 1923’te açıldı. Genellikle Hint Adaları’ndaki ilk İslami kız okulu olarak kabul edilir; 2026 tarihli makale onu Güneydoğu Asya’da yalnızca kadınlara ayrılmış ilk İslami eğitim kurumu olarak nitelendirir."
+  },
+  "5.2": {
+   "en": "Ask: what was it like to have lessons in a mosque? Have you ever learned in a mosque?",
+   "t": "Sorun: Camide ders görmek nasıldı? Sen hiç camide bir şey öğrendin mi?"
+  },
+  "5.3": {
+   "en": "The first 71 students were mostly young housewives. The lessons were basic Islamic education, Arabic grammar, some modern subjects and handicrafts; later also health, sewing, leadership, English, history and geography.",
+   "t": "İlk 71 öğrenci çoğunlukla genç ev hanımlarıydı. Dersler temel İslami bilgiler, Arapça dilbilgisi, bazı modern dersler ve el işleriydi; daha sonra sağlık, dikiş, liderlik, İngilizce, tarih ve coğrafya da eklendi."
+  },
+  "5.4": {
+   "en": "Ask: which of these lessons would you like most?",
+   "t": "Sorun: Bu derslerden en çok hangisini severdin?"
+  },
+  "5.5": {
+   "en": "Ask: what do you need to start a school? (A teacher, students, a place, books.)",
+   "t": "Sorun: Bir okul açmak için neye ihtiyaç vardır? (Bir öğretmen, öğrenciler, bir yer, kitaplar.)"
+  },
+  "6.1": {
+   "en": "She faced hostility and criticism: not everyone accepted a modern school for girls.",
+   "t": "Düşmanlık ve eleştiriyle karşılaştı: Kızlar için modern bir okulu herkes kabul etmedi."
+  },
+  "6.2": {
+   "en": "She consulted the local scholars before opening the school, and believed that Islam demanded a central role for women and for women's education.",
+   "t": "Okulu açmadan önce yerel âlimlere danıştı ve İslam’ın kadınlara ve kadınların eğitimine merkezî bir yer verilmesini istediğine inanıyordu."
+  },
+  "6.3": {
+   "en": "Her brother Zainuddin, who had supported the school, died in 1924.",
+   "t": "Okulu desteklemiş olan ağabeyi Zainuddin 1924’te vefat etti."
+  },
+  "6.4": {
+   "en": "Ask your child for a time they kept going when something was hard.",
+   "t": "Çocuğunuzdan, bir şey zorken devam ettiği bir anı anlatmasını isteyin."
+  },
+  "6.5": {
+   "en": "Ask: who helps you keep going when things are hard?",
+   "t": "Sorun: İşler zorlaşınca devam etmene kim yardım ediyor?"
+  },
+  "7.1": {
+   "en": "The Padang Panjang earthquakes of 1926 destroyed the school building. The game leaves out the people who died in them.",
+   "t": "1926 Padang Panjang depremleri okul binasını yıktı. Oyun depremlerde ölen insanları anlatmaz."
+  },
+  "7.2": {
+   "en": "Ask: is a school the building, or the people in it?",
+   "t": "Sorun: Okul bina mıdır, yoksa içindeki insanlar mı?"
+  },
+  "7.3": {
+   "en": "Muhammadiyah, a large Islamic organisation, offered to take over the school and rebuild it; she said no, and toured the Indies to raise the money herself. The new building opened in 1928.",
+   "t": "Büyük bir İslami kuruluş olan Muhammadiyah okulu devralıp yeniden inşa etmeyi teklif etti; Rahmah hayır dedi ve parayı kendisi toplamak için Hint Adaları’nı dolaştı. Yeni bina 1928’de açıldı."
+  },
+  "7.4": {
+   "en": "Ask: how could we help a school or a mosque that needs money?",
+   "t": "Sorun: Paraya ihtiyacı olan bir okula ya da camiye nasıl yardım edebiliriz?"
+  },
+  "7.6": {
+   "en": "Build a school together from blocks or boxes.",
+   "t": "Birlikte tahta bloklardan ya da kutulardan bir okul yapın."
+  },
+  "8.1": {
+   "en": "She would not accept Dutch government subsidies, so that the school's dress, calendar and lessons could stay centred on Islam. Like the Taman Siswa schools, she had to fight the Dutch rules against \"wild\" (unlicensed) schools, and she was fined for discussing politics.",
+   "t": "Okulun kıyafeti, takvimi ve dersleri İslam’ı merkeze almaya devam etsin diye Hollanda hükümetinin yardımlarını kabul etmedi. Taman Siswa okulları gibi, o da Hollandalıların “vahşi” (ruhsatsız) okullara karşı kurallarıyla mücadele etmek zorunda kaldı ve siyaset konuştuğu için para cezasına çarptırıldı."
+  },
+  "8.2": {
+   "en": "By the end of the 1930s the school had about 500 students. The historian Audrey Kahin calls Diniyah Putri \"one of the most successful and influential of the schools for women\" before independence.",
+   "t": "1930’ların sonunda okulun yaklaşık 500 öğrencisi vardı. Tarihçi Audrey Kahin, Diniyah Putri’yi bağımsızlıktan önce “kadın okullarının en başarılı ve en etkililerinden biri” olarak nitelendirir."
+  },
+  "8.3": {
+   "en": "Kulliyatul Muallimat al-Islamiyyah, a college for women teachers, opened in 1937. She also founded schools in Jakarta (1935) and a high school in Padang Panjang (1938).",
+   "t": "Kadın öğretmenler için bir yüksekokul olan Külliyetü’l-Muallimâti’l-İslâmiyye 1937’de açıldı. Ayrıca Cakarta’da okullar (1935) ve Padang Panjang’da bir lise (1938) kurdu."
+  },
+  "8.4": {
+   "en": "Ask your child about a teacher they love, and why.",
+   "t": "Çocuğunuza sevdiği bir öğretmeni ve onu neden sevdiğini sorun."
+  },
+  "9.1": {
+   "en": "Indonesia's independence was proclaimed on 17 August 1945. During the Japanese occupation before it, she led a local defence unit (Giyugun) in Padang Panjang, and campaigned against the Japanese use of Indonesian women as \"comfort women\".",
+   "t": "Endonezya’nın bağımsızlığı 17 Ağustos 1945’te ilan edildi. Ondan önceki Japon işgali sırasında Padang Panjang’da yerel bir savunma birliğine (Giyugun) önderlik etti ve Japonların Endonezyalı kadınları “teselli kadınları” olarak kullanmasına karşı mücadele etti."
+  },
+  "9.2": {
+   "en": "During the war of independence that followed, she set up supplies for the Republic's side. The Dutch held her prisoner for seven months in 1949.\n\nIn 1955 she was elected to parliament for the Masyumi party, one of the first women in it. She later supported the PRRI, a rebellion against the central government (1958), lost her seat, and was arrested in 1961, then freed under an amnesty. The game leaves her politics out.",
+   "t": "Ardından gelen bağımsızlık savaşı sırasında Cumhuriyet tarafı için erzak düzenledi. Hollandalılar 1949’da onu yedi ay esir tuttu.\n\n1955’te Masyumi partisinden meclise seçildi; mecliste ilk kadınlardan biriydi. Daha sonra merkezî hükümete karşı bir isyan olan PRRI’yi (1958) destekledi, sandalyesini kaybetti ve 1961’de tutuklandı, sonra bir afla serbest bırakıldı. Oyun onun siyasetini anlatmaz."
+  },
+  "9.3": {
+   "en": "Ask: what does a flag mean to the people of a country?",
+   "t": "Sorun: Bir bayrak bir ülkenin insanları için ne anlama gelir?"
+  },
+  "9.4": {
+   "en": "Look at the flags of Indonesia and of our own country together.",
+   "t": "Endonezya’nın ve kendi ülkemizin bayraklarına birlikte bakın."
+  },
+  "10.1": {
+   "en": "The Grand Imam of al-Azhar, Abd al-Rahman Taj, visited the school: in 1956 according to Wikipedia, 1955 according to other sources.",
+   "t": "Ezher Şeyhi Abdurrahman Tâc okulu ziyaret etti: Vikipedi’ye göre 1956’da, başka kaynaklara göre 1955’te."
+  },
+  "10.2": {
+   "en": "Ask: who in your family has been on Hajj? What did they tell you?",
+   "t": "Sorun: Ailemizde kimler hacca gitti? Sana neler anlattılar?"
+  },
+  "10.3": {
+   "en": "Find Indonesia, Makkah and Cairo on a map. How far is that?",
+   "t": "Endonezya’yı, Mekke’yi ve Kahire’yi haritada bulun. Ne kadar uzak?"
+  },
+  "10.4": {
+   "en": "Syaikhah is the feminine of shaykh: a title for a great scholar. Wikipedia gives 1957, after her Hajj; the 2026 article gives 1955. Both say no woman had been given it before. The game gives no year.",
+   "t": "Şeyha, şeyh kelimesinin dişilidir: büyük bir âlime verilen bir unvan. Vikipedi haccından sonra 1957’yi verir; 2026 tarihli makale 1955’i verir. İkisi de bu unvanın daha önce hiçbir kadına verilmediğini söyler. Oyun yıl vermez."
+  },
+  "10.5": {
+   "en": "After her visit, Egypt gave scholarships for Diniyah Putri graduates to study at al-Azhar.",
+   "t": "Onun ziyaretinden sonra Mısır, Diniyah Putri mezunlarına Ezher’de okumaları için burs verdi."
+  },
+  "10.6": {
+   "en": "Ask: what would you like to become one day?",
+   "t": "Sorun: Bir gün ne olmak isterdin?"
+  },
+  "11.1": {
+   "en": "The women's Islamic university was opened in 1967 by the governor of West Sumatra, Harun Zain.",
+   "t": "Kadınlar için İslam üniversitesini 1967’de Batı Sumatra valisi Harun Zain açtı."
+  },
+  "11.2": {
+   "en": "She died on 26 February 1969. Her grave, in the grounds of the school's boarding house, is a protected heritage site.",
+   "t": "26 Şubat 1969’da vefat etti. Okulun yatakhanesinin bahçesindeki kabri koruma altındaki bir miras alanıdır."
+  },
+  "11.3": {
+   "en": "Ask: what is one good thing you would like people to remember you for?",
+   "t": "Sorun: İnsanların seni hangi iyi şeyle hatırlamasını isterdin?"
+  },
+  "11.4": {
+   "en": "President Prabowo Subianto named her a National Hero of Indonesia in November 2025. The award was received by Fauziah Fauzan El Muhammady, head of the Diniyyah Puteri school today.",
+   "t": "Cumhurbaşkanı Prabowo Subianto, Kasım 2025’te onu Endonezya’nın Millî Kahramanı ilan etti. Ödülü, bugün Diniyyah Puteri okulunun başında olan Fauziah Fauzan El Muhammady aldı."
+  },
+  "11.5": {
+   "en": "Ask your child to tell Rahmah's whole story in their own words.",
+   "t": "Çocuğunuzdan Rahmah’ın bütün hikâyesini kendi sözleriyle anlatmasını isteyin."
+  }
+ }
+}

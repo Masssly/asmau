@@ -1,0 +1,921 @@
+{
+ "status": "draft",
+ "_note": "Türkçe. To be checked by a native speaker; seen only with ?lang=tr until then.",
+ "lines": {
+  "n1-a": {
+   "en": "Long after Adam, his children had spread far over the earth. Among them lived some very good men, who remembered Allah and helped everyone.",
+   "t": "Âdem’den çok sonra, onun çocukları yeryüzüne uzak uzak yayılmıştı. Aralarında Allah’ı anan ve herkese yardım eden çok iyi insanlar yaşardı."
+  },
+  "n1-b": {
+   "en": "When those good men died, the people missed them. It is told that someone said: let us make statues of them, so that we remember them.",
+   "t": "O iyi insanlar vefat edince, halk onları çok özledi. Anlatıldığına göre biri şöyle dedi: Onların heykellerini yapalım da onları hatırlayalım."
+  },
+  "n1-c": {
+   "en": "Years and years went by. The people who made the statues died too, and their children forgot why the statues were there.",
+   "t": "Yıllar yıllar geçti. Heykelleri yapan insanlar da öldü ve onların çocukları heykellerin orada neden durduğunu unuttu."
+  },
+  "n1-d": {
+   "en": "Then people began to bow down to the statues and pray to them, and they forgot Allah. They called them Wadd, Suwa, Yaghuth, Ya'uq and Nasr.",
+   "t": "Sonra insanlar heykellerin önünde eğilmeye ve onlara dua etmeye başladılar ve Allah’ı unuttular. Onlara Vedd, Süvâ, Yeğûs, Yeûk ve Nesr dediler."
+  },
+  "n1-made": {
+   "en": "Who made it? Allah, or people?",
+   "t": "Bunu kim yaptı? Allah mı, insanlar mı?"
+  },
+  "n1-made-bin1": {
+   "en": "Allah made it",
+   "t": "Allah yarattı"
+  },
+  "n1-made-bin2": {
+   "en": "People made it",
+   "t": "İnsanlar yaptı"
+  },
+  "n1-made-it1": {
+   "en": "The sun",
+   "t": "Güneş"
+  },
+  "n1-made-it2": {
+   "en": "A statue",
+   "t": "Bir heykel"
+  },
+  "n1-made-it3": {
+   "en": "A tree",
+   "t": "Bir ağaç"
+  },
+  "n1-made-it4": {
+   "en": "A house",
+   "t": "Bir ev"
+  },
+  "n1-made-it5": {
+   "en": "The rain",
+   "t": "Yağmur"
+  },
+  "n1-made-it6": {
+   "en": "A chair",
+   "t": "Bir sandalye"
+  },
+  "n1-made-no": {
+   "en": "Think again. Could people make that, or only Allah?",
+   "t": "Bir daha düşün. Bunu insanlar yapabilir mi, yoksa yalnızca Allah mı?"
+  },
+  "n1-q": {
+   "en": "Can a statue hear us, or help us?",
+   "t": "Bir heykel bizi duyabilir mi, bize yardım edebilir mi?"
+  },
+  "n1-q-opt1": {
+   "en": "No, only Allah can",
+   "t": "Hayır, yalnızca Allah"
+  },
+  "n1-q-opt2": {
+   "en": "Yes, it can",
+   "t": "Evet, edebilir"
+  },
+  "n1-q-no": {
+   "en": "A statue cannot hear anyone or help anyone. Only Allah hears us and helps us.",
+   "t": "Bir heykel ne kimseyi duyabilir ne de kimseye yardım edebilir. Bizi yalnızca Allah duyar ve bize yalnızca O yardım eder."
+  },
+  "n2-a": {
+   "en": "So Allah chose a good man from among them to be His prophet: Nuh, peace be upon him.",
+   "t": "Bunun üzerine Allah aralarından iyi bir adamı Kendi peygamberi olarak seçti: Nuh’u, selam onun üzerine olsun."
+  },
+  "n2-b": {
+   "en": "Nuh said: my people, I am here to warn you clearly. Worship Allah alone, and be mindful of Him. He will forgive you.",
+   "t": "Nuh şöyle dedi: Ey kavmim, ben size apaçık bir uyarıcıyım. Yalnızca Allah’a kulluk edin ve O’ndan sakının. O sizi bağışlar."
+  },
+  "n2-q": {
+   "en": "What did Nuh tell his people?",
+   "t": "Nuh kavmine ne söyledi?"
+  },
+  "n2-q-opt1": {
+   "en": "Worship the statues",
+   "t": "Heykellere tapın"
+  },
+  "n2-q-opt2": {
+   "en": "Worship Allah alone",
+   "t": "Yalnızca Allah’a kulluk edin"
+  },
+  "n2-q-no": {
+   "en": "Nuh said: worship Allah alone. He will forgive you.",
+   "t": "Nuh şöyle dedi: Yalnızca Allah’a kulluk edin. O sizi bağışlar."
+  },
+  "n2-c": {
+   "en": "And Nuh kept calling them, for a very, very long time: nine hundred and fifty years!",
+   "t": "Ve Nuh onları çok ama çok uzun bir süre çağırmaya devam etti: dokuz yüz elli yıl!"
+  },
+  "n2-years": {
+   "en": "Each star is a hundred years. Tap all nine! Nine hundred years, and fifty more.",
+   "t": "Her yıldız yüz yıl. Dokuzuna da dokun! Dokuz yüz yıl, bir de elli yıl."
+  },
+  "n3-a": {
+   "en": "Nuh called his people in the daytime.",
+   "t": "Nuh kavmini gündüz çağırdı."
+  },
+  "n3-b": {
+   "en": "And he called them at night.",
+   "t": "Ve onları gece de çağırdı."
+  },
+  "n3-c": {
+   "en": "He spoke to them out loud, in front of everyone. And he spoke to them quietly, one by one.",
+   "t": "Onlarla herkesin önünde, yüksek sesle konuştu. Bir de tek tek, alçak sesle konuştu."
+  },
+  "n3-when": {
+   "en": "Is it day, or is it night? Sort them.",
+   "t": "Gündüz mü, gece mi? Ayır bakalım."
+  },
+  "n3-when-bin1": {
+   "en": "Day",
+   "t": "Gündüz"
+  },
+  "n3-when-bin2": {
+   "en": "Night",
+   "t": "Gece"
+  },
+  "n3-when-it1": {
+   "en": "The sun is shining",
+   "t": "Güneş parlıyor"
+  },
+  "n3-when-it2": {
+   "en": "The moon is out",
+   "t": "Ay çıkmış"
+  },
+  "n3-when-it3": {
+   "en": "The rooster crows",
+   "t": "Horoz ötüyor"
+  },
+  "n3-when-it4": {
+   "en": "The owl hoots",
+   "t": "Baykuş ötüyor"
+  },
+  "n3-when-it5": {
+   "en": "The stars twinkle",
+   "t": "Yıldızlar parıldıyor"
+  },
+  "n3-when-it6": {
+   "en": "The flowers open",
+   "t": "Çiçekler açıyor"
+  },
+  "n3-when-no": {
+   "en": "Think again. Is that in the day, or at night?",
+   "t": "Bir daha düşün. Bu gündüz mü olur, gece mi?"
+  },
+  "n3-d": {
+   "en": "But the more he called, the further they ran away. They put their fingers in their ears, and pulled their clothes over their heads, so that they would not hear.",
+   "t": "Ama o çağırdıkça onlar daha da uzaklaştı. Duymamak için parmaklarını kulaklarına tıkadılar ve elbiselerini başlarına çektiler."
+  },
+  "n3-q": {
+   "en": "What did the people do when Nuh called them?",
+   "t": "Nuh onları çağırınca insanlar ne yaptı?"
+  },
+  "n3-q-opt1": {
+   "en": "Put their fingers in their ears",
+   "t": "Parmaklarını kulaklarına tıkadılar"
+  },
+  "n3-q-opt2": {
+   "en": "Listened carefully",
+   "t": "Dikkatle dinlediler"
+  },
+  "n3-q-no": {
+   "en": "They would not listen. They put their fingers in their ears.",
+   "t": "Dinlemek istemediler. Parmaklarını kulaklarına tıkadılar."
+  },
+  "n4-a": {
+   "en": "Nuh said: ask your Lord to forgive you. He is always forgiving. He will send you plenty of rain from the sky.",
+   "t": "Nuh şöyle dedi: Rabbinizden bağışlanma dileyin. O çok bağışlayıcıdır. Size gökten bol bol yağmur gönderir."
+  },
+  "n4-rain": {
+   "en": "Help the rain fall on the fields. Tap each cloud.",
+   "t": "Yağmurun tarlalara yağmasına yardım et. Her buluta dokun."
+  },
+  "n4-b": {
+   "en": "Nuh told them: Allah will give you wealth and sons, and gardens and rivers.",
+   "t": "Nuh onlara şöyle dedi: Allah size mal ve oğullar, bahçeler ve ırmaklar verir."
+  },
+  "n4-c": {
+   "en": "Look how Allah made the seven heavens, one above the other. He put the moon in them as a light, and the sun as a lamp.",
+   "t": "Bakın, Allah yedi göğü nasıl kat kat yarattı. Ay’ı onların içinde bir nur, Güneş’i de bir kandil yaptı."
+  },
+  "n4-d": {
+   "en": "He made you grow from the earth like a plant. And He spread the earth out wide for you, with paths to walk on.",
+   "t": "Sizi yerden bir bitki gibi bitirdi. Ve yeri sizin için genişçe yaydı, üzerinde yürüyeceğiniz yollar yaptı."
+  },
+  "n4-gifts": {
+   "en": "What does each gift give us? Match them.",
+   "t": "Her nimet bize ne verir? Eşleştir."
+  },
+  "n4-gifts-a1": {
+   "en": "Rain",
+   "t": "Yağmur"
+  },
+  "n4-gifts-b1": {
+   "en": "Plants that grow",
+   "t": "Büyüyen bitkiler"
+  },
+  "n4-gifts-a2": {
+   "en": "The sun",
+   "t": "Güneş"
+  },
+  "n4-gifts-b2": {
+   "en": "Light and warmth",
+   "t": "Işık ve sıcaklık"
+  },
+  "n4-gifts-a3": {
+   "en": "The moon",
+   "t": "Ay"
+  },
+  "n4-gifts-b3": {
+   "en": "Light at night",
+   "t": "Gece ışığı"
+  },
+  "n4-gifts-a4": {
+   "en": "Rivers",
+   "t": "Irmaklar"
+  },
+  "n4-gifts-b4": {
+   "en": "Water to drink",
+   "t": "İçecek su"
+  },
+  "n5-a": {
+   "en": "The proud chiefs of the people sneered: you are only a man like us! And the only people who follow you are the lowest of us.",
+   "t": "Kavmin kibirli ileri gelenleri alay ettiler: Sen de bizim gibi bir insansın! Sana uyanlar da yalnızca en aşağılarımız."
+  },
+  "n5-b": {
+   "en": "They wanted Nuh to send his followers away. But Nuh said: I will never drive away the believers. Who would help me against Allah if I did?",
+   "t": "Nuh’un kendisine uyanları kovmasını istediler. Ama Nuh şöyle dedi: İnananları asla kovmam. Eğer kovarsam, Allah’a karşı bana kim yardım eder?"
+  },
+  "n5-c": {
+   "en": "And Nuh said: I do not ask you for any reward. My reward comes only from Allah.",
+   "t": "Ve Nuh şöyle dedi: Sizden hiçbir karşılık istemiyorum. Benim karşılığım yalnızca Allah’tandır."
+  },
+  "n5-welcome": {
+   "en": "Welcome everyone, like Nuh. Is it welcoming, or not?",
+   "t": "Nuh gibi herkesi güler yüzle karşıla. Bu güler yüzlü mü, değil mi?"
+  },
+  "n5-welcome-bin1": {
+   "en": "Welcoming",
+   "t": "Güler yüzlü"
+  },
+  "n5-welcome-bin2": {
+   "en": "Not welcoming",
+   "t": "Güler yüzlü değil"
+  },
+  "n5-welcome-it1": {
+   "en": "Playing with the new child",
+   "t": "Yeni gelen çocukla oynamak"
+  },
+  "n5-welcome-it2": {
+   "en": "Saying: you can't play with us",
+   "t": "“Bizimle oynayamazsın” demek"
+  },
+  "n5-welcome-it3": {
+   "en": "Sharing your food",
+   "t": "Yemeğini paylaşmak"
+  },
+  "n5-welcome-it4": {
+   "en": "Laughing at someone's clothes",
+   "t": "Birinin kıyafetine gülmek"
+  },
+  "n5-welcome-it5": {
+   "en": "Saying salam to everyone",
+   "t": "Herkese selam vermek"
+  },
+  "n5-welcome-it6": {
+   "en": "Whispering about someone",
+   "t": "Biri hakkında fısıldaşmak"
+  },
+  "n5-welcome-no": {
+   "en": "Think again. Would that make someone feel welcome?",
+   "t": "Bir daha düşün. Bu birinin kendini hoş karşılanmış hissetmesini sağlar mı?"
+  },
+  "n5-q": {
+   "en": "What did Nuh say about the believers?",
+   "t": "Nuh inananlar hakkında ne dedi?"
+  },
+  "n5-q-opt1": {
+   "en": "Go away",
+   "t": "Gidin buradan"
+  },
+  "n5-q-opt2": {
+   "en": "I will never send them away",
+   "t": "Onları asla kovmam"
+  },
+  "n5-q-no": {
+   "en": "Nuh would never send the believers away.",
+   "t": "Nuh inananları asla kovmazdı."
+  },
+  "n6-a": {
+   "en": "Then Allah told Nuh: no more of your people will believe, apart from those who already have. So do not be sad about what they do.",
+   "t": "Sonra Allah Nuh’a şöyle dedi: Kavminden, şimdiye kadar inanmış olanlardan başkası artık inanmayacak. Öyleyse onların yaptıklarına üzülme."
+  },
+  "n6-b": {
+   "en": "And Allah said: build the Ark, under Our eyes, and as We teach you.",
+   "t": "Ve Allah şöyle dedi: Gemiyi gözlerimizin önünde ve sana öğrettiğimiz gibi yap."
+  },
+  "n6-c": {
+   "en": "It is told that Allah taught Nuh, step by step, how to build it.",
+   "t": "Anlatıldığına göre Allah Nuh’a onu nasıl yapacağını adım adım öğretti."
+  },
+  "n6-planks": {
+   "en": "Help build the Ark. Tap to fit every plank.",
+   "t": "Gemiyi yapmaya yardım et. Her tahtayı yerine oturtmak için dokun."
+  },
+  "n6-d": {
+   "en": "The Ark was made of wooden planks, held together with nails.",
+   "t": "Gemi, çivilerle birbirine tutturulmuş tahtalardan yapıldı."
+  },
+  "n6-nails": {
+   "en": "Hammer the nails! Tap each one.",
+   "t": "Çivileri çak! Her birine dokun."
+  },
+  "n7-a": {
+   "en": "Every time the proud chiefs walked past, they laughed at Nuh and his big ship.",
+   "t": "Kibirli ileri gelenler her yanından geçişlerinde Nuh’a ve onun büyük gemisine gülerlerdi."
+  },
+  "n7-b": {
+   "en": "Nuh said: you laugh at us now. But one day, you will see who was right.",
+   "t": "Nuh şöyle dedi: Şimdi bize gülüyorsunuz. Ama bir gün kimin haklı olduğunu göreceksiniz."
+  },
+  "n7-q": {
+   "en": "What did Nuh do when people laughed at him?",
+   "t": "İnsanlar ona gülünce Nuh ne yaptı?"
+  },
+  "n7-q-opt1": {
+   "en": "Kept on building",
+   "t": "Yapmaya devam etti"
+  },
+  "n7-q-opt2": {
+   "en": "Gave up",
+   "t": "Vazgeçti"
+  },
+  "n7-q-no": {
+   "en": "Nuh did not give up. He kept on building, patiently.",
+   "t": "Nuh vazgeçmedi. Sabırla yapmaya devam etti."
+  },
+  "n7-c": {
+   "en": "So Nuh kept on building, patiently, day after day, until the Ark was ready.",
+   "t": "Böylece Nuh, gemi hazır olana kadar, gün be gün sabırla yapmaya devam etti."
+  },
+  "n7-patient": {
+   "en": "Be patient, like Nuh. Press and hold the hammer until the Ark is ready.",
+   "t": "Nuh gibi sabırlı ol. Gemi hazır olana kadar çekici basılı tut."
+  },
+  "n8-a": {
+   "en": "Then Allah's command came. Water burst up out of the ground, even, it is told, where fires had burned.",
+   "t": "Sonra Allah’ın emri geldi. Yerden sular fışkırdı; anlatıldığına göre ateş yanan yerlerden bile."
+  },
+  "n8-b": {
+   "en": "And the gates of the sky opened, and the rain poured down.",
+   "t": "Göğün kapıları açıldı ve yağmur boşandı."
+  },
+  "n8-c": {
+   "en": "Allah said: take into the Ark a pair of every kind of animal.",
+   "t": "Allah şöyle dedi: Her cins hayvandan birer çifti gemiye al."
+  },
+  "n8-pairs": {
+   "en": "Find the pairs! Two of every kind.",
+   "t": "Eşleri bul! Her cinsten iki tane."
+  },
+  "n8-board": {
+   "en": "Lead the animals into the Ark.",
+   "t": "Hayvanları gemiye götür."
+  },
+  "n8-d": {
+   "en": "And Nuh took his family, and the believers. Only a few believed with him. It is told there were about eighty of them.",
+   "t": "Nuh ailesini ve inananları da aldı. Onunla birlikte pek az kişi inanmıştı. Anlatıldığına göre seksen kadardılar."
+  },
+  "n9-a": {
+   "en": "Nuh said: get on board. In the name of Allah it sails, and in the name of Allah it comes to rest. My Lord is Forgiving and Merciful.",
+   "t": "Nuh şöyle dedi: Binin oraya. Yürümesi de durması da Allah’ın adıyladır. Rabbim bağışlayandır, merhamet edendir."
+  },
+  "n9-b": {
+   "en": "We can say these words too, when we set off on a journey: bismillahi majraha wa mursaha.",
+   "t": "Biz de bir yolculuğa çıkarken bu sözleri söyleyebiliriz: Bismillâhi mecrâhâ ve mürsâhâ."
+  },
+  "n9-q": {
+   "en": "What can we say when we set off on a journey?",
+   "t": "Bir yolculuğa çıkarken ne diyebiliriz?"
+  },
+  "n9-q-opt1": {
+   "en": "Nothing at all",
+   "t": "Hiçbir şey"
+  },
+  "n9-q-opt2": {
+   "en": "Bismillah",
+   "t": "Bismillah"
+  },
+  "n9-q-no": {
+   "en": "We can say bismillah, in the name of Allah, just like Nuh.",
+   "t": "Tıpkı Nuh gibi “Bismillah”, yani “Allah’ın adıyla” diyebiliriz."
+  },
+  "n9-c": {
+   "en": "Allah taught Nuh to say, once they were on board: praise be to Allah, who saved us. And: my Lord, let me land in a blessed place.",
+   "t": "Allah Nuh’a, gemiye bindiklerinde şunu söylemeyi öğretti: Bizi kurtaran Allah’a hamdolsun. Ve: Rabbim! Beni mübarek bir yere indir."
+  },
+  "n9-dua": {
+   "en": "Say the prayer with Nuh. Tap the parts in order.",
+   "t": "Nuh’la birlikte duayı söyle. Parçalara sırayla dokun."
+  },
+  "n9-dua-c1": {
+   "en": "Praise be to Allah,",
+   "t": "Hamdolsun Allah’a,"
+  },
+  "n9-dua-c2": {
+   "en": "who saved us from the wrongdoing people.",
+   "t": "bizi zalim milletten kurtaran."
+  },
+  "n9-dua-c3": {
+   "en": "My Lord, let me land",
+   "t": "Rabbim! Beni indir"
+  },
+  "n9-dua-c4": {
+   "en": "in a blessed place. You are the best one to bring us to land.",
+   "t": "mübarek bir yere. Sen indirenlerin en iyisisin."
+  },
+  "n9-dua-no": {
+   "en": "Listen again, and say the prayer in order.",
+   "t": "Yeniden dinle ve duayı sırayla söyle."
+  },
+  "n10-a": {
+   "en": "The Ark sailed on, over waves as high as mountains.",
+   "t": "Gemi dağlar kadar yüksek dalgaların üzerinde yol aldı."
+  },
+  "n10-steady": {
+   "en": "Hold on tight! Press and hold the Ark to keep it steady.",
+   "t": "Sıkı tutun! Gemiyi dengede tutmak için basılı tut."
+  },
+  "n10-b": {
+   "en": "Nuh saw his son, who had stayed behind. He called out: my son, come on board with us! Do not stay with those who do not believe.",
+   "t": "Nuh geride kalan oğlunu gördü. Ona seslendi: Oğulcuğum, bizimle gemiye bin! İnanmayanlarla birlikte kalma."
+  },
+  "n10-c": {
+   "en": "But his son said: I will climb a mountain. It will keep me safe from the water.",
+   "t": "Ama oğlu şöyle dedi: Bir dağa çıkarım. O beni sudan korur."
+  },
+  "n10-d": {
+   "en": "Nuh said: today nothing can keep anyone safe from Allah's command, except the ones He has mercy on. And the waves came between them.",
+   "t": "Nuh şöyle dedi: Bugün Allah’ın emrinden, O’nun merhamet ettikleri dışında kimseyi hiçbir şey koruyamaz. Ve aralarına dalgalar girdi."
+  },
+  "n10-q": {
+   "en": "Who keeps us safe, more than any mountain?",
+   "t": "Bizi her dağdan daha iyi kim korur?"
+  },
+  "n10-q-opt1": {
+   "en": "Allah",
+   "t": "Allah"
+  },
+  "n10-q-opt2": {
+   "en": "A high mountain",
+   "t": "Yüksek bir dağ"
+  },
+  "n10-q-no": {
+   "en": "No mountain could keep anyone safe that day. Only Allah keeps us safe.",
+   "t": "O gün hiçbir dağ kimseyi koruyamazdı. Bizi yalnızca Allah korur."
+  },
+  "n10-e": {
+   "en": "Nuh was very sad. He said: my Lord, my son is part of my family! And Allah told him: he was not one of your family, because what he did was not right.",
+   "t": "Nuh çok üzüldü. Şöyle dedi: Rabbim, oğlum benim ailemdendir! Allah da ona şöyle dedi: O senin ailenden sayılmaz, çünkü yaptığı doğru değildi."
+  },
+  "n10-f": {
+   "en": "Nuh said: my Lord, keep me from asking for what I do not understand. Forgive me, and have mercy on me.",
+   "t": "Nuh şöyle dedi: Rabbim, bilmediğim şeyi Senden istemekten beni koru. Beni bağışla ve bana merhamet et."
+  },
+  "n11-a": {
+   "en": "Then it was said: earth, swallow up your water! Sky, hold back your rain! And the water went down.",
+   "t": "Sonra şöyle denildi: Ey yer, suyunu çek! Ey gök, yağmurunu tut! Ve su çekildi."
+  },
+  "n11-dry": {
+   "en": "Help the water go down. Rub it away.",
+   "t": "Suyun çekilmesine yardım et. Ovarak sil."
+  },
+  "n11-b": {
+   "en": "And the Ark came to rest on a mountain called al-Judi.",
+   "t": "Ve gemi Cûdî denen bir dağın üzerine oturdu."
+  },
+  "n11-c": {
+   "en": "It is told that all the mountains stretched up tall and proud that day, but al-Judi stayed humble, so the Ark came to rest on it.",
+   "t": "Anlatıldığına göre o gün bütün dağlar uzayıp kibirlendi, ama Cûdî alçakgönüllü kaldı; bu yüzden gemi onun üzerine oturdu."
+  },
+  "n11-q": {
+   "en": "Why did the Ark rest on al-Judi, it is told?",
+   "t": "Anlatıldığına göre gemi neden Cûdî’ye oturdu?"
+  },
+  "n11-q-opt1": {
+   "en": "It was the tallest",
+   "t": "En yüksek dağdı"
+  },
+  "n11-q-opt2": {
+   "en": "It was humble",
+   "t": "Alçakgönüllüydü"
+  },
+  "n11-q-no": {
+   "en": "It is told that al-Judi was humble, and Allah loves the humble.",
+   "t": "Anlatıldığına göre Cûdî alçakgönüllüydü ve Allah alçakgönüllüleri sever."
+  },
+  "n11-d": {
+   "en": "Allah said: Nuh, go down in peace, with blessings on you and on those with you.",
+   "t": "Allah şöyle dedi: Ey Nuh, sana ve seninle beraber olanlara bizden bir selamet ve bereketle in."
+  },
+  "n11-e": {
+   "en": "Nuh was a truly thankful servant of Allah.",
+   "t": "Nuh, Allah’ın çok şükreden bir kuluydu."
+  },
+  "n11-f": {
+   "en": "And Nuh prayed: my Lord, forgive me, and my parents, and everyone who comes into my house believing, and all the believing men and women.",
+   "t": "Ve Nuh şöyle dua etti: Rabbim! Beni, anamı, babamı, evime inanmış olarak gireni, inanan erkek ve kadınları bağışla."
+  },
+  "n11-forgive": {
+   "en": "Say Nuh's prayer. Tap the parts in order.",
+   "t": "Nuh’un duasını söyle. Parçalara sırayla dokun."
+  },
+  "n11-forgive-c1": {
+   "en": "My Lord, forgive me,",
+   "t": "Rabbim! Beni bağışla,"
+  },
+  "n11-forgive-c2": {
+   "en": "and my parents,",
+   "t": "anamı, babamı,"
+  },
+  "n11-forgive-c3": {
+   "en": "and everyone who comes into my house believing,",
+   "t": "evime inanmış olarak gireni,"
+  },
+  "n11-forgive-c4": {
+   "en": "and all the believing men and women.",
+   "t": "ve inanan bütün erkek ve kadınları."
+  },
+  "n11-forgive-no": {
+   "en": "Listen again, and say the prayer in order.",
+   "t": "Yeniden dinle ve duayı sırayla söyle."
+  },
+  "n11-story": {
+   "en": "Tell the whole story of Nuh. Tap in order.",
+   "t": "Nuh’un bütün hikâyesini anlat. Sırayla dokun."
+  },
+  "n11-story-c1": {
+   "en": "First, the people forgot Allah and prayed to statues.",
+   "t": "Önce insanlar Allah’ı unuttular ve heykellere dua ettiler."
+  },
+  "n11-story-c2": {
+   "en": "Nuh called them, night and day, for many years.",
+   "t": "Nuh onları gece gündüz, uzun yıllar çağırdı."
+  },
+  "n11-story-c3": {
+   "en": "Allah told him to build the Ark.",
+   "t": "Allah ona gemiyi yapmasını söyledi."
+  },
+  "n11-story-c4": {
+   "en": "The animals came in, two by two, with the believers.",
+   "t": "Hayvanlar ikişer ikişer, inananlarla birlikte bindiler."
+  },
+  "n11-story-c5": {
+   "en": "The Ark sailed over waves like mountains.",
+   "t": "Gemi dağlar gibi dalgaların üzerinde yol aldı."
+  },
+  "n11-story-c6": {
+   "en": "And the Ark came to rest on the humble mountain.",
+   "t": "Ve gemi alçakgönüllü dağın üzerine oturdu."
+  },
+  "n11-story-no": {
+   "en": "Listen again, and tell it in order.",
+   "t": "Yeniden dinle ve sırayla anlat."
+  },
+  "end-a": {
+   "en": "This is the story of Nuh, peace be upon him. He called his people for a very long time, and he never gave up. Allah saved him and the believers in the Ark. And Nuh was a truly thankful servant.",
+   "t": "Bu, Nuh’un (selam onun üzerine olsun) hikâyesidir. Kavmini çok uzun bir süre çağırdı ve asla vazgeçmedi. Allah onu ve inananları gemide kurtardı. Ve Nuh çok şükreden bir kuldu."
+  }
+ },
+ "strings": {
+  "Forgetting Allah": "Allah’ı Unutmak",
+  "From Ibn Abbas, in al-Bukhari": "Buhârî’de İbn Abbas’tan",
+  "Nuh Is Sent": "Nuh Gönderiliyor",
+  "Night and Day": "Gece ve Gündüz",
+  "Look at Allah's World": "Allah’ın Dünyasına Bak",
+  "Everyone Is Welcome": "Herkese Kapımız Açık",
+  "Build the Ark": "Gemiyi Yap",
+  "From Ibn Kathir's commentary": "İbn Kesîr’in tefsirinden",
+  "They Laughed": "Güldüler",
+  "Press and hold": "",
+  "Patient, like Nuh": "Nuh gibi sabırlı",
+  "Two by Two": "İkişer İkişer",
+  "Told in Sunni and Shia narrations": "Sünni ve Şii rivayetlerde anlatılır",
+  "Praise be to Allah": "Hamdolsun Allah’a",
+  "who saved us": "bizi kurtaran",
+  "in a blessed place": "mübarek bir yere",
+  "The Big Waves": "Büyük Dalgalar",
+  "Safe in the Ark": "Gemide Güvende",
+  "The Humble Mountain": "Alçakgönüllü Dağ",
+  "My Lord, forgive me": "Rabbim, beni bağışla",
+  "and my parents": "anamı, babamı",
+  "and everyone in my house": "evimdeki herkesi",
+  "and all the believers": "ve bütün inananları",
+  "People forgot Allah": "İnsanlar Allah’ı unuttu",
+  "Nuh called them": "Nuh onları çağırdı",
+  "He built the Ark": "Gemiyi yaptı",
+  "Two by two": "İkişer ikişer",
+  "The big waves": "Büyük dalgalar",
+  "Al-Judi": "Cûdî",
+  "← Asmau": "",
+  "Nuh": "Nuh",
+  "The Story of Nuh": "Nuh’un Hikâyesi",
+  "Eleven chapters about the prophet who never gave up, and the great Ark. Play a little every day.": "Asla vazgeçmeyen peygamber ve büyük gemi hakkında on bir bölüm. Her gün biraz oyna.",
+  "Start the story": "",
+  "Start from the beginning": "",
+  "For parents": "",
+  "Back": "",
+  "Next": "",
+  "All chapters": "",
+  "✕ Close": "",
+  "The End": "",
+  "Patience": "Sabır",
+  "Never giving up": "Asla vazgeçmemek",
+  "Thankfulness": "Şükür",
+  "Read it again": "",
+  "Pick a chapter": "",
+  "Music": "",
+  "Sounds": "",
+  "Voice": "",
+  "He called his people for 950 years and never gave up; then came the Ark, two by two.": "Kavmini 950 yıl çağırdı ve asla vazgeçmedi; sonra gemi geldi, ikişer ikişer.",
+  "Nuh stands with his hand on the side of the great wooden Ark at sunset, with smiling believers around him.": "Nuh, gün batımında, eli büyük tahta geminin yanında duruyor; etrafında gülümseyen inananlar var.",
+  "📖 About this story": "📖 Bu hikâye hakkında",
+  "📚 Sources": "📚 Kaynaklar",
+  "It draws on Sunni and Shia sources: Ibn Kathir’s commentary, with the words of Ibn Abbas in al-Bukhari, and the narrations of the Imams of Ahl al-Bayt collected in Majlisi’s Hayat al-Qulub. Where they differ (the son’s name, the “oven”, how long the building took) the story uses words both accept and the page notes give both.": "Sünni ve Şii kaynaklara dayanır: İbn Kesîr’in tefsiri, Buhârî’deki İbn Abbas’ın sözleriyle birlikte, ve Meclisî’nin Hayâtü’l-Kulûb’unda toplanan Ehl-i Beyt imamlarının rivayetleri. Ayrıldıkları yerlerde (oğlun adı, “tandır”, yapımın ne kadar sürdüğü) hikâye ikisinin de kabul ettiği sözleri kullanır ve sayfa notları ikisini de verir.",
+  "🤲 Told gently, or left out": "🤲 Yumuşak anlatılanlar ya da atlananlar",
+  "Told gently: the flood and Nuh’s son (11:42–47). No picture shows anyone in the water. The dove, the raven and the rainbow are not in the Qur’an or these sources, so they are not in the game.": "Yumuşak anlatılanlar: tufan ve Nuh’un oğlu (11:42–47). Hiçbir resimde suyun içinde kimse gösterilmez. Güvercin, karga ve gökkuşağı Kur’an’da ve bu kaynaklarda yoktur; bu yüzden oyunda da yoktur.",
+  "👥 Who is shown": "👥 Kimler gösteriliyor",
+  "Shown in this story: Prophet Nuh (peace be upon him), his son and the believers, all with dark skin, every woman’s hair covered. The statues the people worshipped are shown as plain worn stones with no faces.": "Bu hikâyede gösterilenler: Nuh Peygamber (selam onun üzerine olsun), oğlu ve inananlar; hepsi koyu tenli, her kadının saçı örtülü. İnsanların taptığı heykeller yüzü olmayan, aşınmış düz taşlar olarak gösterilir.",
+  "The story of Nuh is told in several surahs. This game follows <a href=\"https://quran.com/11/25-49\" target=\"_blank\" rel=\"noopener\">Surah Hud 11:25–49</a> and <a href=\"https://quran.com/71\" target=\"_blank\" rel=\"noopener\">Surah Nuh (71)</a>, with passages from surahs 17, 23, 29 and 54.": "Nuh’un hikâyesi birkaç surede anlatılır. Bu oyun <a href=\"https://quran.com/11/25-49\" target=\"_blank\" rel=\"noopener\">Hûd suresi 11:25–49</a> ve <a href=\"https://quran.com/71\" target=\"_blank\" rel=\"noopener\">Nuh suresi (71)</a> ile birlikte 17, 23, 29 ve 54. surelerden bölümleri izler."
+ },
+ "notes": {
+  "1.1": {
+   "en": "Where the statues came from: al-Bukhari reports from Ibn Abbas (quoted by Ibn Kathir) that Wadd, Suwa', Yaghuth, Ya'uq and Nasr were named after righteous men of Nuh's people. When they died, Satan prompted their people to set up statues in their gathering places, named after them; the statues were not worshipped until that generation had died and the knowledge was lost. Ibn Abbas adds that these idols later turned up among the Arab tribes.\n\nThe Shia narrations name other idols that Nuh's people set up, and do not link them to the five names in the Qur'an.",
+   "t": "Heykellerin nereden geldiği: Buhârî, İbn Abbas’tan (İbn Kesîr’in aktardığına göre) Vedd, Süvâ, Yeğûs, Yeûk ve Nesr’in Nuh kavminin salih insanlarının adları olduğunu rivayet eder. Onlar ölünce şeytan, kavimlerine toplantı yerlerinde onların adlarını taşıyan heykeller dikmelerini fısıldadı; bu heykellere, o nesil ölüp bilgi kaybolana kadar tapılmadı. İbn Abbas, bu putların sonradan Arap kabileleri arasında ortaya çıktığını ekler.\n\nŞii rivayetler, Nuh kavminin diktiği başka putların adlarını verir ve onları Kur’an’daki beş adla ilişkilendirmez."
+  },
+  "1.2": {
+   "en": "Ibn Jarir (in the commentary) reports from Muhammad bin Qays that the first statues were made with a good intention: 'if we make images of them, it will increase our desire to worship when we remember them'. Later generations were told the statues brought rain, and worshipped them. The game uses this to show how a small step away from Allah can grow over the years.",
+   "t": "İbn Cerîr (tefsirde), Muhammed b. Kays’tan, ilk heykellerin iyi bir niyetle yapıldığını rivayet eder: “Onların suretlerini yaparsak, onları hatırladıkça ibadete isteğimiz artar.” Sonraki nesillere heykellerin yağmur getirdiği söylendi ve onlara tapıldı. Oyun bunu, Allah’tan küçük bir uzaklaşmanın yıllar içinde nasıl büyüyebileceğini göstermek için kullanır."
+  },
+  "1.3": {
+   "en": "Ask your child: how can something start as a good idea and end up wrong? Remembering good people is good; worshipping them is not.",
+   "t": "Çocuğunuza sorun: Bir şey nasıl iyi bir fikir olarak başlayıp yanlışla bitebilir? İyi insanları hatırlamak iyidir; onlara tapmak değil."
+  },
+  "1.4": {
+   "en": "The five names are in the Qur'an itself (71:23): the chiefs told the people not to give up their gods.",
+   "t": "Beş ad Kur’an’ın kendisinde geçer (71:23): İleri gelenler halka tanrılarını bırakmamalarını söyledi."
+  },
+  "1.5": {
+   "en": "Walk around your home together and name things: who made the cup? Who made the rain? Everything people make, they make from what Allah made.",
+   "t": "Evinizde birlikte dolaşın ve eşyaların adını söyleyin: Bardağı kim yaptı? Yağmuru kim yarattı? İnsanların yaptığı her şeyi, Allah’ın yarattığından yaparlar."
+  },
+  "1.6": {
+   "en": "Ask: who do we ask when we need help? Allah hears every prayer, even a whispered one.",
+   "t": "Sorun: Yardıma ihtiyacımız olunca kimden isteriz? Allah her duayı, fısıltıyla edileni bile işitir."
+  },
+  "2.1": {
+   "en": "Nuh's name: the Shia narrations in the Shia narrations give him an earlier name, 'Abd al-Ghaffar (Imam al-Sadiq) or Sakar (Imam al-Rida), and say he was called Nuh, from nawh, mourning, because he grieved so much over his people (or, in another narration, over himself). The commentary on these verses does not discuss the name.",
+   "t": "Nuh’un adı: Şii rivayetler ona daha önceki bir ad verir, Abdülgaffâr (İmam Câfer es-Sâdık) ya da Seken (İmam Rızâ), ve ona yas anlamına gelen nevh kelimesinden Nuh denildiğini, çünkü kavmi için (başka bir rivayete göre kendisi için) çok yas tuttuğunu söyler. Bu ayetlerin tefsiri adı tartışmaz."
+  },
+  "2.2": {
+   "en": "Ask: what does it mean to warn someone? When have you warned a friend about something dangerous?",
+   "t": "Sorun: Birini uyarmak ne demektir? Bir arkadaşını tehlikeli bir şey hakkında ne zaman uyardın?"
+  },
+  "2.3": {
+   "en": "Ask your child to say Nuh's message in their own words.",
+   "t": "Çocuğunuzdan Nuh’un mesajını kendi sözleriyle söylemesini isteyin."
+  },
+  "2.4": {
+   "en": "The 950 years are in the Qur'an (29:14). The narrations differ on his whole lifespan: in the Shia narrations, Imam al-Sadiq gives about 2,500 years in all, others different figures. The game keeps to the Qur'an's number.",
+   "t": "950 yıl Kur’an’da geçer (29:14). Rivayetler onun bütün ömrü konusunda ayrılır: Şii rivayetlerde İmam Câfer es-Sâdık toplam yaklaşık 2.500 yıl der, başkaları başka sayılar verir. Oyun Kur’an’ın sayısına bağlı kalır."
+  },
+  "2.5": {
+   "en": "Count together by hundreds: one hundred, two hundred... up to nine hundred, and then fifty more. Ask: how long is that compared to your age?",
+   "t": "Birlikte yüzer yüzer sayın: yüz, iki yüz… dokuz yüze kadar, sonra elli daha. Sorun: Bu senin yaşına göre ne kadar uzun?"
+  },
+  "3.1": {
+   "en": "Ask: when is a good time to talk to someone about Allah? Any time, kindly.",
+   "t": "Sorun: Biriyle Allah hakkında konuşmak için iyi bir zaman ne zamandır? Her zaman, nazikçe."
+  },
+  "3.2": {
+   "en": "Ask: what do you do at night before you sleep? Some families read a short surah or say a dua together.",
+   "t": "Sorun: Geceleri uyumadan önce ne yaparsın? Bazı aileler birlikte kısa bir sure okur ya da bir dua eder."
+  },
+  "3.3": {
+   "en": "Talk about the difference between speaking to a crowd and talking with one friend. Which is easier for you?",
+   "t": "Bir kalabalıkla konuşmak ile bir arkadaşla sohbet etmek arasındaki farkı konuşun. Senin için hangisi daha kolay?"
+  },
+  "3.4": {
+   "en": "After the game, ask: Nuh called his people in the day and at night. What can we do both day and night? (Remember Allah, be kind.)",
+   "t": "Oyundan sonra sorun: Nuh kavmini gündüz de gece de çağırdı. Biz gece de gündüz de ne yapabiliriz? (Allah’ı anmak, iyi olmak.)"
+  },
+  "3.5": {
+   "en": "The fingers in the ears and the clothes over the heads are 71:7: Nuh says they did it 'every time I call them, so that You may forgive them'.",
+   "t": "Kulaklara tıkanan parmaklar ve başlara çekilen elbiseler 71:7’dedir: Nuh, onların bunu “onları bağışlaman için her çağırdığımda” yaptığını söyler."
+  },
+  "3.6": {
+   "en": "Ask: how does it feel when someone won't listen to you? What did Nuh do? He kept going.",
+   "t": "Sorun: Biri seni dinlemeyince nasıl hissedersin? Nuh ne yaptı? Devam etti."
+  },
+  "4.1": {
+   "en": "This is 71:10-12: Nuh tells his people that if they ask their Lord for forgiveness, He will send rain, and give them wealth, sons, gardens and rivers.",
+   "t": "Bu, 71:10-12’dir: Nuh kavmine, Rablerinden bağışlanma dilerlerse O’nun yağmur göndereceğini ve onlara mal, oğullar, bahçeler ve ırmaklar vereceğini söyler."
+  },
+  "4.2": {
+   "en": "Ask: what happens to plants when it doesn't rain? Who sends the rain?",
+   "t": "Sorun: Yağmur yağmayınca bitkilere ne olur? Yağmuru kim gönderir?"
+  },
+  "4.3": {
+   "en": "Ask: what are the gifts you are most thankful for? Make a list together.",
+   "t": "Sorun: En çok şükrettiğin nimetler hangileri? Birlikte bir liste yapın."
+  },
+  "4.4": {
+   "en": "If you can, look at the moon and the sky together tonight. Say subhanallah.",
+   "t": "Yapabilirseniz bu gece birlikte aya ve gökyüzüne bakın. Sübhanallah deyin."
+  },
+  "4.5": {
+   "en": "Plant a seed together and watch it grow: the verse says Allah made us grow from the earth like a plant (71:17).",
+   "t": "Birlikte bir tohum ekin ve büyümesini izleyin: Ayet, Allah’ın bizi yerden bir bitki gibi bitirdiğini söyler (71:17)."
+  },
+  "4.6": {
+   "en": "Ask your child to explain each match: what does the rain give us? What does the moon give us?",
+   "t": "Çocuğunuzdan her eşleştirmeyi açıklamasını isteyin: Yağmur bize ne verir? Ay bize ne verir?"
+  },
+  "5.1": {
+   "en": "The chiefs' words are 11:27; Nuh's answer that he asks no reward and will not drive the believers away is 11:29-31.",
+   "t": "İleri gelenlerin sözleri 11:27’dedir; Nuh’un hiçbir karşılık istemediği ve inananları kovmayacağı cevabı 11:29-31’dedir."
+  },
+  "5.2": {
+   "en": "Ask: has anyone ever been left out of a game? How did they feel? What could you do?",
+   "t": "Sorun: Hiç biri bir oyunun dışında bırakıldı mı? Nasıl hissetti? Sen ne yapabilirdin?"
+  },
+  "5.3": {
+   "en": "Ask: why do some people help without wanting anything back? Nuh did his work for Allah alone.",
+   "t": "Sorun: Bazı insanlar neden karşılığında bir şey istemeden yardım eder? Nuh işini yalnızca Allah için yaptı."
+  },
+  "5.4": {
+   "en": "Make a family plan: one way to make someone new feel welcome this week.",
+   "t": "Bir aile planı yapın: Bu hafta yeni birinin kendini hoş karşılanmış hissetmesini sağlamanın bir yolu."
+  },
+  "5.5": {
+   "en": "Ask: who do you know who welcomes everyone? What do they do?",
+   "t": "Sorun: Herkesi güler yüzle karşılayan kimi tanıyorsun? Ne yapıyor?"
+  },
+  "6.1": {
+   "en": "The commentary explains that this revelation (11:36) came after Nuh had called on Allah for help, 'I am defeated: help me!' (54:10), and asked that no disbeliever be left on the earth (71:26). The game leaves Nuh's prayer against his people for older children.",
+   "t": "Tefsir, bu vahyin (11:36) Nuh’un Allah’tan yardım dilemesinden, “Ben yenildim, bana yardım et” (54:10) demesinden ve yeryüzünde hiçbir kâfir bırakılmamasını istemesinden (71:26) sonra geldiğini açıklar. Oyun, Nuh’un kavmine bedduasını büyük çocuklara bırakır."
+  },
+  "6.2": {
+   "en": "Ask: what would you need to build a huge ship? (Wood, nails, tools, help, patience.)",
+   "t": "Sorun: Kocaman bir gemi yapmak için neye ihtiyacın olurdu? (Tahta, çivi, aletler, yardım, sabır.)"
+  },
+  "6.3": {
+   "en": "The commentary explains 'with Our revelation' as 'We will teach you what to do'.\n\nYou may hear the Ark's size: The commentary quotes Muhammad bin Ishaq, 'from the Torah', that it was of Indian teak, eighty cubits long and fifty wide, thirty high, with three decks: animals at the bottom, people in the middle, birds at the top. It comes from the People of the Book, not from the Qur'an or hadith.\n\nThe Shia narrations say the Ark was built at the place of the mosque of Kufa, and give thirty, eighty or a hundred years for the building; those narrations reject the figure of five hundred.",
+   "t": "Tefsir, “vahyimizle” sözünü “sana ne yapacağını öğreteceğiz” diye açıklar.\n\nGeminin büyüklüğünü duyabilirsiniz: Tefsir, Muhammed b. İshak’tan, “Tevrat’tan” olarak, onun Hint tik ağacından, seksen arşın uzunluğunda, elli arşın genişliğinde, otuz arşın yüksekliğinde ve üç katlı olduğunu aktarır: altta hayvanlar, ortada insanlar, üstte kuşlar. Bu, Kur’an’dan ya da hadisten değil, Ehl-i Kitap’tan gelir.\n\nŞii rivayetler geminin Kûfe mescidinin yerinde yapıldığını söyler ve yapım için otuz, seksen ya da yüz yıl verir; bu rivayetler beş yüz yıl sayısını reddeder."
+  },
+  "6.4": {
+   "en": "Build a little boat together from paper, a plastic bottle or wood, and see if it floats.",
+   "t": "Birlikte kâğıttan, plastik bir şişeden ya da tahtadan küçük bir gemi yapın ve yüzüp yüzmediğine bakın."
+  },
+  "6.5": {
+   "en": "Ask: why do you think the Qur'an mentions the planks and the nails? Allah's help and Nuh's hard work went together.",
+   "t": "Sorun: Sence Kur’an neden tahtalardan ve çivilerden söz eder? Allah’ın yardımı ve Nuh’un emeği birlikte yürüdü."
+  },
+  "6.6": {
+   "en": "Count the nails together as your child taps.",
+   "t": "Çocuğunuz dokundukça çivileri birlikte sayın."
+  },
+  "7.1": {
+   "en": "The chiefs' mockery and Nuh's answer are 11:38-39. The commentary: they laughed because they did not believe his warning that they would drown.",
+   "t": "İleri gelenlerin alayı ve Nuh’un cevabı 11:38-39’dadır. Tefsir: Boğulacakları uyarısına inanmadıkları için gülüyorlardı."
+  },
+  "7.2": {
+   "en": "Ask: what can you say when someone laughs at you for doing the right thing?",
+   "t": "Sorun: Doğru olanı yaptığın için biri sana gülünce ne diyebilirsin?"
+  },
+  "7.3": {
+   "en": "Ask: have you ever wanted to give up? What helped you keep going?",
+   "t": "Sorun: Hiç vazgeçmek istedin mi? Devam etmene ne yardım etti?"
+  },
+  "7.4": {
+   "en": "Ask: what is something that takes a long time to finish? A puzzle, a drawing, learning a surah?",
+   "t": "Sorun: Bitirmesi uzun süren bir şey var mı? Bir yapboz, bir resim, bir sure ezberlemek?"
+  },
+  "7.5": {
+   "en": "Ask your child to hold the hammer as long as they can. Then talk about patience: waiting calmly and keeping on.",
+   "t": "Çocuğunuzdan çekici tutabildiği kadar uzun süre tutmasını isteyin. Sonra sabrı konuşun: sakince beklemek ve devam etmek."
+  },
+  "8.1": {
+   "en": "'The oven gushed forth' (11:40): Ibn Abbas, in the commentary, says the 'oven' (tannur) is the face of the earth, which became springs of water, until water gushed even from the places of fire; The commentary calls this the view of most early and later scholars. The Shia narrations place it in an oven in the mosque of Kufa, which Nuh had sealed and opened when the Ark was finished. The game says only that water burst up even where fires had burned.",
+   "t": "“Tandırdan sular kaynamağa başlayınca” (11:40): Tefsirde İbn Abbas, “tandırın” (tennûr) yeryüzü olduğunu söyler; yeryüzü su kaynaklarına dönüştü, öyle ki ateş yakılan yerlerden bile su fışkırdı; tefsir bunu önceki ve sonraki âlimlerin çoğunun görüşü olarak nitelendirir. Şii rivayetler onu Kûfe mescidindeki bir tandıra yerleştirir; Nuh onu kapatmış ve gemi bitince açmıştı. Oyun yalnızca ateş yanan yerlerden bile suyun fışkırdığını söyler."
+  },
+  "8.2": {
+   "en": "Ask: what does rain sound like? Listen together next time it rains, and say a dua for good rain.",
+   "t": "Sorun: Yağmurun sesi nasıldır? Bir dahaki yağmurda birlikte dinleyin ve hayırlı bir yağmur için dua edin."
+  },
+  "8.3": {
+   "en": "The commentary: a pair of every kind of creature with a soul; 'some said' plants too. 'It has also been said' that the parrot was the first bird to board and the donkey the last animal.\n\nYou may hear a story, in the Shia narrations of Hayat al-Qulub, that the donkey stopped at the door because Iblis was holding on to it, and both came in. The game leaves this out.",
+   "t": "Tefsir: Canı olan her yaratıktan bir çift; “bazıları dedi ki” bitkiler de. “Bir de denildi ki” gemiye ilk binen kuş papağan, son binen hayvan da eşekti.\n\nHayâtü’l-Kulûb’daki Şii rivayetlerde, eşeğin kapıda durduğu, çünkü İblis’in ona tutunduğu ve ikisinin birlikte girdiği bir hikâye duyabilirsiniz. Oyun bunu anlatmaz."
+  },
+  "8.4": {
+   "en": "Name each animal pair and the sound it makes.",
+   "t": "Her hayvan çiftinin adını ve çıkardığı sesi söyleyin."
+  },
+  "8.5": {
+   "en": "Ask: which animal would you most like to have looked after on the Ark?",
+   "t": "Sorun: Gemide en çok hangi hayvana bakmak isterdin?"
+  },
+  "8.6": {
+   "en": "About eighty believers: Ibn Abbas in the commentary ('eighty people including their women') and Imam al-Rida in the Shia narrations ('eighty believers'). Another Shia narration, from Imam al-Baqir, says only eight believed; the book reconciles the two.\n\nNot everyone in Nuh's family believed: The commentary names his son and his wife among those who did not board, and the Qur'an gives Nuh's wife as an example of a disbeliever married to a righteous man (66:10).",
+   "t": "Yaklaşık seksen mümin: Tefsirde İbn Abbas (“kadınları dahil seksen kişi”) ve Şii rivayetlerde İmam Rızâ (“seksen mümin”). İmam Bâkır’dan başka bir Şii rivayet yalnızca sekiz kişinin inandığını söyler; kitap ikisini uzlaştırır.\n\nNuh’un ailesindeki herkes inanmadı: Tefsir, gemiye binmeyenler arasında oğlunu ve eşini sayar; Kur’an da Nuh’un eşini salih bir adamla evli kâfir bir kadın örneği olarak verir (66:10)."
+  },
+  "9.1": {
+   "en": "11:41. Nuh's words 'bismillahi majraha wa mursaha' (in the name of Allah it sails and comes to rest) are said by some Muslims when they set off on a journey. The prayer on page 9.4 is 23:28-29.",
+   "t": "11:41. Nuh’un “Bismillâhi mecrâhâ ve mürsâhâ” (yürümesi ve durması Allah’ın ismiyledir) sözünü bazı Müslümanlar yolculuğa çıkarken söyler. 9.4. sayfadaki dua 23:28-29’dur."
+  },
+  "9.2": {
+   "en": "Next time you set off in a car or bus, say bismillah together, and if you like, the whole phrase: bismillahi majraha wa mursaha.",
+   "t": "Bir dahaki sefere arabayla ya da otobüsle yola çıkarken birlikte bismillah deyin, isterseniz cümlenin tamamını da: Bismillâhi mecrâhâ ve mürsâhâ."
+  },
+  "9.3": {
+   "en": "Ask: what other times do we say bismillah? (Eating, starting something, going out.)",
+   "t": "Sorun: Başka hangi zamanlarda bismillah deriz? (Yemek yerken, bir şeye başlarken, dışarı çıkarken.)"
+  },
+  "9.4": {
+   "en": "Ask: what are you thankful for today? Say al-hamdu lillah together.",
+   "t": "Sorun: Bugün neye şükrediyorsun? Birlikte elhamdülillah deyin."
+  },
+  "9.5": {
+   "en": "Say the prayer together line by line before tapping.",
+   "t": "Dokunmadan önce duayı birlikte satır satır söyleyin."
+  },
+  "10.1": {
+   "en": "The game tells chapter 10 gently: no picture shows anyone in the water, and it stops at 'the waves came between them'. The verse goes on to say that the son was among the drowned (11:43).\n\nThe son's name: The commentary gives it as Yam. The Shia narrations do not name him. Both treat him as Nuh's own son. The game says only 'his son'.",
+   "t": "Oyun 10. bölümü yumuşak anlatır: Hiçbir resimde suyun içinde kimse gösterilmez ve hikâye “aralarına dalgalar girdi” sözünde durur. Ayet devam eder ve oğlunun boğulanlara karıştığını söyler (11:43).\n\nOğlun adı: Tefsir onu Yâm olarak verir. Şii rivayetler ona ad vermez. İkisi de onu Nuh’un öz oğlu olarak kabul eder. Oyun yalnızca “oğlu” der."
+  },
+  "10.2": {
+   "en": "Hold your child's hand while they hold the Ark steady. Ask: who keeps us safe in a storm?",
+   "t": "Çocuğunuz gemiyi dengede tutarken onun elini tutun. Sorun: Fırtınada bizi kim korur?"
+  },
+  "10.3": {
+   "en": "Ask: why did Nuh call his son? Because he loved him and wanted him safe.",
+   "t": "Sorun: Nuh oğlunu neden çağırdı? Çünkü onu seviyordu ve güvende olmasını istiyordu."
+  },
+  "10.4": {
+   "en": "Ask gently: is a mountain stronger than Allah's command? What is the only real safety?",
+   "t": "Nazikçe sorun: Bir dağ Allah’ın emrinden daha güçlü müdür? Tek gerçek güvenlik nedir?"
+  },
+  "10.5": {
+   "en": "This is a sad part of the story. If your child is upset, hold them and talk about it: Nuh loved his son very much.",
+   "t": "Bu, hikâyenin hüzünlü bir kısmıdır. Çocuğunuz üzülürse ona sarılın ve konuşun: Nuh oğlunu çok seviyordu."
+  },
+  "10.6": {
+   "en": "Ask your child: who keeps us safe? Make a short dua for safety together.",
+   "t": "Çocuğunuza sorun: Bizi kim korur? Birlikte güvenlik için kısa bir dua edin."
+  },
+  "10.7": {
+   "en": "'He was not one of your family' (11:46): The Shia narrations explain it as 'not of the household of believers', since those who obey Nuh are counted as his household, and holds that he was Nuh's own son. The game uses the verse's own words: what he did was not right.",
+   "t": "“O senin ailenden sayılmaz” (11:46): Şii rivayetler bunu, Nuh’a itaat edenler onun ev halkından sayıldığı için, “müminlerden oluşan ev halkından değil” diye açıklar ve onun Nuh’un öz oğlu olduğunu kabul eder. Oyun ayetin kendi sözlerini kullanır: Yaptığı doğru değildi."
+  },
+  "10.8": {
+   "en": "Ask: what can we do when we don't understand why something happened? (Trust Allah, ask for help, be patient.)",
+   "t": "Sorun: Bir şeyin neden olduğunu anlamadığımızda ne yapabiliriz? (Allah’a güvenmek, yardım istemek, sabretmek.)"
+  },
+  "11.1": {
+   "en": "Ask: how do you think the people in the Ark felt when the sun came out?",
+   "t": "Sorun: Güneş çıkınca gemideki insanlar sence nasıl hissetti?"
+  },
+  "11.2": {
+   "en": "Ask your child to rub the water away slowly, and talk about the moment the storm ended.",
+   "t": "Çocuğunuzdan suyu yavaşça ovarak silmesini isteyin ve fırtınanın bittiği anı konuşun."
+  },
+  "11.3": {
+   "en": "Al-Judi: Mujahid (in the commentary) says it is a mountain in al-Jazira, northern Mesopotamia; Qatada says the Ark rested on it for a month, and that early Muslims could still see it. The Shia narrations call it 'a great mountain in Mosul'. A Shia narration from Imam al-Sadiq says the Ark first went seven times around the Ka'ba.",
+   "t": "Cûdî: Mücâhid (tefsirde) onun kuzey Mezopotamya’da, el-Cezîre’de bir dağ olduğunu söyler; Katâde geminin bir ay onun üzerinde kaldığını ve ilk Müslümanların onu hâlâ görebildiğini söyler. Şii rivayetler ona “Musul’da büyük bir dağ” der. İmam Câfer es-Sâdık’tan bir Şii rivayete göre gemi önce Kâbe’nin etrafında yedi kez döndü."
+  },
+  "11.4": {
+   "en": "The humble mountain: Mujahid (in the commentary) says that on the day of the flood all the mountains raised themselves up, but al-Judi humbled itself before Allah, so the Ark came to rest on it. The Shia narrations tell the same from Imam Musa al-Kazim.",
+   "t": "Alçakgönüllü dağ: Mücâhid (tefsirde) tufan günü bütün dağların yükseldiğini, ama Cûdî’nin Allah’ın önünde alçakgönüllü durduğunu, bu yüzden geminin onun üzerine oturduğunu söyler. Şii rivayetler aynısını İmam Mûsâ el-Kâzım’dan anlatır."
+  },
+  "11.5": {
+   "en": "Ask: what does it mean to be humble? Can you think of a humble person you know?",
+   "t": "Sorun: Alçakgönüllü olmak ne demektir? Tanıdığın alçakgönüllü birini düşünebilir misin?"
+  },
+  "11.6": {
+   "en": "Ask: what would you do first if you came out after a long storm?",
+   "t": "Sorun: Uzun bir fırtınadan sonra dışarı çıksan ilk ne yapardın?"
+  },
+  "11.7": {
+   "en": "'He was truly a thankful servant' is 17:3. Imam Zayn al-Abidin is reported in the Shia narrations to have said that people learned 'thankfulness from Nuh', and the same book says Nuh was called thankful for a prayer of thanks he said every morning and evening.",
+   "t": "“Doğrusu Nuh, çok şükreden bir kuldu” 17:3’tür. Şii rivayetlerde İmam Zeynelâbidîn’in insanların “şükrü Nuh’tan” öğrendiğini söylediği aktarılır; aynı kitap, Nuh’a her sabah ve akşam ettiği bir şükür duası yüzünden şükreden denildiğini söyler."
+  },
+  "11.8": {
+   "en": "This prayer is 71:28: rabbighfir li wa li walidayya wa li man dakhala baytiya mu'minan wa lil-mu'minina wal-mu'minat. A good one to learn together.",
+   "t": "Bu dua 71:28’dir: Rabbiğfir lî ve li-vâlideyye ve li-men dehale beytiye mü'minen ve li’l-mü'minîne ve’l-mü'minât. Birlikte öğrenmek için güzel bir dua."
+  },
+  "11.9": {
+   "en": "Learn Nuh's prayer together, a line a day. It includes a prayer for parents.",
+   "t": "Nuh’un duasını birlikte, her gün bir satır öğrenin. İçinde anne baba için bir dua da var."
+  },
+  "11.10": {
+   "en": "Ask your child to tell the whole story of Nuh in their own words. Which part did they like best?",
+   "t": "Çocuğunuzdan Nuh’un bütün hikâyesini kendi sözleriyle anlatmasını isteyin. En çok hangi kısmını sevdi?"
+  }
+ }
+}

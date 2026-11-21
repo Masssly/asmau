@@ -1,0 +1,139 @@
+{
+ "status": "draft",
+ "_note": "Türkçe. To be checked by a native speaker; seen only with ?lang=tr until then.",
+ "lines": {
+  "count-1": {
+   "en": "One",
+   "t": "Bir"
+  },
+  "count-2": {
+   "en": "Two",
+   "t": "İki"
+  },
+  "count-3": {
+   "en": "Three",
+   "t": "Üç"
+  },
+  "count-4": {
+   "en": "Four",
+   "t": "Dört"
+  },
+  "count-5": {
+   "en": "Five",
+   "t": "Beş"
+  },
+  "count-6": {
+   "en": "Six",
+   "t": "Altı"
+  },
+  "count-7": {
+   "en": "Seven",
+   "t": "Yedi"
+  },
+  "count-8": {
+   "en": "Eight",
+   "t": "Sekiz"
+  },
+  "count-9": {
+   "en": "Nine",
+   "t": "Dokuz"
+  },
+  "count-10": {
+   "en": "Ten",
+   "t": "On"
+  },
+  "count-11": {
+   "en": "Eleven",
+   "t": "On bir"
+  },
+  "count-12": {
+   "en": "Twelve",
+   "t": "On iki"
+  },
+  "count-13": {
+   "en": "Thirteen",
+   "t": "On üç"
+  },
+  "count-14": {
+   "en": "Fourteen",
+   "t": "On dört"
+  },
+  "count-15": {
+   "en": "Fifteen",
+   "t": "On beş"
+  },
+  "count-16": {
+   "en": "Sixteen",
+   "t": "On altı"
+  },
+  "count-17": {
+   "en": "Seventeen",
+   "t": "On yedi"
+  },
+  "count-18": {
+   "en": "Eighteen",
+   "t": "On sekiz"
+  },
+  "count-19": {
+   "en": "Nineteen",
+   "t": "On dokuz"
+  },
+  "count-20": {
+   "en": "Twenty",
+   "t": "Yirmi"
+  },
+  "prompt-moons": {
+   "en": "Tap the moons!",
+   "t": "Aylara dokun!"
+  },
+  "prompt-stars": {
+   "en": "Tap the stars!",
+   "t": "Yıldızlara dokun!"
+  },
+  "prompt-lanterns": {
+   "en": "Light the lanterns!",
+   "t": "Fenerleri yak!"
+  },
+  "prompt-beads": {
+   "en": "Count the beads!",
+   "t": "Boncukları say!"
+  },
+  "prompt-rain": {
+   "en": "Pop the raindrops!",
+   "t": "Yağmur damlalarını patlat!"
+  },
+  "prompt-dates": {
+   "en": "Pick the dates!",
+   "t": "Hurmaları topla!"
+  },
+  "prompt-sheep": {
+   "en": "Feed the sheep!",
+   "t": "Koyunları besle!"
+  },
+  "how-many": {
+   "en": "How many?",
+   "t": "Kaç tane?"
+  },
+  "lets-count": {
+   "en": "Let's count!",
+   "t": "Hadi sayalım!"
+  },
+  "mashallah": {
+   "en": "Mashallah!",
+   "t": "Maşallah!"
+  },
+  "well-done": {
+   "en": "Well done!",
+   "t": "Aferin!"
+  },
+  "counted-all": {
+   "en": "You counted them all!",
+   "t": "Hepsini saydın!"
+  }
+ },
+ "strings": {
+  "Count with Me": "Benimle Say",
+  "Tap moons, lanterns, raindrops and dates one by one and count out loud, up to five, ten, fifteen or twenty.": "Aylara, fenerlere, yağmur damlalarına ve hurmalara tek tek dokun ve yüksek sesle say: beşe, ona, on beşe ya da yirmiye kadar."
+ },
+ "notes": {}
+}

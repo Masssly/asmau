@@ -22,6 +22,12 @@ button { touch-action: manipulation; -webkit-tap-highlight-color: transparent; }
 .parents summary { cursor: pointer; font-family: var(--font-display); color: var(--cream); font-size: 15px; padding: 6px 0; }
 .parents ul { padding-left: 18px; margin: 10px 0 0; }
 .parents li { margin-bottom: 6px; }
+/* a story's For parents points, folded under short labels (shared/story-engine.js foldParents) */
+.pb-folds { margin-top: 8px; }
+.pb-fold { border-top: 1px solid rgba(255,255,255,.12); padding: 9px 0 3px; }
+.pb-fold > summary { cursor: pointer; font-family: var(--font-display); font-weight: 700; font-size: 15px; }
+.pb-fold[open] > summary { color: var(--gold); margin-bottom: 6px; }
+.pb-body { font-size: 15px; line-height: 1.5; }
 .parents a { color: var(--gold); }
 
 /* ---------- chapter header + trail ---------- */

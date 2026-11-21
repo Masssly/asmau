@@ -1874,7 +1874,34 @@
     if (music.amb) music.amb("none");
     show("title");
     voiceChoice();
+    foldParents();
     prepareAll();
+  }
+
+  // A story's For parents points, each folded under a short label (owner, 21 November 2026: long text is hard to read;
+  // nothing is cut). The label comes from how the point starts, so every game's page stays as written.
+  var parentsFolded = false;
+  function foldParents() {
+    var box = document.querySelector("details.parents"), ul = box && box.querySelector(":scope > ul");
+    if (parentsFolded || !ul) return;
+    parentsFolded = true;
+    var LABELS = [
+      [/^(It draws on|This is (modern )?history|The facts come)/i, "📚 Sources"],
+      [/^From (Ibn Kathir|the commentary)/i, "📚 From the commentary, not the verses"],
+      [/^(Told (more )?gently|Not told to children)/i, "🤲 Told gently, or left out"],
+      [/^Shown in this story/i, "👥 Who is shown"],
+      [/^(For ages|It is long on purpose)/i, "🧒 Ages and how long it is"]
+    ];
+    var wrap = mk("div", "pb-folds");
+    Array.prototype.forEach.call(ul.children, function (li, i) {
+      var text = li.textContent.replace(/\s+/g, " ").trim(), label = null;
+      LABELS.forEach(function (l) { if (!label && l[0].test(text)) label = l[1]; });
+      if (!label) label = i === 0 ? "📖 About this story" : "📖 " + text.split(" ").slice(0, 4).join(" ") + "…";
+      var d = mk("details", "pb-fold"), sum = mk("summary", "", label), body = mk("div", "pb-body");
+      while (li.firstChild) body.appendChild(li.firstChild);
+      d.appendChild(sum); d.appendChild(body); wrap.appendChild(d);
+    });
+    ul.parentNode.replaceChild(wrap, ul);
   }
 
   // ☰ opens the list of chapters, and a second tap (or Close) folds it away again,

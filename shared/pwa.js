@@ -35,12 +35,22 @@
       window.AsmauRelease = v;
       Array.prototype.forEach.call(document.querySelectorAll("[data-asmau-version]"), function (el) { el.textContent = "Version " + v.version; el.hidden = false; });
       Array.prototype.forEach.call(document.querySelectorAll("[data-asmau-notes]"), function (el) {
+        // the latest release in full; the four before it folded, so the list stays short to read
         el.innerHTML = "";
-        (v.history || []).slice(0, 5).forEach(function (h) {
-          var li = document.createElement("li");
-          li.textContent = h.version + " (" + h.date + "): " + h.notes.join("; ");
-          el.appendChild(li);
-        });
+        var mk = function (tag, text) { var e = document.createElement(tag); if (text != null) e.textContent = text; return e; };
+        var entry = function (h) {
+          var li = mk("li"); li.appendChild(mk("strong", h.version + " · " + h.date));
+          var ul = mk("ul"); (h.notes || []).forEach(function (n) { ul.appendChild(mk("li", n)); }); li.appendChild(ul);
+          return li;
+        };
+        var hist = v.history || [];
+        if (hist[0]) el.appendChild(entry(hist[0]));
+        if (hist.length > 1) {
+          var li = mk("li"), d = mk("details"), list = mk("ul");
+          d.appendChild(mk("summary", "Earlier changes"));
+          hist.slice(1, 5).forEach(function (h) { list.appendChild(entry(h)); });
+          d.appendChild(list); li.appendChild(d); el.appendChild(li);
+        }
       });
       window.dispatchEvent(new Event("asmau-version"));
     }).catch(function () { /* offline with nothing saved yet */ });

@@ -119,6 +119,8 @@
   .sheet a { color: var(--gold); }
   .sheet .news { margin: 0 0 8px; padding-left: 18px; font-size: 13.5px; }
   .sheet .news li { margin-bottom: 4px; }
+  .sheet .news ul { padding-left: 16px; margin: 4px 0 8px; }
+  .sheet .news details > summary { cursor: pointer; color: var(--gold); font-weight: 600; }
   .sheet .big-link { display: inline-block; margin-top: 4px; background: var(--gold); color: #3a2300; border-radius: 999px; padding: 9px 16px; font-family: var(--font-display); font-weight: 700; text-decoration: none; }
 
   @media (prefers-reduced-motion: reduce) { .cover img, .cover .glow, .cover .tw, .cover .emo, .play, .stars span { animation: none; } .cover .tw { opacity: .8; } }
@@ -252,7 +254,7 @@
       <button class="p-card p-feature" data-go="record">
         <span class="p-ico" aria-hidden="true">🎙️</span>
         <span class="p-txt"><strong>Read the stories in your own voice</strong>
-          <span>The computer voice is only a stand-in. Record yourself, in English or in the language you speak at home.</span></span>
+          <span>In any language. Your voice plays instead of the computer’s.</span></span>
         <span class="p-go" aria-hidden="true">›</span>
       </button>
 
@@ -340,51 +342,67 @@
       <ul class="p-checks">
         <li><strong>No account, no sign-in, no email.</strong> Open it and play.</li>
         <li><strong>No adverts and nothing to buy</strong> inside the games.</li>
-        <li><strong>No tracking.</strong> No analytics on the device, no cookies, nothing loaded from advertising or social media companies. We count only how often each game’s pictures and voices are downloaded, and from which country, never by whom.</li>
-        <li><strong>What your child does stays on the device:</strong> where they got to, the settings, and your recordings.</li>
-        <li><strong>Recordings leave the device only if you choose,</strong> with a family code, and they are locked on the device before they are sent, so nobody else, including whoever runs Asmau, can listen to them.</li>
+        <li><strong>No tracking.</strong> We only count downloads per game and country, never by whom.</li>
+        <li><strong>What your child does stays on the device.</strong></li>
+        <li><strong>Recordings leave the device only if you choose,</strong> locked so nobody else can listen.</li>
       </ul>
-      <p class="p-small">Like any website, the places that serve Asmau’s pages, pictures and sounds (GitHub and Cloudflare) see that
-        a device asked for a file. They are not told who your child is or what they do in the games.</p>
+      <details class="p-more">
+        <summary>The details</summary>
+        <p>No analytics run on the device, no cookies, and nothing is loaded from advertising or social media companies. We
+          count only how often each game’s pictures and voices are downloaded, and from which country, never by whom.</p>
+        <p>What stays on the device: where your child got to, the settings, and your recordings. Recordings travel only if
+          you turn on your other devices, with a family code; they are locked on the device before they are sent, so nobody
+          else, including whoever runs Asmau, can listen to them.</p>
+        <p>Like any website, the places that serve Asmau’s pages, pictures and sounds (GitHub and Cloudflare) see that a
+          device asked for a file. They are not told who your child is or what they do in the games.</p>
+      </details>
       <a href="privacy.html">Read the full privacy note →</a>
     </div>
 
     <div class="p-view" data-view="support" hidden>
       <h3>Help keep Asmau free</h3>
-      <p>Asmau is free, with no adverts and nothing to unlock, and it will stay that way. You never have to pay or give
-        anything to use it.</p>
+      <p>Asmau is free, with no adverts and nothing to unlock, and it will stay that way.</p>
       <div class="web-only">
-      <h4>Donate</h4>
-      <p>Donations from families pay for the storage, the pictures, and the time it takes to make each new story carefully.
-        Any amount helps. Donating does not unlock any game; the only thing it changes is the space for your recordings, if
-        you keep them online and run out.</p>
       <a class="big-link" href="https://ko-fi.com/dagbanli" target="_blank" rel="noopener">💛 Donate on Ko-fi →</a>
       </div>
-      <h4>Other ways to help</h4>
-      <ul>
-        <li><strong>Share it</strong> with families and teachers who would like it.</li>
-        <li><strong>Tell us about a mistake</strong>, in a story or in a game. Every story is checked, but a second pair of
-          eyes matters, most of all from someone with knowledge of the Qur’an and tafsir.</li>
-      </ul>
-      <a href="mailto:hello@asmau.org?subject=Asmau">Report a mistake or suggest something: hello@asmau.org →</a>
+      <a class="p-link2" href="mailto:hello@asmau.org?subject=Asmau">✉️ Tell us a mistake, or suggest something: hello@asmau.org →</a>
+      <p class="p-small">Or share Asmau with families and teachers who would like it.</p>
+      <details class="p-more web-only">
+        <summary>Where donations go</summary>
+        <p>Donations from families pay for the storage, the pictures, and the time it takes to make each new story carefully.
+          Any amount helps. Donating does not unlock any game; the only thing it changes is the space for your recordings, if
+          you keep them online and run out. You never have to pay or give anything to use Asmau.</p>
+      </details>
+      <details class="p-more">
+        <summary>Why mistakes matter to us</summary>
+        <p>Every story is checked, but a second pair of eyes matters, most of all from someone with knowledge of the Qur’an
+          and tafsir. Every story page also has a link to tell us about that page.</p>
+      </details>
     </div>
 
     <div class="p-view" data-view="stories" hidden>
       <h3>Where the stories come from</h3>
-      <p>Each story from the Qur’an is a retelling in simple words, not a translation. Every chapter is checked against
-        M. A. S. Abdel Haleem’s English translation. Any detail that is not in the verses comes from a named commentary,
-        mostly Ibn Kathir’s tafsir (abridged English), or from a hadith quoted in it, and it carries a small label on its scene.</p>
-      <p>Under every page, <strong>“📖 Note for parents”</strong> tells you what the verses say beyond the child’s
-        version, what was told more gently or left out, whose report a detail comes from, and links to the verses, so you
-        can answer your child’s questions.</p>
-      <p><strong>Parents’ guides:</strong> every note of a game on one page, to read before or after playing.</p>
+      <p>Each story is retold in simple words from the Qur’an, with a note for parents under every page.</p>
+      <p><strong>Parents’ guides:</strong> every note of a game on one page.</p>
       <ul class="guides" id="guideList"></ul>
+      <details class="p-more">
+        <summary>How each story is checked</summary>
+        <p>Each story from the Qur’an is a retelling in simple words, not a translation. Every chapter is checked against
+          M. A. S. Abdel Haleem’s English translation. Any detail that is not in the verses comes from a named commentary,
+          mostly Ibn Kathir’s tafsir (abridged English), or from a hadith quoted in it, and it carries a small label on its
+          scene. The prophets’ stories also use Shia sources, and where the two differ the note says so.</p>
+      </details>
+      <details class="p-more">
+        <summary>What the note for parents tells you</summary>
+        <p>Under every page, <strong>“📖 Note for parents”</strong> tells you what the verses say beyond the child’s
+          version, what was told more gently or left out, whose report a detail comes from, and links to the verses, so you
+          can answer your child’s questions.</p>
+      </details>
     </div>
 
     <div class="p-view" data-view="shown" hidden>
       <h3>Who is shown, and how</h3>
-      <p>People are shown with their faces, prophets included (peace be upon them). Muslims differ on whether prophets
-        should be shown; these games show them, so children can follow the story.</p>
+      <p>Faces are shown, prophets included (peace be upon them), so children can follow the story. Muslims differ on this.</p>
       <ul>
         <li><strong>The prophets’ stories</strong> show everyone with dark skin, as Black African families.</li>
         <li><strong>The great Muslims</strong> are drawn as the people they really were: Umm Ayman from Abyssinia, Ibn
@@ -400,18 +418,29 @@
 
     <div class="p-view" data-view="together" hidden>
       <h3>Playing together</h3>
-      <ul>
-        <li><strong>Ages</strong> are on every game. Count with Me is for the littlest, from about 1½. The stories are for
-          about 3 to 10; under 5, sit with your child.</li>
-        <li><strong>A little at a time.</strong> The stories are long on purpose: a chapter or two a day is plenty, and the
-          game remembers where your child got to.</li>
-        <li><strong>Talk about it.</strong> Ask what someone felt, or what your child would have done. The note under each
-          scene gives you the details.</li>
-        <li><strong>How to play.</strong> Everything reacts to a touch. Swipe a scene, or use the big buttons, to turn the
-          page. ☰ opens the list of chapters and closes it again.</li>
-        <li><strong>Nothing to lose.</strong> Nothing is timed and nothing is marked wrong for long. If a child is stuck,
-          “Skip” appears after a quiet moment.</li>
-      </ul>
+      <p>The stories are for about 3 to 10; under 5, sit with your child. A chapter or two a day is plenty.</p>
+      <details class="p-more">
+        <summary>Ages</summary>
+        <p>Ages are on every game. Count with Me is for the littlest, from about 1½. The stories are for about 3 to 10; under
+          5, sit with your child.</p>
+      </details>
+      <details class="p-more">
+        <summary>A little at a time</summary>
+        <p>The stories are long on purpose: a chapter or two a day is plenty, and the game remembers where your child got to.</p>
+      </details>
+      <details class="p-more">
+        <summary>Talk about it</summary>
+        <p>Ask what someone felt, or what your child would have done. The note under each scene gives you the details.</p>
+      </details>
+      <details class="p-more">
+        <summary>How to play</summary>
+        <p>Everything reacts to a touch. Swipe a scene, or use the big buttons, to turn the page. ☰ opens the list of chapters
+          and closes it again.</p>
+      </details>
+      <details class="p-more">
+        <summary>Nothing to lose</summary>
+        <p>Nothing is timed and nothing is marked wrong for long. If a child is stuck, “Skip” appears after a quiet moment.</p>
+      </details>
     </div>
 
     <div class="p-view" data-view="language" hidden>
@@ -424,38 +453,51 @@
 
     <div class="p-view" data-view="sound" hidden>
       <h3>Sound and volume</h3>
-      <p>Every story has three buttons at the top: 🎵 music, 🍃 the sounds of the place and the effects, and 🗣️ the voice.
-        Each tap makes that one a step louder; after the loudest it turns off, and the next tap starts again from the
-        quietest. Families differ on music in children’s media, so it has its own button, and every game works fully
-        without it. The music and sounds are made by the browser as you play; there are no recordings of instruments.</p>
-      <p>The same buttons, here:</p>
+      <p>Every story has three buttons at the top: 🎵 music, 🍃 sounds, 🗣️ voice. Each tap is a step louder; after the
+        loudest it turns off. The same buttons, here:</p>
       <div data-sound-levels></div>
       <h4>Who reads the stories</h4>
-      <p class="p-small">A computer voice reads every line you have not recorded yourself. Choose a woman’s or a man’s
-        voice; your own recordings always play first.</p>
       <div class="voice-pick" role="radiogroup" aria-label="Who reads the stories" data-voice-pick>
         <button type="button" role="radio" data-voice="w" aria-checked="true"><span class="vp-e">👩🏿</span><span class="vp-t"><b>Aunty Salma</b><small>warm and gentle</small></span></button>
         <button type="button" role="radio" data-voice="m" aria-checked="false"><span class="vp-e">👨🏿</span><span class="vp-t"><b>Uncle Sani</b><small>calm and steady</small></span></button>
       </div>
+      <p class="p-small">Your own recordings always play first.</p>
+      <details class="p-more">
+        <summary>Why music has its own button</summary>
+        <p>🍃 covers the sounds of the place and the effects. Families differ on music in children’s media, so music has its
+          own button, and every game works fully without it. After the loudest step a button turns off, and the next tap
+          starts again from the quietest. The music and sounds are made by the browser as you play; there are no recordings
+          of instruments.</p>
+      </details>
     </div>
 
     <div class="p-view" data-view="offline" hidden>
       <h3>Without internet</h3>
-      <p>Data costs money, so Asmau downloads only what your child plays: each page is kept once it has been played, and
-        works again without a connection. To play a whole game without internet, download it here (or in the game’s own
-        “For parents” box). The first visit fetches only the front page, about 1.5 MB.</p>
-      <p>Going somewhere without signal? Save the games your child plays now, while you are on Wi-Fi, or all of them:</p>
+      <p>Asmau keeps each page once it has been played, so it works again without a connection and uses little data.
+        Going somewhere without signal? Save the games first, on Wi-Fi.</p>
       <p><button class="btn btn-gold" id="saveAllBtn" type="button">Save every game</button></p>
       <p class="p-small" id="saveAllStatus" aria-live="polite"></p>
-      <p>Or choose game by game. A game your child has played keeps the pages played so far; download it to have all of
-        it, and delete it when you are done to free the space. Progress and your recordings are always kept.</p>
       <p class="off-sum" id="offlineSum" aria-live="polite"></p>
       <ul class="off-list" id="offlineList" aria-live="polite"></ul>
       <p><button class="btn" id="dropAllBtn" type="button" hidden>Delete all games from this device</button></p>
-      <p>On a phone or tablet, add Asmau to the home screen from the browser’s menu (“Add to Home Screen”, or “Install
-        app”) and it opens like an app. On an iPhone or iPad this also keeps your family code, recordings and your child’s
-        place safe: Safari on its own clears a website’s saved things after a week without a visit.</p>
-      <p>If a device ever looks out of date, <a href="reset.html">refresh it here</a>. Downloaded games, recordings, your family code and progress are all kept.</p>
+      <details class="p-more">
+        <summary>How much data it uses</summary>
+        <p>Data costs money, so Asmau downloads only what your child plays: each page is kept once it has been played, and
+          works again without a connection. The first visit fetches only the front page, about 1.5 MB. A game your child has
+          played keeps the pages played so far; download it to have all of it (here or in the game’s own “For parents”
+          box), and delete it when you are done to free the space. Progress and your recordings are always kept.</p>
+      </details>
+      <details class="p-more">
+        <summary>Put Asmau on your home screen</summary>
+        <p>On a phone or tablet, add Asmau to the home screen from the browser’s menu (“Add to Home Screen”, or “Install
+          app”) and it opens like an app. On an iPhone or iPad this also keeps your family code, recordings and your child’s
+          place safe: Safari on its own clears a website’s saved things after a week without a visit.</p>
+      </details>
+      <details class="p-more">
+        <summary>Looks out of date?</summary>
+        <p>If a device ever looks out of date, <a href="reset.html">refresh it here</a>. Downloaded games, recordings, your
+          family code and progress are all kept.</p>
+      </details>
     </div>
 
     <div class="p-view" data-view="pictures" hidden>

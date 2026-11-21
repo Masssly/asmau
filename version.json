@@ -1,11 +1,18 @@
 {
-  "version": "2026.11.79",
+  "version": "2026.11.80",
   "date": "2026-11-21",
-  "buildId": "d6a5126db5a8",
+  "buildId": "6ac7aa221fdc",
   "notes": [
-    "Less to read for parents: every topic in For parents, and each story's For parents box, now shows the main thing first; the rest is folded under short headings, nothing taken out. What's new shows the latest change, with earlier ones a tap away. The note for parents on Musa 5.5 is now shown."
+    "Musa in Bahasa Indonesia and German (drafts, for native speakers to check); every story game now drafted in both"
   ],
   "history": [
+    {
+      "version": "2026.11.80",
+      "date": "2026-11-21",
+      "notes": [
+        "Musa in Bahasa Indonesia and German (drafts, for native speakers to check); every story game now drafted in both"
+      ]
+    },
     {
       "version": "2026.11.79",
       "date": "2026-11-21",

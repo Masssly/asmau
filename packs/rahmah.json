@@ -1,4 +1,4 @@
-{"bytes":2727928,
+{"bytes":2738548,
 "files":{"games/rahmah/art.js":"3d881578eb",
 "games/rahmah/assets/img/r1-a.webp":"ef00d69854",
 "games/rahmah/assets/img/r1-b.webp":"c782263d68",
@@ -39,6 +39,7 @@
 "games/rahmah/game.js":"3b71f6146d",
 "games/rahmah/game.json":"d287673431",
 "games/rahmah/index.html":"04fa06fbb8",
+"games/rahmah/lang/de.json":"918340bbc0",
 "games/rahmah/lang/id.json":"2cf5c1c1d3",
 "games/rahmah/narration.json":"0f320f3b50",
 "games/rahmah/parents/notes.json":"b9fbfa9eb7",

@@ -181,6 +181,7 @@
   <p class="status foot"><span data-asmau-version hidden></span> · <a href="../../reset.html">Page looks old? Refresh</a></p>
 </div>
 
+<script src="../../shared/lang.js"></script>
 <script src="../../shared/config.js"></script>
 <script src="../../shared/media.js"></script>
 <script src="../../shared/narration.js"></script>
@@ -212,9 +213,13 @@
 
   function loadNarration(slug) {
     if (window.AsmauMedia) window.AsmauMedia.ready(slug);     // where the computer voice's clips are, to play them back
-    return fetch("../../games/" + slug + "/narration.json").then(function (r) {
+    var L = window.AsmauLang;
+    // the words to read: in the family's language where the game has it (shared/lang.js), else the English
+    return Promise.all([fetch("../../games/" + slug + "/narration.json").then(function (r) {
       if (!r.ok) throw new Error("no narration.json");
       return r.json();
+    }), L ? L.ready().then(function () { return L.linesOf(slug); }) : {}]).then(function (r) {
+      return r[0].map(function (l) { return r[1][l.id] && l.lang !== "ar" ? Object.assign({}, l, { text: r[1][l.id] }) : l; });
     }).catch(function () { return []; });
   }
 
@@ -225,6 +230,7 @@
     var meta = document.createElement("div");
     meta.className = "meta";
     var text = document.createElement("span");
+    text.setAttribute("data-no-tr", "");                     // the line itself: already in the family's language (loadNarration)
     text.className = "text";
     text.textContent = item.text;
     if (item.lang === "ar") text.setAttribute("dir", "rtl");

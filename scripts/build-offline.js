@@ -151,6 +151,10 @@ function catalogue() {
       const langs = langsOf(slug);
       if (langs.length) g.langs = langs;
       const tr = cardsOf(slug, g);
+      // the computer voices each translation has (none: silent, or the English voice if the family chose it)
+      const voices = {};
+      for (const c of LF.langsOfGame(slug)) { const t = LF.read(LF.gameFile(c, slug)); if (t && (t.voices || []).length) voices[c] = t.voices; }
+      if (Object.keys(voices).length) g.voices = voices;
       if (Object.keys(tr).length) g.tr = tr;
       return g;
     }).filter(Boolean)

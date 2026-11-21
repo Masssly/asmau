@@ -25,7 +25,7 @@ window.AsmauLang = (function () {
   var q = /[?&]lang=([a-z]{2,3})\b/.exec(location.search), preview = !!q;
   function stored() { try { return localStorage.getItem("asmau-lang") || "en"; } catch (e) { return "en"; } }
   var lang = q ? q[1] : stored();
-  var dict = {}, pats = [], gameOk = {}, gameLines = {}, gameVoices = {}, made = {};
+  var dict = {}, pats = [], gameOk = {}, gameLines = {}, gameVoices = {}, gameNotes = {}, made = {};
 
   function add(strings) {
     Object.keys(strings || {}).forEach(function (k) {
@@ -38,14 +38,19 @@ window.AsmauLang = (function () {
   function getJSON(u) { return fetch(u).then(function (r) { return r.ok ? r.json() : null; }).catch(function () { return null; }); }
 
   var here = new URL(location.href).href.indexOf(root.href) === 0 ? location.href.slice(root.href.length) : "";
-  var g = /^games\/([^/]+)\//.exec(here), slug = g ? g[1] : null;
+  // the game this page is (games/<slug>/), or is about (?g=<slug>: its notes on one page, its recorder)
+  var g = /^games\/([^/]+)\//.exec(here), own = !!g;
+  if (!g) g = /[?&]g=([a-z0-9-]+)/.exec(location.search);
+  var slug = g ? g[1] : null;
   var ready = lang === "en" ? Promise.resolve() : Promise.all([
     getJSON(new URL("lang/" + lang + "/site.json", root).href).then(function (d) { if (d) add(d); }),
     slug ? getJSON(new URL("lang/" + lang + "/" + slug + ".json", root).href).then(function (d) {
-      if (d && (d.status === "checked" || preview)) { add(d.strings); gameLines = {}; Object.keys(d.lines || {}).forEach(function (id) { var v = d.lines[id]; var tx = v && typeof v === "object" ? v.t : v; if (tx) gameLines[id] = tx; }); gameVoices[slug] = d.voices || []; gameOk[slug] = true; }
+      if (d && (d.status === "checked" || preview)) { add(d.strings); gameLines = {}; Object.keys(d.lines || {}).forEach(function (id) { var v = d.lines[id]; var tx = v && typeof v === "object" ? v.t : v; if (tx) gameLines[id] = tx; }); gameVoices[slug] = d.voices || []; gameOk[slug] = true;
+        // the notes for parents, page by page ("notes": { "1.5": { en, t } })
+        Object.keys(d.notes || {}).forEach(function (k) { var v = d.notes[k], tx = v && typeof v === "object" ? v.t : v; if (tx) gameNotes[k] = tx; }); }
     }) : null
   ]).then(function () {
-    if (slug && !gameOk[slug]) { dict = {}; pats = []; }        // a game not (yet) in this language stays wholly English
+    if (own && !gameOk[slug]) { dict = {}; pats = []; }         // a game not (yet) in this language stays wholly English
   });
 
   // a family in another language keeps all its words on this device (one small pack), so it works without internet
@@ -68,8 +73,28 @@ window.AsmauLang = (function () {
     return text;
   }
 
-  // swap English on screen: text nodes, and the words people hear or read in attributes
+  // a game in this language with no computer voice yet: read nothing aloud (the default), or the English voice
+  // (localStorage "asmau-voice-fallback" = "en"; owner, 21 November 2026). Recordings play either way.
+  function fallback() { try { return localStorage.getItem("asmau-voice-fallback") === "en" ? "en" : "silent"; } catch (e) { return "silent"; } }
+
+  // swap English on screen: text nodes, and the words people hear or read in attributes. A sentence with a link or a bold
+  // word inside it is translated whole, as its HTML (its key is the element's inner HTML, spaces folded), so a language
+  // can put the bold word where its grammar needs it; only for plain inline markup, so no script's handle is lost
   var ATTRS = ["aria-label", "placeholder", "title", "alt"];
+  var INLINE = { A: 1, STRONG: 1, B: 1, EM: 1, I: 1, BR: 1, SPAN: 1, SMALL: 1, CODE: 1, KBD: 1, ABBR: 1, SUP: 1, SUB: 1, U: 1, MARK: 1, Q: 1, BDI: 1 };
+  function htmlKey(el) {
+    if (!el.firstElementChild || el.nodeName === "SCRIPT" || el.nodeName === "STYLE") return null;
+    var words = false;
+    for (var c = el.firstChild; c; c = c.nextSibling) if (c.nodeType === 3 && /[A-Za-z]{2}/.test(c.nodeValue)) { words = true; break; }
+    if (!words) return null;
+    var all = el.getElementsByTagName("*");
+    for (var i = 0; i < all.length; i++) {
+      var e = all[i];
+      if (!INLINE[e.nodeName] || e.id) return null;
+      for (var j = 0; j < e.attributes.length; j++) { var an = e.attributes[j].name; if (/^(data-|on)/.test(an) && an !== "data-gate") return null; }
+    }
+    return norm(el.innerHTML);
+  }
   function swap(node) {
     if (node.nodeType === 3) {
       var v = node.nodeValue, k = norm(v);
@@ -79,11 +104,32 @@ window.AsmauLang = (function () {
     }
     if (node.nodeType !== 1 || node.nodeName === "SCRIPT" || node.nodeName === "STYLE") return;
     ATTRS.forEach(function (a) { if (node.hasAttribute && node.hasAttribute(a)) { var x = node.getAttribute(a), y = t(x); if (y !== x) node.setAttribute(a, y); } });
+    var hk = htmlKey(node);
+    if (hk && !made[hk] && dict[hk]) { node.innerHTML = dict[hk]; made[norm(node.innerHTML)] = 1; return; }
     for (var c = node.firstChild; c; c = c.nextSibling) swap(c);
+  }
+  // the English on a page that has no translation yet (scripts/lang-collect.js uses it to list what to translate)
+  function collect(root) {
+    var out = { text: [], html: [], attr: [] };
+    (function walk(node) {
+      if (node.nodeType === 3) { var k = norm(node.nodeValue); if (/[A-Za-z]{2}/.test(k) && !made[k] && t(k) === k) out.text.push(k); return; }
+      if (node.nodeType !== 1 || node.nodeName === "SCRIPT" || node.nodeName === "STYLE" || node.hasAttribute("data-no-tr")) return;
+      ATTRS.forEach(function (a) { var x = node.getAttribute(a); if (x && /[A-Za-z]{2}/.test(x) && !made[norm(x)] && t(x) === x) out.attr.push(norm(x)); });
+      var hk = htmlKey(node);
+      if (hk) {
+        // listed unless its words were all translated piece by piece already
+        var eng = false, w = document.createTreeWalker(node, 4), n;
+        while ((n = w.nextNode())) { var nk = norm(n.nodeValue); if (/[A-Za-z]{2}/.test(nk) && !made[nk]) { eng = true; break; } }
+        if (eng && !dict[hk] && !made[hk]) out.html.push(hk);
+        return;
+      }
+      for (var c = node.firstChild; c; c = c.nextSibling) walk(c);
+    })(root || document.body);
+    return out;
   }
   if (lang !== "en") {
     ready.then(function () {
-      if (slug && !gameOk[slug]) return;
+      if (own && !gameOk[slug]) return;
       document.documentElement.lang = lang;
       swap(document.body || document.documentElement);
       new MutationObserver(function (ms) {
@@ -101,17 +147,27 @@ window.AsmauLang = (function () {
     preview: preview,
     ready: function () { return ready; },
     t: t,
-    lines: function () { return gameLines; },                      // the game's lines in this language, by id
+    collect: collect,
+    lines: function () { return gameLines; },
+    notes: function () { return gameNotes; },
+    noVoice: function (s) { s = s || slug; return lang !== "en" && !!gameOk[s] && !(gameVoices[s] || []).length; },
+    fallback: fallback,
+    setFallback: function (f) { try { if (f === "en") localStorage.setItem("asmau-voice-fallback", "en"); else localStorage.removeItem("asmau-voice-fallback"); } catch (e) { /* this visit only */ } },                      // the notes for parents in this language, by page                      // the game's lines in this language, by id
     add: function (strings) { add(strings); if (document.body) swap(document.body); },
     has: function (s) { return lang === "en" || !!gameOk[s]; },
     // which narration pack: English keeps "w"/"m"; another language "<code>-w"/"<code>-m", when the game is in it
     // a translation may have both computer voices, one, or none yet ("voices" in its file): the one the family chose,
     // else the other one; with none, no computer voice reads it (never the English voice under translated words)
-    voicePack: function (v, s) { s = s || slug; if (lang === "en" || !gameOk[s]) return v; var h = gameVoices[s] || []; return lang + "-" + (h.indexOf(v) >= 0 || !h.length ? v : h[0]); },
+    // with none, the family chooses (For parents): silent, the default, or the English voice under the translated words
+    voicePack: function (v, s) {
+      s = s || slug; if (lang === "en" || !gameOk[s]) return v; var h = gameVoices[s] || [];
+      if (!h.length) return fallback() === "en" ? v : lang + "-" + v;
+      return lang + "-" + (h.indexOf(v) >= 0 ? v : h[0]);
+    },
     audioDir: function (v, s) {
       s = s || slug;
       if (lang === "en" || !gameOk[s]) return v === "m" ? "audio-m" : "audio";
-      var h = gameVoices[s] || []; if (!h.length) return null;
+      var h = gameVoices[s] || []; if (!h.length) return fallback() === "en" ? (v === "m" ? "audio-m" : "audio") : null;
       return "audio-" + lang + ((h.indexOf(v) >= 0 ? v : h[0]) === "m" ? "-m" : "");
     },
     set: function (code) { try { localStorage.setItem("asmau-lang", code); } catch (e) { /* this visit only */ } },

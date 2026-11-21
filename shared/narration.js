@@ -304,7 +304,8 @@ window.AsmauNarration = (function () {
     var lang = opts.lang || "en";
     var man = voiceSet() === "m", L = window.AsmauLang;
     // the narration in the chosen language (shared/lang.js): assets/audio-id/, audio-id-m/; English: audio/, audio-m/
-    var dir = L ? L.audioDir(man ? "m" : "w", game) : (man ? "audio-m" : "audio");
+    // an Arabic line (a prayer, a word) sounds the same in every language: always its own clip
+    var dir = L && lang !== "ar" ? L.audioDir(man ? "m" : "w", game) : (man ? "audio-m" : "audio");
     var base = opts.audioBase || (dir ? "assets/" + dir + "/" : null);    // null: no computer voice in this language yet
     var womans = dir ? "assets/" + dir.replace(/-m$/, "") + "/" : null;
 

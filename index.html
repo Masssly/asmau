@@ -448,6 +448,13 @@
       <p>Choose the language your child reads and hears. A game that is not translated yet stays in English, and says so on
         its card. The notes for parents stay in English for now.</p>
       <div class="voice-pick" role="radiogroup" aria-label="Language" id="langPick" data-lang-pick></div>
+      <div id="fallbackBox" hidden>
+        <p>There is no computer voice in this language yet. Until there is, the stories:</p>
+        <div class="voice-pick" role="radiogroup" aria-label="Until there is a voice in this language" id="fallbackPick">
+          <button type="button" role="radio" data-fallback="silent">Stay silent: you read them aloud</button>
+          <button type="button" role="radio" data-fallback="en">Use the English voice</button>
+        </div>
+      </div>
       <p class="p-small">Your own recordings play in any language you choose: they always come first.</p>
     </div>
 
@@ -535,7 +542,14 @@
   function inLang(g) { return CODE !== "en" && !!(g && g.tr && g.tr[CODE]) && ((g.langs || []).indexOf(CODE) >= 0 || !!(L && L.preview)); }
   function T(g, k) { return (inLang(g) && g.tr[CODE][k]) || g[k]; }
   // which narration of a game this family hears: "w"/"m", or in their language "id-w"/"id-m" where the game has it
-  function vFor(slug) { var v = voiceSet(); return inLang(BYSLUG[slug]) ? CODE + "-" + v : v; }
+  // (a translation with no voice yet: nothing to download, or the English voice if the family chose it)
+  function vFor(slug) {
+    var v = voiceSet(), g = BYSLUG[slug];
+    if (!inLang(g)) return v;
+    var h = (g.voices || {})[CODE] || [];
+    if (!h.length) return L && L.fallback && L.fallback() === "en" ? v : CODE + "-" + v;
+    return CODE + "-" + (h.indexOf(v) >= 0 ? v : h[0]);
+  }
 
   function el(tag, cls, text) {
     var n = document.createElement(tag);
@@ -837,8 +851,22 @@
     });
   }
 
+  // a language with no computer voice yet: the stories stay silent (the default) or use the English voice (shared/lang.js)
+  function wireFallback() {
+    var box = document.getElementById("fallbackBox"), pick = document.getElementById("fallbackPick");
+    if (!L || !L.fallback || CODE === "en" || !box) return;
+    box.hidden = false;
+    function show() { Array.prototype.forEach.call(pick.children, function (b) { b.setAttribute("aria-checked", String(b.getAttribute("data-fallback") === L.fallback())); }); }
+    pick.addEventListener("click", function (e) {
+      var b = e.target.closest ? e.target.closest("[data-fallback]") : null; if (!b) return;
+      L.setFallback(b.getAttribute("data-fallback")); show();
+    });
+    show();
+  }
+
   function wireParents() {
     wireVoicePick();
+    wireFallback();
     document.getElementById("saveAllBtn").addEventListener("click", saveAll);
     document.getElementById("dropAllBtn").addEventListener("click", function () {
       if (!window.confirm("Delete every game from this device? This frees the space they use. Your child’s progress and your recordings are kept, and games can be downloaded again.")) return;

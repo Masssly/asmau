@@ -101,7 +101,7 @@
     <div class="where"><span><strong id="chName"></strong> · <span id="pageNo"></span></span><span id="count"></span></div>
     <div class="bar" aria-hidden="true"><i id="countBar" style="width:0%"></i></div>
     <img class="pic" id="pic" alt="">
-    <p class="line" id="line"></p>
+    <p class="line" id="line" data-no-tr></p>
     <div class="status" id="status" role="status" aria-live="polite"></div>
     <div class="card tips" id="devices" hidden>
       <strong>Want these on your phone, or a grandparent's?</strong> Turn on your other devices once, then scan a code with the
@@ -117,7 +117,7 @@
       <button class="round" id="prev" type="button">‹ Back</button>
       <button class="round" id="next" type="button">Next page ›</button>
     </div>
-    <label class="jump">Chapter <select id="chapters"></select></label>
+    <label class="jump">Chapter <select id="chapters" data-no-tr></select></label>
   </section>
 
   <section id="finished" class="card done" hidden>
@@ -132,6 +132,7 @@
   </section>
 </div>
 
+<script src="../../shared/lang.js"></script>
 <script src="../../shared/config.js"></script>
 <script src="../../shared/media.js"></script>
 <script src="../../shared/narration.js"></script>
@@ -309,7 +310,8 @@
     fetch(base + "narration.json").then(function (r) { return r.json(); }),
     fetch(base + "parents/pages.json").then(function (r) { return r.ok ? r.json() : {}; }).catch(function () { return {}; }),
     window.AsmauNarration.recordedKeys(),
-    window.AsmauMedia.ready(slug)
+    window.AsmauMedia.ready(slug),
+    window.AsmauLang ? window.AsmauLang.ready() : null
   ]).then(function (r) {
     title = r[0].title || slug;
     document.title = "Record " + title + " in your voice — Asmau";
@@ -317,6 +319,10 @@
     pages = pagesOf(r[1]);
     chapters = r[1].map(function (c) { return { id: c.id, icon: c.icon, title: c.title }; });
     r[2].forEach(function (l) { lines[l.id] = l; });
+    // the words to read in the family's language, where the game has it (shared/lang.js)
+    var L = window.AsmauLang, tl = L && L.code() !== "en" && L.has(slug) ? L.lines() : {};
+    Object.keys(tl).forEach(function (id) { if (lines[id] && lines[id].lang !== "ar") lines[id] = Object.assign({}, lines[id], { text: tl[id] }); });
+    if (L) { title = L.t(title); chapters.forEach(function (c) { c.title = L.t(c.title); }); }
     Object.keys((r[3] && r[3].pages) || {}).forEach(function (n) { var id = (r[3].pages[n] || "").split(":")[1]; if (id) pageNo[id] = n; });
     r[4].forEach(function (k) { if (k.indexOf(slug + ":") === 0) mine[k.slice(slug.length + 1)] = 1; });
     if (!pages.length) throw new Error("no pages");

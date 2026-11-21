@@ -41,9 +41,10 @@
   <p class="intro">Every note for parents in this game, page by page: the line your child hears, then what lies behind it,
     with its verses and sources. The same notes sit, folded, at the bottom of each page of the game.</p>
   <a class="play" id="play" href="./">Play the game</a>
-  <nav class="toc" id="toc" hidden><strong>Chapters</strong><ol id="tocList"></ol></nav>
-  <div id="guide"><p class="empty">Loading the notes…</p></div>
+  <nav class="toc" id="toc" data-no-tr hidden><strong>Chapters</strong><ol id="tocList"></ol></nav>
+  <div id="guide" data-no-tr><p class="empty">Loading the notes…</p></div>
 </main>
+<script src="shared/lang.js"></script>
 <script>
 (function () {
   "use strict";
@@ -59,9 +60,17 @@
     var s = document.createElement("script"); s.src = base + "story.js";
     s.onload = function () { ok(window.STORY || []); }; s.onerror = no; document.head.appendChild(s);
   });
-  Promise.all([json("game.json"), story, json("narration.json"), json("parents/notes.json"), json("parents/pages.json")]).then(function (r) {
+  // in another language (shared/lang.js): the game's lines and notes in it, where it has them
+  var L = window.AsmauLang, langReady = L ? L.ready() : Promise.resolve();
+  Promise.all([json("game.json"), story, json("narration.json"), json("parents/notes.json"), json("parents/pages.json"), langReady]).then(function (r) {
     var game = r[0], chapters = r[1], lines = {}, notes = r[3], pages = r[4].pages || {};
     r[2].forEach(function (l) { lines[l.id] = l.text; });
+    if (L && L.code() !== "en" && L.has(slug)) {
+      var tl = L.lines(), tn = L.notes();
+      Object.keys(tl).forEach(function (id) { lines[id] = tl[id]; });
+      Object.keys(tn).forEach(function (p) { notes[p] = tn[p]; });
+      game.title = L.t(game.title);
+    }
     document.title = game.title + " · Parents' guide · Asmau";
     $("title").textContent = game.title + ": parents' guide";
     $("play").href = base; $("play").textContent = "Play " + game.title;

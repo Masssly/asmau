@@ -1563,6 +1563,26 @@
       lrow.appendChild(lpick);
       box.insertBefore(lrow, row.nextSibling);
     });
+    // no computer voice in this language yet: silent (the default; a grown-up reads, or a recording plays) or English
+    if (LANG.noVoice && LANG.noVoice(GAME)) {
+      var frow = mk("div", "voice-ctl"), fpick = mk("div", "voice-pick");
+      frow.appendChild(mk("p", "voice-ctl-h", "🔈 No computer voice in this language yet. Until there is one:"));
+      fpick.setAttribute("role", "radiogroup"); fpick.setAttribute("aria-label", "Until there is a voice in this language");
+      [["silent", "Silent: you read it aloud"], ["en", "The English voice"]].forEach(function (f) {
+        var b = mk("button", "", f[1]); b.type = "button"; b.setAttribute("role", "radio"); b.setAttribute("data-fallback", f[0]);
+        b.setAttribute("aria-checked", String(LANG.fallback() === f[0]));
+        b.addEventListener("click", function () {
+          LANG.setFallback(f[0]);
+          Array.prototype.forEach.call(fpick.children, function (x) { x.setAttribute("aria-checked", String(x.getAttribute("data-fallback") === f[0])); });
+          if (currentLine) say(currentLine);
+        });
+        fpick.appendChild(b);
+      });
+      frow.appendChild(fpick);
+      box.insertBefore(frow, row);
+      row.hidden = LANG.fallback() !== "en";              // who reads matters only when the English voice reads
+      fpick.addEventListener("click", function () { row.hidden = LANG.fallback() !== "en"; });
+    }
   }
 
   // Asmau was updated while a story was being played (shared/pwa.js reloaded the page): come back to the same page,
@@ -1645,8 +1665,9 @@
   var notesAll = null;
   function notesFor(key) {
     if (!notesAll) notesAll = fetch("parents/notes.json").then(function (r) { return r.ok ? r.json() : {}; }).catch(function () { return {}; });
-    return notesAll.then(function (all) {
-      var txt = all[key] || "";
+    return Promise.all([notesAll, langReady]).then(function (r) {
+      var all = r[0], tr = speechLang() !== "en" ? LANG.notes() : {};
+      var txt = tr[key] || all[key] || "";
       return txt.split(/\r?\n\s*\r?\n/).map(function (p) {
         return p.split(/\r?\n/).filter(function (l) { return !/^\s*#/.test(l); }).join(" ").trim();
       }).filter(Boolean);

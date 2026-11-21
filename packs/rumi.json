@@ -1,3 +1,6 @@
-{"bytes":409,
-"files":{"games/rumi/game.json":"bff25c7cce"},
+{"bytes":1864,
+"files":{"games/rumi/game.json":"bff25c7cce",
+"games/rumi/lang/de.json":"90af24ec19",
+"games/rumi/lang/id.json":"c3b304a632",
+"games/rumi/lang/ms.json":"bdb9f9071c"},
 "sizes":{}}

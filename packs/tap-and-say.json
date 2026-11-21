@@ -1,6 +1,9 @@
-{"bytes":21717,
+{"bytes":22878,
 "files":{"games/tap-and-say/game.json":"20979d6780",
 "games/tap-and-say/index.html":"e1df23c45e",
+"games/tap-and-say/lang/de.json":"665c0f0572",
+"games/tap-and-say/lang/id.json":"8817cd43c4",
+"games/tap-and-say/lang/ms.json":"e5faa01b58",
 "games/tap-and-say/narration.json":"13ac0239c4",
 "games/tap-and-say/words.js":"ffec18c276"},
 "sizes":{}}

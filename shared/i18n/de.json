@@ -99,5 +99,16 @@
  "re:^📖 Note for parents · page (.+)$": "📖 Hinweis für Eltern · Seite $1",
  "All of this game’s notes on one page": "Alle Hinweise dieses Spiels auf einer Seite",
  "Spot a mistake on this page? Tell us.": "Einen Fehler auf dieser Seite gefunden? Sagen Sie es uns.",
- "Grown-ups: every page has a short note, with its verses and sources. Tap here to read it.": "Für Erwachsene: Jede Seite hat einen kurzen Hinweis mit Versen und Quellen. Tippen Sie hier, um ihn zu lesen."
+ "Grown-ups: every page has a short note, with its verses and sources. Tap here to read it.": "Für Erwachsene: Jede Seite hat einen kurzen Hinweis mit Versen und Quellen. Tippen Sie hier, um ihn zu lesen.",
+ "← All topics": "← Alle Themen",
+ "Under 5: with a grown-up": "Unter 5: mit einem Erwachsenen",
+ "re:^(.+)\\. Tap to make it louder; after the loudest it turns off\\.$": "$t1. Tippen, um es lauter zu machen; nach der lautesten Stufe ist es aus.",
+ "re:^(Music|Sounds|Voice) (\\d+)%$": "$t1 $2 %",
+ "re:^(Music|Sounds|Voice) off$": "$t1 aus",
+ "✓ Each game you open is saved on this device and then works without internet": "✓ Jedes Spiel, das du öffnest, wird auf diesem Gerät gespeichert und funktioniert dann ohne Internet",
+ "A newer version is ready.": "Eine neuere Version ist da.",
+ "Reload": "Neu laden",
+ "Refresh": "Aktualisieren",
+ "Follow Asmau": "Folge Asmau",
+ "Write to us: hello@asmau.org": "Schreib uns: hello@asmau.org"
 }

@@ -1,11 +1,18 @@
 {
-  "version": "2026.11.81",
+  "version": "2026.11.82",
   "date": "2026-11-21",
-  "buildId": "06eb6ed0550f",
+  "buildId": "cb3165d0e759",
   "notes": [
-    "Bahasa Melayu: every story game and the site's buttons drafted, for a native speaker to check (seen only with ?lang=ms)"
+    "Languages: long texts now switch language too (some stayed English), 'All topics' and the sound buttons translated, the game count gone from the language choice, and the coming-soon cards in German, Indonesian and Malay (drafts)"
   ],
   "history": [
+    {
+      "version": "2026.11.82",
+      "date": "2026-11-21",
+      "notes": [
+        "Languages: long texts now switch language too (some stayed English), 'All topics' and the sound buttons translated, the game count gone from the language choice, and the coming-soon cards in German, Indonesian and Malay (drafts)"
+      ]
+    },
     {
       "version": "2026.11.81",
       "date": "2026-11-21",

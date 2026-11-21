@@ -66,7 +66,8 @@ window.AsmauLang = (function () {
   function swap(node) {
     if (node.nodeType === 3) {
       var v = node.nodeValue, k = norm(v);
-      if (k && k.length < 400) { var tr = t(k); if (tr !== k) node.nodeValue = v.replace(k, tr); }
+      // the text as written may wrap over lines in the page's code: keep its leading and trailing space, swap the rest
+      if (k && k.length < 600) { var tr = t(k); if (tr !== k) { var w = /^(\s*)[\s\S]*?(\s*)$/.exec(v); node.nodeValue = w[1] + tr + w[2]; } }
       return;
     }
     if (node.nodeType !== 1 || node.nodeName === "SCRIPT" || node.nodeName === "STYLE") return;

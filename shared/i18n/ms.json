@@ -99,5 +99,16 @@
  "re:^📖 Note for parents · page (.+)$": "📖 Nota untuk ibu bapa · halaman $1",
  "All of this game’s notes on one page": "Semua nota permainan ini dalam satu halaman",
  "Spot a mistake on this page? Tell us.": "Terjumpa kesilapan pada halaman ini? Beritahu kami.",
- "Grown-ups: every page has a short note, with its verses and sources. Tap here to read it.": "Untuk orang dewasa: setiap halaman ada nota ringkas, dengan ayat dan sumbernya. Ketik di sini untuk membacanya."
+ "Grown-ups: every page has a short note, with its verses and sources. Tap here to read it.": "Untuk orang dewasa: setiap halaman ada nota ringkas, dengan ayat dan sumbernya. Ketik di sini untuk membacanya.",
+ "← All topics": "← Semua topik",
+ "Under 5: with a grown-up": "Bawah 5 tahun: bersama orang dewasa",
+ "re:^(.+)\\. Tap to make it louder; after the loudest it turns off\\.$": "$t1. Ketik untuk menguatkan; selepas yang paling kuat, ia dimatikan.",
+ "re:^(Music|Sounds|Voice) (\\d+)%$": "$t1 $2%",
+ "re:^(Music|Sounds|Voice) off$": "$t1 dimatikan",
+ "✓ Each game you open is saved on this device and then works without internet": "✓ Setiap permainan yang anda buka disimpan pada peranti ini dan boleh dimainkan tanpa internet",
+ "A newer version is ready.": "Versi yang lebih baharu sudah sedia.",
+ "Reload": "Muat semula",
+ "Refresh": "Segar semula",
+ "Follow Asmau": "Ikuti Asmau",
+ "Write to us: hello@asmau.org": "Tulis kepada kami: hello@asmau.org"
 }

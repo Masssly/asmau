@@ -602,7 +602,7 @@
     meta.appendChild(el("span", "age-badge", ageLabel(g)));
     if (g.ageNote) meta.appendChild(el("span", "age-note", g.ageNote));
     meta.appendChild(el("p", "tagline", T(g, "tagline")));
-    if (CODE !== "en" && !inLang(g)) meta.appendChild(el("span", "age-note", "In English for now"));
+    if (CODE !== "en" && !inLang(g) && g.status !== "coming-soon") meta.appendChild(el("span", "age-note", "In English for now"));
     a.appendChild(meta);
     return a;
   }
@@ -818,7 +818,6 @@
     ["en"].concat(codes).forEach(function (c) {
       var b = el("button", "", L.names[c] || c); b.type = "button"; b.setAttribute("role", "radio");
       b.setAttribute("data-lang", c); b.setAttribute("aria-checked", String(c === CODE)); b.lang = c;
-      if (c !== "en") b.appendChild(el("small", "", " · " + have[c] + (have[c] === 1 ? " game" : " games")));
       pick.appendChild(b);
     });
     pick.addEventListener("click", function (e) {

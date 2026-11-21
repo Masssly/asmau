@@ -25,7 +25,7 @@ module.exports = async function () {
     // the panel opens on a short home: recording first, then privacy and support, every other topic one tap away
     T.check(await p.locator('#parents [data-view="home"] .p-feature[data-go="record"]').isVisible() && await p.locator('#parents [data-go="privacy"]').isVisible() && await p.locator('#parents [data-go="support"]').isVisible(), tag + ": the panel's home leads with recording, privacy and support");
     await p.click('#parents [data-go="record"]');
-    T.check(await p.locator('[data-view="record"] a[href="tools/record-voice/index.html"]').isVisible() && !(await p.locator('[data-view="home"]').isVisible()), tag + ": the recording topic opens on its own page, with the way to the recorder");
+    T.check(await p.locator('[data-view="record"] a.big-link[href="tools/record-voice/story.html"]').isVisible() && !(await p.locator('[data-view="home"]').isVisible()), tag + ": the recording topic opens on its own page, with the way to the recorder");
     await p.click("#pBack");
     T.check(await p.locator('[data-view="home"]').isVisible(), tag + ": “All topics” goes back");
     T.check(await p.locator("#voiceStrip").isVisible(), tag + ": the page itself shows the way to record your voice");

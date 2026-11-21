@@ -67,6 +67,7 @@ window.STORY = [
       {"say":"m5-b","scene":"palace","src":"From Ibn Kathir's commentary","e":"🌴 ♨️ 👦🏿"},
       {"play":"sort","line":"m5-sort","scene":"palace","opts":{"bins":[{"label":"Safe to eat","icon":"😋"},{"label":"Too hot! Do not touch","icon":"🔥"}],"things":[{"icon":"🌴","label":"A sweet date","bin":0},{"icon":"♨️","label":"A glowing coal","bin":1},{"icon":"🍞","label":"Warm bread","bin":0},{"icon":"🕯️","label":"A candle flame","bin":1},{"icon":"🥛","label":"A cup of milk","bin":0}],"wrong":"m5-sort-no"}},
       {"say":"m5-c","scene":"palace","e":"🧑🏿 💡"},
+      {"say":"m5-d","scene":"palace","src":"From Ibn Abbas, in al-Tabari's commentary","e":"🧑🏿 🧱 🤝"},
       {"play":"puzzle","line":"m5-puz","scene":"palace","opts":{"pic":"m5-c","n":2}},
       {"play":"choice","line":"m5-q","scene":"palace","opts":{"options":[{"label":"Wisdom and knowledge","icon":"💡","ok":true},{"label":"A golden crown","icon":"👑","ok":false}],"wrong":"m5-q-no","img":"m5-c"}}
     ]

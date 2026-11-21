@@ -42,6 +42,7 @@ window.STORY_ART = {
   "m5-a": "A happy toddler boy in a small white tunic with a blue sash runs laughing across the polished floor of the throne hall toward Queen Asiya, who kneels with open arms.",
   "m5-b": "On a low table in a palace room sit two bowls, one holding brown dates and one holding a red glowing coal; a toddler boy in a white tunic with a blue sash reaches a hand…",
   "m5-c": "young Musa stands on a palace terrace at golden hour looking thoughtfully over the river city, a scroll in his hand.",
+  "m5-d": "In a sunny brick-making yard beside the river, young Musa stands calmly between a group of tired workers in simple earth-coloured clothes, men, women and children, and a…",
   "m6-a": "A quiet sunlit city street of mud-brick walls. young Musa walks around a corner and sees two men in the distance grabbing each other's clothes and arguing, one in plain…",
   "m6-b": "young Musa stands in a city street looking down in shock at his own closed hand, his face full of worry; a man in plain brown clothes backs away behind him.",
   "m6-c": "young Musa kneels alone in a quiet corner of a courtyard with his palms raised in prayer and his eyes closed, a soft warm light falling on him.",

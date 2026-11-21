@@ -40,17 +40,28 @@ module.exports = async function () {
   const opts = await p.$$eval("#stage button", (bs) => bs.map((b) => b.textContent.trim()).filter(Boolean));
   T.check(opts.some((o) => o.includes("Di pegunungan Sumatra")), "the answers of a question are in Indonesian: " + JSON.stringify(opts));
 
-  // 3. a game with no Indonesian stays English, even when asked for it
-  await p.goto(site.url + "games/yusuf/index.html?lang=id", { waitUntil: "networkidle" }); await p.waitForTimeout(400);
-  T.check((await p.textContent("#startBtn")).trim() === "Start the story", "a game not translated stays wholly English");
+  // 3. a game with no Indonesian stays English, even when asked for it (every game has a draft now, so Yusuf's is
+  // taken away for this check: its file is not found, and the home page's list does not know it)
+  // (in a context without the service worker, so that every request passes these routes)
+  const ctx3 = await browser.newContext({ viewport: { width: 390, height: 844 }, serviceWorkers: "block" });
+  await ctx3.addInitScript(() => { try { localStorage.setItem("asmau-lang", "id"); } catch (e) { /* */ } });
+  const p3 = await ctx3.newPage();
+  await p3.route(/yusuf\/lang\/id\.json|lang\/id\/yusuf\.json/, (r) => r.fulfill({ status: 404, body: "" }));
+  await p3.route(/games\/index\.json/, async (r) => {
+    const res = await r.fetch(), j = await res.json();
+    (j.sections || []).forEach((s) => (s.games || []).forEach((g) => { if (g.slug === "yusuf" && g.tr) delete g.tr.id; }));
+    await r.fulfill({ response: res, json: j });
+  });
+  await p3.goto(site.url + "games/yusuf/index.html?lang=id", { waitUntil: "networkidle" }); await p3.waitForTimeout(400);
+  T.check((await p3.textContent("#startBtn")).trim() === "Start the story", "a game not translated stays wholly English");
 
   // 4. the home page: the language choice, the card in Indonesian, the others marked as English for now
-  await p.goto(site.url + "index.html?lang=id", { waitUntil: "networkidle" }); await p.waitForTimeout(600);
-  const card = await p.textContent("a.tile[data-slug=rahmah]");
+  await p3.goto(site.url + "index.html?lang=id", { waitUntil: "networkidle" }); await p3.waitForTimeout(600);
+  const card = await p3.textContent("a.tile[data-slug=rahmah]");
   T.check(card.includes("Gadis dari pegunungan Sumatra"), "Rahmah's card is in Indonesian");
-  T.check((await p.textContent("a.tile[data-slug=yusuf]")).includes("Untuk sementara dalam bahasa Inggris"), "a game not translated says it is in English for now");
-  T.check(await p.isVisible("text=Kisah Para Nabi"), "the section titles are in Indonesian");
-  T.check(!(await p.$("#langItem[hidden]")), "For parents offers the language choice");
+  T.check((await p3.textContent("a.tile[data-slug=yusuf]")).includes("Untuk sementara dalam bahasa Inggris"), "a game not translated says it is in English for now");
+  T.check(await p3.isVisible("text=Kisah Para Nabi"), "the section titles are in Indonesian");
+  T.check(!(await p3.$("#langItem[hidden]")), "For parents offers the language choice");
   await browser.close();
 
   // 5. a family in English (nothing chosen): English everywhere; the language choice only once a translation is checked

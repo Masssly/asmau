@@ -25,7 +25,7 @@ window.AsmauLang = (function () {
   var q = /[?&]lang=([a-z]{2,3})\b/.exec(location.search), preview = !!q;
   function stored() { try { return localStorage.getItem("asmau-lang") || "en"; } catch (e) { return "en"; } }
   var lang = q ? q[1] : stored();
-  var dict = {}, pats = [], gameOk = {}, gameLines = {}, made = {};
+  var dict = {}, pats = [], gameOk = {}, gameLines = {}, gameVoices = {}, made = {};
 
   function add(strings) {
     Object.keys(strings || {}).forEach(function (k) {
@@ -42,7 +42,7 @@ window.AsmauLang = (function () {
   var ready = lang === "en" ? Promise.resolve() : Promise.all([
     getJSON(new URL("shared/i18n/" + lang + ".json", root).href).then(function (d) { if (d) add(d); }),
     slug ? getJSON(new URL("games/" + slug + "/lang/" + lang + ".json", root).href).then(function (d) {
-      if (d && (d.status === "checked" || preview)) { add(d.strings); gameLines = d.lines || {}; gameOk[slug] = true; }
+      if (d && (d.status === "checked" || preview)) { add(d.strings); gameLines = d.lines || {}; gameVoices[slug] = d.voices || []; gameOk[slug] = true; }
     }) : null
   ]).then(function () {
     if (slug && !gameOk[slug]) { dict = {}; pats = []; }        // a game not (yet) in this language stays wholly English
@@ -98,8 +98,15 @@ window.AsmauLang = (function () {
     add: function (strings) { add(strings); if (document.body) swap(document.body); },
     has: function (s) { return lang === "en" || !!gameOk[s]; },
     // which narration pack: English keeps "w"/"m"; another language "<code>-w"/"<code>-m", when the game is in it
-    voicePack: function (v, s) { return lang === "en" || !gameOk[s || slug] ? v : lang + "-" + v; },
-    audioDir: function (v, s) { return lang === "en" || !gameOk[s || slug] ? (v === "m" ? "audio-m" : "audio") : "audio-" + lang + (v === "m" ? "-m" : ""); },
+    // a translation may have both computer voices, one, or none yet ("voices" in its file): the one the family chose,
+    // else the other one; with none, no computer voice reads it (never the English voice under translated words)
+    voicePack: function (v, s) { s = s || slug; if (lang === "en" || !gameOk[s]) return v; var h = gameVoices[s] || []; return lang + "-" + (h.indexOf(v) >= 0 || !h.length ? v : h[0]); },
+    audioDir: function (v, s) {
+      s = s || slug;
+      if (lang === "en" || !gameOk[s]) return v === "m" ? "audio-m" : "audio";
+      var h = gameVoices[s] || []; if (!h.length) return null;
+      return "audio-" + lang + ((h.indexOf(v) >= 0 ? v : h[0]) === "m" ? "-m" : "");
+    },
     set: function (code) { try { localStorage.setItem("asmau-lang", code); } catch (e) { /* this visit only */ } },
     // the languages a game can be played in (English, and each translation that is checked; drafts with ?lang=)
     offered: function (s) {

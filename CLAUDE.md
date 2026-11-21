@@ -111,7 +111,14 @@ things work; this file holds the decisions that must not be lost between session
   card). Buttons shared by every page: `shared/i18n/<code>.json`. `node scripts/lang-strings.js <slug> <code>` lists what
   is missing. A game not translated plays in English and its card says so.
 - **A translation reaches families only when a native speaker has checked it**: `"status": "checked"` (until then
-  `"draft"`, seen only with `?lang=<code>` in the address). The checker then demands every line and label and both voices.
+  `"draft"`, seen only with `?lang=<code>` in the address). The checker then demands every line and label.
+- **Voices are not required (owner, 21 November 2026).** A checked translation goes live as text; its computer voices follow
+  later, only where Gemini sounds right in that language. `"voices": ["w", "m"]` in the file lists the ones it has (each must
+  read every line). With none, the game reads nothing aloud in that language: never the English voice under translated
+  words, and never the device's own voice (English only). Recordings still play.
+- **Arabic is Modern Standard Arabic** (owner, 21 November 2026). Languages decided: Indonesian, German (live 21 November
+  2026, from a native speaker's sample), Malay, French, Turkish, Bengali; right to left: Arabic, Urdu, Persian. Languages AI
+  does not know well wait for paid human translators.
 - Voices: the same Aoede and Achird, asked to speak as native speakers of the language:
   `STORY_LANG=id [VOICE=m] PROJECT=asmau-assets python3 scripts/generate-voice-gemini.py games/<slug>` (clips in
   `assets/audio-id/`, `audio-id-m/`; packs `<slug>@id-w`, `@id-m`), then the same with `scripts/voice-check.py`.

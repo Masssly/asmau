@@ -1,11 +1,18 @@
 {
-  "version": "2026.11.82",
+  "version": "2026.11.83",
   "date": "2026-11-21",
-  "buildId": "cb3165d0e759",
+  "buildId": "a6d9ed734412",
   "notes": [
-    "Languages: long texts now switch language too (some stayed English), 'All topics' and the sound buttons translated, the game count gone from the language choice, and the coming-soon cards in German, Indonesian and Malay (drafts)"
+    "Deutsch is on for families: every story game in German (no computer voice in German yet; your own recordings still play). A translation can now go live before its voices. In Indonesian, a line whose clip does not load is no longer read by the phone's own voice, which sounded strange and could stop the music on an iPhone"
   ],
   "history": [
+    {
+      "version": "2026.11.83",
+      "date": "2026-11-21",
+      "notes": [
+        "Deutsch is on for families: every story game in German (no computer voice in German yet; your own recordings still play). A translation can now go live before its voices. In Indonesian, a line whose clip does not load is no longer read by the phone's own voice, which sounded strange and could stop the music on an iPhone"
+      ]
+    },
     {
       "version": "2026.11.82",
       "date": "2026-11-21",

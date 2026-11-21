@@ -96,6 +96,29 @@ module.exports = async function () {
     }
     await b2.close();
   }
+
+  // 6. a checked translation with no computer voice yet: its words, and nothing read aloud (no English clip, no device voice)
+  {
+    const voices = (f) => { try { return JSON.parse(fs.readFileSync(path.join(repo, f), "utf8")); } catch (e) { return null; } };
+    const yd = voices("games/yusuf/lang/de.json");
+    if (yd && yd.status === "checked" && !(yd.voices || []).length) {
+      const b3 = await chromium.launch(), c3 = await b3.newContext({ viewport: { width: 390, height: 844 }, serviceWorkers: "block" });
+      await c3.addInitScript(() => {
+        try { localStorage.setItem("asmau-lang", "de"); } catch (e) { /* */ }
+        window.__spoken = []; if (window.speechSynthesis) window.speechSynthesis.speak = (u) => window.__spoken.push(u.text);
+      });
+      const p3 = await c3.newPage(), heard = [];
+      p3.on("request", (r) => { if (/\.mp3(\?|$)/.test(r.url())) heard.push(r.url()); });
+      await p3.goto(site.url + "games/yusuf/index.html?skipms=300", { waitUntil: "networkidle" }); await p3.waitForTimeout(500);
+      T.check((await p3.textContent("#startBtn")).trim() === "Geschichte beginnen", "a family that chose German plays Yusuf in German");
+      await p3.click("#startBtn"); await p3.waitForTimeout(800); heard.length = 0;
+      await p3.click("#caption"); await p3.waitForTimeout(1200);
+      T.check((await p3.textContent("#captionText")).trim() === yd.lines["c1-a"], "the first page reads in German");
+      T.check(!heard.some((u) => /\/assets\/audio(-m)?\//.test(u)), "no English clip plays under the German words: " + heard.join(" "));
+      T.check((await p3.evaluate(() => window.__spoken.length)) === 0, "and the device's own voice does not read German");
+      await b3.close();
+    }
+  }
   await site.close();
   return T.done();
 };

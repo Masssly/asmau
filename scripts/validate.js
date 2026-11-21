@@ -154,7 +154,7 @@ for (const slug of slugs) {
   for (const f of man) if (!ids.has(f.replace(/\.mp3$/, ""))) fail(manDir + "/" + f + ": no line in narration.json (orphaned audio)");
 
   // translations (shared/lang.js): games/<slug>/lang/<code>.json. A draft may be incomplete; a "checked" one (shown to
-  // families) must have every line, label and title, and both voices reading every line in that language.
+  // families) must have every line, label and title; its voices are optional.
   if (fs.existsSync(path.join(ROOT, dir, "lang"))) {
     const { needs } = require("./lang-strings.js");
     for (const f of fs.readdirSync(path.join(ROOT, dir, "lang"))) {
@@ -165,17 +165,21 @@ for (const slug of slugs) {
       if (!exists("shared/i18n/" + code + ".json")) fail(lf + ": shared/i18n/" + code + ".json (the buttons and labels) is missing");
       if (t.status !== "draft" && t.status !== "checked") fail(lf + ": status must be \"draft\" or \"checked\" (checked by a native speaker)");
       for (const id of Object.keys(t.lines || {})) if (!ids.has(id)) fail(lf + ": line '" + id + "' is not in narration.json");
+      // its computer voices ("voices": ["w", "m"], one of them, or none): a translation may go live without any
+      // (owner, 21 November 2026); a voice it lists must read every line
+      if (t.voices !== undefined && (!Array.isArray(t.voices) || t.voices.some((v) => v !== "w" && v !== "m"))) fail(lf + ": voices must be a list of \"w\" (Aunty Salma) and/or \"m\" (Uncle Sani)");
+      for (const v of Array.isArray(t.voices) ? t.voices : []) {
+        const ad = dir + "/assets/audio-" + code + (v === "m" ? "-m" : ""), have = filesIn(ad);
+        const miss = lines.filter((l) => l && l.id && l.lang !== "ar" && !have.includes(l.id + ".mp3")).map((l) => l.id);
+        if (miss.length) fail(ad + ": voices lists \"" + v + "\", but " + miss.length + " lines have no clip (STORY_LANG=" + code + (v === "m" ? " VOICE=m" : "") + " PROJECT=asmau-assets python3 scripts/generate-voice-gemini.py " + dir + ")");
+      }
       if (t.status !== "checked") continue;
       const n = needs(slug), shared = json("shared/i18n/" + code + ".json") || {};
       const pats = Object.keys(shared).filter((k) => k.startsWith("re:")).map((k) => new RegExp(k.slice(3)));
       const noLine = n.lines.filter((id) => !(t.lines || {})[id]);
       const noStr = n.strings.filter((x) => !(t.strings || {})[x] && !shared[x] && !pats.some((r) => r.test(x)));
       if (noLine.length + noStr.length) fail(lf + ": checked, but " + noLine.length + " lines and " + noStr.length + " labels are not translated (node scripts/lang-strings.js " + slug + " " + code + ")");
-      for (const v of ["", "-m"]) {
-        const ad = dir + "/assets/audio-" + code + v, have = filesIn(ad);
-        const miss = lines.filter((l) => l && l.id && l.lang !== "ar" && !have.includes(l.id + ".mp3")).map((l) => l.id);
-        if (miss.length) fail(ad + ": " + miss.length + " lines have no clip (STORY_LANG=" + code + (v ? " VOICE=m" : "") + " PROJECT=asmau-assets python3 scripts/generate-voice-gemini.py " + dir + ")");
-      }
+
     }
   }
 

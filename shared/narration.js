@@ -274,10 +274,12 @@ window.AsmauNarration = (function () {
   function speakFallback(text, lang, my) {
     return new Promise(function (resolve) {
       try {
-        if (lang === "ar") { resolve(); return; } // never synthesize Arabic — see the header
+        // English only: never Arabic (see the header), and never a translation, whose words a device voice reads
+        // badly (and on an iPhone it can silence the music); a line with no clip is silent, its words on screen
+        if (lang !== "en") { resolve(); return; }
         if (my !== token || !("speechSynthesis" in window) || !text) { resolve(); return; }
         var u = new SpeechSynthesisUtterance(text);
-        u.lang = ({ en: "en-US", id: "id-ID" })[lang] || lang;
+        u.lang = "en-US";
         u.rate = 0.85;
         u.pitch = 1.1;
         u.volume = voiceLevel();
@@ -303,17 +305,18 @@ window.AsmauNarration = (function () {
     var man = voiceSet() === "m", L = window.AsmauLang;
     // the narration in the chosen language (shared/lang.js): assets/audio-id/, audio-id-m/; English: audio/, audio-m/
     var dir = L ? L.audioDir(man ? "m" : "w", game) : (man ? "audio-m" : "audio");
-    var base = opts.audioBase || ("assets/" + dir + "/");
-    var womans = "assets/" + dir.replace(/-m$/, "") + "/";
+    var base = opts.audioBase || (dir ? "assets/" + dir + "/" : null);    // null: no computer voice in this language yet
+    var womans = dir ? "assets/" + dir.replace(/-m$/, "") + "/" : null;
 
     stop();
     var my = token;
 
     // a game's sounds live on R2 (shared/media.js finds their address); a path no list knows is used as it is
     var M = function (p) { return window.AsmauMedia ? window.AsmauMedia.url(p) : p; };
-    var file = M(base + id + ".mp3");
+    var file = base ? M(base + id + ".mp3") : null;
     // a line the man's voice has not read yet is read by the woman's voice
     function committed() {
+      if (!file) return Promise.resolve(false);
       return playSrc(file, my, false).then(function (ok) { return ok || (man && !opts.audioBase && my === token ? playSrc(M(womans + id + ".mp3"), my, false) : ok); });
     }
     return getRecordedClip(game, id).then(function (blob) {

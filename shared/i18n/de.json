@@ -1,5 +1,5 @@
 {
- "_note": "Deutsch: the words shared by every page (shared/lang.js). Drafted 21 November 2026, to be checked by a native speaker. Children are spoken to with du, parents with Sie.",
+ "_note": "Deutsch: the words shared by every page (shared/lang.js). Drafted 21 November 2026; a native speaker read a sample and the owner approved it for families on 21 November 2026.",
  "re:^Continue — Chapter (\\d+)$": "Weiter — Kapitel $1",
  "re:^Chapter (\\d+) of (\\d+)$": "Kapitel $1 von $2",
  "re:^Chapter (\\d+): (.+)$": "Kapitel $1: $t2",

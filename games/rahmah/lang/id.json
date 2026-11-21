@@ -1,6 +1,10 @@
 {
  "status": "checked",
  "_note": "Bahasa Indonesia, drafted 16 November 2026; checked by a native speaker and approved by the owner, so families who choose Indonesian see it.",
+ "voices": [
+  "w",
+  "m"
+ ],
  "lines": {
   "r1-a": "Dahulu kala, pada tahun 1900, lahirlah seorang bayi perempuan di Padang Panjang, sebuah kota di pegunungan hijau Sumatra Barat, di negeri yang kini bernama Indonesia. Namanya Rahmah.",
   "r1-b": "Keluarganya cinta ilmu. Ayahnya seorang hakim, dan kakeknya seorang ulama yang mempelajari bintang-bintang.",

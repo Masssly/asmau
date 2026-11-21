@@ -1,6 +1,6 @@
 {
- "status": "draft",
- "_note": "Deutsch, drafted 21 November 2026, to be checked by a native speaker. Seen only with ?lang=de until then. Only the game's card for now.",
+ "status": "checked",
+ "_note": "Deutsch, drafted 21 November 2026 and approved by the owner for families. No computer voice in German yet.",
  "lines": {
   "hello": {
    "en": "Tap something!",

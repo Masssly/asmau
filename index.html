@@ -753,7 +753,7 @@
       if (del) {
         var rm = el("button", "", "Delete"); rm.type = "button"; rm.setAttribute("aria-label", "Delete " + g.title + ", frees " + mbs(st.here || st.total));
         rm.addEventListener("click", function () {
-          if (!window.confirm("Delete " + g.title + " from this device? It frees " + mbs(Math.max(st.here, st.whole ? st.total : 0)) + ". Your child’s progress and your recordings are kept.")) return;
+          if (!window.confirm((window.AsmauLang ? window.AsmauLang.t("Delete " + g.title + " from this device? It frees " + mbs(Math.max(st.here, st.whole ? st.total : 0)) + ". Your child’s progress and your recordings are kept.") : "Delete " + g.title + " from this device? It frees " + mbs(Math.max(st.here, st.whole ? st.total : 0)) + ". Your child’s progress and your recordings are kept."))) return;
           postSW({ type: "asmau-drop", packs: [g.slug, g.slug + "@*"] }); setTimeout(saveState, 800);
         });
         li.appendChild(rm);
@@ -869,7 +869,7 @@
     wireFallback();
     document.getElementById("saveAllBtn").addEventListener("click", saveAll);
     document.getElementById("dropAllBtn").addEventListener("click", function () {
-      if (!window.confirm("Delete every game from this device? This frees the space they use. Your child’s progress and your recordings are kept, and games can be downloaded again.")) return;
+      if (!window.confirm((window.AsmauLang ? window.AsmauLang.t("Delete every game from this device? This frees the space they use. Your child’s progress and your recordings are kept, and games can be downloaded again.") : "Delete every game from this device? This frees the space they use. Your child’s progress and your recordings are kept, and games can be downloaded again."))) return;
       var all = []; CATALOGUE.forEach(function (sec) { sec.games.forEach(function (g) { all.push(g.slug, g.slug + "@*"); }); });
       postSW({ type: "asmau-drop", packs: all }); setTimeout(function () { saveState(); markOffline(); }, 1200);
     });

@@ -124,6 +124,15 @@ module.exports = async function () {
       T.check((await p3.textContent("#captionText")).trim() === (typeof yd.lines["c1-a"] === "object" ? yd.lines["c1-a"].t : yd.lines["c1-a"]), "the first page reads in German");
       T.check(!heard.some((u) => /\/assets\/audio(-m)?\//.test(u)), "no English clip plays under the German words: " + heard.join(" "));
       T.check((await p3.evaluate(() => window.__spoken.length)) === 0, "and the device's own voice does not read German");
+      // the parents' side is German too (owner, 21 November 2026): the note under the page, and For parents at home
+      const n11 = yd.notes && yd.notes["1.1"] && yd.notes["1.1"].t;
+      if (n11) {
+        await p3.evaluate(() => { const d = document.getElementById("pnote"); if (d) d.open = true; }); await p3.waitForTimeout(600);
+        T.check((await p3.textContent("#pnoteBody")).includes(n11.split("\n")[0].slice(0, 40)), "the note for parents is in German");
+      }
+      await p3.goto(site.url + "index.html", { waitUntil: "networkidle" }); await p3.waitForTimeout(800);
+      const lv = await p3.evaluate(() => document.querySelector('.p-view[data-view="language"] p').textContent);
+      T.check(/^Wählen Sie die Sprache/.test(lv.trim()), "For parents is in German, long paragraphs included: " + lv.slice(0, 40));
       await b3.close();
     }
   }

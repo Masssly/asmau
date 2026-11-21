@@ -195,7 +195,9 @@ for (const slug of slugs) {
     const pats = Object.keys(shared).filter((k) => k.startsWith("re:")).map((k) => new RegExp(k.slice(3)));
     const noLine = n.lines.filter((id) => !LF.lineText((t.lines || {})[id]));
     const noStr = n.strings.filter((x) => !(t.strings || {})[x] && !shared[x] && !pats.some((r) => r.test(x)));
-    if (noLine.length + noStr.length) fail(lf + ": checked, but " + noLine.length + " lines and " + noStr.length + " labels are not translated (node scripts/lang-strings.js " + slug + " " + code + ")");
+    // the notes for parents too (owner, 21 November 2026: a language is whole, not English in places)
+    const noNote = Object.keys(n.notes || {}).filter((k) => !LF.lineText((t.notes || {})[k]));
+    if (noLine.length + noStr.length + noNote.length) fail(lf + ": checked, but " + noLine.length + " lines, " + noStr.length + " labels and " + noNote.length + " notes are not translated (node scripts/lang-strings.js " + slug + " " + code + ")");
   }
 
   /* ---------- a story, if the game has one ---------- */

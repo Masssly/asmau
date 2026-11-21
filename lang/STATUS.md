@@ -27,8 +27,8 @@ Buttons and labels on every page (`site.json`): checked
 | muhammad-asad | checked |  | 100% | none |
 | edhi | checked |  | 100% | none |
 | mariam-alolo | checked |  | 100% | none |
-| tap-and-say | draft | 100% | 100% | none |
-| count-the-crescents | draft | 100% | 100% | none |
+| tap-and-say | checked | 100% | 100% | none |
+| count-the-crescents | checked | 100% | 100% | none |
 
 ## Français (`fr`)
 

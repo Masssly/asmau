@@ -431,7 +431,7 @@
   $("syncNow").addEventListener("click", runSync);
   $("syncOffBtn").addEventListener("click", function () { S.disconnect(); syncSay("Sync is off on this device. Your online copy is still there until you delete it."); syncView(); });
   $("syncWipe").addEventListener("click", function () {
-    if (!confirm("Delete every recording kept online for this family code? Recordings on your devices stay.")) return;
+    if (!confirm((window.AsmauLang ? window.AsmauLang.t("Delete every recording kept online for this family code? Recordings on your devices stay.") : "Delete every recording kept online for this family code? Recordings on your devices stay."))) return;
     S.removeAll().then(function (r) { syncSay("Deleted " + r.deleted + " online recording" + (r.deleted === 1 ? "" : "s") + "."); }).catch(function (e) { syncSay("Could not delete: " + e.message); });
   });
   syncView();

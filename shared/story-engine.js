@@ -1626,7 +1626,7 @@
         btn.textContent = whole || a.kept ? "Delete from this device (frees " + mb(Math.max(here, whole ? total : here)) + ")" : "📥 Download the whole game · " + mb(total);
         btn.addEventListener("click", function () {
           if (whole || a.kept) {
-            if (!window.confirm("Delete " + document.title.split(" — ")[0] + " from this device? It frees " + mb(Math.max(here, total)) + ". Your child’s progress and your recordings are kept, and the game can be downloaded again.")) return;
+            if (!window.confirm((window.AsmauLang ? window.AsmauLang.t("Delete " + document.title.split(" — ")[0] + " from this device? It frees " + mb(Math.max(here, total)) + ". Your child’s progress and your recordings are kept, and the game can be downloaded again.") : "Delete " + document.title.split(" — ")[0] + " from this device? It frees " + mb(Math.max(here, total)) + ". Your child’s progress and your recordings are kept, and the game can be downloaded again."))) return;
             swAsk({ type: "asmau-drop", packs: [GAME, GAME + "@*"] }).then(function () { setTimeout(paint, 600); });
           } else {
             busy = true;

@@ -497,5 +497,219 @@
   "Not told to children, but in the page notes for you: her marriage when she was very young and her divorce, the Japanese occupation and the war, her months in a Dutch prison, and her years in politics.": "Kindern nicht erzählt, aber in den Hinweisen zu den Seiten für Sie: ihre Ehe, als sie sehr jung war, und ihre Scheidung, die japanische Besatzung und der Krieg, ihre Monate in einem niederländischen Gefängnis und ihre Jahre in der Politik.",
   "👥 Who is shown": "👥 Wer zu sehen ist",
   "Shown in this story: Rahmah and the Minangkabau people as themselves, every woman’s hair covered, as in her own photographs.": "In dieser Geschichte zu sehen: Rahmah und die Minangkabau so, wie sie sind, das Haar jeder Frau bedeckt, wie auf ihren eigenen Fotografien."
+ },
+ "notes": {
+  "1.1": {
+   "en": "Rahmah El Yunusiyyah was born in 1900 in Bukit Surungan, Padang Panjang, West Sumatra, then part of the Dutch East Indies. Her birthday is given differently: 26 October 1900 (Wikipedia's article on her) or 20 or 29 December 1900 (Indonesian sources), so the game gives only the year.\n\nThe notes in this game come from the histories cited in Wikipedia's article \"Rahmah el Yunusiyah\" (Audrey Kahin, Jeffrey Hadler's Muslims and Matriarchs, Pieternella van Doorn-Harder's Women Shaping Islam, and others) and from Fitriyanti et al., Journal of Educational Sciences 10(1), 2026.",
+   "t": "Rahmah El Yunusiyyah wurde 1900 in Bukit Surungan, Padang Panjang, West-Sumatra geboren, damals ein Teil von Niederländisch-Indien. Ihr Geburtstag wird unterschiedlich angegeben: 26. Oktober 1900 (der Wikipedia-Artikel über sie) oder 20. bzw. 29. Dezember 1900 (indonesische Quellen); deshalb nennt das Spiel nur das Jahr.\n\nDie Hinweise in diesem Spiel stammen aus den Geschichtswerken, die im Wikipedia-Artikel „Rahmah el Yunusiyah“ angeführt werden (Audrey Kahin, Jeffrey Hadlers Muslims and Matriarchs, Pieternella van Doorn-Harders Women Shaping Islam und andere), und aus Fitriyanti u. a., Journal of Educational Sciences 10(1), 2026."
+  },
+  "1.2": {
+   "en": "She was the youngest child of a Minangkabau family of Islamic scholars. Her father, Muhammad Yunus, was a qadi (judge); her mother was Rafi'ah. Her grandfather was a well-known scholar and astronomer.",
+   "t": "Sie war das jüngste Kind einer Minangkabau-Familie islamischer Gelehrter. Ihr Vater, Muhammad Yunus, war Qadi (Richter); ihre Mutter hieß Rafi'ah. Ihr Großvater war ein bekannter Gelehrter und Astronom."
+  },
+  "1.3": {
+   "en": "The Minangkabau are matrilineal: family and property pass through the mother's line. The 2026 article points out the paradox Rahmah saw: women were honoured in Minangkabau custom, yet had little access to religious education.",
+   "t": "Die Minangkabau sind matrilinear: Familie und Besitz werden über die Linie der Mutter weitergegeben. Der Artikel von 2026 weist auf das Paradox hin, das Rahmah sah: Frauen wurden im Brauch der Minangkabau geehrt, hatten aber kaum Zugang zu religiöser Bildung."
+  },
+  "1.4": {
+   "en": "Ask: what are the special things of the place where we live?",
+   "t": "Fragen Sie: Was ist das Besondere an dem Ort, an dem wir leben?"
+  },
+  "1.5": {
+   "en": "Find Sumatra and Padang Panjang on a map together. Ask: what is it like to live in the mountains?",
+   "t": "Suchen Sie zusammen Sumatra und Padang Panjang auf einer Karte. Fragen Sie: Wie ist es, in den Bergen zu leben?"
+  },
+  "2.1": {
+   "en": "If your child has lost someone, this page may bring it up. Hold them and talk about who looks after them.",
+   "t": "Wenn Ihr Kind jemanden verloren hat, kann diese Seite daran erinnern. Halten Sie es im Arm und sprechen Sie darüber, wer für es sorgt."
+  },
+  "2.2": {
+   "en": "After her father died, his former students taught her. She learned to read and write in Arabic script and in Latin script (most likely Arabic and Malay in Jawi, and Malay in Latin letters).",
+   "t": "Nach dem Tod ihres Vaters unterrichteten sie seine früheren Schüler. Sie lernte lesen und schreiben in arabischer und in lateinischer Schrift (höchstwahrscheinlich Arabisch und Malaiisch in Jawi und Malaiisch in lateinischen Buchstaben)."
+  },
+  "2.3": {
+   "en": "Count the books in your home together. Which is your child's favourite?",
+   "t": "Zählen Sie zusammen die Bücher bei Ihnen zu Hause. Welches ist das Lieblingsbuch Ihres Kindes?"
+  },
+  "2.4": {
+   "en": "She had some training in midwifery at a local hospital.",
+   "t": "Sie erhielt in einem örtlichen Krankenhaus eine gewisse Ausbildung in Geburtshilfe."
+  },
+  "2.5": {
+   "en": "Ask: who are the teachers in our family? What have they taught you?",
+   "t": "Fragen Sie: Wer sind die Lehrer in unserer Familie? Was haben sie dir beigebracht?"
+  },
+  "3.1": {
+   "en": "Her family arranged for her to be married in 1916, at about sixteen, to a scholar, Bahauddin Lathif, and she had to leave school. In 1922 her husband married two more wives; she obtained a divorce and went back to her education. They had no children. The game says only that she had to leave school.",
+   "t": "Ihre Familie verheiratete sie 1916, mit etwa sechzehn Jahren, mit einem Gelehrten, Bahauddin Lathif, und sie musste die Schule verlassen. 1922 heiratete ihr Mann zwei weitere Frauen; sie erwirkte die Scheidung und nahm ihre Ausbildung wieder auf. Sie hatten keine Kinder. Das Spiel sagt nur, dass sie die Schule verlassen musste."
+  },
+  "3.2": {
+   "en": "From 1918 she studied Islam in private study circles.",
+   "t": "Ab 1918 studierte sie den Islam in privaten Lernkreisen."
+  },
+  "3.3": {
+   "en": "Ask: what are you learning right now that is hard? How can you keep going?",
+   "t": "Fragen Sie: Was lernst du gerade, das schwer ist? Wie kannst du dranbleiben?"
+  },
+  "3.5": {
+   "en": "Ask: why is learning important for girls and boys alike?",
+   "t": "Fragen Sie: Warum ist Lernen für Mädchen und Jungen gleich wichtig?"
+  },
+  "4.1": {
+   "en": "Her brother Zainuddin Labay el Yunusi had founded the Diniyah School, for boys and girls, in 1915.",
+   "t": "Ihr Bruder Zainuddin Labay el Yunusi hatte 1915 die Diniyah-Schule für Jungen und Mädchen gegründet."
+  },
+  "4.2": {
+   "en": "Her study circle for the girls was influenced by Ruhana Kuddus's women's association, Amai Setia, and was called the Women and Girls' Association.",
+   "t": "Ihr Lernkreis für die Mädchen war von Ruhana Kuddus' Frauenverein Amai Setia beeinflusst und hieß Verein der Frauen und Mädchen."
+  },
+  "4.3": {
+   "en": "Ask: what makes a group of friends good to learn with?",
+   "t": "Fragen Sie: Was macht eine Gruppe von Freunden gut zum gemeinsamen Lernen?"
+  },
+  "4.4": {
+   "en": "She was unhappy with the Islamic education girls could get, and with the ways mixed schools kept them from taking full part.",
+   "t": "Sie war unzufrieden mit der islamischen Bildung, die Mädchen bekommen konnten, und damit, wie gemischte Schulen sie davon abhielten, ganz mitzumachen."
+  },
+  "4.5": {
+   "en": "Ask: what would your dream school be like?",
+   "t": "Fragen Sie: Wie sähe deine Traumschule aus?"
+  },
+  "5.1": {
+   "en": "Diniyah Putri (also called Madrasah Diniyah li al-Banat) opened on 1 November 1923. It is generally thought to be the first Islamic school for girls in the Indies; the 2026 article calls it the first Islamic educational institution exclusively for women in Southeast Asia.",
+   "t": "Diniyah Putri (auch Madrasah Diniyah li al-Banat genannt) öffnete am 1. November 1923. Sie gilt allgemein als erste islamische Mädchenschule in Niederländisch-Indien; der Artikel von 2026 nennt sie die erste islamische Bildungseinrichtung ausschließlich für Frauen in Südostasien."
+  },
+  "5.2": {
+   "en": "Ask: what was it like to have lessons in a mosque? Have you ever learned in a mosque?",
+   "t": "Fragen Sie: Wie war es wohl, Unterricht in einer Moschee zu haben? Hast du schon einmal in einer Moschee gelernt?"
+  },
+  "5.3": {
+   "en": "The first 71 students were mostly young housewives. The lessons were basic Islamic education, Arabic grammar, some modern subjects and handicrafts; later also health, sewing, leadership, English, history and geography.",
+   "t": "Die ersten 71 Schülerinnen waren meist junge Hausfrauen. Der Unterricht umfasste grundlegende islamische Bildung, arabische Grammatik, einige moderne Fächer und Handarbeit; später auch Gesundheit, Nähen, Führung, Englisch, Geschichte und Erdkunde."
+  },
+  "5.4": {
+   "en": "Ask: which of these lessons would you like most?",
+   "t": "Fragen Sie: Welcher dieser Unterrichtsstoffe würde dir am besten gefallen?"
+  },
+  "5.5": {
+   "en": "Ask: what do you need to start a school? (A teacher, students, a place, books.)",
+   "t": "Fragen Sie: Was braucht man, um eine Schule zu gründen? (Eine Lehrerin, Schüler, einen Ort, Bücher.)"
+  },
+  "6.1": {
+   "en": "She faced hostility and criticism: not everyone accepted a modern school for girls.",
+   "t": "Sie stieß auf Feindseligkeit und Kritik: Nicht alle akzeptierten eine moderne Schule für Mädchen."
+  },
+  "6.2": {
+   "en": "She consulted the local scholars before opening the school, and believed that Islam demanded a central role for women and for women's education.",
+   "t": "Sie beriet sich vor der Eröffnung der Schule mit den örtlichen Gelehrten und war überzeugt, dass der Islam eine zentrale Rolle für Frauen und für die Bildung von Frauen verlangt."
+  },
+  "6.3": {
+   "en": "Her brother Zainuddin, who had supported the school, died in 1924.",
+   "t": "Ihr Bruder Zainuddin, der die Schule unterstützt hatte, starb 1924."
+  },
+  "6.4": {
+   "en": "Ask your child for a time they kept going when something was hard.",
+   "t": "Bitten Sie Ihr Kind, von einem Mal zu erzählen, als es weitergemacht hat, obwohl etwas schwer war."
+  },
+  "6.5": {
+   "en": "Ask: who helps you keep going when things are hard?",
+   "t": "Fragen Sie: Wer hilft dir, weiterzumachen, wenn es schwer ist?"
+  },
+  "7.1": {
+   "en": "The Padang Panjang earthquakes of 1926 destroyed the school building. The game leaves out the people who died in them.",
+   "t": "Die Erdbeben von Padang Panjang 1926 zerstörten das Schulgebäude. Das Spiel lässt die Menschen weg, die dabei starben."
+  },
+  "7.2": {
+   "en": "Ask: is a school the building, or the people in it?",
+   "t": "Fragen Sie: Ist eine Schule das Gebäude oder die Menschen darin?"
+  },
+  "7.3": {
+   "en": "Muhammadiyah, a large Islamic organisation, offered to take over the school and rebuild it; she said no, and toured the Indies to raise the money herself. The new building opened in 1928.",
+   "t": "Muhammadiyah, eine große islamische Organisation, bot an, die Schule zu übernehmen und wieder aufzubauen; sie lehnte ab und reiste durch Niederländisch-Indien, um das Geld selbst zu sammeln. Das neue Gebäude wurde 1928 eröffnet."
+  },
+  "7.4": {
+   "en": "Ask: how could we help a school or a mosque that needs money?",
+   "t": "Fragen Sie: Wie könnten wir einer Schule oder Moschee helfen, die Geld braucht?"
+  },
+  "7.6": {
+   "en": "Build a school together from blocks or boxes.",
+   "t": "Bauen Sie zusammen eine Schule aus Bausteinen oder Kartons."
+  },
+  "8.1": {
+   "en": "She would not accept Dutch government subsidies, so that the school's dress, calendar and lessons could stay centred on Islam. Like the Taman Siswa schools, she had to fight the Dutch rules against \"wild\" (unlicensed) schools, and she was fined for discussing politics.",
+   "t": "Sie nahm keine Zuschüsse der niederländischen Regierung an, damit Kleidung, Kalender und Unterricht der Schule auf den Islam ausgerichtet bleiben konnten. Wie die Taman-Siswa-Schulen musste sie gegen die niederländischen Regeln gegen „wilde“ (nicht genehmigte) Schulen kämpfen, und sie wurde mit einer Geldstrafe belegt, weil sie über Politik sprach."
+  },
+  "8.2": {
+   "en": "By the end of the 1930s the school had about 500 students. The historian Audrey Kahin calls Diniyah Putri \"one of the most successful and influential of the schools for women\" before independence.",
+   "t": "Ende der 1930er-Jahre hatte die Schule etwa 500 Schülerinnen. Die Historikerin Audrey Kahin nennt Diniyah Putri vor der Unabhängigkeit „eine der erfolgreichsten und einflussreichsten Schulen für Frauen“."
+  },
+  "8.3": {
+   "en": "Kulliyatul Muallimat al-Islamiyyah, a college for women teachers, opened in 1937. She also founded schools in Jakarta (1935) and a high school in Padang Panjang (1938).",
+   "t": "Kulliyatul Muallimat al-Islamiyyah, eine Hochschule für Lehrerinnen, öffnete 1937. Sie gründete auch Schulen in Jakarta (1935) und eine weiterführende Schule in Padang Panjang (1938)."
+  },
+  "8.4": {
+   "en": "Ask your child about a teacher they love, and why.",
+   "t": "Fragen Sie Ihr Kind nach einer Lehrerin oder einem Lehrer, die es mag, und warum."
+  },
+  "9.1": {
+   "en": "Indonesia's independence was proclaimed on 17 August 1945. During the Japanese occupation before it, she led a local defence unit (Giyugun) in Padang Panjang, and campaigned against the Japanese use of Indonesian women as \"comfort women\".",
+   "t": "Die Unabhängigkeit Indonesiens wurde am 17. August 1945 ausgerufen. Während der japanischen Besatzung davor führte sie eine örtliche Verteidigungseinheit (Giyugun) in Padang Panjang und setzte sich dagegen ein, dass die Japaner indonesische Frauen als „Trostfrauen“ missbrauchten."
+  },
+  "9.2": {
+   "en": "During the war of independence that followed, she set up supplies for the Republic's side. The Dutch held her prisoner for seven months in 1949.\n\nIn 1955 she was elected to parliament for the Masyumi party, one of the first women in it. She later supported the PRRI, a rebellion against the central government (1958), lost her seat, and was arrested in 1961, then freed under an amnesty. The game leaves her politics out.",
+   "t": "Im folgenden Unabhängigkeitskrieg organisierte sie Versorgung für die Seite der Republik. Die Niederländer hielten sie 1949 sieben Monate lang gefangen.\n\n1955 wurde sie für die Masyumi-Partei ins Parlament gewählt, als eine der ersten Frauen dort. Später unterstützte sie die PRRI, einen Aufstand gegen die Zentralregierung (1958), verlor ihren Sitz und wurde 1961 verhaftet, dann durch eine Amnestie freigelassen. Das Spiel lässt ihre Politik weg."
+  },
+  "9.3": {
+   "en": "Ask: what does a flag mean to the people of a country?",
+   "t": "Fragen Sie: Was bedeutet eine Flagge für die Menschen eines Landes?"
+  },
+  "9.4": {
+   "en": "Look at the flags of Indonesia and of our own country together.",
+   "t": "Schauen Sie sich zusammen die Flaggen Indonesiens und Ihres eigenen Landes an."
+  },
+  "10.1": {
+   "en": "The Grand Imam of al-Azhar, Abd al-Rahman Taj, visited the school: in 1956 according to Wikipedia, 1955 according to other sources.",
+   "t": "Der Großimam der al-Azhar, Abd al-Rahman Taj, besuchte die Schule: 1956 laut Wikipedia, 1955 laut anderen Quellen."
+  },
+  "10.2": {
+   "en": "Ask: who in your family has been on Hajj? What did they tell you?",
+   "t": "Fragen Sie: Wer in deiner Familie war schon auf der Hadsch? Was haben sie erzählt?"
+  },
+  "10.3": {
+   "en": "Find Indonesia, Makkah and Cairo on a map. How far is that?",
+   "t": "Suchen Sie Indonesien, Mekka und Kairo auf einer Karte. Wie weit ist das?"
+  },
+  "10.4": {
+   "en": "Syaikhah is the feminine of shaykh: a title for a great scholar. Wikipedia gives 1957, after her Hajj; the 2026 article gives 1955. Both say no woman had been given it before. The game gives no year.",
+   "t": "Syaikhah ist die weibliche Form von Scheich: ein Titel für eine große Gelehrte. Wikipedia nennt 1957, nach ihrer Hadsch; der Artikel von 2026 nennt 1955. Beide sagen, dass ihn vorher noch nie eine Frau bekommen hatte. Das Spiel nennt kein Jahr."
+  },
+  "10.5": {
+   "en": "After her visit, Egypt gave scholarships for Diniyah Putri graduates to study at al-Azhar.",
+   "t": "Nach ihrem Besuch vergab Ägypten Stipendien an Absolventinnen der Diniyah Putri für ein Studium an der al-Azhar."
+  },
+  "10.6": {
+   "en": "Ask: what would you like to become one day?",
+   "t": "Fragen Sie: Was möchtest du einmal werden?"
+  },
+  "11.1": {
+   "en": "The women's Islamic university was opened in 1967 by the governor of West Sumatra, Harun Zain.",
+   "t": "Die islamische Universität für Frauen wurde 1967 vom Gouverneur von West-Sumatra, Harun Zain, eröffnet."
+  },
+  "11.2": {
+   "en": "She died on 26 February 1969. Her grave, in the grounds of the school's boarding house, is a protected heritage site.",
+   "t": "Sie starb am 26. Februar 1969. Ihr Grab auf dem Gelände des Internats der Schule ist ein geschütztes Kulturerbe."
+  },
+  "11.3": {
+   "en": "Ask: what is one good thing you would like people to remember you for?",
+   "t": "Fragen Sie: Für welche gute Sache möchtest du, dass die Menschen sich an dich erinnern?"
+  },
+  "11.4": {
+   "en": "President Prabowo Subianto named her a National Hero of Indonesia in November 2025. The award was received by Fauziah Fauzan El Muhammady, head of the Diniyyah Puteri school today.",
+   "t": "Präsident Prabowo Subianto ernannte sie im November 2025 zur Nationalheldin Indonesiens. Die Auszeichnung nahm Fauziah Fauzan El Muhammady entgegen, die heutige Leiterin der Schule Diniyyah Puteri."
+  },
+  "11.5": {
+   "en": "Ask your child to tell Rahmah's whole story in their own words.",
+   "t": "Bitten Sie Ihr Kind, Rahmahs ganze Geschichte mit eigenen Worten zu erzählen."
+  }
  }
 }

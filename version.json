@@ -1,11 +1,18 @@
 {
-  "version": "2026.11.84",
+  "version": "2026.11.85",
   "date": "2026-11-21",
-  "buildId": "053d03583055",
+  "buildId": "639136606f9d",
   "notes": [
-    "Translations reorganised: every language in one folder (lang/<code>/), English beside each line, a guide for translators (lang/README.md) and a page showing each language game by game (lang/STATUS.md). A device now downloads only the language it uses; English families download no translations. French started (empty, for drafting)"
+    "Deutsch, complete: everything is now in German, For parents, every note for parents, the stories' About boxes, the privacy note, the voice recorder, the little ones' games and every message. Families in a language with no computer voice choose: silent (you read aloud) or the English voice. Indonesian: Rahmah's notes for parents in Indonesian"
   ],
   "history": [
+    {
+      "version": "2026.11.85",
+      "date": "2026-11-21",
+      "notes": [
+        "Deutsch, complete: everything is now in German, For parents, every note for parents, the stories' About boxes, the privacy note, the voice recorder, the little ones' games and every message. Families in a language with no computer voice choose: silent (you read aloud) or the English voice. Indonesian: Rahmah's notes for parents in Indonesian"
+      ]
+    },
     {
       "version": "2026.11.84",
       "date": "2026-11-21",

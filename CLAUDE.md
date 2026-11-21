@@ -127,7 +127,14 @@ things work; this file holds the decisions that must not be lost between session
 - Voices: the same Aoede and Achird, asked to speak as native speakers of the language:
   `STORY_LANG=id [VOICE=m] PROJECT=asmau-assets python3 scripts/generate-voice-gemini.py games/<slug>` (clips in
   `assets/audio-id/`, `audio-id-m/`; packs `<slug>@id-w`, `@id-m`), then the same with `scripts/voice-check.py`.
-- Parents' notes and the For parents texts stay in English for now. Arabic words and prayers stay Arabic.
+- **A language is whole (owner, 21 November 2026): everything families can read is translated**, the For parents texts,
+  each game's About box, the notes for parents (`notes` in each game's file, page by page), the recorder, privacy and
+  refresh pages, the little ones' games and every message the scripts write. No English left in places. Check a language
+  with `node scripts/lang-collect.js <code>` (every page in a browser; `--write` adds what is missing) and
+  `node scripts/lang-strings.js <slug> <code>`; the checker refuses a checked game whose lines, labels or notes are missing.
+  A release note that families see in What's new needs its translation in each live language's site.json too.
+  A language without a computer voice is silent by default; a family can choose the English voice instead (For parents).
+  Arabic words and prayers stay Arabic, and Arabic lines keep their Arabic clip in every language.
 
 ## Brand
 - Mark: the West African writing board (allo) with أ ب ت, chosen by the owner on 15 November 2026. Name

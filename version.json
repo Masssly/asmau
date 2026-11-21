@@ -1,11 +1,18 @@
 {
-  "version": "2026.11.85",
+  "version": "2026.11.86",
   "date": "2026-11-21",
-  "buildId": "8cefec8fa85b",
+  "buildId": "d5ca2771fe61",
   "notes": [
-    "Deutsch, complete: everything is now in German, For parents, every note for parents, the stories' About boxes, the privacy note, the voice recorder, the little ones' games and every message. Families in a language with no computer voice choose: silent (you read aloud) or the English voice. Indonesian: Rahmah's notes for parents in Indonesian"
+    "Bahasa Indonesia, complete: For parents, the notes for parents in every game, the stories' About boxes, the privacy note, the voice recorder, the little ones' games and every message are now in Indonesian (the games other than Rahmah are drafts until a native speaker checks them)"
   ],
   "history": [
+    {
+      "version": "2026.11.86",
+      "date": "2026-11-21",
+      "notes": [
+        "Bahasa Indonesia, complete: For parents, the notes for parents in every game, the stories' About boxes, the privacy note, the voice recorder, the little ones' games and every message are now in Indonesian (the games other than Rahmah are drafts until a native speaker checks them)"
+      ]
+    },
     {
       "version": "2026.11.85",
       "date": "2026-11-21",

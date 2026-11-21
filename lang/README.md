@@ -62,7 +62,9 @@ The pictures, the activities and the page numbers are the same in every language
 - "It is told that ..." marks something from the commentaries, not the Qur'an: keep that marker in your language.
 - Keep the meaning, not the English word order. If something cannot be said simply in your language, say it simply in
   another way.
-- The parents' notes and the For parents texts stay in English for now.
+- **Everything families can read is translated**, not only the story: the For parents texts, each game's About box and
+  the notes for parents (`notes` in each game's file, page by page: `en` is the English note, write the translation in `t`,
+  keeping its paragraphs). A checked language with any of these missing is refused by the checker.
 
 ## Adding a language
 

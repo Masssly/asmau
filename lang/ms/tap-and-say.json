@@ -1,9 +1,362 @@
 {
  "status": "draft",
  "_note": "Bahasa Melayu, drafted 21 November 2026, to be checked by a native speaker. Seen only with ?lang=ms until then. Only the game's card for now.",
- "lines": {},
+ "lines": {
+  "hello": {
+   "en": "Tap something!",
+   "t": "Ketik sesuatu!"
+  },
+  "find-start": {
+   "en": "Let's play. Find what I say!",
+   "t": "Jom main. Cari apa yang aku sebut!"
+  },
+  "yes": {
+   "en": "Yes! Well done!",
+   "t": "Ya! Syabas!"
+  },
+  "page-sky": {
+   "en": "Night and the mosque",
+   "t": "Malam dan masjid"
+  },
+  "moon-en": {
+   "en": "Moon",
+   "t": "Bulan"
+  },
+  "find-moon": {
+   "en": "Where is the moon?",
+   "t": "Di mana bulan?"
+  },
+  "star-en": {
+   "en": "Star",
+   "t": "Bintang"
+  },
+  "find-star": {
+   "en": "Where is the star?",
+   "t": "Di mana bintang?"
+  },
+  "mosque-en": {
+   "en": "Mosque",
+   "t": "Masjid"
+  },
+  "find-mosque": {
+   "en": "Where is the mosque?",
+   "t": "Di mana masjid?"
+  },
+  "kaaba-en": {
+   "en": "Kaaba",
+   "t": "Kaabah"
+  },
+  "find-kaaba": {
+   "en": "Where is the Kaaba?",
+   "t": "Di mana Kaabah?"
+  },
+  "beads-en": {
+   "en": "Prayer beads",
+   "t": "Tasbih"
+  },
+  "find-beads": {
+   "en": "Where are the prayer beads?",
+   "t": "Di mana tasbih?"
+  },
+  "lamp-en": {
+   "en": "Lamp",
+   "t": "Pelita"
+  },
+  "find-lamp": {
+   "en": "Where is the lamp?",
+   "t": "Di mana pelita?"
+  },
+  "page-prayer": {
+   "en": "Time to pray",
+   "t": "Masa untuk solat"
+  },
+  "mat-en": {
+   "en": "Prayer mat",
+   "t": "Sejadah"
+  },
+  "find-mat": {
+   "en": "Where is the prayer mat?",
+   "t": "Di mana sejadah?"
+  },
+  "quran-en": {
+   "en": "Qur'an",
+   "t": "Al-Quran"
+  },
+  "find-quran": {
+   "en": "Where is the Qur'an?",
+   "t": "Di mana Al-Quran?"
+  },
+  "water-en": {
+   "en": "Water",
+   "t": "Air"
+  },
+  "find-water": {
+   "en": "Where is the water?",
+   "t": "Di mana air?"
+  },
+  "hands-en": {
+   "en": "Hands",
+   "t": "Tangan"
+  },
+  "find-hands": {
+   "en": "Where are our hands?",
+   "t": "Di mana tangan kita?"
+  },
+  "clock-en": {
+   "en": "Clock",
+   "t": "Jam"
+  },
+  "find-clock": {
+   "en": "Where is the clock?",
+   "t": "Di mana jam?"
+  },
+  "scarf-en": {
+   "en": "Headscarf",
+   "t": "Tudung"
+  },
+  "find-scarf": {
+   "en": "Where is the headscarf?",
+   "t": "Di mana tudung?"
+  },
+  "page-animals": {
+   "en": "Animals in the Qur'an",
+   "t": "Haiwan dalam Al-Quran"
+  },
+  "camel-en": {
+   "en": "Camel",
+   "t": "Unta"
+  },
+  "find-camel": {
+   "en": "Where is the camel?",
+   "t": "Di mana unta?"
+  },
+  "cow-en": {
+   "en": "Cow",
+   "t": "Lembu"
+  },
+  "find-cow": {
+   "en": "Where is the cow?",
+   "t": "Di mana lembu?"
+  },
+  "bee-en": {
+   "en": "Bee",
+   "t": "Lebah"
+  },
+  "find-bee": {
+   "en": "Where is the bee?",
+   "t": "Di mana lebah?"
+  },
+  "ant-en": {
+   "en": "Ant",
+   "t": "Semut"
+  },
+  "find-ant": {
+   "en": "Where is the ant?",
+   "t": "Di mana semut?"
+  },
+  "elephant-en": {
+   "en": "Elephant",
+   "t": "Gajah"
+  },
+  "find-elephant": {
+   "en": "Where is the elephant?",
+   "t": "Di mana gajah?"
+  },
+  "spider-en": {
+   "en": "Spider",
+   "t": "Labah-labah"
+  },
+  "find-spider": {
+   "en": "Where is the spider?",
+   "t": "Di mana labah-labah?"
+  },
+  "horse-en": {
+   "en": "Horse",
+   "t": "Kuda"
+  },
+  "find-horse": {
+   "en": "Where is the horse?",
+   "t": "Di mana kuda?"
+  },
+  "fish-en": {
+   "en": "Fish",
+   "t": "Ikan"
+  },
+  "find-fish": {
+   "en": "Where is the fish?",
+   "t": "Di mana ikan?"
+  },
+  "raven-en": {
+   "en": "Raven",
+   "t": "Burung gagak"
+  },
+  "find-raven": {
+   "en": "Where is the raven?",
+   "t": "Di mana burung gagak?"
+  },
+  "page-food": {
+   "en": "Good food",
+   "t": "Makanan yang baik"
+  },
+  "dates-en": {
+   "en": "Date palm",
+   "t": "Pokok kurma"
+  },
+  "find-dates": {
+   "en": "Where is the date palm?",
+   "t": "Di mana pokok kurma?"
+  },
+  "olive-en": {
+   "en": "Olives",
+   "t": "Buah zaitun"
+  },
+  "find-olive": {
+   "en": "Where are the olives?",
+   "t": "Di mana buah zaitun?"
+  },
+  "grapes-en": {
+   "en": "Grapes",
+   "t": "Anggur"
+  },
+  "find-grapes": {
+   "en": "Where are the grapes?",
+   "t": "Di mana anggur?"
+  },
+  "honey-en": {
+   "en": "Honey",
+   "t": "Madu"
+  },
+  "find-honey": {
+   "en": "Where is the honey?",
+   "t": "Di mana madu?"
+  },
+  "milk-en": {
+   "en": "Milk",
+   "t": "Susu"
+  },
+  "find-milk": {
+   "en": "Where is the milk?",
+   "t": "Di mana susu?"
+  },
+  "bread-en": {
+   "en": "Bread",
+   "t": "Roti"
+  },
+  "find-bread": {
+   "en": "Where is the bread?",
+   "t": "Di mana roti?"
+  },
+  "page-westafrica": {
+   "en": "Eid, school and prayer in West Africa",
+   "t": "Hari Raya, sekolah dan solat di Afrika Barat"
+  },
+  "ram-en": {
+   "en": "Ram",
+   "t": "Kambing biri-biri jantan"
+  },
+  "find-ram": {
+   "en": "Where is the ram?",
+   "t": "Di mana kambing biri-biri jantan?"
+  },
+  "kettle-en": {
+   "en": "Kettle",
+   "t": "Cerek"
+  },
+  "find-kettle": {
+   "en": "Where is the kettle?",
+   "t": "Di mana cerek?"
+  },
+  "pen-en": {
+   "en": "Pen",
+   "t": "Pena"
+  },
+  "find-pen": {
+   "en": "Where is the pen?",
+   "t": "Di mana pena?"
+  },
+  "drum-en": {
+   "en": "Drum",
+   "t": "Gendang"
+  },
+  "find-drum": {
+   "en": "Where is the drum?",
+   "t": "Di mana gendang?"
+  },
+  "turban-en": {
+   "en": "Turban",
+   "t": "Serban"
+  },
+  "find-turban": {
+   "en": "Where is the turban?",
+   "t": "Di mana serban?"
+  },
+  "sandals-en": {
+   "en": "Sandals",
+   "t": "Selipar"
+  },
+  "find-sandals": {
+   "en": "Where are the sandals?",
+   "t": "Di mana selipar?"
+  },
+  "page-world": {
+   "en": "Allah's world",
+   "t": "Alam ciptaan Allah"
+  },
+  "sun-en": {
+   "en": "Sun",
+   "t": "Matahari"
+  },
+  "find-sun": {
+   "en": "Where is the sun?",
+   "t": "Di mana matahari?"
+  },
+  "cloud-en": {
+   "en": "Cloud",
+   "t": "Awan"
+  },
+  "find-cloud": {
+   "en": "Where is the cloud?",
+   "t": "Di mana awan?"
+  },
+  "rain-en": {
+   "en": "Rain",
+   "t": "Hujan"
+  },
+  "find-rain": {
+   "en": "Where is the rain?",
+   "t": "Di mana hujan?"
+  },
+  "mountain-en": {
+   "en": "Mountain",
+   "t": "Gunung"
+  },
+  "find-mountain": {
+   "en": "Where is the mountain?",
+   "t": "Di mana gunung?"
+  },
+  "sea-en": {
+   "en": "Sea",
+   "t": "Laut"
+  },
+  "find-sea": {
+   "en": "Where is the sea?",
+   "t": "Di mana laut?"
+  },
+  "tree-en": {
+   "en": "Tree",
+   "t": "Pokok"
+  },
+  "find-tree": {
+   "en": "Where is the tree?",
+   "t": "Di mana pokok?"
+  }
+ },
  "strings": {
   "Tap & Say": "Ketik & Sebut",
-  "Tap a picture, hear its name, see the Arabic word. Then find it!": "Ketik gambar, dengar namanya, lihat perkataan Arabnya. Kemudian carinya!"
+  "Tap a picture, hear its name, see the Arabic word. Then find it!": "Ketik gambar, dengar namanya, lihat perkataan Arabnya. Kemudian carinya!",
+  "“Find it!” asks for one thing at a time. A wrong tap simply says the name of what was tapped; nothing is ever marked wrong. The animals are ones the Qur'an mentions; five of them give a surah its name (the cow, the bee, the ant, the elephant, the spider).": "“Cari!” meminta satu benda pada satu masa. Ketikan yang salah hanya menyebut nama benda yang diketik; tiada apa-apa yang ditanda salah. Haiwan-haiwan ini disebut dalam Al-Quran; lima daripadanya menjadi nama surah (lembu, lebah, semut, gajah, labah-labah).",
+  "The Arabic words carry full vowel marks. If you speak Arabic and spot a mistake, please tell us.": "Perkataan Arab diberi baris penuh. Jika anda tahu bahasa Arab dan nampak kesilapan, sila beritahu kami.",
+  "For ages 1½ to 4. Tap a picture to hear its name in English and then in Arabic. The voice is computer-made (Google’s text-to-speech), so it may not say every Arabic word perfectly. Say it together, or <a href=\"../../index.html#parents-record\">record it in your own voice</a> and the game will play your recording instead.": "Untuk umur 1½ hingga 4 tahun. Ketik gambar untuk mendengar namanya dalam bahasa Inggeris dan kemudian dalam bahasa Arab. Suaranya dihasilkan oleh komputer (teks-ke-pertuturan Google), jadi ia mungkin tidak menyebut setiap perkataan Arab dengan sempurna. Sebutlah bersama-sama, atau <a href=\"../../index.html#parents-record\">rakamkannya dengan suara anda sendiri</a> dan permainan akan memainkan rakaman anda.",
+  "The West African page: the ram for Tabaski (Eid al-Adha); the kettle for wudu (the <i>buta</i> in Hausa); the pen of the Qur'an school; the drummers who go round in Ramadan to wake people for suhur; the turban; and the sandals left at the mosque door.": "Halaman Afrika Barat: kambing biri-biri jantan untuk Tabaski (Hari Raya Aidiladha); cerek untuk berwuduk (<i>buta</i> dalam bahasa Hausa); pena sekolah Al-Quran; pemukul gendang yang berkeliling pada bulan Ramadan untuk mengejutkan orang bersahur; serban; dan selipar yang ditinggalkan di pintu masjid."
  }
 }

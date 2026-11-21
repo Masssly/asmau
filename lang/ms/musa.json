@@ -1780,6 +1780,974 @@
   "Courage": "Keberanian",
   "Gentle words": "Kata-kata yang lembut",
   "From the baby on the river to the sea that opened: twenty-five chapters and a hundred things to do.": "Daripada bayi di sungai hingga laut yang terbelah: dua puluh lima bab dan seratus perkara untuk dilakukan.",
-  "A basket floating on the river among the reeds, glowing softly.": "Sebuah bakul terapung di sungai di antara rumpun mensiang, bercahaya lembut."
+  "A basket floating on the river among the reeds, glowing softly.": "Sebuah bakul terapung di sungai di antara rumpun mensiang, bercahaya lembut.",
+  "📖 About this story": "📖 Tentang cerita ini",
+  "🤲 Told gently, or left out": "🤲 Diceritakan dengan lembut, atau ditinggalkan",
+  "Told more gently than the verses tell them: Pharaoh’s order against the baby boys (28:4), the man Musa struck (28:15), Pharaoh’s threats to the magicians (20:71), the drowning (26:66) and Musa’s anger at his brother (7:150). Not told to children at all: the boy in 18:74, which the game calls “a story for when you are older”.": "Diceritakan dengan lebih lembut daripada ayat-ayatnya: perintah Firaun terhadap bayi-bayi lelaki (28:4), lelaki yang dipukul oleh Musa (28:15), ancaman Firaun terhadap ahli-ahli sihir (20:71), peristiwa tenggelam (26:66) dan kemarahan Musa terhadap saudaranya (7:150). Tidak diceritakan kepada kanak-kanak langsung: budak lelaki dalam 18:74, yang disebut oleh permainan ini sebagai “cerita untuk apabila kamu sudah besar”.",
+  "📚 From the commentary, not the verses": "📚 Daripada tafsir, bukan daripada ayat",
+  "From the commentary or hadith and not the verses, among others: the queen’s name, the hot coal, the heavy rock at the well, the pebbles on the path, the twelve paths through the sea, the frogs in the pots, the name al-Khidr and the bird on the boat. Where the early scholars differed, the chapter note says so.": "Daripada tafsir atau hadis dan bukan daripada ayat, antaranya: nama permaisuri, bara api, batu berat di perigi, batu-batu kecil di jalan, dua belas jalan merentasi laut, katak dalam periuk, nama Khidir dan burung di atas perahu. Apabila para ulama terdahulu berbeza pendapat, nota bab menyatakannya.",
+  "👥 Who is shown": "👥 Siapa yang ditunjukkan",
+  "Shown in this story: Prophet Musa and Prophet Harun (peace be upon them), al-Khidr, and the people around them. Allah’s speech to Musa is shown only as a fire and a light. Prophet Muhammad ﷺ is mentioned once, at the fast of Ashura.": "Ditunjukkan dalam cerita ini: Nabi Musa dan Nabi Harun (alaihimassalam), Khidir, dan orang-orang di sekeliling mereka. Firman Allah kepada Musa hanya ditunjukkan sebagai api dan cahaya. Nabi Muhammad ﷺ disebut sekali, pada puasa Asyura.",
+  "🧒 Ages and how long it is": "🧒 Umur dan panjangnya",
+  "It is long on purpose: about a hundred activities over 25 chapters. Nobody is meant to finish it in one sitting. A child of 3 or 4 will need a grown-up for the ordering, sorting and matching games.": "Ia sengaja dibuat panjang: kira-kira seratus aktiviti dalam 25 bab. Tiada siapa yang diharapkan menghabiskannya dalam sekali duduk. Kanak-kanak berumur 3 atau 4 tahun memerlukan orang dewasa untuk permainan menyusun, mengasingkan dan memadankan.",
+  "The story of Musa is spread over many surahs. This game follows <a href=\"https://quran.com/28\" target=\"_blank\" rel=\"noopener\">Surah Al-Qasas</a> (28:3–43) and <a href=\"https://quran.com/20\" target=\"_blank\" rel=\"noopener\">Surah Ta-Ha</a> (20:9–98), with passages from surahs 2, 5, 7, 10, 18, 26, 40 and 66. It is a large part of what the Qur’an tells of Musa, not all of it.": "Kisah Musa tersebar dalam banyak surah. Permainan ini mengikut <a href=\"https://quran.com/28\" target=\"_blank\" rel=\"noopener\">Surah Al-Qasas</a> (28:3–43) dan <a href=\"https://quran.com/20\" target=\"_blank\" rel=\"noopener\">Surah Taha</a> (20:9–98), dengan petikan daripada surah 2, 5, 7, 10, 18, 26, 40 dan 66. Ia sebahagian besar daripada apa yang diceritakan oleh Al-Quran tentang Musa, bukan semuanya."
+ },
+ "notes": {
+  "1.1": {
+   "en": "Pharaoh raised himself high in the land and split its people into groups. He oppressed one group: the verse says he slaughtered their sons and let their women live. The game says only that their baby boys were to be taken away.\n\nVerses 28:5–6 give Allah's plan: to favour the oppressed, make them leaders and heirs, and show Pharaoh, Haman and their armies the very thing they feared.",
+   "t": "Firaun meninggikan dirinya di bumi dan memecahbelahkan penduduknya kepada beberapa golongan. Dia menindas satu golongan: ayat itu menyatakan dia menyembelih anak-anak lelaki mereka dan membiarkan hidup wanita-wanita mereka. Permainan ini hanya menyatakan bahawa bayi-bayi lelaki mereka akan diambil.\n\nAyat 28:5–6 memberikan rancangan Allah: untuk mengurniakan nikmat kepada golongan yang tertindas, menjadikan mereka pemimpin dan pewaris, dan memperlihatkan kepada Firaun, Haman dan tentera mereka perkara yang mereka takuti itu."
+  },
+  "1.2": {
+   "en": "Ask your child: what does it feel like when someone is unfair to you? What do you wish someone would do?",
+   "t": "Tanyalah anak anda: bagaimana rasanya apabila seseorang tidak adil kepadamu? Apa yang kamu harap seseorang akan lakukan?"
+  },
+  "1.3": {
+   "en": "Ask: when bad things happen, does Allah see? This whole story is about Allah helping people who were being hurt.\n\nIbn Kathir explains that Pharaoh killed the newborn boys of the Children of Israel because he feared a boy would be born among them who would bring about his downfall; the precaution could not stop what Allah had decreed.",
+   "t": "Tanyakan: apabila perkara buruk berlaku, adakah Allah melihat? Seluruh kisah ini tentang Allah membantu orang-orang yang disakiti.\n\nIbnu Kathir menerangkan bahawa Firaun membunuh bayi-bayi lelaki Bani Israel yang baru lahir kerana dia takut seorang budak lelaki akan lahir dalam kalangan mereka yang akan menjatuhkannya; langkah berjaga-jaga itu tidak dapat menghalang apa yang telah ditetapkan oleh Allah."
+  },
+  "1.4": {
+   "en": "Talk about plans: what plans does our family make? Allah's plan in this story takes many years, and it starts with a baby.\n\nWhere did Pharaoh's fear come from? Ibn Kathir (in his Arabic commentary on 28:4) says the Egyptians had heard it from the Children of Israel: a saying of Ibrahim, after a tyrant of Egypt tried to take his wife Sara, that among his descendants would be one who would bring down the king of Egypt. (Our translation.)",
+   "t": "Berbuallah tentang rancangan: rancangan apa yang dibuat oleh keluarga kita? Rancangan Allah dalam kisah ini mengambil masa bertahun-tahun, dan ia bermula dengan seorang bayi.\n\nDari mana datangnya ketakutan Firaun? Ibnu Kathir (dalam tafsir Arabnya bagi 28:4) menyatakan orang Mesir mendengarnya daripada Bani Israel: satu kata-kata Ibrahim, selepas seorang raja zalim Mesir cuba mengambil isterinya Sarah, bahawa dalam kalangan keturunannya akan ada seorang yang akan menjatuhkan raja Mesir. (Terjemahan kami.)"
+  },
+  "1.5": {
+   "en": "Name each card as you match it: the river Nile, palm trees, the pyramids... Ask: what would you like to see in Egypt?",
+   "t": "Namakan setiap kad semasa memadankannya: Sungai Nil, pokok-pokok kurma, piramid... Tanyakan: apa yang ingin kamu lihat di Mesir?"
+  },
+  "2.1": {
+   "en": "Musa's mother is inspired to nurse him and, when she fears for him, to put him into the chest and the chest into the river, with the promise that he will be returned to her and made a messenger. 20:39 adds that Allah cast His love over Musa and that he was reared under Allah's watchful eye.\n\nThe chest is in the verse (20:39). The commentary adds details the verses do not give: that her house was on the bank of the Nile and that she made a box into a cradle for him. The game's 'getting the chest ready' activity is built on that.",
+   "t": "Ibu Musa diilhamkan untuk menyusukannya dan, apabila dia bimbang akan keselamatannya, untuk meletakkannya di dalam peti dan peti itu ke dalam sungai, dengan janji bahawa dia akan dikembalikan kepadanya dan dijadikan seorang rasul. 20:39 menambah bahawa Allah melimpahkan kasih sayang-Nya kepada Musa dan dia dibesarkan di bawah pengawasan Allah.\n\nPeti itu terdapat dalam ayat (20:39). Tafsir menambah butiran yang tidak diberikan oleh ayat-ayat itu: bahawa rumahnya terletak di tebing Sungai Nil dan dia membuat sebuah kotak menjadi buaian untuknya. Aktiviti 'menyediakan peti' dalam permainan ini dibina berdasarkan perkara itu."
+  },
+  "2.2": {
+   "en": "Ask: what do you think Musa's mother felt when she heard this message? Being brave doesn't mean not being afraid.\n\nIn Majlisi's Hayat al-Qulub, Musa's mother is called Yukabid, which Majlisi says is the most common opinion. The Qur'an does not name her.",
+   "t": "Tanyakan: apa agaknya perasaan ibu Musa apabila dia mendengar pesanan ini? Berani tidak bermakna tidak takut.\n\nDalam Hayat al-Qulub karya al-Majlisi, ibu Musa dinamakan Yukabid, yang menurut al-Majlisi ialah pendapat yang paling masyhur. Al-Quran tidak menamakannya."
+  },
+  "2.3": {
+   "en": "Ask: what would you put in a cradle to keep a baby warm and safe?",
+   "t": "Tanyakan: apa yang akan kamu letakkan di dalam buaian untuk memastikan bayi hangat dan selamat?"
+  },
+  "2.4": {
+   "en": "Ask: what is the bravest thing your mother or father has done for you? This is a good moment to tell your child a story from when they were a baby.\n\nIbn Kathir passes on what 'they mention' (dhakaru), commentary rather than Qur'an: that Pharaoh's people, afraid of losing their workers, had the boys killed one year and spared the next; Harun was born in a year of sparing and Musa in a year of killing. Musa's mother lived by the Nile; she would hide him in the chest on the water, tied with a rope, whenever someone she feared came in, and one day she forgot to tie it, and the river carried him to Pharaoh's house. (Our translation from the Arabic.)",
+   "t": "Tanyakan: apakah perkara paling berani yang pernah dilakukan oleh ibu atau ayahmu untukmu? Inilah saat yang baik untuk menceritakan kepada anak anda satu kisah ketika dia masih bayi.\n\nIbnu Kathir menyampaikan apa yang 'mereka sebutkan' (dhakaru), tafsiran dan bukan Al-Quran: bahawa kaum Firaun, takut kehilangan pekerja mereka, menyuruh bayi-bayi lelaki dibunuh pada satu tahun dan dibiarkan hidup pada tahun berikutnya; Harun lahir pada tahun dibiarkan hidup dan Musa pada tahun pembunuhan. Ibu Musa tinggal di tepi Sungai Nil; dia akan menyembunyikannya di dalam peti di atas air, diikat dengan tali, setiap kali seseorang yang ditakutinya masuk, dan pada suatu hari dia terlupa mengikatnya, lalu sungai membawanya ke istana Firaun. (Terjemahan kami daripada bahasa Arab.)"
+  },
+  "2.5": {
+   "en": "Move slowly and gently as you play. Ask: how would you carry something very precious?",
+   "t": "Bergeraklah perlahan-lahan dan lembut semasa bermain. Tanyakan: bagaimana kamu akan membawa sesuatu yang sangat berharga?"
+  },
+  "2.6": {
+   "en": "Ask: who watches over you when you sleep? Allah watches over everyone, all the time.",
+   "t": "Tanyakan: siapa yang menjagamu ketika kamu tidur? Allah menjaga semua orang, sepanjang masa."
+  },
+  "2.7": {
+   "en": "Look at a river or stream together if you can, or a bowl of water. Ask: where does a river go?",
+   "t": "Lihatlah sungai atau anak sungai bersama-sama jika boleh, atau semangkuk air. Tanyakan: ke mana sungai mengalir?"
+  },
+  "2.8": {
+   "en": "Ask: what can we do when we are afraid for someone we love? (Make dua, trust Allah, do what we can.)",
+   "t": "Tanyakan: apa yang boleh kita lakukan apabila kita bimbang tentang seseorang yang kita sayangi? (Berdoa, bertawakal kepada Allah, melakukan apa yang kita mampu.)"
+  },
+  "3.1": {
+   "en": "Pharaoh's household picked the child up, not knowing he would become their opponent. Pharaoh's wife said he would be a joy to the eye for her and for Pharaoh, and said: do not kill him; he may be useful to us, or we may adopt him. The game says 'do not harm him'.\n\nThe verses do not name her. The commentary names her Asiyah bint Muzahim, says the servant women brought the chest to her unopened, and that Allah filled her heart with love when she saw the child. It also reports Pharaoh's reply, 'For you he may be, but not for me', which the game leaves out.\n\nOn 20:39, 'I cast My love over you', the commentary comments that no one saw Musa without loving him. The hearts activity is built on that.",
+   "t": "Keluarga Firaun memungut kanak-kanak itu, tanpa mengetahui bahawa dia akan menjadi musuh mereka. Isteri Firaun berkata dia akan menjadi penyejuk mata baginya dan bagi Firaun, dan berkata: janganlah kamu membunuhnya; mudah-mudahan dia berguna kepada kita, atau kita jadikan dia anak. Permainan ini menyebut 'jangan sakiti dia'.\n\nAyat-ayat itu tidak menamakannya. Tafsir menamakannya Asiah binti Muzahim, menyatakan hamba-hamba perempuan membawa peti itu kepadanya tanpa dibuka, dan Allah memenuhi hatinya dengan kasih sayang apabila dia melihat kanak-kanak itu. Ia juga meriwayatkan jawapan Firaun, 'Bagimu mungkin, tetapi tidak bagiku', yang tidak disebut dalam permainan ini.\n\nTentang 20:39, 'Aku limpahkan kasih sayang daripada-Ku kepadamu', tafsir mengulas bahawa tiada seorang pun yang melihat Musa melainkan menyayanginya. Aktiviti hati dibina berdasarkan perkara itu."
+  },
+  "3.2": {
+   "en": "Ask: who do you think will find the chest? Let your child guess before the next page.",
+   "t": "Tanyakan: siapa agaknya yang akan menemui peti itu? Biarkan anak anda meneka sebelum halaman seterusnya."
+  },
+  "3.3": {
+   "en": "Asiya is one of the great women of Islam. Ask: why do you think she was kind, even though she lived in Pharaoh's palace?",
+   "t": "Asiah ialah salah seorang wanita agung dalam Islam. Tanyakan: mengapa agaknya dia baik hati, walaupun dia tinggal di istana Firaun?"
+  },
+  "3.4": {
+   "en": "Ask: what is the best surprise you have ever found?",
+   "t": "Tanyakan: apakah kejutan paling indah yang pernah kamu temui?"
+  },
+  "3.5": {
+   "en": "Ask: how do you feel when you see a baby? Allah put love for baby Musa in people's hearts.",
+   "t": "Tanyakan: bagaimana perasaanmu apabila kamu melihat bayi? Allah meletakkan kasih sayang kepada bayi Musa di dalam hati manusia."
+  },
+  "3.6": {
+   "en": "Ask: who loves you? Count them on your fingers together.",
+   "t": "Tanyakan: siapa yang menyayangimu? Kiralah dengan jari bersama-sama."
+  },
+  "3.7": {
+   "en": "Ask: what does it mean to speak up for someone? Asiya spoke up for a baby she had just met.",
+   "t": "Tanyakan: apa ertinya bersuara membela seseorang? Asiah membela seorang bayi yang baru ditemuinya."
+  },
+  "3.8": {
+   "en": "Ask: isn't it amazing that the safest place for Musa was in the king's own palace? How did Allah do that?",
+   "t": "Tanyakan: bukankah menakjubkan bahawa tempat paling selamat bagi Musa ialah istana raja itu sendiri? Bagaimana Allah melakukannya?"
+  },
+  "3.9": {
+   "en": "Talk about kind people who stand up for the weak. Who do you know who does that?",
+   "t": "Berbuallah tentang orang-orang baik yang membela golongan yang lemah. Siapa yang kamu kenal yang melakukannya?"
+  },
+  "4.1": {
+   "en": "The heart of Musa's mother became empty; she would have given him away had Allah not strengthened her heart. She told his sister to follow him, and the sister watched from a distance unnoticed. Allah had made him refuse every wet nurse, and the sister offered a household that would bring him up. He was returned to his mother so that she would be comforted and would know that Allah's promise is true.\n\nFrom the commentary, not the verses: that 'empty' means she could think of nothing but Musa (reported from Ibn Abbas, Mujahid, Ikrimah, Sa'id bin Jubayr and others); that the sister was the older child; that the queen paid the mother; and that only about a day and a night passed between the distress and the relief, 'and Allah knows best'.\n\nThe commentary reports from Ibn Abbas that the palace people doubted the sister and seized her until she explained herself. The game leaves that out.",
+   "t": "Hati ibu Musa menjadi kosong; hampir sahaja dia menyatakan rahsianya kalau tidak kerana Allah meneguhkan hatinya. Dia menyuruh kakak Musa mengikutinya, dan kakaknya memerhatikan dari jauh tanpa disedari. Allah telah menjadikannya menolak setiap ibu susuan, dan kakaknya menawarkan sebuah keluarga yang akan membesarkannya. Dia dikembalikan kepada ibunya supaya ibunya terhibur dan mengetahui bahawa janji Allah itu benar.\n\nDaripada tafsir, bukan daripada ayat: bahawa 'kosong' bermaksud dia tidak dapat memikirkan apa-apa selain Musa (diriwayatkan daripada Ibnu Abbas, Mujahid, Ikrimah, Sa'id bin Jubair dan lain-lain); bahawa kakaknya ialah anak yang lebih tua; bahawa permaisuri membayar ibunya; dan bahawa hanya kira-kira sehari semalam berlalu antara kesusahan dan kelegaan, 'dan Allah lebih mengetahui'.\n\nTafsir meriwayatkan daripada Ibnu Abbas bahawa orang istana mencurigai kakaknya dan menangkapnya sehingga dia menerangkan dirinya. Permainan ini tidak menyebutnya."
+  },
+  "4.2": {
+   "en": "Ask your child about their own brother, sister or cousin: how do you look out for each other?",
+   "t": "Tanyalah anak anda tentang abang, kakak, adik atau sepupunya sendiri: bagaimana kamu saling menjaga?"
+  },
+  "4.3": {
+   "en": "Play a quiet-footsteps game at home: who can walk the most silently?",
+   "t": "Mainkan permainan langkah senyap di rumah: siapa yang boleh berjalan paling senyap?"
+  },
+  "4.4": {
+   "en": "Ask: what does a baby need more than anything? (Their mother, food, sleep, love.)",
+   "t": "Tanyakan: apa yang paling diperlukan oleh seorang bayi? (Ibunya, makanan, tidur, kasih sayang.)"
+  },
+  "4.5": {
+   "en": "Ask: why do you think baby Musa said no to every nurse? Allah was bringing him home.",
+   "t": "Tanyakan: mengapa agaknya bayi Musa menolak setiap ibu susuan? Allah sedang membawanya pulang."
+  },
+  "4.6": {
+   "en": "Ask: how did Musa's sister help without telling anyone the secret? Being clever and kind together.",
+   "t": "Tanyakan: bagaimana kakak Musa membantu tanpa memberitahu sesiapa rahsia itu? Bijak dan baik hati sekali gus."
+  },
+  "4.7": {
+   "en": "Ask: how do you think his mother felt when she held him again? A lovely moment to hug your child.",
+   "t": "Tanyakan: bagaimana agaknya perasaan ibunya apabila dia mendakapnya semula? Saat yang indah untuk memeluk anak anda."
+  },
+  "4.8": {
+   "en": "Ask: what promise did Allah make to Musa's mother, and did He keep it?",
+   "t": "Tanyakan: janji apa yang dibuat oleh Allah kepada ibu Musa, dan adakah Dia menunaikannya?"
+  },
+  "4.9": {
+   "en": "Ask your child to tell this chapter to someone else in the family.",
+   "t": "Mintalah anak anda menceritakan bab ini kepada orang lain dalam keluarga."
+  },
+  "4.10": {
+   "en": "Let your child say each step out loud before tapping.",
+   "t": "Biarkan anak anda menyebut setiap langkah dengan kuat sebelum mengetik."
+  },
+  "5.1": {
+   "en": "When Musa reached full maturity Allah gave him wisdom and knowledge: 'this is how We reward those who do good'.\n\nThe hot coal is not in the Qur'an. The commentary, explaining the prayer 'untie the knot in my tongue' (20:27), says Musa had a lisp from an incident in which he was offered a date and a hot coal and put the coal on his tongue. The tafsir gives it in one sentence and refers elsewhere for the full story; the game adds nothing to it. The commentary says that as a child Musa stayed in Pharaoh's own room.\n\nThe sorting activity (safe to eat, or too hot to touch) is a safety game of ours hung on that report.",
+   "t": "Apabila Musa dewasa sepenuhnya, Allah memberinya hikmah dan ilmu: 'demikianlah Kami membalas orang-orang yang berbuat baik'.\n\nBara api tiada dalam Al-Quran. Tafsir, ketika menerangkan doa 'lepaskanlah kekakuan lidahku' (20:27), menyatakan Musa pelat kerana satu peristiwa di mana dia ditawarkan sebiji kurma dan seketul bara api lalu meletakkan bara itu di lidahnya. Tafsir menyebutnya dalam satu ayat dan merujuk ke tempat lain untuk kisah penuhnya; permainan ini tidak menambah apa-apa padanya. Tafsir menyatakan bahawa semasa kecil Musa tinggal di bilik Firaun sendiri.\n\nAktiviti mengasingkan (selamat dimakan, atau terlalu panas untuk disentuh) ialah permainan keselamatan kami yang dikaitkan dengan riwayat itu."
+  },
+  "5.2": {
+   "en": "Ask: how do you know if something is too hot? Talk about safety at home: the stove, hot tea, matches.",
+   "t": "Tanyakan: bagaimana kamu tahu sesuatu itu terlalu panas? Berbuallah tentang keselamatan di rumah: dapur, teh panas, mancis."
+  },
+  "5.3": {
+   "en": "Make it a real safety lesson: walk around the kitchen together and name what is hot or sharp.",
+   "t": "Jadikannya pelajaran keselamatan yang sebenar: berjalanlah di sekeliling dapur bersama-sama dan namakan apa yang panas atau tajam."
+  },
+  "5.4": {
+   "en": "Ask: what do you want to learn when you grow up? Wisdom is knowing what to do with what you know.",
+   "t": "Tanyakan: apa yang ingin kamu pelajari apabila besar nanti? Hikmah ialah mengetahui apa yang perlu dilakukan dengan apa yang kamu tahu."
+  },
+  "5.5": {
+   "en": "The Qur'an does not say how Musa knew which people were his own; in 28:15 it simply calls the Israelite in the fight \"one of his own party\". This page, added so that page 6.1 makes sense to a child, tells what the early reports give as the background.\n\nThe commentary reports that Musa's mother would not live in the palace: she nursed him in her own home, and the queen paid her for it, so he spent his first years with his real family.\n\nAl-Tabari's commentary reports from Ibn Abbas that once Musa was grown, none of Pharaoh's people could wrong an Israelite or force him to work while Musa was there. People put this down to his having been nursed by an Israelite woman, \"unless Allah had shown Musa what He had not shown anyone else\". Al-Tabari also reports, from Ibn Ishaq, that a following from the Children of Israel gathered to Musa and listened to him. These are reports, so the game says \"it is told that\".",
+   "t": "Al-Quran tidak menyatakan bagaimana Musa tahu kaum mana yang kaumnya sendiri; dalam 28:15 ia hanya menyebut orang Israel dalam pergaduhan itu \"daripada golongannya\". Halaman ini, ditambah supaya halaman 6.1 masuk akal bagi kanak-kanak, menceritakan apa yang diberikan oleh riwayat-riwayat awal sebagai latar belakangnya.\n\nTafsir meriwayatkan bahawa ibu Musa tidak mahu tinggal di istana: dia menyusukannya di rumahnya sendiri, dan permaisuri membayarnya untuk itu, maka Musa menghabiskan tahun-tahun pertamanya bersama keluarga kandungnya.\n\nTafsir al-Tabari meriwayatkan daripada Ibnu Abbas bahawa setelah Musa dewasa, tiada seorang pun daripada kaum Firaun boleh menzalimi seorang Israel atau memaksanya bekerja ketika Musa ada. Orang ramai menganggap ini kerana dia disusukan oleh seorang wanita Israel, \"melainkan Allah telah memperlihatkan kepada Musa apa yang tidak diperlihatkan-Nya kepada orang lain\". Al-Tabari juga meriwayatkan, daripada Ibnu Ishaq, bahawa sekumpulan pengikut daripada Bani Israel berhimpun di sekeliling Musa dan mendengar kata-katanya. Ini riwayat, jadi permainan ini menyebut \"diceritakan bahawa\"."
+  },
+  "5.6": {
+   "en": "While solving, ask: what do you think Musa learned in the palace?",
+   "t": "Semasa menyelesaikan, tanyakan: apa agaknya yang dipelajari oleh Musa di istana?"
+  },
+  "5.7": {
+   "en": "Ask: who gives us wisdom and knowledge? A short dua from the Qur'an children can learn: rabbi zidni 'ilma, 'Lord, increase me in knowledge!' (20:114).",
+   "t": "Tanyakan: siapa yang memberi kita hikmah dan ilmu? Doa pendek daripada Al-Quran yang boleh dihafal oleh kanak-kanak: rabbi zidni 'ilma, 'Ya Tuhanku, tambahkanlah ilmuku!' (20:114)."
+  },
+  "6.1": {
+   "en": "Musa entered the city unnoticed and found two men fighting, one of his own people and one an enemy. His kinsman called for help; Musa struck the other with his fist and killed him. The game says the man 'fell down and did not get up again'. Musa said 'this is Satan's work', asked forgiveness and was forgiven, and promised never to support wrongdoers.\n\nLeft out: verses 28:18–19, where the same kinsman calls for help again the next day, Musa calls him a troublemaker, and the man lets slip what happened the day before.\n\nIn verse 28:20 the man who came running says the authorities are talking about killing Musa. The game says they are 'coming to punish' him.\n\nIn a Shia narration (Imam al-Rida) Musa struck the man to stop him from wronging another and did not mean to kill him; 'Satan's work' is read as the fight that Satan stirred up.",
+   "t": "Musa memasuki kota tanpa disedari dan menemui dua orang lelaki sedang bergaduh, seorang daripada kaumnya dan seorang lagi daripada musuhnya. Lelaki dari kaumnya meminta tolong; Musa menumbuk yang seorang lagi dan membunuhnya. Permainan ini menyatakan lelaki itu 'jatuh dan tidak bangun lagi'. Musa berkata 'ini perbuatan syaitan', memohon ampun dan diampuni, dan berjanji tidak akan sekali-kali menolong orang-orang yang berdosa.\n\nDitinggalkan: ayat 28:18–19, di mana lelaki yang sama meminta tolong lagi pada keesokan harinya, Musa menyebutnya orang yang suka mencari pasal, dan lelaki itu terlepas cakap tentang apa yang berlaku sehari sebelumnya.\n\nDalam ayat 28:20 lelaki yang datang berlari menyatakan para pembesar sedang berbincang untuk membunuh Musa. Permainan ini menyatakan mereka 'datang untuk menghukum'nya.\n\nDalam satu riwayat Syiah (Imam al-Rida), Musa memukul lelaki itu untuk menghalangnya daripada menzalimi orang lain dan tidak berniat membunuhnya; 'perbuatan syaitan' dibaca sebagai pergaduhan yang dicetuskan oleh syaitan."
+  },
+  "6.2": {
+   "en": "Ask: what can happen when we act too fast when we are angry? What could Musa have done instead?\n\nIn Hayat al-Qulub, Imam al-Rida explains that Musa struck to stop a man who was 'openly leading astray' and did not mean to kill him. In the game Musa calls it the work of Shaytan and asks forgiveness, as the Qur'an tells it.",
+   "t": "Tanyakan: apa yang boleh berlaku apabila kita bertindak terlalu cepat ketika marah? Apa yang boleh dilakukan oleh Musa sebaliknya?\n\nDalam Hayat al-Qulub, Imam al-Rida menerangkan bahawa Musa memukul untuk menghalang seorang lelaki yang 'nyata menyesatkan' dan tidak berniat membunuhnya. Dalam permainan ini Musa menyebutnya perbuatan syaitan dan memohon ampun, seperti yang diceritakan oleh Al-Quran."
+  },
+  "6.3": {
+   "en": "Ask: what does a real sorry sound like? Practise one together.",
+   "t": "Tanyakan: bagaimana bunyi permohonan maaf yang sebenar? Berlatihlah bersama-sama."
+  },
+  "6.4": {
+   "en": "Hold the hands together with your child. Ask: is there anyone you want to say sorry to?",
+   "t": "Satukan tangan bersama anak anda. Tanyakan: adakah sesiapa yang ingin kamu minta maaf?"
+  },
+  "6.5": {
+   "en": "Musa did not hide his mistake; he turned to Allah at once. Ask: what do you do when you've done something wrong?",
+   "t": "Musa tidak menyembunyikan kesilapannya; dia terus kembali kepada Allah. Tanyakan: apa yang kamu lakukan apabila kamu melakukan sesuatu yang salah?"
+  },
+  "6.6": {
+   "en": "Ask: who was the man who came running? Someone who cared enough to warn Musa. Who would you warn if they were in danger?",
+   "t": "Tanyakan: siapakah lelaki yang datang berlari itu? Seseorang yang cukup mengambil berat untuk memberi amaran kepada Musa. Siapa yang akan kamu beri amaran jika dia dalam bahaya?"
+  },
+  "6.7": {
+   "en": "Ask: what can we say to Allah when we feel afraid? Let your child make up a short dua.",
+   "t": "Tanyakan: apa yang boleh kita katakan kepada Allah apabila kita berasa takut? Biarkan anak anda mereka doa pendek."
+  },
+  "6.8": {
+   "en": "Ask: how do you think Musa felt leaving his home? Talk about times your family moved or travelled.",
+   "t": "Tanyakan: bagaimana agaknya perasaan Musa meninggalkan rumahnya? Berbuallah tentang saat-saat keluarga anda berpindah atau mengembara."
+  },
+  "7.1": {
+   "en": "Musa turned towards Madyan hoping his Lord would guide him. At its water he found men watering flocks and two women holding theirs back; they could not water until the shepherds left, and their father was very old. He watered for them, withdrew to the shade and prayed: 'My Lord, I am in dire need of whatever good You send me.'\n\nThe heavy rock is not in the verses. The commentary, on 'the strong, the trustworthy' in 28:26, reports from Umar, Ibn Abbas, Shurayh, Abu Malik, Qatadah, Ibn Ishaq and others that the daughter said Musa had lifted a rock that only ten men could lift. The commentary says he sat beneath a tree (Ibn Abbas, Ibn Mas'ud, As-Suddi).\n\nThe tafsir also mentions, with 'and Allah knows best', a report that an angel on a horse showed Musa the way. The game does not use it.",
+   "t": "Musa menuju ke Madyan dengan harapan Tuhannya akan memberinya petunjuk. Di sumber airnya dia menemui orang ramai sedang memberi minum ternakan mereka dan dua orang wanita menahan ternakan mereka; mereka tidak dapat memberi minum sehingga para pengembala pergi, dan ayah mereka sudah sangat tua. Dia memberi minum ternakan mereka, berundur ke tempat teduh dan berdoa: 'Wahai Tuhanku, sesungguhnya aku sangat memerlukan apa jua kebaikan yang Engkau turunkan kepadaku.'\n\nBatu yang berat tiada dalam ayat-ayat itu. Tafsir, tentang 'yang kuat lagi amanah' dalam 28:26, meriwayatkan daripada Umar, Ibnu Abbas, Syuraih, Abu Malik, Qatadah, Ibnu Ishaq dan lain-lain bahawa anak perempuan itu berkata Musa telah mengangkat sebuah batu yang hanya dapat diangkat oleh sepuluh orang lelaki. Tafsir menyatakan dia duduk di bawah sebatang pokok (Ibnu Abbas, Ibnu Mas'ud, As-Suddi).\n\nTafsir juga menyebut, dengan 'dan Allah lebih mengetahui', satu riwayat bahawa seorang malaikat menunggang kuda menunjukkan jalan kepada Musa. Permainan ini tidak menggunakannya."
+  },
+  "7.2": {
+   "en": "Ask: how long can you walk? Count your steps on your next walk together.",
+   "t": "Tanyakan: berapa jauh kamu boleh berjalan? Kiralah langkahmu ketika berjalan bersama-sama nanti."
+  },
+  "7.3": {
+   "en": "Ask: what did Musa notice that others didn't? (Two young women waiting.) Noticing people who need help is the first step to helping.",
+   "t": "Tanyakan: apa yang diperhatikan oleh Musa yang tidak diperhatikan oleh orang lain? (Dua orang wanita muda yang sedang menunggu.) Memerhatikan orang yang memerlukan bantuan ialah langkah pertama untuk membantu."
+  },
+  "7.4": {
+   "en": "Ask: what would you do if you saw someone left out, waiting at the back?",
+   "t": "Tanyakan: apa yang akan kamu lakukan jika kamu melihat seseorang diketepikan, menunggu di belakang?"
+  },
+  "7.5": {
+   "en": "Ask: is it better to be strong, or to use your strength to help? Musa used his for others.",
+   "t": "Tanyakan: adakah lebih baik menjadi kuat, atau menggunakan kekuatanmu untuk membantu? Musa menggunakan kekuatannya untuk orang lain."
+  },
+  "7.6": {
+   "en": "Try lifting something heavy together, then something light. Ask: what is heavy for you that is easy for a grown-up?",
+   "t": "Cubalah mengangkat sesuatu yang berat bersama-sama, kemudian sesuatu yang ringan. Tanyakan: apa yang berat bagimu tetapi mudah bagi orang dewasa?"
+  },
+  "7.7": {
+   "en": "Ask: how many animals have you helped look after? Count the sheep together as you play.",
+   "t": "Tanyakan: berapa ekor haiwan yang pernah kamu bantu jaga? Kiralah kambing-kambing itu bersama-sama semasa bermain."
+  },
+  "7.8": {
+   "en": "Musa had nothing left, so he asked Allah. Ask: what do you ask Allah for when you need something?",
+   "t": "Musa tidak mempunyai apa-apa lagi, maka dia meminta kepada Allah. Tanyakan: apa yang kamu minta daripada Allah apabila kamu memerlukan sesuatu?"
+  },
+  "7.9": {
+   "en": "Musa's prayer under the tree can be learnt: rabbi inni lima anzalta ilayya min khayrin faqir, 'My Lord, I am in dire need of whatever good thing You may send me' (28:24).",
+   "t": "Doa Musa di bawah pokok boleh dihafal: rabbi inni lima anzalta ilayya min khayrin faqir, 'Wahai Tuhanku, sesungguhnya aku sangat memerlukan apa jua kebaikan yang Engkau turunkan kepadaku' (28:24)."
+  },
+  "7.10": {
+   "en": "Name each card from the well as you match it.",
+   "t": "Namakan setiap kad dari perigi semasa memadankannya."
+  },
+  "8.1": {
+   "en": "One of the two women came walking shyly with her father's invitation. Musa told his story and the old man said: do not be afraid, you are safe now. A daughter said: hire him, the best to hire is the strong and trustworthy. The father offered marriage to one of his daughters for eight years of work, ten if Musa chose, and Musa agreed. The verses do not name the father.\n\nFrom the commentary, not the verses: Musa asked her to walk behind him and throw a pebble to show the way (reported from Umar, Ibn Abbas and others, as her explanation of 'trustworthy'); and Musa completed the longer term, ten years, which the tafsir quotes from al-Bukhari on the authority of Ibn Abbas.\n\nShia narrations name the old man as the Prophet Shu'ayb; Sunni scholars are divided on it, and the verses do not say. The same narrations also tell the two details above.",
+   "t": "Salah seorang daripada dua wanita itu datang berjalan dengan malu-malu membawa jemputan ayahnya. Musa menceritakan kisahnya dan lelaki tua itu berkata: jangan takut, kamu sudah selamat sekarang. Seorang anak perempuannya berkata: upahlah dia, sebaik-baik orang yang diupah ialah yang kuat lagi amanah. Ayahnya menawarkan perkahwinan dengan salah seorang anak perempuannya sebagai balasan lapan tahun bekerja, sepuluh jika Musa mahu, dan Musa bersetuju. Ayat-ayat itu tidak menamakan ayahnya.\n\nDaripada tafsir, bukan daripada ayat: Musa memintanya berjalan di belakangnya dan melontar batu kecil untuk menunjukkan jalan (diriwayatkan daripada Umar, Ibnu Abbas dan lain-lain, sebagai penjelasannya tentang 'amanah'); dan Musa menyempurnakan tempoh yang lebih panjang, sepuluh tahun, yang dipetik oleh tafsir daripada al-Bukhari atas riwayat Ibnu Abbas.\n\nRiwayat-riwayat Syiah menamakan lelaki tua itu sebagai Nabi Syuaib; ulama Sunni berbeza pendapat tentangnya, dan ayat-ayat itu tidak menyatakannya. Riwayat-riwayat yang sama juga menceritakan dua butiran di atas."
+  },
+  "8.2": {
+   "en": "Ask: how did Musa show respect? Talk about good manners when walking with others.",
+   "t": "Tanyakan: bagaimana Musa menunjukkan rasa hormat? Berbuallah tentang adab yang baik ketika berjalan bersama orang lain."
+  },
+  "8.3": {
+   "en": "Ask: how do you give directions to someone? Practise: 'left, right, straight on.'",
+   "t": "Tanyakan: bagaimana kamu memberi arah kepada seseorang? Berlatihlah: 'kiri, kanan, terus.'"
+  },
+  "8.4": {
+   "en": "In the Shia narrations (Hayat al-Qulub) the old man of Madyan is the Prophet Shu'ayb; Sunni scholars are divided. Ask: what does it feel like when someone says 'you are safe now'?",
+   "t": "Dalam riwayat-riwayat Syiah (Hayat al-Qulub) lelaki tua dari Madyan itu ialah Nabi Syuaib; ulama Sunni berbeza pendapat. Tanyakan: bagaimana rasanya apabila seseorang berkata 'kamu sudah selamat sekarang'?"
+  },
+  "8.5": {
+   "en": "'The best person to hire is one who is strong and trustworthy' (28:26). Ask: what makes you a good helper at home?",
+   "t": "'Sebaik-baik orang yang kamu upah ialah yang kuat lagi amanah' (28:26). Tanyakan: apa yang menjadikanmu pembantu yang baik di rumah?"
+  },
+  "8.6": {
+   "en": "Ask: which is more important, being strong or being honest? Can someone be both?",
+   "t": "Tanyakan: yang mana lebih penting, menjadi kuat atau jujur? Bolehkah seseorang menjadi kedua-duanya?"
+  },
+  "8.7": {
+   "en": "Ask: what do people promise when they marry? Talk about a wedding your family remembers.",
+   "t": "Tanyakan: apa yang dijanjikan oleh orang apabila mereka berkahwin? Berbuallah tentang majlis perkahwinan yang diingati oleh keluarga anda."
+  },
+  "8.8": {
+   "en": "Count the ten years together. Ask: what will you be doing in ten years?",
+   "t": "Kiralah sepuluh tahun itu bersama-sama. Tanyakan: apa yang akan kamu lakukan sepuluh tahun lagi?"
+  },
+  "8.9": {
+   "en": "Ask: why do sheep need a shepherd? Many prophets were shepherds for a time.",
+   "t": "Tanyakan: mengapa kambing memerlukan pengembala? Ramai nabi pernah menjadi pengembala untuk satu tempoh."
+  },
+  "8.10": {
+   "en": "While solving, ask your child to describe life in Madyan.",
+   "t": "Semasa menyelesaikan, mintalah anak anda menggambarkan kehidupan di Madyan."
+  },
+  "9.1": {
+   "en": "When his term was complete Musa was travelling with his family and saw a fire. He told them to wait: he might bring a burning brand, or find guidance there. He was called: 'Musa! I am your Lord. Take off your shoes: you are in the sacred valley of Tuwa. I have chosen you, so listen to what is revealed. I am Allah; there is no god but Me. So worship Me and keep up the prayer so that you remember Me.' Verse 28:30 says the call came from the right side of the valley, from a tree on blessed ground.\n\nThe pictures show a fire and a light, and nothing else. Allah is not shown, and no angel is shown anywhere in this game.",
+   "t": "Apabila tempohnya selesai, Musa sedang mengembara bersama keluarganya dan melihat api. Dia menyuruh mereka menunggu: dia mungkin dapat membawa sepuntung kayu yang menyala, atau menemui petunjuk di sana. Dia diseru: 'Wahai Musa! Sesungguhnya Aku ialah Tuhanmu. Tanggalkanlah kedua-dua kasutmu: sesungguhnya kamu berada di lembah yang suci, Tuwa. Aku telah memilihmu, maka dengarlah apa yang diwahyukan. Sesungguhnya Akulah Allah; tiada tuhan melainkan Aku. Maka sembahlah Aku dan dirikanlah solat untuk mengingati-Ku.' Ayat 28:30 menyatakan seruan itu datang dari sebelah kanan lembah, dari sebatang pokok di tanah yang diberkati.\n\nGambar-gambarnya menunjukkan api dan cahaya, dan tiada yang lain. Allah tidak ditunjukkan, dan tiada malaikat ditunjukkan di mana-mana dalam permainan ini."
+  },
+  "9.2": {
+   "en": "Ask: what would you do if you saw a fire in the dark? Talk about fire safety too.",
+   "t": "Tanyakan: apa yang akan kamu lakukan jika kamu melihat api dalam gelap? Berbuallah tentang keselamatan daripada api juga."
+  },
+  "9.3": {
+   "en": "Turn off the lights for a moment and look for a small light together. Ask: how does the light help?",
+   "t": "Padamkan lampu seketika dan carilah satu cahaya kecil bersama-sama. Tanyakan: bagaimana cahaya itu membantu?"
+  },
+  "9.4": {
+   "en": "Ask: what do you think Musa expected to find at the fire?",
+   "t": "Tanyakan: apa agaknya yang Musa sangka akan ditemuinya di api itu?"
+  },
+  "9.5": {
+   "en": "Ask: why do we take off our shoes at the mosque? Respect for holy places.",
+   "t": "Tanyakan: mengapa kita menanggalkan kasut di masjid? Menghormati tempat-tempat suci."
+  },
+  "9.6": {
+   "en": "A good moment to remind your child: shoes off at the door of the mosque, and placed neatly.",
+   "t": "Saat yang baik untuk mengingatkan anak anda: tanggalkan kasut di pintu masjid, dan susun dengan kemas."
+  },
+  "9.7": {
+   "en": "'Keep up the prayer to remember Me' (20:14). Ask: why do we pray? To remember Allah.",
+   "t": "'Dirikanlah solat untuk mengingati-Ku' (20:14). Tanyakan: mengapa kita bersolat? Untuk mengingati Allah."
+  },
+  "9.8": {
+   "en": "Ask your child to be still and quiet for a minute, and listen. What can you hear?",
+   "t": "Mintalah anak anda duduk diam dan senyap selama seminit, dan mendengar. Apa yang dapat kamu dengar?"
+  },
+  "9.9": {
+   "en": "Talk about it: Musa is called kalimullah, the one Allah spoke to.",
+   "t": "Berbuallah tentangnya: Musa digelar Kalimullah, orang yang diajak berbicara oleh Allah."
+  },
+  "10.1": {
+   "en": "Asked what was in his right hand, Musa said it was his staff: he leaned on it, kept his sheep in order with it, and had other uses for it. Thrown down, it became a fast-moving snake and he turned to flee; he was told to pick it up without fear and it would return to its former state. His hand, drawn out from his side, came out white and unharmed. These were two signs for Pharaoh and his chiefs.\n\n'Shone like the moon' is from the commentary: the hand came out 'shining as if it were a half moon', free of any disease (reported from Ibn Abbas, Mujahid, Ikrimah, Qatadah, Ad-Dahhak and As-Suddi); Al-Hasan al-Basri said 'as if it were a lamp'.",
+   "t": "Apabila ditanya apa yang ada di tangan kanannya, Musa berkata itu tongkatnya: dia bertongkat dengannya, menghalau kambing-kambingnya dengannya, dan ada kegunaan lain baginya. Apabila dicampakkan, ia menjadi seekor ular yang bergerak pantas dan dia berpaling untuk lari; dia disuruh mengambilnya tanpa takut dan ia akan kembali seperti asalnya. Tangannya, apabila dikeluarkan dari sisinya, keluar putih tanpa cacat. Inilah dua tanda untuk Firaun dan para pembesarnya.\n\n'Bersinar seperti bulan' daripada tafsir: tangan itu keluar 'bersinar seolah-olah ia separuh bulan', bebas daripada sebarang penyakit (diriwayatkan daripada Ibnu Abbas, Mujahid, Ikrimah, Qatadah, Ad-Dahhak dan As-Suddi); Al-Hasan al-Basri berkata 'seolah-olah ia pelita'."
+  },
+  "10.2": {
+   "en": "Ask: what do you think will happen to the staff? Let your child guess.",
+   "t": "Tanyakan: apa agaknya yang akan berlaku kepada tongkat itu? Biarkan anak anda meneka."
+  },
+  "10.3": {
+   "en": "Ask: who made the staff become a snake? Only Allah can do that. Musa did not do it by himself.",
+   "t": "Tanyakan: siapa yang menjadikan tongkat itu ular? Hanya Allah yang boleh melakukannya. Musa tidak melakukannya sendiri."
+  },
+  "10.4": {
+   "en": "Ask: how did Musa feel when his hand shone? Surprised? Happy?",
+   "t": "Tanyakan: bagaimana perasaan Musa apabila tangannya bersinar? Terkejut? Gembira?"
+  },
+  "10.5": {
+   "en": "Ask: what are some of the signs of Allah we can see every day? (The sun rising, rain, a baby growing.)",
+   "t": "Tanyakan: apakah tanda-tanda Allah yang boleh kita lihat setiap hari? (Matahari terbit, hujan, bayi yang membesar.)"
+  },
+  "10.6": {
+   "en": "Ask: is it easy to go and speak to someone who is unkind? What would help you be brave?",
+   "t": "Tanyakan: mudahkah pergi dan bercakap dengan seseorang yang tidak baik? Apa yang akan membantumu berani?"
+  },
+  "10.7": {
+   "en": "Let your child explain each match out loud.",
+   "t": "Biarkan anak anda menerangkan setiap padanan dengan kuat."
+  },
+  "10.8": {
+   "en": "Name each card from that night as you match it.",
+   "t": "Namakan setiap kad dari malam itu semasa memadankannya."
+  },
+  "11.1": {
+   "en": "How Musa met Harun again is not described in the verses; 20:42 says 'go, you and your brother', so the game says only that Harun went with him.\n\nMusa asked: lift up my heart, ease my task, untie my tongue so they may understand my words, and give me a helper from my family, Harun my brother; strengthen me through him and let him share my task, so that we may glorify and remember You much. He was told: your request is granted.\n\nVerses 28:33–35: Musa says he killed one of their men and fears they may kill him, and that Harun is the better speaker. The game says only that he was afraid of what they might do to him. Verses 20:42–46: go, both of you; speak to him gently so that he may take heed or show respect; do not be afraid, I am with you both, hearing and seeing.\n\nThe commentary reports from Ibn Abbas that Harun was made a prophet at that same moment, and that A'ishah agreed with a man who said no brother was ever more useful to his brother than Musa was in this prayer.",
+   "t": "Bagaimana Musa bertemu Harun semula tidak digambarkan dalam ayat-ayat itu; 20:42 menyatakan 'pergilah kamu dan saudaramu', jadi permainan ini hanya menyatakan bahawa Harun pergi bersamanya.\n\nMusa memohon: lapangkanlah dadaku, mudahkanlah urusanku, lepaskanlah kekakuan lidahku supaya mereka faham kata-kataku, dan jadikanlah untukku seorang pembantu daripada keluargaku, Harun saudaraku; kuatkanlah aku dengannya dan jadikanlah dia sekutu dalam urusanku, supaya kami banyak bertasbih dan banyak mengingati-Mu. Dia dijawab: permintaanmu diperkenankan.\n\nAyat 28:33–35: Musa berkata dia telah membunuh seorang daripada mereka dan takut mereka akan membunuhnya, dan bahawa Harun lebih fasih berkata-kata. Permainan ini hanya menyatakan dia takut akan apa yang mungkin mereka lakukan kepadanya. Ayat 20:42–46: pergilah kamu berdua; berkatalah kepadanya dengan lemah lembut, mudah-mudahan dia ingat atau takut; janganlah kamu takut, sesungguhnya Aku bersama kamu berdua, Aku mendengar dan melihat.\n\nTafsir meriwayatkan daripada Ibnu Abbas bahawa Harun dijadikan nabi pada saat itu juga, dan bahawa A'isyah bersetuju dengan seorang lelaki yang berkata tiada saudara yang lebih bermanfaat kepada saudaranya daripada Musa dalam doa ini."
+  },
+  "11.2": {
+   "en": "Musa's prayer is a beautiful one to learn: rabbishrah li sadri, wa yassir li amri (20:25-26). Many families say it before exams or a new school year.",
+   "t": "Doa Musa ialah doa yang indah untuk dihafal: rabbishrah li sadri, wa yassir li amri (20:25-26). Banyak keluarga membacanya sebelum peperiksaan atau tahun persekolahan baharu."
+  },
+  "11.3": {
+   "en": "Ask: who helps you be brave? Musa asked for his brother. Who would you ask for?",
+   "t": "Tanyakan: siapa yang membantumu menjadi berani? Musa meminta saudaranya. Siapa yang akan kamu minta?"
+  },
+  "11.4": {
+   "en": "Say the prayer together line by line before tapping.",
+   "t": "Bacalah doa itu bersama-sama baris demi baris sebelum mengetik."
+  },
+  "11.5": {
+   "en": "Ask: did Allah listen to Musa? Does Allah listen to you? Yes, always.",
+   "t": "Tanyakan: adakah Allah mendengar Musa? Adakah Allah mendengarmu? Ya, sentiasa."
+  },
+  "11.6": {
+   "en": "Ask: what is it like to do something hard with a brother, sister or friend beside you?",
+   "t": "Tanyakan: bagaimana rasanya melakukan sesuatu yang sukar dengan abang, kakak, adik atau kawan di sisimu?"
+  },
+  "11.7": {
+   "en": "Allah told them to speak gently, even to Pharaoh. Ask: is it easy to be gentle with someone who is unkind? Why is it better?",
+   "t": "Allah menyuruh mereka berkata dengan lemah lembut, walaupun kepada Firaun. Tanyakan: mudahkah berlemah lembut dengan seseorang yang tidak baik? Mengapa ia lebih baik?"
+  },
+  "11.8": {
+   "en": "Practise saying the same sentence gently and harshly. Ask: which one would you listen to?",
+   "t": "Berlatihlah menyebut ayat yang sama dengan lembut dan dengan kasar. Tanyakan: yang mana akan kamu dengar?"
+  },
+  "11.9": {
+   "en": "Ask: what gentle words do you use at home? Make a list together.",
+   "t": "Tanyakan: kata-kata lembut apa yang kamu gunakan di rumah? Buatlah senarai bersama-sama."
+  },
+  "12.1": {
+   "en": "The two brothers say: we are messengers of your Lord; send the Children of Israel with us and do not oppress them. When Musa brought clear signs, Pharaoh's people called them conjuring tricks never heard of from their forefathers. Pharaoh accused Musa of coming to drive them from their land with sorcery and demanded an appointment; Musa named the day of the feast, with the people gathered when the sun is high.\n\nThe long exchange about who the Lord is (20:49–55) is left out of the game.",
+   "t": "Dua beradik itu berkata: kami ialah utusan Tuhanmu; lepaskanlah Bani Israel bersama kami dan janganlah kamu menyeksa mereka. Apabila Musa membawa tanda-tanda yang nyata, kaum Firaun menyebutnya sihir yang tidak pernah didengar daripada nenek moyang mereka. Firaun menuduh Musa datang untuk mengusir mereka dari negeri mereka dengan sihir dan meminta satu masa yang dijanjikan; Musa menetapkan hari perayaan, dengan orang ramai berhimpun ketika matahari naik tinggi.\n\nPerbincangan panjang tentang siapa Tuhan itu (20:49–55) tidak dimasukkan dalam permainan ini."
+  },
+  "12.2": {
+   "en": "Ask: what signs did Allah give Musa? Can your child remember both?",
+   "t": "Tanyakan: tanda-tanda apa yang diberikan oleh Allah kepada Musa? Bolehkah anak anda mengingati kedua-duanya?"
+  },
+  "12.3": {
+   "en": "Ask: why do you think Pharaoh did not believe, even after seeing the signs?",
+   "t": "Tanyakan: mengapa agaknya Firaun tidak percaya, walaupun selepas melihat tanda-tanda itu?"
+  },
+  "12.4": {
+   "en": "Ask: what does it mean to be stubborn? Have you ever not wanted to listen, even when someone was right?",
+   "t": "Tanyakan: apa ertinya degil? Pernahkah kamu tidak mahu mendengar, walaupun seseorang itu betul?"
+  },
+  "12.5": {
+   "en": "Ask: how do you think Musa felt when Pharaoh mocked him?",
+   "t": "Tanyakan: bagaimana agaknya perasaan Musa apabila Firaun mengejeknya?"
+  },
+  "12.6": {
+   "en": "Ask: why did Musa choose a day when everyone was there, in daylight? So everyone could see the truth.",
+   "t": "Tanyakan: mengapa Musa memilih hari di mana semua orang ada, pada siang hari? Supaya semua orang dapat melihat kebenaran."
+  },
+  "12.7": {
+   "en": "Ask: what festivals do we celebrate? What do people do on Eid?",
+   "t": "Tanyakan: perayaan apa yang kita sambut? Apa yang dilakukan oleh orang pada Hari Raya?"
+  },
+  "12.8": {
+   "en": "Count the people as they come. Ask: why would everyone come to watch?",
+   "t": "Kiralah orang-orang itu semasa mereka datang. Tanyakan: mengapa semua orang datang untuk menonton?"
+  },
+  "12.9": {
+   "en": "While solving, ask: what is happening in this picture?",
+   "t": "Semasa menyelesaikan, tanyakan: apa yang sedang berlaku dalam gambar ini?"
+  },
+  "13.1": {
+   "en": "Pharaoh gathered his resources and returned. Musa warned the sorcerers not to invent lies against Allah. They asked whether he would throw first; he told them to throw. Through their sorcery their ropes and staffs seemed to him to be moving, and Musa was inwardly alarmed. He was told: do not be afraid, you have the upper hand; throw what is in your right hand and it will swallow what they have produced, which is only a sorcerer's trick. The sorcerers threw themselves down and said: we believe in the Lord of Harun and Musa.",
+   "t": "Firaun mengumpulkan segala tipu dayanya dan kembali. Musa memperingatkan ahli-ahli sihir supaya jangan mengada-adakan dusta terhadap Allah. Mereka bertanya sama ada dia mahu melontar dahulu; dia menyuruh mereka melontar. Dengan sihir mereka, tali-tali dan tongkat-tongkat mereka terbayang kepadanya seolah-olah bergerak, dan Musa berasa takut dalam hatinya. Dia diberitahu: jangan takut, kamulah yang lebih unggul; lontarkanlah apa yang ada di tangan kananmu, nescaya ia akan menelan apa yang mereka buat, kerana itu hanyalah tipu daya ahli sihir. Ahli-ahli sihir itu menjatuhkan diri bersujud dan berkata: kami beriman kepada Tuhan Harun dan Musa."
+  },
+  "13.2": {
+   "en": "Musa warned the magicians not to make up lies about Allah. Ask: is a trick the same as a lie?",
+   "t": "Musa memperingatkan ahli-ahli sihir supaya jangan mengada-adakan dusta tentang Allah. Tanyakan: adakah helah sama dengan dusta?"
+  },
+  "13.3": {
+   "en": "Ask: why do you think Musa let them go first?",
+   "t": "Tanyakan: mengapa agaknya Musa membiarkan mereka melontar dahulu?"
+  },
+  "13.4": {
+   "en": "Ask: have you ever seen a magic trick? Did it really change anything, or only look like it?",
+   "t": "Tanyakan: pernahkah kamu melihat silap mata? Adakah ia benar-benar mengubah sesuatu, atau hanya kelihatan begitu?"
+  },
+  "13.5": {
+   "en": "Ask: how can we tell what is real and what is a trick? Looking closely helps.",
+   "t": "Tanyakan: bagaimana kita boleh tahu apa yang benar dan apa yang helah? Melihat dengan teliti membantu."
+  },
+  "13.6": {
+   "en": "Even prophets feel afraid. Ask: what did Allah tell Musa? Whenever you are afraid, you can remember that Allah is with you.",
+   "t": "Para nabi juga berasa takut. Tanyakan: apa yang difirmankan oleh Allah kepada Musa? Setiap kali kamu takut, kamu boleh ingat bahawa Allah bersamamu."
+  },
+  "13.7": {
+   "en": "Ask: what do you think will happen when Musa throws the staff?",
+   "t": "Tanyakan: apa agaknya yang akan berlaku apabila Musa melontar tongkatnya?"
+  },
+  "13.8": {
+   "en": "Ask: who was stronger, the magic or the sign of Allah?",
+   "t": "Tanyakan: siapa yang lebih kuat, sihir atau tanda daripada Allah?"
+  },
+  "13.9": {
+   "en": "Ask: how did the magicians feel when they saw this? Surprised? Amazed?",
+   "t": "Tanyakan: bagaimana perasaan ahli-ahli sihir apabila mereka melihat ini? Terkejut? Kagum?"
+  },
+  "13.10": {
+   "en": "The magicians changed their minds in a moment. Ask: is it brave to say 'I was wrong'?",
+   "t": "Ahli-ahli sihir itu berubah fikiran dalam sekelip mata. Tanyakan: adakah berani untuk berkata 'saya salah'?"
+  },
+  "13.11": {
+   "en": "Ask: what made the magicians believe? They knew tricks, so they knew this was real.",
+   "t": "Tanyakan: apa yang membuat ahli-ahli sihir itu beriman? Mereka tahu tentang helah, jadi mereka tahu ini benar."
+  },
+  "14.1": {
+   "en": "Pharaoh said: how dare you believe before I give you permission? He threatened to cut off their hands and feet on opposite sides and crucify them on palm trunks. The game says only that he would punish them terribly. They answered that they would never prefer him to the clear signs and to their Creator: 'decide whatever you will: you can only decide matters of this present life.'\n\nVerse 40:28: a believing man of Pharaoh's family who had hidden his faith said, 'How can you kill a man just for saying, My Lord is Allah?' The game says 'hurt'. Verse 66:11 gives the prayer of Pharaoh's wife. The Qur'an does not say at what point in the story the believing man spoke or the queen prayed; the game places them here.\n\nVerses 28:38–39: Pharaoh tells his chiefs he knows of no god for them but himself, and orders Haman to bake clay bricks and build a tall building so that he may climb to Musa's God. The verses fetched for this game do not say what became of the building, so neither does the game.\n\nShia narrations name the believer of Pharaoh's family Hizqil.",
+   "t": "Firaun berkata: beraninya kamu beriman sebelum aku memberi izin kepadamu? Dia mengancam untuk memotong tangan dan kaki mereka secara bersilang dan menyalib mereka pada batang-batang pokok kurma. Permainan ini hanya menyatakan dia akan menghukum mereka dengan dahsyat. Mereka menjawab bahawa mereka tidak akan sekali-kali mengutamakannya daripada tanda-tanda yang nyata dan Pencipta mereka: 'putuskanlah apa yang hendak kamu putuskan: kamu hanya dapat memutuskan urusan kehidupan dunia ini.'\n\nAyat 40:28: seorang lelaki beriman daripada keluarga Firaun yang menyembunyikan imannya berkata, 'Patutkah kamu membunuh seorang lelaki kerana dia berkata, Tuhanku ialah Allah?' Permainan ini menyebut 'menyakiti'. Ayat 66:11 memberikan doa isteri Firaun. Al-Quran tidak menyatakan pada bahagian mana dalam kisah ini lelaki beriman itu berkata-kata atau permaisuri itu berdoa; permainan ini meletakkannya di sini.\n\nAyat 28:38–39: Firaun memberitahu para pembesarnya bahawa dia tidak mengetahui tuhan bagi mereka selain dirinya, dan menyuruh Haman membakar batu bata daripada tanah liat dan membina sebuah bangunan yang tinggi supaya dia dapat naik kepada Tuhan Musa. Ayat-ayat yang diambil untuk permainan ini tidak menyatakan apa yang berlaku kepada bangunan itu, jadi permainan ini juga tidak menyatakannya.\n\nRiwayat-riwayat Syiah menamakan lelaki beriman daripada keluarga Firaun itu Hizqil."
+  },
+  "14.2": {
+   "en": "Ask: what does it mean to choose the truth, even when it is hard?",
+   "t": "Tanyakan: apa ertinya memilih kebenaran, walaupun ia sukar?"
+  },
+  "14.3": {
+   "en": "Talk about courage: who is the bravest person you know?",
+   "t": "Berbuallah tentang keberanian: siapakah orang paling berani yang kamu kenal?"
+  },
+  "14.4": {
+   "en": "Ask: is it brave to speak up in a crowd? The believer in Pharaoh's family did it (40:28).\n\nIn Hayat al-Qulub, the believer in Pharaoh's family is named Hizqil. The Qur'an does not name him.",
+   "t": "Tanyakan: adakah berani untuk bersuara di hadapan orang ramai? Lelaki beriman dalam keluarga Firaun melakukannya (40:28).\n\nDalam Hayat al-Qulub, lelaki beriman dalam keluarga Firaun itu dinamakan Hizqil. Al-Quran tidak menamakannya."
+  },
+  "14.5": {
+   "en": "Asiya's prayer: 'My Lord, build me a house near You in the Garden' (66:11). Ask: what would you ask Allah for?",
+   "t": "Doa Asiah: 'Wahai Tuhanku, binalah untukku sebuah rumah di sisi-Mu dalam syurga' (66:11). Tanyakan: apa yang akan kamu pohon daripada Allah?"
+  },
+  "14.6": {
+   "en": "Hold the hands together and say Asiya's prayer slowly.",
+   "t": "Satukan tangan bersama-sama dan bacalah doa Asiah perlahan-lahan."
+  },
+  "14.7": {
+   "en": "Ask: can people build their way to Allah? What did Pharaoh misunderstand?",
+   "t": "Tanyakan: bolehkah manusia membina jalan untuk sampai kepada Allah? Apa yang disalah fahami oleh Firaun?"
+  },
+  "14.8": {
+   "en": "Build a tower of cups or blocks together. Ask: how high can it go before it falls?",
+   "t": "Binalah menara daripada cawan atau blok bersama-sama. Tanyakan: setinggi mana ia boleh pergi sebelum jatuh?"
+  },
+  "14.9": {
+   "en": "Ask your child which brave person in this chapter they liked best, and why.",
+   "t": "Tanyalah anak anda orang berani yang mana dalam bab ini yang paling disukainya, dan mengapa."
+  },
+  "15.1": {
+   "en": "Pharaoh's people were afflicted with years of drought and crop failure; when good came they claimed it as their due, and when harm came they blamed Musa. They said they would never believe whatever sign he brought. Then came the flood, the locusts, the lice, the frogs and the blood, 'all clear signs'. Each time they asked Musa to pray and promised to believe and release the Children of Israel, and each time they broke the promise.\n\nDetails from the commentary, not the verses. The 'flood': Ibn Abbas said it was heavy rain that ruined crops and fruit; he is also reported to have said mass death, and Mujahid said water carrying plague, so the early scholars differed. The locusts eating the nails of the doors is reported from Mujahid. The third sign (qummal): Ibn Abbas said grain weevils, or small wingless locusts; Al-Hasan and Sa'id bin Jubayr said small black insects; the game says 'tiny bugs in the grain'. Frogs in the houses, food, pots and clothes is from Sa'id bin Jubayr and Ibn Ishaq.\n\nThe fifth sign is blood: the tafsir says rivers, wells and containers of water turned to blood. The game says the water 'turned red'.",
+   "t": "Kaum Firaun ditimpa kemarau dan kekurangan hasil tanaman bertahun-tahun; apabila kebaikan datang mereka mendakwa itu hak mereka, dan apabila keburukan datang mereka menyalahkan Musa. Mereka berkata mereka tidak akan sekali-kali beriman walau apa pun tanda yang dibawanya. Kemudian datanglah taufan, belalang, kutu, katak dan darah, 'sebagai tanda-tanda yang nyata'. Setiap kali mereka meminta Musa berdoa dan berjanji akan beriman dan melepaskan Bani Israel, dan setiap kali mereka memungkiri janji itu.\n\nButiran daripada tafsir, bukan daripada ayat. 'Taufan': Ibnu Abbas berkata ia hujan lebat yang merosakkan tanaman dan buah-buahan; dia juga diriwayatkan berkata kematian beramai-ramai, dan Mujahid berkata air yang membawa wabak, maka ulama terdahulu berbeza pendapat. Belalang memakan paku-paku pintu diriwayatkan daripada Mujahid. Tanda ketiga (qummal): Ibnu Abbas berkata kumbang bijirin, atau belalang kecil yang tidak bersayap; Al-Hasan dan Sa'id bin Jubair berkata serangga hitam yang kecil; permainan ini menyebut 'serangga kecil dalam bijirin'. Katak di dalam rumah, makanan, periuk dan pakaian daripada Sa'id bin Jubair dan Ibnu Ishaq.\n\nTanda kelima ialah darah: tafsir menyatakan sungai-sungai, perigi-perigi dan bekas-bekas air bertukar menjadi darah. Permainan ini menyatakan air itu 'menjadi merah'."
+  },
+  "15.2": {
+   "en": "Ask: what does rain do for crops? When can too much rain be a problem?",
+   "t": "Tanyakan: apa yang dilakukan oleh hujan untuk tanaman? Bilakah hujan yang terlalu banyak boleh menjadi masalah?"
+  },
+  "15.3": {
+   "en": "Ask: have you ever seen locusts or grasshoppers? What do they eat?",
+   "t": "Tanyakan: pernahkah kamu melihat belalang? Apa yang dimakannya?"
+  },
+  "15.4": {
+   "en": "Ask: how do farmers protect their crops today?",
+   "t": "Tanyakan: bagaimana petani melindungi tanaman mereka hari ini?"
+  },
+  "15.5": {
+   "en": "Ask: which would you find worst, the bugs or the frogs? Make it light-hearted.",
+   "t": "Tanyakan: yang mana paling kamu tidak suka, serangga atau katak? Jadikannya ceria."
+  },
+  "15.6": {
+   "en": "Ask your child to count the frogs out loud as they find them.",
+   "t": "Mintalah anak anda mengira katak-katak itu dengan kuat semasa dia menemuinya."
+  },
+  "15.7": {
+   "en": "Ask: why did Allah send these signs? To give Pharaoh's people a chance to change.",
+   "t": "Tanyakan: mengapa Allah menghantar tanda-tanda ini? Untuk memberi kaum Firaun peluang untuk berubah."
+  },
+  "15.8": {
+   "en": "Ask: is a promise made when you're in trouble still a promise when the trouble goes away?",
+   "t": "Tanyakan: adakah janji yang dibuat ketika dalam kesusahan masih janji apabila kesusahan itu hilang?"
+  },
+  "15.9": {
+   "en": "Ask: who did they ask for help? Musa prayed, and Allah lifted the trouble.",
+   "t": "Tanyakan: kepada siapa mereka meminta bantuan? Musa berdoa, dan Allah mengangkat kesusahan itu."
+  },
+  "15.10": {
+   "en": "Ask: have you ever made a promise and forgotten it? How can we keep promises better?",
+   "t": "Tanyakan: pernahkah kamu berjanji dan terlupa? Bagaimana kita boleh menepati janji dengan lebih baik?"
+  },
+  "15.11": {
+   "en": "Ask: what should they have done? (Keep their promise, believe.)",
+   "t": "Tanyakan: apa yang sepatutnya mereka lakukan? (Menepati janji, beriman.)"
+  },
+  "15.12": {
+   "en": "Let your child name the five signs in order before tapping.",
+   "t": "Biarkan anak anda menamakan lima tanda itu mengikut urutan sebelum mengetik."
+  },
+  "16.1": {
+   "en": "Verse 20:77: 'Go out at night with My servants and strike a dry path for them across the sea. Have no fear of being overtaken.' Verses 26:60–62: Pharaoh and his people pursued them at sunrise; when the two sides came in sight of each other Musa's followers said, 'We shall definitely be caught', and Musa said, 'No, my Lord is with me: He will guide me.'\n\nThe commentary says they were caught up with at the shore, the sea in front and Pharaoh behind. The lamps in the 'wake the families' activity are ours.",
+   "t": "Ayat 20:77: 'Pergilah pada waktu malam bersama hamba-hamba-Ku dan buatlah untuk mereka jalan yang kering di laut. Janganlah kamu takut akan dikejar.' Ayat 26:60–62: Firaun dan kaumnya mengejar mereka ketika matahari terbit; apabila kedua-dua pihak saling melihat, pengikut-pengikut Musa berkata, 'Sesungguhnya kita pasti akan tertangkap', dan Musa berkata, 'Sekali-kali tidak, sesungguhnya Tuhanku bersamaku: Dia akan memberi petunjuk kepadaku.'\n\nTafsir menyatakan mereka dapat dikejar di tepi pantai, laut di hadapan dan Firaun di belakang. Pelita-pelita dalam aktiviti 'kejutkan keluarga-keluarga' ialah tambahan kami."
+  },
+  "16.2": {
+   "en": "Ask: why did they have to be so quiet? Play a quiet game at home.",
+   "t": "Tanyakan: mengapa mereka perlu begitu senyap? Mainkan permainan senyap di rumah."
+  },
+  "16.3": {
+   "en": "Ask: if you had to leave at night, what would you take?",
+   "t": "Tanyakan: jika kamu terpaksa pergi pada waktu malam, apa yang akan kamu bawa?"
+  },
+  "16.4": {
+   "en": "Ask: how do you think the people felt following Musa in the dark? Trust is following someone you know is good.",
+   "t": "Tanyakan: bagaimana agaknya perasaan orang-orang yang mengikut Musa dalam gelap? Percaya ialah mengikut seseorang yang kamu tahu baik."
+  },
+  "16.5": {
+   "en": "Ask: why do you think Pharaoh chased them? He did not want to let them go.",
+   "t": "Tanyakan: mengapa agaknya Firaun mengejar mereka? Dia tidak mahu melepaskan mereka."
+  },
+  "16.6": {
+   "en": "Ask: what would you do with the sea in front and an army behind? Musa's answer is on the next page.",
+   "t": "Tanyakan: apa yang akan kamu lakukan dengan laut di hadapan dan tentera di belakang? Jawapan Musa ada di halaman seterusnya."
+  },
+  "16.7": {
+   "en": "'No! My Lord is with me. He will guide me' (26:62). A sentence worth learning by heart for scary moments.",
+   "t": "'Sekali-kali tidak! Sesungguhnya Tuhanku bersamaku. Dia akan memberi petunjuk kepadaku' (26:62). Ayat yang berbaloi dihafal untuk saat-saat yang menakutkan."
+  },
+  "16.8": {
+   "en": "Ask: when you are afraid, what can you say? Practise Musa's words together.",
+   "t": "Tanyakan: apabila kamu takut, apa yang boleh kamu katakan? Berlatihlah menyebut kata-kata Musa bersama-sama."
+  },
+  "16.9": {
+   "en": "While solving, ask: what do you think will happen next?",
+   "t": "Semasa menyelesaikan, tanyakan: apa agaknya yang akan berlaku seterusnya?"
+  },
+  "17.1": {
+   "en": "Verses 26:63–66: 'Strike the sea with your staff.' It parted, each side like a mighty mountain; Musa and all his companions were saved and the others were drowned. The game says the sea 'came crashing back' and that the army 'was gone'. Verses 10:90–92: as he was drowning Pharaoh said he believed in the God of the Children of Israel, and was answered, 'Now? When you had always been a rebel?' Only his body was saved, as a sign for those after him.\n\nFrom the commentary, not the verses: the twelve paths, one for each tribe (reported from Ibn Abbas); the openings like windows in the water through which they saw one another (As-Suddi); and the wind sent to dry the sea bed. The commentary gives an account in which the angels Jibril and Mika'il ride at the sea; the game does not use it.\n\nAshura: the tafsir quotes al-Bukhari, from Ibn Abbas, that the Prophet ﷺ found the Jews of Madinah fasting the day Musa was given victory over Pharaoh and said, 'You have more right to Musa than they, so fast it.' The Prophet ﷺ is mentioned in the narration and is not shown.",
+   "t": "Ayat 26:63–66: 'Pukullah laut itu dengan tongkatmu.' Laut itu terbelah, setiap belahan seperti gunung yang besar; Musa dan semua orang yang bersamanya diselamatkan dan yang lain ditenggelamkan. Permainan ini menyatakan laut itu 'kembali menghempas' dan tentera itu 'sudah tiada'. Ayat 10:90–92: ketika hampir tenggelam Firaun berkata dia beriman kepada Tuhan Bani Israel, dan dijawab, 'Adakah sekarang? Sedangkan kamu sebelum ini telah menderhaka?' Hanya jasadnya diselamatkan, sebagai tanda bagi orang-orang yang datang selepasnya.\n\nDaripada tafsir, bukan daripada ayat: dua belas jalan, satu untuk setiap suku (diriwayatkan daripada Ibnu Abbas); lubang-lubang seperti tingkap dalam air yang melaluinya mereka dapat melihat satu sama lain (As-Suddi); dan angin yang dihantar untuk mengeringkan dasar laut. Tafsir memberikan satu riwayat di mana malaikat Jibril dan Mikail menunggang ke laut; permainan ini tidak menggunakannya.\n\nAsyura: tafsir memetik al-Bukhari, daripada Ibnu Abbas, bahawa Nabi ﷺ mendapati orang Yahudi Madinah berpuasa pada hari Musa diberi kemenangan ke atas Firaun dan bersabda, 'Kamu lebih berhak ke atas Musa daripada mereka, maka berpuasalah.' Nabi ﷺ disebut dalam riwayat itu dan tidak ditunjukkan."
+  },
+  "17.2": {
+   "en": "Ask: who made the sea open, Musa or Allah? Musa struck; Allah opened it.",
+   "t": "Tanyakan: siapa yang membuka laut itu, Musa atau Allah? Musa memukul; Allah yang membukanya."
+  },
+  "17.3": {
+   "en": "Ask your child to imagine walking between two walls of water. What would you see? Fish?",
+   "t": "Mintalah anak anda membayangkan berjalan di antara dua dinding air. Apa yang akan kamu lihat? Ikan?"
+  },
+  "17.4": {
+   "en": "It is told (in the commentary) that there were twelve paths, one for each family. Ask: why would each family have its own path?",
+   "t": "Diceritakan (dalam tafsir) bahawa ada dua belas jalan, satu untuk setiap keluarga. Tanyakan: mengapa setiap keluarga mempunyai jalannya sendiri?"
+  },
+  "17.5": {
+   "en": "Ask: what does the wind do? Can you feel it today?",
+   "t": "Tanyakan: apa yang dilakukan oleh angin? Bolehkah kamu merasainya hari ini?"
+  },
+  "17.6": {
+   "en": "Count the twelve paths together, slowly.",
+   "t": "Kiralah dua belas jalan itu bersama-sama, perlahan-lahan."
+  },
+  "17.7": {
+   "en": "Ask: how do you think the people felt walking across? Scared? Amazed? Thankful?",
+   "t": "Tanyakan: bagaimana agaknya perasaan orang-orang itu berjalan menyeberang? Takut? Kagum? Bersyukur?"
+  },
+  "17.8": {
+   "en": "Say al-hamdu lillah together. Ask: what are you thankful for today?",
+   "t": "Ucapkan al-hamdu lillah bersama-sama. Tanyakan: apa yang kamu syukuri hari ini?"
+  },
+  "17.9": {
+   "en": "This page can be sad. Explain gently: Pharaoh chose not to listen, again and again, until it was too late.",
+   "t": "Halaman ini boleh menyedihkan. Terangkan dengan lembut: Firaun memilih untuk tidak mendengar, berulang kali, sehingga sudah terlambat."
+  },
+  "17.10": {
+   "en": "Ask: why is it important to believe and do good now, not only when we are in trouble?",
+   "t": "Tanyakan: mengapa penting untuk beriman dan berbuat baik sekarang, bukan hanya ketika kita dalam kesusahan?"
+  },
+  "17.11": {
+   "en": "Allah kept Pharaoh's body 'as a sign' (10:92). Ask: what lesson does Pharaoh's story teach?",
+   "t": "Allah memelihara jasad Firaun 'sebagai tanda' (10:92). Tanyakan: apa pengajaran kisah Firaun?"
+  },
+  "17.12": {
+   "en": "Many Muslims fast on 'Ashura, and the day before or after it. Ask your family about your own traditions for 'Ashura.",
+   "t": "Ramai Muslim berpuasa pada hari Asyura, dan sehari sebelum atau selepasnya. Tanyalah keluarga anda tentang tradisi anda sendiri untuk Asyura."
+  },
+  "17.13": {
+   "en": "Ask your child: who saves us when we are in trouble? Make a short dua of thanks together.",
+   "t": "Tanyalah anak anda: siapa yang menyelamatkan kita apabila kita dalam kesusahan? Bacalah doa kesyukuran yang pendek bersama-sama."
+  },
+  "17.14": {
+   "en": "Let your child tell the whole crossing in their own words.",
+   "t": "Biarkan anak anda menceritakan seluruh penyeberangan itu dengan kata-katanya sendiri."
+  },
+  "18.1": {
+   "en": "Verse 2:57: clouds were made to shade them, and manna and quails were sent down: 'Eat the good things We have provided for you.' Verse 2:60: Musa prayed for water for his people and was told to strike the rock with his staff; twelve springs gushed out and each group knew its drinking place.\n\nThe commentary reports from Ibn Abbas that it was a square stone and that three springs came from each side, one spring for each tribe. The game does not say what manna looked like; the sparkles in the gathering activity are only a stand-in.",
+   "t": "Ayat 2:57: awan dijadikan untuk menaungi mereka, dan manna dan burung salwa diturunkan: 'Makanlah daripada rezeki yang baik yang telah Kami berikan kepadamu.' Ayat 2:60: Musa berdoa memohon air untuk kaumnya dan disuruh memukul batu dengan tongkatnya; dua belas mata air memancar keluar dan setiap golongan mengetahui tempat minum masing-masing.\n\nTafsir meriwayatkan daripada Ibnu Abbas bahawa ia batu yang empat segi dan tiga mata air keluar dari setiap sisi, satu mata air untuk setiap suku. Permainan ini tidak menyatakan rupa manna; kilauan dalam aktiviti mengumpul hanyalah gantian."
+  },
+  "18.2": {
+   "en": "Ask: what is your favourite food? Who gives it to us in the end?",
+   "t": "Tanyakan: apa makanan kegemaranmu? Siapa yang akhirnya memberikannya kepada kita?"
+  },
+  "18.3": {
+   "en": "Ask: what would it be like to find breakfast on the ground every morning?",
+   "t": "Tanyakan: bagaimana rasanya menemui sarapan di atas tanah setiap pagi?"
+  },
+  "18.4": {
+   "en": "Count the birds together. Ask: have you seen quails or other small birds near your home?",
+   "t": "Kiralah burung-burung itu bersama-sama. Tanyakan: pernahkah kamu melihat burung puyuh atau burung kecil lain berhampiran rumahmu?"
+  },
+  "18.5": {
+   "en": "Ask: how does it feel to be very thirsty? Have a glass of water together and say bismillah.",
+   "t": "Tanyakan: bagaimana rasanya sangat dahaga? Minumlah segelas air bersama-sama dan ucapkan bismillah."
+  },
+  "18.6": {
+   "en": "Count the springs out loud, all twelve.",
+   "t": "Kiralah mata air itu dengan kuat, kesemua dua belas."
+  },
+  "18.7": {
+   "en": "Ask: why do you think each family got its own spring? Sharing fairly keeps the peace.",
+   "t": "Tanyakan: mengapa agaknya setiap keluarga mendapat mata airnya sendiri? Berkongsi dengan adil menjaga keamanan."
+  },
+  "18.8": {
+   "en": "Ask: how many springs, and how many families? Twelve and twelve.",
+   "t": "Tanyakan: berapa banyak mata air, dan berapa banyak keluarga? Dua belas dan dua belas."
+  },
+  "18.9": {
+   "en": "Name each gift of the desert as you match it.",
+   "t": "Namakan setiap nikmat di padang pasir semasa memadankannya."
+  },
+  "19.1": {
+   "en": "Allah appointed thirty nights for Musa and added ten, making forty. Musa told Harun to take his place and act rightly. On the mountain Musa asked to see his Lord and was told: 'You will never see Me, but look at that mountain: if it remains firmly in its place, you will see Me.' When his Lord revealed Himself to the mountain He made it crumble, and Musa fell unconscious. On recovering he said: 'Glory be to You! To You I turn in repentance! I am the first to believe!' He was told to hold on to what he had been given and be thankful, and was given the Tablets.\n\nThe picture shows a mountain crumbling and nothing else. Allah is never shown.",
+   "t": "Allah menetapkan tiga puluh malam untuk Musa dan menambah sepuluh, menjadi empat puluh. Musa menyuruh Harun menggantikannya dan berbuat kebaikan. Di atas gunung Musa memohon untuk melihat Tuhannya dan dijawab: 'Kamu tidak akan sekali-kali dapat melihat-Ku, tetapi lihatlah gunung itu: jika ia tetap di tempatnya, nescaya kamu akan melihat-Ku.' Apabila Tuhannya menampakkan diri kepada gunung itu, Dia menjadikannya hancur, dan Musa jatuh pengsan. Setelah sedar dia berkata: 'Maha Suci Engkau! Aku bertaubat kepada-Mu! Dan aku orang yang pertama beriman!' Dia disuruh berpegang teguh pada apa yang diberikan kepadanya dan bersyukur, dan dia diberi Luh-luh.\n\nGambarnya menunjukkan sebuah gunung yang hancur dan tiada yang lain. Allah tidak pernah ditunjukkan."
+  },
+  "19.2": {
+   "en": "Count to thirty, then add ten. Ask: what could you do every day for forty days?",
+   "t": "Kiralah hingga tiga puluh, kemudian tambah sepuluh. Tanyakan: apa yang boleh kamu lakukan setiap hari selama empat puluh hari?"
+  },
+  "19.3": {
+   "en": "Ask: have you ever climbed a big hill or a mountain? How did it feel at the top?",
+   "t": "Tanyakan: pernahkah kamu mendaki bukit besar atau gunung? Bagaimana rasanya di puncak?"
+  },
+  "19.4": {
+   "en": "Ask: what is something you wish you could see? Some things are too great for our eyes.",
+   "t": "Tanyakan: apakah sesuatu yang kamu harap dapat lihat? Ada perkara yang terlalu agung untuk mata kita."
+  },
+  "19.5": {
+   "en": "Ask: if a mountain could not stand it, how great must Allah be?",
+   "t": "Tanyakan: jika gunung pun tidak dapat menahannya, betapa agungnya Allah?"
+  },
+  "19.6": {
+   "en": "Ask your child to describe the mountain in their own words.",
+   "t": "Mintalah anak anda menggambarkan gunung itu dengan kata-katanya sendiri."
+  },
+  "19.7": {
+   "en": "Musa said: 'Glory be to You! To You I turn in repentance! I am the first to believe!' (7:143). Ask: what does subhanallah mean? (Glory be to Allah.) Say it together.",
+   "t": "Musa berkata: 'Maha Suci Engkau! Aku bertaubat kepada-Mu! Dan aku orang yang pertama beriman!' (7:143). Tanyakan: apa maksud subhanallah? (Maha Suci Allah.) Sebutlah bersama-sama."
+  },
+  "19.8": {
+   "en": "Ask: what did Allah give Musa? (The Tablets, His words.) What has Allah given us? (The Qur'an.)",
+   "t": "Tanyakan: apa yang diberikan oleh Allah kepada Musa? (Luh-luh, kalam-Nya.) Apa yang diberikan oleh Allah kepada kita? (Al-Quran.)"
+  },
+  "19.9": {
+   "en": "While solving, ask your child what Musa is holding.",
+   "t": "Semasa menyelesaikan, tanyalah anak anda apa yang dipegang oleh Musa."
+  },
+  "19.10": {
+   "en": "Ask: what are three things you are thankful for today?",
+   "t": "Tanyakan: apakah tiga perkara yang kamu syukuri hari ini?"
+  },
+  "20.1": {
+   "en": "In Musa's absence the Samiri led the people astray. They had thrown the jewellery they carried into the fire and he brought out a calf that made a lowing sound; it gave them no answer and had no power to harm or benefit them. Harun told them it was a test and that their Lord is the Lord of Mercy; they refused to stop until Musa returned. Musa came back angry and grieved, threw down the Tablets and seized his brother by the hair and beard; Harun said the people had overpowered him and almost killed him. Musa prayed for forgiveness for himself and his brother, told the Samiri to go away, and said the calf would be ground down and scattered in the sea. The people later regretted what they had done (7:149).\n\nThe game says Musa 'put down' the Tablets and 'took hold of' his brother, and that the people 'would not listen' to Harun.\n\nFrom the commentary: Mujahid said the calf's sound came from the wind blowing through it; Ibn Abbas, by way of Ibn Ishaq, said the Samiri came from a people who worshipped cows. What the Samiri says he 'saw' and took a handful of (20:96) is explained in the commentary as the track of the angel Jibril's horse; the game leaves it out.",
+   "t": "Ketika Musa tiada, Samiri menyesatkan kaum itu. Mereka telah melemparkan perhiasan yang mereka bawa ke dalam api dan dia mengeluarkan seekor anak lembu yang bersuara melenguh; ia tidak dapat menjawab mereka dan tidak berkuasa memberi mudarat atau manfaat kepada mereka. Harun memberitahu mereka bahawa itu satu ujian dan Tuhan mereka ialah Tuhan Yang Maha Pemurah; mereka enggan berhenti sehingga Musa kembali. Musa kembali dalam keadaan marah dan sedih, melemparkan Luh-luh itu dan memegang rambut dan janggut saudaranya; Harun berkata kaum itu telah menganggapnya lemah dan hampir membunuhnya. Musa memohon ampun untuk dirinya dan saudaranya, menyuruh Samiri pergi, dan berkata anak lembu itu akan dibakar dan ditaburkan ke laut. Kaum itu kemudian menyesali apa yang telah mereka lakukan (7:149).\n\nPermainan ini menyatakan Musa 'meletakkan' Luh-luh itu dan 'memegang' saudaranya, dan bahawa kaum itu 'tidak mahu mendengar' Harun.\n\nDaripada tafsir: Mujahid berkata suara anak lembu itu datang daripada angin yang bertiup melaluinya; Ibnu Abbas, melalui Ibnu Ishaq, berkata Samiri berasal daripada kaum yang menyembah lembu. Apa yang dikatakan oleh Samiri dia 'lihat' dan diambilnya segenggam (20:96) diterangkan dalam tafsir sebagai bekas tapak kuda malaikat Jibril; permainan ini tidak menyebutnya."
+  },
+  "20.2": {
+   "en": "Ask: can something look special and still be useless? Talk about things that glitter.",
+   "t": "Tanyakan: bolehkah sesuatu kelihatan istimewa tetapi tidak berguna? Berbuallah tentang benda-benda yang berkilau."
+  },
+  "20.3": {
+   "en": "Ask: what can Allah do that nothing else can? (Hear us, help us, guide us.)",
+   "t": "Tanyakan: apa yang boleh dilakukan oleh Allah yang tidak boleh dilakukan oleh yang lain? (Mendengar kita, menolong kita, memberi petunjuk kepada kita.)"
+  },
+  "20.4": {
+   "en": "Ask: why do you think the people made the calf? They were impatient and forgot.",
+   "t": "Tanyakan: mengapa agaknya kaum itu membuat anak lembu itu? Mereka tidak sabar dan lupa."
+  },
+  "20.5": {
+   "en": "Ask your child to explain why only Allah deserves worship.",
+   "t": "Mintalah anak anda menerangkan mengapa hanya Allah yang layak disembah."
+  },
+  "20.6": {
+   "en": "Ask: how did Harun try to help? Sometimes speaking up is hard, but right.",
+   "t": "Tanyakan: bagaimana Harun cuba membantu? Kadang-kadang bersuara itu sukar, tetapi betul."
+  },
+  "20.7": {
+   "en": "Ask: is it all right to feel angry? What should we do with that feeling?",
+   "t": "Tanyakan: bolehkah kita berasa marah? Apa yang patut kita lakukan dengan perasaan itu?"
+  },
+  "20.8": {
+   "en": "Ask: why was the calf ground to dust? So no one could worship it again.",
+   "t": "Tanyakan: mengapa anak lembu itu dihancurkan menjadi debu? Supaya tiada sesiapa dapat menyembahnya lagi."
+  },
+  "20.9": {
+   "en": "Ask: what are things that can distract us from Allah today? (Screens, toys, wanting more.)",
+   "t": "Tanyakan: apakah perkara yang boleh melalaikan kita daripada Allah hari ini? (Skrin, mainan, mahukan lebih banyak.)"
+  },
+  "20.10": {
+   "en": "Ask: what can we do when we've made a mistake as a group, as a family or a class?",
+   "t": "Tanyakan: apa yang boleh kita lakukan apabila kita membuat kesilapan bersama-sama, sebagai keluarga atau sebagai kelas?"
+  },
+  "20.11": {
+   "en": "Let your child say each step out loud before tapping.",
+   "t": "Biarkan anak anda menyebut setiap langkah dengan kuat sebelum mengetik."
+  },
+  "21.1": {
+   "en": "Musa told his people that Allah commands them to sacrifice a cow. They asked if he was mocking them, then asked what sort (neither old nor young, but in between), what colour (bright yellow, pleasing to the eye), and exactly which (unblemished, not trained to plough the earth or water the fields). They slaughtered it, 'though they almost failed to do so'.\n\nLeft for parents: verses 2:72–73 give the reason. A person had been killed and the people were accusing one another; they were told to strike the body with part of the cow, and so Allah showed them how He gives life to the dead. The game tells the cow and the questions, and says only that Allah used it to bring out a truth some of them had been hiding, which is the wording of 2:72.\n\nThe cow's owner who was kind to his father is from a Shia narration (Imam al-Rida), where Musa says that kindness to parents raises a person high.",
+   "t": "Musa memberitahu kaumnya bahawa Allah memerintahkan mereka menyembelih seekor lembu. Mereka bertanya sama ada dia memperolok-olokkan mereka, kemudian bertanya jenis apa (tidak tua dan tidak muda, tetapi pertengahan), warna apa (kuning terang, menyenangkan orang yang melihatnya), dan yang mana tepatnya (tidak bercela, tidak dilatih untuk membajak tanah atau mengairi tanaman). Mereka menyembelihnya, 'dan hampir sahaja mereka tidak melakukannya'.\n\nUntuk ibu bapa: ayat 2:72–73 memberikan sebabnya. Seseorang telah dibunuh dan kaum itu saling menuduh; mereka disuruh memukul mayat itu dengan sebahagian daripada lembu itu, dan dengan itu Allah menunjukkan kepada mereka bagaimana Dia menghidupkan yang mati. Permainan ini menceritakan lembu dan soalan-soalan itu, dan hanya menyatakan Allah menggunakannya untuk mengeluarkan kebenaran yang disembunyikan oleh sebahagian daripada mereka, iaitu kata-kata 2:72.\n\nPemilik lembu yang berbuat baik kepada ayahnya datang daripada satu riwayat Syiah (Imam al-Rida), di mana Musa berkata berbuat baik kepada ibu bapa meninggikan darjat seseorang."
+  },
+  "21.2": {
+   "en": "Ask: is it better to do what you're asked straight away, or to ask lots of questions to avoid doing it?",
+   "t": "Tanyakan: adakah lebih baik melakukan apa yang diminta dengan segera, atau bertanya banyak soalan untuk mengelak daripada melakukannya?"
+  },
+  "21.3": {
+   "en": "Ask: what colour cow would you choose? Have some fun with it.",
+   "t": "Tanyakan: lembu warna apa yang akan kamu pilih? Berseronoklah dengannya."
+  },
+  "21.4": {
+   "en": "Ask: what happens when people make simple things complicated?",
+   "t": "Tanyakan: apa yang berlaku apabila orang menjadikan perkara yang mudah rumit?"
+  },
+  "21.5": {
+   "en": "In Majlisi's Hayat al-Qulub, Imam al-Rida tells that the cow belonged to a boy who would not wake his sleeping father, even to make a sale, and was rewarded for it; kindness to parents raises a person high. Ask: how can you be kind to your parents today?",
+   "t": "Dalam Hayat al-Qulub karya al-Majlisi, Imam al-Rida menceritakan bahawa lembu itu milik seorang budak lelaki yang tidak mahu mengejutkan ayahnya yang sedang tidur, walaupun untuk membuat jualan, dan dia diberi ganjaran kerananya; berbuat baik kepada ibu bapa meninggikan darjat seseorang. Tanyakan: bagaimana kamu boleh berbuat baik kepada ibu bapamu hari ini?"
+  },
+  "21.6": {
+   "en": "Ask your child to describe the cow before tapping it: yellow, no marks.",
+   "t": "Mintalah anak anda menggambarkan lembu itu sebelum mengetiknya: kuning, tiada tanda."
+  },
+  "21.7": {
+   "en": "Ask: why is it better to listen the first time?",
+   "t": "Tanyakan: mengapa lebih baik mendengar pada kali pertama?"
+  },
+  "21.8": {
+   "en": "Ask: what is one thing you could do this week the first time you're asked?",
+   "t": "Tanyakan: apakah satu perkara yang boleh kamu lakukan minggu ini pada kali pertama kamu diminta?"
+  },
+  "21.9": {
+   "en": "Let your child say the three questions in order before tapping.",
+   "t": "Biarkan anak anda menyebut tiga soalan itu mengikut urutan sebelum mengetik."
+  },
+  "22.1": {
+   "en": "Musa reminded his people of Allah's blessings and told them to enter the holy land Allah had ordained for them and not turn back. They said a fearsome people lived there and they would not enter until those people left. Two men whom Allah had blessed said: go in through the gate, and you will be victorious; put your trust in Allah. The people answered: 'You and your Lord go and fight; we will stay here.' Musa said he had authority over no one but himself and his brother. The land was forbidden to them for forty years, during which they would wander.\n\nThe verses do not name the two men.",
+   "t": "Musa mengingatkan kaumnya tentang nikmat-nikmat Allah dan menyuruh mereka memasuki tanah suci yang telah ditetapkan oleh Allah untuk mereka dan jangan berundur. Mereka berkata satu kaum yang gagah perkasa tinggal di sana dan mereka tidak akan masuk sehingga kaum itu keluar. Dua orang lelaki yang diberi nikmat oleh Allah berkata: masuklah melalui pintu gerbang, nescaya kamu akan menang; bertawakallah kepada Allah. Kaum itu menjawab: 'Pergilah kamu bersama Tuhanmu dan berperanglah; kami akan duduk di sini.' Musa berkata dia tidak berkuasa melainkan atas dirinya dan saudaranya. Tanah itu diharamkan ke atas mereka selama empat puluh tahun, sepanjang tempoh itu mereka akan mengembara tanpa arah.\n\nAyat-ayat itu tidak menamakan dua orang lelaki itu."
+  },
+  "22.2": {
+   "en": "Ask: what are you afraid of trying? Being afraid is normal; what matters is what we do next.\n\nYou may meet stories of giants in that land, above all 'Uj bin 'Anaq, said to be more than three thousand cubits tall and to have outlived the Flood. Ibn Kathir rejects them firmly: they are 'reports made up by the Children of Israel', 'something one is ashamed to mention', against the authentic hadith that Adam was sixty cubits tall and people have grown smaller since; the claim that he survived the Flood is 'a lie and a fabrication', since the Qur'an says the unbelievers were drowned; and 'whether a man called 'Uj bin 'Anaq existed at all is doubtful, and Allah knows best'.\n\nThe story that a giant scooped up Musa's twelve scouts in his sleeve with his fruit: Ibn Kathir says of its chain, 'there is doubt about it'. (Our translations from the Arabic.)",
+   "t": "Tanyakan: apa yang kamu takut untuk cuba? Berasa takut itu perkara biasa; yang penting ialah apa yang kita lakukan seterusnya.\n\nAnda mungkin terjumpa kisah-kisah gergasi di tanah itu, terutamanya 'Uj bin 'Anaq, yang dikatakan lebih tiga ribu hasta tingginya dan hidup selepas banjir besar. Ibnu Kathir menolaknya dengan tegas: ia 'riwayat yang direka oleh Bani Israel', 'sesuatu yang memalukan untuk disebut', bercanggah dengan hadis sahih bahawa tinggi Adam enam puluh hasta dan manusia menjadi semakin kecil sejak itu; dakwaan bahawa dia selamat daripada banjir besar ialah 'dusta dan rekaan', kerana Al-Quran menyatakan orang-orang kafir ditenggelamkan; dan 'sama ada seorang lelaki bernama 'Uj bin 'Anaq pernah wujud pun diragui, dan Allah lebih mengetahui'.\n\nKisah bahawa seorang gergasi mencedok dua belas orang peninjau Musa ke dalam lengan bajunya bersama buah-buahannya: Ibnu Kathir berkata tentang sanadnya, 'ada keraguan padanya'. (Terjemahan kami daripada bahasa Arab.)"
+  },
+  "22.3": {
+   "en": "Ask: what did the two brave men trust? Allah's promise.\n\nIbn Abbas, Mujahid, 'Ikrimah, As-Suddi and others name the two brave men: Yusha' bin Nun (Joshua) and Kalib (Caleb) (in Ibn Kathir).",
+   "t": "Tanyakan: apa yang dipercayai oleh dua orang lelaki yang berani itu? Janji Allah.\n\nIbnu Abbas, Mujahid, 'Ikrimah, As-Suddi dan lain-lain menamakan dua orang lelaki berani itu: Yusya' bin Nun dan Kalib (dalam Ibnu Kathir)."
+  },
+  "22.4": {
+   "en": "Ask your child to say the brave men's words in their own way.",
+   "t": "Mintalah anak anda menyebut kata-kata lelaki-lelaki berani itu dengan caranya sendiri."
+  },
+  "22.5": {
+   "en": "Ask: is saying 'you go, I'll stay here' fair? What would you have said?",
+   "t": "Tanyakan: adilkah berkata 'kamu pergi, aku tinggal di sini'? Apa yang akan kamu katakan?"
+  },
+  "22.6": {
+   "en": "Ask: how do you think Musa felt when his people would not listen?",
+   "t": "Tanyakan: bagaimana agaknya perasaan Musa apabila kaumnya tidak mahu mendengar?"
+  },
+  "22.7": {
+   "en": "Ask: what does it feel like to go round in circles? Sometimes we must wait for a long time.\n\nYou may hear what came after the forty years. Ibn Kathir reports from Ibn Abbas that Musa and Harun died during the wandering, and that Yusha' bin Nun then led the next generation into Jerusalem; as the sun was about to set on a Friday, Yusha' asked Allah to hold it back until the city was won. Ibn Kathir says there is evidence for this in the Sahih.",
+   "t": "Tanyakan: bagaimana rasanya berpusing-pusing di tempat yang sama? Kadang-kadang kita mesti menunggu lama.\n\nAnda mungkin mendengar apa yang berlaku selepas empat puluh tahun itu. Ibnu Kathir meriwayatkan daripada Ibnu Abbas bahawa Musa dan Harun wafat semasa pengembaraan itu, dan Yusya' bin Nun kemudian memimpin generasi seterusnya memasuki Baitulmaqdis; ketika matahari hampir terbenam pada hari Jumaat, Yusya' memohon kepada Allah supaya menahannya sehingga kota itu ditawan. Ibnu Kathir menyatakan ada bukti bagi perkara ini dalam kitab Sahih."
+  },
+  "22.8": {
+   "en": "Ask your child to think of one brave thing they could do this week.",
+   "t": "Mintalah anak anda memikirkan satu perkara berani yang boleh dilakukannya minggu ini."
+  },
+  "23.1": {
+   "en": "Musa told his servant he would not stop until he reached the place where the two seas meet. There they forgot their fish, which made its way into the sea. Later, tired and asking for the meal, the servant remembered: he had forgotten the fish by the rock, and only Satan made him forget. Musa said that was the place they were seeking, and they retraced their steps. They found a servant of Allah who had been given mercy and knowledge. He warned Musa he would not be able to bear with him patiently; Musa promised patience; the condition was that Musa ask about nothing until he himself spoke of it.\n\nFrom a hadith of Ubayy bin Ka'b in al-Bukhari, as quoted in the commentary, not from the verses: Musa was asked who was the most learned of people and said 'I am', and was told of a servant who knew more; he was told to carry a fish in a basket and that he would find the man where he lost the fish; the servant boy was Yusha bin Nun; the water stood like an arch over the fish's path; and the man's name was al-Khidr.\n\nAl-Khidr means 'the green one': wherever he sat, the bare ground turned green. Al-Bukhari reports this from the Prophet ﷺ, and the Shia narrations have it from the Imams.",
+   "t": "Musa memberitahu pembantunya bahawa dia tidak akan berhenti sehingga sampai ke tempat pertemuan dua laut. Di sana mereka terlupa akan ikan mereka, yang mengambil jalannya ke laut. Kemudian, dalam keadaan letih dan meminta makanan, pembantu itu teringat: dia telah terlupa ikan itu di tepi batu, dan hanya syaitan yang membuatnya lupa. Musa berkata itulah tempat yang mereka cari, dan mereka kembali menurut jejak mereka. Mereka menemui seorang hamba Allah yang telah dikurniakan rahmat dan ilmu. Dia memperingatkan Musa bahawa dia tidak akan sanggup bersabar bersamanya; Musa berjanji untuk bersabar; syaratnya ialah Musa tidak bertanya tentang apa-apa sehingga dia sendiri menerangkannya.\n\nDaripada hadis Ubay bin Ka'ab dalam al-Bukhari, seperti yang dipetik dalam tafsir, bukan daripada ayat: Musa ditanya siapakah manusia yang paling berilmu dan dia menjawab 'aku', lalu diberitahu tentang seorang hamba yang lebih berilmu; dia disuruh membawa seekor ikan dalam bakul dan dia akan menemui lelaki itu di tempat dia kehilangan ikan itu; pembantu muda itu ialah Yusya' bin Nun; air berdiri seperti lengkungan di atas jalan ikan itu; dan nama lelaki itu ialah Khidir.\n\nKhidir bermaksud 'yang hijau': di mana sahaja dia duduk, tanah yang gersang menjadi hijau. Al-Bukhari meriwayatkan ini daripada Nabi ﷺ, dan riwayat-riwayat Syiah meriwayatkannya daripada para Imam."
+  },
+  "23.2": {
+   "en": "Musa wanted to keep learning, even though he was a great prophet. Ask: what would you travel far to learn?\n\nWhy did Musa set out? In a hadith in al-Bukhari (quoted by Ibn Kathir), Musa was asked who was the most learned person, and he said: I am. Allah rebuked him 'because he did not refer the knowledge to Allah', and told him of a servant at the meeting of the two seas who knew what Musa did not.\n\nMusa said he would travel 'for a long time' (huqub): Ibn Kathir reports that 'Abdullah bin 'Amr said eighty years, Mujahid seventy, and Ibn Abbas a lifetime.",
+   "t": "Musa mahu terus belajar, walaupun dia seorang nabi yang agung. Tanyakan: apa yang akan kamu kembara jauh untuk mempelajarinya?\n\nMengapa Musa berangkat? Dalam sebuah hadis dalam al-Bukhari (dipetik oleh Ibnu Kathir), Musa ditanya siapakah orang yang paling berilmu, dan dia berkata: aku. Allah menegurnya 'kerana dia tidak mengembalikan ilmu itu kepada Allah', dan memberitahunya tentang seorang hamba di pertemuan dua laut yang mengetahui apa yang tidak diketahui oleh Musa.\n\nMusa berkata dia akan berjalan 'bertahun-tahun' (huqub): Ibnu Kathir meriwayatkan bahawa 'Abdullah bin 'Amr berkata lapan puluh tahun, Mujahid tujuh puluh, dan Ibnu Abbas sepanjang hayat."
+  },
+  "23.3": {
+   "en": "Look at a map together for a place where two seas or rivers meet. Ask: what would it look like?",
+   "t": "Lihatlah peta bersama-sama untuk mencari tempat di mana dua laut atau dua sungai bertemu. Tanyakan: bagaimana agaknya rupanya?"
+  },
+  "23.4": {
+   "en": "Ask: what would you think if you saw a fish jump into the sea?\n\nOne narration in al-Bukhari (quoted by Ibn Kathir) says there was a spring at the foot of the rock called al-Hayat, the Spring of Life, whose water brought to life whatever it touched; a drop touched the fish, and it slipped into the sea.",
+   "t": "Tanyakan: apa yang akan kamu fikir jika kamu melihat seekor ikan melompat ke laut?\n\nSatu riwayat dalam al-Bukhari (dipetik oleh Ibnu Kathir) menyatakan ada sebuah mata air di kaki batu itu bernama al-Hayat, Mata Air Kehidupan, yang airnya menghidupkan apa sahaja yang disentuhnya; setitik terkena ikan itu, dan ia meluncur ke laut."
+  },
+  "23.5": {
+   "en": "Ask your child to follow the fish with their finger as it swims.",
+   "t": "Mintalah anak anda mengikut ikan itu dengan jarinya semasa ia berenang."
+  },
+  "23.6": {
+   "en": "Ask: have you ever forgotten to tell someone something important? Yusha forgot too.\n\nYou may meet a report (in Ibn Jarir al-Tabari) that Musa's young helper drank from the Spring of Life, became immortal, and was set adrift in a boat until the Day of Judgement. Ibn Kathir: 'a weak chain; al-Hasan [bin 'Umara] is abandoned as a narrator, and his father is unknown'. The authentic hadiths name the helper as Yusha' bin Nun, who led the people after Musa.",
+   "t": "Tanyakan: pernahkah kamu terlupa memberitahu seseorang sesuatu yang penting? Yusya' juga terlupa.\n\nAnda mungkin terjumpa satu riwayat (dalam Ibnu Jarir al-Tabari) bahawa pembantu muda Musa minum dari Mata Air Kehidupan, menjadi kekal hidup, dan dihanyutkan dalam sebuah perahu hingga Hari Kiamat. Ibnu Kathir: 'sanadnya lemah; al-Hasan [bin 'Umarah] ditinggalkan sebagai perawi, dan ayahnya tidak dikenali'. Hadis-hadis sahih menamakan pembantu itu Yusya' bin Nun, yang memimpin kaum itu selepas Musa."
+  },
+  "23.7": {
+   "en": "Ask: what do we do when we realise we went the wrong way? Turn back.",
+   "t": "Tanyakan: apa yang kita lakukan apabila kita sedar kita tersalah jalan? Berpatah balik."
+  },
+  "23.8": {
+   "en": "Count the footsteps back to the rock together.",
+   "t": "Kiralah langkah-langkah kembali ke batu itu bersama-sama."
+  },
+  "23.9": {
+   "en": "Ask: who is a teacher who knows things you don't know?",
+   "t": "Tanyakan: siapakah guru yang mengetahui perkara-perkara yang kamu tidak tahu?"
+  },
+  "23.10": {
+   "en": "Ask: what makes things grow green? Al-Khidr's name means 'the green one'.\n\nYou may hear that al-Khidr is still alive. Ibn Kathir reports that al-Nawawi and Ibn al-Salah leaned that way, but says 'none of that is authentic; the best known are the hadiths of condolence, and their chain is weak'. Other scholars held that he died, citing 21:34 ('We have not granted everlasting life to any other human being before you'), and that he never came to the Prophet ﷺ, though he would have followed him had he been alive. (Our translation.)\n\nThe meaning of his name is authentic: al-Bukhari reports the Prophet ﷺ saying he was called al-Khidr because he sat on a patch of dry, withered plants, and it stirred green behind him.",
+   "t": "Tanyakan: apa yang menjadikan sesuatu tumbuh hijau? Nama Khidir bermaksud 'yang hijau'.\n\nAnda mungkin mendengar bahawa Khidir masih hidup. Ibnu Kathir meriwayatkan bahawa al-Nawawi dan Ibnu al-Salah cenderung kepada pandangan itu, tetapi berkata 'tiada satu pun daripadanya yang sahih; yang paling terkenal ialah hadis-hadis takziah, dan sanadnya lemah'. Ulama lain berpendapat dia telah wafat, memetik 21:34 ('Dan Kami tidak menjadikan seorang manusia pun sebelummu hidup kekal'), dan bahawa dia tidak pernah datang kepada Nabi ﷺ, walaupun dia pasti akan mengikut baginda jika dia masih hidup. (Terjemahan kami.)\n\nMakna namanya sahih: al-Bukhari meriwayatkan Nabi ﷺ bersabda dia dinamakan Khidir kerana dia duduk di atas sebidang tumbuhan yang kering dan layu, lalu ia bergerak menjadi hijau di belakangnya."
+  },
+  "23.11": {
+   "en": "Musa asked politely to learn. Ask: how do we ask a teacher for help?",
+   "t": "Musa meminta dengan sopan untuk belajar. Tanyakan: bagaimana kita meminta bantuan daripada guru?"
+  },
+  "23.12": {
+   "en": "Ask: is it easy to wait without asking questions? What is the hardest thing to be patient about?",
+   "t": "Tanyakan: mudahkah menunggu tanpa bertanya soalan? Apakah perkara yang paling sukar untuk disabari?"
+  },
+  "23.13": {
+   "en": "Ask your child what Musa promised, and whether they think he can keep it.",
+   "t": "Tanyalah anak anda apa yang dijanjikan oleh Musa, dan sama ada dia fikir Musa dapat menunaikannya."
+  },
+  "24.1": {
+   "en": "In the boat the man made a hole in it, and Musa objected. Verse 18:74 then says they met a young boy and the man killed him, and Musa protested more strongly. The game does not tell this to small children: it says only that the second thing was about a boy and is 'a story for when you are older'. The explanation in 18:80–81 is that the boy's parents were people of faith, that he would have burdened them with wickedness and disbelief, and that their Lord would give them a better child in his place.\n\nThe third: a town refused them food, and the man repaired a wall that was about to fall; Musa said he could have taken payment. The explanations: the boat belonged to needy people who worked at sea, and a king was seizing every sound boat by force; the wall belonged to two orphans, with a treasure beneath it, and their father had been righteous. 'I did not do these things of my own accord.'\n\nFrom the hadith in al-Bukhari quoted in the commentary, not the verses: the crew knew al-Khidr and carried them without a fare; the bird that dipped its beak in the sea and what al-Khidr said about knowledge; and the Prophet's ﷺ words, 'We wish that Musa had been patient, so that Allah would have told us more about the two of them.' The closing sentence about good hidden inside a thing that looks bad is the game's own summary of the lesson.",
+   "t": "Di dalam perahu lelaki itu membuat lubang padanya, dan Musa membantah. Ayat 18:74 kemudian menyatakan mereka bertemu seorang budak lelaki dan lelaki itu membunuhnya, dan Musa membantah dengan lebih keras. Permainan ini tidak menceritakannya kepada kanak-kanak kecil: ia hanya menyatakan perkara kedua itu tentang seorang budak lelaki dan ia 'cerita untuk apabila kamu sudah besar'. Penjelasan dalam 18:80–81 ialah ibu bapa budak itu orang yang beriman, dia akan membebankan mereka dengan kederhakaan dan kekufuran, dan Tuhan mereka akan memberi mereka anak yang lebih baik sebagai gantinya.\n\nYang ketiga: sebuah kota enggan memberi mereka makanan, dan lelaki itu membaiki sebuah tembok yang hampir runtuh; Musa berkata dia boleh mengambil upah. Penjelasannya: perahu itu milik orang-orang miskin yang bekerja di laut, dan seorang raja merampas setiap perahu yang baik; tembok itu milik dua orang anak yatim, dengan harta terpendam di bawahnya, dan ayah mereka seorang yang soleh. 'Aku tidak melakukannya menurut kemahuanku sendiri.'\n\nDaripada hadis dalam al-Bukhari yang dipetik dalam tafsir, bukan daripada ayat: anak kapal mengenali Khidir dan membawa mereka tanpa tambang; burung yang mencelupkan paruhnya ke laut dan apa yang dikatakan oleh Khidir tentang ilmu; dan sabda Nabi ﷺ, 'Kami berharap Musa bersabar, supaya Allah menceritakan kepada kita lebih banyak tentang mereka berdua.' Ayat penutup tentang kebaikan yang tersembunyi di dalam sesuatu yang kelihatan buruk ialah ringkasan permainan ini sendiri tentang pengajarannya."
+  },
+  "24.2": {
+   "en": "Ask: what would you think if someone made a hole in a boat? Would you ask why?\n\nIn the hadith in al-Bukhari, the boat's crew recognised al-Khidr and carried them for free, which is why Musa was so shocked when al-Khidr damaged it.",
+   "t": "Tanyakan: apa yang akan kamu fikir jika seseorang membuat lubang pada perahu? Adakah kamu akan bertanya mengapa?\n\nDalam hadis dalam al-Bukhari, anak kapal mengenali Khidir dan membawa mereka secara percuma, itulah sebabnya Musa sangat terkejut apabila Khidir merosakkannya."
+  },
+  "24.3": {
+   "en": "Ask: how much water can a bird take in its beak, compared to the whole sea? That is how little we know, next to Allah.",
+   "t": "Tanyakan: berapa banyak air yang boleh diambil oleh seekor burung dengan paruhnya, berbanding seluruh laut? Sebegitu sedikitlah yang kita ketahui, berbanding Allah."
+  },
+  "24.4": {
+   "en": "Talk about it: all the books in the world are like a bird's sip from the sea. How does that make you feel about Allah?",
+   "t": "Berbuallah tentangnya: semua buku di dunia seperti setitik air yang dihirup burung dari laut. Bagaimana perasaanmu tentang Allah?"
+  },
+  "24.5": {
+   "en": "If your child is older and asks, this is in Surah al-Kahf (18:74, 18:80-81); otherwise it is enough to say it was hard for Musa to understand.",
+   "t": "Jika anak anda lebih besar dan bertanya, ini terdapat dalam Surah al-Kahfi (18:74, 18:80-81); jika tidak, cukuplah dengan berkata ia sukar difahami oleh Musa."
+  },
+  "24.6": {
+   "en": "Ask: why would al-Khidr mend the wall for people who would not feed them? Doing good without being thanked.",
+   "t": "Tanyakan: mengapa Khidir membaiki tembok untuk orang yang tidak mahu memberi mereka makan? Berbuat baik tanpa diucapkan terima kasih."
+  },
+  "24.7": {
+   "en": "Ask: what can you fix or help with at home, even if nobody says thank you?",
+   "t": "Tanyakan: apa yang boleh kamu baiki atau bantu di rumah, walaupun tiada sesiapa yang berterima kasih?"
+  },
+  "24.8": {
+   "en": "Ask: have you ever had to say goodbye to a teacher or friend? What did they teach you?",
+   "t": "Tanyakan: pernahkah kamu terpaksa mengucapkan selamat tinggal kepada guru atau kawan? Apa yang diajarkan mereka kepadamu?"
+  },
+  "24.9": {
+   "en": "Ask: can something that looks bad turn out to protect us? Think of an example together.",
+   "t": "Tanyakan: bolehkah sesuatu yang kelihatan buruk akhirnya melindungi kita? Fikirkan satu contoh bersama-sama."
+  },
+  "24.10": {
+   "en": "Ask: who looks after orphans? The verse says their father was a righteous man (18:82).",
+   "t": "Tanyakan: siapa yang menjaga anak-anak yatim? Ayat itu menyatakan ayah mereka seorang lelaki yang soleh (18:82)."
+  },
+  "24.11": {
+   "en": "Ask: what treasure would you hide for your children one day?",
+   "t": "Tanyakan: harta apa yang akan kamu simpan untuk anak-anakmu suatu hari nanti?"
+  },
+  "24.12": {
+   "en": "Let your child explain each secret in their own words.",
+   "t": "Biarkan anak anda menerangkan setiap rahsia dengan kata-katanya sendiri."
+  },
+  "24.13": {
+   "en": "In Hayat al-Qulub, Imam al-Sadiq gives al-Khidr's parting advice to Musa: do not be stubborn, do not laugh without reason, and do not look for the faults of others. Ask: which one is hardest?",
+   "t": "Dalam Hayat al-Qulub, Imam al-Sadiq memberikan nasihat perpisahan Khidir kepada Musa: jangan berdegil, jangan ketawa tanpa sebab, dan jangan mencari-cari keaiban orang lain. Tanyakan: yang mana paling sukar?"
+  },
+  "24.14": {
+   "en": "Ask: what could we have learned if Musa had kept quiet? Patience opens doors.",
+   "t": "Tanyakan: apa yang boleh kita pelajari jika Musa berdiam diri? Kesabaran membuka pintu."
+  },
+  "24.15": {
+   "en": "Ask your child what they learned from al-Khidr.",
+   "t": "Tanyalah anak anda apa yang dipelajarinya daripada Khidir."
+  },
+  "25.1": {
+   "en": "Verse 28:43: Musa was given the Scripture, to give people insight, guidance and mercy, so that they might take heed. The chapter looks back over the whole story.\n\nThis game tells a large part of what the Qur'an says about Musa, not all of it: the story is spread over many surahs. A good next step with an older child is to read Surah Ta-Ha (20) and Surah Al-Qasas (28) together.",
+   "t": "Ayat 28:43: Musa diberi Kitab, untuk memberi manusia pandangan, petunjuk dan rahmat, supaya mereka mengambil pengajaran. Bab ini mengimbas kembali seluruh kisah.\n\nPermainan ini menceritakan sebahagian besar daripada apa yang dikatakan oleh Al-Quran tentang Musa, bukan semuanya: kisahnya tersebar dalam banyak surah. Langkah seterusnya yang baik bersama anak yang lebih besar ialah membaca Surah Taha (20) dan Surah Al-Qasas (28) bersama-sama."
+  },
+  "25.2": {
+   "en": "Ask: when is Allah with you? Always, everywhere.\n\nYou may meet two hadiths about Musa in al-Bukhari that surprise people. In one, the angel of death came to Musa and Musa struck him; Allah then offered Musa a year of life for every hair his hand would cover on an ox's back (al-Bukhari 1339 and 3407). In the other, Musa bathed alone and a stone ran off with his clothes, and he chased after it (in al-Bukhari's book on the Prophets; check the number on sunnah.com before quoting it). Both are in al-Bukhari; scholars explain them at length, and they are best read with a teacher.",
+   "t": "Tanyakan: bilakah Allah bersamamu? Sentiasa, di mana-mana.\n\nAnda mungkin terjumpa dua hadis tentang Musa dalam al-Bukhari yang mengejutkan orang. Dalam satu hadis, malaikat maut datang kepada Musa dan Musa menamparnya; Allah kemudian menawarkan Musa setahun umur bagi setiap helai bulu yang dapat ditutupi oleh tangannya di belakang seekor lembu jantan (al-Bukhari 1339 dan 3407). Dalam hadis yang lain, Musa mandi bersendirian dan sebiji batu lari membawa pakaiannya, lalu dia mengejarnya (dalam kitab al-Bukhari tentang para nabi; semak nombornya di sunnah.com sebelum memetiknya). Kedua-duanya dalam al-Bukhari; para ulama menerangkannya dengan panjang lebar, dan sebaik-baiknya dibaca bersama seorang guru."
+  },
+  "25.3": {
+   "en": "Ask: what book did Allah give us? The Qur'an is light and guidance for us.",
+   "t": "Tanyakan: kitab apa yang diberikan oleh Allah kepada kita? Al-Quran ialah cahaya dan petunjuk bagi kita."
+  },
+  "25.4": {
+   "en": "Let your child tell the whole story of Musa from the river to the sea.",
+   "t": "Biarkan anak anda menceritakan seluruh kisah Musa dari sungai hingga ke laut."
+  },
+  "25.5": {
+   "en": "Ask: who was your favourite person in the story? Asiya? Musa's sister? The magicians?",
+   "t": "Tanyakan: siapa watak kegemaranmu dalam kisah ini? Asiah? Kakak Musa? Ahli-ahli sihir?"
+  },
+  "25.6": {
+   "en": "Name each card as you match it, and say one thing about that part of the story.",
+   "t": "Namakan setiap kad semasa memadankannya, dan sebut satu perkara tentang bahagian kisah itu."
+  },
+  "25.7": {
+   "en": "While solving, ask: what would you like to remember from Musa's story?",
+   "t": "Semasa menyelesaikan, tanyakan: apa yang ingin kamu ingat daripada kisah Musa?"
+  }
  }
 }

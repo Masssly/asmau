@@ -105,6 +105,6 @@ Buttons and labels on every page (`site.json`): draft
 | muhammad-asad | draft |  | 100% | none |
 | edhi | draft |  | 100% | none |
 | mariam-alolo | draft |  | 100% | none |
-| tap-and-say | draft | 0% | 100% | none |
-| count-the-crescents | draft | 0% | 100% | none |
+| tap-and-say | draft | 100% | 100% | none |
+| count-the-crescents | draft | 100% | 100% | none |
 

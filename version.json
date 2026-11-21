@@ -1,11 +1,18 @@
 {
-  "version": "2026.11.86",
+  "version": "2026.11.87",
   "date": "2026-11-21",
-  "buildId": "d5ca2771fe61",
+  "buildId": "afb4a09b5e02",
   "notes": [
-    "Bahasa Indonesia, complete: For parents, the notes for parents in every game, the stories' About boxes, the privacy note, the voice recorder, the little ones' games and every message are now in Indonesian (the games other than Rahmah are drafts until a native speaker checks them)"
+    "Bahasa Melayu, complete as a draft: For parents, the notes for parents in every game, the stories' About boxes, the privacy note, the voice recorder, the little ones' games and every message are now in Malay, for a native speaker to check (seen only with ?lang=ms)"
   ],
   "history": [
+    {
+      "version": "2026.11.87",
+      "date": "2026-11-21",
+      "notes": [
+        "Bahasa Melayu, complete as a draft: For parents, the notes for parents in every game, the stories' About boxes, the privacy note, the voice recorder, the little ones' games and every message are now in Malay, for a native speaker to check (seen only with ?lang=ms)"
+      ]
+    },
     {
       "version": "2026.11.86",
       "date": "2026-11-21",

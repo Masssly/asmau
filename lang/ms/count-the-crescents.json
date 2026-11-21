@@ -1,7 +1,136 @@
 {
  "status": "draft",
  "_note": "Bahasa Melayu, drafted 21 November 2026, to be checked by a native speaker. Seen only with ?lang=ms until then. Only the game's card for now.",
- "lines": {},
+ "lines": {
+  "count-1": {
+   "en": "One",
+   "t": "Satu"
+  },
+  "count-2": {
+   "en": "Two",
+   "t": "Dua"
+  },
+  "count-3": {
+   "en": "Three",
+   "t": "Tiga"
+  },
+  "count-4": {
+   "en": "Four",
+   "t": "Empat"
+  },
+  "count-5": {
+   "en": "Five",
+   "t": "Lima"
+  },
+  "count-6": {
+   "en": "Six",
+   "t": "Enam"
+  },
+  "count-7": {
+   "en": "Seven",
+   "t": "Tujuh"
+  },
+  "count-8": {
+   "en": "Eight",
+   "t": "Lapan"
+  },
+  "count-9": {
+   "en": "Nine",
+   "t": "Sembilan"
+  },
+  "count-10": {
+   "en": "Ten",
+   "t": "Sepuluh"
+  },
+  "count-11": {
+   "en": "Eleven",
+   "t": "Sebelas"
+  },
+  "count-12": {
+   "en": "Twelve",
+   "t": "Dua belas"
+  },
+  "count-13": {
+   "en": "Thirteen",
+   "t": "Tiga belas"
+  },
+  "count-14": {
+   "en": "Fourteen",
+   "t": "Empat belas"
+  },
+  "count-15": {
+   "en": "Fifteen",
+   "t": "Lima belas"
+  },
+  "count-16": {
+   "en": "Sixteen",
+   "t": "Enam belas"
+  },
+  "count-17": {
+   "en": "Seventeen",
+   "t": "Tujuh belas"
+  },
+  "count-18": {
+   "en": "Eighteen",
+   "t": "Lapan belas"
+  },
+  "count-19": {
+   "en": "Nineteen",
+   "t": "Sembilan belas"
+  },
+  "count-20": {
+   "en": "Twenty",
+   "t": "Dua puluh"
+  },
+  "prompt-moons": {
+   "en": "Tap the moons!",
+   "t": "Ketik bulan-bulan itu!"
+  },
+  "prompt-stars": {
+   "en": "Tap the stars!",
+   "t": "Ketik bintang-bintang itu!"
+  },
+  "prompt-lanterns": {
+   "en": "Light the lanterns!",
+   "t": "Nyalakan tanglung-tanglung itu!"
+  },
+  "prompt-beads": {
+   "en": "Count the beads!",
+   "t": "Kira biji tasbih!"
+  },
+  "prompt-rain": {
+   "en": "Pop the raindrops!",
+   "t": "Pecahkan titisan hujan!"
+  },
+  "prompt-dates": {
+   "en": "Pick the dates!",
+   "t": "Petik buah kurma!"
+  },
+  "prompt-sheep": {
+   "en": "Feed the sheep!",
+   "t": "Beri makan kambing biri-biri!"
+  },
+  "how-many": {
+   "en": "How many?",
+   "t": "Berapa banyak?"
+  },
+  "lets-count": {
+   "en": "Let's count!",
+   "t": "Jom kira!"
+  },
+  "mashallah": {
+   "en": "Mashallah!",
+   "t": "Masya-Allah!"
+  },
+  "well-done": {
+   "en": "Well done!",
+   "t": "Syabas!"
+  },
+  "counted-all": {
+   "en": "You counted them all!",
+   "t": "Kamu sudah mengira semuanya!"
+  }
+ },
  "strings": {
   "Count with Me": "Mengira Bersamaku",
   "Tap moons, lanterns, raindrops and dates one by one and count out loud, up to five, ten, fifteen or twenty.": "Ketik bulan, tanglung, titisan hujan dan kurma satu demi satu dan kira dengan kuat, sehingga lima, sepuluh, lima belas atau dua puluh."

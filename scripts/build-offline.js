@@ -30,7 +30,7 @@ const crypto = require("crypto");
 
 const ROOT = path.join(__dirname, "..");
 const SKIP_DIRS = new Set([".git", ".github", "brand", "scripts", "sync", "tests", "node_modules", "packs"]);
-const SKIP_FILES = new Set(["sw.js", "README.md", "CLAUDE.md", ".nojekyll", "package.json", "package-lock.json"]);
+const SKIP_FILES = new Set(["sw.js", "README.md", "STATUS.md", "CLAUDE.md", ".nojekyll", "package.json", "package-lock.json"]);
 
 function walk(dir, out) {
   for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
@@ -55,6 +55,9 @@ const isR2 = (f) => /^games\/[^/]+\/assets\//.test(f) && ON_R2.test(f);
 
 function packOf(f) {
   const m = /^games\/([^/]+)\/(.*)$/.exec(f);
+  // a language's words (lang/<code>/): their own pack, downloaded only by families who use that language
+  const lm = /^lang\/([a-z]{2,3})\//.exec(f);
+  if (lm) return "core@" + lm[1];
   if (!m || m[1] === "index.json") return "core";          // games/index.json: the catalogue the home page reads
   // assets/audio/ -> @w, audio-m/ -> @m; a language's narration: audio-id/ -> @id-w, audio-id-m/ -> @id-m
   const v = /^assets\/audio(?:-([a-z]{2,3}))?(-m)?\//.exec(m[2]);
@@ -93,25 +96,49 @@ function readPacks() {
 // files whose content this script writes: given here so that --check sees what they would be
 // the home page's catalogue: the sections of manifest.json with each game's game.json, in one file (one request, not
 // one per game; covers load as they scroll into view)
+const LF = require("./lang-files.js");
+// the languages a game is shown in besides English: only translations a native speaker has checked (shared/lang.js)
 function langsOf(slug) {
-  const d = path.join(ROOT, "games", slug, "lang");
-  if (!fs.existsSync(d)) return [];
-  return fs.readdirSync(d).filter((f) => /^[a-z]{2,3}\.json$/.test(f)).filter((f) => {
-    try { return JSON.parse(fs.readFileSync(path.join(d, f), "utf8")).status === "checked"; } catch (e) { return false; }
-  }).map((f) => f.slice(0, -5)).sort();
+  return LF.langsOfGame(slug).filter((c) => { const t = LF.read(LF.gameFile(c, slug)); return t && t.status === "checked"; });
 }
 
+// its card in each language it has (drafts too: the home page shows a draft only with ?lang=<code>)
 function cardsOf(slug, g) {
-  const d = path.join(ROOT, "games", slug, "lang"), out = {};
-  if (!fs.existsSync(d)) return out;
-  for (const f of fs.readdirSync(d).filter((x) => /^[a-z]{2,3}\.json$/.test(x)).sort()) {
-    let s;
-    try { s = JSON.parse(fs.readFileSync(path.join(d, f), "utf8")).strings || {}; } catch (e) { continue; }
-    const c = {};
+  const out = {};
+  for (const code of LF.langsOfGame(slug)) {
+    const t = LF.read(LF.gameFile(code, slug)); if (!t) continue;
+    const s = t.strings || {}, c = {};
     for (const k of ["title", "tagline", "coverAlt"]) if (g[k] && s[g[k]]) c[k] = s[g[k]];
-    if (Object.keys(c).length) out[f.slice(0, -5)] = c;
+    if (Object.keys(c).length) out[code] = c;
   }
   return out;
+}
+
+// lang/STATUS.md: each language, game by game, for the owner and translators (written here, never edited by hand)
+function statusPage() {
+  const { needs } = require("./lang-strings.js");
+  const man = JSON.parse(fs.readFileSync(path.join(ROOT, "manifest.json"), "utf8"));
+  const slugs = [].concat(...(man.sections || []).map((s) => s.games || []));
+  const names = (() => { try { return JSON.parse(/names:\s*(\{[^}]*\})/.exec(fs.readFileSync(path.join(ROOT, "shared/lang.js"), "utf8"))[1].replace(/(\w+):/g, '"$1":')); } catch (e) { return {}; } })();
+  const rows = ["# Translations", "", "Written by `node scripts/build-offline.js`; do not edit. How to translate: [README.md](README.md).", "",
+    "**checked**: families who choose the language see it. **draft**: only with `?lang=<code>` in the address. A percentage is how much is translated.", ""];
+  for (const code of LF.codes()) {
+    const site = LF.read(LF.siteFile(code)) || {};
+    rows.push("## " + (names[code] || code) + " (`" + code + "`)", "", "Buttons and labels on every page (`site.json`): " + (site.status || "missing"), "",
+      "| Game | Status | Lines | Labels | Voices |", "|---|---|---|---|---|");
+    for (const slug of slugs) {
+      const t = LF.read(LF.gameFile(code, slug));
+      if (!t) { rows.push("| " + slug + " | not started | | | |"); continue; }
+      let n; try { n = needs(slug); } catch (e) { n = { lines: [], strings: [] }; }
+      const lines = n.lines.filter((id) => LF.lineText((t.lines || {})[id])).length;
+      const pats = Object.keys(site).filter((k) => k.startsWith("re:")).map((k) => new RegExp(k.slice(3)));
+      const strs = n.strings.filter((x) => (t.strings || {})[x] || site[x] || pats.some((r) => r.test(x))).length;
+      const pct = (a, b) => (b ? Math.round((100 * a) / b) + "%" : "");
+      rows.push("| " + slug + " | " + t.status + " | " + pct(lines, n.lines.length) + " | " + pct(strs, n.strings.length) + " | " + ((t.voices || []).join(", ") || "none") + " |");
+    }
+    rows.push("");
+  }
+  return rows.join("\n");
 }
 
 function catalogue() {
@@ -121,10 +148,8 @@ function catalogue() {
     games: (s.games || []).map((slug) => {
       let g;
       try { g = JSON.parse(fs.readFileSync(path.join(ROOT, "games", slug, "game.json"), "utf8")); } catch (e) { return null; }
-      // the languages it is shown in besides English: only translations a native speaker has checked (shared/lang.js)
       const langs = langsOf(slug);
       if (langs.length) g.langs = langs;
-      // its card in each language it has (drafts too: the home page shows a draft only with ?lang=<code>)
       const tr = cardsOf(slug, g);
       if (Object.keys(tr).length) g.tr = tr;
       return g;
@@ -249,6 +274,7 @@ if (require.main === module) {
     const listed = new Set(Object.keys(c.packs).map((p) => p + ".json"));
     for (const f of fs.readdirSync(path.join(ROOT, "packs"))) if (!listed.has(f)) fs.unlinkSync(path.join(ROOT, "packs", f));
     for (const [f, txt] of Object.entries(out)) fs.writeFileSync(path.join(ROOT, f), txt);
+    if (fs.existsSync(LF.DIR)) fs.writeFileSync(path.join(LF.DIR, "STATUS.md"), statusPage() + "\n");
     const n = Object.values(c.packs).reduce((s, pk) => s + Object.keys(pk.files).length, 0);
     console.log("offline lists written: build " + c.build + ", " + Object.keys(c.packs).length + " packs, " + n + " files");
   }

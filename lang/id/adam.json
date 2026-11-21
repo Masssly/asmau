@@ -1,0 +1,632 @@
+{
+ "status": "draft",
+ "_note": "Bahasa Indonesia, drafted 21 November 2026, to be checked by a native speaker. Seen only with ?lang=id until then.",
+ "lines": {
+  "d1-a": {
+   "en": "Before there were any people, there were the angels. They were made of light, and they praised Allah all the time.",
+   "t": "Sebelum ada manusia, sudah ada para malaikat. Mereka diciptakan dari cahaya, dan mereka bertasbih memuji Allah sepanjang waktu."
+  },
+  "d1-b": {
+   "en": "One day, Allah told the angels: I am going to place someone new on the earth, to look after it.",
+   "t": "Suatu hari, Allah berfirman kepada para malaikat: Aku akan menjadikan makhluk baru di bumi, untuk menjaganya."
+  },
+  "d1-c": {
+   "en": "The angels asked: will You place someone there who may do harm, when we praise You all the time? Allah said: I know what you do not know.",
+   "t": "Para malaikat bertanya: apakah Engkau akan menjadikan di sana makhluk yang mungkin berbuat kerusakan, padahal kami bertasbih memuji-Mu sepanjang waktu? Allah berfirman: Aku mengetahui apa yang tidak kalian ketahui."
+  },
+  "d1-q": {
+   "en": "What did Allah say to the angels?",
+   "t": "Apa yang difirmankan Allah kepada para malaikat?"
+  },
+  "d1-q-opt1": {
+   "en": "I know what you do not know",
+   "t": "Aku mengetahui apa yang tidak kalian ketahui"
+  },
+  "d1-q-opt2": {
+   "en": "You are right",
+   "t": "Kalian benar"
+  },
+  "d1-q-no": {
+   "en": "Allah knows everything. He said: I know what you do not know.",
+   "t": "Allah mengetahui segala sesuatu. Dia berfirman: Aku mengetahui apa yang tidak kalian ketahui."
+  },
+  "d1-mem": {
+   "en": "Find the pairs: things Allah made.",
+   "t": "Temukan pasangannya: hal-hal yang diciptakan Allah."
+  },
+  "d2-a": {
+   "en": "Allah gathered earth from all over the world: dark earth and light earth, red earth and brown, soft earth and hard.",
+   "t": "Allah mengumpulkan tanah dari seluruh penjuru bumi: tanah gelap dan tanah terang, tanah merah dan cokelat, tanah lembut dan tanah keras."
+  },
+  "d2-gather": {
+   "en": "Help gather the earth. Tap to fill every piece.",
+   "t": "Bantu mengumpulkan tanah. Ketuk untuk mengisi setiap bagian."
+  },
+  "d2-b": {
+   "en": "From that earth Allah made clay, and shaped Adam from it.",
+   "t": "Dari tanah itu Allah membuat tanah liat, dan membentuk Adam darinya."
+  },
+  "d2-c": {
+   "en": "Then Allah breathed life into him. Adam opened his eyes, and he was alive!",
+   "t": "Lalu Allah meniupkan ruh kepadanya. Adam membuka matanya, dan ia pun hidup!"
+  },
+  "d2-d": {
+   "en": "That is why the children of Adam are so many colours, just like the earth he was made from. And every one of them is precious to Allah.",
+   "t": "Itulah sebabnya anak cucu Adam punya begitu banyak warna, seperti tanah tempat ia diciptakan. Dan setiap orang dari mereka berharga di sisi Allah."
+  },
+  "d2-q": {
+   "en": "What was Adam made from?",
+   "t": "Adam diciptakan dari apa?"
+  },
+  "d2-q-opt1": {
+   "en": "Fire",
+   "t": "Api"
+  },
+  "d2-q-opt2": {
+   "en": "Earth and clay",
+   "t": "Tanah dan tanah liat"
+  },
+  "d2-q-no": {
+   "en": "Not fire. Adam was made from earth and clay.",
+   "t": "Bukan api. Adam diciptakan dari tanah dan tanah liat."
+  },
+  "d3-a": {
+   "en": "It is told that the very first thing Adam did was sneeze! And he said: al-hamdu lillah. All praise belongs to Allah.",
+   "t": "Diceritakan bahwa hal pertama yang dilakukan Adam adalah bersin! Dan ia berkata: alhamdulillah. Segala puji bagi Allah."
+  },
+  "d3-b": {
+   "en": "And Allah answered him: may Allah have mercy on you.",
+   "t": "Dan Allah menjawabnya: semoga Allah merahmatimu."
+  },
+  "d3-q": {
+   "en": "What do we say when we sneeze?",
+   "t": "Apa yang kita ucapkan ketika bersin?"
+  },
+  "d3-q-opt1": {
+   "en": "Al-hamdu lillah",
+   "t": "Alhamdulillah"
+  },
+  "d3-q-opt2": {
+   "en": "Nothing at all",
+   "t": "Tidak mengucapkan apa-apa"
+  },
+  "d3-q-no": {
+   "en": "We say al-hamdu lillah, just like Adam.",
+   "t": "Kita mengucapkan alhamdulillah, seperti Adam."
+  },
+  "d3-c": {
+   "en": "Then Allah told Adam: go and greet those angels, and listen to how they answer. That will be the greeting of your children.",
+   "t": "Lalu Allah berfirman kepada Adam: pergilah dan berilah salam kepada para malaikat itu, dan dengarkan bagaimana mereka menjawab. Itulah salam anak cucumu."
+  },
+  "d3-d": {
+   "en": "Adam said: as-salamu alaykum, peace be upon you. The angels answered: wa alaykum as-salam wa rahmatullah. And peace be upon you, and the mercy of Allah.",
+   "t": "Adam berkata: assalamu alaikum, semoga keselamatan tercurah kepadamu. Para malaikat menjawab: wa alaikumussalam wa rahmatullah. Dan semoga keselamatan tercurah kepadamu, dan rahmat Allah."
+  },
+  "d3-say": {
+   "en": "What do we say? Match each one.",
+   "t": "Apa yang kita ucapkan? Pasangkan masing-masing."
+  },
+  "d3-say-a1": {
+   "en": "When we sneeze",
+   "t": "Ketika kita bersin"
+  },
+  "d3-say-b1": {
+   "en": "Al-hamdu lillah",
+   "t": "Alhamdulillah"
+  },
+  "d3-say-a2": {
+   "en": "When we meet someone",
+   "t": "Ketika kita bertemu seseorang"
+  },
+  "d3-say-b2": {
+   "en": "As-salamu alaykum",
+   "t": "Assalamu alaikum"
+  },
+  "d3-say-a3": {
+   "en": "When someone greets us",
+   "t": "Ketika seseorang memberi salam kepada kita"
+  },
+  "d3-say-b3": {
+   "en": "Wa alaykum as-salam",
+   "t": "Wa alaikumussalam"
+  },
+  "d4-a": {
+   "en": "Allah taught Adam the names of everything: the sun and the moon, the sea and the mountains, every animal and every bird.",
+   "t": "Allah mengajari Adam nama segala sesuatu: matahari dan bulan, laut dan gunung, setiap hewan dan setiap burung."
+  },
+  "d4-homes": {
+   "en": "Adam knew every animal. Match each one to its home.",
+   "t": "Adam mengenal setiap hewan. Pasangkan masing-masing dengan rumahnya."
+  },
+  "d4-homes-a1": {
+   "en": "Camel",
+   "t": "Unta"
+  },
+  "d4-homes-b1": {
+   "en": "Desert",
+   "t": "Gurun"
+  },
+  "d4-homes-a2": {
+   "en": "Fish",
+   "t": "Ikan"
+  },
+  "d4-homes-b2": {
+   "en": "Sea",
+   "t": "Laut"
+  },
+  "d4-homes-a3": {
+   "en": "Bird",
+   "t": "Burung"
+  },
+  "d4-homes-b3": {
+   "en": "Nest",
+   "t": "Sarang"
+  },
+  "d4-homes-a4": {
+   "en": "Bee",
+   "t": "Lebah"
+  },
+  "d4-homes-b4": {
+   "en": "Flower",
+   "t": "Bunga"
+  },
+  "d4-b": {
+   "en": "Then Allah showed these things to the angels and said: tell Me their names. The angels said: glory be to You! We only know what You have taught us.",
+   "t": "Lalu Allah memperlihatkan semua itu kepada para malaikat dan berfirman: sebutkan kepada-Ku nama-namanya. Para malaikat berkata: Mahasuci Engkau! Kami tidak mengetahui apa pun kecuali apa yang telah Engkau ajarkan kepada kami."
+  },
+  "d4-c": {
+   "en": "Then Allah said: Adam, tell them their names. And Adam told them, every single one!",
+   "t": "Lalu Allah berfirman: wahai Adam, sebutkan kepada mereka nama-namanya. Dan Adam menyebutkannya, semuanya!"
+  },
+  "d4-mem": {
+   "en": "Find the pairs, and say their names.",
+   "t": "Temukan pasangannya, dan sebutkan namanya."
+  },
+  "d4-q": {
+   "en": "Who taught Adam the names?",
+   "t": "Siapa yang mengajari Adam nama-nama itu?"
+  },
+  "d4-q-opt1": {
+   "en": "The angels",
+   "t": "Para malaikat"
+  },
+  "d4-q-opt2": {
+   "en": "Allah",
+   "t": "Allah"
+  },
+  "d4-q-no": {
+   "en": "The angels did not know them. Allah taught Adam.",
+   "t": "Para malaikat tidak mengetahuinya. Allah yang mengajari Adam."
+  },
+  "d5-a": {
+   "en": "Then Allah told the angels: bow down before Adam. And all the angels bowed.",
+   "t": "Lalu Allah berfirman kepada para malaikat: bersujudlah kepada Adam. Dan semua malaikat pun bersujud."
+  },
+  "d5-b": {
+   "en": "All except one: Iblis. He was one of the jinn, made from fire. He stood up stiff and proud, and he would not bow.",
+   "t": "Semuanya kecuali satu: Iblis. Ia termasuk golongan jin, yang diciptakan dari api. Ia berdiri tegak dan sombong, dan ia tidak mau bersujud."
+  },
+  "d5-c": {
+   "en": "Allah asked: what stopped you from bowing? Iblis said: I am better than him. You made me from fire, and him from clay.",
+   "t": "Allah bertanya: apa yang mencegahmu bersujud? Iblis berkata: aku lebih baik daripada dia. Engkau menciptakanku dari api, dan menciptakannya dari tanah liat."
+  },
+  "d5-proud": {
+   "en": "Which is humble, and which is proud? Sort them.",
+   "t": "Mana yang rendah hati, dan mana yang sombong? Kelompokkan."
+  },
+  "d5-proud-bin1": {
+   "en": "Humble",
+   "t": "Rendah hati"
+  },
+  "d5-proud-bin2": {
+   "en": "Proud",
+   "t": "Sombong"
+  },
+  "d5-proud-it1": {
+   "en": "Doing what Allah asks",
+   "t": "Melakukan apa yang diminta Allah"
+  },
+  "d5-proud-it2": {
+   "en": "Saying sorry",
+   "t": "Meminta maaf"
+  },
+  "d5-proud-it3": {
+   "en": "Saying: I am better than you",
+   "t": "Berkata: aku lebih baik darimu"
+  },
+  "d5-proud-it4": {
+   "en": "Refusing to listen",
+   "t": "Tidak mau mendengarkan"
+  },
+  "d5-proud-it5": {
+   "en": "Thanking Allah",
+   "t": "Bersyukur kepada Allah"
+  },
+  "d5-proud-it6": {
+   "en": "Laughing at others",
+   "t": "Menertawakan orang lain"
+  },
+  "d5-proud-no": {
+   "en": "Being proud is what Iblis did. Being humble is what Allah loves.",
+   "t": "Sombong adalah yang dilakukan Iblis. Rendah hati adalah yang dicintai Allah."
+  },
+  "d5-d": {
+   "en": "So Allah sent Iblis away. And Iblis said: I will whisper to Adam's children, from in front and behind, from their right and their left!",
+   "t": "Maka Allah mengusir Iblis. Dan Iblis berkata: aku akan membisiki anak cucu Adam, dari depan dan belakang, dari kanan dan kiri mereka!"
+  },
+  "d5-e": {
+   "en": "But Allah said: you will have no power over My true servants.",
+   "t": "Tetapi Allah berfirman: engkau tidak akan punya kuasa atas hamba-hamba-Ku yang sejati."
+  },
+  "d5-refuge": {
+   "en": "When we feel a bad whisper, we ask Allah to keep us safe: a'udhu billahi min ash-shaytan ir-rajim. Press and hold the shield.",
+   "t": "Ketika kita merasakan bisikan buruk, kita memohon perlindungan kepada Allah: a'udzu billahi minasy syaithanir rajim. Tekan dan tahan perisainya."
+  },
+  "d6-a": {
+   "en": "Allah made a wife for Adam, so that he would not be alone. Her name was Hawwa.",
+   "t": "Allah menciptakan seorang istri untuk Adam, agar ia tidak sendirian. Namanya Hawa."
+  },
+  "d6-b": {
+   "en": "Allah said: live in the Garden, both of you, and eat whatever you like. In this Garden you will never be hungry or thirsty, and the sun will never be too hot.",
+   "t": "Allah berfirman: tinggallah di surga, kalian berdua, dan makanlah apa saja yang kalian suka. Di surga ini kalian tidak akan pernah lapar atau haus, dan matahari tidak akan pernah terlalu panas."
+  },
+  "d6-fruit": {
+   "en": "Gather the fruit of the Garden.",
+   "t": "Kumpulkan buah-buahan surga."
+  },
+  "d6-c": {
+   "en": "But Allah said: do not go near this one tree. And remember, Iblis is your enemy.",
+   "t": "Tetapi Allah berfirman: janganlah kalian mendekati pohon yang satu ini. Dan ingatlah, Iblis adalah musuh kalian."
+  },
+  "d6-tree": {
+   "en": "Slide your finger around to look, and find the one tree they must not go near.",
+   "t": "Geser jarimu untuk melihat-lihat, dan temukan satu pohon yang tidak boleh mereka dekati."
+  },
+  "d6-q": {
+   "en": "What did Allah tell them about the tree?",
+   "t": "Apa yang difirmankan Allah kepada mereka tentang pohon itu?"
+  },
+  "d6-q-opt1": {
+   "en": "Do not go near it",
+   "t": "Jangan mendekatinya"
+  },
+  "d6-q-opt2": {
+   "en": "Eat all of it",
+   "t": "Makanlah semuanya"
+  },
+  "d6-q-no": {
+   "en": "Allah said: do not go near this tree.",
+   "t": "Allah berfirman: janganlah kalian mendekati pohon ini."
+  },
+  "d7-a": {
+   "en": "But Iblis came creeping with a whisper. He said: Allah only told you not to eat from this tree so that you would not become angels, or live for ever.",
+   "t": "Tetapi Iblis datang mengendap-endap dengan bisikan. Ia berkata: Allah melarang kalian makan dari pohon ini hanya agar kalian tidak menjadi malaikat, atau hidup kekal."
+  },
+  "d7-b": {
+   "en": "And he swore: I am only giving you good advice! But it was a lie.",
+   "t": "Dan ia bersumpah: aku hanya memberi kalian nasihat yang baik! Tetapi itu bohong."
+  },
+  "d7-q": {
+   "en": "Was Iblis telling the truth?",
+   "t": "Apakah Iblis berkata benar?"
+  },
+  "d7-q-opt1": {
+   "en": "Yes, he was a friend",
+   "t": "Ya, ia seorang teman"
+  },
+  "d7-q-opt2": {
+   "en": "No, it was a lie",
+   "t": "Tidak, itu bohong"
+  },
+  "d7-q-no": {
+   "en": "Iblis lied. He was their enemy, not their friend.",
+   "t": "Iblis berbohong. Ia musuh mereka, bukan teman mereka."
+  },
+  "d7-c": {
+   "en": "Adam forgot what Allah had told him, and they both ate from the tree.",
+   "t": "Adam lupa apa yang telah difirmankan Allah kepadanya, dan mereka berdua makan dari pohon itu."
+  },
+  "d7-d": {
+   "en": "At once they felt ashamed, and they began to cover themselves with leaves from the Garden.",
+   "t": "Seketika mereka merasa malu, dan mereka mulai menutupi diri dengan daun-daun surga."
+  },
+  "d7-e": {
+   "en": "Their Lord called to them: did I not tell you not to go near that tree? Did I not tell you that Iblis is your enemy?",
+   "t": "Tuhan mereka memanggil mereka: bukankah Aku telah melarang kalian mendekati pohon itu? Bukankah Aku telah berkata bahwa Iblis adalah musuh kalian?"
+  },
+  "d7-listen": {
+   "en": "Good things and bad whispers. Which do we do, and which do we say no to?",
+   "t": "Hal-hal baik dan bisikan buruk. Mana yang kita lakukan, dan mana yang kita tolak?"
+  },
+  "d7-listen-bin1": {
+   "en": "Do it",
+   "t": "Lakukan"
+  },
+  "d7-listen-bin2": {
+   "en": "Say no",
+   "t": "Tolak"
+  },
+  "d7-listen-it1": {
+   "en": "Pray on time",
+   "t": "Salat tepat waktu"
+  },
+  "d7-listen-it2": {
+   "en": "Tell a little lie",
+   "t": "Berbohong sedikit"
+  },
+  "d7-listen-it3": {
+   "en": "Say sorry",
+   "t": "Meminta maaf"
+  },
+  "d7-listen-it4": {
+   "en": "Hit your brother",
+   "t": "Memukul saudaramu"
+  },
+  "d7-listen-it5": {
+   "en": "Help at home",
+   "t": "Membantu di rumah"
+  },
+  "d7-listen-it6": {
+   "en": "Take a sweet without asking",
+   "t": "Mengambil permen tanpa izin"
+  },
+  "d7-listen-no": {
+   "en": "That one is a bad whisper. Say no to it, and do the good things.",
+   "t": "Itu bisikan buruk. Tolaklah, dan lakukan hal-hal yang baik."
+  },
+  "d8-a": {
+   "en": "Adam and Hawwa were very, very sorry. They did not blame anyone else. They prayed: our Lord, we have wronged ourselves. If You do not forgive us and have mercy on us, we will be lost.",
+   "t": "Adam dan Hawa sangat, sangat menyesal. Mereka tidak menyalahkan siapa pun. Mereka berdoa: Tuhan kami, kami telah menzalimi diri kami sendiri. Jika Engkau tidak mengampuni kami dan merahmati kami, niscaya kami termasuk orang-orang yang merugi."
+  },
+  "d8-dua": {
+   "en": "Say Adam and Hawwa's prayer. Tap the parts in order.",
+   "t": "Ucapkan doa Adam dan Hawa. Ketuk bagian-bagiannya secara berurutan."
+  },
+  "d8-dua-c1": {
+   "en": "Our Lord,",
+   "t": "Tuhan kami,"
+  },
+  "d8-dua-c2": {
+   "en": "we have wronged ourselves.",
+   "t": "kami telah menzalimi diri kami sendiri."
+  },
+  "d8-dua-c3": {
+   "en": "If You do not forgive us",
+   "t": "Jika Engkau tidak mengampuni kami"
+  },
+  "d8-dua-c4": {
+   "en": "and have mercy on us,",
+   "t": "dan merahmati kami,"
+  },
+  "d8-dua-c5": {
+   "en": "we will be lost.",
+   "t": "niscaya kami termasuk orang-orang yang merugi."
+  },
+  "d8-dua-no": {
+   "en": "Listen again, and say the prayer in order.",
+   "t": "Dengarkan lagi, dan ucapkan doanya secara berurutan."
+  },
+  "d8-b": {
+   "en": "And Allah forgave them. Allah is the Ever-Relenting, the Most Merciful.",
+   "t": "Dan Allah mengampuni mereka. Allah Maha Penerima tobat, Maha Penyayang."
+  },
+  "d8-sorry": {
+   "en": "Say sorry to Allah from the heart. Press and hold the hands until they shine.",
+   "t": "Mintalah maaf kepada Allah dari hati. Tekan dan tahan tangannya sampai bersinar."
+  },
+  "d8-q": {
+   "en": "What did Adam and Hawwa do after their mistake?",
+   "t": "Apa yang dilakukan Adam dan Hawa setelah kesalahan mereka?"
+  },
+  "d8-q-opt1": {
+   "en": "Said sorry to Allah",
+   "t": "Meminta maaf kepada Allah"
+  },
+  "d8-q-opt2": {
+   "en": "Blamed someone else",
+   "t": "Menyalahkan orang lain"
+  },
+  "d8-q-no": {
+   "en": "They blamed no one. They said sorry to Allah, and He forgave them.",
+   "t": "Mereka tidak menyalahkan siapa pun. Mereka meminta maaf kepada Allah, dan Dia mengampuni mereka."
+  },
+  "d9-a": {
+   "en": "Then Allah said: go down to the earth. There you will live, for a time. And when My guidance comes, whoever follows it will have nothing to fear.",
+   "t": "Lalu Allah berfirman: turunlah ke bumi. Di sana kalian akan tinggal, untuk sementara waktu. Dan ketika petunjuk-Ku datang, siapa yang mengikutinya tidak perlu takut."
+  },
+  "d9-b": {
+   "en": "It is told that Adam and Hawwa came down to the earth far apart, and later found each other again, near Mecca.",
+   "t": "Diceritakan bahwa Adam dan Hawa turun ke bumi di tempat yang berjauhan, lalu kemudian bertemu kembali, di dekat Mekah."
+  },
+  "d9-find": {
+   "en": "Help Adam find Hawwa again.",
+   "t": "Bantu Adam menemukan Hawa kembali."
+  },
+  "d9-c": {
+   "en": "It is told that the angel Jibril taught Adam how to plant seeds and grow food, and how to pray.",
+   "t": "Diceritakan bahwa malaikat Jibril mengajari Adam cara menanam benih dan menumbuhkan makanan, dan cara salat."
+  },
+  "d9-plant": {
+   "en": "Plant the seeds. Tap each spot.",
+   "t": "Tanam benihnya. Ketuk setiap tempat."
+  },
+  "d9-d": {
+   "en": "Adam and Hawwa worked hard, and Allah blessed their fields. Every day they remembered Allah and thanked Him.",
+   "t": "Adam dan Hawa bekerja keras, dan Allah memberkahi ladang mereka. Setiap hari mereka ingat kepada Allah dan bersyukur kepada-Nya."
+  },
+  "d9-harvest": {
+   "en": "Gather only the ripe golden wheat.",
+   "t": "Kumpulkan hanya gandum emas yang sudah matang."
+  },
+  "d10-a": {
+   "en": "Adam and Hawwa had many children. One day, two of their sons each brought a gift to offer to Allah.",
+   "t": "Adam dan Hawa punya banyak anak. Suatu hari, dua orang putra mereka masing-masing membawa persembahan untuk Allah."
+  },
+  "d10-b": {
+   "en": "Allah accepted the gift of one brother, because he was mindful of Allah. But the other brother's gift was not accepted, and he became jealous and angry.",
+   "t": "Allah menerima persembahan salah seorang dari mereka, karena ia bertakwa kepada Allah. Tetapi persembahan saudaranya tidak diterima, dan ia menjadi iri dan marah."
+  },
+  "d10-c": {
+   "en": "The angry brother said: I will kill you! But the good brother said: even if you raise your hand to hurt me, I will never raise mine to hurt you. I fear Allah.",
+   "t": "Saudara yang marah itu berkata: aku akan membunuhmu! Tetapi saudara yang baik berkata: sekalipun engkau mengangkat tanganmu untuk menyakitiku, aku tidak akan pernah mengangkat tanganku untuk menyakitimu. Aku takut kepada Allah."
+  },
+  "d10-q": {
+   "en": "What did the good brother say?",
+   "t": "Apa yang dikatakan saudara yang baik itu?"
+  },
+  "d10-q-opt1": {
+   "en": "I will hit you back",
+   "t": "Aku akan membalasmu"
+  },
+  "d10-q-opt2": {
+   "en": "I will never hurt you",
+   "t": "Aku tidak akan pernah menyakitimu"
+  },
+  "d10-q-no": {
+   "en": "The good brother said: I will never raise my hand to hurt you.",
+   "t": "Saudara yang baik berkata: aku tidak akan pernah mengangkat tanganku untuk menyakitimu."
+  },
+  "d10-d": {
+   "en": "But the angry brother would not calm down. He hurt his brother so badly that his brother died.",
+   "t": "Tetapi saudara yang marah itu tidak mau tenang. Ia menyakiti saudaranya begitu parah sampai saudaranya meninggal."
+  },
+  "d10-e": {
+   "en": "Then Allah sent a raven, which scratched in the ground. The brother cried: what have I done? And he was full of sorrow.",
+   "t": "Lalu Allah mengirim seekor burung gagak, yang mengais-ngais tanah. Saudara itu berseru: apa yang telah kulakukan? Dan ia sangat menyesal."
+  },
+  "d10-f": {
+   "en": "Allah teaches us: whoever saves one life, it is as if they had saved all people.",
+   "t": "Allah mengajarkan kepada kita: siapa yang menyelamatkan satu nyawa, seakan-akan ia telah menyelamatkan semua manusia."
+  },
+  "d10-kind": {
+   "en": "Be like the good brother. Which is kind, and which is unkind?",
+   "t": "Jadilah seperti saudara yang baik. Mana yang baik hati, dan mana yang tidak?"
+  },
+  "d10-kind-bin1": {
+   "en": "Kind",
+   "t": "Baik hati"
+  },
+  "d10-kind-bin2": {
+   "en": "Unkind",
+   "t": "Tidak baik hati"
+  },
+  "d10-kind-it1": {
+   "en": "Sharing your toys",
+   "t": "Berbagi mainan"
+  },
+  "d10-kind-it2": {
+   "en": "Pushing someone",
+   "t": "Mendorong seseorang"
+  },
+  "d10-kind-it3": {
+   "en": "Helping someone who is hurt",
+   "t": "Menolong orang yang terluka"
+  },
+  "d10-kind-it4": {
+   "en": "Staying jealous and angry",
+   "t": "Terus iri dan marah"
+  },
+  "d10-kind-it5": {
+   "en": "Making up after a fight",
+   "t": "Berbaikan setelah bertengkar"
+  },
+  "d10-kind-it6": {
+   "en": "Hitting back",
+   "t": "Membalas memukul"
+  },
+  "d10-kind-no": {
+   "en": "Let's be like the good brother: kind, even when others are not.",
+   "t": "Mari kita seperti saudara yang baik: baik hati, bahkan ketika orang lain tidak."
+  },
+  "d11-a": {
+   "en": "Allah gave Adam and Hawwa another son, called Shith. He was good and wise, and he learned everything his father taught him.",
+   "t": "Allah memberi Adam dan Hawa seorang putra lagi, bernama Syits. Ia baik dan bijaksana, dan ia mempelajari semua yang diajarkan ayahnya."
+  },
+  "d11-b": {
+   "en": "Adam taught all his children to remember Allah, to pray, and to be kind to one another.",
+   "t": "Adam mengajari semua anaknya untuk mengingat Allah, untuk salat, dan untuk berbuat baik satu sama lain."
+  },
+  "d11-c": {
+   "en": "And Allah says: children of Adam, the best clothes of all are being mindful of Allah.",
+   "t": "Dan Allah berfirman: wahai anak cucu Adam, pakaian yang paling baik adalah takwa."
+  },
+  "d11-d": {
+   "en": "We are all children of Adam: one big family, in every colour. So we greet each other with peace, and we help each other.",
+   "t": "Kita semua adalah anak cucu Adam: satu keluarga besar, dalam segala warna. Maka kita saling memberi salam, dan kita saling menolong."
+  },
+  "d11-story": {
+   "en": "Tell the whole story of Adam. Tap in order.",
+   "t": "Ceritakan seluruh kisah Adam. Ketuk secara berurutan."
+  },
+  "d11-story-c1": {
+   "en": "First, Allah made Adam from earth.",
+   "t": "Pertama, Allah menciptakan Adam dari tanah."
+  },
+  "d11-story-c2": {
+   "en": "Allah taught him the names of everything.",
+   "t": "Allah mengajarinya nama segala sesuatu."
+  },
+  "d11-story-c3": {
+   "en": "Iblis was too proud to bow.",
+   "t": "Iblis terlalu sombong untuk bersujud."
+  },
+  "d11-story-c4": {
+   "en": "In the Garden, they ate from the tree.",
+   "t": "Di surga, mereka makan dari pohon itu."
+  },
+  "d11-story-c5": {
+   "en": "They said sorry, and Allah forgave them.",
+   "t": "Mereka meminta maaf, dan Allah mengampuni mereka."
+  },
+  "d11-story-c6": {
+   "en": "Then they lived and worked on the earth.",
+   "t": "Lalu mereka hidup dan bekerja di bumi."
+  },
+  "d11-story-no": {
+   "en": "Listen again, and tell it in order.",
+   "t": "Dengarkan lagi, dan ceritakan secara berurutan."
+  },
+  "end-a": {
+   "en": "This is the story of Adam, peace be upon him, the first of all people. He made a mistake, and he said sorry, and Allah forgave him. When we make a mistake, we can turn to Allah too.",
+   "t": "Inilah kisah Adam, semoga keselamatan tercurah kepadanya, manusia yang pertama. Ia berbuat salah, lalu ia meminta maaf, dan Allah mengampuninya. Ketika kita berbuat salah, kita juga bisa kembali kepada Allah."
+  }
+ },
+ "strings": {
+  "Someone New": "Makhluk Baru",
+  "Made from Earth": "Diciptakan dari Tanah",
+  "Told in Sunni and Shia narrations": "Diriwayatkan dalam riwayat Sunni dan Syiah",
+  "First Words": "Kata-Kata Pertama",
+  "Ibn Abbas in Ibn Kathir's commentary on 2:37; al-Bukhari and Muslim; Majlisi, Hayat al-Qulub": "Ibnu Abbas dalam tafsir Ibnu Katsir atas 2:37; al-Bukhari dan Muslim; Majlisi, Hayat al-Qulub",
+  "From a hadith in al-Bukhari": "Dari hadis dalam Shahih al-Bukhari",
+  "The Names": "Nama-Nama",
+  "The Proud One": "Yang Sombong",
+  "Allah keeps us safe": "Allah melindungi kita",
+  "The Garden": "Surga",
+  "The Whisper": "Bisikan",
+  "Sorry": "Maaf",
+  "Our Lord": "Tuhan kami",
+  "we have wronged ourselves": "kami telah menzalimi diri kami",
+  "if You do not forgive us": "jika Engkau tidak mengampuni kami",
+  "and have mercy on us": "dan merahmati kami",
+  "we will be lost": "niscaya kami merugi",
+  "Allah is the Most Merciful": "Allah Maha Penyayang",
+  "Life on Earth": "Hidup di Bumi",
+  "From narrations in Majlisi's Hayat al-Qulub": "Dari riwayat dalam Hayat al-Qulub karya Majlisi",
+  "ripe wheat": "gandum matang",
+  "a young shoot": "tunas muda",
+  "Two Brothers": "Dua Bersaudara",
+  "Children of Adam": "Anak Cucu Adam",
+  "Made from earth": "Diciptakan dari tanah",
+  "The names": "Nama-nama",
+  "Iblis would not bow": "Iblis tidak mau bersujud",
+  "The Garden and the tree": "Surga dan pohon itu",
+  "Life on earth": "Hidup di bumi",
+  "Adam": "Adam",
+  "The Story of Adam": "Kisah Adam",
+  "Eleven chapters about the first of all people. Play a little every day.": "Sebelas bab tentang manusia yang pertama. Mainkan sedikit setiap hari.",
+  "Humility": "Rendah hati",
+  "Kindness": "Kebaikan hati",
+  "The first of all people: made from earth, taught the names, forgiven.": "Manusia yang pertama: diciptakan dari tanah, diajari nama-nama, diampuni.",
+  "A bright garden with a great tree, a stream, birds and deer.": "Taman yang cerah dengan pohon besar, sungai kecil, burung-burung, dan rusa."
+ }
+}

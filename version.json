@@ -1,11 +1,18 @@
 {
-  "version": "2026.11.83",
+  "version": "2026.11.84",
   "date": "2026-11-21",
-  "buildId": "a6d9ed734412",
+  "buildId": "053d03583055",
   "notes": [
-    "Deutsch is on for families: every story game in German (no computer voice in German yet; your own recordings still play). A translation can now go live before its voices. In Indonesian, a line whose clip does not load is no longer read by the phone's own voice, which sounded strange and could stop the music on an iPhone"
+    "Translations reorganised: every language in one folder (lang/<code>/), English beside each line, a guide for translators (lang/README.md) and a page showing each language game by game (lang/STATUS.md). A device now downloads only the language it uses; English families download no translations. French started (empty, for drafting)"
   ],
   "history": [
+    {
+      "version": "2026.11.84",
+      "date": "2026-11-21",
+      "notes": [
+        "Translations reorganised: every language in one folder (lang/<code>/), English beside each line, a guide for translators (lang/README.md) and a page showing each language game by game (lang/STATUS.md). A device now downloads only the language it uses; English families download no translations. French started (empty, for drafting)"
+      ]
+    },
     {
       "version": "2026.11.83",
       "date": "2026-11-21",

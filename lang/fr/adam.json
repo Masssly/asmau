@@ -1,0 +1,647 @@
+{
+ "status": "draft",
+ "_note": "Français. To be checked by a native speaker; seen only with ?lang=fr until then.",
+ "lines": {
+  "d1-a": {
+   "en": "Before there were any people, there were the angels. They were made of light, and they praised Allah all the time.",
+   "t": ""
+  },
+  "d1-b": {
+   "en": "One day, Allah told the angels: I am going to place someone new on the earth, to look after it.",
+   "t": ""
+  },
+  "d1-c": {
+   "en": "The angels asked: will You place someone there who may do harm, when we praise You all the time? Allah said: I know what you do not know.",
+   "t": ""
+  },
+  "d1-q": {
+   "en": "What did Allah say to the angels?",
+   "t": ""
+  },
+  "d1-q-opt1": {
+   "en": "I know what you do not know",
+   "t": ""
+  },
+  "d1-q-opt2": {
+   "en": "You are right",
+   "t": ""
+  },
+  "d1-q-no": {
+   "en": "Allah knows everything. He said: I know what you do not know.",
+   "t": ""
+  },
+  "d1-mem": {
+   "en": "Find the pairs: things Allah made.",
+   "t": ""
+  },
+  "d2-a": {
+   "en": "Allah gathered earth from all over the world: dark earth and light earth, red earth and brown, soft earth and hard.",
+   "t": ""
+  },
+  "d2-gather": {
+   "en": "Help gather the earth. Tap to fill every piece.",
+   "t": ""
+  },
+  "d2-b": {
+   "en": "From that earth Allah made clay, and shaped Adam from it.",
+   "t": ""
+  },
+  "d2-c": {
+   "en": "Then Allah breathed life into him. Adam opened his eyes, and he was alive!",
+   "t": ""
+  },
+  "d2-d": {
+   "en": "That is why the children of Adam are so many colours, just like the earth he was made from. And every one of them is precious to Allah.",
+   "t": ""
+  },
+  "d2-q": {
+   "en": "What was Adam made from?",
+   "t": ""
+  },
+  "d2-q-opt1": {
+   "en": "Fire",
+   "t": ""
+  },
+  "d2-q-opt2": {
+   "en": "Earth and clay",
+   "t": ""
+  },
+  "d2-q-no": {
+   "en": "Not fire. Adam was made from earth and clay.",
+   "t": ""
+  },
+  "d3-a": {
+   "en": "It is told that the very first thing Adam did was sneeze! And he said: al-hamdu lillah. All praise belongs to Allah.",
+   "t": ""
+  },
+  "d3-b": {
+   "en": "And Allah answered him: may Allah have mercy on you.",
+   "t": ""
+  },
+  "d3-q": {
+   "en": "What do we say when we sneeze?",
+   "t": ""
+  },
+  "d3-q-opt1": {
+   "en": "Al-hamdu lillah",
+   "t": ""
+  },
+  "d3-q-opt2": {
+   "en": "Nothing at all",
+   "t": ""
+  },
+  "d3-q-no": {
+   "en": "We say al-hamdu lillah, just like Adam.",
+   "t": ""
+  },
+  "d3-c": {
+   "en": "Then Allah told Adam: go and greet those angels, and listen to how they answer. That will be the greeting of your children.",
+   "t": ""
+  },
+  "d3-d": {
+   "en": "Adam said: as-salamu alaykum, peace be upon you. The angels answered: wa alaykum as-salam wa rahmatullah. And peace be upon you, and the mercy of Allah.",
+   "t": ""
+  },
+  "d3-say": {
+   "en": "What do we say? Match each one.",
+   "t": ""
+  },
+  "d3-say-a1": {
+   "en": "When we sneeze",
+   "t": ""
+  },
+  "d3-say-b1": {
+   "en": "Al-hamdu lillah",
+   "t": ""
+  },
+  "d3-say-a2": {
+   "en": "When we meet someone",
+   "t": ""
+  },
+  "d3-say-b2": {
+   "en": "As-salamu alaykum",
+   "t": ""
+  },
+  "d3-say-a3": {
+   "en": "When someone greets us",
+   "t": ""
+  },
+  "d3-say-b3": {
+   "en": "Wa alaykum as-salam",
+   "t": ""
+  },
+  "d4-a": {
+   "en": "Allah taught Adam the names of everything: the sun and the moon, the sea and the mountains, every animal and every bird.",
+   "t": ""
+  },
+  "d4-homes": {
+   "en": "Adam knew every animal. Match each one to its home.",
+   "t": ""
+  },
+  "d4-homes-a1": {
+   "en": "Camel",
+   "t": ""
+  },
+  "d4-homes-b1": {
+   "en": "Desert",
+   "t": ""
+  },
+  "d4-homes-a2": {
+   "en": "Fish",
+   "t": ""
+  },
+  "d4-homes-b2": {
+   "en": "Sea",
+   "t": ""
+  },
+  "d4-homes-a3": {
+   "en": "Bird",
+   "t": ""
+  },
+  "d4-homes-b3": {
+   "en": "Nest",
+   "t": ""
+  },
+  "d4-homes-a4": {
+   "en": "Bee",
+   "t": ""
+  },
+  "d4-homes-b4": {
+   "en": "Flower",
+   "t": ""
+  },
+  "d4-b": {
+   "en": "Then Allah showed these things to the angels and said: tell Me their names. The angels said: glory be to You! We only know what You have taught us.",
+   "t": ""
+  },
+  "d4-c": {
+   "en": "Then Allah said: Adam, tell them their names. And Adam told them, every single one!",
+   "t": ""
+  },
+  "d4-mem": {
+   "en": "Find the pairs, and say their names.",
+   "t": ""
+  },
+  "d4-q": {
+   "en": "Who taught Adam the names?",
+   "t": ""
+  },
+  "d4-q-opt1": {
+   "en": "The angels",
+   "t": ""
+  },
+  "d4-q-opt2": {
+   "en": "Allah",
+   "t": ""
+  },
+  "d4-q-no": {
+   "en": "The angels did not know them. Allah taught Adam.",
+   "t": ""
+  },
+  "d5-a": {
+   "en": "Then Allah told the angels: bow down before Adam. And all the angels bowed.",
+   "t": ""
+  },
+  "d5-b": {
+   "en": "All except one: Iblis. He was one of the jinn, made from fire. He stood up stiff and proud, and he would not bow.",
+   "t": ""
+  },
+  "d5-c": {
+   "en": "Allah asked: what stopped you from bowing? Iblis said: I am better than him. You made me from fire, and him from clay.",
+   "t": ""
+  },
+  "d5-proud": {
+   "en": "Which is humble, and which is proud? Sort them.",
+   "t": ""
+  },
+  "d5-proud-bin1": {
+   "en": "Humble",
+   "t": ""
+  },
+  "d5-proud-bin2": {
+   "en": "Proud",
+   "t": ""
+  },
+  "d5-proud-it1": {
+   "en": "Doing what Allah asks",
+   "t": ""
+  },
+  "d5-proud-it2": {
+   "en": "Saying sorry",
+   "t": ""
+  },
+  "d5-proud-it3": {
+   "en": "Saying: I am better than you",
+   "t": ""
+  },
+  "d5-proud-it4": {
+   "en": "Refusing to listen",
+   "t": ""
+  },
+  "d5-proud-it5": {
+   "en": "Thanking Allah",
+   "t": ""
+  },
+  "d5-proud-it6": {
+   "en": "Laughing at others",
+   "t": ""
+  },
+  "d5-proud-no": {
+   "en": "Being proud is what Iblis did. Being humble is what Allah loves.",
+   "t": ""
+  },
+  "d5-d": {
+   "en": "So Allah sent Iblis away. And Iblis said: I will whisper to Adam's children, from in front and behind, from their right and their left!",
+   "t": ""
+  },
+  "d5-e": {
+   "en": "But Allah said: you will have no power over My true servants.",
+   "t": ""
+  },
+  "d5-refuge": {
+   "en": "When we feel a bad whisper, we ask Allah to keep us safe: a'udhu billahi min ash-shaytan ir-rajim. Press and hold the shield.",
+   "t": ""
+  },
+  "d6-a": {
+   "en": "Allah made a wife for Adam, so that he would not be alone. Her name was Hawwa.",
+   "t": ""
+  },
+  "d6-b": {
+   "en": "Allah said: live in the Garden, both of you, and eat whatever you like. In this Garden you will never be hungry or thirsty, and the sun will never be too hot.",
+   "t": ""
+  },
+  "d6-fruit": {
+   "en": "Gather the fruit of the Garden.",
+   "t": ""
+  },
+  "d6-c": {
+   "en": "But Allah said: do not go near this one tree. And remember, Iblis is your enemy.",
+   "t": ""
+  },
+  "d6-tree": {
+   "en": "Slide your finger around to look, and find the one tree they must not go near.",
+   "t": ""
+  },
+  "d6-q": {
+   "en": "What did Allah tell them about the tree?",
+   "t": ""
+  },
+  "d6-q-opt1": {
+   "en": "Do not go near it",
+   "t": ""
+  },
+  "d6-q-opt2": {
+   "en": "Eat all of it",
+   "t": ""
+  },
+  "d6-q-no": {
+   "en": "Allah said: do not go near this tree.",
+   "t": ""
+  },
+  "d7-a": {
+   "en": "But Iblis came creeping with a whisper. He said: Allah only told you not to eat from this tree so that you would not become angels, or live for ever.",
+   "t": ""
+  },
+  "d7-b": {
+   "en": "And he swore: I am only giving you good advice! But it was a lie.",
+   "t": ""
+  },
+  "d7-q": {
+   "en": "Was Iblis telling the truth?",
+   "t": ""
+  },
+  "d7-q-opt1": {
+   "en": "Yes, he was a friend",
+   "t": ""
+  },
+  "d7-q-opt2": {
+   "en": "No, it was a lie",
+   "t": ""
+  },
+  "d7-q-no": {
+   "en": "Iblis lied. He was their enemy, not their friend.",
+   "t": ""
+  },
+  "d7-c": {
+   "en": "Adam forgot what Allah had told him, and they both ate from the tree.",
+   "t": ""
+  },
+  "d7-d": {
+   "en": "At once they felt ashamed, and they began to cover themselves with leaves from the Garden.",
+   "t": ""
+  },
+  "d7-e": {
+   "en": "Their Lord called to them: did I not tell you not to go near that tree? Did I not tell you that Iblis is your enemy?",
+   "t": ""
+  },
+  "d7-listen": {
+   "en": "Good things and bad whispers. Which do we do, and which do we say no to?",
+   "t": ""
+  },
+  "d7-listen-bin1": {
+   "en": "Do it",
+   "t": ""
+  },
+  "d7-listen-bin2": {
+   "en": "Say no",
+   "t": ""
+  },
+  "d7-listen-it1": {
+   "en": "Pray on time",
+   "t": ""
+  },
+  "d7-listen-it2": {
+   "en": "Tell a little lie",
+   "t": ""
+  },
+  "d7-listen-it3": {
+   "en": "Say sorry",
+   "t": ""
+  },
+  "d7-listen-it4": {
+   "en": "Hit your brother",
+   "t": ""
+  },
+  "d7-listen-it5": {
+   "en": "Help at home",
+   "t": ""
+  },
+  "d7-listen-it6": {
+   "en": "Take a sweet without asking",
+   "t": ""
+  },
+  "d7-listen-no": {
+   "en": "That one is a bad whisper. Say no to it, and do the good things.",
+   "t": ""
+  },
+  "d8-a": {
+   "en": "Adam and Hawwa were very, very sorry. They did not blame anyone else. They prayed: our Lord, we have wronged ourselves. If You do not forgive us and have mercy on us, we will be lost.",
+   "t": ""
+  },
+  "d8-dua": {
+   "en": "Say Adam and Hawwa's prayer. Tap the parts in order.",
+   "t": ""
+  },
+  "d8-dua-c1": {
+   "en": "Our Lord,",
+   "t": ""
+  },
+  "d8-dua-c2": {
+   "en": "we have wronged ourselves.",
+   "t": ""
+  },
+  "d8-dua-c3": {
+   "en": "If You do not forgive us",
+   "t": ""
+  },
+  "d8-dua-c4": {
+   "en": "and have mercy on us,",
+   "t": ""
+  },
+  "d8-dua-c5": {
+   "en": "we will be lost.",
+   "t": ""
+  },
+  "d8-dua-no": {
+   "en": "Listen again, and say the prayer in order.",
+   "t": ""
+  },
+  "d8-b": {
+   "en": "And Allah forgave them. Allah is the Ever-Relenting, the Most Merciful.",
+   "t": ""
+  },
+  "d8-sorry": {
+   "en": "Say sorry to Allah from the heart. Press and hold the hands until they shine.",
+   "t": ""
+  },
+  "d8-q": {
+   "en": "What did Adam and Hawwa do after their mistake?",
+   "t": ""
+  },
+  "d8-q-opt1": {
+   "en": "Said sorry to Allah",
+   "t": ""
+  },
+  "d8-q-opt2": {
+   "en": "Blamed someone else",
+   "t": ""
+  },
+  "d8-q-no": {
+   "en": "They blamed no one. They said sorry to Allah, and He forgave them.",
+   "t": ""
+  },
+  "d9-a": {
+   "en": "Then Allah said: go down to the earth. There you will live, for a time. And when My guidance comes, whoever follows it will have nothing to fear.",
+   "t": ""
+  },
+  "d9-b": {
+   "en": "It is told that Adam and Hawwa came down to the earth far apart, and later found each other again, near Mecca.",
+   "t": ""
+  },
+  "d9-find": {
+   "en": "Help Adam find Hawwa again.",
+   "t": ""
+  },
+  "d9-c": {
+   "en": "It is told that the angel Jibril taught Adam how to plant seeds and grow food, and how to pray.",
+   "t": ""
+  },
+  "d9-plant": {
+   "en": "Plant the seeds. Tap each spot.",
+   "t": ""
+  },
+  "d9-d": {
+   "en": "Adam and Hawwa worked hard, and Allah blessed their fields. Every day they remembered Allah and thanked Him.",
+   "t": ""
+  },
+  "d9-harvest": {
+   "en": "Gather only the ripe golden wheat.",
+   "t": ""
+  },
+  "d10-a": {
+   "en": "Adam and Hawwa had many children. One day, two of their sons each brought a gift to offer to Allah.",
+   "t": ""
+  },
+  "d10-b": {
+   "en": "Allah accepted the gift of one brother, because he was mindful of Allah. But the other brother's gift was not accepted, and he became jealous and angry.",
+   "t": ""
+  },
+  "d10-c": {
+   "en": "The angry brother said: I will kill you! But the good brother said: even if you raise your hand to hurt me, I will never raise mine to hurt you. I fear Allah.",
+   "t": ""
+  },
+  "d10-q": {
+   "en": "What did the good brother say?",
+   "t": ""
+  },
+  "d10-q-opt1": {
+   "en": "I will hit you back",
+   "t": ""
+  },
+  "d10-q-opt2": {
+   "en": "I will never hurt you",
+   "t": ""
+  },
+  "d10-q-no": {
+   "en": "The good brother said: I will never raise my hand to hurt you.",
+   "t": ""
+  },
+  "d10-d": {
+   "en": "But the angry brother would not calm down. He hurt his brother so badly that his brother died.",
+   "t": ""
+  },
+  "d10-e": {
+   "en": "Then Allah sent a raven, which scratched in the ground. The brother cried: what have I done? And he was full of sorrow.",
+   "t": ""
+  },
+  "d10-f": {
+   "en": "Allah teaches us: whoever saves one life, it is as if they had saved all people.",
+   "t": ""
+  },
+  "d10-kind": {
+   "en": "Be like the good brother. Which is kind, and which is unkind?",
+   "t": ""
+  },
+  "d10-kind-bin1": {
+   "en": "Kind",
+   "t": ""
+  },
+  "d10-kind-bin2": {
+   "en": "Unkind",
+   "t": ""
+  },
+  "d10-kind-it1": {
+   "en": "Sharing your toys",
+   "t": ""
+  },
+  "d10-kind-it2": {
+   "en": "Pushing someone",
+   "t": ""
+  },
+  "d10-kind-it3": {
+   "en": "Helping someone who is hurt",
+   "t": ""
+  },
+  "d10-kind-it4": {
+   "en": "Staying jealous and angry",
+   "t": ""
+  },
+  "d10-kind-it5": {
+   "en": "Making up after a fight",
+   "t": ""
+  },
+  "d10-kind-it6": {
+   "en": "Hitting back",
+   "t": ""
+  },
+  "d10-kind-no": {
+   "en": "Let's be like the good brother: kind, even when others are not.",
+   "t": ""
+  },
+  "d11-a": {
+   "en": "Allah gave Adam and Hawwa another son, called Shith. He was good and wise, and he learned everything his father taught him.",
+   "t": ""
+  },
+  "d11-b": {
+   "en": "Adam taught all his children to remember Allah, to pray, and to be kind to one another.",
+   "t": ""
+  },
+  "d11-c": {
+   "en": "And Allah says: children of Adam, the best clothes of all are being mindful of Allah.",
+   "t": ""
+  },
+  "d11-d": {
+   "en": "We are all children of Adam: one big family, in every colour. So we greet each other with peace, and we help each other.",
+   "t": ""
+  },
+  "d11-story": {
+   "en": "Tell the whole story of Adam. Tap in order.",
+   "t": ""
+  },
+  "d11-story-c1": {
+   "en": "First, Allah made Adam from earth.",
+   "t": ""
+  },
+  "d11-story-c2": {
+   "en": "Allah taught him the names of everything.",
+   "t": ""
+  },
+  "d11-story-c3": {
+   "en": "Iblis was too proud to bow.",
+   "t": ""
+  },
+  "d11-story-c4": {
+   "en": "In the Garden, they ate from the tree.",
+   "t": ""
+  },
+  "d11-story-c5": {
+   "en": "They said sorry, and Allah forgave them.",
+   "t": ""
+  },
+  "d11-story-c6": {
+   "en": "Then they lived and worked on the earth.",
+   "t": ""
+  },
+  "d11-story-no": {
+   "en": "Listen again, and tell it in order.",
+   "t": ""
+  },
+  "end-a": {
+   "en": "This is the story of Adam, peace be upon him, the first of all people. He made a mistake, and he said sorry, and Allah forgave him. When we make a mistake, we can turn to Allah too.",
+   "t": ""
+  }
+ },
+ "strings": {
+  "Someone New": "",
+  "Made from Earth": "",
+  "Told in Sunni and Shia narrations": "",
+  "First Words": "",
+  "Ibn Abbas in Ibn Kathir's commentary on 2:37; al-Bukhari and Muslim; Majlisi, Hayat al-Qulub": "",
+  "From a hadith in al-Bukhari": "",
+  "The Names": "",
+  "The Proud One": "",
+  "Press and hold": "",
+  "Allah keeps us safe": "",
+  "The Garden": "",
+  "The Whisper": "",
+  "Sorry": "",
+  "Our Lord": "",
+  "we have wronged ourselves": "",
+  "if You do not forgive us": "",
+  "and have mercy on us": "",
+  "we will be lost": "",
+  "Allah is the Most Merciful": "",
+  "Life on Earth": "",
+  "From narrations in Majlisi's Hayat al-Qulub": "",
+  "ripe wheat": "",
+  "a young shoot": "",
+  "Two Brothers": "",
+  "Children of Adam": "",
+  "Made from earth": "",
+  "The names": "",
+  "Iblis would not bow": "",
+  "The Garden and the tree": "",
+  "Life on earth": "",
+  "← Asmau": "",
+  "Adam": "",
+  "The Story of Adam": "",
+  "Eleven chapters about the first of all people. Play a little every day.": "",
+  "Start the story": "",
+  "Start from the beginning": "",
+  "For parents": "",
+  "Back": "",
+  "Next": "",
+  "All chapters": "",
+  "✕ Close": "",
+  "The End": "",
+  "Humility": "",
+  "Kindness": "",
+  "Read it again": "",
+  "Pick a chapter": "",
+  "Music": "",
+  "Sounds": "",
+  "Voice": "",
+  "The first of all people: made from earth, taught the names, forgiven.": "",
+  "A bright garden with a great tree, a stream, birds and deer.": ""
+ }
+}

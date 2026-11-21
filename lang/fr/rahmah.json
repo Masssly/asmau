@@ -1,0 +1,508 @@
+{
+ "status": "draft",
+ "_note": "Français. To be checked by a native speaker; seen only with ?lang=fr until then.",
+ "lines": {
+  "r1-a": {
+   "en": "Long ago, in the year 1900, a baby girl was born in Padang Panjang, a town in the green mountains of West Sumatra, in what is now Indonesia. Her name was Rahmah.",
+   "t": ""
+  },
+  "r1-b": {
+   "en": "Her family loved learning. Her father was a judge, and her grandfather was a scholar who studied the stars.",
+   "t": ""
+  },
+  "r1-c": {
+   "en": "Her people, the Minangkabau, build beautiful houses with roofs that curve up like the horns of a buffalo.",
+   "t": ""
+  },
+  "r1-home": {
+   "en": "Find the pairs! Things of her home in the mountains.",
+   "t": ""
+  },
+  "r1-q": {
+   "en": "Where was Rahmah born?",
+   "t": ""
+  },
+  "r1-q-opt1": {
+   "en": "In the mountains of Sumatra",
+   "t": ""
+  },
+  "r1-q-opt2": {
+   "en": "In a big desert",
+   "t": ""
+  },
+  "r1-q-no": {
+   "en": "She was born in Padang Panjang, in the green mountains of West Sumatra.",
+   "t": ""
+  },
+  "r2-a": {
+   "en": "When Rahmah was six years old, her father died. She missed him very much.",
+   "t": ""
+  },
+  "r2-b": {
+   "en": "But her father's students came to teach her. She learned to read and write, in Arabic letters and in Latin letters too.",
+   "t": ""
+  },
+  "r2-books": {
+   "en": "Count the books she read! Tap each one.",
+   "t": ""
+  },
+  "r2-c": {
+   "en": "Rahmah also learned how to help mothers when their babies are born.",
+   "t": ""
+  },
+  "r2-q": {
+   "en": "Who taught Rahmah after her father died?",
+   "t": ""
+  },
+  "r2-q-opt1": {
+   "en": "Nobody at all",
+   "t": ""
+  },
+  "r2-q-opt2": {
+   "en": "Her father's students",
+   "t": ""
+  },
+  "r2-q-no": {
+   "en": "Her father's students came and taught her to read and write.",
+   "t": ""
+  },
+  "r3-a": {
+   "en": "When Rahmah was still very young, her family arranged for her to marry, and she had to leave school.",
+   "t": ""
+  },
+  "r3-b": {
+   "en": "But Rahmah did not stop learning. She joined study circles, where women sat together in the evening to learn about Islam.",
+   "t": ""
+  },
+  "r3-learn": {
+   "en": "Keep learning, like Rahmah. Press and hold.",
+   "t": ""
+  },
+  "r3-c": {
+   "en": "A few years later, she went back to school.",
+   "t": ""
+  },
+  "r3-q": {
+   "en": "What did Rahmah do when she had to leave school?",
+   "t": ""
+  },
+  "r3-q-opt1": {
+   "en": "She kept learning",
+   "t": ""
+  },
+  "r3-q-opt2": {
+   "en": "She stopped learning",
+   "t": ""
+  },
+  "r3-q-no": {
+   "en": "She kept learning, in study circles, until she could go back to school.",
+   "t": ""
+  },
+  "r4-a": {
+   "en": "Rahmah's big brother, Zainuddin, had started a school called Diniyah. Rahmah went back there to study.",
+   "t": ""
+  },
+  "r4-b": {
+   "en": "After class, she gathered the girls together, to study more.",
+   "t": ""
+  },
+  "r4-girls": {
+   "en": "Count the girls in her study circle. Tap each one.",
+   "t": ""
+  },
+  "r4-c": {
+   "en": "Rahmah saw that girls needed a school of their own, where they could learn everything, and feel at home.",
+   "t": ""
+  },
+  "r4-q": {
+   "en": "What did Rahmah want for girls?",
+   "t": ""
+  },
+  "r4-q-opt1": {
+   "en": "No school at all",
+   "t": ""
+  },
+  "r4-q-opt2": {
+   "en": "A school of their own",
+   "t": ""
+  },
+  "r4-q-no": {
+   "en": "She wanted girls to have a school of their own.",
+   "t": ""
+  },
+  "r5-a": {
+   "en": "On the first of November, 1923, Rahmah opened a school just for girls. She called it Diniyah Putri.",
+   "t": ""
+  },
+  "r5-b": {
+   "en": "At first there was no school building. Lessons were in a mosque, and Rahmah was the main teacher.",
+   "t": ""
+  },
+  "r5-c": {
+   "en": "The first students were seventy-one women and girls. Many of them were young mothers.",
+   "t": ""
+  },
+  "r5-lessons": {
+   "en": "What did they learn at Diniyah Putri? Sort them.",
+   "t": ""
+  },
+  "r5-lessons-bin1": {
+   "en": "They learned it",
+   "t": ""
+  },
+  "r5-lessons-bin2": {
+   "en": "Not on the list",
+   "t": ""
+  },
+  "r5-lessons-it1": {
+   "en": "The Qur'an and Islam",
+   "t": ""
+  },
+  "r5-lessons-it2": {
+   "en": "Video games",
+   "t": ""
+  },
+  "r5-lessons-it3": {
+   "en": "Arabic",
+   "t": ""
+  },
+  "r5-lessons-it4": {
+   "en": "Sewing and crafts",
+   "t": ""
+  },
+  "r5-lessons-it5": {
+   "en": "Magic tricks",
+   "t": ""
+  },
+  "r5-lessons-it6": {
+   "en": "Skateboarding",
+   "t": ""
+  },
+  "r5-lessons-no": {
+   "en": "Think again. Was that taught in 1923?",
+   "t": ""
+  },
+  "r5-q": {
+   "en": "Where were the very first lessons?",
+   "t": ""
+  },
+  "r5-q-opt1": {
+   "en": "In a mosque",
+   "t": ""
+  },
+  "r5-q-opt2": {
+   "en": "In a palace",
+   "t": ""
+  },
+  "r5-q-no": {
+   "en": "The first lessons were in a mosque.",
+   "t": ""
+  },
+  "r6-a": {
+   "en": "Not everyone liked the new school. Some people said that girls did not need to go to school.",
+   "t": ""
+  },
+  "r6-b": {
+   "en": "Rahmah talked kindly with the scholars of her town, and showed them that Islam honours learning, for girls as well as boys.",
+   "t": ""
+  },
+  "r6-c": {
+   "en": "Then, in 1924, her brother Zainuddin died. Many thought the school would close. But Rahmah kept going.",
+   "t": ""
+  },
+  "r6-going": {
+   "en": "When something is hard: keep going, or give up?",
+   "t": ""
+  },
+  "r6-going-bin1": {
+   "en": "Keep going",
+   "t": ""
+  },
+  "r6-going-bin2": {
+   "en": "Give up",
+   "t": ""
+  },
+  "r6-going-it1": {
+   "en": "Try again tomorrow",
+   "t": ""
+  },
+  "r6-going-it2": {
+   "en": "Throw it away",
+   "t": ""
+  },
+  "r6-going-it3": {
+   "en": "Ask for help",
+   "t": ""
+  },
+  "r6-going-it4": {
+   "en": "Go slowly but steadily",
+   "t": ""
+  },
+  "r6-going-it5": {
+   "en": "Stop at the first mistake",
+   "t": ""
+  },
+  "r6-going-it6": {
+   "en": "Say: I can't do it",
+   "t": ""
+  },
+  "r6-going-no": {
+   "en": "Think again. Is that keeping going, or giving up?",
+   "t": ""
+  },
+  "r6-q": {
+   "en": "What did Rahmah do when things were hard?",
+   "t": ""
+  },
+  "r6-q-opt1": {
+   "en": "She gave up",
+   "t": ""
+  },
+  "r6-q-opt2": {
+   "en": "She kept going",
+   "t": ""
+  },
+  "r6-q-no": {
+   "en": "She kept going, and the school did not close.",
+   "t": ""
+  },
+  "r7-a": {
+   "en": "In 1926, a big earthquake shook Padang Panjang, and the school building fell down.",
+   "t": ""
+  },
+  "r7-b": {
+   "en": "But the lessons did not stop. For years, the girls learned in simple shelters.",
+   "t": ""
+  },
+  "r7-c": {
+   "en": "Rahmah travelled to many towns and islands, to collect money for a new school.",
+   "t": ""
+  },
+  "r7-travel": {
+   "en": "Help Rahmah travel to collect money for the school.",
+   "t": ""
+  },
+  "r7-d": {
+   "en": "In 1928, the new school opened!",
+   "t": ""
+  },
+  "r7-bricks": {
+   "en": "Build the new school. Tap to place every brick.",
+   "t": ""
+  },
+  "r8-a": {
+   "en": "In those days the land was ruled by the Dutch, and their government paid money to some schools. But Rahmah would not take it: she wanted her school to be free to teach in its own way.",
+   "t": ""
+  },
+  "r8-b": {
+   "en": "The school grew and grew. Soon about five hundred girls were learning there.",
+   "t": ""
+  },
+  "r8-c": {
+   "en": "She also opened a college to train women to be teachers.",
+   "t": ""
+  },
+  "r8-teacher": {
+   "en": "What does a good teacher do? Sort them.",
+   "t": ""
+  },
+  "r8-teacher-bin1": {
+   "en": "A good teacher",
+   "t": ""
+  },
+  "r8-teacher-bin2": {
+   "en": "Not a good teacher",
+   "t": ""
+  },
+  "r8-teacher-it1": {
+   "en": "Listens to every child",
+   "t": ""
+  },
+  "r8-teacher-it2": {
+   "en": "Laughs at mistakes",
+   "t": ""
+  },
+  "r8-teacher-it3": {
+   "en": "Explains again, kindly",
+   "t": ""
+  },
+  "r8-teacher-it4": {
+   "en": "Shouts all the time",
+   "t": ""
+  },
+  "r8-teacher-it5": {
+   "en": "Is patient",
+   "t": ""
+  },
+  "r8-teacher-it6": {
+   "en": "Helps only some children",
+   "t": ""
+  },
+  "r8-teacher-no": {
+   "en": "Think again. Would a good teacher do that?",
+   "t": ""
+  },
+  "r9-a": {
+   "en": "For many years, Indonesia was ruled by others. Then, in 1945, Indonesia became free.",
+   "t": ""
+  },
+  "r9-b": {
+   "en": "When Rahmah heard the news, she raised the red and white flag of Indonesia in the school yard.",
+   "t": ""
+  },
+  "r9-flag": {
+   "en": "Raise the flag! Press and hold.",
+   "t": ""
+  },
+  "r9-q": {
+   "en": "What colours are on Indonesia's flag?",
+   "t": ""
+  },
+  "r9-q-opt1": {
+   "en": "Red and white",
+   "t": ""
+  },
+  "r9-q-opt2": {
+   "en": "Blue and yellow",
+   "t": ""
+  },
+  "r9-q-no": {
+   "en": "Indonesia's flag is red and white.",
+   "t": ""
+  },
+  "r10-a": {
+   "en": "Years later, the head of al-Azhar, a great old university in Egypt, came all the way to visit her school.",
+   "t": ""
+  },
+  "r10-b": {
+   "en": "Then Rahmah went on Hajj to Makkah.",
+   "t": ""
+  },
+  "r10-cairo": {
+   "en": "Help Rahmah travel to Makkah, and then to Cairo.",
+   "t": ""
+  },
+  "r10-c": {
+   "en": "In Cairo, the teachers of al-Azhar gave her the title Syaikhah: a great scholar. No woman had ever been given it before.",
+   "t": ""
+  },
+  "r10-d": {
+   "en": "After that, girls from her school could go to study at al-Azhar too.",
+   "t": ""
+  },
+  "r10-q": {
+   "en": "What title did al-Azhar give Rahmah?",
+   "t": ""
+  },
+  "r10-q-opt1": {
+   "en": "Queen",
+   "t": ""
+  },
+  "r10-q-opt2": {
+   "en": "Syaikhah: a great scholar",
+   "t": ""
+  },
+  "r10-q-no": {
+   "en": "Al-Azhar called her Syaikhah, a great scholar. No woman had been given it before.",
+   "t": ""
+  },
+  "r11-a": {
+   "en": "Rahmah never stopped working. In 1967, a university for women, which she had worked for, was opened.",
+   "t": ""
+  },
+  "r11-b": {
+   "en": "Rahmah died in 1969, in Padang Panjang, where she was born. May Allah have mercy on her.",
+   "t": ""
+  },
+  "r11-c": {
+   "en": "Her school is still open today, full of girls learning.",
+   "t": ""
+  },
+  "r11-d": {
+   "en": "And in 2025, Indonesia named her a National Hero.",
+   "t": ""
+  },
+  "r11-story": {
+   "en": "Tell Rahmah's story. Tap in order.",
+   "t": ""
+  },
+  "r11-story-c1": {
+   "en": "First, Rahmah was born in the mountains of Sumatra.",
+   "t": ""
+  },
+  "r11-story-c2": {
+   "en": "She learned to read and write.",
+   "t": ""
+  },
+  "r11-story-c3": {
+   "en": "She opened a school for girls.",
+   "t": ""
+  },
+  "r11-story-c4": {
+   "en": "An earthquake knocked it down, and she built it again.",
+   "t": ""
+  },
+  "r11-story-c5": {
+   "en": "She raised Indonesia's flag at the school.",
+   "t": ""
+  },
+  "r11-story-c6": {
+   "en": "And al-Azhar called her Syaikhah.",
+   "t": ""
+  },
+  "r11-story-no": {
+   "en": "Listen again, and tell it in order.",
+   "t": ""
+  },
+  "end-a": {
+   "en": "This is the story of Rahmah El Yunusiyyah, who opened a school for girls when many people said girls did not need one, and never gave up. Her school is still open today.",
+   "t": ""
+  }
+ },
+ "strings": {
+  "A Girl in the Mountains": "",
+  "Histories of her life (see the notes)": "",
+  "From the histories of her life": "",
+  "Learning to Read": "",
+  "No More School": "",
+  "Press and hold": "",
+  "Never stop learning": "",
+  "Back to School": "",
+  "A School for Girls": "",
+  "Not Everyone Agreed": "",
+  "The Earthquake": "",
+  "On Her Own Feet": "",
+  "A New Flag": "",
+  "The flag is flying!": "",
+  "To Cairo": "",
+  "Her School Today": "",
+  "Born in the mountains": "",
+  "She learned to read": "",
+  "A school for girls": "",
+  "The earthquake": "",
+  "The new flag": "",
+  "Al-Azhar": "",
+  "← Asmau": "",
+  "Rahmah El Yunusiyyah": "",
+  "The Story of Rahmah El Yunusiyyah": "",
+  "Eleven chapters about the girl who opened a school for girls. Play a little every day.": "",
+  "Start the story": "",
+  "Start from the beginning": "",
+  "For parents": "",
+  "Back": "",
+  "Next": "",
+  "All chapters": "",
+  "✕ Close": "",
+  "The End": "",
+  "Learning": "",
+  "Never giving up": "",
+  "Courage": "",
+  "Read it again": "",
+  "Pick a chapter": "",
+  "Music": "",
+  "Sounds": "",
+  "Voice": "",
+  "The girl from the mountains of Sumatra who opened a school for girls in 1923, never gave up, and was honoured by al-Azhar.": "",
+  "Rahmah welcomes girls arriving with their books at a mosque in the mountains of West Sumatra.": ""
+ }
+}

@@ -1,0 +1,510 @@
+{
+ "status": "draft",
+ "_note": "Bahasa Indonesia, drafted 21 November 2026, to be checked by a native speaker. Seen only with ?lang=id until then.",
+ "lines": {
+  "u1-a": {
+   "en": "Long ago, across the Red Sea from Arabia, there was a green land of high mountains called Abyssinia. Today we call it Ethiopia and Eritrea.",
+   "t": "Dahulu kala, di seberang Laut Merah dari Arab, ada sebuah negeri hijau dengan gunung-gunung tinggi bernama Habasyah. Sekarang kita menyebutnya Etiopia dan Eritrea."
+  },
+  "u1-b": {
+   "en": "A girl called Barakah came from there, across the sea, to the town of Makkah. Barakah means blessing.",
+   "t": "Seorang anak perempuan bernama Barakah datang dari sana, menyeberangi laut, ke kota Makkah. Barakah artinya berkah."
+  },
+  "u1-sail": {
+   "en": "Help Barakah's boat cross the sea to Arabia.",
+   "t": "Bantu perahu Barakah menyeberangi laut ke Arab."
+  },
+  "u1-c": {
+   "en": "In Makkah she lived in the house of a young man called Abdullah. She was not free: she had to work for his family.",
+   "t": "Di Makkah ia tinggal di rumah seorang pemuda bernama Abdullah. Ia tidak merdeka: ia harus bekerja untuk keluarga Abdullah."
+  },
+  "u1-d": {
+   "en": "Abdullah married a kind young woman called Amina. But soon Abdullah went away on a journey, and he died, far from home.",
+   "t": "Abdullah menikah dengan seorang perempuan muda yang baik hati bernama Aminah. Tetapi tak lama kemudian Abdullah pergi dalam sebuah perjalanan, dan ia wafat, jauh dari rumah."
+  },
+  "u1-q": {
+   "en": "Where did Barakah come from?",
+   "t": "Dari mana Barakah berasal?"
+  },
+  "u1-q-opt1": {
+   "en": "From Abyssinia, across the sea",
+   "t": "Dari Habasyah, di seberang laut"
+  },
+  "u1-q-opt2": {
+   "en": "From the next street",
+   "t": "Dari jalan sebelah"
+  },
+  "u1-q-no": {
+   "en": "Barakah came from Abyssinia, across the sea.",
+   "t": "Barakah berasal dari Habasyah, di seberang laut."
+  },
+  "u2-a": {
+   "en": "Then Amina had a baby boy. He was called Muhammad, peace and blessings be upon him.",
+   "t": "Lalu Aminah melahirkan seorang bayi laki-laki. Namanya Muhammad, shallallahu 'alaihi wa sallam."
+  },
+  "u2-b": {
+   "en": "Barakah loved the baby. She helped his mother look after him, by day and by night.",
+   "t": "Barakah menyayangi bayi itu. Ia membantu ibunya merawatnya, siang dan malam."
+  },
+  "u2-rock": {
+   "en": "Rock the cradle gently. Press and hold, until he is fast asleep.",
+   "t": "Ayun buaiannya pelan-pelan. Tekan dan tahan, sampai ia tertidur lelap."
+  },
+  "u2-c": {
+   "en": "The baby's father, Abdullah, had left five camels, some sheep, and Barakah, who looked after the baby.",
+   "t": "Abdullah, ayah bayi itu, meninggalkan lima ekor unta, beberapa ekor domba, dan Barakah, yang merawat bayi itu."
+  },
+  "u2-camels": {
+   "en": "Count the five camels. Tap each one.",
+   "t": "Hitung kelima unta itu. Ketuk satu per satu."
+  },
+  "u2-q": {
+   "en": "Who helped Amina look after baby Muhammad?",
+   "t": "Siapa yang membantu Aminah merawat bayi Muhammad?"
+  },
+  "u2-q-opt1": {
+   "en": "Nobody at all",
+   "t": "Tidak ada siapa-siapa"
+  },
+  "u2-q-opt2": {
+   "en": "Barakah",
+   "t": "Barakah"
+  },
+  "u2-q-no": {
+   "en": "Barakah helped his mother look after him, by day and by night.",
+   "t": "Barakah membantu ibunya merawatnya, siang dan malam."
+  },
+  "u3-a": {
+   "en": "When Muhammad was six, his mother took him to visit her family in the town of Yathrib, which later was called Madina. Barakah went with them, on two camels.",
+   "t": "Ketika Muhammad berusia enam tahun, ibunya mengajaknya mengunjungi keluarganya di kota Yatsrib, yang kemudian dinamai Madinah. Barakah ikut bersama mereka, dengan dua ekor unta."
+  },
+  "u3-b": {
+   "en": "They stayed a whole month with his mother's family, among the date palms.",
+   "t": "Mereka tinggal sebulan penuh bersama keluarga ibunya, di antara pohon-pohon kurma."
+  },
+  "u3-c": {
+   "en": "Many years later, the Prophet remembered that month. He said that he learned to swim in a pond there, and flew pigeons with the boys.",
+   "t": "Bertahun-tahun kemudian, Nabi teringat bulan itu. Beliau bercerita bahwa beliau belajar berenang di sebuah kolam di sana, dan menerbangkan burung merpati bersama anak-anak lain."
+  },
+  "u3-pigeons": {
+   "en": "Count the pigeons! Tap each one.",
+   "t": "Hitung burung-burung merpatinya! Ketuk satu per satu."
+  },
+  "u3-pairs": {
+   "en": "Find the pairs! Things they saw in Madina.",
+   "t": "Temukan pasangannya! Hal-hal yang mereka lihat di Madinah."
+  },
+  "u4-a": {
+   "en": "On the way home, at a place called al-Abwa, his mother Amina fell ill.",
+   "t": "Dalam perjalanan pulang, di sebuah tempat bernama al-Abwa, Aminah, ibunya, jatuh sakit."
+  },
+  "u4-b": {
+   "en": "And there, Amina died. Barakah stayed close to the little boy, and they were sad together.",
+   "t": "Dan di sana, Aminah wafat. Barakah tetap dekat dengan anak kecil itu, dan mereka bersedih bersama."
+  },
+  "u4-c": {
+   "en": "Then Barakah brought him home to Makkah, on the two camels.",
+   "t": "Lalu Barakah membawanya pulang ke Makkah, dengan dua ekor unta itu."
+  },
+  "u4-home": {
+   "en": "Help Barakah bring him home to Makkah.",
+   "t": "Bantu Barakah membawanya pulang ke Makkah."
+  },
+  "u4-d": {
+   "en": "Allah says to the Prophet in the Qur'an: Did He not find you an orphan and shelter you?",
+   "t": "Allah berfirman kepada Nabi dalam Al-Qur'an: Bukankah Dia mendapatimu sebagai seorang yatim, lalu Dia melindungimu?"
+  },
+  "u4-q": {
+   "en": "Who brought the little boy home to Makkah?",
+   "t": "Siapa yang membawa anak kecil itu pulang ke Makkah?"
+  },
+  "u4-q-opt1": {
+   "en": "Barakah, on the camels",
+   "t": "Barakah, dengan unta-unta itu"
+  },
+  "u4-q-opt2": {
+   "en": "He walked home alone",
+   "t": "Ia pulang sendirian berjalan kaki"
+  },
+  "u4-q-no": {
+   "en": "Barakah brought him home, on the two camels.",
+   "t": "Barakah membawanya pulang, dengan dua ekor unta itu."
+  },
+  "u5-a": {
+   "en": "In Makkah, his grandfather Abd al-Muttalib looked after him. He was a great old man of Makkah.",
+   "t": "Di Makkah, kakeknya, Abdul Muthalib, merawatnya. Ia seorang tetua Makkah yang terhormat."
+  },
+  "u5-b": {
+   "en": "He said to Barakah: O blessed one! Look after this son of mine, and never forget him.",
+   "t": "Ia berkata kepada Barakah: wahai perempuan yang diberkahi! Rawatlah anakku ini, dan jangan pernah melupakannya."
+  },
+  "u5-q": {
+   "en": "What did the grandfather call Barakah?",
+   "t": "Kakeknya memanggil Barakah dengan sebutan apa?"
+  },
+  "u5-q-opt1": {
+   "en": "O lazy one",
+   "t": "Wahai si pemalas"
+  },
+  "u5-q-opt2": {
+   "en": "O blessed one",
+   "t": "Wahai perempuan yang diberkahi"
+  },
+  "u5-q-no": {
+   "en": "He called her: O blessed one. That is what Barakah means.",
+   "t": "Ia memanggilnya: wahai perempuan yang diberkahi. Itulah arti nama Barakah."
+  },
+  "u5-c": {
+   "en": "But when the boy was eight, his grandfather died too. Barakah saw the boy crying as he walked behind his grandfather's funeral.",
+   "t": "Tetapi ketika anak itu berusia delapan tahun, kakeknya pun wafat. Barakah melihat anak itu menangis sambil berjalan di belakang jenazah kakeknya."
+  },
+  "u5-d": {
+   "en": "Then his uncle Abu Talib took him into his home, and loved him like his own son.",
+   "t": "Lalu pamannya, Abu Thalib, membawanya ke rumahnya, dan menyayanginya seperti anaknya sendiri."
+  },
+  "u5-care": {
+   "en": "Who looked after him, one after the other? Put them in order.",
+   "t": "Siapa yang merawatnya, satu demi satu? Urutkan."
+  },
+  "u5-care-c1": {
+   "en": "First, his mother Amina, with Barakah.",
+   "t": "Pertama, ibunya, Aminah, bersama Barakah."
+  },
+  "u5-care-c2": {
+   "en": "Then his grandfather, Abd al-Muttalib.",
+   "t": "Lalu kakeknya, Abdul Muthalib."
+  },
+  "u5-care-c3": {
+   "en": "Then his uncle, Abu Talib.",
+   "t": "Lalu pamannya, Abu Thalib."
+  },
+  "u5-care-no": {
+   "en": "Listen again, and put them in order.",
+   "t": "Dengarkan lagi, dan urutkan."
+  },
+  "u6-a": {
+   "en": "The boy grew up into a good and honest young man. When he married Khadijah, he set Barakah free.",
+   "t": "Anak itu tumbuh menjadi pemuda yang baik dan jujur. Ketika beliau menikah dengan Khadijah, beliau memerdekakan Barakah."
+  },
+  "u6-b": {
+   "en": "Barakah married a good man called Ubayd, and they had a son called Ayman. So people called her Umm Ayman: the mother of Ayman.",
+   "t": "Barakah menikah dengan seorang laki-laki yang baik bernama Ubaid, dan mereka punya seorang putra bernama Aiman. Maka orang-orang memanggilnya Ummu Aiman: ibu Aiman."
+  },
+  "u6-c": {
+   "en": "The Prophet loved her very much. He used to call her: O mother!",
+   "t": "Nabi sangat menyayanginya. Beliau biasa memanggilnya: wahai ibu!"
+  },
+  "u6-d": {
+   "en": "It is told that he said: whoever would like to marry a woman of Paradise, let him marry Umm Ayman.",
+   "t": "Diceritakan bahwa beliau bersabda: siapa yang ingin menikahi seorang perempuan penghuni surga, hendaklah ia menikahi Ummu Aiman."
+  },
+  "u6-e": {
+   "en": "Some years later, when her first marriage had ended, she married Zayd, a man the Prophet loved very much. They had a son too, called Usamah.",
+   "t": "Beberapa tahun kemudian, setelah pernikahan pertamanya berakhir, ia menikah dengan Zaid, seorang laki-laki yang sangat disayangi Nabi. Mereka juga punya seorang putra, bernama Usamah."
+  },
+  "u6-names": {
+   "en": "What does each name mean? Match them.",
+   "t": "Apa arti setiap nama? Pasangkan."
+  },
+  "u6-names-a1": {
+   "en": "Barakah",
+   "t": "Barakah"
+  },
+  "u6-names-b1": {
+   "en": "Blessing",
+   "t": "Berkah"
+  },
+  "u6-names-a2": {
+   "en": "Umm Ayman",
+   "t": "Ummu Aiman"
+  },
+  "u6-names-b2": {
+   "en": "The mother of Ayman",
+   "t": "Ibu Aiman"
+  },
+  "u6-names-a3": {
+   "en": "Usamah",
+   "t": "Usamah"
+  },
+  "u6-names-b3": {
+   "en": "Son of Zayd and Umm Ayman",
+   "t": "Putra Zaid dan Ummu Aiman"
+  },
+  "u7-a": {
+   "en": "Many people in Makkah were cruel to the Muslims. So Allah let the Muslims move to Madina, far to the north.",
+   "t": "Banyak orang di Makkah berbuat kejam kepada kaum Muslimin. Maka Allah mengizinkan kaum Muslimin pindah ke Madinah, jauh di utara."
+  },
+  "u7-b": {
+   "en": "Umm Ayman set out too, on the long, hot road to Madina.",
+   "t": "Ummu Aiman pun berangkat, menempuh jalan panjang dan panas menuju Madinah."
+  },
+  "u7-c": {
+   "en": "She was fasting, and she grew very thirsty. And she had no water.",
+   "t": "Ia sedang berpuasa, dan ia sangat haus. Dan ia tidak punya air."
+  },
+  "u7-patient": {
+   "en": "Be patient, like Umm Ayman. Press and hold.",
+   "t": "Bersabarlah, seperti Ummu Aiman. Tekan dan tahan."
+  },
+  "u7-d": {
+   "en": "It is told that a bucket of cool water came down from the sky. She drank, and after that she was never thirsty again, even when she fasted on a hot day.",
+   "t": "Diceritakan bahwa seember air sejuk turun dari langit. Ia minum, dan sejak itu ia tidak pernah haus lagi, bahkan ketika berpuasa di hari yang panas."
+  },
+  "u7-drops": {
+   "en": "Catch the cool drops of water!",
+   "t": "Tangkap tetes-tetes air yang sejuk!"
+  },
+  "u7-e": {
+   "en": "At last she reached Madina, with its green date palms and its kind people.",
+   "t": "Akhirnya ia sampai di Madinah, dengan pohon-pohon kurmanya yang hijau dan penduduknya yang baik hati."
+  },
+  "u8-a": {
+   "en": "Umm Ayman was brave and kind. When the Muslims had to defend Madina, at the mountain of Uhud, she went too.",
+   "t": "Ummu Aiman pemberani dan baik hati. Ketika kaum Muslimin harus mempertahankan Madinah, di gunung Uhud, ia ikut pergi."
+  },
+  "u8-b": {
+   "en": "She carried water to the thirsty, and she cared for the people who were hurt.",
+   "t": "Ia membawakan air untuk orang-orang yang haus, dan ia merawat orang-orang yang terluka."
+  },
+  "u8-cups": {
+   "en": "Give everyone water. Tap each cup.",
+   "t": "Berikan air kepada semua orang. Ketuk setiap cangkir."
+  },
+  "u8-c": {
+   "en": "Umm Ayman went with the Muslims to Khaybar too, to help.",
+   "t": "Ummu Aiman juga ikut bersama kaum Muslimin ke Khaibar, untuk membantu."
+  },
+  "u8-q": {
+   "en": "What did Umm Ayman bring to the people who were hurt?",
+   "t": "Apa yang dibawakan Ummu Aiman untuk orang-orang yang terluka?"
+  },
+  "u8-q-opt1": {
+   "en": "Water",
+   "t": "Air"
+  },
+  "u8-q-opt2": {
+   "en": "Toys",
+   "t": "Mainan"
+  },
+  "u8-q-no": {
+   "en": "She brought them water, and she cared for them.",
+   "t": "Ia membawakan air untuk mereka, dan ia merawat mereka."
+  },
+  "u9-a": {
+   "en": "In Madina, the Prophet gave Umm Ayman some date palms of her own.",
+   "t": "Di Madinah, Nabi memberi Ummu Aiman beberapa pohon kurma miliknya sendiri."
+  },
+  "u9-b": {
+   "en": "Later the palms had to go back to the family who had lent them. A boy called Anas came to ask for them.",
+   "t": "Kemudian pohon-pohon itu harus dikembalikan kepada keluarga yang meminjamkannya. Seorang anak laki-laki bernama Anas datang untuk memintanya."
+  },
+  "u9-c": {
+   "en": "But Umm Ayman said: No! The Prophet gave them to me! So the Prophet offered her other trees instead. She still said no!",
+   "t": "Tetapi Ummu Aiman berkata: Tidak! Nabi telah memberikannya kepadaku! Maka Nabi menawarkan pohon-pohon lain sebagai gantinya. Ia tetap berkata tidak!"
+  },
+  "u9-d": {
+   "en": "He kept offering her more, until she had about ten times as many! Then she was happy.",
+   "t": "Beliau terus menawarkan lebih banyak lagi, sampai ia punya sekitar sepuluh kali lipat! Barulah ia senang."
+  },
+  "u9-palms": {
+   "en": "Count her new palm trees! Tap all ten.",
+   "t": "Hitung pohon-pohon kurmanya yang baru! Ketuk kesepuluhnya."
+  },
+  "u9-e": {
+   "en": "Once Umm Ayman asked the Prophet for a camel to ride. He smiled and said: I will give you the baby of a camel! She said: but a baby camel cannot carry me!",
+   "t": "Suatu kali Ummu Aiman meminta seekor unta kepada Nabi untuk ditunggangi. Beliau tersenyum dan bersabda: aku akan memberimu anak unta! Ia berkata: tetapi anak unta tidak bisa membawaku!"
+  },
+  "u9-q": {
+   "en": "He said he would give her the baby of a camel. What did he mean?",
+   "t": "Beliau berkata akan memberinya anak unta. Apa maksud beliau?"
+  },
+  "u9-q-opt1": {
+   "en": "A tiny baby camel",
+   "t": "Seekor anak unta yang mungil"
+  },
+  "u9-q-opt2": {
+   "en": "A big grown-up camel",
+   "t": "Seekor unta besar yang sudah dewasa"
+  },
+  "u9-q-no": {
+   "en": "He was joking! Every camel, even a big one, is the baby of a mother camel.",
+   "t": "Beliau bercanda! Setiap unta, bahkan yang besar, adalah anak dari seekor induk unta."
+  },
+  "u10-a": {
+   "en": "When the Prophet's daughter Fatimah married Ali, Umm Ayman helped to get everything ready.",
+   "t": "Ketika Fatimah, putri Nabi, menikah dengan Ali, Ummu Aiman membantu menyiapkan segalanya."
+  },
+  "u10-b": {
+   "en": "Umm Ayman packed a bed made of palm leaves, a soft leather pillow stuffed with palm fibre, and a waterskin. And she spread soft sand on the floor.",
+   "t": "Ummu Aiman mengemas tempat tidur dari daun kurma, bantal kulit yang lembut berisi serat kurma, dan sebuah kantong air. Dan ia menaburkan pasir halus di lantai."
+  },
+  "u10-pack": {
+   "en": "What was in Fatimah's simple new home? Sort them.",
+   "t": "Apa saja yang ada di rumah baru Fatimah yang sederhana? Kelompokkan."
+  },
+  "u10-pack-bin1": {
+   "en": "In her home",
+   "t": "Ada di rumahnya"
+  },
+  "u10-pack-bin2": {
+   "en": "Not there",
+   "t": "Tidak ada"
+  },
+  "u10-pack-it1": {
+   "en": "A bed of palm leaves",
+   "t": "Tempat tidur dari daun kurma"
+  },
+  "u10-pack-it2": {
+   "en": "A golden crown",
+   "t": "Mahkota emas"
+  },
+  "u10-pack-it3": {
+   "en": "A waterskin",
+   "t": "Kantong air"
+  },
+  "u10-pack-it4": {
+   "en": "A big silk sofa",
+   "t": "Sofa sutra yang besar"
+  },
+  "u10-pack-it5": {
+   "en": "Soft sand on the floor",
+   "t": "Pasir halus di lantai"
+  },
+  "u10-pack-it6": {
+   "en": "A box of jewels",
+   "t": "Sekotak permata"
+  },
+  "u10-pack-no": {
+   "en": "Think again. Her home was very simple.",
+   "t": "Pikirkan lagi. Rumahnya sangat sederhana."
+  },
+  "u10-c": {
+   "en": "Fatimah and Ali's home was small and simple, but it was full of love.",
+   "t": "Rumah Fatimah dan Ali kecil dan sederhana, tetapi penuh cinta."
+  },
+  "u10-bricks": {
+   "en": "Help make their little home strong. Tap to place every brick.",
+   "t": "Bantu membuat rumah kecil mereka kokoh. Ketuk untuk memasang setiap bata."
+  },
+  "u11-a": {
+   "en": "The Prophet often went to visit Umm Ayman, to see how she was.",
+   "t": "Nabi sering datang mengunjungi Ummu Aiman, untuk melihat keadaannya."
+  },
+  "u11-b": {
+   "en": "Once she gave him a drink, and he did not take it. So she told him off, just like a mother!",
+   "t": "Suatu kali ia memberi beliau minuman, dan beliau tidak meminumnya. Maka ia menegur beliau, persis seperti seorang ibu!"
+  },
+  "u11-c": {
+   "en": "Then one day, the Prophet died. Everyone in Madina was very, very sad.",
+   "t": "Lalu suatu hari, Nabi wafat. Semua orang di Madinah sangat, sangat bersedih."
+  },
+  "u11-g": {
+   "en": "Allah says in the Qur'an: Muhammad is only a messenger, before whom many messengers have been and gone.",
+   "t": "Allah berfirman dalam Al-Qur'an: Muhammad hanyalah seorang rasul; sebelumnya telah berlalu beberapa rasul."
+  },
+  "u11-d": {
+   "en": "Abu Bakr said to Umar: let us go and visit Umm Ayman, as the Prophet used to visit her.",
+   "t": "Abu Bakar berkata kepada Umar: mari kita pergi mengunjungi Ummu Aiman, seperti Nabi dulu biasa mengunjunginya."
+  },
+  "u11-e": {
+   "en": "When they came, she wept. She said: I know he is with Allah, and that is better for him. I am crying because the news from heaven has stopped coming.",
+   "t": "Ketika mereka datang, ia menangis. Ia berkata: aku tahu beliau berada di sisi Allah, dan itu lebih baik baginya. Aku menangis karena kabar dari langit telah berhenti datang."
+  },
+  "u11-f": {
+   "en": "And Abu Bakr and Umar cried with her.",
+   "t": "Dan Abu Bakar dan Umar pun menangis bersamanya."
+  },
+  "u11-q": {
+   "en": "Why did Umm Ayman cry?",
+   "t": "Mengapa Ummu Aiman menangis?"
+  },
+  "u11-q-opt1": {
+   "en": "The revelation had stopped",
+   "t": "Wahyu telah berhenti turun"
+  },
+  "u11-q-opt2": {
+   "en": "She was hungry",
+   "t": "Ia lapar"
+  },
+  "u11-q-no": {
+   "en": "She cried because the revelation, the news from heaven, had stopped coming.",
+   "t": "Ia menangis karena wahyu, kabar dari langit, telah berhenti datang."
+  },
+  "u11-story": {
+   "en": "Tell Umm Ayman's whole story. Tap in order.",
+   "t": "Ceritakan seluruh kisah Ummu Aiman. Ketuk secara berurutan."
+  },
+  "u11-story-c1": {
+   "en": "First, Barakah came from Abyssinia, across the sea.",
+   "t": "Pertama, Barakah datang dari Habasyah, menyeberangi laut."
+  },
+  "u11-story-c2": {
+   "en": "She looked after the baby, with his mother.",
+   "t": "Ia merawat bayi itu, bersama ibunya."
+  },
+  "u11-story-c3": {
+   "en": "She brought the little boy home to Makkah on two camels.",
+   "t": "Ia membawa anak kecil itu pulang ke Makkah dengan dua ekor unta."
+  },
+  "u11-story-c4": {
+   "en": "He set her free, and she had a family.",
+   "t": "Beliau memerdekakannya, dan ia berkeluarga."
+  },
+  "u11-story-c5": {
+   "en": "She carried water to the hurt.",
+   "t": "Ia membawakan air untuk orang-orang yang terluka."
+  },
+  "u11-story-c6": {
+   "en": "And he gave her ten times the palm trees.",
+   "t": "Dan beliau memberinya pohon kurma sepuluh kali lipat."
+  },
+  "u11-story-no": {
+   "en": "Listen again, and tell it in order.",
+   "t": "Dengarkan lagi, dan ceritakan secara berurutan."
+  },
+  "end-a": {
+   "en": "This is the story of Umm Ayman, Barakah, the blessing. She looked after the Prophet from the day he was born, and he called her: O mother.",
+   "t": "Inilah kisah Ummu Aiman, Barakah, sang pembawa berkah. Ia merawat Nabi sejak hari beliau lahir, dan beliau memanggilnya: wahai ibu."
+  }
+ },
+ "strings": {
+  "From Across the Sea": "Dari Seberang Laut",
+  "Ibn Shihab in Sahih Muslim (1771); Ibn Sa'd, al-Tabaqat": "Ibnu Syihab dalam Shahih Muslim (1771); Ibnu Sa'd, ath-Thabaqat",
+  "From Ibn Shihab, in Sahih Muslim": "Dari Ibnu Syihab, dalam Shahih Muslim",
+  "From Ibn Sa'd's Tabaqat": "Dari ath-Thabaqat karya Ibnu Sa'd",
+  "A Baby Is Born": "Seorang Bayi Lahir",
+  "Fast asleep": "Tertidur lelap",
+  "A Month in Madina": "Sebulan di Madinah",
+  "Ibn Sa'd, al-Tabaqat (vol. 1)": "Ibnu Sa'd, ath-Thabaqat (jilid 1)",
+  "The Road Home": "Jalan Pulang",
+  "O Blessed One": "Wahai Perempuan yang Diberkahi",
+  "His mother Amina": "Ibunya, Aminah",
+  "His grandfather": "Kakeknya",
+  "His uncle Abu Talib": "Pamannya, Abu Thalib",
+  "Free, and a Family": "Merdeka, dan Berkeluarga",
+  "Ibn Sa'd, al-Tabaqat (vol. 8); Ibn Shihab in Sahih Muslim (1771); al-Bukhari (3737)": "Ibnu Sa'd, ath-Thabaqat (jilid 8); Ibnu Syihab dalam Shahih Muslim (1771); al-Bukhari (3737)",
+  "The Long Walk": "Perjalanan Panjang",
+  "Ibn Sa'd, al-Tabaqat (vols. 1 and 8)": "Ibnu Sa'd, ath-Thabaqat (jilid 1 dan 8)",
+  "Patient, like Umm Ayman": "Sabar, seperti Ummu Aiman",
+  "Water for the Hurt": "Air untuk yang Terluka",
+  "Ibn Sa'd, al-Tabaqat (vol. 8)": "Ibnu Sa'd, ath-Thabaqat (jilid 8)",
+  "Ten Palm Trees": "Sepuluh Pohon Kurma",
+  "Anas in Sahih Muslim (1771, 2453) and al-Bukhari (2630); Ibn Sa'd, al-Tabaqat (vol. 8)": "Anas dalam Shahih Muslim (1771, 2453) dan al-Bukhari (2630); Ibnu Sa'd, ath-Thabaqat (jilid 8)",
+  "From Anas, in Sahih Muslim": "Dari Anas, dalam Shahih Muslim",
+  "Fatimah's Wedding": "Pernikahan Fatimah",
+  "The News of Heaven": "Kabar dari Langit",
+  "From Abyssinia": "Dari Habasyah",
+  "She cared for the baby": "Ia merawat bayi itu",
+  "She brought him home": "Ia membawanya pulang",
+  "Free, with a family": "Merdeka, dan berkeluarga",
+  "Water for the hurt": "Air untuk yang terluka",
+  "Ten palm trees": "Sepuluh pohon kurma",
+  "The Story of Umm Ayman": "Kisah Ummu Aiman",
+  "Eleven chapters about Barakah, who looked after the Prophet ﷺ all his life. Play a little every day.": "Sebelas bab tentang Barakah, yang merawat Nabi ﷺ sepanjang hidup beliau. Mainkan sedikit setiap hari.",
+  "Caring": "Penuh kasih",
+  "Loyalty": "Setia",
+  "Patience": "Kesabaran",
+  "Barakah from Abyssinia looked after the Prophet ﷺ from the day he was born, and he called her: O mother.": "Barakah dari Habasyah merawat Nabi ﷺ sejak hari beliau lahir, dan beliau memanggilnya: wahai ibu.",
+  "Umm Ayman leads two camels home to Makkah under the stars.": "Ummu Aiman menuntun dua ekor unta pulang ke Makkah di bawah bintang-bintang."
+ }
+}

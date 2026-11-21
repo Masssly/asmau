@@ -1,0 +1,493 @@
+{
+ "status": "checked",
+ "_note": "Deutsch, drafted 21 November 2026. A native speaker read a sample and the owner approved it for families on 21 November 2026; not every line has been checked yet. No computer voice in German yet.",
+ "lines": {
+  "r1-a": {
+   "en": "Long ago, in the year 1900, a baby girl was born in Padang Panjang, a town in the green mountains of West Sumatra, in what is now Indonesia. Her name was Rahmah.",
+   "t": "Vor langer Zeit, im Jahr 1900, wurde in Padang Panjang ein kleines Mädchen geboren, einer Stadt in den grünen Bergen West-Sumatras, im heutigen Indonesien. Ihr Name war Rahmah."
+  },
+  "r1-b": {
+   "en": "Her family loved learning. Her father was a judge, and her grandfather was a scholar who studied the stars.",
+   "t": "Ihre Familie liebte das Lernen. Ihr Vater war Richter, und ihr Großvater war ein Gelehrter, der die Sterne erforschte."
+  },
+  "r1-c": {
+   "en": "Her people, the Minangkabau, build beautiful houses with roofs that curve up like the horns of a buffalo.",
+   "t": "Ihr Volk, die Minangkabau, baut wunderschöne Häuser mit Dächern, die sich nach oben biegen wie die Hörner eines Büffels."
+  },
+  "r1-home": {
+   "en": "Find the pairs! Things of her home in the mountains.",
+   "t": "Finde die Paare! Dinge aus ihrer Heimat in den Bergen."
+  },
+  "r1-q": {
+   "en": "Where was Rahmah born?",
+   "t": "Wo wurde Rahmah geboren?"
+  },
+  "r1-q-opt1": {
+   "en": "In the mountains of Sumatra",
+   "t": "In den Bergen Sumatras"
+  },
+  "r1-q-opt2": {
+   "en": "In a big desert",
+   "t": "In einer großen Wüste"
+  },
+  "r1-q-no": {
+   "en": "She was born in Padang Panjang, in the green mountains of West Sumatra.",
+   "t": "Sie wurde in Padang Panjang geboren, in den grünen Bergen West-Sumatras."
+  },
+  "r2-a": {
+   "en": "When Rahmah was six years old, her father died. She missed him very much.",
+   "t": "Als Rahmah sechs Jahre alt war, starb ihr Vater. Sie vermisste ihn sehr."
+  },
+  "r2-b": {
+   "en": "But her father's students came to teach her. She learned to read and write, in Arabic letters and in Latin letters too.",
+   "t": "Aber die Schüler ihres Vaters kamen, um sie zu unterrichten. Sie lernte lesen und schreiben, in arabischen Buchstaben und auch in lateinischen Buchstaben."
+  },
+  "r2-books": {
+   "en": "Count the books she read! Tap each one.",
+   "t": "Zähle die Bücher, die sie las! Tippe auf jedes."
+  },
+  "r2-c": {
+   "en": "Rahmah also learned how to help mothers when their babies are born.",
+   "t": "Rahmah lernte auch, wie man Müttern hilft, wenn ihre Babys geboren werden."
+  },
+  "r2-q": {
+   "en": "Who taught Rahmah after her father died?",
+   "t": "Wer unterrichtete Rahmah, nachdem ihr Vater gestorben war?"
+  },
+  "r2-q-opt1": {
+   "en": "Nobody at all",
+   "t": "Niemand"
+  },
+  "r2-q-opt2": {
+   "en": "Her father's students",
+   "t": "Die Schüler ihres Vaters"
+  },
+  "r2-q-no": {
+   "en": "Her father's students came and taught her to read and write.",
+   "t": "Die Schüler ihres Vaters kamen und brachten ihr Lesen und Schreiben bei."
+  },
+  "r3-a": {
+   "en": "When Rahmah was still very young, her family arranged for her to marry, and she had to leave school.",
+   "t": "Als Rahmah noch sehr jung war, verheiratete ihre Familie sie, und sie musste die Schule verlassen."
+  },
+  "r3-b": {
+   "en": "But Rahmah did not stop learning. She joined study circles, where women sat together in the evening to learn about Islam.",
+   "t": "Aber Rahmah hörte nicht auf zu lernen. Sie ging zu Lernkreisen, in denen Frauen abends zusammensaßen, um mehr über den Islam zu lernen."
+  },
+  "r3-learn": {
+   "en": "Keep learning, like Rahmah. Press and hold.",
+   "t": "Lerne weiter, wie Rahmah. Drücken und halten."
+  },
+  "r3-c": {
+   "en": "A few years later, she went back to school.",
+   "t": "Ein paar Jahre später ging sie wieder zur Schule."
+  },
+  "r3-q": {
+   "en": "What did Rahmah do when she had to leave school?",
+   "t": "Was tat Rahmah, als sie die Schule verlassen musste?"
+  },
+  "r3-q-opt1": {
+   "en": "She kept learning",
+   "t": "Sie lernte weiter"
+  },
+  "r3-q-opt2": {
+   "en": "She stopped learning",
+   "t": "Sie hörte auf zu lernen"
+  },
+  "r3-q-no": {
+   "en": "She kept learning, in study circles, until she could go back to school.",
+   "t": "Sie lernte weiter, in Lernkreisen, bis sie wieder zur Schule gehen konnte."
+  },
+  "r4-a": {
+   "en": "Rahmah's big brother, Zainuddin, had started a school called Diniyah. Rahmah went back there to study.",
+   "t": "Rahmahs großer Bruder Zainuddin hatte eine Schule namens Diniyah gegründet. Rahmah ging dorthin zurück, um zu lernen."
+  },
+  "r4-b": {
+   "en": "After class, she gathered the girls together, to study more.",
+   "t": "Nach dem Unterricht versammelte sie die Mädchen, um noch mehr zu lernen."
+  },
+  "r4-girls": {
+   "en": "Count the girls in her study circle. Tap each one.",
+   "t": "Zähle die Mädchen in ihrem Lernkreis. Tippe auf jede."
+  },
+  "r4-c": {
+   "en": "Rahmah saw that girls needed a school of their own, where they could learn everything, and feel at home.",
+   "t": "Rahmah sah, dass Mädchen eine eigene Schule brauchten, in der sie alles lernen und sich zu Hause fühlen konnten."
+  },
+  "r4-q": {
+   "en": "What did Rahmah want for girls?",
+   "t": "Was wollte Rahmah für Mädchen?"
+  },
+  "r4-q-opt1": {
+   "en": "No school at all",
+   "t": "Gar keine Schule"
+  },
+  "r4-q-opt2": {
+   "en": "A school of their own",
+   "t": "Eine eigene Schule"
+  },
+  "r4-q-no": {
+   "en": "She wanted girls to have a school of their own.",
+   "t": "Sie wollte, dass Mädchen eine eigene Schule haben."
+  },
+  "r5-a": {
+   "en": "On the first of November, 1923, Rahmah opened a school just for girls. She called it Diniyah Putri.",
+   "t": "Am ersten November 1923 eröffnete Rahmah eine Schule nur für Mädchen. Sie nannte sie Diniyah Putri."
+  },
+  "r5-b": {
+   "en": "At first there was no school building. Lessons were in a mosque, and Rahmah was the main teacher.",
+   "t": "Am Anfang gab es kein Schulgebäude. Der Unterricht fand in einer Moschee statt, und Rahmah war die Hauptlehrerin."
+  },
+  "r5-c": {
+   "en": "The first students were seventy-one women and girls. Many of them were young mothers.",
+   "t": "Die ersten Schülerinnen waren einundsiebzig Frauen und Mädchen. Viele von ihnen waren junge Mütter."
+  },
+  "r5-lessons": {
+   "en": "What did they learn at Diniyah Putri? Sort them.",
+   "t": "Was lernten sie an der Diniyah Putri? Sortiere es."
+  },
+  "r5-lessons-bin1": {
+   "en": "They learned it",
+   "t": "Das lernten sie"
+  },
+  "r5-lessons-bin2": {
+   "en": "Not on the list",
+   "t": "Nicht auf dem Plan"
+  },
+  "r5-lessons-it1": {
+   "en": "The Qur'an and Islam",
+   "t": "Den Koran und den Islam"
+  },
+  "r5-lessons-it2": {
+   "en": "Video games",
+   "t": "Videospiele"
+  },
+  "r5-lessons-it3": {
+   "en": "Arabic",
+   "t": "Arabisch"
+  },
+  "r5-lessons-it4": {
+   "en": "Sewing and crafts",
+   "t": "Nähen und Handarbeit"
+  },
+  "r5-lessons-it5": {
+   "en": "Magic tricks",
+   "t": "Zaubertricks"
+  },
+  "r5-lessons-it6": {
+   "en": "Skateboarding",
+   "t": "Skateboardfahren"
+  },
+  "r5-lessons-no": {
+   "en": "Think again. Was that taught in 1923?",
+   "t": "Denk noch einmal nach. Wurde das 1923 unterrichtet?"
+  },
+  "r5-q": {
+   "en": "Where were the very first lessons?",
+   "t": "Wo fand der allererste Unterricht statt?"
+  },
+  "r5-q-opt1": {
+   "en": "In a mosque",
+   "t": "In einer Moschee"
+  },
+  "r5-q-opt2": {
+   "en": "In a palace",
+   "t": "In einem Palast"
+  },
+  "r5-q-no": {
+   "en": "The first lessons were in a mosque.",
+   "t": "Der erste Unterricht fand in einer Moschee statt."
+  },
+  "r6-a": {
+   "en": "Not everyone liked the new school. Some people said that girls did not need to go to school.",
+   "t": "Nicht allen gefiel die neue Schule. Manche Leute sagten, Mädchen müssten nicht zur Schule gehen."
+  },
+  "r6-b": {
+   "en": "Rahmah talked kindly with the scholars of her town, and showed them that Islam honours learning, for girls as well as boys.",
+   "t": "Rahmah sprach freundlich mit den Gelehrten ihrer Stadt und zeigte ihnen, dass der Islam das Lernen ehrt, für Mädchen genauso wie für Jungen."
+  },
+  "r6-c": {
+   "en": "Then, in 1924, her brother Zainuddin died. Many thought the school would close. But Rahmah kept going.",
+   "t": "Dann, im Jahr 1924, starb ihr Bruder Zainuddin. Viele dachten, die Schule würde schließen. Aber Rahmah machte weiter."
+  },
+  "r6-going": {
+   "en": "When something is hard: keep going, or give up?",
+   "t": "Wenn etwas schwer ist: weitermachen oder aufgeben?"
+  },
+  "r6-going-bin1": {
+   "en": "Keep going",
+   "t": "Weitermachen"
+  },
+  "r6-going-bin2": {
+   "en": "Give up",
+   "t": "Aufgeben"
+  },
+  "r6-going-it1": {
+   "en": "Try again tomorrow",
+   "t": "Es morgen noch einmal versuchen"
+  },
+  "r6-going-it2": {
+   "en": "Throw it away",
+   "t": "Es wegwerfen"
+  },
+  "r6-going-it3": {
+   "en": "Ask for help",
+   "t": "Um Hilfe bitten"
+  },
+  "r6-going-it4": {
+   "en": "Go slowly but steadily",
+   "t": "Langsam, aber stetig weitermachen"
+  },
+  "r6-going-it5": {
+   "en": "Stop at the first mistake",
+   "t": "Beim ersten Fehler aufhören"
+  },
+  "r6-going-it6": {
+   "en": "Say: I can't do it",
+   "t": "Sagen: Ich kann das nicht"
+  },
+  "r6-going-no": {
+   "en": "Think again. Is that keeping going, or giving up?",
+   "t": "Denk noch einmal nach. Ist das weitermachen oder aufgeben?"
+  },
+  "r6-q": {
+   "en": "What did Rahmah do when things were hard?",
+   "t": "Was tat Rahmah, als es schwer wurde?"
+  },
+  "r6-q-opt1": {
+   "en": "She gave up",
+   "t": "Sie gab auf"
+  },
+  "r6-q-opt2": {
+   "en": "She kept going",
+   "t": "Sie machte weiter"
+  },
+  "r6-q-no": {
+   "en": "She kept going, and the school did not close.",
+   "t": "Sie machte weiter, und die Schule wurde nicht geschlossen."
+  },
+  "r7-a": {
+   "en": "In 1926, a big earthquake shook Padang Panjang, and the school building fell down.",
+   "t": "Im Jahr 1926 erschütterte ein großes Erdbeben Padang Panjang, und das Schulgebäude stürzte ein."
+  },
+  "r7-b": {
+   "en": "But the lessons did not stop. For years, the girls learned in simple shelters.",
+   "t": "Aber der Unterricht hörte nicht auf. Jahrelang lernten die Mädchen in einfachen Hütten."
+  },
+  "r7-c": {
+   "en": "Rahmah travelled to many towns and islands, to collect money for a new school.",
+   "t": "Rahmah reiste in viele Städte und auf viele Inseln, um Geld für eine neue Schule zu sammeln."
+  },
+  "r7-travel": {
+   "en": "Help Rahmah travel to collect money for the school.",
+   "t": "Hilf Rahmah zu reisen, um Geld für die Schule zu sammeln."
+  },
+  "r7-d": {
+   "en": "In 1928, the new school opened!",
+   "t": "Im Jahr 1928 wurde die neue Schule eröffnet!"
+  },
+  "r7-bricks": {
+   "en": "Build the new school. Tap to place every brick.",
+   "t": "Baue die neue Schule. Tippe, um jeden Ziegel zu setzen."
+  },
+  "r8-a": {
+   "en": "In those days the land was ruled by the Dutch, and their government paid money to some schools. But Rahmah would not take it: she wanted her school to be free to teach in its own way.",
+   "t": "Damals wurde das Land von den Niederländern regiert, und ihre Regierung gab manchen Schulen Geld. Aber Rahmah wollte es nicht annehmen: Sie wollte, dass ihre Schule frei war, auf ihre eigene Weise zu unterrichten."
+  },
+  "r8-b": {
+   "en": "The school grew and grew. Soon about five hundred girls were learning there.",
+   "t": "Die Schule wuchs und wuchs. Bald lernten dort ungefähr fünfhundert Mädchen."
+  },
+  "r8-c": {
+   "en": "She also opened a college to train women to be teachers.",
+   "t": "Sie eröffnete auch eine Hochschule, um Frauen zu Lehrerinnen auszubilden."
+  },
+  "r8-teacher": {
+   "en": "What does a good teacher do? Sort them.",
+   "t": "Was tut eine gute Lehrerin? Sortiere es."
+  },
+  "r8-teacher-bin1": {
+   "en": "A good teacher",
+   "t": "Eine gute Lehrerin"
+  },
+  "r8-teacher-bin2": {
+   "en": "Not a good teacher",
+   "t": "Keine gute Lehrerin"
+  },
+  "r8-teacher-it1": {
+   "en": "Listens to every child",
+   "t": "Hört jedem Kind zu"
+  },
+  "r8-teacher-it2": {
+   "en": "Laughs at mistakes",
+   "t": "Lacht über Fehler"
+  },
+  "r8-teacher-it3": {
+   "en": "Explains again, kindly",
+   "t": "Erklärt es freundlich noch einmal"
+  },
+  "r8-teacher-it4": {
+   "en": "Shouts all the time",
+   "t": "Schreit die ganze Zeit"
+  },
+  "r8-teacher-it5": {
+   "en": "Is patient",
+   "t": "Ist geduldig"
+  },
+  "r8-teacher-it6": {
+   "en": "Helps only some children",
+   "t": "Hilft nur manchen Kindern"
+  },
+  "r8-teacher-no": {
+   "en": "Think again. Would a good teacher do that?",
+   "t": "Denk noch einmal nach. Würde eine gute Lehrerin das tun?"
+  },
+  "r9-a": {
+   "en": "For many years, Indonesia was ruled by others. Then, in 1945, Indonesia became free.",
+   "t": "Viele Jahre lang wurde Indonesien von anderen regiert. Dann, im Jahr 1945, wurde Indonesien frei."
+  },
+  "r9-b": {
+   "en": "When Rahmah heard the news, she raised the red and white flag of Indonesia in the school yard.",
+   "t": "Als Rahmah die Nachricht hörte, hisste sie die rot-weiße Flagge Indonesiens auf dem Schulhof."
+  },
+  "r9-flag": {
+   "en": "Raise the flag! Press and hold.",
+   "t": "Hisse die Flagge! Drücken und halten."
+  },
+  "r9-q": {
+   "en": "What colours are on Indonesia's flag?",
+   "t": "Welche Farben hat die Flagge Indonesiens?"
+  },
+  "r9-q-opt1": {
+   "en": "Red and white",
+   "t": "Rot und Weiß"
+  },
+  "r9-q-opt2": {
+   "en": "Blue and yellow",
+   "t": "Blau und Gelb"
+  },
+  "r9-q-no": {
+   "en": "Indonesia's flag is red and white.",
+   "t": "Die Flagge Indonesiens ist rot und weiß."
+  },
+  "r10-a": {
+   "en": "Years later, the head of al-Azhar, a great old university in Egypt, came all the way to visit her school.",
+   "t": "Jahre später kam der Leiter der al-Azhar, einer großen alten Universität in Ägypten, den ganzen weiten Weg, um ihre Schule zu besuchen."
+  },
+  "r10-b": {
+   "en": "Then Rahmah went on Hajj to Makkah.",
+   "t": "Dann machte Rahmah die Hadsch nach Mekka."
+  },
+  "r10-cairo": {
+   "en": "Help Rahmah travel to Makkah, and then to Cairo.",
+   "t": "Hilf Rahmah, nach Mekka zu reisen und dann nach Kairo."
+  },
+  "r10-c": {
+   "en": "In Cairo, the teachers of al-Azhar gave her the title Syaikhah: a great scholar. No woman had ever been given it before.",
+   "t": "In Kairo verliehen ihr die Lehrer der al-Azhar den Titel Syaikhah: eine große Gelehrte. Noch nie zuvor hatte eine Frau ihn bekommen."
+  },
+  "r10-d": {
+   "en": "After that, girls from her school could go to study at al-Azhar too.",
+   "t": "Danach konnten auch Mädchen aus ihrer Schule an der al-Azhar studieren."
+  },
+  "r10-q": {
+   "en": "What title did al-Azhar give Rahmah?",
+   "t": "Welchen Titel gab die al-Azhar Rahmah?"
+  },
+  "r10-q-opt1": {
+   "en": "Queen",
+   "t": "Königin"
+  },
+  "r10-q-opt2": {
+   "en": "Syaikhah: a great scholar",
+   "t": "Syaikhah: eine große Gelehrte"
+  },
+  "r10-q-no": {
+   "en": "Al-Azhar called her Syaikhah, a great scholar. No woman had been given it before.",
+   "t": "Die al-Azhar nannte sie Syaikhah, eine große Gelehrte. Noch nie zuvor hatte eine Frau diesen Titel bekommen."
+  },
+  "r11-a": {
+   "en": "Rahmah never stopped working. In 1967, a university for women, which she had worked for, was opened.",
+   "t": "Rahmah hörte nie auf zu arbeiten. Im Jahr 1967 wurde eine Universität für Frauen eröffnet, für die sie sich eingesetzt hatte."
+  },
+  "r11-b": {
+   "en": "Rahmah died in 1969, in Padang Panjang, where she was born. May Allah have mercy on her.",
+   "t": "Rahmah starb im Jahr 1969 in Padang Panjang, wo sie geboren war. Möge Allah sich ihrer erbarmen."
+  },
+  "r11-c": {
+   "en": "Her school is still open today, full of girls learning.",
+   "t": "Ihre Schule ist heute noch geöffnet, voller Mädchen, die lernen."
+  },
+  "r11-d": {
+   "en": "And in 2025, Indonesia named her a National Hero.",
+   "t": "Und im Jahr 2025 ernannte Indonesien sie zur Nationalheldin."
+  },
+  "r11-story": {
+   "en": "Tell Rahmah's story. Tap in order.",
+   "t": "Erzähle Rahmahs Geschichte. Tippe der Reihe nach."
+  },
+  "r11-story-c1": {
+   "en": "First, Rahmah was born in the mountains of Sumatra.",
+   "t": "Zuerst wurde Rahmah in den Bergen Sumatras geboren."
+  },
+  "r11-story-c2": {
+   "en": "She learned to read and write.",
+   "t": "Sie lernte lesen und schreiben."
+  },
+  "r11-story-c3": {
+   "en": "She opened a school for girls.",
+   "t": "Sie eröffnete eine Schule für Mädchen."
+  },
+  "r11-story-c4": {
+   "en": "An earthquake knocked it down, and she built it again.",
+   "t": "Ein Erdbeben zerstörte sie, und sie baute sie wieder auf."
+  },
+  "r11-story-c5": {
+   "en": "She raised Indonesia's flag at the school.",
+   "t": "Sie hisste die Flagge Indonesiens in der Schule."
+  },
+  "r11-story-c6": {
+   "en": "And al-Azhar called her Syaikhah.",
+   "t": "Und die al-Azhar nannte sie Syaikhah."
+  },
+  "r11-story-no": {
+   "en": "Listen again, and tell it in order.",
+   "t": "Hör noch einmal zu und erzähle es der Reihe nach."
+  },
+  "end-a": {
+   "en": "This is the story of Rahmah El Yunusiyyah, who opened a school for girls when many people said girls did not need one, and never gave up. Her school is still open today.",
+   "t": "Das ist die Geschichte von Rahmah El Yunusiyyah, die eine Schule für Mädchen eröffnete, als viele sagten, Mädchen bräuchten keine, und die niemals aufgab. Ihre Schule ist heute noch geöffnet."
+  }
+ },
+ "strings": {
+  "A Girl in the Mountains": "Ein Mädchen in den Bergen",
+  "Histories of her life (see the notes)": "Geschichtswerke über ihr Leben (siehe die Hinweise)",
+  "From the histories of her life": "Aus Geschichtswerken über ihr Leben",
+  "Learning to Read": "Lesen lernen",
+  "No More School": "Keine Schule mehr",
+  "Never stop learning": "Hör nie auf zu lernen",
+  "Back to School": "Zurück in die Schule",
+  "A School for Girls": "Eine Schule für Mädchen",
+  "Not Everyone Agreed": "Nicht alle waren einverstanden",
+  "The Earthquake": "Das Erdbeben",
+  "On Her Own Feet": "Auf eigenen Füßen",
+  "A New Flag": "Eine neue Flagge",
+  "The flag is flying!": "Die Flagge weht!",
+  "To Cairo": "Nach Kairo",
+  "Her School Today": "Ihre Schule heute",
+  "Born in the mountains": "In den Bergen geboren",
+  "She learned to read": "Sie lernte lesen",
+  "A school for girls": "Eine Schule für Mädchen",
+  "The earthquake": "Das Erdbeben",
+  "The new flag": "Die neue Flagge",
+  "Al-Azhar": "Al-Azhar",
+  "Rahmah El Yunusiyyah": "Rahmah El Yunusiyyah",
+  "The Story of Rahmah El Yunusiyyah": "Die Geschichte von Rahmah El Yunusiyyah",
+  "Eleven chapters about the girl who opened a school for girls. Play a little every day.": "Elf Kapitel über das Mädchen, das eine Schule für Mädchen eröffnete. Spiel jeden Tag ein bisschen.",
+  "Learning": "Lernen",
+  "Never giving up": "Niemals aufgeben",
+  "Courage": "Mut",
+  "The girl from the mountains of Sumatra who opened a school for girls in 1923, never gave up, and was honoured by al-Azhar.": "Das Mädchen aus den Bergen Sumatras, das 1923 eine Schule für Mädchen eröffnete, niemals aufgab und von der al-Azhar geehrt wurde.",
+  "Rahmah welcomes girls arriving with their books at a mosque in the mountains of West Sumatra.": "Rahmah begrüßt Mädchen, die mit ihren Büchern an einer Moschee in den Bergen West-Sumatras ankommen."
+ }
+}

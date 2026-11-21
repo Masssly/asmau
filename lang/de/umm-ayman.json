@@ -1,0 +1,510 @@
+{
+ "status": "checked",
+ "_note": "Deutsch, drafted 21 November 2026. A native speaker read a sample and the owner approved it for families on 21 November 2026; not every line has been checked yet. No computer voice in German yet.",
+ "lines": {
+  "u1-a": {
+   "en": "Long ago, across the Red Sea from Arabia, there was a green land of high mountains called Abyssinia. Today we call it Ethiopia and Eritrea.",
+   "t": "Vor langer Zeit, auf der anderen Seite des Roten Meeres gegenüber von Arabien, lag ein grünes Land mit hohen Bergen namens Abessinien. Heute nennen wir es Äthiopien und Eritrea."
+  },
+  "u1-b": {
+   "en": "A girl called Barakah came from there, across the sea, to the town of Makkah. Barakah means blessing.",
+   "t": "Ein Mädchen namens Barakah kam von dort über das Meer in die Stadt Mekka. Barakah bedeutet Segen."
+  },
+  "u1-sail": {
+   "en": "Help Barakah's boat cross the sea to Arabia.",
+   "t": "Hilf Barakahs Boot, das Meer nach Arabien zu überqueren."
+  },
+  "u1-c": {
+   "en": "In Makkah she lived in the house of a young man called Abdullah. She was not free: she had to work for his family.",
+   "t": "In Mekka lebte sie im Haus eines jungen Mannes namens Abdullah. Sie war nicht frei: Sie musste für seine Familie arbeiten."
+  },
+  "u1-d": {
+   "en": "Abdullah married a kind young woman called Amina. But soon Abdullah went away on a journey, and he died, far from home.",
+   "t": "Abdullah heiratete eine freundliche junge Frau namens Amina. Aber bald ging Abdullah auf eine Reise, und er starb, weit weg von zu Hause."
+  },
+  "u1-q": {
+   "en": "Where did Barakah come from?",
+   "t": "Woher kam Barakah?"
+  },
+  "u1-q-opt1": {
+   "en": "From Abyssinia, across the sea",
+   "t": "Aus Abessinien, über das Meer"
+  },
+  "u1-q-opt2": {
+   "en": "From the next street",
+   "t": "Aus der Nachbarstraße"
+  },
+  "u1-q-no": {
+   "en": "Barakah came from Abyssinia, across the sea.",
+   "t": "Barakah kam aus Abessinien, über das Meer."
+  },
+  "u2-a": {
+   "en": "Then Amina had a baby boy. He was called Muhammad, peace and blessings be upon him.",
+   "t": "Dann bekam Amina einen kleinen Jungen. Er hieß Muhammad, Allah segne ihn und schenke ihm Frieden."
+  },
+  "u2-b": {
+   "en": "Barakah loved the baby. She helped his mother look after him, by day and by night.",
+   "t": "Barakah liebte das Baby. Sie half seiner Mutter, für ihn zu sorgen, bei Tag und bei Nacht."
+  },
+  "u2-rock": {
+   "en": "Rock the cradle gently. Press and hold, until he is fast asleep.",
+   "t": "Schaukle die Wiege sanft. Drücken und halten, bis er tief und fest schläft."
+  },
+  "u2-c": {
+   "en": "The baby's father, Abdullah, had left five camels, some sheep, and Barakah, who looked after the baby.",
+   "t": "Abdullah, der Vater des Babys, hatte fünf Kamele, einige Schafe und Barakah hinterlassen, die sich um das Baby kümmerte."
+  },
+  "u2-camels": {
+   "en": "Count the five camels. Tap each one.",
+   "t": "Zähle die fünf Kamele. Tippe auf jedes."
+  },
+  "u2-q": {
+   "en": "Who helped Amina look after baby Muhammad?",
+   "t": "Wer half Amina, für das Baby Muhammad zu sorgen?"
+  },
+  "u2-q-opt1": {
+   "en": "Nobody at all",
+   "t": "Niemand"
+  },
+  "u2-q-opt2": {
+   "en": "Barakah",
+   "t": "Barakah"
+  },
+  "u2-q-no": {
+   "en": "Barakah helped his mother look after him, by day and by night.",
+   "t": "Barakah half seiner Mutter, für ihn zu sorgen, bei Tag und bei Nacht."
+  },
+  "u3-a": {
+   "en": "When Muhammad was six, his mother took him to visit her family in the town of Yathrib, which later was called Madina. Barakah went with them, on two camels.",
+   "t": "Als Muhammad sechs Jahre alt war, nahm ihn seine Mutter mit, um ihre Familie in der Stadt Yathrib zu besuchen, die später Medina genannt wurde. Barakah kam mit, auf zwei Kamelen."
+  },
+  "u3-b": {
+   "en": "They stayed a whole month with his mother's family, among the date palms.",
+   "t": "Sie blieben einen ganzen Monat bei der Familie seiner Mutter, zwischen den Dattelpalmen."
+  },
+  "u3-c": {
+   "en": "Many years later, the Prophet remembered that month. He said that he learned to swim in a pond there, and flew pigeons with the boys.",
+   "t": "Viele Jahre später erinnerte sich der Prophet an diesen Monat. Er erzählte, dass er dort in einem Teich schwimmen lernte und mit den Jungen Tauben fliegen ließ."
+  },
+  "u3-pigeons": {
+   "en": "Count the pigeons! Tap each one.",
+   "t": "Zähle die Tauben! Tippe auf jede."
+  },
+  "u3-pairs": {
+   "en": "Find the pairs! Things they saw in Madina.",
+   "t": "Finde die Paare! Dinge, die sie in Medina sahen."
+  },
+  "u4-a": {
+   "en": "On the way home, at a place called al-Abwa, his mother Amina fell ill.",
+   "t": "Auf dem Heimweg, an einem Ort namens al-Abwa, wurde seine Mutter Amina krank."
+  },
+  "u4-b": {
+   "en": "And there, Amina died. Barakah stayed close to the little boy, and they were sad together.",
+   "t": "Und dort starb Amina. Barakah blieb ganz nah bei dem kleinen Jungen, und sie waren zusammen traurig."
+  },
+  "u4-c": {
+   "en": "Then Barakah brought him home to Makkah, on the two camels.",
+   "t": "Dann brachte Barakah ihn nach Hause nach Mekka, auf den zwei Kamelen."
+  },
+  "u4-home": {
+   "en": "Help Barakah bring him home to Makkah.",
+   "t": "Hilf Barakah, ihn nach Hause nach Mekka zu bringen."
+  },
+  "u4-d": {
+   "en": "Allah says to the Prophet in the Qur'an: Did He not find you an orphan and shelter you?",
+   "t": "Allah sagt zum Propheten im Koran: Hat Er dich nicht als Waise gefunden und dir Zuflucht gegeben?"
+  },
+  "u4-q": {
+   "en": "Who brought the little boy home to Makkah?",
+   "t": "Wer brachte den kleinen Jungen nach Hause nach Mekka?"
+  },
+  "u4-q-opt1": {
+   "en": "Barakah, on the camels",
+   "t": "Barakah, auf den Kamelen"
+  },
+  "u4-q-opt2": {
+   "en": "He walked home alone",
+   "t": "Er ging allein nach Hause"
+  },
+  "u4-q-no": {
+   "en": "Barakah brought him home, on the two camels.",
+   "t": "Barakah brachte ihn nach Hause, auf den zwei Kamelen."
+  },
+  "u5-a": {
+   "en": "In Makkah, his grandfather Abd al-Muttalib looked after him. He was a great old man of Makkah.",
+   "t": "In Mekka kümmerte sich sein Großvater Abd al-Muttalib um ihn. Er war ein großer alter Mann von Mekka."
+  },
+  "u5-b": {
+   "en": "He said to Barakah: O blessed one! Look after this son of mine, and never forget him.",
+   "t": "Er sagte zu Barakah: O Gesegnete! Sorge für diesen meinen Sohn, und vergiss ihn niemals."
+  },
+  "u5-q": {
+   "en": "What did the grandfather call Barakah?",
+   "t": "Wie nannte der Großvater Barakah?"
+  },
+  "u5-q-opt1": {
+   "en": "O lazy one",
+   "t": "O Faule"
+  },
+  "u5-q-opt2": {
+   "en": "O blessed one",
+   "t": "O Gesegnete"
+  },
+  "u5-q-no": {
+   "en": "He called her: O blessed one. That is what Barakah means.",
+   "t": "Er nannte sie: O Gesegnete. Das bedeutet der Name Barakah."
+  },
+  "u5-c": {
+   "en": "But when the boy was eight, his grandfather died too. Barakah saw the boy crying as he walked behind his grandfather's funeral.",
+   "t": "Aber als der Junge acht Jahre alt war, starb auch sein Großvater. Barakah sah, wie der Junge weinte, als er hinter dem Trauerzug seines Großvaters herging."
+  },
+  "u5-d": {
+   "en": "Then his uncle Abu Talib took him into his home, and loved him like his own son.",
+   "t": "Dann nahm ihn sein Onkel Abu Talib bei sich zu Hause auf und liebte ihn wie seinen eigenen Sohn."
+  },
+  "u5-care": {
+   "en": "Who looked after him, one after the other? Put them in order.",
+   "t": "Wer sorgte für ihn, einer nach dem anderen? Bring sie in die richtige Reihenfolge."
+  },
+  "u5-care-c1": {
+   "en": "First, his mother Amina, with Barakah.",
+   "t": "Zuerst seine Mutter Amina, mit Barakah."
+  },
+  "u5-care-c2": {
+   "en": "Then his grandfather, Abd al-Muttalib.",
+   "t": "Dann sein Großvater, Abd al-Muttalib."
+  },
+  "u5-care-c3": {
+   "en": "Then his uncle, Abu Talib.",
+   "t": "Dann sein Onkel, Abu Talib."
+  },
+  "u5-care-no": {
+   "en": "Listen again, and put them in order.",
+   "t": "Hör noch einmal zu und bring sie in die richtige Reihenfolge."
+  },
+  "u6-a": {
+   "en": "The boy grew up into a good and honest young man. When he married Khadijah, he set Barakah free.",
+   "t": "Der Junge wuchs zu einem guten und ehrlichen jungen Mann heran. Als er Khadija heiratete, schenkte er Barakah die Freiheit."
+  },
+  "u6-b": {
+   "en": "Barakah married a good man called Ubayd, and they had a son called Ayman. So people called her Umm Ayman: the mother of Ayman.",
+   "t": "Barakah heiratete einen guten Mann namens Ubayd, und sie bekamen einen Sohn namens Ayman. Deshalb nannten die Leute sie Umm Ayman: die Mutter von Ayman."
+  },
+  "u6-c": {
+   "en": "The Prophet loved her very much. He used to call her: O mother!",
+   "t": "Der Prophet hatte sie sehr lieb. Er nannte sie oft: O Mutter!"
+  },
+  "u6-d": {
+   "en": "It is told that he said: whoever would like to marry a woman of Paradise, let him marry Umm Ayman.",
+   "t": "Man erzählt, dass er sagte: Wer eine Frau des Paradieses heiraten möchte, der soll Umm Ayman heiraten."
+  },
+  "u6-e": {
+   "en": "Some years later, when her first marriage had ended, she married Zayd, a man the Prophet loved very much. They had a son too, called Usamah.",
+   "t": "Einige Jahre später, als ihre erste Ehe zu Ende war, heiratete sie Zayd, einen Mann, den der Prophet sehr lieb hatte. Auch sie bekamen einen Sohn, namens Usama."
+  },
+  "u6-names": {
+   "en": "What does each name mean? Match them.",
+   "t": "Was bedeutet jeder Name? Ordne sie zu."
+  },
+  "u6-names-a1": {
+   "en": "Barakah",
+   "t": "Barakah"
+  },
+  "u6-names-b1": {
+   "en": "Blessing",
+   "t": "Segen"
+  },
+  "u6-names-a2": {
+   "en": "Umm Ayman",
+   "t": "Umm Ayman"
+  },
+  "u6-names-b2": {
+   "en": "The mother of Ayman",
+   "t": "Die Mutter von Ayman"
+  },
+  "u6-names-a3": {
+   "en": "Usamah",
+   "t": "Usama"
+  },
+  "u6-names-b3": {
+   "en": "Son of Zayd and Umm Ayman",
+   "t": "Sohn von Zayd und Umm Ayman"
+  },
+  "u7-a": {
+   "en": "Many people in Makkah were cruel to the Muslims. So Allah let the Muslims move to Madina, far to the north.",
+   "t": "Viele Menschen in Mekka waren grausam zu den Muslimen. Deshalb ließ Allah die Muslime nach Medina ziehen, weit im Norden."
+  },
+  "u7-b": {
+   "en": "Umm Ayman set out too, on the long, hot road to Madina.",
+   "t": "Auch Umm Ayman machte sich auf den langen, heißen Weg nach Medina."
+  },
+  "u7-c": {
+   "en": "She was fasting, and she grew very thirsty. And she had no water.",
+   "t": "Sie fastete, und sie bekam großen Durst. Und sie hatte kein Wasser."
+  },
+  "u7-patient": {
+   "en": "Be patient, like Umm Ayman. Press and hold.",
+   "t": "Sei geduldig wie Umm Ayman. Drücken und halten."
+  },
+  "u7-d": {
+   "en": "It is told that a bucket of cool water came down from the sky. She drank, and after that she was never thirsty again, even when she fasted on a hot day.",
+   "t": "Man erzählt, dass ein Eimer mit kühlem Wasser vom Himmel herabkam. Sie trank, und danach hatte sie nie wieder Durst, selbst wenn sie an einem heißen Tag fastete."
+  },
+  "u7-drops": {
+   "en": "Catch the cool drops of water!",
+   "t": "Fang die kühlen Wassertropfen!"
+  },
+  "u7-e": {
+   "en": "At last she reached Madina, with its green date palms and its kind people.",
+   "t": "Endlich erreichte sie Medina, mit seinen grünen Dattelpalmen und seinen freundlichen Menschen."
+  },
+  "u8-a": {
+   "en": "Umm Ayman was brave and kind. When the Muslims had to defend Madina, at the mountain of Uhud, she went too.",
+   "t": "Umm Ayman war mutig und gütig. Als die Muslime Medina am Berg Uhud verteidigen mussten, ging sie mit."
+  },
+  "u8-b": {
+   "en": "She carried water to the thirsty, and she cared for the people who were hurt.",
+   "t": "Sie brachte den Durstigen Wasser, und sie pflegte die Menschen, die verletzt waren."
+  },
+  "u8-cups": {
+   "en": "Give everyone water. Tap each cup.",
+   "t": "Gib allen Wasser. Tippe auf jeden Becher."
+  },
+  "u8-c": {
+   "en": "Umm Ayman went with the Muslims to Khaybar too, to help.",
+   "t": "Umm Ayman ging auch mit den Muslimen nach Khaybar, um zu helfen."
+  },
+  "u8-q": {
+   "en": "What did Umm Ayman bring to the people who were hurt?",
+   "t": "Was brachte Umm Ayman den Verletzten?"
+  },
+  "u8-q-opt1": {
+   "en": "Water",
+   "t": "Wasser"
+  },
+  "u8-q-opt2": {
+   "en": "Toys",
+   "t": "Spielzeug"
+  },
+  "u8-q-no": {
+   "en": "She brought them water, and she cared for them.",
+   "t": "Sie brachte ihnen Wasser, und sie pflegte sie."
+  },
+  "u9-a": {
+   "en": "In Madina, the Prophet gave Umm Ayman some date palms of her own.",
+   "t": "In Medina schenkte der Prophet Umm Ayman einige eigene Dattelpalmen."
+  },
+  "u9-b": {
+   "en": "Later the palms had to go back to the family who had lent them. A boy called Anas came to ask for them.",
+   "t": "Später mussten die Palmen an die Familie zurückgehen, die sie verliehen hatte. Ein Junge namens Anas kam, um sie zu holen."
+  },
+  "u9-c": {
+   "en": "But Umm Ayman said: No! The Prophet gave them to me! So the Prophet offered her other trees instead. She still said no!",
+   "t": "Aber Umm Ayman sagte: Nein! Der Prophet hat sie mir geschenkt! Da bot ihr der Prophet stattdessen andere Bäume an. Sie sagte immer noch Nein!"
+  },
+  "u9-d": {
+   "en": "He kept offering her more, until she had about ten times as many! Then she was happy.",
+   "t": "Er bot ihr immer mehr an, bis sie ungefähr zehnmal so viele hatte! Da war sie glücklich."
+  },
+  "u9-palms": {
+   "en": "Count her new palm trees! Tap all ten.",
+   "t": "Zähle ihre neuen Palmen! Tippe auf alle zehn."
+  },
+  "u9-e": {
+   "en": "Once Umm Ayman asked the Prophet for a camel to ride. He smiled and said: I will give you the baby of a camel! She said: but a baby camel cannot carry me!",
+   "t": "Einmal bat Umm Ayman den Propheten um ein Kamel zum Reiten. Er lächelte und sagte: Ich gebe dir das Kind einer Kamelstute! Sie sagte: Aber ein Kamelbaby kann mich doch nicht tragen!"
+  },
+  "u9-q": {
+   "en": "He said he would give her the baby of a camel. What did he mean?",
+   "t": "Er sagte, er würde ihr das Kind einer Kamelstute geben. Was meinte er?"
+  },
+  "u9-q-opt1": {
+   "en": "A tiny baby camel",
+   "t": "Ein winziges Kamelbaby"
+  },
+  "u9-q-opt2": {
+   "en": "A big grown-up camel",
+   "t": "Ein großes, erwachsenes Kamel"
+  },
+  "u9-q-no": {
+   "en": "He was joking! Every camel, even a big one, is the baby of a mother camel.",
+   "t": "Er machte einen Scherz! Jedes Kamel, auch ein großes, ist das Kind einer Kamelmutter."
+  },
+  "u10-a": {
+   "en": "When the Prophet's daughter Fatimah married Ali, Umm Ayman helped to get everything ready.",
+   "t": "Als Fatima, die Tochter des Propheten, Ali heiratete, half Umm Ayman, alles vorzubereiten."
+  },
+  "u10-b": {
+   "en": "Umm Ayman packed a bed made of palm leaves, a soft leather pillow stuffed with palm fibre, and a waterskin. And she spread soft sand on the floor.",
+   "t": "Umm Ayman packte ein Bett aus Palmblättern, ein weiches Lederkissen, gefüllt mit Palmfasern, und einen Wasserschlauch ein. Und sie streute weichen Sand auf den Boden."
+  },
+  "u10-pack": {
+   "en": "What was in Fatimah's simple new home? Sort them.",
+   "t": "Was war in Fatimas einfachem neuen Zuhause? Sortiere es."
+  },
+  "u10-pack-bin1": {
+   "en": "In her home",
+   "t": "In ihrem Zuhause"
+  },
+  "u10-pack-bin2": {
+   "en": "Not there",
+   "t": "Nicht dort"
+  },
+  "u10-pack-it1": {
+   "en": "A bed of palm leaves",
+   "t": "Ein Bett aus Palmblättern"
+  },
+  "u10-pack-it2": {
+   "en": "A golden crown",
+   "t": "Eine goldene Krone"
+  },
+  "u10-pack-it3": {
+   "en": "A waterskin",
+   "t": "Ein Wasserschlauch"
+  },
+  "u10-pack-it4": {
+   "en": "A big silk sofa",
+   "t": "Ein großes Seidensofa"
+  },
+  "u10-pack-it5": {
+   "en": "Soft sand on the floor",
+   "t": "Weicher Sand auf dem Boden"
+  },
+  "u10-pack-it6": {
+   "en": "A box of jewels",
+   "t": "Eine Schmuckkiste"
+  },
+  "u10-pack-no": {
+   "en": "Think again. Her home was very simple.",
+   "t": "Denk noch einmal nach. Ihr Zuhause war sehr einfach."
+  },
+  "u10-c": {
+   "en": "Fatimah and Ali's home was small and simple, but it was full of love.",
+   "t": "Das Zuhause von Fatima und Ali war klein und einfach, aber es war voller Liebe."
+  },
+  "u10-bricks": {
+   "en": "Help make their little home strong. Tap to place every brick.",
+   "t": "Hilf, ihr kleines Zuhause stark zu machen. Tippe, um jeden Ziegel zu setzen."
+  },
+  "u11-a": {
+   "en": "The Prophet often went to visit Umm Ayman, to see how she was.",
+   "t": "Der Prophet besuchte Umm Ayman oft, um zu sehen, wie es ihr ging."
+  },
+  "u11-b": {
+   "en": "Once she gave him a drink, and he did not take it. So she told him off, just like a mother!",
+   "t": "Einmal gab sie ihm etwas zu trinken, und er nahm es nicht. Da schimpfte sie mit ihm, genau wie eine Mutter!"
+  },
+  "u11-c": {
+   "en": "Then one day, the Prophet died. Everyone in Madina was very, very sad.",
+   "t": "Dann, eines Tages, starb der Prophet. Alle in Medina waren sehr, sehr traurig."
+  },
+  "u11-g": {
+   "en": "Allah says in the Qur'an: Muhammad is only a messenger, before whom many messengers have been and gone.",
+   "t": "Allah sagt im Koran: Muhammad ist nur ein Gesandter; vor ihm sind schon viele Gesandte gekommen und gegangen."
+  },
+  "u11-d": {
+   "en": "Abu Bakr said to Umar: let us go and visit Umm Ayman, as the Prophet used to visit her.",
+   "t": "Abu Bakr sagte zu Umar: Lass uns Umm Ayman besuchen, so wie der Prophet sie immer besucht hat."
+  },
+  "u11-e": {
+   "en": "When they came, she wept. She said: I know he is with Allah, and that is better for him. I am crying because the news from heaven has stopped coming.",
+   "t": "Als sie kamen, weinte sie. Sie sagte: Ich weiß, dass er bei Allah ist, und das ist besser für ihn. Ich weine, weil die Nachricht vom Himmel aufgehört hat zu kommen."
+  },
+  "u11-f": {
+   "en": "And Abu Bakr and Umar cried with her.",
+   "t": "Und Abu Bakr und Umar weinten mit ihr."
+  },
+  "u11-q": {
+   "en": "Why did Umm Ayman cry?",
+   "t": "Warum weinte Umm Ayman?"
+  },
+  "u11-q-opt1": {
+   "en": "The revelation had stopped",
+   "t": "Die Offenbarung hatte aufgehört"
+  },
+  "u11-q-opt2": {
+   "en": "She was hungry",
+   "t": "Sie hatte Hunger"
+  },
+  "u11-q-no": {
+   "en": "She cried because the revelation, the news from heaven, had stopped coming.",
+   "t": "Sie weinte, weil die Offenbarung, die Nachricht vom Himmel, aufgehört hatte zu kommen."
+  },
+  "u11-story": {
+   "en": "Tell Umm Ayman's whole story. Tap in order.",
+   "t": "Erzähle Umm Aymans ganze Geschichte. Tippe der Reihe nach."
+  },
+  "u11-story-c1": {
+   "en": "First, Barakah came from Abyssinia, across the sea.",
+   "t": "Zuerst kam Barakah aus Abessinien, über das Meer."
+  },
+  "u11-story-c2": {
+   "en": "She looked after the baby, with his mother.",
+   "t": "Sie sorgte für das Baby, mit seiner Mutter."
+  },
+  "u11-story-c3": {
+   "en": "She brought the little boy home to Makkah on two camels.",
+   "t": "Sie brachte den kleinen Jungen auf zwei Kamelen nach Hause nach Mekka."
+  },
+  "u11-story-c4": {
+   "en": "He set her free, and she had a family.",
+   "t": "Er schenkte ihr die Freiheit, und sie bekam eine Familie."
+  },
+  "u11-story-c5": {
+   "en": "She carried water to the hurt.",
+   "t": "Sie brachte den Verletzten Wasser."
+  },
+  "u11-story-c6": {
+   "en": "And he gave her ten times the palm trees.",
+   "t": "Und er gab ihr zehnmal so viele Palmen."
+  },
+  "u11-story-no": {
+   "en": "Listen again, and tell it in order.",
+   "t": "Hör noch einmal zu und erzähle es der Reihe nach."
+  },
+  "end-a": {
+   "en": "This is the story of Umm Ayman, Barakah, the blessing. She looked after the Prophet from the day he was born, and he called her: O mother.",
+   "t": "Das ist die Geschichte von Umm Ayman, Barakah, dem Segen. Sie sorgte für den Propheten vom Tag seiner Geburt an, und er nannte sie: O Mutter."
+  }
+ },
+ "strings": {
+  "From Across the Sea": "Von jenseits des Meeres",
+  "Ibn Shihab in Sahih Muslim (1771); Ibn Sa'd, al-Tabaqat": "Ibn Shihab in Sahih Muslim (1771); Ibn Sa'd, al-Tabaqat",
+  "From Ibn Shihab, in Sahih Muslim": "Von Ibn Shihab, in Sahih Muslim",
+  "From Ibn Sa'd's Tabaqat": "Aus den Tabaqat von Ibn Sa'd",
+  "A Baby Is Born": "Ein Baby wird geboren",
+  "Fast asleep": "Tief und fest eingeschlafen",
+  "A Month in Madina": "Ein Monat in Medina",
+  "Ibn Sa'd, al-Tabaqat (vol. 1)": "Ibn Sa'd, al-Tabaqat (Bd. 1)",
+  "The Road Home": "Der Heimweg",
+  "O Blessed One": "O Gesegnete",
+  "His mother Amina": "Seine Mutter Amina",
+  "His grandfather": "Sein Großvater",
+  "His uncle Abu Talib": "Sein Onkel Abu Talib",
+  "Free, and a Family": "Frei, und eine Familie",
+  "Ibn Sa'd, al-Tabaqat (vol. 8); Ibn Shihab in Sahih Muslim (1771); al-Bukhari (3737)": "Ibn Sa'd, al-Tabaqat (Bd. 8); Ibn Shihab in Sahih Muslim (1771); al-Bukhari (3737)",
+  "The Long Walk": "Der lange Weg",
+  "Ibn Sa'd, al-Tabaqat (vols. 1 and 8)": "Ibn Sa'd, al-Tabaqat (Bd. 1 und 8)",
+  "Patient, like Umm Ayman": "Geduldig wie Umm Ayman",
+  "Water for the Hurt": "Wasser für die Verletzten",
+  "Ibn Sa'd, al-Tabaqat (vol. 8)": "Ibn Sa'd, al-Tabaqat (Bd. 8)",
+  "Ten Palm Trees": "Zehn Palmen",
+  "Anas in Sahih Muslim (1771, 2453) and al-Bukhari (2630); Ibn Sa'd, al-Tabaqat (vol. 8)": "Anas in Sahih Muslim (1771, 2453) und bei al-Bukhari (2630); Ibn Sa'd, al-Tabaqat (Bd. 8)",
+  "From Anas, in Sahih Muslim": "Von Anas, in Sahih Muslim",
+  "Fatimah's Wedding": "Fatimas Hochzeit",
+  "The News of Heaven": "Die Nachricht vom Himmel",
+  "From Abyssinia": "Aus Abessinien",
+  "She cared for the baby": "Sie sorgte für das Baby",
+  "She brought him home": "Sie brachte ihn nach Hause",
+  "Free, with a family": "Frei, mit einer Familie",
+  "Water for the hurt": "Wasser für die Verletzten",
+  "Ten palm trees": "Zehn Palmen",
+  "The Story of Umm Ayman": "Die Geschichte von Umm Ayman",
+  "Eleven chapters about Barakah, who looked after the Prophet ﷺ all his life. Play a little every day.": "Elf Kapitel über Barakah, die ihr ganzes Leben lang für den Propheten ﷺ sorgte. Spiel jeden Tag ein bisschen.",
+  "Caring": "Fürsorge",
+  "Loyalty": "Treue",
+  "Patience": "Geduld",
+  "Barakah from Abyssinia looked after the Prophet ﷺ from the day he was born, and he called her: O mother.": "Barakah aus Abessinien sorgte für den Propheten ﷺ vom Tag seiner Geburt an, und er nannte sie: O Mutter.",
+  "Umm Ayman leads two camels home to Makkah under the stars.": "Umm Ayman führt zwei Kamele unter den Sternen nach Hause nach Mekka."
+ }
+}

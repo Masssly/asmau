@@ -21,7 +21,7 @@ const [story, ...steps] = process.argv.slice(2);
 if (!story || !steps.length) { console.error(fs.readFileSync(__filename, "utf8").split("*/")[0]); process.exit(2); }
 const cfg = JSON.parse(fs.readFileSync(path.join(ROOT, "scripts", story, "kit.json"), "utf8"));
 const G = "games/" + cfg.game;
-const langs = () => { const d = path.join(ROOT, G, "lang"); return fs.existsSync(d) ? fs.readdirSync(d).filter((f) => /^[a-z]{2,3}\.json$/.test(f)).map((f) => f.slice(0, -5)) : []; };
+const langs = () => require("../lang-files.js").langsOfGame(cfg.game);          // lang/<code>/<game>.json
 
 function run(cmd, args, env) {
   console.log("\n$ " + Object.entries(env || {}).map(([k, v]) => k + "=" + v + " ").join("") + cmd + " " + args.join(" "));

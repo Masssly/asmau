@@ -37,6 +37,6 @@ still work.
    (`scripts/art/ref-from.py`); the kit warns about anyone missing one.
 4. `... make.js <story> scenes`, **look at every picture** (skin, covered hair, count, no text, matches the story, the
    Prophet ﷺ never shown), redraw what is wrong, then `... make.js <story> import fx`.
-5. `... make.js <story> voice listen`: both voices, and every translation in `games/<slug>/lang/`. Redo flagged clips.
+5. `... make.js <story> voice listen`: both voices, and every translation in `lang/<code>/<slug>.json`. Redo flagged clips.
 6. Notes for parents, one file per page (`games/<slug>/parents/`); the cover; the game in `manifest.json`.
 7. `node scripts/kit/make.js <story> check`, then the release steps in CLAUDE.md.

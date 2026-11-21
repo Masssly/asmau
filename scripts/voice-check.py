@@ -46,7 +46,7 @@ def main():
     folder = ("audio-m" if man else "audio") if tongue == "en" else "audio-" + tongue + ("-m" if man else "")
     all_lines = json.load(open(os.path.join(game, "narration.json"), encoding="utf-8"))
     if tongue != "en":
-        tr = json.load(open(os.path.join(game, "lang", tongue + ".json"), encoding="utf-8")).get("lines", {})
+        tr = {k: (v.get("t", "") if isinstance(v, dict) else v) for k, v in json.load(open(os.path.join(os.path.dirname(os.path.abspath(game.rstrip("/"))), "..", "lang", tongue, os.path.basename(game.rstrip("/")) + ".json"), encoding="utf-8")).get("lines", {}).items()}
         all_lines = [dict(l, text=tr.get(l["id"]) or l["text"]) if l.get("lang") != "ar" else l for l in all_lines]
     lines = [l for l in all_lines if len(l["text"]) <= mx and (ids is None or l["id"] in ids)]
 

@@ -1,0 +1,639 @@
+{
+ "status": "draft",
+ "_note": "Français. To be checked by a native speaker; seen only with ?lang=fr until then.",
+ "lines": {
+  "n1-a": {
+   "en": "Long after Adam, his children had spread far over the earth. Among them lived some very good men, who remembered Allah and helped everyone.",
+   "t": ""
+  },
+  "n1-b": {
+   "en": "When those good men died, the people missed them. It is told that someone said: let us make statues of them, so that we remember them.",
+   "t": ""
+  },
+  "n1-c": {
+   "en": "Years and years went by. The people who made the statues died too, and their children forgot why the statues were there.",
+   "t": ""
+  },
+  "n1-d": {
+   "en": "Then people began to bow down to the statues and pray to them, and they forgot Allah. They called them Wadd, Suwa, Yaghuth, Ya'uq and Nasr.",
+   "t": ""
+  },
+  "n1-made": {
+   "en": "Who made it? Allah, or people?",
+   "t": ""
+  },
+  "n1-made-bin1": {
+   "en": "Allah made it",
+   "t": ""
+  },
+  "n1-made-bin2": {
+   "en": "People made it",
+   "t": ""
+  },
+  "n1-made-it1": {
+   "en": "The sun",
+   "t": ""
+  },
+  "n1-made-it2": {
+   "en": "A statue",
+   "t": ""
+  },
+  "n1-made-it3": {
+   "en": "A tree",
+   "t": ""
+  },
+  "n1-made-it4": {
+   "en": "A house",
+   "t": ""
+  },
+  "n1-made-it5": {
+   "en": "The rain",
+   "t": ""
+  },
+  "n1-made-it6": {
+   "en": "A chair",
+   "t": ""
+  },
+  "n1-made-no": {
+   "en": "Think again. Could people make that, or only Allah?",
+   "t": ""
+  },
+  "n1-q": {
+   "en": "Can a statue hear us, or help us?",
+   "t": ""
+  },
+  "n1-q-opt1": {
+   "en": "No, only Allah can",
+   "t": ""
+  },
+  "n1-q-opt2": {
+   "en": "Yes, it can",
+   "t": ""
+  },
+  "n1-q-no": {
+   "en": "A statue cannot hear anyone or help anyone. Only Allah hears us and helps us.",
+   "t": ""
+  },
+  "n2-a": {
+   "en": "So Allah chose a good man from among them to be His prophet: Nuh, peace be upon him.",
+   "t": ""
+  },
+  "n2-b": {
+   "en": "Nuh said: my people, I am here to warn you clearly. Worship Allah alone, and be mindful of Him. He will forgive you.",
+   "t": ""
+  },
+  "n2-q": {
+   "en": "What did Nuh tell his people?",
+   "t": ""
+  },
+  "n2-q-opt1": {
+   "en": "Worship the statues",
+   "t": ""
+  },
+  "n2-q-opt2": {
+   "en": "Worship Allah alone",
+   "t": ""
+  },
+  "n2-q-no": {
+   "en": "Nuh said: worship Allah alone. He will forgive you.",
+   "t": ""
+  },
+  "n2-c": {
+   "en": "And Nuh kept calling them, for a very, very long time: nine hundred and fifty years!",
+   "t": ""
+  },
+  "n2-years": {
+   "en": "Each star is a hundred years. Tap all nine! Nine hundred years, and fifty more.",
+   "t": ""
+  },
+  "n3-a": {
+   "en": "Nuh called his people in the daytime.",
+   "t": ""
+  },
+  "n3-b": {
+   "en": "And he called them at night.",
+   "t": ""
+  },
+  "n3-c": {
+   "en": "He spoke to them out loud, in front of everyone. And he spoke to them quietly, one by one.",
+   "t": ""
+  },
+  "n3-when": {
+   "en": "Is it day, or is it night? Sort them.",
+   "t": ""
+  },
+  "n3-when-bin1": {
+   "en": "Day",
+   "t": ""
+  },
+  "n3-when-bin2": {
+   "en": "Night",
+   "t": ""
+  },
+  "n3-when-it1": {
+   "en": "The sun is shining",
+   "t": ""
+  },
+  "n3-when-it2": {
+   "en": "The moon is out",
+   "t": ""
+  },
+  "n3-when-it3": {
+   "en": "The rooster crows",
+   "t": ""
+  },
+  "n3-when-it4": {
+   "en": "The owl hoots",
+   "t": ""
+  },
+  "n3-when-it5": {
+   "en": "The stars twinkle",
+   "t": ""
+  },
+  "n3-when-it6": {
+   "en": "The flowers open",
+   "t": ""
+  },
+  "n3-when-no": {
+   "en": "Think again. Is that in the day, or at night?",
+   "t": ""
+  },
+  "n3-d": {
+   "en": "But the more he called, the further they ran away. They put their fingers in their ears, and pulled their clothes over their heads, so that they would not hear.",
+   "t": ""
+  },
+  "n3-q": {
+   "en": "What did the people do when Nuh called them?",
+   "t": ""
+  },
+  "n3-q-opt1": {
+   "en": "Put their fingers in their ears",
+   "t": ""
+  },
+  "n3-q-opt2": {
+   "en": "Listened carefully",
+   "t": ""
+  },
+  "n3-q-no": {
+   "en": "They would not listen. They put their fingers in their ears.",
+   "t": ""
+  },
+  "n4-a": {
+   "en": "Nuh said: ask your Lord to forgive you. He is always forgiving. He will send you plenty of rain from the sky.",
+   "t": ""
+  },
+  "n4-rain": {
+   "en": "Help the rain fall on the fields. Tap each cloud.",
+   "t": ""
+  },
+  "n4-b": {
+   "en": "Nuh told them: Allah will give you wealth and sons, and gardens and rivers.",
+   "t": ""
+  },
+  "n4-c": {
+   "en": "Look how Allah made the seven heavens, one above the other. He put the moon in them as a light, and the sun as a lamp.",
+   "t": ""
+  },
+  "n4-d": {
+   "en": "He made you grow from the earth like a plant. And He spread the earth out wide for you, with paths to walk on.",
+   "t": ""
+  },
+  "n4-gifts": {
+   "en": "What does each gift give us? Match them.",
+   "t": ""
+  },
+  "n4-gifts-a1": {
+   "en": "Rain",
+   "t": ""
+  },
+  "n4-gifts-b1": {
+   "en": "Plants that grow",
+   "t": ""
+  },
+  "n4-gifts-a2": {
+   "en": "The sun",
+   "t": ""
+  },
+  "n4-gifts-b2": {
+   "en": "Light and warmth",
+   "t": ""
+  },
+  "n4-gifts-a3": {
+   "en": "The moon",
+   "t": ""
+  },
+  "n4-gifts-b3": {
+   "en": "Light at night",
+   "t": ""
+  },
+  "n4-gifts-a4": {
+   "en": "Rivers",
+   "t": ""
+  },
+  "n4-gifts-b4": {
+   "en": "Water to drink",
+   "t": ""
+  },
+  "n5-a": {
+   "en": "The proud chiefs of the people sneered: you are only a man like us! And the only people who follow you are the lowest of us.",
+   "t": ""
+  },
+  "n5-b": {
+   "en": "They wanted Nuh to send his followers away. But Nuh said: I will never drive away the believers. Who would help me against Allah if I did?",
+   "t": ""
+  },
+  "n5-c": {
+   "en": "And Nuh said: I do not ask you for any reward. My reward comes only from Allah.",
+   "t": ""
+  },
+  "n5-welcome": {
+   "en": "Welcome everyone, like Nuh. Is it welcoming, or not?",
+   "t": ""
+  },
+  "n5-welcome-bin1": {
+   "en": "Welcoming",
+   "t": ""
+  },
+  "n5-welcome-bin2": {
+   "en": "Not welcoming",
+   "t": ""
+  },
+  "n5-welcome-it1": {
+   "en": "Playing with the new child",
+   "t": ""
+  },
+  "n5-welcome-it2": {
+   "en": "Saying: you can't play with us",
+   "t": ""
+  },
+  "n5-welcome-it3": {
+   "en": "Sharing your food",
+   "t": ""
+  },
+  "n5-welcome-it4": {
+   "en": "Laughing at someone's clothes",
+   "t": ""
+  },
+  "n5-welcome-it5": {
+   "en": "Saying salam to everyone",
+   "t": ""
+  },
+  "n5-welcome-it6": {
+   "en": "Whispering about someone",
+   "t": ""
+  },
+  "n5-welcome-no": {
+   "en": "Think again. Would that make someone feel welcome?",
+   "t": ""
+  },
+  "n5-q": {
+   "en": "What did Nuh say about the believers?",
+   "t": ""
+  },
+  "n5-q-opt1": {
+   "en": "Go away",
+   "t": ""
+  },
+  "n5-q-opt2": {
+   "en": "I will never send them away",
+   "t": ""
+  },
+  "n5-q-no": {
+   "en": "Nuh would never send the believers away.",
+   "t": ""
+  },
+  "n6-a": {
+   "en": "Then Allah told Nuh: no more of your people will believe, apart from those who already have. So do not be sad about what they do.",
+   "t": ""
+  },
+  "n6-b": {
+   "en": "And Allah said: build the Ark, under Our eyes, and as We teach you.",
+   "t": ""
+  },
+  "n6-c": {
+   "en": "It is told that Allah taught Nuh, step by step, how to build it.",
+   "t": ""
+  },
+  "n6-planks": {
+   "en": "Help build the Ark. Tap to fit every plank.",
+   "t": ""
+  },
+  "n6-d": {
+   "en": "The Ark was made of wooden planks, held together with nails.",
+   "t": ""
+  },
+  "n6-nails": {
+   "en": "Hammer the nails! Tap each one.",
+   "t": ""
+  },
+  "n7-a": {
+   "en": "Every time the proud chiefs walked past, they laughed at Nuh and his big ship.",
+   "t": ""
+  },
+  "n7-b": {
+   "en": "Nuh said: you laugh at us now. But one day, you will see who was right.",
+   "t": ""
+  },
+  "n7-q": {
+   "en": "What did Nuh do when people laughed at him?",
+   "t": ""
+  },
+  "n7-q-opt1": {
+   "en": "Kept on building",
+   "t": ""
+  },
+  "n7-q-opt2": {
+   "en": "Gave up",
+   "t": ""
+  },
+  "n7-q-no": {
+   "en": "Nuh did not give up. He kept on building, patiently.",
+   "t": ""
+  },
+  "n7-c": {
+   "en": "So Nuh kept on building, patiently, day after day, until the Ark was ready.",
+   "t": ""
+  },
+  "n7-patient": {
+   "en": "Be patient, like Nuh. Press and hold the hammer until the Ark is ready.",
+   "t": ""
+  },
+  "n8-a": {
+   "en": "Then Allah's command came. Water burst up out of the ground, even, it is told, where fires had burned.",
+   "t": ""
+  },
+  "n8-b": {
+   "en": "And the gates of the sky opened, and the rain poured down.",
+   "t": ""
+  },
+  "n8-c": {
+   "en": "Allah said: take into the Ark a pair of every kind of animal.",
+   "t": ""
+  },
+  "n8-pairs": {
+   "en": "Find the pairs! Two of every kind.",
+   "t": ""
+  },
+  "n8-board": {
+   "en": "Lead the animals into the Ark.",
+   "t": ""
+  },
+  "n8-d": {
+   "en": "And Nuh took his family, and the believers. Only a few believed with him. It is told there were about eighty of them.",
+   "t": ""
+  },
+  "n9-a": {
+   "en": "Nuh said: get on board. In the name of Allah it sails, and in the name of Allah it comes to rest. My Lord is Forgiving and Merciful.",
+   "t": ""
+  },
+  "n9-b": {
+   "en": "We can say these words too, when we set off on a journey: bismillahi majraha wa mursaha.",
+   "t": ""
+  },
+  "n9-q": {
+   "en": "What can we say when we set off on a journey?",
+   "t": ""
+  },
+  "n9-q-opt1": {
+   "en": "Nothing at all",
+   "t": ""
+  },
+  "n9-q-opt2": {
+   "en": "Bismillah",
+   "t": ""
+  },
+  "n9-q-no": {
+   "en": "We can say bismillah, in the name of Allah, just like Nuh.",
+   "t": ""
+  },
+  "n9-c": {
+   "en": "Allah taught Nuh to say, once they were on board: praise be to Allah, who saved us. And: my Lord, let me land in a blessed place.",
+   "t": ""
+  },
+  "n9-dua": {
+   "en": "Say the prayer with Nuh. Tap the parts in order.",
+   "t": ""
+  },
+  "n9-dua-c1": {
+   "en": "Praise be to Allah,",
+   "t": ""
+  },
+  "n9-dua-c2": {
+   "en": "who saved us from the wrongdoing people.",
+   "t": ""
+  },
+  "n9-dua-c3": {
+   "en": "My Lord, let me land",
+   "t": ""
+  },
+  "n9-dua-c4": {
+   "en": "in a blessed place. You are the best one to bring us to land.",
+   "t": ""
+  },
+  "n9-dua-no": {
+   "en": "Listen again, and say the prayer in order.",
+   "t": ""
+  },
+  "n10-a": {
+   "en": "The Ark sailed on, over waves as high as mountains.",
+   "t": ""
+  },
+  "n10-steady": {
+   "en": "Hold on tight! Press and hold the Ark to keep it steady.",
+   "t": ""
+  },
+  "n10-b": {
+   "en": "Nuh saw his son, who had stayed behind. He called out: my son, come on board with us! Do not stay with those who do not believe.",
+   "t": ""
+  },
+  "n10-c": {
+   "en": "But his son said: I will climb a mountain. It will keep me safe from the water.",
+   "t": ""
+  },
+  "n10-d": {
+   "en": "Nuh said: today nothing can keep anyone safe from Allah's command, except the ones He has mercy on. And the waves came between them.",
+   "t": ""
+  },
+  "n10-q": {
+   "en": "Who keeps us safe, more than any mountain?",
+   "t": ""
+  },
+  "n10-q-opt1": {
+   "en": "Allah",
+   "t": ""
+  },
+  "n10-q-opt2": {
+   "en": "A high mountain",
+   "t": ""
+  },
+  "n10-q-no": {
+   "en": "No mountain could keep anyone safe that day. Only Allah keeps us safe.",
+   "t": ""
+  },
+  "n10-e": {
+   "en": "Nuh was very sad. He said: my Lord, my son is part of my family! And Allah told him: he was not one of your family, because what he did was not right.",
+   "t": ""
+  },
+  "n10-f": {
+   "en": "Nuh said: my Lord, keep me from asking for what I do not understand. Forgive me, and have mercy on me.",
+   "t": ""
+  },
+  "n11-a": {
+   "en": "Then it was said: earth, swallow up your water! Sky, hold back your rain! And the water went down.",
+   "t": ""
+  },
+  "n11-dry": {
+   "en": "Help the water go down. Rub it away.",
+   "t": ""
+  },
+  "n11-b": {
+   "en": "And the Ark came to rest on a mountain called al-Judi.",
+   "t": ""
+  },
+  "n11-c": {
+   "en": "It is told that all the mountains stretched up tall and proud that day, but al-Judi stayed humble, so the Ark came to rest on it.",
+   "t": ""
+  },
+  "n11-q": {
+   "en": "Why did the Ark rest on al-Judi, it is told?",
+   "t": ""
+  },
+  "n11-q-opt1": {
+   "en": "It was the tallest",
+   "t": ""
+  },
+  "n11-q-opt2": {
+   "en": "It was humble",
+   "t": ""
+  },
+  "n11-q-no": {
+   "en": "It is told that al-Judi was humble, and Allah loves the humble.",
+   "t": ""
+  },
+  "n11-d": {
+   "en": "Allah said: Nuh, go down in peace, with blessings on you and on those with you.",
+   "t": ""
+  },
+  "n11-e": {
+   "en": "Nuh was a truly thankful servant of Allah.",
+   "t": ""
+  },
+  "n11-f": {
+   "en": "And Nuh prayed: my Lord, forgive me, and my parents, and everyone who comes into my house believing, and all the believing men and women.",
+   "t": ""
+  },
+  "n11-forgive": {
+   "en": "Say Nuh's prayer. Tap the parts in order.",
+   "t": ""
+  },
+  "n11-forgive-c1": {
+   "en": "My Lord, forgive me,",
+   "t": ""
+  },
+  "n11-forgive-c2": {
+   "en": "and my parents,",
+   "t": ""
+  },
+  "n11-forgive-c3": {
+   "en": "and everyone who comes into my house believing,",
+   "t": ""
+  },
+  "n11-forgive-c4": {
+   "en": "and all the believing men and women.",
+   "t": ""
+  },
+  "n11-forgive-no": {
+   "en": "Listen again, and say the prayer in order.",
+   "t": ""
+  },
+  "n11-story": {
+   "en": "Tell the whole story of Nuh. Tap in order.",
+   "t": ""
+  },
+  "n11-story-c1": {
+   "en": "First, the people forgot Allah and prayed to statues.",
+   "t": ""
+  },
+  "n11-story-c2": {
+   "en": "Nuh called them, night and day, for many years.",
+   "t": ""
+  },
+  "n11-story-c3": {
+   "en": "Allah told him to build the Ark.",
+   "t": ""
+  },
+  "n11-story-c4": {
+   "en": "The animals came in, two by two, with the believers.",
+   "t": ""
+  },
+  "n11-story-c5": {
+   "en": "The Ark sailed over waves like mountains.",
+   "t": ""
+  },
+  "n11-story-c6": {
+   "en": "And the Ark came to rest on the humble mountain.",
+   "t": ""
+  },
+  "n11-story-no": {
+   "en": "Listen again, and tell it in order.",
+   "t": ""
+  },
+  "end-a": {
+   "en": "This is the story of Nuh, peace be upon him. He called his people for a very long time, and he never gave up. Allah saved him and the believers in the Ark. And Nuh was a truly thankful servant.",
+   "t": ""
+  }
+ },
+ "strings": {
+  "Forgetting Allah": "",
+  "From Ibn Abbas, in al-Bukhari": "",
+  "Nuh Is Sent": "",
+  "Night and Day": "",
+  "Look at Allah's World": "",
+  "Everyone Is Welcome": "",
+  "Build the Ark": "",
+  "From Ibn Kathir's commentary": "",
+  "They Laughed": "",
+  "Press and hold": "",
+  "Patient, like Nuh": "",
+  "Two by Two": "",
+  "Told in Sunni and Shia narrations": "",
+  "Praise be to Allah": "",
+  "who saved us": "",
+  "in a blessed place": "",
+  "The Big Waves": "",
+  "Safe in the Ark": "",
+  "The Humble Mountain": "",
+  "My Lord, forgive me": "",
+  "and my parents": "",
+  "and everyone in my house": "",
+  "and all the believers": "",
+  "People forgot Allah": "",
+  "Nuh called them": "",
+  "He built the Ark": "",
+  "Two by two": "",
+  "The big waves": "",
+  "Al-Judi": "",
+  "← Asmau": "",
+  "Nuh": "",
+  "The Story of Nuh": "",
+  "Eleven chapters about the prophet who never gave up, and the great Ark. Play a little every day.": "",
+  "Start the story": "",
+  "Start from the beginning": "",
+  "For parents": "",
+  "Back": "",
+  "Next": "",
+  "All chapters": "",
+  "✕ Close": "",
+  "The End": "",
+  "Patience": "",
+  "Never giving up": "",
+  "Thankfulness": "",
+  "Read it again": "",
+  "Pick a chapter": "",
+  "Music": "",
+  "Sounds": "",
+  "Voice": "",
+  "He called his people for 950 years and never gave up; then came the Ark, two by two.": "",
+  "Nuh stands with his hand on the side of the great wooden Ark at sunset, with smiling believers around him.": ""
+ }
+}

@@ -17,50 +17,54 @@
 */
 
 // BEGIN GENERATED
-const RELEASE = "2026.11.83";
-const BUILD = "a6d9ed734412";
+const RELEASE = "2026.11.84";
+const BUILD = "053d03583055";
 // pack: [fingerprint of packs/<pack>.json, bytes, files]
 const PACKS = {
-  "abdullah-quilliam":["d27ec71cd4",1954,4],
-  "adam":["27facd9777",2777793,58],
+  "abdullah-quilliam":["257759b2cf",442,1],
+  "adam":["901008555f",2735394,55],
   "adam@m":["a617f3f408",4026446,147],
   "adam@w":["217fc43e27",4316508,147],
-  "core":["8b5c61e502",1165835,50],
-  "count-the-crescents":["7500367222",84498,8],
+  "core":["591be3326b",1145604,47],
+  "core@de":["c19617288b",276906,20],
+  "core@fr":["bfc7e92f37",168117,20],
+  "core@id":["1cb5e60df0",279455,20],
+  "core@ms":["1393ed9abd",284535,20],
+  "count-the-crescents":["c58ffd2f9d",83016,5],
   "count-the-crescents@m":["76410cb722",587647,52],
   "count-the-crescents@w":["238f9dbdf7",584828,52],
-  "edhi":["9dac3fd7b0",2010,4],
-  "fatima-al-fihri":["deef04b254",2051,4],
-  "gazi-husrev-beg":["35ce5dffe9",1924,4],
-  "ibn-al-nafis":["7a7ae3c40b",2075,4],
-  "ibn-battuta":["da02e1eeb1",3542441,57],
+  "edhi":["42f9542339",442,1],
+  "fatima-al-fihri":["2c3eca2233",463,1],
+  "gazi-husrev-beg":["a83800ba50",435,1],
+  "ibn-al-nafis":["f8a52f29ab",449,1],
+  "ibn-battuta":["edc49cc26d",3501285,54],
   "ibn-battuta@m":["fc1dc2b090",3523440,130],
   "ibn-battuta@w":["4418230851",3810161,130],
-  "mariam-alolo":["49f720fe97",1820,4],
-  "muhammad-asad":["730e647c82",1965,4],
-  "musa":["fd530299b5",8284744,165],
+  "mariam-alolo":["a06c1449ec",422,1],
+  "muhammad-asad":["e8b07f6b96",446,1],
+  "musa":["4835d26f79",8147265,162],
   "musa@m":["eb2318b1d1",14069765,423],
   "musa@w":["21e209ea42",15281209,423],
-  "nana-asmau":["e11440ba95",2516223,54],
+  "nana-asmau":["cfb3760e97",2477392,51],
   "nana-asmau@m":["0a028f5761",3395505,116],
   "nana-asmau@w":["a6c18e6bbe",3665928,116],
-  "nuh":["eb1ce1af5f",3398753,58],
+  "nuh":["656b47c252",3356795,55],
   "nuh@m":["1852874f1c",3888796,145],
   "nuh@w":["1c57f6027a",4165390,145],
-  "rahmah":["ebdace9825",2749758,48],
+  "rahmah":["a664096156",2717192,45],
   "rahmah@id-m":["ec329859ed",3172911,114],
   "rahmah@id-w":["dde118b888",3315323,114],
   "rahmah@m":["35a8bb21ae",2876572,114],
   "rahmah@w":["ef657c152b",3123167,114],
-  "rumi":["c1f69e27cf",1843,4],
-  "tap-and-say":["73c49e54f8",22878,7],
+  "rumi":["96e3caea5b",409,1],
+  "tap-and-say":["284f427c70",21717,4],
   "tap-and-say@m":["71edb942d5",1501703,126],
   "tap-and-say@w":["d9e7f925b2",1472336,126],
-  "umm-ayman":["12a8832c66",3319956,59],
+  "umm-ayman":["b2c4b05c2a",3281590,56],
   "umm-ayman@m":["25ae6bd6a0",3369590,116],
   "umm-ayman@w":["aa2daf9273",3702494,116],
-  "yunus-emre":["7182d1e7f3",1772,4],
-  "yusuf":["2ed1aa6de6",5938209,97],
+  "yunus-emre":["6881152c52",408,1],
+  "yusuf":["897137a140",5870900,94],
   "yusuf@m":["5f24cea0b0",6661953,191],
   "yusuf@w":["d0a6cc2e08",7128706,191]
 };
@@ -112,6 +116,8 @@ function notePlayed(p) {
 }
 function packFor(f) {
   var m = /^games\/([^/]+)\/(.*)$/.exec(f);
+  var lm = /^lang\/([a-z]{2,3})\//.exec(f);          // a language's words: their own pack (scripts/build-offline.js)
+  if (lm) return "core@" + lm[1];
   if (!m) return "core";
   var v = /^assets\/audio(?:-([a-z]{2,3}))?(-m)?\//.exec(m[2]);
   return m[1] + (v ? "@" + (v[1] ? v[1] + "-" : "") + (v[2] ? "m" : "w") : "");

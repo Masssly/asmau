@@ -1,0 +1,624 @@
+{
+ "status": "checked",
+ "_note": "Deutsch, drafted 21 November 2026. A native speaker read a sample and the owner approved it for families on 21 November 2026; not every line has been checked yet. No computer voice in German yet.",
+ "lines": {
+  "n1-a": {
+   "en": "Long after Adam, his children had spread far over the earth. Among them lived some very good men, who remembered Allah and helped everyone.",
+   "t": "Lange nach Adam hatten sich seine Kinder weit über die Erde verbreitet. Unter ihnen lebten einige sehr gute Männer, die an Allah dachten und allen halfen."
+  },
+  "n1-b": {
+   "en": "When those good men died, the people missed them. It is told that someone said: let us make statues of them, so that we remember them.",
+   "t": "Als diese guten Männer starben, vermissten die Menschen sie. Man erzählt, dass jemand sagte: Lasst uns Statuen von ihnen machen, damit wir uns an sie erinnern."
+  },
+  "n1-c": {
+   "en": "Years and years went by. The people who made the statues died too, and their children forgot why the statues were there.",
+   "t": "Viele, viele Jahre vergingen. Auch die Menschen, die die Statuen gemacht hatten, starben, und ihre Kinder vergaßen, warum die Statuen dort standen."
+  },
+  "n1-d": {
+   "en": "Then people began to bow down to the statues and pray to them, and they forgot Allah. They called them Wadd, Suwa, Yaghuth, Ya'uq and Nasr.",
+   "t": "Dann fingen die Menschen an, sich vor den Statuen zu verneigen und zu ihnen zu beten, und sie vergaßen Allah. Sie nannten sie Wadd, Suwa, Yaghuth, Ya'uq und Nasr."
+  },
+  "n1-made": {
+   "en": "Who made it? Allah, or people?",
+   "t": "Wer hat das gemacht? Allah oder Menschen?"
+  },
+  "n1-made-bin1": {
+   "en": "Allah made it",
+   "t": "Allah hat es gemacht"
+  },
+  "n1-made-bin2": {
+   "en": "People made it",
+   "t": "Menschen haben es gemacht"
+  },
+  "n1-made-it1": {
+   "en": "The sun",
+   "t": "Die Sonne"
+  },
+  "n1-made-it2": {
+   "en": "A statue",
+   "t": "Eine Statue"
+  },
+  "n1-made-it3": {
+   "en": "A tree",
+   "t": "Ein Baum"
+  },
+  "n1-made-it4": {
+   "en": "A house",
+   "t": "Ein Haus"
+  },
+  "n1-made-it5": {
+   "en": "The rain",
+   "t": "Der Regen"
+  },
+  "n1-made-it6": {
+   "en": "A chair",
+   "t": "Ein Stuhl"
+  },
+  "n1-made-no": {
+   "en": "Think again. Could people make that, or only Allah?",
+   "t": "Denk noch einmal nach. Können Menschen das machen, oder nur Allah?"
+  },
+  "n1-q": {
+   "en": "Can a statue hear us, or help us?",
+   "t": "Kann eine Statue uns hören oder uns helfen?"
+  },
+  "n1-q-opt1": {
+   "en": "No, only Allah can",
+   "t": "Nein, nur Allah kann das"
+  },
+  "n1-q-opt2": {
+   "en": "Yes, it can",
+   "t": "Ja, das kann sie"
+  },
+  "n1-q-no": {
+   "en": "A statue cannot hear anyone or help anyone. Only Allah hears us and helps us.",
+   "t": "Eine Statue kann niemanden hören und niemandem helfen. Nur Allah hört uns und hilft uns."
+  },
+  "n2-a": {
+   "en": "So Allah chose a good man from among them to be His prophet: Nuh, peace be upon him.",
+   "t": "Da erwählte Allah einen guten Mann aus ihrer Mitte zu Seinem Propheten: Nuh, Friede sei mit ihm."
+  },
+  "n2-b": {
+   "en": "Nuh said: my people, I am here to warn you clearly. Worship Allah alone, and be mindful of Him. He will forgive you.",
+   "t": "Nuh sagte: Mein Volk, ich bin hier, um euch deutlich zu warnen. Betet Allah allein an und seid achtsam vor Ihm. Er wird euch vergeben."
+  },
+  "n2-q": {
+   "en": "What did Nuh tell his people?",
+   "t": "Was sagte Nuh zu seinem Volk?"
+  },
+  "n2-q-opt1": {
+   "en": "Worship the statues",
+   "t": "Betet die Statuen an"
+  },
+  "n2-q-opt2": {
+   "en": "Worship Allah alone",
+   "t": "Betet Allah allein an"
+  },
+  "n2-q-no": {
+   "en": "Nuh said: worship Allah alone. He will forgive you.",
+   "t": "Nuh sagte: Betet Allah allein an. Er wird euch vergeben."
+  },
+  "n2-c": {
+   "en": "And Nuh kept calling them, for a very, very long time: nine hundred and fifty years!",
+   "t": "Und Nuh rief sie weiter, sehr, sehr lange: neunhundertfünfzig Jahre!"
+  },
+  "n2-years": {
+   "en": "Each star is a hundred years. Tap all nine! Nine hundred years, and fifty more.",
+   "t": "Jeder Stern ist hundert Jahre. Tippe alle neun an! Neunhundert Jahre, und fünfzig mehr."
+  },
+  "n3-a": {
+   "en": "Nuh called his people in the daytime.",
+   "t": "Nuh rief sein Volk am Tag."
+  },
+  "n3-b": {
+   "en": "And he called them at night.",
+   "t": "Und er rief sie in der Nacht."
+  },
+  "n3-c": {
+   "en": "He spoke to them out loud, in front of everyone. And he spoke to them quietly, one by one.",
+   "t": "Er sprach laut zu ihnen, vor allen Leuten. Und er sprach leise zu ihnen, mit jedem einzeln."
+  },
+  "n3-when": {
+   "en": "Is it day, or is it night? Sort them.",
+   "t": "Ist es Tag oder Nacht? Sortiere sie."
+  },
+  "n3-when-bin1": {
+   "en": "Day",
+   "t": "Tag"
+  },
+  "n3-when-bin2": {
+   "en": "Night",
+   "t": "Nacht"
+  },
+  "n3-when-it1": {
+   "en": "The sun is shining",
+   "t": "Die Sonne scheint"
+  },
+  "n3-when-it2": {
+   "en": "The moon is out",
+   "t": "Der Mond ist da"
+  },
+  "n3-when-it3": {
+   "en": "The rooster crows",
+   "t": "Der Hahn kräht"
+  },
+  "n3-when-it4": {
+   "en": "The owl hoots",
+   "t": "Die Eule ruft"
+  },
+  "n3-when-it5": {
+   "en": "The stars twinkle",
+   "t": "Die Sterne funkeln"
+  },
+  "n3-when-it6": {
+   "en": "The flowers open",
+   "t": "Die Blumen gehen auf"
+  },
+  "n3-when-no": {
+   "en": "Think again. Is that in the day, or at night?",
+   "t": "Denk noch einmal nach. Ist das am Tag oder in der Nacht?"
+  },
+  "n3-d": {
+   "en": "But the more he called, the further they ran away. They put their fingers in their ears, and pulled their clothes over their heads, so that they would not hear.",
+   "t": "Aber je mehr er rief, desto weiter liefen sie weg. Sie steckten sich die Finger in die Ohren und zogen sich die Kleider über den Kopf, damit sie nichts hörten."
+  },
+  "n3-q": {
+   "en": "What did the people do when Nuh called them?",
+   "t": "Was taten die Menschen, als Nuh sie rief?"
+  },
+  "n3-q-opt1": {
+   "en": "Put their fingers in their ears",
+   "t": "Sie steckten sich die Finger in die Ohren"
+  },
+  "n3-q-opt2": {
+   "en": "Listened carefully",
+   "t": "Sie hörten gut zu"
+  },
+  "n3-q-no": {
+   "en": "They would not listen. They put their fingers in their ears.",
+   "t": "Sie wollten nicht zuhören. Sie steckten sich die Finger in die Ohren."
+  },
+  "n4-a": {
+   "en": "Nuh said: ask your Lord to forgive you. He is always forgiving. He will send you plenty of rain from the sky.",
+   "t": "Nuh sagte: Bittet euren Herrn um Vergebung. Er vergibt immer. Er wird euch reichlich Regen vom Himmel schicken."
+  },
+  "n4-rain": {
+   "en": "Help the rain fall on the fields. Tap each cloud.",
+   "t": "Hilf dem Regen, auf die Felder zu fallen. Tippe auf jede Wolke."
+  },
+  "n4-b": {
+   "en": "Nuh told them: Allah will give you wealth and sons, and gardens and rivers.",
+   "t": "Nuh sagte ihnen: Allah wird euch Reichtum und Söhne geben, und Gärten und Flüsse."
+  },
+  "n4-c": {
+   "en": "Look how Allah made the seven heavens, one above the other. He put the moon in them as a light, and the sun as a lamp.",
+   "t": "Seht, wie Allah die sieben Himmel geschaffen hat, einen über dem anderen. Er hat den Mond darin zu einem Licht gemacht und die Sonne zu einer Lampe."
+  },
+  "n4-d": {
+   "en": "He made you grow from the earth like a plant. And He spread the earth out wide for you, with paths to walk on.",
+   "t": "Er hat euch aus der Erde wachsen lassen wie eine Pflanze. Und Er hat die Erde für euch weit ausgebreitet, mit Wegen, auf denen ihr gehen könnt."
+  },
+  "n4-gifts": {
+   "en": "What does each gift give us? Match them.",
+   "t": "Was gibt uns jedes Geschenk? Ordne sie zu."
+  },
+  "n4-gifts-a1": {
+   "en": "Rain",
+   "t": "Regen"
+  },
+  "n4-gifts-b1": {
+   "en": "Plants that grow",
+   "t": "Pflanzen, die wachsen"
+  },
+  "n4-gifts-a2": {
+   "en": "The sun",
+   "t": "Die Sonne"
+  },
+  "n4-gifts-b2": {
+   "en": "Light and warmth",
+   "t": "Licht und Wärme"
+  },
+  "n4-gifts-a3": {
+   "en": "The moon",
+   "t": "Der Mond"
+  },
+  "n4-gifts-b3": {
+   "en": "Light at night",
+   "t": "Licht in der Nacht"
+  },
+  "n4-gifts-a4": {
+   "en": "Rivers",
+   "t": "Flüsse"
+  },
+  "n4-gifts-b4": {
+   "en": "Water to drink",
+   "t": "Wasser zum Trinken"
+  },
+  "n5-a": {
+   "en": "The proud chiefs of the people sneered: you are only a man like us! And the only people who follow you are the lowest of us.",
+   "t": "Die hochmütigen Anführer des Volkes spotteten: Du bist doch nur ein Mensch wie wir! Und die Einzigen, die dir folgen, sind die Geringsten unter uns."
+  },
+  "n5-b": {
+   "en": "They wanted Nuh to send his followers away. But Nuh said: I will never drive away the believers. Who would help me against Allah if I did?",
+   "t": "Sie wollten, dass Nuh seine Anhänger wegschickt. Aber Nuh sagte: Ich werde die Gläubigen niemals wegjagen. Wer würde mir gegen Allah helfen, wenn ich es täte?"
+  },
+  "n5-c": {
+   "en": "And Nuh said: I do not ask you for any reward. My reward comes only from Allah.",
+   "t": "Und Nuh sagte: Ich verlange keinen Lohn von euch. Mein Lohn kommt allein von Allah."
+  },
+  "n5-welcome": {
+   "en": "Welcome everyone, like Nuh. Is it welcoming, or not?",
+   "t": "Heiße alle willkommen, wie Nuh. Ist das freundlich, oder nicht?"
+  },
+  "n5-welcome-bin1": {
+   "en": "Welcoming",
+   "t": "Freundlich"
+  },
+  "n5-welcome-bin2": {
+   "en": "Not welcoming",
+   "t": "Nicht freundlich"
+  },
+  "n5-welcome-it1": {
+   "en": "Playing with the new child",
+   "t": "Mit dem neuen Kind spielen"
+  },
+  "n5-welcome-it2": {
+   "en": "Saying: you can't play with us",
+   "t": "Sagen: Du darfst nicht mitspielen"
+  },
+  "n5-welcome-it3": {
+   "en": "Sharing your food",
+   "t": "Sein Essen teilen"
+  },
+  "n5-welcome-it4": {
+   "en": "Laughing at someone's clothes",
+   "t": "Über die Kleider von jemandem lachen"
+  },
+  "n5-welcome-it5": {
+   "en": "Saying salam to everyone",
+   "t": "Allen Salam sagen"
+  },
+  "n5-welcome-it6": {
+   "en": "Whispering about someone",
+   "t": "Über jemanden tuscheln"
+  },
+  "n5-welcome-no": {
+   "en": "Think again. Would that make someone feel welcome?",
+   "t": "Denk noch einmal nach. Würde sich jemand dadurch willkommen fühlen?"
+  },
+  "n5-q": {
+   "en": "What did Nuh say about the believers?",
+   "t": "Was sagte Nuh über die Gläubigen?"
+  },
+  "n5-q-opt1": {
+   "en": "Go away",
+   "t": "Geht weg"
+  },
+  "n5-q-opt2": {
+   "en": "I will never send them away",
+   "t": "Ich werde sie niemals wegschicken"
+  },
+  "n5-q-no": {
+   "en": "Nuh would never send the believers away.",
+   "t": "Nuh würde die Gläubigen niemals wegschicken."
+  },
+  "n6-a": {
+   "en": "Then Allah told Nuh: no more of your people will believe, apart from those who already have. So do not be sad about what they do.",
+   "t": "Dann sagte Allah zu Nuh: Von deinem Volk wird niemand mehr glauben, außer denen, die schon glauben. Sei also nicht traurig über das, was sie tun."
+  },
+  "n6-b": {
+   "en": "And Allah said: build the Ark, under Our eyes, and as We teach you.",
+   "t": "Und Allah sagte: Baue die Arche, vor Unseren Augen und so, wie Wir es dich lehren."
+  },
+  "n6-c": {
+   "en": "It is told that Allah taught Nuh, step by step, how to build it.",
+   "t": "Man erzählt, dass Allah Nuh Schritt für Schritt lehrte, wie man sie baut."
+  },
+  "n6-planks": {
+   "en": "Help build the Ark. Tap to fit every plank.",
+   "t": "Hilf beim Bau der Arche. Tippe, um jedes Brett einzusetzen."
+  },
+  "n6-d": {
+   "en": "The Ark was made of wooden planks, held together with nails.",
+   "t": "Die Arche war aus Holzbrettern gemacht, die mit Nägeln zusammengehalten wurden."
+  },
+  "n6-nails": {
+   "en": "Hammer the nails! Tap each one.",
+   "t": "Schlag die Nägel ein! Tippe auf jeden einzelnen."
+  },
+  "n7-a": {
+   "en": "Every time the proud chiefs walked past, they laughed at Nuh and his big ship.",
+   "t": "Jedes Mal, wenn die hochmütigen Anführer vorbeikamen, lachten sie über Nuh und sein großes Schiff."
+  },
+  "n7-b": {
+   "en": "Nuh said: you laugh at us now. But one day, you will see who was right.",
+   "t": "Nuh sagte: Jetzt lacht ihr über uns. Aber eines Tages werdet ihr sehen, wer recht hatte."
+  },
+  "n7-q": {
+   "en": "What did Nuh do when people laughed at him?",
+   "t": "Was tat Nuh, als die Leute über ihn lachten?"
+  },
+  "n7-q-opt1": {
+   "en": "Kept on building",
+   "t": "Er baute weiter"
+  },
+  "n7-q-opt2": {
+   "en": "Gave up",
+   "t": "Er gab auf"
+  },
+  "n7-q-no": {
+   "en": "Nuh did not give up. He kept on building, patiently.",
+   "t": "Nuh gab nicht auf. Er baute geduldig weiter."
+  },
+  "n7-c": {
+   "en": "So Nuh kept on building, patiently, day after day, until the Ark was ready.",
+   "t": "Also baute Nuh geduldig weiter, Tag für Tag, bis die Arche fertig war."
+  },
+  "n7-patient": {
+   "en": "Be patient, like Nuh. Press and hold the hammer until the Ark is ready.",
+   "t": "Sei geduldig wie Nuh. Drück auf den Hammer und halte ihn, bis die Arche fertig ist."
+  },
+  "n8-a": {
+   "en": "Then Allah's command came. Water burst up out of the ground, even, it is told, where fires had burned.",
+   "t": "Dann kam Allahs Befehl. Wasser sprudelte aus dem Boden, man erzählt, sogar dort, wo Feuer gebrannt hatten."
+  },
+  "n8-b": {
+   "en": "And the gates of the sky opened, and the rain poured down.",
+   "t": "Und die Tore des Himmels öffneten sich, und der Regen strömte herab."
+  },
+  "n8-c": {
+   "en": "Allah said: take into the Ark a pair of every kind of animal.",
+   "t": "Allah sagte: Nimm von jeder Tierart ein Paar mit in die Arche."
+  },
+  "n8-pairs": {
+   "en": "Find the pairs! Two of every kind.",
+   "t": "Finde die Paare! Zwei von jeder Art."
+  },
+  "n8-board": {
+   "en": "Lead the animals into the Ark.",
+   "t": "Führe die Tiere in die Arche."
+  },
+  "n8-d": {
+   "en": "And Nuh took his family, and the believers. Only a few believed with him. It is told there were about eighty of them.",
+   "t": "Und Nuh nahm seine Familie und die Gläubigen mit. Nur wenige glaubten mit ihm. Man erzählt, dass es etwa achtzig waren."
+  },
+  "n9-a": {
+   "en": "Nuh said: get on board. In the name of Allah it sails, and in the name of Allah it comes to rest. My Lord is Forgiving and Merciful.",
+   "t": "Nuh sagte: Steigt ein. Im Namen Allahs fährt sie, und im Namen Allahs kommt sie zur Ruhe. Mein Herr ist vergebend und barmherzig."
+  },
+  "n9-b": {
+   "en": "We can say these words too, when we set off on a journey: bismillahi majraha wa mursaha.",
+   "t": "Auch wir können diese Worte sagen, wenn wir zu einer Reise aufbrechen: bismillahi majraha wa mursaha."
+  },
+  "n9-q": {
+   "en": "What can we say when we set off on a journey?",
+   "t": "Was können wir sagen, wenn wir zu einer Reise aufbrechen?"
+  },
+  "n9-q-opt1": {
+   "en": "Nothing at all",
+   "t": "Gar nichts"
+  },
+  "n9-q-opt2": {
+   "en": "Bismillah",
+   "t": "Bismillah"
+  },
+  "n9-q-no": {
+   "en": "We can say bismillah, in the name of Allah, just like Nuh.",
+   "t": "Wir können Bismillah sagen, im Namen Allahs, genau wie Nuh."
+  },
+  "n9-c": {
+   "en": "Allah taught Nuh to say, once they were on board: praise be to Allah, who saved us. And: my Lord, let me land in a blessed place.",
+   "t": "Allah lehrte Nuh zu sagen, als sie an Bord waren: Alles Lob gebührt Allah, der uns gerettet hat. Und: Mein Herr, lass mich an einem gesegneten Ort landen."
+  },
+  "n9-dua": {
+   "en": "Say the prayer with Nuh. Tap the parts in order.",
+   "t": "Sprich das Gebet mit Nuh. Tippe die Teile der Reihe nach an."
+  },
+  "n9-dua-c1": {
+   "en": "Praise be to Allah,",
+   "t": "Alles Lob gebührt Allah,"
+  },
+  "n9-dua-c2": {
+   "en": "who saved us from the wrongdoing people.",
+   "t": "der uns vor den Unrecht tuenden Leuten gerettet hat."
+  },
+  "n9-dua-c3": {
+   "en": "My Lord, let me land",
+   "t": "Mein Herr, lass mich landen"
+  },
+  "n9-dua-c4": {
+   "en": "in a blessed place. You are the best one to bring us to land.",
+   "t": "an einem gesegneten Ort. Du bist der Beste, der uns landen lässt."
+  },
+  "n9-dua-no": {
+   "en": "Listen again, and say the prayer in order.",
+   "t": "Hör noch einmal zu und sprich das Gebet der Reihe nach."
+  },
+  "n10-a": {
+   "en": "The Ark sailed on, over waves as high as mountains.",
+   "t": "Die Arche fuhr weiter, über Wellen so hoch wie Berge."
+  },
+  "n10-steady": {
+   "en": "Hold on tight! Press and hold the Ark to keep it steady.",
+   "t": "Halt dich gut fest! Drück auf die Arche und halte sie, damit sie ruhig bleibt."
+  },
+  "n10-b": {
+   "en": "Nuh saw his son, who had stayed behind. He called out: my son, come on board with us! Do not stay with those who do not believe.",
+   "t": "Nuh sah seinen Sohn, der zurückgeblieben war. Er rief: Mein Sohn, komm zu uns an Bord! Bleib nicht bei denen, die nicht glauben."
+  },
+  "n10-c": {
+   "en": "But his son said: I will climb a mountain. It will keep me safe from the water.",
+   "t": "Aber sein Sohn sagte: Ich werde auf einen Berg klettern. Er wird mich vor dem Wasser schützen."
+  },
+  "n10-d": {
+   "en": "Nuh said: today nothing can keep anyone safe from Allah's command, except the ones He has mercy on. And the waves came between them.",
+   "t": "Nuh sagte: Heute kann nichts jemanden vor Allahs Befehl schützen, außer denen, derer Er sich erbarmt. Und die Wellen kamen zwischen sie."
+  },
+  "n10-q": {
+   "en": "Who keeps us safe, more than any mountain?",
+   "t": "Wer beschützt uns mehr als jeder Berg?"
+  },
+  "n10-q-opt1": {
+   "en": "Allah",
+   "t": "Allah"
+  },
+  "n10-q-opt2": {
+   "en": "A high mountain",
+   "t": "Ein hoher Berg"
+  },
+  "n10-q-no": {
+   "en": "No mountain could keep anyone safe that day. Only Allah keeps us safe.",
+   "t": "Kein Berg konnte an jenem Tag jemanden schützen. Nur Allah beschützt uns."
+  },
+  "n10-e": {
+   "en": "Nuh was very sad. He said: my Lord, my son is part of my family! And Allah told him: he was not one of your family, because what he did was not right.",
+   "t": "Nuh war sehr traurig. Er sagte: Mein Herr, mein Sohn gehört doch zu meiner Familie! Und Allah sagte ihm: Er gehörte nicht zu deiner Familie, denn was er tat, war nicht recht."
+  },
+  "n10-f": {
+   "en": "Nuh said: my Lord, keep me from asking for what I do not understand. Forgive me, and have mercy on me.",
+   "t": "Nuh sagte: Mein Herr, bewahre mich davor, um etwas zu bitten, das ich nicht verstehe. Vergib mir und hab Erbarmen mit mir."
+  },
+  "n11-a": {
+   "en": "Then it was said: earth, swallow up your water! Sky, hold back your rain! And the water went down.",
+   "t": "Dann wurde gesagt: Erde, verschlucke dein Wasser! Himmel, halte deinen Regen zurück! Und das Wasser sank."
+  },
+  "n11-dry": {
+   "en": "Help the water go down. Rub it away.",
+   "t": "Hilf dem Wasser zu sinken. Reibe es weg."
+  },
+  "n11-b": {
+   "en": "And the Ark came to rest on a mountain called al-Judi.",
+   "t": "Und die Arche kam auf einem Berg namens al-Judi zur Ruhe."
+  },
+  "n11-c": {
+   "en": "It is told that all the mountains stretched up tall and proud that day, but al-Judi stayed humble, so the Ark came to rest on it.",
+   "t": "Man erzählt, dass sich an jenem Tag alle Berge hoch und stolz reckten, aber al-Judi blieb bescheiden, und so kam die Arche auf ihm zur Ruhe."
+  },
+  "n11-q": {
+   "en": "Why did the Ark rest on al-Judi, it is told?",
+   "t": "Warum kam die Arche, wie man erzählt, auf al-Judi zur Ruhe?"
+  },
+  "n11-q-opt1": {
+   "en": "It was the tallest",
+   "t": "Er war der höchste"
+  },
+  "n11-q-opt2": {
+   "en": "It was humble",
+   "t": "Er war bescheiden"
+  },
+  "n11-q-no": {
+   "en": "It is told that al-Judi was humble, and Allah loves the humble.",
+   "t": "Man erzählt, dass al-Judi bescheiden war, und Allah liebt die Bescheidenen."
+  },
+  "n11-d": {
+   "en": "Allah said: Nuh, go down in peace, with blessings on you and on those with you.",
+   "t": "Allah sagte: Nuh, steig in Frieden hinab, mit Segen über dir und über denen, die bei dir sind."
+  },
+  "n11-e": {
+   "en": "Nuh was a truly thankful servant of Allah.",
+   "t": "Nuh war ein wahrhaft dankbarer Diener Allahs."
+  },
+  "n11-f": {
+   "en": "And Nuh prayed: my Lord, forgive me, and my parents, and everyone who comes into my house believing, and all the believing men and women.",
+   "t": "Und Nuh betete: Mein Herr, vergib mir und meinen Eltern und jedem, der gläubig mein Haus betritt, und allen gläubigen Männern und Frauen."
+  },
+  "n11-forgive": {
+   "en": "Say Nuh's prayer. Tap the parts in order.",
+   "t": "Sprich Nuhs Gebet. Tippe die Teile der Reihe nach an."
+  },
+  "n11-forgive-c1": {
+   "en": "My Lord, forgive me,",
+   "t": "Mein Herr, vergib mir,"
+  },
+  "n11-forgive-c2": {
+   "en": "and my parents,",
+   "t": "und meinen Eltern,"
+  },
+  "n11-forgive-c3": {
+   "en": "and everyone who comes into my house believing,",
+   "t": "und jedem, der gläubig mein Haus betritt,"
+  },
+  "n11-forgive-c4": {
+   "en": "and all the believing men and women.",
+   "t": "und allen gläubigen Männern und Frauen."
+  },
+  "n11-forgive-no": {
+   "en": "Listen again, and say the prayer in order.",
+   "t": "Hör noch einmal zu und sprich das Gebet der Reihe nach."
+  },
+  "n11-story": {
+   "en": "Tell the whole story of Nuh. Tap in order.",
+   "t": "Erzähle die ganze Geschichte von Nuh. Tippe der Reihe nach."
+  },
+  "n11-story-c1": {
+   "en": "First, the people forgot Allah and prayed to statues.",
+   "t": "Zuerst vergaßen die Menschen Allah und beteten zu Statuen."
+  },
+  "n11-story-c2": {
+   "en": "Nuh called them, night and day, for many years.",
+   "t": "Nuh rief sie, Tag und Nacht, viele Jahre lang."
+  },
+  "n11-story-c3": {
+   "en": "Allah told him to build the Ark.",
+   "t": "Allah sagte ihm, er solle die Arche bauen."
+  },
+  "n11-story-c4": {
+   "en": "The animals came in, two by two, with the believers.",
+   "t": "Die Tiere kamen herein, immer zwei und zwei, mit den Gläubigen."
+  },
+  "n11-story-c5": {
+   "en": "The Ark sailed over waves like mountains.",
+   "t": "Die Arche fuhr über Wellen so hoch wie Berge."
+  },
+  "n11-story-c6": {
+   "en": "And the Ark came to rest on the humble mountain.",
+   "t": "Und die Arche kam auf dem bescheidenen Berg zur Ruhe."
+  },
+  "n11-story-no": {
+   "en": "Listen again, and tell it in order.",
+   "t": "Hör noch einmal zu und erzähle es der Reihe nach."
+  },
+  "end-a": {
+   "en": "This is the story of Nuh, peace be upon him. He called his people for a very long time, and he never gave up. Allah saved him and the believers in the Ark. And Nuh was a truly thankful servant.",
+   "t": "Das ist die Geschichte von Nuh, Friede sei mit ihm. Er rief sein Volk sehr lange, und er gab niemals auf. Allah rettete ihn und die Gläubigen in der Arche. Und Nuh war ein wahrhaft dankbarer Diener."
+  }
+ },
+ "strings": {
+  "Forgetting Allah": "Allah vergessen",
+  "From Ibn Abbas, in al-Bukhari": "Von Ibn Abbas, bei al-Bukhari",
+  "Nuh Is Sent": "Nuh wird gesandt",
+  "Night and Day": "Nacht und Tag",
+  "Look at Allah's World": "Sieh dir Allahs Welt an",
+  "Everyone Is Welcome": "Alle sind willkommen",
+  "Build the Ark": "Baue die Arche",
+  "From Ibn Kathir's commentary": "Aus dem Kommentar von Ibn Kathir",
+  "They Laughed": "Sie lachten",
+  "Patient, like Nuh": "Geduldig wie Nuh",
+  "Two by Two": "Immer zwei und zwei",
+  "Told in Sunni and Shia narrations": "Erzählt in sunnitischen und schiitischen Überlieferungen",
+  "Praise be to Allah": "Alles Lob gebührt Allah",
+  "who saved us": "der uns gerettet hat",
+  "in a blessed place": "an einem gesegneten Ort",
+  "The Big Waves": "Die großen Wellen",
+  "Safe in the Ark": "Sicher in der Arche",
+  "The Humble Mountain": "Der bescheidene Berg",
+  "My Lord, forgive me": "Mein Herr, vergib mir",
+  "and my parents": "und meinen Eltern",
+  "and everyone in my house": "und allen in meinem Haus",
+  "and all the believers": "und allen Gläubigen",
+  "People forgot Allah": "Die Menschen vergaßen Allah",
+  "Nuh called them": "Nuh rief sie",
+  "He built the Ark": "Er baute die Arche",
+  "Two by two": "Immer zwei und zwei",
+  "The big waves": "Die großen Wellen",
+  "Al-Judi": "Al-Judi",
+  "Nuh": "Nuh",
+  "The Story of Nuh": "Die Geschichte von Nuh",
+  "Eleven chapters about the prophet who never gave up, and the great Ark. Play a little every day.": "Elf Kapitel über den Propheten, der niemals aufgab, und die große Arche. Spiel jeden Tag ein bisschen.",
+  "Patience": "Geduld",
+  "Never giving up": "Niemals aufgeben",
+  "Thankfulness": "Dankbarkeit",
+  "He called his people for 950 years and never gave up; then came the Ark, two by two.": "Er rief sein Volk 950 Jahre lang und gab niemals auf; dann kam die Arche, immer zwei und zwei.",
+  "Nuh stands with his hand on the side of the great wooden Ark at sunset, with smiling believers around him.": "Nuh steht bei Sonnenuntergang mit der Hand an der großen Holzarche, umgeben von lächelnden Gläubigen."
+ }
+}

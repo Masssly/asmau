@@ -1,0 +1,1785 @@
+{
+ "status": "checked",
+ "_note": "Deutsch, drafted 21 November 2026. A native speaker read a sample and the owner approved it for families on 21 November 2026; not every line has been checked yet. No computer voice in German yet.",
+ "lines": {
+  "m1-a": {
+   "en": "Long, long ago, in the land of Egypt, there lived a king called Pharaoh. He was very proud. He thought he was greater than everyone.",
+   "t": "Vor langer, langer Zeit lebte im Land Ägypten ein König namens Pharao. Er war sehr hochmütig. Er glaubte, er sei größer als alle anderen."
+  },
+  "m1-b": {
+   "en": "Pharaoh was cruel to one group of people, the Children of Israel. He made their lives very hard. And he gave a terrible order: their baby boys were to be taken away.",
+   "t": "Pharao war grausam zu einer Gruppe von Menschen, den Kindern Israels. Er machte ihr Leben sehr schwer. Und er gab einen schrecklichen Befehl: Ihre kleinen Jungen sollten ihnen weggenommen werden."
+  },
+  "m1-c": {
+   "en": "But Allah had a plan. Allah wanted to help the people who were being hurt, and one day to make them the leaders.",
+   "t": "Aber Allah hatte einen Plan. Allah wollte den Menschen helfen, denen wehgetan wurde, und sie eines Tages zu Anführern machen."
+  },
+  "m1-q": {
+   "en": "Who had a plan to help the people who were being hurt?",
+   "t": "Wer hatte einen Plan, um den Menschen zu helfen, denen wehgetan wurde?"
+  },
+  "m1-q-opt1": {
+   "en": "Allah",
+   "t": "Allah"
+  },
+  "m1-q-opt2": {
+   "en": "Pharaoh",
+   "t": "Pharao"
+  },
+  "m1-q-no": {
+   "en": "Not Pharaoh. He was the one hurting them. Allah had a plan to help.",
+   "t": "Nicht Pharao. Er war es, der ihnen wehtat. Allah hatte einen Plan, um zu helfen."
+  },
+  "m1-mem": {
+   "en": "Find the pairs: things you can see in the land of Egypt.",
+   "t": "Finde die Paare: Dinge, die man im Land Ägypten sehen kann."
+  },
+  "m2-a": {
+   "en": "In that hard time, a mother had a baby boy. His name was Musa. She loved him very much, and she was afraid the soldiers would find him.",
+   "t": "In dieser schweren Zeit bekam eine Mutter einen kleinen Jungen. Sein Name war Musa. Sie liebte ihn sehr, und sie hatte Angst, dass die Soldaten ihn finden würden."
+  },
+  "m2-b": {
+   "en": "Allah put a message in her heart: feed your baby. And when you are afraid for him, put him into the river. Do not be afraid, and do not be sad. We will bring him back to you, and make him one of the messengers.",
+   "t": "Allah legte ihr eine Botschaft ins Herz: Stille dein Baby. Und wenn du Angst um ihn hast, dann leg ihn in den Fluss. Hab keine Angst, und sei nicht traurig. Wir bringen ihn dir zurück und machen ihn zu einem der Gesandten."
+  },
+  "m2-build": {
+   "en": "She got a little chest ready, like a cradle. Tap to fit every piece.",
+   "t": "Sie machte eine kleine Truhe bereit, wie eine Wiege. Tippe, um jedes Teil einzusetzen."
+  },
+  "m2-c": {
+   "en": "With a brave heart, she laid baby Musa in the chest, and set it on the water of the great river.",
+   "t": "Mit mutigem Herzen legte sie das Baby Musa in die Truhe und setzte sie auf das Wasser des großen Flusses."
+  },
+  "m2-push": {
+   "en": "Gently, gently, help the chest float out onto the river.",
+   "t": "Ganz sanft, ganz sanft, hilf der Truhe, auf den Fluss hinauszutreiben."
+  },
+  "m2-d": {
+   "en": "The river carried him along, gently, gently. And Allah was watching over baby Musa the whole way.",
+   "t": "Der Fluss trug ihn davon, ganz sanft, ganz sanft. Und Allah wachte den ganzen Weg über das Baby Musa."
+  },
+  "m2-ripples": {
+   "en": "Tap each ripple to help the river carry him along.",
+   "t": "Tippe auf jede Welle, damit der Fluss ihn weiterträgt."
+  },
+  "m2-q": {
+   "en": "What did Allah tell Musa's mother?",
+   "t": "Was sagte Allah zu Musas Mutter?"
+  },
+  "m2-q-opt1": {
+   "en": "Hide and cry",
+   "t": "Versteck dich und weine"
+  },
+  "m2-q-opt2": {
+   "en": "Do not be afraid",
+   "t": "Hab keine Angst"
+  },
+  "m2-q-no": {
+   "en": "No. Allah told her: do not be afraid, and do not be sad.",
+   "t": "Nein. Allah sagte ihr: Hab keine Angst, und sei nicht traurig."
+  },
+  "m3-a": {
+   "en": "The river carried the chest right up to the palace of Pharaoh! The people of his house saw it in the water.",
+   "t": "Der Fluss trug die Truhe bis zum Palast des Pharao! Die Leute seines Hauses sahen sie im Wasser."
+  },
+  "m3-pull": {
+   "en": "Pull the chest out of the water. Pull, pull, pull!",
+   "t": "Zieh die Truhe aus dem Wasser. Ziehen, ziehen, ziehen!"
+  },
+  "m3-b": {
+   "en": "The people of Pharaoh's house carried it, still closed, to the queen. Her name was Asiya.",
+   "t": "Die Leute aus Pharaos Haus trugen sie, noch geschlossen, zur Königin. Ihr Name war Asiya."
+  },
+  "m3-open": {
+   "en": "What is inside? Tap the chest to open it.",
+   "t": "Was ist darin? Tippe auf die Truhe, um sie zu öffnen."
+  },
+  "m3-open-s1": {
+   "en": "A beautiful baby boy!",
+   "t": "Ein wunderschöner kleiner Junge!"
+  },
+  "m3-c": {
+   "en": "Inside was a beautiful baby boy. And Allah filled her heart with love for him.",
+   "t": "Darin lag ein wunderschöner kleiner Junge. Und Allah erfüllte ihr Herz mit Liebe zu ihm."
+  },
+  "m3-hearts": {
+   "en": "Everyone who saw baby Musa loved him. Tap every heart to make it glow.",
+   "t": "Alle, die das Baby Musa sahen, liebten es. Tippe auf jedes Herz, damit es leuchtet."
+  },
+  "m3-d": {
+   "en": "Asiya said to Pharaoh: this baby will be a joy for me and for you. Do not harm him! He may help us one day, or we may take him as our son.",
+   "t": "Asiya sagte zu Pharao: Dieses Baby wird eine Freude für mich und für dich sein. Tu ihm nichts! Vielleicht hilft er uns eines Tages, oder wir nehmen ihn als unseren Sohn an."
+  },
+  "m3-e": {
+   "en": "So baby Musa was safe, in the palace of the very king who was looking for baby boys. Pharaoh did not know what Allah had planned.",
+   "t": "So war das Baby Musa in Sicherheit, im Palast genau des Königs, der nach kleinen Jungen suchte. Pharao wusste nicht, was Allah geplant hatte."
+  },
+  "m3-q": {
+   "en": "Who asked Pharaoh not to harm the baby?",
+   "t": "Wer bat Pharao, dem Baby nichts zu tun?"
+  },
+  "m3-q-opt1": {
+   "en": "Asiya, the queen",
+   "t": "Asiya, die Königin"
+  },
+  "m3-q-opt2": {
+   "en": "A soldier",
+   "t": "Ein Soldat"
+  },
+  "m3-q-no": {
+   "en": "No. It was Asiya, the queen. Allah had filled her heart with love.",
+   "t": "Nein. Es war Asiya, die Königin. Allah hatte ihr Herz mit Liebe erfüllt."
+  },
+  "m4-a": {
+   "en": "At home, Musa's mother could think of nothing but her baby. Her heart felt empty. But Allah made her heart strong, so that she would keep on trusting Him.",
+   "t": "Zu Hause konnte Musas Mutter an nichts anderes denken als an ihr Baby. Ihr Herz fühlte sich leer an. Aber Allah stärkte ihr Herz, damit sie weiter auf Ihn vertraute."
+  },
+  "m4-b": {
+   "en": "She said to Musa's big sister: follow him. So his sister watched from far away, and nobody noticed her.",
+   "t": "Sie sagte zu Musas großer Schwester: Folge ihm. So beobachtete seine Schwester ihn aus der Ferne, und niemand bemerkte sie."
+  },
+  "m4-follow": {
+   "en": "Follow the chest quietly along the bank. Tap each footprint.",
+   "t": "Folge der Truhe leise am Ufer entlang. Tippe auf jeden Fußabdruck."
+  },
+  "m4-c": {
+   "en": "In the palace, baby Musa was hungry. He cried and cried. Nurse after nurse came to feed him, but he would not drink from any of them.",
+   "t": "Im Palast hatte das Baby Musa Hunger. Er weinte und weinte. Eine Amme nach der anderen kam, um ihn zu stillen, aber er wollte bei keiner trinken."
+  },
+  "m4-nurses": {
+   "en": "Try every nurse. Tap each one. Baby Musa says no, no, no!",
+   "t": "Probiere jede Amme aus. Tippe auf jede. Baby Musa sagt nein, nein, nein!"
+  },
+  "m4-d": {
+   "en": "Then his sister stepped forward and said: shall I show you a family who will feed him, and take good care of him?",
+   "t": "Da trat seine Schwester vor und sagte: Soll ich euch eine Familie zeigen, die ihn stillt und gut für ihn sorgt?"
+  },
+  "m4-e": {
+   "en": "And who was it? Musa's own mother! He drank at once. Allah gave him back to her, so that her heart would be glad, and so that she would know: the promise of Allah is always true.",
+   "t": "Und wer war es? Musas eigene Mutter! Er trank sofort. Allah gab ihn ihr zurück, damit ihr Herz froh wurde und damit sie wusste: Das Versprechen Allahs ist immer wahr."
+  },
+  "m4-f": {
+   "en": "The queen even paid her to feed her own baby! It is told that only about a day and a night had gone by.",
+   "t": "Die Königin bezahlte sie sogar dafür, ihr eigenes Baby zu stillen! Man erzählt, dass erst ungefähr ein Tag und eine Nacht vergangen waren."
+  },
+  "m4-q": {
+   "en": "Who fed baby Musa in the end?",
+   "t": "Wer stillte das Baby Musa am Ende?"
+  },
+  "m4-q-opt1": {
+   "en": "A palace nurse",
+   "t": "Eine Amme aus dem Palast"
+  },
+  "m4-q-opt2": {
+   "en": "His own mother",
+   "t": "Seine eigene Mutter"
+  },
+  "m4-q-no": {
+   "en": "No. He would not drink from any nurse. Allah gave him back to his own mother.",
+   "t": "Nein. Er wollte bei keiner Amme trinken. Allah gab ihn seiner eigenen Mutter zurück."
+  },
+  "m4-ord": {
+   "en": "What happened first? Tap them in order.",
+   "t": "Was geschah zuerst? Tippe sie der Reihe nach an."
+  },
+  "m4-ord-c1": {
+   "en": "First, his mother put him on the river.",
+   "t": "Zuerst legte ihn seine Mutter auf den Fluss."
+  },
+  "m4-ord-c2": {
+   "en": "Then the queen found him and loved him.",
+   "t": "Dann fand ihn die Königin und hatte ihn lieb."
+  },
+  "m4-ord-c3": {
+   "en": "Then he would not drink from any nurse.",
+   "t": "Dann wollte er bei keiner Amme trinken."
+  },
+  "m4-ord-c4": {
+   "en": "And then he was back in his mother's arms.",
+   "t": "Und dann war er wieder in den Armen seiner Mutter."
+  },
+  "m4-ord-no": {
+   "en": "Not that one yet. Think: what happened before it?",
+   "t": "Das noch nicht. Überlege: Was geschah davor?"
+  },
+  "m5-a": {
+   "en": "Musa grew up in the palace, like a prince. It is told that he even slept in the king's own room.",
+   "t": "Musa wuchs im Palast auf, wie ein Prinz. Man erzählt, dass er sogar im Zimmer des Königs schlief."
+  },
+  "m5-b": {
+   "en": "It is told that once, when he was little, Musa was given a sweet date and a hot, glowing coal. He put the coal to his tongue! After that, speaking was hard for him.",
+   "t": "Man erzählt, dass Musa einmal, als er klein war, eine süße Dattel und eine heiße, glühende Kohle bekam. Er steckte die Kohle an seine Zunge! Danach fiel ihm das Sprechen schwer."
+  },
+  "m5-sort": {
+   "en": "Help the little ones choose. Is it safe to eat, or too hot to touch?",
+   "t": "Hilf den Kleinen bei der Wahl. Kann man es gefahrlos essen, oder ist es zu heiß zum Anfassen?"
+  },
+  "m5-sort-bin1": {
+   "en": "Safe to eat",
+   "t": "Kann man essen"
+  },
+  "m5-sort-bin2": {
+   "en": "Too hot! Do not touch",
+   "t": "Zu heiß! Nicht anfassen"
+  },
+  "m5-sort-it1": {
+   "en": "A sweet date",
+   "t": "Eine süße Dattel"
+  },
+  "m5-sort-it2": {
+   "en": "A glowing coal",
+   "t": "Eine glühende Kohle"
+  },
+  "m5-sort-it3": {
+   "en": "Warm bread",
+   "t": "Warmes Brot"
+  },
+  "m5-sort-it4": {
+   "en": "A candle flame",
+   "t": "Eine Kerzenflamme"
+  },
+  "m5-sort-it5": {
+   "en": "A cup of milk",
+   "t": "Eine Tasse Milch"
+  },
+  "m5-sort-no": {
+   "en": "Think again. Would it burn you?",
+   "t": "Denk noch einmal nach. Würdest du dich daran verbrennen?"
+  },
+  "m5-c": {
+   "en": "When Musa was fully grown and strong, Allah gave him wisdom and knowledge. That is how Allah rewards the people who do good.",
+   "t": "Als Musa ganz erwachsen und stark war, gab Allah ihm Weisheit und Wissen. So belohnt Allah die Menschen, die Gutes tun."
+  },
+  "m5-d": {
+   "en": "Musa never forgot the family who fed him as a baby. It is told that when he grew up, he looked after the Children of Israel. While he was near, Pharaoh's men did not dare to hurt them.",
+   "t": "Musa vergaß nie die Familie, die ihn als Baby gestillt hatte. Man erzählt, dass er sich als Erwachsener um die Kinder Israels kümmerte. Solange er in der Nähe war, wagten Pharaos Leute nicht, ihnen wehzutun."
+  },
+  "m5-puz": {
+   "en": "Put the picture of Musa back together. Tap two pieces to swap them.",
+   "t": "Setz das Bild von Musa wieder zusammen. Tippe auf zwei Teile, um sie zu tauschen."
+  },
+  "m5-q": {
+   "en": "What did Allah give Musa when he was grown?",
+   "t": "Was gab Allah Musa, als er erwachsen war?"
+  },
+  "m5-q-opt1": {
+   "en": "Wisdom and knowledge",
+   "t": "Weisheit und Wissen"
+  },
+  "m5-q-opt2": {
+   "en": "A golden crown",
+   "t": "Eine goldene Krone"
+  },
+  "m5-q-no": {
+   "en": "Not a crown. Allah gave him wisdom and knowledge.",
+   "t": "Keine Krone. Allah gab ihm Weisheit und Wissen."
+  },
+  "m6-a": {
+   "en": "One day Musa walked into the city when the streets were quiet. He found two men fighting. One was from his own people. The other was from Pharaoh's people.",
+   "t": "Eines Tages ging Musa in die Stadt, als die Straßen still waren. Er sah zwei Männer, die miteinander kämpften. Einer war von seinem eigenen Volk. Der andere war von Pharaos Volk."
+  },
+  "m6-b": {
+   "en": "The man from his people shouted: help me! Musa hit the other man with his fist, just once. But the man fell down, and did not get up again.",
+   "t": "Der Mann von seinem Volk rief: Hilf mir! Musa schlug den anderen Mann mit der Faust, nur ein einziges Mal. Aber der Mann fiel hin und stand nicht wieder auf."
+  },
+  "m6-c": {
+   "en": "Musa was so sorry. He said: this is the work of Shaytan. My Lord, I have done wrong. Please forgive me. And Allah forgave him. Allah is the Most Forgiving, the Most Kind.",
+   "t": "Musa tat es so leid. Er sagte: Das ist das Werk des Satans. Mein Herr, ich habe Unrecht getan. Bitte vergib mir. Und Allah vergab ihm. Allah ist der Allvergebende, der Gütigste."
+  },
+  "m6-sorry": {
+   "en": "Say sorry from the heart, like Musa. Press and hold the hands until they shine.",
+   "t": "Entschuldige dich von Herzen, wie Musa. Drück auf die Hände und halte sie, bis sie leuchten."
+  },
+  "m6-q": {
+   "en": "What did Musa do when he had done something wrong?",
+   "t": "Was tat Musa, als er etwas Falsches getan hatte?"
+  },
+  "m6-q-opt1": {
+   "en": "He pretended nothing happened",
+   "t": "Er tat so, als wäre nichts passiert"
+  },
+  "m6-q-opt2": {
+   "en": "He asked Allah to forgive him",
+   "t": "Er bat Allah um Vergebung"
+  },
+  "m6-q-no": {
+   "en": "No. Musa said sorry straight away, and asked Allah to forgive him.",
+   "t": "Nein. Musa entschuldigte sich sofort und bat Allah um Vergebung."
+  },
+  "m6-d": {
+   "en": "Soon the whole city knew what had happened. Then a man came running from the far side of the city. He said: Musa! The chiefs are coming to punish you. Leave now! I am giving you good advice.",
+   "t": "Bald wusste die ganze Stadt, was geschehen war. Da kam ein Mann vom anderen Ende der Stadt angelaufen. Er sagte: Musa! Die Anführer kommen, um dich zu bestrafen. Geh sofort! Ich gebe dir einen guten Rat."
+  },
+  "m6-e": {
+   "en": "So Musa left the city, afraid, looking over his shoulder. He prayed: my Lord, save me from the people who do wrong.",
+   "t": "Also verließ Musa die Stadt, voller Angst, und blickte sich immer wieder um. Er betete: Mein Herr, rette mich vor den Leuten, die Unrecht tun."
+  },
+  "m6-flee": {
+   "en": "Help Musa slip away from the city.",
+   "t": "Hilf Musa, sich aus der Stadt zu schleichen."
+  },
+  "m7-a": {
+   "en": "Musa set off towards a land called Madyan. It was a long, long way. He said: I hope my Lord will guide me to the right way.",
+   "t": "Musa machte sich auf den Weg in ein Land namens Madyan. Es war sehr, sehr weit. Er sagte: Ich hoffe, mein Herr wird mich den richtigen Weg führen."
+  },
+  "m7-walk": {
+   "en": "Walk with Musa across the desert. Tap each footprint.",
+   "t": "Geh mit Musa durch die Wüste. Tippe auf jeden Fußabdruck."
+  },
+  "m7-b": {
+   "en": "At last he came to the water of Madyan. A crowd of shepherds were watering their sheep. And standing back, away from the crowd, were two young women, holding their sheep back.",
+   "t": "Endlich kam er zum Wasser von Madyan. Eine Menge Hirten tränkte ihre Schafe. Und abseits, weg von der Menge, standen zwei junge Frauen und hielten ihre Schafe zurück."
+  },
+  "m7-c": {
+   "en": "Musa asked: what is the matter? They said: we cannot water our sheep until the shepherds have gone. And our father is a very old man.",
+   "t": "Musa fragte: Was ist los? Sie sagten: Wir können unsere Schafe erst tränken, wenn die Hirten gegangen sind. Und unser Vater ist ein sehr alter Mann."
+  },
+  "m7-d": {
+   "en": "It is told that a great heavy rock covered the well, a rock that it took ten men to lift. Musa lifted it all by himself!",
+   "t": "Man erzählt, dass ein großer, schwerer Stein den Brunnen bedeckte, ein Stein, für den man zehn Männer brauchte, um ihn zu heben. Musa hob ihn ganz allein!"
+  },
+  "m7-rock": {
+   "en": "Lift the heavy rock off the well. Pull, pull, pull!",
+   "t": "Heb den schweren Stein vom Brunnen. Ziehen, ziehen, ziehen!"
+  },
+  "m7-sheep": {
+   "en": "Now give every sheep a drink. Tap each one.",
+   "t": "Jetzt gib jedem Schaf etwas zu trinken. Tippe auf jedes."
+  },
+  "m7-e": {
+   "en": "When every sheep had drunk, Musa went to rest in the shade. He was tired and hungry, and far from home. He prayed: my Lord, I am in need of whatever good You send me.",
+   "t": "Als alle Schafe getrunken hatten, ging Musa in den Schatten, um sich auszuruhen. Er war müde und hungrig und weit weg von zu Hause. Er betete: Mein Herr, ich brauche alles Gute, das Du mir sendest."
+  },
+  "m7-q": {
+   "en": "Musa had nothing left. Who did he ask for help?",
+   "t": "Musa hatte nichts mehr. Wen bat er um Hilfe?"
+  },
+  "m7-q-opt1": {
+   "en": "Allah",
+   "t": "Allah"
+  },
+  "m7-q-opt2": {
+   "en": "The shepherds",
+   "t": "Die Hirten"
+  },
+  "m7-q-no": {
+   "en": "No. Musa asked Allah: my Lord, I am in need of whatever good You send me.",
+   "t": "Nein. Musa bat Allah: Mein Herr, ich brauche alles Gute, das Du mir sendest."
+  },
+  "m7-mem": {
+   "en": "Find the pairs from the well of Madyan.",
+   "t": "Finde die Paare vom Brunnen von Madyan."
+  },
+  "m8-a": {
+   "en": "The two sisters went home and told their father what had happened. Soon one of them came back, walking shyly. She said: my father is asking for you. He wants to thank you for watering our sheep.",
+   "t": "Die beiden Schwestern gingen nach Hause und erzählten ihrem Vater, was geschehen war. Bald kam eine von ihnen zurück, schüchtern gehend. Sie sagte: Mein Vater ruft dich. Er möchte dir danken, dass du unsere Schafe getränkt hast."
+  },
+  "m8-b": {
+   "en": "On the way, Musa walked in front. It is told that he asked her to walk behind him, and to throw a little pebble to show him which way to turn.",
+   "t": "Auf dem Weg ging Musa vorne. Man erzählt, dass er sie bat, hinter ihm zu gehen und ein kleines Steinchen zu werfen, um ihm zu zeigen, wo er abbiegen sollte."
+  },
+  "m8-pebble": {
+   "en": "Show Musa the way. Tap where each pebble lands.",
+   "t": "Zeig Musa den Weg. Tippe dorthin, wo jedes Steinchen landet."
+  },
+  "m8-c": {
+   "en": "Musa told the old man his whole story. The old man said: do not be afraid. You are safe now.",
+   "t": "Musa erzählte dem alten Mann seine ganze Geschichte. Der alte Mann sagte: Hab keine Angst. Jetzt bist du in Sicherheit."
+  },
+  "m8-d": {
+   "en": "One daughter said: father, hire him! The best person to hire is one who is strong, and can be trusted.",
+   "t": "Eine Tochter sagte: Vater, stell ihn ein! Der Beste, den man einstellen kann, ist einer, der stark ist und dem man vertrauen kann."
+  },
+  "m8-q": {
+   "en": "What makes the best helper?",
+   "t": "Was macht den besten Helfer aus?"
+  },
+  "m8-q-opt1": {
+   "en": "Loud and bossy",
+   "t": "Laut und herrisch"
+  },
+  "m8-q-opt2": {
+   "en": "Strong, and can be trusted",
+   "t": "Stark, und man kann ihm vertrauen"
+  },
+  "m8-q-no": {
+   "en": "No. She said the best helper is strong, and can be trusted.",
+   "t": "Nein. Sie sagte, der beste Helfer ist stark, und man kann ihm vertrauen."
+  },
+  "m8-e": {
+   "en": "The old man said: I would like you to marry one of my daughters, and to work for me for eight years. Ten, if you choose. And Musa agreed.",
+   "t": "Der alte Mann sagte: Ich möchte, dass du eine meiner Töchter heiratest und acht Jahre für mich arbeitest. Zehn, wenn du willst. Und Musa war einverstanden."
+  },
+  "m8-years": {
+   "en": "It is told that Musa stayed the full ten years. Tap each sun to count them.",
+   "t": "Man erzählt, dass Musa die vollen zehn Jahre blieb. Tippe auf jede Sonne, um sie zu zählen."
+  },
+  "m8-flock": {
+   "en": "Musa was a shepherd now. Gather the sheep as they wander.",
+   "t": "Musa war jetzt ein Hirte. Sammle die Schafe ein, wenn sie umherwandern."
+  },
+  "m8-puz": {
+   "en": "Put the picture back together. Tap two pieces to swap them.",
+   "t": "Setz das Bild wieder zusammen. Tippe auf zwei Teile, um sie zu tauschen."
+  },
+  "m9-a": {
+   "en": "When his years of work were done, Musa set off on a journey with his family. One cold, dark night, he saw a fire, far away on the side of the mountain.",
+   "t": "Als seine Arbeitsjahre vorbei waren, machte sich Musa mit seiner Familie auf eine Reise. In einer kalten, dunklen Nacht sah er ein Feuer, weit weg am Hang des Berges."
+  },
+  "m9-b": {
+   "en": "He said to his family: wait here. I can see a fire. Maybe I can bring you a burning stick to warm you, or find someone there to show us the way.",
+   "t": "Er sagte zu seiner Familie: Wartet hier. Ich sehe ein Feuer. Vielleicht kann ich euch ein brennendes Holzstück bringen, um euch zu wärmen, oder dort jemanden finden, der uns den Weg zeigt."
+  },
+  "m9-seek": {
+   "en": "It is so dark. Slide your finger around to look, and find the fire.",
+   "t": "Es ist so dunkel. Fahr mit dem Finger herum, um dich umzusehen, und finde das Feuer."
+  },
+  "m9-climb": {
+   "en": "Walk with Musa up to the fire.",
+   "t": "Geh mit Musa hinauf zum Feuer."
+  },
+  "m9-c": {
+   "en": "When he came close, a voice called out: Musa! I am your Lord. Take off your sandals. You are in the holy valley of Tuwa.",
+   "t": "Als er näher kam, rief eine Stimme: Musa! Ich bin dein Herr. Zieh deine Sandalen aus. Du bist im heiligen Tal Tuwa."
+  },
+  "m9-sandals": {
+   "en": "Help Musa take off his sandals. Tap each one.",
+   "t": "Hilf Musa, seine Sandalen auszuziehen. Tippe auf jede."
+  },
+  "m9-d": {
+   "en": "I have chosen you, so listen. I am Allah. There is no god but Me. So worship Me, and keep up the prayer, to remember Me.",
+   "t": "Ich habe dich erwählt, so höre zu. Ich bin Allah. Es gibt keinen Gott außer Mir. So diene Mir und verrichte das Gebet, um Meiner zu gedenken."
+  },
+  "m9-listen": {
+   "en": "Be very still and listen, like Musa. Press and hold the light.",
+   "t": "Sei ganz still und hör zu, wie Musa. Drück auf das Licht und halte es."
+  },
+  "m9-q": {
+   "en": "Who called to Musa in the holy valley?",
+   "t": "Wer rief Musa im heiligen Tal?"
+  },
+  "m9-q-opt1": {
+   "en": "Allah, his Lord",
+   "t": "Allah, sein Herr"
+  },
+  "m9-q-opt2": {
+   "en": "A shepherd",
+   "t": "Ein Hirte"
+  },
+  "m9-q-no": {
+   "en": "No. It was Allah who called: Musa, I am your Lord.",
+   "t": "Nein. Es war Allah, der rief: Musa, Ich bin dein Herr."
+  },
+  "m10-a": {
+   "en": "Allah asked: what is that in your right hand, Musa? He said: it is my staff. I lean on it. I look after my sheep with it. And I use it for other things too.",
+   "t": "Allah fragte: Was ist das in deiner rechten Hand, Musa? Er sagte: Das ist mein Stab. Ich stütze mich darauf. Ich hüte damit meine Schafe. Und ich brauche ihn auch für andere Dinge."
+  },
+  "m10-staff": {
+   "en": "Allah said: throw it down. Tap the staff to throw it.",
+   "t": "Allah sagte: Wirf ihn hin. Tippe auf den Stab, um ihn zu werfen."
+  },
+  "m10-staff-s1": {
+   "en": "It became a snake, moving fast! Musa turned to run. Allah said: pick it up, and do not be afraid. Tap the snake.",
+   "t": "Er wurde zu einer Schlange, die sich schnell bewegte! Musa wandte sich um, um wegzulaufen. Allah sagte: Heb sie auf und hab keine Angst. Tippe auf die Schlange."
+  },
+  "m10-staff-s2": {
+   "en": "And it was a staff again.",
+   "t": "Und er war wieder ein Stab."
+  },
+  "m10-b": {
+   "en": "The staff had become a real snake, and then a staff again. It was a sign from Allah.",
+   "t": "Der Stab war zu einer echten Schlange geworden und dann wieder zu einem Stab. Das war ein Zeichen von Allah."
+  },
+  "m10-hand": {
+   "en": "Then Allah said: put your hand inside your shirt, and take it out. Tap the hand.",
+   "t": "Dann sagte Allah: Steck deine Hand in dein Hemd und zieh sie wieder heraus. Tippe auf die Hand."
+  },
+  "m10-hand-s1": {
+   "en": "It shone white, bright and beautiful, and it did not hurt at all! Tap it again.",
+   "t": "Sie leuchtete weiß, hell und wunderschön, und sie tat überhaupt nicht weh! Tippe noch einmal darauf."
+  },
+  "m10-hand-s2": {
+   "en": "And it was just as before.",
+   "t": "Und sie war wieder genau wie vorher."
+  },
+  "m10-c": {
+   "en": "Musa's hand shone white. It is told that it shone like the moon. This was another sign.",
+   "t": "Musas Hand leuchtete weiß. Man erzählt, dass sie leuchtete wie der Mond. Das war ein weiteres Zeichen."
+  },
+  "m10-d": {
+   "en": "Then Allah said: now go to Pharaoh. He has gone much too far.",
+   "t": "Dann sagte Allah: Jetzt geh zu Pharao. Er ist viel zu weit gegangen."
+  },
+  "m10-match": {
+   "en": "Match each thing to what happened. Tap one on the left, then its partner on the right.",
+   "t": "Ordne jedes Ding dem zu, was geschah. Tippe auf eins links und dann auf das passende rechts."
+  },
+  "m10-match-a1": {
+   "en": "The staff",
+   "t": "Der Stab"
+  },
+  "m10-match-b1": {
+   "en": "became a snake",
+   "t": "wurde zu einer Schlange"
+  },
+  "m10-match-a2": {
+   "en": "The hand",
+   "t": "Die Hand"
+  },
+  "m10-match-b2": {
+   "en": "shone white",
+   "t": "leuchtete weiß"
+  },
+  "m10-match-a3": {
+   "en": "The sandals",
+   "t": "Die Sandalen"
+  },
+  "m10-match-b3": {
+   "en": "came off in the holy valley",
+   "t": "wurden im heiligen Tal ausgezogen"
+  },
+  "m10-mem": {
+   "en": "Find the pairs from that wonderful night.",
+   "t": "Finde die Paare aus dieser wunderbaren Nacht."
+  },
+  "m11-a": {
+   "en": "Musa was worried. He said: my Lord, I am afraid of what they may do to me. And speaking is hard for me. My brother Harun speaks better than I do.",
+   "t": "Musa machte sich Sorgen. Er sagte: Mein Herr, ich habe Angst vor dem, was sie mir antun könnten. Und das Sprechen fällt mir schwer. Mein Bruder Harun spricht besser als ich."
+  },
+  "m11-b": {
+   "en": "So he prayed a beautiful prayer: my Lord, open up my heart. Make my task easy for me. And untie the knot in my tongue, so that they can understand my words.",
+   "t": "Da sprach er ein wunderschönes Gebet: Mein Herr, weite mir meine Brust. Mach mir meine Aufgabe leicht. Und löse den Knoten in meiner Zunge, damit sie meine Worte verstehen."
+  },
+  "m11-c": {
+   "en": "And give me a helper from my family: Harun, my brother. Make me strong through him, and let him share my task, so that we may praise You and remember You a great deal.",
+   "t": "Und gib mir einen Helfer aus meiner Familie: Harun, meinen Bruder. Stärke mich durch ihn und lass ihn meine Aufgabe teilen, damit wir Dich viel preisen und viel an Dich denken."
+  },
+  "m11-ord": {
+   "en": "Say Musa's prayer with him. Tap the parts in order.",
+   "t": "Sprich Musas Gebet mit ihm. Tippe die Teile der Reihe nach an."
+  },
+  "m11-ord-c1": {
+   "en": "My Lord, open up my heart.",
+   "t": "Mein Herr, weite mir meine Brust."
+  },
+  "m11-ord-c2": {
+   "en": "Make my task easy for me.",
+   "t": "Mach mir meine Aufgabe leicht."
+  },
+  "m11-ord-c3": {
+   "en": "Untie the knot in my tongue.",
+   "t": "Löse den Knoten in meiner Zunge."
+  },
+  "m11-ord-c4": {
+   "en": "And give me my brother to help me.",
+   "t": "Und gib mir meinen Bruder als Helfer."
+  },
+  "m11-ord-no": {
+   "en": "Not yet. Listen again: heart, task, tongue, brother.",
+   "t": "Noch nicht. Hör noch einmal zu: Brust, Aufgabe, Zunge, Bruder."
+  },
+  "m11-d": {
+   "en": "Allah said: Musa, you have been given what you asked for.",
+   "t": "Allah sagte: Musa, dir wurde gegeben, worum du gebeten hast."
+  },
+  "m11-e0": {
+   "en": "So Musa set off back to Egypt, with his brother Harun at his side.",
+   "t": "Also machte sich Musa auf den Weg zurück nach Ägypten, mit seinem Bruder Harun an seiner Seite."
+  },
+  "m11-e": {
+   "en": "Allah told them: go to Pharaoh, both of you. Speak to him gently, so that he may think, and remember. Do not be afraid. I am with you both. I hear and I see everything.",
+   "t": "Allah sagte zu ihnen: Geht zu Pharao, ihr beide. Sprecht sanft mit ihm, damit er nachdenkt und sich erinnert. Habt keine Angst. Ich bin mit euch beiden. Ich höre und sehe alles."
+  },
+  "m11-q": {
+   "en": "How should Musa and Harun speak to Pharaoh?",
+   "t": "Wie sollten Musa und Harun mit Pharao sprechen?"
+  },
+  "m11-q-opt1": {
+   "en": "With shouting",
+   "t": "Mit Geschrei"
+  },
+  "m11-q-opt2": {
+   "en": "Gently",
+   "t": "Sanft"
+  },
+  "m11-q-no": {
+   "en": "No. Allah told them: speak to him gently.",
+   "t": "Nein. Allah sagte ihnen: Sprecht sanft mit ihm."
+  },
+  "m11-sort": {
+   "en": "Is it a gentle word, or a harsh word?",
+   "t": "Ist das ein sanftes Wort oder ein hartes Wort?"
+  },
+  "m11-sort-bin1": {
+   "en": "Gentle",
+   "t": "Sanft"
+  },
+  "m11-sort-bin2": {
+   "en": "Harsh",
+   "t": "Hart"
+  },
+  "m11-sort-it1": {
+   "en": "Please listen to me",
+   "t": "Bitte hör mir zu"
+  },
+  "m11-sort-it2": {
+   "en": "You are stupid!",
+   "t": "Du bist dumm!"
+  },
+  "m11-sort-it3": {
+   "en": "Let us talk together",
+   "t": "Lass uns miteinander reden"
+  },
+  "m11-sort-it4": {
+   "en": "Go away!",
+   "t": "Geh weg!"
+  },
+  "m11-sort-it5": {
+   "en": "Peace be with you",
+   "t": "Friede sei mit dir"
+  },
+  "m11-sort-no": {
+   "en": "Think again. How would it feel to hear that?",
+   "t": "Denk noch einmal nach. Wie würde es sich anfühlen, das zu hören?"
+  },
+  "m12-a": {
+   "en": "Musa and Harun stood before Pharaoh in his great hall. They said: we are messengers from your Lord. Let the Children of Israel go with us, and stop hurting them.",
+   "t": "Musa und Harun standen vor Pharao in seinem großen Saal. Sie sagten: Wir sind Gesandte deines Herrn. Lass die Kinder Israels mit uns gehen, und hör auf, ihnen wehzutun."
+  },
+  "m12-b": {
+   "en": "Musa showed them the clear signs that Allah had given him.",
+   "t": "Musa zeigte ihnen die klaren Zeichen, die Allah ihm gegeben hatte."
+  },
+  "m12-signs": {
+   "en": "Which two signs did Allah give Musa? Tap them.",
+   "t": "Welche zwei Zeichen gab Allah Musa? Tippe sie an."
+  },
+  "m12-c": {
+   "en": "But Pharaoh and his chiefs said: this is nothing but magic tricks! We never heard of anything like this from our fathers.",
+   "t": "Aber Pharao und seine Anführer sagten: Das sind doch nur Zaubertricks! So etwas haben wir von unseren Vätern nie gehört."
+  },
+  "m12-d": {
+   "en": "Pharaoh said: have you come to push us out of our land with your magic, Musa? We will bring you magic just like it. So choose a day!",
+   "t": "Pharao sagte: Bist du gekommen, um uns mit deiner Zauberei aus unserem Land zu vertreiben, Musa? Wir werden dir genau solche Zauberei bringen. Also wähle einen Tag!"
+  },
+  "m12-e": {
+   "en": "Musa said: let it be the day of the festival. And let all the people gather when the sun is high.",
+   "t": "Musa sagte: Es soll der Tag des Festes sein. Und alle Menschen sollen sich versammeln, wenn die Sonne hoch steht."
+  },
+  "m12-q": {
+   "en": "Which day did Musa choose?",
+   "t": "Welchen Tag wählte Musa?"
+  },
+  "m12-q-opt1": {
+   "en": "The day of the festival, with everyone watching",
+   "t": "Den Festtag, an dem alle zuschauen"
+  },
+  "m12-q-opt2": {
+   "en": "A secret night, with nobody there",
+   "t": "Eine geheime Nacht, ohne Zuschauer"
+  },
+  "m12-q-no": {
+   "en": "No. Musa chose the festival day, so that everyone could see the truth.",
+   "t": "Nein. Musa wählte den Festtag, damit alle die Wahrheit sehen konnten."
+  },
+  "m12-crowd": {
+   "en": "Help gather all the people for the big day. Tap them as they come.",
+   "t": "Hilf, alle Menschen für den großen Tag zu versammeln. Tippe sie an, wenn sie kommen."
+  },
+  "m12-puz": {
+   "en": "Put the picture back together. Tap two pieces to swap them.",
+   "t": "Setz das Bild wieder zusammen. Tippe auf zwei Teile, um sie zu tauschen."
+  },
+  "m13-a": {
+   "en": "The big day came. The sun was high, and the whole city was there. Pharaoh's magicians stood in a row, with their ropes and their sticks.",
+   "t": "Der große Tag kam. Die Sonne stand hoch, und die ganze Stadt war da. Pharaos Zauberer standen in einer Reihe, mit ihren Seilen und Stöcken."
+  },
+  "m13-b": {
+   "en": "Musa warned them: do not make up lies about Allah! Then they said: Musa, will you throw first, or shall we? Musa said: you throw.",
+   "t": "Musa warnte sie: Erfindet keine Lügen über Allah! Dann sagten sie: Musa, wirfst du zuerst, oder sollen wir? Musa sagte: Werft ihr."
+  },
+  "m13-q1": {
+   "en": "Who threw first?",
+   "t": "Wer warf zuerst?"
+  },
+  "m13-q1-opt1": {
+   "en": "Musa",
+   "t": "Musa"
+  },
+  "m13-q1-opt2": {
+   "en": "The magicians",
+   "t": "Die Zauberer"
+  },
+  "m13-q1-no": {
+   "en": "No. Musa said to the magicians: you throw first.",
+   "t": "Nein. Musa sagte zu den Zauberern: Werft ihr zuerst."
+  },
+  "m13-c": {
+   "en": "The magicians threw down their ropes and their sticks. And by their magic, the ropes seemed to wriggle and slither, just like snakes!",
+   "t": "Die Zauberer warfen ihre Seile und Stöcke hin. Und durch ihre Zauberei schienen die Seile sich zu winden und zu schlängeln, genau wie Schlangen!"
+  },
+  "m13-ropes": {
+   "en": "Look closely. They are only ropes! Tap each one to see what it really is.",
+   "t": "Schau genau hin. Es sind nur Seile! Tippe auf jedes, um zu sehen, was es wirklich ist."
+  },
+  "m13-d": {
+   "en": "Even Musa felt afraid inside. But Allah said: do not be afraid. You will win. Throw down what is in your right hand.",
+   "t": "Sogar Musa bekam innerlich Angst. Aber Allah sagte: Hab keine Angst. Du wirst gewinnen. Wirf hin, was in deiner rechten Hand ist."
+  },
+  "m13-throw": {
+   "en": "Throw down the staff! Tap it.",
+   "t": "Wirf den Stab hin! Tippe darauf."
+  },
+  "m13-throw-s1": {
+   "en": "It swallowed up everything the magicians had made!",
+   "t": "Er verschlang alles, was die Zauberer gemacht hatten!"
+  },
+  "m13-e": {
+   "en": "Musa's staff swallowed up everything they had made, every rope and every stick, until nothing was left.",
+   "t": "Musas Stab verschlang alles, was sie gemacht hatten, jedes Seil und jeden Stock, bis nichts mehr übrig war."
+  },
+  "m13-swallow": {
+   "en": "Help the staff swallow the tricks. Tap the ropes as they appear.",
+   "t": "Hilf dem Stab, die Tricks zu verschlingen. Tippe auf die Seile, wenn sie erscheinen."
+  },
+  "m13-f": {
+   "en": "The magicians knew magic, and they knew this was no trick. They fell to the ground and said: we believe in the Lord of Harun and Musa!",
+   "t": "Die Zauberer kannten sich mit Zauberei aus, und sie wussten, dass das kein Trick war. Sie warfen sich zu Boden und sagten: Wir glauben an den Herrn von Harun und Musa!"
+  },
+  "m13-q2": {
+   "en": "Why did the magicians believe?",
+   "t": "Warum glaubten die Zauberer?"
+  },
+  "m13-q2-opt1": {
+   "en": "They saw it was no trick. It was from Allah",
+   "t": "Sie sahen, dass es kein Trick war. Es war von Allah"
+  },
+  "m13-q2-opt2": {
+   "en": "Pharaoh told them to",
+   "t": "Pharao befahl es ihnen"
+  },
+  "m13-q2-no": {
+   "en": "No. Pharaoh was furious! They believed because they saw it was truly from Allah.",
+   "t": "Nein. Pharao war wütend! Sie glaubten, weil sie sahen, dass es wirklich von Allah war."
+  },
+  "m14-a": {
+   "en": "Pharaoh was furious. He shouted: how dare you believe before I say you may? And he said he would punish them terribly.",
+   "t": "Pharao war wütend. Er schrie: Wie könnt ihr es wagen zu glauben, bevor ich es euch erlaube? Und er sagte, er würde sie schrecklich bestrafen."
+  },
+  "m14-b": {
+   "en": "But the magicians were not afraid any more. They said: we will never choose you over the clear signs that have come to us. Do what you like. You only rule this short life. Allah is better, and Allah lasts for ever.",
+   "t": "Aber die Zauberer hatten keine Angst mehr. Sie sagten: Niemals werden wir dich den klaren Zeichen vorziehen, die zu uns gekommen sind. Tu, was du willst. Du herrschst nur über dieses kurze Leben. Allah ist besser, und Allah bleibt für immer."
+  },
+  "m14-q": {
+   "en": "What did the magicians choose?",
+   "t": "Was wählten die Zauberer?"
+  },
+  "m14-q-opt1": {
+   "en": "Pharaoh's gold",
+   "t": "Pharaos Gold"
+  },
+  "m14-q-opt2": {
+   "en": "The truth from Allah",
+   "t": "Die Wahrheit von Allah"
+  },
+  "m14-q-no": {
+   "en": "No. They gave up Pharaoh's rewards. They chose the truth from Allah.",
+   "t": "Nein. Sie gaben Pharaos Belohnungen auf. Sie wählten die Wahrheit von Allah."
+  },
+  "m14-c": {
+   "en": "There was a man in Pharaoh's own family who had kept his faith a secret. He spoke up: would you hurt a man only because he says, my Lord is Allah? He has brought you clear signs!",
+   "t": "Es gab einen Mann aus Pharaos eigener Familie, der seinen Glauben geheim gehalten hatte. Er sprach mutig: Wollt ihr einem Mann wehtun, nur weil er sagt: Mein Herr ist Allah? Er hat euch klare Zeichen gebracht!"
+  },
+  "m14-d": {
+   "en": "And Asiya the queen believed too. She prayed: my Lord, build me a house near You in the Garden. And save me from Pharaoh, and from what he does.",
+   "t": "Und auch Asiya, die Königin, glaubte. Sie betete: Mein Herr, baue mir ein Haus bei Dir im Paradies. Und rette mich vor Pharao und vor dem, was er tut."
+  },
+  "m14-dua": {
+   "en": "Make her prayer with her. Press and hold the hands until they shine.",
+   "t": "Sprich ihr Gebet mit ihr. Drück auf die Hände und halte sie, bis sie leuchten."
+  },
+  "m14-e": {
+   "en": "But proud Pharaoh said to his chiefs: I know of no god for you but me! Haman, bake bricks of clay, and build me a tall tower, so that I can climb up and look for the God of Musa. I think he is lying.",
+   "t": "Aber der hochmütige Pharao sagte zu seinen Anführern: Ich kenne für euch keinen Gott außer mir! Haman, brenne Ziegel aus Lehm und bau mir einen hohen Turm, damit ich hinaufsteigen und nach dem Gott Musas Ausschau halten kann. Ich glaube, er lügt."
+  },
+  "m14-tower": {
+   "en": "Pharaoh thought a tower could reach the sky. Tap to stack the bricks and see.",
+   "t": "Pharao dachte, ein Turm könnte den Himmel erreichen. Tippe, um die Ziegel zu stapeln, und schau."
+  },
+  "m14-tower-after": {
+   "en": "Up and up it went. But no tower can reach Allah. Pharaoh and his armies were proud in the land, with no right to be.",
+   "t": "Höher und höher ging es. Aber kein Turm kann Allah erreichen. Pharao und seine Heere waren hochmütig im Land, ohne jedes Recht dazu."
+  },
+  "m14-match": {
+   "en": "Who said it? Match the brave hearts to their words.",
+   "t": "Wer hat es gesagt? Ordne die mutigen Herzen ihren Worten zu."
+  },
+  "m14-match-a1": {
+   "en": "The magicians",
+   "t": "Die Zauberer"
+  },
+  "m14-match-b1": {
+   "en": "We believe in the Lord of Harun and Musa",
+   "t": "Wir glauben an den Herrn von Harun und Musa"
+  },
+  "m14-match-a2": {
+   "en": "Asiya the queen",
+   "t": "Asiya, die Königin"
+  },
+  "m14-match-b2": {
+   "en": "Build me a house near You in the Garden",
+   "t": "Baue mir ein Haus bei Dir im Paradies"
+  },
+  "m14-match-a3": {
+   "en": "The secret believer",
+   "t": "Der heimliche Gläubige"
+  },
+  "m14-match-b3": {
+   "en": "My Lord is Allah",
+   "t": "Mein Herr ist Allah"
+  },
+  "m15-a": {
+   "en": "Still Pharaoh would not let the people go. So Allah sent signs to Pharaoh's people, to wake them up. First came years with no rain, and hardly any food grew.",
+   "t": "Immer noch wollte Pharao das Volk nicht gehen lassen. Da schickte Allah Zeichen zu Pharaos Volk, um es aufzuwecken. Zuerst kamen Jahre ohne Regen, und es wuchs kaum etwas zu essen."
+  },
+  "m15-b": {
+   "en": "Then came a great flood of rain. It is told that it spoiled the crops and the fruit.",
+   "t": "Dann kam eine große Flut von Regen. Man erzählt, dass sie die Ernte und die Früchte verdarb."
+  },
+  "m15-c": {
+   "en": "Then came clouds of locusts that ate up the plants. It is told that they even chewed the nails out of the doors!",
+   "t": "Dann kamen Wolken von Heuschrecken, die die Pflanzen auffraßen. Man erzählt, dass sie sogar die Nägel aus den Türen nagten!"
+  },
+  "m15-locusts": {
+   "en": "Shoo! Tap the locusts to chase them off the plants.",
+   "t": "Husch! Tippe auf die Heuschrecken, um sie von den Pflanzen zu verjagen."
+  },
+  "m15-d": {
+   "en": "Then tiny bugs got into the grain. And then came frogs. Frogs, frogs, everywhere! It is told that they were in the pots, in the beds, and even in the clothes.",
+   "t": "Dann gerieten winzige Käfer ins Getreide. Und dann kamen Frösche. Frösche, Frösche, überall! Man erzählt, dass sie in den Töpfen waren, in den Betten und sogar in den Kleidern."
+  },
+  "m15-frogs": {
+   "en": "Find every frog hiding in the kitchen. Tap them all.",
+   "t": "Finde jeden Frosch, der sich in der Küche versteckt. Tippe auf alle."
+  },
+  "m15-e": {
+   "en": "And then the water of the river turned red. Every one of these was a clear sign.",
+   "t": "Und dann wurde das Wasser des Flusses rot. Jedes davon war ein klares Zeichen."
+  },
+  "m15-f": {
+   "en": "Each time, they begged: Musa, pray to your Lord for us! If the trouble goes away, we will believe, and we will let your people go. Musa prayed, and Allah took the trouble away.",
+   "t": "Jedes Mal flehten sie: Musa, bete für uns zu deinem Herrn! Wenn das Unglück verschwindet, werden wir glauben und dein Volk gehen lassen. Musa betete, und Allah nahm das Unglück fort."
+  },
+  "m15-clear": {
+   "en": "Musa prays, and the trouble is lifted. Rub the sky until it is clear.",
+   "t": "Musa betet, und das Unglück wird fortgenommen. Reibe den Himmel, bis er klar ist."
+  },
+  "m15-g": {
+   "en": "But every time the trouble was gone, they broke their promise.",
+   "t": "Aber jedes Mal, wenn das Unglück vorbei war, brachen sie ihr Versprechen."
+  },
+  "m15-q": {
+   "en": "What did they do each time the trouble went away?",
+   "t": "Was taten sie jedes Mal, wenn das Unglück verschwand?"
+  },
+  "m15-q-opt1": {
+   "en": "They broke their promise",
+   "t": "Sie brachen ihr Versprechen"
+  },
+  "m15-q-opt2": {
+   "en": "They kept their promise",
+   "t": "Sie hielten ihr Versprechen"
+  },
+  "m15-q-no": {
+   "en": "No. Every time, they broke their promise.",
+   "t": "Nein. Jedes Mal brachen sie ihr Versprechen."
+  },
+  "m15-ord": {
+   "en": "Five signs came, one after another. Tap them in order.",
+   "t": "Fünf Zeichen kamen, eines nach dem anderen. Tippe sie der Reihe nach an."
+  },
+  "m15-ord-c1": {
+   "en": "First, the flood.",
+   "t": "Zuerst die Flut."
+  },
+  "m15-ord-c2": {
+   "en": "Then the locusts.",
+   "t": "Dann die Heuschrecken."
+  },
+  "m15-ord-c3": {
+   "en": "Then the tiny bugs.",
+   "t": "Dann die winzigen Käfer."
+  },
+  "m15-ord-c4": {
+   "en": "Then the frogs.",
+   "t": "Dann die Frösche."
+  },
+  "m15-ord-c5": {
+   "en": "And then the red water.",
+   "t": "Und dann das rote Wasser."
+  },
+  "m15-ord-no": {
+   "en": "Not that one yet. Rain, locusts, bugs, frogs, red water.",
+   "t": "Das noch nicht. Regen, Heuschrecken, Käfer, Frösche, rotes Wasser."
+  },
+  "m16-a": {
+   "en": "At last, Allah told Musa: leave by night, with My servants.",
+   "t": "Endlich sagte Allah zu Musa: Zieh bei Nacht fort, mit Meinen Dienern."
+  },
+  "m16-wake": {
+   "en": "Quietly wake the families. Tap each house to light its lamp.",
+   "t": "Weck die Familien leise. Tippe auf jedes Haus, um seine Lampe anzuzünden."
+  },
+  "m16-b": {
+   "en": "Quietly, quietly, in the dark, the families took what they could carry, and followed Musa out of Egypt.",
+   "t": "Leise, leise, im Dunkeln, nahmen die Familien mit, was sie tragen konnten, und folgten Musa aus Ägypten hinaus."
+  },
+  "m16-leave": {
+   "en": "Lead the people out of Egypt.",
+   "t": "Führe das Volk aus Ägypten hinaus."
+  },
+  "m16-c": {
+   "en": "When Pharaoh found out, he was furious. He gathered a huge army and chased after them. At sunrise, he caught up.",
+   "t": "Als Pharao es herausfand, war er wütend. Er versammelte ein riesiges Heer und jagte ihnen nach. Bei Sonnenaufgang hatte er sie eingeholt."
+  },
+  "m16-d": {
+   "en": "In front of the people was the sea. Behind them was Pharaoh's army. The people cried: we are caught!",
+   "t": "Vor dem Volk lag das Meer. Hinter ihnen war Pharaos Heer. Die Menschen riefen: Wir sind gefangen!"
+  },
+  "m16-e": {
+   "en": "But Musa said: no! My Lord is with me. He will guide me.",
+   "t": "Aber Musa sagte: Nein! Mein Herr ist mit mir. Er wird mich leiten."
+  },
+  "m16-q": {
+   "en": "What did Musa say when everyone was afraid?",
+   "t": "Was sagte Musa, als alle Angst hatten?"
+  },
+  "m16-q-opt1": {
+   "en": "We are lost",
+   "t": "Wir sind verloren"
+  },
+  "m16-q-opt2": {
+   "en": "My Lord is with me",
+   "t": "Mein Herr ist mit mir"
+  },
+  "m16-q-no": {
+   "en": "No. Musa said: my Lord is with me. He will guide me.",
+   "t": "Nein. Musa sagte: Mein Herr ist mit mir. Er wird mich leiten."
+  },
+  "m16-puz": {
+   "en": "Put the picture back together. Tap two pieces to swap them.",
+   "t": "Setz das Bild wieder zusammen. Tippe auf zwei Teile, um sie zu tauschen."
+  },
+  "m17-a": {
+   "en": "Allah told Musa: strike the sea with your staff.",
+   "t": "Allah sagte zu Musa: Schlag mit deinem Stab auf das Meer."
+  },
+  "m17-part": {
+   "en": "Strike the sea! Press the staff and hold, and watch.",
+   "t": "Schlag auf das Meer! Drück auf den Stab, halte ihn und schau."
+  },
+  "m17-b": {
+   "en": "And the sea split in two! Each side stood up like a huge mountain, with a dry path in between.",
+   "t": "Und das Meer teilte sich in zwei! Jede Seite stand da wie ein riesiger Berg, mit einem trockenen Weg dazwischen."
+  },
+  "m17-c": {
+   "en": "It is told that there were twelve paths, one for each of the twelve families, with windows in the water so that they could see each other. And Allah sent the wind to dry the ground.",
+   "t": "Man erzählt, dass es zwölf Wege gab, einen für jede der zwölf Familien, mit Fenstern im Wasser, damit sie einander sehen konnten. Und Allah schickte den Wind, um den Boden zu trocknen."
+  },
+  "m17-dry": {
+   "en": "Help the wind dry the path. Rub away the water.",
+   "t": "Hilf dem Wind, den Weg zu trocknen. Reib das Wasser weg."
+  },
+  "m17-paths": {
+   "en": "Count the twelve paths. Tap each one.",
+   "t": "Zähle die zwölf Wege. Tippe auf jeden."
+  },
+  "m17-cross": {
+   "en": "Walk the people across, between the walls of water.",
+   "t": "Führe das Volk hinüber, zwischen den Wänden aus Wasser."
+  },
+  "m17-d": {
+   "en": "Musa and all his people crossed safely to the other side.",
+   "t": "Musa und sein ganzes Volk kamen sicher auf die andere Seite."
+  },
+  "m17-e": {
+   "en": "Pharaoh and his army rushed in after them. Then the sea came crashing back together, and the army was gone.",
+   "t": "Pharao und sein Heer stürmten hinter ihnen her. Da schlug das Meer krachend wieder zusammen, und das Heer war verschwunden."
+  },
+  "m17-f0": {
+   "en": "As the water closed over him, Pharaoh cried: I believe in the God that the Children of Israel believe in! But it was too late.",
+   "t": "Als das Wasser über ihm zusammenschlug, rief Pharao: Ich glaube an den Gott, an den die Kinder Israels glauben! Aber es war zu spät."
+  },
+  "m17-f": {
+   "en": "All his life he had been proud and cruel. Allah saved only his body, as a sign for the people who came after.",
+   "t": "Sein ganzes Leben lang war er hochmütig und grausam gewesen. Allah bewahrte nur seinen Körper, als Zeichen für die Menschen, die nach ihm kamen."
+  },
+  "m17-g": {
+   "en": "The people were free! That day is called Ashura. Prophet Muhammad, peace be upon him, told the Muslims to fast on that day.",
+   "t": "Das Volk war frei! Dieser Tag heißt Aschura. Der Prophet Muhammad, Allah segne ihn und schenke ihm Frieden, sagte den Muslimen, an diesem Tag zu fasten."
+  },
+  "m17-q": {
+   "en": "Who saved Musa and his people?",
+   "t": "Wer rettete Musa und sein Volk?"
+  },
+  "m17-q-opt1": {
+   "en": "Allah",
+   "t": "Allah"
+  },
+  "m17-q-opt2": {
+   "en": "A big boat",
+   "t": "Ein großes Schiff"
+  },
+  "m17-q-no": {
+   "en": "No, there was no boat. Allah opened the sea for them.",
+   "t": "Nein, es gab kein Schiff. Allah öffnete das Meer für sie."
+  },
+  "m17-ord": {
+   "en": "Tell the story of the sea. Tap in order.",
+   "t": "Erzähle die Geschichte vom Meer. Tippe der Reihe nach."
+  },
+  "m17-ord-c1": {
+   "en": "First, they were caught between the sea and the army.",
+   "t": "Zuerst saßen sie zwischen dem Meer und dem Heer fest."
+  },
+  "m17-ord-c2": {
+   "en": "Then Musa struck the sea with his staff.",
+   "t": "Dann schlug Musa mit seinem Stab auf das Meer."
+  },
+  "m17-ord-c3": {
+   "en": "Then a dry path opened, and everyone crossed.",
+   "t": "Dann öffnete sich ein trockener Weg, und alle gingen hinüber."
+  },
+  "m17-ord-c4": {
+   "en": "And then the sea closed again.",
+   "t": "Und dann schloss sich das Meer wieder."
+  },
+  "m17-ord-no": {
+   "en": "Not that one yet. What came before it?",
+   "t": "Das noch nicht. Was kam davor?"
+  },
+  "m18-a": {
+   "en": "Now the people travelled through the hot, dry desert. And Allah sent clouds to give them shade.",
+   "t": "Jetzt zog das Volk durch die heiße, trockene Wüste. Und Allah schickte Wolken, die ihnen Schatten gaben."
+  },
+  "m18-b": {
+   "en": "Allah sent down food for them too: a special food called manna, and little birds called quails. Eat from the good things We have given you!",
+   "t": "Allah sandte ihnen auch Essen herab: ein besonderes Essen namens Manna und kleine Vögel, Wachteln. Esst von den guten Dingen, die Wir euch gegeben haben!"
+  },
+  "m18-manna": {
+   "en": "Gather the manna in your basket. Tap each piece.",
+   "t": "Sammle das Manna in deinen Korb. Tippe auf jedes Stück."
+  },
+  "m18-quail": {
+   "en": "Here come the quails! Tap each little bird.",
+   "t": "Da kommen die Wachteln! Tippe auf jeden kleinen Vogel."
+  },
+  "m18-c": {
+   "en": "Then the people were thirsty, and there was no water anywhere. Musa prayed for water. Allah said: strike the rock with your staff.",
+   "t": "Dann hatte das Volk Durst, und nirgends gab es Wasser. Musa betete um Wasser. Allah sagte: Schlag mit deinem Stab auf den Felsen."
+  },
+  "m18-springs": {
+   "en": "Strike the rock! Tap it twelve times, and count the springs.",
+   "t": "Schlag auf den Felsen! Tippe zwölfmal und zähle die Quellen."
+  },
+  "m18-d": {
+   "en": "Twelve springs came gushing out of the rock, one for each of the twelve families. And everybody knew their own place to drink.",
+   "t": "Zwölf Quellen sprudelten aus dem Felsen, eine für jede der zwölf Familien. Und jeder kannte seinen eigenen Platz zum Trinken."
+  },
+  "m18-q": {
+   "en": "How many springs came out of the rock?",
+   "t": "Wie viele Quellen kamen aus dem Felsen?"
+  },
+  "m18-q-opt1": {
+   "en": "Two",
+   "t": "Zwei"
+  },
+  "m18-q-opt2": {
+   "en": "Twelve",
+   "t": "Zwölf"
+  },
+  "m18-q-no": {
+   "en": "No. Twelve springs, one for each of the twelve families.",
+   "t": "Nein. Zwölf Quellen, eine für jede der zwölf Familien."
+  },
+  "m18-mem": {
+   "en": "Find the pairs: the gifts Allah sent in the desert.",
+   "t": "Finde die Paare: die Geschenke, die Allah in der Wüste schickte."
+  },
+  "m19-a": {
+   "en": "Allah called Musa to the mountain for thirty nights, and then ten more. Musa said to his brother Harun: take my place with my people, and do what is right.",
+   "t": "Allah rief Musa für dreißig Nächte auf den Berg und dann noch für zehn weitere. Musa sagte zu seinem Bruder Harun: Vertritt mich bei meinem Volk und tu, was recht ist."
+  },
+  "m19-q1": {
+   "en": "Thirty nights, and ten more. How many nights is that?",
+   "t": "Dreißig Nächte und noch zehn dazu. Wie viele Nächte sind das?"
+  },
+  "m19-q1-opt1": {
+   "en": "Forty",
+   "t": "Vierzig"
+  },
+  "m19-q1-opt2": {
+   "en": "Thirteen",
+   "t": "Dreizehn"
+  },
+  "m19-q1-no": {
+   "en": "Count again. Thirty and ten make forty.",
+   "t": "Zähl noch einmal. Dreißig und zehn sind vierzig."
+  },
+  "m19-climb": {
+   "en": "Climb the mountain with Musa.",
+   "t": "Steig mit Musa auf den Berg."
+  },
+  "m19-b": {
+   "en": "On the mountain, Allah spoke to Musa. Musa said: my Lord, let me see You. Allah said: you will not see Me. But look at that mountain. If it stays in its place, then you will see Me.",
+   "t": "Auf dem Berg sprach Allah zu Musa. Musa sagte: Mein Herr, lass mich Dich sehen. Allah sagte: Du wirst Mich nicht sehen. Aber schau auf jenen Berg. Wenn er an seinem Platz bleibt, dann wirst du Mich sehen."
+  },
+  "m19-c": {
+   "en": "Then Allah showed His glory to the mountain, and the mountain crumbled into dust! Musa fell down in a faint.",
+   "t": "Dann zeigte Allah dem Berg Seine Herrlichkeit, und der Berg zerfiel zu Staub! Musa fiel ohnmächtig zu Boden."
+  },
+  "m19-q2": {
+   "en": "What happened to the mountain?",
+   "t": "Was geschah mit dem Berg?"
+  },
+  "m19-q2-opt1": {
+   "en": "It grew taller",
+   "t": "Er wurde höher"
+  },
+  "m19-q2-opt2": {
+   "en": "It crumbled into dust",
+   "t": "Er zerfiel zu Staub"
+  },
+  "m19-q2-no": {
+   "en": "No. The mountain could not stay in its place. It crumbled into dust.",
+   "t": "Nein. Der Berg konnte nicht an seinem Platz bleiben. Er zerfiel zu Staub."
+  },
+  "m19-d": {
+   "en": "When he woke up, Musa said: glory be to You! I turn back to You, and I am the first to believe.",
+   "t": "Als er wieder zu sich kam, sagte Musa: Gepriesen seist Du! Ich wende mich Dir reuig zu, und ich bin der Erste, der glaubt."
+  },
+  "m19-e": {
+   "en": "Allah said: Musa, I have chosen you, with My messages and My words. So hold on to what I give you, and be thankful. And Allah gave him the Tablets, with guidance for his people.",
+   "t": "Allah sagte: Musa, Ich habe dich erwählt, mit Meinen Botschaften und Meinem Wort. So halte fest, was Ich dir gebe, und sei dankbar. Und Allah gab ihm die Tafeln, mit Rechtleitung für sein Volk."
+  },
+  "m19-puz": {
+   "en": "Put the picture back together. Tap two pieces to swap them.",
+   "t": "Setz das Bild wieder zusammen. Tippe auf zwei Teile, um sie zu tauschen."
+  },
+  "m19-sort": {
+   "en": "Musa was told: be thankful. Is it thankful, or not thankful?",
+   "t": "Musa wurde gesagt: Sei dankbar. Ist das dankbar oder nicht dankbar?"
+  },
+  "m19-sort-bin1": {
+   "en": "Thankful",
+   "t": "Dankbar"
+  },
+  "m19-sort-bin2": {
+   "en": "Not thankful",
+   "t": "Nicht dankbar"
+  },
+  "m19-sort-it1": {
+   "en": "Saying: thank You, Allah",
+   "t": "Sagen: Danke, Allah"
+  },
+  "m19-sort-it2": {
+   "en": "Saying: I want more, more, more",
+   "t": "Sagen: Ich will mehr, mehr, mehr"
+  },
+  "m19-sort-it3": {
+   "en": "Sharing your food",
+   "t": "Sein Essen teilen"
+  },
+  "m19-sort-it4": {
+   "en": "Throwing good food away",
+   "t": "Gutes Essen wegwerfen"
+  },
+  "m19-sort-no": {
+   "en": "Think again. Would a thankful person do that?",
+   "t": "Denk noch einmal nach. Würde ein dankbarer Mensch das tun?"
+  },
+  "m20-a": {
+   "en": "While Musa was away on the mountain, a man called the Samiri played a wicked trick. The people threw their gold jewellery into the fire, and out of it he made the shape of a calf.",
+   "t": "Während Musa auf dem Berg war, spielte ein Mann namens Samiri einen bösen Trick. Die Leute warfen ihren Goldschmuck ins Feuer, und daraus machte er die Figur eines Kalbes."
+  },
+  "m20-b": {
+   "en": "The golden calf made a sound like a cow. It is told that this was only the wind blowing through it. The Samiri said: this is your god! And many of the people believed him.",
+   "t": "Das goldene Kalb machte ein Geräusch wie eine Kuh. Man erzählt, dass es nur der Wind war, der hindurchblies. Samiri sagte: Das ist euer Gott! Und viele Leute glaubten ihm."
+  },
+  "m20-c": {
+   "en": "But the calf could not talk to them. It could not guide them. It could not help them, or hurt them, at all.",
+   "t": "Aber das Kalb konnte nicht mit ihnen sprechen. Es konnte sie nicht leiten. Es konnte ihnen überhaupt nicht helfen und ihnen auch nicht schaden."
+  },
+  "m20-q": {
+   "en": "Could the golden calf hear them, or help them?",
+   "t": "Konnte das goldene Kalb sie hören oder ihnen helfen?"
+  },
+  "m20-q-opt1": {
+   "en": "No. It was only gold",
+   "t": "Nein. Es war nur Gold"
+  },
+  "m20-q-opt2": {
+   "en": "Yes, it could",
+   "t": "Ja, das konnte es"
+  },
+  "m20-q-no": {
+   "en": "No. It could not speak, or guide, or help. It was only a thing made of gold.",
+   "t": "Nein. Es konnte nicht sprechen, nicht leiten und nicht helfen. Es war nur ein Ding aus Gold."
+  },
+  "m20-sort": {
+   "en": "Who is it true about? Only Allah, or the golden calf?",
+   "t": "Für wen stimmt das? Nur für Allah oder für das goldene Kalb?"
+  },
+  "m20-sort-bin1": {
+   "en": "Only Allah",
+   "t": "Nur Allah"
+  },
+  "m20-sort-bin2": {
+   "en": "The golden calf",
+   "t": "Das goldene Kalb"
+  },
+  "m20-sort-it1": {
+   "en": "Made the earth and the sky",
+   "t": "Hat die Erde und den Himmel gemacht"
+  },
+  "m20-sort-it2": {
+   "en": "Was made by a man's hands",
+   "t": "Wurde von Menschenhand gemacht"
+  },
+  "m20-sort-it3": {
+   "en": "Hears every prayer",
+   "t": "Hört jedes Gebet"
+  },
+  "m20-sort-it4": {
+   "en": "Cannot say a single word",
+   "t": "Kann kein einziges Wort sagen"
+  },
+  "m20-sort-it5": {
+   "en": "Gives us our food and water",
+   "t": "Gibt uns unser Essen und Wasser"
+  },
+  "m20-sort-no": {
+   "en": "Think again. A statue cannot do anything.",
+   "t": "Denk noch einmal nach. Eine Figur kann gar nichts tun."
+  },
+  "m20-d": {
+   "en": "Harun told them: my people, this is only a test for you! Your Lord is the Lord of Mercy. Follow me! But they said: we will not stop until Musa comes back.",
+   "t": "Harun sagte zu ihnen: Mein Volk, das ist nur eine Prüfung für euch! Euer Herr ist der Allerbarmer. Folgt mir! Aber sie sagten: Wir hören nicht auf, bis Musa zurückkommt."
+  },
+  "m20-e": {
+   "en": "Musa came back, angry and very sad. He put down the Tablets, and took hold of his brother. Harun said: son of my mother, the people would not listen to me! Then Musa prayed: my Lord, forgive me and my brother.",
+   "t": "Musa kam zurück, wütend und sehr traurig. Er legte die Tafeln hin und packte seinen Bruder. Harun sagte: Sohn meiner Mutter, das Volk wollte nicht auf mich hören! Da betete Musa: Mein Herr, vergib mir und meinem Bruder."
+  },
+  "m20-f": {
+   "en": "Musa sent the Samiri away. And the calf was ground into dust, and scattered into the sea.",
+   "t": "Musa schickte Samiri fort. Und das Kalb wurde zu Staub zermahlen und ins Meer gestreut."
+  },
+  "m20-grind": {
+   "en": "Grind the calf into dust and blow it away. Rub, rub, rub!",
+   "t": "Zermahle das Kalb zu Staub und blas ihn fort. Reiben, reiben, reiben!"
+  },
+  "m20-g": {
+   "en": "The people were sorry for what they had done. And Musa told them: your God is only Allah. There is no god but Him.",
+   "t": "Dem Volk tat leid, was es getan hatte. Und Musa sagte ihnen: Euer Gott ist allein Allah. Es gibt keinen Gott außer Ihm."
+  },
+  "m20-ord": {
+   "en": "What happened first? Tap them in order.",
+   "t": "Was geschah zuerst? Tippe sie der Reihe nach an."
+  },
+  "m20-ord-c1": {
+   "en": "First, the gold went into the fire.",
+   "t": "Zuerst kam das Gold ins Feuer."
+  },
+  "m20-ord-c2": {
+   "en": "Then the Samiri made the calf.",
+   "t": "Dann machte Samiri das Kalb."
+  },
+  "m20-ord-c3": {
+   "en": "Then Musa came back, angry and sad.",
+   "t": "Dann kam Musa zurück, wütend und traurig."
+  },
+  "m20-ord-c4": {
+   "en": "And then the calf was dust in the sea.",
+   "t": "Und dann war das Kalb Staub im Meer."
+  },
+  "m20-ord-no": {
+   "en": "Not that one yet. What came before it?",
+   "t": "Das noch nicht. Was kam davor?"
+  },
+  "m21-a": {
+   "en": "One day Musa told his people: Allah commands you to sacrifice a cow. They said: are you joking with us?",
+   "t": "Eines Tages sagte Musa zu seinem Volk: Allah befiehlt euch, eine Kuh zu opfern. Sie sagten: Machst du dich über uns lustig?"
+  },
+  "m21-b": {
+   "en": "Instead of doing as they were told, they asked: what kind of cow? Musa said: not too old, and not too young, but in between. Now do as you are told!",
+   "t": "Anstatt zu tun, was ihnen gesagt wurde, fragten sie: Was für eine Kuh? Musa sagte: Nicht zu alt und nicht zu jung, sondern dazwischen. Jetzt tut, was euch gesagt wird!"
+  },
+  "m21-c": {
+   "en": "But they asked again: what colour? Musa said: a bright yellow cow, lovely to look at.",
+   "t": "Aber sie fragten wieder: Welche Farbe? Musa sagte: Eine leuchtend gelbe Kuh, schön anzusehen."
+  },
+  "m21-d": {
+   "en": "And they asked again: which one exactly? Musa said: a perfect cow, with no marks on it at all, one that has never pulled a plough or watered the fields.",
+   "t": "Und sie fragten wieder: Welche genau? Musa sagte: Eine makellose Kuh, ganz ohne Flecken, die nie einen Pflug gezogen oder die Felder bewässert hat."
+  },
+  "m21-d1": {
+   "en": "It is told that the cow belonged to a young man who was very kind to his father. He would not even wake his sleeping father to make a good sale. And Musa said: see how high kindness to parents can lift a person!",
+   "t": "Man erzählt, dass die Kuh einem jungen Mann gehörte, der sehr gut zu seinem Vater war. Er weckte seinen schlafenden Vater nicht einmal, um ein gutes Geschäft zu machen. Und Musa sagte: Seht, wie hoch die Güte zu den Eltern einen Menschen heben kann!"
+  },
+  "m21-cow": {
+   "en": "Find the right cow: bright yellow, with no marks at all. Tap it.",
+   "t": "Finde die richtige Kuh: leuchtend gelb, ganz ohne Flecken. Tippe darauf."
+  },
+  "m21-e": {
+   "en": "At last they found it, and did as they were told. But they very nearly did not! And Allah used it to bring out a truth that some of them had been hiding.",
+   "t": "Endlich fanden sie sie und taten, was ihnen gesagt wurde. Aber beinahe hätten sie es nicht getan! Und Allah brachte damit eine Wahrheit ans Licht, die einige von ihnen verborgen hatten."
+  },
+  "m21-q": {
+   "en": "What should they have done at the start?",
+   "t": "Was hätten sie gleich am Anfang tun sollen?"
+  },
+  "m21-q-opt1": {
+   "en": "Asked more and more questions",
+   "t": "Immer mehr Fragen stellen"
+  },
+  "m21-q-opt2": {
+   "en": "Done as they were told, straight away",
+   "t": "Sofort tun, was ihnen gesagt wurde"
+  },
+  "m21-q-no": {
+   "en": "No. All those questions only made it harder. They should have obeyed straight away.",
+   "t": "Nein. All die Fragen machten es nur schwerer. Sie hätten sofort gehorchen sollen."
+  },
+  "m21-ord": {
+   "en": "They asked three questions. Tap them in order.",
+   "t": "Sie stellten drei Fragen. Tippe sie der Reihe nach an."
+  },
+  "m21-ord-c1": {
+   "en": "First they asked: what kind of cow?",
+   "t": "Zuerst fragten sie: Was für eine Kuh?"
+  },
+  "m21-ord-c2": {
+   "en": "Then they asked: what colour?",
+   "t": "Dann fragten sie: Welche Farbe?"
+  },
+  "m21-ord-c3": {
+   "en": "And then they asked: which one exactly?",
+   "t": "Und dann fragten sie: Welche genau?"
+  },
+  "m21-ord-no": {
+   "en": "Not that one yet. Kind, then colour, then which one.",
+   "t": "Das noch nicht. Erst die Art, dann die Farbe, dann welche."
+  },
+  "m22-a": {
+   "en": "Musa said: my people, remember the gifts Allah has given you. Go into the holy land that Allah has promised to you, and do not turn back.",
+   "t": "Musa sagte: Mein Volk, denkt an die Gaben, die Allah euch gegeben hat. Geht in das heilige Land, das Allah euch versprochen hat, und kehrt nicht um."
+  },
+  "m22-b": {
+   "en": "But they said: Musa, there are strong, frightening people in that land. We will not go in until they have left!",
+   "t": "Aber sie sagten: Musa, in diesem Land gibt es starke, furchterregende Leute. Wir gehen nicht hinein, bevor sie fort sind!"
+  },
+  "m22-c": {
+   "en": "Two men who trusted Allah said: go in through the gate! If you go in, you will win. Put your trust in Allah.",
+   "t": "Zwei Männer, die auf Allah vertrauten, sagten: Geht durch das Tor hinein! Wenn ihr hineingeht, werdet ihr siegen. Vertraut auf Allah."
+  },
+  "m22-q": {
+   "en": "What did the two brave men say?",
+   "t": "Was sagten die zwei mutigen Männer?"
+  },
+  "m22-q-opt1": {
+   "en": "Trust Allah, and go in",
+   "t": "Vertraut auf Allah und geht hinein"
+  },
+  "m22-q-opt2": {
+   "en": "Run away and hide",
+   "t": "Lauft weg und versteckt euch"
+  },
+  "m22-q-no": {
+   "en": "No. The two men said: go in through the gate, and put your trust in Allah.",
+   "t": "Nein. Die zwei Männer sagten: Geht durch das Tor hinein und vertraut auf Allah."
+  },
+  "m22-d": {
+   "en": "But the people said: you and your Lord go and fight. We are staying right here.",
+   "t": "Aber das Volk sagte: Geh du mit deinem Herrn und kämpft. Wir bleiben genau hier."
+  },
+  "m22-e": {
+   "en": "Musa said: my Lord, I can only answer for myself and my brother. And Allah said: then that land is closed to them for forty years. They will wander in the desert.",
+   "t": "Musa sagte: Mein Herr, ich kann nur für mich und meinen Bruder einstehen. Und Allah sagte: Dann bleibt ihnen dieses Land vierzig Jahre lang verschlossen. Sie werden in der Wüste umherirren."
+  },
+  "m22-wander": {
+   "en": "Round and round they wandered. Tap each footprint.",
+   "t": "Im Kreis herum irrten sie. Tippe auf jeden Fußabdruck."
+  },
+  "m22-sort": {
+   "en": "Is it brave trust, or a fearful excuse?",
+   "t": "Ist das mutiges Vertrauen oder eine ängstliche Ausrede?"
+  },
+  "m22-sort-bin1": {
+   "en": "Brave trust",
+   "t": "Mutiges Vertrauen"
+  },
+  "m22-sort-bin2": {
+   "en": "Fearful excuse",
+   "t": "Ängstliche Ausrede"
+  },
+  "m22-sort-it1": {
+   "en": "Go in through the gate!",
+   "t": "Geht durch das Tor hinein!"
+  },
+  "m22-sort-it2": {
+   "en": "We are staying right here",
+   "t": "Wir bleiben genau hier"
+  },
+  "m22-sort-it3": {
+   "en": "Put your trust in Allah",
+   "t": "Vertraut auf Allah"
+  },
+  "m22-sort-it4": {
+   "en": "You go. We will wait",
+   "t": "Geh du. Wir warten"
+  },
+  "m22-sort-no": {
+   "en": "Think again. Is that trusting Allah?",
+   "t": "Denk noch einmal nach. Ist das Vertrauen auf Allah?"
+  },
+  "m23-a": {
+   "en": "One day, someone asked Musa: who knows the most, of all the people? Musa said: I do. So Allah told him: there is a servant of Mine, at the place where the two seas meet, who knows things that you do not know.",
+   "t": "Eines Tages fragte jemand Musa: Wer weiß am meisten von allen Menschen? Musa sagte: Ich. Da sagte Allah zu ihm: Es gibt einen Diener von Mir, dort, wo die zwei Meere sich treffen, der Dinge weiß, die du nicht weißt."
+  },
+  "m23-b": {
+   "en": "Musa said to his young helper, Yusha: I will not stop until I reach the place where the two seas meet, even if it takes me years! They took a fish with them in a basket.",
+   "t": "Musa sagte zu seinem jungen Helfer Yuscha: Ich höre nicht auf, bis ich dort bin, wo die zwei Meere sich treffen, und wenn es Jahre dauert! Sie nahmen einen Fisch in einem Korb mit."
+  },
+  "m23-go": {
+   "en": "Travel with Musa and Yusha to where the two seas meet.",
+   "t": "Reise mit Musa und Yuscha dorthin, wo die zwei Meere sich treffen."
+  },
+  "m23-c": {
+   "en": "Musa and Yusha stopped to rest by a rock. And there, the fish slipped out of the basket, into the sea, and swam away! It is told that the water stood over its path like a little tunnel.",
+   "t": "Musa und Yuscha machten an einem Felsen Rast. Und dort glitt der Fisch aus dem Korb, ins Meer, und schwamm davon! Man erzählt, dass das Wasser über seinem Weg stehen blieb wie ein kleiner Tunnel."
+  },
+  "m23-fish": {
+   "en": "Follow the fish along its path through the water. Tap each splash.",
+   "t": "Folge dem Fisch auf seinem Weg durchs Wasser. Tippe auf jedes Platschen."
+  },
+  "m23-d": {
+   "en": "Musa and Yusha walked on and on. Musa said: bring us our lunch. This journey has made us tired. Then Yusha remembered: the fish! By the rock, it went off into the sea, in such a strange way. Shaytan made me forget to tell you.",
+   "t": "Musa und Yuscha gingen weiter und weiter. Musa sagte: Bring uns unser Mittagessen. Diese Reise hat uns müde gemacht. Da erinnerte sich Yuscha: Der Fisch! Beim Felsen ist er ins Meer geschwommen, auf so seltsame Weise. Der Satan hat mich vergessen lassen, es dir zu sagen."
+  },
+  "m23-e": {
+   "en": "Musa said: that is the very place we were looking for! So they turned around, and followed their own footsteps all the way back.",
+   "t": "Musa sagte: Genau diesen Ort haben wir gesucht! Also kehrten sie um und folgten ihren eigenen Fußspuren den ganzen Weg zurück."
+  },
+  "m23-back": {
+   "en": "Follow the footsteps back to the rock. Tap each one.",
+   "t": "Folge den Fußspuren zurück zum Felsen. Tippe auf jede."
+  },
+  "m23-f": {
+   "en": "And there they found a servant of Allah, to whom Allah had given mercy and special knowledge. It is told that his name was al-Khidr.",
+   "t": "Und dort fanden sie einen Diener Allahs, dem Allah Barmherzigkeit und besonderes Wissen gegeben hatte. Man erzählt, dass sein Name al-Khidr war."
+  },
+  "m23-f1": {
+   "en": "Al-Khidr means the green one. It is told that wherever he sat down, the bare ground turned green.",
+   "t": "Al-Khidr bedeutet der Grüne. Man erzählt, dass überall, wo er sich hinsetzte, der kahle Boden grün wurde."
+  },
+  "m23-g0": {
+   "en": "Musa asked: may I follow you, so that you can teach me? He said: you will not be able to be patient with me.",
+   "t": "Musa fragte: Darf ich dir folgen, damit du mich lehrst? Er sagte: Du wirst mit mir keine Geduld haben können."
+  },
+  "m23-g": {
+   "en": "Musa said: if Allah wills, you will find me patient. He said: then do not ask me about anything, until I tell you about it myself.",
+   "t": "Musa sagte: So Allah will, wirst du mich geduldig finden. Er sagte: Dann frag mich nach nichts, bis ich es dir selbst erzähle."
+  },
+  "m23-q": {
+   "en": "What did Musa promise al-Khidr?",
+   "t": "Was versprach Musa al-Khidr?"
+  },
+  "m23-q-opt1": {
+   "en": "To ask lots of questions",
+   "t": "Viele Fragen zu stellen"
+  },
+  "m23-q-opt2": {
+   "en": "To be patient, and not to ask",
+   "t": "Geduldig zu sein und nicht zu fragen"
+  },
+  "m23-q-no": {
+   "en": "No. Musa promised to be patient, and not to ask about anything.",
+   "t": "Nein. Musa versprach, geduldig zu sein und nach nichts zu fragen."
+  },
+  "m24-a": {
+   "en": "Musa and al-Khidr got into a boat. It is told that the sailors knew al-Khidr, and took them for free. And then al-Khidr made a hole in the boat!",
+   "t": "Musa und al-Khidr stiegen in ein Boot. Man erzählt, dass die Seeleute al-Khidr kannten und sie umsonst mitnahmen. Und dann machte al-Khidr ein Loch in das Boot!"
+  },
+  "m24-b": {
+   "en": "Musa cried: do you want the people in it to sink? Al-Khidr said: did I not tell you that you could not be patient with me? Musa said: forgive me. I forgot.",
+   "t": "Musa rief: Willst du, dass die Menschen darin untergehen? Al-Khidr sagte: Habe ich dir nicht gesagt, dass du mit mir keine Geduld haben kannst? Musa sagte: Verzeih mir. Ich habe es vergessen."
+  },
+  "m24-c": {
+   "en": "A little bird landed on the edge of the boat, and dipped its beak in the sea. Al-Khidr said: my knowledge and your knowledge, next to the knowledge of Allah, are like the sip this bird took from the sea.",
+   "t": "Ein kleiner Vogel landete auf dem Rand des Bootes und tauchte seinen Schnabel ins Meer. Al-Khidr sagte: Mein Wissen und dein Wissen sind neben dem Wissen Allahs wie der Schluck, den dieser Vogel aus dem Meer genommen hat."
+  },
+  "m24-q1": {
+   "en": "How much is all that we know, next to what Allah knows?",
+   "t": "Wie viel ist alles, was wir wissen, neben dem, was Allah weiß?"
+  },
+  "m24-q1-opt1": {
+   "en": "Like one little sip from the sea",
+   "t": "Wie ein kleiner Schluck aus dem Meer"
+  },
+  "m24-q1-opt2": {
+   "en": "Like the whole sea",
+   "t": "Wie das ganze Meer"
+  },
+  "m24-q1-no": {
+   "en": "No. It is only like the sip of a little bird, from the whole sea.",
+   "t": "Nein. Es ist nur wie der Schluck eines kleinen Vogels aus dem ganzen Meer."
+  },
+  "m24-d": {
+   "en": "Then came something much harder for Musa to understand. It was about a boy, and it is a story for when you are older. Musa spoke up again. Then he said: if I ask you about anything after this, send me away.",
+   "t": "Dann kam etwas, das für Musa viel schwerer zu verstehen war. Es ging um einen Jungen, und es ist eine Geschichte für später, wenn du größer bist. Musa fragte wieder. Dann sagte er: Wenn ich dich danach noch nach etwas frage, dann schick mich fort."
+  },
+  "m24-e": {
+   "en": "They came to a town and asked for food, but nobody would give them any. In that town was a wall that was about to fall down. And al-Khidr fixed it! Musa said: you could have asked them to pay you for that.",
+   "t": "Sie kamen in eine Stadt und baten um Essen, aber niemand wollte ihnen etwas geben. In dieser Stadt stand eine Mauer, die kurz davor war einzustürzen. Und al-Khidr reparierte sie! Musa sagte: Dafür hättest du Lohn verlangen können."
+  },
+  "m24-wall": {
+   "en": "Help mend the wall. Tap to put every brick back.",
+   "t": "Hilf, die Mauer zu reparieren. Tippe, um jeden Ziegel zurückzusetzen."
+  },
+  "m24-f": {
+   "en": "Al-Khidr said: this is where you and I must part. But first, I will tell you what it all meant.",
+   "t": "Al-Khidr sagte: Hier müssen wir uns trennen. Aber zuerst erzähle ich dir, was das alles bedeutet hat."
+  },
+  "m24-g": {
+   "en": "The boat belonged to poor people who worked on the sea. A king was coming who took every good boat by force. So I made it look damaged, and he would leave it alone.",
+   "t": "Das Boot gehörte armen Leuten, die auf dem Meer arbeiteten. Ein König war unterwegs, der jedes gute Boot mit Gewalt nahm. Also ließ ich es beschädigt aussehen, damit er es in Ruhe ließ."
+  },
+  "m24-h": {
+   "en": "And the wall belonged to two orphan boys. Hidden under it was a treasure, kept for them. Their father had been a good man. Allah wanted them to grow up, and find it for themselves. I did none of this by my own choice.",
+   "t": "Und die Mauer gehörte zwei Waisenjungen. Darunter lag ein Schatz verborgen, für sie aufbewahrt. Ihr Vater war ein guter Mann gewesen. Allah wollte, dass sie groß werden und ihn selbst finden. Nichts davon habe ich aus eigenem Willen getan."
+  },
+  "m24-treasure": {
+   "en": "The treasure is safe under the wall. Brush away the sand to see it.",
+   "t": "Der Schatz ist sicher unter der Mauer. Wisch den Sand weg, um ihn zu sehen."
+  },
+  "m24-match": {
+   "en": "Match each strange thing to its secret.",
+   "t": "Ordne jedes seltsame Ding seinem Geheimnis zu."
+  },
+  "m24-match-a1": {
+   "en": "A hole in the boat",
+   "t": "Ein Loch im Boot"
+  },
+  "m24-match-b1": {
+   "en": "kept it safe from a greedy king",
+   "t": "schützte es vor einem gierigen König"
+  },
+  "m24-match-a2": {
+   "en": "A mended wall",
+   "t": "Eine reparierte Mauer"
+  },
+  "m24-match-b2": {
+   "en": "kept a treasure safe for two orphans",
+   "t": "bewahrte einen Schatz für zwei Waisen"
+  },
+  "m24-i": {
+   "en": "Musa learned that Allah knows what we do not know. Sometimes a thing looks bad, and there is good hidden inside it.",
+   "t": "Musa lernte, dass Allah weiß, was wir nicht wissen. Manchmal sieht etwas schlecht aus, und doch ist Gutes darin verborgen."
+  },
+  "m24-i2": {
+   "en": "Our Prophet, peace be upon him, said: we wish Musa had been patient, so that Allah would have told us more about the two of them.",
+   "t": "Unser Prophet, Allah segne ihn und schenke ihm Frieden, sagte: Wir wünschten, Musa wäre geduldig gewesen, damit Allah uns mehr über die beiden erzählt hätte."
+  },
+  "m24-q2": {
+   "en": "What did Musa learn?",
+   "t": "Was lernte Musa?"
+  },
+  "m24-q2-opt1": {
+   "en": "That he knew everything",
+   "t": "Dass er alles wusste"
+  },
+  "m24-q2-opt2": {
+   "en": "Allah knows what we do not know",
+   "t": "Allah weiß, was wir nicht wissen"
+  },
+  "m24-q2-no": {
+   "en": "No. Musa learned that Allah knows what we do not know.",
+   "t": "Nein. Musa lernte, dass Allah weiß, was wir nicht wissen."
+  },
+  "m25-a": {
+   "en": "What a story! A baby on the river. A boy in the palace. A shepherd by the well. And then a prophet, who stood before a king with only a staff in his hand.",
+   "t": "Was für eine Geschichte! Ein Baby auf dem Fluss. Ein Junge im Palast. Ein Hirte am Brunnen. Und dann ein Prophet, der vor einem König stand, nur mit einem Stab in der Hand."
+  },
+  "m25-b": {
+   "en": "And every step of the way, Allah was with Musa, hearing and seeing everything.",
+   "t": "Und bei jedem Schritt war Allah mit Musa, hörte und sah alles."
+  },
+  "m25-c": {
+   "en": "Allah gave Musa the Book, to be a light, and a guide, and a mercy for the people.",
+   "t": "Allah gab Musa das Buch, als Licht, als Rechtleitung und als Barmherzigkeit für die Menschen."
+  },
+  "m25-ord": {
+   "en": "Tell the whole story of Musa. Tap in order.",
+   "t": "Erzähle die ganze Geschichte von Musa. Tippe der Reihe nach."
+  },
+  "m25-ord-c1": {
+   "en": "First, a baby on the river.",
+   "t": "Zuerst ein Baby auf dem Fluss."
+  },
+  "m25-ord-c2": {
+   "en": "Then a shepherd at the well.",
+   "t": "Dann ein Hirte am Brunnen."
+  },
+  "m25-ord-c3": {
+   "en": "Then the fire on the mountain.",
+   "t": "Dann das Feuer auf dem Berg."
+  },
+  "m25-ord-c4": {
+   "en": "Then the sea opened.",
+   "t": "Dann öffnete sich das Meer."
+  },
+  "m25-ord-c5": {
+   "en": "And then the Tablets, on the mountain.",
+   "t": "Und dann die Tafeln, auf dem Berg."
+  },
+  "m25-ord-no": {
+   "en": "Not that one yet. What came before it?",
+   "t": "Das noch nicht. Was kam davor?"
+  },
+  "m25-match": {
+   "en": "Who is who? Match each person to their part.",
+   "t": "Wer ist wer? Ordne jede Person ihrer Rolle zu."
+  },
+  "m25-match-a1": {
+   "en": "Asiya",
+   "t": "Asiya"
+  },
+  "m25-match-b1": {
+   "en": "the queen who loved baby Musa",
+   "t": "die Königin, die das Baby Musa liebte"
+  },
+  "m25-match-a2": {
+   "en": "Musa's sister",
+   "t": "Musas Schwester"
+  },
+  "m25-match-b2": {
+   "en": "followed the chest along the river",
+   "t": "folgte der Kiste den Fluss entlang"
+  },
+  "m25-match-a3": {
+   "en": "Harun",
+   "t": "Harun"
+  },
+  "m25-match-b3": {
+   "en": "the brother who helped him speak",
+   "t": "der Bruder, der ihm beim Sprechen half"
+  },
+  "m25-match-a4": {
+   "en": "Pharaoh",
+   "t": "Pharao"
+  },
+  "m25-match-b4": {
+   "en": "the proud king, lost in the sea",
+   "t": "der hochmütige König, der im Meer unterging"
+  },
+  "m25-mem": {
+   "en": "One last game. Find all the pairs from the story of Musa.",
+   "t": "Ein letztes Spiel. Finde alle Paare aus der Geschichte von Musa."
+  },
+  "m25-puz": {
+   "en": "Put the sea back together. Tap two pieces to swap them.",
+   "t": "Setz das Meer wieder zusammen. Tippe auf zwei Teile, um sie zu tauschen."
+  },
+  "end-a": {
+   "en": "This is the story of Musa, peace be upon him. When the sea was in front of him, and the army was behind him, he said: my Lord is with me. He will guide me.",
+   "t": "Das ist die Geschichte von Musa, Friede sei mit ihm. Als das Meer vor ihm lag und das Heer hinter ihm war, sagte er: Mein Herr ist mit mir. Er wird mich leiten."
+  }
+ },
+ "strings": {
+  "A Proud King": "Ein hochmütiger König",
+  "The Baby on the River": "Das Baby auf dem Fluss",
+  "From Ibn Kathir's commentary": "Aus dem Kommentar von Ibn Kathir",
+  "The Queen's Heart": "Das Herz der Königin",
+  "A Sister's Clever Plan": "Der kluge Plan der Schwester",
+  "Into the river": "In den Fluss",
+  "Found at the palace": "Am Palast gefunden",
+  "He will not drink": "Er will nicht trinken",
+  "Back with his mother": "Zurück bei seiner Mutter",
+  "Growing Up in the Palace": "Aufwachsen im Palast",
+  "From Ibn Abbas, in al-Tabari's commentary": "Von Ibn Abbas, im Kommentar von al-Tabari",
+  "A Big Mistake": "Ein großer Fehler",
+  "Allah is the Most Forgiving": "Allah ist der Allvergebende",
+  "The Well of Madyan": "Der Brunnen von Madyan",
+  "Lift!": "Heb!",
+  "A New Home": "Ein neues Zuhause",
+  "From a hadith in al-Bukhari": "Aus einem Hadith bei al-Bukhari",
+  "The Fire on the Mountain": "Das Feuer auf dem Berg",
+  "There is no god but Allah": "Es gibt keinen Gott außer Allah",
+  "The Staff and the Shining Hand": "Der Stab und die leuchtende Hand",
+  "Musa's Prayer": "Musas Gebet",
+  "Open up my heart": "Weite mir meine Brust",
+  "Make my task easy": "Mach mir meine Aufgabe leicht",
+  "Untie my tongue": "Löse den Knoten in meiner Zunge",
+  "Give me my brother": "Gib mir meinen Bruder",
+  "Before Pharaoh": "Vor Pharao",
+  "the staff": "der Stab",
+  "the hand": "die Hand",
+  "a crown": "eine Krone",
+  "gold": "Gold",
+  "a sword": "ein Schwert",
+  "a horse": "ein Pferd",
+  "The Day of the Festival": "Der Festtag",
+  "Brave Hearts": "Mutige Herzen",
+  "My Lord, build me a house near You": "Mein Herr, baue mir ein Haus bei Dir",
+  "Sign after Sign": "Zeichen um Zeichen",
+  "a frog": "ein Frosch",
+  "a pot": "ein Topf",
+  "bread": "Brot",
+  "a bowl": "eine Schüssel",
+  "The flood": "Die Flut",
+  "The locusts": "Die Heuschrecken",
+  "The tiny bugs": "Die winzigen Käfer",
+  "The frogs": "Die Frösche",
+  "The red water": "Das rote Wasser",
+  "Leaving by Night": "Fort in der Nacht",
+  "The Sea Opens": "Das Meer öffnet sich",
+  "Caught at the sea": "Gefangen am Meer",
+  "Musa strikes the sea": "Musa schlägt auf das Meer",
+  "A dry path": "Ein trockener Weg",
+  "The sea closes": "Das Meer schließt sich",
+  "Food from the Sky, Water from the Rock": "Essen vom Himmel, Wasser aus dem Felsen",
+  "The Mountain and the Tablets": "Der Berg und die Tafeln",
+  "The Golden Calf": "Das goldene Kalb",
+  "Gold into the fire": "Gold ins Feuer",
+  "The calf": "Das Kalb",
+  "Musa comes back": "Musa kommt zurück",
+  "Dust in the sea": "Staub im Meer",
+  "The Yellow Cow": "Die gelbe Kuh",
+  "From a Shia narration (Imam al-Rida)": "Aus einer schiitischen Überlieferung (Imam al-Rida)",
+  "the yellow cow": "die gelbe Kuh",
+  "a spotted cow": "eine gefleckte Kuh",
+  "a brown ox": "ein brauner Ochse",
+  "a dark buffalo": "ein dunkler Büffel",
+  "What kind of cow?": "Was für eine Kuh?",
+  "What colour?": "Welche Farbe?",
+  "Which one exactly?": "Welche genau?",
+  "The Holy Land": "Das heilige Land",
+  "The Fish That Swam Away": "Der Fisch, der davonschwamm",
+  "Told in al-Bukhari and in Shia narrations": "Überliefert bei al-Bukhari und in schiitischen Überlieferungen",
+  "Three Strange Things": "Drei seltsame Dinge",
+  "Allah Was with Him": "Allah war mit ihm",
+  "The baby on the river": "Das Baby auf dem Fluss",
+  "The shepherd at the well": "Der Hirte am Brunnen",
+  "The fire on the mountain": "Das Feuer auf dem Berg",
+  "The sea opens": "Das Meer öffnet sich",
+  "The Tablets": "Die Tafeln",
+  "The Story of Musa": "Die Geschichte von Musa",
+  "Twenty-five chapters. About a hundred things to do. Play a little every day.": "Fünfundzwanzig Kapitel. Etwa hundert Dinge zu tun. Spiel jeden Tag ein bisschen.",
+  "Under 5: play it together with a grown-up": "Unter 5: zusammen mit einem Erwachsenen spielen",
+  "Trust in Allah": "Vertrauen auf Allah",
+  "Courage": "Mut",
+  "Gentle words": "Sanfte Worte",
+  "From the baby on the river to the sea that opened: twenty-five chapters and a hundred things to do.": "Vom Baby auf dem Fluss bis zum Meer, das sich öffnete: fünfundzwanzig Kapitel und hundert Dinge zu tun.",
+  "A basket floating on the river among the reeds, glowing softly.": "Ein Korb, der zwischen dem Schilf auf dem Fluss treibt und sanft leuchtet."
+ }
+}

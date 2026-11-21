@@ -7,7 +7,7 @@ recording always replaces it.
   PROJECT=asmau-assets python3 scripts/generate-voice-gemini.py games/<slug> [--all]
   VOICE=m PROJECT=asmau-assets python3 scripts/generate-voice-gemini.py games/<slug>    (the man's voice, Achird)
   STORY_LANG=id [VOICE=m] PROJECT=asmau-assets python3 scripts/generate-voice-gemini.py games/<slug>
-                                    (the game's translation, games/<slug>/lang/id.json, into assets/audio-id[-m]/)
+                                    (the game's translation, lang/id/<slug>.json, into assets/audio-id[-m]/)
 
 Writes games/<slug>/assets/audio/<id>.mp3 for every line in narration.json, English and Arabic, skipping lines
 whose words have not changed since last time (remembered in scripts/voice/<slug>.json), and removes clips whose
@@ -42,7 +42,7 @@ if SET == "m":
              "in a natural, clear storytelling voice at a calm, steady pace, like a good teacher reading a story to children.")
     STYLE_AR = ("Say this Arabic word or phrase clearly, with correct Arabic pronunciation, warmly and calmly, as a kind "
                 "West African man would say it to a child.")
-# Another language (shared/lang.js): STORY_LANG=id reads the game's translation (games/<slug>/lang/id.json) into
+# Another language (shared/lang.js): STORY_LANG=id reads the game's translation (lang/id/<slug>.json) into
 # assets/audio-id/ (VOICE=m: audio-id-m/), remembered in scripts/voice/<slug>.id.json (.id.m.json). The same two
 # voices, asked to speak as a native speaker of the language, not with a West African accent.
 TONGUE = os.environ.get("STORY_LANG", "en")
@@ -126,7 +126,7 @@ def game_lines(game):
     lines = json.load(open(os.path.join(game, "narration.json"), encoding="utf-8"))
     if TONGUE == "en":
         return lines
-    tr = json.load(open(os.path.join(game, "lang", TONGUE + ".json"), encoding="utf-8")).get("lines", {})
+    tr = {k: (v.get("t", "") if isinstance(v, dict) else v) for k, v in json.load(open(os.path.join(os.path.dirname(os.path.abspath(game.rstrip("/"))), "..", "lang", TONGUE, os.path.basename(game.rstrip("/")) + ".json"), encoding="utf-8")).get("lines", {}).items()}
     missing = [l["id"] for l in lines if l.get("lang") != "ar" and not tr.get(l["id"])]
     if missing:
         raise SystemExit("not translated yet: " + ", ".join(missing[:10]) + (" ..." if len(missing) > 10 else ""))

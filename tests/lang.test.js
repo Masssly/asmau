@@ -8,7 +8,15 @@ const { serve, checker } = require("./lib");
 
 module.exports = async function () {
   const T = checker("languages"), repo = path.join(__dirname, "..");
-  const tr = JSON.parse(fs.readFileSync(path.join(repo, "games/rahmah/lang/id.json"), "utf8"));
+  const tr = JSON.parse(fs.readFileSync(path.join(repo, "lang/id/rahmah.json"), "utf8"));
+  const tline = (v) => (v && typeof v === "object" ? v.t : v);
+  // 0. a device downloads only the language in use: no translation rides in the core pack or in a game's pack
+  {
+    const packs = fs.readdirSync(path.join(repo, "packs")).filter((f) => f.endsWith(".json") && !f.startsWith("core@"));
+    const leaks = packs.filter((f) => Object.keys(JSON.parse(fs.readFileSync(path.join(repo, "packs", f), "utf8")).files || {}).some((x) => /^lang\//.test(x)));
+    T.check(!leaks.length, "translations are only in their own language's pack (core@<code>): " + leaks.join(", "));
+    T.check(fs.existsSync(path.join(repo, "packs/core@de.json")), "German has its own pack");
+  }
   const site = await serve(repo), browser = await chromium.launch();
   const ctx = await browser.newContext({ viewport: { width: 390, height: 844 } });
   await ctx.addInitScript(() => { try { localStorage.setItem("asmau-lang", "id"); } catch (e) { /* */ } });
@@ -28,7 +36,7 @@ module.exports = async function () {
   T.check((await p.textContent("#title h2")).trim() === "Kisah Rahmah El Yunusiyyah", "the title is in Indonesian");
   T.check(/Rahmah El Yunusiyyah \(1900/.test(await p.textContent("details.parents")), "the For parents box stays in English");
   await p.click("#startBtn"); await p.waitForTimeout(900);
-  T.check((await p.textContent("#captionText")).trim() === tr.lines["r1-a"], "the first page reads in Indonesian");
+  T.check((await p.textContent("#captionText")).trim() === tline(tr.lines["r1-a"]), "the first page reads in Indonesian");
   T.check((await p.textContent("#chTitle")).trim() === "Gadis dari Pegunungan" && /^Bab 1 dari 11$/.test((await p.textContent("#chNum")).trim()), "the chapter heading is in Indonesian: " + (await p.textContent("#chNum")));
   T.check(/halaman 1\.1/.test(await p.textContent("#pnoteSum")), "the page number is kept: " + (await p.textContent("#pnoteSum")));
   T.check(await p.evaluate(() => { const i = document.querySelector("#stage img.pic"); return !!i && i.complete && i.naturalWidth > 0; }), "the picture is the same");
@@ -100,7 +108,7 @@ module.exports = async function () {
   // 6. a checked translation with no computer voice yet: its words, and nothing read aloud (no English clip, no device voice)
   {
     const voices = (f) => { try { return JSON.parse(fs.readFileSync(path.join(repo, f), "utf8")); } catch (e) { return null; } };
-    const yd = voices("games/yusuf/lang/de.json");
+    const yd = voices("lang/de/yusuf.json");
     if (yd && yd.status === "checked" && !(yd.voices || []).length) {
       const b3 = await chromium.launch(), c3 = await b3.newContext({ viewport: { width: 390, height: 844 }, serviceWorkers: "block" });
       await c3.addInitScript(() => {
@@ -113,7 +121,7 @@ module.exports = async function () {
       T.check((await p3.textContent("#startBtn")).trim() === "Geschichte beginnen", "a family that chose German plays Yusuf in German");
       await p3.click("#startBtn"); await p3.waitForTimeout(800); heard.length = 0;
       await p3.click("#caption"); await p3.waitForTimeout(1200);
-      T.check((await p3.textContent("#captionText")).trim() === yd.lines["c1-a"], "the first page reads in German");
+      T.check((await p3.textContent("#captionText")).trim() === (typeof yd.lines["c1-a"] === "object" ? yd.lines["c1-a"].t : yd.lines["c1-a"]), "the first page reads in German");
       T.check(!heard.some((u) => /\/assets\/audio(-m)?\//.test(u)), "no English clip plays under the German words: " + heard.join(" "));
       T.check((await p3.evaluate(() => window.__spoken.length)) === 0, "and the device's own voice does not read German");
       await b3.close();

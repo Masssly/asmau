@@ -1,0 +1,583 @@
+{
+ "status": "draft",
+ "_note": "Français. To be checked by a native speaker; seen only with ?lang=fr until then.",
+ "lines": {
+  "i1-a": {
+   "en": "Long ago, in the year 1325, in the city of Tangier in Morocco, there lived a young man called Ibn Battuta.",
+   "t": ""
+  },
+  "i1-b": {
+   "en": "He wanted to go on Hajj to Makkah, and to visit the Prophet's mosque in Madina. It was very, very far away.",
+   "t": ""
+  },
+  "i1-c": {
+   "en": "He set out alone, with no friend and no caravan. His father and mother were very sad to see him go, and so was he.",
+   "t": ""
+  },
+  "i1-pack": {
+   "en": "What does a traveller need? Pack his bag.",
+   "t": ""
+  },
+  "i1-pack-bin1": {
+   "en": "Pack it",
+   "t": ""
+  },
+  "i1-pack-bin2": {
+   "en": "Leave it",
+   "t": ""
+  },
+  "i1-pack-it1": {
+   "en": "A water skin",
+   "t": ""
+  },
+  "i1-pack-it2": {
+   "en": "A big bed",
+   "t": ""
+  },
+  "i1-pack-it3": {
+   "en": "Bread and dates",
+   "t": ""
+  },
+  "i1-pack-it4": {
+   "en": "A warm cloak",
+   "t": ""
+  },
+  "i1-pack-it5": {
+   "en": "A heavy table",
+   "t": ""
+  },
+  "i1-pack-it6": {
+   "en": "A box of toys",
+   "t": ""
+  },
+  "i1-pack-no": {
+   "en": "Think again. Could he carry that all the way to Makkah?",
+   "t": ""
+  },
+  "i1-d": {
+   "en": "Ibn Battuta said that he left his home as birds leave their nests.",
+   "t": ""
+  },
+  "i1-q": {
+   "en": "Why did Ibn Battuta leave home?",
+   "t": ""
+  },
+  "i1-q-opt1": {
+   "en": "To go on Hajj to Makkah",
+   "t": ""
+  },
+  "i1-q-opt2": {
+   "en": "To find treasure",
+   "t": ""
+  },
+  "i1-q-no": {
+   "en": "He set out to go on Hajj, to Makkah.",
+   "t": ""
+  },
+  "i2-a": {
+   "en": "After many months he reached Alexandria, a great city by the sea in Egypt. He went to see its famous lighthouse.",
+   "t": ""
+  },
+  "i2-b": {
+   "en": "There he met a kind old teacher, Burhan al-Din. The old man smiled and said: I see that you love to travel!",
+   "t": ""
+  },
+  "i2-c": {
+   "en": "Then he said: you will visit my brothers, in India, in Sind and in China. Give them my greetings.",
+   "t": ""
+  },
+  "i2-d": {
+   "en": "Ibn Battuta was amazed. He had never thought of going so far! But many years later, he met all three, and gave them the greetings.",
+   "t": ""
+  },
+  "i2-lands": {
+   "en": "Find the pairs! Things he would see on his travels.",
+   "t": ""
+  },
+  "i2-q": {
+   "en": "What did the old man ask him to do?",
+   "t": ""
+  },
+  "i2-q-opt1": {
+   "en": "Go straight back home",
+   "t": ""
+  },
+  "i2-q-opt2": {
+   "en": "Greet his brothers far away",
+   "t": ""
+  },
+  "i2-q-no": {
+   "en": "He asked him to greet his brothers in India, Sind and China.",
+   "t": ""
+  },
+  "i3-a": {
+   "en": "In the city of Damascus, in Syria, people loved to do good. They gave money for travellers, and to make the streets better.",
+   "t": ""
+  },
+  "i3-b": {
+   "en": "One day Ibn Battuta saw a young servant boy drop a beautiful china dish in the street. Crash! It broke into pieces.",
+   "t": ""
+  },
+  "i3-c": {
+   "en": "The people said: pick up the pieces, and take them to the keeper of the dish fund!",
+   "t": ""
+  },
+  "i3-d": {
+   "en": "The keeper gave the boy money for a new dish. So nobody scolded him, and he was not sad any more.",
+   "t": ""
+  },
+  "i3-mend": {
+   "en": "Mend the picture! Put the pieces together.",
+   "t": ""
+  },
+  "i3-e": {
+   "en": "Ibn Battuta said: this is one of the best good deeds. It mends hearts.",
+   "t": ""
+  },
+  "i3-hearts": {
+   "en": "Does it mend a heart, or break it? Sort them.",
+   "t": ""
+  },
+  "i3-hearts-bin1": {
+   "en": "Mends a heart",
+   "t": ""
+  },
+  "i3-hearts-bin2": {
+   "en": "Breaks a heart",
+   "t": ""
+  },
+  "i3-hearts-it1": {
+   "en": "Helping someone who dropped something",
+   "t": ""
+  },
+  "i3-hearts-it2": {
+   "en": "Laughing at a mistake",
+   "t": ""
+  },
+  "i3-hearts-it3": {
+   "en": "Sharing your snack",
+   "t": ""
+  },
+  "i3-hearts-it4": {
+   "en": "Shouting at someone",
+   "t": ""
+  },
+  "i3-hearts-it5": {
+   "en": "Saying: it's all right",
+   "t": ""
+  },
+  "i3-hearts-it6": {
+   "en": "Telling everyone about it",
+   "t": ""
+  },
+  "i3-hearts-no": {
+   "en": "Think again. Would that make someone feel better, or worse?",
+   "t": ""
+  },
+  "i4-a": {
+   "en": "At last, after a long journey across the desert with a great caravan of camels, Ibn Battuta reached Makkah.",
+   "t": ""
+  },
+  "i4-b": {
+   "en": "He saw the Ka'bah, the House of Allah, with people from every land walking around it.",
+   "t": ""
+  },
+  "i4-c": {
+   "en": "Allah says in the Qur'an: proclaim the Pilgrimage to all people. They will come to you on foot and on every kind of swift mount, from every deep mountain pass.",
+   "t": ""
+  },
+  "i4-hajj": {
+   "en": "Some steps of the Hajj. Put them in order.",
+   "t": ""
+  },
+  "i4-hajj-c1": {
+   "en": "First, the pilgrims put on simple white clothes.",
+   "t": ""
+  },
+  "i4-hajj-c2": {
+   "en": "They walk around the Ka'bah.",
+   "t": ""
+  },
+  "i4-hajj-c3": {
+   "en": "They stand on the plain of Arafat and pray.",
+   "t": ""
+  },
+  "i4-hajj-c4": {
+   "en": "Then they celebrate Eid.",
+   "t": ""
+  },
+  "i4-hajj-no": {
+   "en": "Listen again, and put the steps in order.",
+   "t": ""
+  },
+  "i4-d": {
+   "en": "After his Hajj, Ibn Battuta did not go home. He wanted to see more of the world.",
+   "t": ""
+  },
+  "i4-q": {
+   "en": "What do pilgrims wear on Hajj?",
+   "t": ""
+  },
+  "i4-q-opt1": {
+   "en": "Simple white clothes",
+   "t": ""
+  },
+  "i4-q-opt2": {
+   "en": "Party costumes",
+   "t": ""
+  },
+  "i4-q-no": {
+   "en": "Pilgrims wear simple white clothes, all the same, rich and poor.",
+   "t": ""
+  },
+  "i5-a": {
+   "en": "In the land that is now Turkey, Ibn Battuta met groups of young men called the Akhis. Akhi means my brother.",
+   "t": ""
+  },
+  "i5-b": {
+   "en": "They worked all day. In the evening they put their money together to buy food, for any traveller who came to their town.",
+   "t": ""
+  },
+  "i5-c": {
+   "en": "Ibn Battuta said: nowhere in the world are there people like them in caring for strangers.",
+   "t": ""
+  },
+  "i5-bowls": {
+   "en": "Serve the travellers! Tap each bowl.",
+   "t": ""
+  },
+  "i5-q": {
+   "en": "What did the brothers do for travellers?",
+   "t": ""
+  },
+  "i5-q-opt1": {
+   "en": "Sent them away",
+   "t": ""
+  },
+  "i5-q-opt2": {
+   "en": "Gave them food and a place to stay",
+   "t": ""
+  },
+  "i5-q-no": {
+   "en": "They gave every traveller food and a place to stay.",
+   "t": ""
+  },
+  "i6-a": {
+   "en": "Ibn Battuta travelled on, over high mountains, to India. In the great city of Delhi lived a powerful Sultan.",
+   "t": ""
+  },
+  "i6-b": {
+   "en": "The Sultan made Ibn Battuta a judge, a qadi. He said: this is the highest of all jobs.",
+   "t": ""
+  },
+  "i6-c": {
+   "en": "But Ibn Battuta did not know the language there! So the Sultan gave him two helpers.",
+   "t": ""
+  },
+  "i6-fair": {
+   "en": "A good judge is fair. Is it fair, or not?",
+   "t": ""
+  },
+  "i6-fair-bin1": {
+   "en": "Fair",
+   "t": ""
+  },
+  "i6-fair-bin2": {
+   "en": "Not fair",
+   "t": ""
+  },
+  "i6-fair-it1": {
+   "en": "Listening to both sides",
+   "t": ""
+  },
+  "i6-fair-it2": {
+   "en": "Taking a present to help one side",
+   "t": ""
+  },
+  "i6-fair-it3": {
+   "en": "The same rules for rich and poor",
+   "t": ""
+  },
+  "i6-fair-it4": {
+   "en": "Deciding before listening",
+   "t": ""
+  },
+  "i6-fair-it5": {
+   "en": "Telling the truth",
+   "t": ""
+  },
+  "i6-fair-it6": {
+   "en": "Helping only your friends",
+   "t": ""
+  },
+  "i6-fair-no": {
+   "en": "Think again. Would that be fair to everyone?",
+   "t": ""
+  },
+  "i7-a": {
+   "en": "Later he sailed to the Maldives, tiny islands in the ocean. He said they were one of the wonders of the world: about two thousand islands!",
+   "t": ""
+  },
+  "i7-b": {
+   "en": "The people there were all Muslims, good and kind.",
+   "t": ""
+  },
+  "i7-c": {
+   "en": "Coconut palms grew everywhere. People ate fish and coconuts, and made milk, oil and sweets from the coconut.",
+   "t": ""
+  },
+  "i7-coconuts": {
+   "en": "Catch the falling coconuts!",
+   "t": ""
+  },
+  "i7-d": {
+   "en": "The islands were so close together that from one, you could see the tops of the palm trees on the next.",
+   "t": ""
+  },
+  "i7-q": {
+   "en": "What grew everywhere on the islands?",
+   "t": ""
+  },
+  "i7-q-opt1": {
+   "en": "Coconut palms",
+   "t": ""
+  },
+  "i7-q-opt2": {
+   "en": "Apple trees",
+   "t": ""
+  },
+  "i7-q-no": {
+   "en": "Coconut palms grew everywhere on the islands.",
+   "t": ""
+  },
+  "i8-a": {
+   "en": "Then he sailed east to the island of Sumatra, in what is now Indonesia.",
+   "t": ""
+  },
+  "i8-b": {
+   "en": "People came out to the ship in little boats, with coconuts, bananas, mangoes and fish as gifts.",
+   "t": ""
+  },
+  "i8-gifts": {
+   "en": "Find the pairs! The gifts in the little boats.",
+   "t": ""
+  },
+  "i8-c": {
+   "en": "The Sultan, al-Malik al-Zahir, loved learning. Scholars came to read the Qur'an with him, and to talk.",
+   "t": ""
+  },
+  "i8-d": {
+   "en": "And he was humble: he walked to the Friday prayer on foot, like everyone else.",
+   "t": ""
+  },
+  "i8-q": {
+   "en": "How did the Sultan go to Friday prayer?",
+   "t": ""
+  },
+  "i8-q-opt1": {
+   "en": "On a golden throne",
+   "t": ""
+  },
+  "i8-q-opt2": {
+   "en": "He walked, like everyone",
+   "t": ""
+  },
+  "i8-q-no": {
+   "en": "He was humble, and walked to the Friday prayer on foot.",
+   "t": ""
+  },
+  "i9-a": {
+   "en": "Ibn Battuta's ship sailed on and on, far away, to China.",
+   "t": ""
+  },
+  "i9-b": {
+   "en": "In China, people paid with money made of paper, as big as your hand!",
+   "t": ""
+  },
+  "i9-notes": {
+   "en": "Pay with paper money! Tap each note.",
+   "t": ""
+  },
+  "i9-c": {
+   "en": "Ibn Battuta saw beautiful china dishes being made, like the dish the boy broke in Damascus!",
+   "t": ""
+  },
+  "i9-d": {
+   "en": "He said: China is the safest and best country for the traveller.",
+   "t": ""
+  },
+  "i9-q": {
+   "en": "What was money made of, in China?",
+   "t": ""
+  },
+  "i9-q-opt1": {
+   "en": "Paper",
+   "t": ""
+  },
+  "i9-q-opt2": {
+   "en": "Chocolate",
+   "t": ""
+  },
+  "i9-q-no": {
+   "en": "In China, people paid with paper money.",
+   "t": ""
+  },
+  "i10-a": {
+   "en": "After twenty-four years away, Ibn Battuta set out for home, to Morocco.",
+   "t": ""
+  },
+  "i10-b": {
+   "en": "On the way, he heard sad news. His mother had died, of a terrible illness. He said: may Allah have mercy on her.",
+   "t": ""
+  },
+  "i10-dua": {
+   "en": "Make a dua for his mother. Press and hold.",
+   "t": ""
+  },
+  "i10-c": {
+   "en": "Then he reached Fez, the great city of Morocco, and went to greet the Sultan.",
+   "t": ""
+  },
+  "i10-way": {
+   "en": "The long way home. Put the places in order.",
+   "t": ""
+  },
+  "i10-way-c1": {
+   "en": "First, he left China.",
+   "t": ""
+  },
+  "i10-way-c2": {
+   "en": "He sailed back past India.",
+   "t": ""
+  },
+  "i10-way-c3": {
+   "en": "He made Hajj once more in Makkah.",
+   "t": ""
+  },
+  "i10-way-c4": {
+   "en": "And at last he came home to Morocco.",
+   "t": ""
+  },
+  "i10-way-no": {
+   "en": "Listen again, and put the places in order.",
+   "t": ""
+  },
+  "i11-a": {
+   "en": "But soon he set out again, across the great Sahara desert with a camel caravan, to the land of Mali in West Africa.",
+   "t": ""
+  },
+  "i11-sahara": {
+   "en": "Lead the caravan across the Sahara to Mali.",
+   "t": ""
+  },
+  "i11-b": {
+   "en": "Ibn Battuta wrote that the people of Mali hated injustice, and that travellers there were safe: nobody had to fear robbers.",
+   "t": ""
+  },
+  "i11-c": {
+   "en": "On Fridays everyone wore clean white clothes to the mosque. It was so full that people sent their prayer mats early, to keep a place.",
+   "t": ""
+  },
+  "i11-d": {
+   "en": "And the children worked very hard to learn the Qur'an by heart.",
+   "t": ""
+  },
+  "i11-e": {
+   "en": "Back home in Fez, the Sultan asked a writer, Ibn Juzayy, to write down all his travels. That book is still read today.",
+   "t": ""
+  },
+  "i11-story": {
+   "en": "Tell his whole journey. Tap in order.",
+   "t": ""
+  },
+  "i11-story-c1": {
+   "en": "First, he left his home in Tangier.",
+   "t": ""
+  },
+  "i11-story-c2": {
+   "en": "He made Hajj in Makkah.",
+   "t": ""
+  },
+  "i11-story-c3": {
+   "en": "He was a judge in India.",
+   "t": ""
+  },
+  "i11-story-c4": {
+   "en": "He sailed to the islands of the Maldives.",
+   "t": ""
+  },
+  "i11-story-c5": {
+   "en": "He reached China.",
+   "t": ""
+  },
+  "i11-story-c6": {
+   "en": "And he crossed the Sahara to Mali.",
+   "t": ""
+  },
+  "i11-story-no": {
+   "en": "Listen again, and tell it in order.",
+   "t": ""
+  },
+  "end-a": {
+   "en": "This is the story of Ibn Battuta, who travelled for nearly thirty years, from Morocco to China and Mali, and wrote it all down, so that we can travel with him today.",
+   "t": ""
+  }
+ },
+ "strings": {
+  "Leaving Home": "",
+  "The Rihla, tr. Gibb, vol. I, pp. 7-8": "",
+  "From his book, the Rihla": "",
+  "The Old Man of Alexandria": "",
+  "The Rihla, tr. Gibb, vol. I, pp. 18, 22-23": "",
+  "The Broken Dish": "",
+  "The Rihla, tr. Gibb, vol. I, p. 147": "",
+  "Makkah": "",
+  "Put on simple white clothes": "",
+  "Walk around the Ka'bah": "",
+  "Pray at Arafat": "",
+  "Celebrate Eid": "",
+  "Brothers Who Welcome Strangers": "",
+  "The Rihla, tr. Gibb, vol. II, pp. 417-419": "",
+  "A Judge in Delhi": "",
+  "The Rihla, tr. Gibb, vol. III, pp. 746-747": "",
+  "Two Thousand Islands": "",
+  "The Rihla, tr. Gibb and Beckingham, vol. IV, pp. 821-822": "",
+  "The Kind Sultan of Sumatra": "",
+  "The Rihla, tr. Gibb and Beckingham, vol. IV, pp. 875-877": "",
+  "China": "",
+  "The Rihla, tr. Gibb and Beckingham, vol. IV, pp. 889-892": "",
+  "Home Again": "",
+  "The Rihla, tr. Gibb and Beckingham, vol. IV, pp. 920-925": "",
+  "Press and hold": "",
+  "May Allah have mercy on her": "",
+  "India": "",
+  "Morocco": "",
+  "Mali, and the Book": "",
+  "The Rihla, tr. Gibb and Beckingham, vol. IV, pp. 964-966; Ibn Juzayy's introduction, vol. I": "",
+  "Tangier": "",
+  "The islands": "",
+  "Mali": "",
+  "← Asmau": "",
+  "Ibn Battuta": "",
+  "The Travels of Ibn Battuta": "",
+  "Eleven chapters about the young man from Tangier who travelled the world. Play a little every day.": "",
+  "Start the story": "",
+  "Start from the beginning": "",
+  "For parents": "",
+  "Back": "",
+  "Next": "",
+  "All chapters": "",
+  "✕ Close": "",
+  "The End": "",
+  "Curiosity": "",
+  "Kindness to strangers": "",
+  "Learning": "",
+  "Read it again": "",
+  "Pick a chapter": "",
+  "Music": "",
+  "Sounds": "",
+  "Voice": "",
+  "He left Tangier alone at twenty-one to go on Hajj, and kept travelling for nearly thirty years: Makkah, India, the islands, China and Mali.": "",
+  "Ibn Battuta rides a camel at the front of a caravan across the desert towards Makkah.": ""
+ }
+}

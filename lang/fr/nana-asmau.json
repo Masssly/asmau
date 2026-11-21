@@ -1,0 +1,525 @@
+{
+ "status": "draft",
+ "_note": "Français. To be checked by a native speaker; seen only with ?lang=fr until then.",
+ "lines": {
+  "a1-a": {
+   "en": "Long ago, in a village called Degel, in West Africa, two babies were born on the same day. They were twins: a boy and a girl.",
+   "t": ""
+  },
+  "a1-b": {
+   "en": "Their father was a kind and wise teacher, called the Shehu. He named the boy Hassan.",
+   "t": ""
+  },
+  "a1-c": {
+   "en": "Twins were usually called Hassan and Hussaina. But the Shehu gave his daughter a different name: Asma'u.",
+   "t": ""
+  },
+  "a1-q": {
+   "en": "What did the Shehu name his baby girl?",
+   "t": ""
+  },
+  "a1-q-opt1": {
+   "en": "Asma'u",
+   "t": ""
+  },
+  "a1-q-opt2": {
+   "en": "Hussaina",
+   "t": ""
+  },
+  "a1-q-no": {
+   "en": "Not Hussaina. He chose a special name for her: Asma'u.",
+   "t": ""
+  },
+  "a1-mem": {
+   "en": "Twins come in pairs! Find the pairs.",
+   "t": ""
+  },
+  "a2-a": {
+   "en": "Why Asma'u? She was named after a brave young woman who lived long before, in the time of the Prophet, peace be upon him: Asma, the daughter of Abu Bakr.",
+   "t": ""
+  },
+  "a2-b": {
+   "en": "When the Prophet and her father set off on a long journey, Asma packed their food and water. But there was nothing to tie the bags with!",
+   "t": ""
+  },
+  "a2-tear": {
+   "en": "What did she do? Tap the belt.",
+   "t": ""
+  },
+  "a2-tear-s1": {
+   "en": "She tore her belt in two!",
+   "t": ""
+  },
+  "a2-c": {
+   "en": "Asma, Abu Bakr's daughter, tore her own belt in two. One piece tied the water. The other piece tied the food. So people called her: the one with the two belts.",
+   "t": ""
+  },
+  "a2-match": {
+   "en": "Match each piece of the belt to what it tied.",
+   "t": ""
+  },
+  "a2-match-a1": {
+   "en": "The first piece",
+   "t": ""
+  },
+  "a2-match-b1": {
+   "en": "tied the water",
+   "t": ""
+  },
+  "a2-match-a2": {
+   "en": "The second piece",
+   "t": ""
+  },
+  "a2-match-b2": {
+   "en": "tied the food",
+   "t": ""
+  },
+  "a2-d": {
+   "en": "Asma was brave, clever, and always ready to help. That is the name the Shehu gave his little girl.",
+   "t": ""
+  },
+  "a3-a": {
+   "en": "When Asma'u was very small, her mother died. But she was not alone. Aisha and Hauwa, who lived in the Shehu's house, loved her and brought her up.",
+   "t": ""
+  },
+  "a3-b": {
+   "en": "In the Shehu's house, everybody learned. Girls learned, and boys learned. Like children there still do, Asma'u wrote her lessons on a wooden board.",
+   "t": ""
+  },
+  "a3-trace": {
+   "en": "Help Asma'u write her lesson. Tap each dot to follow the line.",
+   "t": ""
+  },
+  "a3-wash": {
+   "en": "Lesson learned! Wash the board clean for tomorrow. Rub, rub, rub!",
+   "t": ""
+  },
+  "a3-c": {
+   "en": "Day by day, verse by verse, Asma'u learned the whole Qur'an by heart while she was still young.",
+   "t": ""
+  },
+  "a3-verses": {
+   "en": "Learn a little every day. Tap each star to learn one more.",
+   "t": ""
+  },
+  "a3-q": {
+   "en": "Who learned in the Shehu's house?",
+   "t": ""
+  },
+  "a3-q-opt1": {
+   "en": "Only the boys",
+   "t": ""
+  },
+  "a3-q-opt2": {
+   "en": "Girls and boys",
+   "t": ""
+  },
+  "a3-q-no": {
+   "en": "No. In the Shehu's house, girls and boys learned together.",
+   "t": ""
+  },
+  "a4-a": {
+   "en": "When Asma'u was about eleven years old, it was no longer safe for the Shehu's people in their village. So her family and all their friends had to leave, and travel to a new place.",
+   "t": ""
+  },
+  "a4-pack": {
+   "en": "What should they carry on a long walk? Something useful, or something too heavy?",
+   "t": ""
+  },
+  "a4-pack-bin1": {
+   "en": "Take it",
+   "t": ""
+  },
+  "a4-pack-bin2": {
+   "en": "Too heavy",
+   "t": ""
+  },
+  "a4-pack-it1": {
+   "en": "A pot of water",
+   "t": ""
+  },
+  "a4-pack-it2": {
+   "en": "A big wooden bed",
+   "t": ""
+  },
+  "a4-pack-it3": {
+   "en": "Their books",
+   "t": ""
+  },
+  "a4-pack-it4": {
+   "en": "A bag of grain",
+   "t": ""
+  },
+  "a4-pack-it5": {
+   "en": "The front door",
+   "t": ""
+  },
+  "a4-pack-no": {
+   "en": "Think again. Could you carry that a long way?",
+   "t": ""
+  },
+  "a4-walk": {
+   "en": "Walk with Asma'u to the new place.",
+   "t": ""
+  },
+  "a4-b": {
+   "en": "The walk was long and hard. But Asma'u looked, and listened, and remembered. Many years later she wrote poems about those journeys.",
+   "t": ""
+  },
+  "a5-a": {
+   "en": "Those were hard years. There was fighting, and many people were hurt or lost their homes.",
+   "t": ""
+  },
+  "a5-b": {
+   "en": "The women of the community did not give up. They cooked food for everyone, cared for children who had lost their parents, and shared with people who had nothing.",
+   "t": ""
+  },
+  "a5-bowls": {
+   "en": "Help share the food. Tap each bowl to give it to someone hungry.",
+   "t": ""
+  },
+  "a5-c": {
+   "en": "Asma'u helped too. She learned that caring for others is part of being a good Muslim.",
+   "t": ""
+  },
+  "a5-q": {
+   "en": "What did the women do in the hard years?",
+   "t": ""
+  },
+  "a5-q-opt1": {
+   "en": "Cared for others and shared",
+   "t": ""
+  },
+  "a5-q-opt2": {
+   "en": "Hid and did nothing",
+   "t": ""
+  },
+  "a5-q-no": {
+   "en": "No. They cooked, cared for children, and shared what they had.",
+   "t": ""
+  },
+  "a6-a": {
+   "en": "When the fighting was over, a new town was built, called Sokoto. Asma'u married a good man called Gidado, and they made their home there.",
+   "t": ""
+  },
+  "a6-home": {
+   "en": "Help build the new home, brick by brick.",
+   "t": ""
+  },
+  "a6-b": {
+   "en": "Asma'u and Gidado's home was full of people: family, students, guests, and people who needed help. Hundreds of them! Asma'u made sure everyone had food, clothes, and a place to sleep.",
+   "t": ""
+  },
+  "a6-care": {
+   "en": "Everyone needs something. Is it food, or is it clothes?",
+   "t": ""
+  },
+  "a6-care-bin1": {
+   "en": "Food",
+   "t": ""
+  },
+  "a6-care-bin2": {
+   "en": "Clothes",
+   "t": ""
+  },
+  "a6-care-it1": {
+   "en": "A bowl of rice",
+   "t": ""
+  },
+  "a6-care-it2": {
+   "en": "A warm scarf",
+   "t": ""
+  },
+  "a6-care-it3": {
+   "en": "Fresh bread",
+   "t": ""
+  },
+  "a6-care-it4": {
+   "en": "A new dress",
+   "t": ""
+  },
+  "a6-care-it5": {
+   "en": "A cup of milk",
+   "t": ""
+  },
+  "a6-care-no": {
+   "en": "Think again. Do you eat it, or wear it?",
+   "t": ""
+  },
+  "a7-a": {
+   "en": "When Asma'u was grown up, her father the Shehu died. A few months later, her twin brother Hassan died too. Asma'u was very sad.",
+   "t": ""
+  },
+  "a7-b": {
+   "en": "But she knew what to do. Her father had written many books. With Gidado, she gathered every page, so that nothing he wrote would be lost.",
+   "t": ""
+  },
+  "a7-pages": {
+   "en": "Find every page of the Shehu's books. Tap them all.",
+   "t": ""
+  },
+  "a7-c": {
+   "en": "Then the pages were copied, again and again, so that people everywhere could read them.",
+   "t": ""
+  },
+  "a7-ord": {
+   "en": "How did they save the books? Tap in order.",
+   "t": ""
+  },
+  "a7-ord-c1": {
+   "en": "First, they gathered every page.",
+   "t": ""
+  },
+  "a7-ord-c2": {
+   "en": "Then they copied them.",
+   "t": ""
+  },
+  "a7-ord-c3": {
+   "en": "And then people everywhere could read them.",
+   "t": ""
+  },
+  "a7-ord-no": {
+   "en": "Not that one yet. What comes first?",
+   "t": ""
+  },
+  "a8-a": {
+   "en": "Asma'u loved words. She could speak four languages! And she wrote poems: more than sixty of them.",
+   "t": ""
+  },
+  "a8-b": {
+   "en": "Not everyone could read Arabic. So Asma'u wrote her poems in the languages people spoke at home, using Arabic letters, so that everyone could learn.",
+   "t": ""
+  },
+  "a8-q1": {
+   "en": "Why did Asma'u write in the languages people spoke at home?",
+   "t": ""
+  },
+  "a8-q1-opt1": {
+   "en": "To keep it a secret",
+   "t": ""
+  },
+  "a8-q1-opt2": {
+   "en": "So everyone could learn",
+   "t": ""
+  },
+  "a8-q1-no": {
+   "en": "No. She wanted everyone to be able to learn, not only people who read Arabic.",
+   "t": ""
+  },
+  "a8-c": {
+   "en": "Asma'u even wrote a poem with the name of every sura of the Qur'an in it, so that people could remember them.",
+   "t": ""
+  },
+  "a8-suras": {
+   "en": "Asma'u's poem helped people remember the suras. Can you put the first four in order?",
+   "t": ""
+  },
+  "a8-suras-c1": {
+   "en": "Al-Fatiha, The Opening.",
+   "t": ""
+  },
+  "a8-suras-c2": {
+   "en": "Al-Baqarah, The Cow.",
+   "t": ""
+  },
+  "a8-suras-c3": {
+   "en": "Al Imran, The Family of Imran.",
+   "t": ""
+  },
+  "a8-suras-c4": {
+   "en": "An-Nisa, The Women.",
+   "t": ""
+  },
+  "a8-suras-no": {
+   "en": "Not that one yet. Which sura comes first in the Qur'an?",
+   "t": ""
+  },
+  "a9-a": {
+   "en": "Asma'u had a big idea. Many women lived far away in villages, and could not come to Sokoto to learn. So she trained teachers!",
+   "t": ""
+  },
+  "a9-b": {
+   "en": "The teachers were called jaji. Each one wore a tall, special hat, so that everyone knew: here comes a teacher!",
+   "t": ""
+  },
+  "a9-hats": {
+   "en": "Give every teacher her hat. Tap each one.",
+   "t": ""
+  },
+  "a9-c": {
+   "en": "The teachers walked back to their villages, and taught the women there, with poems that were easy to remember.",
+   "t": ""
+  },
+  "a9-villages": {
+   "en": "Walk with the teacher from village to village. Tap each house.",
+   "t": ""
+  },
+  "a9-d": {
+   "en": "Then the women in the villages taught their own children, and their friends. Learning spread like light, from one lamp to the next.",
+   "t": ""
+  },
+  "a9-lamps": {
+   "en": "Light the lamps, one from the next! Tap each lamp.",
+   "t": ""
+  },
+  "a9-q": {
+   "en": "What did Asma'u's teachers do?",
+   "t": ""
+  },
+  "a9-q-opt1": {
+   "en": "Taught women in the villages",
+   "t": ""
+  },
+  "a9-q-opt2": {
+   "en": "Kept the lessons to themselves",
+   "t": ""
+  },
+  "a9-q-no": {
+   "en": "No. They took the lessons home, and taught everyone they could.",
+   "t": ""
+  },
+  "a10-a": {
+   "en": "People called Asma'u 'Uwar Gari': the mother of the town. Women came to her for help, and even the leaders asked for her advice.",
+   "t": ""
+  },
+  "a10-good": {
+   "en": "Asma'u taught people to be good. Is it a kind thing to do, or not kind?",
+   "t": ""
+  },
+  "a10-good-bin1": {
+   "en": "Kind",
+   "t": ""
+  },
+  "a10-good-bin2": {
+   "en": "Not kind",
+   "t": ""
+  },
+  "a10-good-it1": {
+   "en": "Helping a neighbour",
+   "t": ""
+  },
+  "a10-good-it2": {
+   "en": "Shouting at a friend",
+   "t": ""
+  },
+  "a10-good-it3": {
+   "en": "Sharing your food",
+   "t": ""
+  },
+  "a10-good-it4": {
+   "en": "Teaching what you know",
+   "t": ""
+  },
+  "a10-good-it5": {
+   "en": "Laughing at someone",
+   "t": ""
+  },
+  "a10-good-no": {
+   "en": "Think again. Would that make someone happy?",
+   "t": ""
+  },
+  "a10-b": {
+   "en": "Asma'u had good friends, and she loved them dearly. When people she loved died, she wrote poems so that they would be remembered.",
+   "t": ""
+  },
+  "a11-a": {
+   "en": "Asma'u lived to be about seventy years old. All her life, she learned, and she taught.",
+   "t": ""
+  },
+  "a11-b": {
+   "en": "Today, more than a hundred and fifty years later, the women's groups she started still meet. And schools are named after her: Nana Asma'u.",
+   "t": ""
+  },
+  "a11-ord": {
+   "en": "Tell the story of Asma'u. Tap in order.",
+   "t": ""
+  },
+  "a11-ord-c1": {
+   "en": "First, she was born, a twin, in Degel.",
+   "t": ""
+  },
+  "a11-ord-c2": {
+   "en": "Then her family made a long journey.",
+   "t": ""
+  },
+  "a11-ord-c3": {
+   "en": "Then she saved her father's books.",
+   "t": ""
+  },
+  "a11-ord-c4": {
+   "en": "And then she trained teachers for the villages.",
+   "t": ""
+  },
+  "a11-ord-no": {
+   "en": "Not that one yet. What came before it?",
+   "t": ""
+  },
+  "a11-c": {
+   "en": "Nana Asma'u's lesson for us is simple: learn all you can, and then teach it to someone else.",
+   "t": ""
+  },
+  "a11-mem": {
+   "en": "One last game. Find the pairs from Asma'u's story.",
+   "t": ""
+  },
+  "end-a": {
+   "en": "This is the story of Nana Asma'u. She learned, she taught, and she made sure that everyone could learn. What will you learn, and teach, today?",
+   "t": ""
+  }
+ },
+ "strings": {
+  "Two Babies in Degel": "",
+  "Boyd and Mack, The Collected Works of Nana Asma'u (1997): the introduction and the outline chronology": "",
+  "The Girl with Two Belts": "",
+  "Sahih al-Bukhari 2979 and 3907": "",
+  "From a hadith in al-Bukhari": "",
+  "Learning at Home": "",
+  "The Journey": "",
+  "Hard Years": "",
+  "A New Town": "",
+  "Saving the Books": "",
+  "a page": "",
+  "a pot": "",
+  "a basket": "",
+  "Gather the pages": "",
+  "Copy them": "",
+  "Share them": "",
+  "Words in Four Languages": "",
+  "Al-Fatiha": "",
+  "Al-Baqarah": "",
+  "Al Imran": "",
+  "An-Nisa": "",
+  "The Teacher of Teachers": "",
+  "Boyd and Mack, The Collected Works of Nana Asma'u (1997): the introduction and the outline chronology; Wikipedia": "",
+  "Mother of the Town": "",
+  "Remembered Today": "",
+  "Born a twin": "",
+  "The long journey": "",
+  "Saving the books": "",
+  "Training teachers": "",
+  "← Asmau": "",
+  "Nana Asma’u": "",
+  "The Story of Nana Asma’u": "",
+  "Eleven chapters about the woman this site is named after.": "",
+  "Under 5: play it together with a grown-up": "",
+  "Start the story": "",
+  "Start from the beginning": "",
+  "For parents": "",
+  "Back": "",
+  "Next": "",
+  "All chapters": "",
+  "✕ Close": "",
+  "The End": "",
+  "Learning": "",
+  "Teaching": "",
+  "Caring": "",
+  "Read it again": "",
+  "Pick a chapter": "",
+  "Music": "",
+  "Sounds": "",
+  "Voice": "",
+  "Nana Asma'u": "",
+  "The girl who learned the Qur'an by heart, and grew up to teach a whole land: the woman this site is named after.": "",
+  "Nana Asma'u reading to a circle of women and girls in a Sokoto courtyard, with two teachers in tall straw hats.": ""
+ }
+}

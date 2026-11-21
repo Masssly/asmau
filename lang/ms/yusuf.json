@@ -1,0 +1,820 @@
+{
+ "status": "draft",
+ "_note": "Bahasa Melayu, drafted 21 November 2026, to be checked by a native speaker. Seen only with ?lang=ms until then.",
+ "lines": {
+  "c1-a": {
+   "en": "One night, young Yusuf had a wonderful dream. He saw eleven stars, the sun and the moon, all bowing down to him.",
+   "t": "Pada suatu malam, Yusuf yang masih muda bermimpi sesuatu yang menakjubkan. Dia melihat sebelas bintang, matahari dan bulan, semuanya sujud kepadanya."
+  },
+  "c1-do": {
+   "en": "Tap every star, the sun and the moon, and watch them bow.",
+   "t": "Ketik setiap bintang, matahari dan bulan, dan lihat semuanya sujud."
+  },
+  "c1-b": {
+   "en": "Yusuf told his father, Yaqub. His father said: my son, do not tell your brothers about this dream. Allah will choose you, and teach you the meaning of dreams.",
+   "t": "Yusuf menceritakannya kepada ayahnya, Yaakub. Ayahnya berkata: wahai anakku, jangan ceritakan mimpi ini kepada saudara-saudaramu. Allah akan memilihmu, dan mengajarmu makna mimpi."
+  },
+  "c1-q": {
+   "en": "What did his father Yaqub tell Yusuf to do about the dream?",
+   "t": "Apakah yang ayahnya Yaakub suruh Yusuf lakukan tentang mimpi itu?"
+  },
+  "c1-q-opt1": {
+   "en": "Tell all his brothers",
+   "t": "Ceritakan kepada semua saudaranya"
+  },
+  "c1-q-opt2": {
+   "en": "Keep it from his brothers",
+   "t": "Rahsiakan daripada saudara-saudaranya"
+  },
+  "c1-qwrong": {
+   "en": "Not quite. His father said: do not tell your brothers.",
+   "t": "Belum tepat. Ayahnya berkata: jangan ceritakan kepada saudara-saudaramu."
+  },
+  "c2-0": {
+   "en": "Yusuf had eleven brothers. Ten were older than him, and one was his little brother. Their father loved Yusuf and his little brother very dearly.",
+   "t": "Yusuf mempunyai sebelas orang saudara lelaki. Sepuluh orang lebih tua daripadanya, dan seorang ialah adiknya. Ayah mereka sangat menyayangi Yusuf dan adiknya."
+  },
+  "c2-a0": {
+   "en": "Yusuf's brothers were jealous. They said: our father loves Yusuf and his little brother more than us! So they made a bad plan.",
+   "t": "Saudara-saudara Yusuf berasa cemburu. Mereka berkata: ayah kita lebih menyayangi Yusuf dan adiknya daripada kita! Maka mereka membuat rancangan jahat."
+  },
+  "c2-a": {
+   "en": "Some of them wanted to get rid of Yusuf. But one said: do not hurt him. Leave him in a deep well, where travellers may find him.",
+   "t": "Sebahagian daripada mereka mahu menyingkirkan Yusuf. Tetapi seorang berkata: jangan cederakan dia. Tinggalkan dia di dalam sebuah perigi yang dalam, supaya para musafir boleh menemuinya."
+  },
+  "c2-p1": {
+   "en": "Then the brothers went to their father. They said: Father, why do you not trust us with Yusuf? We only want what is good for him. Send him with us tomorrow, so he can enjoy himself and play. We will take good care of him.",
+   "t": "Kemudian saudara-saudara itu pergi kepada ayah mereka. Mereka berkata: wahai ayah, mengapa ayah tidak mempercayai kami menjaga Yusuf? Kami hanya mahukan kebaikan untuknya. Hantarlah dia bersama kami esok, supaya dia boleh bersuka ria dan bermain. Kami akan menjaganya baik-baik."
+  },
+  "c2-p2": {
+   "en": "Their father Yaqub said: it makes me sad to think of you taking him away. And I am afraid a wolf may eat him, while you are not watching.",
+   "t": "Ayah mereka Yaakub berkata: aku sedih memikirkan kamu membawanya pergi. Dan aku takut dia dimakan serigala, ketika kamu tidak memerhatikannya."
+  },
+  "c2-pq": {
+   "en": "What was their father afraid of?",
+   "t": "Apakah yang ditakuti oleh ayah mereka?"
+  },
+  "c2-pq-opt1": {
+   "en": "A storm",
+   "t": "Ribut"
+  },
+  "c2-pq-opt2": {
+   "en": "A wolf",
+   "t": "Serigala"
+  },
+  "c2-pqwrong": {
+   "en": "Not a storm. Yaqub said: I am afraid a wolf may eat him.",
+   "t": "Bukan ribut. Yaakub berkata: aku takut dia dimakan serigala."
+  },
+  "c2-p3": {
+   "en": "The brothers said: a wolf? When there are so many of us? Then we would be good for nothing! So the next day, Yusuf went out with them.",
+   "t": "Saudara-saudara itu berkata: serigala? Sedangkan kami ramai? Kalau begitu kami ini tidak berguna langsung! Maka keesokan harinya, Yusuf keluar bersama mereka."
+  },
+  "c2-b": {
+   "en": "They took Yusuf far away and put him down into a deep, dark well.",
+   "t": "Mereka membawa Yusuf jauh dan menurunkannya ke dalam sebuah perigi yang dalam dan gelap."
+  },
+  "c2-b1": {
+   "en": "In the dark, Yusuf prayed: O Lord of Ibrahim, and Ishaq, and Ya'qub, have mercy on me. I am small, and weak, and all alone.",
+   "t": "Dalam gelap, Yusuf berdoa: wahai Tuhan Ibrahim, Ishak dan Yaakub, kasihanilah aku. Aku kecil, lemah, dan keseorangan."
+  },
+  "c2-w": {
+   "en": "But down in the dark, Yusuf was not alone. Allah comforted his heart: one day, you will tell your brothers about all this, and they will not even know it is you.",
+   "t": "Tetapi di dalam gelap itu, Yusuf tidak keseorangan. Allah menenangkan hatinya: suatu hari nanti, kamu akan menceritakan semua ini kepada saudara-saudaramu, dan mereka tidak akan tahu pun bahawa itu kamu."
+  },
+  "c2-c": {
+   "en": "That night the brothers came home crying. They said: Father, a wolf ate Yusuf! And they showed him Yusuf's shirt, stained to make their story look true.",
+   "t": "Malam itu saudara-saudara itu pulang sambil menangis. Mereka berkata: wahai ayah, Yusuf dimakan serigala! Dan mereka menunjukkan baju Yusuf kepadanya, yang dikotorkan supaya cerita mereka kelihatan benar."
+  },
+  "c2-s": {
+   "en": "Look closely at the shirt, just as Yaqub did. A wolf has sharp teeth. Is the shirt torn?",
+   "t": "Lihat baju itu baik-baik, sama seperti Yaakub. Serigala mempunyai gigi yang tajam. Adakah baju itu koyak?"
+  },
+  "c2-s-opt1": {
+   "en": "Yes, it is torn",
+   "t": "Ya, ia koyak"
+  },
+  "c2-s-opt2": {
+   "en": "No, not one tear",
+   "t": "Tidak, tiada satu koyakan pun"
+  },
+  "c2-swrong": {
+   "en": "Look again. The shirt is stained, but there is not one tear in it.",
+   "t": "Lihat sekali lagi. Baju itu kotor, tetapi tiada satu koyakan pun."
+  },
+  "c2-do": {
+   "en": "A wolf would have torn the shirt to pieces. So what do you think? Was the brothers' story true?",
+   "t": "Serigala tentu akan mengoyakkan baju itu berkeping-keping. Jadi apa pendapatmu? Adakah cerita saudara-saudara itu benar?"
+  },
+  "c2-do-opt1": {
+   "en": "Yes, a wolf did it",
+   "t": "Ya, serigala yang melakukannya"
+  },
+  "c2-do-opt2": {
+   "en": "No, it was not true",
+   "t": "Tidak, ia tidak benar"
+  },
+  "c2-wrong": {
+   "en": "Not quite. The wolf did nothing at all! Try again.",
+   "t": "Belum tepat. Serigala itu tidak melakukan apa-apa pun! Cuba lagi."
+  },
+  "c2-d": {
+   "en": "No, it was not true, and their father Yaqub knew it. He said: it is best to be patient. I ask Allah alone for help.",
+   "t": "Tidak, ia tidak benar, dan ayah mereka Yaakub tahu. Dia berkata: bersabar itulah yang terbaik. Aku memohon pertolongan kepada Allah sahaja."
+  },
+  "c2-o1": {
+   "en": "The brothers were jealous of Yusuf.",
+   "t": "Saudara-saudara itu cemburu kepada Yusuf."
+  },
+  "c2-o2": {
+   "en": "They put Yusuf down into the well.",
+   "t": "Mereka menurunkan Yusuf ke dalam perigi."
+  },
+  "c2-o3": {
+   "en": "They showed their father the shirt.",
+   "t": "Mereka menunjukkan baju itu kepada ayah mereka."
+  },
+  "c2-o4": {
+   "en": "Yaqub chose to be patient.",
+   "t": "Yaakub memilih untuk bersabar."
+  },
+  "c3-a": {
+   "en": "Some travellers came by. They sent a man to fetch water, and he let his bucket down into the well.",
+   "t": "Sekumpulan musafir lalu di situ. Mereka menghantar seorang lelaki untuk mengambil air, dan dia menurunkan timbanya ke dalam perigi."
+  },
+  "c3-do": {
+   "en": "Help him pull! Drag the rope up, or tap fast, to bring the bucket up.",
+   "t": "Bantu dia menarik! Seret tali itu ke atas, atau ketik dengan cepat, untuk menaikkan timba itu."
+  },
+  "c3-b": {
+   "en": "Good news! shouted the man. Here is a boy! The travellers hid Yusuf away to sell him. But Allah knew everything they did.",
+   "t": "Berita gembira! jerit lelaki itu. Ada seorang budak di sini! Para musafir itu menyembunyikan Yusuf untuk menjualnya. Tetapi Allah mengetahui segala yang mereka lakukan."
+  },
+  "c3-q": {
+   "en": "What did the man shout when he saw Yusuf?",
+   "t": "Apakah yang dijeritkan oleh lelaki itu apabila dia melihat Yusuf?"
+  },
+  "c3-q-opt1": {
+   "en": "Good news! Here is a boy!",
+   "t": "Berita gembira! Ada seorang budak di sini!"
+  },
+  "c3-q-opt2": {
+   "en": "Oh no, my bucket!",
+   "t": "Alamak, timba aku!"
+  },
+  "c3-qwrong": {
+   "en": "Listen again. He shouted: good news!",
+   "t": "Dengar sekali lagi. Dia menjerit: berita gembira!"
+  },
+  "c4-count": {
+   "en": "Yusuf was sold for a very small price: just a few silver coins. Tap the coins to count them.",
+   "t": "Yusuf dijual dengan harga yang sangat murah: hanya beberapa keping syiling perak. Ketik syiling-syiling itu untuk mengiranya."
+  },
+  "c4-counted": {
+   "en": "Twenty small coins. They did not know how precious Yusuf was.",
+   "t": "Dua puluh keping syiling kecil. Mereka tidak tahu betapa berharganya Yusuf."
+  },
+  "c4-a": {
+   "en": "So Yusuf was carried far from home, all the way to the land of Egypt.",
+   "t": "Maka Yusuf dibawa jauh dari rumah, sampai ke negeri Mesir."
+  },
+  "c4-do": {
+   "en": "Drag the camel along the path, or tap it, to help the caravan cross the desert.",
+   "t": "Seret unta itu di sepanjang jalan, atau ketiknya, untuk membantu kafilah merentasi padang pasir."
+  },
+  "c4-b": {
+   "en": "In Egypt, a man bought Yusuf and took him to his home. He told his wife: look after him well.",
+   "t": "Di Mesir, seorang lelaki membeli Yusuf dan membawanya ke rumahnya. Dia berkata kepada isterinya: jagalah dia baik-baik."
+  },
+  "c4-q": {
+   "en": "What did the man say to his wife about Yusuf?",
+   "t": "Apakah yang lelaki itu katakan kepada isterinya tentang Yusuf?"
+  },
+  "c4-q-opt1": {
+   "en": "Send him away",
+   "t": "Halau dia"
+  },
+  "c4-q-opt2": {
+   "en": "Look after him well",
+   "t": "Jagalah dia baik-baik"
+  },
+  "c4-qwrong": {
+   "en": "No. He said: look after him well.",
+   "t": "Bukan. Dia berkata: jagalah dia baik-baik."
+  },
+  "c4-c": {
+   "en": "The years passed, and Yusuf grew into a young man in Egypt. When he was grown, Allah gave him wisdom and knowledge.",
+   "t": "Tahun demi tahun berlalu, dan Yusuf membesar menjadi seorang pemuda di Mesir. Apabila dia dewasa, Allah mengurniakannya hikmah dan ilmu."
+  },
+  "c5-a": {
+   "en": "One day, the woman of the house tried to make Yusuf do something wrong. Yusuf said: Allah forbid! My master has been good to me. And he ran for the door.",
+   "t": "Pada suatu hari, wanita tuan rumah itu cuba memujuk Yusuf melakukan perkara yang salah. Yusuf berkata: aku berlindung kepada Allah! Tuanku telah berbuat baik kepadaku. Dan dia berlari ke pintu."
+  },
+  "c5-b1": {
+   "en": "She pulled at his shirt from behind, and it tore. At the door they met her husband. She said that Yusuf was to blame. But Yusuf said: she is the one who tried to make me do wrong.",
+   "t": "Wanita itu menarik bajunya dari belakang, lalu baju itu koyak. Di pintu mereka bertemu suaminya. Wanita itu berkata Yusuf yang bersalah. Tetapi Yusuf berkata: dialah yang cuba memujukku melakukan perkara yang salah."
+  },
+  "c5-b2": {
+   "en": "A wise person in the house said: look at his shirt. If it is torn at the front, she is telling the truth. If it is torn at the back, Yusuf is.",
+   "t": "Seorang yang bijak di rumah itu berkata: lihatlah bajunya. Jika ia koyak di hadapan, wanita itu bercakap benar. Jika ia koyak di belakang, Yusuf yang bercakap benar."
+  },
+  "c5-do2": {
+   "en": "Where is Yusuf's shirt torn?",
+   "t": "Di manakah baju Yusuf koyak?"
+  },
+  "c5-do2-opt1": {
+   "en": "At the front",
+   "t": "Di hadapan"
+  },
+  "c5-do2-opt2": {
+   "en": "At the back",
+   "t": "Di belakang"
+  },
+  "c5-wrong2": {
+   "en": "Not that way. Remember, she pulled it from behind.",
+   "t": "Bukan begitu. Ingat, wanita itu menariknya dari belakang."
+  },
+  "c5-b3": {
+   "en": "The shirt was torn at the back! So everyone could see that Yusuf was telling the truth.",
+   "t": "Baju itu koyak di belakang! Maka semua orang dapat melihat bahawa Yusuf bercakap benar."
+  },
+  "c5-w1": {
+   "en": "Soon, some women of the city were gossiping about the woman of the house. So she invited them to a great meal, and gave each of them a knife to cut their fruit. Then she said to Yusuf: come out, and let them see you.",
+   "t": "Tidak lama kemudian, beberapa orang wanita di kota itu bergosip tentang wanita tuan rumah itu. Maka dia menjemput mereka ke satu jamuan besar, dan memberi setiap seorang sebilah pisau untuk memotong buah. Kemudian dia berkata kepada Yusuf: keluarlah, biar mereka melihatmu."
+  },
+  "c5-w2": {
+   "en": "When the women saw Yusuf, they were so amazed at how beautiful he was that they cut their own hands without even noticing! They said: Allah is perfect! This is no ordinary man. He must be a noble angel!",
+   "t": "Apabila wanita-wanita itu melihat Yusuf, mereka begitu takjub dengan ketampanannya sehingga mereka terhiris tangan mereka sendiri tanpa sedar! Mereka berkata: Maha Suci Allah! Ini bukan manusia biasa. Ini tentu malaikat yang mulia!"
+  },
+  "c5-wq": {
+   "en": "Why did the women cut their hands?",
+   "t": "Mengapakah wanita-wanita itu terhiris tangan mereka?"
+  },
+  "c5-wq-opt1": {
+   "en": "The fruit was too hard",
+   "t": "Buah itu terlalu keras"
+  },
+  "c5-wq-opt2": {
+   "en": "They were amazed by Yusuf",
+   "t": "Mereka takjub melihat Yusuf"
+  },
+  "c5-wqwrong": {
+   "en": "Not the fruit. They were so amazed by Yusuf that they did not notice what their knives were doing.",
+   "t": "Bukan kerana buah itu. Mereka begitu takjub melihat Yusuf sehingga tidak sedar apa yang dilakukan oleh pisau mereka."
+  },
+  "c5-b4": {
+   "en": "But people kept on talking, and the woman kept on at him. Yusuf prayed: My Lord, prison is better for me than what they ask of me. And Allah answered his prayer and kept him safe from doing wrong.",
+   "t": "Tetapi orang ramai terus bercakap, dan wanita itu terus mendesaknya. Yusuf berdoa: wahai Tuhanku, penjara lebih aku sukai daripada apa yang mereka ajak aku lakukan. Dan Allah memperkenankan doanya dan memeliharanya daripada melakukan perkara yang salah."
+  },
+  "c5-c": {
+   "en": "Everyone had seen the signs that Yusuf was innocent. But in the end they put him in prison for a while anyway.",
+   "t": "Semua orang telah melihat tanda-tanda bahawa Yusuf tidak bersalah. Tetapi akhirnya mereka tetap memenjarakannya untuk seketika."
+  },
+  "c5-do": {
+   "en": "Be patient, like Yusuf. Press and hold the lamp until it shines. Don't let go!",
+   "t": "Bersabarlah, seperti Yusuf. Tekan dan tahan pelita itu sehingga ia bersinar. Jangan lepaskan!"
+  },
+  "c5-d": {
+   "en": "Yusuf stayed patient in prison, and he never stopped trusting Allah.",
+   "t": "Yusuf tetap bersabar di dalam penjara, dan dia tidak pernah berhenti bertawakal kepada Allah."
+  },
+  "c5-o1": {
+   "en": "Yusuf ran for the door.",
+   "t": "Yusuf berlari ke pintu."
+  },
+  "c5-o2": {
+   "en": "His shirt was torn from behind.",
+   "t": "Bajunya koyak dari belakang."
+  },
+  "c5-o3": {
+   "en": "A wise person said: look at the shirt.",
+   "t": "Seorang yang bijak berkata: lihatlah baju itu."
+  },
+  "c5-o4": {
+   "en": "Yusuf was put in prison, and he stayed patient.",
+   "t": "Yusuf dipenjarakan, dan dia tetap bersabar."
+  },
+  "c6-a": {
+   "en": "Two young men were in prison with Yusuf. Each of them had a dream, and they asked Yusuf what the dreams meant.",
+   "t": "Dua orang pemuda dipenjarakan bersama Yusuf. Setiap seorang daripada mereka bermimpi, dan mereka bertanya kepada Yusuf apakah makna mimpi itu."
+  },
+  "c6-b": {
+   "en": "First, Yusuf told them the most important thing: worship no one but Allah, the One.",
+   "t": "Pertama, Yusuf memberitahu mereka perkara yang paling penting: jangan sembah sesiapa pun selain Allah, Yang Maha Esa."
+  },
+  "c6-q": {
+   "en": "What was the first thing Yusuf told the two men?",
+   "t": "Apakah perkara pertama yang Yusuf beritahu kedua-dua lelaki itu?"
+  },
+  "c6-q-opt1": {
+   "en": "Worship Allah alone",
+   "t": "Sembahlah Allah sahaja"
+  },
+  "c6-q-opt2": {
+   "en": "Dig a tunnel",
+   "t": "Gali sebuah terowong"
+  },
+  "c6-qwrong": {
+   "en": "No. First he told them: worship no one but Allah.",
+   "t": "Bukan. Mula-mula dia memberitahu mereka: jangan sembah sesiapa pun selain Allah."
+  },
+  "c6-do": {
+   "en": "Now match each dream to its meaning. Tap a dream, then tap what it means.",
+   "t": "Sekarang padankan setiap mimpi dengan maknanya. Ketik satu mimpi, kemudian ketik maknanya."
+  },
+  "c6-d1": {
+   "en": "I dreamed I was pressing grapes.",
+   "t": "Aku bermimpi aku memerah anggur."
+  },
+  "c6-d2": {
+   "en": "I dreamed birds ate the bread I carried on my head.",
+   "t": "Aku bermimpi burung-burung memakan roti yang aku junjung di atas kepala."
+  },
+  "c6-m1": {
+   "en": "You will be saved, and you will serve your master.",
+   "t": "Kamu akan diselamatkan, dan kamu akan berkhidmat kepada tuanmu."
+  },
+  "c6-m2": {
+   "en": "A sad end. You will be put to death.",
+   "t": "Pengakhiran yang menyedihkan. Kamu akan dihukum mati."
+  },
+  "c6-c": {
+   "en": "Yusuf said to the man who would go free: tell your master about me. But the man forgot. So Yusuf stayed in prison for more years.",
+   "t": "Yusuf berkata kepada lelaki yang akan dibebaskan: ceritakan tentang aku kepada tuanmu. Tetapi lelaki itu terlupa. Maka Yusuf tinggal di dalam penjara bertahun-tahun lagi."
+  },
+  "c7-a": {
+   "en": "Then the king had a strange dream. Seven fat cows were eaten by seven thin cows. And he saw seven green ears of grain, and seven dry ones.",
+   "t": "Kemudian raja bermimpi sesuatu yang pelik. Tujuh ekor lembu gemuk dimakan oleh tujuh ekor lembu kurus. Dan baginda melihat tujuh tangkai bijirin yang hijau, dan tujuh tangkai yang kering."
+  },
+  "c7-pick": {
+   "en": "Seven fat cows! Can you find them? Tap all seven of the fat cows.",
+   "t": "Tujuh ekor lembu gemuk! Bolehkah kamu mencarinya? Ketik kesemua tujuh ekor lembu gemuk itu."
+  },
+  "c7-b": {
+   "en": "Nobody could explain it. Then the man from the prison remembered Yusuf at last! He hurried to ask him.",
+   "t": "Tiada sesiapa dapat menerangkannya. Kemudian lelaki dari penjara itu akhirnya teringat akan Yusuf! Dia bergegas pergi bertanya kepadanya."
+  },
+  "c7-do": {
+   "en": "Tap each side of the dream to hear what Yusuf said it means.",
+   "t": "Ketik setiap bahagian mimpi itu untuk mendengar maknanya menurut Yusuf."
+  },
+  "c7-good": {
+   "en": "The fat cows and the green grain: seven good years are coming. Plant, and save what you harvest.",
+   "t": "Lembu-lembu gemuk dan bijirin yang hijau: tujuh tahun yang baik akan datang. Bercucuk tanamlah, dan simpanlah hasil tuaianmu."
+  },
+  "c7-hard": {
+   "en": "The thin cows and the dry grain: then seven hard years will come, and you will eat what you saved.",
+   "t": "Lembu-lembu kurus dan bijirin yang kering: kemudian tujuh tahun yang sukar akan datang, dan kamu akan makan apa yang telah kamu simpan."
+  },
+  "c7-c": {
+   "en": "And after that, said Yusuf, will come a year with plenty of rain.",
+   "t": "Dan selepas itu, kata Yusuf, akan datang setahun yang banyak hujannya."
+  },
+  "c7-sort": {
+   "en": "Help the people get ready. Is each job for the good years, or for the hard years?",
+   "t": "Bantu orang ramai membuat persediaan. Adakah setiap kerja ini untuk tahun-tahun yang baik, atau untuk tahun-tahun yang sukar?"
+  },
+  "c7-sort-bin1": {
+   "en": "Good years",
+   "t": "Tahun-tahun yang baik"
+  },
+  "c7-sort-bin2": {
+   "en": "Hard years",
+   "t": "Tahun-tahun yang sukar"
+  },
+  "c7-sort-it1": {
+   "en": "Plant the fields",
+   "t": "Menanam di ladang"
+  },
+  "c7-sort-it2": {
+   "en": "Eat what was saved",
+   "t": "Makan apa yang telah disimpan"
+  },
+  "c7-sort-it3": {
+   "en": "Save the grain",
+   "t": "Menyimpan bijirin"
+  },
+  "c7-sort-it4": {
+   "en": "Open the storehouse",
+   "t": "Membuka gudang"
+  },
+  "c7-sort-it5": {
+   "en": "Bring in the harvest",
+   "t": "Menuai hasil"
+  },
+  "c7-swrong": {
+   "en": "Think again. Save in the good years, and use it in the hard years.",
+   "t": "Fikir sekali lagi. Simpan pada tahun-tahun yang baik, dan gunakan pada tahun-tahun yang sukar."
+  },
+  "c8-a1": {
+   "en": "The king said: bring Yusuf to me! But Yusuf did not hurry out of prison. He said: first, find out what really happened to me.",
+   "t": "Raja bertitah: bawa Yusuf kepadaku! Tetapi Yusuf tidak tergesa-gesa keluar dari penjara. Dia berkata: pertama, siasatlah apa yang sebenarnya berlaku kepadaku."
+  },
+  "c8-a2": {
+   "en": "So the king asked the women who had spoken against Yusuf: what really happened? They said: Allah forbid! We know nothing bad about him.",
+   "t": "Maka raja bertanya kepada wanita-wanita yang telah bercakap buruk tentang Yusuf: apakah yang sebenarnya berlaku? Mereka berkata: Maha Suci Allah! Kami tidak mengetahui sebarang keburukan tentangnya."
+  },
+  "c8-a3": {
+   "en": "And the woman of the house said: now the truth is out. It was I who tried to make him do wrong. Yusuf is an honest man.",
+   "t": "Dan wanita tuan rumah itu berkata: sekarang kebenaran telah terserlah. Akulah yang cuba memujuknya melakukan perkara yang salah. Yusuf seorang yang jujur."
+  },
+  "c8-do-o": {
+   "en": "Put the story in order. Tap what happened first, then what came next.",
+   "t": "Susun cerita itu mengikut urutan. Ketik apa yang berlaku dahulu, kemudian apa yang berlaku seterusnya."
+  },
+  "c8-o1": {
+   "en": "Yusuf asked for the truth to be found.",
+   "t": "Yusuf meminta supaya kebenaran disiasat."
+  },
+  "c8-o2": {
+   "en": "The king asked what had happened.",
+   "t": "Raja bertanya apa yang telah berlaku."
+  },
+  "c8-o3": {
+   "en": "The woman told the truth.",
+   "t": "Wanita itu berkata benar."
+  },
+  "c8-o4": {
+   "en": "The king trusted Yusuf.",
+   "t": "Raja mempercayai Yusuf."
+  },
+  "c8-wrong-o": {
+   "en": "Not yet. Think about what came first.",
+   "t": "Belum lagi. Fikirkan apa yang berlaku dahulu."
+  },
+  "c8-b": {
+   "en": "The king trusted Yusuf completely. Yusuf said: put me in charge of the storehouses. I will look after them with care.",
+   "t": "Raja mempercayai Yusuf sepenuhnya. Yusuf berkata: jadikanlah aku penjaga gudang-gudang. Aku akan menjaganya dengan cermat."
+  },
+  "c8-do": {
+   "en": "The good years are here! Tap the grain as it grows, and save it in the storehouse.",
+   "t": "Tahun-tahun yang baik sudah tiba! Ketik bijirin itu ketika ia tumbuh, dan simpanlah di dalam gudang."
+  },
+  "c8-c": {
+   "en": "The storehouse is full. The grain is saved, just as Yusuf said.",
+   "t": "Gudang sudah penuh. Bijirin telah disimpan, tepat seperti kata Yusuf."
+  },
+  "c9-0": {
+   "en": "Then the seven hard years came, just as Yusuf had said. There was little food anywhere, even far away where Yusuf's family lived. But in Egypt there was grain, because Yusuf had saved it.",
+   "t": "Kemudian tujuh tahun yang sukar pun tiba, tepat seperti kata Yusuf. Makanan sangat sedikit di mana-mana, bahkan jauh di tempat keluarga Yusuf tinggal. Tetapi di Mesir ada bijirin, kerana Yusuf telah menyimpannya."
+  },
+  "c9-a": {
+   "en": "Later, Yusuf's brothers travelled to Egypt to get grain for their family.",
+   "t": "Kemudian, saudara-saudara Yusuf mengembara ke Mesir untuk mendapatkan bijirin bagi keluarga mereka."
+  },
+  "c9-b": {
+   "en": "Yusuf knew them at once. But they did not know it was him!",
+   "t": "Yusuf serta-merta mengenali mereka. Tetapi mereka tidak tahu bahawa itu dia!"
+  },
+  "c9-q": {
+   "en": "Did the brothers know who he was?",
+   "t": "Adakah saudara-saudara itu tahu siapa dia?"
+  },
+  "c9-q-opt1": {
+   "en": "Yes, straight away",
+   "t": "Ya, serta-merta"
+  },
+  "c9-q-opt2": {
+   "en": "No, they did not know him",
+   "t": "Tidak, mereka tidak mengenalinya"
+  },
+  "c9-qwrong": {
+   "en": "No. Yusuf knew them, but they did not know him.",
+   "t": "Tidak. Yusuf mengenali mereka, tetapi mereka tidak mengenalinya."
+  },
+  "c9-b2": {
+   "en": "It is told that Yusuf asked them about their family. They said: we were twelve brothers. One was lost long ago, and our father keeps the youngest one at home with him.",
+   "t": "Diceritakan bahawa Yusuf bertanya kepada mereka tentang keluarga mereka. Mereka berkata: dahulu kami dua belas beradik. Seorang telah hilang lama dahulu, dan ayah kami menyimpan yang bongsu di rumah bersamanya."
+  },
+  "c9-do": {
+   "en": "Yusuf gave them full measure. Tap each sack until it is full to the top.",
+   "t": "Yusuf memberi mereka sukatan yang penuh. Ketik setiap guni sehingga ia penuh hingga ke atas."
+  },
+  "c9-c": {
+   "en": "Then Yusuf said: next time, bring me that youngest brother, the one at home with your father. And he had their payment put back in their bags.",
+   "t": "Kemudian Yusuf berkata: lain kali, bawalah adik bongsumu itu kepadaku, yang tinggal di rumah bersama ayahmu. Dan dia menyuruh supaya bayaran mereka dimasukkan semula ke dalam beg mereka."
+  },
+  "c9-pick": {
+   "en": "Help put their payment back. Tap each sack to tuck the payment inside.",
+   "t": "Bantu memasukkan semula bayaran mereka. Ketik setiap guni untuk menyelitkan bayaran itu ke dalamnya."
+  },
+  "c10-h0": {
+   "en": "Back home, the brothers said: Father, we will get no more grain unless we take our little brother with us. Yaqub said: shall I trust you with him, the way I trusted you with Yusuf before?",
+   "t": "Setelah pulang, saudara-saudara itu berkata: wahai ayah, kami tidak akan mendapat bijirin lagi kecuali kami membawa adik kami bersama. Yaakub berkata: patutkah aku mempercayai kamu menjaganya, sebagaimana aku pernah mempercayai kamu menjaga Yusuf dahulu?"
+  },
+  "c10-hdo": {
+   "en": "Look, a sack from Egypt. Tap it to open it. What is inside?",
+   "t": "Lihat, seguni dari Mesir. Ketik untuk membukanya. Apakah isinya?"
+  },
+  "c10-hdo-s1": {
+   "en": "Their payment! It was given back to them.",
+   "t": "Bayaran mereka! Ia dipulangkan kepada mereka."
+  },
+  "c10-h": {
+   "en": "Then they found that their payment had been given back! In the end Yaqub let their little brother go, but only after they promised by Allah to bring him back.",
+   "t": "Kemudian mereka mendapati bayaran mereka telah dipulangkan! Akhirnya Yaakub membenarkan adik mereka pergi, tetapi hanya setelah mereka berjanji dengan nama Allah untuk membawanya pulang."
+  },
+  "c10-g": {
+   "en": "Before the brothers set off again, their father Yaqub said: my sons, do not all go in by one gate. Go in by different gates. I trust in Allah.",
+   "t": "Sebelum saudara-saudara itu berangkat lagi, ayah mereka Yaakub berkata: wahai anak-anakku, janganlah kamu semua masuk dari satu pintu gerbang. Masuklah dari pintu-pintu gerbang yang berlainan. Aku bertawakal kepada Allah."
+  },
+  "c10-gdo": {
+   "en": "Do as their father said. Tap a gate for each brother, a different gate each time.",
+   "t": "Buatlah seperti kata ayah mereka. Ketik satu pintu gerbang untuk setiap saudara, pintu yang berlainan setiap kali."
+  },
+  "c10-a": {
+   "en": "The brothers came again, and this time they brought their brother. Yusuf took him aside and said: I am your brother. Do not be sad.",
+   "t": "Saudara-saudara itu datang lagi, dan kali ini mereka membawa adik mereka. Yusuf membawanya ke tepi dan berkata: akulah saudaramu. Janganlah bersedih."
+  },
+  "c10-b": {
+   "en": "Then came a plan that Allah made for Yusuf, so that his brother could stay with him. The king's drinking cup was placed in his brother's bag.",
+   "t": "Kemudian datanglah satu rancangan yang Allah aturkan untuk Yusuf, supaya adiknya boleh tinggal bersamanya. Piala minuman raja diletakkan di dalam beg adiknya."
+  },
+  "c10-q": {
+   "en": "Whose plan was this, so that his brother could stay?",
+   "t": "Rancangan siapakah ini, supaya adiknya boleh tinggal?"
+  },
+  "c10-q-opt1": {
+   "en": "Allah made it for Yusuf",
+   "t": "Allah yang mengaturnya untuk Yusuf"
+  },
+  "c10-q-opt2": {
+   "en": "The brothers made it",
+   "t": "Saudara-saudara itu yang mengaturnya"
+  },
+  "c10-qwrong": {
+   "en": "No. This was a plan that Allah made for Yusuf.",
+   "t": "Bukan. Ini rancangan yang Allah aturkan untuk Yusuf."
+  },
+  "c10-l1": {
+   "en": "As the brothers were leaving, a man called out: stop, you are thieves! The king's cup is missing! The brothers said: we are not thieves!",
+   "t": "Ketika saudara-saudara itu hendak pergi, seorang lelaki berseru: berhenti, kamu pencuri! Piala raja hilang! Saudara-saudara itu berkata: kami bukan pencuri!"
+  },
+  "c10-l2": {
+   "en": "Then they were asked: if one of you is lying, what should happen to him? The brothers said: whoever has the cup in his bag must stay behind. That is our own rule.",
+   "t": "Kemudian mereka ditanya: jika salah seorang daripada kamu berbohong, apakah balasannya? Saudara-saudara itu berkata: sesiapa yang di dalam begnya ada piala itu mesti tinggal di sini. Itulah peraturan kami sendiri."
+  },
+  "c10-lq": {
+   "en": "Whose rule was it, that the one with the cup must stay behind?",
+   "t": "Peraturan siapakah itu, bahawa orang yang ada piala mesti tinggal?"
+  },
+  "c10-lq-opt1": {
+   "en": "The brothers' own rule",
+   "t": "Peraturan saudara-saudara itu sendiri"
+  },
+  "c10-lq-opt2": {
+   "en": "The king of Egypt's rule",
+   "t": "Peraturan raja Mesir"
+  },
+  "c10-lqwrong": {
+   "en": "Not the king's. Under the king's rule, Yusuf could not have kept his brother. The brothers chose the rule themselves.",
+   "t": "Bukan peraturan raja. Menurut peraturan raja, Yusuf tidak boleh menahan adiknya. Saudara-saudara itu sendiri yang memilih peraturan itu."
+  },
+  "c10-do": {
+   "en": "The king's cup is missing! Search the bags one by one, starting with the oldest brother's.",
+   "t": "Piala raja hilang! Periksa beg-beg itu satu demi satu, bermula dengan beg saudara yang sulung."
+  },
+  "c10-nope": {
+   "en": "Not in this one.",
+   "t": "Tiada di dalam beg ini."
+  },
+  "c10-c": {
+   "en": "There it is, in his brother's bag! So his brother stayed in Egypt with Yusuf.",
+   "t": "Itu dia, di dalam beg adiknya! Maka adiknya tinggal di Mesir bersama Yusuf."
+  },
+  "c11-v0": {
+   "en": "The brothers begged: please, take one of us instead! Our father is very old. But Yusuf said: we can only keep the one who had the cup.",
+   "t": "Saudara-saudara itu merayu: tolonglah, ambillah salah seorang daripada kami sebagai gantinya! Ayah kami sudah sangat tua. Tetapi Yusuf berkata: kami hanya boleh menahan orang yang ada piala itu."
+  },
+  "c11-v": {
+   "en": "Then the eldest brother said: remember the promise we made to our father, and how we broke our promise about Yusuf. I will not leave this land until my father lets me. The rest of you, go home and tell him.",
+   "t": "Kemudian saudara yang sulung berkata: ingatlah janji yang kita buat kepada ayah kita, dan bagaimana kita mungkir janji tentang Yusuf. Aku tidak akan meninggalkan negeri ini sehingga ayahku mengizinkan aku. Yang lain, pulanglah dan beritahu dia."
+  },
+  "c11-a": {
+   "en": "The others went home and told their father what had happened. Yaqub said: it is best to be patient. Maybe Allah will bring them all back to me. But he missed Yusuf so much that his eyes turned white with grief.",
+   "t": "Yang lain pulang dan memberitahu ayah mereka apa yang telah berlaku. Yaakub berkata: bersabar itulah yang terbaik. Mudah-mudahan Allah akan mengembalikan mereka semua kepadaku. Tetapi dia begitu merindui Yusuf sehingga matanya menjadi putih kerana kesedihan."
+  },
+  "c11-b": {
+   "en": "But Yaqub did not lose hope. He said: my sons, go and look for Yusuf and his brother. Never lose hope in Allah's mercy.",
+   "t": "Tetapi Yaakub tidak berputus asa. Dia berkata: wahai anak-anakku, pergilah dan carilah Yusuf dan adiknya. Jangan sekali-kali berputus asa daripada rahmat Allah."
+  },
+  "c11-c0": {
+   "en": "So the brothers went back to Egypt, and came before Yusuf once more. They said: hard times have hit our family, and we have brought very little. Please be kind to us.",
+   "t": "Maka saudara-saudara itu kembali ke Mesir, dan menghadap Yusuf sekali lagi. Mereka berkata: kesusahan telah menimpa keluarga kami, dan kami membawa sangat sedikit. Kasihanilah kami."
+  },
+  "c11-c": {
+   "en": "Then Yusuf asked them: do you know what you did to Yusuf and his brother? They cried: could it be that you are Yusuf? He said: I am Yusuf, and this is my brother. Allah has been good to us.",
+   "t": "Kemudian Yusuf bertanya kepada mereka: tahukah kamu apa yang telah kamu lakukan kepada Yusuf dan adiknya? Mereka berseru: adakah engkau ini Yusuf? Dia berkata: akulah Yusuf, dan inilah adikku. Allah telah berbuat baik kepada kami."
+  },
+  "c11-e": {
+   "en": "The brothers hung their heads. They said: By Allah, Allah chose you over us, and we were in the wrong.",
+   "t": "Saudara-saudara itu menundukkan kepala. Mereka berkata: demi Allah, Allah telah melebihkan engkau daripada kami, dan kamilah yang bersalah."
+  },
+  "c11-do": {
+   "en": "The brothers said they were sorry. What did Yusuf do?",
+   "t": "Saudara-saudara itu memohon maaf. Apakah yang Yusuf lakukan?"
+  },
+  "c11-do-opt1": {
+   "en": "He sent them away",
+   "t": "Dia menghalau mereka"
+  },
+  "c11-do-opt2": {
+   "en": "He forgave them",
+   "t": "Dia memaafkan mereka"
+  },
+  "c11-wrong": {
+   "en": "No. Yusuf did something much more beautiful. Try again.",
+   "t": "Bukan. Yusuf melakukan sesuatu yang jauh lebih indah. Cuba lagi."
+  },
+  "c11-d": {
+   "en": "Yusuf forgave them! He said: you will hear no blame today. May Allah forgive you. He is the Most Merciful of all.",
+   "t": "Yusuf memaafkan mereka! Dia berkata: pada hari ini tiada celaan ke atas kamu. Semoga Allah mengampuni kamu. Dialah yang paling Penyayang di antara para penyayang."
+  },
+  "c11-o1": {
+   "en": "Yaqub said: never lose hope.",
+   "t": "Yaakub berkata: jangan sekali-kali berputus asa."
+  },
+  "c11-o2": {
+   "en": "Yusuf said: I am Yusuf.",
+   "t": "Yusuf berkata: akulah Yusuf."
+  },
+  "c11-o3": {
+   "en": "The brothers said: we were in the wrong.",
+   "t": "Saudara-saudara itu berkata: kamilah yang bersalah."
+  },
+  "c11-o4": {
+   "en": "Yusuf forgave them.",
+   "t": "Yusuf memaafkan mereka."
+  },
+  "c12-a": {
+   "en": "Yusuf gave them his shirt. He said: lay it over my father's face, and he will see again. Then bring your whole family to me.",
+   "t": "Yusuf memberikan bajunya kepada mereka. Dia berkata: letakkan baju ini di atas wajah ayahku, dan dia akan dapat melihat semula. Kemudian bawalah seluruh keluargamu kepadaku."
+  },
+  "c12-b": {
+   "en": "Far away, as the caravan set off, a wind began to blow. And Yaqub said: I can smell Yusuf!",
+   "t": "Jauh di sana, ketika kafilah itu berangkat, angin mula bertiup. Dan Yaakub berkata: aku tercium bau Yusuf!"
+  },
+  "c12-do": {
+   "en": "Drag the shirt along the path, or tap it, to carry the good news home.",
+   "t": "Seret baju itu di sepanjang jalan, atau ketiknya, untuk membawa berita gembira itu pulang."
+  },
+  "c12-c": {
+   "en": "The shirt was laid on Yaqub's face, and he could see again! The brothers said: Father, ask Allah to forgive us. And he said: I will ask my Lord to forgive you.",
+   "t": "Baju itu diletakkan di atas wajah Yaakub, dan dia dapat melihat semula! Saudara-saudara itu berkata: wahai ayah, mohonkanlah ampun kepada Allah untuk kami. Dan dia berkata: aku akan memohon ampun kepada Tuhanku untuk kamu."
+  },
+  "c12-q": {
+   "en": "What happened when the shirt was laid on Yaqub's face?",
+   "t": "Apakah yang berlaku apabila baju itu diletakkan di atas wajah Yaakub?"
+  },
+  "c12-q-opt1": {
+   "en": "He fell asleep",
+   "t": "Dia tertidur"
+  },
+  "c12-q-opt2": {
+   "en": "He could see again",
+   "t": "Dia dapat melihat semula"
+  },
+  "c12-qwrong": {
+   "en": "No. Something wonderful happened: he could see again!",
+   "t": "Bukan. Sesuatu yang menakjubkan berlaku: dia dapat melihat semula!"
+  },
+  "c13-a": {
+   "en": "The whole family came to Egypt. Yusuf held his parents close and said: welcome to Egypt. You will all be safe here, if Allah wills.",
+   "t": "Seluruh keluarga datang ke Mesir. Yusuf memeluk erat ibu bapanya dan berkata: selamat datang ke Mesir. Kamu semua akan selamat di sini, insya-Allah."
+  },
+  "c13-do": {
+   "en": "Tap the stars, the sun and the moon, just like in the dream.",
+   "t": "Ketik bintang-bintang, matahari dan bulan, sama seperti dalam mimpi itu."
+  },
+  "c13-b": {
+   "en": "Yusuf's parents and brothers all bowed down before him. Yusuf said: Father, this is what my dream meant, long ago. My Lord has made it come true.",
+   "t": "Ibu bapa dan saudara-saudara Yusuf semuanya sujud di hadapannya. Yusuf berkata: wahai ayah, inilah makna mimpiku dahulu. Tuhanku telah menjadikannya kenyataan."
+  },
+  "c13-q": {
+   "en": "Look back at the dream. Who were the eleven stars?",
+   "t": "Ingat kembali mimpi itu. Siapakah sebelas bintang itu?"
+  },
+  "c13-q-opt1": {
+   "en": "His eleven brothers",
+   "t": "Sebelas orang saudaranya"
+  },
+  "c13-q-opt2": {
+   "en": "Eleven camels",
+   "t": "Sebelas ekor unta"
+  },
+  "c13-qwrong": {
+   "en": "Think again. Who came to Egypt to bow before Yusuf?",
+   "t": "Fikir sekali lagi. Siapakah yang datang ke Mesir untuk sujud di hadapan Yusuf?"
+  },
+  "c13-b0": {
+   "en": "Yes! The eleven stars were his eleven brothers, and the sun and the moon were his father and mother. The dream had come true.",
+   "t": "Betul! Sebelas bintang itu ialah sebelas orang saudaranya, dan matahari dan bulan itu ialah ayah dan ibunya. Mimpi itu telah menjadi kenyataan."
+  },
+  "c13-sort": {
+   "en": "What have we learned from Yusuf? For each one, tap: like Yusuf, or not like Yusuf.",
+   "t": "Apakah yang telah kita pelajari daripada Yusuf? Untuk setiap satu, ketik: seperti Yusuf, atau tidak seperti Yusuf."
+  },
+  "c13-sort-bin1": {
+   "en": "Like Yusuf",
+   "t": "Seperti Yusuf"
+  },
+  "c13-sort-bin2": {
+   "en": "Not like Yusuf",
+   "t": "Tidak seperti Yusuf"
+  },
+  "c13-sort-it1": {
+   "en": "Being patient",
+   "t": "Bersabar"
+  },
+  "c13-sort-it2": {
+   "en": "Making up a story",
+   "t": "Mereka-reka cerita"
+  },
+  "c13-sort-it3": {
+   "en": "Telling the truth",
+   "t": "Bercakap benar"
+  },
+  "c13-sort-it4": {
+   "en": "Staying angry",
+   "t": "Terus marah"
+  },
+  "c13-sort-it5": {
+   "en": "Forgiving",
+   "t": "Memaafkan"
+  },
+  "c13-sort-it6": {
+   "en": "Trusting Allah",
+   "t": "Bertawakal kepada Allah"
+  },
+  "c13-swrong": {
+   "en": "Think about what Yusuf did.",
+   "t": "Fikirkan apa yang Yusuf lakukan."
+  },
+  "c13-c": {
+   "en": "Then Yusuf prayed: My Lord, You are my protector in this world and the next. Let me die devoted to You, and join me with the righteous.",
+   "t": "Kemudian Yusuf berdoa: wahai Tuhanku, Engkaulah Pelindungku di dunia dan di akhirat. Wafatkanlah aku dalam keadaan berserah diri kepada-Mu, dan gabungkanlah aku dengan orang-orang yang soleh."
+  },
+  "pz-do": {
+   "en": "This picture is all mixed up! Tap two pieces to swap them, until the picture is whole again.",
+   "t": "Gambar ini bercampur aduk! Ketik dua kepingan untuk menukarnya, sehingga gambar itu lengkap semula."
+  },
+  "mem-do": {
+   "en": "Find the pairs. Tap two cards. If they match, they stay.",
+   "t": "Cari pasangannya. Ketik dua kad. Jika ia sepadan, ia kekal terbuka."
+  },
+  "end-a": {
+   "en": "The end. Yusuf was patient, he told the truth, and he forgave. What will you remember from his story?",
+   "t": "Tamat. Yusuf bersabar, dia bercakap benar, dan dia memaafkan. Apakah yang akan kamu ingat daripada kisahnya?"
+  }
+ },
+ "strings": {
+  "The Dream": "Mimpi",
+  "The Jealous Brothers": "Saudara-saudara yang Cemburu",
+  "From a Shia narration (al-Qummi)": "Daripada riwayat Syiah (al-Qummi)",
+  "The stone: Ibn Kathir's tafsir": "Batu itu: tafsir Ibnu Kathir",
+  "The untorn shirt: Ibn Kathir's tafsir": "Baju yang tidak koyak: tafsir Ibnu Kathir",
+  "The brothers are jealous": "Saudara-saudara itu cemburu",
+  "Yusuf is put in the well": "Yusuf diturunkan ke dalam perigi",
+  "They show the shirt": "Mereka menunjukkan baju itu",
+  "Yaqub is patient": "Yaakub bersabar",
+  "The Well": "Perigi",
+  "Far From Home": "Jauh dari Rumah",
+  "Twenty coins: Ibn Kathir's tafsir": "Dua puluh keping syiling: tafsir Ibnu Kathir",
+  "Patience in Prison": "Sabar di dalam Penjara",
+  "The fruit: Ibn Kathir's tafsir": "Buah itu: tafsir Ibnu Kathir",
+  "Yusuf runs for the door": "Yusuf berlari ke pintu",
+  "His shirt is torn": "Bajunya koyak",
+  "Look at the shirt!": "Lihatlah baju itu!",
+  "Patient in prison": "Sabar di dalam penjara",
+  "Two Dreams": "Dua Mimpi",
+  "The King's Dream": "Mimpi Raja",
+  "fat cow": "lembu gemuk",
+  "thin cow": "lembu kurus",
+  "7 good years": "7 tahun yang baik",
+  "7 hard years": "7 tahun yang sukar",
+  "Truth and Trust": "Kebenaran dan Kepercayaan",
+  "Yusuf asks for the truth": "Yusuf meminta kebenaran",
+  "The king asks what happened": "Raja bertanya apa yang berlaku",
+  "The woman tells the truth": "Wanita itu berkata benar",
+  "The king trusts Yusuf": "Raja mempercayai Yusuf",
+  "The Brothers Come": "Saudara-saudara Datang",
+  "sack": "guni",
+  "The King's Cup": "Piala Raja",
+  "“I Am Yusuf”": "“Akulah Yusuf”",
+  "Never lose hope": "Jangan berputus asa",
+  "I am Yusuf": "Akulah Yusuf",
+  "We were wrong": "Kami bersalah",
+  "Yusuf forgives": "Yusuf memaafkan",
+  "The Shirt": "Baju Itu",
+  "The Dream Comes True": "Mimpi Menjadi Kenyataan",
+  "Yusuf": "Yusuf",
+  "The Story of Yusuf": "Kisah Nabi Yusuf",
+  "Thirteen chapters. Three or four things to do in every one.": "Tiga belas bab. Tiga atau empat perkara untuk dilakukan dalam setiap satu.",
+  "Under 5: play it together with a grown-up": "Bawah 5 tahun: main bersama orang dewasa",
+  "Patience": "Kesabaran",
+  "Truth": "Kebenaran",
+  "Forgiveness": "Kemaafan",
+  "His whole story in thirteen chapters, with three or four things to do in every one.": "Seluruh kisahnya dalam tiga belas bab, dengan tiga atau empat perkara untuk dilakukan dalam setiap satu.",
+  "Yusuf as a boy, looking up at the stars, the sun and the moon.": "Yusuf semasa kecil, memandang ke arah bintang-bintang, matahari dan bulan."
+ }
+}

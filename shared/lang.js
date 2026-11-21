@@ -4,10 +4,10 @@
   English text -> translated text, and this script swaps the English on screen for the chosen language as pages are
   drawn (MutationObserver), so pictures, activities and page numbers never change.
 
-    languages.json                 the languages the site offers ({ code: { name } })
-    shared/i18n/<code>.json        the buttons and labels shared by every page
-    games/<slug>/lang/<code>.json  a game's lines and labels: { "status": "draft"|"checked", "lines": { id: tr },
+    lang/<code>/site.json          the buttons and labels shared by every page (lang/README.md, for translators)
+    lang/<code>/<slug>.json        a game's lines and labels: { "status": "draft"|"checked", "lines": { id: { en, t } },
                                    "strings": { en: tr } } (lines by their id in narration.json; titles, labels by English)
+  A device downloads only the language in use: each language is its own pack, "core@<code>" (scripts/build-offline.js).
                                    A draft is shown only with ?lang=<code> in the address (for the person checking it);
                                    families see a game in a language only once it is "checked".
   Keys starting with "re:" are patterns: "re:^Chapter (\\d+)$": "Bab $1"; "$t1" puts a part back translated.
@@ -29,7 +29,7 @@ window.AsmauLang = (function () {
 
   function add(strings) {
     Object.keys(strings || {}).forEach(function (k) {
-      if (k.charAt(0) === "_") return;                                // "_note": a note for people, not a word on screen
+      if (k.charAt(0) === "_" || k === "status" || !strings[k]) return;  // notes for people, and words not translated yet
       if (k.indexOf("re:") === 0) { try { pats.push([new RegExp(k.slice(3)), strings[k]]); } catch (e) { /* a bad pattern is skipped */ } }
       else { dict[norm(k)] = strings[k]; made[norm(strings[k])] = 1; }
     });
@@ -40,13 +40,20 @@ window.AsmauLang = (function () {
   var here = new URL(location.href).href.indexOf(root.href) === 0 ? location.href.slice(root.href.length) : "";
   var g = /^games\/([^/]+)\//.exec(here), slug = g ? g[1] : null;
   var ready = lang === "en" ? Promise.resolve() : Promise.all([
-    getJSON(new URL("shared/i18n/" + lang + ".json", root).href).then(function (d) { if (d) add(d); }),
-    slug ? getJSON(new URL("games/" + slug + "/lang/" + lang + ".json", root).href).then(function (d) {
-      if (d && (d.status === "checked" || preview)) { add(d.strings); gameLines = d.lines || {}; gameVoices[slug] = d.voices || []; gameOk[slug] = true; }
+    getJSON(new URL("lang/" + lang + "/site.json", root).href).then(function (d) { if (d) add(d); }),
+    slug ? getJSON(new URL("lang/" + lang + "/" + slug + ".json", root).href).then(function (d) {
+      if (d && (d.status === "checked" || preview)) { add(d.strings); gameLines = {}; Object.keys(d.lines || {}).forEach(function (id) { var v = d.lines[id]; var tx = v && typeof v === "object" ? v.t : v; if (tx) gameLines[id] = tx; }); gameVoices[slug] = d.voices || []; gameOk[slug] = true; }
     }) : null
   ]).then(function () {
     if (slug && !gameOk[slug]) { dict = {}; pats = []; }        // a game not (yet) in this language stays wholly English
   });
+
+  // a family in another language keeps all its words on this device (one small pack), so it works without internet
+  if (lang !== "en" && !preview) {
+    try {
+      if (navigator.serviceWorker && navigator.serviceWorker.controller) navigator.serviceWorker.controller.postMessage({ type: "asmau-want", packs: ["core@" + lang] });
+    } catch (e) { /* no service worker: the words are fetched as pages need them */ }
+  }
 
   function t(text) {
     if (lang === "en" || text == null) return text;
@@ -89,7 +96,7 @@ window.AsmauLang = (function () {
   }
 
   return {
-    names: { en: "English", id: "Bahasa Indonesia", ms: "Bahasa Melayu", de: "Deutsch" },              // each language by its own name
+    names: { en: "English", id: "Bahasa Indonesia", ms: "Bahasa Melayu", de: "Deutsch", fr: "Français" },              // each language by its own name
     code: function () { return lang; },
     preview: preview,
     ready: function () { return ready; },
@@ -112,7 +119,7 @@ window.AsmauLang = (function () {
     offered: function (s) {
       var codes = Object.keys(this.names).filter(function (c) { return c !== "en"; });
       return Promise.all(codes.map(function (c) {
-        return getJSON(new URL("games/" + s + "/lang/" + c + ".json", root).href).then(function (d) { return d && (d.status === "checked" || preview) ? c : null; });
+        return getJSON(new URL("lang/" + c + "/" + s + ".json", root).href).then(function (d) { return d && (d.status === "checked" || preview) ? c : null; });
       })).then(function (r) { return ["en"].concat(r.filter(Boolean)); });
     }
   };

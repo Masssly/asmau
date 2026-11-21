@@ -1,0 +1,834 @@
+{
+ "status": "draft",
+ "_note": "Français. To be checked by a native speaker; seen only with ?lang=fr until then.",
+ "lines": {
+  "c1-a": {
+   "en": "One night, young Yusuf had a wonderful dream. He saw eleven stars, the sun and the moon, all bowing down to him.",
+   "t": ""
+  },
+  "c1-do": {
+   "en": "Tap every star, the sun and the moon, and watch them bow.",
+   "t": ""
+  },
+  "c1-b": {
+   "en": "Yusuf told his father, Yaqub. His father said: my son, do not tell your brothers about this dream. Allah will choose you, and teach you the meaning of dreams.",
+   "t": ""
+  },
+  "c1-q": {
+   "en": "What did his father Yaqub tell Yusuf to do about the dream?",
+   "t": ""
+  },
+  "c1-q-opt1": {
+   "en": "Tell all his brothers",
+   "t": ""
+  },
+  "c1-q-opt2": {
+   "en": "Keep it from his brothers",
+   "t": ""
+  },
+  "c1-qwrong": {
+   "en": "Not quite. His father said: do not tell your brothers.",
+   "t": ""
+  },
+  "c2-0": {
+   "en": "Yusuf had eleven brothers. Ten were older than him, and one was his little brother. Their father loved Yusuf and his little brother very dearly.",
+   "t": ""
+  },
+  "c2-a0": {
+   "en": "Yusuf's brothers were jealous. They said: our father loves Yusuf and his little brother more than us! So they made a bad plan.",
+   "t": ""
+  },
+  "c2-a": {
+   "en": "Some of them wanted to get rid of Yusuf. But one said: do not hurt him. Leave him in a deep well, where travellers may find him.",
+   "t": ""
+  },
+  "c2-p1": {
+   "en": "Then the brothers went to their father. They said: Father, why do you not trust us with Yusuf? We only want what is good for him. Send him with us tomorrow, so he can enjoy himself and play. We will take good care of him.",
+   "t": ""
+  },
+  "c2-p2": {
+   "en": "Their father Yaqub said: it makes me sad to think of you taking him away. And I am afraid a wolf may eat him, while you are not watching.",
+   "t": ""
+  },
+  "c2-pq": {
+   "en": "What was their father afraid of?",
+   "t": ""
+  },
+  "c2-pq-opt1": {
+   "en": "A storm",
+   "t": ""
+  },
+  "c2-pq-opt2": {
+   "en": "A wolf",
+   "t": ""
+  },
+  "c2-pqwrong": {
+   "en": "Not a storm. Yaqub said: I am afraid a wolf may eat him.",
+   "t": ""
+  },
+  "c2-p3": {
+   "en": "The brothers said: a wolf? When there are so many of us? Then we would be good for nothing! So the next day, Yusuf went out with them.",
+   "t": ""
+  },
+  "c2-b": {
+   "en": "They took Yusuf far away and put him down into a deep, dark well.",
+   "t": ""
+  },
+  "c2-b1": {
+   "en": "In the dark, Yusuf prayed: O Lord of Ibrahim, and Ishaq, and Ya'qub, have mercy on me. I am small, and weak, and all alone.",
+   "t": ""
+  },
+  "c2-w": {
+   "en": "But down in the dark, Yusuf was not alone. Allah comforted his heart: one day, you will tell your brothers about all this, and they will not even know it is you.",
+   "t": ""
+  },
+  "c2-c": {
+   "en": "That night the brothers came home crying. They said: Father, a wolf ate Yusuf! And they showed him Yusuf's shirt, stained to make their story look true.",
+   "t": ""
+  },
+  "c2-s": {
+   "en": "Look closely at the shirt, just as Yaqub did. A wolf has sharp teeth. Is the shirt torn?",
+   "t": ""
+  },
+  "c2-s-opt1": {
+   "en": "Yes, it is torn",
+   "t": ""
+  },
+  "c2-s-opt2": {
+   "en": "No, not one tear",
+   "t": ""
+  },
+  "c2-swrong": {
+   "en": "Look again. The shirt is stained, but there is not one tear in it.",
+   "t": ""
+  },
+  "c2-do": {
+   "en": "A wolf would have torn the shirt to pieces. So what do you think? Was the brothers' story true?",
+   "t": ""
+  },
+  "c2-do-opt1": {
+   "en": "Yes, a wolf did it",
+   "t": ""
+  },
+  "c2-do-opt2": {
+   "en": "No, it was not true",
+   "t": ""
+  },
+  "c2-wrong": {
+   "en": "Not quite. The wolf did nothing at all! Try again.",
+   "t": ""
+  },
+  "c2-d": {
+   "en": "No, it was not true, and their father Yaqub knew it. He said: it is best to be patient. I ask Allah alone for help.",
+   "t": ""
+  },
+  "c2-o1": {
+   "en": "The brothers were jealous of Yusuf.",
+   "t": ""
+  },
+  "c2-o2": {
+   "en": "They put Yusuf down into the well.",
+   "t": ""
+  },
+  "c2-o3": {
+   "en": "They showed their father the shirt.",
+   "t": ""
+  },
+  "c2-o4": {
+   "en": "Yaqub chose to be patient.",
+   "t": ""
+  },
+  "c3-a": {
+   "en": "Some travellers came by. They sent a man to fetch water, and he let his bucket down into the well.",
+   "t": ""
+  },
+  "c3-do": {
+   "en": "Help him pull! Drag the rope up, or tap fast, to bring the bucket up.",
+   "t": ""
+  },
+  "c3-b": {
+   "en": "Good news! shouted the man. Here is a boy! The travellers hid Yusuf away to sell him. But Allah knew everything they did.",
+   "t": ""
+  },
+  "c3-q": {
+   "en": "What did the man shout when he saw Yusuf?",
+   "t": ""
+  },
+  "c3-q-opt1": {
+   "en": "Good news! Here is a boy!",
+   "t": ""
+  },
+  "c3-q-opt2": {
+   "en": "Oh no, my bucket!",
+   "t": ""
+  },
+  "c3-qwrong": {
+   "en": "Listen again. He shouted: good news!",
+   "t": ""
+  },
+  "c4-count": {
+   "en": "Yusuf was sold for a very small price: just a few silver coins. Tap the coins to count them.",
+   "t": ""
+  },
+  "c4-counted": {
+   "en": "Twenty small coins. They did not know how precious Yusuf was.",
+   "t": ""
+  },
+  "c4-a": {
+   "en": "So Yusuf was carried far from home, all the way to the land of Egypt.",
+   "t": ""
+  },
+  "c4-do": {
+   "en": "Drag the camel along the path, or tap it, to help the caravan cross the desert.",
+   "t": ""
+  },
+  "c4-b": {
+   "en": "In Egypt, a man bought Yusuf and took him to his home. He told his wife: look after him well.",
+   "t": ""
+  },
+  "c4-q": {
+   "en": "What did the man say to his wife about Yusuf?",
+   "t": ""
+  },
+  "c4-q-opt1": {
+   "en": "Send him away",
+   "t": ""
+  },
+  "c4-q-opt2": {
+   "en": "Look after him well",
+   "t": ""
+  },
+  "c4-qwrong": {
+   "en": "No. He said: look after him well.",
+   "t": ""
+  },
+  "c4-c": {
+   "en": "The years passed, and Yusuf grew into a young man in Egypt. When he was grown, Allah gave him wisdom and knowledge.",
+   "t": ""
+  },
+  "c5-a": {
+   "en": "One day, the woman of the house tried to make Yusuf do something wrong. Yusuf said: Allah forbid! My master has been good to me. And he ran for the door.",
+   "t": ""
+  },
+  "c5-b1": {
+   "en": "She pulled at his shirt from behind, and it tore. At the door they met her husband. She said that Yusuf was to blame. But Yusuf said: she is the one who tried to make me do wrong.",
+   "t": ""
+  },
+  "c5-b2": {
+   "en": "A wise person in the house said: look at his shirt. If it is torn at the front, she is telling the truth. If it is torn at the back, Yusuf is.",
+   "t": ""
+  },
+  "c5-do2": {
+   "en": "Where is Yusuf's shirt torn?",
+   "t": ""
+  },
+  "c5-do2-opt1": {
+   "en": "At the front",
+   "t": ""
+  },
+  "c5-do2-opt2": {
+   "en": "At the back",
+   "t": ""
+  },
+  "c5-wrong2": {
+   "en": "Not that way. Remember, she pulled it from behind.",
+   "t": ""
+  },
+  "c5-b3": {
+   "en": "The shirt was torn at the back! So everyone could see that Yusuf was telling the truth.",
+   "t": ""
+  },
+  "c5-w1": {
+   "en": "Soon, some women of the city were gossiping about the woman of the house. So she invited them to a great meal, and gave each of them a knife to cut their fruit. Then she said to Yusuf: come out, and let them see you.",
+   "t": ""
+  },
+  "c5-w2": {
+   "en": "When the women saw Yusuf, they were so amazed at how beautiful he was that they cut their own hands without even noticing! They said: Allah is perfect! This is no ordinary man. He must be a noble angel!",
+   "t": ""
+  },
+  "c5-wq": {
+   "en": "Why did the women cut their hands?",
+   "t": ""
+  },
+  "c5-wq-opt1": {
+   "en": "The fruit was too hard",
+   "t": ""
+  },
+  "c5-wq-opt2": {
+   "en": "They were amazed by Yusuf",
+   "t": ""
+  },
+  "c5-wqwrong": {
+   "en": "Not the fruit. They were so amazed by Yusuf that they did not notice what their knives were doing.",
+   "t": ""
+  },
+  "c5-b4": {
+   "en": "But people kept on talking, and the woman kept on at him. Yusuf prayed: My Lord, prison is better for me than what they ask of me. And Allah answered his prayer and kept him safe from doing wrong.",
+   "t": ""
+  },
+  "c5-c": {
+   "en": "Everyone had seen the signs that Yusuf was innocent. But in the end they put him in prison for a while anyway.",
+   "t": ""
+  },
+  "c5-do": {
+   "en": "Be patient, like Yusuf. Press and hold the lamp until it shines. Don't let go!",
+   "t": ""
+  },
+  "c5-d": {
+   "en": "Yusuf stayed patient in prison, and he never stopped trusting Allah.",
+   "t": ""
+  },
+  "c5-o1": {
+   "en": "Yusuf ran for the door.",
+   "t": ""
+  },
+  "c5-o2": {
+   "en": "His shirt was torn from behind.",
+   "t": ""
+  },
+  "c5-o3": {
+   "en": "A wise person said: look at the shirt.",
+   "t": ""
+  },
+  "c5-o4": {
+   "en": "Yusuf was put in prison, and he stayed patient.",
+   "t": ""
+  },
+  "c6-a": {
+   "en": "Two young men were in prison with Yusuf. Each of them had a dream, and they asked Yusuf what the dreams meant.",
+   "t": ""
+  },
+  "c6-b": {
+   "en": "First, Yusuf told them the most important thing: worship no one but Allah, the One.",
+   "t": ""
+  },
+  "c6-q": {
+   "en": "What was the first thing Yusuf told the two men?",
+   "t": ""
+  },
+  "c6-q-opt1": {
+   "en": "Worship Allah alone",
+   "t": ""
+  },
+  "c6-q-opt2": {
+   "en": "Dig a tunnel",
+   "t": ""
+  },
+  "c6-qwrong": {
+   "en": "No. First he told them: worship no one but Allah.",
+   "t": ""
+  },
+  "c6-do": {
+   "en": "Now match each dream to its meaning. Tap a dream, then tap what it means.",
+   "t": ""
+  },
+  "c6-d1": {
+   "en": "I dreamed I was pressing grapes.",
+   "t": ""
+  },
+  "c6-d2": {
+   "en": "I dreamed birds ate the bread I carried on my head.",
+   "t": ""
+  },
+  "c6-m1": {
+   "en": "You will be saved, and you will serve your master.",
+   "t": ""
+  },
+  "c6-m2": {
+   "en": "A sad end. You will be put to death.",
+   "t": ""
+  },
+  "c6-c": {
+   "en": "Yusuf said to the man who would go free: tell your master about me. But the man forgot. So Yusuf stayed in prison for more years.",
+   "t": ""
+  },
+  "c7-a": {
+   "en": "Then the king had a strange dream. Seven fat cows were eaten by seven thin cows. And he saw seven green ears of grain, and seven dry ones.",
+   "t": ""
+  },
+  "c7-pick": {
+   "en": "Seven fat cows! Can you find them? Tap all seven of the fat cows.",
+   "t": ""
+  },
+  "c7-b": {
+   "en": "Nobody could explain it. Then the man from the prison remembered Yusuf at last! He hurried to ask him.",
+   "t": ""
+  },
+  "c7-do": {
+   "en": "Tap each side of the dream to hear what Yusuf said it means.",
+   "t": ""
+  },
+  "c7-good": {
+   "en": "The fat cows and the green grain: seven good years are coming. Plant, and save what you harvest.",
+   "t": ""
+  },
+  "c7-hard": {
+   "en": "The thin cows and the dry grain: then seven hard years will come, and you will eat what you saved.",
+   "t": ""
+  },
+  "c7-c": {
+   "en": "And after that, said Yusuf, will come a year with plenty of rain.",
+   "t": ""
+  },
+  "c7-sort": {
+   "en": "Help the people get ready. Is each job for the good years, or for the hard years?",
+   "t": ""
+  },
+  "c7-sort-bin1": {
+   "en": "Good years",
+   "t": ""
+  },
+  "c7-sort-bin2": {
+   "en": "Hard years",
+   "t": ""
+  },
+  "c7-sort-it1": {
+   "en": "Plant the fields",
+   "t": ""
+  },
+  "c7-sort-it2": {
+   "en": "Eat what was saved",
+   "t": ""
+  },
+  "c7-sort-it3": {
+   "en": "Save the grain",
+   "t": ""
+  },
+  "c7-sort-it4": {
+   "en": "Open the storehouse",
+   "t": ""
+  },
+  "c7-sort-it5": {
+   "en": "Bring in the harvest",
+   "t": ""
+  },
+  "c7-swrong": {
+   "en": "Think again. Save in the good years, and use it in the hard years.",
+   "t": ""
+  },
+  "c8-a1": {
+   "en": "The king said: bring Yusuf to me! But Yusuf did not hurry out of prison. He said: first, find out what really happened to me.",
+   "t": ""
+  },
+  "c8-a2": {
+   "en": "So the king asked the women who had spoken against Yusuf: what really happened? They said: Allah forbid! We know nothing bad about him.",
+   "t": ""
+  },
+  "c8-a3": {
+   "en": "And the woman of the house said: now the truth is out. It was I who tried to make him do wrong. Yusuf is an honest man.",
+   "t": ""
+  },
+  "c8-do-o": {
+   "en": "Put the story in order. Tap what happened first, then what came next.",
+   "t": ""
+  },
+  "c8-o1": {
+   "en": "Yusuf asked for the truth to be found.",
+   "t": ""
+  },
+  "c8-o2": {
+   "en": "The king asked what had happened.",
+   "t": ""
+  },
+  "c8-o3": {
+   "en": "The woman told the truth.",
+   "t": ""
+  },
+  "c8-o4": {
+   "en": "The king trusted Yusuf.",
+   "t": ""
+  },
+  "c8-wrong-o": {
+   "en": "Not yet. Think about what came first.",
+   "t": ""
+  },
+  "c8-b": {
+   "en": "The king trusted Yusuf completely. Yusuf said: put me in charge of the storehouses. I will look after them with care.",
+   "t": ""
+  },
+  "c8-do": {
+   "en": "The good years are here! Tap the grain as it grows, and save it in the storehouse.",
+   "t": ""
+  },
+  "c8-c": {
+   "en": "The storehouse is full. The grain is saved, just as Yusuf said.",
+   "t": ""
+  },
+  "c9-0": {
+   "en": "Then the seven hard years came, just as Yusuf had said. There was little food anywhere, even far away where Yusuf's family lived. But in Egypt there was grain, because Yusuf had saved it.",
+   "t": ""
+  },
+  "c9-a": {
+   "en": "Later, Yusuf's brothers travelled to Egypt to get grain for their family.",
+   "t": ""
+  },
+  "c9-b": {
+   "en": "Yusuf knew them at once. But they did not know it was him!",
+   "t": ""
+  },
+  "c9-q": {
+   "en": "Did the brothers know who he was?",
+   "t": ""
+  },
+  "c9-q-opt1": {
+   "en": "Yes, straight away",
+   "t": ""
+  },
+  "c9-q-opt2": {
+   "en": "No, they did not know him",
+   "t": ""
+  },
+  "c9-qwrong": {
+   "en": "No. Yusuf knew them, but they did not know him.",
+   "t": ""
+  },
+  "c9-b2": {
+   "en": "It is told that Yusuf asked them about their family. They said: we were twelve brothers. One was lost long ago, and our father keeps the youngest one at home with him.",
+   "t": ""
+  },
+  "c9-do": {
+   "en": "Yusuf gave them full measure. Tap each sack until it is full to the top.",
+   "t": ""
+  },
+  "c9-c": {
+   "en": "Then Yusuf said: next time, bring me that youngest brother, the one at home with your father. And he had their payment put back in their bags.",
+   "t": ""
+  },
+  "c9-pick": {
+   "en": "Help put their payment back. Tap each sack to tuck the payment inside.",
+   "t": ""
+  },
+  "c10-h0": {
+   "en": "Back home, the brothers said: Father, we will get no more grain unless we take our little brother with us. Yaqub said: shall I trust you with him, the way I trusted you with Yusuf before?",
+   "t": ""
+  },
+  "c10-hdo": {
+   "en": "Look, a sack from Egypt. Tap it to open it. What is inside?",
+   "t": ""
+  },
+  "c10-hdo-s1": {
+   "en": "Their payment! It was given back to them.",
+   "t": ""
+  },
+  "c10-h": {
+   "en": "Then they found that their payment had been given back! In the end Yaqub let their little brother go, but only after they promised by Allah to bring him back.",
+   "t": ""
+  },
+  "c10-g": {
+   "en": "Before the brothers set off again, their father Yaqub said: my sons, do not all go in by one gate. Go in by different gates. I trust in Allah.",
+   "t": ""
+  },
+  "c10-gdo": {
+   "en": "Do as their father said. Tap a gate for each brother, a different gate each time.",
+   "t": ""
+  },
+  "c10-a": {
+   "en": "The brothers came again, and this time they brought their brother. Yusuf took him aside and said: I am your brother. Do not be sad.",
+   "t": ""
+  },
+  "c10-b": {
+   "en": "Then came a plan that Allah made for Yusuf, so that his brother could stay with him. The king's drinking cup was placed in his brother's bag.",
+   "t": ""
+  },
+  "c10-q": {
+   "en": "Whose plan was this, so that his brother could stay?",
+   "t": ""
+  },
+  "c10-q-opt1": {
+   "en": "Allah made it for Yusuf",
+   "t": ""
+  },
+  "c10-q-opt2": {
+   "en": "The brothers made it",
+   "t": ""
+  },
+  "c10-qwrong": {
+   "en": "No. This was a plan that Allah made for Yusuf.",
+   "t": ""
+  },
+  "c10-l1": {
+   "en": "As the brothers were leaving, a man called out: stop, you are thieves! The king's cup is missing! The brothers said: we are not thieves!",
+   "t": ""
+  },
+  "c10-l2": {
+   "en": "Then they were asked: if one of you is lying, what should happen to him? The brothers said: whoever has the cup in his bag must stay behind. That is our own rule.",
+   "t": ""
+  },
+  "c10-lq": {
+   "en": "Whose rule was it, that the one with the cup must stay behind?",
+   "t": ""
+  },
+  "c10-lq-opt1": {
+   "en": "The brothers' own rule",
+   "t": ""
+  },
+  "c10-lq-opt2": {
+   "en": "The king of Egypt's rule",
+   "t": ""
+  },
+  "c10-lqwrong": {
+   "en": "Not the king's. Under the king's rule, Yusuf could not have kept his brother. The brothers chose the rule themselves.",
+   "t": ""
+  },
+  "c10-do": {
+   "en": "The king's cup is missing! Search the bags one by one, starting with the oldest brother's.",
+   "t": ""
+  },
+  "c10-nope": {
+   "en": "Not in this one.",
+   "t": ""
+  },
+  "c10-c": {
+   "en": "There it is, in his brother's bag! So his brother stayed in Egypt with Yusuf.",
+   "t": ""
+  },
+  "c11-v0": {
+   "en": "The brothers begged: please, take one of us instead! Our father is very old. But Yusuf said: we can only keep the one who had the cup.",
+   "t": ""
+  },
+  "c11-v": {
+   "en": "Then the eldest brother said: remember the promise we made to our father, and how we broke our promise about Yusuf. I will not leave this land until my father lets me. The rest of you, go home and tell him.",
+   "t": ""
+  },
+  "c11-a": {
+   "en": "The others went home and told their father what had happened. Yaqub said: it is best to be patient. Maybe Allah will bring them all back to me. But he missed Yusuf so much that his eyes turned white with grief.",
+   "t": ""
+  },
+  "c11-b": {
+   "en": "But Yaqub did not lose hope. He said: my sons, go and look for Yusuf and his brother. Never lose hope in Allah's mercy.",
+   "t": ""
+  },
+  "c11-c0": {
+   "en": "So the brothers went back to Egypt, and came before Yusuf once more. They said: hard times have hit our family, and we have brought very little. Please be kind to us.",
+   "t": ""
+  },
+  "c11-c": {
+   "en": "Then Yusuf asked them: do you know what you did to Yusuf and his brother? They cried: could it be that you are Yusuf? He said: I am Yusuf, and this is my brother. Allah has been good to us.",
+   "t": ""
+  },
+  "c11-e": {
+   "en": "The brothers hung their heads. They said: By Allah, Allah chose you over us, and we were in the wrong.",
+   "t": ""
+  },
+  "c11-do": {
+   "en": "The brothers said they were sorry. What did Yusuf do?",
+   "t": ""
+  },
+  "c11-do-opt1": {
+   "en": "He sent them away",
+   "t": ""
+  },
+  "c11-do-opt2": {
+   "en": "He forgave them",
+   "t": ""
+  },
+  "c11-wrong": {
+   "en": "No. Yusuf did something much more beautiful. Try again.",
+   "t": ""
+  },
+  "c11-d": {
+   "en": "Yusuf forgave them! He said: you will hear no blame today. May Allah forgive you. He is the Most Merciful of all.",
+   "t": ""
+  },
+  "c11-o1": {
+   "en": "Yaqub said: never lose hope.",
+   "t": ""
+  },
+  "c11-o2": {
+   "en": "Yusuf said: I am Yusuf.",
+   "t": ""
+  },
+  "c11-o3": {
+   "en": "The brothers said: we were in the wrong.",
+   "t": ""
+  },
+  "c11-o4": {
+   "en": "Yusuf forgave them.",
+   "t": ""
+  },
+  "c12-a": {
+   "en": "Yusuf gave them his shirt. He said: lay it over my father's face, and he will see again. Then bring your whole family to me.",
+   "t": ""
+  },
+  "c12-b": {
+   "en": "Far away, as the caravan set off, a wind began to blow. And Yaqub said: I can smell Yusuf!",
+   "t": ""
+  },
+  "c12-do": {
+   "en": "Drag the shirt along the path, or tap it, to carry the good news home.",
+   "t": ""
+  },
+  "c12-c": {
+   "en": "The shirt was laid on Yaqub's face, and he could see again! The brothers said: Father, ask Allah to forgive us. And he said: I will ask my Lord to forgive you.",
+   "t": ""
+  },
+  "c12-q": {
+   "en": "What happened when the shirt was laid on Yaqub's face?",
+   "t": ""
+  },
+  "c12-q-opt1": {
+   "en": "He fell asleep",
+   "t": ""
+  },
+  "c12-q-opt2": {
+   "en": "He could see again",
+   "t": ""
+  },
+  "c12-qwrong": {
+   "en": "No. Something wonderful happened: he could see again!",
+   "t": ""
+  },
+  "c13-a": {
+   "en": "The whole family came to Egypt. Yusuf held his parents close and said: welcome to Egypt. You will all be safe here, if Allah wills.",
+   "t": ""
+  },
+  "c13-do": {
+   "en": "Tap the stars, the sun and the moon, just like in the dream.",
+   "t": ""
+  },
+  "c13-b": {
+   "en": "Yusuf's parents and brothers all bowed down before him. Yusuf said: Father, this is what my dream meant, long ago. My Lord has made it come true.",
+   "t": ""
+  },
+  "c13-q": {
+   "en": "Look back at the dream. Who were the eleven stars?",
+   "t": ""
+  },
+  "c13-q-opt1": {
+   "en": "His eleven brothers",
+   "t": ""
+  },
+  "c13-q-opt2": {
+   "en": "Eleven camels",
+   "t": ""
+  },
+  "c13-qwrong": {
+   "en": "Think again. Who came to Egypt to bow before Yusuf?",
+   "t": ""
+  },
+  "c13-b0": {
+   "en": "Yes! The eleven stars were his eleven brothers, and the sun and the moon were his father and mother. The dream had come true.",
+   "t": ""
+  },
+  "c13-sort": {
+   "en": "What have we learned from Yusuf? For each one, tap: like Yusuf, or not like Yusuf.",
+   "t": ""
+  },
+  "c13-sort-bin1": {
+   "en": "Like Yusuf",
+   "t": ""
+  },
+  "c13-sort-bin2": {
+   "en": "Not like Yusuf",
+   "t": ""
+  },
+  "c13-sort-it1": {
+   "en": "Being patient",
+   "t": ""
+  },
+  "c13-sort-it2": {
+   "en": "Making up a story",
+   "t": ""
+  },
+  "c13-sort-it3": {
+   "en": "Telling the truth",
+   "t": ""
+  },
+  "c13-sort-it4": {
+   "en": "Staying angry",
+   "t": ""
+  },
+  "c13-sort-it5": {
+   "en": "Forgiving",
+   "t": ""
+  },
+  "c13-sort-it6": {
+   "en": "Trusting Allah",
+   "t": ""
+  },
+  "c13-swrong": {
+   "en": "Think about what Yusuf did.",
+   "t": ""
+  },
+  "c13-c": {
+   "en": "Then Yusuf prayed: My Lord, You are my protector in this world and the next. Let me die devoted to You, and join me with the righteous.",
+   "t": ""
+  },
+  "pz-do": {
+   "en": "This picture is all mixed up! Tap two pieces to swap them, until the picture is whole again.",
+   "t": ""
+  },
+  "mem-do": {
+   "en": "Find the pairs. Tap two cards. If they match, they stay.",
+   "t": ""
+  },
+  "end-a": {
+   "en": "The end. Yusuf was patient, he told the truth, and he forgave. What will you remember from his story?",
+   "t": ""
+  }
+ },
+ "strings": {
+  "The Dream": "",
+  "The Jealous Brothers": "",
+  "From a Shia narration (al-Qummi)": "",
+  "The stone: Ibn Kathir's tafsir": "",
+  "The untorn shirt: Ibn Kathir's tafsir": "",
+  "The brothers are jealous": "",
+  "Yusuf is put in the well": "",
+  "They show the shirt": "",
+  "Yaqub is patient": "",
+  "The Well": "",
+  "Far From Home": "",
+  "Twenty coins: Ibn Kathir's tafsir": "",
+  "Patience in Prison": "",
+  "The fruit: Ibn Kathir's tafsir": "",
+  "Yusuf runs for the door": "",
+  "His shirt is torn": "",
+  "Look at the shirt!": "",
+  "Patient in prison": "",
+  "Two Dreams": "",
+  "The King's Dream": "",
+  "fat cow": "",
+  "thin cow": "",
+  "7 good years": "",
+  "7 hard years": "",
+  "Truth and Trust": "",
+  "Yusuf asks for the truth": "",
+  "The king asks what happened": "",
+  "The woman tells the truth": "",
+  "The king trusts Yusuf": "",
+  "The Brothers Come": "",
+  "sack": "",
+  "The King's Cup": "",
+  "“I Am Yusuf”": "",
+  "Never lose hope": "",
+  "I am Yusuf": "",
+  "We were wrong": "",
+  "Yusuf forgives": "",
+  "The Shirt": "",
+  "The Dream Comes True": "",
+  "← Asmau": "",
+  "Yusuf": "",
+  "The Story of Yusuf": "",
+  "Thirteen chapters. Three or four things to do in every one.": "",
+  "Under 5: play it together with a grown-up": "",
+  "Start the story": "",
+  "Start from the beginning": "",
+  "For parents": "",
+  "Back": "",
+  "Next": "",
+  "All chapters": "",
+  "✕ Close": "",
+  "The End": "",
+  "Patience": "",
+  "Truth": "",
+  "Forgiveness": "",
+  "Read it again": "",
+  "Pick a chapter": "",
+  "Music": "",
+  "Sounds": "",
+  "Voice": "",
+  "His whole story in thirteen chapters, with three or four things to do in every one.": "",
+  "Yusuf as a boy, looking up at the stars, the sun and the moon.": ""
+ }
+}

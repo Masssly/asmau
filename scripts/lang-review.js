@@ -4,8 +4,8 @@
   each marked right or corrected. Published as a claude.ai artifact (it keeps the answers in the artifact's own
   store, or, without one, lets the checker copy them as text to send back).
     node scripts/lang-review.js <slug> <code> <out.html>
-  Afterwards Claude reads the answers back and puts the corrections into games/<slug>/lang/<code>.json and
-  shared/i18n/<code>.json; when every row is right, the translation's status becomes "checked".
+  Afterwards Claude reads the answers back and puts the corrections into lang/<code>/<slug>.json and
+  lang/<code>/site.json; when every row is right, the translation's status becomes "checked".
 */
 "use strict";
 const fs = require("fs"), path = require("path"), vm = require("vm"), crypto = require("crypto");
@@ -15,8 +15,10 @@ const [slug, code, out] = process.argv.slice(2);
 if (!out) { console.error("usage: node scripts/lang-review.js <slug> <code> <out.html>"); process.exit(2); }
 
 const dir = path.join(ROOT, "games", slug);
-const tr = JSON.parse(fs.readFileSync(path.join(dir, "lang", code + ".json"), "utf8"));
-const ui = JSON.parse(fs.readFileSync(path.join(ROOT, "shared", "i18n", code + ".json"), "utf8"));
+const LF = require("./lang-files.js");
+const tr = LF.read(LF.gameFile(code, slug));
+Object.keys(tr.lines || {}).forEach((id) => { tr.lines[id] = LF.lineText(tr.lines[id]); });
+const ui = LF.read(LF.siteFile(code)) || {};
 const lines = JSON.parse(fs.readFileSync(path.join(dir, "narration.json"), "utf8"));
 const game = JSON.parse(fs.readFileSync(path.join(dir, "game.json"), "utf8"));
 const box = { window: {} };

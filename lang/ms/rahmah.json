@@ -1,0 +1,493 @@
+{
+ "status": "draft",
+ "_note": "Bahasa Melayu, drafted 21 November 2026, to be checked by a native speaker. Seen only with ?lang=ms until then.",
+ "lines": {
+  "r1-a": {
+   "en": "Long ago, in the year 1900, a baby girl was born in Padang Panjang, a town in the green mountains of West Sumatra, in what is now Indonesia. Her name was Rahmah.",
+   "t": "Pada zaman dahulu, pada tahun 1900, seorang bayi perempuan dilahirkan di Padang Panjang, sebuah pekan di pergunungan hijau Sumatera Barat, di negara yang kini bernama Indonesia. Namanya Rahmah."
+  },
+  "r1-b": {
+   "en": "Her family loved learning. Her father was a judge, and her grandfather was a scholar who studied the stars.",
+   "t": "Keluarganya cintakan ilmu. Ayahnya seorang hakim, dan datuknya seorang ulama yang mengkaji bintang-bintang."
+  },
+  "r1-c": {
+   "en": "Her people, the Minangkabau, build beautiful houses with roofs that curve up like the horns of a buffalo.",
+   "t": "Kaumnya, orang Minangkabau, membina rumah-rumah yang indah dengan bumbung yang melengkung ke atas seperti tanduk kerbau."
+  },
+  "r1-home": {
+   "en": "Find the pairs! Things of her home in the mountains.",
+   "t": "Cari pasangannya! Benda-benda dari kampung halamannya di pergunungan."
+  },
+  "r1-q": {
+   "en": "Where was Rahmah born?",
+   "t": "Di manakah Rahmah dilahirkan?"
+  },
+  "r1-q-opt1": {
+   "en": "In the mountains of Sumatra",
+   "t": "Di pergunungan Sumatera"
+  },
+  "r1-q-opt2": {
+   "en": "In a big desert",
+   "t": "Di sebuah padang pasir yang luas"
+  },
+  "r1-q-no": {
+   "en": "She was born in Padang Panjang, in the green mountains of West Sumatra.",
+   "t": "Dia dilahirkan di Padang Panjang, di pergunungan hijau Sumatera Barat."
+  },
+  "r2-a": {
+   "en": "When Rahmah was six years old, her father died. She missed him very much.",
+   "t": "Apabila Rahmah berumur enam tahun, ayahnya meninggal dunia. Dia sangat merindui ayahnya."
+  },
+  "r2-b": {
+   "en": "But her father's students came to teach her. She learned to read and write, in Arabic letters and in Latin letters too.",
+   "t": "Tetapi murid-murid ayahnya datang untuk mengajarnya. Dia belajar membaca dan menulis, dalam huruf Jawi dan juga huruf Rumi."
+  },
+  "r2-books": {
+   "en": "Count the books she read! Tap each one.",
+   "t": "Kira buku-buku yang dibacanya! Ketik setiap satu."
+  },
+  "r2-c": {
+   "en": "Rahmah also learned how to help mothers when their babies are born.",
+   "t": "Rahmah juga belajar cara membantu para ibu ketika bayi mereka dilahirkan."
+  },
+  "r2-q": {
+   "en": "Who taught Rahmah after her father died?",
+   "t": "Siapakah yang mengajar Rahmah selepas ayahnya meninggal dunia?"
+  },
+  "r2-q-opt1": {
+   "en": "Nobody at all",
+   "t": "Tiada sesiapa pun"
+  },
+  "r2-q-opt2": {
+   "en": "Her father's students",
+   "t": "Murid-murid ayahnya"
+  },
+  "r2-q-no": {
+   "en": "Her father's students came and taught her to read and write.",
+   "t": "Murid-murid ayahnya datang dan mengajarnya membaca dan menulis."
+  },
+  "r3-a": {
+   "en": "When Rahmah was still very young, her family arranged for her to marry, and she had to leave school.",
+   "t": "Ketika Rahmah masih sangat muda, keluarganya mengahwinkannya, dan dia terpaksa berhenti sekolah."
+  },
+  "r3-b": {
+   "en": "But Rahmah did not stop learning. She joined study circles, where women sat together in the evening to learn about Islam.",
+   "t": "Tetapi Rahmah tidak berhenti belajar. Dia menyertai majlis ilmu, tempat kaum wanita duduk bersama pada waktu petang untuk belajar tentang Islam."
+  },
+  "r3-learn": {
+   "en": "Keep learning, like Rahmah. Press and hold.",
+   "t": "Teruskan belajar, seperti Rahmah. Tekan dan tahan."
+  },
+  "r3-c": {
+   "en": "A few years later, she went back to school.",
+   "t": "Beberapa tahun kemudian, dia kembali ke sekolah."
+  },
+  "r3-q": {
+   "en": "What did Rahmah do when she had to leave school?",
+   "t": "Apakah yang Rahmah lakukan apabila dia terpaksa berhenti sekolah?"
+  },
+  "r3-q-opt1": {
+   "en": "She kept learning",
+   "t": "Dia terus belajar"
+  },
+  "r3-q-opt2": {
+   "en": "She stopped learning",
+   "t": "Dia berhenti belajar"
+  },
+  "r3-q-no": {
+   "en": "She kept learning, in study circles, until she could go back to school.",
+   "t": "Dia terus belajar, dalam majlis ilmu, sehingga dia dapat kembali ke sekolah."
+  },
+  "r4-a": {
+   "en": "Rahmah's big brother, Zainuddin, had started a school called Diniyah. Rahmah went back there to study.",
+   "t": "Abang Rahmah, Zainuddin, telah membuka sebuah sekolah bernama Diniyah. Rahmah kembali ke sana untuk belajar."
+  },
+  "r4-b": {
+   "en": "After class, she gathered the girls together, to study more.",
+   "t": "Selepas kelas, dia mengumpulkan anak-anak perempuan, untuk belajar lagi."
+  },
+  "r4-girls": {
+   "en": "Count the girls in her study circle. Tap each one.",
+   "t": "Kira anak-anak perempuan dalam kumpulan belajarnya. Ketik setiap seorang."
+  },
+  "r4-c": {
+   "en": "Rahmah saw that girls needed a school of their own, where they could learn everything, and feel at home.",
+   "t": "Rahmah melihat bahawa anak-anak perempuan memerlukan sekolah mereka sendiri, tempat mereka boleh mempelajari segala-galanya, dan berasa seperti di rumah sendiri."
+  },
+  "r4-q": {
+   "en": "What did Rahmah want for girls?",
+   "t": "Apakah yang Rahmah mahukan untuk anak-anak perempuan?"
+  },
+  "r4-q-opt1": {
+   "en": "No school at all",
+   "t": "Tiada sekolah langsung"
+  },
+  "r4-q-opt2": {
+   "en": "A school of their own",
+   "t": "Sekolah mereka sendiri"
+  },
+  "r4-q-no": {
+   "en": "She wanted girls to have a school of their own.",
+   "t": "Dia mahu anak-anak perempuan mempunyai sekolah mereka sendiri."
+  },
+  "r5-a": {
+   "en": "On the first of November, 1923, Rahmah opened a school just for girls. She called it Diniyah Putri.",
+   "t": "Pada satu November 1923, Rahmah membuka sebuah sekolah khas untuk anak-anak perempuan. Dia menamakannya Diniyah Puteri."
+  },
+  "r5-b": {
+   "en": "At first there was no school building. Lessons were in a mosque, and Rahmah was the main teacher.",
+   "t": "Pada mulanya tiada bangunan sekolah. Kelas diadakan di sebuah masjid, dan Rahmah ialah guru utamanya."
+  },
+  "r5-c": {
+   "en": "The first students were seventy-one women and girls. Many of them were young mothers.",
+   "t": "Pelajar-pelajar pertamanya ialah tujuh puluh satu orang wanita dan anak perempuan. Ramai daripada mereka ialah ibu-ibu muda."
+  },
+  "r5-lessons": {
+   "en": "What did they learn at Diniyah Putri? Sort them.",
+   "t": "Apakah yang mereka pelajari di Diniyah Puteri? Asingkan."
+  },
+  "r5-lessons-bin1": {
+   "en": "They learned it",
+   "t": "Mereka mempelajarinya"
+  },
+  "r5-lessons-bin2": {
+   "en": "Not on the list",
+   "t": "Tiada dalam senarai"
+  },
+  "r5-lessons-it1": {
+   "en": "The Qur'an and Islam",
+   "t": "Al-Quran dan Islam"
+  },
+  "r5-lessons-it2": {
+   "en": "Video games",
+   "t": "Permainan video"
+  },
+  "r5-lessons-it3": {
+   "en": "Arabic",
+   "t": "Bahasa Arab"
+  },
+  "r5-lessons-it4": {
+   "en": "Sewing and crafts",
+   "t": "Menjahit dan kraf tangan"
+  },
+  "r5-lessons-it5": {
+   "en": "Magic tricks",
+   "t": "Silap mata"
+  },
+  "r5-lessons-it6": {
+   "en": "Skateboarding",
+   "t": "Bermain papan selaju"
+  },
+  "r5-lessons-no": {
+   "en": "Think again. Was that taught in 1923?",
+   "t": "Fikir sekali lagi. Adakah itu diajar pada tahun 1923?"
+  },
+  "r5-q": {
+   "en": "Where were the very first lessons?",
+   "t": "Di manakah kelas yang paling pertama?"
+  },
+  "r5-q-opt1": {
+   "en": "In a mosque",
+   "t": "Di sebuah masjid"
+  },
+  "r5-q-opt2": {
+   "en": "In a palace",
+   "t": "Di sebuah istana"
+  },
+  "r5-q-no": {
+   "en": "The first lessons were in a mosque.",
+   "t": "Kelas pertama diadakan di sebuah masjid."
+  },
+  "r6-a": {
+   "en": "Not everyone liked the new school. Some people said that girls did not need to go to school.",
+   "t": "Bukan semua orang suka akan sekolah baharu itu. Ada orang yang berkata anak-anak perempuan tidak perlu pergi ke sekolah."
+  },
+  "r6-b": {
+   "en": "Rahmah talked kindly with the scholars of her town, and showed them that Islam honours learning, for girls as well as boys.",
+   "t": "Rahmah berbincang dengan baik bersama para ulama di pekannya, dan menunjukkan kepada mereka bahawa Islam memuliakan ilmu, untuk anak perempuan dan juga anak lelaki."
+  },
+  "r6-c": {
+   "en": "Then, in 1924, her brother Zainuddin died. Many thought the school would close. But Rahmah kept going.",
+   "t": "Kemudian, pada tahun 1924, abangnya Zainuddin meninggal dunia. Ramai yang menyangka sekolah itu akan ditutup. Tetapi Rahmah terus berusaha."
+  },
+  "r6-going": {
+   "en": "When something is hard: keep going, or give up?",
+   "t": "Apabila sesuatu itu susah: teruskan, atau berputus asa?"
+  },
+  "r6-going-bin1": {
+   "en": "Keep going",
+   "t": "Teruskan"
+  },
+  "r6-going-bin2": {
+   "en": "Give up",
+   "t": "Berputus asa"
+  },
+  "r6-going-it1": {
+   "en": "Try again tomorrow",
+   "t": "Cuba lagi esok"
+  },
+  "r6-going-it2": {
+   "en": "Throw it away",
+   "t": "Membuangnya"
+  },
+  "r6-going-it3": {
+   "en": "Ask for help",
+   "t": "Meminta bantuan"
+  },
+  "r6-going-it4": {
+   "en": "Go slowly but steadily",
+   "t": "Perlahan-lahan tetapi berterusan"
+  },
+  "r6-going-it5": {
+   "en": "Stop at the first mistake",
+   "t": "Berhenti pada kesilapan pertama"
+  },
+  "r6-going-it6": {
+   "en": "Say: I can't do it",
+   "t": "Berkata: aku tidak boleh"
+  },
+  "r6-going-no": {
+   "en": "Think again. Is that keeping going, or giving up?",
+   "t": "Fikir sekali lagi. Adakah itu meneruskan, atau berputus asa?"
+  },
+  "r6-q": {
+   "en": "What did Rahmah do when things were hard?",
+   "t": "Apakah yang Rahmah lakukan apabila keadaan menjadi susah?"
+  },
+  "r6-q-opt1": {
+   "en": "She gave up",
+   "t": "Dia berputus asa"
+  },
+  "r6-q-opt2": {
+   "en": "She kept going",
+   "t": "Dia terus berusaha"
+  },
+  "r6-q-no": {
+   "en": "She kept going, and the school did not close.",
+   "t": "Dia terus berusaha, dan sekolah itu tidak ditutup."
+  },
+  "r7-a": {
+   "en": "In 1926, a big earthquake shook Padang Panjang, and the school building fell down.",
+   "t": "Pada tahun 1926, satu gempa bumi yang besar menggegarkan Padang Panjang, dan bangunan sekolah itu runtuh."
+  },
+  "r7-b": {
+   "en": "But the lessons did not stop. For years, the girls learned in simple shelters.",
+   "t": "Tetapi kelas tidak berhenti. Bertahun-tahun lamanya, anak-anak perempuan itu belajar di pondok-pondok yang sederhana."
+  },
+  "r7-c": {
+   "en": "Rahmah travelled to many towns and islands, to collect money for a new school.",
+   "t": "Rahmah mengembara ke banyak pekan dan pulau, untuk mengumpul wang bagi sebuah sekolah baharu."
+  },
+  "r7-travel": {
+   "en": "Help Rahmah travel to collect money for the school.",
+   "t": "Bantu Rahmah mengembara untuk mengumpul wang bagi sekolah itu."
+  },
+  "r7-d": {
+   "en": "In 1928, the new school opened!",
+   "t": "Pada tahun 1928, sekolah baharu itu dibuka!"
+  },
+  "r7-bricks": {
+   "en": "Build the new school. Tap to place every brick.",
+   "t": "Binalah sekolah baharu itu. Ketik untuk meletakkan setiap bata."
+  },
+  "r8-a": {
+   "en": "In those days the land was ruled by the Dutch, and their government paid money to some schools. But Rahmah would not take it: she wanted her school to be free to teach in its own way.",
+   "t": "Pada masa itu negeri tersebut diperintah oleh Belanda, dan kerajaan mereka memberi wang kepada sesetengah sekolah. Tetapi Rahmah tidak mahu menerimanya: dia mahu sekolahnya bebas mengajar mengikut caranya sendiri."
+  },
+  "r8-b": {
+   "en": "The school grew and grew. Soon about five hundred girls were learning there.",
+   "t": "Sekolah itu semakin berkembang. Tidak lama kemudian kira-kira lima ratus anak perempuan belajar di sana."
+  },
+  "r8-c": {
+   "en": "She also opened a college to train women to be teachers.",
+   "t": "Dia juga membuka sebuah maktab untuk melatih wanita menjadi guru."
+  },
+  "r8-teacher": {
+   "en": "What does a good teacher do? Sort them.",
+   "t": "Apakah yang dilakukan oleh seorang guru yang baik? Asingkan."
+  },
+  "r8-teacher-bin1": {
+   "en": "A good teacher",
+   "t": "Guru yang baik"
+  },
+  "r8-teacher-bin2": {
+   "en": "Not a good teacher",
+   "t": "Bukan guru yang baik"
+  },
+  "r8-teacher-it1": {
+   "en": "Listens to every child",
+   "t": "Mendengar setiap kanak-kanak"
+  },
+  "r8-teacher-it2": {
+   "en": "Laughs at mistakes",
+   "t": "Mentertawakan kesilapan"
+  },
+  "r8-teacher-it3": {
+   "en": "Explains again, kindly",
+   "t": "Menerangkan semula, dengan lembut"
+  },
+  "r8-teacher-it4": {
+   "en": "Shouts all the time",
+   "t": "Menjerit sepanjang masa"
+  },
+  "r8-teacher-it5": {
+   "en": "Is patient",
+   "t": "Penyabar"
+  },
+  "r8-teacher-it6": {
+   "en": "Helps only some children",
+   "t": "Membantu sesetengah kanak-kanak sahaja"
+  },
+  "r8-teacher-no": {
+   "en": "Think again. Would a good teacher do that?",
+   "t": "Fikir sekali lagi. Adakah guru yang baik akan melakukan itu?"
+  },
+  "r9-a": {
+   "en": "For many years, Indonesia was ruled by others. Then, in 1945, Indonesia became free.",
+   "t": "Bertahun-tahun lamanya, Indonesia diperintah oleh orang lain. Kemudian, pada tahun 1945, Indonesia merdeka."
+  },
+  "r9-b": {
+   "en": "When Rahmah heard the news, she raised the red and white flag of Indonesia in the school yard.",
+   "t": "Apabila Rahmah mendengar berita itu, dia mengibarkan bendera merah putih Indonesia di halaman sekolah."
+  },
+  "r9-flag": {
+   "en": "Raise the flag! Press and hold.",
+   "t": "Kibarkan bendera itu! Tekan dan tahan."
+  },
+  "r9-q": {
+   "en": "What colours are on Indonesia's flag?",
+   "t": "Apakah warna bendera Indonesia?"
+  },
+  "r9-q-opt1": {
+   "en": "Red and white",
+   "t": "Merah dan putih"
+  },
+  "r9-q-opt2": {
+   "en": "Blue and yellow",
+   "t": "Biru dan kuning"
+  },
+  "r9-q-no": {
+   "en": "Indonesia's flag is red and white.",
+   "t": "Bendera Indonesia berwarna merah dan putih."
+  },
+  "r10-a": {
+   "en": "Years later, the head of al-Azhar, a great old university in Egypt, came all the way to visit her school.",
+   "t": "Bertahun-tahun kemudian, ketua al-Azhar, sebuah universiti lama yang terkenal di Mesir, datang dari jauh untuk melawat sekolahnya."
+  },
+  "r10-b": {
+   "en": "Then Rahmah went on Hajj to Makkah.",
+   "t": "Kemudian Rahmah menunaikan haji ke Makkah."
+  },
+  "r10-cairo": {
+   "en": "Help Rahmah travel to Makkah, and then to Cairo.",
+   "t": "Bantu Rahmah mengembara ke Makkah, dan kemudian ke Kaherah."
+  },
+  "r10-c": {
+   "en": "In Cairo, the teachers of al-Azhar gave her the title Syaikhah: a great scholar. No woman had ever been given it before.",
+   "t": "Di Kaherah, para guru al-Azhar menganugerahkan gelaran Syaikhah kepadanya: seorang ulama yang hebat. Belum pernah ada wanita yang menerimanya sebelum itu."
+  },
+  "r10-d": {
+   "en": "After that, girls from her school could go to study at al-Azhar too.",
+   "t": "Selepas itu, anak-anak perempuan dari sekolahnya juga boleh pergi belajar di al-Azhar."
+  },
+  "r10-q": {
+   "en": "What title did al-Azhar give Rahmah?",
+   "t": "Apakah gelaran yang al-Azhar berikan kepada Rahmah?"
+  },
+  "r10-q-opt1": {
+   "en": "Queen",
+   "t": "Permaisuri"
+  },
+  "r10-q-opt2": {
+   "en": "Syaikhah: a great scholar",
+   "t": "Syaikhah: seorang ulama yang hebat"
+  },
+  "r10-q-no": {
+   "en": "Al-Azhar called her Syaikhah, a great scholar. No woman had been given it before.",
+   "t": "Al-Azhar menggelarnya Syaikhah, seorang ulama yang hebat. Belum pernah ada wanita yang menerimanya sebelum itu."
+  },
+  "r11-a": {
+   "en": "Rahmah never stopped working. In 1967, a university for women, which she had worked for, was opened.",
+   "t": "Rahmah tidak pernah berhenti bekerja. Pada tahun 1967, sebuah universiti untuk wanita, yang diusahakannya, dibuka."
+  },
+  "r11-b": {
+   "en": "Rahmah died in 1969, in Padang Panjang, where she was born. May Allah have mercy on her.",
+   "t": "Rahmah meninggal dunia pada tahun 1969, di Padang Panjang, tempat dia dilahirkan. Semoga Allah merahmatinya."
+  },
+  "r11-c": {
+   "en": "Her school is still open today, full of girls learning.",
+   "t": "Sekolahnya masih dibuka hingga hari ini, penuh dengan anak-anak perempuan yang belajar."
+  },
+  "r11-d": {
+   "en": "And in 2025, Indonesia named her a National Hero.",
+   "t": "Dan pada tahun 2025, Indonesia mengisytiharkannya sebagai Pahlawan Nasional."
+  },
+  "r11-story": {
+   "en": "Tell Rahmah's story. Tap in order.",
+   "t": "Ceritakan kisah Rahmah. Ketik mengikut urutan."
+  },
+  "r11-story-c1": {
+   "en": "First, Rahmah was born in the mountains of Sumatra.",
+   "t": "Pertama, Rahmah dilahirkan di pergunungan Sumatera."
+  },
+  "r11-story-c2": {
+   "en": "She learned to read and write.",
+   "t": "Dia belajar membaca dan menulis."
+  },
+  "r11-story-c3": {
+   "en": "She opened a school for girls.",
+   "t": "Dia membuka sebuah sekolah untuk anak-anak perempuan."
+  },
+  "r11-story-c4": {
+   "en": "An earthquake knocked it down, and she built it again.",
+   "t": "Gempa bumi meruntuhkannya, dan dia membinanya semula."
+  },
+  "r11-story-c5": {
+   "en": "She raised Indonesia's flag at the school.",
+   "t": "Dia mengibarkan bendera Indonesia di sekolah itu."
+  },
+  "r11-story-c6": {
+   "en": "And al-Azhar called her Syaikhah.",
+   "t": "Dan al-Azhar menggelarnya Syaikhah."
+  },
+  "r11-story-no": {
+   "en": "Listen again, and tell it in order.",
+   "t": "Dengar sekali lagi, dan ceritakan mengikut urutan."
+  },
+  "end-a": {
+   "en": "This is the story of Rahmah El Yunusiyyah, who opened a school for girls when many people said girls did not need one, and never gave up. Her school is still open today.",
+   "t": "Inilah kisah Rahmah El Yunusiyyah, yang membuka sebuah sekolah untuk anak-anak perempuan ketika ramai orang berkata anak perempuan tidak memerlukannya, dan dia tidak pernah berputus asa. Sekolahnya masih dibuka hingga hari ini."
+  }
+ },
+ "strings": {
+  "A Girl in the Mountains": "Seorang Gadis di Pergunungan",
+  "Histories of her life (see the notes)": "Sejarah hidupnya (lihat nota)",
+  "From the histories of her life": "Daripada sejarah hidupnya",
+  "Learning to Read": "Belajar Membaca",
+  "No More School": "Tidak Bersekolah Lagi",
+  "Never stop learning": "Jangan berhenti belajar",
+  "Back to School": "Kembali ke Sekolah",
+  "A School for Girls": "Sekolah untuk Anak Perempuan",
+  "Not Everyone Agreed": "Bukan Semua Orang Bersetuju",
+  "The Earthquake": "Gempa Bumi",
+  "On Her Own Feet": "Berdiri di Atas Kaki Sendiri",
+  "A New Flag": "Bendera Baharu",
+  "The flag is flying!": "Bendera berkibar!",
+  "To Cairo": "Ke Kaherah",
+  "Her School Today": "Sekolahnya Hari Ini",
+  "Born in the mountains": "Lahir di pergunungan",
+  "She learned to read": "Dia belajar membaca",
+  "A school for girls": "Sekolah untuk anak perempuan",
+  "The earthquake": "Gempa bumi",
+  "The new flag": "Bendera baharu",
+  "Al-Azhar": "Al-Azhar",
+  "Rahmah El Yunusiyyah": "Rahmah El Yunusiyyah",
+  "The Story of Rahmah El Yunusiyyah": "Kisah Rahmah El Yunusiyyah",
+  "Eleven chapters about the girl who opened a school for girls. Play a little every day.": "Sebelas bab tentang gadis yang membuka sekolah untuk anak-anak perempuan. Mainkan sedikit setiap hari.",
+  "Learning": "Belajar",
+  "Never giving up": "Tidak berputus asa",
+  "Courage": "Keberanian",
+  "The girl from the mountains of Sumatra who opened a school for girls in 1923, never gave up, and was honoured by al-Azhar.": "Gadis dari pergunungan Sumatera yang membuka sekolah untuk anak-anak perempuan pada tahun 1923, tidak pernah berputus asa, dan dimuliakan oleh al-Azhar.",
+  "Rahmah welcomes girls arriving with their books at a mosque in the mountains of West Sumatra.": "Rahmah menyambut anak-anak perempuan yang tiba dengan buku mereka di sebuah masjid di pergunungan Sumatera Barat."
+ }
+}

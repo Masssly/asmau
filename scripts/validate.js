@@ -96,8 +96,24 @@ for (const s of sections) {
 
 let musicMoods = [], ambNames = [], sfxNames = [];
 let LANG_NAMES = {};
+const LF = require("./lang-files.js"), { needs } = require("./lang-strings.js");
 try { LANG_NAMES = /names:\s*(\{[^}]*\})/.exec(read("shared/lang.js"))[1].replace(/(\w+):/g, '"$1":'); LANG_NAMES = JSON.parse(LANG_NAMES); } catch (e) { fail("shared/lang.js: could not read AsmauLang.names"); }
 try { const m = load(["shared/music.js"]).AsmauMusic; musicMoods = m.moodNames; ambNames = m.ambNames; sfxNames = m.sfxNames; } catch (e) { fail("shared/music.js: failed to load (" + e.message + ")"); }
+
+// the translations' folders (lang/README.md): one per language in shared/lang.js, its site.json, and a file per game
+for (const code of LF.codes()) {
+  const d = "lang/" + code;
+  if (!LANG_NAMES[code]) fail(d + ": '" + code + "' is not in the languages of shared/lang.js (AsmauLang.names)");
+  const site = json(d + "/site.json");
+  if (!site) fail(d + "/site.json: missing (the words on every page)");
+  else if (site.status !== "draft" && site.status !== "checked") fail(d + "/site.json: status must be \"draft\" or \"checked\"");
+  for (const f of fs.readdirSync(path.join(ROOT, d))) {
+    if (f === "site.json" || f === "README.md") continue;
+    if (!/\.json$/.test(f)) { fail(d + "/" + f + ": only <game>.json files and site.json belong here"); continue; }
+    if (!slugs.includes(f.slice(0, -5))) fail(d + "/" + f + ": no game called '" + f.slice(0, -5) + "' in manifest.json");
+    else { const t = json(d + "/" + f); if (t && t.status === "checked" && site && site.status !== "checked") fail(d + "/" + f + ": checked, but " + d + "/site.json is still a draft"); }
+  }
+}
 
 for (const slug of slugs) {
   const dir = "games/" + slug;
@@ -128,6 +144,7 @@ for (const slug of slugs) {
   if (!exists(narrationFile)) { warn(narrationFile + ": none (the game is silent)"); continue; }
   const lines = json(narrationFile) || [];
   const ids = new Set();
+  const byId = Object.fromEntries(lines.filter((l) => l && l.id).map((l) => [l.id, l]));
   const audioDir = dir + "/assets/audio";
   const audio = filesIn(audioDir);
   for (const l of lines) {
@@ -153,34 +170,32 @@ for (const slug of slugs) {
   if (noMan.length) fail(manDir + ": " + noMan.length + " lines have no clip in the man's voice (VOICE=m PROJECT=asmau-assets python3 scripts/generate-voice-gemini.py " + dir + "), e.g. " + noMan.slice(0, 3).join(", "));
   for (const f of man) if (!ids.has(f.replace(/\.mp3$/, ""))) fail(manDir + "/" + f + ": no line in narration.json (orphaned audio)");
 
-  // translations (shared/lang.js): games/<slug>/lang/<code>.json. A draft may be incomplete; a "checked" one (shown to
-  // families) must have every line, label and title; its voices are optional.
-  if (fs.existsSync(path.join(ROOT, dir, "lang"))) {
-    const { needs } = require("./lang-strings.js");
-    for (const f of fs.readdirSync(path.join(ROOT, dir, "lang"))) {
-      const lf = dir + "/lang/" + f, code = f.replace(/\.json$/, "");
-      if (!/^[a-z]{2,3}\.json$/.test(f)) { fail(lf + ": a translation is named by its language code, e.g. id.json"); continue; }
-      const t = json(lf); if (!t) continue;
-      if (!LANG_NAMES[code]) fail(lf + ": '" + code + "' is not in the languages of shared/lang.js (AsmauLang.names)");
-      if (!exists("shared/i18n/" + code + ".json")) fail(lf + ": shared/i18n/" + code + ".json (the buttons and labels) is missing");
-      if (t.status !== "draft" && t.status !== "checked") fail(lf + ": status must be \"draft\" or \"checked\" (checked by a native speaker)");
-      for (const id of Object.keys(t.lines || {})) if (!ids.has(id)) fail(lf + ": line '" + id + "' is not in narration.json");
-      // its computer voices ("voices": ["w", "m"], one of them, or none): a translation may go live without any
-      // (owner, 21 November 2026); a voice it lists must read every line
-      if (t.voices !== undefined && (!Array.isArray(t.voices) || t.voices.some((v) => v !== "w" && v !== "m"))) fail(lf + ": voices must be a list of \"w\" (Aunty Salma) and/or \"m\" (Uncle Sani)");
-      for (const v of Array.isArray(t.voices) ? t.voices : []) {
-        const ad = dir + "/assets/audio-" + code + (v === "m" ? "-m" : ""), have = filesIn(ad);
-        const miss = lines.filter((l) => l && l.id && l.lang !== "ar" && !have.includes(l.id + ".mp3")).map((l) => l.id);
-        if (miss.length) fail(ad + ": voices lists \"" + v + "\", but " + miss.length + " lines have no clip (STORY_LANG=" + code + (v === "m" ? " VOICE=m" : "") + " PROJECT=asmau-assets python3 scripts/generate-voice-gemini.py " + dir + ")");
-      }
-      if (t.status !== "checked") continue;
-      const n = needs(slug), shared = json("shared/i18n/" + code + ".json") || {};
-      const pats = Object.keys(shared).filter((k) => k.startsWith("re:")).map((k) => new RegExp(k.slice(3)));
-      const noLine = n.lines.filter((id) => !(t.lines || {})[id]);
-      const noStr = n.strings.filter((x) => !(t.strings || {})[x] && !shared[x] && !pats.some((r) => r.test(x)));
-      if (noLine.length + noStr.length) fail(lf + ": checked, but " + noLine.length + " lines and " + noStr.length + " labels are not translated (node scripts/lang-strings.js " + slug + " " + code + ")");
-
+  // translations (shared/lang.js, lang/README.md): lang/<code>/<slug>.json. A draft may be incomplete; a "checked" one
+  // (shown to families) must have every line, label and title; its voices are optional.
+  for (const code of LF.langsOfGame(slug)) {
+    const lf = LF.rel(LF.gameFile(code, slug)), t = json(lf); if (!t) continue;
+    if (t.status !== "draft" && t.status !== "checked") fail(lf + ": status must be \"draft\" or \"checked\" (checked by a native speaker)");
+    for (const [id, v] of Object.entries(t.lines || {})) {
+      if (!ids.has(id)) { fail(lf + ": line '" + id + "' is not in narration.json"); continue; }
+      if (v !== null && typeof v === "object" && typeof v.t !== "string") fail(lf + ": line '" + id + "' needs \"t\", its translation (\"\" until it is written)");
     }
+    // a line translated from English that has changed since: it may need a new translation
+    const stale = Object.entries(t.lines || {}).filter(([id, v]) => v && typeof v === "object" && v.en && byId[id] && v.en !== byId[id].text).map(([id]) => id);
+    if (stale.length) warn(lf + ": the English of " + stale.length + " lines changed since they were translated (node scripts/lang-strings.js " + slug + " " + code + "), e.g. " + stale.slice(0, 3).join(", "));
+    // its computer voices ("voices": ["w", "m"], one of them, or none): a translation may go live without any
+    // (owner, 21 November 2026); a voice it lists must read every line
+    if (t.voices !== undefined && (!Array.isArray(t.voices) || t.voices.some((v) => v !== "w" && v !== "m"))) fail(lf + ": voices must be a list of \"w\" (Aunty Salma) and/or \"m\" (Uncle Sani)");
+    for (const v of Array.isArray(t.voices) ? t.voices : []) {
+      const ad = dir + "/assets/audio-" + code + (v === "m" ? "-m" : ""), have = filesIn(ad);
+      const miss = lines.filter((l) => l && l.id && l.lang !== "ar" && !have.includes(l.id + ".mp3")).map((l) => l.id);
+      if (miss.length) fail(ad + ": " + lf + " lists the voice \"" + v + "\", but " + miss.length + " lines have no clip (STORY_LANG=" + code + (v === "m" ? " VOICE=m" : "") + " PROJECT=asmau-assets python3 scripts/generate-voice-gemini.py " + dir + ")");
+    }
+    if (t.status !== "checked") continue;
+    const n = needs(slug), shared = json(LF.rel(LF.siteFile(code))) || {};
+    const pats = Object.keys(shared).filter((k) => k.startsWith("re:")).map((k) => new RegExp(k.slice(3)));
+    const noLine = n.lines.filter((id) => !LF.lineText((t.lines || {})[id]));
+    const noStr = n.strings.filter((x) => !(t.strings || {})[x] && !shared[x] && !pats.some((r) => r.test(x)));
+    if (noLine.length + noStr.length) fail(lf + ": checked, but " + noLine.length + " lines and " + noStr.length + " labels are not translated (node scripts/lang-strings.js " + slug + " " + code + ")");
   }
 
   /* ---------- a story, if the game has one ---------- */
@@ -366,7 +381,8 @@ if (exists("version.json")) {
 /* ---------- offline ---------- */
 if (exists("sw.js")) {
   const r = offline.isCurrent();
-  if (!r.current) fail("sw.js: out of date. Run: node scripts/build-offline.js");
+  // a pull request (--pull-request) is not asked to rebuild the offline lists: the next release does (lang/README.md)
+  if (!r.current) (process.argv.includes("--pull-request") ? warn : fail)("sw.js: out of date. Run: node scripts/build-offline.js");
 } else {
   fail("sw.js: missing");
 }

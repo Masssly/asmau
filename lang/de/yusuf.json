@@ -1,0 +1,820 @@
+{
+ "status": "checked",
+ "_note": "Deutsch, drafted 21 November 2026. A native speaker read a sample and the owner approved it for families on 21 November 2026; not every line has been checked yet. No computer voice in German yet.",
+ "lines": {
+  "c1-a": {
+   "en": "One night, young Yusuf had a wonderful dream. He saw eleven stars, the sun and the moon, all bowing down to him.",
+   "t": "Eines Nachts hatte der junge Yusuf einen wunderbaren Traum. Er sah elf Sterne, die Sonne und den Mond, und alle verneigten sich vor ihm."
+  },
+  "c1-do": {
+   "en": "Tap every star, the sun and the moon, and watch them bow.",
+   "t": "Tippe auf jeden Stern, die Sonne und den Mond, und schau, wie sie sich verneigen."
+  },
+  "c1-b": {
+   "en": "Yusuf told his father, Yaqub. His father said: my son, do not tell your brothers about this dream. Allah will choose you, and teach you the meaning of dreams.",
+   "t": "Yusuf erzählte es seinem Vater Yaqub. Sein Vater sagte: Mein Sohn, erzähle deinen Brüdern nichts von diesem Traum. Allah wird dich erwählen und dich lehren, was Träume bedeuten."
+  },
+  "c1-q": {
+   "en": "What did his father Yaqub tell Yusuf to do about the dream?",
+   "t": "Was sollte Yusuf mit dem Traum tun, sagte sein Vater Yaqub?"
+  },
+  "c1-q-opt1": {
+   "en": "Tell all his brothers",
+   "t": "Allen Brüdern davon erzählen"
+  },
+  "c1-q-opt2": {
+   "en": "Keep it from his brothers",
+   "t": "Ihn vor den Brüdern geheim halten"
+  },
+  "c1-qwrong": {
+   "en": "Not quite. His father said: do not tell your brothers.",
+   "t": "Nicht ganz. Sein Vater sagte: Erzähle deinen Brüdern nichts davon."
+  },
+  "c2-0": {
+   "en": "Yusuf had eleven brothers. Ten were older than him, and one was his little brother. Their father loved Yusuf and his little brother very dearly.",
+   "t": "Yusuf hatte elf Brüder. Zehn waren älter als er, und einer war sein kleiner Bruder. Ihr Vater hatte Yusuf und seinen kleinen Bruder sehr lieb."
+  },
+  "c2-a0": {
+   "en": "Yusuf's brothers were jealous. They said: our father loves Yusuf and his little brother more than us! So they made a bad plan.",
+   "t": "Yusufs Brüder waren eifersüchtig. Sie sagten: Unser Vater liebt Yusuf und seinen kleinen Bruder mehr als uns! Und so schmiedeten sie einen bösen Plan."
+  },
+  "c2-a": {
+   "en": "Some of them wanted to get rid of Yusuf. But one said: do not hurt him. Leave him in a deep well, where travellers may find him.",
+   "t": "Einige von ihnen wollten Yusuf loswerden. Aber einer sagte: Tut ihm nichts. Lasst ihn in einem tiefen Brunnen, wo Reisende ihn finden können."
+  },
+  "c2-p1": {
+   "en": "Then the brothers went to their father. They said: Father, why do you not trust us with Yusuf? We only want what is good for him. Send him with us tomorrow, so he can enjoy himself and play. We will take good care of him.",
+   "t": "Dann gingen die Brüder zu ihrem Vater. Sie sagten: Vater, warum vertraust du uns Yusuf nicht an? Wir wollen nur sein Bestes. Schick ihn morgen mit uns, damit er Spaß hat und spielen kann. Wir passen gut auf ihn auf."
+  },
+  "c2-p2": {
+   "en": "Their father Yaqub said: it makes me sad to think of you taking him away. And I am afraid a wolf may eat him, while you are not watching.",
+   "t": "Ihr Vater Yaqub sagte: Es macht mich traurig, wenn ihr ihn mitnehmt. Und ich fürchte, ein Wolf könnte ihn fressen, während ihr nicht aufpasst."
+  },
+  "c2-pq": {
+   "en": "What was their father afraid of?",
+   "t": "Wovor hatte ihr Vater Angst?"
+  },
+  "c2-pq-opt1": {
+   "en": "A storm",
+   "t": "Vor einem Sturm"
+  },
+  "c2-pq-opt2": {
+   "en": "A wolf",
+   "t": "Vor einem Wolf"
+  },
+  "c2-pqwrong": {
+   "en": "Not a storm. Yaqub said: I am afraid a wolf may eat him.",
+   "t": "Nicht vor einem Sturm. Yaqub sagte: Ich fürchte, ein Wolf könnte ihn fressen."
+  },
+  "c2-p3": {
+   "en": "The brothers said: a wolf? When there are so many of us? Then we would be good for nothing! So the next day, Yusuf went out with them.",
+   "t": "Die Brüder sagten: Ein Wolf? Wo wir doch so viele sind? Dann wären wir ja zu nichts nütze! Und so ging Yusuf am nächsten Tag mit ihnen."
+  },
+  "c2-b": {
+   "en": "They took Yusuf far away and put him down into a deep, dark well.",
+   "t": "Sie brachten Yusuf weit weg und ließen ihn in einen tiefen, dunklen Brunnen hinab."
+  },
+  "c2-b1": {
+   "en": "In the dark, Yusuf prayed: O Lord of Ibrahim, and Ishaq, and Ya'qub, have mercy on me. I am small, and weak, and all alone.",
+   "t": "In der Dunkelheit betete Yusuf: O Herr von Ibrahim, Ishaq und Yaqub, hab Erbarmen mit mir. Ich bin klein und schwach und ganz allein."
+  },
+  "c2-w": {
+   "en": "But down in the dark, Yusuf was not alone. Allah comforted his heart: one day, you will tell your brothers about all this, and they will not even know it is you.",
+   "t": "Aber dort unten im Dunkeln war Yusuf nicht allein. Allah tröstete sein Herz: Eines Tages wirst du deinen Brüdern von alldem erzählen, und sie werden nicht einmal wissen, dass du es bist."
+  },
+  "c2-c": {
+   "en": "That night the brothers came home crying. They said: Father, a wolf ate Yusuf! And they showed him Yusuf's shirt, stained to make their story look true.",
+   "t": "In jener Nacht kamen die Brüder weinend nach Hause. Sie sagten: Vater, ein Wolf hat Yusuf gefressen! Und sie zeigten ihm Yusufs Hemd, befleckt, damit ihre Geschichte wahr aussah."
+  },
+  "c2-s": {
+   "en": "Look closely at the shirt, just as Yaqub did. A wolf has sharp teeth. Is the shirt torn?",
+   "t": "Schau dir das Hemd genau an, so wie Yaqub es tat. Ein Wolf hat scharfe Zähne. Ist das Hemd zerrissen?"
+  },
+  "c2-s-opt1": {
+   "en": "Yes, it is torn",
+   "t": "Ja, es ist zerrissen"
+  },
+  "c2-s-opt2": {
+   "en": "No, not one tear",
+   "t": "Nein, kein einziger Riss"
+  },
+  "c2-swrong": {
+   "en": "Look again. The shirt is stained, but there is not one tear in it.",
+   "t": "Schau noch einmal. Das Hemd ist befleckt, aber es hat keinen einzigen Riss."
+  },
+  "c2-do": {
+   "en": "A wolf would have torn the shirt to pieces. So what do you think? Was the brothers' story true?",
+   "t": "Ein Wolf hätte das Hemd in Stücke gerissen. Was meinst du also? War die Geschichte der Brüder wahr?"
+  },
+  "c2-do-opt1": {
+   "en": "Yes, a wolf did it",
+   "t": "Ja, es war ein Wolf"
+  },
+  "c2-do-opt2": {
+   "en": "No, it was not true",
+   "t": "Nein, sie war nicht wahr"
+  },
+  "c2-wrong": {
+   "en": "Not quite. The wolf did nothing at all! Try again.",
+   "t": "Nicht ganz. Der Wolf hat gar nichts getan! Versuch es noch einmal."
+  },
+  "c2-d": {
+   "en": "No, it was not true, and their father Yaqub knew it. He said: it is best to be patient. I ask Allah alone for help.",
+   "t": "Nein, sie war nicht wahr, und ihr Vater Yaqub wusste es. Er sagte: Am besten ist es, geduldig zu sein. Ich bitte Allah allein um Hilfe."
+  },
+  "c2-o1": {
+   "en": "The brothers were jealous of Yusuf.",
+   "t": "Die Brüder waren eifersüchtig auf Yusuf."
+  },
+  "c2-o2": {
+   "en": "They put Yusuf down into the well.",
+   "t": "Sie ließen Yusuf in den Brunnen hinab."
+  },
+  "c2-o3": {
+   "en": "They showed their father the shirt.",
+   "t": "Sie zeigten ihrem Vater das Hemd."
+  },
+  "c2-o4": {
+   "en": "Yaqub chose to be patient.",
+   "t": "Yaqub entschied sich, geduldig zu sein."
+  },
+  "c3-a": {
+   "en": "Some travellers came by. They sent a man to fetch water, and he let his bucket down into the well.",
+   "t": "Reisende kamen vorbei. Sie schickten einen Mann, um Wasser zu holen, und er ließ seinen Eimer in den Brunnen hinab."
+  },
+  "c3-do": {
+   "en": "Help him pull! Drag the rope up, or tap fast, to bring the bucket up.",
+   "t": "Hilf ihm ziehen! Zieh das Seil nach oben oder tippe schnell, um den Eimer heraufzuholen."
+  },
+  "c3-b": {
+   "en": "Good news! shouted the man. Here is a boy! The travellers hid Yusuf away to sell him. But Allah knew everything they did.",
+   "t": "Eine gute Nachricht! rief der Mann. Hier ist ein Junge! Die Reisenden versteckten Yusuf, um ihn zu verkaufen. Aber Allah wusste alles, was sie taten."
+  },
+  "c3-q": {
+   "en": "What did the man shout when he saw Yusuf?",
+   "t": "Was rief der Mann, als er Yusuf sah?"
+  },
+  "c3-q-opt1": {
+   "en": "Good news! Here is a boy!",
+   "t": "Eine gute Nachricht! Hier ist ein Junge!"
+  },
+  "c3-q-opt2": {
+   "en": "Oh no, my bucket!",
+   "t": "Oh nein, mein Eimer!"
+  },
+  "c3-qwrong": {
+   "en": "Listen again. He shouted: good news!",
+   "t": "Hör noch einmal hin. Er rief: Eine gute Nachricht!"
+  },
+  "c4-count": {
+   "en": "Yusuf was sold for a very small price: just a few silver coins. Tap the coins to count them.",
+   "t": "Yusuf wurde für einen sehr kleinen Preis verkauft: nur ein paar Silbermünzen. Tippe auf die Münzen, um sie zu zählen."
+  },
+  "c4-counted": {
+   "en": "Twenty small coins. They did not know how precious Yusuf was.",
+   "t": "Zwanzig kleine Münzen. Sie wussten nicht, wie wertvoll Yusuf war."
+  },
+  "c4-a": {
+   "en": "So Yusuf was carried far from home, all the way to the land of Egypt.",
+   "t": "So wurde Yusuf weit weg von zu Hause gebracht, bis in das Land Ägypten."
+  },
+  "c4-do": {
+   "en": "Drag the camel along the path, or tap it, to help the caravan cross the desert.",
+   "t": "Zieh das Kamel den Weg entlang oder tippe darauf, damit die Karawane die Wüste durchquert."
+  },
+  "c4-b": {
+   "en": "In Egypt, a man bought Yusuf and took him to his home. He told his wife: look after him well.",
+   "t": "In Ägypten kaufte ein Mann Yusuf und nahm ihn mit nach Hause. Er sagte zu seiner Frau: Sorge gut für ihn."
+  },
+  "c4-q": {
+   "en": "What did the man say to his wife about Yusuf?",
+   "t": "Was sagte der Mann zu seiner Frau über Yusuf?"
+  },
+  "c4-q-opt1": {
+   "en": "Send him away",
+   "t": "Schick ihn weg"
+  },
+  "c4-q-opt2": {
+   "en": "Look after him well",
+   "t": "Sorge gut für ihn"
+  },
+  "c4-qwrong": {
+   "en": "No. He said: look after him well.",
+   "t": "Nein. Er sagte: Sorge gut für ihn."
+  },
+  "c4-c": {
+   "en": "The years passed, and Yusuf grew into a young man in Egypt. When he was grown, Allah gave him wisdom and knowledge.",
+   "t": "Die Jahre vergingen, und Yusuf wuchs in Ägypten zu einem jungen Mann heran. Als er erwachsen war, gab Allah ihm Weisheit und Wissen."
+  },
+  "c5-a": {
+   "en": "One day, the woman of the house tried to make Yusuf do something wrong. Yusuf said: Allah forbid! My master has been good to me. And he ran for the door.",
+   "t": "Eines Tages versuchte die Frau des Hauses, Yusuf zu etwas Falschem zu bringen. Yusuf sagte: Allah bewahre! Mein Herr war gut zu mir. Und er lief zur Tür."
+  },
+  "c5-b1": {
+   "en": "She pulled at his shirt from behind, and it tore. At the door they met her husband. She said that Yusuf was to blame. But Yusuf said: she is the one who tried to make me do wrong.",
+   "t": "Sie zog von hinten an seinem Hemd, und es riss. An der Tür trafen sie ihren Mann. Sie sagte, Yusuf sei schuld. Aber Yusuf sagte: Sie ist es, die mich zu etwas Falschem bringen wollte."
+  },
+  "c5-b2": {
+   "en": "A wise person in the house said: look at his shirt. If it is torn at the front, she is telling the truth. If it is torn at the back, Yusuf is.",
+   "t": "Ein kluger Mensch im Haus sagte: Seht euch sein Hemd an. Ist es vorne zerrissen, sagt sie die Wahrheit. Ist es hinten zerrissen, sagt Yusuf die Wahrheit."
+  },
+  "c5-do2": {
+   "en": "Where is Yusuf's shirt torn?",
+   "t": "Wo ist Yusufs Hemd zerrissen?"
+  },
+  "c5-do2-opt1": {
+   "en": "At the front",
+   "t": "Vorne"
+  },
+  "c5-do2-opt2": {
+   "en": "At the back",
+   "t": "Hinten"
+  },
+  "c5-wrong2": {
+   "en": "Not that way. Remember, she pulled it from behind.",
+   "t": "Nicht so herum. Denk daran: Sie hat von hinten gezogen."
+  },
+  "c5-b3": {
+   "en": "The shirt was torn at the back! So everyone could see that Yusuf was telling the truth.",
+   "t": "Das Hemd war hinten zerrissen! So konnten alle sehen, dass Yusuf die Wahrheit sagte."
+  },
+  "c5-w1": {
+   "en": "Soon, some women of the city were gossiping about the woman of the house. So she invited them to a great meal, and gave each of them a knife to cut their fruit. Then she said to Yusuf: come out, and let them see you.",
+   "t": "Bald redeten einige Frauen der Stadt über die Frau des Hauses. Da lud sie sie zu einem großen Essen ein und gab jeder ein Messer, um ihr Obst zu schneiden. Dann sagte sie zu Yusuf: Komm heraus und lass dich von ihnen sehen."
+  },
+  "c5-w2": {
+   "en": "When the women saw Yusuf, they were so amazed at how beautiful he was that they cut their own hands without even noticing! They said: Allah is perfect! This is no ordinary man. He must be a noble angel!",
+   "t": "Als die Frauen Yusuf sahen, staunten sie so sehr über seine Schönheit, dass sie sich in die eigenen Hände schnitten, ohne es zu merken! Sie sagten: Allah ist vollkommen! Das ist kein gewöhnlicher Mensch. Das muss ein edler Engel sein!"
+  },
+  "c5-wq": {
+   "en": "Why did the women cut their hands?",
+   "t": "Warum schnitten sich die Frauen in die Hände?"
+  },
+  "c5-wq-opt1": {
+   "en": "The fruit was too hard",
+   "t": "Das Obst war zu hart"
+  },
+  "c5-wq-opt2": {
+   "en": "They were amazed by Yusuf",
+   "t": "Sie staunten über Yusuf"
+  },
+  "c5-wqwrong": {
+   "en": "Not the fruit. They were so amazed by Yusuf that they did not notice what their knives were doing.",
+   "t": "Nicht wegen des Obstes. Sie staunten so sehr über Yusuf, dass sie nicht merkten, was ihre Messer taten."
+  },
+  "c5-b4": {
+   "en": "But people kept on talking, and the woman kept on at him. Yusuf prayed: My Lord, prison is better for me than what they ask of me. And Allah answered his prayer and kept him safe from doing wrong.",
+   "t": "Aber die Leute redeten weiter, und die Frau bedrängte ihn weiter. Yusuf betete: Mein Herr, das Gefängnis ist mir lieber als das, was sie von mir verlangen. Und Allah erhörte sein Gebet und bewahrte ihn davor, Unrecht zu tun."
+  },
+  "c5-c": {
+   "en": "Everyone had seen the signs that Yusuf was innocent. But in the end they put him in prison for a while anyway.",
+   "t": "Alle hatten die Zeichen gesehen, dass Yusuf unschuldig war. Aber am Ende steckten sie ihn trotzdem für eine Weile ins Gefängnis."
+  },
+  "c5-do": {
+   "en": "Be patient, like Yusuf. Press and hold the lamp until it shines. Don't let go!",
+   "t": "Sei geduldig wie Yusuf. Drück auf die Lampe und halte sie, bis sie leuchtet. Nicht loslassen!"
+  },
+  "c5-d": {
+   "en": "Yusuf stayed patient in prison, and he never stopped trusting Allah.",
+   "t": "Yusuf blieb im Gefängnis geduldig, und er hörte nie auf, auf Allah zu vertrauen."
+  },
+  "c5-o1": {
+   "en": "Yusuf ran for the door.",
+   "t": "Yusuf lief zur Tür."
+  },
+  "c5-o2": {
+   "en": "His shirt was torn from behind.",
+   "t": "Sein Hemd wurde von hinten zerrissen."
+  },
+  "c5-o3": {
+   "en": "A wise person said: look at the shirt.",
+   "t": "Ein kluger Mensch sagte: Seht euch das Hemd an."
+  },
+  "c5-o4": {
+   "en": "Yusuf was put in prison, and he stayed patient.",
+   "t": "Yusuf kam ins Gefängnis und blieb geduldig."
+  },
+  "c6-a": {
+   "en": "Two young men were in prison with Yusuf. Each of them had a dream, and they asked Yusuf what the dreams meant.",
+   "t": "Zwei junge Männer waren mit Yusuf im Gefängnis. Jeder von ihnen hatte einen Traum, und sie fragten Yusuf, was ihre Träume bedeuteten."
+  },
+  "c6-b": {
+   "en": "First, Yusuf told them the most important thing: worship no one but Allah, the One.",
+   "t": "Zuerst sagte Yusuf ihnen das Wichtigste: Betet niemanden an außer Allah, dem Einen."
+  },
+  "c6-q": {
+   "en": "What was the first thing Yusuf told the two men?",
+   "t": "Was sagte Yusuf den beiden Männern als Erstes?"
+  },
+  "c6-q-opt1": {
+   "en": "Worship Allah alone",
+   "t": "Betet Allah allein an"
+  },
+  "c6-q-opt2": {
+   "en": "Dig a tunnel",
+   "t": "Grabt einen Tunnel"
+  },
+  "c6-qwrong": {
+   "en": "No. First he told them: worship no one but Allah.",
+   "t": "Nein. Zuerst sagte er ihnen: Betet niemanden an außer Allah."
+  },
+  "c6-do": {
+   "en": "Now match each dream to its meaning. Tap a dream, then tap what it means.",
+   "t": "Ordne jetzt jedem Traum seine Bedeutung zu. Tippe auf einen Traum und dann auf das, was er bedeutet."
+  },
+  "c6-d1": {
+   "en": "I dreamed I was pressing grapes.",
+   "t": "Ich träumte, ich presste Trauben."
+  },
+  "c6-d2": {
+   "en": "I dreamed birds ate the bread I carried on my head.",
+   "t": "Ich träumte, Vögel fraßen das Brot, das ich auf dem Kopf trug."
+  },
+  "c6-m1": {
+   "en": "You will be saved, and you will serve your master.",
+   "t": "Du wirst gerettet und wirst deinem Herrn dienen."
+  },
+  "c6-m2": {
+   "en": "A sad end. You will be put to death.",
+   "t": "Ein trauriges Ende. Du wirst getötet werden."
+  },
+  "c6-c": {
+   "en": "Yusuf said to the man who would go free: tell your master about me. But the man forgot. So Yusuf stayed in prison for more years.",
+   "t": "Yusuf sagte zu dem Mann, der freikommen würde: Erzähl deinem Herrn von mir. Aber der Mann vergaß es. So blieb Yusuf noch weitere Jahre im Gefängnis."
+  },
+  "c7-a": {
+   "en": "Then the king had a strange dream. Seven fat cows were eaten by seven thin cows. And he saw seven green ears of grain, and seven dry ones.",
+   "t": "Dann hatte der König einen seltsamen Traum. Sieben fette Kühe wurden von sieben mageren Kühen gefressen. Und er sah sieben grüne Ähren und sieben trockene."
+  },
+  "c7-pick": {
+   "en": "Seven fat cows! Can you find them? Tap all seven of the fat cows.",
+   "t": "Sieben fette Kühe! Findest du sie? Tippe auf alle sieben fetten Kühe."
+  },
+  "c7-b": {
+   "en": "Nobody could explain it. Then the man from the prison remembered Yusuf at last! He hurried to ask him.",
+   "t": "Niemand konnte ihn deuten. Da erinnerte sich der Mann aus dem Gefängnis endlich an Yusuf! Er eilte zu ihm, um ihn zu fragen."
+  },
+  "c7-do": {
+   "en": "Tap each side of the dream to hear what Yusuf said it means.",
+   "t": "Tippe auf jede Seite des Traums, um zu hören, was er laut Yusuf bedeutet."
+  },
+  "c7-good": {
+   "en": "The fat cows and the green grain: seven good years are coming. Plant, and save what you harvest.",
+   "t": "Die fetten Kühe und die grünen Ähren: Sieben gute Jahre kommen. Sät und bewahrt auf, was ihr erntet."
+  },
+  "c7-hard": {
+   "en": "The thin cows and the dry grain: then seven hard years will come, and you will eat what you saved.",
+   "t": "Die mageren Kühe und die trockenen Ähren: Dann kommen sieben schwere Jahre, und ihr werdet essen, was ihr aufbewahrt habt."
+  },
+  "c7-c": {
+   "en": "And after that, said Yusuf, will come a year with plenty of rain.",
+   "t": "Und danach, sagte Yusuf, kommt ein Jahr mit viel Regen."
+  },
+  "c7-sort": {
+   "en": "Help the people get ready. Is each job for the good years, or for the hard years?",
+   "t": "Hilf den Menschen, sich vorzubereiten. Gehört jede Arbeit zu den guten Jahren oder zu den schweren Jahren?"
+  },
+  "c7-sort-bin1": {
+   "en": "Good years",
+   "t": "Gute Jahre"
+  },
+  "c7-sort-bin2": {
+   "en": "Hard years",
+   "t": "Schwere Jahre"
+  },
+  "c7-sort-it1": {
+   "en": "Plant the fields",
+   "t": "Die Felder bestellen"
+  },
+  "c7-sort-it2": {
+   "en": "Eat what was saved",
+   "t": "Essen, was gespart wurde"
+  },
+  "c7-sort-it3": {
+   "en": "Save the grain",
+   "t": "Das Korn aufbewahren"
+  },
+  "c7-sort-it4": {
+   "en": "Open the storehouse",
+   "t": "Das Vorratshaus öffnen"
+  },
+  "c7-sort-it5": {
+   "en": "Bring in the harvest",
+   "t": "Die Ernte einbringen"
+  },
+  "c7-swrong": {
+   "en": "Think again. Save in the good years, and use it in the hard years.",
+   "t": "Denk noch einmal nach. In den guten Jahren spart man, in den schweren Jahren braucht man es."
+  },
+  "c8-a1": {
+   "en": "The king said: bring Yusuf to me! But Yusuf did not hurry out of prison. He said: first, find out what really happened to me.",
+   "t": "Der König sagte: Bringt Yusuf zu mir! Aber Yusuf beeilte sich nicht, aus dem Gefängnis zu kommen. Er sagte: Findet zuerst heraus, was mit mir wirklich geschehen ist."
+  },
+  "c8-a2": {
+   "en": "So the king asked the women who had spoken against Yusuf: what really happened? They said: Allah forbid! We know nothing bad about him.",
+   "t": "Also fragte der König die Frauen, die gegen Yusuf geredet hatten: Was ist wirklich geschehen? Sie sagten: Allah bewahre! Wir wissen nichts Schlechtes über ihn."
+  },
+  "c8-a3": {
+   "en": "And the woman of the house said: now the truth is out. It was I who tried to make him do wrong. Yusuf is an honest man.",
+   "t": "Und die Frau des Hauses sagte: Jetzt ist die Wahrheit ans Licht gekommen. Ich war es, die ihn zu etwas Falschem bringen wollte. Yusuf ist ein ehrlicher Mann."
+  },
+  "c8-do-o": {
+   "en": "Put the story in order. Tap what happened first, then what came next.",
+   "t": "Bring die Geschichte in die richtige Reihenfolge. Tippe zuerst auf das, was zuerst geschah, und dann auf das Nächste."
+  },
+  "c8-o1": {
+   "en": "Yusuf asked for the truth to be found.",
+   "t": "Yusuf bat darum, die Wahrheit herauszufinden."
+  },
+  "c8-o2": {
+   "en": "The king asked what had happened.",
+   "t": "Der König fragte, was geschehen war."
+  },
+  "c8-o3": {
+   "en": "The woman told the truth.",
+   "t": "Die Frau sagte die Wahrheit."
+  },
+  "c8-o4": {
+   "en": "The king trusted Yusuf.",
+   "t": "Der König vertraute Yusuf."
+  },
+  "c8-wrong-o": {
+   "en": "Not yet. Think about what came first.",
+   "t": "Noch nicht. Überlege, was zuerst kam."
+  },
+  "c8-b": {
+   "en": "The king trusted Yusuf completely. Yusuf said: put me in charge of the storehouses. I will look after them with care.",
+   "t": "Der König vertraute Yusuf ganz und gar. Yusuf sagte: Gib mir die Verantwortung für die Vorratshäuser. Ich werde sorgfältig auf sie achten."
+  },
+  "c8-do": {
+   "en": "The good years are here! Tap the grain as it grows, and save it in the storehouse.",
+   "t": "Die guten Jahre sind da! Tippe auf das Korn, wenn es wächst, und bewahre es im Vorratshaus auf."
+  },
+  "c8-c": {
+   "en": "The storehouse is full. The grain is saved, just as Yusuf said.",
+   "t": "Das Vorratshaus ist voll. Das Korn ist gespart, genau wie Yusuf es gesagt hat."
+  },
+  "c9-0": {
+   "en": "Then the seven hard years came, just as Yusuf had said. There was little food anywhere, even far away where Yusuf's family lived. But in Egypt there was grain, because Yusuf had saved it.",
+   "t": "Dann kamen die sieben schweren Jahre, genau wie Yusuf es gesagt hatte. Überall gab es wenig zu essen, sogar weit weg, wo Yusufs Familie lebte. Aber in Ägypten gab es Korn, weil Yusuf es gespart hatte."
+  },
+  "c9-a": {
+   "en": "Later, Yusuf's brothers travelled to Egypt to get grain for their family.",
+   "t": "Später reisten Yusufs Brüder nach Ägypten, um Korn für ihre Familie zu holen."
+  },
+  "c9-b": {
+   "en": "Yusuf knew them at once. But they did not know it was him!",
+   "t": "Yusuf erkannte sie sofort. Aber sie wussten nicht, dass er es war!"
+  },
+  "c9-q": {
+   "en": "Did the brothers know who he was?",
+   "t": "Wussten die Brüder, wer er war?"
+  },
+  "c9-q-opt1": {
+   "en": "Yes, straight away",
+   "t": "Ja, sofort"
+  },
+  "c9-q-opt2": {
+   "en": "No, they did not know him",
+   "t": "Nein, sie erkannten ihn nicht"
+  },
+  "c9-qwrong": {
+   "en": "No. Yusuf knew them, but they did not know him.",
+   "t": "Nein. Yusuf erkannte sie, aber sie erkannten ihn nicht."
+  },
+  "c9-b2": {
+   "en": "It is told that Yusuf asked them about their family. They said: we were twelve brothers. One was lost long ago, and our father keeps the youngest one at home with him.",
+   "t": "Man erzählt, dass Yusuf sie nach ihrer Familie fragte. Sie sagten: Wir waren zwölf Brüder. Einer ist vor langer Zeit verloren gegangen, und unser Vater behält den Jüngsten bei sich zu Hause."
+  },
+  "c9-do": {
+   "en": "Yusuf gave them full measure. Tap each sack until it is full to the top.",
+   "t": "Yusuf gab ihnen volles Maß. Tippe auf jeden Sack, bis er bis oben voll ist."
+  },
+  "c9-c": {
+   "en": "Then Yusuf said: next time, bring me that youngest brother, the one at home with your father. And he had their payment put back in their bags.",
+   "t": "Dann sagte Yusuf: Bringt mir das nächste Mal euren jüngsten Bruder, den, der zu Hause bei eurem Vater ist. Und er ließ ihre Bezahlung wieder in ihre Säcke legen."
+  },
+  "c9-pick": {
+   "en": "Help put their payment back. Tap each sack to tuck the payment inside.",
+   "t": "Hilf, ihre Bezahlung zurückzulegen. Tippe auf jeden Sack, um die Bezahlung hineinzustecken."
+  },
+  "c10-h0": {
+   "en": "Back home, the brothers said: Father, we will get no more grain unless we take our little brother with us. Yaqub said: shall I trust you with him, the way I trusted you with Yusuf before?",
+   "t": "Zu Hause sagten die Brüder: Vater, wir bekommen kein Korn mehr, wenn wir unseren kleinen Bruder nicht mitnehmen. Yaqub sagte: Soll ich ihn euch anvertrauen, so wie ich euch früher Yusuf anvertraut habe?"
+  },
+  "c10-hdo": {
+   "en": "Look, a sack from Egypt. Tap it to open it. What is inside?",
+   "t": "Schau, ein Sack aus Ägypten. Tippe darauf, um ihn zu öffnen. Was ist darin?"
+  },
+  "c10-hdo-s1": {
+   "en": "Their payment! It was given back to them.",
+   "t": "Ihre Bezahlung! Sie wurde ihnen zurückgegeben."
+  },
+  "c10-h": {
+   "en": "Then they found that their payment had been given back! In the end Yaqub let their little brother go, but only after they promised by Allah to bring him back.",
+   "t": "Dann fanden sie heraus, dass ihre Bezahlung zurückgegeben worden war! Am Ende ließ Yaqub ihren kleinen Bruder gehen, aber erst nachdem sie bei Allah versprochen hatten, ihn zurückzubringen."
+  },
+  "c10-g": {
+   "en": "Before the brothers set off again, their father Yaqub said: my sons, do not all go in by one gate. Go in by different gates. I trust in Allah.",
+   "t": "Bevor die Brüder wieder aufbrachen, sagte ihr Vater Yaqub: Meine Söhne, geht nicht alle durch ein Tor hinein. Geht durch verschiedene Tore. Ich vertraue auf Allah."
+  },
+  "c10-gdo": {
+   "en": "Do as their father said. Tap a gate for each brother, a different gate each time.",
+   "t": "Mach es, wie ihr Vater gesagt hat. Tippe für jeden Bruder auf ein Tor, jedes Mal ein anderes."
+  },
+  "c10-a": {
+   "en": "The brothers came again, and this time they brought their brother. Yusuf took him aside and said: I am your brother. Do not be sad.",
+   "t": "Die Brüder kamen wieder, und diesmal brachten sie ihren Bruder mit. Yusuf nahm ihn beiseite und sagte: Ich bin dein Bruder. Sei nicht traurig."
+  },
+  "c10-b": {
+   "en": "Then came a plan that Allah made for Yusuf, so that his brother could stay with him. The king's drinking cup was placed in his brother's bag.",
+   "t": "Dann kam ein Plan, den Allah für Yusuf machte, damit sein Bruder bei ihm bleiben konnte. Der Trinkbecher des Königs wurde in den Sack seines Bruders gelegt."
+  },
+  "c10-q": {
+   "en": "Whose plan was this, so that his brother could stay?",
+   "t": "Wessen Plan war das, damit sein Bruder bleiben konnte?"
+  },
+  "c10-q-opt1": {
+   "en": "Allah made it for Yusuf",
+   "t": "Allah machte ihn für Yusuf"
+  },
+  "c10-q-opt2": {
+   "en": "The brothers made it",
+   "t": "Die Brüder machten ihn"
+  },
+  "c10-qwrong": {
+   "en": "No. This was a plan that Allah made for Yusuf.",
+   "t": "Nein. Das war ein Plan, den Allah für Yusuf gemacht hat."
+  },
+  "c10-l1": {
+   "en": "As the brothers were leaving, a man called out: stop, you are thieves! The king's cup is missing! The brothers said: we are not thieves!",
+   "t": "Als die Brüder gerade gingen, rief ein Mann: Halt, ihr seid Diebe! Der Becher des Königs fehlt! Die Brüder sagten: Wir sind keine Diebe!"
+  },
+  "c10-l2": {
+   "en": "Then they were asked: if one of you is lying, what should happen to him? The brothers said: whoever has the cup in his bag must stay behind. That is our own rule.",
+   "t": "Dann wurden sie gefragt: Wenn einer von euch lügt, was soll mit ihm geschehen? Die Brüder sagten: Wer den Becher in seinem Sack hat, muss hierbleiben. Das ist unsere eigene Regel."
+  },
+  "c10-lq": {
+   "en": "Whose rule was it, that the one with the cup must stay behind?",
+   "t": "Wessen Regel war es, dass der mit dem Becher hierbleiben muss?"
+  },
+  "c10-lq-opt1": {
+   "en": "The brothers' own rule",
+   "t": "Die eigene Regel der Brüder"
+  },
+  "c10-lq-opt2": {
+   "en": "The king of Egypt's rule",
+   "t": "Die Regel des Königs von Ägypten"
+  },
+  "c10-lqwrong": {
+   "en": "Not the king's. Under the king's rule, Yusuf could not have kept his brother. The brothers chose the rule themselves.",
+   "t": "Nicht die des Königs. Nach der Regel des Königs hätte Yusuf seinen Bruder nicht behalten können. Die Brüder haben die Regel selbst gewählt."
+  },
+  "c10-do": {
+   "en": "The king's cup is missing! Search the bags one by one, starting with the oldest brother's.",
+   "t": "Der Becher des Königs fehlt! Durchsuche die Säcke einen nach dem anderen, angefangen mit dem Sack des ältesten Bruders."
+  },
+  "c10-nope": {
+   "en": "Not in this one.",
+   "t": "Hier ist er nicht."
+  },
+  "c10-c": {
+   "en": "There it is, in his brother's bag! So his brother stayed in Egypt with Yusuf.",
+   "t": "Da ist er, im Sack seines Bruders! So blieb sein Bruder bei Yusuf in Ägypten."
+  },
+  "c11-v0": {
+   "en": "The brothers begged: please, take one of us instead! Our father is very old. But Yusuf said: we can only keep the one who had the cup.",
+   "t": "Die Brüder flehten: Bitte, nimm stattdessen einen von uns! Unser Vater ist sehr alt. Aber Yusuf sagte: Wir dürfen nur den behalten, der den Becher hatte."
+  },
+  "c11-v": {
+   "en": "Then the eldest brother said: remember the promise we made to our father, and how we broke our promise about Yusuf. I will not leave this land until my father lets me. The rest of you, go home and tell him.",
+   "t": "Da sagte der älteste Bruder: Denkt an das Versprechen, das wir unserem Vater gegeben haben, und wie wir unser Versprechen wegen Yusuf gebrochen haben. Ich verlasse dieses Land nicht, bis mein Vater es mir erlaubt. Ihr anderen, geht nach Hause und erzählt es ihm."
+  },
+  "c11-a": {
+   "en": "The others went home and told their father what had happened. Yaqub said: it is best to be patient. Maybe Allah will bring them all back to me. But he missed Yusuf so much that his eyes turned white with grief.",
+   "t": "Die anderen gingen nach Hause und erzählten ihrem Vater, was geschehen war. Yaqub sagte: Am besten ist es, geduldig zu sein. Vielleicht bringt Allah sie mir alle zurück. Aber er vermisste Yusuf so sehr, dass seine Augen vor Kummer weiß wurden."
+  },
+  "c11-b": {
+   "en": "But Yaqub did not lose hope. He said: my sons, go and look for Yusuf and his brother. Never lose hope in Allah's mercy.",
+   "t": "Aber Yaqub verlor die Hoffnung nicht. Er sagte: Meine Söhne, geht und sucht nach Yusuf und seinem Bruder. Gebt niemals die Hoffnung auf Allahs Barmherzigkeit auf."
+  },
+  "c11-c0": {
+   "en": "So the brothers went back to Egypt, and came before Yusuf once more. They said: hard times have hit our family, and we have brought very little. Please be kind to us.",
+   "t": "So gingen die Brüder zurück nach Ägypten und traten noch einmal vor Yusuf. Sie sagten: Schwere Zeiten haben unsere Familie getroffen, und wir haben nur sehr wenig mitgebracht. Bitte sei gütig zu uns."
+  },
+  "c11-c": {
+   "en": "Then Yusuf asked them: do you know what you did to Yusuf and his brother? They cried: could it be that you are Yusuf? He said: I am Yusuf, and this is my brother. Allah has been good to us.",
+   "t": "Da fragte Yusuf sie: Wisst ihr, was ihr Yusuf und seinem Bruder angetan habt? Sie riefen: Kann es sein, dass du Yusuf bist? Er sagte: Ich bin Yusuf, und das ist mein Bruder. Allah war gut zu uns."
+  },
+  "c11-e": {
+   "en": "The brothers hung their heads. They said: By Allah, Allah chose you over us, and we were in the wrong.",
+   "t": "Die Brüder senkten die Köpfe. Sie sagten: Bei Allah, Allah hat dich uns vorgezogen, und wir waren im Unrecht."
+  },
+  "c11-do": {
+   "en": "The brothers said they were sorry. What did Yusuf do?",
+   "t": "Den Brüdern tat es leid. Was tat Yusuf?"
+  },
+  "c11-do-opt1": {
+   "en": "He sent them away",
+   "t": "Er schickte sie weg"
+  },
+  "c11-do-opt2": {
+   "en": "He forgave them",
+   "t": "Er vergab ihnen"
+  },
+  "c11-wrong": {
+   "en": "No. Yusuf did something much more beautiful. Try again.",
+   "t": "Nein. Yusuf tat etwas viel Schöneres. Versuch es noch einmal."
+  },
+  "c11-d": {
+   "en": "Yusuf forgave them! He said: you will hear no blame today. May Allah forgive you. He is the Most Merciful of all.",
+   "t": "Yusuf vergab ihnen! Er sagte: Heute soll euch kein Vorwurf treffen. Möge Allah euch vergeben. Er ist der Barmherzigste aller Barmherzigen."
+  },
+  "c11-o1": {
+   "en": "Yaqub said: never lose hope.",
+   "t": "Yaqub sagte: Gebt niemals die Hoffnung auf."
+  },
+  "c11-o2": {
+   "en": "Yusuf said: I am Yusuf.",
+   "t": "Yusuf sagte: Ich bin Yusuf."
+  },
+  "c11-o3": {
+   "en": "The brothers said: we were in the wrong.",
+   "t": "Die Brüder sagten: Wir waren im Unrecht."
+  },
+  "c11-o4": {
+   "en": "Yusuf forgave them.",
+   "t": "Yusuf vergab ihnen."
+  },
+  "c12-a": {
+   "en": "Yusuf gave them his shirt. He said: lay it over my father's face, and he will see again. Then bring your whole family to me.",
+   "t": "Yusuf gab ihnen sein Hemd. Er sagte: Legt es auf das Gesicht meines Vaters, dann wird er wieder sehen. Dann bringt eure ganze Familie zu mir."
+  },
+  "c12-b": {
+   "en": "Far away, as the caravan set off, a wind began to blow. And Yaqub said: I can smell Yusuf!",
+   "t": "Weit weg, als die Karawane aufbrach, begann ein Wind zu wehen. Und Yaqub sagte: Ich rieche Yusuf!"
+  },
+  "c12-do": {
+   "en": "Drag the shirt along the path, or tap it, to carry the good news home.",
+   "t": "Zieh das Hemd den Weg entlang oder tippe darauf, um die gute Nachricht nach Hause zu bringen."
+  },
+  "c12-c": {
+   "en": "The shirt was laid on Yaqub's face, and he could see again! The brothers said: Father, ask Allah to forgive us. And he said: I will ask my Lord to forgive you.",
+   "t": "Das Hemd wurde auf Yaqubs Gesicht gelegt, und er konnte wieder sehen! Die Brüder sagten: Vater, bitte Allah, uns zu vergeben. Und er sagte: Ich werde meinen Herrn bitten, euch zu vergeben."
+  },
+  "c12-q": {
+   "en": "What happened when the shirt was laid on Yaqub's face?",
+   "t": "Was geschah, als das Hemd auf Yaqubs Gesicht gelegt wurde?"
+  },
+  "c12-q-opt1": {
+   "en": "He fell asleep",
+   "t": "Er schlief ein"
+  },
+  "c12-q-opt2": {
+   "en": "He could see again",
+   "t": "Er konnte wieder sehen"
+  },
+  "c12-qwrong": {
+   "en": "No. Something wonderful happened: he could see again!",
+   "t": "Nein. Etwas Wunderbares geschah: Er konnte wieder sehen!"
+  },
+  "c13-a": {
+   "en": "The whole family came to Egypt. Yusuf held his parents close and said: welcome to Egypt. You will all be safe here, if Allah wills.",
+   "t": "Die ganze Familie kam nach Ägypten. Yusuf drückte seine Eltern an sich und sagte: Willkommen in Ägypten. Hier werdet ihr alle in Sicherheit sein, so Allah will."
+  },
+  "c13-do": {
+   "en": "Tap the stars, the sun and the moon, just like in the dream.",
+   "t": "Tippe auf die Sterne, die Sonne und den Mond, genau wie im Traum."
+  },
+  "c13-b": {
+   "en": "Yusuf's parents and brothers all bowed down before him. Yusuf said: Father, this is what my dream meant, long ago. My Lord has made it come true.",
+   "t": "Yusufs Eltern und Brüder verneigten sich alle vor ihm. Yusuf sagte: Vater, das ist die Bedeutung meines Traums von damals. Mein Herr hat ihn wahr werden lassen."
+  },
+  "c13-q": {
+   "en": "Look back at the dream. Who were the eleven stars?",
+   "t": "Denk an den Traum zurück. Wer waren die elf Sterne?"
+  },
+  "c13-q-opt1": {
+   "en": "His eleven brothers",
+   "t": "Seine elf Brüder"
+  },
+  "c13-q-opt2": {
+   "en": "Eleven camels",
+   "t": "Elf Kamele"
+  },
+  "c13-qwrong": {
+   "en": "Think again. Who came to Egypt to bow before Yusuf?",
+   "t": "Denk noch einmal nach. Wer kam nach Ägypten, um sich vor Yusuf zu verneigen?"
+  },
+  "c13-b0": {
+   "en": "Yes! The eleven stars were his eleven brothers, and the sun and the moon were his father and mother. The dream had come true.",
+   "t": "Ja! Die elf Sterne waren seine elf Brüder, und die Sonne und der Mond waren sein Vater und seine Mutter. Der Traum war wahr geworden."
+  },
+  "c13-sort": {
+   "en": "What have we learned from Yusuf? For each one, tap: like Yusuf, or not like Yusuf.",
+   "t": "Was haben wir von Yusuf gelernt? Tippe bei jedem: wie Yusuf oder nicht wie Yusuf."
+  },
+  "c13-sort-bin1": {
+   "en": "Like Yusuf",
+   "t": "Wie Yusuf"
+  },
+  "c13-sort-bin2": {
+   "en": "Not like Yusuf",
+   "t": "Nicht wie Yusuf"
+  },
+  "c13-sort-it1": {
+   "en": "Being patient",
+   "t": "Geduldig sein"
+  },
+  "c13-sort-it2": {
+   "en": "Making up a story",
+   "t": "Eine Geschichte erfinden"
+  },
+  "c13-sort-it3": {
+   "en": "Telling the truth",
+   "t": "Die Wahrheit sagen"
+  },
+  "c13-sort-it4": {
+   "en": "Staying angry",
+   "t": "Wütend bleiben"
+  },
+  "c13-sort-it5": {
+   "en": "Forgiving",
+   "t": "Vergeben"
+  },
+  "c13-sort-it6": {
+   "en": "Trusting Allah",
+   "t": "Auf Allah vertrauen"
+  },
+  "c13-swrong": {
+   "en": "Think about what Yusuf did.",
+   "t": "Denk daran, was Yusuf getan hat."
+  },
+  "c13-c": {
+   "en": "Then Yusuf prayed: My Lord, You are my protector in this world and the next. Let me die devoted to You, and join me with the righteous.",
+   "t": "Dann betete Yusuf: Mein Herr, Du bist mein Beschützer in dieser Welt und in der nächsten. Lass mich ergeben zu Dir sterben, und vereine mich mit den Rechtschaffenen."
+  },
+  "pz-do": {
+   "en": "This picture is all mixed up! Tap two pieces to swap them, until the picture is whole again.",
+   "t": "Dieses Bild ist ganz durcheinander! Tippe auf zwei Teile, um sie zu tauschen, bis das Bild wieder ganz ist."
+  },
+  "mem-do": {
+   "en": "Find the pairs. Tap two cards. If they match, they stay.",
+   "t": "Finde die Paare. Tippe auf zwei Karten. Wenn sie zusammenpassen, bleiben sie liegen."
+  },
+  "end-a": {
+   "en": "The end. Yusuf was patient, he told the truth, and he forgave. What will you remember from his story?",
+   "t": "Ende. Yusuf war geduldig, er sagte die Wahrheit, und er vergab. Woran wirst du dich aus seiner Geschichte erinnern?"
+  }
+ },
+ "strings": {
+  "The Dream": "Der Traum",
+  "The Jealous Brothers": "Die eifersüchtigen Brüder",
+  "From a Shia narration (al-Qummi)": "Aus einer schiitischen Überlieferung (al-Qummi)",
+  "The stone: Ibn Kathir's tafsir": "Der Stein: Tafsir von Ibn Kathir",
+  "The untorn shirt: Ibn Kathir's tafsir": "Das unzerrissene Hemd: Tafsir von Ibn Kathir",
+  "The brothers are jealous": "Die Brüder sind eifersüchtig",
+  "Yusuf is put in the well": "Yusuf kommt in den Brunnen",
+  "They show the shirt": "Sie zeigen das Hemd",
+  "Yaqub is patient": "Yaqub ist geduldig",
+  "The Well": "Der Brunnen",
+  "Far From Home": "Weit weg von zu Hause",
+  "Twenty coins: Ibn Kathir's tafsir": "Zwanzig Münzen: Tafsir von Ibn Kathir",
+  "Patience in Prison": "Geduld im Gefängnis",
+  "The fruit: Ibn Kathir's tafsir": "Das Obst: Tafsir von Ibn Kathir",
+  "Yusuf runs for the door": "Yusuf läuft zur Tür",
+  "His shirt is torn": "Sein Hemd ist zerrissen",
+  "Look at the shirt!": "Schau dir das Hemd an!",
+  "Patient in prison": "Geduldig im Gefängnis",
+  "Two Dreams": "Zwei Träume",
+  "The King's Dream": "Der Traum des Königs",
+  "fat cow": "fette Kuh",
+  "thin cow": "magere Kuh",
+  "7 good years": "7 gute Jahre",
+  "7 hard years": "7 schwere Jahre",
+  "Truth and Trust": "Wahrheit und Vertrauen",
+  "Yusuf asks for the truth": "Yusuf bittet um die Wahrheit",
+  "The king asks what happened": "Der König fragt, was geschah",
+  "The woman tells the truth": "Die Frau sagt die Wahrheit",
+  "The king trusts Yusuf": "Der König vertraut Yusuf",
+  "The Brothers Come": "Die Brüder kommen",
+  "sack": "Sack",
+  "The King's Cup": "Der Becher des Königs",
+  "“I Am Yusuf”": "„Ich bin Yusuf“",
+  "Never lose hope": "Gib niemals die Hoffnung auf",
+  "I am Yusuf": "Ich bin Yusuf",
+  "We were wrong": "Wir waren im Unrecht",
+  "Yusuf forgives": "Yusuf vergibt",
+  "The Shirt": "Das Hemd",
+  "The Dream Comes True": "Der Traum wird wahr",
+  "Yusuf": "Yusuf",
+  "The Story of Yusuf": "Die Geschichte von Yusuf",
+  "Thirteen chapters. Three or four things to do in every one.": "Dreizehn Kapitel. In jedem drei oder vier Dinge zu tun.",
+  "Under 5: play it together with a grown-up": "Unter 5 Jahren: gemeinsam mit einem Erwachsenen spielen",
+  "Patience": "Geduld",
+  "Truth": "Wahrheit",
+  "Forgiveness": "Vergebung",
+  "His whole story in thirteen chapters, with three or four things to do in every one.": "Seine ganze Geschichte in dreizehn Kapiteln, mit drei oder vier Dingen zu tun in jedem.",
+  "Yusuf as a boy, looking up at the stars, the sun and the moon.": "Yusuf als Junge, der zu den Sternen, der Sonne und dem Mond hinaufschaut."
+ }
+}

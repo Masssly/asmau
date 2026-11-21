@@ -12,8 +12,9 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - name: Check games, narration, references and offline list
-        run: node scripts/validate.js
+      - name: Check games, narration, translations, references and offline list
+        # a pull request (a translation, say) need not rebuild the offline lists: the next release does
+        run: node scripts/validate.js ${{ github.event_name == 'pull_request' && '--pull-request' || '' }}
 
   tests:
     runs-on: ubuntu-latest

@@ -1,11 +1,18 @@
 {
-  "version": "2026.11.90",
+  "version": "2026.11.91",
   "date": "2026-11-21",
-  "buildId": "add8d21bfad7",
+  "buildId": "dd0655734104",
   "notes": [
-    "Bahasa Indonesia and Bahasa Melayu are on for families: every story game, the notes for parents and For parents (no computer voice yet: silent, or the English voice if you choose it). The “Write to us” line at the foot of the page now shows in your language"
+    "Français: the verses quoted in the notes for parents now use Muhammad Hamidullah's French translation of the Qur'an, word for word"
   ],
   "history": [
+    {
+      "version": "2026.11.91",
+      "date": "2026-11-21",
+      "notes": [
+        "Français: the verses quoted in the notes for parents now use Muhammad Hamidullah's French translation of the Qur'an, word for word"
+      ]
+    },
     {
       "version": "2026.11.90",
       "date": "2026-11-21",

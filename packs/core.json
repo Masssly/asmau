@@ -1,4 +1,4 @@
-{"bytes":1163293,
+{"bytes":1163402,
 "files":{"404.html":"ba53a41f6e",
 "LICENSE":"f473958ef4",
 "LICENSE-CONTENT.md":"0cc084be0b",
@@ -45,5 +45,5 @@
 "tools/record-voice/index.html":"733c3189fd",
 "tools/record-voice/join.html":"ba7b3dc502",
 "tools/record-voice/story.html":"6b9e8474ec",
-"version.json":"564db835b3"},
+"version.json":"5ee738cbc1"},
 "sizes":{}}

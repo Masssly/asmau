@@ -75,6 +75,11 @@ srt("sort", "palace", "Help the little ones choose. Is it safe to eat, or too ho
 ], "Think again. Would it burn you?");
 s("c", "palace", "When Musa was fully grown and strong, Allah gave him wisdom and knowledge. That is how Allah rewards the people who do good.",
   "{MY} stands on a palace terrace at golden hour looking thoughtfully over the river city, a scroll in his hand.");
+// how Musa knew the Children of Israel were his people (owner, 21 November 2026: 6.1 said "his own people" with no
+// reason given): nursed in his own mother's home (Ibn Kathir on 28:12-13); grown, he kept them from harm and they
+// gathered to listen to him (Ibn Abbas and Ibn Ishaq, in al-Tabari on 28:15)
+s("d", "palace", "Musa never forgot the family who fed him as a baby. It is told that when he grew up, he looked after the Children of Israel. While he was near, Pharaoh's men did not dare to hurt them.",
+  "In a sunny brick-making yard beside the river, {MY} stands calmly between a group of tired workers in simple earth-coloured clothes, men, women and children, and a frowning overseer, who lowers his stick and steps back; the workers look at Musa with relief and trust.", { src: "From Ibn Abbas, in al-Tabari's commentary" });
 p("puzzle", "puz", "palace", "Put the picture of Musa back together. Tap two pieces to swap them.", { pic: "m5-c", n: 2 });
 q("q", "palace", "What did Allah give Musa when he was grown?", ["Wisdom and knowledge", "💡"], ["A golden crown", "👑"], "Not a crown. Allah gave him wisdom and knowledge.", { img: "c" });
 

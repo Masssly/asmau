@@ -1,4 +1,4 @@
-{"bytes":8237446,
+{"bytes":8284652,
 "files":{"games/musa/art.js":"a4afb0747e",
 "games/musa/assets/img/bg-camp.webp":"51f0616b2d",
 "games/musa/assets/img/bg-city.webp":"2b3f1633cb",
@@ -158,6 +158,7 @@
 "games/musa/index.html":"5770830ee5",
 "games/musa/lang/de.json":"903480d84d",
 "games/musa/lang/id.json":"69a367560e",
+"games/musa/lang/ms.json":"0beea65390",
 "games/musa/narration.json":"84fe0b9869",
 "games/musa/parents/notes.json":"d307f3305d",
 "games/musa/parents/pages.json":"bef6f596a9",

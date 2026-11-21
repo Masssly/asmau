@@ -1,11 +1,18 @@
 {
-  "version": "2026.11.80",
+  "version": "2026.11.81",
   "date": "2026-11-21",
-  "buildId": "6ac7aa221fdc",
+  "buildId": "06eb6ed0550f",
   "notes": [
-    "Musa in Bahasa Indonesia and German (drafts, for native speakers to check); every story game now drafted in both"
+    "Bahasa Melayu: every story game and the site's buttons drafted, for a native speaker to check (seen only with ?lang=ms)"
   ],
   "history": [
+    {
+      "version": "2026.11.81",
+      "date": "2026-11-21",
+      "notes": [
+        "Bahasa Melayu: every story game and the site's buttons drafted, for a native speaker to check (seen only with ?lang=ms)"
+      ]
+    },
     {
       "version": "2026.11.80",
       "date": "2026-11-21",

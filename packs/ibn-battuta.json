@@ -1,4 +1,4 @@
-{"bytes":3528267,
+{"bytes":3542349,
 "files":{"games/ibn-battuta/art.js":"54573b8f99",
 "games/ibn-battuta/assets/img/bg-city.webp":"a6c5a63b2c",
 "games/ibn-battuta/assets/img/i1-a.webp":"3a420bb11c",
@@ -50,6 +50,7 @@
 "games/ibn-battuta/index.html":"58a7e4381a",
 "games/ibn-battuta/lang/de.json":"00a9dce574",
 "games/ibn-battuta/lang/id.json":"157047742e",
+"games/ibn-battuta/lang/ms.json":"23a8aa8381",
 "games/ibn-battuta/narration.json":"efb833f8d1",
 "games/ibn-battuta/parents/notes.json":"0debfeb187",
 "games/ibn-battuta/parents/pages.json":"816ee76eca",

@@ -1,4 +1,4 @@
-{"bytes":5914962,
+{"bytes":5938117,
 "files":{"games/yusuf/art.js":"a260f51994",
 "games/yusuf/assets/img/bg-desert.webp":"6369245ab7",
 "games/yusuf/assets/img/bg-egypt.webp":"a15c7dda93",
@@ -89,6 +89,7 @@
 "games/yusuf/index.html":"f620c6b2ab",
 "games/yusuf/lang/de.json":"1af45c2054",
 "games/yusuf/lang/id.json":"836f48c2e3",
+"games/yusuf/lang/ms.json":"607039f0d7",
 "games/yusuf/narration.json":"a40d52954a",
 "games/yusuf/parents/notes.json":"9104610f48",
 "games/yusuf/parents/pages.json":"346b6282ce",

@@ -18,14 +18,14 @@
 
 // BEGIN GENERATED
 const RELEASE = "2026.11.85";
-const BUILD = "639136606f9d";
+const BUILD = "8cefec8fa85b";
 // pack: [fingerprint of packs/<pack>.json, bytes, files]
 const PACKS = {
   "abdullah-quilliam":["257759b2cf",442,1],
   "adam":["901008555f",2735394,55],
   "adam@m":["a617f3f408",4026446,147],
   "adam@w":["217fc43e27",4316508,147],
-  "core":["d7e6685f63",1155810,47],
+  "core":["cc278fa4b3",1156355,47],
   "core@de":["3d55a185b7",701892,20],
   "core@fr":["b404f0dbf4",164272,20],
   "core@id":["0f58c8f7fa",296016,20],

@@ -150,6 +150,15 @@ window.AsmauLang = (function () {
     collect: collect,
     lines: function () { return gameLines; },
     notes: function () { return gameNotes; },
+    // another game's lines in this language (the recorder lists every game): { id: text }, empty if it has none
+    linesOf: function (s) {
+      if (lang === "en") return Promise.resolve({});
+      return getJSON(new URL("lang/" + lang + "/" + s + ".json", root).href).then(function (d) {
+        var out = {};
+        if (d && (d.status === "checked" || preview)) Object.keys(d.lines || {}).forEach(function (id) { var v = d.lines[id], tx = v && typeof v === "object" ? v.t : v; if (tx) out[id] = tx; });
+        return out;
+      });
+    },
     noVoice: function (s) { s = s || slug; return lang !== "en" && !!gameOk[s] && !(gameVoices[s] || []).length; },
     fallback: fallback,
     setFallback: function (f) { try { if (f === "en") localStorage.setItem("asmau-voice-fallback", "en"); else localStorage.removeItem("asmau-voice-fallback"); } catch (e) { /* this visit only */ } },                      // the notes for parents in this language, by page                      // the game's lines in this language, by id

@@ -23,7 +23,7 @@ module.exports = async function () {
   const sounds = []; p.on("request", (r) => { if (/\.mp3(\?|$)/.test(r.url())) sounds.push(r.url()); });
   await p.goto(site.url + "games/nuh/index.html?skipms=300", { waitUntil: "networkidle" });
   await p.click("details.parents summary");
-  const inGame = p.locator("details.parents .voice-pick");
+  const inGame = p.locator("details.parents .voice-pick:has([data-voice])");
   T.check(await inGame.isVisible() && await inGame.locator('[data-voice="m"][aria-checked="true"]').count() === 1, "the story's For parents box offers the choice, showing the man's voice");
   await inGame.locator('[data-voice="w"]').click();
   await p.click("#startBtn"); await p.waitForTimeout(900);

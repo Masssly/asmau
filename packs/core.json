@@ -1,4 +1,4 @@
-{"bytes":1162158,
+{"bytes":1162428,
 "files":{"404.html":"ba53a41f6e",
 "LICENSE":"f473958ef4",
 "LICENSE-CONTENT.md":"0cc084be0b",
@@ -8,7 +8,7 @@
 "fonts/fonts.css":"b44a490873",
 "fonts/mada-arabic.woff2":"5016ce2f7e",
 "fonts/mada-latin.woff2":"fd796dc139",
-"games/index.json":"8a5eae73aa",
+"games/index.json":"40e0f177a3",
 "guide.html":"76952aa60a",
 "icons/favicon-32.png":"30afdd0914",
 "icons/favicon.svg":"604f108080",
@@ -45,5 +45,5 @@
 "tools/record-voice/index.html":"733c3189fd",
 "tools/record-voice/join.html":"ba7b3dc502",
 "tools/record-voice/story.html":"6b9e8474ec",
-"version.json":"4df4d7668f"},
+"version.json":"c8d0ef859a"},
 "sizes":{}}

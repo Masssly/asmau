@@ -122,7 +122,7 @@ things work; this file holds the decisions that must not be lost between session
   read every line). With none, the game reads nothing aloud in that language: never the English voice under translated
   words, and never the device's own voice (English only). Recordings still play.
 - **Arabic is Modern Standard Arabic** (owner, 21 November 2026). Languages decided: Indonesian, German (live 21 November
-  2026, from a native speaker's sample), Malay, French, Turkish, Bengali; right to left: Arabic, Urdu, Persian. Languages AI
+  2026, from a native speaker's sample), French (live 21 November 2026 on the owner's own reading), Malay, French, Turkish, Bengali; right to left: Arabic, Urdu, Persian. Languages AI
   does not know well wait for paid human translators.
 - Voices: the same Aoede and Achird, asked to speak as native speakers of the language:
   `STORY_LANG=id [VOICE=m] PROJECT=asmau-assets python3 scripts/generate-voice-gemini.py games/<slug>` (clips in

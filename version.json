@@ -1,11 +1,18 @@
 {
-  "version": "2026.11.88",
+  "version": "2026.11.89",
   "date": "2026-11-21",
-  "buildId": "88f3eabfd12b",
+  "buildId": "aa43511695a3",
   "notes": [
-    "Français, complete as a draft: every story game, the notes for parents, For parents, the stories' About boxes, the privacy note, the voice recorder and the little ones' games are in French, for a native speaker to check (seen only with ?lang=fr). The voice recorder and the list of parents' guides now show each game's name in the family's language"
+    "Français is on for families: every story game, the notes for parents and For parents in French (no computer voice in French yet: silent, or the English voice if you choose it; your own recordings still play)"
   ],
   "history": [
+    {
+      "version": "2026.11.89",
+      "date": "2026-11-21",
+      "notes": [
+        "Français is on for families: every story game, the notes for parents and For parents in French (no computer voice in French yet: silent, or the English voice if you choose it; your own recordings still play)"
+      ]
+    },
     {
       "version": "2026.11.88",
       "date": "2026-11-21",

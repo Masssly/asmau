@@ -1,11 +1,18 @@
 {
-  "version": "2026.11.100",
+  "version": "2026.11.101",
   "date": "2026-11-25",
-  "buildId": "9888be66978a",
+  "buildId": "f2d8b0646a81",
   "notes": [
-    "Musa: the magicians in 13.4 look as they do in 13.8, 16.6 shows the people at the sea with Pharaoh's army still far behind them on the land, and the ordering game in 15.12 now starts with the years without rain, as the chapter does"
+    "Musa: in 18.5 the rock is the same rock as in 18.7, and in 19.4 Musa looks at the mountain ahead of him"
   ],
   "history": [
+    {
+      "version": "2026.11.101",
+      "date": "2026-11-25",
+      "notes": [
+        "Musa: in 18.5 the rock is the same rock as in 18.7, and in 19.4 Musa looks at the mountain ahead of him"
+      ]
+    },
     {
       "version": "2026.11.100",
       "date": "2026-11-25",

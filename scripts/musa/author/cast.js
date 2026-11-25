@@ -19,7 +19,7 @@ const WHO = {
   ELD:   ["the old father", "a very old man with a long white beard, a white turban and a brown cloak"],
   DAU:   ["the two daughters", "two modest young women in long dresses and headscarves, one in purple and one in sky blue"],
   KH:    ["al-Khidr", "a wise old man with a white beard, in a green turban and a long green cloak"],
-  YU:    ["Yusha", "a helpful boy of twelve in a short brown tunic and a small white cap"],
+  YU:    ["Yusha", "a young man of about twenty, slim, with a short neat black beard, in a knee-length brown tunic and a small white cap"],  // a young man (fata, 18:60), not a boy: owner, 25 November 2026
   SAM:   ["the Samiri", "a sly thin man in a grey robe and a dark red turban"],
   SORC:  ["the magicians", "a row of magicians in dark purple robes"],
   FOLK:  ["the people", "a crowd of families, men, women and children, in simple earth-coloured clothes"],

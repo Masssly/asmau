@@ -136,7 +136,7 @@ window.STORY_ART = {
   "m22-d": "A crowd of men sit stubbornly on the ground beside their tents with arms folded, while Musa and Harun stand looking at them sadly.",
   "m22-e": "Seen from high above: a long line of tiny people and animals winds in a great circle across an endless desert of dunes at dusk.",
   "m23-a": "Musa stands on a low rock speaking to a seated crowd at the camp; one man in the crowd raises a hand to ask a question.",
-  "m23-b": "Musa and Yusha set out walking along a rocky coast path at morning; the boy carries a woven basket with a fish's tail sticking out of it.",
+  "m23-b": "Musa and Yusha set out walking along a rocky coast path at morning; the young man carries a woven basket with a fish's tail sticking out of it.",
   "m23-c": "By a big rock on the seashore, Musa and Yusha lie asleep in the shade while a silver fish leaps from a tipped woven basket into the sea, leaving a clear tunnel-like…",
   "m23-d": "On a dusty path, Yusha looks into an empty woven basket with a shocked face and one hand on his head, while Musa sits down tired on a stone.",
   "m23-e": "Musa points excitedly back along a sandy coast path marked with two lines of footprints; Yusha turns to follow, the sea beside them.",

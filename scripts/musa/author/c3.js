@@ -104,7 +104,7 @@ chapter("m23", "🐟", "The Fish That Swam Away", "18:60-70", [], null);
 s("a", "camp", "One day, someone asked Musa: who knows the most, of all the people? Musa said: I do. So Allah told him: there is a servant of Mine, at the place where the two seas meet, who knows things that you do not know.",
   "{MU} stands on a low rock speaking to a seated crowd at {CAMP}; one man in the crowd raises a hand to ask a question.", { src: HAD, mood: "pastoral" });
 s("b", "desert", "Musa said to his young helper, Yusha: I will not stop until I reach the place where the two seas meet, even if it takes me years! They took a fish with them in a basket.",
-  "{MU} and {YU} set out walking along a rocky coast path at morning; the boy carries a woven basket with a fish's tail sticking out of it.", { mood: "trek" });
+  "{MU} and {YU} set out walking along a rocky coast path at morning; the young man carries a woven basket with a fish's tail sticking out of it.", { mood: "trek" });
 p("journey", "go", "desert", "Travel with Musa and Yusha to where the two seas meet.", { from: "⛺", to: "🌊", icon: "img:icon-musa", steps: 8 });
 s("c", "sea", "Musa and Yusha stopped to rest by a rock. And there, the fish slipped out of the basket, into the sea, and swam away! It is told that the water stood over its path like a little tunnel.",
   "By a big rock on the seashore, {MU} and {YU} lie asleep in the shade while a silver fish leaps from a tipped woven basket into the sea, leaving a clear tunnel-like trail in the water.", { src: HAD, cue: "splash" });

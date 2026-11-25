@@ -95,8 +95,13 @@
   "format": "PNG"
  },
  "scripts/musa-art/refs/YU.png": {
-  "hash": "f10c7c9f4b",
+  "hash": "228e735085",
   "stored": "scripts/musa-art/refs/YU.png.webp",
+  "format": "PNG"
+ },
+ "scripts/musa-art/refs/old/YU-boy.png": {
+  "hash": "f10c7c9f4b",
+  "stored": "scripts/musa-art/refs/old/YU-boy.png.webp",
   "format": "PNG"
  },
  "scripts/nuh-art/refs/NUH.png": {

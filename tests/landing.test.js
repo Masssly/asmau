@@ -19,6 +19,16 @@ module.exports = async function () {
     // which games are ready is read from the games themselves, so this does not go stale when one is finished
     T.check(await p.locator("a.tile").count() === ready, tag + ": the " + ready + " finished games can be opened");
     T.check(await p.locator(".tile.soon").count() === soon && await p.locator(".tile.soon a").count() === 0, tag + ": the " + soon + " unfinished games say Coming soon and have no link");
+    if (soon) {
+      // folded under one row with their faces; a tap opens the cards, and the choice is remembered
+      T.check(!(await p.locator(".tile.soon").first().isVisible()) && await p.locator(".soon-head").first().isVisible() && await p.locator(".soon-head .faces > *").count() > 0, tag + ": the coming-soon cards start folded under one row that shows their faces");
+      await p.locator(".soon-head").first().click();
+      T.check(await p.locator(".tile.soon").first().isVisible(), tag + ": a tap on the row opens the coming-soon cards");
+      await p.reload({ waitUntil: "networkidle" }); await p.waitForTimeout(300);
+      T.check(await p.locator(".tile.soon").first().isVisible(), tag + ": the row stays open after a reload");
+      await p.locator(".soon-head").first().click();
+      T.check(!(await p.locator(".tile.soon").first().isVisible()), tag + ": a second tap folds them away");
+    }
     T.check((await p.textContent("#verNote")).includes("Version 20"), tag + ": the version is shown: " + (await p.textContent("#verNote")).trim());
     await p.click("#parentsBtn"); await p.waitForTimeout(200);
     T.check(await p.locator("#parents .sheet").isVisible() && (await p.textContent("#parents")).includes("What’s new"), tag + ": the parents panel opens, with what's new");

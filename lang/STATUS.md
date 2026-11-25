@@ -14,6 +14,11 @@ Buttons and labels on every page (`site.json`): checked
 | nuh | checked | 100% | 100% | none |
 | yusuf | checked | 100% | 100% | none |
 | musa | checked | 100% | 100% | none |
+| ibrahim | checked |  | 100% | none |
+| sulayman | checked |  | 100% | none |
+| yunus | checked |  | 100% | none |
+| isa | checked |  | 100% | none |
+| muhammad | checked |  | 100% | none |
 | umm-ayman | checked | 100% | 100% | none |
 | ibn-battuta | checked | 100% | 100% | none |
 | nana-asmau | checked | 100% | 100% | none |
@@ -40,6 +45,11 @@ Buttons and labels on every page (`site.json`): checked
 | nuh | checked | 100% | 100% | none |
 | yusuf | checked | 100% | 100% | none |
 | musa | checked | 100% | 100% | none |
+| ibrahim | checked |  | 100% | none |
+| sulayman | checked |  | 100% | none |
+| yunus | checked |  | 100% | none |
+| isa | checked |  | 100% | none |
+| muhammad | checked |  | 100% | none |
 | umm-ayman | checked | 100% | 100% | none |
 | ibn-battuta | checked | 100% | 100% | none |
 | nana-asmau | checked | 100% | 100% | none |
@@ -66,6 +76,11 @@ Buttons and labels on every page (`site.json`): checked
 | nuh | checked | 100% | 100% | none |
 | yusuf | checked | 100% | 100% | none |
 | musa | checked | 100% | 100% | none |
+| ibrahim | checked |  | 100% | none |
+| sulayman | checked |  | 100% | none |
+| yunus | checked |  | 100% | none |
+| isa | checked |  | 100% | none |
+| muhammad | checked |  | 100% | none |
 | umm-ayman | checked | 100% | 100% | none |
 | ibn-battuta | checked | 100% | 100% | none |
 | nana-asmau | checked | 100% | 100% | none |
@@ -92,6 +107,11 @@ Buttons and labels on every page (`site.json`): checked
 | nuh | checked | 100% | 100% | none |
 | yusuf | checked | 100% | 100% | none |
 | musa | checked | 100% | 100% | none |
+| ibrahim | checked |  | 100% | none |
+| sulayman | checked |  | 100% | none |
+| yunus | checked |  | 100% | none |
+| isa | checked |  | 100% | none |
+| muhammad | checked |  | 100% | none |
 | umm-ayman | checked | 100% | 100% | none |
 | ibn-battuta | checked | 100% | 100% | none |
 | nana-asmau | checked | 100% | 100% | none |
@@ -118,6 +138,11 @@ Buttons and labels on every page (`site.json`): draft
 | nuh | draft | 100% | 100% | none |
 | yusuf | draft | 100% | 100% | none |
 | musa | draft | 100% | 100% | none |
+| ibrahim | draft |  | 100% | none |
+| sulayman | draft |  | 100% | none |
+| yunus | draft |  | 100% | none |
+| isa | draft |  | 100% | none |
+| muhammad | draft |  | 100% | none |
 | umm-ayman | draft | 100% | 100% | none |
 | ibn-battuta | draft | 100% | 100% | none |
 | nana-asmau | draft | 100% | 100% | none |

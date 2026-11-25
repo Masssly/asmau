@@ -17,20 +17,20 @@
 */
 
 // BEGIN GENERATED
-const RELEASE = "2026.11.95";
-const BUILD = "812c756e4395";
+const RELEASE = "2026.11.96";
+const BUILD = "30763a8068e9";
 // pack: [fingerprint of packs/<pack>.json, bytes, files]
 const PACKS = {
   "abdullah-quilliam":["257759b2cf",442,1],
-  "adam":["901008555f",2735394,55],
+  "adam":["22f80002d5",2715413,55],
   "adam@m":["a617f3f408",4026446,147],
   "adam@w":["217fc43e27",4316508,147],
-  "core":["13d110c363",1169411,47],
-  "core@de":["acfefac4a2",707935,20],
-  "core@fr":["72af588c22",724664,20],
-  "core@id":["91c1ac7894",706634,20],
-  "core@ms":["d97e3ecf99",720059,20],
-  "core@tr":["38aa5fb020",693660,20],
+  "core":["f18b390c79",1180393,47],
+  "core@de":["80274ed3f5",711162,25],
+  "core@fr":["6962f5d764",727907,25],
+  "core@id":["42cfc32a42",709816,25],
+  "core@ms":["b9aef773ea",723205,25],
+  "core@tr":["ec9cac5149",696310,25],
   "count-the-crescents":["c58ffd2f9d",83016,5],
   "count-the-crescents@m":["76410cb722",587647,52],
   "count-the-crescents@w":["238f9dbdf7",584828,52],
@@ -41,7 +41,10 @@ const PACKS = {
   "ibn-battuta":["edc49cc26d",3501285,54],
   "ibn-battuta@m":["fc1dc2b090",3523440,130],
   "ibn-battuta@w":["4418230851",3810161,130],
+  "ibrahim":["5ad8af11ed",487,1],
+  "isa":["693f99025a",465,1],
   "mariam-alolo":["a06c1449ec",422,1],
+  "muhammad":["9c071bf74b",535,1],
   "muhammad-asad":["e8b07f6b96",446,1],
   "musa":["569849e171",7953703,162],
   "musa@m":["7600ae23b8",14067572,423],
@@ -58,12 +61,14 @@ const PACKS = {
   "rahmah@m":["35a8bb21ae",2876572,114],
   "rahmah@w":["ef657c152b",3123167,114],
   "rumi":["96e3caea5b",409,1],
+  "sulayman":["919594f98a",497,1],
   "tap-and-say":["284f427c70",21717,4],
   "tap-and-say@m":["71edb942d5",1501703,126],
   "tap-and-say@w":["d9e7f925b2",1472336,126],
   "umm-ayman":["b2c4b05c2a",3281590,56],
   "umm-ayman@m":["25ae6bd6a0",3369590,116],
   "umm-ayman@w":["aa2daf9273",3702494,116],
+  "yunus":["36ef37f845",466,1],
   "yunus-emre":["6881152c52",408,1],
   "yusuf":["897137a140",5870900,94],
   "yusuf@m":["5f24cea0b0",6661953,191],

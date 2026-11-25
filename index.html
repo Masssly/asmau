@@ -82,13 +82,31 @@
 
   /* not ready yet: shown, so it is clear more is coming, but it cannot be opened */
   .tile.soon .cover.plain { filter: grayscale(.55) brightness(.8); }
-  .grid.many > a.tile:first-child { grid-column: 1 / -1; }
+  /* every card the same size: none is bigger because it happens to come first (owner, 25 November 2026) */
   .tile.soon .cover .emo { animation: none; }
   .soon-tag {
     position: absolute; left: 12px; top: 12px; background: #0c1530; color: var(--gold); border: 2px solid var(--gold);
     border-radius: 999px; padding: 4px 12px; font-family: var(--font-display); font-weight: 700; font-size: 14px;
   }
 
+  /* coming soon, folded: one slim row with the faces, the cards open below it (owner, 25 November 2026) */
+  .soon-fold { margin-top: 16px; }
+  .soon-head { width: 100%; display: flex; align-items: center; gap: 10px; padding: 8px 14px; min-height: 52px; box-sizing: border-box;
+    background: rgba(255,255,255,.05); border: 1px solid var(--card-line); border-radius: 999px; color: var(--cream); font: inherit; cursor: pointer; text-align: left; }
+  .soon-head:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
+  .soon-head .lab { font-family: var(--font-display); font-weight: 700; font-size: 16px; color: var(--gold); white-space: nowrap; }
+  .soon-head .count { font-size: 13px; color: var(--muted); }
+  .soon-head .faces { display: flex; flex: 1; min-width: 0; justify-content: flex-end; overflow: hidden; padding-left: 10px; }
+  .soon-head .faces img, .soon-head .faces .more { width: 34px; height: 34px; flex: none; border-radius: 50%; object-fit: cover; object-position: 50% 30%;
+    border: 2px solid #0c1530; margin-left: -9px; background: #2c3a7a; }
+  .soon-head .faces .emo { width: 34px; height: 34px; flex: none; border-radius: 50%; border: 2px solid #0c1530; margin-left: -9px;
+    background: #2c3a7a; display: grid; place-items: center; font-size: 18px; line-height: 1; }
+  .soon-head .faces .more { display: grid; place-items: center; font-size: 12px; font-weight: 700; color: var(--cream); }
+  .soon-fold .cover { aspect-ratio: 5 / 2; }
+  .soon-fold .cover .emo { font-size: clamp(48px, 14vw, 72px); }
+  .soon-head::after { content: "▸"; color: var(--muted); font-size: 18px; transition: transform .2s; }
+  .soon-head[aria-expanded="true"]::after { transform: rotate(90deg); }
+  .soon-fold .grid { margin-top: 14px; }
   .empty { text-align: center; color: var(--muted); padding: 30px 0; }
   footer { margin-top: 26px; color: var(--muted); font-size: 12px; text-align: center; line-height: 1.6; }
   footer a { color: var(--gold, #f0b84b); }
@@ -628,6 +646,35 @@
   function setFolded(title, on) { try { var f = folded(); if (on) f[title] = 1; else delete f[title]; localStorage.setItem("asmau-folded", JSON.stringify(f)); } catch (e) { /* this visit only */ } }
   function matches(g, q) { return !q || (g.title + " " + (g.tagline || "") + " " + T(g, "title") + " " + (T(g, "tagline") || "")).toLowerCase().indexOf(q) >= 0; }
 
+  // The games still to come, folded under one slim row that shows their faces; a tap opens their cards.
+  // Open or shut is remembered on this device, per section; a search that finds one opens it.
+  function soonOpen() { try { return JSON.parse(localStorage.getItem("asmau-soon-open") || "{}"); } catch (e) { return {}; } }
+  function setSoonOpen(title, on) { try { var o = soonOpen(); if (on) o[title] = 1; else delete o[title]; localStorage.setItem("asmau-soon-open", JSON.stringify(o)); } catch (e) { /* this visit only */ } }
+  function soonFold(title, games, force) {
+    var wrap = el("div", "soon-fold"), head = el("button", "soon-head"), open = force || !!soonOpen()[title];
+    head.type = "button";
+    head.setAttribute("aria-expanded", String(open));
+    head.appendChild(el("span", "lab", "Coming soon"));
+    head.appendChild(el("span", "count", String(games.length)));
+    var faces = el("span", "faces"), shown = games.slice(0, 7);
+    faces.setAttribute("aria-hidden", "true");
+    shown.forEach(function (g) {
+      if (g.cover) { var i = el("img"); i.loading = "lazy"; i.decoding = "async"; i.alt = ""; i.src = "games/" + g.slug + "/" + g.cover; faces.appendChild(i); }
+      else faces.appendChild(el("span", "emo", g.icon || "🎲"));
+    });
+    if (games.length > shown.length) faces.appendChild(el("span", "more", "+" + (games.length - shown.length)));
+    head.appendChild(faces);
+    var grid = el("div", "grid" + (games.length > 1 ? " many" : ""));
+    games.forEach(function (g) { grid.appendChild(card(g)); });
+    grid.hidden = !open;
+    head.addEventListener("click", function () {
+      var on = head.getAttribute("aria-expanded") !== "true";
+      head.setAttribute("aria-expanded", String(on)); grid.hidden = !on; if (!force) setSoonOpen(title, on);
+    });
+    wrap.appendChild(head); wrap.appendChild(grid);
+    return wrap;
+  }
+
   function render(sections, query) {
     var main = document.getElementById("sections"), q = (query || "").trim().toLowerCase(), f = folded();
     main.innerHTML = "";
@@ -648,9 +695,14 @@
       sec.appendChild(head);
       var body = el("div", "section-body");
       body.hidden = shut;
-      var grid = el("div", "grid" + (s.games.length > 1 ? " many" : ""));
-      s.games.forEach(function (g) { grid.appendChild(card(g)); });
-      body.appendChild(grid);
+      var ready = s.games.filter(function (g) { return g.status !== "coming-soon"; }),
+          later = s.games.filter(function (g) { return g.status === "coming-soon"; });
+      if (ready.length) {
+        var grid = el("div", "grid" + (ready.length > 1 ? " many" : ""));
+        ready.forEach(function (g) { grid.appendChild(card(g)); });
+        body.appendChild(grid);
+      }
+      if (later.length) body.appendChild(soonFold(s.title, later, !!q || !ready.length));
       if (s.more && !q) body.appendChild(el("p", "more-note", "✦ " + s.more));
       sec.appendChild(body);
       head.addEventListener("click", function () {

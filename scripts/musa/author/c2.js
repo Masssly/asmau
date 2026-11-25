@@ -10,7 +10,7 @@ p("seek", "seek", "night", "It is so dark. Slide your finger around to look, and
 p("journey", "climb", "night", "Walk with Musa up to the fire.", { from: "⛺", to: "🔥", icon: "img:icon-musa", steps: 7 });
 s("c", "fire", "When he came close, a voice called out: Musa! I am your Lord. Take off your sandals. You are in the holy valley of Tuwa.",
   "Night in a rocky valley: a green tree glows with brilliant golden fire-like light that does not burn its leaves; {MU} stands before it shielding his eyes in awe, his sandals still on his feet.", { mood: "awe" });
-p("count", "sandals", "fire", "Help Musa take off his sandals. Tap each one.", { total: 2, icon: "👡", got: "✨" }, { img: "c" });
+p("count", "sandals", "fire", "Help Musa take off his sandals. Tap each one.", { total: 2, icon: "🩴", got: "✨" }, { img: "c" });
 s("d", "fire", "I have chosen you, so listen. I am Allah. There is no god but Me. So worship Me, and keep up the prayer, to remember Me.",
   "{MU} kneels barefoot on the ground with his head bowed and his staff laid beside him, before a tree shining with golden light in a dark rocky valley; his sandals rest on a stone.", { mood: "awe" });
 p("hold", "listen", "fire", "Be very still and listen, like Musa. Press and hold the light.", { ms: 3200, icon: "✨", hint: "Press and hold", done: "There is no god but Allah" }, { img: "d" });
@@ -25,17 +25,17 @@ chg("staff", "fire", "Allah said: throw it down. Tap the staff to throw it.", [
 s("b", "fire", "The staff had become a real snake, and then a staff again. It was a sign from Allah.",
   "A large golden-brown snake rears up from the ground where a staff was thrown; {MU}, barefoot and empty-handed, steps back in surprise; the valley glows with golden light from one side.", { mood: "awe" });
 chg("hand", "fire", "Then Allah said: put your hand inside your shirt, and take it out. Tap the hand.", [
-  ["✋", ""], ["✋", "It shone white, bright and beautiful, and it did not hurt at all! Tap it again.", true], ["✋", "And it was just as before."]
+  ["✋", ""], ["✋", "It shone with a bright, beautiful light, and it did not hurt at all! Tap it again.", true], ["✋", "And it was just as before."]
 ]);
-s("c", "fire", "Musa's hand shone white. It is told that it shone like the moon. This was another sign.",
+s("c", "fire", "Musa's hand shone bright. It is told that it shone like the moon. This was another sign.",
   "{MU} looks in wonder at his own raised right hand, which shines with soft pure white light that lights up his face, in a dark rocky valley at night.", { src: TAF, mood: "awe" });
 s("d", "fire", "Then Allah said: now go to Pharaoh. He has gone much too far.", "{MU} stands in a dark rocky valley at night, staff in hand, looking far off into the distance where, beyond the desert, the faint lights of a great river city and a palace glow on the horizon; a soft gentle light falls on him from above. He looks serious and determined.", { mood: "dread" });
 mat("match", "fire", "Match each thing to what happened. Tap one on the left, then its partner on the right.", [
   ["STAFF", "The staff", "🐍", "became a snake"],
-  ["✋", "The hand", "🌕", "shone white"],
-  ["👡", "The sandals", "⛰️", "came off in the holy valley"]
+  ["✋", "The hand", "🌕", "shone bright"],
+  ["🩴", "The sandals", "⛰️", "came off in the holy valley"]
 ]);
-p("memory", "mem", "fire", "Find the pairs from that wonderful night.", { icons: ["🔥", "🐍", "✋", "👡", "⛰️", "🌕"] });
+p("memory", "mem", "fire", "Find the pairs from that wonderful night.", { icons: ["🔥", "🐍", "✋", "🩴", "⛰️", "🌕"] });
 
 chapter("m11", "🤲", "Musa's Prayer", "20:25-36", ["28:33-35", "20:42-46"], null);
 s("a", "fire", "Musa was worried. He said: my Lord, I am afraid of what they may do to me. And speaking is hard for me. My brother Harun speaks better than I do.",
@@ -50,9 +50,9 @@ ord("ord", "fire", "Say Musa's prayer with him. Tap the parts in order.", [
   ["🤝", "Give me my brother", "And give me my brother to help me."]
 ], "Not yet. Listen again: heart, task, tongue, brother.", { img: "b" });
 s("d", "fire", "Allah said: Musa, you have been given what you asked for.", "In the rocky valley, the first gentle light of dawn breaks over the mountains; {MU} rises from his knees with a face full of joy and peace, one hand on his heart and his staff in the other.", { mood: "triumph" });
-s("e0", "desert", "So Musa set off back to Egypt, with his brother Harun at his side.", "{MU} and {HA} walk side by side along a desert road toward a river city with date palms in warm late-afternoon light, seen from behind and a little to the side, their long shadows stretching ahead of them.", { mood: "trek" });
+s("e0", "desert", "So Musa set off back to Egypt, with his brother Harun at his side.", "{MU} and {HA} embrace warmly as brothers meeting on a desert road at sunrise, a river city far behind them.", { mood: "triumph" });
 s("e", "desert", "Allah told them: go to Pharaoh, both of you. Speak to him gently, so that he may think, and remember. Do not be afraid. I am with you both. I hear and I see everything.",
-  "{MU} and {HA} embrace warmly as brothers meeting on a desert road at sunrise, a river city far behind them.", { mood: "triumph" });
+  "{MU} and {HA} walk side by side along a desert road toward a river city with date palms in warm late-afternoon light, seen from behind and a little to the side, their long shadows stretching ahead of them.", { mood: "trek" });
 q("q", "desert", "How should Musa and Harun speak to Pharaoh?", ["Gently", "🕊️"], ["With shouting", "😡"], "No. Allah told them: speak to him gently.", { img: "e" });
 srt("sort", "desert", "Is it a gentle word, or a harsh word?", ["Gentle", "🕊️"], ["Harsh", "🌩️"], [
   ["🙂", "Please listen to me", 0], ["😠", "You are stupid!", 1], ["🤝", "Let us talk together", 0], ["👉", "Go away!", 1], ["💛", "Peace be with you", 0]

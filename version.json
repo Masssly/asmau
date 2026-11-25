@@ -1,11 +1,18 @@
 {
-  "version": "2026.11.92",
-  "date": "2026-11-21",
-  "buildId": "97cd0790d1cd",
+  "version": "2026.11.93",
+  "date": "2026-11-25",
+  "buildId": "491517471fe4",
   "notes": [
-    "Türkçe, complete as a draft: every story game, the notes for parents, For parents, the stories' About boxes, the privacy note, the voice recorder and the little ones' games are in Turkish, for a native speaker to check (seen only with ?lang=tr). The verses quoted in the Turkish notes follow the Diyanet translation of the Qur'an"
+    "Musa: ten pictures redrawn from your notes (Musa turned toward the burning tree, a friendly cartoon snake, the brothers facing Pharaoh, Harun beside Musa, the sea in front of the people and the army behind), the shining hand is now called bright, pages 11.6 and 11.7 in the right order, and men's sandals. The press-and-hold lamp lasts a little longer, and storms have thunder rolling far off"
   ],
   "history": [
+    {
+      "version": "2026.11.93",
+      "date": "2026-11-25",
+      "notes": [
+        "Musa: ten pictures redrawn from your notes (Musa turned toward the burning tree, a friendly cartoon snake, the brothers facing Pharaoh, Harun beside Musa, the sea in front of the people and the army behind), the shining hand is now called bright, pages 11.6 and 11.7 in the right order, and men's sandals. The press-and-hold lamp lasts a little longer, and storms have thunder rolling far off"
+      ]
+    },
     {
       "version": "2026.11.92",
       "date": "2026-11-21",

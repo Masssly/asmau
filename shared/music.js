@@ -508,6 +508,8 @@ window.AsmauMusic = (function () {
     crowd:  { beds: [["bandpass", 520, 0.9, 0.07, 3, 0.45], ["bandpass", 1300, 1.2, 0.03, 2, 0.6]], events: [[0.12, "voice"]] },
     sea:    { beds: [["lowpass", 900, 0.5, 0.16, 6.5, 0.85], ["highpass", 2600, 0.5, 0.03, 6.5, 0.9]], events: [[0.004, "gull"]] },
     rain:   { beds: [["highpass", 1800, 0.5, 0.10, 4, 0.2], ["lowpass", 300, 0.6, 0.07, 6, 0.5]], events: [[0.05, "drip"]] },
+    // rain with thunder rolling far off now and then, about every ten seconds (owner, 25 November 2026)
+    storm:  { beds: [["highpass", 1800, 0.5, 0.10, 4, 0.2], ["lowpass", 300, 0.6, 0.08, 6, 0.5]], events: [[0.05, "drip"], [0.012, "rumble"]] },
     birds:  { beds: [["bandpass", 500, 0.8, 0.03, 8, 0.5]], events: [[0.05, "bird"]] },
     camp:   { beds: [["lowpass", 480, 0.6, 0.05, 3, 0.4], ["bandpass", 600, 0.9, 0.035, 3, 0.5]], events: [[0.12, "crackle"], [0.05, "voice"], [0.006, "bleat"]] }
   };
@@ -516,6 +518,11 @@ window.AsmauMusic = (function () {
     var k = kit(ctx), noise = makeNoise(ctx), cur = null, curName = "none", bus = null, timer = null;
     var EVENTS = {
       drip: function (t) { var f = 900 + Math.random() * 1400; k.tone(bus, "sine", f, f * 1.5, t, 0.06, 0.035); },
+      // distant thunder: soft and low, never a crack close by
+      rumble: function (t) {
+        for (var i = 0; i < 6; i++) k.hiss(bus, t + i * 0.26, 0.5, 0.1 - i * 0.014, "lowpass", 170 - i * 16, 55, 0.7);
+        k.tone(bus, "sine", 62, 30, t, 1.3, 0.07);
+      },
       bird: function (t) { var f = 2200 + Math.random() * 1600; for (var i = 0; i < 3; i++) k.tone(bus, "sine", f, f * (1.15 + 0.2 * Math.random()), t + i * 0.09, 0.07, 0.03); },
       cricket: function (t) { for (var i = 0; i < 4; i++) k.tone(bus, "square", 4300, 4300, t + i * 0.045, 0.025, 0.012, 6000); },
       owl: function (t) { k.tone(bus, "sine", 420, 380, t, 0.3, 0.04); k.tone(bus, "sine", 400, 350, t + 0.4, 0.45, 0.04); },

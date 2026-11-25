@@ -49,7 +49,7 @@
   var SCENE_MOOD = merge({ night: "wonder", dusk: "sad", desert: "desert", well: "tense", egypt: "regal", palace: "regal", prison: "sad", field: "joy", grey: "sad", dawn: "joy" }, CFG.sceneMood);
   // the sounds of the place, under the music: see amb() in music.js
   var SCENE_AMB = merge({ night: "night", dusk: "night", desert: "wind", well: "wind", egypt: "crowd", field: "birds", grey: "wind", dawn: "birds",
-    river: "river", city: "crowd", fire: "fire", mountain: "wind", sea: "sea", camp: "camp", storm: "rain" }, CFG.sceneAmb);
+    river: "river", city: "crowd", fire: "fire", mountain: "wind", sea: "sea", camp: "camp", storm: "storm" }, CFG.sceneAmb);
   // something always moving in the scene: see .fxl in story.css
   var SCENE_FX = merge({ night: "stars", desert: "dust", river: "water", sea: "water", fire: "embers", storm: "rain", mountain: "mist", camp: "embers", dawn: "rays" }, CFG.sceneFx);
   // what is drawn behind a narrated step that has no picture
@@ -646,7 +646,8 @@
   // Patience: keep a finger on the lamp until it is fully lit.
   ACT.hold = function (opts, done) {
     var p = 0, holding = false, finished = false, last = 0, raf = 0;
-    var need = opts.ms || 3200;
+    // slower than at first (owner, 25 November 2026): children enjoy holding on while the music speeds up
+    var need = Math.round((opts.ms || 3200) * 1.6);
     var dark = mk("div", "dark");
     stage.appendChild(dark);
     var btn = mk("button", "lamp-btn");

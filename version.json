@@ -1,11 +1,18 @@
 {
-  "version": "2026.11.101",
+  "version": "2026.11.102",
   "date": "2026-11-25",
-  "buildId": "f2d8b0646a81",
+  "buildId": "d7354401bb1d",
   "notes": [
-    "Musa: in 18.5 the rock is the same rock as in 18.7, and in 19.4 Musa looks at the mountain ahead of him"
+    "Musa 20.1: no golden calf yet while the people are still throwing their gold into the fire, and every woman's hair covered"
   ],
   "history": [
+    {
+      "version": "2026.11.102",
+      "date": "2026-11-25",
+      "notes": [
+        "Musa 20.1: no golden calf yet while the people are still throwing their gold into the fire, and every woman's hair covered"
+      ]
+    },
     {
       "version": "2026.11.101",
       "date": "2026-11-25",

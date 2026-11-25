@@ -1,3 +1,5 @@
+/* the plain colour under the gradient: an iPhone shows it, not white, when the page is pulled past its top or bottom */
+html { background-color: #0c1530; }
 body { background: radial-gradient(circle at 50% -10%, #1c2d5e, #0c1530 60%); min-height: 100%; -webkit-tap-highlight-color: transparent; }
 button { touch-action: manipulation; -webkit-tap-highlight-color: transparent; }
 

@@ -4,6 +4,7 @@
   with brighter scenes inside the picture.
 */
 html, body { height: 100%; overflow: hidden; }
+html { background-color: #0c1530; }   /* not white when an iPhone page is pulled past its top or bottom */
 body {
   position: fixed; left: 0; top: 0; right: 0; bottom: 0;
   background: radial-gradient(120% 90% at 50% -10%, #3b4fc0 0%, #1d2b74 45%, #0c1530 100%);

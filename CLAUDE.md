@@ -187,6 +187,11 @@ things work; this file holds the decisions that must not be lost between session
   storage on every device.
 
 ## Releasing
-- `node scripts/release.js "note"` → `node scripts/validate.js` → full tests (tests/run.js) →
+- `node scripts/release.js "note"` → `node scripts/validate.js` → tests: `node tests/run.js quick` →
   commit → `scripts/publish-media.js` (needs ADMIN_TOKEN, never committed; **required** whenever pictures or sounds
   changed, since R2 is their only home) → push main → check https://asmau.org/version.json live.
+- **Two levels of tests** (owner, 25 November 2026): `node tests/run.js quick` runs only what the change since the live site
+  needs (tests/plan.js maps files to test groups; one story game's change plays that game only). It runs everything
+  instead when the change touches the engine (story engine, styles, music, narration, loaders, the build, the test
+  runner), when a file is not in the plan, or when no full run has passed on this machine today. `node tests/run.js`
+  is the full run (about 18 minutes). A new kind of file gets a rule in tests/plan.js, never a way round it.

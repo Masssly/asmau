@@ -1,11 +1,18 @@
 {
-  "version": "2026.11.97",
+  "version": "2026.11.98",
   "date": "2026-11-25",
-  "buildId": "2274c5ea81dd",
+  "buildId": "f58c415c2fe6",
   "notes": [
-    "On iPhone, pulling a page past its top or bottom no longer shows a white band: the page's dark blue continues"
+    "Musa 8.7: the two sisters look as they do on the pages before, the same height, in purple and sky blue, their hair covered. Tests now come in two levels: a quick check of what changed, and the full run for the engine and once a day"
   ],
   "history": [
+    {
+      "version": "2026.11.98",
+      "date": "2026-11-25",
+      "notes": [
+        "Musa 8.7: the two sisters look as they do on the pages before, the same height, in purple and sky blue, their hair covered. Tests now come in two levels: a quick check of what changed, and the full run for the engine and once a day"
+      ]
+    },
     {
       "version": "2026.11.97",
       "date": "2026-11-25",

@@ -1,6 +1,6 @@
 {
   "name": "asmau-tests",
   "private": true,
-  "scripts": { "test": "node run.js" },
+  "scripts": { "test": "node run.js", "quick": "node run.js quick" },
   "devDependencies": { "playwright": "1.63.0" }
 }

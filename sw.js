@@ -17,20 +17,20 @@
 */
 
 // BEGIN GENERATED
-const RELEASE = "2026.11.99";
-const BUILD = "0473e602f3b3";
+const RELEASE = "2026.11.100";
+const BUILD = "9888be66978a";
 // pack: [fingerprint of packs/<pack>.json, bytes, files]
 const PACKS = {
   "abdullah-quilliam":["257759b2cf",442,1],
   "adam":["22f80002d5",2715413,55],
   "adam@m":["a617f3f408",4026446,147],
   "adam@w":["217fc43e27",4316508,147],
-  "core":["edbfd1b294",1181601,47],
-  "core@de":["9a68323857",712309,25],
-  "core@fr":["c35a57fa4c",729035,25],
-  "core@id":["2372353e30",710938,25],
-  "core@ms":["54b6076a98",724333,25],
-  "core@tr":["8e6055a344",697379,25],
+  "core":["40ba1213bb",1182009,47],
+  "core@de":["a9cdc90b05",713061,25],
+  "core@fr":["5cc9e2dddf",729806,25],
+  "core@id":["d4e7e28df0",711715,25],
+  "core@ms":["b8cd005295",725125,25],
+  "core@tr":["3720f007ae",698158,25],
   "count-the-crescents":["86d99562d7",83123,5],
   "count-the-crescents@m":["76410cb722",587647,52],
   "count-the-crescents@w":["238f9dbdf7",584828,52],
@@ -46,9 +46,9 @@ const PACKS = {
   "mariam-alolo":["a06c1449ec",422,1],
   "muhammad":["9c071bf74b",535,1],
   "muhammad-asad":["e8b07f6b96",446,1],
-  "musa":["b1f0f11bb2",7954605,162],
-  "musa@m":["7600ae23b8",14067572,423],
-  "musa@w":["fbb136a3f1",15276925,423],
+  "musa":["d16325d0af",7965686,162],
+  "musa@m":["b4cd844fc9",14074485,424],
+  "musa@w":["2acfdadcaa",15287287,424],
   "nana-asmau":["cfb3760e97",2477392,51],
   "nana-asmau@m":["0a028f5761",3395505,116],
   "nana-asmau@w":["a6c18e6bbe",3665928,116],

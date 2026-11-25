@@ -895,32 +895,32 @@
    "t": "Bukan. Setiap kali, mereka mengingkari janji mereka."
   },
   "m15-ord": {
-   "en": "Five signs came, one after another. Tap them in order.",
-   "t": "Lima tanda datang, satu demi satu. Ketuk secara berurutan."
+   "en": "One trouble came after another. Tap them in order.",
+   "t": "Satu kesusahan datang demi satu. Ketuk sesuai urutan."
   },
   "m15-ord-c1": {
-   "en": "First, the flood.",
-   "t": "Pertama, banjir."
+   "en": "First, years with no rain.",
+   "t": "Pertama, tahun-tahun tanpa hujan."
   },
   "m15-ord-c2": {
+   "en": "Then the flood.",
+   "t": "Lalu banjir."
+  },
+  "m15-ord-c3": {
    "en": "Then the locusts.",
    "t": "Lalu belalang."
   },
-  "m15-ord-c3": {
+  "m15-ord-c4": {
    "en": "Then the tiny bugs.",
    "t": "Lalu kutu-kutu kecil."
   },
-  "m15-ord-c4": {
+  "m15-ord-c5": {
    "en": "Then the frogs.",
    "t": "Lalu katak."
   },
-  "m15-ord-c5": {
-   "en": "And then the red water.",
-   "t": "Dan kemudian air yang merah."
-  },
   "m15-ord-no": {
-   "en": "Not that one yet. Rain, locusts, bugs, frogs, red water.",
-   "t": "Belum yang itu. Hujan, belalang, kutu, katak, air merah."
+   "en": "Not that one yet. No rain, flood, locusts, bugs, frogs, red water.",
+   "t": "Belum yang itu. Tanpa hujan, banjir, belalang, kutu, katak, air merah."
   },
   "m16-a": {
    "en": "At last, Allah told Musa: leave by night, with My servants.",
@@ -1693,6 +1693,10 @@
   "end-a": {
    "en": "This is the story of Musa, peace be upon him. When the sea was in front of him, and the army was behind him, he said: my Lord is with me. He will guide me.",
    "t": "Inilah kisah Nabi Musa 'alaihissalam. Ketika laut di depannya, dan bala tentara di belakangnya, ia berkata: Tuhanku bersamaku. Dia akan memberi petunjuk kepadaku."
+  },
+  "m15-ord-c6": {
+   "en": "And then the red water.",
+   "t": "Dan lalu air merah."
   }
  },
  "strings": {
@@ -1790,7 +1794,8 @@
   "Shown in this story: Prophet Musa and Prophet Harun (peace be upon them), al-Khidr, and the people around them. Allah’s speech to Musa is shown only as a fire and a light. Prophet Muhammad ﷺ is mentioned once, at the fast of Ashura.": "Yang ditampilkan dalam cerita ini: Nabi Musa dan Nabi Harun (semoga keselamatan tercurah kepada keduanya), Khidir, dan orang-orang di sekitar mereka. Firman Allah kepada Musa hanya ditampilkan sebagai api dan cahaya. Nabi Muhammad ﷺ disebut sekali, pada puasa Asyura.",
   "🧒 Ages and how long it is": "🧒 Usia dan panjangnya",
   "It is long on purpose: about a hundred activities over 25 chapters. Nobody is meant to finish it in one sitting. A child of 3 or 4 will need a grown-up for the ordering, sorting and matching games.": "Cerita ini sengaja panjang: sekitar seratus kegiatan dalam 25 bab. Tidak ada yang dimaksudkan untuk menyelesaikannya sekali duduk. Anak usia 3 atau 4 tahun akan perlu didampingi orang dewasa untuk permainan mengurutkan, memilah, dan mencocokkan.",
-  "The story of Musa is spread over many surahs. This game follows <a href=\"https://quran.com/28\" target=\"_blank\" rel=\"noopener\">Surah Al-Qasas</a> (28:3–43) and <a href=\"https://quran.com/20\" target=\"_blank\" rel=\"noopener\">Surah Ta-Ha</a> (20:9–98), with passages from surahs 2, 5, 7, 10, 18, 26, 40 and 66. It is a large part of what the Qur’an tells of Musa, not all of it.": "Kisah Musa tersebar di banyak surah. Permainan ini mengikuti <a href=\"https://quran.com/28\" target=\"_blank\" rel=\"noopener\">Surah Al-Qasas</a> (28:3–43) dan <a href=\"https://quran.com/20\" target=\"_blank\" rel=\"noopener\">Surah Taha</a> (20:9–98), dengan ayat-ayat dari surah 2, 5, 7, 10, 18, 26, 40, dan 66. Ini sebagian besar dari yang diceritakan Al-Qur'an tentang Musa, bukan seluruhnya."
+  "The story of Musa is spread over many surahs. This game follows <a href=\"https://quran.com/28\" target=\"_blank\" rel=\"noopener\">Surah Al-Qasas</a> (28:3–43) and <a href=\"https://quran.com/20\" target=\"_blank\" rel=\"noopener\">Surah Ta-Ha</a> (20:9–98), with passages from surahs 2, 5, 7, 10, 18, 26, 40 and 66. It is a large part of what the Qur’an tells of Musa, not all of it.": "Kisah Musa tersebar di banyak surah. Permainan ini mengikuti <a href=\"https://quran.com/28\" target=\"_blank\" rel=\"noopener\">Surah Al-Qasas</a> (28:3–43) dan <a href=\"https://quran.com/20\" target=\"_blank\" rel=\"noopener\">Surah Taha</a> (20:9–98), dengan ayat-ayat dari surah 2, 5, 7, 10, 18, 26, 40, dan 66. Ini sebagian besar dari yang diceritakan Al-Qur'an tentang Musa, bukan seluruhnya.",
+  "No rain": "Tanpa hujan"
  },
  "notes": {
   "1.1": {
@@ -2326,8 +2331,8 @@
    "t": "Tanyakan: apa yang seharusnya mereka lakukan? (Menepati janji, beriman.)"
   },
   "15.12": {
-   "en": "Let your child name the five signs in order before tapping.",
-   "t": "Biarkan anak Anda menyebut kelima tanda secara berurutan sebelum mengetuk."
+   "en": "Let your child name the six troubles in order before tapping: the years with no rain (7:130) came first, then the five signs of 7:133.",
+   "t": "Biarkan anak Anda menyebut keenam kesusahan secara berurutan sebelum mengetuk: pertama tahun-tahun tanpa hujan (7:130), lalu kelima tanda dalam 7:133."
   },
   "16.1": {
    "en": "Verse 20:77: 'Go out at night with My servants and strike a dry path for them across the sea. Have no fear of being overtaken.' Verses 26:60–62: Pharaoh and his people pursued them at sunrise; when the two sides came in sight of each other Musa's followers said, 'We shall definitely be caught', and Musa said, 'No, my Lord is with me: He will guide me.'\n\nThe commentary says they were caught up with at the shore, the sea in front and Pharaoh behind. The lamps in the 'wake the families' activity are ours.",

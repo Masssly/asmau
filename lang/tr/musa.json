@@ -895,32 +895,32 @@
    "t": "Hayır. Her seferinde sözlerini bozdular."
   },
   "m15-ord": {
-   "en": "Five signs came, one after another. Tap them in order.",
-   "t": "Beş mucize birbiri ardınca geldi. Sırayla dokun."
+   "en": "One trouble came after another. Tap them in order.",
+   "t": "Sıkıntılar birbiri ardınca geldi. Sırayla dokun."
   },
   "m15-ord-c1": {
-   "en": "First, the flood.",
-   "t": "Önce sel."
+   "en": "First, years with no rain.",
+   "t": "Önce yağmursuz yıllar."
   },
   "m15-ord-c2": {
+   "en": "Then the flood.",
+   "t": "Sonra sel."
+  },
+  "m15-ord-c3": {
    "en": "Then the locusts.",
    "t": "Sonra çekirgeler."
   },
-  "m15-ord-c3": {
+  "m15-ord-c4": {
    "en": "Then the tiny bugs.",
    "t": "Sonra minicik böcekler."
   },
-  "m15-ord-c4": {
+  "m15-ord-c5": {
    "en": "Then the frogs.",
    "t": "Sonra kurbağalar."
   },
-  "m15-ord-c5": {
-   "en": "And then the red water.",
-   "t": "Sonra da kırmızı su."
-  },
   "m15-ord-no": {
-   "en": "Not that one yet. Rain, locusts, bugs, frogs, red water.",
-   "t": "Henüz o değil. Sel, çekirgeler, böcekler, kurbağalar, kırmızı su."
+   "en": "Not that one yet. No rain, flood, locusts, bugs, frogs, red water.",
+   "t": "Henüz o değil. Yağmursuzluk, sel, çekirgeler, böcekler, kurbağalar, kırmızı su."
   },
   "m16-a": {
    "en": "At last, Allah told Musa: leave by night, with My servants.",
@@ -1693,6 +1693,10 @@
   "end-a": {
    "en": "This is the story of Musa, peace be upon him. When the sea was in front of him, and the army was behind him, he said: my Lord is with me. He will guide me.",
    "t": "Bu, Musa’nın (selam onun üzerine olsun) hikâyesidir. Önünde deniz, arkasında ordu varken şöyle dedi: Rabbim benimle beraberdir, bana elbette yol gösterecektir."
+  },
+  "m15-ord-c6": {
+   "en": "And then the red water.",
+   "t": "Sonra da kırmızı su."
   }
  },
  "strings": {
@@ -1807,7 +1811,8 @@
   "🧒 Ages and how long it is": "🧒 Yaşlar ve süre",
   "It is long on purpose: about a hundred activities over 25 chapters. Nobody is meant to finish it in one sitting. A child of 3 or 4 will need a grown-up for the ordering, sorting and matching games.": "Bilerek uzun tutuldu: 25 bölümde yaklaşık yüz etkinlik. Kimsenin onu bir oturuşta bitirmesi beklenmez. 3 ya da 4 yaşındaki bir çocuğun sıralama, ayırma ve eşleştirme oyunları için bir büyüğe ihtiyacı olacaktır.",
   "The story of Musa is spread over many surahs. This game follows <a href=\"https://quran.com/28\" target=\"_blank\" rel=\"noopener\">Surah Al-Qasas</a> (28:3–43) and <a href=\"https://quran.com/20\" target=\"_blank\" rel=\"noopener\">Surah Ta-Ha</a> (20:9–98), with passages from surahs 2, 5, 7, 10, 18, 26, 40 and 66. It is a large part of what the Qur’an tells of Musa, not all of it.": "Musa’nın hikâyesi birçok sureye yayılmıştır. Bu oyun <a href=\"https://quran.com/28\" target=\"_blank\" rel=\"noopener\">Kasas suresi</a> (28:3–43) ve <a href=\"https://quran.com/20\" target=\"_blank\" rel=\"noopener\">Tâhâ suresi</a> (20:9–98) ile birlikte 2, 5, 7, 10, 18, 26, 40 ve 66. surelerden bölümleri izler. Kur’an’ın Musa hakkında anlattıklarının büyük bir kısmıdır, tamamı değil.",
-  "Musa": "Musa"
+  "Musa": "Musa",
+  "No rain": "Yağmursuzluk"
  },
  "notes": {
   "1.1": {
@@ -2343,8 +2348,8 @@
    "t": "Sorun: Ne yapmaları gerekirdi? (Sözlerini tutmak, inanmak.)"
   },
   "15.12": {
-   "en": "Let your child name the five signs in order before tapping.",
-   "t": "Dokunmadan önce çocuğunuz beş mucizenin adını sırayla söylesin."
+   "en": "Let your child name the six troubles in order before tapping: the years with no rain (7:130) came first, then the five signs of 7:133.",
+   "t": "Dokunmadan önce çocuğunuz altı sıkıntıyı sırayla söylesin: önce yağmursuz yıllar geldi (7:130), sonra 7:133’teki beş mucize."
   },
   "16.1": {
    "en": "Verse 20:77: 'Go out at night with My servants and strike a dry path for them across the sea. Have no fear of being overtaken.' Verses 26:60–62: Pharaoh and his people pursued them at sunrise; when the two sides came in sight of each other Musa's followers said, 'We shall definitely be caught', and Musa said, 'No, my Lord is with me: He will guide me.'\n\nThe commentary says they were caught up with at the shore, the sea in front and Pharaoh behind. The lamps in the 'wake the families' activity are ours.",

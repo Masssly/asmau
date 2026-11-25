@@ -131,9 +131,10 @@ p("wipe", "clear", "storm", "Musa prays, and the trouble is lifted. Rub the sky 
 s("g", "egypt", "But every time the trouble was gone, they broke their promise.",
   "Under a clear blue sky, {PH} turns his back and walks away up palace steps with a wave of his hand, while {MU} and {HA} stand below watching him go.", { mood: "court" });
 q("q", "egypt", "What did they do each time the trouble went away?", ["They broke their promise", "💔"], ["They kept their promise", "🤝"], "No. Every time, they broke their promise.", { img: "g" });
-ord("ord", "egypt", "Five signs came, one after another. Tap them in order.", [
-  ["🌧️", "The flood", "First, the flood."], ["🦗", "The locusts", "Then the locusts."], ["🐜", "The tiny bugs", "Then the tiny bugs."], ["🐸", "The frogs", "Then the frogs."], ["🔴", "The red water", "And then the red water."]
-], "Not that one yet. Rain, locusts, bugs, frogs, red water.");
+// the years with no rain first (7:130), as on page 15.1, then the five signs of 7:133 (owner, 25 November 2026)
+ord("ord", "egypt", "One trouble came after another. Tap them in order.", [
+  ["☀️", "No rain", "First, years with no rain."], ["🌧️", "The flood", "Then the flood."], ["🦗", "The locusts", "Then the locusts."], ["🐜", "The tiny bugs", "Then the tiny bugs."], ["🐸", "The frogs", "Then the frogs."], ["🔴", "The red water", "And then the red water."]
+], "Not that one yet. No rain, flood, locusts, bugs, frogs, red water.");
 
 chapter("m16", "🌙", "Leaving by Night", "26:60-62", ["20:77"], null);
 s("a", "night", "At last, Allah told Musa: leave by night, with My servants.",

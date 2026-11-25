@@ -214,7 +214,7 @@ window.STORY = [
       {"play":"wipe","line":"m15-clear","scene":"storm","opts":{"cover":"storm","img":"m15-g"}},
       {"say":"m15-g","scene":"egypt","e":"👑 💔"},
       {"play":"choice","line":"m15-q","scene":"egypt","opts":{"options":[{"label":"They broke their promise","icon":"💔","ok":true},{"label":"They kept their promise","icon":"🤝","ok":false}],"wrong":"m15-q-no","img":"m15-g"}},
-      {"play":"order","line":"m15-ord","scene":"egypt","opts":{"cards":[{"icon":"🌧️","label":"The flood","line":"m15-ord-c1"},{"icon":"🦗","label":"The locusts","line":"m15-ord-c2"},{"icon":"🐜","label":"The tiny bugs","line":"m15-ord-c3"},{"icon":"🐸","label":"The frogs","line":"m15-ord-c4"},{"icon":"🔴","label":"The red water","line":"m15-ord-c5"}],"wrong":"m15-ord-no"}}
+      {"play":"order","line":"m15-ord","scene":"egypt","opts":{"cards":[{"icon":"☀️","label":"No rain","line":"m15-ord-c1"},{"icon":"🌧️","label":"The flood","line":"m15-ord-c2"},{"icon":"🦗","label":"The locusts","line":"m15-ord-c3"},{"icon":"🐜","label":"The tiny bugs","line":"m15-ord-c4"},{"icon":"🐸","label":"The frogs","line":"m15-ord-c5"},{"icon":"🔴","label":"The red water","line":"m15-ord-c6"}],"wrong":"m15-ord-no"}}
     ]
   },
   {

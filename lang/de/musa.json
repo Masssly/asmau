@@ -895,32 +895,32 @@
    "t": "Nein. Jedes Mal brachen sie ihr Versprechen."
   },
   "m15-ord": {
-   "en": "Five signs came, one after another. Tap them in order.",
-   "t": "Fünf Zeichen kamen, eines nach dem anderen. Tippe sie der Reihe nach an."
+   "en": "One trouble came after another. Tap them in order.",
+   "t": "Eine Not kam nach der anderen. Tippe sie der Reihe nach an."
   },
   "m15-ord-c1": {
-   "en": "First, the flood.",
-   "t": "Zuerst die Flut."
+   "en": "First, years with no rain.",
+   "t": "Zuerst Jahre ohne Regen."
   },
   "m15-ord-c2": {
+   "en": "Then the flood.",
+   "t": "Dann die Flut."
+  },
+  "m15-ord-c3": {
    "en": "Then the locusts.",
    "t": "Dann die Heuschrecken."
   },
-  "m15-ord-c3": {
+  "m15-ord-c4": {
    "en": "Then the tiny bugs.",
    "t": "Dann die winzigen Käfer."
   },
-  "m15-ord-c4": {
+  "m15-ord-c5": {
    "en": "Then the frogs.",
    "t": "Dann die Frösche."
   },
-  "m15-ord-c5": {
-   "en": "And then the red water.",
-   "t": "Und dann das rote Wasser."
-  },
   "m15-ord-no": {
-   "en": "Not that one yet. Rain, locusts, bugs, frogs, red water.",
-   "t": "Das noch nicht. Regen, Heuschrecken, Käfer, Frösche, rotes Wasser."
+   "en": "Not that one yet. No rain, flood, locusts, bugs, frogs, red water.",
+   "t": "Noch nicht dieses. Kein Regen, Flut, Heuschrecken, Käfer, Frösche, rotes Wasser."
   },
   "m16-a": {
    "en": "At last, Allah told Musa: leave by night, with My servants.",
@@ -1693,6 +1693,10 @@
   "end-a": {
    "en": "This is the story of Musa, peace be upon him. When the sea was in front of him, and the army was behind him, he said: my Lord is with me. He will guide me.",
    "t": "Das ist die Geschichte von Musa, Friede sei mit ihm. Als das Meer vor ihm lag und das Heer hinter ihm war, sagte er: Mein Herr ist mit mir. Er wird mich leiten."
+  },
+  "m15-ord-c6": {
+   "en": "And then the red water.",
+   "t": "Und dann das rote Wasser."
   }
  },
  "strings": {
@@ -1790,7 +1794,8 @@
   "Shown in this story: Prophet Musa and Prophet Harun (peace be upon them), al-Khidr, and the people around them. Allah’s speech to Musa is shown only as a fire and a light. Prophet Muhammad ﷺ is mentioned once, at the fast of Ashura.": "In dieser Geschichte zu sehen: der Prophet Musa und der Prophet Harun (Friede sei mit ihnen), al-Khidr und die Menschen um sie herum. Allahs Rede zu Musa wird nur als Feuer und Licht gezeigt. Der Prophet Muhammad ﷺ wird einmal erwähnt, beim Fasten von Aschura.",
   "🧒 Ages and how long it is": "🧒 Alter und Länge",
   "It is long on purpose: about a hundred activities over 25 chapters. Nobody is meant to finish it in one sitting. A child of 3 or 4 will need a grown-up for the ordering, sorting and matching games.": "Sie ist mit Absicht lang: etwa hundert Aktivitäten in 25 Kapiteln. Niemand soll sie in einem Zug durchspielen. Ein Kind von 3 oder 4 Jahren braucht einen Erwachsenen für die Ordnungs-, Sortier- und Zuordnungsspiele.",
-  "The story of Musa is spread over many surahs. This game follows <a href=\"https://quran.com/28\" target=\"_blank\" rel=\"noopener\">Surah Al-Qasas</a> (28:3–43) and <a href=\"https://quran.com/20\" target=\"_blank\" rel=\"noopener\">Surah Ta-Ha</a> (20:9–98), with passages from surahs 2, 5, 7, 10, 18, 26, 40 and 66. It is a large part of what the Qur’an tells of Musa, not all of it.": "Die Geschichte von Musa ist über viele Suren verteilt. Dieses Spiel folgt <a href=\"https://quran.com/28\" target=\"_blank\" rel=\"noopener\">Sure Al-Qasas</a> (28:3–43) und <a href=\"https://quran.com/20\" target=\"_blank\" rel=\"noopener\">Sure Ta-Ha</a> (20:9–98), mit Stellen aus den Suren 2, 5, 7, 10, 18, 26, 40 und 66. Es ist ein großer Teil dessen, was der Koran von Musa erzählt, nicht alles."
+  "The story of Musa is spread over many surahs. This game follows <a href=\"https://quran.com/28\" target=\"_blank\" rel=\"noopener\">Surah Al-Qasas</a> (28:3–43) and <a href=\"https://quran.com/20\" target=\"_blank\" rel=\"noopener\">Surah Ta-Ha</a> (20:9–98), with passages from surahs 2, 5, 7, 10, 18, 26, 40 and 66. It is a large part of what the Qur’an tells of Musa, not all of it.": "Die Geschichte von Musa ist über viele Suren verteilt. Dieses Spiel folgt <a href=\"https://quran.com/28\" target=\"_blank\" rel=\"noopener\">Sure Al-Qasas</a> (28:3–43) und <a href=\"https://quran.com/20\" target=\"_blank\" rel=\"noopener\">Sure Ta-Ha</a> (20:9–98), mit Stellen aus den Suren 2, 5, 7, 10, 18, 26, 40 und 66. Es ist ein großer Teil dessen, was der Koran von Musa erzählt, nicht alles.",
+  "No rain": "Kein Regen"
  },
  "notes": {
   "1.1": {
@@ -2326,8 +2331,8 @@
    "t": "Fragen Sie: Was hätten sie tun sollen? (Ihr Versprechen halten, glauben.)"
   },
   "15.12": {
-   "en": "Let your child name the five signs in order before tapping.",
-   "t": "Lassen Sie Ihr Kind die fünf Zeichen der Reihe nach nennen, bevor es tippt."
+   "en": "Let your child name the six troubles in order before tapping: the years with no rain (7:130) came first, then the five signs of 7:133.",
+   "t": "Lassen Sie Ihr Kind die sechs Nöte der Reihe nach nennen, bevor es tippt: zuerst kamen die Jahre ohne Regen (7:130), dann die fünf Zeichen aus 7:133."
   },
   "16.1": {
    "en": "Verse 20:77: 'Go out at night with My servants and strike a dry path for them across the sea. Have no fear of being overtaken.' Verses 26:60–62: Pharaoh and his people pursued them at sunrise; when the two sides came in sight of each other Musa's followers said, 'We shall definitely be caught', and Musa said, 'No, my Lord is with me: He will guide me.'\n\nThe commentary says they were caught up with at the shore, the sea in front and Pharaoh behind. The lamps in the 'wake the families' activity are ours.",

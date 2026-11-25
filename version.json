@@ -1,11 +1,18 @@
 {
-  "version": "2026.11.99",
+  "version": "2026.11.100",
   "date": "2026-11-25",
-  "buildId": "0473e602f3b3",
+  "buildId": "9888be66978a",
   "notes": [
-    "Musa: in 9.7 to 9.9 the burning tree is the same tree as in 9.5, and in 12.3 the two right answers, the staff and the shining hand, now glow so they are easy to see"
+    "Musa: the magicians in 13.4 look as they do in 13.8, 16.6 shows the people at the sea with Pharaoh's army still far behind them on the land, and the ordering game in 15.12 now starts with the years without rain, as the chapter does"
   ],
   "history": [
+    {
+      "version": "2026.11.100",
+      "date": "2026-11-25",
+      "notes": [
+        "Musa: the magicians in 13.4 look as they do in 13.8, 16.6 shows the people at the sea with Pharaoh's army still far behind them on the land, and the ordering game in 15.12 now starts with the years without rain, as the chapter does"
+      ]
+    },
     {
       "version": "2026.11.99",
       "date": "2026-11-25",

@@ -1,4 +1,4 @@
-{"bytes":7941409,
+{"bytes":7954605,
 "files":{"games/musa/art.js":"e151ffbeb1",
 "games/musa/assets/img/bg-camp.webp":"51f0616b2d",
 "games/musa/assets/img/bg-city.webp":"2b3f1633cb",
@@ -151,7 +151,7 @@
 "games/musa/assets/img/m9-a.webp":"37c680cf82",
 "games/musa/assets/img/m9-b.webp":"b3490127df",
 "games/musa/assets/img/m9-c.webp":"bf2e94c765",
-"games/musa/assets/img/m9-d.webp":"dcbd27918a",
+"games/musa/assets/img/m9-d.webp":"ead4140f86",
 "games/musa/cover.webp":"235a796674",
 "games/musa/game.js":"f275228707",
 "games/musa/game.json":"0aae924e57",
@@ -159,8 +159,8 @@
 "games/musa/narration.json":"5f07f975d8",
 "games/musa/parents/notes.json":"d307f3305d",
 "games/musa/parents/pages.json":"bef6f596a9",
-"games/musa/scene-fx.json":"7e5f0bbaed",
-"games/musa/story.js":"1c0cbc0c4a"},
+"games/musa/scene-fx.json":"19338806a0",
+"games/musa/story.js":"b9a45ee270"},
 "sizes":{"games/musa/assets/img/bg-camp.webp":70838,
 "games/musa/assets/img/bg-city.webp":52268,
 "games/musa/assets/img/bg-dawn.webp":51760,
@@ -312,4 +312,4 @@
 "games/musa/assets/img/m9-a.webp":34694,
 "games/musa/assets/img/m9-b.webp":47858,
 "games/musa/assets/img/m9-c.webp":70456,
-"games/musa/assets/img/m9-d.webp":54380}}
+"games/musa/assets/img/m9-d.webp":67552}}

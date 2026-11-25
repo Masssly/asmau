@@ -1,4 +1,4 @@
-{"bytes":1181113,
+{"bytes":1181601,
 "files":{"404.html":"ba53a41f6e",
 "LICENSE":"f473958ef4",
 "LICENSE-CONTENT.md":"0cc084be0b",
@@ -35,7 +35,7 @@
 "shared/recorder.js":"b8eb3bba2a",
 "shared/sound-buttons.js":"a72e8006a1",
 "shared/story-engine.js":"df14925780",
-"shared/story.css":"1fef2aa0d5",
+"shared/story.css":"65887cf5b5",
 "shared/style.css":"1d328f4e57",
 "shared/sync.js":"1058181ef2",
 "shared/vendor/LAME-LICENSE.txt":"8ca11a0034",
@@ -45,5 +45,5 @@
 "tools/record-voice/index.html":"733c3189fd",
 "tools/record-voice/join.html":"ba7b3dc502",
 "tools/record-voice/story.html":"6b9e8474ec",
-"version.json":"028c7e1508"},
+"version.json":"e06c5b34ee"},
 "sizes":{}}

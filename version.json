@@ -1,11 +1,18 @@
 {
-  "version": "2026.11.98",
+  "version": "2026.11.99",
   "date": "2026-11-25",
-  "buildId": "f58c415c2fe6",
+  "buildId": "0473e602f3b3",
   "notes": [
-    "Musa 8.7: the two sisters look as they do on the pages before, the same height, in purple and sky blue, their hair covered. Tests now come in two levels: a quick check of what changed, and the full run for the engine and once a day"
+    "Musa: in 9.7 to 9.9 the burning tree is the same tree as in 9.5, and in 12.3 the two right answers, the staff and the shining hand, now glow so they are easy to see"
   ],
   "history": [
+    {
+      "version": "2026.11.99",
+      "date": "2026-11-25",
+      "notes": [
+        "Musa: in 9.7 to 9.9 the burning tree is the same tree as in 9.5, and in 12.3 the two right answers, the staff and the shining hand, now glow so they are easy to see"
+      ]
+    },
     {
       "version": "2026.11.98",
       "date": "2026-11-25",

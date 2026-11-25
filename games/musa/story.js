@@ -161,7 +161,7 @@ window.STORY = [
     steps: [
       {"say":"m12-a","scene":"palace","e":"🧔🏿 🧔🏿 👑"},
       {"say":"m12-b","scene":"palace","e":"✋🏿 ✨ 👑"},
-      {"play":"pick","line":"m12-signs","scene":"palace","opts":{"items":[{"icon":"STAFF","n":1,"ok":true,"name":"the staff"},{"icon":"✋🏿","n":1,"ok":true,"name":"the hand"},{"icon":"👑","n":1,"ok":false,"name":"a crown"},{"icon":"💰","n":1,"ok":false,"name":"gold"},{"icon":"🗡️","n":1,"ok":false,"name":"a sword"},{"icon":"🐎","n":1,"ok":false,"name":"a horse"}],"mark":"✨"}},
+      {"play":"pick","line":"m12-signs","scene":"palace","opts":{"items":[{"icon":"STAFF","n":1,"ok":true,"name":"the staff","cls":"lit"},{"icon":"✋🏿","n":1,"ok":true,"name":"the hand","cls":"lit"},{"icon":"👑","n":1,"ok":false,"name":"a crown"},{"icon":"💰","n":1,"ok":false,"name":"gold"},{"icon":"🗡️","n":1,"ok":false,"name":"a sword"},{"icon":"🐎","n":1,"ok":false,"name":"a horse"}],"mark":"✨"}},
       {"say":"m12-c","scene":"palace","e":"👑 😤"},
       {"say":"m12-d","scene":"palace","e":"👑 👉🏿"},
       {"say":"m12-e","scene":"palace","e":"🧔🏿 ☀️ 🎪"},
